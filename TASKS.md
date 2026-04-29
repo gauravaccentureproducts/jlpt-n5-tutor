@@ -81,6 +81,52 @@ Mirrors the in-session TodoWrite list. If updated in either place, sync the othe
 
 ---
 
+## Pending — Phase 2.6 Stub-question UX fixes (NEW, from in-app screenshot review)
+
+> A user-visible stub question revealed three layered defects. Captured screenshot: prompt asks "choose the pattern that matches the meaning", question text is the dev-side placeholder `(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source`, and two of the four MCQ choices are generation artifacts: bare `～` and bare `Verb`.
+
+- [ ] **Q1**: Fix the skeleton-generator regex bug that produced bare `Verb` and bare `～` pattern strings in `data/grammar.json`. Root cause: the original regex `^([^(]+?)\s*\(([^)]+)\)\s*(.*)$` non-greedy-matched at the first `(`, mis-splitting:
+  - `Verb (plain) + Noun (relative clauses — basic)` → pattern became `Verb`
+  - `Verb (plain) + まえに (before doing)` → also `Verb`
+  - `Verb (plain past) + あとで (after doing)` → also `Verb`
+  - `～(の中)で～がいちばん～です` → pattern became `～`
+  
+  Fix: either skip parenthetical extraction entirely (store full bullet as `pattern`) or use a smarter heuristic (only treat parenthetical as meaning if it looks like English description, e.g., contains a space or is at the end of the line). Subsumed by **S1** if the regenerator is rewritten — call out explicitly.
+- [ ] **Q2**: Replace the user-visible stub placeholder text in `data/questions.json`. Current value: `question_ja: "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source"` — this dev-side text is being shown directly to learners. **Interim fix**: substitute a polite "this pattern is still being authored — please come back later" message in Japanese, OR hide the question entirely from `Test` setup until the corresponding `grammarPatternId` has a fully-authored entry in `grammar.json`. **Real fix**: Q4 below (Phase 3 authoring).
+- [ ] **Q3**: Improve distractor selection for stub MCQ questions. Currently the four choices are sampled from completely different categories (existential / demonstrative / particle-with-negative / verb-modifier appearing together), so the question tests *nothing* even when the choices are valid. Either (a) constrain distractors to the same `category` as the correct pattern, or (b) drop recognition-style MCQ entirely once Phase 3 fill-in-blank authoring catches up.
+- [ ] **Q4** (= Phase 3 priority): **Replace all 168 stub questions with real fill-in-blank questions** tied to the example sentences in each pattern's `examples[]` array. This is the only fix that makes the questions pedagogically meaningful. Already tracked under Phase 3 below; called out here so Q1–Q3 are understood as interim mitigations until Q4 lands.
+
+---
+
+## Pending — Phase 2.7 Project-wide em-dash purge (NEW directive, 2026-04-29)
+
+> User directive: *"there are no em dashes in the complete website or any of the documents"*. Em dash = `—` (U+2014). The Japanese long-sound mark `ー` (U+30FC) is a different character used in Japanese phonology (コーヒー, ラーメン) and must NOT be touched.
+
+- [ ] **E1**: Sweep all KB markdown files (`KnowledgeBank/sources.md`, `grammar_n5.md`, `kanji_n5.md`, `vocabulary_n5.md`) and replace every `—` (U+2014) with a context-appropriate substitute: hyphen `-`, colon `:`, comma `,`, or rephrase. Do NOT touch `ー` (U+30FC).
+- [ ] **E2**: Sweep `data/grammar.json` — em dashes appear in `meaning_en`, `explanation_en`, `notes`, `common_mistakes`, and within example sentences. Replace each per E1's rules.
+- [ ] **E3**: Sweep `data/questions.json` — em dashes appear in stub placeholder text and many `question_ja` / `prompt_ja` / explanation strings. Replace per E1.
+- [ ] **E4**: Sweep all top-level docs (`README.md`, `TASKS.md`, `verification.md`) — replace em dashes consistently. (This file's own em dashes count.)
+- [ ] **E5**: Sweep `tools/build_spec.py` source strings — replace any em dashes in spec text so the regenerated `.docx` has no em dashes. Then regenerate the spec docx.
+- [ ] **E6**: Sweep `js/*.js` and `index.html` for any inline UI strings with em dashes (e.g., button labels, status text).
+- [ ] **E7**: Add a `tools/lint_em_dash.py` script (or add to `lint_content.py`) that fails CI / grep returns no matches for `—` across the project. Becomes a permanent guard.
+
+---
+
+## Pending — Phase 2.8 MCQ stub-question correctness fixes (NEW, from screenshot batch review, 2026-04-29)
+
+> Five additional screenshots reviewed beyond the original `(stub)` one. Together they reveal that the recognition-MCQ stubs ship choices that are dev-side category descriptors and verbose labels, not actual Japanese grammar pattern strings. The 168 stub questions need a structural fix beyond Q1's regex bug. Q5–Q9 are the new findings.
+
+- [ ] **Q5**: Eliminate meta-description strings as MCQ choices in `data/questions.json` and `data/grammar.json`. Examples seen: `possessive / noun-modifier` (the consolidated `の` sub-bullet from grammar_n5.md §2 leaked into a pattern field), `い-Adjective negative: ～くないです / ～くありません` (verbose label rather than a single pattern). Each MCQ choice must be a clean Japanese pattern string or pedagogical label, not a category descriptor.
+- [ ] **Q6**: Tighten generic English meaning prompts. Current stubs use too-broad glosses like `because` (matches から / ので / んです) and `but — clause connector` (matches でも / しかし / が / けれど). Replace each with a disambiguating phrase that uniquely identifies one pattern (e.g., `because (formal / written)` for ので, `because (spoken, listing reasons)` for から).
+- [ ] **Q7**: Strip `etc.` and similar abbreviation markers from choice text. Seen: `いくつ / いくら / なんにん / なんまい etc.` — choices should be self-contained, not partial enumerations.
+- [ ] **Q8**: Standardize MCQ choice format across the entire stub bank. Pick ONE convention and apply project-wide:
+  - Option A — pure Japanese pattern strings only (e.g., `～たり〜たりする`, `～んです`, `〜が好きです`)
+  - Option B — Japanese pattern + structural English hint (e.g., `Verb-stem + たいです (want to)`, `い-Adj + です`)
+  - Currently stubs mix both; some have neither. Pick A or B and rewrite.
+- [ ] **Q9**: Add a content-validation script (`tools/validate_questions.py`) that fails when any question's `correctAnswer` or `choices[]` contains: a meta-description (no Japanese characters AND no `Verb`/`Adj`/`Noun` keyword), an em dash, an `etc.` token, or a string longer than ~30 characters (heuristic for verbose labels). Run this as part of the lint pipeline.
+
+---
+
 ## Pending — Phase 3 content enrichment (for "truly accurate" v1)
 
 > Phase 1 (engine + scaffold) and Phase 2 (KB-content fixes + push) are done.

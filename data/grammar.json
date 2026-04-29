@@ -1884,17 +1884,49 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 21,
-      "meaning_en": "consolidated entry — sub-uses below",
-      "meaning_ja": "",
+      "meaning_en": "～の (possessive / noun-modifier)",
+      "meaning_ja": "「Aの B」(しゅうしょく)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "possessive",
+            "label": "Possession",
+            "example": "わたしの 本"
+          },
+          {
+            "form": "modifier",
+            "label": "Noun modifier",
+            "example": "日本語の 先生"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～の' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "の links nouns. Can mean possession (わたしの = 'my'), classification (日本語の = 'Japanese (language) X'), or general modification.",
+      "examples": [
+        {
+          "ja": "これは わたしの 本です。",
+          "form": "affirmative",
+          "translation_en": "This is my book.",
+          "furigana": []
+        },
+        {
+          "ja": "日本語の 先生です。",
+          "form": "affirmative",
+          "translation_en": "I'm a teacher of Japanese.",
+          "furigana": []
+        },
+        {
+          "ja": "あれは だれの かばんですか。",
+          "form": "question",
+          "translation_en": "Whose bag is that?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-029",
@@ -1920,17 +1952,38 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 23,
-      "meaning_en": "e.g., 食べるのがすきです",
-      "meaning_ja": "",
+      "meaning_en": "～の (nominalizer — turns a verb/adj clause into a noun)",
+      "meaning_ja": "「〜の」(めいしか)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_plain"
+        ],
+        "conjugations": [
+          {
+            "form": "nominalizer",
+            "label": "Verb-plain + の",
+            "example": "本を 読むのが すきです"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'nominalizer in basic use' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "の after a plain-form verb makes the action a noun. 'Reading books' = 本を 読むの.",
+      "examples": [
+        {
+          "ja": "本を 読むのが すきです。",
+          "form": "affirmative",
+          "translation_en": "I like reading books.",
+          "furigana": []
+        },
+        {
+          "ja": "テレビを 見るのは おもしろいです。",
+          "form": "affirmative",
+          "translation_en": "Watching TV is fun.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-031",
@@ -2036,17 +2089,49 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 27,
-      "meaning_en": "only, with negative",
-      "meaning_ja": "",
+      "meaning_en": "しか〜ない — only (with negative verb)",
+      "meaning_ja": "「〜しか〜ない」(げんてい)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "shika_neg",
+            "label": "+ negative verb",
+            "example": "1000円しか ありません"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'しか～ない' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "しか REQUIRES a negative verb to mean 'only'. The polarity is grammatically negative but the meaning is affirmative-with-emphasis ('only X, nothing more').",
+      "examples": [
+        {
+          "ja": "1000円しか ありません。",
+          "form": "negative",
+          "translation_en": "I only have 1000 yen.",
+          "furigana": []
+        },
+        {
+          "ja": "わたししか いません。",
+          "form": "negative",
+          "translation_en": "Only I am here.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "1000円しか あります。",
+          "right": "1000円しか ありません。",
+          "why": "しか requires the verb to be negative."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-033",
+          "note": "だけ + affirm/neg = 'only'. しか + neg = 'only' (with emphasis on scarcity)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-035",
@@ -2216,17 +2301,38 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 31,
-      "meaning_en": "each / per",
-      "meaning_ja": "",
+      "meaning_en": "ずつ — each / per (distributive amount)",
+      "meaning_ja": "「〜ずつ」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "quantity"
+        ],
+        "conjugations": [
+          {
+            "form": "each",
+            "label": "X per person/unit",
+            "example": "ひとつずつ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'ずつ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "ずつ after a quantity means 'each' or 'per' — distributing a fixed amount.",
+      "examples": [
+        {
+          "ja": "りんごを ひとつずつ ください。",
+          "form": "affirmative",
+          "translation_en": "Please give one apple each.",
+          "furigana": []
+        },
+        {
+          "ja": "1日に 30ぷんずつ べんきょうします。",
+          "form": "affirmative",
+          "translation_en": "I study 30 minutes each day.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-039",
@@ -2288,17 +2394,44 @@
       "category": "Demonstratives (こそあど)",
       "categoryOrder": 5,
       "patternOrder": 4,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "こちら / そちら / あちら / どちら — polite directions / options",
+      "meaning_ja": "「こちら-シリーズ」(ていねい)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "standalone"
+        ],
+        "conjugations": [
+          {
+            "form": "polite_direction",
+            "label": "Polite this way / that way / which way",
+            "example": "こちらへ どうぞ。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'こちら / そちら / あちら / どちら' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "The こちら-series is the polite version of これ-シリーズ/ここ-シリーズ. Used in business / formal contexts for direction, person reference, and choice.",
+      "examples": [
+        {
+          "ja": "こちらへ どうぞ。",
+          "form": "affirmative",
+          "translation_en": "This way, please.",
+          "furigana": []
+        },
+        {
+          "ja": "そちらの 本は 100円です。",
+          "form": "affirmative",
+          "translation_en": "That book (over there by you) is 100 yen.",
+          "furigana": []
+        },
+        {
+          "ja": "どちらが いいですか。",
+          "form": "question",
+          "translation_en": "Which (of two) is good?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-043",
@@ -2306,17 +2439,44 @@
       "category": "Demonstratives (こそあど)",
       "categoryOrder": 5,
       "patternOrder": 5,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "こんな / そんな / あんな / どんな + Noun — 'this/that kind of'",
+      "meaning_ja": "「こんな〜」(しゅるい)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "before_noun"
+        ],
+        "conjugations": [
+          {
+            "form": "kind_of",
+            "label": "Kind / type",
+            "example": "こんな 本"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'こんな / そんな / あんな / どんな + Noun' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "こんな/そんな/あんな/どんな are 'this kind of / that kind of / what kind of'. Always followed by a noun.",
+      "examples": [
+        {
+          "ja": "どんな 本が すきですか。",
+          "form": "question",
+          "translation_en": "What kind of books do you like?",
+          "furigana": []
+        },
+        {
+          "ja": "こんな 人は はじめてです。",
+          "form": "affirmative",
+          "translation_en": "I've never met this kind of person before.",
+          "furigana": []
+        },
+        {
+          "ja": "あんな 大きい いえに すみたいです。",
+          "form": "affirmative",
+          "translation_en": "I want to live in that kind of big house.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-044",
@@ -2324,17 +2484,44 @@
       "category": "Demonstratives (こそあど)",
       "categoryOrder": 5,
       "patternOrder": 6,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "こう / そう / ああ / どう — 'this way / that way / how'",
+      "meaning_ja": "「こう-シリーズ」(ようす・ほうほう)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "adverbial"
+        ],
+        "conjugations": [
+          {
+            "form": "manner",
+            "label": "Manner / way",
+            "example": "こう してください。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'こう / そう / ああ / どう' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "The こう-series describes manner: 'this way/that way/how'. Used adverbially with verbs.",
+      "examples": [
+        {
+          "ja": "こう してください。",
+          "form": "affirmative",
+          "translation_en": "Please do it this way.",
+          "furigana": []
+        },
+        {
+          "ja": "そう おもいます。",
+          "form": "affirmative",
+          "translation_en": "I think so.",
+          "furigana": []
+        },
+        {
+          "ja": "どう 行きますか。",
+          "form": "question",
+          "translation_en": "How do we get there?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-045",
@@ -2581,17 +2768,38 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 11,
-      "meaning_en": "how to / by what means",
-      "meaning_ja": "",
+      "meaning_en": "どうやって — 'how / by what means'",
+      "meaning_ja": "「どうやって」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "method",
+            "label": "Method",
+            "example": "どうやって 行きますか。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'どうやって' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "どうやって asks the METHOD/MEANS of doing something. More specific than どう.",
+      "examples": [
+        {
+          "ja": "どうやって 行きますか。",
+          "form": "question",
+          "translation_en": "How (by what method) do you go?",
+          "furigana": []
+        },
+        {
+          "ja": "どうやって つくりますか。",
+          "form": "question",
+          "translation_en": "How do you make it?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+      "notes": ""
     },
     {
       "id": "n5-053",
@@ -2750,17 +2958,38 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 15,
-      "meaning_en": "what day of the week",
-      "meaning_ja": "",
+      "meaning_en": "なんようび — 'what day of the week'",
+      "meaning_ja": "「なんようび」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "day",
+            "label": "Day of week",
+            "example": "なんようびですか。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'なんようび' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Counter ようび = 'day of the week'. なんようび asks 'what day?'.",
+      "examples": [
+        {
+          "ja": "きょうは なんようびですか。",
+          "form": "question",
+          "translation_en": "What day is today?",
+          "furigana": []
+        },
+        {
+          "ja": "テストは なんようびですか。",
+          "form": "question",
+          "translation_en": "What day is the test?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-057",
@@ -2768,17 +2997,43 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 16,
-      "meaning_en": "what month, what day",
-      "meaning_ja": "",
+      "meaning_en": "なんがつ / なんにち — 'what month / what day'",
+      "meaning_ja": "「なんがつ」「なんにち」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "month",
+            "label": "Month",
+            "example": "なんがつですか。"
+          },
+          {
+            "form": "day",
+            "label": "Day of month",
+            "example": "なんにちですか。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'なんがつ なんにち' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "がつ = month-counter; にち = day-of-month-counter. なんがつ / なんにち ask 'what month / day'.",
+      "examples": [
+        {
+          "ja": "たんじょうびは なんがつ なんにちですか。",
+          "form": "question",
+          "translation_en": "What month and day is your birthday?",
+          "furigana": []
+        },
+        {
+          "ja": "きょうは なんにちですか。",
+          "form": "question",
+          "translation_en": "What day of the month is it today?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-058",
@@ -3101,17 +3356,49 @@
       "category": "Verbs — Tense and Politeness (ます-form)",
       "categoryOrder": 6,
       "patternOrder": 6,
-      "meaning_en": "shall I / shall we?",
-      "meaning_ja": "",
+      "meaning_en": "Verb-ましょうか — 'shall I / shall we (offer/suggestion)?'",
+      "meaning_ja": "「〜ましょうか」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem"
+        ],
+        "conjugations": [
+          {
+            "form": "offer",
+            "label": "Offering help / suggesting",
+            "example": "てつだいましょうか。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-ましょうか' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "ましょうか = ましょう + か, asking permission to do or offering help. 'Shall I help?', 'Shall we go?'",
+      "examples": [
+        {
+          "ja": "てつだいましょうか。",
+          "form": "question",
+          "translation_en": "Shall I help?",
+          "furigana": []
+        },
+        {
+          "ja": "まどを あけましょうか。",
+          "form": "question",
+          "translation_en": "Shall I open the window?",
+          "furigana": []
+        },
+        {
+          "ja": "いっしょに 行きましょうか。",
+          "form": "question",
+          "translation_en": "Shall we go together?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-062",
+          "note": "ましょう = 'let's' (statement); ましょうか = offer/check ('shall we?', expecting agreement)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-064",
@@ -3752,17 +4039,44 @@
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
       "patternOrder": 5,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Verb-ていません — currently NOT doing / NOT in state",
+      "meaning_ja": "「〜ていません」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_te"
+        ],
+        "conjugations": [
+          {
+            "form": "neg_progressive",
+            "label": "Negative progressive / state",
+            "example": "たべていません"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-ていません' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Negative form of ています. Not currently doing / not in resulting state.",
+      "examples": [
+        {
+          "ja": "まだ あさごはんを たべていません。",
+          "form": "negative",
+          "translation_en": "I haven't eaten breakfast yet.",
+          "furigana": []
+        },
+        {
+          "ja": "けっこんしていません。",
+          "form": "negative",
+          "translation_en": "I'm not married.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "しっていません (\"I don't know\")",
+          "right": "しりません",
+          "why": "しる is the famous exception. Affirmative しっています but negative しりません (NOT しっていません)."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-074",
@@ -3894,17 +4208,50 @@
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
       "patternOrder": 8,
-      "meaning_en": "after doing — Verb-てから",
-      "meaning_ja": "",
+      "meaning_en": "Verb-てから — 'after doing X'",
+      "meaning_ja": "「〜てから」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_te"
+        ],
+        "conjugations": [
+          {
+            "form": "after",
+            "label": "After (sequential)",
+            "example": "あさごはんを たべてから 行きます"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-から' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "te-form + から means 'after doing X, then Y'. Stronger sequential than just te-form chain.",
+      "examples": [
+        {
+          "ja": "あさごはんを たべてから 行きます。",
+          "form": "affirmative",
+          "translation_en": "I'll go after eating breakfast.",
+          "furigana": []
+        },
+        {
+          "ja": "しごとが おわってから あいましょう。",
+          "form": "affirmative",
+          "translation_en": "Let's meet after work ends.",
+          "furigana": []
+        },
+        {
+          "ja": "シャワーを あびてから ねます。",
+          "form": "affirmative",
+          "translation_en": "I'll go to bed after a shower.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "あさごはんから",
+          "right": "あさごはんを たべてから",
+          "why": "てから needs a verb te-form before it, not a noun."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-077",
@@ -3974,17 +4321,50 @@
       "category": "Adjectives",
       "categoryOrder": 9,
       "patternOrder": 1,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "い-Adjective + Noun — adjective directly before noun",
+      "meaning_ja": "い-けいようし + めいし",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "before_noun"
+        ],
+        "conjugations": [
+          {
+            "form": "attributive",
+            "label": "い-Adj + N",
+            "example": "高い 山"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'い-Adjective + Noun' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "い-adjectives modify nouns directly, no particles needed. Keep the い: 高い 山 = 'tall mountain'.",
+      "examples": [
+        {
+          "ja": "高い 山が 見えます。",
+          "form": "affirmative",
+          "translation_en": "I can see a tall mountain.",
+          "furigana": []
+        },
+        {
+          "ja": "おもしろい 本を 読みました。",
+          "form": "past",
+          "translation_en": "I read an interesting book.",
+          "furigana": []
+        },
+        {
+          "ja": "あつい コーヒーが すきです。",
+          "form": "affirmative",
+          "translation_en": "I like hot coffee.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "高いの 山",
+          "right": "高い 山",
+          "why": "Don't insert の between い-adj and noun. の is for noun-noun linking only."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-079",
@@ -4332,17 +4712,55 @@
       "category": "Adjectives",
       "categoryOrder": 9,
       "patternOrder": 7,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "な-Adjective + な + Noun",
+      "meaning_ja": "な-けいようし + な + めいし",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "before_noun"
+        ],
+        "conjugations": [
+          {
+            "form": "attributive",
+            "label": "Na-Adj + な + N",
+            "example": "しずかな へや"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'な-Adjective + な + Noun' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "な-adjectives need な before a noun. しずかな へや = 'a quiet room'.",
+      "examples": [
+        {
+          "ja": "しずかな へやが すきです。",
+          "form": "affirmative",
+          "translation_en": "I like quiet rooms.",
+          "furigana": []
+        },
+        {
+          "ja": "ゆうめいな 人に あいました。",
+          "form": "past",
+          "translation_en": "I met a famous person.",
+          "furigana": []
+        },
+        {
+          "ja": "きれいな はなが さきました。",
+          "form": "past",
+          "translation_en": "Pretty flowers bloomed.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "しずか へや",
+          "right": "しずかな へや",
+          "why": "な-adj needs な before nouns. (Drop な before です: しずかです.)"
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-078",
+          "note": "い-adj attaches directly. な-adj needs な before nouns."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-085",
@@ -4902,17 +5320,50 @@
       "category": "Existence and Possession",
       "categoryOrder": 10,
       "patternOrder": 4,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～は～にあります／います — 'X is at Y' (already-known X)",
+      "meaning_ja": "「Xは Yに あります／います」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun_subject",
+          "noun_location"
+        ],
+        "conjugations": [
+          {
+            "form": "subject_first",
+            "label": "Topic-first existence",
+            "example": "本は つくえの 上に あります。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～は～にあります / います' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "When the SUBJECT is already known (topic), lead with は + subject, then location + に + あります/います. Compare with ～に～が which leads with the location.",
+      "examples": [
+        {
+          "ja": "本は つくえの 上に あります。",
+          "form": "affirmative",
+          "translation_en": "The book is on the desk.",
+          "furigana": []
+        },
+        {
+          "ja": "ねこは そこに います。",
+          "form": "affirmative",
+          "translation_en": "The cat is over there.",
+          "furigana": []
+        },
+        {
+          "ja": "デパートは どこに ありますか。",
+          "form": "question",
+          "translation_en": "Where is the department store?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-092",
+          "note": "～に～が = locating something new at a known place. ～は～に = telling where a known thing is."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-094",
@@ -4920,17 +5371,54 @@
       "category": "Existence and Possession",
       "categoryOrder": 10,
       "patternOrder": 5,
-      "meaning_en": "have / there is",
-      "meaning_ja": "",
+      "meaning_en": "～が あります — 'have / there is' (events, skills, possessions)",
+      "meaning_ja": "「〜が あります」(イベント・スキル)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun_subject"
+        ],
+        "conjugations": [
+          {
+            "form": "event",
+            "label": "Have an event",
+            "example": "あした しけんが あります。"
+          },
+          {
+            "form": "skill",
+            "label": "Have a skill (lit. exists)",
+            "example": "むすめが います。"
+          },
+          {
+            "form": "possession",
+            "label": "Possession / availability",
+            "example": "おかねが ありません。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～があります' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Beyond physical existence, あります covers events ('there's an exam'), abstract things ('time / money'), and possession ('I have...'). Use が for the subject.",
+      "examples": [
+        {
+          "ja": "あした しけんが あります。",
+          "form": "affirmative",
+          "translation_en": "There's an exam tomorrow.",
+          "furigana": []
+        },
+        {
+          "ja": "おかねが ありません。",
+          "form": "negative",
+          "translation_en": "I don't have money.",
+          "furigana": []
+        },
+        {
+          "ja": "なにか しつもんが ありますか。",
+          "form": "question",
+          "translation_en": "Do you have any questions?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-095",
@@ -4994,17 +5482,43 @@
       "category": "Comparison and Preference",
       "categoryOrder": 11,
       "patternOrder": 2,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～より～のほうが [adj] です — '~ is more [adj] than ~' (focuses on the bigger one)",
+      "meaning_ja": "「AよりBのほうが〜」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "comparison",
+            "label": "Bigger one is the topic",
+            "example": "おおさかより とうきょうのほうが 大きいです"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～より～のほうが～です' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "AよりBのほうが puts emphasis on B as the bigger/more X one. Often answer to a どちら question.",
+      "examples": [
+        {
+          "ja": "おおさかより とうきょうのほうが 大きいです。",
+          "form": "affirmative",
+          "translation_en": "Tokyo is bigger than Osaka.",
+          "furigana": []
+        },
+        {
+          "ja": "おちゃより コーヒーのほうが すきです。",
+          "form": "affirmative",
+          "translation_en": "I prefer coffee over tea.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-095",
+          "note": "AはBより = A is more (A focused). AよりBのほうが = B is more (B focused)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-097",
@@ -5012,17 +5526,38 @@
       "category": "Comparison and Preference",
       "categoryOrder": 11,
       "patternOrder": 3,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "AとBと、どちらが ～ですか — 'which is more ~, A or B?' (2-way question)",
+      "meaning_ja": "「AとBと、どちらが〜ですか」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "comparison_q",
+            "label": "2-way comparison question",
+            "example": "いぬと ねこと、どちらが すきですか"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～と～と、どちらが～ですか' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Standard 2-way comparison question form. Pair 2 nouns with と...と, end with どちらが + adj/preference.",
+      "examples": [
+        {
+          "ja": "いぬと ねこと、どちらが すきですか。",
+          "form": "question",
+          "translation_en": "Which do you like more, dogs or cats?",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーと おちゃと、どちらが いいですか。",
+          "form": "question",
+          "translation_en": "Coffee or tea — which is good?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-098",
@@ -5048,17 +5583,55 @@
       "category": "Comparison and Preference",
       "categoryOrder": 11,
       "patternOrder": 5,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～が すきです / きらいです — like / dislike",
+      "meaning_ja": "「〜が すき／きらい」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "like",
+            "label": "Like",
+            "example": "ねこが すきです"
+          },
+          {
+            "form": "dislike",
+            "label": "Dislike",
+            "example": "なっとうが きらいです"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～がすきです / きらいです' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "すき / きらい are な-adjectives. The thing liked/disliked takes が, NEVER を.",
+      "examples": [
+        {
+          "ja": "わたしは ねこが すきです。",
+          "form": "affirmative",
+          "translation_en": "I like cats.",
+          "furigana": []
+        },
+        {
+          "ja": "なっとうが きらいです。",
+          "form": "affirmative",
+          "translation_en": "I dislike natto.",
+          "furigana": []
+        },
+        {
+          "ja": "なにが すきですか。",
+          "form": "question",
+          "translation_en": "What do you like?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "ねこを すきです。",
+          "right": "ねこが すきです。",
+          "why": "Stative predicates (すき, きらい, わかる, できる) take が, never を."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-100",
@@ -5066,17 +5639,49 @@
       "category": "Comparison and Preference",
       "categoryOrder": 11,
       "patternOrder": 6,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～が じょうずです / へたです — good at / bad at",
+      "meaning_ja": "「〜が じょうず／へた」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "good_at",
+            "label": "Skilled",
+            "example": "日本語が じょうずです"
+          },
+          {
+            "form": "bad_at",
+            "label": "Unskilled",
+            "example": "りょうりが へたです"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～がじょうずです / へたです' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "じょうず (good at) / へた (bad at) are な-adjectives. Subject (skill) takes が. NOTE: don't use じょうず about yourself — sounds boastful. Use とくい instead, or self-deprecating まだまだです.",
+      "examples": [
+        {
+          "ja": "あの 人は 日本語が じょうずです。",
+          "form": "affirmative",
+          "translation_en": "That person is good at Japanese.",
+          "furigana": []
+        },
+        {
+          "ja": "わたしは りょうりが へたです。",
+          "form": "affirmative",
+          "translation_en": "I'm bad at cooking.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "わたしは 日本語が じょうずです。",
+          "right": "わたしは 日本語が とくいです。 (or self-deprecate)",
+          "why": "Saying じょうず about yourself sounds boastful. Reserve じょうず for others; for yourself, use とくい or まだまだです."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-101",
@@ -5084,17 +5689,55 @@
       "category": "Comparison and Preference",
       "categoryOrder": 11,
       "patternOrder": 7,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～が ほしいです — want (an object)",
+      "meaning_ja": "「〜が ほしい」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "want_thing",
+            "label": "Want a thing",
+            "example": "新しい くるまが ほしい"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～がほしいです' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "ほしい is an い-adjective meaning 'want'. The desired thing takes が. Limited to first person (or in questions, second person).",
+      "examples": [
+        {
+          "ja": "新しい くるまが ほしいです。",
+          "form": "affirmative",
+          "translation_en": "I want a new car.",
+          "furigana": []
+        },
+        {
+          "ja": "なにが ほしいですか。",
+          "form": "question",
+          "translation_en": "What do you want?",
+          "furigana": []
+        },
+        {
+          "ja": "なにも ほしくないです。",
+          "form": "negative",
+          "translation_en": "I don't want anything.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "Talking about a third person's desire with ほしい.",
+          "right": "Use ほしがっている for third-person desires.",
+          "why": "ほしい expresses the speaker's own (or asks the listener's) desire. For others, use ほしがっている."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-104",
+          "note": "ほしい = want (a thing). たい = want to (do)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-102",
@@ -5102,17 +5745,50 @@
       "category": "Comparison and Preference",
       "categoryOrder": 11,
       "patternOrder": 8,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～が わかります — understand / know",
+      "meaning_ja": "「〜が わかる」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "understand",
+            "label": "Understand",
+            "example": "日本語が わかります"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～がわかります' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "わかる = 'understand'. The thing understood takes が, never を. Past わかりました often means 'got it / I see'.",
+      "examples": [
+        {
+          "ja": "日本語が すこし わかります。",
+          "form": "affirmative",
+          "translation_en": "I understand a little Japanese.",
+          "furigana": []
+        },
+        {
+          "ja": "わかりません。",
+          "form": "negative",
+          "translation_en": "I don't understand.",
+          "furigana": []
+        },
+        {
+          "ja": "わかりました。",
+          "form": "past",
+          "translation_en": "I understand. / Got it.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "日本語を わかります。",
+          "right": "日本語が わかります。",
+          "why": "わかる takes が, never を."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-103",
@@ -5120,17 +5796,50 @@
       "category": "Comparison and Preference",
       "categoryOrder": 11,
       "patternOrder": 9,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～が できます — can do / be able to / have ability in",
+      "meaning_ja": "「〜が できる」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "ability",
+            "label": "Ability / completion",
+            "example": "日本語が できます"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～ができます' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "できる = 'can do, be able to'. Subject (skill / language / activity) takes が. Also 'be ready/finished'.",
+      "examples": [
+        {
+          "ja": "日本語が できます。",
+          "form": "affirmative",
+          "translation_en": "I can speak Japanese.",
+          "furigana": []
+        },
+        {
+          "ja": "りょうりが できますか。",
+          "form": "question",
+          "translation_en": "Can you cook?",
+          "furigana": []
+        },
+        {
+          "ja": "ばんごはんが できました。",
+          "form": "past",
+          "translation_en": "Dinner is ready.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "日本語を できます。",
+          "right": "日本語が できます。",
+          "why": "できる takes が, not を."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-104",
@@ -5210,17 +5919,43 @@
       "category": "Desiderative and Volitional",
       "categoryOrder": 12,
       "patternOrder": 2,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Verb-stem + たくないです — don't want to",
+      "meaning_ja": "「〜たくない」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem_i"
+        ],
+        "conjugations": [
+          {
+            "form": "neg",
+            "label": "Don't want to",
+            "example": "行きたくない"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-stem + たくないです' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Negative of たい — drop い from たい, add くない (treats たい as い-adj).",
+      "examples": [
+        {
+          "ja": "今日は 行きたくないです。",
+          "form": "negative",
+          "translation_en": "I don't want to go today.",
+          "furigana": []
+        },
+        {
+          "ja": "なにも 食べたくない。",
+          "form": "negative",
+          "translation_en": "I don't want to eat anything.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-104",
+          "note": "たい (want) ↔ たくない (don't want). Past たかった / たくなかった."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-106",
@@ -5228,17 +5963,38 @@
       "category": "Desiderative and Volitional",
       "categoryOrder": 12,
       "patternOrder": 3,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Noun + が ほしいです (same as n5-101 but with explicit noun emphasis)",
+      "meaning_ja": "「Nが ほしい」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "want_noun",
+            "label": "Want this thing",
+            "example": "本が ほしい"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Noun + が ほしいです' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Use ほしい to want a NOUN. Same rule as n5-101: subject (the wanted thing) takes が.",
+      "examples": [
+        {
+          "ja": "新しい かばんが ほしいです。",
+          "form": "affirmative",
+          "translation_en": "I want a new bag.",
+          "furigana": []
+        },
+        {
+          "ja": "おかねが ほしい。",
+          "form": "affirmative",
+          "translation_en": "I want money.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-107",
@@ -5246,17 +6002,50 @@
       "category": "Desiderative and Volitional",
       "categoryOrder": 12,
       "patternOrder": 4,
-      "meaning_en": "go/come/return to do",
-      "meaning_ja": "",
+      "meaning_en": "Verb-stem + に 行きます／来ます／かえります — go/come/return TO DO X",
+      "meaning_ja": "「〜に 行く」(もくてき)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem_i"
+        ],
+        "conjugations": [
+          {
+            "form": "purpose",
+            "label": "Purpose of motion",
+            "example": "買いに 行きます"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-stem + に いきます / きます / かえります' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Verb-stem + に + movement verb expresses purpose of going/coming. 'Go to buy', 'come to see', 'return to eat'.",
+      "examples": [
+        {
+          "ja": "デパートへ 買いものに 行きます。",
+          "form": "affirmative",
+          "translation_en": "I'm going to the department store to shop.",
+          "furigana": []
+        },
+        {
+          "ja": "日本へ べんきょうに 来ました。",
+          "form": "past",
+          "translation_en": "I came to Japan to study.",
+          "furigana": []
+        },
+        {
+          "ja": "うちへ ごはんを たべに かえります。",
+          "form": "affirmative",
+          "translation_en": "I'm going home to eat.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "買うに 行きます",
+          "right": "買いに 行きます",
+          "why": "Use the い-stem (買う → 買い), not the dictionary form, before に + movement verb."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-108",
@@ -5498,17 +6287,43 @@
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
       "patternOrder": 1,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "そして — 'and / and then' (clause connector)",
+      "meaning_ja": "「そして」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "clause_start"
+        ],
+        "conjugations": [
+          {
+            "form": "additive",
+            "label": "Additive connector",
+            "example": "そして、〜"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'そして' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "そして begins a new sentence to add another action or fact. Used in narration / lists.",
+      "examples": [
+        {
+          "ja": "あさごはんを たべました。そして、しごとに 行きました。",
+          "form": "past",
+          "translation_en": "I ate breakfast. And then, I went to work.",
+          "furigana": []
+        },
+        {
+          "ja": "とうきょうへ 行きました。そして、きょうとへも 行きました。",
+          "form": "past",
+          "translation_en": "I went to Tokyo. And to Kyoto too.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-122",
+          "note": "そして = 'and' (additive). それから = 'and then / after that' (sequential)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-122",
@@ -5516,17 +6331,38 @@
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
       "patternOrder": 2,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "それから — 'and then / after that'",
+      "meaning_ja": "「それから」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "clause_start"
+        ],
+        "conjugations": [
+          {
+            "form": "sequential",
+            "label": "Sequential connector",
+            "example": "それから、〜"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'それから' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "それから begins a clause to mark sequence — 'after that, next'.",
+      "examples": [
+        {
+          "ja": "シャワーを あびました。それから、ねました。",
+          "form": "past",
+          "translation_en": "I showered. After that, I went to bed.",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーを 飲みました。それから、出かけました。",
+          "form": "past",
+          "translation_en": "I drank coffee. Then I went out.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-123",
@@ -5534,17 +6370,43 @@
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
       "patternOrder": 3,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "でも — 'but / however' (sentence-initial)",
+      "meaning_ja": "「でも」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "clause_start"
+        ],
+        "conjugations": [
+          {
+            "form": "contrast",
+            "label": "Contrast",
+            "example": "でも、〜"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'でも' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "でも at the start of a new sentence introduces a contrast. Casual.",
+      "examples": [
+        {
+          "ja": "コーヒーが すきです。でも、おちゃは すきじゃありません。",
+          "form": "affirmative",
+          "translation_en": "I like coffee. But I don't like tea.",
+          "furigana": []
+        },
+        {
+          "ja": "あつかったです。でも、たのしかったです。",
+          "form": "past",
+          "translation_en": "It was hot. But it was fun.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-124",
+          "note": "でも = 'but' (conversational). しかし = 'however' (formal/written)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-124",
@@ -5552,17 +6414,32 @@
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
       "patternOrder": 4,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "しかし — 'however' (formal contrast)",
+      "meaning_ja": "「しかし」(かたい)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "clause_start"
+        ],
+        "conjugations": [
+          {
+            "form": "formal_contrast",
+            "label": "Formal contrast",
+            "example": "しかし、〜"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'しかし' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Formal/written form of でも. Same meaning, more formal register.",
+      "examples": [
+        {
+          "ja": "テストは むずかしかったです。しかし、できました。",
+          "form": "past",
+          "translation_en": "The test was hard. However, I did it.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-125",
@@ -5588,17 +6465,55 @@
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
       "patternOrder": 6,
-      "meaning_en": "but — clause connector",
-      "meaning_ja": "",
+      "meaning_en": "が (clause connector) — 'but / however' (mid-sentence)",
+      "meaning_ja": "「〜が、〜」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "clause"
+        ],
+        "conjugations": [
+          {
+            "form": "but",
+            "label": "But / and (soft contrast)",
+            "example": "～ですが、～"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'が' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "が at end of a clause (after です/ます or plain) means 'but' as a softening connector. Often introduces a contrast or extends thought.",
+      "examples": [
+        {
+          "ja": "コーヒーは すきですが、おちゃは すきじゃありません。",
+          "form": "affirmative",
+          "translation_en": "I like coffee, but I don't like tea.",
+          "furigana": []
+        },
+        {
+          "ja": "むずかしいですが、たのしいです。",
+          "form": "affirmative",
+          "translation_en": "It's hard, but fun.",
+          "furigana": []
+        },
+        {
+          "ja": "すみませんが、もう いちど おねがいします。",
+          "form": "affirmative",
+          "translation_en": "Sorry, but please say it once more.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "ですから but じゃありません",
+          "right": "ですが",
+          "why": "Use が (not から) for contrast. から means 'because'."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-128",
+          "note": "Mid-sentence が = 'but'. Mid-sentence から = 'because'."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-127",
@@ -5624,17 +6539,43 @@
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
       "patternOrder": 8,
-      "meaning_en": "because — clause connector",
-      "meaning_ja": "",
+      "meaning_en": "から (clause connector) — 'because'",
+      "meaning_ja": "「〜から、〜」(りゆう)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "clause"
+        ],
+        "conjugations": [
+          {
+            "form": "because",
+            "label": "Because",
+            "example": "あついから、〜"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'から' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "から at end of a clause means 'because'. Reason comes first; result follows.",
+      "examples": [
+        {
+          "ja": "あついから、まどを あけてください。",
+          "form": "affirmative",
+          "translation_en": "It's hot, so please open the window.",
+          "furigana": []
+        },
+        {
+          "ja": "おなかが すいたから、なにか たべましょう。",
+          "form": "affirmative",
+          "translation_en": "I'm hungry, so let's eat something.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-126",
+          "note": "から (because) ↔ が (but)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-129",
@@ -5660,17 +6601,43 @@
       "category": "Giving and Receiving (basic)",
       "categoryOrder": 16,
       "patternOrder": 1,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "あげる / あげます — give (to others)",
+      "meaning_ja": "「あげる」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb"
+        ],
+        "conjugations": [
+          {
+            "form": "polite",
+            "label": "Polite",
+            "example": "あげます"
+          },
+          {
+            "form": "te",
+            "label": "Te-form",
+            "example": "あげて"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～に～をあげます' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "あげる = give from speaker (or in-group) to others. Recipient marked with に. Don't use あげる when receiving from someone — use もらう.",
+      "examples": [
+        {
+          "ja": "ともだちに 本を あげました。",
+          "form": "past",
+          "translation_en": "I gave a book to my friend.",
+          "furigana": []
+        },
+        {
+          "ja": "母に はなを あげます。",
+          "form": "affirmative",
+          "translation_en": "I give flowers to my mother.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-131",
