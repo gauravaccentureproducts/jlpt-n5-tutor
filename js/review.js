@@ -1,4 +1,4 @@
-// Chapter 3 — Review (SM-2 SRS session per Brief §2.11).
+// Chapter 3 - Review (SM-2 SRS session per Brief §2.11).
 // Surfaces grammar patterns due today (SM-2 nextDue ≤ now), plus up to N new
 // items each day. Each card presents the pattern + a question; user grades
 // 4-button (Again / Hard / Good / Easy); algorithm advances the schedule.
@@ -33,7 +33,7 @@ function getDueItems(limit) {
   const now = new Date();
   const due = [];
   for (const [pid, e] of Object.entries(history)) {
-    // Skip graduated / manually-known if interval is huge — they won't be due naturally
+    // Skip graduated / manually-known if interval is huge - they won't be due naturally
     if (e.isMastered) continue;
     if (e.nextDue && new Date(e.nextDue) <= now) due.push({ pid, entry: e, isNew: false });
   }
@@ -71,7 +71,7 @@ function renderSetup(container) {
   const newItems = getNewItems(newPerDay, dueItems);
 
   container.innerHTML = `
-    <h2>Chapter 3 — Review (SRS)</h2>
+    <h2>Chapter 3 - Review (SRS)</h2>
     <p>Spaced-repetition session using the SM-2 algorithm. Items reappear at intervals that grow as you grade them correctly and shrink when you miss.</p>
 
     <section class="srs-stats">
@@ -96,7 +96,7 @@ function renderSetup(container) {
     ${dueItems.length + newItems.length > 0 ? `
       <button id="srs-start" class="btn-primary">Start review session</button>
     ` : `
-      <p>No items due. Take a Test in Chapter 2 first — missed items enter the review queue automatically.</p>
+      <p>No items due. Take a Test in Chapter 2 first - missed items enter the review queue automatically.</p>
     `}
   `;
 
@@ -231,7 +231,7 @@ function renderFinished(container) {
         ${summary.map(s => `
           <li>
             <span lang="ja"><strong>${esc(s.label)}</strong></span>
-            <span class="muted small">grade ${s.grade}, next in ${s.interval}d (${s.nextDue ? new Date(s.nextDue).toLocaleDateString() : '—'})</span>
+            <span class="muted small">grade ${s.grade}, next in ${s.interval}d (${s.nextDue ? new Date(s.nextDue).toLocaleDateString() : '-'})</span>
           </li>
         `).join('')}
       </ul>

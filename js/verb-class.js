@@ -52,7 +52,7 @@ const VERBS = [
   { v: 'しゃべる', g: 1, en: 'chatter / speak', except: true },
   { v: 'すべる', g: 1, en: 'slip / slide', except: true },
 
-  // Group 3 — only two
+  // Group 3 - only two
   { v: 'する', g: 3, en: 'do' },
   { v: 'くる', g: 3, en: 'come' },
   { v: 'べんきょうする', g: 3, en: 'study' },
@@ -76,30 +76,30 @@ function renderTeach(container) {
   const lastAttempt = storage.get('verb-class-last-attempt', null);
 
   container.innerHTML = `
-    <h2>Verb groups — classification</h2>
+    <h2>Verb groups - classification</h2>
     <p>Japanese verbs split into three groups. Knowing which group a verb belongs to is the prerequisite for every conjugation (ます-form, て-form, plain-past, ない-form, etc.). Classification first, conjugation second.</p>
 
     <section class="verb-group-section">
-      <h3>Group 1 — 五段 (u-verbs)</h3>
+      <h3>Group 1 - 五段 (u-verbs)</h3>
       <p>Dictionary form ends in any of <code>-う -つ -る -く -ぐ -す -ぬ -ぶ -む</code>. Conjugation shifts the final vowel: のむ → のみます → のんで → のんだ.</p>
       <p class="verb-list" lang="ja">のむ・かう・いく・よむ・はなす・かく・あう・まつ・とる・のる</p>
     </section>
 
     <section class="verb-group-section">
-      <h3>Group 2 — 一段 (ru-verbs)</h3>
+      <h3>Group 2 - 一段 (ru-verbs)</h3>
       <p>Dictionary form ends in <code>-iる</code> or <code>-eる</code>. Conjugation simply drops る: たべる → たべます → たべて → たべた.</p>
       <p class="verb-list" lang="ja">たべる・みる・おきる・ねる・おしえる・あける・しめる・できる・わすれる</p>
     </section>
 
     <section class="verb-group-section">
-      <h3>Group 3 — Irregulars</h3>
+      <h3>Group 3 - Irregulars</h3>
       <p>Just two: する (do) and くる (come). Anything ending in <code>～する</code> like べんきょうする conjugates like する.</p>
       <p class="verb-list" lang="ja">する・くる・べんきょうする・りょこうする</p>
     </section>
 
     <section class="verb-group-section warning-section">
       <h3>⚠ The famous Group-1 exceptions</h3>
-      <p>These verbs end in <code>-iる</code> or <code>-eる</code> and LOOK like Group 2, but they are actually <strong>Group 1</strong>. Memorize them — the drill below over-samples them deliberately.</p>
+      <p>These verbs end in <code>-iる</code> or <code>-eる</code> and LOOK like Group 2, but they are actually <strong>Group 1</strong>. Memorize them - the drill below over-samples them deliberately.</p>
       <p class="verb-list" lang="ja">かえる (return)・はいる (enter)・はしる (run)・しる (know)・きる (cut)・いる (need)・しゃべる (chatter)・すべる (slip)</p>
     </section>
 
@@ -174,7 +174,7 @@ function renderDrill(container) {
         ${feedback ? `
           <div class="drill-feedback ${feedback.correct ? 'correct' : 'incorrect'}">
             <div class="feedback-headline">${feedback.correct ? '✓ Correct' : '✗ Not quite'}</div>
-            <p>${esc(item.v)} is <strong>Group ${item.g}</strong>${item.except ? ' (a famous Group-1 exception — looks like Group 2 but isn\'t)' : ''}.</p>
+            <p>${esc(item.v)} is <strong>Group ${item.g}</strong>${item.except ? ' (a famous Group-1 exception - looks like Group 2 but isn\'t)' : ''}.</p>
             <button id="vc-next" class="btn-primary">${drillState.idx === total - 1 ? 'Finish' : 'Next'}</button>
           </div>
         ` : ''}
@@ -223,11 +223,11 @@ function renderFinished(container) {
         <div class="stat-card mastered"><div class="stat-num">${score}/${total}</div><div class="stat-label">Score</div></div>
         <div class="stat-card ${passed ? 'mastered' : 'weak'}"><div class="stat-num">${pct}%</div><div class="stat-label">${passed ? 'PASSED' : 'Try again'}</div></div>
       </section>
-      ${passed ? '<p>You can confidently classify N5 verbs. Time to drill conjugation (te-form, ます-form, etc.).</p>' : `<p>Aim for ${Math.round(PASS_THRESHOLD*100)}%. The Group-1 exceptions are usually the trip-up — re-read the warning section above.</p>`}
+      ${passed ? '<p>You can confidently classify N5 verbs. Time to drill conjugation (te-form, ます-form, etc.).</p>' : `<p>Aim for ${Math.round(PASS_THRESHOLD*100)}%. The Group-1 exceptions are usually the trip-up - re-read the warning section above.</p>`}
       ${drillState.misses.length > 0 ? `
         <h3>Missed</h3>
         <ul class="vc-misses">
-          ${drillState.misses.map(m => `<li><span lang="ja">${esc(m.v)}</span> <span class="muted small">(${esc(m.en)}) — Group ${m.g}${m.except ? ' [exception]' : ''}</span></li>`).join('')}
+          ${drillState.misses.map(m => `<li><span lang="ja">${esc(m.v)}</span> <span class="muted small">(${esc(m.en)}) - Group ${m.g}${m.except ? ' [exception]' : ''}</span></li>`).join('')}
         </ul>
       ` : ''}
       <div class="test-nav">

@@ -94,7 +94,7 @@ export function renderJa(text, explicitFurigana = []) {
       if (toggleOn && inScope.has(ch) && readings[ch]?.primary) {
         html += `<ruby>${escapeHtml(ch)}<rt>${escapeHtml(readings[ch].primary)}</rt></ruby>`;
       } else if (!inScope.has(ch)) {
-        // Out-of-scope kanji without explicit furigana — at least flag it.
+        // Out-of-scope kanji without explicit furigana - at least flag it.
         // The author should provide explicitFurigana; this is a fallback.
         html += `<ruby>${escapeHtml(ch)}<rt>?</rt></ruby>`;
       } else {

@@ -1,4 +1,4 @@
-// Chapter 2 — Test. Auto-graded MCQ + dropdown + sentence_order + text_input.
+// Chapter 2 - Test. Auto-graded MCQ + dropdown + sentence_order + text_input.
 // Per spec §5.3, §5.4, §6.2, §6.6 + Brief §2.10.
 import { renderJa } from './furigana.js';
 import { matchesAnswer, normalizeAnswer } from './normalize.js';
@@ -42,7 +42,7 @@ async function renderSetup(container) {
   const lastLen = settings.lastTestLength || 20;
 
   container.innerHTML = `
-    <h2>Chapter 2 — Test</h2>
+    <h2>Chapter 2 - Test</h2>
     <p>Configure and start a new auto-graded test. The Submit button stays disabled until every question has an answer.</p>
     <div class="test-setup">
       <label class="length-picker">
@@ -375,7 +375,7 @@ async function renderResults(container) {
         <h3>Grammar Gap List</h3>
         ${gapItems
           ? `<p>Patterns flagged as weak by your rolling history (≥ 50% error AND ≥ 2 attempts):</p><ul>${gapItems}</ul>`
-          : `<p>No weak patterns yet. Keep practicing — patterns are flagged after 2+ attempts with ≥ 50% error.</p>`}
+          : `<p>No weak patterns yet. Keep practicing - patterns are flagged after 2+ attempts with ≥ 50% error.</p>`}
       </section>
 
       <div class="test-nav">
@@ -431,7 +431,7 @@ function formatAnswer(q, ans) {
   if (q.type === 'sentence_order' && Array.isArray(ans)) {
     return renderJa(ans.join(' '));
   }
-  return renderJa(String(ans ?? '—'));
+  return renderJa(String(ans ?? '-'));
 }
 
 function computeGapList(responses) {

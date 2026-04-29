@@ -47,7 +47,7 @@ async function renderSetup(container) {
       <h2>Drill</h2>
       <div class="placeholder">
         <p><strong>No patterns due right now.</strong></p>
-        <p>Patterns enter Drill the moment you miss them in a Test or Diagnostic. Once in Drill, they reappear at <strong>1d / 3d / 7d / 14d</strong> intervals — graduate after 4 consecutive correct answers.</p>
+        <p>Patterns enter Drill the moment you miss them in a Test or Diagnostic. Once in Drill, they reappear at <strong>1d / 3d / 7d / 14d</strong> intervals - graduate after 4 consecutive correct answers.</p>
         <p class="muted">Queue: <strong>${totalInQueue}</strong> pending · <strong>${graduatedCount}</strong> graduated</p>
         <p style="margin-top:24px"><a href="#/test" class="btn-primary" style="text-decoration:none">Take a Test →</a></p>
       </div>
@@ -326,7 +326,7 @@ function renderFinished(container) {
   const patternRows = [...byPattern.entries()].map(([pid, counts]) => {
     const p = grammarIndex.get(pid);
     const entry = storage.getPatternEntry(pid);
-    const box = entry?.srsBox === 'graduated' ? '★ graduated' : (entry?.srsBox || '—');
+    const box = entry?.srsBox === 'graduated' ? '★ graduated' : (entry?.srsBox || '-');
     return `
       <li>
         <span class="pat-name">${esc(p?.pattern || pid)}</span>

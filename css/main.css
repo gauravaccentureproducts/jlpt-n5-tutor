@@ -1,4 +1,4 @@
-/* JLPT N5 Grammar Tutor — minimal styling */
+/* JLPT N5 Grammar Tutor - minimal styling */
 :root {
   --c-primary: #14452a;
   --c-primary-light: #1a5c38;
@@ -359,7 +359,7 @@ button {
 }
 button:disabled { cursor: not-allowed; opacity: 0.5; }
 
-/* Test — Setup */
+/* Test - Setup */
 .test-setup {
   background: var(--c-surface);
   border: 1px solid var(--c-border);
@@ -385,7 +385,7 @@ button:disabled { cursor: not-allowed; opacity: 0.5; }
   color: var(--c-muted);
 }
 
-/* Test — Attempting */
+/* Test - Attempting */
 .test-attempting { display: flex; flex-direction: column; gap: 20px; }
 .test-progress { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r); padding: 14px 18px; }
 .progress-meta { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 8px; }
@@ -467,7 +467,7 @@ button:disabled { cursor: not-allowed; opacity: 0.5; }
   color: white;
 }
 
-/* Test — Results */
+/* Test - Results */
 .test-results { display: flex; flex-direction: column; gap: 24px; }
 .score-summary {
   background: var(--c-surface);
@@ -1209,7 +1209,7 @@ button:disabled { cursor: not-allowed; opacity: 0.5; }
 }
 .te-rules-table th { background: var(--c-bg); }
 
-/* Accessibility — Skip-to-content + universal focus ring */
+/* Accessibility - Skip-to-content + universal focus ring */
 .skip-link {
   position: absolute;
   top: -40px;

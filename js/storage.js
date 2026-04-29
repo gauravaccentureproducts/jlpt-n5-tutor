@@ -1,4 +1,4 @@
-// LocalStorage adapter — namespaced per spec FR-P4.
+// LocalStorage adapter - namespaced per spec FR-P4.
 const NS = 'jlpt-n5-tutor:';
 
 export function get(key, fallback = null) {
@@ -72,7 +72,7 @@ const FRESH_PATTERN_ENTRY = {
   srsBox: null,         // null | '1d' | '3d' | '7d' | '14d' | 'graduated'
   nextDue: null,        // ISO date string when this pattern next appears in Drill
   // SM-2 state (Brief §2.11)
-  easeFactor: 2.5,      // EF — adjusts up/down with each grade
+  easeFactor: 2.5,      // EF - adjusts up/down with each grade
   interval: 0,          // days until next review
   reps: 0,              // consecutive correct streak (resets on lapse)
   lapses: 0,            // total times the user has forgotten this item
@@ -117,7 +117,7 @@ function updatePatternEntry(entry, isCorrect, nowIso, source = 'test') {
     // Recompute isMastered now that isManuallyKnown is false.
     e.isMastered = e.consecutiveCorrect >= 4;
   } else if (source === 'drill' && e.srsBox && e.srsBox !== 'graduated') {
-    // Correct answer in DRILL only — advance the box.
+    // Correct answer in DRILL only - advance the box.
     if (e.consecutiveCorrect >= 4 || e.srsBox === '14d') {
       e.srsBox = 'graduated';
       e.nextDue = null;
@@ -226,7 +226,7 @@ export function getPatternEntry(id) {
 //   Again → q=1   (forgotten, lapse)
 //   Hard  → q=3   (correct but difficult)
 //   Good  → q=4   (correct, normal)
-//   Easy  → q=5   (correct, easy — bigger interval bump)
+//   Easy  → q=5   (correct, easy - bigger interval bump)
 //
 // On q < 3: reps reset, interval back to 1 day, lapses++.
 // On q ≥ 3: reps++; interval = 1, 6, or prev*EF depending on rep count.

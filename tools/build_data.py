@@ -4,8 +4,8 @@ Run from the repo root:
     python tools/build_data.py
 
 Generates:
-    data/n5_kanji_whitelist.json   — list of N5-scope kanji characters
-    data/n5_vocab_whitelist.json   — list of N5-scope vocabulary tokens
+    data/n5_kanji_whitelist.json   - list of N5-scope kanji characters
+    data/n5_vocab_whitelist.json   - list of N5-scope vocabulary tokens
 """
 import json
 import re
@@ -38,7 +38,7 @@ def extract_kanji_readings(md_path: Path) -> dict[str, dict]:
 
     Returns: { kanji: { 'on': [hiragana...], 'kun': [hiragana...], 'primary': str } }
     Primary picks the first kun-yomi (without okurigana), falls back to first on-yomi.
-    Note: this is a single representative reading — real Japanese reading is
+    Note: this is a single representative reading - real Japanese reading is
     context-dependent. The renderer applies this best-effort when the user's
     'Show furigana on N5 kanji' toggle is ON.
     """
@@ -59,7 +59,7 @@ def extract_kanji_readings(md_path: Path) -> dict[str, dict]:
         if on_m:
             raws = [r.strip() for r in on_m.group(1).split(",")]
             entries[current]["on"] = [
-                kata_to_hira(r) for r in raws if r and r != "—"
+                kata_to_hira(r) for r in raws if r and r != "-"
             ]
             continue
         kun_m = re.match(r"^\s*-\s*Kun\s*:\s*(.+)$", line)
@@ -67,7 +67,7 @@ def extract_kanji_readings(md_path: Path) -> dict[str, dict]:
             raws = [r.strip() for r in kun_m.group(1).split(",")]
             cleaned = []
             for r in raws:
-                if not r or r == "—":
+                if not r or r == "-":
                     continue
                 # Strip okurigana parens: ひと(つ) -> ひと
                 core = re.sub(r"\(.*?\)", "", r).strip()
@@ -86,11 +86,11 @@ def extract_kanji_readings(md_path: Path) -> dict[str, dict]:
 
 
 def extract_vocab(md_path: Path) -> list[str]:
-    """Pull vocab tokens from bullet entries like '- 学生 (がくせい) — student'."""
+    """Pull vocab tokens from bullet entries like '- 学生 (がくせい) - student'."""
     text = md_path.read_text(encoding="utf-8")
     vocab = set()
     for line in text.splitlines():
-        m = re.match(r"^\s*-\s+([^\s\(—]+)", line)
+        m = re.match(r"^\s*-\s+([^\s\(-]+)", line)
         if not m:
             continue
         tok = m.group(1).strip()

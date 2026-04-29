@@ -5,13 +5,13 @@ Exhaustive list of JLPT N5 kanji. For each kanji: character, On'yomi (in カタ�
 Notation:
 - **On'yomi** is shown in katakana (e.g., イチ).
 - **Kun'yomi** is shown in hiragana (e.g., ひと(つ)). Okurigana shown in parentheses.
-- A dash (—) means the reading is not commonly used at N5.
+- A dash (-) means the reading is not commonly used at N5.
 
 ## Tier Legend
 
-- **[Core]** — universally accepted N5 kanji. These appear in virtually every N5 prep textbook (Minna, Genki, Try!) and are confidently tested. Untagged kanji default to Core.
-- **[Ext]** — *Extended / borderline*. These are listed by some N5 sources but are commonly placed in N4 by others. Recognize the shape and the most common reading; do not over-prioritize.
-- **Pedagogical scope rule** — meanings shown are limited to the senses an N5 learner needs. Advanced senses (e.g., literary or technical readings) are intentionally omitted.
+- **[Core]** - universally accepted N5 kanji. These appear in virtually every N5 prep textbook (Minna, Genki, Try!) and are confidently tested. Untagged kanji default to Core.
+- **[Ext]** - *Extended / borderline*. These are listed by some N5 sources but are commonly placed in N4 by others. Recognize the shape and the most common reading; do not over-prioritize.
+- **Pedagogical scope rule** - meanings shown are limited to the senses an N5 learner needs. Advanced senses (e.g., literary or technical readings) are intentionally omitted.
 
 ---
 
@@ -59,7 +59,7 @@ Notation:
   - Meaning: ten
 - **百**
   - On: ヒャク
-  - Kun: —
+  - Kun: -
   - Meaning: hundred
 - **千**
   - On: セン
@@ -67,7 +67,7 @@ Notation:
   - Meaning: thousand
 - **万**
   - On: マン, バン
-  - Kun: —
+  - Kun: -
   - Meaning: ten thousand
 - **円**
   - On: エン
@@ -108,7 +108,7 @@ Notation:
   - Meaning: earth, soil, Saturday
 - **曜**
   - On: ヨウ
-  - Kun: —
+  - Kun: -
   - Meaning: weekday
 - **年**
   - On: ネン
@@ -132,15 +132,15 @@ Notation:
   - Meaning: now
 - **毎**
   - On: マイ
-  - Kun: —
+  - Kun: -
   - Meaning: every
 - **週**
   - On: シュウ
-  - Kun: —
+  - Kun: -
   - Meaning: week
 - **午**
   - On: ゴ
-  - Kun: —
+  - Kun: -
   - Meaning: noon
 
 ---
@@ -198,7 +198,7 @@ Notation:
   - Meaning: study, learning
 - **校**
   - On: コウ
-  - Kun: —
+  - Kun: -
   - Meaning: school
 - **本**
   - On: ホン
@@ -218,11 +218,11 @@ Notation:
   - Meaning: meeting, association
 - **社** **[Ext]**
   - On: シャ
-  - Kun: —
+  - Kun: -
   - Meaning: company (primary N5 use: in 会社)
 - **員** **[Ext]**
   - On: イン
-  - Kun: —
+  - Kun: -
   - Meaning: member, staff (primary N5 use: in 会社員 / 駅員 / 店員)
 
 ---
@@ -316,7 +316,7 @@ Notation:
   - Meaning: heaven, sky
 - **気**
   - On: キ, ケ
-  - Kun: —
+  - Kun: -
   - Meaning: spirit, mood, air
 - **花**
   - On: カ
@@ -333,7 +333,7 @@ Notation:
 
 - **電**
   - On: デン
-  - Kun: —
+  - Kun: -
   - Meaning: electricity
 - **車**
   - On: シャ
@@ -349,7 +349,7 @@ Notation:
   - Meaning: shop, store
 - **駅**
   - On: エキ
-  - Kun: —
+  - Kun: -
   - Meaning: station
 
 ---
@@ -456,11 +456,11 @@ Notation:
   - Meaning: name
 - **番**
   - On: バン
-  - Kun: —
+  - Kun: -
   - Meaning: number, turn (primary N5 use: in 一番 / 電話番号)
 - **号** **[Ext]**
   - On: ゴウ
-  - Kun: —
+  - Kun: -
   - Meaning: number (primary N5 use: in 電話番号 / 番号)
 
 ---
@@ -468,6 +468,6 @@ Notation:
 ## Self-Reference
 
 - **私** **[Ext]**
-  - On: —
+  - On: -
   - Kun: わたし
-  - Meaning: I, me (often written in hiragana at N5 level — listed for recognition)
+  - Meaning: I, me (often written in hiragana at N5 level - listed for recognition)

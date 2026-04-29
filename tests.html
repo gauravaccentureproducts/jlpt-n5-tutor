@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>JLPT N5 Tutor — Tests</title>
+  <title>JLPT N5 Tutor - Tests</title>
   <style>
     body { font-family: -apple-system, "Segoe UI", sans-serif; margin: 24px; max-width: 900px; }
     h1 { color: #14452a; }
@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  <h1>JLPT N5 Tutor — Test Suite</h1>
+  <h1>JLPT N5 Tutor - Test Suite</h1>
   <p>Browser-runnable tests for storage / SRS / furigana / grading. No toolchain.</p>
   <div id="results"></div>
   <div id="summary" class="summary"></div>
@@ -47,7 +47,7 @@
         currentSuite.lines.push(`<div class="test pass">✓ ${name}</div>`);
       } else {
         currentSuite.fail++;
-        currentSuite.lines.push(`<div class="test fail">✗ ${name}${detail ? ` — ${detail}` : ''}</div>`);
+        currentSuite.lines.push(`<div class="test fail">✗ ${name}${detail ? ` - ${detail}` : ''}</div>`);
       }
     }
 
@@ -197,7 +197,7 @@
       await new Promise(r => setTimeout(r, 100));
       // Use a kanji NOT in N5 (椅 chair)
       const out = renderJa('椅子');
-      // Should fall back to ruby with '?' OR be left alone — current impl uses '?' fallback
+      // Should fall back to ruby with '?' OR be left alone - current impl uses '?' fallback
       assert('out-of-scope kanji handled', out.includes('<ruby>') || out === '椅子');
     });
 
@@ -226,7 +226,7 @@
     setTimeout(() => {
       const total = totalPass + totalFail;
       summary.className = 'summary ' + (totalFail === 0 ? 'ok' : 'bad');
-      summary.textContent = `${totalPass} / ${total} passing${totalFail > 0 ? ` — ${totalFail} FAILED` : ' — all green'}`;
+      summary.textContent = `${totalPass} / ${total} passing${totalFail > 0 ? ` - ${totalFail} FAILED` : ' - all green'}`;
       // Expose for preview eval
       window.__TEST_RESULTS__ = { pass: totalPass, fail: totalFail, total };
       // Cleanup

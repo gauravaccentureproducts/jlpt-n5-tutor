@@ -8,7 +8,7 @@
 //   t('drill.start')     → 'Start drill'
 //   t('greeting', {name}) → 'Hello, ${name}'
 //
-// Falls back to the key itself if missing — never throws.
+// Falls back to the key itself if missing - never throws.
 
 import * as storage from './storage.js';
 
@@ -71,7 +71,7 @@ export function t(key, vars = {}) {
   let cur = dict;
   for (const p of parts) {
     if (cur && typeof cur === 'object' && p in cur) cur = cur[p];
-    else return key; // missing — return key as fallback
+    else return key; // missing - return key as fallback
   }
   if (typeof cur !== 'string') return key;
   return cur.replace(/\$\{(\w+)\}/g, (_, name) => vars[name] ?? `\${${name}}`);

@@ -19,7 +19,7 @@ Open `index.html` in a modern browser (Chrome, Edge, Firefox).
 3. After the first build (~30 seconds), visit `https://<your-user>.github.io/<repo>/JLPT/N5/` (or wherever the app lives in your repo).
 4. Verify the four chapters load: Learn, Test, Drill, Summary. Take a quick test, miss something, and confirm the Drill badge updates and Chapter 3 / 4 reflect it.
 
-The app uses **only relative paths** and **hash routing** (`#/learn`, `#/test`, …), so it works without any path-rewriting on GitHub Pages — no `404.html` fallback, no `gh-pages` action, nothing else needed.
+The app uses **only relative paths** and **hash routing** (`#/learn`, `#/test`, …), so it works without any path-rewriting on GitHub Pages - no `404.html` fallback, no `gh-pages` action, nothing else needed.
 
 A **service worker** (`sw.js`) is included and pre-caches the app shell + all data files. After your first online visit, the app continues to work offline. Bump `CACHE_VERSION` in `sw.js` when shipping a release so old caches get evicted.
 
@@ -72,7 +72,7 @@ JLPT N5 Grammar Tutor – Functional Spec.docx     full functional spec
    python tools/build_spec.py
    ```
 
-The learner never runs any of these scripts — they are author-side only.
+The learner never runs any of these scripts - they are author-side only.
 
 ## Spec
 

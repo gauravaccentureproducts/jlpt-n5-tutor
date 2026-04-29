@@ -1,4 +1,4 @@
-// Chapter 4 — Summary. Mastered / weak / untested.
+// Chapter 4 - Summary. Mastered / weak / untested.
 import * as storage from './storage.js';
 
 let grammarCache = null;
@@ -24,7 +24,7 @@ export async function renderSummary(container) {
   const lastTest = results[results.length - 1];
 
   container.innerHTML = `
-    <h2>Chapter 4 — Summary</h2>
+    <h2>Chapter 4 - Summary</h2>
 
     <section class="summary-stats">
       <div class="stat-card mastered">
@@ -155,12 +155,12 @@ function renderRecommendation(masteredIds, weakIds, untestedIds, patternMap) {
     const untestedFoundations = untestedIds.filter(id => /^n5-0(0[1-9]|1[0-9])$/.test(id)).slice(0, slots);
     for (const pid of untestedFoundations) {
       const p = patternMap.get(pid);
-      if (p) recs.push({ pid, label: p.pattern, why: 'Foundational — not yet practiced' });
+      if (p) recs.push({ pid, label: p.pattern, why: 'Foundational - not yet practiced' });
     }
   }
   if (recs.length === 0) return '';
   const items = recs.map(r => `
-    <li><a href="#/learn/${encodeURIComponent(r.pid)}"><strong>${esc(r.label)}</strong></a> <span class="muted small">— ${esc(r.why)}</span></li>
+    <li><a href="#/learn/${encodeURIComponent(r.pid)}"><strong>${esc(r.label)}</strong></a> <span class="muted small">- ${esc(r.why)}</span></li>
   `).join('');
   return `
     <section class="recommendation">
@@ -206,7 +206,7 @@ function renderHeatmap(patterns, mastered, weak, seen) {
     const sCount = ps.filter(p => seen.has(p.id)).length;
 
     let state = 'untested';
-    let title = `${total} pattern${total === 1 ? '' : 's'} — none seen yet`;
+    let title = `${total} pattern${total === 1 ? '' : 's'} - none seen yet`;
     if (wCount > 0) {
       state = 'weak';
       title = `${wCount} weak / ${total} total. Review needed.`;
@@ -252,7 +252,7 @@ function listSection(title, ids, patternMap, emptyMsg) {
   }
   const items = ids.map(id => {
     const p = patternMap.get(id);
-    const label = p ? `${p.pattern} — ${p.meaning_en}` : id;
+    const label = p ? `${p.pattern} - ${p.meaning_en}` : id;
     return `<li><a href="#/learn/${encodeURIComponent(id)}">${esc(label)}</a></li>`;
   }).join('');
   return `<section class="pattern-section"><h3>${esc(title)} (${ids.length})</h3><ul>${items}</ul></section>`;
@@ -263,12 +263,12 @@ function suggestNextStep(mastered, weak, untested, totalTests) {
     return `<p>Take your first test in <a href="#/test">Chapter 2</a>. The system will identify weak patterns automatically and queue them for re-teaching.</p>`;
   }
   if (weak.length > 0) {
-    return `<p><strong>${weak.length}</strong> pattern(s) need practice. Open <a href="#/review">Chapter 3 — Review</a> to study them with form rules, common mistakes, and per-distractor explanations.</p>`;
+    return `<p><strong>${weak.length}</strong> pattern(s) need practice. Open <a href="#/review">Chapter 3 - Review</a> to study them with form rules, common mistakes, and per-distractor explanations.</p>`;
   }
   if (untested.length > 0) {
     return `<p>You haven't seen <strong>${untested.length}</strong> pattern(s) in any test. Take another test in <a href="#/test">Chapter 2</a> for broader coverage.</p>`;
   }
-  return `<p>Strong work — you've covered every authored pattern with no current weaknesses. Keep practicing to graduate them all to mastered.</p>`;
+  return `<p>Strong work - you've covered every authored pattern with no current weaknesses. Keep practicing to graduate them all to mastered.</p>`;
 }
 
 function formatDate(iso) {

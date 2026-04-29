@@ -108,7 +108,7 @@ def hr():
 # Title
 title_p = doc.add_paragraph()
 title_p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-title_run = title_p.add_run("Functional Specification — JLPT N5 Grammar Tutor & Test")
+title_run = title_p.add_run("Functional Specification - JLPT N5 Grammar Tutor & Test")
 title_run.font.size = Pt(20)
 title_run.bold = True
 title_run.font.color.rgb = RGBColor(0x14, 0x45, 0x2A)
@@ -126,22 +126,22 @@ hr()
 
 # ---------- Changelog ----------
 h1("0) Changelog from v1")
-bullet("**§4.2 Furigana default flipped to OFF on N5 kanji** — matches a late-N5 learner. Per-session toggle to flip ON when desired.")
-bullet("**§4.3 Lesson template expanded from 5 blocks to 7** — adds Form & Connection Rules and Common Mistakes / Contrasts blocks.")
-bullet("**§4.4 NEW Canonical pattern source** — locked to local file `KnowledgeBank/grammar_n5.md` (23 categories, exhaustive), not an external website.")
-bullet("**§4.5 NEW meaning_ja rule** — N5 kanji allowed; no out-of-scope kanji or vocab; no romaji anywhere.")
-bullet("**§4.6 NEW Example variety rule** — 4-6 examples for fundamentals with mandatory form variety (`affirmative` / `negative` / `question` / `past` / `dialogue`).")
-bullet("**§4.7 NEW N5 vocabulary whitelist** — content lint enforces scope using `KnowledgeBank/vocabulary_n5.md`.")
-bullet("**§4.8 NEW N5 kanji whitelist** — furigana rule and content lint enforce scope using `KnowledgeBank/kanji_n5.md`.")
-bullet("**§5.3 Submit button rule clarified** — visible-but-disabled with tooltip and remaining-count, not hidden.")
-bullet("**§5.7 NEW Diagnostic test** — optional 10-question placement check on first run.")
-bullet("**§5.8 NEW Drill mode (SRS-light)** — promoted from Phase 2 roadmap to Phase 1. Intervals 1d / 3d / 7d / 14d.")
-bullet("**§6.2 Test engine** — adds `sentence_order` (並べ替え) question type.")
+bullet("**§4.2 Furigana default flipped to OFF on N5 kanji** - matches a late-N5 learner. Per-session toggle to flip ON when desired.")
+bullet("**§4.3 Lesson template expanded from 5 blocks to 7** - adds Form & Connection Rules and Common Mistakes / Contrasts blocks.")
+bullet("**§4.4 NEW Canonical pattern source** - locked to local file `KnowledgeBank/grammar_n5.md` (23 categories, exhaustive), not an external website.")
+bullet("**§4.5 NEW meaning_ja rule** - N5 kanji allowed; no out-of-scope kanji or vocab; no romaji anywhere.")
+bullet("**§4.6 NEW Example variety rule** - 4-6 examples for fundamentals with mandatory form variety (`affirmative` / `negative` / `question` / `past` / `dialogue`).")
+bullet("**§4.7 NEW N5 vocabulary whitelist** - content lint enforces scope using `KnowledgeBank/vocabulary_n5.md`.")
+bullet("**§4.8 NEW N5 kanji whitelist** - furigana rule and content lint enforce scope using `KnowledgeBank/kanji_n5.md`.")
+bullet("**§5.3 Submit button rule clarified** - visible-but-disabled with tooltip and remaining-count, not hidden.")
+bullet("**§5.7 NEW Diagnostic test** - optional 10-question placement check on first run.")
+bullet("**§5.8 NEW Drill mode (SRS-light)** - promoted from Phase 2 roadmap to Phase 1. Intervals 1d / 3d / 7d / 14d.")
+bullet("**§6.2 Test engine** - adds `sentence_order` (並べ替え) question type.")
 bullet("**§6.5 NEW Per-distractor explanations** for high-confusion questions.")
-bullet("**§6.6 NEW Threshold-based weak pattern detection** — `errors/attempts ≥ 0.5 AND attempts ≥ 2` over rolling history, not single-test snapshot.")
-bullet("**§7.1 / §7.2 schemas extended** — pattern adds `category`, `order`, `form_rules`, `common_mistakes`; question adds `direction`, `distractor_explanations`, `high_confusion`, `sentence_order` shape.")
-bullet("**§8 Tech stack locked** — Vanilla HTML + CSS + JavaScript with ES modules. No build step. No npm. Open `index.html` to run.")
-bullet("**§9 Repo structure updated** — co-locates app with existing content files in `/JLPT/N5/`.")
+bullet("**§6.6 NEW Threshold-based weak pattern detection** - `errors/attempts ≥ 0.5 AND attempts ≥ 2` over rolling history, not single-test snapshot.")
+bullet("**§7.1 / §7.2 schemas extended** - pattern adds `category`, `order`, `form_rules`, `common_mistakes`; question adds `direction`, `distractor_explanations`, `high_confusion`, `sentence_order` shape.")
+bullet("**§8 Tech stack locked** - Vanilla HTML + CSS + JavaScript with ES modules. No build step. No npm. Open `index.html` to run.")
+bullet("**§9 Repo structure updated** - co-locates app with existing content files in `/JLPT/N5/`.")
 
 hr()
 
@@ -193,24 +193,24 @@ bullet("**No romaji anywhere** in lesson or test content. Force kana reading.")
 
 h2("4.2 Furigana Rules (Strict)")
 bullet("**Default: furigana OFF on N5-scope kanji.** This matches a late-N5 learner; the goal is reading practice, not crutches.")
-bullet("**Always furigana ON** for any kanji or word beyond N5 scope, on the specific word only — never the entire sentence.")
-bullet("**Per-session toggle:** \"Show furigana on N5 kanji\" — learner can flip ON for extra support; OFF is the default and persists in LocalStorage.")
+bullet("**Always furigana ON** for any kanji or word beyond N5 scope, on the specific word only - never the entire sentence.")
+bullet("**Per-session toggle:** \"Show furigana on N5 kanji\" - learner can flip ON for extra support; OFF is the default and persists in LocalStorage.")
 bullet("Furigana rendering must be a true ruby annotation (`<ruby><rt>`), not parenthetical. Must support per-character or per-word annotation, not whole-sentence.")
 
-h2("4.3 Lesson Template (Chapter 1) — 7 Blocks")
+h2("4.3 Lesson Template (Chapter 1) - 7 Blocks")
 p("For each grammar pattern, display in this exact order:")
-numbered("**Pattern name** — e.g., 〜です／〜ます")
-numbered("**Meaning (English)** — short gloss.")
-numbered("**Form & connection rules** — what does the pattern attach to (noun / い-adj / な-adj / verb-which-form)? Include a small conjugation table where applicable (affirmative / negative / past / past-negative / question).")
-numbered("**Explanation & usage (English)** — when to use it, register, nuance.")
-numbered("**Example sentences (4-6 for fundamentals; 2-3 for narrow patterns)** — must follow the form-variety rule (§4.6).")
-numbered("**Common mistakes / contrasts** — pairs like 「は vs が」, 「に vs で」, 「あります vs います」, 「上手 vs 得意」. At least one entry where applicable. Include a strikethrough wrong sentence with one-line \"why this is wrong\" where helpful.")
-numbered("**Meaning (Japanese, simple)** — N5 kanji allowed, no out-of-scope words, hiragana otherwise. Provides reading reinforcement.")
+numbered("**Pattern name** - e.g., 〜です／〜ます")
+numbered("**Meaning (English)** - short gloss.")
+numbered("**Form & connection rules** - what does the pattern attach to (noun / い-adj / な-adj / verb-which-form)? Include a small conjugation table where applicable (affirmative / negative / past / past-negative / question).")
+numbered("**Explanation & usage (English)** - when to use it, register, nuance.")
+numbered("**Example sentences (4-6 for fundamentals; 2-3 for narrow patterns)** - must follow the form-variety rule (§4.6).")
+numbered("**Common mistakes / contrasts** - pairs like 「は vs が」, 「に vs で」, 「あります vs います」, 「上手 vs 得意」. At least one entry where applicable. Include a strikethrough wrong sentence with one-line \"why this is wrong\" where helpful.")
+numbered("**Meaning (Japanese, simple)** - N5 kanji allowed, no out-of-scope words, hiragana otherwise. Provides reading reinforcement.")
 
 h2("4.4 Canonical Pattern Source")
-bullet("The canonical pattern coverage list is the local file **`KnowledgeBank/grammar_n5.md`** (in this directory) — 23 categories, exhaustive at N5 level.")
+bullet("The canonical pattern coverage list is the local file **`KnowledgeBank/grammar_n5.md`** (in this directory) - 23 categories, exhaustive at N5 level.")
 bullet("TOC ordering follows that file's 23-category structure: copula → particles → demonstratives → question words → verbs (ます-form, plain form) → te-form → adjectives → existence → comparison → desiderative → counters → time → conjunctions → giving/receiving → causation → nominalization → set patterns → frequency → polite phrases → other core patterns → honorifics.")
-bullet("Every pattern listed in `KnowledgeBank/grammar_n5.md` MUST have a matching entry in `/data/grammar.json`. A coverage-check script (`tools/check_coverage.py`) enforces this — fails commit if a pattern is missing.")
+bullet("Every pattern listed in `KnowledgeBank/grammar_n5.md` MUST have a matching entry in `/data/grammar.json`. A coverage-check script (`tools/check_coverage.py`) enforces this - fails commit if a pattern is missing.")
 bullet("Authoritative reference sources for content quality are documented in **`KnowledgeBank/sources.md`** (Genki, Minna no Nihongo, Try!, Makino & Tsutsui, Marugoto, Bunpro, etc.).")
 
 h2("4.5 meaning_ja Rule")
@@ -247,11 +247,11 @@ h2("5.1 Global Navigation")
 p("Primary navigation tabs (in this order):")
 bullet("**Learn** (Chapter 1)")
 bullet("**Test** (Chapter 2)")
-bullet("**Drill** (NEW — SRS-driven mini-sessions on weak patterns; shows count badge of items due today)")
+bullet("**Drill** (NEW - SRS-driven mini-sessions on weak patterns; shows count badge of items due today)")
 bullet("**Review Weak Areas** (Chapter 3)")
 bullet("**Summary** (Chapter 4)")
 
-h2("5.2 Chapter 1 — Learn")
+h2("5.2 Chapter 1 - Learn")
 bullet("TOC page lists all N5 grammar patterns grouped by category (per `KnowledgeBank/grammar_n5.md`'s 23 categories).")
 bullet("Each TOC entry shows pattern name + a small \"known / weak / untested\" badge derived from rolling history.")
 bullet("Clicking a pattern opens the 7-block detail view (§4.3).")
@@ -259,14 +259,14 @@ bullet("Provide Next / Previous pattern navigation within and across categories.
 bullet("Provide search/filter by keyword (pattern name, meaning, or category).")
 bullet("Provide a \"Mark as known\" checkbox per pattern (manual override; updates rolling history).")
 
-h2("5.3 Chapter 2 — Test")
+h2("5.3 Chapter 2 - Test")
 h3("Test Setup")
 bullet("Default test length: **20** questions. Selectable: 20 / 30 / 50.")
 bullet("First-time learner: a one-time prompt offers the Diagnostic Test (§5.7) before the first real test.")
 bullet("Question types (auto-gradable):")
 bullet("  Multiple choice (single correct).", level=1)
 bullet("  Fill-in-blank with dropdown (preferred for particles).", level=1)
-bullet("  Sentence ordering (並べ替え) — 4-5 word/phrase tiles, click to order.", level=1)
+bullet("  Sentence ordering (並べ替え) - 4-5 word/phrase tiles, click to order.", level=1)
 bullet("  Optional: strict short input (exact match with normalization rules).", level=1)
 bullet("Question sampling MUST balance across categories (no single-category dominance), unless test length < 8.")
 
@@ -309,19 +309,19 @@ bullet("Patterns flagged as weak by rolling-history threshold (§6.6): `errors/a
 bullet("Each item links to Chapter 3 (Review Weak Areas).")
 bullet("Each weak pattern is auto-queued into Drill at the 1-day interval.")
 
-h2("5.5 Chapter 3 — Review Weak Areas")
+h2("5.5 Chapter 3 - Review Weak Areas")
 p("For each weak grammar pattern, display:")
 bullet("Pattern name.")
 bullet("Meaning + explanation (English).")
 bullet("**Form & connection rules** + **common mistakes** (re-shown with extra emphasis).")
 bullet("Why the wrong answer was wrong (per-distractor explanations pulled from missed questions).")
-bullet("New examples (4-6 if fundamental, 2-3 otherwise) — must be DIFFERENT from Chapter 1 examples to avoid memorization-by-position.")
+bullet("New examples (4-6 if fundamental, 2-3 otherwise) - must be DIFFERENT from Chapter 1 examples to avoid memorization-by-position.")
 bullet("\"Drill these now\" button → opens an SRS Drill session focused on this pattern.")
 
-h2("5.6 Chapter 4 — Summary")
-bullet("**Mastered patterns** — seen ≥ 2 times AND error rate < 30% over rolling history (or manually marked known).")
-bullet("**Patterns needing more practice** — `errors/attempts ≥ 0.5 AND attempts ≥ 2`.")
-bullet("**Untested patterns** — seen 0-1 times → \"Take a test to assess.\"")
+h2("5.6 Chapter 4 - Summary")
+bullet("**Mastered patterns** - seen ≥ 2 times AND error rate < 30% over rolling history (or manually marked known).")
+bullet("**Patterns needing more practice** - `errors/attempts ≥ 0.5 AND attempts ≥ 2`.")
+bullet("**Untested patterns** - seen 0-1 times → \"Take a test to assess.\"")
 bullet("**Suggested next steps:** Drill due items / Re-attempt test on weak patterns / Take Diagnostic if not yet done.")
 bullet("Visual: a heatmap-style grid by category showing strength (green) / weak (red) / untested (gray).")
 
@@ -329,7 +329,7 @@ h2("5.7 NEW: Diagnostic Test (First Run)")
 bullet("Prompt on first visit (and re-runnable from Settings): \"Take a 10-question diagnostic to map your current strengths?\"")
 bullet("10 questions, sampled across the 23 categories of `KnowledgeBank/grammar_n5.md` with priority on the highest-frequency categories (copula, particles, verbs, adjectives, te-form, tai-form, counters, conjunctions, demonstratives, question words).")
 bullet("Results don't count toward score history but DO seed the initial weak-pattern list and Drill queue.")
-bullet("Skippable — learner can go straight to lessons or full test.")
+bullet("Skippable - learner can go straight to lessons or full test.")
 
 h2("5.8 NEW: Drill Mode (SRS-light)")
 bullet("Driven by LocalStorage: per-pattern SRS state.")
@@ -360,7 +360,7 @@ bullet("**FR-T3:** Compute score instantly on Submit.")
 bullet("**FR-T4:** Display results immediately after Submit (no reload).")
 bullet("**FR-T5:** Produce gap list using rolling threshold (§6.6), not single-test snapshot.")
 bullet("**FR-T6:** Support `sentence_order` question type with array-equality grading.")
-bullet("**FR-T7:** Sample test questions to balance across categories — no single category may exceed `ceil(N / 5)` questions in a test of length N (where N ≥ 8).")
+bullet("**FR-T7:** Sample test questions to balance across categories - no single category may exceed `ceil(N / 5)` questions in a test of length N (where N ≥ 8).")
 
 h2("6.3 Answer Normalization (if short input is used)")
 bullet("**FR-N1:** Trim whitespace; convert full-width ↔ half-width as appropriate.")
@@ -375,7 +375,7 @@ bullet("**FR-P4:** Use the LocalStorage key namespace `jlpt-n5-tutor:*` to avoid
 
 h2("6.5 NEW: Per-Distractor Explanations")
 bullet("**FR-D1:** For questions with `high_confusion: true`, every distractor MUST have an explanation in `distractor_explanations`.")
-bullet("**FR-D2:** Results screen shows the distractor explanation only for the choice the learner picked, not all distractors — to avoid information overload.")
+bullet("**FR-D2:** Results screen shows the distractor explanation only for the choice the learner picked, not all distractors - to avoid information overload.")
 bullet("**FR-D3:** Chapter 3 (Review Weak Areas) aggregates distractor explanations from all missed questions for the same pattern.")
 
 h2("6.6 NEW: Weak Pattern Detection (Threshold-Based)")
@@ -444,7 +444,7 @@ code_block('''{
   "correctAnswer": "に",
   "explanation_en": "会う takes に to mark the person you meet.",
   "distractor_explanations": {
-    "を": "を marks a direct object. 会う is intransitive — doesn't take を.",
+    "を": "を marks a direct object. 会う is intransitive - doesn't take を.",
     "で": "で marks location of action, not the person met.",
     "が": "が marks subject/new info, not the person met."
   },
@@ -509,33 +509,33 @@ code_block('''{
 # ---------- 8) System Architecture ----------
 h1("8) System Architecture (LOCKED)")
 
-h2("8.1 Tech Stack — Vanilla, No Build Step")
+h2("8.1 Tech Stack - Vanilla, No Build Step")
 bullet("**HTML + CSS + Vanilla JavaScript** only.")
 bullet("**No npm, no bundler, no toolchain.** Anyone with a modern browser can clone the repo, double-click `index.html`, and run.")
 bullet("GitHub Pages serves the same files as the local file system.")
-bullet("ES modules via `<script type=\"module\">` — modern browsers support imports natively.")
+bullet("ES modules via `<script type=\"module\">` - modern browsers support imports natively.")
 bullet("All paths relative.")
 bullet("Hash routing for SPA refresh safety: `/#/learn`, `/#/test`, `/#/drill`, `/#/review`, `/#/summary`.")
 
 h2("8.2 Why this stack")
-bullet("Zero install for the learner — just a browser.")
-bullet("Zero install for the content author — edit JSON / MD in any editor; refresh browser.")
+bullet("Zero install for the learner - just a browser.")
+bullet("Zero install for the content author - edit JSON / MD in any editor; refresh browser.")
 bullet("Stable across Chrome / Edge / Firefox versions; no breaking-change surface from build tools.")
 bullet("GitHub Pages compatible without any actions or workflows.")
-bullet("No external CDN dependencies — everything is in the repo (resilient on flaky networks).")
+bullet("No external CDN dependencies - everything is in the repo (resilient on flaky networks).")
 
 h2("8.3 Content Pipeline (One-Time per Edit)")
 bullet("Source-of-truth files: `KnowledgeBank/grammar_n5.md`, `KnowledgeBank/kanji_n5.md`, `KnowledgeBank/vocabulary_n5.md`, `KnowledgeBank/sources.md` (human-readable).")
 bullet("App-consumed files: `/data/grammar.json`, `/data/questions.json`, `/data/n5_kanji_whitelist.json`, `/data/n5_vocab_whitelist.json`.")
-bullet("`tools/build_data.py` — one-time conversion script (run by author after editing .md files). Generates JSON whitelists from kanji_n5.md and vocabulary_n5.md.")
-bullet("`tools/check_coverage.py` — verifies every pattern in grammar_n5.md has an entry in grammar.json.")
-bullet("`tools/lint_content.py` — flags non-N5 vocabulary or kanji in grammar.json / questions.json.")
+bullet("`tools/build_data.py` - one-time conversion script (run by author after editing .md files). Generates JSON whitelists from kanji_n5.md and vocabulary_n5.md.")
+bullet("`tools/check_coverage.py` - verifies every pattern in grammar_n5.md has an entry in grammar.json.")
+bullet("`tools/lint_content.py` - flags non-N5 vocabulary or kanji in grammar.json / questions.json.")
 bullet("These scripts are author-side only. The learner never runs Python.")
 
 # ---------- 9) Repo Structure ----------
 h1("9) Repository Structure")
 code_block('''/JLPT/N5/                        # repo root for this app
-  index.html                     # entry point — open this in browser
+  index.html                     # entry point - open this in browser
   /css/
     main.css
   /js/
@@ -554,9 +554,9 @@ code_block('''/JLPT/N5/                        # repo root for this app
     n5_kanji_whitelist.json      # generated from kanji_n5.md
     n5_vocab_whitelist.json      # generated from vocabulary_n5.md
   /tools/
-    build_data.py                # author tool — md to json whitelists
-    check_coverage.py            # author tool — pattern coverage check
-    lint_content.py              # author tool — N5 scope lint
+    build_data.py                # author tool - md to json whitelists
+    check_coverage.py            # author tool - pattern coverage check
+    lint_content.py              # author tool - N5 scope lint
   KnowledgeBank/grammar_n5.md                  # source-of-truth pattern catalog
   KnowledgeBank/kanji_n5.md                    # source-of-truth N5 kanji list
   KnowledgeBank/vocabulary_n5.md               # source-of-truth N5 vocab list
@@ -566,11 +566,11 @@ code_block('''/JLPT/N5/                        # repo root for this app
 
 # ---------- 10) Deployment ----------
 h1("10) Deployment Requirements (GitHub Pages)")
-bullet("**DR-1:** Static site — no build step required.")
+bullet("**DR-1:** Static site - no build step required.")
 bullet("**DR-2:** Deploy via `/docs` folder OR `gh-pages` branch (either works for vanilla).")
 bullet("**DR-3:** All paths relative.")
 bullet("**DR-4:** Hash routing for refresh safety.")
-bullet("**DR-5:** No external CDN dependencies — every asset self-hosted in repo.")
+bullet("**DR-5:** No external CDN dependencies - every asset self-hosted in repo.")
 bullet("**DR-6:** Service worker (optional Phase 1.5) for full offline capability after first load.")
 
 # ---------- 11) Non-Functional ----------
@@ -581,7 +581,7 @@ bullet("**Compatibility:** Latest Chrome / Edge / Firefox / Safari on PC. Mobile
 bullet("**Reliability:** No data loss without explicit \"Reset progress\" confirmation.")
 bullet("**Content integrity:** `tools/lint_content.py` flags non-N5 kanji or vocab before commit.")
 bullet("**Offline:** After first load, app continues to work offline (everything served from filesystem / LocalStorage).")
-bullet("**No telemetry / no tracking** — no analytics calls, no external resources.")
+bullet("**No telemetry / no tracking** - no analytics calls, no external resources.")
 
 # ---------- 12) Acceptance ----------
 h1("12) Validation & Acceptance Criteria (Must Pass)")
@@ -620,8 +620,8 @@ bullet("Heatmap-style category grid renders.")
 bullet("Suggested next step is actionable (links to the right chapter / mode).")
 
 h2("Content Integrity")
-bullet("`tools/check_coverage.py` exits 0 — every pattern in `KnowledgeBank/grammar_n5.md` has a matching `/data/grammar.json` entry.")
-bullet("`tools/lint_content.py` exits 0 — no out-of-scope kanji/vocab in JSON without explicit furigana annotation.")
+bullet("`tools/check_coverage.py` exits 0 - every pattern in `KnowledgeBank/grammar_n5.md` has a matching `/data/grammar.json` entry.")
+bullet("`tools/lint_content.py` exits 0 - no out-of-scope kanji/vocab in JSON without explicit furigana annotation.")
 
 # ---------- 13) Future ----------
 h1("13) Future Enhancements (Phase 2+)")
@@ -637,13 +637,13 @@ bullet("Listening practice (out of Phase 1 scope).")
 # ---------- 14) Implementation Notes ----------
 h1("14) Implementation Notes (Developer Guidance)")
 bullet("Prefer dropdown fill-in-blank over free text to avoid ambiguous grading.")
-bullet("Sentence-ordering tiles must be word/phrase chunks, NOT individual particles. Don't make the learner rearrange `わ・た・し・は` — that's grading kana, not grammar.")
+bullet("Sentence-ordering tiles must be word/phrase chunks, NOT individual particles. Don't make the learner rearrange `わ・た・し・は` - that's grading kana, not grammar.")
 bullet("Every question MUST be tagged with exactly one `grammarPatternId` to support gap analysis.")
 bullet("Mark `high_confusion: true` only when ≥ 2 distractors are pedagogically defensible (worth explaining); otherwise leave `distractor_explanations` empty.")
 bullet("LocalStorage key namespace: `jlpt-n5-tutor:*`.")
 bullet("Furigana renderer: use `<ruby>...<rt>...</rt></ruby>` for true semantic ruby, not parentheses.")
 bullet("All Japanese strings in code/data must be UTF-8 (no Shift-JIS / cp932).")
-bullet("When generating Drill sessions, prefer questions the learner has missed before — but if none exist for a due pattern, sample any question for that pattern.")
+bullet("When generating Drill sessions, prefer questions the learner has missed before - but if none exist for a due pattern, sample any question for that pattern.")
 bullet("Keep `js/` modules small (one chapter / mode per file). Aim < 300 LOC per file before splitting.")
 
 doc.save(OUT_PATH)

@@ -44,11 +44,11 @@ function renderSetup(container) {
   container.innerHTML = `
     <h2>Diagnostic Test</h2>
     <div class="diagnostic-setup">
-      <p><strong>${DEFAULT_LENGTH} questions</strong> sampled across the highest-frequency N5 categories. The diagnostic gives you a quick map of which patterns to practice — without affecting your test score history.</p>
+      <p><strong>${DEFAULT_LENGTH} questions</strong> sampled across the highest-frequency N5 categories. The diagnostic gives you a quick map of which patterns to practice - without affecting your test score history.</p>
       <ul>
         <li>Results don't count toward "Tests taken".</li>
         <li>Missed patterns enter the Drill queue immediately.</li>
-        <li>Skippable any time — you can re-take it later from the Summary tab.</li>
+        <li>Skippable any time - you can re-take it later from the Summary tab.</li>
       </ul>
       ${completed ? `<p class="muted">You already took the diagnostic on ${formatDate(settings.lastDiagnosticDate)}. Re-taking it will replace any current SRS state for sampled patterns.</p>` : ''}
       <div class="diagnostic-actions">
@@ -130,7 +130,7 @@ function renderAttempting(container) {
 
   container.innerHTML = `
     <div class="test-attempting">
-      <div class="diagnostic-banner">Diagnostic — results seed your weak list but don't count toward score history</div>
+      <div class="diagnostic-banner">Diagnostic - results seed your weak list but don't count toward score history</div>
       <div class="test-progress">
         <div class="progress-meta">
           <span>Question <strong>${session.currentIdx + 1}</strong> of <strong>${total}</strong></span>
@@ -244,7 +244,7 @@ function finish(container) {
 
   // Diagnostic responses go through the same SRS / weak-detection pipeline as
   // tests (so missed patterns enter Drill), but do NOT add to the test results
-  // log. Per spec §5.7 — "results don't count toward score history".
+  // log. Per spec §5.7 - "results don't count toward score history".
   storage.recordTestResponses(responses);
   // Mark settings
   storage.setSettings({
@@ -267,7 +267,7 @@ function renderResults(container) {
 
   const weakItems = weakIds.map(id => {
     const p = grammarIndex.get(id);
-    return `<li><a href="#/learn/${encodeURIComponent(id)}">${esc(p?.pattern || id)}</a> — ${esc(p?.meaning_en || '')}</li>`;
+    return `<li><a href="#/learn/${encodeURIComponent(id)}">${esc(p?.pattern || id)}</a> - ${esc(p?.meaning_en || '')}</li>`;
   }).join('');
 
   const categoriesCovered = new Set();
@@ -277,7 +277,7 @@ function renderResults(container) {
   }
 
   container.innerHTML = `
-    <h2>Diagnostic — Results</h2>
+    <h2>Diagnostic - Results</h2>
     <div class="diagnostic-banner">These results don't count toward "Tests taken". Missed patterns are queued in Drill.</div>
 
     <section class="score-summary">
@@ -300,7 +300,7 @@ function renderResults(container) {
         </div>
       </section>
     ` : `
-      <section class="gap-list"><p>No misses — strong baseline. Take the full Test in Chapter 2 to dig deeper.</p></section>
+      <section class="gap-list"><p>No misses - strong baseline. Take the full Test in Chapter 2 to dig deeper.</p></section>
     `}
 
     <div class="test-nav">

@@ -1,4 +1,4 @@
-// Chapter 1 — Learn. TOC + 7-block pattern detail.
+// Chapter 1 - Learn. TOC + 7-block pattern detail.
 import { renderJa } from './furigana.js';
 import * as storage from './storage.js';
 
@@ -35,7 +35,7 @@ function renderTOC(container, data) {
   const showDiagBanner = !settings.diagnosticCompleted;
 
   let html = `
-    <h2>Chapter 1 — Learn</h2>
+    <h2>Chapter 1 - Learn</h2>
     <p>Pick a grammar pattern to study. Patterns are grouped into ${sorted.length} ${sorted.length === 1 ? 'category' : 'categories'} per the N5 catalog.</p>
     ${showDiagBanner ? `
       <div class="diag-cta">
@@ -62,7 +62,7 @@ function renderTOC(container, data) {
       html += `
         <li>
           <a href="#/learn/${encodeURIComponent(p.id)}">${esc(p.pattern)}</a>
-          <span class="gloss">— ${esc(p.meaning_en)}</span>
+          <span class="gloss">- ${esc(p.meaning_en)}</span>
         </li>
       `;
     }

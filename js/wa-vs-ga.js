@@ -6,9 +6,9 @@ import { matchesAnswer } from './normalize.js';
 const PAIRS = [
   {
     use: 'Topic vs new info',
-    explanation_en: 'は marks a TOPIC the listener already knows. が marks NEW info — often as the answer to a question.',
+    explanation_en: 'は marks a TOPIC the listener already knows. が marks NEW info - often as the answer to a question.',
     a: { sentence: 'わたし___ がくせいです。', particle: 'は', context: 'Self-introduction; the listener doesn\'t already know who you are, but in self-intro context the speaker is implicitly the topic.' },
-    b: { sentence: 'だれ___ がくせいですか。', particle: 'が', context: 'Who is the student? — question word + が.' },
+    b: { sentence: 'だれ___ がくせいですか。', particle: 'が', context: 'Who is the student? - question word + が.' },
   },
   {
     use: 'Stative predicate',
@@ -20,13 +20,13 @@ const PAIRS = [
     use: 'Existence',
     explanation_en: 'There-is sentences put the EXISTING THING with が and the location with に.',
     a: { sentence: 'へやに ねこ___ います。', particle: 'が', context: 'The cat (new info) is in the room.' },
-    b: { sentence: 'ねこ___ どこに いますか。', particle: 'は', context: 'As for the cat (already-known topic), where is it? Different framing — topic-first.' },
+    b: { sentence: 'ねこ___ どこに いますか。', particle: 'は', context: 'As for the cat (already-known topic), where is it? Different framing - topic-first.' },
   },
   {
     use: 'Neutral description',
-    explanation_en: 'Pure description of what one observes uses が. (雨が ふっている = "It\'s raining" — no topic implied.)',
-    a: { sentence: 'あめ___ ふっています。', particle: 'が', context: 'Neutral description — there\'s rain falling.' },
-    b: { sentence: 'きょう___ あついです。', particle: 'は', context: '"As for today, it\'s hot" — topical comment about a known frame (today).' },
+    explanation_en: 'Pure description of what one observes uses が. (雨が ふっている = "It\'s raining" - no topic implied.)',
+    a: { sentence: 'あめ___ ふっています。', particle: 'が', context: 'Neutral description - there\'s rain falling.' },
+    b: { sentence: 'きょう___ あついです。', particle: 'は', context: '"As for today, it\'s hot" - topical comment about a known frame (today).' },
   },
   {
     use: 'XはYが (X has Y)',
@@ -40,7 +40,7 @@ let drillState = null;
 
 export async function renderWaGa(container) {
   container.innerHTML = `
-    <h2>は vs が — five uses</h2>
+    <h2>は vs が - five uses</h2>
     <p>The は / が distinction is the single most-tested grammar point at N5. Five core uses are below, each with a minimal pair.</p>
 
     ${renderUses()}
@@ -81,7 +81,7 @@ function renderDrillSection() {
     return `
       <section class="waga-drill">
         <h3>Minimal-pair drill</h3>
-        <p>Type the missing particle (は or が) for each blank, then click Check. Both translations are shown after — focus on the meaning difference.</p>
+        <p>Type the missing particle (は or が) for each blank, then click Check. Both translations are shown after - focus on the meaning difference.</p>
         <button id="waga-start" class="btn-primary">Start drill</button>
       </section>
     `;

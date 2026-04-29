@@ -75,7 +75,7 @@ function renderTeach(container) {
         <tbody>
           ${Object.entries(RULES).map(([rule, verbs]) => {
             const acc = accuracy[rule];
-            const accStr = acc ? `${acc.correct}/${acc.attempts} (${Math.round(acc.correct/acc.attempts*100)}%)` : '—';
+            const accStr = acc ? `${acc.correct}/${acc.attempts} (${Math.round(acc.correct/acc.attempts*100)}%)` : '-';
             const ex = verbs[0];
             return `<tr><td>${esc(rule)}</td><td lang="ja">${esc(ex.v)} → ${esc(ex.te)}</td><td>${accStr}</td></tr>`;
           }).join('')}

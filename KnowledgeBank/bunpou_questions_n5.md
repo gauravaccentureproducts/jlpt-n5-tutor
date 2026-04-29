@@ -692,43 +692,15 @@
 
 ### Q61
 
-A | ★ | C | D
-わたし は ___ ___ ___ ___ です。
-Elements:
-1. の
-2. たなか
-3. ともだち
-4. アメリカ人
-
-Correct ordering: 4 (アメリカ人) - 3 (ともだち) - 1 (の) - 2 (たなか) ... no wait. Let me redo.
-
-Sentence: わたしの ともだちは アメリカ人の たなかです → わたしは / アメリカ人/ の / ともだち / の / たなか です. Re-design:
-
-(replaced) Re-stating cleanly:
-
-Stem: わたしは ___ ___ ___ ___ です。
-Goal: the sentence "I am Tanaka, an American friend".
-Elements:
-1. の
-2. アメリカ人
-3. たなか
-4. ともだち
-
-A=2 アメリカ人, B(★)=4 ともだち, C=1 の, D=3 たなか
-Final: わたしは アメリカ人の ともだちの たなかです (parsing odd). 
-
-Skipping this one for now. Use the cleaner formulation below.
-
-### Q61 (revised)
-
 Stem: きのう ___ ___ ★ ___ 見ました。
+
 Elements:
 1. を
 2. ともだちと
 3. えいが
 4. いっしょに
 
-Correct order A=2 ともだちと, B=4 いっしょに, C(★)=3 えいが, D=1 を
+Correct order: A=2 ともだちと, B=4 いっしょに, C(★)=3 えいが, D=1 を
 Final sentence: きのう ともだちと いっしょに えいがを 見ました.
 
 **Answer: 3** (えいが goes in position ★).

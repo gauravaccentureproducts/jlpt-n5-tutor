@@ -4,46 +4,46 @@
 import { renderJa } from './furigana.js';
 
 const PAIRS = [
-  // に / で — location
+  // に / で - location
   {
     set: 'に vs で (location)',
-    a: { sentence: 'へやに ねこが います。', particle: 'に', en_with: 'There is a cat in the room (existence — location of being).' },
-    b: { sentence: 'へやで しゅくだいを します。', particle: 'で', en_with: 'I do homework in the room (action — location of doing).' },
+    a: { sentence: 'へやに ねこが います。', particle: 'に', en_with: 'There is a cat in the room (existence - location of being).' },
+    b: { sentence: 'へやで しゅくだいを します。', particle: 'で', en_with: 'I do homework in the room (action - location of doing).' },
   },
   {
     set: 'に vs で (location)',
     a: { sentence: 'こうえんに 木が あります。', particle: 'に', en_with: 'There are trees in the park.' },
     b: { sentence: 'こうえんで あそびます。', particle: 'で', en_with: 'I play in the park.' },
   },
-  // に / へ — direction
+  // に / へ - direction
   {
     set: 'に vs へ (direction)',
     a: { sentence: '日本に 行きます。', particle: 'に', en_with: 'I go TO Japan (focus on arrival/destination).' },
     b: { sentence: '日本へ 行きます。', particle: 'へ', en_with: 'I go TOWARD Japan (focus on direction; slightly more formal).' },
   },
-  // を / が — with stative predicates
+  // を / が - with stative predicates
   {
     set: 'を vs が (with stative)',
-    a: { sentence: 'ねこが すきです。', particle: 'が', en_with: 'I like cats (stative — must take が).' },
-    b: { sentence: 'りんごを 食べます。', particle: 'を', en_with: 'I eat apples (action verb — direct object takes を).' },
+    a: { sentence: 'ねこが すきです。', particle: 'が', en_with: 'I like cats (stative - must take が).' },
+    b: { sentence: 'りんごを 食べます。', particle: 'を', en_with: 'I eat apples (action verb - direct object takes を).' },
   },
-  // と / に — with people
+  // と / に - with people
   {
     set: 'と vs に (people / interaction)',
     a: { sentence: 'ともだちと 行きます。', particle: 'と', en_with: 'I go WITH a friend (companion).' },
     b: { sentence: 'ともだちに 会います。', particle: 'に', en_with: 'I meet a friend (会う takes に for the person met).' },
   },
-  // か / や — listing
+  // か / や - listing
   {
     set: 'か vs や (listing / alternative)',
-    a: { sentence: 'コーヒーか おちゃが いいです。', particle: 'か', en_with: 'Coffee OR tea is good (alternatives — pick one).' },
+    a: { sentence: 'コーヒーか おちゃが いいです。', particle: 'か', en_with: 'Coffee OR tea is good (alternatives - pick one).' },
     b: { sentence: 'コーヒーや おちゃが すきです。', particle: 'や', en_with: 'I like coffee, tea, etc. (non-exhaustive listing).' },
   },
-  // wa / ga — topic vs subject
+  // wa / ga - topic vs subject
   {
     set: 'は vs が (topic / new info)',
     a: { sentence: 'わたしは がくせいです。', particle: 'は', en_with: 'I am a student (topical statement; わたし is the topic).' },
-    b: { sentence: 'だれが がくせいですか。', particle: 'が', en_with: 'Who is the student? (question word + が — asking for new info).' },
+    b: { sentence: 'だれが がくせいですか。', particle: 'が', en_with: 'Who is the student? (question word + が - asking for new info).' },
   },
 ];
 
@@ -57,7 +57,7 @@ export async function renderParticlePairs(container) {
 function renderSetup(container) {
   container.innerHTML = `
     <h2>Particle minimal-pair drill</h2>
-    <p>Each round shows two sentences differing by one particle. Both are grammatical — the <strong>meaning</strong> changes. After your pick, both translations appear so you can train the meaning difference, not just the "correct" particle.</p>
+    <p>Each round shows two sentences differing by one particle. Both are grammatical - the <strong>meaning</strong> changes. After your pick, both translations appear so you can train the meaning difference, not just the "correct" particle.</p>
     <p class="muted small">Pairs covered: ${[...new Set(PAIRS.map(p => p.set))].join(' · ')}</p>
     <button id="pp-start" class="btn-primary">Start (10 rounds)</button>
   `;
@@ -142,7 +142,7 @@ function renderFinished(container) {
   const total = session.total;
   const pct = Math.round((session.score / total) * 100);
   container.innerHTML = `
-    <h2>Particle pairs — done</h2>
+    <h2>Particle pairs - done</h2>
     <section class="srs-summary-stats">
       <div class="stat-card mastered"><div class="stat-num">${session.score}/${total}</div><div class="stat-label">Score</div></div>
       <div class="stat-card ${pct >= 70 ? 'mastered' : 'weak'}"><div class="stat-num">${pct}%</div><div class="stat-label">Accuracy</div></div>

@@ -1,4 +1,4 @@
-// Settings panel — per spec §3.6 of the developer brief.
+// Settings panel - per spec §3.6 of the developer brief.
 // On-device only. Reads/writes via storage adapter.
 import * as storage from './storage.js';
 import { setLocale, currentLocale, supportedLocales } from './i18n.js';

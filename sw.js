@@ -1,4 +1,4 @@
-// Service worker — offline caching for the static app.
+// Service worker - offline caching for the static app.
 // Strategy:
 //   * On install: pre-cache all known shell + data assets.
 //   * On fetch: cache-first, falling back to network. If network adds something
@@ -71,7 +71,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   // Only handle GETs; let everything else go to the network.
   if (event.request.method !== 'GET') return;
-  // Same-origin only — don't intercept third-party requests.
+  // Same-origin only - don't intercept third-party requests.
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 

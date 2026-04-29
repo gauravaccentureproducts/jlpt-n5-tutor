@@ -58,7 +58,7 @@ def main() -> int:
         meaning = p.get("meaning_en") or "TBD"
         if meaning == "TBD":
             meaning = (
-                "(stub) — pattern needs authoring. See "
+                "(stub) - pattern needs authoring. See "
                 f"KnowledgeBank/grammar_n5.md for source"
             )
 

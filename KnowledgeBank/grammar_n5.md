@@ -4,9 +4,9 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 
 ## Legend
 
-- Items without a tag are **Core N5** — confidently tested at N5 and treated as primary content in mainstream textbooks.
+- Items without a tag are **Core N5** - confidently tested at N5 and treated as primary content in mainstream textbooks.
 - Items tagged **(Upper N5 / borderline)** appear at the late end of N5 textbooks; they may show up in reading passages but are rarely the focus of N5 grammar questions. Learners should recognize them but not over-prioritize.
-- Aisatsu / set phrases are listed here for completeness but are *not grammar* — see Section 20.
+- Aisatsu / set phrases are listed here for completeness but are *not grammar* - see Section 20.
 
 ---
 
@@ -17,12 +17,12 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - ～は～でした
 - ～は～ではありませんでした / ～じゃありませんでした
 - ～は～ですか
-- ～も～です (X is also Y — replaces は with も to mean "too / also")
+- ～も～です (X is also Y - replaces は with も to mean "too / also")
 - ～は～ですが、～は～です (contrastive pattern: A is X, but B is Y; が here is the conjunction "but", not the subject particle)
 - ～と～(と) (exhaustive listing of nouns)
 - ～や～(など) (non-exhaustive listing)
-- ～の — single particle pattern; see Section 2 for consolidated sub-uses (possessive / modifier / nominalizer / informal question)
-- ～もの / もん — sentence-final particle giving a reason or explanation, similar in feel to から / んです (もん is the casual contraction of もの). E.g., だって、いそがしいんだもの。 — "But, you know, I'm busy." **(Upper N5 / borderline)**
+- ～の - single particle pattern; see Section 2 for consolidated sub-uses (possessive / modifier / nominalizer / informal question)
+- ～もの / もん - sentence-final particle giving a reason or explanation, similar in feel to から / んです (もん is the casual contraction of もの). E.g., だって、いそがしいんだもの。 - "But, you know, I'm busy." **(Upper N5 / borderline)**
 
 ---
 
@@ -38,13 +38,13 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - から (from / because)
 - まで (until / up to)
 - から～まで
-- や (and — non-exhaustive)
+- や (and - non-exhaustive)
 - か (question marker)
-- か (or — A か B)
+- か (or - A か B)
 - ね (confirmation / agreement)
 - よ (assertion / new information)
 - よね
-- ～の (consolidated entry — sub-uses below)
+- ～の (consolidated entry - sub-uses below)
   - possessive / noun-modifier (e.g., わたしの本)
   - nominalizer in basic use (e.g., 食べるのがすきです)
   - informal question marker (e.g., 行くの？)
@@ -52,7 +52,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - だけ (only)
 - しか～ない (only, with negative)
 - ぐらい / くらい (approximately)
-- ごろ (around — for time points)
+- ごろ (around - for time points)
 - など (etc.)
 - ずつ (each / per)
 
@@ -79,20 +79,20 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - どう / いかが (how)
 - どうして / なぜ (why)
 - どうやって (how to / by what means) **(Upper N5 / borderline)**
-- いくら (how much — price)
+- いくら (how much - price)
 - いくつ (how many)
 - なんじ (what time)
 - なんようび (what day of the week)
 - なんがつ / なんにち (what month / what day)
 - Question word + か / も compounds (Genki I L8 / L10):
-  - なにか (something) / なにも (nothing — with negative)
-  - だれか (someone) / だれも (no one — with negative)
-  - どこか (somewhere) / どこも (nowhere — with negative)
+  - なにか (something) / なにも (nothing - with negative)
+  - だれか (someone) / だれも (no one - with negative)
+  - どこか (somewhere) / どこも (nowhere - with negative)
   - いつか (sometime) / いつも (always)
 
 ---
 
-## 5. Verbs — Tense and Politeness (ます-form)
+## 5. Verbs - Tense and Politeness (ます-form)
 
 - Verb-ます (non-past affirmative)
 - Verb-ません (non-past negative)
@@ -104,9 +104,9 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 
 ---
 
-## 6. Verbs — Plain (Dictionary) Form and Negation
+## 6. Verbs - Plain (Dictionary) Form and Negation
 
-- Verb-る / Verb-う (dictionary form — る-verbs / Group 2 end in -る; う-verbs / Group 1 end in any -う row syllable: う/く/ぐ/す/つ/ぬ/ぶ/む/る)
+- Verb-る / Verb-う (dictionary form - る-verbs / Group 2 end in -る; う-verbs / Group 1 end in any -う row syllable: う/く/ぐ/す/つ/ぬ/ぶ/む/る)
 - Verb-ない (plain negative)
 - Verb-た (plain past)
 - Verb-なかった (plain past negative)
@@ -122,7 +122,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - Verb-ていません
 - Verb-てもいいです (may / it's okay to)
 - Verb-てはいけません (must not)
-- Verb-てから (after doing — sequential / temporal "after")
+- Verb-てから (after doing - sequential / temporal "after")
 - Verb-ないでください (please don't)
 
 ---
@@ -170,7 +170,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 
 ## 11. Desiderative and Volitional
 
-- Verb-stem + たいです (want to do) — note: たい inflects as an い-adjective: たい / たくない / たかった / たくなかった
+- Verb-stem + たいです (want to do) - note: たい inflects as an い-adjective: たい / たくない / たかった / たくなかった
 - Verb-stem + たくないです
 - Noun + が ほしいです
 - Verb-stem + に いきます / きます / かえります (go/come/return to do)
@@ -181,7 +181,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 
 - Number + counter (kanji counters in N5 syllabus: 人, 本, 番; kana counters: まい, だい, さつ, ひき, はい, こ, かい, ど, つ etc.)
 - いくつ / いくら / なんにん / なんまい etc.
-- Object + counter + Verb (counter used adverbially; e.g., りんごを ふたつ かいました — "I bought two apples")
+- Object + counter + Verb (counter used adverbially; e.g., りんごを ふたつ かいました - "I bought two apples")
 
 ---
 
@@ -196,7 +196,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - きょう / あした / きのう / あさって / おととい
 - いま / すぐ / もう / まだ
 - ～まえ (before)
-- ～あと (after — limited at N5)
+- ～あと (after - limited at N5)
 
 ---
 
@@ -207,9 +207,9 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - でも
 - しかし
 - では / じゃ
-- が (but — clause connector)
-- けれど / けど (but — informal)
-- から (because — clause connector)
+- が (but - clause connector)
+- けれど / けど (but - informal)
+- から (because - clause connector)
 - どうして～か。～から。
 
 ---
@@ -225,13 +225,13 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 ## 16. Asking and Stating with から / ので (basic causation)
 
 - Sentence + から、Sentence (because)
-- Sentence + ので、Sentence (because — softer) **(Upper N5 / borderline)**
+- Sentence + ので、Sentence (because - softer) **(Upper N5 / borderline)**
 
 ---
 
 ## 17. Nominalization and Modification
 
-- Verb (plain) + Noun (relative clauses — basic)
+- Verb (plain) + Noun (relative clauses - basic)
 - Adjective + Noun
 - Noun + の + Noun
 
@@ -247,7 +247,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - ～になります / ～くなります (becomes)
 - Verb-stem + ながら (while doing) **(Upper N5 / borderline)**
 - ～とおもいます (I think) **(Upper N5 / borderline)**
-- ～と言いました (said that — basic quoting) **(Upper N5 / borderline)**
+- ～と言いました (said that - basic quoting) **(Upper N5 / borderline)**
 
 ---
 
@@ -263,8 +263,8 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 > Note: These are *set phrases / functional expressions*, not grammar patterns. They are listed here for completeness because they pattern with grammar in textbook lessons, but they are properly the domain of vocabulary. See `vocabulary_n5.md` § Greetings and Set Phrases for the full list.
 
 - ～をください (please give me ～)
-- ～をおねがいします (please ～ — service request)
-- ～はいかがですか (how about ～? — polite offer)
+- ～をおねがいします (please ～ - service request)
+- ～はいかがですか (how about ～? - polite offer)
 - どうぞ / どうも / すみません / おねがいします (functional fillers)
 
 ---
@@ -275,11 +275,11 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - もう + Verb-ました (already)
 - 〜が、〜 (contrast / soft "but")
 - 〜ね / 〜よ (sentence-final)
-- 〜でしょう (probably / right? — basic) **(Upper N5 / borderline)**
+- 〜でしょう (probably / right? - basic) **(Upper N5 / borderline)**
 - 〜だろう (plain form of でしょう) **(Upper N5 / borderline)**
 - 〜ですね / 〜ですよ
-- Noun + の + あとで (after — basic)
-- Noun + の + まえに (before — basic)
+- Noun + の + あとで (after - basic)
+- Noun + の + まえに (before - basic)
 - Verb (plain) + まえに (before doing)
 - Verb (plain past) + あとで (after doing)
 
@@ -288,7 +288,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 ## 22. Honorific / Polite Vocabulary at N5 (functional)
 
 - ～さん
-- お～ / ご～ (beautifying prefixes — limited to common cases)
+- お～ / ご～ (beautifying prefixes - limited to common cases)
 - いただきます / ごちそうさま / おはようございます etc. (set expressions)
 
 ---
@@ -300,8 +300,8 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 ### 23.1 Explanation and Emphasis
 
 - ～んです / ～のです (gives a reason / asks for an explanation)
-  - Example: どうして 学校に 来ませんでしたか。— あたまが いたかったんです。
-    (Why didn't you come to school? — Because my head hurt.)
+  - Example: どうして 学校に 来ませんでしたか。- あたまが いたかったんです。
+    (Why didn't you come to school? - Because my head hurt.)
 
 ### 23.2 Compound and Listed Actions
 
@@ -311,7 +311,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 
 ### 23.3 Experience and Advice
 
-- Verb-た + ことがある (have done before — past experience)
+- Verb-た + ことがある (have done before - past experience)
   - Example: 日本に 行ったことが あります。 (I have been to Japan before.)
 - Verb-た + ほうがいい (should do)
   - Example: もっと 休んだ ほうが いいです。 (You should rest more.)
@@ -326,11 +326,11 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - ～なくてはいけない (must do)
   - Example: 毎日 しゅくだいを しなくては いけません。
     (You have to do homework every day.)
-- ～なくてはならない (must do — written / formal variant)
+- ～なくてはならない (must do - written / formal variant)
   - Example: はやく かえらなくては なりません。 (I must go home soon.)
-- ～ないといけない (must do — common spoken)
+- ～ないといけない (must do - common spoken)
   - Example: すぐ 行かないと いけません。 (I have to go right away.)
-- ～なくちゃ / ～なきゃ (must do — casual contraction)
+- ～なくちゃ / ～なきゃ (must do - casual contraction)
   - Example: いそがなくちゃ。 (I gotta hurry.)
 
 ### 23.5 Excess
@@ -364,5 +364,5 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 
 ### 23.10 Prohibitive (Casual)
 
-- Verb-plain + な (don't do! — strong / casual prohibition)
+- Verb-plain + な (don't do! - strong / casual prohibition)
   - Example: ここで たばこを すうな! (Don't smoke here!)
