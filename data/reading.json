@@ -1,0 +1,218 @@
+{
+  "passages": [
+    {
+      "id": "n5.read.001",
+      "level": "easy",
+      "topic": "self-introduction",
+      "title_en": "Self-introduction",
+      "ja": "わたしは アンナです。アメリカから 来ました。今、東京の だいがくで 日本語を べんきょうしています。しゅみは えいがを 見ることです。どうぞ よろしく おねがいします。",
+      "translation_en": "I'm Anna. I came from America. Right now, I'm studying Japanese at a university in Tokyo. My hobby is watching movies. Pleased to meet you.",
+      "audio": "audio/reading/n5.read.001.mp3",
+      "questions": [
+        {
+          "id": "n5.read.001.q1",
+          "prompt_ja": "アンナさんは どこから 来ましたか。",
+          "choices": ["日本", "アメリカ", "ちゅうごく", "とうきょう"],
+          "correctAnswer": "アメリカ",
+          "explanation_en": "The passage says 'アメリカから 来ました'."
+        },
+        {
+          "id": "n5.read.001.q2",
+          "prompt_ja": "アンナさんは 今 どこで 日本語を べんきょうしていますか。",
+          "choices": ["アメリカの 大学", "東京の 大学", "東京の こうこう", "うち"],
+          "correctAnswer": "東京の 大学",
+          "explanation_en": "'今、東京の だいがくで 日本語を べんきょうしています.'"
+        }
+      ]
+    },
+    {
+      "id": "n5.read.002",
+      "level": "easy",
+      "topic": "daily routine",
+      "title_en": "Daily routine",
+      "ja": "わたしは 毎日 6時に おきます。あさごはんを 食べてから、しごとに 行きます。しごとは 9時から 5時までです。家に 帰ってから、テレビを 見ます。10時に ねます。",
+      "translation_en": "Every day I wake up at 6. After eating breakfast, I go to work. Work is from 9 to 5. After getting home, I watch TV. I go to bed at 10.",
+      "audio": "audio/reading/n5.read.002.mp3",
+      "questions": [
+        {
+          "id": "n5.read.002.q1",
+          "prompt_ja": "この人は 何時に おきますか。",
+          "choices": ["5時", "6時", "9時", "10時"],
+          "correctAnswer": "6時",
+          "explanation_en": "'毎日 6時に おきます.'"
+        },
+        {
+          "id": "n5.read.002.q2",
+          "prompt_ja": "しごとは 何時から 何時までですか。",
+          "choices": ["6時から 5時まで", "9時から 5時まで", "9時から 10時まで", "5時から 9時まで"],
+          "correctAnswer": "9時から 5時まで",
+          "explanation_en": "'しごとは 9時から 5時までです.'"
+        },
+        {
+          "id": "n5.read.002.q3",
+          "prompt_ja": "家に 帰ってから 何を しますか。",
+          "choices": ["しごとを します", "あさごはんを 食べます", "テレビを 見ます", "あるきます"],
+          "correctAnswer": "テレビを 見ます",
+          "explanation_en": "'家に 帰ってから、テレビを 見ます.'"
+        }
+      ]
+    },
+    {
+      "id": "n5.read.003",
+      "level": "easy",
+      "topic": "weekend plan",
+      "title_en": "Weekend plan",
+      "ja": "あした、ともだちと えいがを 見に 行きます。えいがの あとで、レストランで ばんごはんを 食べます。とても たのしみです。",
+      "translation_en": "Tomorrow, I'm going to see a movie with a friend. After the movie, we'll eat dinner at a restaurant. I'm really looking forward to it.",
+      "audio": "audio/reading/n5.read.003.mp3",
+      "questions": [
+        {
+          "id": "n5.read.003.q1",
+          "prompt_ja": "あした 何を しますか。",
+          "choices": ["うちで 本を よみます", "ともだちと えいがを 見ます", "しごとに 行きます", "りょこうします"],
+          "correctAnswer": "ともだちと えいがを 見ます",
+          "explanation_en": "'ともだちと えいがを 見に 行きます.'"
+        },
+        {
+          "id": "n5.read.003.q2",
+          "prompt_ja": "えいがの あと、何を しますか。",
+          "choices": ["ねます", "ばんごはんを 食べます", "本を よみます", "うちに 帰ります"],
+          "correctAnswer": "ばんごはんを 食べます",
+          "explanation_en": "'えいがの あとで、レストランで ばんごはんを 食べます.'"
+        }
+      ]
+    },
+    {
+      "id": "n5.read.004",
+      "level": "medium",
+      "topic": "shopping",
+      "title_en": "At the convenience store",
+      "ja": "きのう、コンビニで パンと コーヒーを 買いました。パンは 200円で、コーヒーは 150円でした。ぜんぶで 350円でした。やすかったです。",
+      "translation_en": "Yesterday, I bought bread and coffee at the convenience store. The bread was 200 yen, and the coffee was 150 yen. The total was 350 yen. It was cheap.",
+      "audio": "audio/reading/n5.read.004.mp3",
+      "questions": [
+        {
+          "id": "n5.read.004.q1",
+          "prompt_ja": "コンビニで 何を 買いましたか。",
+          "choices": ["パンと おちゃ", "パンと コーヒー", "ごはんと コーヒー", "おかしと ジュース"],
+          "correctAnswer": "パンと コーヒー",
+          "explanation_en": "'パンと コーヒーを 買いました.'"
+        },
+        {
+          "id": "n5.read.004.q2",
+          "prompt_ja": "ぜんぶで いくらでしたか。",
+          "choices": ["150円", "200円", "350円", "500円"],
+          "correctAnswer": "350円",
+          "explanation_en": "200 + 150 = 350. The text confirms this."
+        }
+      ]
+    },
+    {
+      "id": "n5.read.005",
+      "level": "medium",
+      "topic": "family",
+      "title_en": "My family",
+      "ja": "わたしの かぞくは 4人です。父と 母と 兄が います。父は きょうしで、母は いしゃです。兄は 大学生です。わたしは こうこうせいです。みんな 元気です。",
+      "translation_en": "My family has 4 people. There's my father, mother, and older brother. Father is a teacher; mother is a doctor. My brother is a university student. I am a high school student. Everyone is well.",
+      "audio": "audio/reading/n5.read.005.mp3",
+      "questions": [
+        {
+          "id": "n5.read.005.q1",
+          "prompt_ja": "かぞくは 何人ですか。",
+          "choices": ["3人", "4人", "5人", "6人"],
+          "correctAnswer": "4人",
+          "explanation_en": "'わたしの かぞくは 4人です.'"
+        },
+        {
+          "id": "n5.read.005.q2",
+          "prompt_ja": "母の しごとは 何ですか。",
+          "choices": ["きょうし", "いしゃ", "大学生", "こうこうせい"],
+          "correctAnswer": "いしゃ",
+          "explanation_en": "'母は いしゃです.'"
+        },
+        {
+          "id": "n5.read.005.q3",
+          "prompt_ja": "この人は 何ですか。",
+          "choices": ["きょうし", "いしゃ", "大学生", "こうこうせい"],
+          "correctAnswer": "こうこうせい",
+          "explanation_en": "'わたしは こうこうせいです.'"
+        }
+      ]
+    },
+    {
+      "id": "n5.read.006",
+      "level": "medium",
+      "topic": "weather",
+      "title_en": "Today's weather",
+      "ja": "今日は とても さむいです。あさは あめが ふっていました。今は ふっていませんが、まだ さむいです。あした、ゆきが ふるかもしれません。",
+      "translation_en": "Today is very cold. In the morning it was raining. It isn't raining now, but it's still cold. Tomorrow it might snow.",
+      "audio": "audio/reading/n5.read.006.mp3",
+      "questions": [
+        {
+          "id": "n5.read.006.q1",
+          "prompt_ja": "今日は どんな 天気ですか。",
+          "choices": ["あついです", "さむいです", "あたたかいです", "すずしいです"],
+          "correctAnswer": "さむいです",
+          "explanation_en": "'今日は とても さむいです.'"
+        },
+        {
+          "id": "n5.read.006.q2",
+          "prompt_ja": "あさは どうでしたか。",
+          "choices": ["はれていました", "あめが ふっていました", "ゆきが ふっていました", "くもりでした"],
+          "correctAnswer": "あめが ふっていました",
+          "explanation_en": "'あさは あめが ふっていました.'"
+        }
+      ]
+    },
+    {
+      "id": "n5.read.007",
+      "level": "info-search",
+      "topic": "schedule",
+      "title_en": "Library notice",
+      "ja": "としょかんの 時間\nげつようび 〜 きんようび：9:00 〜 21:00\nどようび：10:00 〜 18:00\nにちようび：休み\n本は 2しゅうかん かりられます。",
+      "translation_en": "Library hours\nMon-Fri: 9:00-21:00\nSat: 10:00-18:00\nSun: Closed\nBooks can be borrowed for 2 weeks.",
+      "audio": "audio/reading/n5.read.007.mp3",
+      "questions": [
+        {
+          "id": "n5.read.007.q1",
+          "prompt_ja": "にちようびに としょかんは あいていますか。",
+          "choices": ["はい、あいています", "いいえ、休みです", "9時から 21時まで", "10時から 18時まで"],
+          "correctAnswer": "いいえ、休みです",
+          "explanation_en": "'にちようび：休み.'"
+        },
+        {
+          "id": "n5.read.007.q2",
+          "prompt_ja": "本は どのくらい かりられますか。",
+          "choices": ["1しゅうかん", "2しゅうかん", "1かげつ", "2かげつ"],
+          "correctAnswer": "2しゅうかん",
+          "explanation_en": "'本は 2しゅうかん かりられます.'"
+        }
+      ]
+    },
+    {
+      "id": "n5.read.008",
+      "level": "medium",
+      "topic": "transport",
+      "title_en": "Going to school",
+      "ja": "わたしの 家から 学校まで 30分くらい かかります。まず、家から えきまで あるきます。10分くらいです。そして、でんしゃに のります。20分で 学校に つきます。",
+      "translation_en": "From my house to school takes about 30 minutes. First, I walk from home to the station - about 10 minutes. Then I get on the train. I arrive at school in 20 minutes.",
+      "audio": "audio/reading/n5.read.008.mp3",
+      "questions": [
+        {
+          "id": "n5.read.008.q1",
+          "prompt_ja": "家から 学校まで ぜんぶで 何分 かかりますか。",
+          "choices": ["10分", "20分", "30分くらい", "1時間"],
+          "correctAnswer": "30分くらい",
+          "explanation_en": "'家から 学校まで 30分くらい かかります.'"
+        },
+        {
+          "id": "n5.read.008.q2",
+          "prompt_ja": "家から えきまで どうやって 行きますか。",
+          "choices": ["でんしゃで", "バスで", "あるいて", "じてんしゃで"],
+          "correctAnswer": "あるいて",
+          "explanation_en": "'家から えきまで あるきます.'"
+        }
+      ]
+    }
+  ]
+}

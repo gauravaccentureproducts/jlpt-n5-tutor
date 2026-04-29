@@ -13,6 +13,9 @@ import { renderWaGa } from './wa-vs-ga.js';
 import { renderVerbClass } from './verb-class.js';
 import { renderTeForm } from './te-form.js';
 import { renderParticlePairs } from './particle-pairs.js';
+import { renderCounters } from './counters.js';
+import { renderReading } from './reading.js';
+import { renderListening } from './listening.js';
 import { initI18n } from './i18n.js';
 
 const ROUTES = {
@@ -28,6 +31,9 @@ const ROUTES = {
   verbclass:  renderVerbClass,
   teform:     renderTeForm,
   particles:  renderParticlePairs,
+  counters:   renderCounters,
+  reading:    renderReading,
+  listening:  renderListening,
 };
 
 function parseRoute() {

@@ -53,6 +53,9 @@ function renderTOC(container, data) {
       <a href="#/verbclass">Verb groups →</a>
       <a href="#/teform">て-form gym →</a>
       <a href="#/particles">Particle pairs →</a>
+      <a href="#/counters">Counters →</a>
+      <a href="#/reading">Reading →</a>
+      <a href="#/listening">Listening →</a>
     </div>
   `;
   for (const [cat, { items }] of sorted) {

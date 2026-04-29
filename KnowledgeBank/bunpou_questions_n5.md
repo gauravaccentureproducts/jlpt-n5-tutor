@@ -290,36 +290,36 @@
 
 ### Q25
 
-ペンが 三本（　　）あります。
+ペン（　　）三本 あります。
 
 1. を
-2. に
-3. へ
-4. ×（particle不要）
+2. が
+3. に
+4. へ
 
-**Answer: 4** - count + counter doesn't take a particle.
+**Answer: 2** - 「ペンが 三本 あります」: が marks the existing subject.
 
 ### Q26
 
-毎日 一時間（　　）日本語を べんきょうします。
+毎日 日本語（　　）べんきょうします。
 
 1. が
 2. に
 3. を
-4. ×
+4. と
 
-**Answer: 4** - duration phrase often takes no particle here.
+**Answer: 3** - を marks the direct object of べんきょうする.
 
 ### Q27
 
-ともだちに 学校で あい（　　）。
+毎日 学校で ともだちに あい（　　）。
 
 1. ます
 2. ません
 3. ました
-4. たいです
+4. ませんでした
 
-**Answer: 1** - present polite affirmative for stating a routine. (Question is ambiguous without more context, but the usual answer pattern is ます.)
+**Answer: 1** - 毎日 (every day) + present-affirmative ます for habitual action.
 
 ### Q28
 

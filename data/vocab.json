@@ -1,0 +1,7018 @@
+{
+  "entries": [
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.私",
+      "form": "私",
+      "reading": "わたし",
+      "gloss": "I, me",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.私たち",
+      "form": "私たち",
+      "reading": "わたしたち",
+      "gloss": "we",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.あなた",
+      "form": "あなた",
+      "reading": null,
+      "gloss": "you",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.かれ",
+      "form": "かれ",
+      "reading": null,
+      "gloss": "he, boyfriend",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.かのじょ",
+      "form": "かのじょ",
+      "reading": null,
+      "gloss": "she, girlfriend",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.かた",
+      "form": "かた",
+      "reading": null,
+      "gloss": "person (polite)",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.人",
+      "form": "人",
+      "reading": "ひと",
+      "gloss": "person",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.みなさん",
+      "form": "みなさん",
+      "reading": null,
+      "gloss": "everyone (polite)",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.だれ",
+      "form": "だれ",
+      "reading": null,
+      "gloss": "who",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.どなた",
+      "form": "どなた",
+      "reading": null,
+      "gloss": "who (polite)",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.じぶん",
+      "form": "じぶん",
+      "reading": null,
+      "gloss": "oneself",
+      "section": "1. People - Pronouns and Self"
+    },
+    {
+      "id": "n5.vocab.2-people-family.かぞく",
+      "form": "かぞく",
+      "reading": null,
+      "gloss": "family",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.父",
+      "form": "父",
+      "reading": "ちち",
+      "gloss": "father (own)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.母",
+      "form": "母",
+      "reading": "はは",
+      "gloss": "mother (own)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.お父さん",
+      "form": "お父さん",
+      "reading": "おとうさん",
+      "gloss": "father (someone else's / address form)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.お母さん",
+      "form": "お母さん",
+      "reading": "おかあさん",
+      "gloss": "mother (someone else's / address form)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.あに",
+      "form": "あに",
+      "reading": null,
+      "gloss": "older brother (own)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.あね",
+      "form": "あね",
+      "reading": null,
+      "gloss": "older sister (own)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.おとうと",
+      "form": "おとうと",
+      "reading": null,
+      "gloss": "younger brother",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.いもうと",
+      "form": "いもうと",
+      "reading": null,
+      "gloss": "younger sister",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.おにいさん",
+      "form": "おにいさん",
+      "reading": null,
+      "gloss": "older brother (polite)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.おねえさん",
+      "form": "おねえさん",
+      "reading": null,
+      "gloss": "older sister (polite)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.きょうだい",
+      "form": "きょうだい",
+      "reading": null,
+      "gloss": "siblings",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.りょうしん",
+      "form": "りょうしん",
+      "reading": null,
+      "gloss": "parents",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.そふ",
+      "form": "そふ",
+      "reading": null,
+      "gloss": "grandfather (own)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.そぼ",
+      "form": "そぼ",
+      "reading": null,
+      "gloss": "grandmother (own)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.おじいさん",
+      "form": "おじいさん",
+      "reading": null,
+      "gloss": "grandfather, elderly man",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.おばあさん",
+      "form": "おばあさん",
+      "reading": null,
+      "gloss": "grandmother, elderly woman",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.おじさん",
+      "form": "おじさん",
+      "reading": null,
+      "gloss": "uncle, middle-aged man",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.おばさん",
+      "form": "おばさん",
+      "reading": null,
+      "gloss": "aunt, middle-aged woman",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.子ども",
+      "form": "子ども",
+      "reading": "こども",
+      "gloss": "child (often written こども in everyday text)",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.男の子",
+      "form": "男の子",
+      "reading": "おとこのこ",
+      "gloss": "boy",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.女の子",
+      "form": "女の子",
+      "reading": "おんなのこ",
+      "gloss": "girl",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.男",
+      "form": "男",
+      "reading": "おとこ",
+      "gloss": "man",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.女",
+      "form": "女",
+      "reading": "おんな",
+      "gloss": "woman",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.大人",
+      "form": "大人",
+      "reading": "おとな",
+      "gloss": "adult",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.2-people-family.ともだち",
+      "form": "ともだち",
+      "reading": null,
+      "gloss": "friend",
+      "section": "2. People - Family"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.学生",
+      "form": "学生",
+      "reading": "がくせい",
+      "gloss": "student",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.せいと",
+      "form": "せいと",
+      "reading": null,
+      "gloss": "pupil, schoolchild",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.先生",
+      "form": "先生",
+      "reading": "せんせい",
+      "gloss": "teacher, doctor",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.いしゃ",
+      "form": "いしゃ",
+      "reading": null,
+      "gloss": "doctor",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.会社員",
+      "form": "会社員",
+      "reading": "かいしゃいん",
+      "gloss": "company employee",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.駅員",
+      "form": "駅員",
+      "reading": "えきいん",
+      "gloss": "station staff",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.店員",
+      "form": "店員",
+      "reading": "てんいん",
+      "gloss": "shop clerk",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.けいかん",
+      "form": "けいかん",
+      "reading": null,
+      "gloss": "police officer **[Ext]**",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.おまわりさん",
+      "form": "おまわりさん",
+      "reading": null,
+      "gloss": "police officer (friendly) **[Ext]**",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.りゅうがくせい",
+      "form": "りゅうがくせい",
+      "reading": null,
+      "gloss": "international student **[Ext]**",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.3-people-roles.外国人",
+      "form": "外国人",
+      "reading": "がいこくじん",
+      "gloss": "foreigner",
+      "section": "3. People - Roles"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.からだ",
+      "form": "からだ",
+      "reading": null,
+      "gloss": "body",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.あたま",
+      "form": "あたま",
+      "reading": null,
+      "gloss": "head",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.かお",
+      "form": "かお",
+      "reading": null,
+      "gloss": "face",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.め",
+      "form": "め",
+      "reading": null,
+      "gloss": "eye",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.みみ",
+      "form": "みみ",
+      "reading": null,
+      "gloss": "ear",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.はな",
+      "form": "はな",
+      "reading": null,
+      "gloss": "nose",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.くち",
+      "form": "くち",
+      "reading": null,
+      "gloss": "mouth",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.は",
+      "form": "は",
+      "reading": null,
+      "gloss": "tooth",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.て",
+      "form": "て",
+      "reading": null,
+      "gloss": "hand",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.あし",
+      "form": "あし",
+      "reading": null,
+      "gloss": "leg, foot",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.おなか",
+      "form": "おなか",
+      "reading": null,
+      "gloss": "stomach, belly",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.4-body-parts.せ",
+      "form": "せ",
+      "reading": null,
+      "gloss": "back, height",
+      "section": "4. Body Parts"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.これ",
+      "form": "これ",
+      "reading": null,
+      "gloss": "this (thing near speaker)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.それ",
+      "form": "それ",
+      "reading": null,
+      "gloss": "that (thing near listener)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.あれ",
+      "form": "あれ",
+      "reading": null,
+      "gloss": "that (over there)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.どれ",
+      "form": "どれ",
+      "reading": null,
+      "gloss": "which (one)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.この",
+      "form": "この",
+      "reading": null,
+      "gloss": "this (modifier)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.その",
+      "form": "その",
+      "reading": null,
+      "gloss": "that (modifier)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.あの",
+      "form": "あの",
+      "reading": null,
+      "gloss": "that over there (modifier)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.どの",
+      "form": "どの",
+      "reading": null,
+      "gloss": "which (modifier)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.ここ",
+      "form": "ここ",
+      "reading": null,
+      "gloss": "here",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.そこ",
+      "form": "そこ",
+      "reading": null,
+      "gloss": "there",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.あそこ",
+      "form": "あそこ",
+      "reading": null,
+      "gloss": "over there",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.どこ",
+      "form": "どこ",
+      "reading": null,
+      "gloss": "where",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.こちら",
+      "form": "こちら",
+      "reading": null,
+      "gloss": "this way / this person (polite)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.そちら",
+      "form": "そちら",
+      "reading": null,
+      "gloss": "that way",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.あちら",
+      "form": "あちら",
+      "reading": null,
+      "gloss": "that way (over there)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.どちら",
+      "form": "どちら",
+      "reading": null,
+      "gloss": "which way",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.こっち",
+      "form": "こっち",
+      "reading": null,
+      "gloss": "this way (casual)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.そっち",
+      "form": "そっち",
+      "reading": null,
+      "gloss": "that way (casual)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.あっち",
+      "form": "あっち",
+      "reading": null,
+      "gloss": "that way over there (casual)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.どっち",
+      "form": "どっち",
+      "reading": null,
+      "gloss": "which way (casual)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.こんな",
+      "form": "こんな",
+      "reading": null,
+      "gloss": "this kind of",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.そんな",
+      "form": "そんな",
+      "reading": null,
+      "gloss": "that kind of",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.あんな",
+      "form": "あんな",
+      "reading": null,
+      "gloss": "that kind of (over there)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.どんな",
+      "form": "どんな",
+      "reading": null,
+      "gloss": "what kind of",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.こう",
+      "form": "こう",
+      "reading": null,
+      "gloss": "like this",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.そう",
+      "form": "そう",
+      "reading": null,
+      "gloss": "like that",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.ああ",
+      "form": "ああ",
+      "reading": null,
+      "gloss": "like that (over there)",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.5-demonstratives.どう",
+      "form": "どう",
+      "reading": null,
+      "gloss": "how",
+      "section": "5. Demonstratives (こそあど)"
+    },
+    {
+      "id": "n5.vocab.6-question-words.何",
+      "form": "何",
+      "reading": "なに / なん",
+      "gloss": "what",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.6-question-words.いつ",
+      "form": "いつ",
+      "reading": null,
+      "gloss": "when",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.6-question-words.いくら",
+      "form": "いくら",
+      "reading": null,
+      "gloss": "how much (price)",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.6-question-words.いくつ",
+      "form": "いくつ",
+      "reading": null,
+      "gloss": "how many, how old",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.6-question-words.何時",
+      "form": "何時",
+      "reading": "なんじ",
+      "gloss": "what time",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.6-question-words.何曜日",
+      "form": "何曜日",
+      "reading": "なんようび",
+      "gloss": "what day of the week",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.6-question-words.何月",
+      "form": "何月",
+      "reading": "なんがつ",
+      "gloss": "what month",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.6-question-words.何日",
+      "form": "何日",
+      "reading": "なんにち",
+      "gloss": "what day",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.6-question-words.なぜ",
+      "form": "なぜ",
+      "reading": null,
+      "gloss": "why",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.6-question-words.どうして",
+      "form": "どうして",
+      "reading": null,
+      "gloss": "why",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.6-question-words.何で",
+      "form": "何で",
+      "reading": "なんで",
+      "gloss": "why, by what means",
+      "section": "6. Question Words"
+    },
+    {
+      "id": "n5.vocab.7-numbers.一",
+      "form": "一",
+      "reading": "いち",
+      "gloss": "one",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.二",
+      "form": "二",
+      "reading": "に",
+      "gloss": "two",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.三",
+      "form": "三",
+      "reading": "さん",
+      "gloss": "three",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.四",
+      "form": "四",
+      "reading": "し / よん",
+      "gloss": "four",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.五",
+      "form": "五",
+      "reading": "ご",
+      "gloss": "five",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.六",
+      "form": "六",
+      "reading": "ろく",
+      "gloss": "six",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.七",
+      "form": "七",
+      "reading": "しち / なな",
+      "gloss": "seven",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.八",
+      "form": "八",
+      "reading": "はち",
+      "gloss": "eight",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.九",
+      "form": "九",
+      "reading": "きゅう / く",
+      "gloss": "nine",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.十",
+      "form": "十",
+      "reading": "じゅう",
+      "gloss": "ten",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.十一",
+      "form": "十一",
+      "reading": "じゅういち",
+      "gloss": "eleven",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.二十",
+      "form": "二十",
+      "reading": "にじゅう",
+      "gloss": "twenty",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.百",
+      "form": "百",
+      "reading": "ひゃく",
+      "gloss": "hundred",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.千",
+      "form": "千",
+      "reading": "せん",
+      "gloss": "thousand",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.万",
+      "form": "万",
+      "reading": "まん",
+      "gloss": "ten thousand",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.一万",
+      "form": "一万",
+      "reading": "いちまん",
+      "gloss": "ten thousand",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.7-numbers.おく",
+      "form": "おく",
+      "reading": null,
+      "gloss": "hundred million **[Ext]**",
+      "section": "7. Numbers"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.一つ",
+      "form": "一つ",
+      "reading": "ひとつ",
+      "gloss": "one (thing)",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.二つ",
+      "form": "二つ",
+      "reading": "ふたつ",
+      "gloss": "two",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.三つ",
+      "form": "三つ",
+      "reading": "みっつ",
+      "gloss": "three",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.四つ",
+      "form": "四つ",
+      "reading": "よっつ",
+      "gloss": "four",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.五つ",
+      "form": "五つ",
+      "reading": "いつつ",
+      "gloss": "five",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.六つ",
+      "form": "六つ",
+      "reading": "むっつ",
+      "gloss": "six",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.七つ",
+      "form": "七つ",
+      "reading": "ななつ",
+      "gloss": "seven",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.八つ",
+      "form": "八つ",
+      "reading": "やっつ",
+      "gloss": "eight",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.九つ",
+      "form": "九つ",
+      "reading": "ここのつ",
+      "gloss": "nine",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.十",
+      "form": "十",
+      "reading": "とお",
+      "gloss": "ten",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.8-native-counters-series.いくつ",
+      "form": "いくつ",
+      "reading": null,
+      "gloss": "how many",
+      "section": "8. Native Counters (つ-series)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.人",
+      "form": "人",
+      "reading": "にん",
+      "gloss": "counter for people",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.一人",
+      "form": "一人",
+      "reading": "ひとり",
+      "gloss": "one person",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.二人",
+      "form": "二人",
+      "reading": "ふたり",
+      "gloss": "two people",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.まい",
+      "form": "まい",
+      "reading": null,
+      "gloss": "counter for flat objects",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.本",
+      "form": "本",
+      "reading": "ほん",
+      "gloss": "counter for long thin objects",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.だい",
+      "form": "だい",
+      "reading": null,
+      "gloss": "counter for machines / vehicles",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.さつ",
+      "form": "さつ",
+      "reading": null,
+      "gloss": "counter for books",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.ひき",
+      "form": "ひき",
+      "reading": null,
+      "gloss": "counter for small animals",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.はい",
+      "form": "はい",
+      "reading": null,
+      "gloss": "counter for cups / glasses",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.こ",
+      "form": "こ",
+      "reading": null,
+      "gloss": "counter for small objects",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.かい",
+      "form": "かい",
+      "reading": null,
+      "gloss": "floor of a building (e.g., 3-かい = 3rd floor)",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.かい.2",
+      "form": "かい",
+      "reading": null,
+      "gloss": "number of times / occurrences (e.g., 3-かい = three times). Same kana, different counter (different kanji); context disambiguates.",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.番",
+      "form": "番",
+      "reading": "ばん",
+      "gloss": "number, ordinal",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.9-counters-common.ど",
+      "form": "ど",
+      "reading": null,
+      "gloss": "degrees, occurrences",
+      "section": "9. Counters (Common)"
+    },
+    {
+      "id": "n5.vocab.10-time-general.とき",
+      "form": "とき",
+      "reading": null,
+      "gloss": "time, when",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.時間",
+      "form": "時間",
+      "reading": "じかん",
+      "gloss": "time, hour",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.とけい",
+      "form": "とけい",
+      "reading": null,
+      "gloss": "clock, watch",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.今",
+      "form": "今",
+      "reading": "いま",
+      "gloss": "now",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.今日",
+      "form": "今日",
+      "reading": "きょう",
+      "gloss": "today",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.あした",
+      "form": "あした",
+      "reading": null,
+      "gloss": "tomorrow",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.きのう",
+      "form": "きのう",
+      "reading": null,
+      "gloss": "yesterday",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.あさって",
+      "form": "あさって",
+      "reading": null,
+      "gloss": "day after tomorrow",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.おととい",
+      "form": "おととい",
+      "reading": null,
+      "gloss": "day before yesterday",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.あさ",
+      "form": "あさ",
+      "reading": null,
+      "gloss": "morning",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.ひる",
+      "form": "ひる",
+      "reading": null,
+      "gloss": "noon, daytime",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.ゆうがた",
+      "form": "ゆうがた",
+      "reading": null,
+      "gloss": "evening",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.よる",
+      "form": "よる",
+      "reading": null,
+      "gloss": "night",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.ばん",
+      "form": "ばん",
+      "reading": null,
+      "gloss": "evening, night",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.けさ",
+      "form": "けさ",
+      "reading": null,
+      "gloss": "this morning",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.こんばん",
+      "form": "こんばん",
+      "reading": null,
+      "gloss": "this evening",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.こんや",
+      "form": "こんや",
+      "reading": null,
+      "gloss": "tonight",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.午前",
+      "form": "午前",
+      "reading": "ごぜん",
+      "gloss": "A.M.",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.午後",
+      "form": "午後",
+      "reading": "ごご",
+      "gloss": "P.M.",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.半",
+      "form": "半",
+      "reading": "はん",
+      "gloss": "half (past)",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.分",
+      "form": "分",
+      "reading": "ふん / ぷん",
+      "gloss": "minute(s)",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.10-time-general.びょう",
+      "form": "びょう",
+      "reading": null,
+      "gloss": "second(s)",
+      "section": "10. Time - General"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.日",
+      "form": "日",
+      "reading": "ひ",
+      "gloss": "day",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.一日",
+      "form": "一日",
+      "reading": "ついたち",
+      "gloss": "1st of the month",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.一日.2",
+      "form": "一日",
+      "reading": "いちにち",
+      "gloss": "one day, a whole day (note: same kanji 一日 with a different reading, distinct from ついたち; context disambiguates)",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.二日",
+      "form": "二日",
+      "reading": "ふつか",
+      "gloss": "2nd / two days",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.三日",
+      "form": "三日",
+      "reading": "みっか",
+      "gloss": "3rd / three days",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.四日",
+      "form": "四日",
+      "reading": "よっか",
+      "gloss": "4th / four days",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.五日",
+      "form": "五日",
+      "reading": "いつか",
+      "gloss": "5th / five days",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.六日",
+      "form": "六日",
+      "reading": "むいか",
+      "gloss": "6th / six days",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.七日",
+      "form": "七日",
+      "reading": "なのか",
+      "gloss": "7th / seven days",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.八日",
+      "form": "八日",
+      "reading": "ようか",
+      "gloss": "8th / eight days",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.九日",
+      "form": "九日",
+      "reading": "ここのか",
+      "gloss": "9th / nine days",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.十日",
+      "form": "十日",
+      "reading": "とおか",
+      "gloss": "10th / ten days",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.二十日",
+      "form": "二十日",
+      "reading": "はつか",
+      "gloss": "20th / twenty days",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.週",
+      "form": "週",
+      "reading": "しゅう",
+      "gloss": "week",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.先週",
+      "form": "先週",
+      "reading": "せんしゅう",
+      "gloss": "last week",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.今週",
+      "form": "今週",
+      "reading": "こんしゅう",
+      "gloss": "this week",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.来週",
+      "form": "来週",
+      "reading": "らいしゅう",
+      "gloss": "next week",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.毎週",
+      "form": "毎週",
+      "reading": "まいしゅう",
+      "gloss": "every week",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.月曜日",
+      "form": "月曜日",
+      "reading": "げつようび",
+      "gloss": "Monday",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.火曜日",
+      "form": "火曜日",
+      "reading": "かようび",
+      "gloss": "Tuesday",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.水曜日",
+      "form": "水曜日",
+      "reading": "すいようび",
+      "gloss": "Wednesday",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.木曜日",
+      "form": "木曜日",
+      "reading": "もくようび",
+      "gloss": "Thursday",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.金曜日",
+      "form": "金曜日",
+      "reading": "きんようび",
+      "gloss": "Friday",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.土曜日",
+      "form": "土曜日",
+      "reading": "どようび",
+      "gloss": "Saturday",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.日曜日",
+      "form": "日曜日",
+      "reading": "にちようび",
+      "gloss": "Sunday",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.しゅうまつ",
+      "form": "しゅうまつ",
+      "reading": null,
+      "gloss": "weekend",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.月",
+      "form": "月",
+      "reading": "つき",
+      "gloss": "month, moon",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.一月",
+      "form": "一月",
+      "reading": "いちがつ",
+      "gloss": "January",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.二月",
+      "form": "二月",
+      "reading": "にがつ",
+      "gloss": "February",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.三月",
+      "form": "三月",
+      "reading": "さんがつ",
+      "gloss": "March",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.四月",
+      "form": "四月",
+      "reading": "しがつ",
+      "gloss": "April",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.五月",
+      "form": "五月",
+      "reading": "ごがつ",
+      "gloss": "May",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.六月",
+      "form": "六月",
+      "reading": "ろくがつ",
+      "gloss": "June",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.七月",
+      "form": "七月",
+      "reading": "しちがつ",
+      "gloss": "July",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.八月",
+      "form": "八月",
+      "reading": "はちがつ",
+      "gloss": "August",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.九月",
+      "form": "九月",
+      "reading": "くがつ",
+      "gloss": "September",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.十月",
+      "form": "十月",
+      "reading": "じゅうがつ",
+      "gloss": "October",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.十一月",
+      "form": "十一月",
+      "reading": "じゅういちがつ",
+      "gloss": "November",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.十二月",
+      "form": "十二月",
+      "reading": "じゅうにがつ",
+      "gloss": "December",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.先月",
+      "form": "先月",
+      "reading": "せんげつ",
+      "gloss": "last month",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.今月",
+      "form": "今月",
+      "reading": "こんげつ",
+      "gloss": "this month",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.来月",
+      "form": "来月",
+      "reading": "らいげつ",
+      "gloss": "next month",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.毎月",
+      "form": "毎月",
+      "reading": "まいつき",
+      "gloss": "every month",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.年",
+      "form": "年",
+      "reading": "とし / ねん",
+      "gloss": "year",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.きょねん",
+      "form": "きょねん",
+      "reading": null,
+      "gloss": "last year",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.今年",
+      "form": "今年",
+      "reading": "ことし",
+      "gloss": "this year",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.来年",
+      "form": "来年",
+      "reading": "らいねん",
+      "gloss": "next year",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.毎年",
+      "form": "毎年",
+      "reading": "まいとし / まいねん",
+      "gloss": "every year",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.おととし",
+      "form": "おととし",
+      "reading": null,
+      "gloss": "year before last",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.さらいねん",
+      "form": "さらいねん",
+      "reading": null,
+      "gloss": "year after next **[Ext]**",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.たんじょうび",
+      "form": "たんじょうび",
+      "reading": null,
+      "gloss": "birthday",
+      "section": "11. Time - Days, Weeks, Months, Years"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.毎日",
+      "form": "毎日",
+      "reading": "まいにち",
+      "gloss": "every day",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.まいあさ",
+      "form": "まいあさ",
+      "reading": null,
+      "gloss": "every morning",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.まいばん",
+      "form": "まいばん",
+      "reading": null,
+      "gloss": "every night",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.いつも",
+      "form": "いつも",
+      "reading": null,
+      "gloss": "always",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.よく",
+      "form": "よく",
+      "reading": null,
+      "gloss": "often",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.時々",
+      "form": "時々",
+      "reading": "ときどき",
+      "gloss": "sometimes",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.たまに",
+      "form": "たまに",
+      "reading": null,
+      "gloss": "occasionally",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.あまり",
+      "form": "あまり",
+      "reading": null,
+      "gloss": "not very (with negative)",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.ぜんぜん",
+      "form": "ぜんぜん",
+      "reading": null,
+      "gloss": "not at all (with negative)",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.すぐ",
+      "form": "すぐ",
+      "reading": null,
+      "gloss": "soon, immediately",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.もう",
+      "form": "もう",
+      "reading": null,
+      "gloss": "already, soon, more",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.まだ",
+      "form": "まだ",
+      "reading": null,
+      "gloss": "still, not yet",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.はじめて",
+      "form": "はじめて",
+      "reading": null,
+      "gloss": "for the first time",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.さいしょ",
+      "form": "さいしょ",
+      "reading": null,
+      "gloss": "first, beginning",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.さいご",
+      "form": "さいご",
+      "reading": null,
+      "gloss": "last, end",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.つぎ",
+      "form": "つぎ",
+      "reading": null,
+      "gloss": "next",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.後で",
+      "form": "後で",
+      "reading": "あとで",
+      "gloss": "later",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.前",
+      "form": "前",
+      "reading": "まえ",
+      "gloss": "before, in front",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.ところ",
+      "form": "ところ",
+      "reading": null,
+      "gloss": "place",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.へや",
+      "form": "へや",
+      "reading": null,
+      "gloss": "room",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.だいどころ",
+      "form": "だいどころ",
+      "reading": null,
+      "gloss": "kitchen",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.おてあらい",
+      "form": "おてあらい",
+      "reading": null,
+      "gloss": "restroom",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.トイレ",
+      "form": "トイレ",
+      "reading": null,
+      "gloss": "toilet",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.おふろ",
+      "form": "おふろ",
+      "reading": null,
+      "gloss": "bath",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.げんかん",
+      "form": "げんかん",
+      "reading": null,
+      "gloss": "entrance",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.にわ",
+      "form": "にわ",
+      "reading": null,
+      "gloss": "garden",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.学校",
+      "form": "学校",
+      "reading": "がっこう",
+      "gloss": "school",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.大学",
+      "form": "大学",
+      "reading": "だいがく",
+      "gloss": "university",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.高校",
+      "form": "高校",
+      "reading": "こうこう",
+      "gloss": "high school",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.きょうしつ",
+      "form": "きょうしつ",
+      "reading": null,
+      "gloss": "classroom",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.としょかん",
+      "form": "としょかん",
+      "reading": null,
+      "gloss": "library",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.びょういん",
+      "form": "びょういん",
+      "reading": null,
+      "gloss": "hospital",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.ぎんこう",
+      "form": "ぎんこう",
+      "reading": null,
+      "gloss": "bank",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.ゆうびんきょく",
+      "form": "ゆうびんきょく",
+      "reading": null,
+      "gloss": "post office",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.会社",
+      "form": "会社",
+      "reading": "かいしゃ",
+      "gloss": "company",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.じむしょ",
+      "form": "じむしょ",
+      "reading": null,
+      "gloss": "office",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.お店",
+      "form": "お店",
+      "reading": "おみせ",
+      "gloss": "shop",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.スーパー",
+      "form": "スーパー",
+      "reading": null,
+      "gloss": "supermarket",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.デパート",
+      "form": "デパート",
+      "reading": null,
+      "gloss": "department store",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.きっさてん",
+      "form": "きっさてん",
+      "reading": null,
+      "gloss": "café",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.レストラン",
+      "form": "レストラン",
+      "reading": null,
+      "gloss": "restaurant",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.やおや",
+      "form": "やおや",
+      "reading": null,
+      "gloss": "greengrocer",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.ほんや",
+      "form": "ほんや",
+      "reading": null,
+      "gloss": "bookstore",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.はなや",
+      "form": "はなや",
+      "reading": null,
+      "gloss": "flower shop",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.にくや",
+      "form": "にくや",
+      "reading": null,
+      "gloss": "butcher",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.パンや",
+      "form": "パンや",
+      "reading": null,
+      "gloss": "bakery",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.駅",
+      "form": "駅",
+      "reading": "えき",
+      "gloss": "station",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.くうこう",
+      "form": "くうこう",
+      "reading": null,
+      "gloss": "airport",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.こうえん",
+      "form": "こうえん",
+      "reading": null,
+      "gloss": "park",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.どうぶつえん",
+      "form": "どうぶつえん",
+      "reading": null,
+      "gloss": "zoo **[Ext]**",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.びじゅつかん",
+      "form": "びじゅつかん",
+      "reading": null,
+      "gloss": "art museum **[Ext]**",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.えいがかん",
+      "form": "えいがかん",
+      "reading": null,
+      "gloss": "movie theater",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.ホテル",
+      "form": "ホテル",
+      "reading": null,
+      "gloss": "hotel",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.りょかん",
+      "form": "りょかん",
+      "reading": null,
+      "gloss": "Japanese inn **[Cul]**",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.たいしかん",
+      "form": "たいしかん",
+      "reading": null,
+      "gloss": "embassy **[Ext]**",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.こうばん",
+      "form": "こうばん",
+      "reading": null,
+      "gloss": "police box **[Cul]**",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.こうじょう",
+      "form": "こうじょう",
+      "reading": null,
+      "gloss": "factory",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.こうさてん",
+      "form": "こうさてん",
+      "reading": null,
+      "gloss": "intersection",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.いりぐち",
+      "form": "いりぐち",
+      "reading": null,
+      "gloss": "entrance, entry",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.しょくどう",
+      "form": "しょくどう",
+      "reading": null,
+      "gloss": "cafeteria, dining room",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.たてもの",
+      "form": "たてもの",
+      "reading": null,
+      "gloss": "building",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.ろうか",
+      "form": "ろうか",
+      "reading": null,
+      "gloss": "hallway, corridor",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.プール",
+      "form": "プール",
+      "reading": null,
+      "gloss": "swimming pool",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.ポスト",
+      "form": "ポスト",
+      "reading": null,
+      "gloss": "post (mailbox)",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.道",
+      "form": "道",
+      "reading": "みち",
+      "gloss": "road, way",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.とおり",
+      "form": "とおり",
+      "reading": null,
+      "gloss": "street",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.かど",
+      "form": "かど",
+      "reading": null,
+      "gloss": "corner",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.はし",
+      "form": "はし",
+      "reading": null,
+      "gloss": "bridge",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.まち",
+      "form": "まち",
+      "reading": null,
+      "gloss": "town",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.むら",
+      "form": "むら",
+      "reading": null,
+      "gloss": "village",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.国",
+      "form": "国",
+      "reading": "くに",
+      "gloss": "country",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.外",
+      "form": "外",
+      "reading": "そと",
+      "gloss": "outside",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.中",
+      "form": "中",
+      "reading": "なか",
+      "gloss": "inside, middle",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.上",
+      "form": "上",
+      "reading": "うえ",
+      "gloss": "top, above",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.下",
+      "form": "下",
+      "reading": "した",
+      "gloss": "under, below",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.前",
+      "form": "前",
+      "reading": "まえ",
+      "gloss": "front",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.後ろ",
+      "form": "後ろ",
+      "reading": "うしろ",
+      "gloss": "back, behind",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.左",
+      "form": "左",
+      "reading": "ひだり",
+      "gloss": "left",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.右",
+      "form": "右",
+      "reading": "みぎ",
+      "gloss": "right",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.となり",
+      "form": "となり",
+      "reading": null,
+      "gloss": "next to",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.よこ",
+      "form": "よこ",
+      "reading": null,
+      "gloss": "side",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.ちかく",
+      "form": "ちかく",
+      "reading": null,
+      "gloss": "near",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.とおく",
+      "form": "とおく",
+      "reading": null,
+      "gloss": "far",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.むこう",
+      "form": "むこう",
+      "reading": null,
+      "gloss": "over there, beyond",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.北",
+      "form": "北",
+      "reading": "きた",
+      "gloss": "north",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.南",
+      "form": "南",
+      "reading": "みなみ",
+      "gloss": "south",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.東",
+      "form": "東",
+      "reading": "ひがし",
+      "gloss": "east",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.西",
+      "form": "西",
+      "reading": "にし",
+      "gloss": "west",
+      "section": "13. Locations and Places (general)"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.山",
+      "form": "山",
+      "reading": "やま",
+      "gloss": "mountain",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.川",
+      "form": "川",
+      "reading": "かわ",
+      "gloss": "river",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.うみ",
+      "form": "うみ",
+      "reading": null,
+      "gloss": "sea, ocean",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.いけ",
+      "form": "いけ",
+      "reading": null,
+      "gloss": "pond",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.みずうみ",
+      "form": "みずうみ",
+      "reading": null,
+      "gloss": "lake",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.もり",
+      "form": "もり",
+      "reading": null,
+      "gloss": "forest",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.木",
+      "form": "木",
+      "reading": "き",
+      "gloss": "tree",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.花",
+      "form": "花",
+      "reading": "はな",
+      "gloss": "flower",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.くさ",
+      "form": "くさ",
+      "reading": null,
+      "gloss": "grass",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.は",
+      "form": "は",
+      "reading": null,
+      "gloss": "leaf",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.いし",
+      "form": "いし",
+      "reading": null,
+      "gloss": "stone",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.田",
+      "form": "田",
+      "reading": "た",
+      "gloss": "rice field",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.空",
+      "form": "空",
+      "reading": "そら",
+      "gloss": "sky",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.くも",
+      "form": "くも",
+      "reading": null,
+      "gloss": "cloud",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.たいよう",
+      "form": "たいよう",
+      "reading": null,
+      "gloss": "sun",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.月",
+      "form": "月",
+      "reading": "つき",
+      "gloss": "moon",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.ほし",
+      "form": "ほし",
+      "reading": null,
+      "gloss": "star",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.雨",
+      "form": "雨",
+      "reading": "あめ",
+      "gloss": "rain",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.ゆき",
+      "form": "ゆき",
+      "reading": null,
+      "gloss": "snow",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.かぜ",
+      "form": "かぜ",
+      "reading": null,
+      "gloss": "wind",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.天気",
+      "form": "天気",
+      "reading": "てんき",
+      "gloss": "weather",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.はれ",
+      "form": "はれ",
+      "reading": null,
+      "gloss": "clear weather",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.くもり",
+      "form": "くもり",
+      "reading": null,
+      "gloss": "cloudy",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.はる",
+      "form": "はる",
+      "reading": null,
+      "gloss": "spring",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.なつ",
+      "form": "なつ",
+      "reading": null,
+      "gloss": "summer",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.あき",
+      "form": "あき",
+      "reading": null,
+      "gloss": "autumn",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.ふゆ",
+      "form": "ふゆ",
+      "reading": null,
+      "gloss": "winter",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.あつい",
+      "form": "あつい",
+      "reading": null,
+      "gloss": "hot (weather)",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.さむい",
+      "form": "さむい",
+      "reading": null,
+      "gloss": "cold (weather)",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.すずしい",
+      "form": "すずしい",
+      "reading": null,
+      "gloss": "cool",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.あたたかい",
+      "form": "あたたかい",
+      "reading": null,
+      "gloss": "warm",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.火",
+      "form": "火",
+      "reading": "ひ",
+      "gloss": "fire",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.水",
+      "form": "水",
+      "reading": "みず",
+      "gloss": "water (cold)",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.おゆ",
+      "form": "おゆ",
+      "reading": null,
+      "gloss": "hot water",
+      "section": "14. Nature and Weather"
+    },
+    {
+      "id": "n5.vocab.15-animals.どうぶつ",
+      "form": "どうぶつ",
+      "reading": null,
+      "gloss": "animal",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.15-animals.いぬ",
+      "form": "いぬ",
+      "reading": null,
+      "gloss": "dog",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.15-animals.ねこ",
+      "form": "ねこ",
+      "reading": null,
+      "gloss": "cat",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.15-animals.とり",
+      "form": "とり",
+      "reading": null,
+      "gloss": "bird",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.15-animals.さかな",
+      "form": "さかな",
+      "reading": null,
+      "gloss": "fish",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.15-animals.うま",
+      "form": "うま",
+      "reading": null,
+      "gloss": "horse",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.15-animals.うし",
+      "form": "うし",
+      "reading": null,
+      "gloss": "cow",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.15-animals.ぶた",
+      "form": "ぶた",
+      "reading": null,
+      "gloss": "pig",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.15-animals.にわとり",
+      "form": "にわとり",
+      "reading": null,
+      "gloss": "chicken",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.15-animals.ぞう",
+      "form": "ぞう",
+      "reading": null,
+      "gloss": "elephant **[Cul]**",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.15-animals.むし",
+      "form": "むし",
+      "reading": null,
+      "gloss": "insect",
+      "section": "15. Animals"
+    },
+    {
+      "id": "n5.vocab.16-food-and-drink-genera.たべもの",
+      "form": "たべもの",
+      "reading": null,
+      "gloss": "food",
+      "section": "16. Food and Drink - General"
+    },
+    {
+      "id": "n5.vocab.16-food-and-drink-genera.のみもの",
+      "form": "のみもの",
+      "reading": null,
+      "gloss": "drink",
+      "section": "16. Food and Drink - General"
+    },
+    {
+      "id": "n5.vocab.16-food-and-drink-genera.あさごはん",
+      "form": "あさごはん",
+      "reading": null,
+      "gloss": "breakfast",
+      "section": "16. Food and Drink - General"
+    },
+    {
+      "id": "n5.vocab.16-food-and-drink-genera.ひるごはん",
+      "form": "ひるごはん",
+      "reading": null,
+      "gloss": "lunch",
+      "section": "16. Food and Drink - General"
+    },
+    {
+      "id": "n5.vocab.16-food-and-drink-genera.ばんごはん",
+      "form": "ばんごはん",
+      "reading": null,
+      "gloss": "dinner",
+      "section": "16. Food and Drink - General"
+    },
+    {
+      "id": "n5.vocab.16-food-and-drink-genera.ゆうはん",
+      "form": "ゆうはん",
+      "reading": null,
+      "gloss": "dinner (alternate)",
+      "section": "16. Food and Drink - General"
+    },
+    {
+      "id": "n5.vocab.16-food-and-drink-genera.ごはん",
+      "form": "ごはん",
+      "reading": null,
+      "gloss": "rice, meal",
+      "section": "16. Food and Drink - General"
+    },
+    {
+      "id": "n5.vocab.16-food-and-drink-genera.しょくじ",
+      "form": "しょくじ",
+      "reading": null,
+      "gloss": "meal",
+      "section": "16. Food and Drink - General"
+    },
+    {
+      "id": "n5.vocab.16-food-and-drink-genera.おべんとう",
+      "form": "おべんとう",
+      "reading": null,
+      "gloss": "boxed lunch",
+      "section": "16. Food and Drink - General"
+    },
+    {
+      "id": "n5.vocab.16-food-and-drink-genera.おかし",
+      "form": "おかし",
+      "reading": null,
+      "gloss": "sweets, snacks",
+      "section": "16. Food and Drink - General"
+    },
+    {
+      "id": "n5.vocab.17-food-items.パン",
+      "form": "パン",
+      "reading": null,
+      "gloss": "bread",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.たまご",
+      "form": "たまご",
+      "reading": null,
+      "gloss": "egg",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.にく",
+      "form": "にく",
+      "reading": null,
+      "gloss": "meat",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.ぎゅうにく",
+      "form": "ぎゅうにく",
+      "reading": null,
+      "gloss": "beef",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.ぶたにく",
+      "form": "ぶたにく",
+      "reading": null,
+      "gloss": "pork",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.とりにく",
+      "form": "とりにく",
+      "reading": null,
+      "gloss": "chicken (meat)",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.さかな",
+      "form": "さかな",
+      "reading": null,
+      "gloss": "fish",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.やさい",
+      "form": "やさい",
+      "reading": null,
+      "gloss": "vegetable",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.くだもの",
+      "form": "くだもの",
+      "reading": null,
+      "gloss": "fruit",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.りんご",
+      "form": "りんご",
+      "reading": null,
+      "gloss": "apple",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.みかん",
+      "form": "みかん",
+      "reading": null,
+      "gloss": "mandarin orange",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.バナナ",
+      "form": "バナナ",
+      "reading": null,
+      "gloss": "banana",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.いちご",
+      "form": "いちご",
+      "reading": null,
+      "gloss": "strawberry",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.ぶどう",
+      "form": "ぶどう",
+      "reading": null,
+      "gloss": "grape",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.すいか",
+      "form": "すいか",
+      "reading": null,
+      "gloss": "watermelon",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.レモン",
+      "form": "レモン",
+      "reading": null,
+      "gloss": "lemon",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.だいこん",
+      "form": "だいこん",
+      "reading": null,
+      "gloss": "daikon radish **[Cul]**",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.にんじん",
+      "form": "にんじん",
+      "reading": null,
+      "gloss": "carrot",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.たまねぎ",
+      "form": "たまねぎ",
+      "reading": null,
+      "gloss": "onion",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.じゃがいも",
+      "form": "じゃがいも",
+      "reading": null,
+      "gloss": "potato",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.トマト",
+      "form": "トマト",
+      "reading": null,
+      "gloss": "tomato",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.きゅうり",
+      "form": "きゅうり",
+      "reading": null,
+      "gloss": "cucumber",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.キャベツ",
+      "form": "キャベツ",
+      "reading": null,
+      "gloss": "cabbage",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.こめ",
+      "form": "こめ",
+      "reading": null,
+      "gloss": "uncooked rice",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.しお",
+      "form": "しお",
+      "reading": null,
+      "gloss": "salt",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.さとう",
+      "form": "さとう",
+      "reading": null,
+      "gloss": "sugar",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.しょうゆ",
+      "form": "しょうゆ",
+      "reading": null,
+      "gloss": "soy sauce **[Cul]**",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.みそ",
+      "form": "みそ",
+      "reading": null,
+      "gloss": "miso **[Cul]**",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.バター",
+      "form": "バター",
+      "reading": null,
+      "gloss": "butter",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.チーズ",
+      "form": "チーズ",
+      "reading": null,
+      "gloss": "cheese",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.すし",
+      "form": "すし",
+      "reading": null,
+      "gloss": "sushi **[Cul]**",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.天ぷら",
+      "form": "天ぷら",
+      "reading": "てんぷら",
+      "gloss": "tempura **[Cul]**",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.カレー",
+      "form": "カレー",
+      "reading": null,
+      "gloss": "curry",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.ラーメン",
+      "form": "ラーメン",
+      "reading": null,
+      "gloss": "ramen",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.うどん",
+      "form": "うどん",
+      "reading": null,
+      "gloss": "udon **[Cul]**",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.そば",
+      "form": "そば",
+      "reading": null,
+      "gloss": "soba **[Cul]**",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.ハンバーガー",
+      "form": "ハンバーガー",
+      "reading": null,
+      "gloss": "hamburger",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.サンドイッチ",
+      "form": "サンドイッチ",
+      "reading": null,
+      "gloss": "sandwich",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.サラダ",
+      "form": "サラダ",
+      "reading": null,
+      "gloss": "salad",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.スープ",
+      "form": "スープ",
+      "reading": null,
+      "gloss": "soup",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.ケーキ",
+      "form": "ケーキ",
+      "reading": null,
+      "gloss": "cake",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.アイスクリーム",
+      "form": "アイスクリーム",
+      "reading": null,
+      "gloss": "ice cream",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.チョコレート",
+      "form": "チョコレート",
+      "reading": null,
+      "gloss": "chocolate",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.17-food-items.あめ",
+      "form": "あめ",
+      "reading": null,
+      "gloss": "candy (homophone of 雨 \"rain\")",
+      "section": "17. Food - Items"
+    },
+    {
+      "id": "n5.vocab.18-drinks.水",
+      "form": "水",
+      "reading": "みず",
+      "gloss": "water",
+      "section": "18. Drinks"
+    },
+    {
+      "id": "n5.vocab.18-drinks.おゆ",
+      "form": "おゆ",
+      "reading": null,
+      "gloss": "hot water",
+      "section": "18. Drinks"
+    },
+    {
+      "id": "n5.vocab.18-drinks.おちゃ",
+      "form": "おちゃ",
+      "reading": null,
+      "gloss": "tea, green tea (Japanese tea)",
+      "section": "18. Drinks"
+    },
+    {
+      "id": "n5.vocab.18-drinks.こうちゃ",
+      "form": "こうちゃ",
+      "reading": null,
+      "gloss": "black tea",
+      "section": "18. Drinks"
+    },
+    {
+      "id": "n5.vocab.18-drinks.コーヒー",
+      "form": "コーヒー",
+      "reading": null,
+      "gloss": "coffee",
+      "section": "18. Drinks"
+    },
+    {
+      "id": "n5.vocab.18-drinks.ぎゅうにゅう",
+      "form": "ぎゅうにゅう",
+      "reading": null,
+      "gloss": "milk (also commonly: ミルク)",
+      "section": "18. Drinks"
+    },
+    {
+      "id": "n5.vocab.18-drinks.ジュース",
+      "form": "ジュース",
+      "reading": null,
+      "gloss": "juice",
+      "section": "18. Drinks"
+    },
+    {
+      "id": "n5.vocab.18-drinks.おさけ",
+      "form": "おさけ",
+      "reading": null,
+      "gloss": "alcohol, sake",
+      "section": "18. Drinks"
+    },
+    {
+      "id": "n5.vocab.18-drinks.ビール",
+      "form": "ビール",
+      "reading": null,
+      "gloss": "beer",
+      "section": "18. Drinks"
+    },
+    {
+      "id": "n5.vocab.18-drinks.ワイン",
+      "form": "ワイン",
+      "reading": null,
+      "gloss": "wine",
+      "section": "18. Drinks"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.さら",
+      "form": "さら",
+      "reading": null,
+      "gloss": "plate",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.おさら",
+      "form": "おさら",
+      "reading": null,
+      "gloss": "plate (polite)",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.ちゃわん",
+      "form": "ちゃわん",
+      "reading": null,
+      "gloss": "rice bowl",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.おわん",
+      "form": "おわん",
+      "reading": null,
+      "gloss": "bowl",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.はし",
+      "form": "はし",
+      "reading": null,
+      "gloss": "chopsticks",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.スプーン",
+      "form": "スプーン",
+      "reading": null,
+      "gloss": "spoon",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.フォーク",
+      "form": "フォーク",
+      "reading": null,
+      "gloss": "fork",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.ナイフ",
+      "form": "ナイフ",
+      "reading": null,
+      "gloss": "knife",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.コップ",
+      "form": "コップ",
+      "reading": null,
+      "gloss": "cup, glass",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.カップ",
+      "form": "カップ",
+      "reading": null,
+      "gloss": "cup (alt of コップ)",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.れいぞうこ",
+      "form": "れいぞうこ",
+      "reading": null,
+      "gloss": "refrigerator",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.19-tableware-and-cooking.なべ",
+      "form": "なべ",
+      "reading": null,
+      "gloss": "pot, pan",
+      "section": "19. Tableware and Cooking"
+    },
+    {
+      "id": "n5.vocab.20-colors.いろ",
+      "form": "いろ",
+      "reading": null,
+      "gloss": "color",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.白",
+      "form": "白",
+      "reading": "しろ",
+      "gloss": "white (noun)",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.白い",
+      "form": "白い",
+      "reading": "しろい",
+      "gloss": "white (adj)",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.くろ",
+      "form": "くろ",
+      "reading": null,
+      "gloss": "black (noun)",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.くろい",
+      "form": "くろい",
+      "reading": null,
+      "gloss": "black (adj)",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.あか",
+      "form": "あか",
+      "reading": null,
+      "gloss": "red (noun)",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.あかい",
+      "form": "あかい",
+      "reading": null,
+      "gloss": "red (adj)",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.あお",
+      "form": "あお",
+      "reading": null,
+      "gloss": "blue (noun)",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.あおい",
+      "form": "あおい",
+      "reading": null,
+      "gloss": "blue (adj)",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.きいろ",
+      "form": "きいろ",
+      "reading": null,
+      "gloss": "yellow (noun)",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.きいろい",
+      "form": "きいろい",
+      "reading": null,
+      "gloss": "yellow (adj)",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.ちゃいろ",
+      "form": "ちゃいろ",
+      "reading": null,
+      "gloss": "brown",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.みどり",
+      "form": "みどり",
+      "reading": null,
+      "gloss": "green",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.20-colors.ピンク",
+      "form": "ピンク",
+      "reading": null,
+      "gloss": "pink",
+      "section": "20. Colors"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.ふく",
+      "form": "ふく",
+      "reading": null,
+      "gloss": "clothes",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.ようふく",
+      "form": "ようふく",
+      "reading": null,
+      "gloss": "Western clothes",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.きもの",
+      "form": "きもの",
+      "reading": null,
+      "gloss": "kimono, traditional clothes **[Cul]**",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.うわぎ",
+      "form": "うわぎ",
+      "reading": null,
+      "gloss": "jacket, coat",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.コート",
+      "form": "コート",
+      "reading": null,
+      "gloss": "coat",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.セーター",
+      "form": "セーター",
+      "reading": null,
+      "gloss": "sweater",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.シャツ",
+      "form": "シャツ",
+      "reading": null,
+      "gloss": "shirt",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.Tシャツ",
+      "form": "Tシャツ",
+      "reading": "ティーシャツ",
+      "gloss": "T-shirt",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.ワイシャツ",
+      "form": "ワイシャツ",
+      "reading": null,
+      "gloss": "dress shirt",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.ズボン",
+      "form": "ズボン",
+      "reading": null,
+      "gloss": "trousers",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.スカート",
+      "form": "スカート",
+      "reading": null,
+      "gloss": "skirt",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.ネクタイ",
+      "form": "ネクタイ",
+      "reading": null,
+      "gloss": "necktie",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.ぼうし",
+      "form": "ぼうし",
+      "reading": null,
+      "gloss": "hat, cap",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.くつ",
+      "form": "くつ",
+      "reading": null,
+      "gloss": "shoes",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.くつした",
+      "form": "くつした",
+      "reading": null,
+      "gloss": "socks",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.ハンカチ",
+      "form": "ハンカチ",
+      "reading": null,
+      "gloss": "handkerchief",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.かばん",
+      "form": "かばん",
+      "reading": null,
+      "gloss": "bag",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.さいふ",
+      "form": "さいふ",
+      "reading": null,
+      "gloss": "wallet",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.めがね",
+      "form": "めがね",
+      "reading": null,
+      "gloss": "glasses",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.とけい",
+      "form": "とけい",
+      "reading": null,
+      "gloss": "watch, clock",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.ボタン",
+      "form": "ボタン",
+      "reading": null,
+      "gloss": "button",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.ポケット",
+      "form": "ポケット",
+      "reading": null,
+      "gloss": "pocket",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.21-clothing-and-accessor.かさ",
+      "form": "かさ",
+      "reading": null,
+      "gloss": "umbrella",
+      "section": "21. Clothing and Accessories"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.お金",
+      "form": "お金",
+      "reading": "おかね",
+      "gloss": "money",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.円",
+      "form": "円",
+      "reading": "えん",
+      "gloss": "yen",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.ドル",
+      "form": "ドル",
+      "reading": null,
+      "gloss": "dollar",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.ねだん",
+      "form": "ねだん",
+      "reading": null,
+      "gloss": "price",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.きっぷ",
+      "form": "きっぷ",
+      "reading": null,
+      "gloss": "ticket",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.きって",
+      "form": "きって",
+      "reading": null,
+      "gloss": "postage stamp",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.はがき",
+      "form": "はがき",
+      "reading": null,
+      "gloss": "postcard",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.ふうとう",
+      "form": "ふうとう",
+      "reading": null,
+      "gloss": "envelope",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.てがみ",
+      "form": "てがみ",
+      "reading": null,
+      "gloss": "letter",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.にもつ",
+      "form": "にもつ",
+      "reading": null,
+      "gloss": "luggage, package",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.おみやげ",
+      "form": "おみやげ",
+      "reading": null,
+      "gloss": "souvenir **[Cul]**",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.レジ",
+      "form": "レジ",
+      "reading": null,
+      "gloss": "register, cashier",
+      "section": "22. Money and Shopping"
+    },
+    {
+      "id": "n5.vocab.23-transport.車",
+      "form": "車",
+      "reading": "くるま",
+      "gloss": "car",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.じどうしゃ",
+      "form": "じどうしゃ",
+      "reading": null,
+      "gloss": "automobile",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.じてんしゃ",
+      "form": "じてんしゃ",
+      "reading": null,
+      "gloss": "bicycle",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.バイク",
+      "form": "バイク",
+      "reading": null,
+      "gloss": "motorbike",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.バス",
+      "form": "バス",
+      "reading": null,
+      "gloss": "bus",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.タクシー",
+      "form": "タクシー",
+      "reading": null,
+      "gloss": "taxi",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.電車",
+      "form": "電車",
+      "reading": "でんしゃ",
+      "gloss": "train (electric)",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.きしゃ",
+      "form": "きしゃ",
+      "reading": null,
+      "gloss": "train (steam, archaic but still in older N5 lists) **[Ext]**",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.ちかてつ",
+      "form": "ちかてつ",
+      "reading": null,
+      "gloss": "subway",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.ひこうき",
+      "form": "ひこうき",
+      "reading": null,
+      "gloss": "airplane",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.ふね",
+      "form": "ふね",
+      "reading": null,
+      "gloss": "ship, boat",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.道",
+      "form": "道",
+      "reading": "みち",
+      "gloss": "road",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.23-transport.しんごう",
+      "form": "しんごう",
+      "reading": null,
+      "gloss": "traffic light, signal",
+      "section": "23. Transport"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.べんきょう",
+      "form": "べんきょう",
+      "reading": null,
+      "gloss": "study",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.じゅぎょう",
+      "form": "じゅぎょう",
+      "reading": null,
+      "gloss": "class, lesson",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.しゅくだい",
+      "form": "しゅくだい",
+      "reading": null,
+      "gloss": "homework",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.しけん",
+      "form": "しけん",
+      "reading": null,
+      "gloss": "exam",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.テスト",
+      "form": "テスト",
+      "reading": null,
+      "gloss": "test",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.しつもん",
+      "form": "しつもん",
+      "reading": null,
+      "gloss": "question",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.こたえ",
+      "form": "こたえ",
+      "reading": null,
+      "gloss": "answer",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.いみ",
+      "form": "いみ",
+      "reading": null,
+      "gloss": "meaning",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.ことば",
+      "form": "ことば",
+      "reading": null,
+      "gloss": "word, language",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.じ",
+      "form": "じ",
+      "reading": null,
+      "gloss": "character, letter",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.かんじ",
+      "form": "かんじ",
+      "reading": null,
+      "gloss": "kanji, Chinese characters",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.かな",
+      "form": "かな",
+      "reading": null,
+      "gloss": "kana",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.ひらがな",
+      "form": "ひらがな",
+      "reading": null,
+      "gloss": "hiragana",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.カタカナ",
+      "form": "カタカナ",
+      "reading": null,
+      "gloss": "katakana",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.もじ",
+      "form": "もじ",
+      "reading": null,
+      "gloss": "letter, character",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.ぶん",
+      "form": "ぶん",
+      "reading": null,
+      "gloss": "sentence",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.ぶんしょう",
+      "form": "ぶんしょう",
+      "reading": null,
+      "gloss": "composition, text",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.ぶんぽう",
+      "form": "ぶんぽう",
+      "reading": null,
+      "gloss": "grammar",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.れい",
+      "form": "れい",
+      "reading": null,
+      "gloss": "example",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.れんしゅう",
+      "form": "れんしゅう",
+      "reading": null,
+      "gloss": "practice",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.本",
+      "form": "本",
+      "reading": "ほん",
+      "gloss": "book",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.きょうかしょ",
+      "form": "きょうかしょ",
+      "reading": null,
+      "gloss": "textbook",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.じしょ",
+      "form": "じしょ",
+      "reading": null,
+      "gloss": "dictionary",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.ざっし",
+      "form": "ざっし",
+      "reading": null,
+      "gloss": "magazine",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.新聞",
+      "form": "新聞",
+      "reading": "しんぶん",
+      "gloss": "newspaper",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.かみ",
+      "form": "かみ",
+      "reading": null,
+      "gloss": "paper",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.えんぴつ",
+      "form": "えんぴつ",
+      "reading": null,
+      "gloss": "pencil",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.ボールペン",
+      "form": "ボールペン",
+      "reading": null,
+      "gloss": "ballpoint pen",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.まんねんひつ",
+      "form": "まんねんひつ",
+      "reading": null,
+      "gloss": "fountain pen **[Ext]**",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.ペン",
+      "form": "ペン",
+      "reading": null,
+      "gloss": "pen",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.ノート",
+      "form": "ノート",
+      "reading": null,
+      "gloss": "notebook",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.こくばん",
+      "form": "こくばん",
+      "reading": null,
+      "gloss": "blackboard",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.チョーク",
+      "form": "チョーク",
+      "reading": null,
+      "gloss": "chalk",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.つくえ",
+      "form": "つくえ",
+      "reading": null,
+      "gloss": "desk",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.いす",
+      "form": "いす",
+      "reading": null,
+      "gloss": "chair",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.けしゴム",
+      "form": "けしゴム",
+      "reading": null,
+      "gloss": "eraser",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.ちず",
+      "form": "ちず",
+      "reading": null,
+      "gloss": "map",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.しゃしん",
+      "form": "しゃしん",
+      "reading": null,
+      "gloss": "photograph",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.え",
+      "form": "え",
+      "reading": null,
+      "gloss": "picture, drawing",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.番号",
+      "form": "番号",
+      "reading": "ばんごう",
+      "gloss": "number",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.電気",
+      "form": "電気",
+      "reading": "でんき",
+      "gloss": "electricity, light",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.電話",
+      "form": "電話",
+      "reading": "でんわ",
+      "gloss": "telephone",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.電話番号",
+      "form": "電話番号",
+      "reading": "でんわばんごう",
+      "gloss": "phone number",
+      "section": "24. School and Study"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.日本",
+      "form": "日本",
+      "reading": "にほん / にっぽん",
+      "gloss": "Japan",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.日本語",
+      "form": "日本語",
+      "reading": "にほんご",
+      "gloss": "Japanese (language)",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.日本人",
+      "form": "日本人",
+      "reading": "にほんじん",
+      "gloss": "Japanese (person)",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.アメリカ",
+      "form": "アメリカ",
+      "reading": null,
+      "gloss": "America",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.えいご",
+      "form": "えいご",
+      "reading": null,
+      "gloss": "English (language)",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.中国",
+      "form": "中国",
+      "reading": "ちゅうごく",
+      "gloss": "China",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.中国語",
+      "form": "中国語",
+      "reading": "ちゅうごくご",
+      "gloss": "Chinese (language)",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.かんこく",
+      "form": "かんこく",
+      "reading": null,
+      "gloss": "Korea",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.かんこくご",
+      "form": "かんこくご",
+      "reading": null,
+      "gloss": "Korean (language)",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.フランス",
+      "form": "フランス",
+      "reading": null,
+      "gloss": "France",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.フランスご",
+      "form": "フランスご",
+      "reading": null,
+      "gloss": "French (language)",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.ドイツ",
+      "form": "ドイツ",
+      "reading": null,
+      "gloss": "Germany",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.スペイン",
+      "form": "スペイン",
+      "reading": null,
+      "gloss": "Spain",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.イギリス",
+      "form": "イギリス",
+      "reading": null,
+      "gloss": "United Kingdom",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.外国",
+      "form": "外国",
+      "reading": "がいこく",
+      "gloss": "foreign country",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.外国語",
+      "form": "外国語",
+      "reading": "がいこくご",
+      "gloss": "foreign language",
+      "section": "25. Languages and Countries"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.アパート",
+      "form": "アパート",
+      "reading": null,
+      "gloss": "apartment",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.マンション",
+      "form": "マンション",
+      "reading": null,
+      "gloss": "condominium **[Cul]**",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.ドア",
+      "form": "ドア",
+      "reading": null,
+      "gloss": "door",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.と",
+      "form": "と",
+      "reading": null,
+      "gloss": "door (Japanese-style)",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.もん",
+      "form": "もん",
+      "reading": null,
+      "gloss": "gate",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.まど",
+      "form": "まど",
+      "reading": null,
+      "gloss": "window",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.かべ",
+      "form": "かべ",
+      "reading": null,
+      "gloss": "wall",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.かいだん",
+      "form": "かいだん",
+      "reading": null,
+      "gloss": "stairs",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.エレベーター",
+      "form": "エレベーター",
+      "reading": null,
+      "gloss": "elevator",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.へや",
+      "form": "へや",
+      "reading": null,
+      "gloss": "room",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.げんかん",
+      "form": "げんかん",
+      "reading": null,
+      "gloss": "entrance",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.いま",
+      "form": "いま",
+      "reading": null,
+      "gloss": "living room",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.しんしつ",
+      "form": "しんしつ",
+      "reading": null,
+      "gloss": "bedroom",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.ベッド",
+      "form": "ベッド",
+      "reading": null,
+      "gloss": "bed",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.ふとん",
+      "form": "ふとん",
+      "reading": null,
+      "gloss": "futon **[Cul]**",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.もうふ",
+      "form": "もうふ",
+      "reading": null,
+      "gloss": "blanket",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.まくら",
+      "form": "まくら",
+      "reading": null,
+      "gloss": "pillow",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.テーブル",
+      "form": "テーブル",
+      "reading": null,
+      "gloss": "table",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.つくえ",
+      "form": "つくえ",
+      "reading": null,
+      "gloss": "desk",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.いす",
+      "form": "いす",
+      "reading": null,
+      "gloss": "chair",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.たな",
+      "form": "たな",
+      "reading": null,
+      "gloss": "shelf",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.ほんだな",
+      "form": "ほんだな",
+      "reading": null,
+      "gloss": "bookshelf",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.カーテン",
+      "form": "カーテン",
+      "reading": null,
+      "gloss": "curtain",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.かぎ",
+      "form": "かぎ",
+      "reading": null,
+      "gloss": "key, lock",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.電気",
+      "form": "電気",
+      "reading": "でんき",
+      "gloss": "light",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.せっけん",
+      "form": "せっけん",
+      "reading": null,
+      "gloss": "soap",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.はブラシ",
+      "form": "はブラシ",
+      "reading": null,
+      "gloss": "toothbrush",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.タオル",
+      "form": "タオル",
+      "reading": null,
+      "gloss": "towel",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.テープ",
+      "form": "テープ",
+      "reading": null,
+      "gloss": "tape",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.テレビ",
+      "form": "テレビ",
+      "reading": null,
+      "gloss": "TV",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.ラジオ",
+      "form": "ラジオ",
+      "reading": null,
+      "gloss": "radio",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.カメラ",
+      "form": "カメラ",
+      "reading": null,
+      "gloss": "camera",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.ビデオ",
+      "form": "ビデオ",
+      "reading": null,
+      "gloss": "video",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.えいが",
+      "form": "えいが",
+      "reading": null,
+      "gloss": "movie",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.おんがく",
+      "form": "おんがく",
+      "reading": null,
+      "gloss": "music",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.うた",
+      "form": "うた",
+      "reading": null,
+      "gloss": "song",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.え",
+      "form": "え",
+      "reading": null,
+      "gloss": "picture",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.ピアノ",
+      "form": "ピアノ",
+      "reading": null,
+      "gloss": "piano",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.ギター",
+      "form": "ギター",
+      "reading": null,
+      "gloss": "guitar",
+      "section": "26. House and Furniture"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.会う",
+      "form": "会う",
+      "reading": "あう",
+      "gloss": "to meet",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.言う",
+      "form": "言う",
+      "reading": "いう",
+      "gloss": "to say",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.行く",
+      "form": "行く",
+      "reading": "いく",
+      "gloss": "to go",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.うたう",
+      "form": "うたう",
+      "reading": null,
+      "gloss": "to sing",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.おもう",
+      "form": "おもう",
+      "reading": null,
+      "gloss": "to think",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.買う",
+      "form": "買う",
+      "reading": "かう",
+      "gloss": "to buy",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.書く",
+      "form": "書く",
+      "reading": "かく",
+      "gloss": "to write",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.聞く",
+      "form": "聞く",
+      "reading": "きく",
+      "gloss": "to listen, to ask",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.きる",
+      "form": "きる",
+      "reading": null,
+      "gloss": "to cut",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.つくる",
+      "form": "つくる",
+      "reading": null,
+      "gloss": "to make",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.しる",
+      "form": "しる",
+      "reading": null,
+      "gloss": "to know",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.すむ",
+      "form": "すむ",
+      "reading": null,
+      "gloss": "to live (reside)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.立つ",
+      "form": "立つ",
+      "reading": "たつ",
+      "gloss": "to stand",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.とる",
+      "form": "とる",
+      "reading": null,
+      "gloss": "to take, to pick up (general)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.とる.2",
+      "form": "とる",
+      "reading": null,
+      "gloss": "to take (a photo or video) - homophone of the above; uses a different kanji (not in N5 syllabus); semantically a specialization of \"take\"",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.なく",
+      "form": "なく",
+      "reading": null,
+      "gloss": "to cry (animals)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.飲む",
+      "form": "飲む",
+      "reading": "のむ",
+      "gloss": "to drink",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.入る",
+      "form": "入る",
+      "reading": "はいる",
+      "gloss": "to enter",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.はく",
+      "form": "はく",
+      "reading": null,
+      "gloss": "to put on (lower body)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.話す",
+      "form": "話す",
+      "reading": "はなす",
+      "gloss": "to speak",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.はしる",
+      "form": "はしる",
+      "reading": null,
+      "gloss": "to run",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.はたらく",
+      "form": "はたらく",
+      "reading": null,
+      "gloss": "to work",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.まつ",
+      "form": "まつ",
+      "reading": null,
+      "gloss": "to wait",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.もつ",
+      "form": "もつ",
+      "reading": null,
+      "gloss": "to hold, to have",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.休む",
+      "form": "休む",
+      "reading": "やすむ",
+      "gloss": "to rest",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.読む",
+      "form": "読む",
+      "reading": "よむ",
+      "gloss": "to read",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.わたる",
+      "form": "わたる",
+      "reading": null,
+      "gloss": "to cross",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.分かる",
+      "form": "分かる",
+      "reading": "わかる",
+      "gloss": "to understand",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.おわる",
+      "form": "おわる",
+      "reading": null,
+      "gloss": "to end",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.はじまる",
+      "form": "はじまる",
+      "reading": null,
+      "gloss": "to begin (intransitive)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.かえる",
+      "form": "かえる",
+      "reading": null,
+      "gloss": "to return home",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.うる",
+      "form": "うる",
+      "reading": null,
+      "gloss": "to sell",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.おす",
+      "form": "おす",
+      "reading": null,
+      "gloss": "to push",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.およぐ",
+      "form": "およぐ",
+      "reading": null,
+      "gloss": "to swim",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.ひく",
+      "form": "ひく",
+      "reading": null,
+      "gloss": "to play (a string instrument like guitar/piano)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.ひく.2",
+      "form": "ひく",
+      "reading": null,
+      "gloss": "to pull (homophone of the above; separate verb, separate kanji - both are common N5 readings of ひく)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.よぶ",
+      "form": "よぶ",
+      "reading": null,
+      "gloss": "to call",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.とぶ",
+      "form": "とぶ",
+      "reading": null,
+      "gloss": "to fly, to jump",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.こまる",
+      "form": "こまる",
+      "reading": null,
+      "gloss": "to be troubled **[Ext]**",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.ならぶ",
+      "form": "ならぶ",
+      "reading": null,
+      "gloss": "to line up **[Ext]**",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.のぼる",
+      "form": "のぼる",
+      "reading": null,
+      "gloss": "to climb **[Ext]**",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.わたす",
+      "form": "わたす",
+      "reading": null,
+      "gloss": "to hand over **[Ext]**",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.ぬぐ",
+      "form": "ぬぐ",
+      "reading": null,
+      "gloss": "to take off (clothes)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.あらう",
+      "form": "あらう",
+      "reading": null,
+      "gloss": "to wash",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.いそぐ",
+      "form": "いそぐ",
+      "reading": null,
+      "gloss": "to hurry",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.しぬ",
+      "form": "しぬ",
+      "reading": null,
+      "gloss": "to die",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.すう",
+      "form": "すう",
+      "reading": null,
+      "gloss": "to breathe in, to smoke",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.ちがう",
+      "form": "ちがう",
+      "reading": null,
+      "gloss": "to differ",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.つかう",
+      "form": "つかう",
+      "reading": null,
+      "gloss": "to use",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.つく",
+      "form": "つく",
+      "reading": null,
+      "gloss": "to arrive",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.ならう",
+      "form": "ならう",
+      "reading": null,
+      "gloss": "to learn",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.はる",
+      "form": "はる",
+      "reading": null,
+      "gloss": "to stick, to paste",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.まがる",
+      "form": "まがる",
+      "reading": null,
+      "gloss": "to turn",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.みがく",
+      "form": "みがく",
+      "reading": null,
+      "gloss": "to polish, to brush **[Ext]**",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.もっていく",
+      "form": "もっていく",
+      "reading": null,
+      "gloss": "to take (something)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.もってくる",
+      "form": "もってくる",
+      "reading": null,
+      "gloss": "to bring (something)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.あく",
+      "form": "あく",
+      "reading": null,
+      "gloss": "to open (intransitive; pair with あける)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.しまる",
+      "form": "しまる",
+      "reading": null,
+      "gloss": "to close (intransitive; pair with しめる)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.だす",
+      "form": "だす",
+      "reading": null,
+      "gloss": "to take out, to put out (transitive; pair with でる)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.おとす",
+      "form": "おとす",
+      "reading": null,
+      "gloss": "to drop (transitive; pair with おちる)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.ふく",
+      "form": "ふく",
+      "reading": null,
+      "gloss": "to blow (of the wind)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.ふる",
+      "form": "ふる",
+      "reading": null,
+      "gloss": "to fall (rain, snow)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.くもる",
+      "form": "くもる",
+      "reading": null,
+      "gloss": "to become cloudy",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.なくす",
+      "form": "なくす",
+      "reading": null,
+      "gloss": "to lose (something)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.のる",
+      "form": "のる",
+      "reading": null,
+      "gloss": "to get on (train, bus, plane)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.すわる",
+      "form": "すわる",
+      "reading": null,
+      "gloss": "to sit",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.たのむ",
+      "form": "たのむ",
+      "reading": null,
+      "gloss": "to ask (a favor)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.とまる",
+      "form": "とまる",
+      "reading": null,
+      "gloss": "to stop (intransitive)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.おく",
+      "form": "おく",
+      "reading": null,
+      "gloss": "to place, to put",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.さく",
+      "form": "さく",
+      "reading": null,
+      "gloss": "to bloom",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.かかる",
+      "form": "かかる",
+      "reading": null,
+      "gloss": "to take (time / money)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.さす",
+      "form": "さす",
+      "reading": null,
+      "gloss": "to put up (an umbrella), to raise",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.けす",
+      "form": "けす",
+      "reading": null,
+      "gloss": "to turn off, to erase (godan / Group 1; conjugates けします, けして)",
+      "section": "27. Verbs - Group 1 (う-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.いる",
+      "form": "いる",
+      "reading": null,
+      "gloss": "to exist (animate)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.食べる",
+      "form": "食べる",
+      "reading": "たべる",
+      "gloss": "to eat",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.見る",
+      "form": "見る",
+      "reading": "みる",
+      "gloss": "to see, to watch",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.ねる",
+      "form": "ねる",
+      "reading": null,
+      "gloss": "to sleep",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.おきる",
+      "form": "おきる",
+      "reading": null,
+      "gloss": "to get up",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.出る",
+      "form": "出る",
+      "reading": "でる",
+      "gloss": "to leave, to go out",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.入れる",
+      "form": "入れる",
+      "reading": "いれる",
+      "gloss": "to put in",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.あける",
+      "form": "あける",
+      "reading": null,
+      "gloss": "to open (transitive)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.しめる",
+      "form": "しめる",
+      "reading": null,
+      "gloss": "to close (transitive)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.おしえる",
+      "form": "おしえる",
+      "reading": null,
+      "gloss": "to teach",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.おぼえる",
+      "form": "おぼえる",
+      "reading": null,
+      "gloss": "to remember",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.わすれる",
+      "form": "わすれる",
+      "reading": null,
+      "gloss": "to forget",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.かりる",
+      "form": "かりる",
+      "reading": null,
+      "gloss": "to borrow",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.こたえる",
+      "form": "こたえる",
+      "reading": null,
+      "gloss": "to answer",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.出かける",
+      "form": "出かける",
+      "reading": "でかける",
+      "gloss": "to go out",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.かける",
+      "form": "かける",
+      "reading": null,
+      "gloss": "to call (phone), to wear (glasses)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.きる",
+      "form": "きる",
+      "reading": null,
+      "gloss": "to wear (upper body)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.つける",
+      "form": "つける",
+      "reading": null,
+      "gloss": "to switch on",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.ならべる",
+      "form": "ならべる",
+      "reading": null,
+      "gloss": "to line up (transitive) **[Ext]**",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.はじめる",
+      "form": "はじめる",
+      "reading": null,
+      "gloss": "to begin (transitive)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.見せる",
+      "form": "見せる",
+      "reading": "みせる",
+      "gloss": "to show",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.あびる",
+      "form": "あびる",
+      "reading": null,
+      "gloss": "to bathe (shower)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.いれる",
+      "form": "いれる",
+      "reading": null,
+      "gloss": "to make (tea / coffee) (note: same form as 入れる; context distinguishes)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.あつめる",
+      "form": "あつめる",
+      "reading": null,
+      "gloss": "to collect",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.きえる",
+      "form": "きえる",
+      "reading": null,
+      "gloss": "to go off, to disappear (intransitive; pair with けす)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.おちる",
+      "form": "おちる",
+      "reading": null,
+      "gloss": "to fall (intransitive; pair with おとす)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.はれる",
+      "form": "はれる",
+      "reading": null,
+      "gloss": "to be sunny / clear up",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.つかれる",
+      "form": "つかれる",
+      "reading": null,
+      "gloss": "to get tired",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.生まれる",
+      "form": "生まれる",
+      "reading": "うまれる",
+      "gloss": "to be born",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.おりる",
+      "form": "おりる",
+      "reading": null,
+      "gloss": "to get off (train, bus)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.しめる.2",
+      "form": "しめる",
+      "reading": null,
+      "gloss": "to tie / fasten / tighten (distinct from しめる \"to close\")",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.つとめる",
+      "form": "つとめる",
+      "reading": null,
+      "gloss": "to work for / be employed (ichidan / Group 2; conjugates つとめます, つとめて)",
+      "section": "28. Verbs - Group 2 (る-verbs)"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.する",
+      "form": "する",
+      "reading": null,
+      "gloss": "to do",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.来る",
+      "form": "来る",
+      "reading": "くる",
+      "gloss": "to come",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.べんきょうする",
+      "form": "べんきょうする",
+      "reading": null,
+      "gloss": "to study",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.けっこんする",
+      "form": "けっこんする",
+      "reading": null,
+      "gloss": "to get married",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.さんぽする",
+      "form": "さんぽする",
+      "reading": null,
+      "gloss": "to take a walk",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.りょこうする",
+      "form": "りょこうする",
+      "reading": null,
+      "gloss": "to travel",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.れんしゅうする",
+      "form": "れんしゅうする",
+      "reading": null,
+      "gloss": "to practice",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.しつもんする",
+      "form": "しつもんする",
+      "reading": null,
+      "gloss": "to ask a question",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.しごとする",
+      "form": "しごとする",
+      "reading": null,
+      "gloss": "to work",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.電話する",
+      "form": "電話する",
+      "reading": "でんわする",
+      "gloss": "to telephone",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.コピーする",
+      "form": "コピーする",
+      "reading": null,
+      "gloss": "to copy",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.そうじする",
+      "form": "そうじする",
+      "reading": null,
+      "gloss": "to clean",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.せんたくする",
+      "form": "せんたくする",
+      "reading": null,
+      "gloss": "to do laundry",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.29-verbs-irregular-and-v.かいものする",
+      "form": "かいものする",
+      "reading": null,
+      "gloss": "to go shopping",
+      "section": "29. Verbs - Irregular and する-verbs"
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.ある",
+      "form": "ある",
+      "reading": null,
+      "gloss": "to exist (inanimate)",
+      "section": "30. Verbs - Existence and Possession"
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.いる",
+      "form": "いる",
+      "reading": null,
+      "gloss": "to exist (animate) (also in §28 - listed here for thematic completeness with other existence/possession verbs)",
+      "section": "30. Verbs - Existence and Possession"
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.いる.2",
+      "form": "いる",
+      "reading": null,
+      "gloss": "to need (homophone of the existence いる; this one is godan / Group 1)",
+      "section": "30. Verbs - Existence and Possession"
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.やる",
+      "form": "やる",
+      "reading": null,
+      "gloss": "to give (down / casual)",
+      "section": "30. Verbs - Existence and Possession"
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.あげる",
+      "form": "あげる",
+      "reading": null,
+      "gloss": "to give",
+      "section": "30. Verbs - Existence and Possession"
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.もらう",
+      "form": "もらう",
+      "reading": null,
+      "gloss": "to receive",
+      "section": "30. Verbs - Existence and Possession"
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.くれる",
+      "form": "くれる",
+      "reading": null,
+      "gloss": "to give (to me / us)",
+      "section": "30. Verbs - Existence and Possession"
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.かす",
+      "form": "かす",
+      "reading": null,
+      "gloss": "to lend",
+      "section": "30. Verbs - Existence and Possession"
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.かりる",
+      "form": "かりる",
+      "reading": null,
+      "gloss": "to borrow",
+      "section": "30. Verbs - Existence and Possession"
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.かえす",
+      "form": "かえす",
+      "reading": null,
+      "gloss": "to return (something)",
+      "section": "30. Verbs - Existence and Possession"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.大きい",
+      "form": "大きい",
+      "reading": "おおきい",
+      "gloss": "big",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.小さい",
+      "form": "小さい",
+      "reading": "ちいさい",
+      "gloss": "small",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.新しい",
+      "form": "新しい",
+      "reading": "あたらしい",
+      "gloss": "new",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.古い",
+      "form": "古い",
+      "reading": "ふるい",
+      "gloss": "old (not for people)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.わるい",
+      "form": "わるい",
+      "reading": null,
+      "gloss": "bad",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.あつい",
+      "form": "あつい",
+      "reading": null,
+      "gloss": "hot (weather; separate adjective from the two below despite shared reading)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.さむい",
+      "form": "さむい",
+      "reading": null,
+      "gloss": "cold (weather)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.あつい.2",
+      "form": "あつい",
+      "reading": null,
+      "gloss": "hot (to the touch; separate adjective and separate kanji - homophone of the hot-weather one)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.つめたい",
+      "form": "つめたい",
+      "reading": null,
+      "gloss": "cold (to touch)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.高い",
+      "form": "高い",
+      "reading": "たかい",
+      "gloss": "high, tall, expensive",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.ひくい",
+      "form": "ひくい",
+      "reading": null,
+      "gloss": "low, short (height)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.安い",
+      "form": "安い",
+      "reading": "やすい",
+      "gloss": "cheap",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.長い",
+      "form": "長い",
+      "reading": "ながい",
+      "gloss": "long",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.みじかい",
+      "form": "みじかい",
+      "reading": null,
+      "gloss": "short (length)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.ひろい",
+      "form": "ひろい",
+      "reading": null,
+      "gloss": "wide, spacious",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.せまい",
+      "form": "せまい",
+      "reading": null,
+      "gloss": "narrow",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.おもい",
+      "form": "おもい",
+      "reading": null,
+      "gloss": "heavy",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.かるい",
+      "form": "かるい",
+      "reading": null,
+      "gloss": "light (weight)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.あつい.3",
+      "form": "あつい",
+      "reading": null,
+      "gloss": "thick (e.g., a thick book; separate adjective and separate kanji - third homophone of the あつい readings above)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.うすい",
+      "form": "うすい",
+      "reading": null,
+      "gloss": "thin",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.ふとい",
+      "form": "ふとい",
+      "reading": null,
+      "gloss": "thick (round things)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.ほそい",
+      "form": "ほそい",
+      "reading": null,
+      "gloss": "thin (round things)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.つよい",
+      "form": "つよい",
+      "reading": null,
+      "gloss": "strong",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.よわい",
+      "form": "よわい",
+      "reading": null,
+      "gloss": "weak",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.はやい",
+      "form": "はやい",
+      "reading": null,
+      "gloss": "early (time-related) - and separately, はやい - fast (speed-related). Two separate adjectives sharing the kana reading; the kanji disambiguates.",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.おそい",
+      "form": "おそい",
+      "reading": null,
+      "gloss": "slow, late",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.たのしい",
+      "form": "たのしい",
+      "reading": null,
+      "gloss": "fun, enjoyable",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.うれしい",
+      "form": "うれしい",
+      "reading": null,
+      "gloss": "happy",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.かなしい",
+      "form": "かなしい",
+      "reading": null,
+      "gloss": "sad",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.さびしい",
+      "form": "さびしい",
+      "reading": null,
+      "gloss": "lonely",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.いたい",
+      "form": "いたい",
+      "reading": null,
+      "gloss": "painful",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.かわいい",
+      "form": "かわいい",
+      "reading": null,
+      "gloss": "cute",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.うつくしい",
+      "form": "うつくしい",
+      "reading": null,
+      "gloss": "beautiful",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.きたない",
+      "form": "きたない",
+      "reading": null,
+      "gloss": "dirty",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.いそがしい",
+      "form": "いそがしい",
+      "reading": null,
+      "gloss": "busy",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.やさしい",
+      "form": "やさしい",
+      "reading": null,
+      "gloss": "easy (of a task) - and separately, やさしい - kind / gentle (of a person). Two separate adjectives sharing the kana reading; different kanji distinguish them.",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.むずかしい",
+      "form": "むずかしい",
+      "reading": null,
+      "gloss": "difficult",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.おもしろい",
+      "form": "おもしろい",
+      "reading": null,
+      "gloss": "interesting, funny",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.つまらない",
+      "form": "つまらない",
+      "reading": null,
+      "gloss": "boring",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.おいしい",
+      "form": "おいしい",
+      "reading": null,
+      "gloss": "delicious",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.まずい",
+      "form": "まずい",
+      "reading": null,
+      "gloss": "tastes bad",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.あまい",
+      "form": "あまい",
+      "reading": null,
+      "gloss": "sweet",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.からい",
+      "form": "からい",
+      "reading": null,
+      "gloss": "spicy, salty",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.にがい",
+      "form": "にがい",
+      "reading": null,
+      "gloss": "bitter",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.おおい",
+      "form": "おおい",
+      "reading": null,
+      "gloss": "many",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.すくない",
+      "form": "すくない",
+      "reading": null,
+      "gloss": "few",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.ちかい",
+      "form": "ちかい",
+      "reading": null,
+      "gloss": "near",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.とおい",
+      "form": "とおい",
+      "reading": null,
+      "gloss": "far",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.あかるい",
+      "form": "あかるい",
+      "reading": null,
+      "gloss": "bright",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.くらい",
+      "form": "くらい",
+      "reading": null,
+      "gloss": "dark",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.あたたかい",
+      "form": "あたたかい",
+      "reading": null,
+      "gloss": "warm",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.すずしい",
+      "form": "すずしい",
+      "reading": null,
+      "gloss": "cool",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.まるい",
+      "form": "まるい",
+      "reading": null,
+      "gloss": "round",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.しかくい",
+      "form": "しかくい",
+      "reading": null,
+      "gloss": "square",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.わかい",
+      "form": "わかい",
+      "reading": null,
+      "gloss": "young",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.きいろい",
+      "form": "きいろい",
+      "reading": null,
+      "gloss": "yellow",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.あおい",
+      "form": "あおい",
+      "reading": null,
+      "gloss": "blue",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.あかい",
+      "form": "あかい",
+      "reading": null,
+      "gloss": "red",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.くろい",
+      "form": "くろい",
+      "reading": null,
+      "gloss": "black",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.白い",
+      "form": "白い",
+      "reading": "しろい",
+      "gloss": "white",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.ちゃいろい",
+      "form": "ちゃいろい",
+      "reading": null,
+      "gloss": "brown",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.あぶない",
+      "form": "あぶない",
+      "reading": null,
+      "gloss": "dangerous",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.ほしい",
+      "form": "ほしい",
+      "reading": null,
+      "gloss": "want (something)",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.ぬるい",
+      "form": "ぬるい",
+      "reading": null,
+      "gloss": "lukewarm",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.31-adjectives.うるさい",
+      "form": "うるさい",
+      "reading": null,
+      "gloss": "noisy, annoying",
+      "section": "31. い-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.げんき",
+      "form": "げんき",
+      "reading": null,
+      "gloss": "healthy, energetic",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.しずか",
+      "form": "しずか",
+      "reading": null,
+      "gloss": "quiet",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.にぎやか",
+      "form": "にぎやか",
+      "reading": null,
+      "gloss": "lively, bustling",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.きれい",
+      "form": "きれい",
+      "reading": null,
+      "gloss": "pretty, clean",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.しんせつ",
+      "form": "しんせつ",
+      "reading": null,
+      "gloss": "kind",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.ひま",
+      "form": "ひま",
+      "reading": null,
+      "gloss": "free time",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.たいへん",
+      "form": "たいへん",
+      "reading": null,
+      "gloss": "tough, difficult",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.だいじょうぶ",
+      "form": "だいじょうぶ",
+      "reading": null,
+      "gloss": "alright, OK",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.べんり",
+      "form": "べんり",
+      "reading": null,
+      "gloss": "convenient",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.ふべん",
+      "form": "ふべん",
+      "reading": null,
+      "gloss": "inconvenient",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.ゆうめい",
+      "form": "ゆうめい",
+      "reading": null,
+      "gloss": "famous",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.じょうず",
+      "form": "じょうず",
+      "reading": null,
+      "gloss": "skilled",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.へた",
+      "form": "へた",
+      "reading": null,
+      "gloss": "unskilled",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.すき",
+      "form": "すき",
+      "reading": null,
+      "gloss": "liked",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.きらい",
+      "form": "きらい",
+      "reading": null,
+      "gloss": "disliked",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.だいすき",
+      "form": "だいすき",
+      "reading": null,
+      "gloss": "love",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.だいきらい",
+      "form": "だいきらい",
+      "reading": null,
+      "gloss": "hate",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.おなじ",
+      "form": "おなじ",
+      "reading": null,
+      "gloss": "same",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.いろいろ",
+      "form": "いろいろ",
+      "reading": null,
+      "gloss": "various",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.りっぱ",
+      "form": "りっぱ",
+      "reading": null,
+      "gloss": "splendid **[Ext]**",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.かんたん",
+      "form": "かんたん",
+      "reading": null,
+      "gloss": "easy, simple",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.けっこう",
+      "form": "けっこう",
+      "reading": null,
+      "gloss": "fine, sufficient",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.たいせつ",
+      "form": "たいせつ",
+      "reading": null,
+      "gloss": "important",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.だいじ",
+      "form": "だいじ",
+      "reading": null,
+      "gloss": "important",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.あんぜん",
+      "form": "あんぜん",
+      "reading": null,
+      "gloss": "safe",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.じょうぶ",
+      "form": "じょうぶ",
+      "reading": null,
+      "gloss": "sturdy",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.32-adjectives.いや",
+      "form": "いや",
+      "reading": null,
+      "gloss": "unpleasant, disagreeable",
+      "section": "32. な-Adjectives"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.とても",
+      "form": "とても",
+      "reading": null,
+      "gloss": "very",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.すごく",
+      "form": "すごく",
+      "reading": null,
+      "gloss": "very (casual)",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.すこし",
+      "form": "すこし",
+      "reading": null,
+      "gloss": "a little",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.ちょっと",
+      "form": "ちょっと",
+      "reading": null,
+      "gloss": "a little",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.たくさん",
+      "form": "たくさん",
+      "reading": null,
+      "gloss": "many, a lot",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.おおぜい",
+      "form": "おおぜい",
+      "reading": null,
+      "gloss": "a lot of (people)",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.だいたい",
+      "form": "だいたい",
+      "reading": null,
+      "gloss": "generally, roughly",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.ぜんぶ",
+      "form": "ぜんぶ",
+      "reading": null,
+      "gloss": "all",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.もう",
+      "form": "もう",
+      "reading": null,
+      "gloss": "already",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.まだ",
+      "form": "まだ",
+      "reading": null,
+      "gloss": "still, not yet",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.もうすこし",
+      "form": "もうすこし",
+      "reading": null,
+      "gloss": "a little more",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.もっと",
+      "form": "もっと",
+      "reading": null,
+      "gloss": "more",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.一番",
+      "form": "一番",
+      "reading": "いちばん",
+      "gloss": "most, number one",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.とくに",
+      "form": "とくに",
+      "reading": null,
+      "gloss": "especially",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.ほんとうに",
+      "form": "ほんとうに",
+      "reading": null,
+      "gloss": "truly, really",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.ゆっくり",
+      "form": "ゆっくり",
+      "reading": null,
+      "gloss": "slowly",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.すぐ",
+      "form": "すぐ",
+      "reading": null,
+      "gloss": "soon",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.たぶん",
+      "form": "たぶん",
+      "reading": null,
+      "gloss": "probably",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.いっしょに",
+      "form": "いっしょに",
+      "reading": null,
+      "gloss": "together",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.一人で",
+      "form": "一人で",
+      "reading": "ひとりで",
+      "gloss": "alone",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.じぶんで",
+      "form": "じぶんで",
+      "reading": null,
+      "gloss": "by oneself",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.かならず",
+      "form": "かならず",
+      "reading": null,
+      "gloss": "surely, definitely",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.きっと",
+      "form": "きっと",
+      "reading": null,
+      "gloss": "surely",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.もちろん",
+      "form": "もちろん",
+      "reading": null,
+      "gloss": "of course",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.どうぞ",
+      "form": "どうぞ",
+      "reading": null,
+      "gloss": "please (offering)",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.どうも",
+      "form": "どうも",
+      "reading": null,
+      "gloss": "thanks, indeed",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.どうぞよろしく",
+      "form": "どうぞよろしく",
+      "reading": null,
+      "gloss": "please treat me well",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.どう",
+      "form": "どう",
+      "reading": null,
+      "gloss": "how",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.なぜ",
+      "form": "なぜ",
+      "reading": null,
+      "gloss": "why",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.どうして",
+      "form": "どうして",
+      "reading": null,
+      "gloss": "why",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.まっすぐ",
+      "form": "まっすぐ",
+      "reading": null,
+      "gloss": "straight ahead",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.もういちど",
+      "form": "もういちど",
+      "reading": null,
+      "gloss": "once more",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.まず",
+      "form": "まず",
+      "reading": null,
+      "gloss": "first of all",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.33-adverbs.もしもし",
+      "form": "もしもし",
+      "reading": null,
+      "gloss": "hello (telephone)",
+      "section": "33. Adverbs"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.そして",
+      "form": "そして",
+      "reading": null,
+      "gloss": "and then",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.それから",
+      "form": "それから",
+      "reading": null,
+      "gloss": "and then, after that",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.それで",
+      "form": "それで",
+      "reading": null,
+      "gloss": "and so",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.でも",
+      "form": "でも",
+      "reading": null,
+      "gloss": "but, however",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.しかし",
+      "form": "しかし",
+      "reading": null,
+      "gloss": "but, however",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.が",
+      "form": "が",
+      "reading": null,
+      "gloss": "but (clause-connector)",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.から",
+      "form": "から",
+      "reading": null,
+      "gloss": "because, so",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.だから",
+      "form": "だから",
+      "reading": null,
+      "gloss": "therefore",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.ですから",
+      "form": "ですから",
+      "reading": null,
+      "gloss": "therefore (polite)",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.それに",
+      "form": "それに",
+      "reading": null,
+      "gloss": "moreover",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.ところで",
+      "form": "ところで",
+      "reading": null,
+      "gloss": "by the way",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.または",
+      "form": "または",
+      "reading": null,
+      "gloss": "or",
+      "section": "34. Conjunctions"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.は",
+      "form": "は",
+      "reading": null,
+      "gloss": "topic marker",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.が",
+      "form": "が",
+      "reading": null,
+      "gloss": "subject marker",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.を",
+      "form": "を",
+      "reading": null,
+      "gloss": "object marker",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.に",
+      "form": "に",
+      "reading": null,
+      "gloss": "to, at, in (target / time)",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.で",
+      "form": "で",
+      "reading": null,
+      "gloss": "at, by, with (location of action / means)",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.へ",
+      "form": "へ",
+      "reading": null,
+      "gloss": "to (direction)",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.と",
+      "form": "と",
+      "reading": null,
+      "gloss": "and, with",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.か",
+      "form": "か",
+      "reading": null,
+      "gloss": "question marker",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.も",
+      "form": "も",
+      "reading": null,
+      "gloss": "also",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.や",
+      "form": "や",
+      "reading": null,
+      "gloss": "and (non-exhaustive)",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.の",
+      "form": "の",
+      "reading": null,
+      "gloss": "of, possessive / nominalizer",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.から",
+      "form": "から",
+      "reading": null,
+      "gloss": "from, because",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.まで",
+      "form": "まで",
+      "reading": null,
+      "gloss": "until",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.ね",
+      "form": "ね",
+      "reading": null,
+      "gloss": "sentence-final (agreement)",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.よ",
+      "form": "よ",
+      "reading": null,
+      "gloss": "sentence-final (assertion)",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.だけ",
+      "form": "だけ",
+      "reading": null,
+      "gloss": "only",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.しか",
+      "form": "しか",
+      "reading": null,
+      "gloss": "only (with negative)",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.ごろ",
+      "form": "ごろ",
+      "reading": null,
+      "gloss": "around (time)",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.ずつ",
+      "form": "ずつ",
+      "reading": null,
+      "gloss": "each",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.など",
+      "form": "など",
+      "reading": null,
+      "gloss": "etc.",
+      "section": "35. Particles (functional vocabulary)"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.おはようございます",
+      "form": "おはようございます",
+      "reading": null,
+      "gloss": "good morning",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.こんにちは",
+      "form": "こんにちは",
+      "reading": null,
+      "gloss": "hello / good afternoon",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.こんばんは",
+      "form": "こんばんは",
+      "reading": null,
+      "gloss": "good evening",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.おやすみなさい",
+      "form": "おやすみなさい",
+      "reading": null,
+      "gloss": "good night",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.さようなら",
+      "form": "さようなら",
+      "reading": null,
+      "gloss": "goodbye",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.しつれいします",
+      "form": "しつれいします",
+      "reading": null,
+      "gloss": "excuse me / pardon me",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.しつれいしました",
+      "form": "しつれいしました",
+      "reading": null,
+      "gloss": "excuse me (past)",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.ありがとう",
+      "form": "ありがとう",
+      "reading": null,
+      "gloss": "thanks",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.ありがとうございます",
+      "form": "ありがとうございます",
+      "reading": null,
+      "gloss": "thank you",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.どういたしまして",
+      "form": "どういたしまして",
+      "reading": null,
+      "gloss": "you're welcome",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.すみません",
+      "form": "すみません",
+      "reading": null,
+      "gloss": "excuse me / sorry",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.ごめんなさい",
+      "form": "ごめんなさい",
+      "reading": null,
+      "gloss": "I'm sorry",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.おねがいします",
+      "form": "おねがいします",
+      "reading": null,
+      "gloss": "please",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.いただきます",
+      "form": "いただきます",
+      "reading": null,
+      "gloss": "said before eating",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.ごちそうさまでした",
+      "form": "ごちそうさまでした",
+      "reading": null,
+      "gloss": "said after eating **[Cul]**",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.いってきます",
+      "form": "いってきます",
+      "reading": null,
+      "gloss": "I'm leaving (home) **[Cul]**",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.いってらっしゃい",
+      "form": "いってらっしゃい",
+      "reading": null,
+      "gloss": "see you / take care **[Cul]**",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.ただいま",
+      "form": "ただいま",
+      "reading": null,
+      "gloss": "I'm home **[Cul]**",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.おかえりなさい",
+      "form": "おかえりなさい",
+      "reading": null,
+      "gloss": "welcome back **[Cul]**",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.はじめまして",
+      "form": "はじめまして",
+      "reading": null,
+      "gloss": "nice to meet you",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.どうぞよろしく",
+      "form": "どうぞよろしく",
+      "reading": null,
+      "gloss": "pleased to meet you",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.おげんきですか",
+      "form": "おげんきですか",
+      "reading": null,
+      "gloss": "how are you?",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.おかげさまで",
+      "form": "おかげさまで",
+      "reading": null,
+      "gloss": "thanks to you **[Cul]**",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.いらっしゃいませ",
+      "form": "いらっしゃいませ",
+      "reading": null,
+      "gloss": "welcome (to a shop) **[Cul]**",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.どうぞ",
+      "form": "どうぞ",
+      "reading": null,
+      "gloss": "please (offering)",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.どうも",
+      "form": "どうも",
+      "reading": null,
+      "gloss": "thanks",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.もしもし",
+      "form": "もしもし",
+      "reading": null,
+      "gloss": "hello (phone)",
+      "section": "36. Greetings and Set Phrases"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.もの",
+      "form": "もの",
+      "reading": null,
+      "gloss": "thing",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.こと",
+      "form": "こと",
+      "reading": null,
+      "gloss": "thing (intangible)",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.名前",
+      "form": "名前",
+      "reading": "なまえ",
+      "gloss": "name",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ことば",
+      "form": "ことば",
+      "reading": null,
+      "gloss": "word",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.話",
+      "form": "話",
+      "reading": "はなし",
+      "gloss": "story, talk",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.しごと",
+      "form": "しごと",
+      "reading": null,
+      "gloss": "work, job",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.やくそく",
+      "form": "やくそく",
+      "reading": null,
+      "gloss": "promise, appointment",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ようじ",
+      "form": "ようじ",
+      "reading": null,
+      "gloss": "errand",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.もんだい",
+      "form": "もんだい",
+      "reading": null,
+      "gloss": "problem",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.しゅみ",
+      "form": "しゅみ",
+      "reading": null,
+      "gloss": "hobby",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.りょこう",
+      "form": "りょこう",
+      "reading": null,
+      "gloss": "travel",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.さんぽ",
+      "form": "さんぽ",
+      "reading": null,
+      "gloss": "walk",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.うんどう",
+      "form": "うんどう",
+      "reading": null,
+      "gloss": "exercise",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ゲーム",
+      "form": "ゲーム",
+      "reading": null,
+      "gloss": "game",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.スポーツ",
+      "form": "スポーツ",
+      "reading": null,
+      "gloss": "sport",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.しあい",
+      "form": "しあい",
+      "reading": null,
+      "gloss": "match, game",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ニュース",
+      "form": "ニュース",
+      "reading": null,
+      "gloss": "news",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.パーティー",
+      "form": "パーティー",
+      "reading": null,
+      "gloss": "party",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.きって",
+      "form": "きって",
+      "reading": null,
+      "gloss": "stamp",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.はがき",
+      "form": "はがき",
+      "reading": null,
+      "gloss": "postcard",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.てがみ",
+      "form": "てがみ",
+      "reading": null,
+      "gloss": "letter",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.きっぷ",
+      "form": "きっぷ",
+      "reading": null,
+      "gloss": "ticket",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.おみやげ",
+      "form": "おみやげ",
+      "reading": null,
+      "gloss": "souvenir (also in §22 - listed here for thematic completeness) **[Cul]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.プレゼント",
+      "form": "プレゼント",
+      "reading": null,
+      "gloss": "present, gift",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.りゅうがく",
+      "form": "りゅうがく",
+      "reading": null,
+      "gloss": "study abroad **[Ext]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.けっこん",
+      "form": "けっこん",
+      "reading": null,
+      "gloss": "marriage",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.しゃしん",
+      "form": "しゃしん",
+      "reading": null,
+      "gloss": "photograph",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.りょかん",
+      "form": "りょかん",
+      "reading": null,
+      "gloss": "Japanese inn (also in §13) **[Cul]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.かぜ",
+      "form": "かぜ",
+      "reading": null,
+      "gloss": "cold (illness)",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.びょうき",
+      "form": "びょうき",
+      "reading": null,
+      "gloss": "illness",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.くすり",
+      "form": "くすり",
+      "reading": null,
+      "gloss": "medicine",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.けが",
+      "form": "けが",
+      "reading": null,
+      "gloss": "injury",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.おゆ",
+      "form": "おゆ",
+      "reading": null,
+      "gloss": "hot water",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.おふろ",
+      "form": "おふろ",
+      "reading": null,
+      "gloss": "bath (also in §13)",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.シャワー",
+      "form": "シャワー",
+      "reading": null,
+      "gloss": "shower",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.マッチ",
+      "form": "マッチ",
+      "reading": null,
+      "gloss": "match (lighting) **[Cul]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.たばこ",
+      "form": "たばこ",
+      "reading": null,
+      "gloss": "cigarette",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.はいざら",
+      "form": "はいざら",
+      "reading": null,
+      "gloss": "ashtray **[Cul]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.スリッパ",
+      "form": "スリッパ",
+      "reading": null,
+      "gloss": "slippers",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ティッシュ",
+      "form": "ティッシュ",
+      "reading": null,
+      "gloss": "tissue",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.フィルム",
+      "form": "フィルム",
+      "reading": null,
+      "gloss": "film **[Cul]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.レコード",
+      "form": "レコード",
+      "reading": null,
+      "gloss": "record **[Cul]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.テープ",
+      "form": "テープ",
+      "reading": null,
+      "gloss": "tape (also in §26)",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.よてい",
+      "form": "よてい",
+      "reading": null,
+      "gloss": "plan, schedule",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.じかんわり",
+      "form": "じかんわり",
+      "reading": null,
+      "gloss": "timetable",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.はこ",
+      "form": "はこ",
+      "reading": null,
+      "gloss": "box",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.はんぶん",
+      "form": "はんぶん",
+      "reading": "半分",
+      "gloss": "half",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.はたち",
+      "form": "はたち",
+      "reading": null,
+      "gloss": "20 years old (special reading)",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.へん",
+      "form": "へん",
+      "reading": null,
+      "gloss": "area, vicinity",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ほか",
+      "form": "ほか",
+      "reading": null,
+      "gloss": "other (place / thing / person)",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ほんとう",
+      "form": "ほんとう",
+      "reading": null,
+      "gloss": "truth, reality",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.なつやすみ",
+      "form": "なつやすみ",
+      "reading": null,
+      "gloss": "summer vacation",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.やすみ",
+      "form": "やすみ",
+      "reading": null,
+      "gloss": "rest, holiday (noun form of やすむ)",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.りょうり",
+      "form": "りょうり",
+      "reading": null,
+      "gloss": "cuisine, cooking",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ペット",
+      "form": "ペット",
+      "reading": null,
+      "gloss": "pet",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.カレンダー",
+      "form": "カレンダー",
+      "reading": null,
+      "gloss": "calendar",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.かてい",
+      "form": "かてい",
+      "reading": null,
+      "gloss": "household, home life",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.かびん",
+      "form": "かびん",
+      "reading": null,
+      "gloss": "vase",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.かた",
+      "form": "かた",
+      "reading": null,
+      "gloss": "way of doing (e.g., たべかた = how to eat)",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.おくさん",
+      "form": "おくさん",
+      "reading": null,
+      "gloss": "wife (someone else's; polite)",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.先",
+      "form": "先",
+      "reading": "さき",
+      "gloss": "earlier, ahead, previous",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.せびろ",
+      "form": "せびろ",
+      "reading": null,
+      "gloss": "business suit (older term, replaced by スーツ in modern usage) **[Ext]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.大きな",
+      "form": "大きな",
+      "reading": "おおきな",
+      "gloss": "big (variant adjectival form of 大きい)",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.たて",
+      "form": "たて",
+      "reading": null,
+      "gloss": "length, height",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ゆうべ",
+      "form": "ゆうべ",
+      "reading": null,
+      "gloss": "last night",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.にっき",
+      "form": "にっき",
+      "reading": null,
+      "gloss": "diary, journal",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.さくぶん",
+      "form": "さくぶん",
+      "reading": null,
+      "gloss": "composition, written essay",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.じびき",
+      "form": "じびき",
+      "reading": null,
+      "gloss": "dictionary (older term, alt for じしょ) **[Ext]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.テープレコーダー",
+      "form": "テープレコーダー",
+      "reading": null,
+      "gloss": "tape recorder **[Cul]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ストーブ",
+      "form": "ストーブ",
+      "reading": null,
+      "gloss": "heater, stove **[Cul]**",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.ページ",
+      "form": "ページ",
+      "reading": null,
+      "gloss": "page",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.クラス",
+      "form": "クラス",
+      "reading": null,
+      "gloss": "class",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.グラム",
+      "form": "グラム",
+      "reading": null,
+      "gloss": "gram",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.メートル",
+      "form": "メートル",
+      "reading": null,
+      "gloss": "metre, meter",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.キログラム",
+      "form": "キログラム",
+      "reading": null,
+      "gloss": "kilogram",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.37-common-nouns-miscella.キロメートル",
+      "form": "キロメートル",
+      "reading": null,
+      "gloss": "kilometre, kilometer",
+      "section": "37. Common Nouns - Miscellaneous"
+    },
+    {
+      "id": "n5.vocab.38-sounds-and-voice.こえ",
+      "form": "こえ",
+      "reading": null,
+      "gloss": "voice",
+      "section": "38. Sounds and Voice"
+    },
+    {
+      "id": "n5.vocab.38-sounds-and-voice.おと",
+      "form": "おと",
+      "reading": null,
+      "gloss": "sound",
+      "section": "38. Sounds and Voice"
+    },
+    {
+      "id": "n5.vocab.38-sounds-and-voice.うた",
+      "form": "うた",
+      "reading": null,
+      "gloss": "song",
+      "section": "38. Sounds and Voice"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.えーと",
+      "form": "えーと",
+      "reading": null,
+      "gloss": "um, let me see",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.あの",
+      "form": "あの",
+      "reading": null,
+      "gloss": "um (hesitation)",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.そうですね",
+      "form": "そうですね",
+      "reading": null,
+      "gloss": "let me think / that's right",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.そうですか",
+      "form": "そうですか",
+      "reading": null,
+      "gloss": "is that so?",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.いいえ",
+      "form": "いいえ",
+      "reading": null,
+      "gloss": "no",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.はい",
+      "form": "はい",
+      "reading": null,
+      "gloss": "yes",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.ええ",
+      "form": "ええ",
+      "reading": null,
+      "gloss": "yes (casual)",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.うん",
+      "form": "うん",
+      "reading": null,
+      "gloss": "yeah (informal)",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.ううん",
+      "form": "ううん",
+      "reading": null,
+      "gloss": "no (informal)",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.さあ",
+      "form": "さあ",
+      "reading": null,
+      "gloss": "well... (filler / hesitation)",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.いかが",
+      "form": "いかが",
+      "reading": null,
+      "gloss": "how (polite form of どう)",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.それでは",
+      "form": "それでは",
+      "reading": null,
+      "gloss": "in that case, well then",
+      "section": "39. Function / Filler Expressions"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.もの",
+      "form": "もの",
+      "reading": null,
+      "gloss": "thing (physical) (also in §37)",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.こと",
+      "form": "こと",
+      "reading": null,
+      "gloss": "thing (abstract) (also in §37)",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.ばしょ",
+      "form": "ばしょ",
+      "reading": null,
+      "gloss": "place",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.ばあい",
+      "form": "ばあい",
+      "reading": null,
+      "gloss": "case, situation",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.ほう",
+      "form": "ほう",
+      "reading": null,
+      "gloss": "direction, side",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.とき",
+      "form": "とき",
+      "reading": null,
+      "gloss": "time, occasion (also in §10)",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.番号",
+      "form": "番号",
+      "reading": "ばんごう",
+      "gloss": "number (also in §24)",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.じゅうしょ",
+      "form": "じゅうしょ",
+      "reading": null,
+      "gloss": "address",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.名前",
+      "form": "名前",
+      "reading": "なまえ",
+      "gloss": "name (also in §37)",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.ねんれい",
+      "form": "ねんれい",
+      "reading": null,
+      "gloss": "age",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.しごと",
+      "form": "しごと",
+      "reading": null,
+      "gloss": "job (also in §37)",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.学校",
+      "form": "学校",
+      "reading": "がっこう",
+      "gloss": "school (also in §13)",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.しゅみ",
+      "form": "しゅみ",
+      "reading": null,
+      "gloss": "hobby (also in §37)",
+      "section": "40. Misc Useful Items"
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.しゅっしん",
+      "form": "しゅっしん",
+      "reading": null,
+      "gloss": "hometown / origin",
+      "section": "40. Misc Useful Items"
+    }
+  ]
+}

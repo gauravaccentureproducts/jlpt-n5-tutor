@@ -1,0 +1,1488 @@
+{
+  "entries": [
+    {
+      "id": "n5.kanji.一",
+      "glyph": "一",
+      "on": [
+        "いち",
+        "いつ"
+      ],
+      "kun": [
+        "ひと"
+      ],
+      "meanings": [
+        "one"
+      ],
+      "stroke_order_svg": "svg/kanji/一.svg"
+    },
+    {
+      "id": "n5.kanji.二",
+      "glyph": "二",
+      "on": [
+        "に"
+      ],
+      "kun": [
+        "ふた",
+        "ふた"
+      ],
+      "meanings": [
+        "two"
+      ],
+      "stroke_order_svg": "svg/kanji/二.svg"
+    },
+    {
+      "id": "n5.kanji.三",
+      "glyph": "三",
+      "on": [
+        "さん"
+      ],
+      "kun": [
+        "みっ",
+        "み"
+      ],
+      "meanings": [
+        "three"
+      ],
+      "stroke_order_svg": "svg/kanji/三.svg"
+    },
+    {
+      "id": "n5.kanji.四",
+      "glyph": "四",
+      "on": [
+        "し"
+      ],
+      "kun": [
+        "よっ",
+        "よ",
+        "よん"
+      ],
+      "meanings": [
+        "four"
+      ],
+      "stroke_order_svg": "svg/kanji/四.svg"
+    },
+    {
+      "id": "n5.kanji.五",
+      "glyph": "五",
+      "on": [
+        "ご"
+      ],
+      "kun": [
+        "いつ"
+      ],
+      "meanings": [
+        "five"
+      ],
+      "stroke_order_svg": "svg/kanji/五.svg"
+    },
+    {
+      "id": "n5.kanji.六",
+      "glyph": "六",
+      "on": [
+        "ろく"
+      ],
+      "kun": [
+        "むっ",
+        "む"
+      ],
+      "meanings": [
+        "six"
+      ],
+      "stroke_order_svg": "svg/kanji/六.svg"
+    },
+    {
+      "id": "n5.kanji.七",
+      "glyph": "七",
+      "on": [
+        "しち"
+      ],
+      "kun": [
+        "なな",
+        "なな",
+        "なの"
+      ],
+      "meanings": [
+        "seven"
+      ],
+      "stroke_order_svg": "svg/kanji/七.svg"
+    },
+    {
+      "id": "n5.kanji.八",
+      "glyph": "八",
+      "on": [
+        "はち"
+      ],
+      "kun": [
+        "やっ",
+        "や",
+        "よう"
+      ],
+      "meanings": [
+        "eight"
+      ],
+      "stroke_order_svg": "svg/kanji/八.svg"
+    },
+    {
+      "id": "n5.kanji.九",
+      "glyph": "九",
+      "on": [
+        "きゅう",
+        "く"
+      ],
+      "kun": [
+        "ここの"
+      ],
+      "meanings": [
+        "nine"
+      ],
+      "stroke_order_svg": "svg/kanji/九.svg"
+    },
+    {
+      "id": "n5.kanji.十",
+      "glyph": "十",
+      "on": [
+        "じゅう",
+        "じっ"
+      ],
+      "kun": [
+        "とお",
+        "と"
+      ],
+      "meanings": [
+        "ten"
+      ],
+      "stroke_order_svg": "svg/kanji/十.svg"
+    },
+    {
+      "id": "n5.kanji.百",
+      "glyph": "百",
+      "on": [
+        "ひゃく"
+      ],
+      "kun": [],
+      "meanings": [
+        "hundred"
+      ],
+      "stroke_order_svg": "svg/kanji/百.svg"
+    },
+    {
+      "id": "n5.kanji.千",
+      "glyph": "千",
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "ち"
+      ],
+      "meanings": [
+        "thousand"
+      ],
+      "stroke_order_svg": "svg/kanji/千.svg"
+    },
+    {
+      "id": "n5.kanji.万",
+      "glyph": "万",
+      "on": [
+        "まん",
+        "ばん"
+      ],
+      "kun": [],
+      "meanings": [
+        "ten thousand"
+      ],
+      "stroke_order_svg": "svg/kanji/万.svg"
+    },
+    {
+      "id": "n5.kanji.円",
+      "glyph": "円",
+      "on": [
+        "えん"
+      ],
+      "kun": [
+        "まる"
+      ],
+      "meanings": [
+        "yen",
+        "circle",
+        "round"
+      ],
+      "stroke_order_svg": "svg/kanji/円.svg"
+    },
+    {
+      "id": "n5.kanji.日",
+      "glyph": "日",
+      "on": [
+        "にち",
+        "じつ"
+      ],
+      "kun": [
+        "ひ",
+        "-び",
+        "-か"
+      ],
+      "meanings": [
+        "day",
+        "sun"
+      ],
+      "stroke_order_svg": "svg/kanji/日.svg"
+    },
+    {
+      "id": "n5.kanji.月",
+      "glyph": "月",
+      "on": [
+        "げつ",
+        "がつ"
+      ],
+      "kun": [
+        "つき"
+      ],
+      "meanings": [
+        "month",
+        "moon"
+      ],
+      "stroke_order_svg": "svg/kanji/月.svg"
+    },
+    {
+      "id": "n5.kanji.火",
+      "glyph": "火",
+      "on": [
+        "か"
+      ],
+      "kun": [
+        "ひ"
+      ],
+      "meanings": [
+        "fire",
+        "Tuesday"
+      ],
+      "stroke_order_svg": "svg/kanji/火.svg"
+    },
+    {
+      "id": "n5.kanji.水",
+      "glyph": "水",
+      "on": [
+        "すい"
+      ],
+      "kun": [
+        "みず"
+      ],
+      "meanings": [
+        "water",
+        "Wednesday"
+      ],
+      "stroke_order_svg": "svg/kanji/水.svg"
+    },
+    {
+      "id": "n5.kanji.木",
+      "glyph": "木",
+      "on": [
+        "もく",
+        "ぼく"
+      ],
+      "kun": [
+        "き",
+        "こ-"
+      ],
+      "meanings": [
+        "tree",
+        "wood",
+        "Thursday"
+      ],
+      "stroke_order_svg": "svg/kanji/木.svg"
+    },
+    {
+      "id": "n5.kanji.金",
+      "glyph": "金",
+      "on": [
+        "きん",
+        "こん"
+      ],
+      "kun": [
+        "かね",
+        "かな-"
+      ],
+      "meanings": [
+        "gold",
+        "money",
+        "Friday"
+      ],
+      "stroke_order_svg": "svg/kanji/金.svg"
+    },
+    {
+      "id": "n5.kanji.土",
+      "glyph": "土",
+      "on": [
+        "ど",
+        "と"
+      ],
+      "kun": [
+        "つち"
+      ],
+      "meanings": [
+        "earth",
+        "soil",
+        "Saturday"
+      ],
+      "stroke_order_svg": "svg/kanji/土.svg"
+    },
+    {
+      "id": "n5.kanji.曜",
+      "glyph": "曜",
+      "on": [
+        "よう"
+      ],
+      "kun": [],
+      "meanings": [
+        "weekday"
+      ],
+      "stroke_order_svg": "svg/kanji/曜.svg"
+    },
+    {
+      "id": "n5.kanji.年",
+      "glyph": "年",
+      "on": [
+        "ねん"
+      ],
+      "kun": [
+        "とし"
+      ],
+      "meanings": [
+        "year"
+      ],
+      "stroke_order_svg": "svg/kanji/年.svg"
+    },
+    {
+      "id": "n5.kanji.時",
+      "glyph": "時",
+      "on": [
+        "じ"
+      ],
+      "kun": [
+        "とき"
+      ],
+      "meanings": [
+        "time",
+        "hour"
+      ],
+      "stroke_order_svg": "svg/kanji/時.svg"
+    },
+    {
+      "id": "n5.kanji.分",
+      "glyph": "分",
+      "on": [
+        "ぶん",
+        "ふん",
+        "ぶ"
+      ],
+      "kun": [
+        "わ",
+        "わ",
+        "わ"
+      ],
+      "meanings": [
+        "minute",
+        "part",
+        "divide"
+      ],
+      "stroke_order_svg": "svg/kanji/分.svg"
+    },
+    {
+      "id": "n5.kanji.半",
+      "glyph": "半",
+      "on": [
+        "はん"
+      ],
+      "kun": [
+        "なか"
+      ],
+      "meanings": [
+        "half"
+      ],
+      "stroke_order_svg": "svg/kanji/半.svg"
+    },
+    {
+      "id": "n5.kanji.今",
+      "glyph": "今",
+      "on": [
+        "こん",
+        "きん"
+      ],
+      "kun": [
+        "いま"
+      ],
+      "meanings": [
+        "now"
+      ],
+      "stroke_order_svg": "svg/kanji/今.svg"
+    },
+    {
+      "id": "n5.kanji.毎",
+      "glyph": "毎",
+      "on": [
+        "まい"
+      ],
+      "kun": [],
+      "meanings": [
+        "every"
+      ],
+      "stroke_order_svg": "svg/kanji/毎.svg"
+    },
+    {
+      "id": "n5.kanji.週",
+      "glyph": "週",
+      "on": [
+        "しゅう"
+      ],
+      "kun": [],
+      "meanings": [
+        "week"
+      ],
+      "stroke_order_svg": "svg/kanji/週.svg"
+    },
+    {
+      "id": "n5.kanji.午",
+      "glyph": "午",
+      "on": [
+        "ご"
+      ],
+      "kun": [],
+      "meanings": [
+        "noon"
+      ],
+      "stroke_order_svg": "svg/kanji/午.svg"
+    },
+    {
+      "id": "n5.kanji.何",
+      "glyph": "何",
+      "on": [
+        "か"
+      ],
+      "kun": [
+        "なに",
+        "なん"
+      ],
+      "meanings": [
+        "what"
+      ],
+      "stroke_order_svg": "svg/kanji/何.svg"
+    },
+    {
+      "id": "n5.kanji.人",
+      "glyph": "人",
+      "on": [
+        "じん",
+        "にん"
+      ],
+      "kun": [
+        "ひと"
+      ],
+      "meanings": [
+        "person"
+      ],
+      "stroke_order_svg": "svg/kanji/人.svg"
+    },
+    {
+      "id": "n5.kanji.男",
+      "glyph": "男",
+      "on": [
+        "だん",
+        "なん"
+      ],
+      "kun": [
+        "おとこ"
+      ],
+      "meanings": [
+        "man",
+        "male"
+      ],
+      "stroke_order_svg": "svg/kanji/男.svg"
+    },
+    {
+      "id": "n5.kanji.女",
+      "glyph": "女",
+      "on": [
+        "じょ",
+        "にょ"
+      ],
+      "kun": [
+        "おんな",
+        "め"
+      ],
+      "meanings": [
+        "woman",
+        "female"
+      ],
+      "stroke_order_svg": "svg/kanji/女.svg"
+    },
+    {
+      "id": "n5.kanji.子",
+      "glyph": "子",
+      "on": [
+        "し",
+        "す"
+      ],
+      "kun": [
+        "こ"
+      ],
+      "meanings": [
+        "child"
+      ],
+      "stroke_order_svg": "svg/kanji/子.svg"
+    },
+    {
+      "id": "n5.kanji.父",
+      "glyph": "父",
+      "on": [
+        "ふ"
+      ],
+      "kun": [
+        "ちち"
+      ],
+      "meanings": [
+        "father"
+      ],
+      "stroke_order_svg": "svg/kanji/父.svg"
+    },
+    {
+      "id": "n5.kanji.母",
+      "glyph": "母",
+      "on": [
+        "ぼ"
+      ],
+      "kun": [
+        "はは"
+      ],
+      "meanings": [
+        "mother"
+      ],
+      "stroke_order_svg": "svg/kanji/母.svg"
+    },
+    {
+      "id": "n5.kanji.友",
+      "glyph": "友",
+      "on": [
+        "ゆう"
+      ],
+      "kun": [
+        "とも"
+      ],
+      "meanings": [
+        "friend"
+      ],
+      "stroke_order_svg": "svg/kanji/友.svg"
+    },
+    {
+      "id": "n5.kanji.先",
+      "glyph": "先",
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "さき"
+      ],
+      "meanings": [
+        "previous",
+        "ahead",
+        "tip"
+      ],
+      "stroke_order_svg": "svg/kanji/先.svg"
+    },
+    {
+      "id": "n5.kanji.生",
+      "glyph": "生",
+      "on": [
+        "せい"
+      ],
+      "kun": [
+        "い",
+        "う"
+      ],
+      "meanings": [
+        "life",
+        "birth (primary N5 use: in compounds like 学生",
+        "先生)"
+      ],
+      "stroke_order_svg": "svg/kanji/生.svg"
+    },
+    {
+      "id": "n5.kanji.学",
+      "glyph": "学",
+      "on": [
+        "がく"
+      ],
+      "kun": [
+        "まな"
+      ],
+      "meanings": [
+        "study",
+        "learning"
+      ],
+      "stroke_order_svg": "svg/kanji/学.svg"
+    },
+    {
+      "id": "n5.kanji.校",
+      "glyph": "校",
+      "on": [
+        "こう"
+      ],
+      "kun": [],
+      "meanings": [
+        "school"
+      ],
+      "stroke_order_svg": "svg/kanji/校.svg"
+    },
+    {
+      "id": "n5.kanji.本",
+      "glyph": "本",
+      "on": [
+        "ほん"
+      ],
+      "kun": [
+        "もと"
+      ],
+      "meanings": [
+        "book",
+        "origin",
+        "main"
+      ],
+      "stroke_order_svg": "svg/kanji/本.svg"
+    },
+    {
+      "id": "n5.kanji.語",
+      "glyph": "語",
+      "on": [
+        "ご"
+      ],
+      "kun": [
+        "かた"
+      ],
+      "meanings": [
+        "language",
+        "word"
+      ],
+      "stroke_order_svg": "svg/kanji/語.svg"
+    },
+    {
+      "id": "n5.kanji.国",
+      "glyph": "国",
+      "on": [
+        "こく"
+      ],
+      "kun": [
+        "くに"
+      ],
+      "meanings": [
+        "country"
+      ],
+      "stroke_order_svg": "svg/kanji/国.svg"
+    },
+    {
+      "id": "n5.kanji.会",
+      "glyph": "会",
+      "on": [
+        "いん"
+      ],
+      "kun": [],
+      "meanings": [
+        "member",
+        "staff (primary N5 use: in 会社員",
+        "駅員",
+        "店員)"
+      ],
+      "stroke_order_svg": "svg/kanji/会.svg"
+    },
+    {
+      "id": "n5.kanji.大",
+      "glyph": "大",
+      "on": [
+        "だい",
+        "たい"
+      ],
+      "kun": [
+        "おお"
+      ],
+      "meanings": [
+        "big",
+        "large"
+      ],
+      "stroke_order_svg": "svg/kanji/大.svg"
+    },
+    {
+      "id": "n5.kanji.中",
+      "glyph": "中",
+      "on": [
+        "ちゅう"
+      ],
+      "kun": [
+        "なか"
+      ],
+      "meanings": [
+        "middle",
+        "inside"
+      ],
+      "stroke_order_svg": "svg/kanji/中.svg"
+    },
+    {
+      "id": "n5.kanji.小",
+      "glyph": "小",
+      "on": [
+        "しょう"
+      ],
+      "kun": [
+        "ちい",
+        "こ-",
+        "お-"
+      ],
+      "meanings": [
+        "small",
+        "little"
+      ],
+      "stroke_order_svg": "svg/kanji/小.svg"
+    },
+    {
+      "id": "n5.kanji.上",
+      "glyph": "上",
+      "on": [
+        "じょう",
+        "しょう"
+      ],
+      "kun": [
+        "うえ",
+        "うわ-",
+        "あ",
+        "のぼ"
+      ],
+      "meanings": [
+        "up",
+        "above"
+      ],
+      "stroke_order_svg": "svg/kanji/上.svg"
+    },
+    {
+      "id": "n5.kanji.下",
+      "glyph": "下",
+      "on": [
+        "か",
+        "げ"
+      ],
+      "kun": [
+        "した",
+        "しも",
+        "さ",
+        "くだ",
+        "お"
+      ],
+      "meanings": [
+        "down",
+        "below"
+      ],
+      "stroke_order_svg": "svg/kanji/下.svg"
+    },
+    {
+      "id": "n5.kanji.左",
+      "glyph": "左",
+      "on": [
+        "さ"
+      ],
+      "kun": [
+        "ひだり"
+      ],
+      "meanings": [
+        "left"
+      ],
+      "stroke_order_svg": "svg/kanji/左.svg"
+    },
+    {
+      "id": "n5.kanji.右",
+      "glyph": "右",
+      "on": [
+        "う",
+        "ゆう"
+      ],
+      "kun": [
+        "みぎ"
+      ],
+      "meanings": [
+        "right"
+      ],
+      "stroke_order_svg": "svg/kanji/右.svg"
+    },
+    {
+      "id": "n5.kanji.前",
+      "glyph": "前",
+      "on": [
+        "ぜん"
+      ],
+      "kun": [
+        "まえ"
+      ],
+      "meanings": [
+        "before",
+        "front"
+      ],
+      "stroke_order_svg": "svg/kanji/前.svg"
+    },
+    {
+      "id": "n5.kanji.後",
+      "glyph": "後",
+      "on": [
+        "ご",
+        "こう"
+      ],
+      "kun": [
+        "のち",
+        "うし",
+        "あと"
+      ],
+      "meanings": [
+        "after",
+        "behind"
+      ],
+      "stroke_order_svg": "svg/kanji/後.svg"
+    },
+    {
+      "id": "n5.kanji.外",
+      "glyph": "外",
+      "on": [
+        "がい",
+        "げ"
+      ],
+      "kun": [
+        "そと",
+        "ほか",
+        "はず"
+      ],
+      "meanings": [
+        "outside"
+      ],
+      "stroke_order_svg": "svg/kanji/外.svg"
+    },
+    {
+      "id": "n5.kanji.東",
+      "glyph": "東",
+      "on": [
+        "とう"
+      ],
+      "kun": [
+        "ひがし"
+      ],
+      "meanings": [
+        "east"
+      ],
+      "stroke_order_svg": "svg/kanji/東.svg"
+    },
+    {
+      "id": "n5.kanji.西",
+      "glyph": "西",
+      "on": [
+        "せい",
+        "さい"
+      ],
+      "kun": [
+        "にし"
+      ],
+      "meanings": [
+        "west"
+      ],
+      "stroke_order_svg": "svg/kanji/西.svg"
+    },
+    {
+      "id": "n5.kanji.南",
+      "glyph": "南",
+      "on": [
+        "なん"
+      ],
+      "kun": [
+        "みなみ"
+      ],
+      "meanings": [
+        "south"
+      ],
+      "stroke_order_svg": "svg/kanji/南.svg"
+    },
+    {
+      "id": "n5.kanji.北",
+      "glyph": "北",
+      "on": [
+        "ほく"
+      ],
+      "kun": [
+        "きた"
+      ],
+      "meanings": [
+        "north"
+      ],
+      "stroke_order_svg": "svg/kanji/北.svg"
+    },
+    {
+      "id": "n5.kanji.間",
+      "glyph": "間",
+      "on": [
+        "かん",
+        "けん"
+      ],
+      "kun": [
+        "あいだ",
+        "ま"
+      ],
+      "meanings": [
+        "interval",
+        "between",
+        "space"
+      ],
+      "stroke_order_svg": "svg/kanji/間.svg"
+    },
+    {
+      "id": "n5.kanji.山",
+      "glyph": "山",
+      "on": [
+        "さん"
+      ],
+      "kun": [
+        "やま"
+      ],
+      "meanings": [
+        "mountain"
+      ],
+      "stroke_order_svg": "svg/kanji/山.svg"
+    },
+    {
+      "id": "n5.kanji.川",
+      "glyph": "川",
+      "on": [
+        "せん"
+      ],
+      "kun": [
+        "かわ"
+      ],
+      "meanings": [
+        "river"
+      ],
+      "stroke_order_svg": "svg/kanji/川.svg"
+    },
+    {
+      "id": "n5.kanji.田",
+      "glyph": "田",
+      "on": [
+        "でん"
+      ],
+      "kun": [
+        "た"
+      ],
+      "meanings": [
+        "rice field"
+      ],
+      "stroke_order_svg": "svg/kanji/田.svg"
+    },
+    {
+      "id": "n5.kanji.雨",
+      "glyph": "雨",
+      "on": [
+        "う"
+      ],
+      "kun": [
+        "あめ"
+      ],
+      "meanings": [
+        "rain"
+      ],
+      "stroke_order_svg": "svg/kanji/雨.svg"
+    },
+    {
+      "id": "n5.kanji.天",
+      "glyph": "天",
+      "on": [
+        "てん"
+      ],
+      "kun": [
+        "あめ",
+        "あま-"
+      ],
+      "meanings": [
+        "heaven",
+        "sky"
+      ],
+      "stroke_order_svg": "svg/kanji/天.svg"
+    },
+    {
+      "id": "n5.kanji.気",
+      "glyph": "気",
+      "on": [
+        "き",
+        "け"
+      ],
+      "kun": [],
+      "meanings": [
+        "spirit",
+        "mood",
+        "air"
+      ],
+      "stroke_order_svg": "svg/kanji/気.svg"
+    },
+    {
+      "id": "n5.kanji.花",
+      "glyph": "花",
+      "on": [
+        "か"
+      ],
+      "kun": [
+        "はな"
+      ],
+      "meanings": [
+        "flower"
+      ],
+      "stroke_order_svg": "svg/kanji/花.svg"
+    },
+    {
+      "id": "n5.kanji.空",
+      "glyph": "空",
+      "on": [
+        "くう"
+      ],
+      "kun": [
+        "そら",
+        "あ",
+        "から"
+      ],
+      "meanings": [
+        "sky",
+        "empty"
+      ],
+      "stroke_order_svg": "svg/kanji/空.svg"
+    },
+    {
+      "id": "n5.kanji.電",
+      "glyph": "電",
+      "on": [
+        "でん"
+      ],
+      "kun": [],
+      "meanings": [
+        "electricity"
+      ],
+      "stroke_order_svg": "svg/kanji/電.svg"
+    },
+    {
+      "id": "n5.kanji.車",
+      "glyph": "車",
+      "on": [
+        "しゃ"
+      ],
+      "kun": [
+        "くるま"
+      ],
+      "meanings": [
+        "car",
+        "vehicle"
+      ],
+      "stroke_order_svg": "svg/kanji/車.svg"
+    },
+    {
+      "id": "n5.kanji.道",
+      "glyph": "道",
+      "on": [
+        "どう"
+      ],
+      "kun": [
+        "みち"
+      ],
+      "meanings": [
+        "road",
+        "way"
+      ],
+      "stroke_order_svg": "svg/kanji/道.svg"
+    },
+    {
+      "id": "n5.kanji.店",
+      "glyph": "店",
+      "on": [
+        "てん"
+      ],
+      "kun": [
+        "みせ"
+      ],
+      "meanings": [
+        "shop",
+        "store"
+      ],
+      "stroke_order_svg": "svg/kanji/店.svg"
+    },
+    {
+      "id": "n5.kanji.駅",
+      "glyph": "駅",
+      "on": [
+        "えき"
+      ],
+      "kun": [],
+      "meanings": [
+        "station"
+      ],
+      "stroke_order_svg": "svg/kanji/駅.svg"
+    },
+    {
+      "id": "n5.kanji.食",
+      "glyph": "食",
+      "on": [
+        "しょく"
+      ],
+      "kun": [
+        "た",
+        "く"
+      ],
+      "meanings": [
+        "eat",
+        "food"
+      ],
+      "stroke_order_svg": "svg/kanji/食.svg"
+    },
+    {
+      "id": "n5.kanji.飲",
+      "glyph": "飲",
+      "on": [
+        "いん"
+      ],
+      "kun": [
+        "の"
+      ],
+      "meanings": [
+        "drink"
+      ],
+      "stroke_order_svg": "svg/kanji/飲.svg"
+    },
+    {
+      "id": "n5.kanji.見",
+      "glyph": "見",
+      "on": [
+        "けん"
+      ],
+      "kun": [
+        "み",
+        "み",
+        "み"
+      ],
+      "meanings": [
+        "see",
+        "look"
+      ],
+      "stroke_order_svg": "svg/kanji/見.svg"
+    },
+    {
+      "id": "n5.kanji.聞",
+      "glyph": "聞",
+      "on": [
+        "ぶん",
+        "もん"
+      ],
+      "kun": [
+        "き",
+        "き"
+      ],
+      "meanings": [
+        "hear",
+        "listen",
+        "ask"
+      ],
+      "stroke_order_svg": "svg/kanji/聞.svg"
+    },
+    {
+      "id": "n5.kanji.読",
+      "glyph": "読",
+      "on": [
+        "どく"
+      ],
+      "kun": [
+        "よ"
+      ],
+      "meanings": [
+        "read"
+      ],
+      "stroke_order_svg": "svg/kanji/読.svg"
+    },
+    {
+      "id": "n5.kanji.書",
+      "glyph": "書",
+      "on": [
+        "しょ"
+      ],
+      "kun": [
+        "か"
+      ],
+      "meanings": [
+        "write"
+      ],
+      "stroke_order_svg": "svg/kanji/書.svg"
+    },
+    {
+      "id": "n5.kanji.話",
+      "glyph": "話",
+      "on": [
+        "わ"
+      ],
+      "kun": [
+        "はな",
+        "はなし"
+      ],
+      "meanings": [
+        "talk",
+        "speak",
+        "story"
+      ],
+      "stroke_order_svg": "svg/kanji/話.svg"
+    },
+    {
+      "id": "n5.kanji.来",
+      "glyph": "来",
+      "on": [
+        "らい"
+      ],
+      "kun": [
+        "く",
+        "きた"
+      ],
+      "meanings": [
+        "come"
+      ],
+      "stroke_order_svg": "svg/kanji/来.svg"
+    },
+    {
+      "id": "n5.kanji.行",
+      "glyph": "行",
+      "on": [
+        "こう",
+        "ぎょう",
+        "あん"
+      ],
+      "kun": [
+        "い",
+        "ゆ",
+        "おこな"
+      ],
+      "meanings": [
+        "go",
+        "conduct"
+      ],
+      "stroke_order_svg": "svg/kanji/行.svg"
+    },
+    {
+      "id": "n5.kanji.出",
+      "glyph": "出",
+      "on": [
+        "しゅつ",
+        "すい"
+      ],
+      "kun": [
+        "で",
+        "だ"
+      ],
+      "meanings": [
+        "exit",
+        "go out",
+        "put out"
+      ],
+      "stroke_order_svg": "svg/kanji/出.svg"
+    },
+    {
+      "id": "n5.kanji.入",
+      "glyph": "入",
+      "on": [
+        "にゅう"
+      ],
+      "kun": [
+        "い",
+        "はい",
+        "い"
+      ],
+      "meanings": [
+        "enter",
+        "put in"
+      ],
+      "stroke_order_svg": "svg/kanji/入.svg"
+    },
+    {
+      "id": "n5.kanji.立",
+      "glyph": "立",
+      "on": [
+        "りつ",
+        "りゅう"
+      ],
+      "kun": [
+        "た",
+        "た"
+      ],
+      "meanings": [
+        "stand"
+      ],
+      "stroke_order_svg": "svg/kanji/立.svg"
+    },
+    {
+      "id": "n5.kanji.休",
+      "glyph": "休",
+      "on": [
+        "きゅう"
+      ],
+      "kun": [
+        "やす",
+        "やす"
+      ],
+      "meanings": [
+        "rest",
+        "holiday"
+      ],
+      "stroke_order_svg": "svg/kanji/休.svg"
+    },
+    {
+      "id": "n5.kanji.言",
+      "glyph": "言",
+      "on": [
+        "げん",
+        "ごん"
+      ],
+      "kun": [
+        "い",
+        "こと"
+      ],
+      "meanings": [
+        "say",
+        "word"
+      ],
+      "stroke_order_svg": "svg/kanji/言.svg"
+    },
+    {
+      "id": "n5.kanji.買",
+      "glyph": "買",
+      "on": [
+        "ばい"
+      ],
+      "kun": [
+        "か"
+      ],
+      "meanings": [
+        "buy"
+      ],
+      "stroke_order_svg": "svg/kanji/買.svg"
+    },
+    {
+      "id": "n5.kanji.高",
+      "glyph": "高",
+      "on": [
+        "こう"
+      ],
+      "kun": [
+        "たか",
+        "たか"
+      ],
+      "meanings": [
+        "high",
+        "tall",
+        "expensive"
+      ],
+      "stroke_order_svg": "svg/kanji/高.svg"
+    },
+    {
+      "id": "n5.kanji.安",
+      "glyph": "安",
+      "on": [
+        "あん"
+      ],
+      "kun": [
+        "やす"
+      ],
+      "meanings": [
+        "cheap",
+        "safe",
+        "peaceful"
+      ],
+      "stroke_order_svg": "svg/kanji/安.svg"
+    },
+    {
+      "id": "n5.kanji.新",
+      "glyph": "新",
+      "on": [
+        "しん"
+      ],
+      "kun": [
+        "あたら",
+        "あら",
+        "にい-"
+      ],
+      "meanings": [
+        "new"
+      ],
+      "stroke_order_svg": "svg/kanji/新.svg"
+    },
+    {
+      "id": "n5.kanji.古",
+      "glyph": "古",
+      "on": [
+        "こ"
+      ],
+      "kun": [
+        "ふる"
+      ],
+      "meanings": [
+        "old (not for people)"
+      ],
+      "stroke_order_svg": "svg/kanji/古.svg"
+    },
+    {
+      "id": "n5.kanji.長",
+      "glyph": "長",
+      "on": [
+        "ちょう"
+      ],
+      "kun": [
+        "なが"
+      ],
+      "meanings": [
+        "long",
+        "leader"
+      ],
+      "stroke_order_svg": "svg/kanji/長.svg"
+    },
+    {
+      "id": "n5.kanji.白",
+      "glyph": "白",
+      "on": [
+        "はく",
+        "びゃく"
+      ],
+      "kun": [
+        "しろ",
+        "しろ",
+        "しら-"
+      ],
+      "meanings": [
+        "white"
+      ],
+      "stroke_order_svg": "svg/kanji/白.svg"
+    },
+    {
+      "id": "n5.kanji.名",
+      "glyph": "名",
+      "on": [
+        "めい",
+        "みょう"
+      ],
+      "kun": [
+        "な"
+      ],
+      "meanings": [
+        "name"
+      ],
+      "stroke_order_svg": "svg/kanji/名.svg"
+    },
+    {
+      "id": "n5.kanji.番",
+      "glyph": "番",
+      "on": [
+        "ごう"
+      ],
+      "kun": [],
+      "meanings": [
+        "number (primary N5 use: in 電話番号",
+        "番号)"
+      ],
+      "stroke_order_svg": "svg/kanji/番.svg"
+    }
+  ]
+}

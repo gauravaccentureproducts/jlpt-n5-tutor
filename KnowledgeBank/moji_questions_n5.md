@@ -77,7 +77,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q5
 
-兄は **会社員** です。
+ちちは **会社員** です。
 
 1. かいしゃいん
 2. がいしゃいん
@@ -192,9 +192,9 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 1. くがつ
 2. きゅうがつ
 3. ここのがつ
-4. くげつ
+4. くつき
 
-**Answer: 1** - 九 has reading ク in 九月.
+**Answer: 1** - 九 has reading ク in 九月; 月 reads ガツ for months.
 
 ### Q16
 
@@ -333,9 +333,9 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 つくえの **上** に ほんが あります。
 
 1. うえ
-2. した
-3. なか
-4. うわ
+2. うへ
+3. うい
+4. うる
 
 **Answer: 1** - 上 (うえ).
 
@@ -343,10 +343,10 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ねこは いすの **下** に います。
 
-1. うえ
+1. しだ
 2. した
-3. そと
-4. なか
+3. しぢ
+4. しと
 
 **Answer: 2** - 下 (した).
 
@@ -354,21 +354,21 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 **右** に まがって ください。
 
-1. ひだり
+1. みき
 2. みぎ
-3. うえ
-4. した
+3. みじ
+4. みち
 
 **Answer: 2** - 右 (みぎ).
 
 ### Q31
 
-**左** がわに 大きい き が あります。
+**左** がわに 大きい きが あります。
 
-1. みぎ
+1. ひがり
 2. ひだり
-3. まえ
-4. うしろ
+3. ひたり
+4. ひだい
 
 **Answer: 2** - 左 (ひだり).
 
@@ -376,38 +376,38 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ぎんこうの **前** に コンビニが あります。
 
-1. うしろ
-2. なか
-3. まえ
-4. した
+1. まい
+2. まえ
+3. まへ
+4. もえ
 
-**Answer: 3** - 前 (まえ).
+**Answer: 2** - 前 (まえ).
 
 ### Q33
 
 学校の **後ろ** に こうえんが あります。
 
 1. うしろ
-2. うえ
-3. した
-4. なか
+2. うしる
+3. あしろ
+4. うじろ
 
 **Answer: 1** - 後 has kun-yomi うしろ when used with okurigana ろ.
 
 ### Q34
 
-きょうは そとが さむいので、**外** へ でません。
+きょうは さむいので、**外** へ でません。
 
-1. なか
-2. うえ
-3. そと
-4. した
+1. そど
+2. そと
+3. さと
+4. のそと
 
-**Answer: 3** - 外 (そと).
+**Answer: 2** - 外 (そと).
 
 ### Q35
 
-**東京** ではなく、**北** の 町に すんで います。
+私の いえは 町の **北** に あります。
 
 1. ひがし
 2. きた
@@ -420,21 +420,21 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 **山** の うえに ゆきが あります。
 
-1. かわ
-2. やま
-3. うみ
-4. もり
+1. やま
+2. やめ
+3. やみ
+4. やも
 
-**Answer: 2** - 山 (やま).
+**Answer: 1** - 山 (やま).
 
 ### Q37
 
 **川** で さかなを みました。
 
 1. かわ
-2. やま
-3. うみ
-4. いけ
+2. かは
+3. かれ
+4. かや
 
 **Answer: 1** - 川 (かわ).
 
@@ -454,20 +454,20 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 **雨** が ふって います。
 
 1. あめ
-2. ゆき
-3. かぜ
-4. くも
+2. あま
+3. あみ
+4. うめ
 
-**Answer: 1** - 雨 (あめ).
+**Answer: 1** - 雨 (あめ); 雨 has alt reading あま only in compounds like 雨水.
 
 ### Q40
 
 **花** が きれいに さいて います。
 
 1. はな
-2. き
-3. くさ
-4. は
+2. はね
+3. はま
+4. ばな
 
 **Answer: 1** - 花 (はな).
 
@@ -497,21 +497,21 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 **駅** の まえで まって います。
 
-1. いえ
-2. えき
-3. みち
-4. みせ
+1. えき
+2. えぎ
+3. えく
+4. やき
 
-**Answer: 2** - 駅 (エキ).
+**Answer: 1** - 駅 (エキ).
 
 ### Q44
 
 その **店** で パンを 買いました。
 
 1. みせ
-2. いえ
-3. えき
-4. みち
+2. みぜ
+3. みす
+4. みえ
 
 **Answer: 1** - 店 (みせ).
 
@@ -519,21 +519,21 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 **新しい** ノートを 買いました。
 
-1. たのしい
-2. あたらしい
-3. やさしい
-4. むずかしい
+1. あたらしい
+2. あらたしい
+3. あだらしい
+4. あたうしい
 
-**Answer: 2** - 新 (あたら) + しい.
+**Answer: 1** - 新 (あたら) + しい.
 
 ### Q46
 
 この くつは **古い** です。
 
 1. ふるい
-2. たかい
-3. やすい
-4. ながい
+2. ふろい
+3. ぶるい
+4. ふらい
 
 **Answer: 1** - 古 (ふる) + い.
 
@@ -542,9 +542,9 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 この かばんは **高い** です。
 
 1. たかい
-2. やすい
-3. ながい
-4. ひくい
+2. たがい
+3. たけい
+4. だかい
 
 **Answer: 1** - 高 (たか) + い.
 
@@ -552,32 +552,32 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 **安い** くつを 買いました。
 
-1. たかい
-2. やすい
-3. あたらしい
-4. ながい
+1. やすい
+2. あすい
+3. やしい
+4. やせい
 
-**Answer: 2** - 安 (やす) + い.
+**Answer: 1** - 安 (やす) + い.
 
 ### Q49
 
 **白い** いぬが います。
 
-1. くろい
-2. あおい
-3. しろい
-4. あかい
+1. しろい
+2. しらい
+3. じろい
+4. しろう
 
-**Answer: 3** - 白 (しろ) + い.
+**Answer: 1** - 白 (しろ) + い.
 
 ### Q50
 
 この みちは **長い** です。
 
 1. ながい
-2. みじかい
-3. たかい
-4. ふるい
+2. なかい
+3. のがい
+4. ねがい
 
 **Answer: 1** - 長 (なが) + い.
 
