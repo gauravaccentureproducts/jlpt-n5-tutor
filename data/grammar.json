@@ -1581,17 +1581,35 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 13,
-      "meaning_en": "until / up to",
-      "meaning_ja": "",
+      "meaning_en": "Until / up to (see n5-010 for full content)",
+      "meaning_ja": "(n5-010を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-010",
+            "example": "まで"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'まで' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-010. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-010)",
+          "form": "affirmative",
+          "translation_en": "See n5-010 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-010",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-021",
@@ -1661,17 +1679,35 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 15,
-      "meaning_en": "and — non-exhaustive",
-      "meaning_ja": "",
+      "meaning_en": "And — non-exhaustive listing (see n5-011 for full content)",
+      "meaning_ja": "(n5-011を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-011",
+            "example": "や"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'や' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-011. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-011)",
+          "form": "affirmative",
+          "translation_en": "See n5-011 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-011",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-023",
@@ -1679,17 +1715,35 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 16,
-      "meaning_en": "question marker",
-      "meaning_ja": "",
+      "meaning_en": "Sentence-final question marker (see n5-012 for full content)",
+      "meaning_ja": "(n5-012を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-012",
+            "example": "か"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'か' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-012)",
+          "form": "affirmative",
+          "translation_en": "See n5-012 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-012",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-024",
@@ -1697,17 +1751,35 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 17,
-      "meaning_en": "or — A か B",
-      "meaning_ja": "",
+      "meaning_en": "Or (between alternatives) (see n5-012 for full content)",
+      "meaning_ja": "(n5-012を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-012",
+            "example": "か"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'か' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-012)",
+          "form": "affirmative",
+          "translation_en": "See n5-012 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-012",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-025",
@@ -1934,17 +2006,35 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 22,
-      "meaning_en": "e.g., わたしの本",
-      "meaning_ja": "",
+      "meaning_en": "Possessive / noun-modifier (see n5-028 for full content)",
+      "meaning_ja": "(n5-028を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-028",
+            "example": "～の"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'possessive / noun-modifier' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-028. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-028)",
+          "form": "affirmative",
+          "translation_en": "See n5-028 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-028",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-030",
@@ -1991,17 +2081,35 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 24,
-      "meaning_en": "e.g., 行くの？",
-      "meaning_ja": "",
+      "meaning_en": "Informal question marker (see n5-012 for full content)",
+      "meaning_ja": "(n5-012を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-012",
+            "example": "の (informal question)"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'informal question marker' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-012)",
+          "form": "affirmative",
+          "translation_en": "See n5-012 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-012",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-032",
@@ -2009,17 +2117,35 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 25,
-      "meaning_en": "also / even",
-      "meaning_ja": "",
+      "meaning_en": "Also / too (see n5-013 for full content)",
+      "meaning_ja": "(n5-013を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-013",
+            "example": "も"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'も' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-013. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-013)",
+          "form": "affirmative",
+          "translation_en": "See n5-013 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-013",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-033",
@@ -2340,17 +2466,35 @@
       "category": "Demonstratives (こそあど)",
       "categoryOrder": 5,
       "patternOrder": 1,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Pronouns: this / that / which one (see n5-014 for full content)",
+      "meaning_ja": "(n5-014を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-014",
+            "example": "これ / それ / あれ / どれ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'これ / それ / あれ / どれ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-014. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-014)",
+          "form": "affirmative",
+          "translation_en": "See n5-014 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-014",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-040",
@@ -2358,17 +2502,35 @@
       "category": "Demonstratives (こそあど)",
       "categoryOrder": 5,
       "patternOrder": 2,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Adjectival demonstratives + noun (see n5-015 for full content)",
+      "meaning_ja": "(n5-015を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-015",
+            "example": "この / その / あの / どの + Noun"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'この / その / あの / どの + Noun' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-015. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-015)",
+          "form": "affirmative",
+          "translation_en": "See n5-015 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-015",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-041",
@@ -2376,17 +2538,35 @@
       "category": "Demonstratives (こそあど)",
       "categoryOrder": 5,
       "patternOrder": 3,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Location words (see n5-016 for full content)",
+      "meaning_ja": "(n5-016を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-016",
+            "example": "ここ / そこ / あそこ / どこ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'ここ / そこ / あそこ / どこ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-016. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-016)",
+          "form": "affirmative",
+          "translation_en": "See n5-016 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-016",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-042",
@@ -2529,17 +2709,35 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 4,
-      "meaning_en": "what",
-      "meaning_ja": "",
+      "meaning_en": "What (see n5-017 for full content)",
+      "meaning_ja": "(n5-017を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-017",
+            "example": "なん / なに"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'なん / なに' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-017. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-017)",
+          "form": "affirmative",
+          "translation_en": "See n5-017 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-017",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-046",
@@ -2547,17 +2745,35 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 5,
-      "meaning_en": "who",
-      "meaning_ja": "",
+      "meaning_en": "Who (see n5-018 for full content)",
+      "meaning_ja": "(n5-018を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-018",
+            "example": "だれ / どなた"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'だれ / どなた' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-018. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-018)",
+          "form": "affirmative",
+          "translation_en": "See n5-018 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-018",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-047",
@@ -2565,17 +2781,35 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 6,
-      "meaning_en": "when",
-      "meaning_ja": "",
+      "meaning_en": "When (see n5-019 for full content)",
+      "meaning_ja": "(n5-019を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-019",
+            "example": "いつ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'いつ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-019. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-019)",
+          "form": "affirmative",
+          "translation_en": "See n5-019 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-019",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-048",
@@ -2583,17 +2817,35 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 7,
-      "meaning_en": "where",
-      "meaning_ja": "",
+      "meaning_en": "Where (covered by ここ-series) (see n5-016 for full content)",
+      "meaning_ja": "(n5-016を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-016",
+            "example": "どこ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'どこ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-016. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-016)",
+          "form": "affirmative",
+          "translation_en": "See n5-016 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-016",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-049",
@@ -5565,17 +5817,35 @@
       "category": "Comparison and Preference",
       "categoryOrder": 11,
       "patternOrder": 4,
-      "meaning_en": "の中",
-      "meaning_ja": "",
+      "meaning_en": "Most ~ of all (covered by superlative pattern) (see n5-099 for full content)",
+      "meaning_ja": "(n5-099を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-099",
+            "example": "～の中で～が いちばん"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-099. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-099)",
+          "form": "affirmative",
+          "translation_en": "See n5-099 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-099",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-099",
@@ -6053,17 +6323,76 @@
       "category": "Counters and Quantity",
       "categoryOrder": 13,
       "patternOrder": 1,
-      "meaning_en": "kanji counters in N5 syllabus: 人, 本, 番; kana counters: まい, だい, さつ, ひき, はい, こ, かい, ど, つ etc.",
-      "meaning_ja": "",
+      "meaning_en": "Number + counter — counting things in Japanese (人, まい, 本, はい, さつ, つ, etc.)",
+      "meaning_ja": "「すうじ + じょすうし」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "quantity"
+        ],
+        "conjugations": [
+          {
+            "form": "people",
+            "label": "人 (にん) — people: 1 ひとり, 2 ふたり, 3 さんにん, ...",
+            "example": "3にん"
+          },
+          {
+            "form": "flat",
+            "label": "まい (まい) — flat things: 1 いちまい, 2 にまい, ...",
+            "example": "5まい"
+          },
+          {
+            "form": "long",
+            "label": "本 (ほん) — long things: 1 いっぽん, 2 にほん, 3 さんぼん, ...",
+            "example": "3ぼん"
+          },
+          {
+            "form": "books",
+            "label": "さつ (さつ) — books: 1 いっさつ, 2 にさつ, ...",
+            "example": "2さつ"
+          },
+          {
+            "form": "general",
+            "label": "つ — general things: 1 ひとつ, 2 ふたつ, ..., 10 とお",
+            "example": "ひとつ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Number + counter' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Japanese requires a counter when stating quantity. Pick the right counter based on the noun's shape/category. Memorize sound-changes: いっ before こ/さ/つ/ぴ; ろっ for 6 with most counters.",
+      "examples": [
+        {
+          "ja": "りんごを ふたつ ください。",
+          "form": "affirmative",
+          "translation_en": "Please give me 2 apples.",
+          "furigana": []
+        },
+        {
+          "ja": "学生が 5にん います。",
+          "form": "affirmative",
+          "translation_en": "There are 5 students.",
+          "furigana": []
+        },
+        {
+          "ja": "本を 3さつ 読みました。",
+          "form": "past",
+          "translation_en": "I read 3 books.",
+          "furigana": []
+        },
+        {
+          "ja": "ビールを 2ほん 飲みます。",
+          "form": "affirmative",
+          "translation_en": "I'll drink 2 bottles of beer.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "りんごを に たべました。",
+          "right": "りんごを ふたつ たべました。",
+          "why": "Need a counter — bare numbers can't quantify nouns."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": "つ-counter (ひとつ to ここのつ + とお) works for almost anything when in doubt — safe fallback."
     },
     {
       "id": "n5-109",
@@ -6071,17 +6400,35 @@
       "category": "Counters and Quantity",
       "categoryOrder": 13,
       "patternOrder": 2,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "How many / how much (counter questions) (see n5-054 for full content)",
+      "meaning_ja": "(n5-054を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-054",
+            "example": "いくつ / いくら / なんにん / なんまい etc."
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'いくつ / いくら / なんにん / なんまい etc.' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-054. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-054)",
+          "form": "affirmative",
+          "translation_en": "See n5-054 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-054",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-110",
@@ -6089,17 +6436,44 @@
       "category": "Counters and Quantity",
       "categoryOrder": 13,
       "patternOrder": 3,
-      "meaning_en": "e.g., りんごを ふたつ かいました",
-      "meaning_ja": "",
+      "meaning_en": "Object + counter + Verb — quantity comes BEFORE the verb",
+      "meaning_ja": "「Object + counter + Verb」(ごじゅん)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "sentence_pattern"
+        ],
+        "conjugations": [
+          {
+            "form": "order",
+            "label": "Object を Counter Verb",
+            "example": "りんごを ふたつ かいました"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb + counter + Verb' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "When stating quantity, the counter comes BETWEEN the object and the verb (no particle on the counter): NOUN を COUNTER VERB.",
+      "examples": [
+        {
+          "ja": "りんごを ふたつ かいました。",
+          "form": "past",
+          "translation_en": "I bought 2 apples.",
+          "furigana": []
+        },
+        {
+          "ja": "ビールを 3ぼん ください。",
+          "form": "affirmative",
+          "translation_en": "Please give me 3 beers.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "ふたつの りんごを かいました。",
+          "right": "りんごを ふたつ かいました。",
+          "why": "More natural to put quantity AFTER the noun, with no の. The 'の-form' is unusual at N5."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-111",
@@ -6107,17 +6481,50 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 1,
-      "meaning_en": "o'clock",
-      "meaning_ja": "",
+      "meaning_en": "～じ — o'clock (counter)",
+      "meaning_ja": "「〜じ」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "number"
+        ],
+        "conjugations": [
+          {
+            "form": "clock",
+            "label": "Number + じ",
+            "example": "3じ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～じ' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "じ counts hours. Watch sound-changes: 4じ = よじ (not しじ), 7じ = しちじ, 9じ = くじ.",
+      "examples": [
+        {
+          "ja": "いま 3じです。",
+          "form": "affirmative",
+          "translation_en": "It's 3 o'clock now.",
+          "furigana": []
+        },
+        {
+          "ja": "9じに おきます。",
+          "form": "affirmative",
+          "translation_en": "I get up at 9.",
+          "furigana": []
+        },
+        {
+          "ja": "なんじですか。",
+          "form": "question",
+          "translation_en": "What time is it?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "4じ = しじ",
+          "right": "4じ = よじ",
+          "why": "4じ is read よじ, not しじ. Same as 7じ = しちじ (not なな)."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-112",
@@ -6125,17 +6532,38 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 2,
-      "meaning_en": "minutes",
-      "meaning_ja": "",
+      "meaning_en": "～ふん / ～ぷん — minute(s) (counter)",
+      "meaning_ja": "「〜ふん／〜ぷん」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "number"
+        ],
+        "conjugations": [
+          {
+            "form": "minutes",
+            "label": "Number + ふん/ぷん",
+            "example": "10ぷん"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～ふん / ぷん' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Sound varies: 1ぷん, 3ぷん, 4ぷん, 6ぷん, 8ぷん, 10ぷん use ぷん; 2ふん, 5ふん, 7ふん, 9ふん use ふん.",
+      "examples": [
+        {
+          "ja": "10ぷん まちました。",
+          "form": "past",
+          "translation_en": "I waited 10 minutes.",
+          "furigana": []
+        },
+        {
+          "ja": "5ふんで 行けます。",
+          "form": "affirmative",
+          "translation_en": "I can go in 5 minutes.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-113",
@@ -6143,17 +6571,38 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 3,
-      "meaning_en": "half past",
-      "meaning_ja": "",
+      "meaning_en": "～じはん — half past (~30 minutes)",
+      "meaning_ja": "「〜じはん」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "number"
+        ],
+        "conjugations": [
+          {
+            "form": "half_past",
+            "label": "X じはん",
+            "example": "3じはん"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～じはん' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "じはん = 'half past'. 3じはん = 3:30.",
+      "examples": [
+        {
+          "ja": "いま 3じはんです。",
+          "form": "affirmative",
+          "translation_en": "It's 3:30 now.",
+          "furigana": []
+        },
+        {
+          "ja": "9じはんに あいましょう。",
+          "form": "affirmative",
+          "translation_en": "Let's meet at 9:30.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-114",
@@ -6161,17 +6610,35 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 4,
-      "meaning_en": "from~to~",
-      "meaning_ja": "",
+      "meaning_en": "From X to Y (paired range — already covered) (see n5-021 for full content)",
+      "meaning_ja": "(n5-021を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-021",
+            "example": "～から～まで"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～から～まで' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-021. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-021)",
+          "form": "affirmative",
+          "translation_en": "See n5-021 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-021",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-115",
@@ -6179,17 +6646,35 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 5,
-      "meaning_en": "specific time",
-      "meaning_ja": "",
+      "meaning_en": "に for specific times — covered by に particle (see n5-005 for full content)",
+      "meaning_ja": "(n5-005を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-005",
+            "example": "～に (specific time)"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～に' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-005. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-005)",
+          "form": "affirmative",
+          "translation_en": "See n5-005 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-005",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-116",
@@ -6197,17 +6682,44 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 6,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "まいにち / まいしゅう / まいつき / まいとし — every day / week / month / year",
+      "meaning_ja": "「まい〜」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "adverbial"
+        ],
+        "conjugations": [
+          {
+            "form": "every",
+            "label": "Every X",
+            "example": "まいにち"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'まいにち / まいしゅう / まいつき / まいとし' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Prefix まい + time unit = 'every X'. Used adverbially (no particle).",
+      "examples": [
+        {
+          "ja": "まいにち 日本語を べんきょうします。",
+          "form": "affirmative",
+          "translation_en": "I study Japanese every day.",
+          "furigana": []
+        },
+        {
+          "ja": "まいしゅう 友だちに あいます。",
+          "form": "affirmative",
+          "translation_en": "I meet friends every week.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "まいにちに",
+          "right": "まいにち",
+          "why": "まい-time words don't take に — they're already adverbs."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-117",
@@ -6215,17 +6727,50 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 7,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Time-of-day vocabulary: きょう / あした / きのう / あさって / おととい",
+      "meaning_ja": "「きょう・あした・きのう...」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "adverbial"
+        ],
+        "conjugations": [
+          {
+            "form": "relative_time",
+            "label": "Relative time word",
+            "example": "きょう"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'きょう / あした / きのう / あさって / おととい' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Relative time words. Used WITHOUT に. きょう = today, あした = tomorrow, きのう = yesterday, あさって = day after tomorrow, おととい = day before yesterday.",
+      "examples": [
+        {
+          "ja": "きょうは あついです。",
+          "form": "affirmative",
+          "translation_en": "It's hot today.",
+          "furigana": []
+        },
+        {
+          "ja": "あした 行きます。",
+          "form": "affirmative",
+          "translation_en": "I'll go tomorrow.",
+          "furigana": []
+        },
+        {
+          "ja": "きのう しけんでした。",
+          "form": "past",
+          "translation_en": "Yesterday was the exam.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "きょうに",
+          "right": "きょう",
+          "why": "Relative time words take no particle."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-118",
@@ -6233,17 +6778,65 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 8,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "いま / すぐ / もう / まだ — temporal adverbs",
+      "meaning_ja": "「いま・すぐ・もう・まだ」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "adverbial"
+        ],
+        "conjugations": [
+          {
+            "form": "now",
+            "label": "いま — now",
+            "example": "いま 行きます"
+          },
+          {
+            "form": "soon",
+            "label": "すぐ — right away",
+            "example": "すぐ 来ます"
+          },
+          {
+            "form": "already",
+            "label": "もう — already (with affirmative); not anymore (with neg)",
+            "example": "もう たべました"
+          },
+          {
+            "form": "not_yet",
+            "label": "まだ — still / not yet (with neg)",
+            "example": "まだ ねていません"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'いま / すぐ / もう / まだ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Four core temporal adverbs. もう pairs with past (already done). まだ + negative = 'not yet', まだ + affirmative = 'still'.",
+      "examples": [
+        {
+          "ja": "いま 行きます。",
+          "form": "affirmative",
+          "translation_en": "I'm going now.",
+          "furigana": []
+        },
+        {
+          "ja": "もう ばんごはんを たべました。",
+          "form": "past",
+          "translation_en": "I've already had dinner.",
+          "furigana": []
+        },
+        {
+          "ja": "まだ たべていません。",
+          "form": "negative",
+          "translation_en": "I haven't eaten yet.",
+          "furigana": []
+        },
+        {
+          "ja": "まだ ここに います。",
+          "form": "affirmative",
+          "translation_en": "I'm still here.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-119",
@@ -6251,17 +6844,54 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 9,
-      "meaning_en": "before",
-      "meaning_ja": "",
+      "meaning_en": "～まえ — before",
+      "meaning_ja": "「〜まえ」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "noun_no_mae",
+            "label": "Noun の まえ(に)",
+            "example": "ごはんの まえに"
+          },
+          {
+            "form": "verb_mae",
+            "label": "Verb-plain + まえに",
+            "example": "たべる まえに"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～まえ' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "まえ = 'before'. Noun + の + まえ(に); Verb-plain (NON-PAST) + まえに. Note: verb stays NON-PAST even when the meaning is 'before doing X (in the past)'.",
+      "examples": [
+        {
+          "ja": "ごはんの まえに てを あらいます。",
+          "form": "affirmative",
+          "translation_en": "I wash my hands before meals.",
+          "furigana": []
+        },
+        {
+          "ja": "ねる まえに 本を 読みます。",
+          "form": "affirmative",
+          "translation_en": "I read a book before going to bed.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "ねたまえに",
+          "right": "ねるまえに",
+          "why": "Use plain non-past before まえに — even for past actions."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-120",
+          "note": "まえ (before) ↔ あと (after)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-120",
@@ -6269,17 +6899,49 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 10,
-      "meaning_en": "after — limited at N5",
-      "meaning_ja": "",
+      "meaning_en": "～あと — after",
+      "meaning_ja": "「〜あと」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "noun_no_ato",
+            "label": "Noun の あとで",
+            "example": "しごとの あとで"
+          },
+          {
+            "form": "verb_ato",
+            "label": "Verb-た + あとで",
+            "example": "たべた あとで"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～あと' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "あと = 'after'. Noun + の + あとで; Verb-PAST + あとで. Verb is PAST here (opposite of まえに).",
+      "examples": [
+        {
+          "ja": "しごとの あとで のみに 行きました。",
+          "form": "past",
+          "translation_en": "I went for drinks after work.",
+          "furigana": []
+        },
+        {
+          "ja": "ばんごはんを たべた あとで テレビを 見ます。",
+          "form": "affirmative",
+          "translation_en": "I watch TV after dinner.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "たべる あとで",
+          "right": "たべた あとで",
+          "why": "Use PAST plain (た-form) before あとで, opposite of まえに."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-121",
@@ -6447,17 +7109,38 @@
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
       "patternOrder": 5,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "では / じゃ — 'well then / in that case' (transition)",
+      "meaning_ja": "「では」「じゃ」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "clause_start"
+        ],
+        "conjugations": [
+          {
+            "form": "transition",
+            "label": "Transition / let's wrap up",
+            "example": "じゃ、また あした。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'では / じゃ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "では (formal) / じゃ (casual) signals transition or wrap-up. Common in goodbyes: じゃ、また.",
+      "examples": [
+        {
+          "ja": "じゃ、また あした。",
+          "form": "affirmative",
+          "translation_en": "Well, see you tomorrow.",
+          "furigana": []
+        },
+        {
+          "ja": "では、はじめましょう。",
+          "form": "affirmative",
+          "translation_en": "Now then, let's begin.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-126",
@@ -6521,17 +7204,43 @@
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
       "patternOrder": 7,
-      "meaning_en": "but — informal",
-      "meaning_ja": "",
+      "meaning_en": "けれど / けど — 'but' (informal contrast)",
+      "meaning_ja": "「けど」(くだけた)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "clause_end"
+        ],
+        "conjugations": [
+          {
+            "form": "informal_but",
+            "label": "Informal but",
+            "example": "～けど、～"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'けれど / けど' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Casual equivalent of が (clause-final 'but'). けれど is slightly more formal than けど.",
+      "examples": [
+        {
+          "ja": "むずかしいけど、おもしろいです。",
+          "form": "affirmative",
+          "translation_en": "It's hard, but interesting.",
+          "furigana": []
+        },
+        {
+          "ja": "行きたいけど、時間が ありません。",
+          "form": "negative",
+          "translation_en": "I want to go, but I don't have time.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-126",
+          "note": "が (formal/written), けど (casual)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-128",
@@ -6583,17 +7292,32 @@
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
       "patternOrder": 9,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "どうして〜か。〜から。 — Q-and-A reason pattern",
+      "meaning_ja": "「どうして〜か。〜から。」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "dialogue"
+        ],
+        "conjugations": [
+          {
+            "form": "qa",
+            "label": "Why? Because.",
+            "example": "どうしてですか。―あついからです。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'どうして～か。～から。' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Standard pattern: question with どうして, answer using から. The answer often ends ～からです (because + polite).",
+      "examples": [
+        {
+          "ja": "どうして 来ませんでしたか。―あたまが いたかったからです。",
+          "form": "dialogue",
+          "translation_en": "Why didn't you come? — Because I had a headache.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-130",
@@ -6645,17 +7369,44 @@
       "category": "Giving and Receiving (basic)",
       "categoryOrder": 16,
       "patternOrder": 2,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～に～を もらいます — receive (from)",
+      "meaning_ja": "「もらいます」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb"
+        ],
+        "conjugations": [
+          {
+            "form": "polite",
+            "label": "Polite",
+            "example": "もらいます"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～に～をもらいます' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "もらう = receive. Giver marked with に (or から for non-person sources). Recipient is the subject.",
+      "examples": [
+        {
+          "ja": "ともだちに 本を もらいました。",
+          "form": "past",
+          "translation_en": "I received a book from a friend.",
+          "furigana": []
+        },
+        {
+          "ja": "母から おかねを もらいます。",
+          "form": "affirmative",
+          "translation_en": "I receive money from my mother.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "わたしから 友だちに 本を もらいました。 (when meaning 'a friend gave it to me')",
+          "right": "ともだちに 本を もらいました。 / ともだちが 本を くれました。",
+          "why": "もらう has the receiver as the topic. To put the giver first, use くれる instead."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-132",
@@ -6663,17 +7414,49 @@
       "category": "Giving and Receiving (basic)",
       "categoryOrder": 16,
       "patternOrder": 3,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～が～を くれます — give (to me / in-group)",
+      "meaning_ja": "「くれます」(in-group)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb"
+        ],
+        "conjugations": [
+          {
+            "form": "polite",
+            "label": "Polite",
+            "example": "くれます"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～が～をくれます' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "くれる = give TO ME (or my in-group). Giver is the subject. Use this — NOT あげる — when something is given to you.",
+      "examples": [
+        {
+          "ja": "友だちが 本を くれました。",
+          "form": "past",
+          "translation_en": "A friend gave me a book.",
+          "furigana": []
+        },
+        {
+          "ja": "父が プレゼントを くれました。",
+          "form": "past",
+          "translation_en": "My father gave me a present.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "ともだちが わたしに 本を あげました。",
+          "right": "ともだちが 本を くれました。",
+          "why": "When THE SPEAKER (or in-group) is the recipient, Japanese requires くれる, not あげる."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-130",
+          "note": "あげる = I give to others. くれる = others give to me. もらう = I receive from others (alternative perspective on くれる)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-133",
@@ -6681,17 +7464,35 @@
       "category": "Asking and Stating with から / ので (basic causation)",
       "categoryOrder": 17,
       "patternOrder": 1,
-      "meaning_en": "because",
-      "meaning_ja": "",
+      "meaning_en": "Because (sentence connector — already covered) (see n5-128 for full content)",
+      "meaning_ja": "(n5-128を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-128",
+            "example": "Sentence + から、Sentence"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Sentence + から、Sentence' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-128. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-128)",
+          "form": "affirmative",
+          "translation_en": "See n5-128 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-128",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-134",
@@ -6699,17 +7500,49 @@
       "category": "Asking and Stating with から / ので (basic causation)",
       "categoryOrder": 17,
       "patternOrder": 2,
-      "meaning_en": "because — softer",
-      "meaning_ja": "",
+      "meaning_en": "～ので、～ — 'because' (softer than から)",
+      "meaning_ja": "「〜ので」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "clause"
+        ],
+        "conjugations": [
+          {
+            "form": "softer_because",
+            "label": "Softer because (formal)",
+            "example": "～ので、～"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Sentence + ので、Sentence' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+      "explanation_en": "ので = softer / more polite 'because'. Connects to plain form (Verb-plain ので, い-adj plain ので, な-adj/Noun + な ので).",
+      "examples": [
+        {
+          "ja": "あたまが いたいので、休みます。",
+          "form": "affirmative",
+          "translation_en": "I have a headache, so I'll rest.",
+          "furigana": []
+        },
+        {
+          "ja": "今日は 雨なので、行きません。",
+          "form": "negative",
+          "translation_en": "Since it's raining today, I won't go.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "あめので",
+          "right": "あめなので",
+          "why": "Nouns and な-adj insert な before ので: 雨 → 雨なので."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-128",
+          "note": "から = direct/personal; ので = softer/more polite. Often interchangeable."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-135",
@@ -6717,17 +7550,50 @@
       "category": "Nominalization and Modification",
       "categoryOrder": 18,
       "patternOrder": 1,
-      "meaning_en": "plain",
-      "meaning_ja": "",
+      "meaning_en": "Verb (plain) + Noun — relative clauses (basic)",
+      "meaning_ja": "「Verb-plain + N」(かんけい-clause)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "before_noun"
+        ],
+        "conjugations": [
+          {
+            "form": "modifier",
+            "label": "Verb plain + Noun",
+            "example": "読む 本"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Plain-form verbs modify nouns directly — same position as adjectives. 読む 本 = 'a book to read'. NEVER use ます-form here.",
+      "examples": [
+        {
+          "ja": "わたしが 買った 本",
+          "form": "past",
+          "translation_en": "the book I bought",
+          "furigana": []
+        },
+        {
+          "ja": "友だちが 来る 日",
+          "form": "affirmative",
+          "translation_en": "the day my friend comes",
+          "furigana": []
+        },
+        {
+          "ja": "おすしを たべる 人",
+          "form": "affirmative",
+          "translation_en": "people who eat sushi",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "わたしが かいました 本",
+          "right": "わたしが 買った 本",
+          "why": "Use plain form (買った), never ました, in modifying clauses."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-136",
@@ -6735,17 +7601,35 @@
       "category": "Nominalization and Modification",
       "categoryOrder": 18,
       "patternOrder": 2,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Adjective + noun (covered by い-adj+N and な-adj+N) (see n5-078 for full content)",
+      "meaning_ja": "(n5-078を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-078",
+            "example": "Adjective + Noun"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Adjective + Noun' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-078. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-078)",
+          "form": "affirmative",
+          "translation_en": "See n5-078 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-078",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-137",
@@ -6753,17 +7637,35 @@
       "category": "Nominalization and Modification",
       "categoryOrder": 18,
       "patternOrder": 3,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Noun の Noun (covered by ～の) (see n5-028 for full content)",
+      "meaning_ja": "(n5-028を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-028",
+            "example": "Noun + の + Noun"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Noun + の + Noun' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-028. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-028)",
+          "form": "affirmative",
+          "translation_en": "See n5-028 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-028",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-138",
@@ -6771,17 +7673,35 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 1,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Like / dislike (see n5-099 for full content)",
+      "meaning_ja": "(n5-099を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-099",
+            "example": "～がすきです / きらいです"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～がすきです / きらいです' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-099. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-099)",
+          "form": "affirmative",
+          "translation_en": "See n5-099 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-099",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-139",
@@ -6789,17 +7709,35 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 2,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Good at / bad at (see n5-100 for full content)",
+      "meaning_ja": "(n5-100を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-100",
+            "example": "～がじょうずです / へたです"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～がじょうずです / へたです' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-100. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-100)",
+          "form": "affirmative",
+          "translation_en": "See n5-100 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-100",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-140",
@@ -6807,17 +7745,35 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 3,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Understand (see n5-102 for full content)",
+      "meaning_ja": "(n5-102を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-102",
+            "example": "～がわかります"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～がわかります' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-102. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-102)",
+          "form": "affirmative",
+          "translation_en": "See n5-102 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-102",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-141",
@@ -6825,17 +7781,35 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 4,
-      "meaning_en": "event/skill",
-      "meaning_ja": "",
+      "meaning_en": "There is / have (event/skill) (see n5-094 for full content)",
+      "meaning_ja": "(n5-094を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-094",
+            "example": "～があります"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～があります' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-094. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-094)",
+          "form": "affirmative",
+          "translation_en": "See n5-094 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-094",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-142",
@@ -6843,17 +7817,38 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 5,
-      "meaning_en": "decide on",
-      "meaning_ja": "",
+      "meaning_en": "～にします — decide on / choose",
+      "meaning_ja": "「〜にする」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "decision",
+            "label": "Decision",
+            "example": "コーヒーに します"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～にします' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "～にする = 'decide on / choose / make it ~'. Common in restaurants for ordering.",
+      "examples": [
+        {
+          "ja": "コーヒーに します。",
+          "form": "affirmative",
+          "translation_en": "I'll have coffee.",
+          "furigana": []
+        },
+        {
+          "ja": "なにに しますか。",
+          "form": "question",
+          "translation_en": "What will you have?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-143",
@@ -6861,17 +7856,60 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 6,
-      "meaning_en": "becomes",
-      "meaning_ja": "",
+      "meaning_en": "～になります / ～くなります — becomes",
+      "meaning_ja": "「〜になる／〜くなる」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun_or_adj"
+        ],
+        "conjugations": [
+          {
+            "form": "noun",
+            "label": "Noun + に + なる",
+            "example": "先生に なる"
+          },
+          {
+            "form": "na_adj",
+            "label": "な-Adj + に + なる",
+            "example": "しずかに なる"
+          },
+          {
+            "form": "i_adj",
+            "label": "い-Adj → くなる",
+            "example": "あつくなる"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～になります / ～くなります' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Change-of-state pattern. Nouns and な-adj take に; い-adj drop い and add くなる.",
+      "examples": [
+        {
+          "ja": "先生に なりたいです。",
+          "form": "affirmative",
+          "translation_en": "I want to become a teacher.",
+          "furigana": []
+        },
+        {
+          "ja": "へやが しずかに なりました。",
+          "form": "past",
+          "translation_en": "The room became quiet.",
+          "furigana": []
+        },
+        {
+          "ja": "あつくなりました。",
+          "form": "past",
+          "translation_en": "It became hot.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "あついに なる",
+          "right": "あつくなる",
+          "why": "い-adj drop い and use くなる, not に."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-144",
@@ -6879,17 +7917,44 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 7,
-      "meaning_en": "while doing",
-      "meaning_ja": "",
+      "meaning_en": "Verb-stem + ながら — while doing (simultaneously)",
+      "meaning_ja": "「〜ながら」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem_i"
+        ],
+        "conjugations": [
+          {
+            "form": "while",
+            "label": "Simultaneous",
+            "example": "おんがくを 聞きながら"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-stem + ながら' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Drop ます, add ながら. Two simultaneous actions by the SAME subject.",
+      "examples": [
+        {
+          "ja": "おんがくを 聞きながら べんきょうします。",
+          "form": "affirmative",
+          "translation_en": "I study while listening to music.",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーを 飲みながら 本を 読みます。",
+          "form": "affirmative",
+          "translation_en": "I drink coffee while reading a book.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "Two different subjects with ながら",
+          "right": "Same subject for both verbs.",
+          "why": "ながら requires the SAME subject. For two actors, use other connectors."
+        }
+      ],
       "contrasts": [],
-      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+      "notes": "Borderline N5/N4."
     },
     {
       "id": "n5-145",
@@ -6897,17 +7962,44 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 8,
-      "meaning_en": "I think",
-      "meaning_ja": "",
+      "meaning_en": "～と おもいます — I think (that)",
+      "meaning_ja": "「〜と おもいます」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "plain_clause"
+        ],
+        "conjugations": [
+          {
+            "form": "opinion",
+            "label": "Opinion (plain + とおもう)",
+            "example": "～と おもいます"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～とおもいます' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Embed a plain-form clause + と + おもいます to express opinion. と marks the quoted/embedded thought.",
+      "examples": [
+        {
+          "ja": "あした 雨が ふると おもいます。",
+          "form": "affirmative",
+          "translation_en": "I think it'll rain tomorrow.",
+          "furigana": []
+        },
+        {
+          "ja": "いいと おもいます。",
+          "form": "affirmative",
+          "translation_en": "I think it's good.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "～です と おもいます",
+          "right": "～だ と おもいます (or just ～と おもいます)",
+          "why": "Use PLAIN form before と: noun + だ, い-adj + plain. Don't insert です."
+        }
+      ],
       "contrasts": [],
-      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+      "notes": ""
     },
     {
       "id": "n5-146",
@@ -6915,17 +8007,38 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 9,
-      "meaning_en": "said that — basic quoting",
-      "meaning_ja": "",
+      "meaning_en": "～と 言いました — said that ~",
+      "meaning_ja": "「〜と 言いました」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "plain_clause"
+        ],
+        "conjugations": [
+          {
+            "form": "quotation",
+            "label": "Reported speech",
+            "example": "～と 言いました"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～と言いました' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Same と quotation pattern with the verb 言う (say).",
+      "examples": [
+        {
+          "ja": "「あした 来ます」と 言いました。",
+          "form": "past",
+          "translation_en": "He said 'I'll come tomorrow'.",
+          "furigana": []
+        },
+        {
+          "ja": "ともだちは 行くと 言いました。",
+          "form": "past",
+          "translation_en": "My friend said he would go.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+      "notes": ""
     },
     {
       "id": "n5-147",
@@ -6933,17 +8046,71 @@
       "category": "Existence-of-Plans and Frequency",
       "categoryOrder": 20,
       "patternOrder": 1,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Frequency adverbs: よく / ときどき / あまり / ぜんぜん",
+      "meaning_ja": "「よく・ときどき・あまり・ぜんぜん」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "adverbial"
+        ],
+        "conjugations": [
+          {
+            "form": "yoku",
+            "label": "よく — often (with affirmative)",
+            "example": "よく 見ます"
+          },
+          {
+            "form": "tokidoki",
+            "label": "ときどき — sometimes",
+            "example": "ときどき 行きます"
+          },
+          {
+            "form": "amari",
+            "label": "あまり — not much (REQUIRES negative)",
+            "example": "あまり 見ません"
+          },
+          {
+            "form": "zenzen",
+            "label": "ぜんぜん — not at all (REQUIRES negative)",
+            "example": "ぜんぜん 行きません"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'よく / ときどき / あまり / ぜんぜん + Verb' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "あまり and ぜんぜん REQUIRE a negative verb. よく/ときどき pair with affirmative. Frequency comes near the verb.",
+      "examples": [
+        {
+          "ja": "よく テレビを 見ます。",
+          "form": "affirmative",
+          "translation_en": "I often watch TV.",
+          "furigana": []
+        },
+        {
+          "ja": "ときどき えいがを 見ます。",
+          "form": "affirmative",
+          "translation_en": "I sometimes watch movies.",
+          "furigana": []
+        },
+        {
+          "ja": "あまり 行きません。",
+          "form": "negative",
+          "translation_en": "I don't go much.",
+          "furigana": []
+        },
+        {
+          "ja": "ぜんぜん 食べません。",
+          "form": "negative",
+          "translation_en": "I don't eat at all.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "ぜんぜん 行きます。",
+          "right": "ぜんぜん 行きません。",
+          "why": "ぜんぜん requires a negative verb."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-148",
@@ -6951,17 +8118,54 @@
       "category": "Existence-of-Plans and Frequency",
       "categoryOrder": 20,
       "patternOrder": 2,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "いつも / たいてい / たまに — always / usually / occasionally",
+      "meaning_ja": "「いつも・たいてい・たまに」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "adverbial"
+        ],
+        "conjugations": [
+          {
+            "form": "itsumo",
+            "label": "いつも — always",
+            "example": "いつも 7じに おきます"
+          },
+          {
+            "form": "taitei",
+            "label": "たいてい — usually",
+            "example": "たいてい うちで たべます"
+          },
+          {
+            "form": "tama_ni",
+            "label": "たまに — occasionally",
+            "example": "たまに あいます"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'いつも / たいてい / たまに' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Higher-frequency adverbs. All work with affirmative verbs.",
+      "examples": [
+        {
+          "ja": "いつも 7じに おきます。",
+          "form": "affirmative",
+          "translation_en": "I always wake up at 7.",
+          "furigana": []
+        },
+        {
+          "ja": "たいてい うちで ごはんを たべます。",
+          "form": "affirmative",
+          "translation_en": "I usually eat at home.",
+          "furigana": []
+        },
+        {
+          "ja": "たまに 友だちに あいます。",
+          "form": "affirmative",
+          "translation_en": "I occasionally meet friends.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-149",
@@ -6969,17 +8173,38 @@
       "category": "Functional Expressions (Non-Grammar, Common Usage)",
       "categoryOrder": 21,
       "patternOrder": 1,
-      "meaning_en": "please give me ～",
-      "meaning_ja": "",
+      "meaning_en": "～を ください — please give me ~",
+      "meaning_ja": "「〜を ください」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "request",
+            "label": "Polite request for an item",
+            "example": "コーヒーを ください"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～をください' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Standard request for an item. Common in shops and restaurants.",
+      "examples": [
+        {
+          "ja": "みずを ください。",
+          "form": "affirmative",
+          "translation_en": "Water, please.",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーを ふたつ ください。",
+          "form": "affirmative",
+          "translation_en": "Two coffees, please.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-150",
@@ -6987,17 +8212,32 @@
       "category": "Functional Expressions (Non-Grammar, Common Usage)",
       "categoryOrder": 21,
       "patternOrder": 2,
-      "meaning_en": "please ～ — service request",
-      "meaning_ja": "",
+      "meaning_en": "～を おねがいします — I'd like ~ / please give ~ (more polite than ください)",
+      "meaning_ja": "「〜を おねがいします」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "polite_request",
+            "label": "More polite",
+            "example": "コーヒーを おねがいします"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～をおねがいします' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Slightly more polite than ください. Same construction.",
+      "examples": [
+        {
+          "ja": "コーヒーを おねがいします。",
+          "form": "affirmative",
+          "translation_en": "Coffee, please.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-151",
@@ -7005,17 +8245,38 @@
       "category": "Functional Expressions (Non-Grammar, Common Usage)",
       "categoryOrder": 21,
       "patternOrder": 3,
-      "meaning_en": "how about ～? — polite offer",
-      "meaning_ja": "",
+      "meaning_en": "～は いかがですか — how about ~? (polite offer)",
+      "meaning_ja": "「〜は いかがですか」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "polite_offer",
+            "label": "Polite offer",
+            "example": "おちゃは いかがですか"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～はいかがですか' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Polite offer or suggestion form, common in service settings.",
+      "examples": [
+        {
+          "ja": "おちゃは いかがですか。",
+          "form": "question",
+          "translation_en": "How about some tea?",
+          "furigana": []
+        },
+        {
+          "ja": "もう いっぱい いかがですか。",
+          "form": "question",
+          "translation_en": "Would you like another cup?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-152",
@@ -7023,17 +8284,59 @@
       "category": "Functional Expressions (Non-Grammar, Common Usage)",
       "categoryOrder": 21,
       "patternOrder": 4,
-      "meaning_en": "functional fillers",
-      "meaning_ja": "",
+      "meaning_en": "Set polite phrases: どうぞ / どうも / すみません / おねがいします",
+      "meaning_ja": "あいさつ・しゃいいご",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "set_phrase"
+        ],
+        "conjugations": [
+          {
+            "form": "douzo",
+            "label": "どうぞ — please / go ahead",
+            "example": "どうぞ"
+          },
+          {
+            "form": "doumo",
+            "label": "どうも — thanks / sorry (informal)",
+            "example": "どうも"
+          },
+          {
+            "form": "sumimasen",
+            "label": "すみません — excuse me / sorry / thank you",
+            "example": "すみません"
+          },
+          {
+            "form": "onegaishimasu",
+            "label": "おねがいします — please",
+            "example": "おねがいします"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'どうぞ / どうも / すみません / おねがいします' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Core polite expressions used dozens of times daily in Japan. Memorize all four.",
+      "examples": [
+        {
+          "ja": "どうぞ 入ってください。",
+          "form": "affirmative",
+          "translation_en": "Please come in.",
+          "furigana": []
+        },
+        {
+          "ja": "すみません、いま なんじですか。",
+          "form": "question",
+          "translation_en": "Excuse me, what time is it?",
+          "furigana": []
+        },
+        {
+          "ja": "どうも ありがとうございます。",
+          "form": "affirmative",
+          "translation_en": "Thank you very much.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-153",
@@ -7041,17 +8344,49 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 1,
-      "meaning_en": "not yet",
-      "meaning_ja": "",
+      "meaning_en": "まだ + Verb-ていません — not yet (an action that's still pending)",
+      "meaning_ja": "「まだ〜ていません」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_te_imasu_neg"
+        ],
+        "conjugations": [
+          {
+            "form": "not_yet",
+            "label": "Pending state",
+            "example": "まだ たべていません"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'まだ + Verb-ていません' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "まだ + ていません = action not yet completed but expected. Implies 'still pending'.",
+      "examples": [
+        {
+          "ja": "まだ あさごはんを たべていません。",
+          "form": "negative",
+          "translation_en": "I haven't eaten breakfast yet.",
+          "furigana": []
+        },
+        {
+          "ja": "まだ しゅくだいを していません。",
+          "form": "negative",
+          "translation_en": "I haven't done my homework yet.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "まだ たべませんでした",
+          "right": "まだ たべていません",
+          "why": "まだ pairs with ていません to mean 'not yet'. ませんでした is just past-negative."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-154",
+          "note": "まだ〜ていません (not yet) ↔ もう〜ました (already)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-154",
@@ -7059,17 +8394,38 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 2,
-      "meaning_en": "already",
-      "meaning_ja": "",
+      "meaning_en": "もう + Verb-ました — already (action completed)",
+      "meaning_ja": "「もう〜ました」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_mashita"
+        ],
+        "conjugations": [
+          {
+            "form": "already",
+            "label": "Already done",
+            "example": "もう たべました"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'もう + Verb-ました' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "もう + ました = already done. Often paired with まだ + ていません as a yes/no answer pair.",
+      "examples": [
+        {
+          "ja": "もう ばんごはんを たべました。",
+          "form": "past",
+          "translation_en": "I've already eaten dinner.",
+          "furigana": []
+        },
+        {
+          "ja": "もう しゅくだいは おわりましたか。",
+          "form": "question",
+          "translation_en": "Have you finished your homework yet?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-155",
@@ -7077,17 +8433,35 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 3,
-      "meaning_en": "contrast / soft \"but\"",
-      "meaning_ja": "",
+      "meaning_en": "Mid-sentence が (but) — see particle が clause connector (see n5-126 for full content)",
+      "meaning_ja": "(n5-126を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-126",
+            "example": "〜が、〜"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '〜が、〜' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-126. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-126)",
+          "form": "affirmative",
+          "translation_en": "See n5-126 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-126",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-156",
@@ -7095,17 +8469,35 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 4,
-      "meaning_en": "sentence-final",
-      "meaning_ja": "",
+      "meaning_en": "Sentence-final ね / よ — see ね / よ entries (see n5-025 for full content)",
+      "meaning_ja": "(n5-025を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-025",
+            "example": "〜ね / 〜よ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '〜ね / 〜よ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-025. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-025)",
+          "form": "affirmative",
+          "translation_en": "See n5-025 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-025",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-157",
@@ -7113,17 +8505,43 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 5,
-      "meaning_en": "probably / right? — basic",
-      "meaning_ja": "",
+      "meaning_en": "〜でしょう — probably / right?",
+      "meaning_ja": "「〜でしょう」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "plain_clause"
+        ],
+        "conjugations": [
+          {
+            "form": "guess",
+            "label": "Probably / I think",
+            "example": "～でしょう"
+          },
+          {
+            "form": "agreement",
+            "label": "Right? (rising intonation)",
+            "example": "～でしょう？"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '〜でしょう' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "でしょう = polite probability ('probably') or seeking agreement ('right?'). Borderline N5/N4.",
+      "examples": [
+        {
+          "ja": "あした 雨でしょう。",
+          "form": "affirmative",
+          "translation_en": "It'll probably rain tomorrow.",
+          "furigana": []
+        },
+        {
+          "ja": "むずかしいでしょう？",
+          "form": "question",
+          "translation_en": "It's hard, right?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+      "notes": "Borderline N5."
     },
     {
       "id": "n5-158",
@@ -7131,17 +8549,35 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 6,
-      "meaning_en": "plain form of でしょう",
-      "meaning_ja": "",
+      "meaning_en": "Casual/plain version of でしょう (see n5-157 for full content)",
+      "meaning_ja": "(n5-157を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-157",
+            "example": "〜だろう"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '〜だろう' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-157. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-157)",
+          "form": "affirmative",
+          "translation_en": "See n5-157 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-157",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-159",
@@ -7149,17 +8585,35 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 7,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "Polite ね/よ — see ね/よ entries (see n5-025 for full content)",
+      "meaning_ja": "(n5-025を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-025",
+            "example": "〜ですね / 〜ですよ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '〜ですね / 〜ですよ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-025. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-025)",
+          "form": "affirmative",
+          "translation_en": "See n5-025 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-025",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-160",
@@ -7167,17 +8621,35 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 8,
-      "meaning_en": "after — basic",
-      "meaning_ja": "",
+      "meaning_en": "Noun の あとで — see ～あと (see n5-120 for full content)",
+      "meaning_ja": "(n5-120を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-120",
+            "example": "Noun + の + あとで"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Noun + の + あとで' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-120. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-120)",
+          "form": "affirmative",
+          "translation_en": "See n5-120 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-120",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-161",
@@ -7185,17 +8657,35 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 9,
-      "meaning_en": "before — basic",
-      "meaning_ja": "",
+      "meaning_en": "Noun の まえに — see ～まえ (see n5-119 for full content)",
+      "meaning_ja": "(n5-119を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-119",
+            "example": "Noun + の + まえに"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Noun + の + まえに' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-119. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-119)",
+          "form": "affirmative",
+          "translation_en": "See n5-119 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-119",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-162",
@@ -7203,17 +8693,35 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 10,
-      "meaning_en": "plain",
-      "meaning_ja": "",
+      "meaning_en": "Verb-plain まえに — see ～まえ (see n5-119 for full content)",
+      "meaning_ja": "(n5-119を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-119",
+            "example": "Verb (plain) + まえに"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-119. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-119)",
+          "form": "affirmative",
+          "translation_en": "See n5-119 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-119",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-163",
@@ -7221,17 +8729,35 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 11,
-      "meaning_en": "plain past",
-      "meaning_ja": "",
+      "meaning_en": "Verb-た あとで — see ～あと (see n5-120 for full content)",
+      "meaning_ja": "(n5-120を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-120",
+            "example": "Verb (plain past) + あとで"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-120. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-120)",
+          "form": "affirmative",
+          "translation_en": "See n5-120 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-120",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-164",
@@ -7239,17 +8765,44 @@
       "category": "Honorific / Polite Vocabulary at N5 (functional)",
       "categoryOrder": 23,
       "patternOrder": 1,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～さん — name suffix (Mr./Ms./equivalent)",
+      "meaning_ja": "「〜さん」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "after_name"
+        ],
+        "conjugations": [
+          {
+            "form": "san",
+            "label": "Name + さん",
+            "example": "田中さん"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～さん' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "さん attaches to people's names (and some roles). NEVER attach さん to your own name.",
+      "examples": [
+        {
+          "ja": "田中さんは 先生です。",
+          "form": "affirmative",
+          "translation_en": "Tanaka-san is a teacher.",
+          "furigana": []
+        },
+        {
+          "ja": "やまださんに あいました。",
+          "form": "past",
+          "translation_en": "I met Yamada-san.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "わたしは スミスさんです。",
+          "right": "わたしは スミスです。",
+          "why": "Don't put さん on your own name — it sounds bizarrely self-honorific."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-165",
@@ -7257,17 +8810,49 @@
       "category": "Honorific / Polite Vocabulary at N5 (functional)",
       "categoryOrder": 23,
       "patternOrder": 2,
-      "meaning_en": "beautifying prefixes — limited to common cases",
-      "meaning_ja": "",
+      "meaning_en": "お～ / ご～ — beautifying / honorific prefixes",
+      "meaning_ja": "「お〜」「ご〜」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "before_noun"
+        ],
+        "conjugations": [
+          {
+            "form": "o",
+            "label": "お (native words)",
+            "example": "おちゃ, おみず, おはな"
+          },
+          {
+            "form": "go",
+            "label": "ご (Sino-Japanese / kanji compounds)",
+            "example": "ごはん, ごりょうしん"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'お～ / ご～' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "お/ご prefixes add politeness or are required for some words (おちゃ, ごはん). お for native Japanese; ご for Sino-Japanese (kanji-compound) words.",
+      "examples": [
+        {
+          "ja": "おちゃを どうぞ。",
+          "form": "affirmative",
+          "translation_en": "Please have some tea.",
+          "furigana": []
+        },
+        {
+          "ja": "ごはんを たべました。",
+          "form": "past",
+          "translation_en": "I ate a meal.",
+          "furigana": []
+        },
+        {
+          "ja": "ごりょうしんは おげんきですか。",
+          "form": "question",
+          "translation_en": "Are your parents well?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-166",
@@ -7275,17 +8860,64 @@
       "category": "Honorific / Polite Vocabulary at N5 (functional)",
       "categoryOrder": 23,
       "patternOrder": 3,
-      "meaning_en": "set expressions",
-      "meaning_ja": "",
+      "meaning_en": "Set greetings: いただきます / ごちそうさま / おはようございます etc.",
+      "meaning_ja": "あいさつ・ていけいごく",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "set_phrase"
+        ],
+        "conjugations": [
+          {
+            "form": "before_meal",
+            "label": "Before eating",
+            "example": "いただきます"
+          },
+          {
+            "form": "after_meal",
+            "label": "After eating",
+            "example": "ごちそうさま"
+          },
+          {
+            "form": "morning",
+            "label": "Good morning (polite)",
+            "example": "おはようございます"
+          },
+          {
+            "form": "afternoon",
+            "label": "Good afternoon",
+            "example": "こんにちは"
+          },
+          {
+            "form": "evening",
+            "label": "Good evening",
+            "example": "こんばんは"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'いただきます / ごちそうさま / おはようございます etc.' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Core daily greetings. Memorize and use unconsciously — not negotiable in polite Japanese.",
+      "examples": [
+        {
+          "ja": "いただきます！",
+          "form": "affirmative",
+          "translation_en": "Thanks for the food! (before eating)",
+          "furigana": []
+        },
+        {
+          "ja": "ごちそうさまでした。",
+          "form": "past",
+          "translation_en": "Thank you for the meal. (after eating)",
+          "furigana": []
+        },
+        {
+          "ja": "おはようございます。",
+          "form": "affirmative",
+          "translation_en": "Good morning.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-167",
@@ -7293,17 +8925,38 @@
       "category": "Additional Upper N5 / Borderline Patterns — Explanation and Emphasis",
       "categoryOrder": 24,
       "patternOrder": 1,
-      "meaning_en": "gives a reason / asks for an explanation",
-      "meaning_ja": "",
+      "meaning_en": "～んです / ～のです — explanation / emphasis (borderline)",
+      "meaning_ja": "「〜んです」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "plain_clause"
+        ],
+        "conjugations": [
+          {
+            "form": "explanation",
+            "label": "Plain + んです",
+            "example": "～んです"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～んです / ～のです' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Adds explanation or asks for an explanation. Plain-form clause + んです (casual んだ).",
+      "examples": [
+        {
+          "ja": "あたまが いたいんです。",
+          "form": "affirmative",
+          "translation_en": "(It's because) I have a headache.",
+          "furigana": []
+        },
+        {
+          "ja": "どうしたんですか。",
+          "form": "question",
+          "translation_en": "What's wrong?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": "Upper N5 / borderline."
     },
     {
       "id": "n5-168",
@@ -7311,17 +8964,32 @@
       "category": "Additional Upper N5 / Borderline Patterns — Compound and Listed Actions",
       "categoryOrder": 25,
       "patternOrder": 1,
-      "meaning_en": "do A and B, among other things",
-      "meaning_ja": "",
+      "meaning_en": "～たり〜たりする — do A and B (among other things)",
+      "meaning_ja": "「〜たり〜たり」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_ta"
+        ],
+        "conjugations": [
+          {
+            "form": "examples",
+            "label": "Listing examples",
+            "example": "～たり ～たりします"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～たり〜たりする' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Take Verb-た (past plain), add り. Lists representative actions: 'I do things like A and B'.",
+      "examples": [
+        {
+          "ja": "しゅうまつは 本を 読んだり、えいがを 見たり します。",
+          "form": "affirmative",
+          "translation_en": "On weekends I do things like read books and watch movies.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": "Upper N5 / borderline."
     },
     {
       "id": "n5-169",
@@ -7329,17 +8997,38 @@
       "category": "Additional Upper N5 / Borderline Patterns — Experience and Advice",
       "categoryOrder": 26,
       "patternOrder": 1,
-      "meaning_en": "have done before — past experience",
-      "meaning_ja": "",
+      "meaning_en": "Verb-た + ことが ある — have done before (experience)",
+      "meaning_ja": "「〜たことが ある」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_ta"
+        ],
+        "conjugations": [
+          {
+            "form": "experience",
+            "label": "Past experience",
+            "example": "～たことが ある"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-た + ことがある' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Verb-PAST + ことが + ある = 'have done at some point'. Asks/talks about life experience.",
+      "examples": [
+        {
+          "ja": "日本へ 行ったことが あります。",
+          "form": "affirmative",
+          "translation_en": "I've been to Japan before.",
+          "furigana": []
+        },
+        {
+          "ja": "すしを 食べたことが ありますか。",
+          "form": "question",
+          "translation_en": "Have you ever eaten sushi?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": "Upper N5 / borderline."
     },
     {
       "id": "n5-170",
@@ -7347,17 +9036,38 @@
       "category": "Additional Upper N5 / Borderline Patterns — Experience and Advice",
       "categoryOrder": 26,
       "patternOrder": 2,
-      "meaning_en": "should do",
-      "meaning_ja": "",
+      "meaning_en": "Verb-た + ほうが いい — should do",
+      "meaning_ja": "「〜たほうが いい」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_ta"
+        ],
+        "conjugations": [
+          {
+            "form": "advice",
+            "label": "Advice (do this)",
+            "example": "～たほうが いい"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-た + ほうがいい' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Verb-PAST + ほうが + いい = 'you'd better / should do'. Use PAST form even for future advice.",
+      "examples": [
+        {
+          "ja": "もう ねたほうが いいですよ。",
+          "form": "affirmative",
+          "translation_en": "You'd better go to bed already.",
+          "furigana": []
+        },
+        {
+          "ja": "びょういんに 行ったほうが いいです。",
+          "form": "affirmative",
+          "translation_en": "You should go to the hospital.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": "Upper N5 / borderline."
     },
     {
       "id": "n5-171",
@@ -7365,17 +9075,32 @@
       "category": "Additional Upper N5 / Borderline Patterns — Experience and Advice",
       "categoryOrder": 26,
       "patternOrder": 3,
-      "meaning_en": "should not do",
-      "meaning_ja": "",
+      "meaning_en": "Verb-ない + ほうが いい — shouldn't do",
+      "meaning_ja": "「〜ないほうが いい」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_nai"
+        ],
+        "conjugations": [
+          {
+            "form": "neg_advice",
+            "label": "Don't do",
+            "example": "～ないほうが いい"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-ない + ほうがいい' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Negative version of n5-170: 'you'd better not'.",
+      "examples": [
+        {
+          "ja": "あまり 食べないほうが いいです。",
+          "form": "negative",
+          "translation_en": "You'd better not eat too much.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-172",
@@ -7383,17 +9108,32 @@
       "category": "Additional Upper N5 / Borderline Patterns — Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 1,
-      "meaning_en": "don't have to do",
-      "meaning_ja": "",
+      "meaning_en": "～なくても いい — don't have to",
+      "meaning_ja": "「〜なくても いい」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_nai"
+        ],
+        "conjugations": [
+          {
+            "form": "no_obligation",
+            "label": "Don't have to",
+            "example": "～なくても いい"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～なくてもいい' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Negative te-form (なくて) + も + いい = 'don't have to / it's OK not to'.",
+      "examples": [
+        {
+          "ja": "あした 来なくても いいです。",
+          "form": "affirmative",
+          "translation_en": "You don't have to come tomorrow.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": "Upper N5 / borderline."
     },
     {
       "id": "n5-173",
@@ -7401,17 +9141,32 @@
       "category": "Additional Upper N5 / Borderline Patterns — Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 2,
-      "meaning_en": "must do",
-      "meaning_ja": "",
+      "meaning_en": "～なくては いけない — must do",
+      "meaning_ja": "「〜なくては いけない」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_nai"
+        ],
+        "conjugations": [
+          {
+            "form": "obligation",
+            "label": "Must do",
+            "example": "～なくては いけない"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～なくてはいけない' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Negative te-form + は + いけない = 'must do' (lit. 'not doing won't work'). Casual contraction: ～なくちゃ.",
+      "examples": [
+        {
+          "ja": "もう 行かなくては いけません。",
+          "form": "affirmative",
+          "translation_en": "I have to go now.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": "Upper N5 / borderline."
     },
     {
       "id": "n5-174",
@@ -7419,17 +9174,35 @@
       "category": "Additional Upper N5 / Borderline Patterns — Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 3,
-      "meaning_en": "must do — written / formal variant",
-      "meaning_ja": "",
+      "meaning_en": "Must do (formal variant — same as いけない) (see n5-173 for full content)",
+      "meaning_ja": "(n5-173を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-173",
+            "example": "～なくては ならない"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～なくてはならない' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-173)",
+          "form": "affirmative",
+          "translation_en": "See n5-173 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-173",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-175",
@@ -7437,17 +9210,35 @@
       "category": "Additional Upper N5 / Borderline Patterns — Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 4,
-      "meaning_en": "must do — common spoken",
-      "meaning_ja": "",
+      "meaning_en": "Must do (common spoken variant) (see n5-173 for full content)",
+      "meaning_ja": "(n5-173を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-173",
+            "example": "～ないと いけない"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～ないといけない' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-173)",
+          "form": "affirmative",
+          "translation_en": "See n5-173 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-173",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-176",
@@ -7455,17 +9246,35 @@
       "category": "Additional Upper N5 / Borderline Patterns — Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 5,
-      "meaning_en": "must do — casual contraction",
-      "meaning_ja": "",
+      "meaning_en": "Must do (casual contractions) (see n5-173 for full content)",
+      "meaning_ja": "(n5-173を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-173",
+            "example": "～なくちゃ / ～なきゃ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～なくちゃ / ～なきゃ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-173)",
+          "form": "affirmative",
+          "translation_en": "See n5-173 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-173",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-177",
@@ -7473,17 +9282,38 @@
       "category": "Additional Upper N5 / Borderline Patterns — Excess",
       "categoryOrder": 28,
       "patternOrder": 1,
-      "meaning_en": "too much, excessive",
-      "meaning_ja": "",
+      "meaning_en": "Verb-stem / Adj-stem + すぎる — too much / excessive",
+      "meaning_ja": "「〜すぎる」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_or_adj_stem"
+        ],
+        "conjugations": [
+          {
+            "form": "excess",
+            "label": "Too much",
+            "example": "たべすぎる, あつすぎる"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-stem / Adj-stem + すぎる' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Drop ます/い, add すぎる. 'Too much / too X'.",
+      "examples": [
+        {
+          "ja": "きのう たべすぎました。",
+          "form": "past",
+          "translation_en": "I ate too much yesterday.",
+          "furigana": []
+        },
+        {
+          "ja": "この りょうりは あますぎます。",
+          "form": "affirmative",
+          "translation_en": "This food is too sweet.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-178",
@@ -7491,17 +9321,32 @@
       "category": "Additional Upper N5 / Borderline Patterns — Intention",
       "categoryOrder": 29,
       "patternOrder": 1,
-      "meaning_en": "intend to",
-      "meaning_ja": "",
+      "meaning_en": "Verb-plain + つもりだ — intend to",
+      "meaning_ja": "「〜つもり」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_plain"
+        ],
+        "conjugations": [
+          {
+            "form": "intent",
+            "label": "Intention",
+            "example": "～つもりです"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-plain + つもりだ / つもりです' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Verb-plain + つもりだ/です = 'I intend to / plan to'.",
+      "examples": [
+        {
+          "ja": "あした 行くつもりです。",
+          "form": "affirmative",
+          "translation_en": "I plan to go tomorrow.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-179",
@@ -7509,17 +9354,32 @@
       "category": "Additional Upper N5 / Borderline Patterns — Quotation (Casual)",
       "categoryOrder": 30,
       "patternOrder": 1,
-      "meaning_en": "casual quotation marker / topic introducer; replaces と / は in conversation",
-      "meaning_ja": "",
+      "meaning_en": "～って — casual quotation marker / topic introducer",
+      "meaning_ja": "「〜って」(カジュアル)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "clause"
+        ],
+        "conjugations": [
+          {
+            "form": "casual_quote",
+            "label": "Casual quotation",
+            "example": "～って"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～って' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Casual replacement for と (quotation) or は (topic). Conversational.",
+      "examples": [
+        {
+          "ja": "「あした 来る」って 言いました。",
+          "form": "past",
+          "translation_en": "He said 'I'll come tomorrow'.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-180",
@@ -7527,17 +9387,32 @@
       "category": "Additional Upper N5 / Borderline Patterns — Way of Doing",
       "categoryOrder": 31,
       "patternOrder": 1,
-      "meaning_en": "way of doing; e.g., たべかた = how to eat",
-      "meaning_ja": "",
+      "meaning_en": "Verb-stem + ～かた — way of doing",
+      "meaning_ja": "「〜かた」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem_i"
+        ],
+        "conjugations": [
+          {
+            "form": "method",
+            "label": "Way of X",
+            "example": "たべかた, よみかた"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-stem + ～かた' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Drop ます, add かた. 'How to / way of'.",
+      "examples": [
+        {
+          "ja": "この かんじの 読みかたは なんですか。",
+          "form": "question",
+          "translation_en": "How do you read this kanji?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-181",
@@ -7545,17 +9420,32 @@
       "category": "Additional Upper N5 / Borderline Patterns — Sentence-Final Exclamation",
       "categoryOrder": 32,
       "patternOrder": 1,
-      "meaning_en": "exclamation; \"wow…\", \"I really think…\"",
-      "meaning_ja": "",
+      "meaning_en": "～なあ — sentence-final exclamation ('I really feel...')",
+      "meaning_ja": "「〜なあ」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "sentence_end"
+        ],
+        "conjugations": [
+          {
+            "form": "exclamation",
+            "label": "Self-directed exclamation",
+            "example": "～なあ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～なあ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Casual sentence-final particle expressing personal feeling.",
+      "examples": [
+        {
+          "ja": "おいしいなあ。",
+          "form": "affirmative",
+          "translation_en": "Mmm, this is good.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-182",
@@ -7563,17 +9453,38 @@
       "category": "Additional Upper N5 / Borderline Patterns — Prohibitive (Casual)",
       "categoryOrder": 33,
       "patternOrder": 1,
-      "meaning_en": "don't do! — strong / casual prohibition",
-      "meaning_ja": "",
+      "meaning_en": "Verb-plain + な — strong/casual prohibition (\"don't!\")",
+      "meaning_ja": "「Verb-plain + な」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_plain"
+        ],
+        "conjugations": [
+          {
+            "form": "prohibition",
+            "label": "Strong prohibition",
+            "example": "行くな"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-plain + な' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Plain dictionary form + な = harsh/casual 'don't!'. Avoid using to people you don't know well.",
+      "examples": [
+        {
+          "ja": "行くな！",
+          "form": "affirmative",
+          "translation_en": "Don't go!",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "Using 〜な with strangers / superiors.",
+          "right": "Use ないでください or てはいけません.",
+          "why": "〜な is harsh and casual — only with very close friends, kids, or in shouts."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-183",
@@ -7581,17 +9492,48 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 17,
-      "meaning_en": "indefinite (some/any) and universal (every/no) forms",
-      "meaning_ja": "",
+      "meaning_en": "Question word + か / も — 'something / anyone' compounds",
+      "meaning_ja": "「question word + か / も」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "k",
+            "label": "+ か → indefinite",
+            "example": "なにか, だれか, どこか"
+          },
+          {
+            "form": "m_aff",
+            "label": "+ も + affirmative → all",
+            "example": "どこも (everywhere)"
+          },
+          {
+            "form": "m_neg",
+            "label": "+ も + negative → none",
+            "example": "なにも (nothing)"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Question word + か / も compounds' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.",
+      "examples": [
+        {
+          "ja": "なにか たべたいです。",
+          "form": "affirmative",
+          "translation_en": "I want to eat something.",
+          "furigana": []
+        },
+        {
+          "ja": "なにも たべません。",
+          "form": "negative",
+          "translation_en": "I won't eat anything.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-184",
@@ -7599,17 +9541,35 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 18,
-      "meaning_en": "something / nothing (with negative)",
-      "meaning_ja": "",
+      "meaning_en": "Something / nothing — see compound rule (see n5-183 for full content)",
+      "meaning_ja": "(n5-183を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-183",
+            "example": "なにか / なにも"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'なにか / なにも' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-183)",
+          "form": "affirmative",
+          "translation_en": "See n5-183 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-183",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-185",
@@ -7617,17 +9577,35 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 19,
-      "meaning_en": "someone / no one (with negative)",
-      "meaning_ja": "",
+      "meaning_en": "Someone / no one (see n5-183 for full content)",
+      "meaning_ja": "(n5-183を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-183",
+            "example": "だれか / だれも"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'だれか / だれも' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-183)",
+          "form": "affirmative",
+          "translation_en": "See n5-183 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-183",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-186",
@@ -7635,17 +9613,35 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 20,
-      "meaning_en": "somewhere / nowhere (with negative)",
-      "meaning_ja": "",
+      "meaning_en": "Somewhere / nowhere (see n5-183 for full content)",
+      "meaning_ja": "(n5-183を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-183",
+            "example": "どこか / どこも"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'どこか / どこも' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-183)",
+          "form": "affirmative",
+          "translation_en": "See n5-183 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-183",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     },
     {
       "id": "n5-187",
@@ -7653,17 +9649,35 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 21,
-      "meaning_en": "sometime / always",
-      "meaning_ja": "",
+      "meaning_en": "Sometime / always (see n5-183 for full content)",
+      "meaning_ja": "(n5-183を ごさんしょう)",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": []
+        "conjugations": [
+          {
+            "form": "see_also",
+            "label": "See n5-183",
+            "example": "いつか / いつも"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'いつか / いつも' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "examples": [
+        {
+          "ja": "(see n5-183)",
+          "form": "affirmative",
+          "translation_en": "See n5-183 for examples.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-183",
+          "note": "This is a duplicate entry — see the canonical pattern."
+        }
+      ],
+      "notes": "Duplicate-cleanup redirect."
     }
   ]
 }
