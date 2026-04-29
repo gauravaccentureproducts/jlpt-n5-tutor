@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JLPT N5 Grammar Tutor</title>
+  <meta name="description" content="Static, on-device, privacy-preserving tutor for JLPT N5 grammar.">
+  <meta name="theme-color" content="#14452a">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -16,10 +19,11 @@
       <a href="#/learn" data-route="learn">Learn</a>
       <a href="#/test" data-route="test">Test</a>
       <a href="#/drill" data-route="drill">
-        Drill <span id="drill-badge" class="badge" hidden>0</span>
+        Daily Drill<span id="drill-badge" class="badge" hidden aria-label="patterns due"></span>
       </a>
       <a href="#/review" data-route="review">Review</a>
       <a href="#/summary" data-route="summary">Summary</a>
+      <a href="#/settings" data-route="settings" aria-label="Settings">⚙</a>
     </nav>
     <div class="settings">
       <label class="furigana-toggle">

@@ -225,3 +225,39 @@ export function setManuallyKnown(grammarPatternId, known) {
   history[grammarPatternId] = e;
   setHistory(history);
 }
+
+/**
+ * Export all progress (settings + history + results) as a JSON-serializable
+ * object suitable for download as `progress.json`.
+ */
+export function exportProgress() {
+  return {
+    schemaVersion: 1,
+    exportedAt: new Date().toISOString(),
+    appVersion: 'jlpt-n5-tutor',
+    settings: getSettings(),
+    history: getHistory(),
+    results: getResults(),
+  };
+}
+
+/**
+ * Import a progress payload, replacing all existing state. Validates the
+ * schema and refuses to import if it doesn't match.
+ * @returns {{ok: boolean, message: string}}
+ */
+export function importProgress(payload) {
+  if (!payload || typeof payload !== 'object') {
+    return { ok: false, message: 'Invalid payload (not an object).' };
+  }
+  if (payload.schemaVersion !== 1) {
+    return { ok: false, message: `Unsupported schema version: ${payload.schemaVersion}` };
+  }
+  if (!payload.settings || !payload.history || !Array.isArray(payload.results)) {
+    return { ok: false, message: 'Missing required fields (settings/history/results).' };
+  }
+  set('settings', payload.settings);
+  set('history', payload.history);
+  set('results', payload.results);
+  return { ok: true, message: `Imported. ${Object.keys(payload.history).length} pattern entries, ${payload.results.length} test results.` };
+}

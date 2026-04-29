@@ -112,7 +112,10 @@ export function renderJa(text, explicitFurigana = []) {
     html = html.replace(`\x00FURI${i}\x00`, ruby);
   }
 
-  return html;
+  // Wrap with lang="ja" so screen readers / fonts pick the right pronunciation
+  // and glyph variant. Required for accessibility per WCAG and avoids
+  // Chinese-glyph fallback on Windows systems without a Japanese language pack.
+  return `<span lang="ja">${html}</span>`;
 }
 
 function escapeHtml(s) {

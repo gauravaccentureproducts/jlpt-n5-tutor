@@ -51,6 +51,12 @@ export async function renderSummary(container) {
 
     ${renderHeatmap(data.patterns || [], new Set(masteredIds), new Set(weakIds), new Set(seenIds))}
 
+    ${renderErrorPatterns(results, patternMap)}
+
+    ${renderRecommendation(masteredIds, weakIds, untestedIds, patternMap)}
+
+    ${renderSessionLog(results)}
+
     ${listSection('Mastered', masteredIds, patternMap, 'No mastered patterns yet. 4 consecutive correct in tests/drill graduates a pattern.')}
     ${listSection('Need practice', weakIds, patternMap, 'No weak patterns. Either you have not tested yet, or you are doing well.')}
     ${listSection('Untested', untestedIds, patternMap, 'All authored patterns have been tested at least once.')}
@@ -77,6 +83,110 @@ export async function renderSummary(container) {
   document.getElementById('retake-diagnostic')?.addEventListener('click', () => {
     location.hash = '#/diagnostic';
   });
+}
+
+// ----- Error-pattern detection (Brief §2.12) -----
+
+function renderErrorPatterns(results, patternMap) {
+  // Aggregate per-pattern accuracy across all results.
+  const stats = new Map(); // pid -> {attempts, correct}
+  for (const r of results) {
+    for (const resp of r.responses || []) {
+      if (!resp.grammarPatternId) continue;
+      const s = stats.get(resp.grammarPatternId) || { attempts: 0, correct: 0 };
+      s.attempts += 1;
+      if (resp.isCorrect) s.correct += 1;
+      stats.set(resp.grammarPatternId, s);
+    }
+  }
+  if (stats.size === 0) {
+    return '';
+  }
+  // Sort by lowest accuracy, attempts >= 2 only (avoid noise).
+  const ranked = [...stats.entries()]
+    .map(([pid, s]) => ({
+      pid,
+      attempts: s.attempts,
+      correct: s.correct,
+      accuracy: s.correct / s.attempts,
+      pattern: patternMap.get(pid),
+    }))
+    .filter(x => x.attempts >= 2)
+    .sort((a, b) => a.accuracy - b.accuracy)
+    .slice(0, 6);
+
+  if (ranked.length === 0) return '';
+
+  const items = ranked.map(r => {
+    const pct = Math.round(r.accuracy * 100);
+    const label = r.pattern?.pattern || r.pid;
+    const meaning = r.pattern?.meaning_en || '';
+    return `
+      <li class="error-row">
+        <div class="error-row-head">
+          <a href="#/learn/${encodeURIComponent(r.pid)}"><strong>${esc(label)}</strong></a>
+          <span class="error-acc">${pct}%</span>
+        </div>
+        <div class="error-row-meta">${r.correct}/${r.attempts} correct · ${esc(meaning)}</div>
+        <div class="error-bar"><div style="width:${pct}%; background: ${pct < 50 ? 'var(--c-error)' : pct < 70 ? 'var(--c-warning)' : 'var(--c-success)'}"></div></div>
+      </li>
+    `;
+  }).join('');
+
+  return `
+    <section class="error-patterns">
+      <h3>Error patterns</h3>
+      <p class="muted small">Patterns with ≥ 2 attempts, sorted by lowest accuracy. Click to revisit the lesson.</p>
+      <ol class="error-list">${items}</ol>
+    </section>
+  `;
+}
+
+function renderRecommendation(masteredIds, weakIds, untestedIds, patternMap) {
+  const recs = [];
+  // 1. Top weak patterns (up to 5)
+  for (const pid of weakIds.slice(0, 5)) {
+    const p = patternMap.get(pid);
+    if (p) recs.push({ pid, label: p.pattern, why: 'Needs practice (≥ 50% errors)' });
+  }
+  // 2. If room, recommend untested foundational patterns (n5-001 through n5-019)
+  if (recs.length < 5) {
+    const slots = 5 - recs.length;
+    const untestedFoundations = untestedIds.filter(id => /^n5-0(0[1-9]|1[0-9])$/.test(id)).slice(0, slots);
+    for (const pid of untestedFoundations) {
+      const p = patternMap.get(pid);
+      if (p) recs.push({ pid, label: p.pattern, why: 'Foundational — not yet practiced' });
+    }
+  }
+  if (recs.length === 0) return '';
+  const items = recs.map(r => `
+    <li><a href="#/learn/${encodeURIComponent(r.pid)}"><strong>${esc(r.label)}</strong></a> <span class="muted small">— ${esc(r.why)}</span></li>
+  `).join('');
+  return `
+    <section class="recommendation">
+      <h3>Recommended next session</h3>
+      <ul class="rec-list">${items}</ul>
+    </section>
+  `;
+}
+
+function renderSessionLog(results) {
+  if (!results || results.length === 0) return '';
+  const recent = results.slice(-10).reverse(); // newest first, last 10
+  const rows = recent.map(r => {
+    const pct = r.total > 0 ? Math.round((r.correct / r.total) * 100) : 0;
+    const date = new Date(r.timestamp).toLocaleString();
+    return `<tr><td>${esc(date)}</td><td>${r.total}</td><td>${r.correct}</td><td>${pct}%</td></tr>`;
+  }).join('');
+  return `
+    <section class="session-log">
+      <h3>Session log <span class="muted small">(last ${recent.length})</span></h3>
+      <table class="session-table">
+        <thead><tr><th>When</th><th>Length</th><th>Correct</th><th>%</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </section>
+  `;
 }
 
 function renderHeatmap(patterns, mastered, weak, seen) {

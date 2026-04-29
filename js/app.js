@@ -7,6 +7,7 @@ import { renderReview } from './review.js';
 import { renderSummary } from './summary.js';
 import { renderDrill } from './drill.js';
 import { renderDiagnostic } from './diagnostic.js';
+import { renderSettings, applyTheme, applyFontSize } from './settings.js';
 
 const ROUTES = {
   learn:      renderLearn,
@@ -15,6 +16,7 @@ const ROUTES = {
   review:     renderReview,
   summary:    renderSummary,
   diagnostic: renderDiagnostic,
+  settings:   renderSettings,
 };
 
 function parseRoute() {
@@ -60,6 +62,8 @@ async function route() {
 window.addEventListener('hashchange', route);
 window.addEventListener('DOMContentLoaded', async () => {
   initStorage();
+  applyTheme();
+  applyFontSize();
   await initFuriganaToggle(route);
   if (!location.hash) location.hash = '#/learn';
   await route();

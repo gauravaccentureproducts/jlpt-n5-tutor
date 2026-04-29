@@ -12,18 +12,100 @@
   --c-warning: #b45309;
   --r: 6px;
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --font-base: 16px;
 }
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --c-primary: #4ade80;
+  --c-primary-light: #86efac;
+  --c-bg: #0f1410;
+  --c-surface: #1a1f1c;
+  --c-border: #2c332e;
+  --c-text: #e5e7e6;
+  --c-muted: #9ca3a0;
+  --c-error: #f87171;
+  --c-success: #86efac;
+  --c-warning: #fbbf24;
+}
+@media (prefers-color-scheme: dark) {
+  [data-theme="system"] {
+    --c-primary: #4ade80;
+    --c-primary-light: #86efac;
+    --c-bg: #0f1410;
+    --c-surface: #1a1f1c;
+    --c-border: #2c332e;
+    --c-text: #e5e7e6;
+    --c-muted: #9ca3a0;
+    --c-error: #f87171;
+    --c-success: #86efac;
+    --c-warning: #fbbf24;
+  }
+}
+
+/* Font size scale */
+[data-font="s"]  { --font-base: 14px; }
+[data-font="m"]  { --font-base: 16px; }
+[data-font="l"]  { --font-base: 18px; }
+[data-font="xl"] { --font-base: 20px; }
 
 * { box-sizing: border-box; }
 
 html, body {
   margin: 0;
   padding: 0;
+  /* English / UI text falls back to system sans. Japanese text (anything
+     marked lang="ja") prefers Noto Sans JP if installed, then platform
+     Japanese fonts. This avoids ambiguous CJK glyph rendering on Windows
+     systems without a Japanese language pack. */
   font-family: -apple-system, "Segoe UI", "Yu Gothic UI", "Hiragino Sans", "Meiryo", sans-serif;
   background: var(--c-bg);
   color: var(--c-text);
-  font-size: 16px;
+  font-size: var(--font-base);
   line-height: 1.6;
+}
+
+/* Settings panel */
+.settings-section {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r);
+  padding: 18px 20px;
+  margin: 16px 0;
+}
+.settings-section h3 { margin-top: 0; color: var(--c-primary); }
+.settings-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--c-border);
+}
+.settings-row:last-of-type { border-bottom: none; }
+.settings-row > span { font-size: 14px; }
+.settings-row select, .settings-row input[type=number] {
+  padding: 6px 10px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--r);
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-size: 14px;
+  min-width: 120px;
+}
+.settings-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.settings-actions button {
+  background: white;
+  border: 1px solid var(--c-border);
+  border-radius: var(--r);
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.settings-actions button:hover { background: var(--c-bg); }
+
+[lang="ja"], .ja, .question, .pattern-name, .meaning_ja, ruby, rt, .tile {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 /* Header */
@@ -779,3 +861,36 @@ button:disabled { cursor: not-allowed; opacity: 0.5; }
 .legend-swatch.heat-in-progress { background: var(--c-primary); }
 .legend-swatch.heat-weak        { background: var(--c-error); }
 .legend-swatch.heat-untested    { background: #ccc; }
+
+/* Diagnostic Summary additions */
+.error-patterns, .recommendation, .session-log {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r);
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.error-list { list-style: none; padding: 0; margin: 8px 0 0; }
+.error-row { padding: 10px 0; border-bottom: 1px solid var(--c-border); }
+.error-row:last-child { border-bottom: none; }
+.error-row-head { display: flex; justify-content: space-between; align-items: baseline; }
+.error-row-head a { color: var(--c-primary-light); text-decoration: none; }
+.error-acc { font-family: Consolas, monospace; font-weight: 600; }
+.error-row-meta { font-size: 12px; color: var(--c-muted); margin: 3px 0 6px; }
+.error-bar { height: 4px; background: rgba(0,0,0,0.06); border-radius: 2px; overflow: hidden; }
+.error-bar > div { height: 100%; transition: width 0.3s; }
+.rec-list { padding-left: 20px; margin: 8px 0 0; }
+.rec-list li { padding: 3px 0; }
+.session-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 8px;
+}
+.session-table th, .session-table td {
+  text-align: left;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--c-border);
+}
+.session-table th { color: var(--c-muted); font-weight: 600; }
+.session-table tr:last-child td { border-bottom: none; }
