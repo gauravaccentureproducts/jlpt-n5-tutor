@@ -61,6 +61,26 @@ Mirrors the in-session TodoWrite list. If updated in either place, sync the othe
 
 ---
 
+## Pending — Phase 2.5 KB → derived-data sync (NEW, 2026-04-29)
+
+> After 4 KB audit passes (24 fixes total), derived files were partially regenerated. The grammar.json skeletons (n5-020 through n5-187) carry stale `meaning_en` text from before the Pass 1/2/3 markdown edits. The detailed entries (n5-001 to n5-019) are independent of md text and are fine.
+
+- [ ] **S1**: Regenerate `data/grammar.json` skeleton entries (n5-020 through n5-187) from the current `KnowledgeBank/grammar_n5.md`. Keep the 19 detailed entries (n5-001 to n5-019) intact. Picks up all Pass 1/2/3 pattern-text changes — most importantly:
+  - もの/もん gloss expansion (G7)
+  - Verb-てから correction (G2)
+  - Object + counter + Verb relabel (G3)
+  - ～も → ～も～です clarification (P2-1)
+  - ～は～ですが、～は～です contrastive expansion (P2-2)
+  - Verb-stem + たいです i-adj note (G9)
+  - なんがつ / なんにち slash separator (G8)
+  - Verb-う notation (G1)
+  - Question word + か / も compounds (Genki gap fix)
+- [ ] **S2**: Update `verification.md` to fold in Pass 2 (P2-1, P2-2, P2-6) and Pass 3 (P3-1, P3-2) findings. Currently the report only documents Pass 1 (the original 19 G/K/V findings).
+- [ ] **S3**: Regenerate `JLPT N5 Grammar Tutor – Functional Spec.docx` via `python tools/build_spec.py`. The build_spec.py already had its 22→23 category fix; this is just to re-emit the docx so the user-facing spec reflects current state.
+- [ ] **S4**: Sanity-check `data/questions.json` stub text for the 168 skeleton questions — verify each `prompt_ja` and `correctAnswer` still references a pattern name that exists in the current `KnowledgeBank/grammar_n5.md`. Stubs key on `grammarPatternId` so most should be fine, but spot-check 5–10 to confirm.
+
+---
+
 ## Pending — Phase 3 content enrichment (for "truly accurate" v1)
 
 > Phase 1 (engine + scaffold) and Phase 2 (KB-content fixes + push) are done.

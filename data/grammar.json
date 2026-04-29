@@ -1599,17 +1599,61 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 14,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "から ～ まで — from X to Y (paired range marker)",
+      "meaning_ja": "「〜から 〜まで」(はんい)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "time",
+            "label": "Time range",
+            "example": "9じから 5じまで"
+          },
+          {
+            "form": "place",
+            "label": "Place range",
+            "example": "とうきょうから おおさかまで"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'から～まで' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "から marks start, まで marks end. Paired, they express a range — time, place, or distance.",
+      "examples": [
+        {
+          "ja": "9じから 5じまで しごとです。",
+          "form": "affirmative",
+          "translation_en": "Work is from 9 to 5.",
+          "furigana": []
+        },
+        {
+          "ja": "とうきょうから おおさかまで しんかんせんで 行きました。",
+          "form": "past",
+          "translation_en": "I went from Tokyo to Osaka by Shinkansen.",
+          "furigana": []
+        },
+        {
+          "ja": "なんじから なんじまで ですか。",
+          "form": "question",
+          "translation_en": "From what time to what time?",
+          "furigana": []
+        },
+        {
+          "ja": "げつようびから きんようびまで がっこうです。",
+          "form": "affirmative",
+          "translation_en": "School is Monday through Friday.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "9じまで 5じから しごとです。",
+          "right": "9じから 5じまで しごとです。",
+          "why": "Order is start–end: から first, then まで."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-022",
@@ -1671,17 +1715,61 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 18,
-      "meaning_en": "confirmation / agreement",
-      "meaning_ja": "",
+      "meaning_en": "ね — sentence-final confirmation / agreement particle",
+      "meaning_ja": "「〜ね」(かくにん)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "sentence_end"
+        ],
+        "conjugations": [
+          {
+            "form": "confirmation",
+            "label": "Seek agreement",
+            "example": "いい てんきですね。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'ね' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "ね at sentence-end seeks agreement or shared feeling — 'isn't it?', 'right?'. Used when the speaker assumes the listener has the same view.",
+      "examples": [
+        {
+          "ja": "いい てんきですね。",
+          "form": "affirmative",
+          "translation_en": "Nice weather, isn't it?",
+          "furigana": []
+        },
+        {
+          "ja": "おいしいですね。",
+          "form": "affirmative",
+          "translation_en": "It's delicious, isn't it?",
+          "furigana": []
+        },
+        {
+          "ja": "あの 人は しんせつですね。",
+          "form": "affirmative",
+          "translation_en": "That person is kind, right?",
+          "furigana": []
+        },
+        {
+          "ja": "むずかしかったですね。",
+          "form": "past",
+          "translation_en": "That was tough, wasn't it?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "Using ね when telling someone NEW info.",
+          "right": "Use よ for new info.",
+          "why": "ね assumes shared knowledge. For information the listener doesn't have, よ is correct."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-026",
+          "note": "ね = agreement (shared); よ = new info (telling)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-026",
@@ -1689,17 +1777,61 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 19,
-      "meaning_en": "assertion / new information",
-      "meaning_ja": "",
+      "meaning_en": "よ — sentence-final assertion / new-information particle",
+      "meaning_ja": "「〜よ」(つたえる)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "sentence_end"
+        ],
+        "conjugations": [
+          {
+            "form": "informing",
+            "label": "Inform / emphasize",
+            "example": "あした しけんですよ。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'よ' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "よ at sentence-end conveys new information to the listener or emphasizes a point. 'I'm telling you / you should know'.",
+      "examples": [
+        {
+          "ja": "あした しけんですよ。",
+          "form": "affirmative",
+          "translation_en": "There's an exam tomorrow, you know.",
+          "furigana": []
+        },
+        {
+          "ja": "それは ちがいますよ。",
+          "form": "affirmative",
+          "translation_en": "That's wrong (let me tell you).",
+          "furigana": []
+        },
+        {
+          "ja": "おいしいですよ、たべてみてください。",
+          "form": "affirmative",
+          "translation_en": "It's delicious — try it.",
+          "furigana": []
+        },
+        {
+          "ja": "あぶないですよ。",
+          "form": "affirmative",
+          "translation_en": "It's dangerous!",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "Using よ in formal business writing.",
+          "right": "Drop the particle in writing.",
+          "why": "ね/よ are conversational particles. They're rarely used in formal written contexts."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-025",
+          "note": "よ tells the listener something they didn't know; ね assumes they already know."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-027",
@@ -1707,17 +1839,44 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 20,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "よね — combined: assertion + seeking agreement (\"...right?\")",
+      "meaning_ja": "「〜よね」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "sentence_end"
+        ],
+        "conjugations": [
+          {
+            "form": "combined",
+            "label": "Tell + check",
+            "example": "あした 来ますよね。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'よね' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "よね is よ + ね: the speaker is fairly sure but checking. 'I think... right?'",
+      "examples": [
+        {
+          "ja": "あした 来ますよね。",
+          "form": "question",
+          "translation_en": "You're coming tomorrow, right?",
+          "furigana": []
+        },
+        {
+          "ja": "あの 人は がくせいですよね。",
+          "form": "question",
+          "translation_en": "That person is a student, right?",
+          "furigana": []
+        },
+        {
+          "ja": "これで いいですよね。",
+          "form": "question",
+          "translation_en": "This is OK, right?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-028",
@@ -1815,17 +1974,61 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 26,
-      "meaning_en": "only",
-      "meaning_ja": "",
+      "meaning_en": "だけ — only / just (limiting particle)",
+      "meaning_ja": "「〜だけ」(げんてい)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun",
+          "verb"
+        ],
+        "conjugations": [
+          {
+            "form": "noun",
+            "label": "After noun",
+            "example": "コーヒーだけ"
+          },
+          {
+            "form": "after_v",
+            "label": "After verb-plain",
+            "example": "見るだけ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'だけ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "だけ means 'only' — limiting the scope to that one item. Used with affirmative or negative verbs (compare with しか, which forces negative).",
+      "examples": [
+        {
+          "ja": "コーヒーだけ 飲みます。",
+          "form": "affirmative",
+          "translation_en": "I drink only coffee.",
+          "furigana": []
+        },
+        {
+          "ja": "わたしだけ 行きます。",
+          "form": "affirmative",
+          "translation_en": "Only I will go.",
+          "furigana": []
+        },
+        {
+          "ja": "見るだけです。",
+          "form": "affirmative",
+          "translation_en": "I'm only looking.",
+          "furigana": []
+        },
+        {
+          "ja": "1000円だけ あります。",
+          "form": "affirmative",
+          "translation_en": "I only have 1000 yen.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-034",
+          "note": "だけ pairs with any polarity. しか forces a negative verb."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-034",
@@ -1851,17 +2054,55 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 28,
-      "meaning_en": "approximately",
-      "meaning_ja": "",
+      "meaning_en": "ぐらい / くらい — about, approximately (used with quantities)",
+      "meaning_ja": "「〜ぐらい / くらい」(やく)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun_quantity"
+        ],
+        "conjugations": [
+          {
+            "form": "approx_quantity",
+            "label": "Approximate amount",
+            "example": "1じかんぐらい"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'ぐらい / くらい' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "ぐらい / くらい (interchangeable) attach to a quantity to mean 'about, roughly'. Common with time, money, distance.",
+      "examples": [
+        {
+          "ja": "1じかんぐらい まちました。",
+          "form": "past",
+          "translation_en": "I waited about an hour.",
+          "furigana": []
+        },
+        {
+          "ja": "5000円くらいです。",
+          "form": "affirmative",
+          "translation_en": "It's about 5000 yen.",
+          "furigana": []
+        },
+        {
+          "ja": "10ぷんぐらい かかります。",
+          "form": "affirmative",
+          "translation_en": "It takes about 10 minutes.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "ぐらい with a specific point (like 9じぐらいに)",
+          "right": "9じぐらいに / 9じごろに are both fine; but specific times like まいにち don't take ぐらい — only quantities/durations.",
+          "why": "ぐらい works for amounts and durations; ごろ is preferred for approximate time-points."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-036",
+          "note": "ぐらい = approximate AMOUNT/DURATION; ごろ = approximate TIME POINT."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-036",
@@ -1869,17 +2110,55 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 29,
-      "meaning_en": "around — for time points",
-      "meaning_ja": "",
+      "meaning_en": "ごろ — around, approximately (used with time points)",
+      "meaning_ja": "「〜ごろ」(やくの じこく)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun_time"
+        ],
+        "conjugations": [
+          {
+            "form": "approx_time",
+            "label": "Approximate time point",
+            "example": "3じごろ"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'ごろ' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "ごろ attaches to a TIME POINT to mean 'around'. Use ごろ for time points; ぐらい for durations/quantities.",
+      "examples": [
+        {
+          "ja": "3じごろ あいましょう。",
+          "form": "affirmative",
+          "translation_en": "Let's meet around 3.",
+          "furigana": []
+        },
+        {
+          "ja": "あした 6じごろ 行きます。",
+          "form": "affirmative",
+          "translation_en": "I'll go around 6 tomorrow.",
+          "furigana": []
+        },
+        {
+          "ja": "いつごろ 来ますか。",
+          "form": "question",
+          "translation_en": "Around when will you come?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "1じかんごろ",
+          "right": "1じかんぐらい",
+          "why": "Duration takes ぐらい. ごろ is for clock/calendar time-points."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-035",
+          "note": "ごろ = time-point. ぐらい = duration/amount."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-037",
@@ -1887,17 +2166,49 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 30,
-      "meaning_en": "etc.",
-      "meaning_ja": "",
+      "meaning_en": "など — etc. (and so on)",
+      "meaning_ja": "「〜など」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "etc",
+            "label": "Etc.",
+            "example": "りんご や バナナ など"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'など' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "など follows a list (often with や) to add 'etc., and so on'.",
+      "examples": [
+        {
+          "ja": "りんごや バナナなどを よく 食べます。",
+          "form": "affirmative",
+          "translation_en": "I often eat apples, bananas, etc.",
+          "furigana": []
+        },
+        {
+          "ja": "ペンや ノートなどを 買いました。",
+          "form": "past",
+          "translation_en": "I bought pens, notebooks, and so on.",
+          "furigana": []
+        },
+        {
+          "ja": "そふぼや ともだちなどに あいました。",
+          "form": "past",
+          "translation_en": "I met my grandparents, friends, and others.",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-011",
+          "note": "や naturally pairs with など. と (exhaustive) doesn't pair with など."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-038",
@@ -2103,17 +2414,60 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 8,
-      "meaning_en": "which",
-      "meaning_ja": "",
+      "meaning_en": "どれ / どの / どちら — 'which' (selection from options)",
+      "meaning_ja": "「どれ」「どの」「どちら」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "dore",
+            "label": "どれ — which one (3+ options, standalone)",
+            "example": "どれが いいですか。"
+          },
+          {
+            "form": "dono",
+            "label": "どの — which + Noun",
+            "example": "どの 本ですか。"
+          },
+          {
+            "form": "dochira",
+            "label": "どちら — which (of 2, polite)",
+            "example": "コーヒーと おちゃと、どちらが いいですか。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'どれ / どの / どちら' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Three 'which' forms: どれ stands alone for 3+ choices. どの precedes a noun. どちら is the polite form, also used for 2-way comparison.",
+      "examples": [
+        {
+          "ja": "どれが あなたの ですか。",
+          "form": "question",
+          "translation_en": "Which one is yours?",
+          "furigana": []
+        },
+        {
+          "ja": "どの 本が おもしろいですか。",
+          "form": "question",
+          "translation_en": "Which book is interesting?",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーと おちゃと、どちらが すきですか。",
+          "form": "question",
+          "translation_en": "Which do you prefer, coffee or tea?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "どれ 本",
+          "right": "どの 本",
+          "why": "Before a noun, use どの (not どれ)."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-050",
@@ -2121,17 +2475,55 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 9,
-      "meaning_en": "how",
-      "meaning_ja": "",
+      "meaning_en": "どう / いかが — 'how / how about' (state, opinion, polite offer)",
+      "meaning_ja": "「どう」「いかが」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "dou",
+            "label": "どう (casual / standard)",
+            "example": "どうですか。"
+          },
+          {
+            "form": "ikaga",
+            "label": "いかが (polite)",
+            "example": "おちゃは いかがですか。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'どう / いかが' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "どう = 'how (is X)?' or 'how about'. いかが is the polite form, common in service / offering contexts.",
+      "examples": [
+        {
+          "ja": "おしごとは どうですか。",
+          "form": "question",
+          "translation_en": "How's work?",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーは いかがですか。",
+          "form": "question",
+          "translation_en": "How about some coffee? (polite)",
+          "furigana": []
+        },
+        {
+          "ja": "りょこうは どうでしたか。",
+          "form": "question",
+          "translation_en": "How was the trip?",
+          "furigana": []
+        },
+        {
+          "ja": "もう いっぱい いかがですか。",
+          "form": "question",
+          "translation_en": "Would you like another cup?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-051",
@@ -2139,17 +2531,49 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 10,
-      "meaning_en": "why",
-      "meaning_ja": "",
+      "meaning_en": "どうして / なぜ — 'why'",
+      "meaning_ja": "「どうして」「なぜ」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "doushite",
+            "label": "どうして (everyday)",
+            "example": "どうして 来ませんか。"
+          },
+          {
+            "form": "naze",
+            "label": "なぜ (more formal / written)",
+            "example": "なぜですか。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'どうして / なぜ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "どうして is the standard 'why' in conversation. なぜ is more formal/written. Answer typically uses から (because).",
+      "examples": [
+        {
+          "ja": "どうして 来ませんでしたか。",
+          "form": "question",
+          "translation_en": "Why didn't you come?",
+          "furigana": []
+        },
+        {
+          "ja": "なぜ そう おもいますか。",
+          "form": "question",
+          "translation_en": "Why do you think so?",
+          "furigana": []
+        },
+        {
+          "ja": "どうして 日本語を べんきょうしていますか。",
+          "form": "question",
+          "translation_en": "Why are you studying Japanese?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-052",
@@ -2175,17 +2599,50 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 12,
-      "meaning_en": "how much — price",
-      "meaning_ja": "",
+      "meaning_en": "いくら — 'how much' (price)",
+      "meaning_ja": "「いくら」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "price",
+            "label": "Asking price",
+            "example": "いくらですか。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'いくら' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "いくら asks the price.",
+      "examples": [
+        {
+          "ja": "これは いくらですか。",
+          "form": "question",
+          "translation_en": "How much is this?",
+          "furigana": []
+        },
+        {
+          "ja": "ぜんぶで いくらですか。",
+          "form": "question",
+          "translation_en": "How much in total?",
+          "furigana": []
+        },
+        {
+          "ja": "この りんごは いくらですか。",
+          "form": "question",
+          "translation_en": "How much is this apple?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "なんえん (when asking generally)",
+          "right": "いくら (general price); なんえん (specific yen amount)",
+          "why": "Both work, but いくら is the standard. なんえん specifically asks 'how many yen'."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-054",
@@ -2193,17 +2650,48 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 13,
-      "meaning_en": "how many",
-      "meaning_ja": "",
+      "meaning_en": "いくつ — 'how many' (general counter / age)",
+      "meaning_ja": "「いくつ」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "general",
+            "label": "How many (general)",
+            "example": "りんごは いくつ ありますか。"
+          },
+          {
+            "form": "age",
+            "label": "How old (polite for child)",
+            "example": "おいくつですか。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'いくつ' — pending detailed authoring.",
-      "examples": [],
+      "explanation_en": "いくつ asks 'how many' using the native ひと-counter system. Also used to politely ask age (especially of children).",
+      "examples": [
+        {
+          "ja": "りんごは いくつ ありますか。",
+          "form": "question",
+          "translation_en": "How many apples are there?",
+          "furigana": []
+        },
+        {
+          "ja": "おこさんは おいくつですか。",
+          "form": "question",
+          "translation_en": "How old is your child?",
+          "furigana": []
+        }
+      ],
       "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "contrasts": [
+        {
+          "with_pattern_id": null,
+          "note": "いくつ = 'how many' (native counter). For specific counters use なん + counter (なんにん, なんまい)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-055",
@@ -2211,17 +2699,50 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 14,
-      "meaning_en": "what time",
-      "meaning_ja": "",
+      "meaning_en": "なんじ — 'what time'",
+      "meaning_ja": "「なんじ」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "time_of_day",
+            "label": "Clock time",
+            "example": "なんじですか。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'なんじ' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Counter じ = 'o'clock'. なんじ asks 'what time?'. Pairs with から/まで for time ranges.",
+      "examples": [
+        {
+          "ja": "いま なんじですか。",
+          "form": "question",
+          "translation_en": "What time is it now?",
+          "furigana": []
+        },
+        {
+          "ja": "なんじから しごとですか。",
+          "form": "question",
+          "translation_en": "From what time is work?",
+          "furigana": []
+        },
+        {
+          "ja": "あした なんじに あいましょうか。",
+          "form": "question",
+          "translation_en": "What time shall we meet tomorrow?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "なにじ",
+          "right": "なんじ",
+          "why": "Counters trigger なん, never なに. Same for なんにん, なんさい."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-056",
@@ -4313,17 +4834,67 @@
       "category": "Existence and Possession",
       "categoryOrder": 10,
       "patternOrder": 3,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "～に～が あります／います — 'there is X at Y' (location-first existence)",
+      "meaning_ja": "「Yに Xが あります／います」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun_location",
+          "noun_subject"
+        ],
+        "conjugations": [
+          {
+            "form": "inanimate",
+            "label": "[Location]に [Inanimate]が あります",
+            "example": "つくえの 上に 本が あります。"
+          },
+          {
+            "form": "animate",
+            "label": "[Location]に [Animate]が います",
+            "example": "へやに ねこが います。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～に～があります / います' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "When introducing what's at a location, lead with the LOCATION (に) and follow with the SUBJECT (が) + あります/います. The location is the topic; the subject is new info.",
+      "examples": [
+        {
+          "ja": "つくえの 上に 本が あります。",
+          "form": "affirmative",
+          "translation_en": "There is a book on the desk.",
+          "furigana": []
+        },
+        {
+          "ja": "きょうしつに がくせいが います。",
+          "form": "affirmative",
+          "translation_en": "There are students in the classroom.",
+          "furigana": []
+        },
+        {
+          "ja": "へやに テレビが ありません。",
+          "form": "negative",
+          "translation_en": "There is no TV in the room.",
+          "furigana": []
+        },
+        {
+          "ja": "こうえんに 子どもが いますか。",
+          "form": "question",
+          "translation_en": "Are there children in the park?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "つくえの 上で 本が あります。",
+          "right": "つくえの 上に 本が あります。",
+          "why": "Location of EXISTENCE takes に, not で. で is for actions."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-093",
+          "note": "～に～がある = 'there is X at Y' (locating something new). ～は～にある = 'X is at Y' (Y is the new info about an already-known X)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-093",
@@ -4367,17 +4938,55 @@
       "category": "Comparison and Preference",
       "categoryOrder": 11,
       "patternOrder": 1,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "AはBより [adj] です — 'A is more [adj] than B'",
+      "meaning_ja": "「AはBより〜です」(ひかく)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "comparison",
+            "label": "X is more ___ than Y",
+            "example": "とうきょうは おおさかより 大きいです。"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for '～は～より～です' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "Basic comparison: A は B より [adj] です = 'A is more [adj] than B'. The reference (B) is marked with より.",
+      "examples": [
+        {
+          "ja": "とうきょうは おおさかより 大きいです。",
+          "form": "affirmative",
+          "translation_en": "Tokyo is bigger than Osaka.",
+          "furigana": []
+        },
+        {
+          "ja": "ねこは いぬより 小さいです。",
+          "form": "affirmative",
+          "translation_en": "Cats are smaller than dogs.",
+          "furigana": []
+        },
+        {
+          "ja": "この本は あの本より おもしろいですか。",
+          "form": "question",
+          "translation_en": "Is this book more interesting than that one?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "とうきょうは より おおさか 大きいです。",
+          "right": "とうきょうは おおさかより 大きいです。",
+          "why": "より attaches to the REFERENCE, not before it."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-096",
+          "note": "AはBより = 'A is more...'. AよりBのほうが = 'Compared to A, B is more...' (focuses on B)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-096",
