@@ -34,6 +34,7 @@ missing - players show no clip, and the listening module shows a notice.
 import argparse
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -125,8 +126,62 @@ class Pyttsx3Backend:
         self.engine.runAndWait()
 
 
+_DIGIT_KANJI = {'0': '〇', '1': '一', '2': '二', '3': '三', '4': '四',
+                '5': '五', '6': '六', '7': '七', '8': '八', '9': '九'}
+
+def _num_to_kanji(num: int) -> str:
+    """Convert an int 0-9999 to its Japanese kanji form for TTS.
+
+    Examples: 1 -> 一, 10 -> 十, 30 -> 三十, 100 -> 百, 1500 -> 千五百.
+    Beyond 9999 we fall back to digit-by-digit which gTTS still reads
+    in Japanese context if surrounded by Japanese text.
+    """
+    if num == 0:
+        return '〇'
+    if num >= 10000:
+        return ''.join(_DIGIT_KANJI[d] for d in str(num))
+    parts = []
+    thousands = num // 1000
+    if thousands:
+        parts.append(('' if thousands == 1 else _DIGIT_KANJI[str(thousands)]) + '千')
+    rem = num % 1000
+    hundreds = rem // 100
+    if hundreds:
+        parts.append(('' if hundreds == 1 else _DIGIT_KANJI[str(hundreds)]) + '百')
+    rem = rem % 100
+    tens = rem // 10
+    if tens:
+        parts.append(('' if tens == 1 else _DIGIT_KANJI[str(tens)]) + '十')
+    ones = rem % 10
+    if ones:
+        parts.append(_DIGIT_KANJI[str(ones)])
+    return ''.join(parts)
+
+
+_DIGIT_RUN = re.compile(r'\d+')
+
+def normalize_for_tts(text: str) -> str:
+    """Pre-process Japanese text for TTS so digits read in Japanese, not English.
+
+    gTTS pronounces ASCII digits in English when surrounded by Japanese
+    ('3' -> 'three' instead of 'sa-n'). This converts ASCII digit runs to
+    their kanji equivalents BEFORE rendering. The display text in the
+    JSON is unchanged - this only affects the TTS input.
+    """
+    def _sub(m):
+        try:
+            return _num_to_kanji(int(m.group()))
+        except (ValueError, KeyError):
+            return m.group()
+    return _DIGIT_RUN.sub(_sub, text)
+
+
 def collect_jobs(force: bool, limit: int | None):
-    """Return list of (text, out_path, source_id)."""
+    """Return list of (text, out_path, source_id).
+
+    Each text is run through normalize_for_tts() so digits hit the TTS
+    engine as kanji (read in Japanese) instead of ASCII (read in English).
+    """
     jobs = []
 
     # Grammar examples
@@ -138,7 +193,7 @@ def collect_jobs(force: bool, limit: int | None):
                 if not ja or "(see " in ja:
                     continue
                 out = OUT_GRAMMAR / f"{p['id']}.{i}"
-                jobs.append((ja, out, f"grammar.{p['id']}.{i}"))
+                jobs.append((normalize_for_tts(ja), out, f"grammar.{p['id']}.{i}"))
 
     # Reading passages
     if READING_JSON.exists():
@@ -148,7 +203,7 @@ def collect_jobs(force: bool, limit: int | None):
             if not ja:
                 continue
             out = OUT_READING / p["id"]
-            jobs.append((ja, out, f"reading.{p['id']}"))
+            jobs.append((normalize_for_tts(ja), out, f"reading.{p['id']}"))
 
     # Listening items
     if LISTENING_JSON.exists():
@@ -158,7 +213,7 @@ def collect_jobs(force: bool, limit: int | None):
             if not ja:
                 continue
             out = OUT_LISTENING / it["id"]
-            jobs.append((ja, out, f"listening.{it['id']}"))
+            jobs.append((normalize_for_tts(ja), out, f"listening.{it['id']}"))
 
     if limit:
         jobs = jobs[:limit]

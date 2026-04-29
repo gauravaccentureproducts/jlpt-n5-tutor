@@ -331,6 +331,8 @@ Re-encode the Pass-9 cross-file consistency checks (`verification.md` §8.6) as 
 | **X-6.5 No em-dashes** | Zero `—` (U+2014) across all 9 KB files | grep |
 | **X-6.6 Group-1 ru-verb flags** | 入る, 帰る, 走る, 知る, 切る, 要る all carry the "Group 1 exception" annotation in `vocabulary_n5.md` | vocab catalog |
 | **X-6.7 No false direct-synonymy** | No rationale claims "Direct synonymy" / "Direct antonym pair" / "= " for relationships that are actually approximation-by-elimination (whitelist of genuinely-synonymous pairs maintained) | rationale audit |
+| **X-6.8 No raw ASCII digits in TTS source** | No string in `data/grammar.json` `examples[].ja`, `data/reading.json` `passages[].ja`, or `data/listening.json` `items[].script_ja` contains an ASCII digit (`[0-9]`) adjacent to Japanese characters at audio-build time. `tools/build_audio.py:normalize_for_tts()` substitutes ASCII digits → kanji digits before passing to gTTS so the audio reads "三" (さん), not "three" (スリー). The regression guard verifies that every MP3 in `audio/` was generated AFTER the most recent edit to its source `ja` field. | `tools/check_content_integrity.py` (new check) |
+| **X-6.9 Furigana primary-reading sanity** | Every kanji in `data/n5_kanji_readings.json` has a `primary` reading that matches the **N5-context-most-common** reading for that kanji. Reference list maintained in the audit script; e.g. 本→ほん, 時→じ, 分→ふん, 円→えん, 月→がつ, 学→がく, 人→にん, 三→さん. The auto-ruby renderer (`js/furigana.js`) uses `primary` when no explicit `furigana` annotation is provided. | `tools/check_content_integrity.py` reference table |
 
 **Beyond X-6.1–X-6.7, also enforce:**
 
@@ -408,7 +410,7 @@ Pass condition: every spot-check succeeds, OR the failure is logged as a new fin
 
 - **JA × i18n (§6):** Switching locales must not corrupt Japanese text rendering. Specifically, no half-width katakana when full-width was authored; no kanji turned into "?" boxes.
 - **JA × a11y (§5):** Screen readers should announce furigana correctly (or `aria-hidden` it if double-announcement happens). NVDA + Japanese voice should pronounce 学校 as がっこう, not as がく-こう.
-- **JA × audio (§7-§8):** TTS audio should match the on-screen reading. If 今日 is shown with reading きょう, the audio should say きょう, not こんにち.
+- **JA × audio (§7-§8):** TTS audio should match the on-screen reading. If 今日 is shown with reading きょう, the audio should say きょう, not こんにち. **Specific regression guard (Pass-10):** numbers must read in Japanese, not English. Every audio-bearing example with a digit (e.g. `本を 3さつ 読みました`) must read "さんさつ" via the `normalize_for_tts()` digit→kanji substitution; "スリーさつ" is a hard fail. Spot-check by playing one MP3 from each of `audio/grammar/n5-005.0.mp3` (7じ), `audio/listening/n5.listen.001.mp3` (3時), `audio/reading/n5.read.002.mp3` (6時, 9時, 5時, 10時) — every digit should be rendered in Japanese.
 - **JA × visual (§16):** Furigana ruby alignment is correct (centered above base text); no overlapping; readable at 100% zoom and at 200% zoom.
 
 ### 12.3 Periodic re-audit (Pass-N protocol)
@@ -535,8 +537,9 @@ This is a static no-login no-server app, but still:
 
 Pre-flight before any deploy:
 
-- [ ] **§12.1 invariants pass** (all 16 content checks green - this is a HARD release blocker)
+- [ ] **§12.1 invariants pass** (all 18 content checks green - this is a HARD release blocker; X-6.8 digit-in-TTS and X-6.9 primary-reading sanity are part of this set)
 - [ ] **§12.2.1 JA spot-check** (3 random questions read naturally; kanji popover matches catalog)
+- [ ] **Audio digit spot-check (Pass-10 regression):** play any MP3 from `audio/grammar/n5-005.0.mp3` (7じに) and `audio/listening/n5.listen.003.mp3` (8時半 / 9時). Numbers must read in Japanese (しちじ / はちじはん / くじ), never in English ("seven" / "eight" / "nine" / "スリー").
 - [ ] Home page loads. Title is correct. No console errors. Trust strip visible above the fold.
 - [ ] Click "Learn" → 5-card hub shows (Grammar / Vocabulary / Kanji / Dokkai / Listening).
 - [ ] Click "Grammar" card → grammar TOC of cards loads; click any card → pattern detail shows pattern + EN + JA meaning + ≥1 example with translation.
