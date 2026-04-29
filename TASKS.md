@@ -15,12 +15,12 @@ Last updated: 2026-04-29 (Phase 3 → Phase 4 transition; Developer Brief absorb
 - Engine: hash router, LocalStorage adapter, 4 chapters + Drill + Diagnostic
 - Service worker active (`jlpt-n5-tutor-v1`, 19 assets pre-cached)
 - 37 browser-runnable tests passing
-- **NEW (KB-only, not yet wired into app):** 5 KB question-bank files authored (498 questions total) covering all four JLPT N5 written-test sections:
+- **NEW (KB-only, not yet wired into app):** 5 KB question-bank files authored (589 questions total) covering all four JLPT N5 written-test sections:
   - `KnowledgeBank/moji_questions_n5.md` (100 Qs - 漢字読み 50 + 表記 50)
   - `KnowledgeBank/goi_questions_n5.md` (100 Qs - 文脈規定 50 + 言い換え類義 50)
   - `KnowledgeBank/bunpou_questions_n5.md` (100 Qs - 文法1 60 + 文法2 30 + 文章の文法 10)
   - `KnowledgeBank/dokkai_questions_n5.md` (100 Qs - 短文 60 + 中文 30 + 情報検索 10)
-  - `KnowledgeBank/authentic_extracted_n5.md` (98 source-attributed authentic Qs from `learnjapaneseaz.com/jlpt/jlpt-n5`)
+  - `KnowledgeBank/authentic_extracted_n5.md` (189 source-attributed authentic Qs from `learnjapaneseaz.com/jlpt/jlpt-n5` across 23 reading passages, 8 grammar tests, 3 kanji tests, 3 vocab tests)
 
 ---
 
@@ -65,6 +65,54 @@ Last updated: 2026-04-29 (Phase 3 → Phase 4 transition; Developer Brief absorb
 - [ ] **W5 Lint + coverage**: run `tools/lint_content.py` over the imported questions; the existing project rule allows non-N5 kanji in distractor options for question files (documented header note in `moji_questions_n5.md`). Document this exception in `lint_content.py` so it doesn't throw spurious failures.
 - [ ] **W6 README + spec update**: bump pattern/question totals; add Mock-Test mode to README's status block; regenerate Functional Spec docx via `tools/build_spec.py`.
 - [ ] **W7 SW cache version bump**: `jlpt-n5-tutor-v1` → `v2` since `questions.json` payload grows substantially. Add the new MD reference files to the cache list (or exclude them from app-shell cache since they are author-only).
+
+### Phase 4.3.6 — Learn-tab content richness (NEW directive, 2026-04-29)
+
+> User directive: *"the structure of learn tab of website should be as rich as `https://learnjapaneseaz.com/jlpt/jlpt-n5` content"*. Reference site analysis below feeds the gap list.
+
+**Reference site structure (learnjapaneseaz.com/jlpt/jlpt-n5):**
+
+- Top-level horizontal nav: JLPT levels (N1-N5), Kanji (N1-N5), Vocabulary (N1-N5), Grammar (N1-N5), Listening, Minna no Nihongo, Japanese Particles, Communication
+- Per-N5 landing page lists: practice tests, kanji exercises, vocab exercises, grammar exercises, reading practice, listening scripts, mock papers with answers (7/2024, 7/2025, 12/2024, 12/2025)
+- **Grammar list page**: 42 numbered grammar points, each with romaji reading and short English meaning, hyperlinked to dedicated lessons
+- **Per-grammar-point lesson page**: title + reading; meaning (multiple definitions); usage patterns (Verb-dictionary + まえに, Noun + のまえに); explanation; 6 numbered example sentences with romaji + English; related-articles list. NO inline exercises (separate practice-test pages)
+- **Practice tests**: 25 kanji tests, 17 grammar tests, 23 reading tests, 15+ vocab tests, all linked from category landing pages
+
+**Gap analysis (current app vs reference site):**
+
+| Dimension | Current app | Reference site | Gap |
+|---|---|---|---|
+| Grammar coverage | 187 patterns, 23 categories | 42 grammar points | App is **ahead** |
+| Per-pattern detail | 7-block format (form/connection, meaning, explanation, examples, mistakes, simple JA, notes) | 6-section format (meaning, patterns, explanation, 6 examples, related) | App is **ahead** |
+| Vocab section | None (vocab in `vocabulary_n5.md` reference only) | Vocab list + 15+ practice tests | **Gap** |
+| Kanji section | Furigana toggle only | Kanji list + 25 practice tests + per-kanji pages | **Gap** |
+| Reading section | None | 23 reading-passage practice tests | **Gap** (KB now has 100+ in `dokkai_questions_n5.md`) |
+| Listening section | None | Listening + transcripts | **Gap** (out of scope per current brief) |
+| Mock papers | None | 4 dated mock papers with answers | **Gap** |
+| Browse-by-category UX | Single Learn tab with 23 grammar categories | Top nav: separate Grammar/Kanji/Vocab/Reading sections | **Gap** |
+
+**Tasks:**
+
+- [ ] **L1 Add a Vocab section to Learn tab**. Render `KnowledgeBank/vocabulary_n5.md` as a browsable list (40 thematic sections, ~933 entries). Each entry: kanji form (if N5), reading, English. Plus a per-section "Practice" link that runs `goi_questions_n5.md` items filtered to that section.
+- [ ] **L2 Add a Kanji section to Learn tab**. Render `KnowledgeBank/kanji_n5.md` as a 101-card grid. Each card: character + on/kun + meanings + tap-to-flip flashcard mode + per-kanji example words. Practice link runs `moji_questions_n5.md` items filtered to that kanji.
+- [ ] **L3 Add a Reading (Dokkai) section to Learn tab**. Render `KnowledgeBank/dokkai_questions_n5.md` passages as a graded-reader interface: difficulty filter (短文 / 中文 / 情報検索), passage view, comprehension questions inline, optional timer.
+- [ ] **L4 Add a Mock-Test section**. Full-paper test mode that mirrors actual JLPT N5 paper structure: Moji-Goi paper (25 min, 35 questions sampled across 漢字読み / 表記 / 文脈規定 / 言い換え), Bunpou+Dokkai paper (50 min, ~30 questions). Use the 5 KB question-bank files as the source.
+- [ ] **L5 Top-nav redesign**. Current nav: Learn / Test / Drill / Review / Summary / Diagnostic. Proposed: **Learn (Grammar / Vocab / Kanji / Reading)** + Test (with Mock-Test mode) + Drill + Review + Summary. Adds 4 sub-nav items under Learn.
+- [ ] **L6 Per-grammar-point "Related" links**. Each pattern detail page should list patterns from same category + patterns frequently confused (the existing `contrasts[]` field already supports this; surface it in UI).
+- [ ] **L7 N5-grammar list landing page**. A flat 1-screen list of all 187 patterns grouped by category, romaji-style readable for quick scanning. Mirrors the reference site's grammar-list page UX.
+- [ ] **L8 Mark up vocab/kanji links from grammar examples**. Where a pattern's example sentence uses a vocab word or kanji from KB, link it to the vocab/kanji entry. Increases connectivity of the Learn experience.
+
+### Phase 4.3.7 — Japanese-language accuracy audit (NEW directive, 2026-04-29)
+
+> User directive: *"do a japanese language accuracy audit of the website all documents under N5 folder"*.
+
+- [ ] **A1 Engage a fresh teacher-perspective audit pass** over all `KnowledgeBank/*.md` files (4 catalog + 5 question banks). Verify: kanji readings, vocab meanings, grammar form-rules, particle usage, honorific levels, transitive/intransitive pairs.
+- [ ] **A2 Audit all `data/grammar.json` patterns** (187 entries) for: form-rule accuracy, example-sentence naturalness, common-mistake rationales, contrast-note correctness.
+- [ ] **A3 Audit all `data/questions.json` items** (249 currently in app + the 589 in KB question banks) for: stem grammaticality, distractor plausibility, answer correctness, kanji-rule compliance.
+- [ ] **A4 Audit `verification.md` and `README.md`** for any Japanese-language claims that may have drifted post-fixes.
+- [ ] **A5 Audit Spec docx** for any Japanese examples - regenerate via `tools/build_spec.py` if any are stale.
+- [ ] **A6 Audit `js/*.js` inline strings** for Japanese UI text correctness (e.g., "つぎの いみに あう パターンを えらんでください").
+- [ ] **A7 Compile findings as Pass-N entries** in `verification.md` with severity (correctness / pedagogy / style) and apply fixes Pass-by-Pass until 0 findings.
 
 ### Phase 4.4 — Polish
 

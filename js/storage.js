@@ -68,8 +68,14 @@ const FRESH_PATTERN_ENTRY = {
   isMastered: false,
   isManuallyKnown: false,
   lastSeen: null,
+  // Legacy Leitner-light state (kept for migration / existing UI badges)
   srsBox: null,         // null | '1d' | '3d' | '7d' | '14d' | 'graduated'
   nextDue: null,        // ISO date string when this pattern next appears in Drill
+  // SM-2 state (Brief §2.11)
+  easeFactor: 2.5,      // EF — adjusts up/down with each grade
+  interval: 0,          // days until next review
+  reps: 0,              // consecutive correct streak (resets on lapse)
+  lapses: 0,            // total times the user has forgotten this item
 };
 
 // SRS box graduation order. Per spec §5.8.
@@ -210,6 +216,90 @@ export function getSeenPatternIds() {
 export function getPatternEntry(id) {
   const h = getHistory();
   return h[id] || null;
+}
+
+// =============== SM-2 SRS algorithm (Brief §2.11) ===============
+//
+// Standard SM-2 with N5-friendly defaults. Per-item state: easeFactor,
+// interval (days), reps, lapses, due (ISO). 4-button grading mapped to
+// SM-2 quality scores:
+//   Again → q=1   (forgotten, lapse)
+//   Hard  → q=3   (correct but difficult)
+//   Good  → q=4   (correct, normal)
+//   Easy  → q=5   (correct, easy — bigger interval bump)
+//
+// On q < 3: reps reset, interval back to 1 day, lapses++.
+// On q ≥ 3: reps++; interval = 1, 6, or prev*EF depending on rep count.
+// EF adjusts each grade: EF' = max(1.3, EF + 0.1 - (5-q)*(0.08 + (5-q)*0.02)).
+
+const GRADE_AGAIN = 1;
+const GRADE_HARD = 3;
+const GRADE_GOOD = 4;
+const GRADE_EASY = 5;
+
+export const SM2 = { GRADE_AGAIN, GRADE_HARD, GRADE_GOOD, GRADE_EASY };
+
+function applySm2(entry, grade, nowIso) {
+  const e = { ...FRESH_PATTERN_ENTRY, ...entry };
+  // Lapse
+  if (grade < 3) {
+    e.lapses = (e.lapses || 0) + 1;
+    e.reps = 0;
+    e.interval = 1;
+  } else {
+    e.reps = (e.reps || 0) + 1;
+    if (e.reps === 1) e.interval = 1;
+    else if (e.reps === 2) e.interval = 6;
+    else e.interval = Math.round((e.interval || 1) * (e.easeFactor || 2.5));
+  }
+  // Adjust ease factor
+  const newEf = (e.easeFactor || 2.5) + (0.1 - (5 - grade) * (0.08 + (5 - grade) * 0.02));
+  e.easeFactor = Math.max(1.3, newEf);
+
+  // Schedule next due
+  const next = new Date();
+  next.setDate(next.getDate() + e.interval);
+  e.nextDue = next.toISOString();
+  e.lastSeen = nowIso;
+  return e;
+}
+
+/**
+ * Record an SM-2 graded response. Call from drill UIs that present 4-button
+ * (Again/Hard/Good/Easy) grading.
+ */
+export function recordSrsResponse(grammarPatternId, grade) {
+  if (!grammarPatternId) return;
+  const history = getHistory();
+  const now = new Date().toISOString();
+  const existing = history[grammarPatternId] || FRESH_PATTERN_ENTRY;
+  const updated = applySm2(existing, grade, now);
+  // Also keep the rolling-history fields in sync for the existing weak-detection code.
+  updated.attempts = (updated.attempts || 0) + 1;
+  if (grade < 3) {
+    updated.incorrect = (updated.incorrect || 0) + 1;
+    updated.consecutiveCorrect = 0;
+  } else {
+    updated.correct = (updated.correct || 0) + 1;
+    updated.consecutiveCorrect = (updated.consecutiveCorrect || 0) + 1;
+  }
+  updated.errorRate = updated.incorrect / Math.max(1, updated.attempts);
+  updated.isWeak = updated.errorRate >= 0.5 && updated.attempts >= 2;
+  updated.isMastered = updated.isManuallyKnown || updated.consecutiveCorrect >= 4;
+  history[grammarPatternId] = updated;
+  setHistory(history);
+}
+
+export function getSrsState(grammarPatternId) {
+  const e = getHistory()[grammarPatternId];
+  if (!e) return null;
+  return {
+    easeFactor: e.easeFactor ?? 2.5,
+    interval: e.interval ?? 0,
+    reps: e.reps ?? 0,
+    lapses: e.lapses ?? 0,
+    nextDue: e.nextDue,
+  };
 }
 
 /**
