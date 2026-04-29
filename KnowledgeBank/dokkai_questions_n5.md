@@ -1290,12 +1290,12 @@ Who CANNOT join this class?
 
 Tanaka-san orders curry with a drink at 12:30pm. How much does Tanaka-san pay?
 
-1. 700円 (800 + 200 - 100 - 200)
+1. 700円
 2. 800円
 3. 900円
 4. 1,000円
 
-**Answer: 3** - 800 + 200 - 100 (lunch discount) = 900.
+**Answer: 3** - カレー 800 + のみもの 200 - ランチタイム わりびき 100 = 900円.
 
 #### Q96
 
@@ -1356,14 +1356,14 @@ On Sunday morning, how often do buses run?
 
 #### Q99
 
-A patient wants to see a dentist on Wednesday afternoon. Is the dentist open?
+What time is the dentist (しか) open on Wednesday?
 
-1. はい、9:00 から 12:00 まで
-2. はい、14:00 から 19:00 まで
-3. いいえ、しかは 火曜日 だけ
-4. いいえ、土よう日と 日よう日 だけ あいて いる
+1. 9:00 から 12:00 まで
+2. 14:00 から 19:00 まで
+3. 10:00 から 15:00 まで
+4. 9:00 から 17:00 まで
 
-**Answer: 2** - しか on 月水金 14-19.
+**Answer: 2** - しか on 月、水、金 14:00-19:00.
 
 ### Item 6 (Q100): 学校の あんない
 

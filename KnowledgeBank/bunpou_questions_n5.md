@@ -688,640 +688,337 @@
 
 ## Mondai 2 - 文の文法2 (Sentence Composition)
 
-30 questions. Arrange the four elements (1-4) into the sentence so it reads correctly. Identify which option fills the position marked `★`. Standard JLPT layout: A `★` C D where the four positions A/B/C/D map to the four numbered elements you need to order.
+30 questions. Arrange the four numbered options into the sentence so it reads correctly. The position marked `★` is the one whose option-number is the answer.
 
 ### Q61
 
-Stem: きのう ___ ___ ★ ___ 見ました。
+きのう ___ ___ ★ ___ 見ました。
 
-Elements:
 1. を
 2. ともだちと
 3. えいが
 4. いっしょに
 
-Correct order: A=2 ともだちと, B=4 いっしょに, C(★)=3 えいが, D=1 を
-Final sentence: きのう ともだちと いっしょに えいがを 見ました.
-
-**Answer: 3** (えいが goes in position ★).
+**Answer: 3** (えいが goes in ★).
 
 ### Q62
 
-Stem: わたしは ___ ___ ★ ___ あります。
-Elements:
+わたしは ___ ___ ★ ___ あります。
+
 1. ことが
 2. 行った
 3. に
 4. 中国
 
-Correct order: 4 (中国) - 3 (に) - 2 (行った) - 1 (ことが)
-A=4 中国, B=3 に, C(★)=2 行った, D=1 ことが
-Final: わたしは 中国に 行った ことが あります.
-
-**Answer: 2**.
+**Answer: 2** (行った goes in ★).
 
 ### Q63
 
-Stem: あした ___ ___ ★ ___ 行きます。
-Elements:
+あした ___ ___ ★ ___ 行きます。
+
 1. に
 2. の
 3. ともだち
 4. うち
 
-Correct order: 3 (ともだち) - 2 (の) - 4 (うち) - 1 (に)
-A=3, B=2, C(★)=4, D=1
-Final: あした ともだちの うちに 行きます.
-
-**Answer: 4**.
+**Answer: 4** (うち goes in ★).
 
 ### Q64
 
-Stem: ___ ___ ★ ___ ですか。
-Elements:
+___ ___ ★ ___ ですか。
+
 1. 何
 2. 駅
 3. の
 4. 名前は
 
-Correct order: 2 (駅) - 3 (の) - 4 (名前は) - 1 (何)
-A=2, B=3, C(★)=4, D=1
-Final: 駅の 名前は 何ですか.
-
-**Answer: 4**.
+**Answer: 4** (名前は goes in ★).
 
 ### Q65
 
-Stem: わたしの ___ ___ ★ ___ あります。
-Elements:
+わたしの ___ ___ ★ ___ あります。
+
 1. に
 2. うえ
 3. 本が
 4. つくえの
 
-Correct order: 4 (つくえの) - 2 (うえ) - 1 (に) - 3 (本が)
-A=4, B=2, C(★)=1, D=3
-Final: わたしの つくえの うえに 本が あります.
-
-**Answer: 1**.
+**Answer: 1** (に goes in ★).
 
 ### Q66
 
-Stem: ___ ___ ★ ___ 食べたいです。
-Elements:
-1. を
-2. 何か
-3. が
-4. おなか
+きょうは ___ ___ ★ ___ 食べました。
 
-A=4 おなか, B=3 が, C(★)=2 何か, D=1 を ... wait, there should be a separator. Let me reconsider.
-
-Actually the sentence "おなか が すきました。何か を 食べたいです" is two separate sentences. For one sentence: "おなかがすいたから、何かを食べたいです" - but needs a connector.
-
-Re-stem: きょう、___ ___ ★ ___ 食べたいです。
-Elements:
-1. を
-2. 何か
-3. あたたかい
-4. もの
-
-A=3 あたたかい, B=2 何か... hmm 何か doesn't take adjective directly. Let's use:
-1. を
-2. もの
-3. あたたかい
-4. 何か
-
-Order: 4 何か - 3 あたたかい - 2 もの - 1 を ... still odd. Let me use:
-
-Re-stem: きょうは ___ ___ ★ ___ 食べたいです。
-Elements:
-1. が
-2. ない
-3. 食欲 ... no, 食欲 not N5.
-
-Use simpler:
-Stem: きょうは ___ ___ ★ ___ 食べました。
-Elements:
 1. を
 2. パン
 3. ホテルで
 4. 朝ごはんに
 
-Order: 3 ホテルで - 4 朝ごはんに - 2 パン - 1 を
-A=3, B=4, C(★)=2, D=1
-Final: きょうは ホテルで 朝ごはんに パンを 食べました.
-
-**Answer: 2**.
+**Answer: 2** (パン goes in ★).
 
 ### Q67
 
-Stem: ___ ___ ★ ___ ありませんか。
-Elements:
+___ ___ ★ ___ ありませんか。
+
 1. に
 2. しゅくだいは
 3. あした
 4. まで
 
-A=2 しゅくだいは, B=3 あした, C(★)=4 まで, D=1 に
-Final: しゅくだいは あした までに ありませんか.
-
-Hmm, the sentence "宿題は明日までにありませんか" is grammatical. しゅくだい is the topic, あしたまでに is the deadline.
-
-**Answer: 4**.
+**Answer: 4** (まで goes in ★).
 
 ### Q68
 
-Stem: ___ ___ ★ ___ かりました。
-Elements:
+___ ___ ★ ___ かりました。
+
 1. を
 2. 友だちに
 3. 三さつ
 4. 本
 
-A=2 友だちに, B=4 本, C(★)=1 を, D=3 三さつ
-Final: 友だちに 本を 三さつ かりました.
-
-**Answer: 1**.
+**Answer: 1** (を goes in ★).
 
 ### Q69
 
-Stem: ___ ___ ★ ___ あいました。
-Elements:
+___ ___ ★ ___ あいました。
+
 1. の
 2. 学校
 3. 友だちに
 4. まえで
 
-A=2 学校, B=1 の, C(★)=4 まえで, D=3 友だちに
-Final: 学校の まえで 友だちに あいました.
-
-**Answer: 4**.
+**Answer: 4** (まえで goes in ★).
 
 ### Q70
 
-Stem: ___ ___ ★ ___ かりたいです。
-Elements:
+___ ___ ★ ___ よみたいです。
+
 1. ある
 2. 本を
 3. 図しょかんに
 4. 三さつ
 
-A=3 図しょかんに, B=1 ある (relative clause), B can't directly precede - rethinking. The structure "図しょかんにある本" is "books that are in the library".
-
-Stem: ___ ___ ★ ___ よみたいです。
-Elements:
-1. ある
-2. 本を
-3. 図しょかんに
-4. 三さつ
-
-A=3 図しょかんに, B=1 ある, C(★)=2 本を, D=4 三さつ
-Final: 図しょかんに ある 本を 三さつ よみたいです.
-
-**Answer: 2**.
+**Answer: 2** (本を goes in ★).
 
 ### Q71
 
-Stem: ___ ___ ★ ___ きました。
-Elements:
-1. かさ
-2. が
-3. ふって
-4. 雨
+___ ___ ★ ___ きました。
 
-A=4 雨, B=2 が, C(★)=3 ふって, D=1 かさ ... Final makes no sense.
-
-Try: 雨が ふって きました (started raining). Where does かさ fit?
-
-Re-stem: きょう、雨が ふって きましたから、___ ___ ★ ___ もって きました。
-Elements:
-1. を
-2. かさ
-3. を
-4. 学校に
-... too many を. Skip.
-
-Stem: ___ ___ ★ ___ きました。
-Elements:
 1. ふって
 2. が
 3. 雨
 4. たくさん
 
-A=3 雨, B=2 が, C(★)=4 たくさん, D=1 ふって
-Final: 雨が たくさん ふって きました.
-
-**Answer: 4**.
+**Answer: 4** (たくさん goes in ★).
 
 ### Q72
 
-Stem: ___ ___ ★ ___ ありますか。
-Elements:
-1. が
-2. 何か
-3. たべるもの
-4. に
+れいぞうこの ___ ___ ★ ___ ありますか。
 
-This isn't quite right either. Let me try:
-
-Stem: 冷ぞうこの ___ ___ ★ ___ ありますか。
-Elements:
 1. に
 2. のみもの
 3. 中
 4. が
 
-A=3 中, B=1 に, C(★)=2 のみもの, D=4 が
-Final: 冷ぞうこの 中に のみものが ありますか.
-
-Hmm 冷ぞうこ has 冷 not N5 and 蔵 not N5 → kana れいぞうこ. Let me redo:
-
-Stem: れいぞうこの ___ ___ ★ ___ ありますか。
-Elements:
-1. に
-2. のみもの
-3. 中
-4. が
-
-A=3 中, B=1 に, C(★)=2 のみもの, D=4 が
-Final: れいぞうこの 中に のみものが ありますか.
-
-**Answer: 2**.
+**Answer: 2** (のみもの goes in ★).
 
 ### Q73
 
-Stem: わたしは ___ ___ ★ ___ いきません。
-Elements:
-1. に
-2. あまり
-3. ぎんこう
-4. は
+わたしは ___ ___ ★ ___ ません。
 
-A=2 あまり, B=3 ぎんこう, C(★)=1 に, D=4 は
-Final: わたしは あまり ぎんこうには いきません. (Hmm doubled は - skip 4.)
-
-Let me redo without は:
-Elements:
 1. に
 2. あまり
 3. ぎんこう
 4. 行き
 
-A=2 あまり, B=3 ぎんこう, C(★)=1 に, D=4 行き
-Final: わたしは あまり ぎんこうに 行き ません.
-
-But "行き" alone with "ません" needs to combine to "行きません". So this works.
-**Answer: 1**.
+**Answer: 1** (に goes in ★).
 
 ### Q74
 
-Stem: ___ ___ ★ ___ ですか。
-Elements:
+___ ___ ★ ___ ですか。
+
 1. の
 2. かばん
 3. だれ
 4. これは
 
-A=4 これは, B=3 だれ, C(★)=1 の, D=2 かばん
-Final: これは だれの かばんですか.
-
-**Answer: 1**.
+**Answer: 1** (の goes in ★).
 
 ### Q75
 
-Stem: あした ___ ___ ★ ___ 来ません。
-Elements:
+あした ___ ___ ★ ___ 来ません。
+
 1. は
 2. パーティーに
 3. ので
 4. しごとが あります
 
-A=4 しごとが あります, B=3 ので, C(★)=2 パーティーに, D=1 は
-Final: あした しごとが あります ので パーティーには 来ません.
-
-**Answer: 2**.
+**Answer: 2** (パーティーに goes in ★).
 
 ### Q76
 
-Stem: ___ ___ ★ ___ じょうずです。
-Elements:
+___ ___ ★ ___ じょうずです。
+
 1. が
 2. 日本語
 3. たなかさんは
 4. とても
 
-A=3 たなかさんは, B=2 日本語, C(★)=1 が, D=4 とても
-Final: たなかさんは 日本語が とても じょうずです.
-
-Hmm but order has C(★)=1 が; that places が before とても. Adjusting: 
-Order: 3 - 2 - 4 - 1 reads "たなかさんは 日本語 とても が じょうずです" - wrong.
-Correct: たなかさんは 日本語が とても じょうずです → 3-2-1-4
-A=3, B=2, C(★)=1, D=4
-**Answer: 1**.
+**Answer: 1** (が goes in ★).
 
 ### Q77
 
-Stem: ___ ___ ★ ___ ましょう。
-Elements:
+___ ___ ★ ___ ましょう。
+
 1. へ
 2. いっしょに
 3. 行き
 4. こうえん
 
-A=2 いっしょに, B=4 こうえん, C(★)=1 へ, D=3 行き
-Final: いっしょに こうえんへ 行きましょう.
-
-**Answer: 1**.
+**Answer: 1** (へ goes in ★).
 
 ### Q78
 
-Stem: ___ ___ ★ ___ きてください。
-Elements:
+___ ___ ★ ___ きてください。
+
 1. もって
 2. を
-3. その 本
-4. ここ に
+3. その本
+4. ここに
 
-A=3 その 本, B=2 を, C(★)=1 もって, D=4 ここ に
-Final: その 本を もって ここに きて ください.
-
-Actually D should be ここに and the verb きて comes before ください. Reordering: A=3 その本, B=2 を, C(★)=1 もって, D=4 ここに.
-After D: きて ください.
-
-**Answer: 1**.
+**Answer: 1** (もって goes in ★).
 
 ### Q79
 
-Stem: ___ ___ ★ ___ 食べました。
-Elements:
+___ ___ ★ ___ 食べました。
+
 1. ぜんぶ
 2. ケーキ
 3. を
 4. その
 
-A=4 その, B=2 ケーキ, C(★)=3 を, D=1 ぜんぶ
-Final: その ケーキを ぜんぶ 食べました.
-
-**Answer: 3**.
+**Answer: 3** (を goes in ★).
 
 ### Q80
 
-Stem: ___ ___ ★ ___ ありますか。
-Elements:
+___ ___ ★ ___ ありますか。
+
 1. が
 2. しゅくだい
 3. あした
 4. は
 
-A=3 あした, B=4 は, C(★)=2 しゅくだい, D=1 が
-Final: あしたは しゅくだいが ありますか.
-
-**Answer: 2**.
+**Answer: 2** (しゅくだい goes in ★).
 
 ### Q81
 
-Stem: ___ ___ ★ ___ いきました。
-Elements:
-1. へ
-2. 友だちと
-3. えいが
-4. を見に
+___ ___ ★ ___ 行きました。
 
-Hmm 見に has と... let me re-do.
-
-Elements:
-1. へ
-2. 友だちと
-3. えいがかんに
-4. いきました... no this is the verb already.
-
-Re-stem: ___ ___ ★ ___ 行きました。
-Elements:
-1. に
-2. を
-3. 見
-4. 友だちと えいが
-
-Hmm splitting 友だちと えいが is odd.
-
-Re-stem: わたしは ___ ___ ★ ___ 行きました。
-Elements:
-1. を 見に
-2. 友だちと
-3. えいがかん
-4. へ
-
-A=2 友だちと, B=3 えいがかん, C(★)=4 へ, D=1 を 見に - invalid because option order requires "へ" before "に行く" not "を見に".
-
-Sticking with simpler:
-Re-stem: ___ ___ ★ ___ 行きました。
-Elements:
 1. と
 2. に
 3. えいがかん
 4. 友だち
 
-A=4 友だち, B=1 と, C(★)=3 えいがかん, D=2 に
-Final: 友だちと えいがかんに 行きました.
-
-**Answer: 3**.
+**Answer: 3** (えいがかん goes in ★).
 
 ### Q82
 
-Stem: ___ ___ ★ ___ ですか。
-Elements:
+___ ___ ★ ___ ですか。
+
 1. の
 2. これ
 3. 本
 4. は だれ
 
-A=2 これ, B=4 は だれ, C(★)=1 の, D=3 本
-Final: これは だれの 本ですか.
-
-**Answer: 1**.
+**Answer: 1** (の goes in ★).
 
 ### Q83
 
-Stem: しゅくだいを ___ ___ ★ ___ 行きました。
-Elements:
-1. ねに
-2. してから
-3. すぐに
-4. ね（寝）の前に  (kana: ねるまえに)
+しゅくだいを ___ ___ ★ ___ 食べました。
 
-Let me simplify:
-Stem: しゅくだいを ___ ___ ★ ___ 行きました。
-Elements:
-1. て
-2. してから
-3. ね
-4. に
-
-After してから, ねに行きました reads "after homework, went to bed". Order: 2 してから, 3 ね, 4 に, 1 て - awkward.
-
-Let me change verb:
-Stem: しゅくだいを ___ ___ ★ ___ 食べました。
-Elements:
 1. してから
 2. ばんごはんを
 3. すぐに
 4. みんなで
 
-A=1 してから, B=3 すぐに, C(★)=4 みんなで, D=2 ばんごはんを
-Final: しゅくだいを してから すぐに みんなで ばんごはんを 食べました.
-
-**Answer: 4**.
+**Answer: 4** (みんなで goes in ★).
 
 ### Q84
 
-Stem: ___ ___ ★ ___ あります。
-Elements:
-1. に
-2. やま
-3. ゆきが
-4. うえ
+___ ___ ★ ___ あります。
 
-A=2 やま, B=4 うえ, C(★)=1 に, D=3 ゆきが - placement: やま うえに ゆきが あります. But missing connector の.
-
-Re-do with の included:
-Elements:
 1. の うえに
 2. やま
 3. ゆきが
 4. たくさん
 
-A=2 やま, B=1 の うえに, C(★)=4 たくさん, D=3 ゆきが
-Final: やまの うえに たくさん ゆきが あります.
-
-**Answer: 4**.
+**Answer: 4** (たくさん goes in ★).
 
 ### Q85
 
-Stem: ___ ___ ★ ___ かいたいです。
-Elements:
-1. の
-2. 新しい
-3. が
-4. かばん
+___ ___ ★ ___ かいたいです。
 
-A=2 新しい, B=4 かばん, C(★)=3 が, D=1 の  - "新しいかばんがの" is wrong.
-
-Re-do:
-Elements:
 1. が
 2. 新しい
 3. ほしいので
 4. かばん
 
-A=2 新しい, B=4 かばん, C(★)=1 が, D=3 ほしいので
-Final: 新しい かばんが ほしいので, ...
-After this, the verb かいたいです attaches: 新しいかばんがほしいので、買いたいです.
-
-**Answer: 1**.
+**Answer: 1** (が goes in ★).
 
 ### Q86
 
-Stem: ___ ___ ★ ___ できます。
-Elements:
-1. ピアノが
-2. すこし
-3. たなかさんは
-4. ひくことが
+___ ___ ★ ___ できます。
 
-A=3 たなかさんは, B=1 ピアノが, C(★)=2 すこし, D=4 ひくことが
-Final: たなかさんは ピアノが すこし ひくことが できます.
-
-Hmm but ピアノが appears twice (or rather が appears twice). Let me reconsider:
-
-Actually for "Tanaka can play piano a little", the natural form is:
-"たなかさんは ピアノを 少し ひくことが できます" or
-"たなかさんは ピアノが 少し できます"
-
-Using the second:
-Stem: ___ ___ ★ ___ できます。
-Elements:
-1. ピアノが
-2. すこし
-3. たなかさんは
-4. (only 3 elements?)
-
-Need 4. Let me redo:
-Elements:
 1. すこし
 2. ピアノを
 3. ひくことが
 4. たなかさんは
 
-A=4 たなかさんは, B=2 ピアノを, C(★)=1 すこし, D=3 ひくことが
-Final: たなかさんは ピアノを すこし ひくことが できます.
-
-**Answer: 1**.
+**Answer: 1** (すこし goes in ★).
 
 ### Q87
 
-Stem: ___ ___ ★ ___ おきます。
-Elements:
+___ ___ ★ ___ おきます。
+
 1. に
 2. 朝
 3. 七時
 4. まいにち
 
-A=4 まいにち, B=2 朝, C(★)=3 七時, D=1 に
-Final: まいにち 朝 七時に おきます.
-
-**Answer: 3**.
+**Answer: 3** (七時 goes in ★).
 
 ### Q88
 
-Stem: ___ ___ ★ ___ ありませんから、たべません。
-Elements:
+___ ___ ★ ___ いませんから、たべません。
+
 1. が
 2. おなか
 3. すいて
 4. まだ
 
-A=2 おなか, B=1 が, C(★)=4 まだ, D=3 すいて
-Final: おなかが まだ すいて ありませんから, たべません. (Note: いません is correct, not ありません - skip stem fix.)
-
-Re-stem: ___ ___ ★ ___ いませんから、たべません。
-Elements:
-1. が
-2. おなか
-3. すいて
-4. まだ
-
-A=2, B=1, C(★)=4, D=3
-Final: おなかが まだ すいて いませんから, たべません.
-
-**Answer: 4**.
+**Answer: 4** (まだ goes in ★).
 
 ### Q89
 
-Stem: ___ ___ ★ ___ いません。
-Elements:
+___ ___ ★ ___ いません。
+
 1. しゅくだい
 2. が
 3. まだ
 4. おわって
 
-A=1 しゅくだい, B=2 が, C(★)=3 まだ, D=4 おわって
-Final: しゅくだいが まだ おわって いません.
-
-**Answer: 3**.
+**Answer: 3** (まだ goes in ★).
 
 ### Q90
 
-Stem: わたしは ___ ___ ★ ___ つもりです。
-Elements:
+わたしは ___ ___ ★ ___ つもりです。
+
 1. に
 2. らいねん
 3. 大学
 4. 行く
 
-A=2 らいねん, B=3 大学, C(★)=1 に, D=4 行く
-Final: わたしは らいねん 大学に 行く つもりです.
-
-**Answer: 1**.
+**Answer: 1** (に goes in ★).
 
 ---
 
