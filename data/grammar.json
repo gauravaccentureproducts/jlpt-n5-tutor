@@ -1,0 +1,4603 @@
+{
+  "patterns": [
+    {
+      "id": "n5-001",
+      "pattern": "〜です／〜ます",
+      "category": "Copula and Basic Sentence Structure",
+      "categoryOrder": 1,
+      "patternOrder": 1,
+      "meaning_en": "Polite copula / polite verb ending",
+      "meaning_ja": "ていねいな いいかた",
+      "form_rules": {
+        "attaches_to": [
+          "noun",
+          "na_adjective",
+          "verb_stem"
+        ],
+        "conjugations": [
+          {
+            "form": "affirmative_present",
+            "label": "Present affirmative",
+            "example": "がくせいです"
+          },
+          {
+            "form": "negative_present",
+            "label": "Present negative",
+            "example": "がくせいじゃありません"
+          },
+          {
+            "form": "affirmative_past",
+            "label": "Past affirmative",
+            "example": "がくせいでした"
+          },
+          {
+            "form": "negative_past",
+            "label": "Past negative",
+            "example": "がくせいじゃありませんでした"
+          }
+        ]
+      },
+      "explanation_en": "です is the polite copula used after nouns and な-adjectives. ます attaches to verb stems to form the polite present. Negative and past forms vary by part of speech: nouns / な-adjectives use じゃありません / でした; verbs use ません / ました.",
+      "examples": [
+        {
+          "ja": "わたしは がくせいです。",
+          "form": "affirmative",
+          "translation_en": "I am a student.",
+          "furigana": []
+        },
+        {
+          "ja": "わたしは がくせいじゃありません。",
+          "form": "negative",
+          "translation_en": "I am not a student.",
+          "furigana": []
+        },
+        {
+          "ja": "あなたは がくせいですか。",
+          "form": "question",
+          "translation_en": "Are you a student?",
+          "furigana": []
+        },
+        {
+          "ja": "きのうは やすみでした。",
+          "form": "past",
+          "translation_en": "Yesterday was a day off.",
+          "furigana": []
+        },
+        {
+          "ja": "まいにち にほんごを べんきょうします。",
+          "form": "affirmative",
+          "translation_en": "I study Japanese every day.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "わたしは がくせいです じゃありません。",
+          "right": "わたしは がくせいじゃありません。",
+          "why": "Don't combine です and じゃありません. Use じゃありません alone for the polite negative of nouns / な-adjectives."
+        },
+        {
+          "wrong": "わたしは いきますじゃありません。",
+          "right": "わたしは いきません。",
+          "why": "Verbs use ません for the polite negative, not じゃありません. じゃありません is only for nouns and な-adjectives."
+        }
+      ],
+      "contrasts": [],
+      "notes": "Foundation pattern for all polite-form Japanese. Every other polite-form pattern in N5 builds on it."
+    },
+    {
+      "id": "n5-002",
+      "pattern": "は",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 1,
+      "meaning_en": "Topic marker — introduces what the sentence is about (already-known information)",
+      "meaning_ja": "わだいの しるし",
+      "form_rules": {
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "topic",
+            "label": "Marks the topic",
+            "example": "わたしは がくせいです。"
+          },
+          {
+            "form": "contrast",
+            "label": "Contrast between A and B",
+            "example": "コーヒーは すきですが、おちゃは すきじゃありません。"
+          }
+        ]
+      },
+      "explanation_en": "は marks the TOPIC — what the sentence is about. The topic is usually given / known information. Pronounced 'wa' even though written with the kana は (ha). Often translated as 'as for ___' or simply omitted in English. Compare with が (subject), which often introduces NEW information.",
+      "examples": [
+        {
+          "ja": "わたしは がくせいです。",
+          "form": "affirmative",
+          "translation_en": "I am a student.",
+          "furigana": []
+        },
+        {
+          "ja": "これは ほんです。",
+          "form": "affirmative",
+          "translation_en": "This is a book.",
+          "furigana": []
+        },
+        {
+          "ja": "にくは たべません。",
+          "form": "negative",
+          "translation_en": "I don't eat meat.",
+          "furigana": []
+        },
+        {
+          "ja": "あなたは にほんじんですか。",
+          "form": "question",
+          "translation_en": "Are you Japanese?",
+          "furigana": []
+        },
+        {
+          "ja": "きのうは あめでした。",
+          "form": "past",
+          "translation_en": "Yesterday was rainy.",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーは すきですが、おちゃは すきじゃありません。",
+          "form": "affirmative",
+          "translation_en": "I like coffee, but I don't like tea.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "わたしわ がくせいです。",
+          "right": "わたしは がくせいです。",
+          "why": "The topic particle is always written with the kana は (ha) even though it's pronounced 'wa'. Don't write わ."
+        },
+        {
+          "wrong": "わたしが がくせいです。 (in plain self-introduction)",
+          "right": "わたしは がくせいです。",
+          "why": "Use は for self-introduction. Use が only when emphasizing 'I (and not someone else) am the student' — i.e., when answering 'who is the student?'"
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-003",
+          "note": "は marks the topic (often known); が marks the subject (often new information or focus)."
+        }
+      ],
+      "notes": "は is the most-tested particle on JLPT N5. The は vs が distinction is the single most common source of N5 errors."
+    },
+    {
+      "id": "n5-003",
+      "pattern": "が",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 2,
+      "meaning_en": "Subject marker — marks new information, focus, or the subject of certain stative verbs/adjectives",
+      "meaning_ja": "しゅごの しるし",
+      "form_rules": {
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "new_info",
+            "label": "Identifies / new information",
+            "example": "だれが きましたか。"
+          },
+          {
+            "form": "stative",
+            "label": "Required by すき, きらい, わかる, できる, ある, いる, ほしい",
+            "example": "ねこが すきです。"
+          },
+          {
+            "form": "existence",
+            "label": "Existence (with あります／います)",
+            "example": "へやに テレビが あります。"
+          }
+        ]
+      },
+      "explanation_en": "が marks the SUBJECT, especially when introducing new information or answering 'who/what?'. It is also REQUIRED with certain stative predicates: すき (like), きらい (dislike), わかる (understand), できる (can do), ほしい (want), あります／います (exist). Use が — never を — with these.",
+      "examples": [
+        {
+          "ja": "だれが きましたか。",
+          "form": "question",
+          "translation_en": "Who came?",
+          "furigana": []
+        },
+        {
+          "ja": "にほんごが わかります。",
+          "form": "affirmative",
+          "translation_en": "I understand Japanese.",
+          "furigana": []
+        },
+        {
+          "ja": "ねこが すきじゃありません。",
+          "form": "negative",
+          "translation_en": "I don't like cats.",
+          "furigana": []
+        },
+        {
+          "ja": "きのうは あめが ふりました。",
+          "form": "past",
+          "translation_en": "It rained yesterday.",
+          "furigana": []
+        },
+        {
+          "ja": "へやに テレビが あります。",
+          "form": "affirmative",
+          "translation_en": "There is a TV in the room.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "ねこを すきです。",
+          "right": "ねこが すきです。",
+          "why": "すき (like) takes が, never を — even though English uses 'I LIKE cats' with cats as the object. Same rule for きらい, わかる, できる, ほしい."
+        },
+        {
+          "wrong": "わたしは がっこうの せんせいですか。 (when asking 'who is the teacher?')",
+          "right": "だれが がっこうの せんせいですか。",
+          "why": "Use が in question words like だれ／なに to ASK for new information. は can't introduce a new topic the listener doesn't know yet."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-002",
+          "note": "が introduces new / focused information; は marks the already-known topic."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "n5-004",
+      "pattern": "を",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 3,
+      "meaning_en": "Direct object marker — marks the noun receiving the action of a transitive verb",
+      "meaning_ja": "もくてきごの しるし",
+      "form_rules": {
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "direct_object",
+            "label": "Direct object of a transitive verb",
+            "example": "ほんを よみます。"
+          },
+          {
+            "form": "path",
+            "label": "Path traversed (with movement verbs)",
+            "example": "こうえんを さんぽします。"
+          }
+        ]
+      },
+      "explanation_en": "を marks the DIRECT OBJECT — the noun that receives the action. Used with transitive verbs (たべる, よむ, かう, みる, etc.). Pronounced 'o' (the same as お), but written with its own kana を. Also used with movement verbs to mark a path or route.",
+      "examples": [
+        {
+          "ja": "ほんを よみます。",
+          "form": "affirmative",
+          "translation_en": "I read a book.",
+          "furigana": []
+        },
+        {
+          "ja": "にくを たべません。",
+          "form": "negative",
+          "translation_en": "I don't eat meat.",
+          "furigana": []
+        },
+        {
+          "ja": "なにを かいましたか。",
+          "form": "question",
+          "translation_en": "What did you buy?",
+          "furigana": []
+        },
+        {
+          "ja": "きのう えいがを みました。",
+          "form": "past",
+          "translation_en": "I watched a movie yesterday.",
+          "furigana": []
+        },
+        {
+          "ja": "みずを ください。",
+          "form": "affirmative",
+          "translation_en": "Please give me water.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "ともだちを あいました。",
+          "right": "ともだちに あいました。",
+          "why": "あう (to meet) is intransitive in Japanese — it takes に, not を. The person you meet is marked with に, not を."
+        },
+        {
+          "wrong": "にほんごを わかります。",
+          "right": "にほんごが わかります。",
+          "why": "わかる (to understand) takes が, not を. Same applies to すき, きらい, できる — they all take が."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-003",
+          "note": "Stative predicates like すき / わかる / できる take が, not を, even when English uses an object."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "n5-005",
+      "pattern": "に",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 4,
+      "meaning_en": "Multi-purpose: location of existence / specific time / direction-destination / indirect object (recipient)",
+      "meaning_ja": "ばしょ・じかん・あいてを しめす",
+      "form_rules": {
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "location_of_existence",
+            "label": "Location of existence (with ある／いる)",
+            "example": "へやに ねこが います。"
+          },
+          {
+            "form": "specific_time",
+            "label": "Specific clock / calendar time",
+            "example": "7じに おきます。"
+          },
+          {
+            "form": "destination",
+            "label": "Direction / destination",
+            "example": "にほんに いきます。"
+          },
+          {
+            "form": "recipient",
+            "label": "Indirect object (recipient)",
+            "example": "ともだちに ほんを あげます。"
+          }
+        ]
+      },
+      "explanation_en": "に has four core uses at N5: (1) location of EXISTENCE with ある／いる, (2) specific point in TIME (7じに, げつようびに), (3) DESTINATION with movement verbs (いく, くる, かえる), (4) RECIPIENT of giving / sending verbs (あげる, おくる, でんわする). Compare carefully with で (location of ACTION) and へ (purely directional).",
+      "examples": [
+        {
+          "ja": "7じに おきます。",
+          "form": "affirmative",
+          "translation_en": "I get up at 7 o'clock.",
+          "furigana": []
+        },
+        {
+          "ja": "にほんに いきません。",
+          "form": "negative",
+          "translation_en": "I'm not going to Japan.",
+          "furigana": []
+        },
+        {
+          "ja": "へやに なにが ありますか。",
+          "form": "question",
+          "translation_en": "What's in the room?",
+          "furigana": []
+        },
+        {
+          "ja": "ともだちに ほんを あげました。",
+          "form": "past",
+          "translation_en": "I gave a book to my friend.",
+          "furigana": []
+        },
+        {
+          "ja": "うちに かえります。",
+          "form": "affirmative",
+          "translation_en": "I'm going home.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "としょかんに ほんを よみます。",
+          "right": "としょかんで ほんを よみます。",
+          "why": "Location of an ACTION (where you do something) takes で. Location of EXISTENCE takes に. Reading is an action, so use で."
+        },
+        {
+          "wrong": "あした に いきます。",
+          "right": "あした いきます。",
+          "why": "Relative time words (あした, きょう, きのう, いま, まいにち) DON'T take に. Only specific clock / calendar times do (7じに, げつようびに, 4がつに)."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-007",
+          "note": "に = location of existence; で = location of action. へやに ねこが います (the cat IS in the room) vs へやで ねこと あそびます (I PLAY with the cat in the room)."
+        },
+        {
+          "with_pattern_id": "n5-006",
+          "note": "に = destination (general, also covers existence/time/recipient); へ = direction (purely movement-toward, slightly more formal)."
+        }
+      ],
+      "notes": "The に vs で distinction (existence vs action) is a top-3 N5 error source. Always ask: is the verb stative (ある／いる) or active (する／たべる／よむ)?"
+    },
+    {
+      "id": "n5-006",
+      "pattern": "へ",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 5,
+      "meaning_en": "Direction marker — toward (used with movement verbs)",
+      "meaning_ja": "ほうこうを しめす",
+      "form_rules": {
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "direction",
+            "label": "Direction with movement verbs",
+            "example": "にほんへ いきます。"
+          }
+        ]
+      },
+      "explanation_en": "へ marks DIRECTION — toward a destination — with movement verbs (いく, くる, かえる). Pronounced 'e' (same as え) but written with its own kana へ. Largely interchangeable with に for destinations; へ feels slightly more formal and emphasizes the direction itself, while に emphasizes arrival.",
+      "examples": [
+        {
+          "ja": "にほんへ いきます。",
+          "form": "affirmative",
+          "translation_en": "I'm going to Japan.",
+          "furigana": []
+        },
+        {
+          "ja": "うみへ いきません。",
+          "form": "negative",
+          "translation_en": "I'm not going to the sea.",
+          "furigana": []
+        },
+        {
+          "ja": "どこへ いきますか。",
+          "form": "question",
+          "translation_en": "Where are you going?",
+          "furigana": []
+        },
+        {
+          "ja": "がっこうへ かえりました。",
+          "form": "past",
+          "translation_en": "I returned to school.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "へやへ ねこが います。",
+          "right": "へやに ねこが います。",
+          "why": "へ marks direction of MOVEMENT only. For existence (ある／いる), always use に."
+        },
+        {
+          "wrong": "にほんえ いきます。",
+          "right": "にほんへ いきます。",
+          "why": "The direction particle is written へ (he-kana) even though pronounced 'e'. Don't substitute え."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-005",
+          "note": "に covers destination + existence + time + recipient. へ is destination-only and slightly more formal. For movement verbs, both work; for everything else, use に."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "n5-007",
+      "pattern": "で",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 6,
+      "meaning_en": "Location of action / means / instrument — where action takes place, by what means, with what tool",
+      "meaning_ja": "ばしょ・てだんを しめす",
+      "form_rules": {
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "location_of_action",
+            "label": "Where an action happens",
+            "example": "としょかんで べんきょうします。"
+          },
+          {
+            "form": "means_transport",
+            "label": "Means of transport",
+            "example": "バスで いきます。"
+          },
+          {
+            "form": "instrument",
+            "label": "Tool / instrument",
+            "example": "えんぴつで かきます。"
+          },
+          {
+            "form": "language",
+            "label": "Language used",
+            "example": "にほんごで はなします。"
+          }
+        ]
+      },
+      "explanation_en": "で marks (1) location of ACTION (where you do something — contrast with に for existence), (2) means of TRANSPORT (バスで, でんしゃで, ひこうきで), (3) INSTRUMENT (えんぴつで, ペンで, はしで), (4) LANGUAGE used (にほんごで, えいごで). The single thread: で = 'using' or 'at this place to do something'.",
+      "examples": [
+        {
+          "ja": "としょかんで べんきょうします。",
+          "form": "affirmative",
+          "translation_en": "I study at the library.",
+          "furigana": []
+        },
+        {
+          "ja": "バスで いきます。",
+          "form": "affirmative",
+          "translation_en": "I go by bus.",
+          "furigana": []
+        },
+        {
+          "ja": "ここで たばこを すいません。",
+          "form": "negative",
+          "translation_en": "I don't smoke cigarettes here.",
+          "furigana": []
+        },
+        {
+          "ja": "なんで きましたか。",
+          "form": "question",
+          "translation_en": "How did you come? / By what means?",
+          "furigana": []
+        },
+        {
+          "ja": "にほんごで はなしました。",
+          "form": "past",
+          "translation_en": "I spoke in Japanese.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "へやで ねこが います。",
+          "right": "へやに ねこが います。",
+          "why": "Existence (ある／いる) takes に, not で. で is for action verbs only."
+        },
+        {
+          "wrong": "がっこうで いきます。",
+          "right": "がっこうへ いきます。 (or がっこうに いきます。)",
+          "why": "Destination of movement takes へ or に, not で. で would mean 'do something AT school', not 'go to school'."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-005",
+          "note": "Classic pair: に (existence) vs で (action). Memorize a stative verb list (ある／いる／すんでいる) — those take に. Everything else takes で."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "n5-008",
+      "pattern": "と",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 7,
+      "meaning_en": "With (companion) / and (exhaustive listing) / quotation marker",
+      "meaning_ja": "「いっしょに」「と」「いう」",
+      "form_rules": {
+        "attaches_to": [
+          "noun",
+          "quoted_clause"
+        ],
+        "conjugations": [
+          {
+            "form": "companion",
+            "label": "Together with someone",
+            "example": "ともだちと いきます。"
+          },
+          {
+            "form": "listing",
+            "label": "And — EXHAUSTIVE noun listing",
+            "example": "パンと コーヒーを たべました。"
+          },
+          {
+            "form": "quotation",
+            "label": "Quotation (with いう / おもう)",
+            "example": "「こんにちは」と いいました。"
+          }
+        ]
+      },
+      "explanation_en": "と has three N5 uses: (1) WITH a person (ともだちと あう), (2) AND for listing nouns EXHAUSTIVELY — only these and nothing else (パンと コーヒー), and (3) QUOTATION marker before いう (say) or おもう (think). Never use と to list verbs or adjectives — that needs て-form.",
+      "examples": [
+        {
+          "ja": "ともだちと いきます。",
+          "form": "affirmative",
+          "translation_en": "I'm going with my friend.",
+          "furigana": []
+        },
+        {
+          "ja": "パンと コーヒーを たべました。",
+          "form": "past",
+          "translation_en": "I ate bread and (only) coffee.",
+          "furigana": []
+        },
+        {
+          "ja": "「こんにちは」と いいました。",
+          "form": "past",
+          "translation_en": "I said 'hello.'",
+          "furigana": []
+        },
+        {
+          "ja": "ともだちと あいませんでした。",
+          "form": "negative",
+          "translation_en": "I didn't meet my friend.",
+          "furigana": []
+        },
+        {
+          "ja": "だれと いきますか。",
+          "form": "question",
+          "translation_en": "Who are you going with?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "りんごや バナナと たべます。",
+          "right": "りんごや バナナを たべます。 / りんごと バナナを たべます。",
+          "why": "Don't mix や (non-exhaustive) and と (exhaustive) in the same listing. Pick one: と if you mean 'only these', や if 'these and others (etc.)'."
+        },
+        {
+          "wrong": "あついと さむいです。",
+          "right": "あつくて さむいです。",
+          "why": "Don't use と to chain adjectives or verbs. Use the て-form (あつくて) for that."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": null,
+          "note": "と (exhaustive: A and B, full stop) vs や (non-exhaustive: A, B, etc., among others). や is often paired with など."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "n5-009",
+      "pattern": "から",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 8,
+      "meaning_en": "From (starting point in time / place) / because (reason)",
+      "meaning_ja": "「いつ・どこ から」「りゆう」",
+      "form_rules": {
+        "attaches_to": [
+          "noun",
+          "plain_or_polite_clause"
+        ],
+        "conjugations": [
+          {
+            "form": "from_place",
+            "label": "From (place)",
+            "example": "アメリカから きました。"
+          },
+          {
+            "form": "from_time",
+            "label": "From (time)",
+            "example": "9じから しごとです。"
+          },
+          {
+            "form": "because",
+            "label": "Because (reason)",
+            "example": "あついから、まどを あけてください。"
+          }
+        ]
+      },
+      "explanation_en": "から has two roles at N5: (1) FROM — a starting point in time or place, attaching to a noun (9じから, とうきょうから), and (2) BECAUSE — attaching to a full clause (plain or polite form), giving the reason for what follows. Often paired with まで (until). The 'because' use commonly precedes a request or command.",
+      "examples": [
+        {
+          "ja": "9じから しごとです。",
+          "form": "affirmative",
+          "translation_en": "Work starts at 9.",
+          "furigana": []
+        },
+        {
+          "ja": "アメリカから きました。",
+          "form": "past",
+          "translation_en": "I came from America.",
+          "furigana": []
+        },
+        {
+          "ja": "あついから、まどを あけてください。",
+          "form": "affirmative",
+          "translation_en": "It's hot, so please open the window.",
+          "furigana": []
+        },
+        {
+          "ja": "なんじから ですか。",
+          "form": "question",
+          "translation_en": "From what time?",
+          "furigana": []
+        },
+        {
+          "ja": "たかいから、かいません。",
+          "form": "negative",
+          "translation_en": "It's expensive, so I won't buy it.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "あつい です から、まどを あけてください。",
+          "right": "あついから、まどを あけてください。 (or あついですから、〜)",
+          "why": "い-adjectives attach から directly (あついから). Don't insert です between them. Polite form あついですから is grammatical but stylistically less natural."
+        },
+        {
+          "wrong": "がっこうへ いきますから、ともだちに あいます。",
+          "right": "がっこうへ いって、ともだちに あいます。 (sequential) — OR — ともだちに あうから、がっこうへ いきます。 (because)",
+          "why": "から (because) connects REASON → result. The reason clause comes first. If you're listing sequential actions, use the て-form, not から."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-010",
+          "note": "から (from time/place) is often paired with まで (until time/place): 9じから 5じまで = from 9 to 5."
+        }
+      ],
+      "notes": "Note ので is a softer, more polite alternative for 'because' (Upper N5 / borderline)."
+    },
+    {
+      "id": "n5-010",
+      "pattern": "まで",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 9,
+      "meaning_en": "Until / up to (a point in time or place); often paired with から",
+      "meaning_ja": "「いつ・どこ まで」",
+      "form_rules": {
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "until_time",
+            "label": "Until (time)",
+            "example": "5じまで しごとです。"
+          },
+          {
+            "form": "up_to_place",
+            "label": "Up to / as far as (place)",
+            "example": "とうきょうまで いきます。"
+          },
+          {
+            "form": "paired",
+            "label": "Paired with から (from–to)",
+            "example": "9じから 5じまで しごとです。"
+          }
+        ]
+      },
+      "explanation_en": "まで marks the END of a span — until a time, up to a place. Most often paired with から to mark a range: 9じから 5じまで (from 9 to 5), とうきょうから おおさかまで (from Tokyo to Osaka). Use only with nouns at N5; the までに variant ('by a deadline') is N4.",
+      "examples": [
+        {
+          "ja": "5じまで しごとです。",
+          "form": "affirmative",
+          "translation_en": "I work until 5.",
+          "furigana": []
+        },
+        {
+          "ja": "9じから 5じまで しごとです。",
+          "form": "affirmative",
+          "translation_en": "I work from 9 to 5.",
+          "furigana": []
+        },
+        {
+          "ja": "うちまで あるきました。",
+          "form": "past",
+          "translation_en": "I walked all the way home.",
+          "furigana": []
+        },
+        {
+          "ja": "なんじまで ですか。",
+          "form": "question",
+          "translation_en": "Until what time?",
+          "furigana": []
+        },
+        {
+          "ja": "そこまで タクシーで いきません。",
+          "form": "negative",
+          "translation_en": "I won't take a taxi that far.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "5じから しごとです。 (when meaning 'until 5')",
+          "right": "5じまで しごとです。",
+          "why": "から marks the START of a span; まで marks the END. 5じから = 'from 5'; 5じまで = 'until 5'. They are opposites."
+        },
+        {
+          "wrong": "あした まで に きます。",
+          "right": "あしたまでに きます。 (or simpler at N5: あしたまで に いません)",
+          "why": "までに (by a deadline) is N4 — beyond N5 scope. At N5, use まで for a continuous span and stick to time-point に for deadlines."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-009",
+          "note": "から marks start; まで marks end. They are most commonly used together as a range."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "n5-011",
+      "pattern": "や",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 10,
+      "meaning_en": "And — non-exhaustive listing (these and others)",
+      "meaning_ja": "「Aや B (など)」",
+      "form_rules": {
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "listing",
+            "label": "Lists nouns non-exhaustively",
+            "example": "りんごや バナナを たべます。"
+          },
+          {
+            "form": "with_nado",
+            "label": "Often paired with など (etc.)",
+            "example": "ペンや ノートなどを かいました。"
+          }
+        ]
+      },
+      "explanation_en": "や lists nouns NON-EXHAUSTIVELY — A, B, and others (implied). Often paired with など (etc.) at the end of the list. Contrast with と, which is EXHAUSTIVE — only A and B and nothing else.",
+      "examples": [
+        {
+          "ja": "りんごや バナナを たべます。",
+          "form": "affirmative",
+          "translation_en": "I eat apples, bananas, etc.",
+          "furigana": []
+        },
+        {
+          "ja": "ペンや ノートなどを かいました。",
+          "form": "past",
+          "translation_en": "I bought pens, notebooks, and so on.",
+          "furigana": []
+        },
+        {
+          "ja": "なにや なにを かいましたか。",
+          "form": "question",
+          "translation_en": "What and what did you buy?",
+          "furigana": []
+        },
+        {
+          "ja": "こうえんや えきの ちかくに カフェが あります。",
+          "form": "affirmative",
+          "translation_en": "There are cafes near parks, stations, etc.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "りんごや バナナと たべます。",
+          "right": "りんごや バナナを たべます。 (non-exhaustive) / りんごと バナナを たべます。 (exhaustive)",
+          "why": "Don't mix や (non-exhaustive) and と (exhaustive) in the same listing. Pick one based on whether you want to imply 'and others'."
+        },
+        {
+          "wrong": "りんご や あかい や...",
+          "right": "りんごや バナナや みかんなど",
+          "why": "や connects nouns only — never adjectives or verbs. For chaining adjectives use the て-form."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-008",
+          "note": "や = non-exhaustive (and others). と = exhaustive (only these). Pick based on whether 'etc.' is implied."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "n5-012",
+      "pattern": "か",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 11,
+      "meaning_en": "Sentence-final question marker / 'or' between alternatives",
+      "meaning_ja": "「ぎもん」「Aか B」",
+      "form_rules": {
+        "attaches_to": [
+          "sentence_end",
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "yes_no",
+            "label": "Yes/no question marker",
+            "example": "あなたは がくせいですか。"
+          },
+          {
+            "form": "wh",
+            "label": "After wh-questions",
+            "example": "なにを たべましたか。"
+          },
+          {
+            "form": "or",
+            "label": "Or — between alternatives",
+            "example": "コーヒーか おちゃが いいです。"
+          }
+        ]
+      },
+      "explanation_en": "か at the END of a sentence makes it a question — works with yes/no AND wh-questions (どこ, なに, etc.). Between two nouns (Aか B), it means 'A or B'. Don't add a question mark in writing — か already signals the question.",
+      "examples": [
+        {
+          "ja": "あなたは がくせいですか。",
+          "form": "question",
+          "translation_en": "Are you a student?",
+          "furigana": []
+        },
+        {
+          "ja": "なにを たべましたか。",
+          "form": "question",
+          "translation_en": "What did you eat?",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーか おちゃが いいです。",
+          "form": "affirmative",
+          "translation_en": "Coffee or tea would be good.",
+          "furigana": []
+        },
+        {
+          "ja": "いつ いきますか。",
+          "form": "question",
+          "translation_en": "When are you going?",
+          "furigana": []
+        },
+        {
+          "ja": "これは ペンですか、えんぴつですか。",
+          "form": "question",
+          "translation_en": "Is this a pen or a pencil?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "あなたは がくせいですか?",
+          "right": "あなたは がくせいですか。",
+          "why": "Japanese uses か (and a period 。) to mark questions, not the Roman question mark ?. The ? is informal/foreign style."
+        },
+        {
+          "wrong": "コーヒーと おちゃか?",
+          "right": "コーヒーか おちゃか?",
+          "why": "For 'A or B' use か...か, not と...か. と means 'and' (exhaustive listing), not 'or'."
+        }
+      ],
+      "contrasts": [],
+      "notes": ""
+    },
+    {
+      "id": "n5-013",
+      "pattern": "も",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 12,
+      "meaning_en": "Also / too / even (with negation: 'not even / no one / nothing')",
+      "meaning_ja": "「〜も」",
+      "form_rules": {
+        "attaches_to": [
+          "noun"
+        ],
+        "conjugations": [
+          {
+            "form": "also",
+            "label": "Also / too — REPLACES は or を",
+            "example": "わたしも がくせいです。"
+          },
+          {
+            "form": "stacked",
+            "label": "STACKS after に, で, と, から, etc.",
+            "example": "とうきょうにも いきます。"
+          },
+          {
+            "form": "double_mo",
+            "label": "Both (Aも Bも)",
+            "example": "りんごも バナナも すきです。"
+          },
+          {
+            "form": "with_neg",
+            "label": "With negation: nothing / no one",
+            "example": "だれも きませんでした。"
+          }
+        ]
+      },
+      "explanation_en": "も means 'also/too/even'. It REPLACES は, が, or を: わたしも (NOT わたしはも). It STACKS after other particles: にも, でも, とも, からも. With negative verbs and question words like だれ/なに, it forms 'no one / nothing': だれも きませんでした (no one came).",
+      "examples": [
+        {
+          "ja": "わたしも がくせいです。",
+          "form": "affirmative",
+          "translation_en": "I am a student too.",
+          "furigana": []
+        },
+        {
+          "ja": "りんごも バナナも すきです。",
+          "form": "affirmative",
+          "translation_en": "I like both apples and bananas.",
+          "furigana": []
+        },
+        {
+          "ja": "とうきょうにも いきました。",
+          "form": "past",
+          "translation_en": "I went to Tokyo as well.",
+          "furigana": []
+        },
+        {
+          "ja": "だれも きませんでした。",
+          "form": "negative",
+          "translation_en": "No one came.",
+          "furigana": []
+        },
+        {
+          "ja": "なにも たべませんか。",
+          "form": "question",
+          "translation_en": "Won't you eat anything?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "わたしはも がくせいです。",
+          "right": "わたしも がくせいです。",
+          "why": "も REPLACES は (and を, が). Never write はも or をも. But it STACKS after に, で, と, etc.: とうきょうにも is correct."
+        },
+        {
+          "wrong": "だれも きました。",
+          "right": "だれも きませんでした。 (no one came) / みんな きました。 (everyone came)",
+          "why": "だれも with an AFFIRMATIVE verb is ungrammatical. To say 'everyone' use みんな. だれも only works with NEGATIVE verbs to mean 'no one'."
+        }
+      ],
+      "contrasts": [],
+      "notes": ""
+    },
+    {
+      "id": "n5-014",
+      "pattern": "これ／それ／あれ／どれ",
+      "category": "Demonstratives (こそあど)",
+      "categoryOrder": 3,
+      "patternOrder": 1,
+      "meaning_en": "Pronouns: this / that-near-listener / that-far / which-one (standalone, no noun follows)",
+      "meaning_ja": "「これ・それ・あれ・どれ」(ぶつ)",
+      "form_rules": {
+        "attaches_to": [
+          "standalone"
+        ],
+        "conjugations": [
+          {
+            "form": "kore",
+            "label": "Near speaker",
+            "example": "これは ほんです。"
+          },
+          {
+            "form": "sore",
+            "label": "Near listener",
+            "example": "それは ペンですか。"
+          },
+          {
+            "form": "are",
+            "label": "Far from both",
+            "example": "あれは くるまです。"
+          },
+          {
+            "form": "dore",
+            "label": "Question — which one",
+            "example": "どれが すきですか。"
+          }
+        ]
+      },
+      "explanation_en": "The こ/そ/あ/ど pronouns refer to OBJECTS (or abstract things). これ = near speaker, それ = near listener, あれ = far from both, どれ = which one (question). They stand alone — DON'T put a noun after them. For 'this book' use この (n5-015), not これ.",
+      "examples": [
+        {
+          "ja": "これは ほんです。",
+          "form": "affirmative",
+          "translation_en": "This is a book.",
+          "furigana": []
+        },
+        {
+          "ja": "それは なんですか。",
+          "form": "question",
+          "translation_en": "What is that (near you)?",
+          "furigana": []
+        },
+        {
+          "ja": "あれは くるまじゃありません。",
+          "form": "negative",
+          "translation_en": "That (over there) is not a car.",
+          "furigana": []
+        },
+        {
+          "ja": "どれが いちばん すきですか。",
+          "form": "question",
+          "translation_en": "Which one do you like best?",
+          "furigana": []
+        },
+        {
+          "ja": "これを ください。",
+          "form": "affirmative",
+          "translation_en": "Please give me this.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "これ ほんは おもしろいです。",
+          "right": "この ほんは おもしろいです。 / これは おもしろい ほんです。",
+          "why": "これ stands alone — never followed by a noun. For 'this book' use この + noun (see n5-015)."
+        },
+        {
+          "wrong": "あれは どれですか。",
+          "right": "あれは なんですか。",
+          "why": "どれ asks 'which one (of these options)?' — it's a chooser. To ask 'what is that?' use なん/なに."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-015",
+          "note": "The これ-series stands alone (pronouns). The この-series must be followed by a noun (adjectives)."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "n5-015",
+      "pattern": "この／その／あの／どの ＋ N (noun)",
+      "category": "Demonstratives (こそあど)",
+      "categoryOrder": 3,
+      "patternOrder": 2,
+      "meaning_en": "Adjective form: this / that / which + Noun (always followed by a noun)",
+      "meaning_ja": "「この・その・あの・どの ＋ めいし」",
+      "form_rules": {
+        "attaches_to": [
+          "before_noun"
+        ],
+        "conjugations": [
+          {
+            "form": "kono",
+            "label": "this + N (near speaker)",
+            "example": "この ほんを よみます。"
+          },
+          {
+            "form": "sono",
+            "label": "that + N (near listener)",
+            "example": "その ペンは あなたのですか。"
+          },
+          {
+            "form": "ano",
+            "label": "that + N (far)",
+            "example": "あの くるまは だれのですか。"
+          },
+          {
+            "form": "dono",
+            "label": "which + N (question)",
+            "example": "どの ねこが すきですか。"
+          }
+        ]
+      },
+      "explanation_en": "Use この/その/あの/どの directly before a noun. Mirrors これ/それ/あれ/どれ exactly but ALWAYS followed by a noun: この ほん = 'this book', あの 人 = 'that person'.",
+      "examples": [
+        {
+          "ja": "この ほんを よみました。",
+          "form": "past",
+          "translation_en": "I read this book.",
+          "furigana": []
+        },
+        {
+          "ja": "その ペンは あなたのですか。",
+          "form": "question",
+          "translation_en": "Is that pen yours?",
+          "furigana": []
+        },
+        {
+          "ja": "あの 人は だれですか。",
+          "form": "question",
+          "translation_en": "Who is that person?",
+          "furigana": []
+        },
+        {
+          "ja": "どの くるまが いいですか。",
+          "form": "question",
+          "translation_en": "Which car is good?",
+          "furigana": []
+        },
+        {
+          "ja": "この みせは あまり たかくないです。",
+          "form": "negative",
+          "translation_en": "This shop isn't very expensive.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "これの ほんを よみます。",
+          "right": "この ほんを よみます。",
+          "why": "Don't write これの ほん. Use この directly before a noun. これ + noun is wrong — それ is for 'that pronoun', この is for 'this + noun'."
+        },
+        {
+          "wrong": "この。",
+          "right": "この + (a noun) — always.",
+          "why": "この/その/あの/どの can NEVER stand alone — they MUST be followed by a noun. If standing alone, use これ/それ/あれ/どれ."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-014",
+          "note": "この + N = 'this + N'. これ alone = 'this' (pronoun)."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "n5-016",
+      "pattern": "ここ／そこ／あそこ／どこ",
+      "category": "Demonstratives (こそあど)",
+      "categoryOrder": 3,
+      "patternOrder": 3,
+      "meaning_en": "Location words: here / there-near-listener / over-there / where",
+      "meaning_ja": "ばしょの ことば",
+      "form_rules": {
+        "attaches_to": [
+          "standalone"
+        ],
+        "conjugations": [
+          {
+            "form": "koko",
+            "label": "Here (near speaker)",
+            "example": "ここは としょかんです。"
+          },
+          {
+            "form": "soko",
+            "label": "There (near listener)",
+            "example": "そこに ねこが います。"
+          },
+          {
+            "form": "asoko",
+            "label": "Over there (far from both)",
+            "example": "あそこへ いきましょう。"
+          },
+          {
+            "form": "doko",
+            "label": "Where (question)",
+            "example": "どこで かいましたか。"
+          }
+        ]
+      },
+      "explanation_en": "Same こ/そ/あ/ど logic but for LOCATIONS. Take は, が, に, で, から, まで etc. as needed. ここ/そこ/あそこ are statements; どこ asks 'where?'. With も + negative: どこにも いきません = 'I'm going nowhere'.",
+      "examples": [
+        {
+          "ja": "ここは としょかんです。",
+          "form": "affirmative",
+          "translation_en": "Here is the library.",
+          "furigana": []
+        },
+        {
+          "ja": "そこに ねこが います。",
+          "form": "affirmative",
+          "translation_en": "There is a cat there.",
+          "furigana": []
+        },
+        {
+          "ja": "どこで かいましたか。",
+          "form": "question",
+          "translation_en": "Where did you buy it?",
+          "furigana": []
+        },
+        {
+          "ja": "あそこは しずかです。",
+          "form": "affirmative",
+          "translation_en": "Over there is quiet.",
+          "furigana": []
+        },
+        {
+          "ja": "どこにも いきません。",
+          "form": "negative",
+          "translation_en": "I'm not going anywhere.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "ここに ねこは あります。",
+          "right": "ここに ねこが います。",
+          "why": "Use います for animate things (people, animals); あります is only for inanimate things."
+        },
+        {
+          "wrong": "どこも しずかです。 (with affirmative — meaning 'every place is quiet')",
+          "right": "どこも しずかです。 IS valid — but watch the rule: どこも + AFFIRMATIVE = 'everywhere'; どこも/どこにも + NEGATIVE = 'nowhere'.",
+          "why": "Polarity flip: question word + も + affirmative = 'every', + negative = 'no'. Same rule applies to だれも, なにも, いつも."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-014",
+          "note": "The ここ-series = LOCATIONS. The これ-series = OBJECTS. Don't mix them: 'here is a book' = ここに ほんが あります, NOT これに ほんが あります."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "n5-017",
+      "pattern": "なに／なん",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 1,
+      "meaning_en": "What — pronounced なに or なん depending on what follows",
+      "meaning_ja": "「なに」「なん」",
+      "form_rules": {
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "nani_with_o",
+            "label": "なに + を, が, も, は",
+            "example": "なにを たべますか。"
+          },
+          {
+            "form": "nan_with_d",
+            "label": "なん + です, でしょう, だ",
+            "example": "これは なんですか。"
+          },
+          {
+            "form": "nan_counter",
+            "label": "なん + counter (じ, にん, さい...)",
+            "example": "なんじですか。"
+          },
+          {
+            "form": "nan_de",
+            "label": "なんで (how / why; informal)",
+            "example": "なんで きましたか。"
+          }
+        ]
+      },
+      "explanation_en": "なに and なん both mean 'what'. The pronunciation depends on what follows: なん before です, ですか, でしょう, and counters (なんじ, なんにん, なんさい); なに before を, が, も, は. Memorize the pattern. なんで means 'how/why' (informal); なぜ is the formal 'why'.",
+      "examples": [
+        {
+          "ja": "なにを たべますか。",
+          "form": "question",
+          "translation_en": "What will you eat?",
+          "furigana": []
+        },
+        {
+          "ja": "これは なんですか。",
+          "form": "question",
+          "translation_en": "What is this?",
+          "furigana": []
+        },
+        {
+          "ja": "いま なんじですか。",
+          "form": "question",
+          "translation_en": "What time is it now?",
+          "furigana": []
+        },
+        {
+          "ja": "なにが すきですか。",
+          "form": "question",
+          "translation_en": "What do you like?",
+          "furigana": []
+        },
+        {
+          "ja": "なんで きましたか。",
+          "form": "question",
+          "translation_en": "How (by what means) did you come?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "なんを たべますか。",
+          "right": "なにを たべますか。",
+          "why": "なに before を (and が, も). Never なん before を. The trigger for なん is です / ですか / でしょう / counters."
+        },
+        {
+          "wrong": "なにじですか。",
+          "right": "なんじですか。",
+          "why": "Counters always trigger なん: なんじ, なんにん, なんさい, なんがつ, なんにち, なんようび."
+        }
+      ],
+      "contrasts": [],
+      "notes": ""
+    },
+    {
+      "id": "n5-018",
+      "pattern": "だれ／どなた",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 2,
+      "meaning_en": "Who — だれ casual; どなた polite",
+      "meaning_ja": "「だれ」(ふつう) ／ 「どなた」(ていねい)",
+      "form_rules": {
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "dare",
+            "label": "だれ — standard",
+            "example": "だれが きましたか。"
+          },
+          {
+            "form": "donata",
+            "label": "どなた — polite",
+            "example": "どなたですか。"
+          },
+          {
+            "form": "dare_no",
+            "label": "だれの — whose",
+            "example": "これは だれの かばんですか。"
+          },
+          {
+            "form": "dare_to",
+            "label": "だれと — with whom",
+            "example": "だれと いきますか。"
+          }
+        ]
+      },
+      "explanation_en": "だれ is the standard 'who'. どなた is more polite — used with strangers, customers, or in formal settings. Question words asking for new information take が, not は: だれが きましたか, never だれは.",
+      "examples": [
+        {
+          "ja": "だれが きましたか。",
+          "form": "question",
+          "translation_en": "Who came?",
+          "furigana": []
+        },
+        {
+          "ja": "これは だれの かばんですか。",
+          "form": "question",
+          "translation_en": "Whose bag is this?",
+          "furigana": []
+        },
+        {
+          "ja": "どなたですか。",
+          "form": "question",
+          "translation_en": "Who is it (polite)?",
+          "furigana": []
+        },
+        {
+          "ja": "だれと いきますか。",
+          "form": "question",
+          "translation_en": "With whom are you going?",
+          "furigana": []
+        },
+        {
+          "ja": "あの 人は だれですか。",
+          "form": "question",
+          "translation_en": "Who is that person?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "だれは きましたか。",
+          "right": "だれが きましたか。",
+          "why": "Question words asking for new info take が, not は. は marks already-known topics — incompatible with asking for new identity."
+        },
+        {
+          "wrong": "どなた + いますか (used with co-workers as a very simple casual question)",
+          "right": "Match register: with friends use だれ; with strangers, customers, or your boss use どなた.",
+          "why": "どなた is polite — using it with close friends sounds stiff. Using だれ with a customer sounds rude. Match the register."
+        }
+      ],
+      "contrasts": [],
+      "notes": ""
+    },
+    {
+      "id": "n5-019",
+      "pattern": "いつ",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 3,
+      "meaning_en": "When — pairs with から / まで / ごろ for richer time questions",
+      "meaning_ja": "「いつ」",
+      "form_rules": {
+        "attaches_to": [
+          "question_word"
+        ],
+        "conjugations": [
+          {
+            "form": "itsu_alone",
+            "label": "いつ — standalone (no particle)",
+            "example": "いつ いきますか。"
+          },
+          {
+            "form": "itsu_kara",
+            "label": "いつから — since when",
+            "example": "いつから にほんに いますか。"
+          },
+          {
+            "form": "itsu_made",
+            "label": "いつまで — until when",
+            "example": "いつまで やすみですか。"
+          },
+          {
+            "form": "itsu_goro",
+            "label": "いつごろ — around when",
+            "example": "いつごろ きますか。"
+          }
+        ]
+      },
+      "explanation_en": "いつ asks 'when?'. Often appears WITHOUT a particle (unlike English 'when' / Japanese 7じに). Pairs with から (since when?), まで (until when?), ごろ (around when?). Note: いつ itself doesn't take に — it's already a question, not a time point.",
+      "examples": [
+        {
+          "ja": "いつ いきますか。",
+          "form": "question",
+          "translation_en": "When are you going?",
+          "furigana": []
+        },
+        {
+          "ja": "いつまで やすみですか。",
+          "form": "question",
+          "translation_en": "Until when are you on holiday?",
+          "furigana": []
+        },
+        {
+          "ja": "いつから にほんに いますか。",
+          "form": "question",
+          "translation_en": "Since when have you been in Japan?",
+          "furigana": []
+        },
+        {
+          "ja": "いつごろ きますか。",
+          "form": "question",
+          "translation_en": "Around when will you come?",
+          "furigana": []
+        },
+        {
+          "ja": "いつでも いいです。",
+          "form": "affirmative",
+          "translation_en": "Any time is fine.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "いつに いきますか。",
+          "right": "いつ いきますか。",
+          "why": "いつ does NOT take に. に is only for SPECIFIC time points (7じに, げつようびに). いつ is itself the question — no particle needed."
+        },
+        {
+          "wrong": "いつ から いつ まで にほんに いますか。",
+          "right": "いつから いつまで にほんに いますか。",
+          "why": "から and まで attach directly to いつ — no space. いつから / いつまで are single units."
+        }
+      ],
+      "contrasts": [],
+      "notes": ""
+    },
+    {
+      "id": "n5-020",
+      "pattern": "まで",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 13,
+      "meaning_en": "until / up to",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'まで' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-021",
+      "pattern": "から～まで",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 14,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'から～まで' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-022",
+      "pattern": "や",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 15,
+      "meaning_en": "and — non-exhaustive",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'や' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-023",
+      "pattern": "か",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 16,
+      "meaning_en": "question marker",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'か' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-024",
+      "pattern": "か",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 17,
+      "meaning_en": "or — A か B",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'か' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-025",
+      "pattern": "ね",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 18,
+      "meaning_en": "confirmation / agreement",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'ね' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-026",
+      "pattern": "よ",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 19,
+      "meaning_en": "assertion / new information",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'よ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-027",
+      "pattern": "よね",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 20,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'よね' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-028",
+      "pattern": "～の",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 21,
+      "meaning_en": "consolidated entry — sub-uses below",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～の' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-029",
+      "pattern": "possessive / noun-modifier",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 22,
+      "meaning_en": "e.g., わたしの本",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'possessive / noun-modifier' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-030",
+      "pattern": "nominalizer in basic use",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 23,
+      "meaning_en": "e.g., 食べるのがすきです",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'nominalizer in basic use' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-031",
+      "pattern": "informal question marker",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 24,
+      "meaning_en": "e.g., 行くの？",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'informal question marker' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-032",
+      "pattern": "も",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 25,
+      "meaning_en": "also / even",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'も' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-033",
+      "pattern": "だけ",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 26,
+      "meaning_en": "only",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'だけ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-034",
+      "pattern": "しか～ない",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 27,
+      "meaning_en": "only, with negative",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'しか～ない' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-035",
+      "pattern": "ぐらい / くらい",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 28,
+      "meaning_en": "approximately",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'ぐらい / くらい' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-036",
+      "pattern": "ごろ",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 29,
+      "meaning_en": "around — for time points",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'ごろ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-037",
+      "pattern": "など",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 30,
+      "meaning_en": "etc.",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'など' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-038",
+      "pattern": "ずつ",
+      "category": "Particles",
+      "categoryOrder": 2,
+      "patternOrder": 31,
+      "meaning_en": "each / per",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'ずつ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-039",
+      "pattern": "これ / それ / あれ / どれ",
+      "category": "Demonstratives (こそあど)",
+      "categoryOrder": 5,
+      "patternOrder": 1,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'これ / それ / あれ / どれ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-040",
+      "pattern": "この / その / あの / どの + Noun",
+      "category": "Demonstratives (こそあど)",
+      "categoryOrder": 5,
+      "patternOrder": 2,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'この / その / あの / どの + Noun' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-041",
+      "pattern": "ここ / そこ / あそこ / どこ",
+      "category": "Demonstratives (こそあど)",
+      "categoryOrder": 5,
+      "patternOrder": 3,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'ここ / そこ / あそこ / どこ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-042",
+      "pattern": "こちら / そちら / あちら / どちら",
+      "category": "Demonstratives (こそあど)",
+      "categoryOrder": 5,
+      "patternOrder": 4,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'こちら / そちら / あちら / どちら' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-043",
+      "pattern": "こんな / そんな / あんな / どんな + Noun",
+      "category": "Demonstratives (こそあど)",
+      "categoryOrder": 5,
+      "patternOrder": 5,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'こんな / そんな / あんな / どんな + Noun' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-044",
+      "pattern": "こう / そう / ああ / どう",
+      "category": "Demonstratives (こそあど)",
+      "categoryOrder": 5,
+      "patternOrder": 6,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'こう / そう / ああ / どう' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-045",
+      "pattern": "なん / なに",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 4,
+      "meaning_en": "what",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'なん / なに' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-046",
+      "pattern": "だれ / どなた",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 5,
+      "meaning_en": "who",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'だれ / どなた' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-047",
+      "pattern": "いつ",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 6,
+      "meaning_en": "when",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'いつ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-048",
+      "pattern": "どこ",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 7,
+      "meaning_en": "where",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'どこ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-049",
+      "pattern": "どれ / どの / どちら",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 8,
+      "meaning_en": "which",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'どれ / どの / どちら' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-050",
+      "pattern": "どう / いかが",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 9,
+      "meaning_en": "how",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'どう / いかが' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-051",
+      "pattern": "どうして / なぜ",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 10,
+      "meaning_en": "why",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'どうして / なぜ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-052",
+      "pattern": "どうやって",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 11,
+      "meaning_en": "how to / by what means",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'どうやって' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+    },
+    {
+      "id": "n5-053",
+      "pattern": "いくら",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 12,
+      "meaning_en": "how much — price",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'いくら' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-054",
+      "pattern": "いくつ",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 13,
+      "meaning_en": "how many",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'いくつ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-055",
+      "pattern": "なんじ",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 14,
+      "meaning_en": "what time",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'なんじ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-056",
+      "pattern": "なんようび",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 15,
+      "meaning_en": "what day of the week",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'なんようび' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-057",
+      "pattern": "なんがつ なんにち",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 16,
+      "meaning_en": "what month, what day",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'なんがつ なんにち' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-058",
+      "pattern": "Verb-ます",
+      "category": "Verbs — Tense and Politeness (ます-form)",
+      "categoryOrder": 6,
+      "patternOrder": 1,
+      "meaning_en": "non-past affirmative",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ます' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-059",
+      "pattern": "Verb-ません",
+      "category": "Verbs — Tense and Politeness (ます-form)",
+      "categoryOrder": 6,
+      "patternOrder": 2,
+      "meaning_en": "non-past negative",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ません' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-060",
+      "pattern": "Verb-ました",
+      "category": "Verbs — Tense and Politeness (ます-form)",
+      "categoryOrder": 6,
+      "patternOrder": 3,
+      "meaning_en": "past affirmative",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ました' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-061",
+      "pattern": "Verb-ませんでした",
+      "category": "Verbs — Tense and Politeness (ます-form)",
+      "categoryOrder": 6,
+      "patternOrder": 4,
+      "meaning_en": "past negative",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ませんでした' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-062",
+      "pattern": "Verb-ましょう",
+      "category": "Verbs — Tense and Politeness (ます-form)",
+      "categoryOrder": 6,
+      "patternOrder": 5,
+      "meaning_en": "let's / shall we",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ましょう' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-063",
+      "pattern": "Verb-ましょうか",
+      "category": "Verbs — Tense and Politeness (ます-form)",
+      "categoryOrder": 6,
+      "patternOrder": 6,
+      "meaning_en": "shall I / shall we?",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ましょうか' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-064",
+      "pattern": "Verb-ませんか",
+      "category": "Verbs — Tense and Politeness (ます-form)",
+      "categoryOrder": 6,
+      "patternOrder": 7,
+      "meaning_en": "won't you? / invitation",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ませんか' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-065",
+      "pattern": "Verb-る / Verb-u",
+      "category": "Verbs — Plain (Dictionary) Form and Negation",
+      "categoryOrder": 7,
+      "patternOrder": 1,
+      "meaning_en": "dictionary form",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-る / Verb-u' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-066",
+      "pattern": "Verb-ない",
+      "category": "Verbs — Plain (Dictionary) Form and Negation",
+      "categoryOrder": 7,
+      "patternOrder": 2,
+      "meaning_en": "plain negative",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ない' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-067",
+      "pattern": "Verb-た",
+      "category": "Verbs — Plain (Dictionary) Form and Negation",
+      "categoryOrder": 7,
+      "patternOrder": 3,
+      "meaning_en": "plain past",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-た' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-068",
+      "pattern": "Verb-なかった",
+      "category": "Verbs — Plain (Dictionary) Form and Negation",
+      "categoryOrder": 7,
+      "patternOrder": 4,
+      "meaning_en": "plain past negative",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-なかった' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-069",
+      "pattern": "Verb-て",
+      "category": "Te-form and Related Patterns",
+      "categoryOrder": 8,
+      "patternOrder": 1,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-て' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-070",
+      "pattern": "Verb-て、Verb-て、…",
+      "category": "Te-form and Related Patterns",
+      "categoryOrder": 8,
+      "patternOrder": 2,
+      "meaning_en": "sequential actions",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-て、Verb-て、…' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-071",
+      "pattern": "Verb-てください",
+      "category": "Te-form and Related Patterns",
+      "categoryOrder": 8,
+      "patternOrder": 3,
+      "meaning_en": "please do",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-てください' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-072",
+      "pattern": "Verb-ています",
+      "category": "Te-form and Related Patterns",
+      "categoryOrder": 8,
+      "patternOrder": 4,
+      "meaning_en": "progressive / state",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ています' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-073",
+      "pattern": "Verb-ていません",
+      "category": "Te-form and Related Patterns",
+      "categoryOrder": 8,
+      "patternOrder": 5,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ていません' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-074",
+      "pattern": "Verb-てもいいです",
+      "category": "Te-form and Related Patterns",
+      "categoryOrder": 8,
+      "patternOrder": 6,
+      "meaning_en": "may / it's okay to",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-てもいいです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-075",
+      "pattern": "Verb-てはいけません",
+      "category": "Te-form and Related Patterns",
+      "categoryOrder": 8,
+      "patternOrder": 7,
+      "meaning_en": "must not",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-てはいけません' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-076",
+      "pattern": "Verb-から",
+      "category": "Te-form and Related Patterns",
+      "categoryOrder": 8,
+      "patternOrder": 8,
+      "meaning_en": "after doing — Verb-てから",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-から' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-077",
+      "pattern": "Verb-ないでください",
+      "category": "Te-form and Related Patterns",
+      "categoryOrder": 8,
+      "patternOrder": 9,
+      "meaning_en": "please don't",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ないでください' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-078",
+      "pattern": "い-Adjective + Noun",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 1,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'い-Adjective + Noun' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-079",
+      "pattern": "い-Adjective + です",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 2,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'い-Adjective + です' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-080",
+      "pattern": "い-Adjective negative: ～くないです / ～くありません",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 3,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'い-Adjective negative: ～くないです / ～くありません' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-081",
+      "pattern": "い-Adjective past: ～かったです",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 4,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'い-Adjective past: ～かったです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-082",
+      "pattern": "い-Adjective past negative: ～くなかったです / ～くありませんでした",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 5,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'い-Adjective past negative: ～くなかったです / ～くありませんでした' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-083",
+      "pattern": "い-Adjective て-form: ～くて",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 6,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'い-Adjective て-form: ～くて' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-084",
+      "pattern": "な-Adjective + な + Noun",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 7,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'な-Adjective + な + Noun' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-085",
+      "pattern": "な-Adjective + です",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 8,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'な-Adjective + です' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-086",
+      "pattern": "な-Adjective negative: ～じゃありません / ～ではありません",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 9,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'な-Adjective negative: ～じゃありません / ～ではありません' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-087",
+      "pattern": "な-Adjective past: ～でした",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 10,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'な-Adjective past: ～でした' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-088",
+      "pattern": "な-Adjective past negative: ～じゃありませんでした",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 11,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'な-Adjective past negative: ～じゃありませんでした' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-089",
+      "pattern": "な-Adjective て-form: ～で",
+      "category": "Adjectives",
+      "categoryOrder": 9,
+      "patternOrder": 12,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'な-Adjective て-form: ～で' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-090",
+      "pattern": "あります",
+      "category": "Existence and Possession",
+      "categoryOrder": 10,
+      "patternOrder": 1,
+      "meaning_en": "inanimate exists",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'あります' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-091",
+      "pattern": "います",
+      "category": "Existence and Possession",
+      "categoryOrder": 10,
+      "patternOrder": 2,
+      "meaning_en": "animate exists",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'います' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-092",
+      "pattern": "～に～があります / います",
+      "category": "Existence and Possession",
+      "categoryOrder": 10,
+      "patternOrder": 3,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～に～があります / います' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-093",
+      "pattern": "～は～にあります / います",
+      "category": "Existence and Possession",
+      "categoryOrder": 10,
+      "patternOrder": 4,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～は～にあります / います' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-094",
+      "pattern": "～があります",
+      "category": "Existence and Possession",
+      "categoryOrder": 10,
+      "patternOrder": 5,
+      "meaning_en": "have / there is",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～があります' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-095",
+      "pattern": "～は～より～です",
+      "category": "Comparison and Preference",
+      "categoryOrder": 11,
+      "patternOrder": 1,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～は～より～です' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-096",
+      "pattern": "～より～のほうが～です",
+      "category": "Comparison and Preference",
+      "categoryOrder": 11,
+      "patternOrder": 2,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～より～のほうが～です' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-097",
+      "pattern": "～と～と、どちらが～ですか",
+      "category": "Comparison and Preference",
+      "categoryOrder": 11,
+      "patternOrder": 3,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～と～と、どちらが～ですか' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-098",
+      "pattern": "～",
+      "category": "Comparison and Preference",
+      "categoryOrder": 11,
+      "patternOrder": 4,
+      "meaning_en": "の中",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-099",
+      "pattern": "～がすきです / きらいです",
+      "category": "Comparison and Preference",
+      "categoryOrder": 11,
+      "patternOrder": 5,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～がすきです / きらいです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-100",
+      "pattern": "～がじょうずです / へたです",
+      "category": "Comparison and Preference",
+      "categoryOrder": 11,
+      "patternOrder": 6,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～がじょうずです / へたです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-101",
+      "pattern": "～がほしいです",
+      "category": "Comparison and Preference",
+      "categoryOrder": 11,
+      "patternOrder": 7,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～がほしいです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-102",
+      "pattern": "～がわかります",
+      "category": "Comparison and Preference",
+      "categoryOrder": 11,
+      "patternOrder": 8,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～がわかります' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-103",
+      "pattern": "～ができます",
+      "category": "Comparison and Preference",
+      "categoryOrder": 11,
+      "patternOrder": 9,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～ができます' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-104",
+      "pattern": "Verb-stem + たいです",
+      "category": "Desiderative and Volitional",
+      "categoryOrder": 12,
+      "patternOrder": 1,
+      "meaning_en": "want to do",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-stem + たいです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-105",
+      "pattern": "Verb-stem + たくないです",
+      "category": "Desiderative and Volitional",
+      "categoryOrder": 12,
+      "patternOrder": 2,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-stem + たくないです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-106",
+      "pattern": "Noun + が ほしいです",
+      "category": "Desiderative and Volitional",
+      "categoryOrder": 12,
+      "patternOrder": 3,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Noun + が ほしいです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-107",
+      "pattern": "Verb-stem + に いきます / きます / かえります",
+      "category": "Desiderative and Volitional",
+      "categoryOrder": 12,
+      "patternOrder": 4,
+      "meaning_en": "go/come/return to do",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-stem + に いきます / きます / かえります' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-108",
+      "pattern": "Number + counter",
+      "category": "Counters and Quantity",
+      "categoryOrder": 13,
+      "patternOrder": 1,
+      "meaning_en": "kanji counters in N5 syllabus: 人, 本, 番; kana counters: まい, だい, さつ, ひき, はい, こ, かい, ど, つ etc.",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Number + counter' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-109",
+      "pattern": "いくつ / いくら / なんにん / なんまい etc.",
+      "category": "Counters and Quantity",
+      "categoryOrder": 13,
+      "patternOrder": 2,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'いくつ / いくら / なんにん / なんまい etc.' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-110",
+      "pattern": "Verb + counter + Verb",
+      "category": "Counters and Quantity",
+      "categoryOrder": 13,
+      "patternOrder": 3,
+      "meaning_en": "e.g., りんごを ふたつ かいました",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb + counter + Verb' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-111",
+      "pattern": "～じ",
+      "category": "Time Expressions",
+      "categoryOrder": 14,
+      "patternOrder": 1,
+      "meaning_en": "o'clock",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～じ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-112",
+      "pattern": "～ふん / ぷん",
+      "category": "Time Expressions",
+      "categoryOrder": 14,
+      "patternOrder": 2,
+      "meaning_en": "minutes",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～ふん / ぷん' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-113",
+      "pattern": "～じはん",
+      "category": "Time Expressions",
+      "categoryOrder": 14,
+      "patternOrder": 3,
+      "meaning_en": "half past",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～じはん' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-114",
+      "pattern": "～から～まで",
+      "category": "Time Expressions",
+      "categoryOrder": 14,
+      "patternOrder": 4,
+      "meaning_en": "from~to~",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～から～まで' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-115",
+      "pattern": "～に",
+      "category": "Time Expressions",
+      "categoryOrder": 14,
+      "patternOrder": 5,
+      "meaning_en": "specific time",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～に' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-116",
+      "pattern": "まいにち / まいしゅう / まいつき / まいとし",
+      "category": "Time Expressions",
+      "categoryOrder": 14,
+      "patternOrder": 6,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'まいにち / まいしゅう / まいつき / まいとし' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-117",
+      "pattern": "きょう / あした / きのう / あさって / おととい",
+      "category": "Time Expressions",
+      "categoryOrder": 14,
+      "patternOrder": 7,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'きょう / あした / きのう / あさって / おととい' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-118",
+      "pattern": "いま / すぐ / もう / まだ",
+      "category": "Time Expressions",
+      "categoryOrder": 14,
+      "patternOrder": 8,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'いま / すぐ / もう / まだ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-119",
+      "pattern": "～まえ",
+      "category": "Time Expressions",
+      "categoryOrder": 14,
+      "patternOrder": 9,
+      "meaning_en": "before",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～まえ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-120",
+      "pattern": "～あと",
+      "category": "Time Expressions",
+      "categoryOrder": 14,
+      "patternOrder": 10,
+      "meaning_en": "after — limited at N5",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～あと' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-121",
+      "pattern": "そして",
+      "category": "Conjunctions and Connectives",
+      "categoryOrder": 15,
+      "patternOrder": 1,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'そして' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-122",
+      "pattern": "それから",
+      "category": "Conjunctions and Connectives",
+      "categoryOrder": 15,
+      "patternOrder": 2,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'それから' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-123",
+      "pattern": "でも",
+      "category": "Conjunctions and Connectives",
+      "categoryOrder": 15,
+      "patternOrder": 3,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'でも' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-124",
+      "pattern": "しかし",
+      "category": "Conjunctions and Connectives",
+      "categoryOrder": 15,
+      "patternOrder": 4,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'しかし' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-125",
+      "pattern": "では / じゃ",
+      "category": "Conjunctions and Connectives",
+      "categoryOrder": 15,
+      "patternOrder": 5,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'では / じゃ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-126",
+      "pattern": "が",
+      "category": "Conjunctions and Connectives",
+      "categoryOrder": 15,
+      "patternOrder": 6,
+      "meaning_en": "but — clause connector",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'が' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-127",
+      "pattern": "けれど / けど",
+      "category": "Conjunctions and Connectives",
+      "categoryOrder": 15,
+      "patternOrder": 7,
+      "meaning_en": "but — informal",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'けれど / けど' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-128",
+      "pattern": "から",
+      "category": "Conjunctions and Connectives",
+      "categoryOrder": 15,
+      "patternOrder": 8,
+      "meaning_en": "because — clause connector",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'から' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-129",
+      "pattern": "どうして～か。～から。",
+      "category": "Conjunctions and Connectives",
+      "categoryOrder": 15,
+      "patternOrder": 9,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'どうして～か。～から。' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-130",
+      "pattern": "～に～をあげます",
+      "category": "Giving and Receiving (basic)",
+      "categoryOrder": 16,
+      "patternOrder": 1,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～に～をあげます' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-131",
+      "pattern": "～に～をもらいます",
+      "category": "Giving and Receiving (basic)",
+      "categoryOrder": 16,
+      "patternOrder": 2,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～に～をもらいます' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-132",
+      "pattern": "～が～をくれます",
+      "category": "Giving and Receiving (basic)",
+      "categoryOrder": 16,
+      "patternOrder": 3,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～が～をくれます' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-133",
+      "pattern": "Sentence + から、Sentence",
+      "category": "Asking and Stating with から / ので (basic causation)",
+      "categoryOrder": 17,
+      "patternOrder": 1,
+      "meaning_en": "because",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Sentence + から、Sentence' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-134",
+      "pattern": "Sentence + ので、Sentence",
+      "category": "Asking and Stating with から / ので (basic causation)",
+      "categoryOrder": 17,
+      "patternOrder": 2,
+      "meaning_en": "because — softer",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Sentence + ので、Sentence' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+    },
+    {
+      "id": "n5-135",
+      "pattern": "Verb",
+      "category": "Nominalization and Modification",
+      "categoryOrder": 18,
+      "patternOrder": 1,
+      "meaning_en": "plain",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-136",
+      "pattern": "Adjective + Noun",
+      "category": "Nominalization and Modification",
+      "categoryOrder": 18,
+      "patternOrder": 2,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Adjective + Noun' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-137",
+      "pattern": "Noun + の + Noun",
+      "category": "Nominalization and Modification",
+      "categoryOrder": 18,
+      "patternOrder": 3,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Noun + の + Noun' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-138",
+      "pattern": "～がすきです / きらいです",
+      "category": "Common Set Patterns",
+      "categoryOrder": 19,
+      "patternOrder": 1,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～がすきです / きらいです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-139",
+      "pattern": "～がじょうずです / へたです",
+      "category": "Common Set Patterns",
+      "categoryOrder": 19,
+      "patternOrder": 2,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～がじょうずです / へたです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-140",
+      "pattern": "～がわかります",
+      "category": "Common Set Patterns",
+      "categoryOrder": 19,
+      "patternOrder": 3,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～がわかります' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-141",
+      "pattern": "～があります",
+      "category": "Common Set Patterns",
+      "categoryOrder": 19,
+      "patternOrder": 4,
+      "meaning_en": "event/skill",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～があります' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-142",
+      "pattern": "～にします",
+      "category": "Common Set Patterns",
+      "categoryOrder": 19,
+      "patternOrder": 5,
+      "meaning_en": "decide on",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～にします' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-143",
+      "pattern": "～になります / ～くなります",
+      "category": "Common Set Patterns",
+      "categoryOrder": 19,
+      "patternOrder": 6,
+      "meaning_en": "becomes",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～になります / ～くなります' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-144",
+      "pattern": "Verb-stem + ながら",
+      "category": "Common Set Patterns",
+      "categoryOrder": 19,
+      "patternOrder": 7,
+      "meaning_en": "while doing",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-stem + ながら' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+    },
+    {
+      "id": "n5-145",
+      "pattern": "～とおもいます",
+      "category": "Common Set Patterns",
+      "categoryOrder": 19,
+      "patternOrder": 8,
+      "meaning_en": "I think",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～とおもいます' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+    },
+    {
+      "id": "n5-146",
+      "pattern": "～と言いました",
+      "category": "Common Set Patterns",
+      "categoryOrder": 19,
+      "patternOrder": 9,
+      "meaning_en": "said that — basic quoting",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～と言いました' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+    },
+    {
+      "id": "n5-147",
+      "pattern": "よく / ときどき / あまり / ぜんぜん + Verb",
+      "category": "Existence-of-Plans and Frequency",
+      "categoryOrder": 20,
+      "patternOrder": 1,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'よく / ときどき / あまり / ぜんぜん + Verb' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-148",
+      "pattern": "いつも / たいてい / たまに",
+      "category": "Existence-of-Plans and Frequency",
+      "categoryOrder": 20,
+      "patternOrder": 2,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'いつも / たいてい / たまに' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-149",
+      "pattern": "～をください",
+      "category": "Functional Expressions (Non-Grammar, Common Usage)",
+      "categoryOrder": 21,
+      "patternOrder": 1,
+      "meaning_en": "please give me ～",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～をください' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-150",
+      "pattern": "～をおねがいします",
+      "category": "Functional Expressions (Non-Grammar, Common Usage)",
+      "categoryOrder": 21,
+      "patternOrder": 2,
+      "meaning_en": "please ～ — service request",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～をおねがいします' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-151",
+      "pattern": "～はいかがですか",
+      "category": "Functional Expressions (Non-Grammar, Common Usage)",
+      "categoryOrder": 21,
+      "patternOrder": 3,
+      "meaning_en": "how about ～? — polite offer",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～はいかがですか' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-152",
+      "pattern": "どうぞ / どうも / すみません / おねがいします",
+      "category": "Functional Expressions (Non-Grammar, Common Usage)",
+      "categoryOrder": 21,
+      "patternOrder": 4,
+      "meaning_en": "functional fillers",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'どうぞ / どうも / すみません / おねがいします' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-153",
+      "pattern": "まだ + Verb-ていません",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 1,
+      "meaning_en": "not yet",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'まだ + Verb-ていません' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-154",
+      "pattern": "もう + Verb-ました",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 2,
+      "meaning_en": "already",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'もう + Verb-ました' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-155",
+      "pattern": "〜が、〜",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 3,
+      "meaning_en": "contrast / soft \"but\"",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '〜が、〜' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-156",
+      "pattern": "〜ね / 〜よ",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 4,
+      "meaning_en": "sentence-final",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '〜ね / 〜よ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-157",
+      "pattern": "〜でしょう",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 5,
+      "meaning_en": "probably / right? — basic",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '〜でしょう' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+    },
+    {
+      "id": "n5-158",
+      "pattern": "〜だろう",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 6,
+      "meaning_en": "plain form of でしょう",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '〜だろう' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Upper N5 / borderline pattern — recognize for reading; not commonly tested at N5 directly."
+    },
+    {
+      "id": "n5-159",
+      "pattern": "〜ですね / 〜ですよ",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 7,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '〜ですね / 〜ですよ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-160",
+      "pattern": "Noun + の + あとで",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 8,
+      "meaning_en": "after — basic",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Noun + の + あとで' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-161",
+      "pattern": "Noun + の + まえに",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 9,
+      "meaning_en": "before — basic",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Noun + の + まえに' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-162",
+      "pattern": "Verb",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 10,
+      "meaning_en": "plain",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-163",
+      "pattern": "Verb",
+      "category": "Other Core Patterns",
+      "categoryOrder": 22,
+      "patternOrder": 11,
+      "meaning_en": "plain past",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-164",
+      "pattern": "～さん",
+      "category": "Honorific / Polite Vocabulary at N5 (functional)",
+      "categoryOrder": 23,
+      "patternOrder": 1,
+      "meaning_en": "TBD",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～さん' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-165",
+      "pattern": "お～ / ご～",
+      "category": "Honorific / Polite Vocabulary at N5 (functional)",
+      "categoryOrder": 23,
+      "patternOrder": 2,
+      "meaning_en": "beautifying prefixes — limited to common cases",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'お～ / ご～' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-166",
+      "pattern": "いただきます / ごちそうさま / おはようございます etc.",
+      "category": "Honorific / Polite Vocabulary at N5 (functional)",
+      "categoryOrder": 23,
+      "patternOrder": 3,
+      "meaning_en": "set expressions",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'いただきます / ごちそうさま / おはようございます etc.' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-167",
+      "pattern": "～んです / ～のです",
+      "category": "Additional Upper N5 / Borderline Patterns — Explanation and Emphasis",
+      "categoryOrder": 24,
+      "patternOrder": 1,
+      "meaning_en": "gives a reason / asks for an explanation",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～んです / ～のです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-168",
+      "pattern": "～たり〜たりする",
+      "category": "Additional Upper N5 / Borderline Patterns — Compound and Listed Actions",
+      "categoryOrder": 25,
+      "patternOrder": 1,
+      "meaning_en": "do A and B, among other things",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～たり〜たりする' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-169",
+      "pattern": "Verb-た + ことがある",
+      "category": "Additional Upper N5 / Borderline Patterns — Experience and Advice",
+      "categoryOrder": 26,
+      "patternOrder": 1,
+      "meaning_en": "have done before — past experience",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-た + ことがある' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-170",
+      "pattern": "Verb-た + ほうがいい",
+      "category": "Additional Upper N5 / Borderline Patterns — Experience and Advice",
+      "categoryOrder": 26,
+      "patternOrder": 2,
+      "meaning_en": "should do",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-た + ほうがいい' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-171",
+      "pattern": "Verb-ない + ほうがいい",
+      "category": "Additional Upper N5 / Borderline Patterns — Experience and Advice",
+      "categoryOrder": 26,
+      "patternOrder": 3,
+      "meaning_en": "should not do",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-ない + ほうがいい' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-172",
+      "pattern": "～なくてもいい",
+      "category": "Additional Upper N5 / Borderline Patterns — Permission and Obligation",
+      "categoryOrder": 27,
+      "patternOrder": 1,
+      "meaning_en": "don't have to do",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～なくてもいい' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-173",
+      "pattern": "～なくてはいけない",
+      "category": "Additional Upper N5 / Borderline Patterns — Permission and Obligation",
+      "categoryOrder": 27,
+      "patternOrder": 2,
+      "meaning_en": "must do",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～なくてはいけない' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-174",
+      "pattern": "～なくてはならない",
+      "category": "Additional Upper N5 / Borderline Patterns — Permission and Obligation",
+      "categoryOrder": 27,
+      "patternOrder": 3,
+      "meaning_en": "must do — written / formal variant",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～なくてはならない' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-175",
+      "pattern": "～ないといけない",
+      "category": "Additional Upper N5 / Borderline Patterns — Permission and Obligation",
+      "categoryOrder": 27,
+      "patternOrder": 4,
+      "meaning_en": "must do — common spoken",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～ないといけない' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-176",
+      "pattern": "～なくちゃ / ～なきゃ",
+      "category": "Additional Upper N5 / Borderline Patterns — Permission and Obligation",
+      "categoryOrder": 27,
+      "patternOrder": 5,
+      "meaning_en": "must do — casual contraction",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～なくちゃ / ～なきゃ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-177",
+      "pattern": "Verb-stem / Adj-stem + すぎる",
+      "category": "Additional Upper N5 / Borderline Patterns — Excess",
+      "categoryOrder": 28,
+      "patternOrder": 1,
+      "meaning_en": "too much, excessive",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-stem / Adj-stem + すぎる' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-178",
+      "pattern": "Verb-plain + つもりだ / つもりです",
+      "category": "Additional Upper N5 / Borderline Patterns — Intention",
+      "categoryOrder": 29,
+      "patternOrder": 1,
+      "meaning_en": "intend to",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-plain + つもりだ / つもりです' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-179",
+      "pattern": "～って",
+      "category": "Additional Upper N5 / Borderline Patterns — Quotation (Casual)",
+      "categoryOrder": 30,
+      "patternOrder": 1,
+      "meaning_en": "casual quotation marker / topic introducer; replaces と / は in conversation",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～って' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-180",
+      "pattern": "Verb-stem + ～かた",
+      "category": "Additional Upper N5 / Borderline Patterns — Way of Doing",
+      "categoryOrder": 31,
+      "patternOrder": 1,
+      "meaning_en": "way of doing; e.g., たべかた = how to eat",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-stem + ～かた' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-181",
+      "pattern": "～なあ",
+      "category": "Additional Upper N5 / Borderline Patterns — Sentence-Final Exclamation",
+      "categoryOrder": 32,
+      "patternOrder": 1,
+      "meaning_en": "exclamation; \"wow…\", \"I really think…\"",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for '～なあ' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-182",
+      "pattern": "Verb-plain + な",
+      "category": "Additional Upper N5 / Borderline Patterns — Prohibitive (Casual)",
+      "categoryOrder": 33,
+      "patternOrder": 1,
+      "meaning_en": "don't do! — strong / casual prohibition",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Verb-plain + な' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-183",
+      "pattern": "Question word + か / も compounds",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 17,
+      "meaning_en": "indefinite (some/any) and universal (every/no) forms",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'Question word + か / も compounds' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-184",
+      "pattern": "なにか / なにも",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 18,
+      "meaning_en": "something / nothing (with negative)",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'なにか / なにも' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-185",
+      "pattern": "だれか / だれも",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 19,
+      "meaning_en": "someone / no one (with negative)",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'だれか / だれも' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-186",
+      "pattern": "どこか / どこも",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 20,
+      "meaning_en": "somewhere / nowhere (with negative)",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'どこか / どこも' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    },
+    {
+      "id": "n5-187",
+      "pattern": "いつか / いつも",
+      "category": "Question Words",
+      "categoryOrder": 4,
+      "patternOrder": 21,
+      "meaning_en": "sometime / always",
+      "meaning_ja": "",
+      "form_rules": {
+        "attaches_to": [],
+        "conjugations": []
+      },
+      "explanation_en": "Skeleton entry for 'いつか / いつも' — pending detailed authoring.",
+      "examples": [],
+      "common_mistakes": [],
+      "contrasts": [],
+      "notes": "Skeleton entry — needs author enrichment."
+    }
+  ]
+}
