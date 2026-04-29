@@ -26,6 +26,7 @@ const PRECACHE = [
   './js/drill.js',
   './js/diagnostic.js',
   './js/settings.js',
+  './js/normalize.js',
   './data/grammar.json',
   './data/questions.json',
   './data/n5_kanji_whitelist.json',

@@ -1,6 +1,7 @@
-// Chapter 2 — Test. Auto-graded MCQ + dropdown + sentence_order.
-// Per spec §5.3, §5.4, §6.2, §6.6.
+// Chapter 2 — Test. Auto-graded MCQ + dropdown + sentence_order + text_input.
+// Per spec §5.3, §5.4, §6.2, §6.6 + Brief §2.10.
 import { renderJa } from './furigana.js';
+import { matchesAnswer, normalizeAnswer } from './normalize.js';
 import * as storage from './storage.js';
 
 let session = null;
@@ -127,6 +128,8 @@ function renderAttempting(container) {
     answerHtml = renderChoices(q);
   } else if (q.type === 'sentence_order') {
     answerHtml = renderSentenceOrder(q);
+  } else if (q.type === 'text_input') {
+    answerHtml = renderTextInput(q);
   } else {
     answerHtml = `<p class="placeholder-inline">Unsupported question type: ${esc(q.type)}</p>`;
   }
@@ -178,12 +181,32 @@ function renderAttempting(container) {
   container.querySelectorAll('[data-tile-remove]').forEach(el => {
     el.addEventListener('click', () => removeTile(q, parseInt(el.dataset.tileRemove, 10), container));
   });
+
+  const textInput = container.querySelector('[data-text-input]');
+  if (textInput) {
+    textInput.addEventListener('input', () => {
+      session.answers[q.id] = textInput.value;
+      // Live update the Submit-disabled state
+      const remaining = session.questions.filter(qq => !isAnswered(qq)).length;
+      const allAnswered = remaining === 0;
+      const submit = document.getElementById('submit-test');
+      if (submit) {
+        submit.disabled = !allAnswered;
+        submit.textContent = allAnswered ? 'Submit' : `Submit (${remaining} remaining)`;
+        submit.title = allAnswered ? 'Submit your test' : `Answer all questions to submit (${remaining} remaining)`;
+      }
+    });
+    if (typeof session.answers[q.id] === 'string') textInput.value = session.answers[q.id];
+  }
 }
 
 function isAnswered(q) {
   const a = session.answers[q.id];
   if (q.type === 'sentence_order') {
     return Array.isArray(a) && a.length === (q.tiles?.length || 0);
+  }
+  if (q.type === 'text_input') {
+    return typeof a === 'string' && a.trim() !== '';
   }
   return a !== undefined && a !== null && a !== '';
 }
@@ -203,6 +226,28 @@ function renderChoices(q) {
     </button>
   `).join('');
   return `<div class="choice-grid">${items}</div>`;
+}
+
+function renderTextInput(q) {
+  const value = typeof session.answers[q.id] === 'string' ? session.answers[q.id] : '';
+  return `
+    <div class="text-input-wrap">
+      <label for="text-input-${esc(q.id)}" class="visually-hidden">Type your answer</label>
+      <input
+        id="text-input-${esc(q.id)}"
+        type="text"
+        data-text-input
+        class="text-input"
+        autocomplete="off"
+        autocapitalize="off"
+        autocorrect="off"
+        spellcheck="false"
+        lang="ja"
+        placeholder="Type kana or romaji..."
+        value="${esc(value)}">
+      <p class="muted small">Accepts hiragana, katakana, or Hepburn romaji. Punctuation/whitespace ignored.</p>
+    </div>
+  `;
 }
 
 function renderSentenceOrder(q) {
@@ -248,6 +293,10 @@ function gradeQuestion(q, answer) {
     const correct = q.correctOrder || [];
     if (answer.length !== correct.length) return false;
     return answer.every((t, i) => t === correct[i]);
+  }
+  if (q.type === 'text_input') {
+    const acceptable = q.acceptedAnswers || [q.correctAnswer];
+    return matchesAnswer(answer, acceptable);
   }
   return answer === q.correctAnswer;
 }

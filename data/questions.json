@@ -5026,6 +5026,24 @@
       "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
       "high_confusion": false,
       "difficulty": 1
+    },
+    {
+      "id": "q-0418",
+      "grammarPatternId": "n5-001",
+      "type": "text_input",
+      "direction": "j_to_e",
+      "prompt_ja": "こたえを にほんごで タイプしてください。 (kana か romaji どちらでも かのうです)",
+      "question_ja": "I am a student.",
+      "acceptedAnswers": [
+        "わたしは がくせいです",
+        "わたしはがくせいです",
+        "watashi wa gakusei desu",
+        "watashiwagakuseidesu"
+      ],
+      "correctAnswer": "わたしは がくせいです。",
+      "explanation_en": "Topic わたし + は + noun + です. Standard self-introduction.",
+      "high_confusion": false,
+      "difficulty": 1
     }
   ]
 }

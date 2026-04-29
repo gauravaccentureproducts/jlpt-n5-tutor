@@ -15,6 +15,12 @@ Last updated: 2026-04-29 (Phase 3 → Phase 4 transition; Developer Brief absorb
 - Engine: hash router, LocalStorage adapter, 4 chapters + Drill + Diagnostic
 - Service worker active (`jlpt-n5-tutor-v1`, 19 assets pre-cached)
 - 37 browser-runnable tests passing
+- **NEW (KB-only, not yet wired into app):** 5 KB question-bank files authored (498 questions total) covering all four JLPT N5 written-test sections:
+  - `KnowledgeBank/moji_questions_n5.md` (100 Qs - 漢字読み 50 + 表記 50)
+  - `KnowledgeBank/goi_questions_n5.md` (100 Qs - 文脈規定 50 + 言い換え類義 50)
+  - `KnowledgeBank/bunpou_questions_n5.md` (100 Qs - 文法1 60 + 文法2 30 + 文章の文法 10)
+  - `KnowledgeBank/dokkai_questions_n5.md` (100 Qs - 短文 60 + 中文 30 + 情報検索 10)
+  - `KnowledgeBank/authentic_extracted_n5.md` (98 source-attributed authentic Qs from `learnjapaneseaz.com/jlpt/jlpt-n5`)
 
 ---
 
@@ -43,6 +49,22 @@ Last updated: 2026-04-29 (Phase 3 → Phase 4 transition; Developer Brief absorb
 - [ ] **P3.2 Reading passages module** (~30 short passages 80-200 chars, JLPT-format comprehension questions, optional timer in test mode).
 - [ ] **P3.3 並べ替え production drills** — already partially live as `sentence_order` question type; verify it covers the brief's intent (5-7 word/phrase chips, drag-to-order).
 - [ ] **P3.4 Type-the-answer drills** with forgiving matcher (kana/romaji input, ignore punctuation, normalize half/full-width).
+
+### Phase 4.3.5 — Wire the new KB question banks into the app (NEW, 2026-04-29)
+
+> 5 question-bank files were just authored in `KnowledgeBank/` (498 questions total: 4 original-adaptation files of 100 Qs each + 1 source-attributed file of 98 authentic extracted Qs). They are study-ready as reference material but are not consumed by the app's `data/questions.json` yet. Wiring them up is the bridge between "study reference" and "app-driven mock test".
+
+- [ ] **W1 Schema decision**: Add a `category` field to `data/questions.json` entries: `"category": "moji" | "goi" | "bunpou" | "dokkai"`. Add a `subtype` field for the within-section type (e.g., `"subtype": "kanji_yomi" | "hyouki" | "bunmyaku" | "paraphrase" | "bunpou_1" | "bunpou_2" | "text_grammar" | "tanbun" | "chuubun" | "joho_kensaku"`). Optional `source_url` for attributed items.
+- [ ] **W2 Build a Markdown→JSON converter** `tools/import_kb_questions.py` that:
+  - Parses each `KnowledgeBank/*_questions_n5.md` (and `authentic_extracted_n5.md`) by H3/H4 question headers
+  - Extracts stem (with passage if present), 4 options, correct answer number, optional rationale
+  - Emits JSON entries matching the existing `questions.json` schema plus the new `category` / `subtype` / `source_url` fields
+  - Idempotent (re-running re-syncs from md without duplicating)
+- [ ] **W3 Test-engine UI: category / subtype filtering** in `js/test.js` setup screen. Add a "Mock test" mode that respects the actual JLPT N5 paper structure (Moji-Goi paper: 25 min; Bunpou + Dokkai paper: 50 min; correct question counts per subtype).
+- [ ] **W4 Render passages** for dokkai questions. Dokkai entries have a longer `passage_ja` field; UI should show passage above questions for 短文/中文 and a separate "info-graphic" component for 情報検索. Update `tests.html` to assert passage rendering.
+- [ ] **W5 Lint + coverage**: run `tools/lint_content.py` over the imported questions; the existing project rule allows non-N5 kanji in distractor options for question files (documented header note in `moji_questions_n5.md`). Document this exception in `lint_content.py` so it doesn't throw spurious failures.
+- [ ] **W6 README + spec update**: bump pattern/question totals; add Mock-Test mode to README's status block; regenerate Functional Spec docx via `tools/build_spec.py`.
+- [ ] **W7 SW cache version bump**: `jlpt-n5-tutor-v1` → `v2` since `questions.json` payload grows substantially. Add the new MD reference files to the cache list (or exclude them from app-shell cache since they are author-only).
 
 ### Phase 4.4 — Polish
 
