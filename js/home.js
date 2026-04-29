@@ -34,8 +34,15 @@ export async function renderHome(container) {
     <section class="home">
       ${isReturning ? renderReturning({ history, results, dueCount, streak, lastViewed }) : ''}
       <section class="home-cta">
-        <h2>${isReturning ? 'Continue your N5 study' : 'Start your N5 study'}</h2>
-        <p class="muted">${grammarCount} grammar patterns. ~1000 vocab words. 97 N5 kanji. No login. Works offline.</p>
+        <h2>${isReturning ? 'Continue your N5 study' : 'Pass JLPT N5 with 15 minutes a day'}</h2>
+        <p class="home-tagline">${isReturning ? `${grammarCount} grammar patterns. ~1000 vocab words. 97 N5 kanji.` : `${grammarCount} grammar patterns · ~1000 vocab · 97 N5 kanji · 30 reading passages · 12 listening drills.`}</p>
+        ${!isReturning ? `
+          <ul class="trust-strip" aria-label="What this app guarantees">
+            <li>✓ Works offline</li>
+            <li>✓ No login required</li>
+            <li>✓ Your progress stays on this device</li>
+          </ul>
+        ` : ''}
         <div class="home-cta-buttons">
           <a class="btn-primary" href="#/learn${lastViewed ? '/' + encodeURIComponent(lastViewed) : ''}">${isReturning ? 'Continue lessons' : 'Start your first lesson'}</a>
           <a class="btn-secondary" href="#/diagnostic">Take a placement check</a>

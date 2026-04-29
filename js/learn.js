@@ -55,32 +55,37 @@ function renderHub(container) {
   const vocabCount = (vocabCache?.entries || []).length || 1002;
   container.innerHTML = `
     <h2>Learn</h2>
-    <p class="muted">Pick what you want to study. Each section is self-contained - jump between them as needed.</p>
+    <p class="page-lede">Pick what you want to study. Each section is self-contained.</p>
     <div class="learn-hub">
       <a class="hub-card" href="#/learn/grammar">
+        <span class="hub-icon" aria-hidden="true">📖</span>
         <h3>Grammar</h3>
-        <p>${grammarCount} N5 patterns across 32 categories. Form, examples, and common mistakes for each.</p>
-        <span class="hub-cta">Open grammar catalog →</span>
+        <p>${grammarCount} patterns across 32 categories. Form, examples, common mistakes.</p>
+        <span class="hub-cta">Browse →</span>
       </a>
       <a class="hub-card" href="#/learn/vocab">
+        <span class="hub-icon" aria-hidden="true">📚</span>
         <h3>Vocabulary</h3>
-        <p>~1000 N5 words grouped by topic (people, time, places, verbs, adjectives, ...).</p>
-        <span class="hub-cta">Open vocabulary list →</span>
+        <p>~${vocabCount} words grouped by topic - people, time, places, verbs, adjectives.</p>
+        <span class="hub-cta">Browse →</span>
       </a>
       <a class="hub-card" href="#/kanji">
+        <span class="hub-icon" aria-hidden="true">✍️</span>
         <h3>Kanji</h3>
-        <p>97 N5 kanji with on/kun-yomi, meanings, and stroke-order slots. Click any glyph for a popover.</p>
-        <span class="hub-cta">Open kanji index →</span>
+        <p>97 kanji with on / kun-yomi, meanings, stroke-order slots. Tap any glyph.</p>
+        <span class="hub-cta">Browse →</span>
       </a>
       <a class="hub-card" href="#/reading">
+        <span class="hub-icon" aria-hidden="true">📰</span>
         <h3>Dokkai (Reading)</h3>
         <p>30 graded passages with comprehension questions. Audio for every passage.</p>
-        <span class="hub-cta">Open reading practice →</span>
+        <span class="hub-cta">Practice →</span>
       </a>
       <a class="hub-card" href="#/listening">
+        <span class="hub-icon" aria-hidden="true">🎧</span>
         <h3>Listening</h3>
         <p>12 items across the three JLPT N5 listening formats. Audio for every script.</p>
-        <span class="hub-cta">Open listening practice →</span>
+        <span class="hub-cta">Practice →</span>
       </a>
     </div>
   `;
@@ -99,7 +104,7 @@ function renderVocabList(container, data) {
     if (!isNaN(na) && !isNaN(nb)) return na - nb;
     return a.localeCompare(b);
   });
-  const sections = sectionKeys.map(key => {
+  const sections = sectionKeys.map((key, idx) => {
     const items = bySection.get(key);
     const cards = items.map(v => `
       <a class="vocab-card" href="#/learn/vocab/${encodeURIComponent(v.form || '')}">
@@ -108,8 +113,10 @@ function renderVocabList(container, data) {
         <span class="vocab-gloss">${esc(v.gloss || '')}</span>
       </a>
     `).join('');
+    // First section open as a preview; the other 39 collapsed to avoid a wall of cards.
+    const openAttr = idx === 0 ? 'open' : '';
     return `
-      <details class="vocab-section" open>
+      <details class="vocab-section" ${openAttr}>
         <summary><strong>${esc(key)}</strong> <span class="muted small">(${items.length})</span></summary>
         <div class="vocab-grid">${cards}</div>
       </details>
