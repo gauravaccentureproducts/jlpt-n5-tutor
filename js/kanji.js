@@ -33,13 +33,20 @@ export async function renderKanji(container, params) {
 }
 
 function renderIndex(container, entries) {
-  const grid = entries.map(e => `
-    <li><a href="#/kanji/${encodeURIComponent(e.glyph)}" class="kanji-grid-cell" lang="ja" title="${esc((e.meanings || []).join(', '))}">${esc(e.glyph)}</a></li>
+  const cards = entries.map(e => `
+    <a class="kanji-card" href="#/kanji/${encodeURIComponent(e.glyph)}">
+      <span class="kanji-card-glyph" lang="ja">${esc(e.glyph)}</span>
+      ${e.meanings?.length ? `<span class="kanji-card-meaning">${esc(e.meanings.slice(0,2).join(', '))}</span>` : ''}
+      <span class="kanji-card-readings" lang="ja">
+        ${e.kun?.[0] ? esc(e.kun[0]) : ''}${e.on?.[0] ? `<br>${esc(e.on[0])}` : ''}
+      </span>
+    </a>
   `).join('');
   container.innerHTML = `
-    <h2>Kanji (N5)</h2>
-    <p>${entries.length} kanji at JLPT N5 level. Tap any glyph for readings, meanings, and stroke order.</p>
-    <ul class="kanji-grid">${grid}</ul>
+    <a class="back-link" href="#/learn">← Back to Learn</a>
+    <h2>Kanji</h2>
+    <p>${entries.length} kanji at JLPT N5 level. Tap any card for readings, meanings, and stroke order.</p>
+    <div class="kanji-card-grid">${cards}</div>
   `;
 }
 

@@ -44,7 +44,7 @@ export async function renderHome(container) {
       <section class="home-pillars" aria-label="Product pillars">
         <a class="pillar-card" href="#/learn">
           <h3>Learn</h3>
-          <p>${grammarCount} patterns, organized into chapters.</p>
+          <p>Grammar, vocab, kanji, reading, listening - pick a section.</p>
         </a>
         <a class="pillar-card" href="#/drill">
           <h3>Practice</h3>

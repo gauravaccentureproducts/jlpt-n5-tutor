@@ -1430,6 +1430,74 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   .skeleton-wrap { display: none; }
 }
 
+/* Grammar TOC cards (Brief 2 follow-up) */
+.grammar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; margin: 8px 0 20px; }
+.grammar-card {
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 10px 14px; min-height: 64px;
+  background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 8px;
+  text-decoration: none; color: inherit;
+}
+.grammar-card:hover { border-color: var(--c-primary, #14452a); background: rgba(20, 69, 42, 0.03); }
+.grammar-pattern { font-weight: 600; font-size: 16px; }
+.grammar-gloss { font-size: 13px; color: var(--c-text-muted, #555); }
+
+/* Vocab grid + cards */
+.vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; margin-top: 10px; }
+.vocab-card {
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 8px 12px; min-height: 60px;
+  background: var(--c-bg); border: 1px solid var(--c-border); border-radius: 6px;
+  text-decoration: none; color: inherit;
+}
+.vocab-card:hover { border-color: var(--c-primary, #14452a); background: rgba(20, 69, 42, 0.04); }
+.vocab-form { font-weight: 600; font-size: 16px; }
+.vocab-reading { font-size: 12px; color: var(--c-text-muted, #555); }
+.vocab-gloss { font-size: 13px; }
+
+/* Vocab detail page */
+.vocab-detail { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r); padding: 20px 24px; }
+.vocab-header { padding-bottom: 12px; border-bottom: 1px solid var(--c-border); margin-bottom: 16px; }
+.vocab-form-big { font-size: 48px; line-height: 1.1; margin: 6px 0; }
+.vocab-reading-big { font-size: 22px; color: var(--c-text-muted, #555); margin: 0 0 6px; }
+.vocab-gloss-big { font-size: 18px; margin: 0; }
+.vocab-detail .example-list li { padding: 8px 0; border-bottom: 1px solid var(--c-border); list-style: decimal inside; }
+.vocab-detail .example-ja { font-size: 17px; margin: 4px 0; }
+.vocab-nav { display: flex; justify-content: space-between; margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--c-border); }
+
+/* Kanji card grid (replaces dense glyph grid) */
+.kanji-card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin: 12px 0; }
+.kanji-card {
+  display: flex; gap: 12px; align-items: center;
+  padding: 10px 12px; min-height: 72px;
+  background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 8px;
+  text-decoration: none; color: inherit;
+}
+.kanji-card:hover { border-color: var(--c-primary, #14452a); }
+.kanji-card-glyph { font-size: 36px; line-height: 1; flex-shrink: 0; }
+.kanji-card-meaning { font-size: 13px; flex: 1; }
+.kanji-card-readings { font-size: 11px; color: var(--c-text-muted, #555); text-align: right; flex-shrink: 0; line-height: 1.3; }
+
+/* Learn hub - 5-card chooser (Grammar / Vocab / Kanji / Reading / Listening) */
+.learn-hub {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px; margin: 16px 0;
+}
+.hub-card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r);
+  padding: 18px 20px; min-height: 140px;
+}
+.hub-card:hover { border-color: var(--c-primary, #14452a); }
+.hub-card h3 { margin: 0 0 8px; }
+.hub-card p { margin: 0 0 10px; }
+.hub-cta { font-size: 13px; color: var(--c-primary, #14452a); font-weight: 600; }
+.vocab-toc .vocab-section { margin: 8px 0; padding: 10px 14px; background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r); }
+.vocab-toc .vocab-section summary { cursor: pointer; padding: 4px 0; min-height: 32px; }
+.vocab-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.vocab-table th, .vocab-table td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--c-border); font-size: 14px; }
+.vocab-table th { font-weight: 600; background: var(--c-bg); }
+
 /* Home / landing screen (Brief 2 s1) */
 .home { padding: 12px 0; }
 .home-cta {
