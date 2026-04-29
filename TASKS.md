@@ -1,6 +1,6 @@
 # JLPT N5 Grammar Tutor - Tasks
 
-Last updated: 2026-04-29 (Phase 4 + 5 complete + audio shipped)
+Last updated: 2026-04-30 (Pass 8 native-speaker audit: 52 findings raised, 52 fixed, 0 open)
 
 ## Live site
 
@@ -14,7 +14,7 @@ Last updated: 2026-04-29 (Phase 4 + 5 complete + audio shipped)
 - 187/187 patterns enriched, 250/250 questions real (no stubs)
 - **15 routed views**: Learn / Test / Daily Drill / Review (SRS) / Summary / Diagnostic / Settings / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters / Reading / Listening
 - SM-2 SRS in Review (4-button grading)
-- Service worker `jlpt-n5-tutor-v9` pre-caches ~42 assets; lazy-caches audio on first play
+- Service worker `jlpt-n5-tutor-v12` pre-caches ~43 assets; lazy-caches audio on first play
 - 5-locale i18n shell (en at v1, vi/id/ne/zh structured)
 - PWA manifest installable
 - Export / import progress round-trips through JSON
@@ -80,12 +80,138 @@ Last updated: 2026-04-29 (Phase 4 + 5 complete + audio shipped)
 
 ---
 
-## Remaining
+## Remaining (Brief 1)
 
 - [x] **P-cross.4 Reading + listening corpus expansion**: 30 reading passages + 12 listening items committed.
 - [x] **Run tools/build_audio.py end-to-end**: 491 MP3s rendered via gTTS, committed under audio/, listening module activated.
 
-All planned tasks complete. Engine, module, and asset layers are shipped.
+Brief 1 complete. Engine, module, and asset layers shipped.
+
+---
+
+## Native-speaker audit (Pass 8) - 2026-04-30 ✅ COMPLETE
+
+52 findings raised across 5 KB question files from a native Japanese teacher's perspective. Severity: 16 HIGH, 27 MED, 9 LOW. **All 52 fixed.** Full pass details in `verification.md` §7.
+
+### HIGH-severity (16)
+
+#### moji_questions_n5.md
+- [x] **M-3** Q54 word-boundary split: 「<u>とも</u> だち」 splits 「ともだち」 across the underline. Restate so the underline covers a whole word.
+- [x] **M-8** Q76 unnatural stem: 「でんわばんごうは いくつですか」. Native form is 「何番ですか」.
+- [x] **M-9** Q78 unidiomatic: 「みち を まがってください」. 道 doesn't take 曲がる as direct object. Use 「角を曲がる」.
+
+#### goi_questions_n5.md
+- [x] **G-3** Q47 textbook error: 「きょねん 日本へ 行った ことが あります」 mixes specific time with experience aspect. Drop 去年 or use definite past.
+- [x] **G-8** Q63 inferential paraphrase: 「歩いて10分」 ≈ 「ちかい」. Replace with synonym-tight pair (「とおくない」).
+- [x] **G-11** Q78 inferential paraphrase: 「お客さんがおおい」 ≈ 「ゆうめい」. Many customers ≠ famous; replace.
+- [x] **G-12** Q80 inferential paraphrase: 「さむい」 ≈ 「ストーブをつけました」. Action-result inference, not synonymy.
+
+#### bunpou_questions_n5.md
+- [x] **B-4** Q85 pleonasm: 「ほしいので かいたい」 — both verbs express wanting. Drop one.
+- [x] **B-6** Q98 wrong compound: 「ピアノのきょうしつ」 should be 「ピアノきょうしつ」 (compound noun, no の).
+- [x] **B-7** Q100 semantic clash: 「ぜったいに 一日 ぐらい」 — absolute + approximate clash. Change answer to 「でも」 or rework stem.
+
+#### dokkai_questions_n5.md
+- [x] **D-3** Passage 14 Q27 unit mismatch: stem asks 「何分」, answer is 「一時間」. Fix question word to 「どのぐらい」.
+- [x] **D-5** Passage 26 Q51 mixed-category options: mixes duration ('一年' / '五年') and age ('5さいから'). Restate options to one category.
+
+#### authentic_extracted_n5.md
+- [x] **A-1** Q43 particle typo: stem ends 「をあります」. Fix to 「にあります」.
+- [x] **A-2** Q58 underline/answer mismatch: underline on 「みぎ」 but answer is for 「みち」. Realign underline.
+- [x] **A-3** Q59 N3 kanji in stem: 「有名」 violates the stems-N5-only rule. Render in kana or replace question.
+- [x] **A-6** Q117 ambiguous source: 「兄に」+もらう is acceptable but unclear at N5. Change to 「兄から」.
+- [x] **A-8** Q142 unidiomatic subject: 「うちは...先生をしています」 — うち + occupation verb is non-native. Restate.
+
+### MED-severity (27)
+
+#### moji
+- [x] **M-1** Q33 rationale misstates kun-okurigana rule
+- [x] **M-2** Q39 雨水 reading note oversimplifies
+- [x] **M-4** Q55 「うちには大人が一人と子どもがふたり」 stilted household phrasing
+- [x] **M-5** Q57 「ははは教師です」 register too formal for own mother
+- [x] **M-7** Q66 「何曜日まで」 unnatural for a homework deadline
+- [x] **M-10** Q81-Q95 "Word - Sentence" duplication format non-authentic
+- [x] **M-12** Q96 missing です in formal-register file
+
+#### goi
+- [x] **G-1** Q22 「えきから ちかい」 stilted; native uses 「えきの近く」
+- [x] **G-2** Q35 「もちろん がんばります」 register clash
+- [x] **G-4** Q48 「大学にはいる」 → prefer 「大学へ行く / 進学する」
+- [x] **G-7** Q60 「30人」 ≈ 「おおぜい」 loose
+- [x] **G-9** Q73/Q74 lend/borrow paraphrase introduces beneficiary nuance
+- [x] **G-10** Q75 「1月20日」 ≈ 「年のはじめ」 borderline
+- [x] **G-13** Q82 wet-clothes ≈ rain inferential
+- [x] **G-14** Q86 鳴る vs 来る overlap
+- [x] **G-15** Q90 げんきです vs げんきがあります not identical
+- [x] **G-16** Q92 あげる vs 買ってあげる narrows meaning
+- [x] **G-18** Q99 教えて vs 言って register loss
+
+#### bunpou
+- [x] **B-2** Q46 choice-fragment style non-standard
+- [x] **B-8** Q64 「駅の名前は何ですか」 textbook-ish
+
+#### dokkai
+- [x] **D-1** Passage 9 「ようやく」 → N3-level; use 「やっと」
+- [x] **D-2** Passage 13 Q26 distractor 「ていねいな人」 not parallel to occupation options
+- [x] **D-4** Passage 22 「来月、大学に入ります」 culturally atypical (April-start standard)
+- [x] **D-7** Mondai 6 Item 6 Q102 「先生に聞く」 register thin
+
+#### authentic
+- [x] **A-4** Q61 「可愛い」 N3 kanji in stem
+- [x] **A-5** Q73 「夕食」 register too formal
+- [x] **A-7** Q140 「いいものが安くて多い」 awkward modifier order
+- [x] **A-9** Q159 「おじさん」 distractor over-specifies older/younger
+
+### LOW-severity (9)
+
+- [x] **G-5** Q51 父=医者 ≈ 病院ではたらく inferential
+- [x] **G-6** Q53 先生 ≈ 学校で教える inferential
+- [x] **G-17** Q97 上手 ≈ よくわかる skill≠comprehension
+- [x] **B-1** Q18 れんしゅう rationale wording
+- [x] **B-3** Q83 sentence flow stiff
+- [x] **B-5** Q92 「7時半ごろ」 半+ごろ tolerated colloquial
+- [x] **D-6** Passage J Q89 「子どもの本」 → 「絵本」 / 「子ども向けの本」
+- [x] **M-6** Q58 dual-blank format non-standard
+- [x] **M-11** Q92 「学生がたちます」 decontextualized
+
+---
+
+## UX Brief 2 (jlpt-n5-tutor-ux-developer-brief2.md)
+
+Source: `feedback/jlpt-n5-tutor-ux-developer-brief2.md`. Phased per Brief §19.
+
+### Phase 1 — Stop the bleeding ✅ COMPLETE
+- [x] **B2-P1.1** Skeleton screens replace literal "Loading..." text + 5s timeout error UI (§3.1) - shimmer animation, route-shape-matched blocks, 5s Promise-race timeout shows real "Couldn't load" UI with Retry.
+- [x] **B2-P1.2** Empty states for Review, Test, Summary, Practice with routing buttons (§3.2) - Review: 2-state (no progress vs no due), Summary: progress=0 routes to Learn, Test: first-test banner suggests learning, Drill: existing CTA preserved.
+- [x] **B2-P1.3** Deep-link URLs per §14.1 - new js/kanji.js renders #/kanji index + #/kanji/<glyph> detail (97 entries, on/kun/meanings/stroke-svg slot). Test deep-link #/test/<n> with n in {20,30,50} starts test directly.
+- [x] **B2-P1.4** Privacy/offline/no-login trust strip on landing above-the-fold (§1.1.5) - 3-item strip in header brand block, mobile-responsive.
+- [x] **B2-P1.5** Copy revisions: tagline + footer per §15 - tagline now "Pass JLPT N5 with 15 minutes a day. No login, no ads, no data shared." Footer: "Works offline. No login. Your progress stays on this device."
+
+### Phase 2 — Daily-use friction
+- [ ] **B2-P2.1** Three-mode furigana (Always / Hide on known kanji / Never) replacing binary toggle (§4.1)
+- [ ] **B2-P2.2** Per-kanji "I know this" popover with on/kun-yomi + persists (§4.2)
+- [ ] **B2-P2.3** Live furigana preview next to setting (§4.3)
+- [ ] **B2-P2.4** Settings additions: audio speed 0.75/1.0/1.25, reduce-motion toggle, typed-phrase reset confirm (§5)
+- [ ] **B2-P2.5** Persistent location indicator across all views (§2.4)
+- [ ] **B2-P2.6** Immediate per-question feedback in Test mode (currently end-of-test only) (§7.1)
+- [ ] **B2-P2.7** Keyboard shortcuts: 1-4 / space / enter / ? cheatsheet (§7.2)
+
+### Phase 3 — Landing and orientation
+- [ ] **B2-P3.1** Rebuild landing screen: first-time state (CTA + placement + 3-card + trust strip) (§1.1)
+- [ ] **B2-P3.2** Rebuild landing: returning state (Continue + Today's queue + Streak strip) (§1.2)
+- [ ] **B2-P3.3** Streak + daily goal indicator + session-end screen (§6)
+- [ ] **B2-P3.4** Search across grammar/vocab/kanji + `/` shortcut (§8)
+- [ ] **B2-P3.5** Restructure nav: primary (Learn/Practice/Review/Test) + secondary (Summary/Settings/Help) (§2.2)
+
+### Phase 4 — Polish and reach
+- [ ] **B2-P4.1** Noto Sans JP webfont, font-display:swap, preload (§11.1)
+- [ ] **B2-P4.2** SW: stale-while-revalidate for shell + "Update available" toast (§12.1)
+- [ ] **B2-P4.3** PWA install prompt (§12.3) + offline indicator (§12.4)
+- [ ] **B2-P4.4** Mobile responsive pass: bottom nav ≤480px, safe-area insets, 44px tap targets (§9)
+- [ ] **B2-P4.5** Quit/pause behavior in Test (back-button prompt + Save & Quit) (§7.3)
+- [ ] **B2-P4.6** Print stylesheet for Learn lessons (§14.3)
+- [ ] **B2-P4.7** Version + "What's new" / CHANGELOG link (§16)
+- [ ] **B2-P4.8** A11y deep-pass: contrast audit, screen-reader smoke test notes, prefers-reduced-motion verification (§10)
 
 ---
 

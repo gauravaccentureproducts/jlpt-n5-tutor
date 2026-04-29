@@ -28,9 +28,19 @@ async function loadGrammarIndex() {
   return grammarIndex;
 }
 
-export async function renderTest(container) {
+export async function renderTest(container, params) {
   if (view === 'attempting' && session) return renderAttempting(container);
   if (view === 'results' && lastResults) return renderResults(container);
+  // Deep-link: #/test/<n> starts a test with n questions directly (Brief 2 §14.1).
+  if (params) {
+    const n = parseInt(decodeURIComponent(params), 10);
+    if ([20, 30, 50].includes(n)) {
+      await loadBank();
+      storage.setSettings({ lastTestLength: n });
+      startTest(n, container);
+      return;
+    }
+  }
   return renderSetup(container);
 }
 
@@ -40,9 +50,16 @@ async function renderSetup(container) {
   const bank = await loadBank();
   const settings = storage.getSettings();
   const lastLen = settings.lastTestLength || 20;
+  const noPriorTests = (storage.getResults() || []).length === 0;
 
   container.innerHTML = `
     <h2>Chapter 2 - Test</h2>
+    ${noPriorTests ? `
+      <div class="empty-state-banner">
+        <p><strong>Take your first mock test when you've covered at least lessons 1-10.</strong> If you're new, study a few patterns first - missed items will flow into Review and Daily Drill automatically.</p>
+        <p><a href="#/learn">Continue learning →</a></p>
+      </div>
+    ` : ''}
     <p>Configure and start a new auto-graded test. The Submit button stays disabled until every question has an answer.</p>
     <div class="test-setup">
       <label class="length-picker">

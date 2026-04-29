@@ -1364,3 +1364,88 @@ textarea:focus-visible,
 }
 .listening-audio { margin: 14px 0; }
 .listening-audio audio { width: 100%; }
+
+/* Trust strip on landing (Brief 2 s1.1.5) */
+.trust-strip {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 12px;
+  color: var(--c-text-muted, #555);
+}
+.trust-strip li { white-space: nowrap; }
+@media (max-width: 480px) {
+  .trust-strip { font-size: 11px; gap: 4px 12px; }
+}
+
+/* Kanji detail page (Brief 2 s14.1) */
+.kanji-grid {
+  list-style: none; padding: 0; margin: 12px 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 8px;
+}
+.kanji-grid-cell {
+  display: flex; align-items: center; justify-content: center;
+  aspect-ratio: 1; font-size: 28px; text-decoration: none;
+  background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 6px;
+  min-width: 44px; min-height: 44px;
+}
+.kanji-grid-cell:hover { background: rgba(20, 69, 42, 0.08); }
+.kanji-detail { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r); padding: 20px 24px; }
+.kanji-glyph-row { display: flex; gap: 24px; align-items: flex-start; margin: 16px 0; flex-wrap: wrap; }
+.kanji-glyph-big { font-size: 96px; line-height: 1; padding: 8px 24px; border: 1px solid var(--c-border); border-radius: var(--r); background: var(--c-bg); }
+.kanji-readings p { margin: 4px 0; }
+.kanji-stroke { margin-top: 24px; }
+.kanji-stroke .stroke-svg { width: 100%; max-width: 320px; min-height: 200px; }
+.kanji-nav { display: flex; justify-content: space-between; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--c-border); }
+
+/* Empty states (Brief 2 s3.2) */
+.empty-state {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r);
+  padding: 32px 28px;
+  text-align: center;
+  margin: 24px 0;
+}
+.empty-state .empty-icon { font-size: 36px; margin: 0 0 8px; }
+.empty-state strong { display: inline-block; margin-bottom: 6px; }
+.empty-state p { margin: 8px 0; }
+.empty-state-banner {
+  background: rgba(20, 69, 42, 0.04);
+  border-left: 3px solid var(--c-primary, #14452a);
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 4px;
+}
+.empty-state-banner p:first-child { margin-top: 0; }
+.empty-state-banner p:last-child { margin-bottom: 0; }
+
+/* Skeleton placeholders (Brief 2 s3.1) */
+.skeleton-wrap { display: flex; flex-direction: column; gap: 12px; padding: 8px 0; }
+.skeleton {
+  background: linear-gradient(90deg, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0.12) 50%, rgba(0,0,0,0.06) 100%);
+  background-size: 200% 100%;
+  border-radius: 6px;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+.skeleton-title { height: 28px; width: 38%; }
+.skeleton-card { height: 120px; width: 100%; border-radius: var(--r); }
+.skeleton-row { height: 18px; width: 100%; }
+.skeleton-row:nth-child(odd) { width: 92%; }
+.skeleton-row:nth-child(even) { width: 78%; }
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; background: rgba(0,0,0,0.08); }
+}
+@media (prefers-color-scheme: dark) {
+  .skeleton {
+    background: linear-gradient(90deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.06) 100%);
+    background-size: 200% 100%;
+  }
+}

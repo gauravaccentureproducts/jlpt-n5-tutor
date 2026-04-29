@@ -23,6 +23,20 @@ export async function renderSummary(container) {
   const totalTests = results.length;
   const lastTest = results[results.length - 1];
 
+  // Empty state: no progress at all (no tests, no patterns seen). Brief 2 §3.2.
+  if (totalTests === 0 && seenIds.length === 0) {
+    container.innerHTML = `
+      <h2>Chapter 4 - Summary</h2>
+      <div class="empty-state">
+        <p class="empty-icon" aria-hidden="true">📊</p>
+        <p><strong>Your dashboard fills in as you study.</strong></p>
+        <p class="muted">Mastered, Need-practice, and Untested counts appear here once you've taken a Test or finished some lessons.</p>
+        <p><a href="#/learn" class="btn-primary" style="text-decoration:none">Start your first lesson</a></p>
+      </div>
+    `;
+    return;
+  }
+
   container.innerHTML = `
     <h2>Chapter 4 - Summary</h2>
 

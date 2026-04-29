@@ -16,6 +16,7 @@ import { renderParticlePairs } from './particle-pairs.js';
 import { renderCounters } from './counters.js';
 import { renderReading } from './reading.js';
 import { renderListening } from './listening.js';
+import { renderKanji } from './kanji.js';
 import { initI18n } from './i18n.js';
 
 const ROUTES = {
@@ -34,6 +35,7 @@ const ROUTES = {
   counters:   renderCounters,
   reading:    renderReading,
   listening:  renderListening,
+  kanji:      renderKanji,
 };
 
 function parseRoute() {
@@ -61,17 +63,59 @@ function refreshDrillBadge() {
   }
 }
 
+function renderSkeleton(container, name) {
+  // Skeleton placeholder shapes matching the destination route.
+  // Replaces the legacy "Loading..." text per Brief 2 §3.1.
+  const shapes = {
+    learn:      ['title', 'rows', 'rows', 'rows'],
+    test:       ['title', 'card', 'card'],
+    drill:      ['title', 'card'],
+    review:     ['title', 'card'],
+    summary:    ['title', 'rows', 'rows'],
+    diagnostic: ['title', 'card', 'rows'],
+    settings:   ['title', 'rows', 'rows'],
+    reading:    ['title', 'rows', 'rows'],
+    listening:  ['title', 'rows'],
+  };
+  const blocks = (shapes[name] || ['title', 'card', 'rows']).map(kind => {
+    if (kind === 'title') return '<div class="skeleton skeleton-title" aria-hidden="true"></div>';
+    if (kind === 'card') return '<div class="skeleton skeleton-card" aria-hidden="true"></div>';
+    return '<div class="skeleton skeleton-row" aria-hidden="true"></div>'.repeat(3);
+  }).join('');
+  container.innerHTML = `<div class="skeleton-wrap" role="status" aria-live="polite" aria-label="Loading">${blocks}</div>`;
+}
+
+function renderTimeout(container, name) {
+  container.innerHTML = `
+    <div class="placeholder">
+      <h2>Couldn't load this view</h2>
+      <p>The <strong>${name}</strong> tab is taking longer than expected.</p>
+      <p class="muted small">If you're offline, the cached version may still appear in a moment. Otherwise the data file may be missing or unreachable.</p>
+      <button class="btn-primary" onclick="window.location.reload()">Retry</button>
+    </div>
+  `;
+}
+
 async function route() {
   const container = document.getElementById('app');
   const { name, params } = parseRoute();
   const handler = ROUTES[name] || renderLearn;
   setActiveNav(handler === renderLearn ? 'learn' : name);
-  container.innerHTML = '<p class="loading">Loading...</p>';
+  renderSkeleton(container, name);
+  let timedOut = false;
+  const timeoutId = setTimeout(() => {
+    timedOut = true;
+    renderTimeout(container, name);
+  }, 5000);
   try {
     await handler(container, params);
   } catch (err) {
     console.error('Route handler failed:', err);
-    container.innerHTML = `<div class="placeholder"><h2>Error</h2><p>${err.message}</p></div>`;
+    if (!timedOut) {
+      container.innerHTML = `<div class="placeholder"><h2>Error</h2><p>${err.message}</p><button class="btn-primary" onclick="window.location.reload()">Reload</button></div>`;
+    }
+  } finally {
+    clearTimeout(timeoutId);
   }
   refreshDrillBadge();
 }
