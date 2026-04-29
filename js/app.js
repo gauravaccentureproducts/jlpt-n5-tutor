@@ -1,5 +1,5 @@
 // Router + chapter coordinator.
-import { initStorage, getDueCount } from './storage.js';
+import { initStorage, getDueCount, recordStudyToday } from './storage.js';
 import { initFuriganaToggle } from './furigana.js';
 import { renderLearn } from './learn.js';
 import { renderTest } from './test.js';
@@ -10,6 +10,7 @@ import { renderDiagnostic } from './diagnostic.js';
 import { renderSettings, applyTheme, applyFontSize, applyAudioRate, applyReduceMotion } from './settings.js';
 import { initKanjiPopover } from './kanji-popover.js';
 import { initShortcuts } from './shortcuts.js';
+import { initSearch } from './search.js';
 import { renderKosoado } from './kosoado.js';
 import { renderWaGa } from './wa-vs-ga.js';
 import { renderVerbClass } from './verb-class.js';
@@ -19,9 +20,11 @@ import { renderCounters } from './counters.js';
 import { renderReading } from './reading.js';
 import { renderListening } from './listening.js';
 import { renderKanji } from './kanji.js';
+import { renderHome } from './home.js';
 import { initI18n } from './i18n.js';
 
 const ROUTES = {
+  home:       renderHome,
   learn:      renderLearn,
   test:       renderTest,
   drill:      renderDrill,
@@ -54,7 +57,7 @@ function setActiveNav(name) {
 }
 
 const LOCATION_LABELS = {
-  learn: 'Learn', test: 'Test', drill: 'Daily Drill', review: 'Review',
+  home: 'Home', learn: 'Learn', test: 'Test', drill: 'Practice', review: 'Review',
   summary: 'Summary', diagnostic: 'Diagnostic', settings: 'Settings',
   kosoado: 'こそあど grid', waga: 'は vs が', verbclass: 'Verb groups',
   teform: 'て-form gym', particles: 'Particle pairs', counters: 'Counters',
@@ -149,7 +152,12 @@ window.addEventListener('DOMContentLoaded', async () => {
   await initFuriganaToggle(route);
   initKanjiPopover();
   initShortcuts();
-  if (!location.hash) location.hash = '#/learn';
+  initSearch();
+  // Record study activity for streak (Brief 2 §6.1) on any meaningful interaction
+  ['click', 'keydown'].forEach(evt => {
+    document.addEventListener(evt, () => recordStudyToday(), { once: true });
+  });
+  if (!location.hash) location.hash = '#/home';
   await route();
   applyAudioRate();
 });

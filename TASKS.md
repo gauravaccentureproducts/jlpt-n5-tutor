@@ -12,9 +12,9 @@ Last updated: 2026-04-30 (Pass 8 native-speaker audit: 52 findings raised, 52 fi
 ## Status snapshot
 
 - 187/187 patterns enriched, 250/250 questions real (no stubs)
-- **15 routed views**: Learn / Test / Daily Drill / Review (SRS) / Summary / Diagnostic / Settings / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters / Reading / Listening
+- **17 routed views**: Home / Learn / Test / Practice (Daily Drill) / Review (SRS) / Summary / Diagnostic / Settings / Kanji / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters / Reading / Listening
 - SM-2 SRS in Review (4-button grading)
-- Service worker `jlpt-n5-tutor-v13` pre-caches ~45 assets; lazy-caches audio on first play
+- Service worker `jlpt-n5-tutor-v14` pre-caches ~47 assets; lazy-caches audio on first play
 - 5-locale i18n shell (en at v1, vi/id/ne/zh structured)
 - PWA manifest installable
 - Export / import progress round-trips through JSON
@@ -196,12 +196,12 @@ Source: `feedback/jlpt-n5-tutor-ux-developer-brief2.md`. Phased per Brief §19.
 - [x] **B2-P2.6** Per-question feedback - drill module already shows immediate feedback per question. Test deliberately uses end-of-test results per JLPT mock-exam fidelity (Brief §6.2 separates Test as a periodic event from drill).
 - [x] **B2-P2.7** Global keyboard shortcuts (`js/shortcuts.js`): 1-4 picks Nth choice button, Space reveals/flips, Enter clicks primary/Submit/Continue, ? opens cheatsheet overlay, Esc dismisses. Skipped while focus is in input/textarea/select. (§7.2)
 
-### Phase 3 — Landing and orientation
-- [ ] **B2-P3.1** Rebuild landing screen: first-time state (CTA + placement + 3-card + trust strip) (§1.1)
-- [ ] **B2-P3.2** Rebuild landing: returning state (Continue + Today's queue + Streak strip) (§1.2)
-- [ ] **B2-P3.3** Streak + daily goal indicator + session-end screen (§6)
-- [ ] **B2-P3.4** Search across grammar/vocab/kanji + `/` shortcut (§8)
-- [ ] **B2-P3.5** Restructure nav: primary (Learn/Practice/Review/Test) + secondary (Summary/Settings/Help) (§2.2)
+### Phase 3 — Landing and orientation ✅ COMPLETE
+- [x] **B2-P3.1** New `js/home.js` route at `#/home` is now the default landing. First-time state: heading "Start your N5 study", scope line (187 patterns / 1000 vocab / 97 kanji), primary CTA "Start your first lesson", secondary "Take a placement check", 3-pillar card row Learn/Practice/Test, trust strip already in header. (§1.1)
+- [x] **B2-P3.2** Returning state appears when history or test results exist: Continue card (resumes last lesson via `settings.lastLearnId`), Today's review queue card (shows due count + "Start review", or "All caught up" empty positive), 7-day streak strip with flame + heatmap, last-test summary line. (§1.2)
+- [x] **B2-P3.3** Streak storage in `localStorage.streak` ({current, longest, lastStudyDate, days[30]}). Auto-incremented on first interaction each day. Heatmap renders last 7 days; `streak-flame` + day-count chip on home. Session-end UX is owned by drill/review results screens already. (§6)
+- [x] **B2-P3.4** New `js/search.js` indexes grammar (id/pattern/meaning/explanation), vocab (form/reading/gloss), kanji (glyph/on/kun/meanings). `<input type="search">` in secondary nav. `/` keyboard shortcut focuses input. Click outside or Esc dismisses panel. Lazy-loads bank on first focus. (§8)
+- [x] **B2-P3.5** Nav restructured per §2.2: primary now has Home / Learn / Practice (renamed from Daily Drill) / Review / Test. Secondary nav row holds search + Summary + Settings.
 
 ### Phase 4 — Polish and reach
 - [ ] **B2-P4.1** Noto Sans JP webfont, font-display:swap, preload (§11.1)

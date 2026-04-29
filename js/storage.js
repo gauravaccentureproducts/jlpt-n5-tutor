@@ -58,6 +58,33 @@ export function initStorage() {
   if (get('history') === null) set('history', {});
   if (get('results') === null) set('results', []);
   if (get('knownKanji') === null) set('knownKanji', {});  // Brief 2 §4.2
+  if (get('streak') === null) set('streak', { current: 0, longest: 0, lastStudyDate: null, days: [] });
+}
+
+// Streak tracking (Brief 2 §6.1).
+// `days` is a sliding window of YYYY-MM-DD strings (last 30 days) for the heatmap.
+function todayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+export function getStreak() { return get('streak', { current: 0, longest: 0, lastStudyDate: null, days: [] }); }
+export function recordStudyToday() {
+  const s = getStreak();
+  const today = todayKey();
+  if (s.lastStudyDate === today) return s;
+  // If lastStudyDate is yesterday, increment streak. Otherwise reset to 1.
+  if (s.lastStudyDate) {
+    const last = new Date(s.lastStudyDate);
+    const diff = Math.round((new Date(today) - last) / 86400000);
+    s.current = diff === 1 ? s.current + 1 : 1;
+  } else {
+    s.current = 1;
+  }
+  s.longest = Math.max(s.longest || 0, s.current);
+  s.lastStudyDate = today;
+  s.days = [...new Set([...(s.days || []), today])].slice(-30);
+  set('streak', s);
+  return s;
 }
 
 // Per-kanji "I know this" flags (Brief 2 §4.2).

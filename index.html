@@ -25,14 +25,18 @@
       </ul>
     </div>
     <nav class="primary-nav" aria-label="Primary">
+      <a href="#/home" data-route="home" aria-label="Home">⌂</a>
       <a href="#/learn" data-route="learn">Learn</a>
-      <a href="#/test" data-route="test">Test</a>
       <a href="#/drill" data-route="drill">
-        Daily Drill<span id="drill-badge" class="badge" hidden aria-label="patterns due"></span>
+        Practice<span id="drill-badge" class="badge" hidden aria-label="patterns due"></span>
       </a>
       <a href="#/review" data-route="review">Review</a>
-      <a href="#/summary" data-route="summary">Summary</a>
-      <a href="#/settings" data-route="settings" aria-label="Settings">⚙</a>
+      <a href="#/test" data-route="test">Test</a>
+    </nav>
+    <nav class="secondary-nav" aria-label="Secondary">
+      <input type="search" id="search-input" placeholder="Search…" aria-label="Search grammar / vocab / kanji" autocomplete="off">
+      <a href="#/summary" data-route="summary" class="secondary-nav-link">Summary</a>
+      <a href="#/settings" data-route="settings" class="secondary-nav-link" aria-label="Settings">⚙</a>
     </nav>
     <div class="settings">
       <label class="furigana-toggle">
