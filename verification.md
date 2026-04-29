@@ -346,3 +346,47 @@ If a stricter exam-ready subset is desired, strip all `[Ext]` and `[Cul]` lines 
 - [Jisho.org — `#kanji #jlpt-n5`](https://jisho.org/search/%23kanji%20%23jlpt-n5) (kanji reading verification)
 - [Jisho — entry for あめ (candy kanji)](https://jisho.org/search/%E9%A3%B4) (confirmed N5 tag for "candy")
 - [Jisho — entry for んです](https://jisho.org/search/%E3%82%93%E3%81%A7%E3%81%99) (confirmed common-word status)
+
+---
+
+## Pass 5 - Question-bank teacher audit (2026-04-30)
+
+> Scope: 5 KB question-bank files newly authored after Pass 4 (`moji_questions_n5.md`, `goi_questions_n5.md`, `bunpou_questions_n5.md`, `dokkai_questions_n5.md`, `authentic_extracted_n5.md`). Pass 4 ended with 0 issues in the 4 catalog files; question files were not yet authored at that time.
+
+### Findings (10 fixes applied)
+
+| # | File | Severity | Finding | Fix |
+|---|---|---|---|---|
+| **F-MOJI-1** | `moji_questions_n5.md` Q66 | CRITICAL | Options 1 and 4 were both `何曜日` (duplicate option, broken question). | Replaced option 4 with `木曜日`. ✅ |
+| **F-MOJI-2** | `moji_questions_n5.md` Q65 | HIGH | Stem `がいこくで 仕ごとを` used 仕 (not in N5 syllabus) - the file's own header bans non-N5 kanji in stems. | Stem changed to all-kana `しごとを`. ✅ |
+| **F-MOJI-3** | `moji_questions_n5.md` Q54 | HIGH | Correct answer `友達` uses 達 which is N4. The orthography test fundamentally cannot test a non-N5 kanji as the correct answer per the project rule. | Replaced with N5-only orthography test for `とも` (friend). ✅ |
+| **F-MOJI-4** | `moji_questions_n5.md` Q55 | HIGH | Correct answer `弟` is N4 kanji. | Replaced with `大人` (おとな) test - 大 + 人, both N5. ✅ |
+| **F-MOJI-5** | `moji_questions_n5.md` Q58 | HIGH | Correct answer `犬` is N4 kanji. | Replaced with two-blank `女の人` test - 女 + 人, both N5. ✅ |
+| **F-GOI-1** | `goi_questions_n5.md` Q42 | HIGH | Stem `しごとは いつも （　　） に おわります` had a misplaced `に` particle - the labeled answer はやく is an adverb that doesn't take に, and other options don't fit either. | Removed `に` from stem; updated options to make answer 2 (はやく) clearly correct. ✅ |
+| **F-GOI-2** | `goi_questions_n5.md` Q43 | HIGH | Stem `（　　） で 十分です` had a redundant `で`; `あるいて 十分` is the natural form, not `あるいて で 十分`. | Removed `で` from stem. ✅ |
+| **F-BUN-1** | `bunpou_questions_n5.md` Q12 | CRITICAL | Spurious YAML-like line `:question_form_options:` between option 1 and option 2 - syntax artifact from an earlier edit. | Removed the spurious line. ✅ |
+| **F-DOK-1** | `dokkai_questions_n5.md` Passage 6 | HIGH | Letter passage said `あした、 学校で しゅくだいの 紙を わすれて しまいました` - tense mismatch (`あした` future + `わすれてしまいました` past). | Changed `あした` → `きのう`. Also changed `教しつ` (mixed kanji-hiragana with non-N5 教) → `きょうしつ`. ✅ |
+| **F-AUTH-1** | `authentic_extracted_n5.md` Q51 | MEDIUM | Source-site question for `五百円` had wrong answer key (canonical reading ごひゃくえん was not among the 4 options; site labeled 2 = ごまんえん which is incorrect). | Replaced with valid `五千円` (ごせんえん) reading question using only N5 kanji. ✅ |
+| **F-AUTH-2** | `authentic_extracted_n5.md` Q55 | MEDIUM | Source-site question for `今朝` had a duplicate/typo'd option set with no clean けさ choice. | Replaced option set with the canonical jukujikun reading けさ. ✅ |
+
+### Methodology
+
+For each file, the auditor read every question stem and option, checking:
+
+1. **Stem grammaticality** - particle placement, tense agreement, copula form, register consistency.
+2. **Answer correctness** - does the labeled answer actually work in the stem.
+3. **Distractor plausibility** - are wrong options actually wrong, and are they distractors a learner could reasonably consider.
+4. **Kanji-rule compliance** - stems and correct answers must use only the 101 N5-syllabus kanji; distractor options may use non-N5 kanji per the documented exception in the file headers.
+5. **Duplicate options** - no two options should be identical strings.
+
+### Net outcome
+
+- **Question files: 11 findings, 11 fixes applied** (no remaining open issues from this pass).
+- **Catalog files**: clean since Pass 4. No new findings on re-read.
+- **Em-dash count in question files**: 0 (verified). Catalog files retain em-dashes; not a Japanese-accuracy concern but tracked separately under the project's earlier em-dash-purge directive.
+- **Total questions per file** (post-fix counts): moji 100, goi 100, bunpou 101 (one extra header from the original Q61-revised marker), dokkai 100, authentic_extracted 189.
+
+### Open items (not Japanese-accuracy)
+
+- Catalog files have residual em-dashes (sources 25, grammar 40, kanji 20, vocab 1042). This is a stylistic/directive item, not a Japanese-language accuracy item, and has been deferred since the user's recent work has not re-triggered the purge.
+- The non-N5 kanji counts in question files reflect the documented distractor exception; non-distractor uses (stems, correct answers) are now compliant.

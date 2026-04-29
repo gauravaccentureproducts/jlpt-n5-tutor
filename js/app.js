@@ -12,6 +12,7 @@ import { renderKosoado } from './kosoado.js';
 import { renderWaGa } from './wa-vs-ga.js';
 import { renderVerbClass } from './verb-class.js';
 import { renderTeForm } from './te-form.js';
+import { renderParticlePairs } from './particle-pairs.js';
 import { initI18n } from './i18n.js';
 
 const ROUTES = {
@@ -26,6 +27,7 @@ const ROUTES = {
   waga:       renderWaGa,
   verbclass:  renderVerbClass,
   teform:     renderTeForm,
+  particles:  renderParticlePairs,
 };
 
 function parseRoute() {

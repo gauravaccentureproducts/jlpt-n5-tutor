@@ -622,25 +622,25 @@ __がっこう__ で にほんごを べんきょうします。
 
 ### Q54
 
-きょうは __ともだち__ と えいがを 見ました。
+きょうは __とも__ だちと えいがを 見ました。
 
-1. 友連
-2. 友達
-3. 朋達
-4. 友足
+1. 反
+2. 友
+3. 父
+4. 文
 
-**Answer: 2** - actually 達 is not in the N5 syllabus, so the canonical "correct" answer remains 友達 because that's the dictionary form even though the second kanji is N4. (For exam purposes, recognize 友 as the N5 piece.)
+**Answer: 2** - 友 (とも - friend, N5 kanji).
 
 ### Q55
 
-__おとうと__ は しょうがくせいです。
+うちには __おとな__ が 一人と 子どもが ふたり います。
 
-1. 弟
-2. 妹
-3. 兄
-4. 姉
+1. 大人
+2. 太人
+3. 大入
+4. 太入
 
-**Answer: 1** - 弟 is the kanji for younger brother (recognition only at N5 - 弟 itself is N4 kanji).
+**Answer: 1** - 大人 (おとな - adult; 大 + 人, both N5).
 
 ### Q56
 
@@ -666,14 +666,14 @@ __はは__ は きょうし です。
 
 ### Q58
 
-うちには __いぬ__ が います。
+__おんな__ の __ひと__ が 三人 います。
 
-1. 大
-2. 犬
-3. 太
-4. 火
+1. 安・人
+2. 女・入
+3. 女・人
+4. 安・入
 
-**Answer: 2** - 犬 (dog) - recognition; 犬 itself is N4 kanji, but the option is presented as a typical orthography distractor.
+**Answer: 3** - 女 (woman) + 人 (person), both N5.
 
 ### Q59
 
@@ -743,7 +743,7 @@ __にほんご__ で 話します。
 
 ### Q65
 
-__がいこく__ で 仕ごとを して います。
+__がいこく__ で しごとを して います。
 
 1. 外国
 2. 内国
@@ -759,9 +759,9 @@ __がいこく__ で 仕ごとを して います。
 1. 何曜日
 2. 月曜日
 3. 火曜日
-4. 何曜日
+4. 木曜日
 
-**Answer: 1** (option 4 also appears the same - exam paper would dedupe; choose 1).
+**Answer: 1** - 何曜日.
 
 ### Q67
 

@@ -310,10 +310,10 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 
 > Source: https://learnjapaneseaz.com/jlpt-n5-kanji-practice-test-1.html (page 16)
 
-#### Q51
-かばんのなかに**五百円**のとけいがあります。
-1. ごまんねん  2. ごまんえん  3. ごぜんねん  4. ごぜんえん
-**Answer: ?** Site labels Q1 answer "ごまんえん" but the correct reading for 五百円 is ごひゃくえん. The site's recorded answer (2: ごまんえん) maps to a 万 reading. Treat as a site error - the canonical answer is ごひゃくえん, not present in options.
+#### Q51 (CORRECTED - source error replaced with valid item)
+かばんのなかに**五千円**のとけいがあります。
+1. ごせんえん  2. ごまんえん  3. ごせんねん  4. ごじゅうえん
+**Answer: 1** - 五千円 = ごせんえん (5,000 yen). Original site Q1 had a misspelled stem and answer set; the canonical reading was not present in the options. Replaced here with a valid 千 / 円 reading question using only N5 kanji.
 
 #### Q52
 としょかんでにほんごのほんを**読みます**。
@@ -330,10 +330,10 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 1. おい  2. おおきい  3. おいい  4. おおい
 **Answer: 4** (おおい).
 
-#### Q55
+#### Q55 (CORRECTED - source typo fixed)
 **今朝**、あめがふりました。
-1. あさ  2. けっさ  3. けっさ  4. はさ
-**Answer: 3** Site lists answer 3 but canonical reading is けさ - one of the options likely has typo. Treat 3 as the listed answer per source; actual jukujikun reading is けさ.
+1. こんちょう  2. けさ  3. いまあさ  4. こんあさ
+**Answer: 2** - 今朝 (けさ) is a jukujikun (special reading). The original site option set contained a duplicate/typo; corrected here with the canonical reading.
 
 #### Q56
 ねるまえに**風呂**にはいりました。

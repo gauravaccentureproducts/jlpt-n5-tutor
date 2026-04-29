@@ -52,6 +52,7 @@ function renderTOC(container, data) {
       <a href="#/kosoado">こそあど grid →</a>
       <a href="#/verbclass">Verb groups →</a>
       <a href="#/teform">て-form gym →</a>
+      <a href="#/particles">Particle pairs →</a>
     </div>
   `;
   for (const [cat, { items }] of sorted) {
