@@ -1907,101 +1907,6 @@
       "is_stub": true
     },
     {
-      "id": "q-0100",
-      "grammarPatternId": "n5-068",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "plain past negative",
-      "choices": [
-        "よね",
-        "Verb-なかった",
-        "を",
-        "～と～と、どちらが～ですか"
-      ],
-      "correctAnswer": "Verb-なかった",
-      "explanation_en": "Stub question for n5-068 (Verb-なかった). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0101",
-      "grammarPatternId": "n5-069",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "Verb-ない",
-        "Verb-て",
-        "それから",
-        "～なくちゃ / ～なきゃ"
-      ],
-      "correctAnswer": "Verb-て",
-      "explanation_en": "Stub question for n5-069 (Verb-て). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0102",
-      "grammarPatternId": "n5-070",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "sequential actions",
-      "choices": [
-        "ごろ",
-        "な-Adjective + な + Noun",
-        "Verb-て、Verb-て、…",
-        "も"
-      ],
-      "correctAnswer": "Verb-て、Verb-て、…",
-      "explanation_en": "Stub question for n5-070 (Verb-て、Verb-て、…). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0103",
-      "grammarPatternId": "n5-071",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "please do",
-      "choices": [
-        "～なくてはならない",
-        "～はいかがですか",
-        "Verb-てください",
-        "な-Adjective て-form: ～で"
-      ],
-      "correctAnswer": "Verb-てください",
-      "explanation_en": "Stub question for n5-071 (Verb-てください). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0104",
-      "grammarPatternId": "n5-072",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "progressive / state",
-      "choices": [
-        "Verb-ています",
-        "は",
-        "Verb-ませんか",
-        "Verb-stem + ～かた"
-      ],
-      "correctAnswer": "Verb-ています",
-      "explanation_en": "Stub question for n5-072 (Verb-ています). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
       "id": "q-0105",
       "grammarPatternId": "n5-073",
       "type": "mcq",
@@ -2016,44 +1921,6 @@
       ],
       "correctAnswer": "Verb-ていません",
       "explanation_en": "Stub question for n5-073 (Verb-ていません). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0106",
-      "grammarPatternId": "n5-074",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "may / it's okay to",
-      "choices": [
-        "Verb-てもいいです",
-        "こんな / そんな / あんな / どんな + Noun",
-        "どうして～か。～から。",
-        "Question word + か / も compounds"
-      ],
-      "correctAnswer": "Verb-てもいいです",
-      "explanation_en": "Stub question for n5-074 (Verb-てもいいです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0107",
-      "grammarPatternId": "n5-075",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "must not",
-      "choices": [
-        "～がすきです / きらいです",
-        "〜でしょう",
-        "～がじょうずです / へたです",
-        "Verb-てはいけません"
-      ],
-      "correctAnswer": "Verb-てはいけません",
-      "explanation_en": "Stub question for n5-075 (Verb-てはいけません). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
       "high_confusion": false,
       "difficulty": 1,
       "is_stub": true
@@ -2078,25 +1945,6 @@
       "is_stub": true
     },
     {
-      "id": "q-0109",
-      "grammarPatternId": "n5-077",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "please don't",
-      "choices": [
-        "～ふん / ぷん",
-        "Verb-stem + に いきます / きます / かえります",
-        "ごろ",
-        "Verb-ないでください"
-      ],
-      "correctAnswer": "Verb-ないでください",
-      "explanation_en": "Stub question for n5-077 (Verb-ないでください). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
       "id": "q-0110",
       "grammarPatternId": "n5-078",
       "type": "mcq",
@@ -2116,44 +1964,6 @@
       "is_stub": true
     },
     {
-      "id": "q-0114",
-      "grammarPatternId": "n5-082",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "いつも / たいてい / たまに",
-        "～がほしいです",
-        "い-Adjective past negative: ～くなかったです / ～くありませんでした",
-        "よ"
-      ],
-      "correctAnswer": "い-Adjective past negative: ～くなかったです / ～くありませんでした",
-      "explanation_en": "Stub question for n5-082 (い-Adjective past negative: ～くなかったです / ～くありませんでした). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0115",
-      "grammarPatternId": "n5-083",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "い-Adjective て-form: ～くて",
-        "〜だろう",
-        "Verb-ないでください",
-        "お～ / ご～"
-      ],
-      "correctAnswer": "い-Adjective て-form: ～くて",
-      "explanation_en": "Stub question for n5-083 (い-Adjective て-form: ～くて). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
       "id": "q-0116",
       "grammarPatternId": "n5-084",
       "type": "mcq",
@@ -2168,82 +1978,6 @@
       ],
       "correctAnswer": "な-Adjective + な + Noun",
       "explanation_en": "Stub question for n5-084 (な-Adjective + な + Noun). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0119",
-      "grammarPatternId": "n5-087",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "な-Adjective past: ～でした",
-        "～ができます",
-        "～に～をもらいます",
-        "ずつ"
-      ],
-      "correctAnswer": "な-Adjective past: ～でした",
-      "explanation_en": "Stub question for n5-087 (な-Adjective past: ～でした). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0120",
-      "grammarPatternId": "n5-088",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "な-Adjective past negative: ～じゃありませんでした",
-        "だれ / どなた",
-        "でも",
-        "Verb-から"
-      ],
-      "correctAnswer": "な-Adjective past negative: ～じゃありませんでした",
-      "explanation_en": "Stub question for n5-088 (な-Adjective past negative: ～じゃありませんでした). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0121",
-      "grammarPatternId": "n5-089",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "では / じゃ",
-        "が",
-        "な-Adjective て-form: ～で",
-        "まいにち / まいしゅう / まいつき / まいとし"
-      ],
-      "correctAnswer": "な-Adjective て-form: ～で",
-      "explanation_en": "Stub question for n5-089 (な-Adjective て-form: ～で). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0123",
-      "grammarPatternId": "n5-091",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "animate exists",
-      "choices": [
-        "Verb-る / Verb-u",
-        "〜だろう",
-        "います",
-        "Verb-ませんでした"
-      ],
-      "correctAnswer": "います",
-      "explanation_en": "Stub question for n5-091 (います). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
       "high_confusion": false,
       "difficulty": 1,
       "is_stub": true
@@ -2472,25 +2206,6 @@
       ],
       "correctAnswer": "～ができます",
       "explanation_en": "Stub question for n5-103 (～ができます). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0136",
-      "grammarPatternId": "n5-104",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "want to do",
-      "choices": [
-        "～がすきです / きらいです",
-        "いつ",
-        "Verb-stem + たいです",
-        "どこか / どこも"
-      ],
-      "correctAnswer": "Verb-stem + たいです",
-      "explanation_en": "Stub question for n5-104 (Verb-stem + たいです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
       "high_confusion": false,
       "difficulty": 1,
       "is_stub": true
@@ -4759,6 +4474,696 @@
       },
       "high_confusion": false,
       "difficulty": 2
+    },
+    {
+      "id": "q-0250",
+      "grammarPatternId": "n5-068",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "casual かこ ひていけいを えらんでください。",
+      "question_ja": "きのう おさけを（　）。",
+      "choices": [
+        "のんだ",
+        "のまなかった",
+        "のみました",
+        "のまない"
+      ],
+      "correctAnswer": "のまなかった",
+      "explanation_en": "Plain past-negative: のまない → のまなかった (drop い + かった).",
+      "distractor_explanations": {
+        "のんだ": "Past affirmative.",
+        "のみました": "Polite past affirmative.",
+        "のまない": "Plain non-past negative."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0251",
+      "grammarPatternId": "n5-068",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "casual かこ ひていけいを えらんでください。",
+      "question_ja": "あさごはんを（　）。 (\"didn't eat\")",
+      "choices": [
+        "たべた",
+        "たべなかった",
+        "たべません",
+        "たべない"
+      ],
+      "correctAnswer": "たべなかった",
+      "explanation_en": "たべる → たべない → たべなかった.",
+      "distractor_explanations": {
+        "たべた": "Affirmative past.",
+        "たべません": "Polite negative non-past.",
+        "たべない": "Plain non-past."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0252",
+      "grammarPatternId": "n5-069",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "てけいを えらんでください。",
+      "question_ja": "のむ → ?",
+      "choices": [
+        "のんで",
+        "のんだ",
+        "のみて",
+        "のむて"
+      ],
+      "correctAnswer": "のんで",
+      "explanation_en": "む / ぬ / ぶ → んで. Same as た-form just with て.",
+      "distractor_explanations": {
+        "のんだ": "That's the た-form (past).",
+        "のみて": "Stems shift む → ん, not み.",
+        "のむて": "Don't keep む."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0253",
+      "grammarPatternId": "n5-069",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "てけいを えらんでください。",
+      "question_ja": "行く → ?",
+      "choices": [
+        "いいて",
+        "行って",
+        "行きて",
+        "行くて"
+      ],
+      "correctAnswer": "行って",
+      "explanation_en": "行く is the famous exception — takes って not いて.",
+      "distractor_explanations": {
+        "いいて": "That's the regular -く rule (incorrect for 行く).",
+        "行きて": "Stem shifts く → って.",
+        "行くて": "Don't keep く."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0254",
+      "grammarPatternId": "n5-070",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "あさごはんを（　）、がっこうへ 行きました。",
+      "choices": [
+        "たべます",
+        "たべて",
+        "たべました",
+        "たべる"
+      ],
+      "correctAnswer": "たべて",
+      "explanation_en": "Sequential chain: middle verbs use te-form. Final verb 行きました carries tense.",
+      "distractor_explanations": {
+        "たべます": "Don't use polite form mid-chain.",
+        "たべました": "Past, but for sequence use te-form.",
+        "たべる": "Plain form, doesn't connect smoothly to next clause."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0255",
+      "grammarPatternId": "n5-070",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "シャワーを あびて、あさごはんを（　）、出かけました。",
+      "choices": [
+        "たべる",
+        "たべて",
+        "たべました",
+        "たべます"
+      ],
+      "correctAnswer": "たべて",
+      "explanation_en": "Multiple sequential actions all use te-form except the final one.",
+      "distractor_explanations": {
+        "たべる": "Plain form doesn't chain naturally.",
+        "たべました": "Final verb 出かけました already carries the past tense.",
+        "たべます": "Don't mix polite forms mid-chain."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0256",
+      "grammarPatternId": "n5-071",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "ちょっと（　）ください。",
+      "choices": [
+        "まつ",
+        "まちて",
+        "まって",
+        "まった"
+      ],
+      "correctAnswer": "まって",
+      "explanation_en": "まつ → まって (う/つ/る → って) + ください.",
+      "distractor_explanations": {
+        "まつ": "Dictionary form — needs te-form before ください.",
+        "まちて": "つ → って, not ちて.",
+        "まった": "That's the た-form, not て-form."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0257",
+      "grammarPatternId": "n5-071",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "ここに 名前を（　）ください。",
+      "choices": [
+        "かく",
+        "かいて",
+        "かきて",
+        "かいた"
+      ],
+      "correctAnswer": "かいて",
+      "explanation_en": "かく → かいて (く → いて) + ください.",
+      "distractor_explanations": {
+        "かく": "Dictionary form.",
+        "かきて": "く → いて, not きて.",
+        "かいた": "た-form."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0258",
+      "grammarPatternId": "n5-072",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "いま ごはんを（　）。",
+      "choices": [
+        "たべます",
+        "たべている",
+        "たべています",
+        "たべました"
+      ],
+      "correctAnswer": "たべています",
+      "explanation_en": "いま (now) signals current ongoing action — use te+います.",
+      "distractor_explanations": {
+        "たべます": "Plain present — doesn't emphasize 'right now'.",
+        "たべている": "Plain ている — needed です/ます for polite.",
+        "たべました": "Past tense."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0259",
+      "grammarPatternId": "n5-072",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "あの 人は けっこん（　）。 (\"That person is married.\")",
+      "choices": [
+        "します",
+        "しました",
+        "しています",
+        "しません"
+      ],
+      "correctAnswer": "しています",
+      "explanation_en": "けっこんする is a punctual verb — ています expresses the resulting STATE ('is married').",
+      "distractor_explanations": {
+        "します": "Plain present means 'will marry'.",
+        "しました": "Past — 'got married' (the event).",
+        "しません": "Negative."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0260",
+      "grammarPatternId": "n5-074",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "ここで しゃしんを（　）もいいですか。",
+      "choices": [
+        "とる",
+        "とって",
+        "とりて",
+        "とった"
+      ],
+      "correctAnswer": "とって",
+      "explanation_en": "とる → とって + もいいです (permission).",
+      "distractor_explanations": {
+        "とる": "Need te-form.",
+        "とりて": "う/つ/る → って.",
+        "とった": "That's た-form."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0261",
+      "grammarPatternId": "n5-074",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "テレビを（　）もいいですか。",
+      "choices": [
+        "みる",
+        "みて",
+        "みた",
+        "みます"
+      ],
+      "correctAnswer": "みて",
+      "explanation_en": "みる → みて (drop る + て).",
+      "distractor_explanations": {
+        "みる": "Need te-form.",
+        "みた": "た-form.",
+        "みます": "Polite form."
+      },
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0262",
+      "grammarPatternId": "n5-075",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "じゅぎょうちゅうは（　）はいけません。",
+      "choices": [
+        "はなす",
+        "はなして",
+        "はなした",
+        "はなしません"
+      ],
+      "correctAnswer": "はなして",
+      "explanation_en": "てはいけません = must not. Need te-form before は.",
+      "distractor_explanations": {
+        "はなす": "Need te-form.",
+        "はなした": "た-form.",
+        "はなしません": "Polite negative — wrong structure."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0263",
+      "grammarPatternId": "n5-075",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "ここで たばこを（　）はいけません。",
+      "choices": [
+        "すう",
+        "すって",
+        "すうて",
+        "すいて"
+      ],
+      "correctAnswer": "すって",
+      "explanation_en": "すう → すって (う → って).",
+      "distractor_explanations": {
+        "すう": "Need te-form.",
+        "すうて": "う → って, not うて.",
+        "すいて": "Wrong stem-shift."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0264",
+      "grammarPatternId": "n5-077",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "ここで しゃしんを（　）でください。",
+      "choices": [
+        "とる",
+        "とって",
+        "とらない",
+        "とります"
+      ],
+      "correctAnswer": "とらない",
+      "explanation_en": "ないでください = please don't. Use plain ない-form.",
+      "distractor_explanations": {
+        "とる": "Affirmative dictionary form.",
+        "とって": "That's てください (please DO).",
+        "とります": "Polite affirmative."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0265",
+      "grammarPatternId": "n5-077",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "（　）でください。 (\"Please don't forget.\")",
+      "choices": [
+        "わすれる",
+        "わすれない",
+        "わすれて",
+        "わすれます"
+      ],
+      "correctAnswer": "わすれない",
+      "explanation_en": "わすれない + でください.",
+      "distractor_explanations": {
+        "わすれる": "Dictionary form.",
+        "わすれて": "てください = please DO forget — opposite meaning.",
+        "わすれます": "Polite affirmative."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0266",
+      "grammarPatternId": "n5-082",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "きのうは さむ（　）です。 (\"wasn't cold\")",
+      "choices": [
+        "くなかった",
+        "くない",
+        "かった",
+        "じゃなかった"
+      ],
+      "correctAnswer": "くなかった",
+      "explanation_en": "い → くない → くなかった (past negative).",
+      "distractor_explanations": {
+        "くない": "Present negative.",
+        "かった": "Past affirmative.",
+        "じゃなかった": "That's for nouns / な-adj."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0267",
+      "grammarPatternId": "n5-082",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "その えいがは おもしろ（　）。",
+      "choices": [
+        "くなかった",
+        "かった",
+        "くない",
+        "くて"
+      ],
+      "correctAnswer": "くなかった",
+      "explanation_en": "Past negative form.",
+      "distractor_explanations": {
+        "かった": "Past affirmative.",
+        "くない": "Present negative.",
+        "くて": "te-form connector."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0268",
+      "grammarPatternId": "n5-083",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "この ほんは おもしろ（　）、やすいです。",
+      "choices": [
+        "い",
+        "くて",
+        "で",
+        "かった"
+      ],
+      "correctAnswer": "くて",
+      "explanation_en": "い-adj te-form: drop い + くて.",
+      "distractor_explanations": {
+        "い": "Affirmative ending — doesn't connect.",
+        "で": "That's for な-adj / nouns.",
+        "かった": "Past — wrong here."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0269",
+      "grammarPatternId": "n5-083",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "いそが（　）、行けません。 (\"busy, so I can't go\")",
+      "choices": [
+        "しい",
+        "しくて",
+        "しいで",
+        "しかった"
+      ],
+      "correctAnswer": "しくて",
+      "explanation_en": "いそがしい → いそがしくて.",
+      "distractor_explanations": {
+        "しい": "Doesn't connect to the next clause.",
+        "しいで": "That's na-adj te-form.",
+        "しかった": "Past."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0270",
+      "grammarPatternId": "n5-087",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "きのうの コンサートは にぎやか（　）。",
+      "choices": [
+        "でした",
+        "かった",
+        "だった",
+        "じゃ"
+      ],
+      "correctAnswer": "でした",
+      "explanation_en": "な-adj past = + でした (like nouns).",
+      "distractor_explanations": {
+        "かった": "That's for い-adj.",
+        "だった": "Plain past, but the polite form is でした.",
+        "じゃ": "Negative starter."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0271",
+      "grammarPatternId": "n5-087",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "あの 人は ゆうめい（　）か。 (\"Was that person famous?\")",
+      "choices": [
+        "でした",
+        "かった",
+        "ですか",
+        "かったです"
+      ],
+      "correctAnswer": "でした",
+      "explanation_en": "ゆうめい (na-adj) past + question = でしたか.",
+      "distractor_explanations": {
+        "かった": "い-adj form.",
+        "ですか": "Present.",
+        "かったです": "い-adj past."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0272",
+      "grammarPatternId": "n5-088",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "その まちは しずか（　）。",
+      "choices": [
+        "じゃありませんでした",
+        "くなかった",
+        "でした",
+        "じゃありません"
+      ],
+      "correctAnswer": "じゃありませんでした",
+      "explanation_en": "na-adj past negative = + じゃありませんでした.",
+      "distractor_explanations": {
+        "くなかった": "i-adj form.",
+        "でした": "Past affirmative.",
+        "じゃありません": "Present negative."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0273",
+      "grammarPatternId": "n5-088",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "きのうの しけんは かんたん（　）。",
+      "choices": [
+        "じゃありませんでした",
+        "くなかったです",
+        "でした",
+        "じゃありません"
+      ],
+      "correctAnswer": "じゃありませんでした",
+      "explanation_en": "かんたん (easy) is na-adj. Past negative = じゃありませんでした.",
+      "distractor_explanations": {
+        "くなかったです": "i-adj form.",
+        "でした": "Past affirmative — wrong polarity.",
+        "じゃありません": "Present, not past."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0274",
+      "grammarPatternId": "n5-089",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "この まちは しずか（　）、きれいです。",
+      "choices": [
+        "で",
+        "くて",
+        "だ",
+        "な"
+      ],
+      "correctAnswer": "で",
+      "explanation_en": "na-adj te-form: just で.",
+      "distractor_explanations": {
+        "くて": "That's i-adj te-form.",
+        "だ": "Plain copula — doesn't connect like this.",
+        "な": "Used before nouns, not for connection."
+      },
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0275",
+      "grammarPatternId": "n5-089",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "あの 人は しんせつ（　）、ゆうめいです。",
+      "choices": [
+        "で",
+        "くて",
+        "だ",
+        "な"
+      ],
+      "correctAnswer": "で",
+      "explanation_en": "しんせつ (kind, na-adj) → しんせつで.",
+      "distractor_explanations": {
+        "くて": "i-adj only.",
+        "だ": "Doesn't connect smoothly.",
+        "な": "Goes before a noun."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0276",
+      "grammarPatternId": "n5-091",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "へやに ねこが（　）。",
+      "choices": [
+        "います",
+        "あります",
+        "です",
+        "ません"
+      ],
+      "correctAnswer": "います",
+      "explanation_en": "います for animate things (cats, people).",
+      "distractor_explanations": {
+        "あります": "あります is for inanimate things.",
+        "です": "です doesn't express existence.",
+        "ません": "Bare ません — needs a verb stem."
+      },
+      "high_confusion": true,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0277",
+      "grammarPatternId": "n5-091",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "きょうしつに がくせいが（　）。 (\"There are no students in the classroom.\")",
+      "choices": [
+        "いません",
+        "ありません",
+        "じゃありません",
+        "ます"
+      ],
+      "correctAnswer": "いません",
+      "explanation_en": "Animate negative existence = いません.",
+      "distractor_explanations": {
+        "ありません": "Inanimate-only.",
+        "じゃありません": "Copula negative — doesn't express existence.",
+        "ます": "Affirmative."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0278",
+      "grammarPatternId": "n5-104",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "わたしは にほんへ（　）です。 (\"want to go\")",
+      "choices": [
+        "行き",
+        "行きたい",
+        "行く",
+        "行って"
+      ],
+      "correctAnswer": "行きたい",
+      "explanation_en": "Drop ます from 行きます, add たい. Then + です for polite.",
+      "distractor_explanations": {
+        "行き": "Stem alone — incomplete.",
+        "行く": "Plain dictionary form.",
+        "行って": "te-form."
+      },
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0279",
+      "grammarPatternId": "n5-104",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "なにを（　）ですか。",
+      "choices": [
+        "食べたい",
+        "食べる",
+        "食べて",
+        "食べた"
+      ],
+      "correctAnswer": "食べたい",
+      "explanation_en": "たい-form for desires.",
+      "distractor_explanations": {
+        "食べる": "Plain — doesn't express desire.",
+        "食べて": "te-form.",
+        "食べた": "Past."
+      },
+      "high_confusion": false,
+      "difficulty": 1
     }
   ]
 }
