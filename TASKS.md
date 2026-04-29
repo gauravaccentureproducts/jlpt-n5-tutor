@@ -61,7 +61,28 @@ Mirrors the in-session TodoWrite list. If updated in either place, sync the othe
 
 ---
 
-## Pending (20)
+## Pending — Phase 3 content enrichment (for "truly accurate" v1)
+
+> Phase 1 (engine + scaffold) and Phase 2 (KB-content fixes + push) are done.
+> The live site has 19 fully-authored patterns with rich examples / common
+> mistakes / form rules, plus 168 skeleton patterns where the parallel-authored
+> grammar.json entries are placeholders (`meaning_en: "TBD"`, empty examples).
+> The 168 stub questions are recognition-only — they work in the engine but
+> don't teach with example sentences. Closing those gaps is Phase 3.
+
+### Phase 3 priorities (in batches of ~15 patterns)
+
+- [ ] **Batch 1**: ます-form basics (ます / ません / ました / ませんでした / ましょう / ましょうか / ませんか), い-adj basics, な-adj basics, plain forms
+- [ ] **Batch 2**: te-form intro + expressions (ています / てください / てもいいです / てはいけません), comparison, たい (want to)
+- [ ] **Batch 3**: existence (あります/います), counters, giving/receiving, time expressions
+- [ ] **Batch 4**: conjunctions, から/ので causation, set patterns (すき/きらい/じょうず/わかる/できる/ほしい)
+- [ ] **Continue** until all 187 patterns have real form_rules + examples + common_mistakes
+- [ ] **Replace stub questions** with real fill-in-blank tied to the authored examples
+- [ ] **Final audit**: zero TBD patterns, zero stub-only questions, all 37+ tests passing, lint clean, coverage 187/187
+
+---
+
+## Pending (legacy — already addressed)
 
 ### Phase 2: KB content accuracy fixes (NEW — teacher's audit, 2026-04-29)
 
@@ -77,11 +98,11 @@ Mirrors the in-session TodoWrite list. If updated in either place, sync the othe
 - [x] **G3**: `KnowledgeBank/grammar_n5.md` §12 — `Verb + counter + Verb (e.g., りんごを ふたつ かいました)` is mislabeled; the example is **Object + counter + Verb**. ✅
 
 #### Semantic errors / homophone handling (5)
-- [ ] **V1**: `KnowledgeBank/vocabulary_n5.md` §27 — `ひく "to pull"` labeled as "variant of" `ひく "to play instrument"`. They're separate verbs (引く vs 弾く). Relabel as homophones.
-- [ ] **V2**: `KnowledgeBank/vocabulary_n5.md` §31 — three `あつい` entries (hot weather / hot to touch / thick) labeled as "variants". They're three separate adjectives (暑い / 熱い / 厚い). Relabel as homophones.
-- [ ] **V3**: `KnowledgeBank/vocabulary_n5.md` §31 — `はやい "early / fast"` glossed as "one reading covers both senses". They're two separate adjectives (早い / 速い).
-- [ ] **V4**: `KnowledgeBank/vocabulary_n5.md` §31 — `やさしい "easy / kind"` lumped together. Two separate adjectives (易しい / 優しい).
-- [ ] **V5**: `KnowledgeBank/vocabulary_n5.md` §28 — `けす` is misclassified as Group 2 (る-verb). It's Group 1 (godan, ends in す). Move to §27.
+- [x] **V1**: `KnowledgeBank/vocabulary_n5.md` §27 — `ひく "to pull"` labeled as "variant of" `ひく "to play instrument"`. They're separate verbs (引く vs 弾く). Relabel as homophones. ✅
+- [x] **V2**: `KnowledgeBank/vocabulary_n5.md` §31 — three `あつい` entries (hot weather / hot to touch / thick) labeled as "variants". They're three separate adjectives (暑い / 熱い / 厚い). Relabel as homophones. ✅
+- [x] **V3**: `KnowledgeBank/vocabulary_n5.md` §31 — `はやい "early / fast"` glossed as "one reading covers both senses". They're two separate adjectives (早い / 速い). ✅
+- [x] **V4**: `KnowledgeBank/vocabulary_n5.md` §31 — `やさしい "easy / kind"` lumped together. Two separate adjectives (易しい / 優しい). ✅
+- [x] **V5**: `KnowledgeBank/vocabulary_n5.md` §28 — `けす` is misclassified as Group 2 (る-verb). It's Group 1 (godan, ends in す). Move to §27. ✅
 
 #### Notation inconsistencies (2)
 - [x] **G1**: `KnowledgeBank/grammar_n5.md` §6 — `Verb-u` mixes romaji with kana `Verb-る`. Replace with `Verb-う`. ✅
@@ -90,19 +111,38 @@ Mirrors the in-session TodoWrite list. If updated in either place, sync the othe
 #### Pedagogical improvements (6)
 - [x] **G7**: `KnowledgeBank/grammar_n5.md` §1 — `～もの / もん (informal contraction)` gloss is too terse. Should describe as a sentence-final particle giving reasons (with もん as the casual contraction of もの). ✅
 - [x] **G9**: `KnowledgeBank/grammar_n5.md` §11 — `Verb-stem + たいです` should note that たい inflects as an い-adjective (たくない, たかった, etc.). ✅
-- [ ] **K1**: `KnowledgeBank/kanji_n5.md` — 道 lists rare on-yomi トウ. Per the file's own "primary N5 use" rule, simplify to ドウ only.
-- [ ] **K2**: `KnowledgeBank/kanji_n5.md` — 読 lists rare on-yomi トク, トウ. Simplify to ドク only.
-- [ ] **V6**: `KnowledgeBank/vocabulary_n5.md` §11 — Add `一日 (いちにち) — one day, all day` (distinct from `一日 (ついたち) — 1st of the month`; JLPT Sensei lists both).
-- [ ] **V7**: `KnowledgeBank/vocabulary_n5.md` §9 — `かい` listed twice for "floor (of building)" and "occurrences" with no disambiguation. Add `(階)` / `(回)` parentheticals.
+- [x] **K1**: `KnowledgeBank/kanji_n5.md` — 道 lists rare on-yomi トウ. Per the file's own "primary N5 use" rule, simplify to ドウ only. ✅
+- [x] **K2**: `KnowledgeBank/kanji_n5.md` — 読 lists rare on-yomi トク, トウ. Simplify to ドク only. ✅
+- [x] **V6**: `KnowledgeBank/vocabulary_n5.md` §11 — Add `一日 (いちにち) — one day, all day` (distinct from `一日 (ついたち) — 1st of the month`; JLPT Sensei lists both). ✅
+- [x] **V7**: `KnowledgeBank/vocabulary_n5.md` §9 — `かい` listed twice for "floor (of building)" and "occurrences" with no disambiguation. Disambiguated via example syntax instead of kanji (kanji 階/回 are not in N5 syllabus). ✅
 
 #### Style consistency (1)
-- [ ] **V8**: KB-wide — mixed kanji-vs-kana convention in examples (e.g., grammar examples use kana for 休 / 行 / 来 even though those kanji are in N5). Decide on a uniform convention and apply it.
+- [x] **V8**: KB-wide — mixed kanji-vs-kana convention in examples (e.g., grammar examples use kana for 休 / 行 / 来 even though those kanji are in N5). Convention adopted: **use N5 kanji whenever the syllabus permits**, kana only for okurigana and out-of-scope kanji. Applied to all Section 23 examples (来 / 読 / 見 / 行 / 休 / 食 / 今日 / 食べかた / 読みかた). ✅
+
+### Phase 2 Audit — Pass 2 (after Pass 1 fixes, 2026-04-29)
+
+> Re-reading Pass 1 results in case fixes introduced new issues, plus a careful re-scan for items missed in Pass 1.
+
+- [x] **P2-1**: `KnowledgeBank/grammar_n5.md` §1 line 20 — `～も` is too terse. Expand to clarify the pattern is "X も Y です" (X is also Y). ✅
+- [x] **P2-2**: `KnowledgeBank/grammar_n5.md` §1 line 21 — `～は～が、～は～` is truncated and ambiguous. Clarify it's a contrastive pattern where `が` here is the conjunction (but), not the subject particle. ✅
+- [x] **P2-6**: `KnowledgeBank/vocabulary_n5.md` §30 — `いる "to exist (animate)"` is duplicated between §28 (Group 2 verbs) and §30 (Existence) without the cross-listing annotation that the file's variant policy requires. ✅
+
+### Phase 2 Audit — Pass 3 (2026-04-29)
+
+- [x] **P3-1**: `KnowledgeBank/vocabulary_n5.md` §27 line 708 — `とる "(variant of above)"` labeling for とる "to take a photo" is inconsistent with V1-V4. Relabel as homophone (取る vs 撮る, separate verbs sharing the kana). ✅
+- [x] **P3-2**: `KnowledgeBank/vocabulary_n5.md` §27 — `つとめる "to work for / be employed"` is **misclassified as Group 1** (godan). 勤める is actually Group 2 (ichidan): conjugates 勤めます / 勤めて / 勤めない. Move to §28. ✅
 
 ---
 
 ### Phase 2: Deployment
 
-- [ ] Push to GitHub and verify deployment on actual GitHub Pages (the only step that can't be done from this environment)
+- [x] **Push to GitHub and verify deployment on actual GitHub Pages**
+  - Repo: https://github.com/gauravaccentureproducts/jlpt-n5-tutor
+  - Live URL: https://gauravaccentureproducts.github.io/jlpt-n5-tutor/
+  - HEAD: `ecb27e8` (initial Phase 1 commit)
+  - Pages status: built · HTTP 200 verified on `/` and `/data/grammar.json`
+  - GH007 email-privacy worked around via noreply email `243459266+gauravaccentureproducts@users.noreply.github.com`
+- [x] Browser test suite (`tests.html`) — **37/37 passing** (storage, SRS transitions, weak detection, mark-as-known, furigana, grading)
 
 ---
 

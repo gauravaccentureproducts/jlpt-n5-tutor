@@ -17,8 +17,8 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - ～は～でした
 - ～は～ではありませんでした / ～じゃありませんでした
 - ～は～ですか
-- ～も
-- ～は～が、～は～
+- ～も～です (X is also Y — replaces は with も to mean "too / also")
+- ～は～ですが、～は～です (contrastive pattern: A is X, but B is Y; が here is the conjunction "but", not the subject particle)
 - ～と～(と) (exhaustive listing of nouns)
 - ～や～(など) (non-exhaustive listing)
 - ～の — single particle pattern; see Section 2 for consolidated sub-uses (possessive / modifier / nominalizer / informal question)
@@ -300,28 +300,28 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 ### 23.1 Explanation and Emphasis
 
 - ～んです / ～のです (gives a reason / asks for an explanation)
-  - Example: どうして 学校に きませんでしたか。— あたまが いたかったんです。
+  - Example: どうして 学校に 来ませんでしたか。— あたまが いたかったんです。
     (Why didn't you come to school? — Because my head hurt.)
 
 ### 23.2 Compound and Listed Actions
 
 - ～たり〜たりする (do A and B, among other things)
-  - Example: 日曜日は 本を よんだり、テレビを みたり します。
+  - Example: 日曜日は 本を 読んだり、テレビを 見たり します。
     (On Sundays I read books, watch TV, and so on.)
 
 ### 23.3 Experience and Advice
 
 - Verb-た + ことがある (have done before — past experience)
-  - Example: 日本に いったことが あります。 (I have been to Japan before.)
+  - Example: 日本に 行ったことが あります。 (I have been to Japan before.)
 - Verb-た + ほうがいい (should do)
-  - Example: もっと やすんだ ほうが いいです。 (You should rest more.)
+  - Example: もっと 休んだ ほうが いいです。 (You should rest more.)
 - Verb-ない + ほうがいい (should not do)
   - Example: たばこを すわない ほうが いいです。 (You shouldn't smoke.)
 
 ### 23.4 Permission and Obligation
 
 - ～なくてもいい (don't have to do)
-  - Example: 日曜日は 学校に いかなくても いいです。
+  - Example: 日曜日は 学校に 行かなくても いいです。
     (You don't have to go to school on Sundays.)
 - ～なくてはいけない (must do)
   - Example: 毎日 しゅくだいを しなくては いけません。
@@ -329,38 +329,38 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - ～なくてはならない (must do — written / formal variant)
   - Example: はやく かえらなくては なりません。 (I must go home soon.)
 - ～ないといけない (must do — common spoken)
-  - Example: すぐ いかないと いけません。 (I have to go right away.)
+  - Example: すぐ 行かないと いけません。 (I have to go right away.)
 - ～なくちゃ / ～なきゃ (must do — casual contraction)
   - Example: いそがなくちゃ。 (I gotta hurry.)
 
 ### 23.5 Excess
 
 - Verb-stem / Adj-stem + すぎる (too much, excessive)
-  - Example: たべすぎました。 (I ate too much.)
+  - Example: 食べすぎました。 (I ate too much.)
   - Example: このスープは からすぎる。 (This soup is too spicy.)
 
 ### 23.6 Intention
 
 - Verb-plain + つもりだ / つもりです (intend to)
-  - Example: あした とうきょうに いく つもりです。
+  - Example: あした とうきょうに 行く つもりです。
     (I intend to go to Tokyo tomorrow.)
 
 ### 23.7 Quotation (Casual)
 
 - ～って (casual quotation marker / topic introducer; replaces と / は in conversation)
-  - Example: たなかさんは あした こないって。
+  - Example: たなかさんは あした 来ないって。
     (Tanaka says he won't come tomorrow.)
 
 ### 23.8 Way of Doing
 
-- Verb-stem + ～かた (way of doing; e.g., たべかた = how to eat)
-  - Example: この かんじの よみかたを おしえて ください。
+- Verb-stem + ～かた (way of doing; e.g., 食べかた = how to eat)
+  - Example: この かんじの 読みかたを おしえて ください。
     (Please teach me how to read this kanji.)
 
 ### 23.9 Sentence-Final Exclamation
 
 - ～なあ (exclamation; "wow…", "I really think…")
-  - Example: きょうは いい 天気だなあ。 (What nice weather today!)
+  - Example: 今日は いい 天気だなあ。 (What nice weather today!)
 
 ### 23.10 Prohibitive (Casual)
 

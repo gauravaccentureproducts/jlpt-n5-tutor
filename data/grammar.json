@@ -2265,17 +2265,76 @@
       "category": "Verbs — Tense and Politeness (ます-form)",
       "categoryOrder": 6,
       "patternOrder": 1,
-      "meaning_en": "non-past affirmative",
-      "meaning_ja": "",
+      "meaning_en": "Polite non-past affirmative verb ending",
+      "meaning_ja": "ていねいな ふつうけい",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem"
+        ],
+        "conjugations": [
+          {
+            "form": "i_stem",
+            "label": "I-stem (Group 1: u→i)",
+            "example": "のむ → のみます"
+          },
+          {
+            "form": "e_stem",
+            "label": "E-stem (Group 2: drop る)",
+            "example": "たべる → たべます"
+          },
+          {
+            "form": "irregular",
+            "label": "Irregular (する → します, くる → きます)",
+            "example": "べんきょうする → べんきょうします"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-ます' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "ます attaches to a verb's stem to form the polite non-past affirmative. The stem depends on verb group: Group 1 (ごだん) shifts the final u-row vowel to i (のむ→のみ-); Group 2 (いちだん) drops る (たべる→たべ-); two irregulars: する→し-, くる→き-.",
+      "examples": [
+        {
+          "ja": "わたしは ほんを よみます。",
+          "form": "affirmative",
+          "translation_en": "I read books.",
+          "furigana": []
+        },
+        {
+          "ja": "まいにち コーヒーを のみます。",
+          "form": "affirmative",
+          "translation_en": "I drink coffee every day.",
+          "furigana": []
+        },
+        {
+          "ja": "あした えいがを みますか。",
+          "form": "question",
+          "translation_en": "Will you watch a movie tomorrow?",
+          "furigana": []
+        },
+        {
+          "ja": "まいにち にほんごを べんきょうします。",
+          "form": "affirmative",
+          "translation_en": "I study Japanese every day.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "たべるます。",
+          "right": "たべます。",
+          "why": "Drop る from Group-2 verbs before adding ます (not stack them)."
+        },
+        {
+          "wrong": "のむます。",
+          "right": "のみます。",
+          "why": "Group-1 verbs shift the final u-vowel to i: のむ→のみ before ます."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-066",
+          "note": "ます is the polite non-past; the plain (dictionary) form is the verb itself (たべる, のむ). Pair with ません for negative."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-059",
@@ -2283,17 +2342,61 @@
       "category": "Verbs — Tense and Politeness (ます-form)",
       "categoryOrder": 6,
       "patternOrder": 2,
-      "meaning_en": "non-past negative",
-      "meaning_ja": "",
+      "meaning_en": "Polite non-past negative verb ending",
+      "meaning_ja": "ていねいな ひていけい",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem"
+        ],
+        "conjugations": [
+          {
+            "form": "neg",
+            "label": "Negative",
+            "example": "たべます → たべません"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-ません' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "ません replaces ます to form the polite non-past negative. Same stem rules as ます.",
+      "examples": [
+        {
+          "ja": "わたしは にくを たべません。",
+          "form": "negative",
+          "translation_en": "I don't eat meat.",
+          "furigana": []
+        },
+        {
+          "ja": "おさけは のみません。",
+          "form": "negative",
+          "translation_en": "I don't drink alcohol.",
+          "furigana": []
+        },
+        {
+          "ja": "あした がっこうへ いきません。",
+          "form": "negative",
+          "translation_en": "I'm not going to school tomorrow.",
+          "furigana": []
+        },
+        {
+          "ja": "テレビを みませんか。",
+          "form": "question",
+          "translation_en": "Won't you watch TV?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "たべますじゃありません。",
+          "right": "たべません。",
+          "why": "Verbs use ません, not じゃありません. じゃありません is for nouns and な-adjectives."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-058",
+          "note": "ます affirmative ↔ ません negative. Same stem."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-060",
@@ -2301,17 +2404,56 @@
       "category": "Verbs — Tense and Politeness (ます-form)",
       "categoryOrder": 6,
       "patternOrder": 3,
-      "meaning_en": "past affirmative",
-      "meaning_ja": "",
+      "meaning_en": "Polite past affirmative verb ending",
+      "meaning_ja": "ていねいな かこけい",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem"
+        ],
+        "conjugations": [
+          {
+            "form": "past",
+            "label": "Past affirmative",
+            "example": "たべます → たべました"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-ました' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "ました replaces ます to form the polite past affirmative.",
+      "examples": [
+        {
+          "ja": "きのう えいがを みました。",
+          "form": "past",
+          "translation_en": "I watched a movie yesterday.",
+          "furigana": []
+        },
+        {
+          "ja": "あさごはんを たべました。",
+          "form": "past",
+          "translation_en": "I ate breakfast.",
+          "furigana": []
+        },
+        {
+          "ja": "なにを かいましたか。",
+          "form": "question",
+          "translation_en": "What did you buy?",
+          "furigana": []
+        },
+        {
+          "ja": "ともだちに あいました。",
+          "form": "past",
+          "translation_en": "I met a friend.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "きのう たべますでした。",
+          "right": "きのう たべました。",
+          "why": "ました replaces ます — don't add でした to ます. でした is only for です."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-061",
@@ -2319,17 +2461,56 @@
       "category": "Verbs — Tense and Politeness (ます-form)",
       "categoryOrder": 6,
       "patternOrder": 4,
-      "meaning_en": "past negative",
-      "meaning_ja": "",
+      "meaning_en": "Polite past negative verb ending",
+      "meaning_ja": "ていねいな かこ ひていけい",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem"
+        ],
+        "conjugations": [
+          {
+            "form": "past_neg",
+            "label": "Past negative",
+            "example": "たべました → たべませんでした"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-ませんでした' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "ませんでした replaces ます to form the polite past negative.",
+      "examples": [
+        {
+          "ja": "きのうは ばんごはんを たべませんでした。",
+          "form": "past",
+          "translation_en": "I didn't eat dinner yesterday.",
+          "furigana": []
+        },
+        {
+          "ja": "せんしゅう がっこうへ いきませんでした。",
+          "form": "past",
+          "translation_en": "I didn't go to school last week.",
+          "furigana": []
+        },
+        {
+          "ja": "あめは ふりませんでしたか。",
+          "form": "question",
+          "translation_en": "Didn't it rain?",
+          "furigana": []
+        },
+        {
+          "ja": "ともだちに あいませんでした。",
+          "form": "past",
+          "translation_en": "I didn't meet my friend.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "たべませんました。",
+          "right": "たべませんでした。",
+          "why": "The past-negative is ませんでした (with でした as a unit), not ませんました."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": ""
     },
     {
       "id": "n5-062",
@@ -2337,17 +2518,61 @@
       "category": "Verbs — Tense and Politeness (ます-form)",
       "categoryOrder": 6,
       "patternOrder": 5,
-      "meaning_en": "let's / shall we",
-      "meaning_ja": "",
+      "meaning_en": "Let's / shall we (volitional / suggestion)",
+      "meaning_ja": "「いっしょに しよう」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem"
+        ],
+        "conjugations": [
+          {
+            "form": "volitional",
+            "label": "Let's",
+            "example": "たべます → たべましょう"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-ましょう' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "ましょう replaces ます to suggest 'let's do (X)'. Used for inviting someone to do something together.",
+      "examples": [
+        {
+          "ja": "いっしょに たべましょう。",
+          "form": "affirmative",
+          "translation_en": "Let's eat together.",
+          "furigana": []
+        },
+        {
+          "ja": "こうえんへ いきましょう。",
+          "form": "affirmative",
+          "translation_en": "Let's go to the park.",
+          "furigana": []
+        },
+        {
+          "ja": "ちょっと やすみましょう。",
+          "form": "affirmative",
+          "translation_en": "Let's rest a bit.",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーを のみましょう。",
+          "form": "affirmative",
+          "translation_en": "Let's drink coffee.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "わたしも たべましょう。 (when speaking only of oneself)",
+          "right": "わたしも たべます。",
+          "why": "ましょう invites the listener; if the action is only your own, use ます."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-064",
+          "note": "ましょう = 'let's do'; ませんか = 'won't you / shall we' — softer invitation."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-063",
@@ -2373,17 +2598,61 @@
       "category": "Verbs — Tense and Politeness (ます-form)",
       "categoryOrder": 6,
       "patternOrder": 7,
-      "meaning_en": "won't you? / invitation",
-      "meaning_ja": "",
+      "meaning_en": "Won't you...? (polite invitation)",
+      "meaning_ja": "「〜ませんか」",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_stem"
+        ],
+        "conjugations": [
+          {
+            "form": "invite",
+            "label": "Invitation",
+            "example": "たべます → たべませんか"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-ませんか' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "ませんか is a polite invitation: 'won't you / shall we (do X)?'. It's softer than ましょう and gives the listener room to decline.",
+      "examples": [
+        {
+          "ja": "いっしょに ばんごはんを たべませんか。",
+          "form": "question",
+          "translation_en": "Won't you have dinner with me?",
+          "furigana": []
+        },
+        {
+          "ja": "あした えいがを みませんか。",
+          "form": "question",
+          "translation_en": "Won't you watch a movie tomorrow?",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーを のみませんか。",
+          "form": "question",
+          "translation_en": "Would you like some coffee?",
+          "furigana": []
+        },
+        {
+          "ja": "こうえんへ いきませんか。",
+          "form": "question",
+          "translation_en": "Shall we go to the park?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "たべますか。 (when inviting)",
+          "right": "たべませんか。",
+          "why": "ますか asks a yes/no question ('do you eat?'); ませんか extends an invitation. Different intent."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-062",
+          "note": "ませんか is softer (gives the listener room to decline). ましょう is firmer ('let's'). Both invite joint action."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-065",
@@ -2391,17 +2660,71 @@
       "category": "Verbs — Plain (Dictionary) Form and Negation",
       "categoryOrder": 7,
       "patternOrder": 1,
-      "meaning_en": "dictionary form",
-      "meaning_ja": "",
+      "meaning_en": "Plain (dictionary) form — non-past affirmative, casual / written",
+      "meaning_ja": "じしょけい",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_root"
+        ],
+        "conjugations": [
+          {
+            "form": "group1",
+            "label": "Group 1 (ごだん) — ends in -u",
+            "example": "のむ, かう, いく, よむ"
+          },
+          {
+            "form": "group2",
+            "label": "Group 2 (いちだん) — ends in -る",
+            "example": "たべる, みる, ねる, おきる"
+          },
+          {
+            "form": "irregular",
+            "label": "Irregular: する, くる",
+            "example": "する, くる"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-る / Verb-u' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "The dictionary form is the citation form found in dictionaries. Used in casual speech, in subordinate clauses, and as the base for many other forms (て-form, ない-form, た-form). Group 1 verbs end in -u (のむ, かう); Group 2 in -る with a preceding i/e vowel (たべる, みる); 2 irregulars (する, くる).",
+      "examples": [
+        {
+          "ja": "ともだちに あう。",
+          "form": "affirmative",
+          "translation_en": "[I] meet a friend. (casual)",
+          "furigana": []
+        },
+        {
+          "ja": "まいにち ほんを よむ。",
+          "form": "affirmative",
+          "translation_en": "[I] read a book every day. (casual)",
+          "furigana": []
+        },
+        {
+          "ja": "あした えいがを みる。",
+          "form": "affirmative",
+          "translation_en": "[I] will watch a movie tomorrow. (casual)",
+          "furigana": []
+        },
+        {
+          "ja": "べんきょうする じかんが ない。",
+          "form": "affirmative",
+          "translation_en": "[I] don't have time to study. (casual)",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "Mixing です with plain verbs in formal speech.",
+          "right": "Stick to one register: ます-form for polite, plain for casual.",
+          "why": "Plain form sounds blunt to strangers and superiors; ます-form sounds stiff to close friends. Match the situation."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-058",
+          "note": "Plain form (たべる) is casual; ます-form (たべます) is polite. Same meaning, different register."
+        }
+      ],
+      "notes": "Plain form is the BASE for many other patterns: て-form, た-form, ない-form, conditional, etc."
     },
     {
       "id": "n5-066",
@@ -2409,17 +2732,71 @@
       "category": "Verbs — Plain (Dictionary) Form and Negation",
       "categoryOrder": 7,
       "patternOrder": 2,
-      "meaning_en": "plain negative",
-      "meaning_ja": "",
+      "meaning_en": "Plain non-past negative",
+      "meaning_ja": "ふつうの ひていけい",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_root"
+        ],
+        "conjugations": [
+          {
+            "form": "group1",
+            "label": "Group 1: -u → -anai",
+            "example": "のむ → のまない, かう → かわない"
+          },
+          {
+            "form": "group2",
+            "label": "Group 2: drop る + ない",
+            "example": "たべる → たべない, みる → みない"
+          },
+          {
+            "form": "irregular",
+            "label": "する → しない, くる → こない",
+            "example": "する → しない"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-ない' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "ない is the plain (casual) negative. Group 1: change the final -u to -a + ない (のむ → のまない; かう → かわない — note わ for vowel-stems). Group 2: drop る and add ない. する → しない, くる → こない.",
+      "examples": [
+        {
+          "ja": "おさけを のまない。",
+          "form": "negative",
+          "translation_en": "[I] don't drink alcohol.",
+          "furigana": []
+        },
+        {
+          "ja": "にくを たべない。",
+          "form": "negative",
+          "translation_en": "[I] don't eat meat.",
+          "furigana": []
+        },
+        {
+          "ja": "あした こない。",
+          "form": "negative",
+          "translation_en": "[I] won't come tomorrow.",
+          "furigana": []
+        },
+        {
+          "ja": "べんきょうしない 人。",
+          "form": "negative",
+          "translation_en": "A person who doesn't study.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "かうない",
+          "right": "かわない",
+          "why": "For -う ending verbs, the negative stem changes う → わ (not あ). Same for あう → あわない, いう → いわない."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-059",
+          "note": "Polite ません = plain ない. Same negative meaning, different register."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-067",
@@ -2427,17 +2804,81 @@
       "category": "Verbs — Plain (Dictionary) Form and Negation",
       "categoryOrder": 7,
       "patternOrder": 3,
-      "meaning_en": "plain past",
-      "meaning_ja": "",
+      "meaning_en": "Plain past affirmative (た-form)",
+      "meaning_ja": "ふつうの かこけい",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "verb_root"
+        ],
+        "conjugations": [
+          {
+            "form": "group1_む",
+            "label": "む / ぬ / ぶ → んだ",
+            "example": "のむ → のんだ"
+          },
+          {
+            "form": "group1_く",
+            "label": "く → いた (exception: いく → いった)",
+            "example": "かく → かいた"
+          },
+          {
+            "form": "group1_す",
+            "label": "す → した",
+            "example": "はなす → はなした"
+          },
+          {
+            "form": "group2",
+            "label": "Group 2: drop る + た",
+            "example": "たべる → たべた"
+          },
+          {
+            "form": "irregular",
+            "label": "する → した, くる → きた",
+            "example": "する → した"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'Verb-た' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "た-form (plain past) follows the same sound-change rules as the て-form, just with た instead of て. Memorize the group rules — they're foundational for advanced grammar (たことがある, たほうがいい, etc.).",
+      "examples": [
+        {
+          "ja": "きのう ほんを よんだ。",
+          "form": "past",
+          "translation_en": "[I] read a book yesterday.",
+          "furigana": []
+        },
+        {
+          "ja": "ともだちに あった。",
+          "form": "past",
+          "translation_en": "[I] met a friend.",
+          "furigana": []
+        },
+        {
+          "ja": "あさごはんを たべた。",
+          "form": "past",
+          "translation_en": "[I] ate breakfast.",
+          "furigana": []
+        },
+        {
+          "ja": "がっこうへ いった。",
+          "form": "past",
+          "translation_en": "[I] went to school. (NOTE: いく is irregular)",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "いく → いいた",
+          "right": "いく → いった",
+          "why": "いく is the standard exception: it takes -った, not -いた like other -く verbs. Memorize this one."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-060",
+          "note": "Polite ました = plain た. Same past-affirmative meaning, different register."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-068",
@@ -2643,17 +3084,66 @@
       "category": "Adjectives",
       "categoryOrder": 9,
       "patternOrder": 2,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "い-Adjective + です — polite present affirmative",
+      "meaning_ja": "い-けいようし + です",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "i_adjective"
+        ],
+        "conjugations": [
+          {
+            "form": "predicative",
+            "label": "Used predicatively (sentence-end)",
+            "example": "おもしろいです"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'い-Adjective + です' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "い-adjectives end in -い (たかい, さむい, おもしろい). To use them politely as a predicate, add です directly. Don't drop the い: たかいです, never たかです.",
+      "examples": [
+        {
+          "ja": "この ほんは おもしろいです。",
+          "form": "affirmative",
+          "translation_en": "This book is interesting.",
+          "furigana": []
+        },
+        {
+          "ja": "きょうは さむいです。",
+          "form": "affirmative",
+          "translation_en": "It's cold today.",
+          "furigana": []
+        },
+        {
+          "ja": "あの 山は 高いですか。",
+          "form": "question",
+          "translation_en": "Is that mountain tall?",
+          "furigana": []
+        },
+        {
+          "ja": "この りんごは あまいです。",
+          "form": "affirmative",
+          "translation_en": "This apple is sweet.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "あついだ。",
+          "right": "あついです。 / あつい。",
+          "why": "Don't put だ after い-adjectives. Use です for polite or just the bare adjective for plain."
+        },
+        {
+          "wrong": "あつだです。",
+          "right": "あついです。",
+          "why": "い-adjectives keep their final い before です."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-085",
+          "note": "い-adj attaches です directly. な-adj also attaches です but takes な before nouns."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-080",
@@ -2661,17 +3151,66 @@
       "category": "Adjectives",
       "categoryOrder": 9,
       "patternOrder": 3,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "い-Adjective negative — present polite",
+      "meaning_ja": "い-けいようしの ひてい",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "i_adjective"
+        ],
+        "conjugations": [
+          {
+            "form": "stem_kunai",
+            "label": "い → くない (drop い, add くない)",
+            "example": "たかい → たかくない"
+          },
+          {
+            "form": "polite",
+            "label": "Polite: + です",
+            "example": "たかくないです / たかくありません"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'い-Adjective negative: ～くないです / ～くありません' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
+      "explanation_en": "Drop the final い and add くない for plain negative; add です to polite (たかくないです). The alternative ありません form (たかくありません) is more formal.",
+      "examples": [
+        {
+          "ja": "この ほんは おもしろくないです。",
+          "form": "negative",
+          "translation_en": "This book isn't interesting.",
+          "furigana": []
+        },
+        {
+          "ja": "きょうは さむくありません。",
+          "form": "negative",
+          "translation_en": "It's not cold today.",
+          "furigana": []
+        },
+        {
+          "ja": "ここは ひろくないですか。",
+          "form": "question",
+          "translation_en": "Isn't it spacious here?",
+          "furigana": []
+        },
+        {
+          "ja": "この りんごは あまくないです。",
+          "form": "negative",
+          "translation_en": "This apple isn't sweet.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "たかいくないです。",
+          "right": "たかくないです。",
+          "why": "Drop the final い before adding くない. Don't keep both."
+        },
+        {
+          "wrong": "いいくないです。",
+          "right": "よくないです。",
+          "why": "いい (good) is irregular: its negative is よくない, not いくない. Same for past よかった."
+        }
+      ],
       "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "notes": "Memorize the いい → よく irregular: いい / よくない / よかった / よくなかった."
     },
     {
       "id": "n5-081",
@@ -2679,17 +3218,71 @@
       "category": "Adjectives",
       "categoryOrder": 9,
       "patternOrder": 4,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "い-Adjective past — was [adjective]",
+      "meaning_ja": "い-けいようしの かこ",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "i_adjective"
+        ],
+        "conjugations": [
+          {
+            "form": "stem_katta",
+            "label": "い → かった (drop い, add かった)",
+            "example": "たかい → たかかった"
+          },
+          {
+            "form": "polite",
+            "label": "Polite: + です",
+            "example": "たかかったです"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'い-Adjective past: ～かったです' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "Drop the final い and add かった for the past form. Add です for polite. NEVER use でした with い-adjectives — that's only for nouns and な-adjectives.",
+      "examples": [
+        {
+          "ja": "きのうは あつかったです。",
+          "form": "past",
+          "translation_en": "Yesterday was hot.",
+          "furigana": []
+        },
+        {
+          "ja": "その えいがは おもしろかったです。",
+          "form": "past",
+          "translation_en": "That movie was interesting.",
+          "furigana": []
+        },
+        {
+          "ja": "テストは むずかしかったですか。",
+          "form": "question",
+          "translation_en": "Was the test difficult?",
+          "furigana": []
+        },
+        {
+          "ja": "きのうの ばんごはんは おいしかったです。",
+          "form": "past",
+          "translation_en": "Yesterday's dinner was delicious.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "たかいでした。",
+          "right": "たかかったです。",
+          "why": "い-adjectives DON'T use でした. The past is built by changing い → かった."
+        },
+        {
+          "wrong": "いいかった。",
+          "right": "よかった。",
+          "why": "いい (good) → よかった (was good). The whole word changes to よ-stem."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-087",
+          "note": "い-adj past: たかい → たかかった. な-adj past: しずか → しずかでした (uses でした like nouns)."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-082",
@@ -2751,17 +3344,71 @@
       "category": "Adjectives",
       "categoryOrder": 9,
       "patternOrder": 8,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "な-Adjective + です — polite present affirmative",
+      "meaning_ja": "な-けいようし + です",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "na_adjective"
+        ],
+        "conjugations": [
+          {
+            "form": "predicative",
+            "label": "Predicatively: just N + です",
+            "example": "しずかです"
+          },
+          {
+            "form": "before_noun",
+            "label": "Before a noun: + な",
+            "example": "しずかな へや"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'な-Adjective + です' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "な-adjectives describe like adjectives but conjugate like nouns: + です for predicative use (このへやは しずかです), + な before a noun (しずかな へや). Common な-adjs: しずか (quiet), きれい (pretty/clean), にぎやか (lively), ゆうめい (famous), すき (like), きらい (dislike).",
+      "examples": [
+        {
+          "ja": "この へやは しずかです。",
+          "form": "affirmative",
+          "translation_en": "This room is quiet.",
+          "furigana": []
+        },
+        {
+          "ja": "あの 人は ゆうめいです。",
+          "form": "affirmative",
+          "translation_en": "That person is famous.",
+          "furigana": []
+        },
+        {
+          "ja": "この まちは にぎやかですか。",
+          "form": "question",
+          "translation_en": "Is this town lively?",
+          "furigana": []
+        },
+        {
+          "ja": "とうきょうは べんりです。",
+          "form": "affirmative",
+          "translation_en": "Tokyo is convenient.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "きれいい",
+          "right": "きれい",
+          "why": "きれい LOOKS like an い-adjective (ends in い) but is actually a な-adjective. So きれいな はな (with な) and きれいです (no い-conjugation)."
+        },
+        {
+          "wrong": "しずかな です。",
+          "right": "しずかです。",
+          "why": "Drop な before です. な only appears before a noun."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-079",
+          "note": "い-adj: たかい+です (no extra な). な-adj: しずか+です (no な, but +な before nouns)."
+        }
+      ],
+      "notes": "Watch out for false friends: きれい / きらい / ゆうめい LOOK like い-adjectives but are な-adjectives."
     },
     {
       "id": "n5-086",
@@ -2769,17 +3416,61 @@
       "category": "Adjectives",
       "categoryOrder": 9,
       "patternOrder": 9,
-      "meaning_en": "TBD",
-      "meaning_ja": "",
+      "meaning_en": "な-Adjective negative — polite present",
+      "meaning_ja": "な-けいようしの ひてい",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "na_adjective"
+        ],
+        "conjugations": [
+          {
+            "form": "neg",
+            "label": "+ じゃありません / ではありません",
+            "example": "しずかじゃありません"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'な-Adjective negative: ～じゃありません / ～ではありません' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "な-adjectives form the negative the same way nouns do: + じゃありません (casual-polite) or + ではありません (formal). Just like the noun copula.",
+      "examples": [
+        {
+          "ja": "この へやは しずかじゃありません。",
+          "form": "negative",
+          "translation_en": "This room isn't quiet.",
+          "furigana": []
+        },
+        {
+          "ja": "あの 人は ゆうめいではありません。",
+          "form": "negative",
+          "translation_en": "That person isn't famous.",
+          "furigana": []
+        },
+        {
+          "ja": "ここは べんりじゃありませんか。",
+          "form": "question",
+          "translation_en": "Isn't it convenient here?",
+          "furigana": []
+        },
+        {
+          "ja": "わたしは スポーツが すきじゃありません。",
+          "form": "negative",
+          "translation_en": "I don't like sports.",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "しずかくないです。",
+          "right": "しずかじゃありません。",
+          "why": "な-adjectives DON'T use くない (that's い-adj). Use じゃありません, same as nouns."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-080",
+          "note": "い-adj negative: たかい → たかくない. な-adj negative: しずか → しずかじゃありません."
+        }
+      ],
+      "notes": ""
     },
     {
       "id": "n5-087",
@@ -2841,17 +3532,81 @@
       "category": "Existence and Possession",
       "categoryOrder": 10,
       "patternOrder": 1,
-      "meaning_en": "inanimate exists",
-      "meaning_ja": "",
+      "meaning_en": "あります — there is / exists (inanimate things)",
+      "meaning_ja": "「あります」(ものの そんざい)",
       "form_rules": {
-        "attaches_to": [],
-        "conjugations": []
+        "attaches_to": [
+          "noun_subject"
+        ],
+        "conjugations": [
+          {
+            "form": "affirmative",
+            "label": "Present affirmative",
+            "example": "あります"
+          },
+          {
+            "form": "negative",
+            "label": "Present negative",
+            "example": "ありません"
+          },
+          {
+            "form": "past",
+            "label": "Past affirmative",
+            "example": "ありました"
+          },
+          {
+            "form": "past_negative",
+            "label": "Past negative",
+            "example": "ありませんでした"
+          }
+        ]
       },
-      "explanation_en": "Skeleton entry for 'あります' — pending detailed authoring.",
-      "examples": [],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Skeleton entry — needs author enrichment."
+      "explanation_en": "あります expresses existence for INANIMATE things (objects, plants, abstract things, events). Subject is marked with が; location with に. For animate (people, animals), use います instead.",
+      "examples": [
+        {
+          "ja": "つくえの 上に ほんが あります。",
+          "form": "affirmative",
+          "translation_en": "There is a book on the desk.",
+          "furigana": []
+        },
+        {
+          "ja": "へやに テレビが ありません。",
+          "form": "negative",
+          "translation_en": "There is no TV in the room.",
+          "furigana": []
+        },
+        {
+          "ja": "きのう しけんが ありました。",
+          "form": "past",
+          "translation_en": "There was an exam yesterday.",
+          "furigana": []
+        },
+        {
+          "ja": "なにか しつもんが ありますか。",
+          "form": "question",
+          "translation_en": "Do you have any questions?",
+          "furigana": []
+        }
+      ],
+      "common_mistakes": [
+        {
+          "wrong": "へやに ねこが あります。",
+          "right": "へやに ねこが います。",
+          "why": "あります is for inanimate things only. Animals and people use います."
+        },
+        {
+          "wrong": "テレビが あるです。",
+          "right": "テレビが あります。",
+          "why": "あります is already the polite form. Don't add です."
+        }
+      ],
+      "contrasts": [
+        {
+          "with_pattern_id": "n5-091",
+          "note": "あります = inanimate (もの); います = animate (ひと・どうぶつ). Plants use あります."
+        }
+      ],
+      "notes": "Plants are treated as inanimate (use あります). The dividing line is animacy — capacity for self-directed motion."
     },
     {
       "id": "n5-091",

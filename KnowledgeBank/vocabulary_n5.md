@@ -188,8 +188,8 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - ひき — counter for small animals
 - はい — counter for cups / glasses
 - こ — counter for small objects
-- かい — floor (of a building)
-- かい — counter for occurrences
+- かい — floor of a building (e.g., 3-かい = 3rd floor)
+- かい — number of times / occurrences (e.g., 3-かい = three times). Same kana, different counter (different kanji); context disambiguates.
 - 番 (ばん) — number, ordinal
 - ど — degrees, occurrences
 
@@ -222,6 +222,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 
 - 日 (ひ) — day
 - 一日 (ついたち) — 1st of the month
+- 一日 (いちにち) — one day, a whole day (note: same kanji 一日 with a different reading, distinct from ついたち; context disambiguates)
 - 二日 (ふつか) — 2nd / two days
 - 三日 (みっか) — 3rd / three days
 - 四日 (よっか) — 4th / four days
@@ -703,8 +704,8 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - しる — to know
 - すむ — to live (reside)
 - 立つ (たつ) — to stand
-- とる — to take
-- とる — to take (a photo) (variant of above)
+- とる — to take, to pick up (general)
+- とる — to take (a photo or video) — homophone of the above; uses a different kanji (not in N5 syllabus); semantically a specialization of "take"
 - なく — to cry (animals)
 - 飲む (のむ) — to drink
 - 入る (はいる) — to enter
@@ -724,8 +725,8 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - うる — to sell
 - おす — to push
 - およぐ — to swim
-- ひく — to play (instrument)
-- ひく — to pull (variant of above)
+- ひく — to play (a string instrument like guitar/piano)
+- ひく — to pull (homophone of the above; separate verb, separate kanji — both are common N5 readings of ひく)
 - よぶ — to call
 - とぶ — to fly, to jump
 - こまる — to be troubled **[Ext]**
@@ -758,11 +759,11 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - すわる — to sit
 - たのむ — to ask (a favor)
 - とまる — to stop (intransitive)
-- つとめる — to work for / be employed
 - おく — to place, to put
 - さく — to bloom
 - かかる — to take (time / money)
 - さす — to put up (an umbrella), to raise
+- けす — to turn off, to erase (godan / Group 1; conjugates けします, けして)
 
 ## 28. Verbs — Group 2 (る-verbs)
 
@@ -784,7 +785,6 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - かける — to call (phone), to wear (glasses)
 - きる — to wear (upper body)
 - つける — to switch on
-- けす — to turn off, to erase
 - ならべる — to line up (transitive) **[Ext]**
 - はじめる — to begin (transitive)
 - 見せる (みせる) — to show
@@ -798,6 +798,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 生まれる (うまれる) — to be born
 - おりる — to get off (train, bus)
 - しめる — to tie / fasten / tighten (distinct from しめる "to close")
+- つとめる — to work for / be employed (ichidan / Group 2; conjugates つとめます, つとめて)
 
 ## 29. Verbs — Irregular and する-verbs
 
@@ -819,8 +820,8 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 ## 30. Verbs — Existence and Possession
 
 - ある — to exist (inanimate)
-- いる — to exist (animate)
-- いる — to need (different verb; same form)
+- いる — to exist (animate) (also in §28 — listed here for thematic completeness with other existence/possession verbs)
+- いる — to need (homophone of the existence いる; this one is godan / Group 1)
 - ござる / ございます — to be (very polite)
 - やる — to give (down / casual)
 - あげる — to give
@@ -838,9 +839,9 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 古い (ふるい) — old (not for people)
 - いい / よい — good
 - わるい — bad
-- あつい — hot (weather)
+- あつい — hot (weather; separate adjective from the two below despite shared reading)
 - さむい — cold (weather)
-- あつい — hot (to touch) (variant of "あつい" hot-weather above; same reading, different sense)
+- あつい — hot (to the touch; separate adjective and separate kanji — homophone of the hot-weather one)
 - つめたい — cold (to touch)
 - 高い (たかい) — high, tall, expensive
 - ひくい — low, short (height)
@@ -851,13 +852,13 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - せまい — narrow
 - おもい — heavy
 - かるい — light (weight)
-- あつい — thick (variant of "あつい"; same reading, different sense)
+- あつい — thick (e.g., a thick book; separate adjective and separate kanji — third homophone of the あつい readings above)
 - うすい — thin
 - ふとい — thick (round things)
 - ほそい — thin (round things)
 - つよい — strong
 - よわい — weak
-- はやい — early / fast (one reading covers both senses)
+- はやい — early (time-related) — and separately, はやい — fast (speed-related). Two separate adjectives sharing the kana reading; the kanji disambiguates.
 - おそい — slow, late
 - たのしい — fun, enjoyable
 - うれしい — happy
@@ -868,7 +869,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - うつくしい — beautiful
 - きたない — dirty
 - いそがしい — busy
-- やさしい — easy / kind
+- やさしい — easy (of a task) — and separately, やさしい — kind / gentle (of a person). Two separate adjectives sharing the kana reading; different kanji distinguish them.
 - むずかしい — difficult
 - おもしろい — interesting, funny
 - つまらない — boring
