@@ -8,6 +8,8 @@ import { renderSummary } from './summary.js';
 import { renderDrill } from './drill.js';
 import { renderDiagnostic } from './diagnostic.js';
 import { renderSettings, applyTheme, applyFontSize } from './settings.js';
+import { renderKosoado } from './kosoado.js';
+import { renderWaGa } from './wa-vs-ga.js';
 
 const ROUTES = {
   learn:      renderLearn,
@@ -17,6 +19,8 @@ const ROUTES = {
   summary:    renderSummary,
   diagnostic: renderDiagnostic,
   settings:   renderSettings,
+  kosoado:    renderKosoado,
+  waga:       renderWaGa,
 };
 
 function parseRoute() {

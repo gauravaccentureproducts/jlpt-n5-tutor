@@ -7,7 +7,7 @@
 //
 // Bump CACHE_VERSION whenever a release ships, so old caches get evicted on
 // the next visit.
-const CACHE_VERSION = 'jlpt-n5-tutor-v2';
+const CACHE_VERSION = 'jlpt-n5-tutor-v3';
 
 const PRECACHE = [
   './',
@@ -27,6 +27,8 @@ const PRECACHE = [
   './js/diagnostic.js',
   './js/settings.js',
   './js/normalize.js',
+  './js/kosoado.js',
+  './js/wa-vs-ga.js',
   './data/grammar.json',
   './data/questions.json',
   './data/n5_kanji_whitelist.json',

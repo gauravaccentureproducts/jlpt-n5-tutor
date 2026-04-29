@@ -46,6 +46,11 @@ function renderTOC(container, data) {
         <a href="#/diagnostic" class="btn-primary" style="text-decoration:none">Take Diagnostic →</a>
       </div>
     ` : ''}
+    <div class="learn-tools">
+      <strong>Topic deep-dives:</strong>
+      <a href="#/waga">は vs が →</a>
+      <a href="#/kosoado">こそあど grid →</a>
+    </div>
   `;
   for (const [cat, { items }] of sorted) {
     items.sort((a, b) => (a.patternOrder ?? 0) - (b.patternOrder ?? 0));
