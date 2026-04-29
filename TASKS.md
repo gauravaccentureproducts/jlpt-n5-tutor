@@ -1,6 +1,6 @@
 # JLPT N5 Grammar Tutor - Tasks
 
-Last updated: 2026-04-30 (Pass 8 native-speaker audit: 52 findings raised, 52 fixed, 0 open)
+Last updated: 2026-04-30 (Pass 9 external brief: 27+4+7 items, all fixed, 0 open; cumulative 153/153 across 9 passes)
 
 ## Live site
 
@@ -69,13 +69,13 @@ Last updated: 2026-04-30 (Pass 8 native-speaker audit: 52 findings raised, 52 fi
 ### Pre-release QA gate (per Brief §9)
 
 - [x] No console errors on load.
-- [x] FCP < 1.5s on simulated 4G — analytical estimate ~555 ms cold-load on Lighthouse Slow-4G profile (150 ms RTT, 1.6 Mbps, 4x CPU). Critical-path ~60 KB total: index.html 2.1 KB + main.css 37.6 KB + entry JS modules 18.7 KB. Repeat visits via SW cache: <100 ms.
+- [x] FCP < 1.5s on simulated 4G - analytical estimate ~555 ms cold-load on Lighthouse Slow-4G profile (150 ms RTT, 1.6 Mbps, 4x CPU). Critical-path ~60 KB total: index.html 2.1 KB + main.css 37.6 KB + entry JS modules 18.7 KB. Repeat visits via SW cache: <100 ms.
 - [x] Works offline after first load.
 - [x] Japanese text renders in Japanese font on Windows without language pack.
 - [x] Furigana toggle hides/shows ruby.
 - [x] Audio plays in browser preview (verified: 16 KB grammar clip, 217 KB listening clip, 115 KB reading clip - all 200 OK, audio/mpeg). iOS Safari unverified but uses standard `<audio src>` so should work.
 - [x] Export → wipe → import round-trips progress.
-- [x] Lighthouse-equivalent audits — PWA pass (manifest, theme-color, viewport, SW, HTTPS), A11y pass (lang, skip-link, banner, nav, main, h1, no missing labels), SEO pass (title, description, lang, canonical, robots), Best Practices pass (UTF-8, doctype, no console errors). Added meta color-scheme + robots + canonical link to index.html.
+- [x] Lighthouse-equivalent audits - PWA pass (manifest, theme-color, viewport, SW, HTTPS), A11y pass (lang, skip-link, banner, nav, main, h1, no missing labels), SEO pass (title, description, lang, canonical, robots), Best Practices pass (UTF-8, doctype, no console errors). Added meta color-scheme + robots + canonical link to index.html.
 - [x] No outbound network calls during a normal session.
 
 ---
@@ -89,65 +89,79 @@ Brief 1 complete. Engine, module, and asset layers shipped.
 
 ---
 
-## Content correction brief (Pass 9) - registered 2026-04-30
+## UI testing plan - 2026-04-30
+
+Comprehensive UI-level test strategy at `feedback/ui-testing-plan.md` covering 22 perspectives across 17 routes × 5 locales × 8 browsers × 6 OSes. Sections:
+
+- §1-§16: Perspectives (end-learner, first-time visitor, returning visitor, mobile, a11y, i18n, slow connection, offline, power user, cross-browser, cross-OS, content integrity, performance, security, PWA, visual)
+- §17: Three-tier execution (P0 smoke 5min / P1 gate 60min / P2 regression 4h)
+- §18-§19: Recommended tooling stack (Playwright + axe-core + Lighthouse CI) and CI integration
+- §20: Nielsen 10 heuristic checklist applied to this app
+- §22-§23: Acceptance criteria + perspective coverage matrix
+
+Use as a **catalog** - triage by P0/P1/P2 tier, don't run all 22 every release.
+
+---
+
+## Content correction brief (Pass 9) - 2026-04-30 (COMPLETE)
 
 External brief at `feedback/jlpt-n5-content-correction-brief.md` raised 27 items + 4 systematic sweeps + 7 cross-file consistency checks. Severity: 5 CRITICAL, 7 HIGH, 9 MEDIUM, 6 LOW. Fixes in priority order.
 
 ### CRITICAL (5)
 
-- [ ] **C-1.1** kanji_n5.md missing 力 and 手 (used as correct answers in moji Q54/Q58). Add to catalog OR replace questions.
-- [ ] **C-1.2** dokkai Passage F: 「こんねんの 八月」 - wrong reading of 今年 (should be ことし).
-- [ ] **C-1.3** bunpou Q50/Q51: both から (option 2) and ので (option 3) are grammatically correct. Replace one distractor.
-- [ ] **C-1.4** goi Q99 rationale overstates 知る ≈ 覚える as direct synonymy. They are not synonyms; soften.
-- [ ] **C-1.5** moji Q6 rationale mentions にっぽん which is not in the options; tighten to avoid confusion.
+- [x] **C-1.1** kanji_n5.md missing 力 and 手 (used as correct answers in moji Q54/Q58). Add to catalog OR replace questions.
+- [x] **C-1.2** dokkai Passage F: 「こんねんの 八月」 - wrong reading of 今年 (should be ことし).
+- [x] **C-1.3** bunpou Q50/Q51: both から (option 2) and ので (option 3) are grammatically correct. Replace one distractor.
+- [x] **C-1.4** goi Q99 rationale overstates 知る ≈ 覚える as direct synonymy. They are not synonyms; soften.
+- [x] **C-1.5** moji Q6 rationale mentions にっぽん which is not in the options; tighten to avoid confusion.
 
 ### HIGH (7)
 
-- [ ] **H-2.1** Mixed kanji+kana words sweep (e.g., bunpou Q70 「図しょかん」, dokkai Passage 24 「大さか」). Pick one rule, apply consistently.
-- [ ] **H-2.2** bunpou Q98 option 4 「ピアノを 買い」 is also grammatical. Strengthen distractor or add nuance to rationale.
-- [ ] **H-2.3** bunpou Q100 rationale: 「でも」 should be glossed as "even (just)", not "at least".
-- [ ] **H-2.4** vocabulary §27/28: flag Group-1 ru-verb exceptions (入る, 帰る, 走る, 知る, 切る, 要る) with annotation.
-- [ ] **H-2.5** moji Q62 「子供 vs 子ども」: rationale should disclose that 子供 is also standard.
-- [ ] **H-2.6** grammar §22: rename "Honorific" to "Beautifying" (bika-go vs sonkei-go terminology).
-- [ ] **H-2.7** vocabulary line 287: 「もう」 definition incorrectly lists "soon" as a standalone gloss.
+- [x] **H-2.1** Mixed kanji+kana words sweep (e.g., bunpou Q70 「図しょかん」, dokkai Passage 24 「大さか」). Pick one rule, apply consistently.
+- [x] **H-2.2** bunpou Q98 option 4 「ピアノを 買い」 is also grammatical. Strengthen distractor or add nuance to rationale.
+- [x] **H-2.3** bunpou Q100 rationale: 「でも」 should be glossed as "even (just)", not "at least".
+- [x] **H-2.4** vocabulary §27/28: flag Group-1 ru-verb exceptions (入る, 帰る, 走る, 知る, 切る, 要る) with annotation.
+- [x] **H-2.5** moji Q62 「子供 vs 子ども」: rationale should disclose that 子供 is also standard.
+- [x] **H-2.6** grammar §22: rename "Honorific" to "Beautifying" (bika-go vs sonkei-go terminology).
+- [x] **H-2.7** vocabulary line 287: 「もう」 definition incorrectly lists "soon" as a standalone gloss.
 
 ### MEDIUM (9)
 
-- [ ] **M-3.1** kanji_n5.md kun-yomi readings out of N5 scope (上=のぼる, 下=おりる, 外=ほか, 万=バン).
-- [ ] **M-3.2** goi Q47 rationale uses 「去年」 (N4 kanji); change to きょねん.
-- [ ] **M-3.3** goi Q87: consider はたち vs 二十さい note for age-20.
-- [ ] **M-3.4** bunpou Q24: しんかんせん is not in N5 vocab. Replace with でんしゃ.
-- [ ] **M-3.5** goi Q86: soften "電話をかける = 電話で話す" rationale (not strict equivalence).
-- [ ] **M-3.6** goi Q94: soften あまくない vs あまり あまくない rationale.
-- [ ] **M-3.7** goi Q70: soften "likes" → "does often" rationale.
-- [ ] **M-3.8** vocabulary 毎年 (まいとし/まいねん): add register note.
-- [ ] **M-3.9** vocabulary archaic items (マッチ, フィルム, レコード, テープレコーダー): add note about modern relevance.
+- [x] **M-3.1** kanji_n5.md kun-yomi readings out of N5 scope (上=のぼる, 下=おりる, 外=ほか, 万=バン).
+- [x] **M-3.2** goi Q47 rationale uses 「去年」 (N4 kanji); change to きょねん.
+- [x] **M-3.3** goi Q87: consider はたち vs 二十さい note for age-20.
+- [x] **M-3.4** bunpou Q24: しんかんせん is not in N5 vocab. Replace with でんしゃ.
+- [x] **M-3.5** goi Q86: soften "電話をかける = 電話で話す" rationale (not strict equivalence).
+- [x] **M-3.6** goi Q94: soften あまくない vs あまり あまくない rationale.
+- [x] **M-3.7** goi Q70: soften "likes" → "does often" rationale.
+- [x] **M-3.8** vocabulary 毎年 (まいとし/まいねん): add register note.
+- [x] **M-3.9** vocabulary archaic items (マッチ, フィルム, レコード, テープレコーダー): add note about modern relevance.
 
 ### LOW (6)
 
-- [ ] **L-4.1** sources.md CEFR claim: verify or soften.
-- [ ] **L-4.2** kanji 円: meaning ordering (yen first; circle/round as N4+).
-- [ ] **L-4.3** grammar §6: clarify verb group description with both kana-row and romaji views.
-- [ ] **L-4.4** dokkai Q27 passage uses 「一じかん」; standardize to 「一時間」.
-- [ ] **L-4.5** em-dash check across all files.
-- [ ] **L-4.6** vocabulary line 824: いる homophone; cross-reference to §2.4 list.
+- [x] **L-4.1** sources.md CEFR claim: verify or soften.
+- [x] **L-4.2** kanji 円: meaning ordering (yen first; circle/round as N4+).
+- [x] **L-4.3** grammar §6: clarify verb group description with both kana-row and romaji views.
+- [x] **L-4.4** dokkai Q27 passage uses 「一じかん」; standardize to 「一時間」.
+- [x] **L-4.5** em-dash check across all files.
+- [x] **L-4.6** vocabulary line 824: いる homophone; cross-reference to §2.4 list.
 
 ### Systematic sweeps (4)
 
-- [ ] **S-5.1** Mixed kanji+kana words across all files.
-- [ ] **S-5.2** Vocab outside N5 scope appearing in question stems.
-- [ ] **S-5.3** Rationale lines that overstate equivalence ("Direct synonymy", "=", "equivalent").
-- [ ] **S-5.4** Verify cited grammar rules in rationales.
+- [x] **S-5.1** Mixed kanji+kana words across all files.
+- [x] **S-5.2** Vocab outside N5 scope appearing in question stems.
+- [x] **S-5.3** Rationale lines that overstate equivalence ("Direct synonymy", "=", "equivalent").
+- [x] **S-5.4** Verify cited grammar rules in rationales.
 
 ### Cross-file consistency checks (7)
 
-- [ ] **X-6.1** Every kanji used as correct answer appears in kanji_n5.md.
-- [ ] **X-6.2** Readings in vocab match readings in question files (esp. 今年 = ことし).
-- [ ] **X-6.3** No mixed-kanji words.
-- [ ] **X-6.4** No orphan vocab in question stems.
-- [ ] **X-6.5** No em-dashes.
-- [ ] **X-6.6** All Group-1 ru-verb exceptions flagged in vocab.
-- [ ] **X-6.7** No false "direct synonymy" claims in rationales.
+- [x] **X-6.1** Every kanji used as correct answer appears in kanji_n5.md.
+- [x] **X-6.2** Readings in vocab match readings in question files (esp. 今年 = ことし).
+- [x] **X-6.3** No mixed-kanji words.
+- [x] **X-6.4** No orphan vocab in question stems.
+- [x] **X-6.5** No em-dashes.
+- [x] **X-6.6** All Group-1 ru-verb exceptions flagged in vocab.
+- [x] **X-6.7** No false "direct synonymy" claims in rationales.
 
 ---
 
@@ -169,9 +183,9 @@ External brief at `feedback/jlpt-n5-content-correction-brief.md` raised 27 items
 - [x] **G-12** Q80 inferential paraphrase: 「さむい」 ≈ 「ストーブをつけました」. Action-result inference, not synonymy.
 
 #### bunpou_questions_n5.md
-- [x] **B-4** Q85 pleonasm: 「ほしいので かいたい」 — both verbs express wanting. Drop one.
+- [x] **B-4** Q85 pleonasm: 「ほしいので かいたい」 - both verbs express wanting. Drop one.
 - [x] **B-6** Q98 wrong compound: 「ピアノのきょうしつ」 should be 「ピアノきょうしつ」 (compound noun, no の).
-- [x] **B-7** Q100 semantic clash: 「ぜったいに 一日 ぐらい」 — absolute + approximate clash. Change answer to 「でも」 or rework stem.
+- [x] **B-7** Q100 semantic clash: 「ぜったいに 一日 ぐらい」 - absolute + approximate clash. Change answer to 「でも」 or rework stem.
 
 #### dokkai_questions_n5.md
 - [x] **D-3** Passage 14 Q27 unit mismatch: stem asks 「何分」, answer is 「一時間」. Fix question word to 「どのぐらい」.
@@ -182,7 +196,7 @@ External brief at `feedback/jlpt-n5-content-correction-brief.md` raised 27 items
 - [x] **A-2** Q58 underline/answer mismatch: underline on 「みぎ」 but answer is for 「みち」. Realign underline.
 - [x] **A-3** Q59 N3 kanji in stem: 「有名」 violates the stems-N5-only rule. Render in kana or replace question.
 - [x] **A-6** Q117 ambiguous source: 「兄に」+もらう is acceptable but unclear at N5. Change to 「兄から」.
-- [x] **A-8** Q142 unidiomatic subject: 「うちは...先生をしています」 — うち + occupation verb is non-native. Restate.
+- [x] **A-8** Q142 unidiomatic subject: 「うちは...先生をしています」 - うち + occupation verb is non-native. Restate.
 
 ### MED-severity (27)
 
@@ -242,32 +256,32 @@ External brief at `feedback/jlpt-n5-content-correction-brief.md` raised 27 items
 
 Source: `feedback/jlpt-n5-tutor-ux-developer-brief2.md`. Phased per Brief §19.
 
-### Phase 1 — Stop the bleeding ✅ COMPLETE
+### Phase 1 - Stop the bleeding ✅ COMPLETE
 - [x] **B2-P1.1** Skeleton screens replace literal "Loading..." text + 5s timeout error UI (§3.1) - shimmer animation, route-shape-matched blocks, 5s Promise-race timeout shows real "Couldn't load" UI with Retry.
 - [x] **B2-P1.2** Empty states for Review, Test, Summary, Practice with routing buttons (§3.2) - Review: 2-state (no progress vs no due), Summary: progress=0 routes to Learn, Test: first-test banner suggests learning, Drill: existing CTA preserved.
 - [x] **B2-P1.3** Deep-link URLs per §14.1 - new js/kanji.js renders #/kanji index + #/kanji/<glyph> detail (97 entries, on/kun/meanings/stroke-svg slot). Test deep-link #/test/<n> with n in {20,30,50} starts test directly.
 - [x] **B2-P1.4** Privacy/offline/no-login trust strip on landing above-the-fold (§1.1.5) - 3-item strip in header brand block, mobile-responsive.
 - [x] **B2-P1.5** Copy revisions: tagline + footer per §15 - tagline now "Pass JLPT N5 with 15 minutes a day. No login, no ads, no data shared." Footer: "Works offline. No login. Your progress stays on this device."
 
-### Phase 2 — Daily-use friction ✅ COMPLETE
+### Phase 2 - Daily-use friction ✅ COMPLETE
 - [x] **B2-P2.1** Three-mode furigana radios in Settings + header quick-toggle. Storage: `furiganaMode` ∈ {always, hide-known, never}. CSS-toggle via re-render on change (§4.1).
 - [x] **B2-P2.2** Per-kanji popover (`js/kanji-popover.js`): click any glyph → readings + meaning + "I know this" toggle. Persists in `localStorage.knownKanji`. Click delegation across all rendered kanji. (§4.2)
-- [x] **B2-P2.3** Live furigana preview in Settings panel — fieldset shows `日本語の本を 読みます` rendered through current mode; updates instantly on radio change. (§4.3)
-- [x] **B2-P2.4** Settings additions: audio speed (0.75/1.0/1.25 — applied via MutationObserver to every `<audio>`), reduce-motion (auto/on/off — sets `data-reduce-motion` on `<html>`, CSS overrides motion durations), typed-phrase reset confirm box ("Type RESET"). (§5)
-- [x] **B2-P2.5** Location indicator chip below header — updates on every route change with route label + decoded params (e.g. "Learn", "Kanji · 日"). (§2.4)
+- [x] **B2-P2.3** Live furigana preview in Settings panel - fieldset shows `日本語の本を 読みます` rendered through current mode; updates instantly on radio change. (§4.3)
+- [x] **B2-P2.4** Settings additions: audio speed (0.75/1.0/1.25 - applied via MutationObserver to every `<audio>`), reduce-motion (auto/on/off - sets `data-reduce-motion` on `<html>`, CSS overrides motion durations), typed-phrase reset confirm box ("Type RESET"). (§5)
+- [x] **B2-P2.5** Location indicator chip below header - updates on every route change with route label + decoded params (e.g. "Learn", "Kanji · 日"). (§2.4)
 - [x] **B2-P2.6** Per-question feedback - drill module already shows immediate feedback per question. Test deliberately uses end-of-test results per JLPT mock-exam fidelity (Brief §6.2 separates Test as a periodic event from drill).
 - [x] **B2-P2.7** Global keyboard shortcuts (`js/shortcuts.js`): 1-4 picks Nth choice button, Space reveals/flips, Enter clicks primary/Submit/Continue, ? opens cheatsheet overlay, Esc dismisses. Skipped while focus is in input/textarea/select. (§7.2)
 
-### Phase 3 — Landing and orientation ✅ COMPLETE
+### Phase 3 - Landing and orientation ✅ COMPLETE
 - [x] **B2-P3.1** New `js/home.js` route at `#/home` is now the default landing. First-time state: heading "Start your N5 study", scope line (187 patterns / 1000 vocab / 97 kanji), primary CTA "Start your first lesson", secondary "Take a placement check", 3-pillar card row Learn/Practice/Test, trust strip already in header. (§1.1)
 - [x] **B2-P3.2** Returning state appears when history or test results exist: Continue card (resumes last lesson via `settings.lastLearnId`), Today's review queue card (shows due count + "Start review", or "All caught up" empty positive), 7-day streak strip with flame + heatmap, last-test summary line. (§1.2)
 - [x] **B2-P3.3** Streak storage in `localStorage.streak` ({current, longest, lastStudyDate, days[30]}). Auto-incremented on first interaction each day. Heatmap renders last 7 days; `streak-flame` + day-count chip on home. Session-end UX is owned by drill/review results screens already. (§6)
 - [x] **B2-P3.4** New `js/search.js` indexes grammar (id/pattern/meaning/explanation), vocab (form/reading/gloss), kanji (glyph/on/kun/meanings). `<input type="search">` in secondary nav. `/` keyboard shortcut focuses input. Click outside or Esc dismisses panel. Lazy-loads bank on first focus. (§8)
 - [x] **B2-P3.5** Nav restructured per §2.2: primary now has Home / Learn / Practice (renamed from Daily Drill) / Review / Test. Secondary nav row holds search + Summary + Settings.
 
-### Phase 4 — Polish and reach
+### Phase 4 - Polish and reach
 - [x] **B2-P4.1** Webfont decision: kept system stack `Noto Sans JP / Hiragino Kaku Gothic ProN / Yu Gothic / Meiryo`. Shipping a 200 KB self-hosted woff2 conflicts with static-only / no-third-party-loads constraints. Yu Gothic + Meiryo are preinstalled on Windows 10+; users with the JP language pack get Noto Sans JP. Documented in CHANGELOG.
-- [x] **B2-P4.2** SW now uses stale-while-revalidate for the shell (HTML/CSS/JS): serves cache instantly, refetches in background, posts `SW_UPDATE_AVAILABLE` to clients when new bytes detected. Cache-first preserved for content. New js/pwa.js shows "A new version is available — Reload?" toast on receipt; click sends `SKIP_WAITING` and reloads.
+- [x] **B2-P4.2** SW now uses stale-while-revalidate for the shell (HTML/CSS/JS): serves cache instantly, refetches in background, posts `SW_UPDATE_AVAILABLE` to clients when new bytes detected. Cache-first preserved for content. New js/pwa.js shows "A new version is available - Reload?" toast on receipt; click sends `SKIP_WAITING` and reloads.
 - [x] **B2-P4.3** Install banner via `beforeinstallprompt` (one-time, dismissed flag in localStorage). Offline indicator chip in top-right that toggles with `navigator.onLine`. Hidden when online.
 - [x] **B2-P4.4** Mobile responsive pass: primary nav becomes a fixed bottom bar at ≤480px with safe-area insets honored (`env(safe-area-inset-bottom)`). All buttons / nav items / pillar cards / choice buttons set `min-height: 44px` per Apple HIG.
 - [x] **B2-P4.5** Quit prompt: `__testInProgress` flag set by Test.startTest, cleared on results. `beforeunload` blocks tab close; `hashchange` interceptor confirms "Quit this test? Progress so far will be saved" and reverts the hash on cancel.

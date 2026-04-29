@@ -2,7 +2,7 @@
 
 All user-visible changes to the JLPT N5 Grammar Tutor.
 
-## v1.5.0 — 2026-04-30 (UX Brief 2 — Phase 1-4)
+## v1.5.0 - 2026-04-30 (UX Brief 2 - Phase 1-4)
 
 ### Added
 - **Home screen** (#/home) is now the default landing page. First-time visitors see a CTA "Start your first lesson" + placement check link + 3-card pillars (Learn / Practice / Test). Returning visitors see a Continue card, Today's review queue, and a 7-day streak heatmap.
@@ -30,7 +30,7 @@ All user-visible changes to the JLPT N5 Grammar Tutor.
 - **Primary nav** restructured: Home / Learn / Practice (renamed from Daily Drill) / Review / Test. Summary + Settings moved to a secondary nav row.
 - **Service worker** now uses stale-while-revalidate for the shell (HTML/CSS/JS) and cache-first for content (data/audio/locales). Posts an update message to clients when new shell bytes are detected.
 
-## v1.4.0 — 2026-04-29 (Brief 1 — final assets)
+## v1.4.0 - 2026-04-29 (Brief 1 - final assets)
 
 ### Added
 - **491 audio files** for all grammar examples, reading passages, and listening scripts (gTTS Japanese voice, ~19 MB).
@@ -41,11 +41,11 @@ All user-visible changes to the JLPT N5 Grammar Tutor.
 ### Fixed
 - `tools/build_audio.py`: `Path.with_suffix` was stripping the example index for IDs like `n5-001.0`. Switched to manual string concat so all 449 grammar example files render uniquely.
 
-## v1.3.0 — 2026-04-30 (native-speaker audit Pass 8)
+## v1.3.0 - 2026-04-30 (native-speaker audit Pass 8)
 
 52 findings raised, 52 fixed. Severity: 16 HIGH, 27 MED, 9 LOW. Touched `moji_questions_n5.md`, `bunpou_questions_n5.md`, `goi_questions_n5.md`, `dokkai_questions_n5.md`, `authentic_extracted_n5.md`. See `verification.md` §7.
 
-## v1.2.0 — 2026-04 (UX Brief 1 / Phase 4 + 5)
+## v1.2.0 - 2026-04 (UX Brief 1 / Phase 4 + 5)
 
 - 187 patterns enriched, 250 questions written (no stubs).
 - 1002 vocab entries + 97 kanji entries.
@@ -55,7 +55,7 @@ All user-visible changes to the JLPT N5 Grammar Tutor.
 - SM-2 SRS in Review with Again/Hard/Good/Easy grading.
 - 37 browser-runnable tests.
 
-## v1.0.0 — 2026 initial release
+## v1.0.0 - 2026 initial release
 
 - Vanilla HTML/CSS/JS scaffold, hash router, LocalStorage adapter.
 - 4 chapters + Drill + Diagnostic.

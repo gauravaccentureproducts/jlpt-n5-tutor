@@ -362,25 +362,29 @@ export function setManuallyKnown(grammarPatternId, known) {
  */
 export function exportProgress() {
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     exportedAt: new Date().toISOString(),
     appVersion: 'jlpt-n5-tutor',
     settings: getSettings(),
     history: getHistory(),
     results: getResults(),
+    knownKanji: getKnownKanji(),
+    streak: getStreak(),
   };
 }
 
 /**
  * Import a progress payload, replacing all existing state. Validates the
  * schema and refuses to import if it doesn't match.
+ * Schema v1 is accepted (knownKanji + streak just default to empty).
+ * Schema v2 includes knownKanji + streak.
  * @returns {{ok: boolean, message: string}}
  */
 export function importProgress(payload) {
   if (!payload || typeof payload !== 'object') {
     return { ok: false, message: 'Invalid payload (not an object).' };
   }
-  if (payload.schemaVersion !== 1) {
+  if (![1, 2].includes(payload.schemaVersion)) {
     return { ok: false, message: `Unsupported schema version: ${payload.schemaVersion}` };
   }
   if (!payload.settings || !payload.history || !Array.isArray(payload.results)) {
@@ -389,5 +393,12 @@ export function importProgress(payload) {
   set('settings', payload.settings);
   set('history', payload.history);
   set('results', payload.results);
+  // v2 keys (Brief 2 §4.2 + §6.1): tolerate missing on v1 imports.
+  if (payload.knownKanji && typeof payload.knownKanji === 'object') {
+    set('knownKanji', payload.knownKanji);
+  }
+  if (payload.streak && typeof payload.streak === 'object') {
+    set('streak', payload.streak);
+  }
   return { ok: true, message: `Imported. ${Object.keys(payload.history).length} pattern entries, ${payload.results.length} test results.` };
 }
