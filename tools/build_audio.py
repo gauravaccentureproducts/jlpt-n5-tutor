@@ -52,9 +52,13 @@ def detect_backend(prefer: str | None = None):
     candidates = []
     if prefer:
         candidates.append(prefer)
-    # piper first (better quality)
+    # piper first (offline neural, highest quality)
     if "piper" not in candidates:
         candidates.append("piper")
+    # gtts second (network at build-time, good quality)
+    if "gtts" not in candidates:
+        candidates.append("gtts")
+    # pyttsx3 last (OS-native fallback)
     if "pyttsx3" not in candidates:
         candidates.append("pyttsx3")
 
@@ -63,12 +67,27 @@ def detect_backend(prefer: str | None = None):
             if name == "piper":
                 import piper  # noqa: F401
                 return "piper"
+            if name == "gtts":
+                import gtts  # noqa: F401
+                return "gtts"
             if name == "pyttsx3":
                 import pyttsx3  # noqa: F401
                 return "pyttsx3"
         except ImportError:
             continue
     return None
+
+
+class GttsBackend:
+    """Google Translate TTS - network at BUILD TIME ONLY (not runtime)."""
+    def __init__(self, _voice: str | None = None):
+        from gtts import gTTS  # noqa: F401
+        self.suffix = ".mp3"
+
+    def render(self, text: str, out_path: Path):
+        from gtts import gTTS
+        tts = gTTS(text=text, lang="ja", slow=False)
+        tts.save(str(out_path))
 
 
 class PiperBackend:
@@ -148,7 +167,7 @@ def collect_jobs(force: bool, limit: int | None):
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--backend", choices=["piper", "pyttsx3", "auto"], default="auto")
+    ap.add_argument("--backend", choices=["piper", "gtts", "pyttsx3", "auto"], default="auto")
     ap.add_argument("--voice", help="Voice file (piper) or voice id (pyttsx3)")
     ap.add_argument("--limit", type=int, help="Limit jobs (for testing)")
     ap.add_argument("--force", action="store_true", help="Re-render existing files")
@@ -164,6 +183,8 @@ def main() -> int:
 
     if backend_name == "piper":
         backend = PiperBackend(args.voice)
+    elif backend_name == "gtts":
+        backend = GttsBackend(args.voice)
     else:
         backend = Pyttsx3Backend(args.voice)
 
@@ -179,7 +200,10 @@ def main() -> int:
     manifest = {"backend": backend_name, "items": []}
 
     for text, out_base, src_id in jobs:
-        out = out_base.with_suffix(backend.suffix)
+        # Append suffix manually rather than using with_suffix, because IDs
+        # like 'n5-001.0' contain a dot that with_suffix would treat as the
+        # existing suffix (causing all examples for one pattern to collide).
+        out = Path(str(out_base) + backend.suffix)
         if out.exists() and not args.force:
             skipped += 1
             manifest["items"].append({"id": src_id, "path": str(out.relative_to(ROOT)), "skipped": True})

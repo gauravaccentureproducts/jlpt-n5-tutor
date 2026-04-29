@@ -1,0 +1,136 @@
+{
+  "items": [
+    {
+      "id": "n5.listen.001",
+      "format": "task",
+      "title_en": "Where to meet",
+      "audio": "audio/listening/n5.listen.001.mp3",
+      "script_ja": "おとこの人と 女の人が 話しています。明日、二人は どこで 会いますか。\n男：明日、えいがを 見に 行きませんか。\n女：いいですね。何時に 会いますか。\n男：3時に えきの 前で どうですか。\n女：えきの 前は 人が おおいですね。カフェの 前で 会いましょう。\n男：はい、わかりました。",
+      "prompt_ja": "明日、二人は どこで 会いますか。",
+      "choices": ["えきの 前", "カフェの 前", "えいがかんの 前", "デパートの 前"],
+      "correctAnswer": "カフェの 前",
+      "explanation_en": "Initially they planned to meet at the station, but the woman suggested the cafe instead, and the man agreed."
+    },
+    {
+      "id": "n5.listen.002",
+      "format": "task",
+      "title_en": "What to buy",
+      "audio": "audio/listening/n5.listen.002.mp3",
+      "script_ja": "女の人が 男の人に 電話しています。男の人は 何を 買いますか。\n女：もしもし。今 スーパーですか。\n男：はい、いま スーパーに います。\n女：パンと たまごを かって ください。\n男：パンと たまごですね。\n女：あ、ぎゅうにゅうも おねがいします。\n男：はい、わかりました。",
+      "prompt_ja": "男の人は 何を 買いますか。",
+      "choices": ["パンと たまご", "パンと たまごと ぎゅうにゅう", "パンと ぎゅうにゅう", "たまごと ぎゅうにゅう"],
+      "correctAnswer": "パンと たまごと ぎゅうにゅう",
+      "explanation_en": "The woman first asked for bread and eggs, then added milk."
+    },
+    {
+      "id": "n5.listen.003",
+      "format": "task",
+      "title_en": "What time to leave",
+      "audio": "audio/listening/n5.listen.003.mp3",
+      "script_ja": "男の人と 女の人が 話しています。明日 何時に 家を 出ますか。\n女：明日の あさ、何時に 出ますか。\n男：そうですね。9時の でんしゃに のりたいです。\n女：では、家を 8時半に 出ましょう。\n男：いいですね。そう しましょう。",
+      "prompt_ja": "明日 何時に 家を 出ますか。",
+      "choices": ["8時", "8時半", "9時", "9時半"],
+      "correctAnswer": "8時半",
+      "explanation_en": "They agreed to leave at 8:30 to catch the 9 o'clock train."
+    },
+    {
+      "id": "n5.listen.004",
+      "format": "task",
+      "title_en": "Choosing a drink",
+      "audio": "audio/listening/n5.listen.004.mp3",
+      "script_ja": "カフェで 男の人が 注文しています。男の人は 何を 飲みますか。\n店員：いらっしゃいませ。\n男：すみません、コーヒーを ください。\n店員：あついコーヒーですか。\n男：いいえ、つめたい コーヒーで おねがいします。\n店員：はい、つめたい コーヒーですね。",
+      "prompt_ja": "男の人は 何を 飲みますか。",
+      "choices": ["あつい コーヒー", "つめたい コーヒー", "おちゃ", "ジュース"],
+      "correctAnswer": "つめたい コーヒー",
+      "explanation_en": "The man clarified he wanted iced coffee, not hot."
+    },
+    {
+      "id": "n5.listen.005",
+      "format": "point",
+      "title_en": "Reason for being late",
+      "audio": "audio/listening/n5.listen.005.mp3",
+      "script_ja": "学校で 先生と 学生が 話しています。学生は どうして おそく なりましたか。\n先生：今日は どうして おそく 来ましたか。\n学生：すみません。あさ、でんしゃが おくれました。\n先生：そうですか。だいじょうぶですか。\n学生：はい、もう だいじょうぶです。",
+      "prompt_ja": "学生は どうして おそく なりましたか。",
+      "choices": ["バスが おくれたから", "でんしゃが おくれたから", "おきるのが おそかったから", "あさごはんを 食べたから"],
+      "correctAnswer": "でんしゃが おくれたから",
+      "explanation_en": "'あさ、でんしゃが おくれました'."
+    },
+    {
+      "id": "n5.listen.006",
+      "format": "point",
+      "title_en": "Where the book is",
+      "audio": "audio/listening/n5.listen.006.mp3",
+      "script_ja": "女の人が 男の人と 話しています。本は どこに ありますか。\n女：日本語の 本は どこですか。\n男：あの たなの 上です。\n女：上ですか。下では ありませんか。\n男：はい、上です。一番 大きい 本です。\n女：わかりました。ありがとう。",
+      "prompt_ja": "本は どこに ありますか。",
+      "choices": ["たなの 下", "たなの 上", "つくえの 上", "つくえの 下"],
+      "correctAnswer": "たなの 上",
+      "explanation_en": "Confirmed: '上です' (on top of the shelf)."
+    },
+    {
+      "id": "n5.listen.007",
+      "format": "point",
+      "title_en": "Favorite season",
+      "audio": "audio/listening/n5.listen.007.mp3",
+      "script_ja": "おとこの人が はなしています。おとこの人は どの きせつが いちばん すきですか。\nぼくは あきが いちばん すきです。あきは あつくないし、さむくないです。たべものも おいしいです。なつは あつすぎます。ふゆは さむすぎます。はるは すきですが、あきの ほうが もっと すきです。",
+      "prompt_ja": "男の人は どの きせつが いちばん すきですか。",
+      "choices": ["はる", "なつ", "あき", "ふゆ"],
+      "correctAnswer": "あき",
+      "explanation_en": "'ぼくは あきが いちばん すきです'."
+    },
+    {
+      "id": "n5.listen.008",
+      "format": "point",
+      "title_en": "What he wants for his birthday",
+      "audio": "audio/listening/n5.listen.008.mp3",
+      "script_ja": "女の人と 男の人が 話しています。男の人は たんじょうびに 何が ほしいですか。\n女：たんじょうび、何が ほしいですか。本ですか。\n男：本も いいですが、もっと ほしい ものが あります。\n女：何ですか。とけいですか。\n男：いいえ、新しい カメラが ほしいです。\n女：そうですか。",
+      "prompt_ja": "男の人は たんじょうびに 何が ほしいですか。",
+      "choices": ["本", "とけい", "カメラ", "ペン"],
+      "correctAnswer": "カメラ",
+      "explanation_en": "'新しい カメラが ほしいです'."
+    },
+    {
+      "id": "n5.listen.009",
+      "format": "utterance",
+      "title_en": "Asking for the time",
+      "audio": "audio/listening/n5.listen.009.mp3",
+      "script_ja": "（しちゃくが しらない人に きく とき）\n1. 何時から はじまりますか。\n2. すみません、いま 何時ですか。\n3. どこに 行きますか。",
+      "prompt_ja": "あなたは いま 何時か しりたいです。何と 言いますか。",
+      "choices": ["何時から はじまりますか。", "すみません、いま 何時ですか。", "どこに 行きますか。"],
+      "correctAnswer": "すみません、いま 何時ですか。",
+      "explanation_en": "Use すみません as polite opener + いま 何時ですか for asking the current time."
+    },
+    {
+      "id": "n5.listen.010",
+      "format": "utterance",
+      "title_en": "Buying a ticket",
+      "audio": "audio/listening/n5.listen.010.mp3",
+      "script_ja": "（えきの まどぐちで）\n1. このきっぷは いくらですか。\n2. とうきょうまで 一まい おねがいします。\n3. どようびに 行きます。",
+      "prompt_ja": "あなたは とうきょうまでの きっぷを 一まい かいたいです。何と 言いますか。",
+      "choices": ["このきっぷは いくらですか。", "とうきょうまで 一まい おねがいします。", "どようびに 行きます。"],
+      "correctAnswer": "とうきょうまで 一まい おねがいします。",
+      "explanation_en": "Standard ticket-purchase phrasing: destination + counter + おねがいします."
+    },
+    {
+      "id": "n5.listen.011",
+      "format": "utterance",
+      "title_en": "Refusing politely",
+      "audio": "audio/listening/n5.listen.011.mp3",
+      "script_ja": "（友だちが ケーキを すすめたが、もう おなかが いっぱいです）\n1. ありがとう、いただきます。\n2. すみません、もう おなかが いっぱいです。\n3. もう 一つ ください。",
+      "prompt_ja": "もう おなかが いっぱいです。何と 言いますか。",
+      "choices": ["ありがとう、いただきます。", "すみません、もう おなかが いっぱいです。", "もう 一つ ください。"],
+      "correctAnswer": "すみません、もう おなかが いっぱいです。",
+      "explanation_en": "Polite refusal: apologize + state you're full."
+    },
+    {
+      "id": "n5.listen.012",
+      "format": "utterance",
+      "title_en": "Greeting in the morning",
+      "audio": "audio/listening/n5.listen.012.mp3",
+      "script_ja": "（あさ、先生に 会った とき）\n1. こんばんは。\n2. おはようございます。\n3. おやすみなさい。",
+      "prompt_ja": "あさ、学校で 先生に 会いました。何と 言いますか。",
+      "choices": ["こんばんは。", "おはようございます。", "おやすみなさい。"],
+      "correctAnswer": "おはようございます。",
+      "explanation_en": "Morning greeting (polite form for teachers/elders)."
+    }
+  ]
+}

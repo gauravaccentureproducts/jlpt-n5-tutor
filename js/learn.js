@@ -93,13 +93,18 @@ function renderPatternDetail(container, p) {
     <tr><td>${esc(c.label || c.form)}</td><td>${renderJa(c.example)}</td></tr>
   `).join('');
 
-  const exampleItems = examples.map(ex => `
+  const exampleItems = examples.map((ex, i) => {
+    const skipAudio = !ex.ja || ex.ja.includes('(see ');
+    const audioPath = skipAudio ? null : `audio/grammar/${p.id}.${i}.mp3`;
+    return `
     <li>
       <span class="form-tag">${esc(ex.form || '')}</span>
       ${renderJa(ex.ja, ex.furigana)}
       ${ex.translation_en ? `<span class="translation">${esc(ex.translation_en)}</span>` : ''}
+      ${audioPath ? `<audio class="example-audio" controls preload="none" src="${esc(audioPath)}">Audio not available.</audio>` : ''}
     </li>
-  `).join('');
+  `;
+  }).join('');
 
   const mistakeItems = mistakes.map(m => `
     <li>

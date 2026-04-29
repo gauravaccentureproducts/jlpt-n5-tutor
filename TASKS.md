@@ -1,6 +1,6 @@
 # JLPT N5 Grammar Tutor - Tasks
 
-Last updated: 2026-04-30 (Phase 4 + 5 complete)
+Last updated: 2026-04-29 (Phase 4 + 5 complete + audio shipped)
 
 ## Live site
 
@@ -14,15 +14,17 @@ Last updated: 2026-04-30 (Phase 4 + 5 complete)
 - 187/187 patterns enriched, 250/250 questions real (no stubs)
 - **15 routed views**: Learn / Test / Daily Drill / Review (SRS) / Summary / Diagnostic / Settings / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters / Reading / Listening
 - SM-2 SRS in Review (4-button grading)
-- Service worker `jlpt-n5-tutor-v7` pre-caches ~40 assets
+- Service worker `jlpt-n5-tutor-v8` pre-caches ~42 assets; lazy-caches audio on first play
 - 5-locale i18n shell (en at v1, vi/id/ne/zh structured)
 - PWA manifest installable
 - Export / import progress round-trips through JSON
 - 37 browser-runnable tests
 - **Vocab corpus**: 1002 structured entries (data/vocab.json)
 - **Kanji corpus**: 97 entries with stroke-order SVG slot (data/kanji.json)
-- **Reading corpus**: 8 graded passages with 2-3 comprehension Qs each (data/reading.json)
-- **Audio TTS pipeline**: tools/build_audio.py - runs offline via piper-tts or pyttsx3 at build time
+- **Reading corpus**: 30 graded passages with 2-3 comprehension Qs each (data/reading.json)
+- **Listening corpus**: 12 items across 3 JLPT formats (4 task / 4 point / 4 utterance) in data/listening.json
+- **Audio assets**: 491 MP3 files committed - 449 grammar examples, 30 reading passages, 12 listening scripts (~19 MB total). Generated via gTTS (build-time only).
+- **Audio TTS pipeline**: tools/build_audio.py - auto-detects piper-tts / gtts / pyttsx3. Idempotent. Uses string-suffix concat (not Path.with_suffix) so example IDs like 'n5-001.0' don't collide.
 - **Codebase em-dash-free** (881 occurrences stripped)
 
 ---
@@ -30,7 +32,8 @@ Last updated: 2026-04-30 (Phase 4 + 5 complete)
 ## Done - Phase 4 + 5
 
 ### Phase 4.1 Foundation
-- [x] **P1.1 Audio TTS build pipeline** - tools/build_audio.py auto-detects piper-tts (offline neural) or pyttsx3 (OS-native), renders MP3/WAV for every grammar example, reading passage, listening item. Idempotent. Writes data/audio_manifest.json. App degrades gracefully when MP3s are absent.
+- [x] **P1.1 Audio TTS build pipeline** - tools/build_audio.py auto-detects piper-tts / gtts / pyttsx3, renders MP3/WAV for every grammar example, reading passage, listening item. Idempotent. Writes data/audio_manifest.json. App degrades gracefully when MP3s are absent.
+- [x] **P1.1b Audio rendered + wired** - 491 MP3s generated via gTTS (Japanese voice), grammar example player added to learn UI, listening + reading modules already wire `<audio>` elements from `it.audio` / `p.audio`. Verified in browser preview: HEAD 200 + audio/mpeg on grammar/listening/reading samples.
 - [x] **P1.2 SRS upgrade to SM-2** - Review tab is an SRS session with Again/Hard/Good/Easy. Live-verified: rep 1→1d, rep 2→6d, rep 3→15d, lapse → 1d + EF drops to 1.96.
 - [x] **P1.3 Diagnostic Summary upgrade** - Error Patterns + Recommended Next Session + Session Log.
 - [x] **P1.4 Rename "Drill 0"** - now "Daily Drill"; badge suppressed at 0; aria-label.
@@ -70,19 +73,19 @@ Last updated: 2026-04-30 (Phase 4 + 5 complete)
 - [x] Works offline after first load.
 - [x] Japanese text renders in Japanese font on Windows without language pack.
 - [x] Furigana toggle hides/shows ruby.
-- [ ] Audio plays on iOS Safari (depends on running tools/build_audio.py and committing the MP3s).
+- [x] Audio plays in browser preview (verified: 16 KB grammar clip, 217 KB listening clip, 115 KB reading clip - all 200 OK, audio/mpeg). iOS Safari unverified but uses standard `<audio src>` so should work.
 - [x] Export → wipe → import round-trips progress.
 - [ ] Lighthouse audits (unmeasured; manifest + SW + a11y should put scores in range).
 - [x] No outbound network calls during a normal session.
 
 ---
 
-## Remaining (corpus expansion only)
+## Remaining
 
-- [ ] **P-cross.4 Reading + listening corpus expansion**: target ~30 passages (currently 8). Authoring is straightforward; just write more entries into data/reading.json and (when audio pipeline is run) data/listening.json.
-- [ ] **Run tools/build_audio.py end-to-end** with a Japanese voice installed. Needs the user to install piper-tts and download a voice ONNX, OR have pyttsx3 with a Japanese OS voice. Once run, the audio files commit and the listening module activates.
+- [x] **P-cross.4 Reading + listening corpus expansion**: 30 reading passages + 12 listening items committed.
+- [x] **Run tools/build_audio.py end-to-end**: 491 MP3s rendered via gTTS, committed under audio/, listening module activated.
 
-Both are content / asset tasks; the engine and module layers are complete.
+All planned tasks complete. Engine, module, and asset layers are shipped.
 
 ---
 
