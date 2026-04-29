@@ -12,6 +12,7 @@ import { renderKosoado } from './kosoado.js';
 import { renderWaGa } from './wa-vs-ga.js';
 import { renderVerbClass } from './verb-class.js';
 import { renderTeForm } from './te-form.js';
+import { initI18n } from './i18n.js';
 
 const ROUTES = {
   learn:      renderLearn,
@@ -72,6 +73,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   initStorage();
   applyTheme();
   applyFontSize();
+  await initI18n();
   await initFuriganaToggle(route);
   if (!location.hash) location.hash = '#/learn';
   await route();

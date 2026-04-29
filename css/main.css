@@ -1208,3 +1208,48 @@ button:disabled { cursor: not-allowed; opacity: 0.5; }
   font-size: 14px;
 }
 .te-rules-table th { background: var(--c-bg); }
+
+/* Accessibility — Skip-to-content + universal focus ring */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--c-primary);
+  color: white;
+  padding: 8px 16px;
+  z-index: 9999;
+  text-decoration: none;
+  border-radius: 0 0 var(--r) 0;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--c-warning);
+  outline-offset: 2px;
+}
+
+/* Universal visible focus rings on interactive controls */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--c-primary-light);
+  outline-offset: 2px;
+}
+
+/* Honor reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High-contrast support: rely on system colors when forced-colors is on */
+@media (forced-colors: active) {
+  .btn-primary, .grade-btn, .vc-btn, .choice-button {
+    border: 1px solid CanvasText;
+  }
+}

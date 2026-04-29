@@ -1,6 +1,15 @@
 // Settings panel — per spec §3.6 of the developer brief.
 // On-device only. Reads/writes via storage adapter.
 import * as storage from './storage.js';
+import { setLocale, currentLocale, supportedLocales } from './i18n.js';
+
+const LOCALE_NAMES = {
+  en: 'English',
+  vi: 'Tiếng Việt',
+  id: 'Bahasa Indonesia',
+  ne: 'नेपाली',
+  zh: '中文',
+};
 
 export async function renderSettings(container) {
   const s = storage.getSettings();
@@ -11,6 +20,12 @@ export async function renderSettings(container) {
 
     <section class="settings-section">
       <h3>Display</h3>
+      <label class="settings-row">
+        <span>UI language</span>
+        <select id="set-locale">
+          ${supportedLocales.map(lc => `<option value="${lc}" ${currentLocale()===lc?'selected':''}>${LOCALE_NAMES[lc] || lc}</option>`).join('')}
+        </select>
+      </label>
       <label class="settings-row">
         <span>Furigana on N5 kanji</span>
         <select id="set-furigana">
@@ -74,6 +89,10 @@ export async function renderSettings(container) {
   `;
 
   // Wire change handlers
+  document.getElementById('set-locale').addEventListener('change', async (e) => {
+    await setLocale(e.target.value);
+    location.reload();
+  });
   document.getElementById('set-furigana').addEventListener('change', (e) => {
     storage.setSettings({ furiganaOnN5Kanji: e.target.value === 'on' });
     applyTheme();
