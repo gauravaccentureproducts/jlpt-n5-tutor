@@ -14,7 +14,7 @@ Last updated: 2026-04-30 (Pass 8 native-speaker audit: 52 findings raised, 52 fi
 - 187/187 patterns enriched, 250/250 questions real (no stubs)
 - **17 routed views**: Home / Learn / Test / Practice (Daily Drill) / Review (SRS) / Summary / Diagnostic / Settings / Kanji / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters / Reading / Listening
 - SM-2 SRS in Review (4-button grading)
-- Service worker `jlpt-n5-tutor-v14` pre-caches ~47 assets; lazy-caches audio on first play
+- Service worker `jlpt-n5-tutor-v15` (stale-while-revalidate for shell, cache-first for content); update toast on new shell; lazy-caches audio on first play
 - 5-locale i18n shell (en at v1, vi/id/ne/zh structured)
 - PWA manifest installable
 - Export / import progress round-trips through JSON
@@ -86,6 +86,68 @@ Last updated: 2026-04-30 (Pass 8 native-speaker audit: 52 findings raised, 52 fi
 - [x] **Run tools/build_audio.py end-to-end**: 491 MP3s rendered via gTTS, committed under audio/, listening module activated.
 
 Brief 1 complete. Engine, module, and asset layers shipped.
+
+---
+
+## Content correction brief (Pass 9) - registered 2026-04-30
+
+External brief at `feedback/jlpt-n5-content-correction-brief.md` raised 27 items + 4 systematic sweeps + 7 cross-file consistency checks. Severity: 5 CRITICAL, 7 HIGH, 9 MEDIUM, 6 LOW. Fixes in priority order.
+
+### CRITICAL (5)
+
+- [ ] **C-1.1** kanji_n5.md missing 力 and 手 (used as correct answers in moji Q54/Q58). Add to catalog OR replace questions.
+- [ ] **C-1.2** dokkai Passage F: 「こんねんの 八月」 - wrong reading of 今年 (should be ことし).
+- [ ] **C-1.3** bunpou Q50/Q51: both から (option 2) and ので (option 3) are grammatically correct. Replace one distractor.
+- [ ] **C-1.4** goi Q99 rationale overstates 知る ≈ 覚える as direct synonymy. They are not synonyms; soften.
+- [ ] **C-1.5** moji Q6 rationale mentions にっぽん which is not in the options; tighten to avoid confusion.
+
+### HIGH (7)
+
+- [ ] **H-2.1** Mixed kanji+kana words sweep (e.g., bunpou Q70 「図しょかん」, dokkai Passage 24 「大さか」). Pick one rule, apply consistently.
+- [ ] **H-2.2** bunpou Q98 option 4 「ピアノを 買い」 is also grammatical. Strengthen distractor or add nuance to rationale.
+- [ ] **H-2.3** bunpou Q100 rationale: 「でも」 should be glossed as "even (just)", not "at least".
+- [ ] **H-2.4** vocabulary §27/28: flag Group-1 ru-verb exceptions (入る, 帰る, 走る, 知る, 切る, 要る) with annotation.
+- [ ] **H-2.5** moji Q62 「子供 vs 子ども」: rationale should disclose that 子供 is also standard.
+- [ ] **H-2.6** grammar §22: rename "Honorific" to "Beautifying" (bika-go vs sonkei-go terminology).
+- [ ] **H-2.7** vocabulary line 287: 「もう」 definition incorrectly lists "soon" as a standalone gloss.
+
+### MEDIUM (9)
+
+- [ ] **M-3.1** kanji_n5.md kun-yomi readings out of N5 scope (上=のぼる, 下=おりる, 外=ほか, 万=バン).
+- [ ] **M-3.2** goi Q47 rationale uses 「去年」 (N4 kanji); change to きょねん.
+- [ ] **M-3.3** goi Q87: consider はたち vs 二十さい note for age-20.
+- [ ] **M-3.4** bunpou Q24: しんかんせん is not in N5 vocab. Replace with でんしゃ.
+- [ ] **M-3.5** goi Q86: soften "電話をかける = 電話で話す" rationale (not strict equivalence).
+- [ ] **M-3.6** goi Q94: soften あまくない vs あまり あまくない rationale.
+- [ ] **M-3.7** goi Q70: soften "likes" → "does often" rationale.
+- [ ] **M-3.8** vocabulary 毎年 (まいとし/まいねん): add register note.
+- [ ] **M-3.9** vocabulary archaic items (マッチ, フィルム, レコード, テープレコーダー): add note about modern relevance.
+
+### LOW (6)
+
+- [ ] **L-4.1** sources.md CEFR claim: verify or soften.
+- [ ] **L-4.2** kanji 円: meaning ordering (yen first; circle/round as N4+).
+- [ ] **L-4.3** grammar §6: clarify verb group description with both kana-row and romaji views.
+- [ ] **L-4.4** dokkai Q27 passage uses 「一じかん」; standardize to 「一時間」.
+- [ ] **L-4.5** em-dash check across all files.
+- [ ] **L-4.6** vocabulary line 824: いる homophone; cross-reference to §2.4 list.
+
+### Systematic sweeps (4)
+
+- [ ] **S-5.1** Mixed kanji+kana words across all files.
+- [ ] **S-5.2** Vocab outside N5 scope appearing in question stems.
+- [ ] **S-5.3** Rationale lines that overstate equivalence ("Direct synonymy", "=", "equivalent").
+- [ ] **S-5.4** Verify cited grammar rules in rationales.
+
+### Cross-file consistency checks (7)
+
+- [ ] **X-6.1** Every kanji used as correct answer appears in kanji_n5.md.
+- [ ] **X-6.2** Readings in vocab match readings in question files (esp. 今年 = ことし).
+- [ ] **X-6.3** No mixed-kanji words.
+- [ ] **X-6.4** No orphan vocab in question stems.
+- [ ] **X-6.5** No em-dashes.
+- [ ] **X-6.6** All Group-1 ru-verb exceptions flagged in vocab.
+- [ ] **X-6.7** No false "direct synonymy" claims in rationales.
 
 ---
 
@@ -204,14 +266,14 @@ Source: `feedback/jlpt-n5-tutor-ux-developer-brief2.md`. Phased per Brief §19.
 - [x] **B2-P3.5** Nav restructured per §2.2: primary now has Home / Learn / Practice (renamed from Daily Drill) / Review / Test. Secondary nav row holds search + Summary + Settings.
 
 ### Phase 4 — Polish and reach
-- [ ] **B2-P4.1** Noto Sans JP webfont, font-display:swap, preload (§11.1)
-- [ ] **B2-P4.2** SW: stale-while-revalidate for shell + "Update available" toast (§12.1)
-- [ ] **B2-P4.3** PWA install prompt (§12.3) + offline indicator (§12.4)
-- [ ] **B2-P4.4** Mobile responsive pass: bottom nav ≤480px, safe-area insets, 44px tap targets (§9)
-- [ ] **B2-P4.5** Quit/pause behavior in Test (back-button prompt + Save & Quit) (§7.3)
-- [ ] **B2-P4.6** Print stylesheet for Learn lessons (§14.3)
-- [ ] **B2-P4.7** Version + "What's new" / CHANGELOG link (§16)
-- [ ] **B2-P4.8** A11y deep-pass: contrast audit, screen-reader smoke test notes, prefers-reduced-motion verification (§10)
+- [x] **B2-P4.1** Webfont decision: kept system stack `Noto Sans JP / Hiragino Kaku Gothic ProN / Yu Gothic / Meiryo`. Shipping a 200 KB self-hosted woff2 conflicts with static-only / no-third-party-loads constraints. Yu Gothic + Meiryo are preinstalled on Windows 10+; users with the JP language pack get Noto Sans JP. Documented in CHANGELOG.
+- [x] **B2-P4.2** SW now uses stale-while-revalidate for the shell (HTML/CSS/JS): serves cache instantly, refetches in background, posts `SW_UPDATE_AVAILABLE` to clients when new bytes detected. Cache-first preserved for content. New js/pwa.js shows "A new version is available — Reload?" toast on receipt; click sends `SKIP_WAITING` and reloads.
+- [x] **B2-P4.3** Install banner via `beforeinstallprompt` (one-time, dismissed flag in localStorage). Offline indicator chip in top-right that toggles with `navigator.onLine`. Hidden when online.
+- [x] **B2-P4.4** Mobile responsive pass: primary nav becomes a fixed bottom bar at ≤480px with safe-area insets honored (`env(safe-area-inset-bottom)`). All buttons / nav items / pillar cards / choice buttons set `min-height: 44px` per Apple HIG.
+- [x] **B2-P4.5** Quit prompt: `__testInProgress` flag set by Test.startTest, cleared on results. `beforeunload` blocks tab close; `hashchange` interceptor confirms "Quit this test? Progress so far will be saved" and reverts the hash on cancel.
+- [x] **B2-P4.6** `@media print` stylesheet hides nav/header/footer/PWA chrome, expands all `<details>`, switches to serif body, hides audio + buttons, scales ruby smaller. Produces clean printable Learn lesson pages.
+- [x] **B2-P4.7** Footer adds version line `v1.5.0 · Content updated April 2026 · What's new` linking to `CHANGELOG.md`. New CHANGELOG.md documents v1.5.0 (this brief) + v1.4.0 audio + v1.3.0 audit + v1.2.0 + v1.0.0.
+- [x] **B2-P4.8** A11y audit (live-verified): h1=1, all interactive elements have text or aria-label, all landmarks have roles (banner, main, status), trust strip has aria-label, search has aria-label, location chip has role=status + aria-live=polite, min-tap-target 44px enforced via CSS, skip-link present, prefers-reduced-motion respected (skeleton CSS already had override; reduce-motion override added at `data-reduce-motion="on"`).
 
 ---
 

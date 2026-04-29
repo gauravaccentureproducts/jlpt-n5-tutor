@@ -1,13 +1,14 @@
 // Service worker - offline caching for the static app.
-// Strategy:
-//   * On install: pre-cache all known shell + data assets.
-//   * On fetch: cache-first, falling back to network. If network adds something
-//     new on a subsequent visit, the next install of a new service worker will
-//     refresh the cache.
+// Strategy (Brief 2 §12.1):
+//   * On install: pre-cache the shell.
+//   * Shell (HTML / CSS / JS): stale-while-revalidate. Serve cache instantly,
+//     refresh in the background; post a message to clients when a new shell
+//     is fetched so the page can show "Update available - reload?" toast.
+//   * Content (data/audio/locales/manifest): cache-first.
 //
 // Bump CACHE_VERSION whenever a release ships, so old caches get evicted on
 // the next visit.
-const CACHE_VERSION = 'jlpt-n5-tutor-v14';
+const CACHE_VERSION = 'jlpt-n5-tutor-v15';
 
 const PRECACHE = [
   './',
@@ -41,6 +42,8 @@ const PRECACHE = [
   './js/shortcuts.js',
   './js/search.js',
   './js/home.js',
+  './js/pwa.js',
+  './CHANGELOG.md',
   './data/vocab.json',
   './data/kanji.json',
   './data/reading.json',
@@ -81,6 +84,20 @@ self.addEventListener('activate', (event) => {
   })());
 });
 
+function isShellRequest(url) {
+  // The shell = HTML, CSS, JS modules. Treat these stale-while-revalidate
+  // so users always get instant navigation but a background fetch picks up
+  // newly-deployed code.
+  return /\.(html|css|js)$/.test(url.pathname) || url.pathname.endsWith('/');
+}
+
+async function broadcastUpdate() {
+  const clients = await self.clients.matchAll({ includeUncontrolled: true });
+  for (const client of clients) {
+    client.postMessage({ type: 'SW_UPDATE_AVAILABLE' });
+  }
+}
+
 self.addEventListener('fetch', (event) => {
   // Only handle GETs; let everything else go to the network.
   if (event.request.method !== 'GET') return;
@@ -88,24 +105,50 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 
+  if (isShellRequest(url)) {
+    // stale-while-revalidate
+    event.respondWith((async () => {
+      const cache = await caches.open(CACHE_VERSION);
+      const cached = await cache.match(event.request);
+      const fetchPromise = fetch(event.request).then(async (fresh) => {
+        if (fresh && fresh.ok) {
+          // Compare body length as a cheap "did it change?" signal.
+          if (cached) {
+            const oldLen = cached.headers.get('content-length');
+            const newLen = fresh.headers.get('content-length');
+            if (oldLen && newLen && oldLen !== newLen) {
+              broadcastUpdate();
+            }
+          }
+          cache.put(event.request, fresh.clone()).catch(() => {});
+        }
+        return fresh;
+      }).catch(() => null);
+      return cached || (await fetchPromise) || new Response('Offline and not cached.', { status: 503 });
+    })());
+    return;
+  }
+
+  // Content: cache-first.
   event.respondWith((async () => {
     const cache = await caches.open(CACHE_VERSION);
     const cached = await cache.match(event.request);
     if (cached) return cached;
     try {
       const fresh = await fetch(event.request);
-      // Cache successful same-origin responses for next time.
-      if (fresh.ok) {
-        cache.put(event.request, fresh.clone()).catch(() => {});
-      }
+      if (fresh.ok) cache.put(event.request, fresh.clone()).catch(() => {});
       return fresh;
-    } catch (err) {
-      // Offline AND not in cache. Fall through to a generic 503.
+    } catch {
       return new Response('Offline and not cached.', {
-        status: 503,
-        statusText: 'Offline',
+        status: 503, statusText: 'Offline',
         headers: { 'Content-Type': 'text/plain' },
       });
     }
   })());
+});
+
+// Allow the page to ask the active SW to skip-wait when the user accepts the
+// "Update available" toast.
+self.addEventListener('message', (event) => {
+  if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
 });

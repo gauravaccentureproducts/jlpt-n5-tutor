@@ -1365,6 +1365,71 @@ textarea:focus-visible,
 .listening-audio { margin: 14px 0; }
 .listening-audio audio { width: 100%; }
 
+/* PWA banner / offline indicator / update toast (Brief 2 s12.3, s12.4) */
+.pwa-banner {
+  position: fixed; left: 16px; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 1000; display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  padding: 12px 16px;
+}
+.pwa-banner button { min-height: 44px; padding: 8px 14px; }
+.offline-indicator {
+  position: fixed; top: 4px; right: 4px; z-index: 999;
+  background: rgba(220, 50, 50, 0.92); color: white;
+  padding: 4px 10px; border-radius: 4px;
+  font-size: 12px;
+}
+.offline-indicator[hidden] { display: none; }
+.pwa-toast {
+  position: fixed; left: 16px; right: 16px; top: calc(16px + env(safe-area-inset-top, 0px));
+  z-index: 1100; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: center;
+  background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  padding: 10px 14px; max-width: 460px; margin: 0 auto;
+}
+.pwa-toast button { min-height: 36px; padding: 6px 12px; }
+
+/* Mobile bottom nav + safe-area (Brief 2 s9.1, s9.3) */
+@media (max-width: 480px) {
+  body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+  .primary-nav {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 900;
+    display: flex; justify-content: space-around;
+    background: var(--c-surface); border-top: 1px solid var(--c-border);
+    padding: 6px 4px calc(6px + env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.06);
+  }
+  .primary-nav a {
+    flex: 1 1 0; min-height: 44px; min-width: 44px;
+    display: inline-flex; align-items: center; justify-content: center;
+    text-align: center; font-size: 13px; padding: 4px 6px;
+  }
+  .secondary-nav { flex-wrap: wrap; gap: 8px; }
+  .secondary-nav input[type="search"] { width: 100%; max-width: 100%; }
+}
+
+/* Tap-target floor (Brief 2 s9.2) */
+button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .secondary-nav-link, .choice-button {
+  min-height: 44px;
+}
+
+/* Print stylesheet (Brief 2 s14.3) */
+@media print {
+  .app-header, .secondary-nav, .primary-nav, .skip-link, .location-indicator,
+  #drill-badge, .furigana-toggle, .app-footer, .pwa-banner, .offline-indicator,
+  .pwa-toast, .shortcuts-overlay, .kanji-popover, .search-panel { display: none !important; }
+  body { font-family: Georgia, "Times New Roman", serif; color: black; background: white; padding: 0; }
+  main, #app { max-width: none; padding: 0; }
+  details > summary { display: none; }
+  details > * { display: block !important; }
+  ruby rt { font-size: 0.6em; }
+  .btn-primary, .btn-secondary, button { display: none; }
+  audio { display: none; }
+  a[href]::after { content: ""; }
+  .skeleton-wrap { display: none; }
+}
+
 /* Home / landing screen (Brief 2 s1) */
 .home { padding: 12px 0; }
 .home-cta {

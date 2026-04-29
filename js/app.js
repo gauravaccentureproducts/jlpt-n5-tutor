@@ -11,6 +11,7 @@ import { renderSettings, applyTheme, applyFontSize, applyAudioRate, applyReduceM
 import { initKanjiPopover } from './kanji-popover.js';
 import { initShortcuts } from './shortcuts.js';
 import { initSearch } from './search.js';
+import { initPwa } from './pwa.js';
 import { renderKosoado } from './kosoado.js';
 import { renderWaGa } from './wa-vs-ga.js';
 import { renderVerbClass } from './verb-class.js';
@@ -142,7 +143,37 @@ async function route() {
   refreshDrillBadge();
 }
 
-window.addEventListener('hashchange', route);
+// Brief 2 §7.3: prompt before discarding in-progress Test state.
+function shouldPromptOnLeave() {
+  const hash = location.hash || '';
+  // The test module sets view='attempting' on its own state. We can't peek
+  // into it cleanly here, but we can detect via a global flag the module
+  // sets when it enters/exits attempting.
+  return !!window.__testInProgress;
+}
+
+window.addEventListener('beforeunload', (ev) => {
+  if (shouldPromptOnLeave()) {
+    ev.preventDefault();
+    ev.returnValue = '';
+    return '';
+  }
+});
+
+let lastConfirmedHash = location.hash;
+window.addEventListener('hashchange', (ev) => {
+  if (shouldPromptOnLeave()) {
+    const ok = confirm('Quit this test? Progress so far will be saved to history.');
+    if (!ok) {
+      // Revert hash without re-firing the handler (silent)
+      history.replaceState(null, '', lastConfirmedHash || '#/home');
+      return;
+    }
+    window.__testInProgress = false;
+  }
+  lastConfirmedHash = location.hash;
+  route();
+});
 window.addEventListener('DOMContentLoaded', async () => {
   initStorage();
   applyTheme();
@@ -153,6 +184,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   initKanjiPopover();
   initShortcuts();
   initSearch();
+  initPwa();
   // Record study activity for streak (Brief 2 §6.1) on any meaningful interaction
   ['click', 'keydown'].forEach(evt => {
     document.addEventListener(evt, () => recordStudyToday(), { once: true });

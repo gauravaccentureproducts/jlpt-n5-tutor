@@ -130,6 +130,7 @@ async function startTest(length, container) {
     startedAt: new Date().toISOString(),
   };
   view = 'attempting';
+  window.__testInProgress = true;  // Brief 2 §7.3: signals quit-prompt
   renderAttempting(container);
 }
 
@@ -348,6 +349,7 @@ function submitTest(container) {
 
   lastResults = { result, questions: session.questions };
   view = 'results';
+  window.__testInProgress = false;
   renderResults(container);
 }
 
