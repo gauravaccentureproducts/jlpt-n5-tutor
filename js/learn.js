@@ -50,6 +50,8 @@ function renderTOC(container, data) {
       <strong>Topic deep-dives:</strong>
       <a href="#/waga">は vs が →</a>
       <a href="#/kosoado">こそあど grid →</a>
+      <a href="#/verbclass">Verb groups →</a>
+      <a href="#/teform">て-form gym →</a>
     </div>
   `;
   for (const [cat, { items }] of sorted) {

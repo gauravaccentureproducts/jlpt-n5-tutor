@@ -10,6 +10,8 @@ import { renderDiagnostic } from './diagnostic.js';
 import { renderSettings, applyTheme, applyFontSize } from './settings.js';
 import { renderKosoado } from './kosoado.js';
 import { renderWaGa } from './wa-vs-ga.js';
+import { renderVerbClass } from './verb-class.js';
+import { renderTeForm } from './te-form.js';
 
 const ROUTES = {
   learn:      renderLearn,
@@ -21,6 +23,8 @@ const ROUTES = {
   settings:   renderSettings,
   kosoado:    renderKosoado,
   waga:       renderWaGa,
+  verbclass:  renderVerbClass,
+  teform:     renderTeForm,
 };
 
 function parseRoute() {

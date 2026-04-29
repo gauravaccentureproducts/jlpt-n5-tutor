@@ -1134,3 +1134,77 @@ button:disabled { cursor: not-allowed; opacity: 0.5; }
   font-size: 14px;
 }
 .srs-schedule li:last-child { border-bottom: none; }
+
+/* Verb classification + te-form gym */
+.verb-group-section, .te-rules, .drill-cta {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r);
+  padding: 16px 20px;
+  margin: 12px 0;
+}
+.warning-section {
+  border-left: 4px solid var(--c-warning);
+  background: rgba(180, 83, 9, 0.04);
+}
+.warning-section h3 { color: var(--c-warning); margin-top: 0; }
+.verb-list {
+  font-size: 17px;
+  background: var(--c-bg);
+  padding: 10px 14px;
+  border-radius: var(--r);
+  margin: 6px 0;
+}
+.vc-card, .te-drill .vc-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r);
+  padding: 28px 32px;
+  text-align: center;
+}
+.vc-prompt { font-size: 14px; color: var(--c-muted); margin: 0 0 8px; }
+.vc-verb { font-size: 36px; font-weight: 700; color: var(--c-primary); margin: 8px 0 4px; }
+.vc-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 16px 0;
+}
+.vc-btn {
+  padding: 14px 8px;
+  background: var(--c-surface);
+  border: 2px solid var(--c-border);
+  border-radius: var(--r);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.15s;
+  color: var(--c-text);
+}
+.vc-btn:hover:not(:disabled) {
+  border-color: var(--c-primary);
+  background: rgba(20, 69, 42, 0.04);
+}
+.vc-btn:focus { outline: 3px solid var(--c-primary-light); outline-offset: 2px; }
+.vc-btn small { font-weight: 400; color: var(--c-muted); }
+.vc-misses, .te-rule-list { list-style: none; padding: 0; margin: 0; }
+.vc-misses li, .te-rule-list li {
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--c-border);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  background: var(--c-bg);
+}
+.vc-misses li:last-child, .te-rule-list li:last-child { border-bottom: none; }
+.te-rules-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.te-rules-table th, .te-rules-table td {
+  border: 1px solid var(--c-border);
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 14px;
+}
+.te-rules-table th { background: var(--c-bg); }
