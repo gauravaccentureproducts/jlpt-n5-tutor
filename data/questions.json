@@ -1166,2628 +1166,6 @@
       "difficulty": 2
     },
     {
-      "id": "q-0052",
-      "grammarPatternId": "n5-020",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "until / up to",
-      "choices": [
-        "など",
-        "Verb-て",
-        "まで",
-        "Verb-た + ことがある"
-      ],
-      "correctAnswer": "まで",
-      "explanation_en": "Stub question for n5-020 (まで). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0053",
-      "grammarPatternId": "n5-021",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "から～まで",
-        "Verb",
-        "～に～をあげます",
-        "Verb-ない + ほうがいい"
-      ],
-      "correctAnswer": "から～まで",
-      "explanation_en": "Stub question for n5-021 (から～まで). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0054",
-      "grammarPatternId": "n5-022",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "and — non-exhaustive",
-      "choices": [
-        "Noun + の + あとで",
-        "～たり〜たりする",
-        "や",
-        "Verb + counter + Verb"
-      ],
-      "correctAnswer": "や",
-      "explanation_en": "Stub question for n5-022 (や). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0055",
-      "grammarPatternId": "n5-023",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "question marker",
-      "choices": [
-        "か",
-        "Noun + の + まえに",
-        "から",
-        "～がすきです / きらいです"
-      ],
-      "correctAnswer": "か",
-      "explanation_en": "Stub question for n5-023 (か). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0056",
-      "grammarPatternId": "n5-024",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "or — A か B",
-      "choices": [
-        "か",
-        "どこ",
-        "Verb-てはいけません",
-        "Verb"
-      ],
-      "correctAnswer": "か",
-      "explanation_en": "Stub question for n5-024 (か). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0057",
-      "grammarPatternId": "n5-025",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "confirmation / agreement",
-      "choices": [
-        "なんがつ なんにち",
-        "～じ",
-        "だれか / だれも",
-        "ね"
-      ],
-      "correctAnswer": "ね",
-      "explanation_en": "Stub question for n5-025 (ね). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0058",
-      "grammarPatternId": "n5-026",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "assertion / new information",
-      "choices": [
-        "が",
-        "Verb + counter + Verb",
-        "よ",
-        "informal question marker"
-      ],
-      "correctAnswer": "よ",
-      "explanation_en": "Stub question for n5-026 (よ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0059",
-      "grammarPatternId": "n5-027",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "が",
-        "ね",
-        "きょう / あした / きのう / あさって / おととい",
-        "よね"
-      ],
-      "correctAnswer": "よね",
-      "explanation_en": "Stub question for n5-027 (よね). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0060",
-      "grammarPatternId": "n5-028",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "consolidated entry — sub-uses below",
-      "choices": [
-        "まいにち / まいしゅう / まいつき / まいとし",
-        "Verb-stem / Adj-stem + すぎる",
-        "～の",
-        "～なくてはならない"
-      ],
-      "correctAnswer": "～の",
-      "explanation_en": "Stub question for n5-028 (～の). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0061",
-      "grammarPatternId": "n5-029",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "e.g., わたしの本",
-      "choices": [
-        "～に～があります / います",
-        "possessive / noun-modifier",
-        "なに／なん",
-        "〜です／〜ます"
-      ],
-      "correctAnswer": "possessive / noun-modifier",
-      "explanation_en": "Stub question for n5-029 (possessive / noun-modifier). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0062",
-      "grammarPatternId": "n5-030",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "e.g., 食べるのがすきです",
-      "choices": [
-        "Verb-ないでください",
-        "nominalizer in basic use",
-        "Verb-ません",
-        "よね"
-      ],
-      "correctAnswer": "nominalizer in basic use",
-      "explanation_en": "Stub question for n5-030 (nominalizer in basic use). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0063",
-      "grammarPatternId": "n5-031",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "e.g., 行くの？",
-      "choices": [
-        "informal question marker",
-        "います",
-        "～から～まで",
-        "Verb-てはいけません"
-      ],
-      "correctAnswer": "informal question marker",
-      "explanation_en": "Stub question for n5-031 (informal question marker). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0064",
-      "grammarPatternId": "n5-032",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "also / even",
-      "choices": [
-        "Verb-てはいけません",
-        "〜だろう",
-        "Verb-なかった",
-        "も"
-      ],
-      "correctAnswer": "も",
-      "explanation_en": "Stub question for n5-032 (も). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0065",
-      "grammarPatternId": "n5-033",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "only",
-      "choices": [
-        "〜ですね / 〜ですよ",
-        "い-Adjective + Noun",
-        "Verb-ましょうか",
-        "だけ"
-      ],
-      "correctAnswer": "だけ",
-      "explanation_en": "Stub question for n5-033 (だけ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0066",
-      "grammarPatternId": "n5-034",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "only, with negative",
-      "choices": [
-        "しか～ない",
-        "～なくてはならない",
-        "ごろ",
-        "Sentence + から、Sentence"
-      ],
-      "correctAnswer": "しか～ない",
-      "explanation_en": "Stub question for n5-034 (しか～ない). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0067",
-      "grammarPatternId": "n5-035",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "approximately",
-      "choices": [
-        "～なくてはいけない",
-        "ぐらい / くらい",
-        "お～ / ご～",
-        "は"
-      ],
-      "correctAnswer": "ぐらい / くらい",
-      "explanation_en": "Stub question for n5-035 (ぐらい / くらい). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0068",
-      "grammarPatternId": "n5-036",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "around — for time points",
-      "choices": [
-        "ごろ",
-        "Verb-stem + たいです",
-        "な-Adjective past negative: ～じゃありませんでした",
-        "～はいかがですか"
-      ],
-      "correctAnswer": "ごろ",
-      "explanation_en": "Stub question for n5-036 (ごろ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0069",
-      "grammarPatternId": "n5-037",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "etc.",
-      "choices": [
-        "など",
-        "～は～にあります / います",
-        "～をください",
-        "Noun + の + あとで"
-      ],
-      "correctAnswer": "など",
-      "explanation_en": "Stub question for n5-037 (など). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0070",
-      "grammarPatternId": "n5-038",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "each / per",
-      "choices": [
-        "Verb-ています",
-        "ずつ",
-        "どうして / なぜ",
-        "Verb-た + ほうがいい"
-      ],
-      "correctAnswer": "ずつ",
-      "explanation_en": "Stub question for n5-038 (ずつ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0071",
-      "grammarPatternId": "n5-039",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～",
-        "これ / それ / あれ / どれ",
-        "しか～ない",
-        "Verb"
-      ],
-      "correctAnswer": "これ / それ / あれ / どれ",
-      "explanation_en": "Stub question for n5-039 (これ / それ / あれ / どれ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0072",
-      "grammarPatternId": "n5-040",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～んです / ～のです",
-        "～に～をあげます",
-        "この / その / あの / どの + Noun",
-        "どこか / どこも"
-      ],
-      "correctAnswer": "この / その / あの / どの + Noun",
-      "explanation_en": "Stub question for n5-040 (この / その / あの / どの + Noun). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0073",
-      "grammarPatternId": "n5-041",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～じ",
-        "ここ / そこ / あそこ / どこ",
-        "いくつ",
-        "～になります / ～くなります"
-      ],
-      "correctAnswer": "ここ / そこ / あそこ / どこ",
-      "explanation_en": "Stub question for n5-041 (ここ / そこ / あそこ / どこ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0074",
-      "grammarPatternId": "n5-042",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "informal question marker",
-        "ずつ",
-        "こちら / そちら / あちら / どちら",
-        "これ／それ／あれ／どれ"
-      ],
-      "correctAnswer": "こちら / そちら / あちら / どちら",
-      "explanation_en": "Stub question for n5-042 (こちら / そちら / あちら / どちら). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0075",
-      "grammarPatternId": "n5-043",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "Verb-plain + つもりだ / つもりです",
-        "いくつ / いくら / なんにん / なんまい etc.",
-        "～とおもいます",
-        "こんな / そんな / あんな / どんな + Noun"
-      ],
-      "correctAnswer": "こんな / そんな / あんな / どんな + Noun",
-      "explanation_en": "Stub question for n5-043 (こんな / そんな / あんな / どんな + Noun). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0076",
-      "grammarPatternId": "n5-044",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "Verb-ないでください",
-        "います",
-        "～の",
-        "こう / そう / ああ / どう"
-      ],
-      "correctAnswer": "こう / そう / ああ / どう",
-      "explanation_en": "Stub question for n5-044 (こう / そう / ああ / どう). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0077",
-      "grammarPatternId": "n5-045",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "what",
-      "choices": [
-        "なん / なに",
-        "いくら",
-        "～とおもいます",
-        "どうぞ / どうも / すみません / おねがいします"
-      ],
-      "correctAnswer": "なん / なに",
-      "explanation_en": "Stub question for n5-045 (なん / なに). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0078",
-      "grammarPatternId": "n5-046",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "who",
-      "choices": [
-        "だれ / どなた",
-        "～なあ",
-        "Verb",
-        "いつも / たいてい / たまに"
-      ],
-      "correctAnswer": "だれ / どなた",
-      "explanation_en": "Stub question for n5-046 (だれ / どなた). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0079",
-      "grammarPatternId": "n5-047",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "when",
-      "choices": [
-        "いつ",
-        "が",
-        "こんな / そんな / あんな / どんな + Noun",
-        "Verb-て、Verb-て、…"
-      ],
-      "correctAnswer": "いつ",
-      "explanation_en": "Stub question for n5-047 (いつ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0080",
-      "grammarPatternId": "n5-048",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "where",
-      "choices": [
-        "ここ／そこ／あそこ／どこ",
-        "どうぞ / どうも / すみません / おねがいします",
-        "Verb-て",
-        "どこ"
-      ],
-      "correctAnswer": "どこ",
-      "explanation_en": "Stub question for n5-048 (どこ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0081",
-      "grammarPatternId": "n5-049",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "which",
-      "choices": [
-        "〜でしょう",
-        "なんようび",
-        "ね",
-        "どれ / どの / どちら"
-      ],
-      "correctAnswer": "どれ / どの / どちら",
-      "explanation_en": "Stub question for n5-049 (どれ / どの / どちら). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0082",
-      "grammarPatternId": "n5-050",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "how",
-      "choices": [
-        "どう / いかが",
-        "お～ / ご～",
-        "Verb-ないでください",
-        "～ができます"
-      ],
-      "correctAnswer": "どう / いかが",
-      "explanation_en": "Stub question for n5-050 (どう / いかが). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0083",
-      "grammarPatternId": "n5-051",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "why",
-      "choices": [
-        "で",
-        "〜ですね / 〜ですよ",
-        "どうして / なぜ",
-        "あります"
-      ],
-      "correctAnswer": "どうして / なぜ",
-      "explanation_en": "Stub question for n5-051 (どうして / なぜ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0084",
-      "grammarPatternId": "n5-052",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "how to / by what means",
-      "choices": [
-        "～がわかります",
-        "〜です／〜ます",
-        "どうやって",
-        "もう + Verb-ました"
-      ],
-      "correctAnswer": "どうやって",
-      "explanation_en": "Stub question for n5-052 (どうやって). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0085",
-      "grammarPatternId": "n5-053",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "how much — price",
-      "choices": [
-        "〜だろう",
-        "Verb-plain + つもりだ / つもりです",
-        "Question word + か / も compounds",
-        "いくら"
-      ],
-      "correctAnswer": "いくら",
-      "explanation_en": "Stub question for n5-053 (いくら). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0086",
-      "grammarPatternId": "n5-054",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "how many",
-      "choices": [
-        "まいにち / まいしゅう / まいつき / まいとし",
-        "いくつ",
-        "～になります / ～くなります",
-        "～たり〜たりする"
-      ],
-      "correctAnswer": "いくつ",
-      "explanation_en": "Stub question for n5-054 (いくつ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0087",
-      "grammarPatternId": "n5-055",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "what time",
-      "choices": [
-        "～たり〜たりする",
-        "なんじ",
-        "～に～があります / います",
-        "いつも / たいてい / たまに"
-      ],
-      "correctAnswer": "なんじ",
-      "explanation_en": "Stub question for n5-055 (なんじ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0088",
-      "grammarPatternId": "n5-056",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "what day of the week",
-      "choices": [
-        "い-Adjective + Noun",
-        "なんようび",
-        "〜だろう",
-        "いつ"
-      ],
-      "correctAnswer": "なんようび",
-      "explanation_en": "Stub question for n5-056 (なんようび). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0089",
-      "grammarPatternId": "n5-057",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "what month, what day",
-      "choices": [
-        "いま / すぐ / もう / まだ",
-        "Sentence + ので、Sentence",
-        "どうして～か。～から。",
-        "なんがつ なんにち"
-      ],
-      "correctAnswer": "なんがつ なんにち",
-      "explanation_en": "Stub question for n5-057 (なんがつ なんにち). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0095",
-      "grammarPatternId": "n5-063",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "shall I / shall we?",
-      "choices": [
-        "～より～のほうが～です",
-        "Verb-ましょうか",
-        "な-Adjective past: ～でした",
-        "が"
-      ],
-      "correctAnswer": "Verb-ましょうか",
-      "explanation_en": "Stub question for n5-063 (Verb-ましょうか). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0105",
-      "grammarPatternId": "n5-073",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～がほしいです",
-        "Verb-ます",
-        "Sentence + ので、Sentence",
-        "Verb-ていません"
-      ],
-      "correctAnswer": "Verb-ていません",
-      "explanation_en": "Stub question for n5-073 (Verb-ていません). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0108",
-      "grammarPatternId": "n5-076",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "after doing — Verb-てから",
-      "choices": [
-        "Verb-から",
-        "～ふん / ぷん",
-        "〜ね / 〜よ",
-        "Verb"
-      ],
-      "correctAnswer": "Verb-から",
-      "explanation_en": "Stub question for n5-076 (Verb-から). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0110",
-      "grammarPatternId": "n5-078",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "い-Adjective + Noun",
-        "な-Adjective て-form: ～で",
-        "Noun + が ほしいです",
-        "しかし"
-      ],
-      "correctAnswer": "い-Adjective + Noun",
-      "explanation_en": "Stub question for n5-078 (い-Adjective + Noun). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0116",
-      "grammarPatternId": "n5-084",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～なくちゃ / ～なきゃ",
-        "な-Adjective + な + Noun",
-        "Verb-ましょう",
-        "まで"
-      ],
-      "correctAnswer": "な-Adjective + な + Noun",
-      "explanation_en": "Stub question for n5-084 (な-Adjective + な + Noun). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0124",
-      "grammarPatternId": "n5-092",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "Verb + counter + Verb",
-        "いくつ / いくら / なんにん / なんまい etc.",
-        "～に～があります / います",
-        "～に～をあげます"
-      ],
-      "correctAnswer": "～に～があります / います",
-      "explanation_en": "Stub question for n5-092 (～に～があります / います). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0125",
-      "grammarPatternId": "n5-093",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～が～をくれます",
-        "ずつ",
-        "～は～にあります / います",
-        "なんようび"
-      ],
-      "correctAnswer": "～は～にあります / います",
-      "explanation_en": "Stub question for n5-093 (～は～にあります / います). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0126",
-      "grammarPatternId": "n5-094",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "have / there is",
-      "choices": [
-        "Verb-なかった",
-        "～があります",
-        "～まえ",
-        "を"
-      ],
-      "correctAnswer": "～があります",
-      "explanation_en": "Stub question for n5-094 (～があります). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0127",
-      "grammarPatternId": "n5-095",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "なんじ",
-        "～は～にあります / います",
-        "Verb-てもいいです",
-        "～は～より～です"
-      ],
-      "correctAnswer": "～は～より～です",
-      "explanation_en": "Stub question for n5-095 (～は～より～です). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0128",
-      "grammarPatternId": "n5-096",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～に",
-        "～たり〜たりする",
-        "～の",
-        "～より～のほうが～です"
-      ],
-      "correctAnswer": "～より～のほうが～です",
-      "explanation_en": "Stub question for n5-096 (～より～のほうが～です). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0129",
-      "grammarPatternId": "n5-097",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～ができます",
-        "〜だろう",
-        "～と～と、どちらが～ですか",
-        "い-Adjective negative: ～くないです / ～くありません"
-      ],
-      "correctAnswer": "～と～と、どちらが～ですか",
-      "explanation_en": "Stub question for n5-097 (～と～と、どちらが～ですか). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0130",
-      "grammarPatternId": "n5-098",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "の中",
-      "choices": [
-        "～は～にあります / います",
-        "～",
-        "～と言いました",
-        "～まえ"
-      ],
-      "correctAnswer": "～",
-      "explanation_en": "Stub question for n5-098 (～). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0131",
-      "grammarPatternId": "n5-099",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "〜ね / 〜よ",
-        "Verb-なかった",
-        "～をください",
-        "～がすきです / きらいです"
-      ],
-      "correctAnswer": "～がすきです / きらいです",
-      "explanation_en": "Stub question for n5-099 (～がすきです / きらいです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0132",
-      "grammarPatternId": "n5-100",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～がじょうずです / へたです",
-        "な-Adjective て-form: ～で",
-        "～なくてはならない",
-        "きょう / あした / きのう / あさって / おととい"
-      ],
-      "correctAnswer": "～がじょうずです / へたです",
-      "explanation_en": "Stub question for n5-100 (～がじょうずです / へたです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0133",
-      "grammarPatternId": "n5-101",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～がほしいです",
-        "しか～ない",
-        "い-Adjective past negative: ～くなかったです / ～くありませんでした",
-        "そして"
-      ],
-      "correctAnswer": "～がほしいです",
-      "explanation_en": "Stub question for n5-101 (～がほしいです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0134",
-      "grammarPatternId": "n5-102",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "なにか / なにも",
-        "Number + counter",
-        "まだ + Verb-ていません",
-        "～がわかります"
-      ],
-      "correctAnswer": "～がわかります",
-      "explanation_en": "Stub question for n5-102 (～がわかります). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0135",
-      "grammarPatternId": "n5-103",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～ができます",
-        "を",
-        "こう / そう / ああ / どう",
-        "い-Adjective past negative: ～くなかったです / ～くありませんでした"
-      ],
-      "correctAnswer": "～ができます",
-      "explanation_en": "Stub question for n5-103 (～ができます). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0137",
-      "grammarPatternId": "n5-105",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "Verb-stem + たくないです",
-        "なにか / なにも",
-        "い-Adjective past: ～かったです",
-        "Verb-plain + な"
-      ],
-      "correctAnswer": "Verb-stem + たくないです",
-      "explanation_en": "Stub question for n5-105 (Verb-stem + たくないです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0138",
-      "grammarPatternId": "n5-106",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "なにか / なにも",
-        "ここ / そこ / あそこ / どこ",
-        "Noun + が ほしいです",
-        "どうして / なぜ"
-      ],
-      "correctAnswer": "Noun + が ほしいです",
-      "explanation_en": "Stub question for n5-106 (Noun + が ほしいです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0139",
-      "grammarPatternId": "n5-107",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "go/come/return to do",
-      "choices": [
-        "Verb-stem + に いきます / きます / かえります",
-        "い-Adjective + Noun",
-        "Verb-てはいけません",
-        "なんがつ なんにち"
-      ],
-      "correctAnswer": "Verb-stem + に いきます / きます / かえります",
-      "explanation_en": "Stub question for n5-107 (Verb-stem + に いきます / きます / かえります). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0140",
-      "grammarPatternId": "n5-108",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "kanji counters in N5 syllabus: 人, 本, 番; kana counters: まい, だい, さつ, ひき, はい, こ, かい, ど, つ etc.",
-      "choices": [
-        "～さん",
-        "Number + counter",
-        "～は～より～です",
-        "Verb-ましょう"
-      ],
-      "correctAnswer": "Number + counter",
-      "explanation_en": "Stub question for n5-108 (Number + counter). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0141",
-      "grammarPatternId": "n5-109",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "いくつ / いくら / なんにん / なんまい etc.",
-        "～があります",
-        "～ないといけない",
-        "Verb-plain + つもりだ / つもりです"
-      ],
-      "correctAnswer": "いくつ / いくら / なんにん / なんまい etc.",
-      "explanation_en": "Stub question for n5-109 (いくつ / いくら / なんにん / なんまい etc.). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0142",
-      "grammarPatternId": "n5-110",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "e.g., りんごを ふたつ かいました",
-      "choices": [
-        "Verb + counter + Verb",
-        "～さん",
-        "Verb-てください",
-        "～にします"
-      ],
-      "correctAnswer": "Verb + counter + Verb",
-      "explanation_en": "Stub question for n5-110 (Verb + counter + Verb). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0143",
-      "grammarPatternId": "n5-111",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "o'clock",
-      "choices": [
-        "～じ",
-        "どう / いかが",
-        "なんじ",
-        "～は～にあります / います"
-      ],
-      "correctAnswer": "～じ",
-      "explanation_en": "Stub question for n5-111 (～じ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0144",
-      "grammarPatternId": "n5-112",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "minutes",
-      "choices": [
-        "～ふん / ぷん",
-        "～なくてはいけない",
-        "いくつ",
-        "Verb-ませんでした"
-      ],
-      "correctAnswer": "～ふん / ぷん",
-      "explanation_en": "Stub question for n5-112 (～ふん / ぷん). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0145",
-      "grammarPatternId": "n5-113",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "half past",
-      "choices": [
-        "と",
-        "Verb + counter + Verb",
-        "Verb-plain + つもりだ / つもりです",
-        "～じはん"
-      ],
-      "correctAnswer": "～じはん",
-      "explanation_en": "Stub question for n5-113 (～じはん). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0146",
-      "grammarPatternId": "n5-114",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "from~to~",
-      "choices": [
-        "～から～まで",
-        "Verb-ません",
-        "～まえ",
-        "ごろ"
-      ],
-      "correctAnswer": "～から～まで",
-      "explanation_en": "Stub question for n5-114 (～から～まで). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0147",
-      "grammarPatternId": "n5-115",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "specific time",
-      "choices": [
-        "～に",
-        "い-Adjective て-form: ～くて",
-        "Adjective + Noun",
-        "～"
-      ],
-      "correctAnswer": "～に",
-      "explanation_en": "Stub question for n5-115 (～に). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0148",
-      "grammarPatternId": "n5-116",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "まいにち / まいしゅう / まいつき / まいとし",
-        "Verb-てください",
-        "～が～をくれます",
-        "を"
-      ],
-      "correctAnswer": "まいにち / まいしゅう / まいつき / まいとし",
-      "explanation_en": "Stub question for n5-116 (まいにち / まいしゅう / まいつき / まいとし). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0149",
-      "grammarPatternId": "n5-117",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "Verb-stem + たいです",
-        "きょう / あした / きのう / あさって / おととい",
-        "ごろ",
-        "～をください"
-      ],
-      "correctAnswer": "きょう / あした / きのう / あさって / おととい",
-      "explanation_en": "Stub question for n5-117 (きょう / あした / きのう / あさって / おととい). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0150",
-      "grammarPatternId": "n5-118",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "Verb-た + ほうがいい",
-        "か",
-        "と",
-        "いま / すぐ / もう / まだ"
-      ],
-      "correctAnswer": "いま / すぐ / もう / まだ",
-      "explanation_en": "Stub question for n5-118 (いま / すぐ / もう / まだ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0151",
-      "grammarPatternId": "n5-119",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "before",
-      "choices": [
-        "～に",
-        "～まえ",
-        "～がわかります",
-        "～があります"
-      ],
-      "correctAnswer": "～まえ",
-      "explanation_en": "Stub question for n5-119 (～まえ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0152",
-      "grammarPatternId": "n5-120",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "after — limited at N5",
-      "choices": [
-        "こんな / そんな / あんな / どんな + Noun",
-        "～あと",
-        "どこか / どこも",
-        "Verb-stem + ～かた"
-      ],
-      "correctAnswer": "～あと",
-      "explanation_en": "Stub question for n5-120 (～あと). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0153",
-      "grammarPatternId": "n5-121",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～をおねがいします",
-        "Verb-てください",
-        "そして",
-        "い-Adjective + Noun"
-      ],
-      "correctAnswer": "そして",
-      "explanation_en": "Stub question for n5-121 (そして). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0154",
-      "grammarPatternId": "n5-122",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "Verb-ないでください",
-        "それから",
-        "よ",
-        "Verb-stem + ながら"
-      ],
-      "correctAnswer": "それから",
-      "explanation_en": "Stub question for n5-122 (それから). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0155",
-      "grammarPatternId": "n5-123",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "Verb-た + ことがある",
-        "～をください",
-        "でも",
-        "～と～と、どちらが～ですか"
-      ],
-      "correctAnswer": "でも",
-      "explanation_en": "Stub question for n5-123 (でも). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0156",
-      "grammarPatternId": "n5-124",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "しかし",
-        "〜ですね / 〜ですよ",
-        "なんがつ なんにち",
-        "possessive / noun-modifier"
-      ],
-      "correctAnswer": "しかし",
-      "explanation_en": "Stub question for n5-124 (しかし). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0157",
-      "grammarPatternId": "n5-125",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "では / じゃ",
-        "しかし",
-        "～さん",
-        "ね"
-      ],
-      "correctAnswer": "では / じゃ",
-      "explanation_en": "Stub question for n5-125 (では / じゃ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0158",
-      "grammarPatternId": "n5-126",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "but — clause connector",
-      "choices": [
-        "どうやって",
-        "Verb-ました",
-        "な-Adjective + です",
-        "が"
-      ],
-      "correctAnswer": "が",
-      "explanation_en": "Stub question for n5-126 (が). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0159",
-      "grammarPatternId": "n5-127",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "but — informal",
-      "choices": [
-        "や",
-        "～なくてはいけない",
-        "けれど / けど",
-        "possessive / noun-modifier"
-      ],
-      "correctAnswer": "けれど / けど",
-      "explanation_en": "Stub question for n5-127 (けれど / けど). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0160",
-      "grammarPatternId": "n5-128",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "because — clause connector",
-      "choices": [
-        "ここ／そこ／あそこ／どこ",
-        "い-Adjective negative: ～くないです / ～くありません",
-        "な-Adjective + な + Noun",
-        "から"
-      ],
-      "correctAnswer": "から",
-      "explanation_en": "Stub question for n5-128 (から). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0161",
-      "grammarPatternId": "n5-129",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "しかし",
-        "どうして～か。～から。",
-        "Verb-stem + に いきます / きます / かえります",
-        "Verb-てください"
-      ],
-      "correctAnswer": "どうして～か。～から。",
-      "explanation_en": "Stub question for n5-129 (どうして～か。～から。). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0162",
-      "grammarPatternId": "n5-130",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～に～をあげます",
-        "いつ",
-        "か",
-        "～あと"
-      ],
-      "correctAnswer": "～に～をあげます",
-      "explanation_en": "Stub question for n5-130 (～に～をあげます). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0163",
-      "grammarPatternId": "n5-131",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～に～をもらいます",
-        "Verb-て",
-        "いくつ / いくら / なんにん / なんまい etc.",
-        "も"
-      ],
-      "correctAnswer": "～に～をもらいます",
-      "explanation_en": "Stub question for n5-131 (～に～をもらいます). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0164",
-      "grammarPatternId": "n5-132",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "〜だろう",
-        "ここ / そこ / あそこ / どこ",
-        "Verb-plain + つもりだ / つもりです",
-        "～が～をくれます"
-      ],
-      "correctAnswer": "～が～をくれます",
-      "explanation_en": "Stub question for n5-132 (～が～をくれます). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0165",
-      "grammarPatternId": "n5-133",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "because",
-      "choices": [
-        "い-Adjective negative: ～くないです / ～くありません",
-        "まいにち / まいしゅう / まいつき / まいとし",
-        "ね",
-        "Sentence + から、Sentence"
-      ],
-      "correctAnswer": "Sentence + から、Sentence",
-      "explanation_en": "Stub question for n5-133 (Sentence + から、Sentence). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0166",
-      "grammarPatternId": "n5-134",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "because — softer",
-      "choices": [
-        "〜が、〜",
-        "Sentence + ので、Sentence",
-        "など",
-        "まだ + Verb-ていません"
-      ],
-      "correctAnswer": "Sentence + ので、Sentence",
-      "explanation_en": "Stub question for n5-134 (Sentence + ので、Sentence). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0167",
-      "grammarPatternId": "n5-135",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "plain",
-      "choices": [
-        "Sentence + から、Sentence",
-        "ずつ",
-        "Verb",
-        "Verb-ます"
-      ],
-      "correctAnswer": "Verb",
-      "explanation_en": "Stub question for n5-135 (Verb). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0168",
-      "grammarPatternId": "n5-136",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "どうして / なぜ",
-        "Adjective + Noun",
-        "こう / そう / ああ / どう",
-        "こんな / そんな / あんな / どんな + Noun"
-      ],
-      "correctAnswer": "Adjective + Noun",
-      "explanation_en": "Stub question for n5-136 (Adjective + Noun). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0169",
-      "grammarPatternId": "n5-137",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "informal question marker",
-        "あります",
-        "いつ",
-        "Noun + の + Noun"
-      ],
-      "correctAnswer": "Noun + の + Noun",
-      "explanation_en": "Stub question for n5-137 (Noun + の + Noun). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0170",
-      "grammarPatternId": "n5-138",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～がわかります",
-        "～がすきです / きらいです",
-        "Adjective + Noun",
-        "どうして～か。～から。"
-      ],
-      "correctAnswer": "～がすきです / きらいです",
-      "explanation_en": "Stub question for n5-138 (～がすきです / きらいです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0171",
-      "grammarPatternId": "n5-139",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～がじょうずです / へたです",
-        "～なあ",
-        "こんな / そんな / あんな / どんな + Noun",
-        "～に"
-      ],
-      "correctAnswer": "～がじょうずです / へたです",
-      "explanation_en": "Stub question for n5-139 (～がじょうずです / へたです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0172",
-      "grammarPatternId": "n5-140",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "こちら / そちら / あちら / どちら",
-        "～がわかります",
-        "ごろ",
-        "ずつ"
-      ],
-      "correctAnswer": "～がわかります",
-      "explanation_en": "Stub question for n5-140 (～がわかります). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0173",
-      "grammarPatternId": "n5-141",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "event/skill",
-      "choices": [
-        "～があります",
-        "Sentence + ので、Sentence",
-        "Verb + counter + Verb",
-        "Noun + が ほしいです"
-      ],
-      "correctAnswer": "～があります",
-      "explanation_en": "Stub question for n5-141 (～があります). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0174",
-      "grammarPatternId": "n5-142",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "decide on",
-      "choices": [
-        "どこ",
-        "どうして～か。～から。",
-        "～にします",
-        "～なくちゃ / ～なきゃ"
-      ],
-      "correctAnswer": "～にします",
-      "explanation_en": "Stub question for n5-142 (～にします). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0175",
-      "grammarPatternId": "n5-143",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "becomes",
-      "choices": [
-        "Verb-ませんか",
-        "どうして～か。～から。",
-        "～は～より～です",
-        "～になります / ～くなります"
-      ],
-      "correctAnswer": "～になります / ～くなります",
-      "explanation_en": "Stub question for n5-143 (～になります / ～くなります). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0176",
-      "grammarPatternId": "n5-144",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "while doing",
-      "choices": [
-        "Verb-stem + ながら",
-        "informal question marker",
-        "だれ／どなた",
-        "どうして / なぜ"
-      ],
-      "correctAnswer": "Verb-stem + ながら",
-      "explanation_en": "Stub question for n5-144 (Verb-stem + ながら). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0177",
-      "grammarPatternId": "n5-145",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "I think",
-      "choices": [
-        "〜が、〜",
-        "～とおもいます",
-        "Verb-た + ことがある",
-        "い-Adjective past negative: ～くなかったです / ～くありませんでした"
-      ],
-      "correctAnswer": "～とおもいます",
-      "explanation_en": "Stub question for n5-145 (～とおもいます). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0178",
-      "grammarPatternId": "n5-146",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "said that — basic quoting",
-      "choices": [
-        "も",
-        "Verb-ない + ほうがいい",
-        "～と言いました",
-        "か"
-      ],
-      "correctAnswer": "～と言いました",
-      "explanation_en": "Stub question for n5-146 (～と言いました). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0179",
-      "grammarPatternId": "n5-147",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～に～をあげます",
-        "まだ + Verb-ていません",
-        "よく / ときどき / あまり / ぜんぜん + Verb",
-        "まいにち / まいしゅう / まいつき / まいとし"
-      ],
-      "correctAnswer": "よく / ときどき / あまり / ぜんぜん + Verb",
-      "explanation_en": "Stub question for n5-147 (よく / ときどき / あまり / ぜんぜん + Verb). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0180",
-      "grammarPatternId": "n5-148",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "いつも / たいてい / たまに",
-        "Verb-なかった",
-        "こう / そう / ああ / どう",
-        "～はいかがですか"
-      ],
-      "correctAnswer": "いつも / たいてい / たまに",
-      "explanation_en": "Stub question for n5-148 (いつも / たいてい / たまに). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0181",
-      "grammarPatternId": "n5-149",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "please give me ～",
-      "choices": [
-        "まだ + Verb-ていません",
-        "～がわかります",
-        "どうぞ / どうも / すみません / おねがいします",
-        "～をください"
-      ],
-      "correctAnswer": "～をください",
-      "explanation_en": "Stub question for n5-149 (～をください). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0182",
-      "grammarPatternId": "n5-150",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "please ～ — service request",
-      "choices": [
-        "や",
-        "～に～があります / います",
-        "Verb-てはいけません",
-        "～をおねがいします"
-      ],
-      "correctAnswer": "～をおねがいします",
-      "explanation_en": "Stub question for n5-150 (～をおねがいします). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0183",
-      "grammarPatternId": "n5-151",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "how about ～? — polite offer",
-      "choices": [
-        "いつ",
-        "でも",
-        "Verb-ましょうか",
-        "～はいかがですか"
-      ],
-      "correctAnswer": "～はいかがですか",
-      "explanation_en": "Stub question for n5-151 (～はいかがですか). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0184",
-      "grammarPatternId": "n5-152",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "functional fillers",
-      "choices": [
-        "どうぞ / どうも / すみません / おねがいします",
-        "Verb-た",
-        "Verb-ない",
-        "います"
-      ],
-      "correctAnswer": "どうぞ / どうも / すみません / おねがいします",
-      "explanation_en": "Stub question for n5-152 (どうぞ / どうも / すみません / おねがいします). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0185",
-      "grammarPatternId": "n5-153",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "not yet",
-      "choices": [
-        "～ができます",
-        "どう / いかが",
-        "どうして / なぜ",
-        "まだ + Verb-ていません"
-      ],
-      "correctAnswer": "まだ + Verb-ていません",
-      "explanation_en": "Stub question for n5-153 (まだ + Verb-ていません). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0186",
-      "grammarPatternId": "n5-154",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "already",
-      "choices": [
-        "Verb-ない",
-        "〜が、〜",
-        "でも",
-        "もう + Verb-ました"
-      ],
-      "correctAnswer": "もう + Verb-ました",
-      "explanation_en": "Stub question for n5-154 (もう + Verb-ました). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0187",
-      "grammarPatternId": "n5-155",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "contrast / soft \"but\"",
-      "choices": [
-        "～まえ",
-        "〜が、〜",
-        "Verb-ました",
-        "だれ / どなた"
-      ],
-      "correctAnswer": "〜が、〜",
-      "explanation_en": "Stub question for n5-155 (〜が、〜). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0188",
-      "grammarPatternId": "n5-156",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "sentence-final",
-      "choices": [
-        "だけ",
-        "いつか / いつも",
-        "〜ね / 〜よ",
-        "Verb-ませんか"
-      ],
-      "correctAnswer": "〜ね / 〜よ",
-      "explanation_en": "Stub question for n5-156 (〜ね / 〜よ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0189",
-      "grammarPatternId": "n5-157",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "probably / right? — basic",
-      "choices": [
-        "いくら",
-        "〜でしょう",
-        "～ができます",
-        "どこ"
-      ],
-      "correctAnswer": "〜でしょう",
-      "explanation_en": "Stub question for n5-157 (〜でしょう). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0190",
-      "grammarPatternId": "n5-158",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "plain form of でしょう",
-      "choices": [
-        "な-Adjective + です",
-        "よ",
-        "〜だろう",
-        "だけ"
-      ],
-      "correctAnswer": "〜だろう",
-      "explanation_en": "Stub question for n5-158 (〜だろう). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0191",
-      "grammarPatternId": "n5-159",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "〜ですね / 〜ですよ",
-        "～って",
-        "ここ / そこ / あそこ / どこ",
-        "Verb"
-      ],
-      "correctAnswer": "〜ですね / 〜ですよ",
-      "explanation_en": "Stub question for n5-159 (〜ですね / 〜ですよ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0192",
-      "grammarPatternId": "n5-160",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "after — basic",
-      "choices": [
-        "〜ね / 〜よ",
-        "は",
-        "Noun + の + あとで",
-        "～に"
-      ],
-      "correctAnswer": "Noun + の + あとで",
-      "explanation_en": "Stub question for n5-160 (Noun + の + あとで). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0193",
-      "grammarPatternId": "n5-161",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "before — basic",
-      "choices": [
-        "Noun + の + まえに",
-        "～に～をもらいます",
-        "Verb-ていません",
-        "〜ですね / 〜ですよ"
-      ],
-      "correctAnswer": "Noun + の + まえに",
-      "explanation_en": "Stub question for n5-161 (Noun + の + まえに). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0194",
-      "grammarPatternId": "n5-162",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "plain",
-      "choices": [
-        "Verb",
-        "Verb-てください",
-        "から～まで",
-        "い-Adjective negative: ～くないです / ～くありません"
-      ],
-      "correctAnswer": "Verb",
-      "explanation_en": "Stub question for n5-162 (Verb). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0195",
-      "grammarPatternId": "n5-163",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "plain past",
-      "choices": [
-        "Verb-ない",
-        "お～ / ご～",
-        "Verb",
-        "ずつ"
-      ],
-      "correctAnswer": "Verb",
-      "explanation_en": "Stub question for n5-163 (Verb). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0196",
-      "grammarPatternId": "n5-164",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "(stub) — pattern needs authoring. See KnowledgeBank/grammar_n5.md for source",
-      "choices": [
-        "～さん",
-        "～あと",
-        "Noun + の + まえに",
-        "～たり〜たりする"
-      ],
-      "correctAnswer": "～さん",
-      "explanation_en": "Stub question for n5-164 (～さん). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0197",
-      "grammarPatternId": "n5-165",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "beautifying prefixes — limited to common cases",
-      "choices": [
-        "い-Adjective negative: ～くないです / ～くありません",
-        "～は～にあります / います",
-        "Verb-ましょう",
-        "お～ / ご～"
-      ],
-      "correctAnswer": "お～ / ご～",
-      "explanation_en": "Stub question for n5-165 (お～ / ご～). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0198",
-      "grammarPatternId": "n5-166",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "set expressions",
-      "choices": [
-        "～ふん / ぷん",
-        "Verb-stem + ～かた",
-        "いただきます / ごちそうさま / おはようございます etc.",
-        "どこ"
-      ],
-      "correctAnswer": "いただきます / ごちそうさま / おはようございます etc.",
-      "explanation_en": "Stub question for n5-166 (いただきます / ごちそうさま / おはようございます etc.). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0199",
-      "grammarPatternId": "n5-167",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "gives a reason / asks for an explanation",
-      "choices": [
-        "～んです / ～のです",
-        "ね",
-        "Verb-stem + たくないです",
-        "Verb-ない + ほうがいい"
-      ],
-      "correctAnswer": "～んです / ～のです",
-      "explanation_en": "Stub question for n5-167 (～んです / ～のです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0200",
-      "grammarPatternId": "n5-168",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "do A and B, among other things",
-      "choices": [
-        "～たり〜たりする",
-        "～がすきです / きらいです",
-        "possessive / noun-modifier",
-        "どこか / どこも"
-      ],
-      "correctAnswer": "～たり〜たりする",
-      "explanation_en": "Stub question for n5-168 (～たり〜たりする). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0201",
-      "grammarPatternId": "n5-169",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "have done before — past experience",
-      "choices": [
-        "Verb-ないでください",
-        "～なくてはならない",
-        "Verb",
-        "Verb-た + ことがある"
-      ],
-      "correctAnswer": "Verb-た + ことがある",
-      "explanation_en": "Stub question for n5-169 (Verb-た + ことがある). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0202",
-      "grammarPatternId": "n5-170",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "should do",
-      "choices": [
-        "Verb-plain + な",
-        "そして",
-        "Verb-た + ほうがいい",
-        "この / その / あの / どの + Noun"
-      ],
-      "correctAnswer": "Verb-た + ほうがいい",
-      "explanation_en": "Stub question for n5-170 (Verb-た + ほうがいい). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0203",
-      "grammarPatternId": "n5-171",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "should not do",
-      "choices": [
-        "～なくちゃ / ～なきゃ",
-        "なに／なん",
-        "ぐらい / くらい",
-        "Verb-ない + ほうがいい"
-      ],
-      "correctAnswer": "Verb-ない + ほうがいい",
-      "explanation_en": "Stub question for n5-171 (Verb-ない + ほうがいい). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0204",
-      "grammarPatternId": "n5-172",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "don't have to do",
-      "choices": [
-        "この／その／あの／どの ＋ N (noun)",
-        "〜が、〜",
-        "～なくてもいい",
-        "～と言いました"
-      ],
-      "correctAnswer": "～なくてもいい",
-      "explanation_en": "Stub question for n5-172 (～なくてもいい). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0205",
-      "grammarPatternId": "n5-173",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "must do",
-      "choices": [
-        "な-Adjective + な + Noun",
-        "こう / そう / ああ / どう",
-        "～なくてはいけない",
-        "いつ"
-      ],
-      "correctAnswer": "～なくてはいけない",
-      "explanation_en": "Stub question for n5-173 (～なくてはいけない). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0206",
-      "grammarPatternId": "n5-174",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "must do — written / formal variant",
-      "choices": [
-        "ここ / そこ / あそこ / どこ",
-        "ずつ",
-        "～なくてはならない",
-        "Verb-ない"
-      ],
-      "correctAnswer": "～なくてはならない",
-      "explanation_en": "Stub question for n5-174 (～なくてはならない). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0207",
-      "grammarPatternId": "n5-175",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "must do — common spoken",
-      "choices": [
-        "Verb-ましょうか",
-        "～ないといけない",
-        "なにか / なにも",
-        "しかし"
-      ],
-      "correctAnswer": "～ないといけない",
-      "explanation_en": "Stub question for n5-175 (～ないといけない). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0208",
-      "grammarPatternId": "n5-176",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "must do — casual contraction",
-      "choices": [
-        "～なくちゃ / ～なきゃ",
-        "～は～にあります / います",
-        "Verb-stem + ～かた",
-        "Noun + の + あとで"
-      ],
-      "correctAnswer": "～なくちゃ / ～なきゃ",
-      "explanation_en": "Stub question for n5-176 (～なくちゃ / ～なきゃ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0209",
-      "grammarPatternId": "n5-177",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "too much, excessive",
-      "choices": [
-        "Verb-stem / Adj-stem + すぎる",
-        "それから",
-        "など",
-        "よね"
-      ],
-      "correctAnswer": "Verb-stem / Adj-stem + すぎる",
-      "explanation_en": "Stub question for n5-177 (Verb-stem / Adj-stem + すぎる). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0210",
-      "grammarPatternId": "n5-178",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "intend to",
-      "choices": [
-        "Verb-から",
-        "Verb-plain + つもりだ / つもりです",
-        "いつ",
-        "～と～と、どちらが～ですか"
-      ],
-      "correctAnswer": "Verb-plain + つもりだ / つもりです",
-      "explanation_en": "Stub question for n5-178 (Verb-plain + つもりだ / つもりです). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0211",
-      "grammarPatternId": "n5-179",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "casual quotation marker / topic introducer; replaces と / は in conversation",
-      "choices": [
-        "Verb-ませんでした",
-        "まいにち / まいしゅう / まいつき / まいとし",
-        "～って",
-        "まだ + Verb-ていません"
-      ],
-      "correctAnswer": "～って",
-      "explanation_en": "Stub question for n5-179 (～って). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0212",
-      "grammarPatternId": "n5-180",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "way of doing; e.g., たべかた = how to eat",
-      "choices": [
-        "Verb-て",
-        "～に～をあげます",
-        "なんがつ なんにち",
-        "Verb-stem + ～かた"
-      ],
-      "correctAnswer": "Verb-stem + ～かた",
-      "explanation_en": "Stub question for n5-180 (Verb-stem + ～かた). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0213",
-      "grammarPatternId": "n5-181",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "exclamation; \"wow…\", \"I really think…\"",
-      "choices": [
-        "～なあ",
-        "こちら / そちら / あちら / どちら",
-        "Number + counter",
-        "Verb-ない"
-      ],
-      "correctAnswer": "～なあ",
-      "explanation_en": "Stub question for n5-181 (～なあ). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0214",
-      "grammarPatternId": "n5-182",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "don't do! — strong / casual prohibition",
-      "choices": [
-        "～をください",
-        "Adjective + Noun",
-        "Verb-plain + な",
-        "Verb"
-      ],
-      "correctAnswer": "Verb-plain + な",
-      "explanation_en": "Stub question for n5-182 (Verb-plain + な). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0215",
-      "grammarPatternId": "n5-183",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "indefinite (some/any) and universal (every/no) forms",
-      "choices": [
-        "よ",
-        "あります",
-        "Question word + か / も compounds",
-        "～なくちゃ / ～なきゃ"
-      ],
-      "correctAnswer": "Question word + か / も compounds",
-      "explanation_en": "Stub question for n5-183 (Question word + か / も compounds). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0216",
-      "grammarPatternId": "n5-184",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "something / nothing (with negative)",
-      "choices": [
-        "Verb-て",
-        "これ / それ / あれ / どれ",
-        "Noun + の + Noun",
-        "なにか / なにも"
-      ],
-      "correctAnswer": "なにか / なにも",
-      "explanation_en": "Stub question for n5-184 (なにか / なにも). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0217",
-      "grammarPatternId": "n5-185",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "someone / no one (with negative)",
-      "choices": [
-        "だれか / だれも",
-        "か",
-        "～ができます",
-        "や"
-      ],
-      "correctAnswer": "だれか / だれも",
-      "explanation_en": "Stub question for n5-185 (だれか / だれも). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0218",
-      "grammarPatternId": "n5-186",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "somewhere / nowhere (with negative)",
-      "choices": [
-        "どこか / どこも",
-        "〜ね / 〜よ",
-        "ごろ",
-        "ここ／そこ／あそこ／どこ"
-      ],
-      "correctAnswer": "どこか / どこも",
-      "explanation_en": "Stub question for n5-186 (どこか / どこも). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
-      "id": "q-0219",
-      "grammarPatternId": "n5-187",
-      "type": "mcq",
-      "direction": "e_to_j",
-      "prompt_ja": "つぎの いみに あう パターンを えらんでください。",
-      "question_ja": "sometime / always",
-      "choices": [
-        "や",
-        "～がほしいです",
-        "いつか / いつも",
-        "Verb-ています"
-      ],
-      "correctAnswer": "いつか / いつも",
-      "explanation_en": "Stub question for n5-187 (いつか / いつも). Replace with a real fill-in-blank or sentence-order question once the pattern's examples are authored.",
-      "high_confusion": false,
-      "difficulty": 1,
-      "is_stub": true
-    },
-    {
       "id": "q-0220",
       "grammarPatternId": "n5-058",
       "type": "mcq",
@@ -5162,6 +2540,2490 @@
         "食べて": "te-form.",
         "食べた": "Past."
       },
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0280",
+      "grammarPatternId": "n5-020",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nUntil / up to (see n5-010 for full content)\nれい：(see n5-010)",
+      "choices": [
+        "が",
+        "が",
+        "ここ／そこ／あそこ／どこ",
+        "まで"
+      ],
+      "correctAnswer": "まで",
+      "explanation_en": "This entry duplicates n5-010. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0281",
+      "grammarPatternId": "n5-021",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nから ～ まで — from X to Y (paired range marker)\nれい：9じから 5じまで しごとです。",
+      "choices": [
+        "～をおねがいします",
+        "～ができます",
+        "～がすきです / きらいです",
+        "から～まで"
+      ],
+      "correctAnswer": "から～まで",
+      "explanation_en": "から marks start, まで marks end. Paired, they express a range — time, place, or distance.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0282",
+      "grammarPatternId": "n5-022",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nAnd — non-exhaustive listing (see n5-011 for full content)\nれい：(see n5-011)",
+      "choices": [
+        "～があります",
+        "や",
+        "Verb-ません",
+        "Verb-ました"
+      ],
+      "correctAnswer": "や",
+      "explanation_en": "This entry duplicates n5-011. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0283",
+      "grammarPatternId": "n5-023",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nSentence-final question marker (see n5-012 for full content)\nれい：(see n5-012)",
+      "choices": [
+        "か",
+        "だれか / だれも",
+        "possessive / noun-modifier",
+        "Verb-てはいけません"
+      ],
+      "correctAnswer": "か",
+      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0284",
+      "grammarPatternId": "n5-024",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nOr (between alternatives) (see n5-012 for full content)\nれい：(see n5-012)",
+      "choices": [
+        "～をおねがいします",
+        "いくら",
+        "か",
+        "Verb-た"
+      ],
+      "correctAnswer": "か",
+      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0285",
+      "grammarPatternId": "n5-025",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "いい てんきです（　）。",
+      "choices": [
+        "の",
+        "で",
+        "ね",
+        "も"
+      ],
+      "correctAnswer": "ね",
+      "explanation_en": "ね at sentence-end seeks agreement or shared feeling — 'isn't it?', 'right?'. Used when the speaker assumes the listener has the same view.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0286",
+      "grammarPatternId": "n5-026",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "あした しけんです（　）。",
+      "choices": [
+        "など",
+        "よ",
+        "に",
+        "ぐらい"
+      ],
+      "correctAnswer": "よ",
+      "explanation_en": "よ at sentence-end conveys new information to the listener or emphasizes a point. 'I'm telling you / you should know'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0287",
+      "grammarPatternId": "n5-027",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "あした 来ます（　）。",
+      "choices": [
+        "の",
+        "ね",
+        "など",
+        "よね"
+      ],
+      "correctAnswer": "よね",
+      "explanation_en": "よね is よ + ね: the speaker is fairly sure but checking. 'I think... right?'",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0288",
+      "grammarPatternId": "n5-028",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～の (possessive / noun-modifier)\nれい：これは わたしの 本です。",
+      "choices": [
+        "～の",
+        "～がすきです / きらいです",
+        "～がじょうずです / へたです",
+        "どこか / どこも"
+      ],
+      "correctAnswer": "～の",
+      "explanation_en": "の links nouns. Can mean possession (わたしの = 'my'), classification (日本語の = 'Japanese (language) X'), or general modification.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0289",
+      "grammarPatternId": "n5-029",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nPossessive / noun-modifier (see n5-028 for full content)\nれい：(see n5-028)",
+      "choices": [
+        "Verb-stem + ながら",
+        "～より～のほうが～です",
+        "possessive / noun-modifier",
+        "いくつ / いくら / なんにん / なんまい etc."
+      ],
+      "correctAnswer": "possessive / noun-modifier",
+      "explanation_en": "This entry duplicates n5-028. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0290",
+      "grammarPatternId": "n5-030",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～の (nominalizer — turns a verb/adj clause into a noun)\nれい：本を 読むのが すきです。",
+      "choices": [
+        "～にします",
+        "だけ",
+        "～じはん",
+        "nominalizer in basic use"
+      ],
+      "correctAnswer": "nominalizer in basic use",
+      "explanation_en": "の after a plain-form verb makes the action a noun. 'Reading books' = 本を 読むの.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0291",
+      "grammarPatternId": "n5-031",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nInformal question marker (see n5-012 for full content)\nれい：(see n5-012)",
+      "choices": [
+        "informal question marker",
+        "どうやって",
+        "〜です／〜ます",
+        "そして"
+      ],
+      "correctAnswer": "informal question marker",
+      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0292",
+      "grammarPatternId": "n5-032",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nAlso / too (see n5-013 for full content)\nれい：(see n5-013)",
+      "choices": [
+        "だれ／どなた",
+        "informal question marker",
+        "も",
+        "Sentence + ので、Sentence"
+      ],
+      "correctAnswer": "も",
+      "explanation_en": "This entry duplicates n5-013. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0293",
+      "grammarPatternId": "n5-033",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "コーヒー（　） 飲みます。",
+      "choices": [
+        "など",
+        "だけ",
+        "に",
+        "や"
+      ],
+      "correctAnswer": "だけ",
+      "explanation_en": "だけ means 'only' — limiting the scope to that one item. Used with affirmative or negative verbs (compare with しか, which forces negative).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0294",
+      "grammarPatternId": "n5-034",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nしか〜ない — only (with negative verb)\nれい：1000円しか ありません。",
+      "choices": [
+        "も",
+        "〜です／〜ます",
+        "〜でしょう",
+        "しか～ない"
+      ],
+      "correctAnswer": "しか～ない",
+      "explanation_en": "しか REQUIRES a negative verb to mean 'only'. The polarity is grammatically negative but the meaning is affirmative-with-emphasis ('only X, nothing more').",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0295",
+      "grammarPatternId": "n5-035",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nぐらい / くらい — about, approximately (used with quantities)\nれい：1じかんぐらい まちました。",
+      "choices": [
+        "Verb-stem + に いきます / きます / かえります",
+        "ぐらい / くらい",
+        "possessive / noun-modifier",
+        "～と～と、どちらが～ですか"
+      ],
+      "correctAnswer": "ぐらい / くらい",
+      "explanation_en": "ぐらい / くらい (interchangeable) attach to a quantity to mean 'about, roughly'. Common with time, money, distance.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0296",
+      "grammarPatternId": "n5-036",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "3じ（　） あいましょう。",
+      "choices": [
+        "ごろ",
+        "で",
+        "か",
+        "が"
+      ],
+      "correctAnswer": "ごろ",
+      "explanation_en": "ごろ attaches to a TIME POINT to mean 'around'. Use ごろ for time points; ぐらい for durations/quantities.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0297",
+      "grammarPatternId": "n5-037",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "りんごや バナナ（　）を よく 食べます。",
+      "choices": [
+        "など",
+        "は",
+        "よ",
+        "で"
+      ],
+      "correctAnswer": "など",
+      "explanation_en": "など follows a list (often with や) to add 'etc., and so on'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0298",
+      "grammarPatternId": "n5-038",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "りんごを ひとつ（　） ください。",
+      "choices": [
+        "ずつ",
+        "から",
+        "ぐらい",
+        "まで"
+      ],
+      "correctAnswer": "ずつ",
+      "explanation_en": "ずつ after a quantity means 'each' or 'per' — distributing a fixed amount.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0299",
+      "grammarPatternId": "n5-039",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nPronouns: this / that / which one (see n5-014 for full content)\nれい：(see n5-014)",
+      "choices": [
+        "いただきます / ごちそうさま / おはようございます etc.",
+        "これ / それ / あれ / どれ",
+        "Verb-ます",
+        "～じはん"
+      ],
+      "correctAnswer": "これ / それ / あれ / どれ",
+      "explanation_en": "This entry duplicates n5-014. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0300",
+      "grammarPatternId": "n5-040",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nAdjectival demonstratives + noun (see n5-015 for full content)\nれい：(see n5-015)",
+      "choices": [
+        "～に～をもらいます",
+        "しか～ない",
+        "どうやって",
+        "この / その / あの / どの + Noun"
+      ],
+      "correctAnswer": "この / その / あの / どの + Noun",
+      "explanation_en": "This entry duplicates n5-015. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0301",
+      "grammarPatternId": "n5-041",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nLocation words (see n5-016 for full content)\nれい：(see n5-016)",
+      "choices": [
+        "～がわかります",
+        "ここ / そこ / あそこ / どこ",
+        "～たり〜たりする",
+        "〜ね / 〜よ"
+      ],
+      "correctAnswer": "ここ / そこ / あそこ / どこ",
+      "explanation_en": "This entry duplicates n5-016. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0302",
+      "grammarPatternId": "n5-042",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nこちら / そちら / あちら / どちら — polite directions / options\nれい：こちらへ どうぞ。",
+      "choices": [
+        "こちら / そちら / あちら / どちら",
+        "Number + counter",
+        "そして",
+        "Verb-plain + な"
+      ],
+      "correctAnswer": "こちら / そちら / あちら / どちら",
+      "explanation_en": "The こちら-series is the polite version of これ-シリーズ/ここ-シリーズ. Used in business / formal contexts for direction, person reference, and choice.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0303",
+      "grammarPatternId": "n5-043",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nこんな / そんな / あんな / どんな + Noun — 'this/that kind of'\nれい：どんな 本が すきですか。",
+      "choices": [
+        "こんな / そんな / あんな / どんな + Noun",
+        "Verb-ています",
+        "～が～をくれます",
+        "に"
+      ],
+      "correctAnswer": "こんな / そんな / あんな / どんな + Noun",
+      "explanation_en": "こんな/そんな/あんな/どんな are 'this kind of / that kind of / what kind of'. Always followed by a noun.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0304",
+      "grammarPatternId": "n5-044",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nこう / そう / ああ / どう — 'this way / that way / how'\nれい：こう してください。",
+      "choices": [
+        "～なくてはいけない",
+        "Verb-ない",
+        "Verb-ましょう",
+        "こう / そう / ああ / どう"
+      ],
+      "correctAnswer": "こう / そう / ああ / どう",
+      "explanation_en": "The こう-series describes manner: 'this way/that way/how'. Used adverbially with verbs.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0305",
+      "grammarPatternId": "n5-045",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nWhat (see n5-017 for full content)\nれい：(see n5-017)",
+      "choices": [
+        "います",
+        "Verb-ます",
+        "どうやって",
+        "なん / なに"
+      ],
+      "correctAnswer": "なん / なに",
+      "explanation_en": "This entry duplicates n5-017. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0306",
+      "grammarPatternId": "n5-046",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nWho (see n5-018 for full content)\nれい：(see n5-018)",
+      "choices": [
+        "Adjective + Noun",
+        "だれ / どなた",
+        "～んです / ～のです",
+        "Verb + counter + Verb"
+      ],
+      "correctAnswer": "だれ / どなた",
+      "explanation_en": "This entry duplicates n5-018. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0307",
+      "grammarPatternId": "n5-047",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nWhen (see n5-019 for full content)\nれい：(see n5-019)",
+      "choices": [
+        "もう + Verb-ました",
+        "～なくてもいい",
+        "～ないといけない",
+        "いつ"
+      ],
+      "correctAnswer": "いつ",
+      "explanation_en": "This entry duplicates n5-019. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0308",
+      "grammarPatternId": "n5-048",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nWhere (covered by ここ-series) (see n5-016 for full content)\nれい：(see n5-016)",
+      "choices": [
+        "どこ",
+        "な-Adjective past negative: ～じゃありませんでした",
+        "〜が、〜",
+        "な-Adjective + な + Noun"
+      ],
+      "correctAnswer": "どこ",
+      "explanation_en": "This entry duplicates n5-016. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0309",
+      "grammarPatternId": "n5-049",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nどれ / どの / どちら — 'which' (selection from options)\nれい：どれが あなたの ですか。",
+      "choices": [
+        "Verb-ませんでした",
+        "Verb-てください",
+        "どれ / どの / どちら",
+        "Verb-ましょうか"
+      ],
+      "correctAnswer": "どれ / どの / どちら",
+      "explanation_en": "Three 'which' forms: どれ stands alone for 3+ choices. どの precedes a noun. どちら is the polite form, also used for 2-way comparison.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0310",
+      "grammarPatternId": "n5-050",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nどう / いかが — 'how / how about' (state, opinion, polite offer)\nれい：おしごとは どうですか。",
+      "choices": [
+        "いくつ / いくら / なんにん / なんまい etc.",
+        "どう / いかが",
+        "Verb-plain + な",
+        "でも"
+      ],
+      "correctAnswer": "どう / いかが",
+      "explanation_en": "どう = 'how (is X)?' or 'how about'. いかが is the polite form, common in service / offering contexts.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0311",
+      "grammarPatternId": "n5-051",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nどうして / なぜ — 'why'\nれい：どうして 来ませんでしたか。",
+      "choices": [
+        "ぐらい / くらい",
+        "こちら / そちら / あちら / どちら",
+        "お～ / ご～",
+        "どうして / なぜ"
+      ],
+      "correctAnswer": "どうして / なぜ",
+      "explanation_en": "どうして is the standard 'why' in conversation. なぜ is more formal/written. Answer typically uses から (because).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0312",
+      "grammarPatternId": "n5-052",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nどうやって — 'how / by what means'\nれい：どうやって 行きますか。",
+      "choices": [
+        "どうやって",
+        "～に～をあげます",
+        "い-Adjective past: ～かったです",
+        "Verb-てもいいです"
+      ],
+      "correctAnswer": "どうやって",
+      "explanation_en": "どうやって asks the METHOD/MEANS of doing something. More specific than どう.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0313",
+      "grammarPatternId": "n5-053",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "これは （　）ですか。",
+      "choices": [
+        "だけ",
+        "から",
+        "で",
+        "いくら"
+      ],
+      "correctAnswer": "いくら",
+      "explanation_en": "いくら asks the price.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0314",
+      "grammarPatternId": "n5-054",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "りんごは （　） ありますか。",
+      "choices": [
+        "や",
+        "も",
+        "だけ",
+        "いくつ"
+      ],
+      "correctAnswer": "いくつ",
+      "explanation_en": "いくつ asks 'how many' using the native ひと-counter system. Also used to politely ask age (especially of children).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0315",
+      "grammarPatternId": "n5-055",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "いま （　）ですか。",
+      "choices": [
+        "は",
+        "なんじ",
+        "だけ",
+        "へ"
+      ],
+      "correctAnswer": "なんじ",
+      "explanation_en": "Counter じ = 'o'clock'. なんじ asks 'what time?'. Pairs with から/まで for time ranges.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0316",
+      "grammarPatternId": "n5-056",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nなんようび — 'what day of the week'\nれい：きょうは なんようびですか。",
+      "choices": [
+        "お～ / ご～",
+        "～なくてもいい",
+        "なんようび",
+        "や"
+      ],
+      "correctAnswer": "なんようび",
+      "explanation_en": "Counter ようび = 'day of the week'. なんようび asks 'what day?'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0317",
+      "grammarPatternId": "n5-057",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nなんがつ / なんにち — 'what month / what day'\nれい：たんじょうびは なんがつ なんにちですか。",
+      "choices": [
+        "～なくてはいけない",
+        "も",
+        "なんがつ なんにち",
+        "Verb-ない"
+      ],
+      "correctAnswer": "なんがつ なんにち",
+      "explanation_en": "がつ = month-counter; にち = day-of-month-counter. なんがつ / なんにち ask 'what month / day'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0318",
+      "grammarPatternId": "n5-063",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-ましょうか — 'shall I / shall we (offer/suggestion)?'\nれい：てつだいましょうか。",
+      "choices": [
+        "Verb-ましょうか",
+        "いつ",
+        "なんがつ なんにち",
+        "なんようび"
+      ],
+      "correctAnswer": "Verb-ましょうか",
+      "explanation_en": "ましょうか = ましょう + か, asking permission to do or offering help. 'Shall I help?', 'Shall we go?'",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0319",
+      "grammarPatternId": "n5-073",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-ていません — currently NOT doing / NOT in state\nれい：まだ あさごはんを たべていません。",
+      "choices": [
+        "Verb-ていません",
+        "～がわかります",
+        "～になります / ～くなります",
+        "～がじょうずです / へたです"
+      ],
+      "correctAnswer": "Verb-ていません",
+      "explanation_en": "Negative form of ています. Not currently doing / not in resulting state.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0320",
+      "grammarPatternId": "n5-076",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-てから — 'after doing X'\nれい：あさごはんを たべてから 行きます。",
+      "choices": [
+        "いくつ",
+        "なに／なん",
+        "こんな / そんな / あんな / どんな + Noun",
+        "Verb-から"
+      ],
+      "correctAnswer": "Verb-から",
+      "explanation_en": "te-form + から means 'after doing X, then Y'. Stronger sequential than just te-form chain.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0321",
+      "grammarPatternId": "n5-078",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nい-Adjective + Noun — adjective directly before noun\nれい：高い 山が 見えます。",
+      "choices": [
+        "い-Adjective + Noun",
+        "ずつ",
+        "なにか / なにも",
+        "～に～をあげます"
+      ],
+      "correctAnswer": "い-Adjective + Noun",
+      "explanation_en": "い-adjectives modify nouns directly, no particles needed. Keep the い: 高い 山 = 'tall mountain'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0322",
+      "grammarPatternId": "n5-084",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nな-Adjective + な + Noun\nれい：しずかな へやが すきです。",
+      "choices": [
+        "お～ / ご～",
+        "な-Adjective + な + Noun",
+        "い-Adjective + Noun",
+        "なにか / なにも"
+      ],
+      "correctAnswer": "な-Adjective + な + Noun",
+      "explanation_en": "な-adjectives need な before a noun. しずかな へや = 'a quiet room'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0323",
+      "grammarPatternId": "n5-092",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～に～が あります／います — 'there is X at Y' (location-first existence)\nれい：つくえの 上に 本が あります。",
+      "choices": [
+        "Verb-ています",
+        "～なあ",
+        "～に～があります / います",
+        "こんな / そんな / あんな / どんな + Noun"
+      ],
+      "correctAnswer": "～に～があります / います",
+      "explanation_en": "When introducing what's at a location, lead with the LOCATION (に) and follow with the SUBJECT (が) + あります/います. The location is the topic; the subject is new info.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0324",
+      "grammarPatternId": "n5-093",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～は～にあります／います — 'X is at Y' (already-known X)\nれい：本は つくえの 上に あります。",
+      "choices": [
+        "こう / そう / ああ / どう",
+        "Verb",
+        "～は～にあります / います",
+        "Verb-ない"
+      ],
+      "correctAnswer": "～は～にあります / います",
+      "explanation_en": "When the SUBJECT is already known (topic), lead with は + subject, then location + に + あります/います. Compare with ～に～が which leads with the location.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0325",
+      "grammarPatternId": "n5-094",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～が あります — 'have / there is' (events, skills, possessions)\nれい：あした しけんが あります。",
+      "choices": [
+        "～があります",
+        "あります",
+        "なにか / なにも",
+        "だれか / だれも"
+      ],
+      "correctAnswer": "～があります",
+      "explanation_en": "Beyond physical existence, あります covers events ('there's an exam'), abstract things ('time / money'), and possession ('I have...'). Use が for the subject.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0326",
+      "grammarPatternId": "n5-095",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nAはBより [adj] です — 'A is more [adj] than B'\nれい：とうきょうは おおさかより 大きいです。",
+      "choices": [
+        "～は～より～です",
+        "から～まで",
+        "～んです / ～のです",
+        "～が～をくれます"
+      ],
+      "correctAnswer": "～は～より～です",
+      "explanation_en": "Basic comparison: A は B より [adj] です = 'A is more [adj] than B'. The reference (B) is marked with より.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0327",
+      "grammarPatternId": "n5-096",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～より～のほうが [adj] です — '~ is more [adj] than ~' (focuses on the bigger one)\nれい：おおさかより とうきょうのほうが 大きいです。",
+      "choices": [
+        "では / じゃ",
+        "なんじ",
+        "～より～のほうが～です",
+        "Verb-ましょう"
+      ],
+      "correctAnswer": "～より～のほうが～です",
+      "explanation_en": "AよりBのほうが puts emphasis on B as the bigger/more X one. Often answer to a どちら question.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0328",
+      "grammarPatternId": "n5-097",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nAとBと、どちらが ～ですか — 'which is more ~, A or B?' (2-way question)\nれい：いぬと ねこと、どちらが すきですか。",
+      "choices": [
+        "なんようび",
+        "～と～と、どちらが～ですか",
+        "こんな / そんな / あんな / どんな + Noun",
+        "possessive / noun-modifier"
+      ],
+      "correctAnswer": "～と～と、どちらが～ですか",
+      "explanation_en": "Standard 2-way comparison question form. Pair 2 nouns with と...と, end with どちらが + adj/preference.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0329",
+      "grammarPatternId": "n5-098",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nMost ~ of all (covered by superlative pattern) (see n5-099 for full content)\nれい：(see n5-099)",
+      "choices": [
+        "や",
+        "いつか / いつも",
+        "～と～と、どちらが～ですか",
+        "～"
+      ],
+      "correctAnswer": "～",
+      "explanation_en": "This entry duplicates n5-099. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0330",
+      "grammarPatternId": "n5-099",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～が すきです / きらいです — like / dislike\nれい：わたしは ねこが すきです。",
+      "choices": [
+        "～の",
+        "～がすきです / きらいです",
+        "よ",
+        "Verb-ない"
+      ],
+      "correctAnswer": "～がすきです / きらいです",
+      "explanation_en": "すき / きらい are な-adjectives. The thing liked/disliked takes が, NEVER を.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0331",
+      "grammarPatternId": "n5-100",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～が じょうずです / へたです — good at / bad at\nれい：あの 人は 日本語が じょうずです。",
+      "choices": [
+        "～がじょうずです / へたです",
+        "Verb-stem + に いきます / きます / かえります",
+        "い-Adjective て-form: ～くて",
+        "いつも / たいてい / たまに"
+      ],
+      "correctAnswer": "～がじょうずです / へたです",
+      "explanation_en": "じょうず (good at) / へた (bad at) are な-adjectives. Subject (skill) takes が. NOTE: don't use じょうず about yourself — sounds boastful. Use とくい instead, or self-deprecating まだまだです.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0332",
+      "grammarPatternId": "n5-101",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～が ほしいです — want (an object)\nれい：新しい くるまが ほしいです。",
+      "choices": [
+        "～がほしいです",
+        "い-Adjective past: ～かったです",
+        "どう / いかが",
+        "こう / そう / ああ / どう"
+      ],
+      "correctAnswer": "～がほしいです",
+      "explanation_en": "ほしい is an い-adjective meaning 'want'. The desired thing takes が. Limited to first person (or in questions, second person).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0333",
+      "grammarPatternId": "n5-102",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～が わかります — understand / know\nれい：日本語が すこし わかります。",
+      "choices": [
+        "〜です／〜ます",
+        "Verb-ましょう",
+        "あります",
+        "～がわかります"
+      ],
+      "correctAnswer": "～がわかります",
+      "explanation_en": "わかる = 'understand'. The thing understood takes が, never を. Past わかりました often means 'got it / I see'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0334",
+      "grammarPatternId": "n5-103",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～が できます — can do / be able to / have ability in\nれい：日本語が できます。",
+      "choices": [
+        "いくつ",
+        "Verb-て、Verb-て、…",
+        "しかし",
+        "～ができます"
+      ],
+      "correctAnswer": "～ができます",
+      "explanation_en": "できる = 'can do, be able to'. Subject (skill / language / activity) takes が. Also 'be ready/finished'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0335",
+      "grammarPatternId": "n5-105",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-stem + たくないです — don't want to\nれい：今日は 行きたくないです。",
+      "choices": [
+        "～なくてはいけない",
+        "Verb-plain + つもりだ / つもりです",
+        "～",
+        "Verb-stem + たくないです"
+      ],
+      "correctAnswer": "Verb-stem + たくないです",
+      "explanation_en": "Negative of たい — drop い from たい, add くない (treats たい as い-adj).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0336",
+      "grammarPatternId": "n5-106",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nNoun + が ほしいです (same as n5-101 but with explicit noun emphasis)\nれい：新しい かばんが ほしいです。",
+      "choices": [
+        "Noun + が ほしいです",
+        "な-Adjective past: ～でした",
+        "〜だろう",
+        "います"
+      ],
+      "correctAnswer": "Noun + が ほしいです",
+      "explanation_en": "Use ほしい to want a NOUN. Same rule as n5-101: subject (the wanted thing) takes が.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0337",
+      "grammarPatternId": "n5-107",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-stem + に 行きます／来ます／かえります — go/come/return TO DO X\nれい：デパートへ 買いものに 行きます。",
+      "choices": [
+        "〜でしょう",
+        "Verb-ました",
+        "な-Adjective + な + Noun",
+        "Verb-stem + に いきます / きます / かえります"
+      ],
+      "correctAnswer": "Verb-stem + に いきます / きます / かえります",
+      "explanation_en": "Verb-stem + に + movement verb expresses purpose of going/coming. 'Go to buy', 'come to see', 'return to eat'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0338",
+      "grammarPatternId": "n5-108",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nNumber + counter — counting things in Japanese (人, まい, 本, はい, さつ, つ, etc.)\nれい：りんごを ふたつ ください。",
+      "choices": [
+        "ね",
+        "が",
+        "～がじょうずです / へたです",
+        "Number + counter"
+      ],
+      "correctAnswer": "Number + counter",
+      "explanation_en": "Japanese requires a counter when stating quantity. Pick the right counter based on the noun's shape/category. Memorize sound-changes: いっ before こ/さ/つ/ぴ; ろっ for 6 with most counters.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0339",
+      "grammarPatternId": "n5-109",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nHow many / how much (counter questions) (see n5-054 for full content)\nれい：(see n5-054)",
+      "choices": [
+        "～なくてもいい",
+        "あります",
+        "いくつ / いくら / なんにん / なんまい etc.",
+        "～なあ"
+      ],
+      "correctAnswer": "いくつ / いくら / なんにん / なんまい etc.",
+      "explanation_en": "This entry duplicates n5-054. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0340",
+      "grammarPatternId": "n5-110",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nObject + counter + Verb — quantity comes BEFORE the verb\nれい：りんごを ふたつ かいました。",
+      "choices": [
+        "Verb + counter + Verb",
+        "Noun + が ほしいです",
+        "～なくちゃ / ～なきゃ",
+        "Number + counter"
+      ],
+      "correctAnswer": "Verb + counter + Verb",
+      "explanation_en": "When stating quantity, the counter comes BETWEEN the object and the verb (no particle on the counter): NOUN を COUNTER VERB.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0341",
+      "grammarPatternId": "n5-111",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～じ — o'clock (counter)\nれい：いま 3じです。",
+      "choices": [
+        "～じ",
+        "Verb-ていません",
+        "～をください",
+        "に"
+      ],
+      "correctAnswer": "～じ",
+      "explanation_en": "じ counts hours. Watch sound-changes: 4じ = よじ (not しじ), 7じ = しちじ, 9じ = くじ.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0342",
+      "grammarPatternId": "n5-112",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～ふん / ～ぷん — minute(s) (counter)\nれい：10ぷん まちました。",
+      "choices": [
+        "いくつ / いくら / なんにん / なんまい etc.",
+        "～ふん / ぷん",
+        "な-Adjective + な + Noun",
+        "Number + counter"
+      ],
+      "correctAnswer": "～ふん / ぷん",
+      "explanation_en": "Sound varies: 1ぷん, 3ぷん, 4ぷん, 6ぷん, 8ぷん, 10ぷん use ぷん; 2ふん, 5ふん, 7ふん, 9ふん use ふん.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0343",
+      "grammarPatternId": "n5-113",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～じはん — half past (~30 minutes)\nれい：いま 3じはんです。",
+      "choices": [
+        "～に～をあげます",
+        "～じはん",
+        "や",
+        "～さん"
+      ],
+      "correctAnswer": "～じはん",
+      "explanation_en": "じはん = 'half past'. 3じはん = 3:30.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0344",
+      "grammarPatternId": "n5-114",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nFrom X to Y (paired range — already covered) (see n5-021 for full content)\nれい：(see n5-021)",
+      "choices": [
+        "いくら",
+        "～から～まで",
+        "いつ",
+        "～さん"
+      ],
+      "correctAnswer": "～から～まで",
+      "explanation_en": "This entry duplicates n5-021. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0345",
+      "grammarPatternId": "n5-115",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nに for specific times — covered by に particle (see n5-005 for full content)\nれい：(see n5-005)",
+      "choices": [
+        "～に",
+        "な-Adjective て-form: ～で",
+        "い-Adjective past negative: ～くなかったです / ～くありませんでした",
+        "どこか / どこも"
+      ],
+      "correctAnswer": "～に",
+      "explanation_en": "This entry duplicates n5-005. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0346",
+      "grammarPatternId": "n5-116",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nまいにち / まいしゅう / まいつき / まいとし — every day / week / month / year\nれい：まいにち 日本語を べんきょうします。",
+      "choices": [
+        "な-Adjective + です",
+        "か",
+        "まいにち / まいしゅう / まいつき / まいとし",
+        "Verb-stem + ながら"
+      ],
+      "correctAnswer": "まいにち / まいしゅう / まいつき / まいとし",
+      "explanation_en": "Prefix まい + time unit = 'every X'. Used adverbially (no particle).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0347",
+      "grammarPatternId": "n5-117",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nTime-of-day vocabulary: きょう / あした / きのう / あさって / おととい\nれい：きょうは あついです。",
+      "choices": [
+        "きょう / あした / きのう / あさって / おととい",
+        "Verb-stem + に いきます / きます / かえります",
+        "いくら",
+        "～がすきです / きらいです"
+      ],
+      "correctAnswer": "きょう / あした / きのう / あさって / おととい",
+      "explanation_en": "Relative time words. Used WITHOUT に. きょう = today, あした = tomorrow, きのう = yesterday, あさって = day after tomorrow, おととい = day before yesterday.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0348",
+      "grammarPatternId": "n5-118",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nいま / すぐ / もう / まだ — temporal adverbs\nれい：いま 行きます。",
+      "choices": [
+        "いま / すぐ / もう / まだ",
+        "～って",
+        "いただきます / ごちそうさま / おはようございます etc.",
+        "Verb-る / Verb-u"
+      ],
+      "correctAnswer": "いま / すぐ / もう / まだ",
+      "explanation_en": "Four core temporal adverbs. もう pairs with past (already done). まだ + negative = 'not yet', まだ + affirmative = 'still'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0349",
+      "grammarPatternId": "n5-119",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～まえ — before\nれい：ごはんの まえに てを あらいます。",
+      "choices": [
+        "ごろ",
+        "～まえ",
+        "〜でしょう",
+        "まで"
+      ],
+      "correctAnswer": "～まえ",
+      "explanation_en": "まえ = 'before'. Noun + の + まえ(に); Verb-plain (NON-PAST) + まえに. Note: verb stays NON-PAST even when the meaning is 'before doing X (in the past)'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0350",
+      "grammarPatternId": "n5-120",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～あと — after\nれい：しごとの あとで のみに 行きました。",
+      "choices": [
+        "～あと",
+        "い-Adjective past: ～かったです",
+        "い-Adjective past negative: ～くなかったです / ～くありませんでした",
+        "Verb-plain + つもりだ / つもりです"
+      ],
+      "correctAnswer": "～あと",
+      "explanation_en": "あと = 'after'. Noun + の + あとで; Verb-PAST + あとで. Verb is PAST here (opposite of まえに).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0351",
+      "grammarPatternId": "n5-121",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "あさごはんを たべました。（　）、しごとに 行きました。",
+      "choices": [
+        "から",
+        "も",
+        "だけ",
+        "そして"
+      ],
+      "correctAnswer": "そして",
+      "explanation_en": "そして begins a new sentence to add another action or fact. Used in narration / lists.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0352",
+      "grammarPatternId": "n5-122",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "シャワーを あびました。（　）、ねました。",
+      "choices": [
+        "が",
+        "それから",
+        "ね",
+        "に"
+      ],
+      "correctAnswer": "それから",
+      "explanation_en": "それから begins a clause to mark sequence — 'after that, next'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0353",
+      "grammarPatternId": "n5-123",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "コーヒーが すきです。（　）、おちゃは すきじゃありません。",
+      "choices": [
+        "も",
+        "でも",
+        "ね",
+        "は"
+      ],
+      "correctAnswer": "でも",
+      "explanation_en": "でも at the start of a new sentence introduces a contrast. Casual.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0354",
+      "grammarPatternId": "n5-124",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "テストは むずかしかったです。（　）、できました。",
+      "choices": [
+        "で",
+        "や",
+        "は",
+        "しかし"
+      ],
+      "correctAnswer": "しかし",
+      "explanation_en": "Formal/written form of でも. Same meaning, more formal register.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0355",
+      "grammarPatternId": "n5-125",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nでは / じゃ — 'well then / in that case' (transition)\nれい：じゃ、また あした。",
+      "choices": [
+        "～たり〜たりする",
+        "Verb-ませんでした",
+        "では / じゃ",
+        "に"
+      ],
+      "correctAnswer": "では / じゃ",
+      "explanation_en": "では (formal) / じゃ (casual) signals transition or wrap-up. Common in goodbyes: じゃ、また.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0356",
+      "grammarPatternId": "n5-126",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "コーヒーは すきです（　）、おちゃは すきじゃありません。",
+      "choices": [
+        "も",
+        "まで",
+        "に",
+        "が"
+      ],
+      "correctAnswer": "が",
+      "explanation_en": "が at end of a clause (after です/ます or plain) means 'but' as a softening connector. Often introduces a contrast or extends thought.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0357",
+      "grammarPatternId": "n5-127",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nけれど / けど — 'but' (informal contrast)\nれい：むずかしいけど、おもしろいです。",
+      "choices": [
+        "けれど / けど",
+        "Verb-ませんでした",
+        "だれか / だれも",
+        "Sentence + から、Sentence"
+      ],
+      "correctAnswer": "けれど / けど",
+      "explanation_en": "Casual equivalent of が (clause-final 'but'). けれど is slightly more formal than けど.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0358",
+      "grammarPatternId": "n5-128",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "あつい（　）、まどを あけてください。",
+      "choices": [
+        "ぐらい",
+        "から",
+        "の",
+        "よ"
+      ],
+      "correctAnswer": "から",
+      "explanation_en": "から at end of a clause means 'because'. Reason comes first; result follows.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0359",
+      "grammarPatternId": "n5-129",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nどうして〜か。〜から。 — Q-and-A reason pattern\nれい：どうして 来ませんでしたか。―あたまが いたかったからです。",
+      "choices": [
+        "Verb + counter + Verb",
+        "どうして～か。～から。",
+        "な-Adjective past: ～でした",
+        "い-Adjective + Noun"
+      ],
+      "correctAnswer": "どうして～か。～から。",
+      "explanation_en": "Standard pattern: question with どうして, answer using から. The answer often ends ～からです (because + polite).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0360",
+      "grammarPatternId": "n5-130",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nあげる / あげます — give (to others)\nれい：ともだちに 本を あげました。",
+      "choices": [
+        "だれ／どなた",
+        "な-Adjective past negative: ～じゃありませんでした",
+        "～に～をあげます",
+        "～の"
+      ],
+      "correctAnswer": "～に～をあげます",
+      "explanation_en": "あげる = give from speaker (or in-group) to others. Recipient marked with に. Don't use あげる when receiving from someone — use もらう.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0361",
+      "grammarPatternId": "n5-131",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～に～を もらいます — receive (from)\nれい：ともだちに 本を もらいました。",
+      "choices": [
+        "～なくてはいけない",
+        "も",
+        "～に～をもらいます",
+        "いつ"
+      ],
+      "correctAnswer": "～に～をもらいます",
+      "explanation_en": "もらう = receive. Giver marked with に (or から for non-person sources). Recipient is the subject.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0362",
+      "grammarPatternId": "n5-132",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～が～を くれます — give (to me / in-group)\nれい：友だちが 本を くれました。",
+      "choices": [
+        "Verb-ない + ほうがいい",
+        "Verb",
+        "～が～をくれます",
+        "Verb-stem + に いきます / きます / かえります"
+      ],
+      "correctAnswer": "～が～をくれます",
+      "explanation_en": "くれる = give TO ME (or my in-group). Giver is the subject. Use this — NOT あげる — when something is given to you.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0363",
+      "grammarPatternId": "n5-133",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nBecause (sentence connector — already covered) (see n5-128 for full content)\nれい：(see n5-128)",
+      "choices": [
+        "Sentence + から、Sentence",
+        "か",
+        "～ふん / ぷん",
+        "きょう / あした / きのう / あさって / おととい"
+      ],
+      "correctAnswer": "Sentence + から、Sentence",
+      "explanation_en": "This entry duplicates n5-128. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0364",
+      "grammarPatternId": "n5-134",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～ので、～ — 'because' (softer than から)\nれい：あたまが いたいので、休みます。",
+      "choices": [
+        "～がじょうずです / へたです",
+        "い-Adjective past: ～かったです",
+        "Verb-plain + つもりだ / つもりです",
+        "Sentence + ので、Sentence"
+      ],
+      "correctAnswer": "Sentence + ので、Sentence",
+      "explanation_en": "ので = softer / more polite 'because'. Connects to plain form (Verb-plain ので, い-adj plain ので, な-adj/Noun + な ので).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0365",
+      "grammarPatternId": "n5-135",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb (plain) + Noun — relative clauses (basic)\nれい：わたしが 買った 本",
+      "choices": [
+        "いま / すぐ / もう / まだ",
+        "いつか / いつも",
+        "Verb",
+        "な-Adjective + な + Noun"
+      ],
+      "correctAnswer": "Verb",
+      "explanation_en": "Plain-form verbs modify nouns directly — same position as adjectives. 読む 本 = 'a book to read'. NEVER use ます-form here.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0366",
+      "grammarPatternId": "n5-136",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nAdjective + noun (covered by い-adj+N and な-adj+N) (see n5-078 for full content)\nれい：(see n5-078)",
+      "choices": [
+        "～とおもいます",
+        "は",
+        "い-Adjective negative: ～くないです / ～くありません",
+        "Adjective + Noun"
+      ],
+      "correctAnswer": "Adjective + Noun",
+      "explanation_en": "This entry duplicates n5-078. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0367",
+      "grammarPatternId": "n5-137",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nNoun の Noun (covered by ～の) (see n5-028 for full content)\nれい：(see n5-028)",
+      "choices": [
+        "い-Adjective negative: ～くないです / ～くありません",
+        "Noun + の + Noun",
+        "〜だろう",
+        "～があります"
+      ],
+      "correctAnswer": "Noun + の + Noun",
+      "explanation_en": "This entry duplicates n5-028. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0368",
+      "grammarPatternId": "n5-138",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nLike / dislike (see n5-099 for full content)\nれい：(see n5-099)",
+      "choices": [
+        "Verb-た + ほうがいい",
+        "～がすきです / きらいです",
+        "〜でしょう",
+        "～なくてはならない"
+      ],
+      "correctAnswer": "～がすきです / きらいです",
+      "explanation_en": "This entry duplicates n5-099. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0369",
+      "grammarPatternId": "n5-139",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nGood at / bad at (see n5-100 for full content)\nれい：(see n5-100)",
+      "choices": [
+        "しか～ない",
+        "Verb-plain + つもりだ / つもりです",
+        "～がじょうずです / へたです",
+        "どうやって"
+      ],
+      "correctAnswer": "～がじょうずです / へたです",
+      "explanation_en": "This entry duplicates n5-100. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0370",
+      "grammarPatternId": "n5-140",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nUnderstand (see n5-102 for full content)\nれい：(see n5-102)",
+      "choices": [
+        "な-Adjective + です",
+        "いつか / いつも",
+        "～がわかります",
+        "〜だろう"
+      ],
+      "correctAnswer": "～がわかります",
+      "explanation_en": "This entry duplicates n5-102. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0371",
+      "grammarPatternId": "n5-141",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nThere is / have (event/skill) (see n5-094 for full content)\nれい：(see n5-094)",
+      "choices": [
+        "～があります",
+        "いくつ / いくら / なんにん / なんまい etc.",
+        "こちら / そちら / あちら / どちら",
+        "Verb"
+      ],
+      "correctAnswer": "～があります",
+      "explanation_en": "This entry duplicates n5-094. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0372",
+      "grammarPatternId": "n5-142",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～にします — decide on / choose\nれい：コーヒーに します。",
+      "choices": [
+        "～があります",
+        "Verb-てください",
+        "～にします",
+        "～がじょうずです / へたです"
+      ],
+      "correctAnswer": "～にします",
+      "explanation_en": "～にする = 'decide on / choose / make it ~'. Common in restaurants for ordering.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0373",
+      "grammarPatternId": "n5-143",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～になります / ～くなります — becomes\nれい：先生に なりたいです。",
+      "choices": [
+        "Verb-てはいけません",
+        "な-Adjective + です",
+        "～になります / ～くなります",
+        "～が～をくれます"
+      ],
+      "correctAnswer": "～になります / ～くなります",
+      "explanation_en": "Change-of-state pattern. Nouns and な-adj take に; い-adj drop い and add くなる.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0374",
+      "grammarPatternId": "n5-144",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-stem + ながら — while doing (simultaneously)\nれい：おんがくを 聞きながら べんきょうします。",
+      "choices": [
+        "ぐらい / くらい",
+        "Verb-stem + ながら",
+        "～なくてはならない",
+        "〜ね / 〜よ"
+      ],
+      "correctAnswer": "Verb-stem + ながら",
+      "explanation_en": "Drop ます, add ながら. Two simultaneous actions by the SAME subject.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0375",
+      "grammarPatternId": "n5-145",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～と おもいます — I think (that)\nれい：あした 雨が ふると おもいます。",
+      "choices": [
+        "へ",
+        "Verb-て",
+        "お～ / ご～",
+        "～とおもいます"
+      ],
+      "correctAnswer": "～とおもいます",
+      "explanation_en": "Embed a plain-form clause + と + おもいます to express opinion. と marks the quoted/embedded thought.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0376",
+      "grammarPatternId": "n5-146",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～と 言いました — said that ~\nれい：「あした 来ます」と 言いました。",
+      "choices": [
+        "なん / なに",
+        "～があります",
+        "に",
+        "～と言いました"
+      ],
+      "correctAnswer": "～と言いました",
+      "explanation_en": "Same と quotation pattern with the verb 言う (say).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0377",
+      "grammarPatternId": "n5-147",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nFrequency adverbs: よく / ときどき / あまり / ぜんぜん\nれい：よく テレビを 見ます。",
+      "choices": [
+        "も",
+        "Verb-ましょう",
+        "～にします",
+        "よく / ときどき / あまり / ぜんぜん + Verb"
+      ],
+      "correctAnswer": "よく / ときどき / あまり / ぜんぜん + Verb",
+      "explanation_en": "あまり and ぜんぜん REQUIRE a negative verb. よく/ときどき pair with affirmative. Frequency comes near the verb.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0378",
+      "grammarPatternId": "n5-148",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nいつも / たいてい / たまに — always / usually / occasionally\nれい：いつも 7じに おきます。",
+      "choices": [
+        "Sentence + ので、Sentence",
+        "いつも / たいてい / たまに",
+        "しかし",
+        "か"
+      ],
+      "correctAnswer": "いつも / たいてい / たまに",
+      "explanation_en": "Higher-frequency adverbs. All work with affirmative verbs.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0379",
+      "grammarPatternId": "n5-149",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～を ください — please give me ~\nれい：みずを ください。",
+      "choices": [
+        "～まえ",
+        "～がじょうずです / へたです",
+        "～をください",
+        "か"
+      ],
+      "correctAnswer": "～をください",
+      "explanation_en": "Standard request for an item. Common in shops and restaurants.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0380",
+      "grammarPatternId": "n5-150",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～を おねがいします — I'd like ~ / please give ~ (more polite than ください)\nれい：コーヒーを おねがいします。",
+      "choices": [
+        "Verb-ないでください",
+        "～をおねがいします",
+        "Verb",
+        "を"
+      ],
+      "correctAnswer": "～をおねがいします",
+      "explanation_en": "Slightly more polite than ください. Same construction.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0381",
+      "grammarPatternId": "n5-151",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～は いかがですか — how about ~? (polite offer)\nれい：おちゃは いかがですか。",
+      "choices": [
+        "けれど / けど",
+        "～から～まで",
+        "～はいかがですか",
+        "Verb-ましょうか"
+      ],
+      "correctAnswer": "～はいかがですか",
+      "explanation_en": "Polite offer or suggestion form, common in service settings.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0382",
+      "grammarPatternId": "n5-152",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nSet polite phrases: どうぞ / どうも / すみません / おねがいします\nれい：どうぞ 入ってください。",
+      "choices": [
+        "だけ",
+        "どうぞ / どうも / すみません / おねがいします",
+        "これ／それ／あれ／どれ",
+        "～より～のほうが～です"
+      ],
+      "correctAnswer": "どうぞ / どうも / すみません / おねがいします",
+      "explanation_en": "Core polite expressions used dozens of times daily in Japan. Memorize all four.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0383",
+      "grammarPatternId": "n5-153",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nまだ + Verb-ていません — not yet (an action that's still pending)\nれい：まだ あさごはんを たべていません。",
+      "choices": [
+        "Number + counter",
+        "まだ + Verb-ていません",
+        "Verb-から",
+        "Verb-stem + に いきます / きます / かえります"
+      ],
+      "correctAnswer": "まだ + Verb-ていません",
+      "explanation_en": "まだ + ていません = action not yet completed but expected. Implies 'still pending'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0384",
+      "grammarPatternId": "n5-154",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nもう + Verb-ました — already (action completed)\nれい：もう ばんごはんを たべました。",
+      "choices": [
+        "か",
+        "いくら",
+        "～より～のほうが～です",
+        "もう + Verb-ました"
+      ],
+      "correctAnswer": "もう + Verb-ました",
+      "explanation_en": "もう + ました = already done. Often paired with まだ + ていません as a yes/no answer pair.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0385",
+      "grammarPatternId": "n5-155",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nMid-sentence が (but) — see particle が clause connector (see n5-126 for full content)\nれい：(see n5-126)",
+      "choices": [
+        "〜が、〜",
+        "を",
+        "か",
+        "まだ + Verb-ていません"
+      ],
+      "correctAnswer": "〜が、〜",
+      "explanation_en": "This entry duplicates n5-126. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0386",
+      "grammarPatternId": "n5-156",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nSentence-final ね / よ — see ね / よ entries (see n5-025 for full content)\nれい：(see n5-025)",
+      "choices": [
+        "～じはん",
+        "Verb-てください",
+        "こんな / そんな / あんな / どんな + Noun",
+        "〜ね / 〜よ"
+      ],
+      "correctAnswer": "〜ね / 〜よ",
+      "explanation_en": "This entry duplicates n5-025. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0387",
+      "grammarPatternId": "n5-157",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n〜でしょう — probably / right?\nれい：あした 雨でしょう。",
+      "choices": [
+        "なんようび",
+        "か",
+        "〜でしょう",
+        "Noun + の + あとで"
+      ],
+      "correctAnswer": "〜でしょう",
+      "explanation_en": "でしょう = polite probability ('probably') or seeking agreement ('right?'). Borderline N5/N4.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0388",
+      "grammarPatternId": "n5-158",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nCasual/plain version of でしょう (see n5-157 for full content)\nれい：(see n5-157)",
+      "choices": [
+        "など",
+        "〜だろう",
+        "〜ね / 〜よ",
+        "Verb-ない"
+      ],
+      "correctAnswer": "〜だろう",
+      "explanation_en": "This entry duplicates n5-157. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0389",
+      "grammarPatternId": "n5-159",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nPolite ね/よ — see ね/よ entries (see n5-025 for full content)\nれい：(see n5-025)",
+      "choices": [
+        "～と～と、どちらが～ですか",
+        "〜ですね / 〜ですよ",
+        "ここ / そこ / あそこ / どこ",
+        "ここ／そこ／あそこ／どこ"
+      ],
+      "correctAnswer": "〜ですね / 〜ですよ",
+      "explanation_en": "This entry duplicates n5-025. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0390",
+      "grammarPatternId": "n5-160",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nNoun の あとで — see ～あと (see n5-120 for full content)\nれい：(see n5-120)",
+      "choices": [
+        "い-Adjective past negative: ～くなかったです / ～くありませんでした",
+        "〜ですね / 〜ですよ",
+        "Noun + の + あとで",
+        "どうやって"
+      ],
+      "correctAnswer": "Noun + の + あとで",
+      "explanation_en": "This entry duplicates n5-120. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0391",
+      "grammarPatternId": "n5-161",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nNoun の まえに — see ～まえ (see n5-119 for full content)\nれい：(see n5-119)",
+      "choices": [
+        "Noun + の + まえに",
+        "Verb-なかった",
+        "な-Adjective て-form: ～で",
+        "Verb-た + ことがある"
+      ],
+      "correctAnswer": "Noun + の + まえに",
+      "explanation_en": "This entry duplicates n5-119. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0392",
+      "grammarPatternId": "n5-162",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-plain まえに — see ～まえ (see n5-119 for full content)\nれい：(see n5-119)",
+      "choices": [
+        "Verb-plain + つもりだ / つもりです",
+        "～って",
+        "Verb",
+        "から"
+      ],
+      "correctAnswer": "Verb",
+      "explanation_en": "This entry duplicates n5-119. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0393",
+      "grammarPatternId": "n5-163",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-た あとで — see ～あと (see n5-120 for full content)\nれい：(see n5-120)",
+      "choices": [
+        "Verb",
+        "お～ / ご～",
+        "でも",
+        "だれ / どなた"
+      ],
+      "correctAnswer": "Verb",
+      "explanation_en": "This entry duplicates n5-120. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0394",
+      "grammarPatternId": "n5-164",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～さん — name suffix (Mr./Ms./equivalent)\nれい：田中さんは 先生です。",
+      "choices": [
+        "か",
+        "～さん",
+        "だれ / どなた",
+        "Question word + か / も compounds"
+      ],
+      "correctAnswer": "～さん",
+      "explanation_en": "さん attaches to people's names (and some roles). NEVER attach さん to your own name.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0395",
+      "grammarPatternId": "n5-165",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nお～ / ご～ — beautifying / honorific prefixes\nれい：おちゃを どうぞ。",
+      "choices": [
+        "い-Adjective + Noun",
+        "なんがつ なんにち",
+        "なんじ",
+        "お～ / ご～"
+      ],
+      "correctAnswer": "お～ / ご～",
+      "explanation_en": "お/ご prefixes add politeness or are required for some words (おちゃ, ごはん). お for native Japanese; ご for Sino-Japanese (kanji-compound) words.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0396",
+      "grammarPatternId": "n5-166",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nSet greetings: いただきます / ごちそうさま / おはようございます etc.\nれい：いただきます！",
+      "choices": [
+        "Verb-ましょうか",
+        "Noun + の + あとで",
+        "いただきます / ごちそうさま / おはようございます etc.",
+        "Noun + が ほしいです"
+      ],
+      "correctAnswer": "いただきます / ごちそうさま / おはようございます etc.",
+      "explanation_en": "Core daily greetings. Memorize and use unconsciously — not negotiable in polite Japanese.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0397",
+      "grammarPatternId": "n5-167",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～んです / ～のです — explanation / emphasis (borderline)\nれい：あたまが いたいんです。",
+      "choices": [
+        "Verb-stem + ながら",
+        "から",
+        "～んです / ～のです",
+        "～なあ"
+      ],
+      "correctAnswer": "～んです / ～のです",
+      "explanation_en": "Adds explanation or asks for an explanation. Plain-form clause + んです (casual んだ).",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0398",
+      "grammarPatternId": "n5-168",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～たり〜たりする — do A and B (among other things)\nれい：しゅうまつは 本を 読んだり、えいがを 見たり します。",
+      "choices": [
+        "どうやって",
+        "～たり〜たりする",
+        "よ",
+        "いつも / たいてい / たまに"
+      ],
+      "correctAnswer": "～たり〜たりする",
+      "explanation_en": "Take Verb-た (past plain), add り. Lists representative actions: 'I do things like A and B'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0399",
+      "grammarPatternId": "n5-169",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-た + ことが ある — have done before (experience)\nれい：日本へ 行ったことが あります。",
+      "choices": [
+        "Verb-ないでください",
+        "〜です／〜ます",
+        "～たり〜たりする",
+        "Verb-た + ことがある"
+      ],
+      "correctAnswer": "Verb-た + ことがある",
+      "explanation_en": "Verb-PAST + ことが + ある = 'have done at some point'. Asks/talks about life experience.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0400",
+      "grammarPatternId": "n5-170",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-た + ほうが いい — should do\nれい：もう ねたほうが いいですよ。",
+      "choices": [
+        "います",
+        "から",
+        "か",
+        "Verb-た + ほうがいい"
+      ],
+      "correctAnswer": "Verb-た + ほうがいい",
+      "explanation_en": "Verb-PAST + ほうが + いい = 'you'd better / should do'. Use PAST form even for future advice.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0401",
+      "grammarPatternId": "n5-171",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-ない + ほうが いい — shouldn't do\nれい：あまり 食べないほうが いいです。",
+      "choices": [
+        "Adjective + Noun",
+        "なんじ",
+        "Noun + の + Noun",
+        "Verb-ない + ほうがいい"
+      ],
+      "correctAnswer": "Verb-ない + ほうがいい",
+      "explanation_en": "Negative version of n5-170: 'you'd better not'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0402",
+      "grammarPatternId": "n5-172",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～なくても いい — don't have to\nれい：あした 来なくても いいです。",
+      "choices": [
+        "～なくてもいい",
+        "Verb-plain + な",
+        "Verb-stem + に いきます / きます / かえります",
+        "あります"
+      ],
+      "correctAnswer": "～なくてもいい",
+      "explanation_en": "Negative te-form (なくて) + も + いい = 'don't have to / it's OK not to'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0403",
+      "grammarPatternId": "n5-173",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～なくては いけない — must do\nれい：もう 行かなくては いけません。",
+      "choices": [
+        "～なくてはいけない",
+        "この / その / あの / どの + Noun",
+        "どうぞ / どうも / すみません / おねがいします",
+        "これ／それ／あれ／どれ"
+      ],
+      "correctAnswer": "～なくてはいけない",
+      "explanation_en": "Negative te-form + は + いけない = 'must do' (lit. 'not doing won't work'). Casual contraction: ～なくちゃ.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0404",
+      "grammarPatternId": "n5-174",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nMust do (formal variant — same as いけない) (see n5-173 for full content)\nれい：(see n5-173)",
+      "choices": [
+        "Verb-て",
+        "～なくてはならない",
+        "Verb-ませんか",
+        "～になります / ～くなります"
+      ],
+      "correctAnswer": "～なくてはならない",
+      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0405",
+      "grammarPatternId": "n5-175",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nMust do (common spoken variant) (see n5-173 for full content)\nれい：(see n5-173)",
+      "choices": [
+        "いま / すぐ / もう / まだ",
+        "ここ / そこ / あそこ / どこ",
+        "～ないといけない",
+        "もう + Verb-ました"
+      ],
+      "correctAnswer": "～ないといけない",
+      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0406",
+      "grammarPatternId": "n5-176",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nMust do (casual contractions) (see n5-173 for full content)\nれい：(see n5-173)",
+      "choices": [
+        "いつ",
+        "～なくちゃ / ～なきゃ",
+        "こんな / そんな / あんな / どんな + Noun",
+        "い-Adjective past: ～かったです"
+      ],
+      "correctAnswer": "～なくちゃ / ～なきゃ",
+      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0407",
+      "grammarPatternId": "n5-177",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-stem / Adj-stem + すぎる — too much / excessive\nれい：きのう たべすぎました。",
+      "choices": [
+        "どうして / なぜ",
+        "いつ",
+        "Verb-stem + ながら",
+        "Verb-stem / Adj-stem + すぎる"
+      ],
+      "correctAnswer": "Verb-stem / Adj-stem + すぎる",
+      "explanation_en": "Drop ます/い, add すぎる. 'Too much / too X'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0408",
+      "grammarPatternId": "n5-178",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-plain + つもりだ — intend to\nれい：あした 行くつもりです。",
+      "choices": [
+        "こちら / そちら / あちら / どちら",
+        "けれど / けど",
+        "Verb-plain + つもりだ / つもりです",
+        "～たり〜たりする"
+      ],
+      "correctAnswer": "Verb-plain + つもりだ / つもりです",
+      "explanation_en": "Verb-plain + つもりだ/です = 'I intend to / plan to'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0409",
+      "grammarPatternId": "n5-179",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～って — casual quotation marker / topic introducer\nれい：「あした 来る」って 言いました。",
+      "choices": [
+        "なんがつ なんにち",
+        "～じ",
+        "～って",
+        "どこ"
+      ],
+      "correctAnswer": "～って",
+      "explanation_en": "Casual replacement for と (quotation) or は (topic). Conversational.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0410",
+      "grammarPatternId": "n5-180",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-stem + ～かた — way of doing\nれい：この かんじの 読みかたは なんですか。",
+      "choices": [
+        "Verb",
+        "～は～より～です",
+        "Verb-stem + ～かた",
+        "や"
+      ],
+      "correctAnswer": "Verb-stem + ～かた",
+      "explanation_en": "Drop ます, add かた. 'How to / way of'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0411",
+      "grammarPatternId": "n5-181",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\n～なあ — sentence-final exclamation ('I really feel...')\nれい：おいしいなあ。",
+      "choices": [
+        "～って",
+        "～なあ",
+        "な-Adjective past negative: ～じゃありませんでした",
+        "ごろ"
+      ],
+      "correctAnswer": "～なあ",
+      "explanation_en": "Casual sentence-final particle expressing personal feeling.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0412",
+      "grammarPatternId": "n5-182",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nVerb-plain + な — strong/casual prohibition (\"don't!\")\nれい：行くな！",
+      "choices": [
+        "～に～があります / います",
+        "～ふん / ぷん",
+        "よ",
+        "Verb-plain + な"
+      ],
+      "correctAnswer": "Verb-plain + な",
+      "explanation_en": "Plain dictionary form + な = harsh/casual 'don't!'. Avoid using to people you don't know well.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0413",
+      "grammarPatternId": "n5-183",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nQuestion word + か / も — 'something / anyone' compounds\nれい：なにか たべたいです。",
+      "choices": [
+        "Question word + か / も compounds",
+        "～に～があります / います",
+        "～にします",
+        "いくら"
+      ],
+      "correctAnswer": "Question word + か / も compounds",
+      "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0414",
+      "grammarPatternId": "n5-184",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nSomething / nothing — see compound rule (see n5-183 for full content)\nれい：(see n5-183)",
+      "choices": [
+        "など",
+        "～になります / ～くなります",
+        "と",
+        "なにか / なにも"
+      ],
+      "correctAnswer": "なにか / なにも",
+      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0415",
+      "grammarPatternId": "n5-185",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nSomeone / no one (see n5-183 for full content)\nれい：(see n5-183)",
+      "choices": [
+        "Verb-stem + ながら",
+        "だれか / だれも",
+        "Verb-ませんか",
+        "～がほしいです"
+      ],
+      "correctAnswer": "だれか / だれも",
+      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0416",
+      "grammarPatternId": "n5-186",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nSomewhere / nowhere (see n5-183 for full content)\nれい：(see n5-183)",
+      "choices": [
+        "も",
+        "どこか / どこも",
+        "よね",
+        "と"
+      ],
+      "correctAnswer": "どこか / どこも",
+      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0417",
+      "grammarPatternId": "n5-187",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
+      "question_ja": "つぎの いみに あう パターン：\nSometime / always (see n5-183 for full content)\nれい：(see n5-183)",
+      "choices": [
+        "いつか / いつも",
+        "か",
+        "～と～と、どちらが～ですか",
+        "Verb-て"
+      ],
+      "correctAnswer": "いつか / いつも",
+      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
       "high_confusion": false,
       "difficulty": 1
     }
