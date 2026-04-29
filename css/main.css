@@ -1365,6 +1365,78 @@ textarea:focus-visible,
 .listening-audio { margin: 14px 0; }
 .listening-audio audio { width: 100%; }
 
+/* Keyboard shortcuts cheatsheet (Brief 2 s7.2) */
+.shortcuts-overlay {
+  position: fixed; inset: 0; z-index: 1100;
+  background: rgba(0,0,0,0.45);
+  display: flex; align-items: center; justify-content: center;
+  padding: 16px;
+}
+.shortcuts-overlay[hidden] { display: none; }
+.shortcuts-card {
+  background: var(--c-surface); color: var(--c-text);
+  border-radius: var(--r); padding: 20px 24px;
+  max-width: 460px; width: 100%; max-height: 85vh; overflow: auto;
+  position: relative;
+}
+.shortcuts-close { position: absolute; top: 6px; right: 8px; background: none; border: none; font-size: 22px; cursor: pointer; min-width: 36px; min-height: 36px; }
+.shortcuts-list { display: grid; grid-template-columns: auto 1fr; gap: 10px 16px; margin: 12px 0 0; }
+.shortcuts-list dt { display: flex; gap: 4px; align-items: center; }
+.shortcuts-list dd { margin: 0; align-self: center; }
+.shortcuts-list kbd {
+  display: inline-block; padding: 2px 8px; min-width: 22px; text-align: center;
+  border: 1px solid var(--c-border); border-radius: 4px; background: var(--c-bg);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px;
+}
+
+/* Location indicator chip (Brief 2 s2.4) */
+.location-indicator {
+  font-size: 12px; padding: 4px 16px;
+  background: rgba(20, 69, 42, 0.06);
+  color: var(--c-text-muted, #555);
+  border-bottom: 1px solid var(--c-border);
+}
+.location-indicator:empty { display: none; }
+
+/* Three-mode furigana fieldset + live preview (Brief 2 s4.1, s4.3) */
+.settings-fieldset { border: 1px solid var(--c-border); border-radius: var(--r); padding: 12px 16px; }
+.settings-fieldset legend { padding: 0 6px; font-weight: 600; }
+.radio-row { display: flex; align-items: center; gap: 8px; padding: 4px 0; cursor: pointer; }
+.furi-preview { margin-top: 10px; padding: 10px 12px; background: var(--c-bg); border-radius: 6px; border: 1px dashed var(--c-border); font-size: 16px; }
+
+/* Per-kanji popover (Brief 2 s4.2) */
+.kanji-glyph { cursor: pointer; }
+.kanji-glyph:hover { text-decoration: underline dotted; }
+ruby[data-glyph] { cursor: pointer; }
+.kanji-popover {
+  position: absolute; z-index: 1000;
+  background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  padding: 14px 18px; min-width: 240px; max-width: 320px;
+}
+.kanji-popover-close { position: absolute; top: 4px; right: 6px; background: none; border: none; font-size: 20px; cursor: pointer; line-height: 1; padding: 4px 8px; min-width: 32px; min-height: 32px; }
+.kanji-popover-glyph { font-size: 48px; line-height: 1; text-align: center; margin: 4px 0 8px; }
+.kanji-popover-readings { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 8px 0; font-size: 14px; }
+.kanji-popover-readings dt { font-weight: 600; }
+.kanji-popover-readings dd { margin: 0; }
+.kanji-popover-known { display: flex; align-items: center; gap: 8px; margin-top: 10px; cursor: pointer; padding: 6px 0; }
+.kanji-popover-link { display: inline-block; margin-top: 8px; font-size: 14px; }
+
+/* Reset confirm box (Brief 2 s5) */
+.reset-confirm-box { margin-top: 12px; padding: 14px 16px; border: 1px solid var(--c-error, #c33); border-radius: var(--r); background: rgba(204, 51, 51, 0.04); }
+.reset-confirm-box code { background: rgba(0,0,0,0.06); padding: 1px 6px; border-radius: 3px; }
+.reset-confirm-box input { display: block; margin: 8px 0; padding: 8px 10px; font-family: monospace; width: 100%; max-width: 260px; }
+
+/* Reduce-motion user override (Brief 2 s5) */
+:root[data-reduce-motion="on"] *,
+:root[data-reduce-motion="on"] *::before,
+:root[data-reduce-motion="on"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
 /* Trust strip on landing (Brief 2 s1.1.5) */
 .trust-strip {
   list-style: none;

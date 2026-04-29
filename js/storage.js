@@ -22,10 +22,13 @@ export function reset() {
 }
 
 const DEFAULT_SETTINGS = {
-  furiganaOnN5Kanji: false,
+  furiganaOnN5Kanji: false,         // legacy binary toggle (kept for migration)
+  furiganaMode: 'hide-known',       // 'always' | 'hide-known' | 'never' (Brief 2 §4.1)
   lastTestLength: 20,
   diagnosticCompleted: false,
   lastDiagnosticDate: null,
+  audioPlaybackRate: 1.0,           // Brief 2 §5: 0.75 / 1.0 / 1.25
+  reduceMotion: null,               // null = follow prefers-reduced-motion; true/false override
 };
 
 export function getSettings() {
@@ -54,6 +57,16 @@ export function initStorage() {
   if (get('settings') === null) set('settings', DEFAULT_SETTINGS);
   if (get('history') === null) set('history', {});
   if (get('results') === null) set('results', []);
+  if (get('knownKanji') === null) set('knownKanji', {});  // Brief 2 §4.2
+}
+
+// Per-kanji "I know this" flags (Brief 2 §4.2).
+export function getKnownKanji() { return get('knownKanji', {}); }
+export function isKanjiKnown(glyph) { return !!getKnownKanji()[glyph]; }
+export function setKanjiKnown(glyph, known) {
+  const m = getKnownKanji();
+  if (known) m[glyph] = true; else delete m[glyph];
+  set('knownKanji', m);
 }
 
 // ---- Pattern history per spec §7.4 + §6.6 ----

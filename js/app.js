@@ -7,7 +7,9 @@ import { renderReview } from './review.js';
 import { renderSummary } from './summary.js';
 import { renderDrill } from './drill.js';
 import { renderDiagnostic } from './diagnostic.js';
-import { renderSettings, applyTheme, applyFontSize } from './settings.js';
+import { renderSettings, applyTheme, applyFontSize, applyAudioRate, applyReduceMotion } from './settings.js';
+import { initKanjiPopover } from './kanji-popover.js';
+import { initShortcuts } from './shortcuts.js';
 import { renderKosoado } from './kosoado.js';
 import { renderWaGa } from './wa-vs-ga.js';
 import { renderVerbClass } from './verb-class.js';
@@ -49,6 +51,22 @@ function setActiveNav(name) {
   document.querySelectorAll('.primary-nav a').forEach(a => {
     a.classList.toggle('active', a.dataset.route === name);
   });
+}
+
+const LOCATION_LABELS = {
+  learn: 'Learn', test: 'Test', drill: 'Daily Drill', review: 'Review',
+  summary: 'Summary', diagnostic: 'Diagnostic', settings: 'Settings',
+  kosoado: 'こそあど grid', waga: 'は vs が', verbclass: 'Verb groups',
+  teform: 'て-form gym', particles: 'Particle pairs', counters: 'Counters',
+  reading: 'Reading', listening: 'Listening', kanji: 'Kanji'
+};
+
+function setLocationIndicator(name, params) {
+  const el = document.getElementById('location-indicator');
+  if (!el) return;
+  const base = LOCATION_LABELS[name] || name;
+  const sub = params ? ` · ${decodeURIComponent(params)}` : '';
+  el.textContent = `${base}${sub}`;
 }
 
 function refreshDrillBadge() {
@@ -101,6 +119,7 @@ async function route() {
   const { name, params } = parseRoute();
   const handler = ROUTES[name] || renderLearn;
   setActiveNav(handler === renderLearn ? 'learn' : name);
+  setLocationIndicator(handler === renderLearn ? 'learn' : name, params);
   renderSkeleton(container, name);
   let timedOut = false;
   const timeoutId = setTimeout(() => {
@@ -125,8 +144,21 @@ window.addEventListener('DOMContentLoaded', async () => {
   initStorage();
   applyTheme();
   applyFontSize();
+  applyReduceMotion();
   await initI18n();
   await initFuriganaToggle(route);
+  initKanjiPopover();
+  initShortcuts();
   if (!location.hash) location.hash = '#/learn';
   await route();
+  applyAudioRate();
+});
+
+// Re-render the active route when furigana mode changes (Brief 2 §4.1, §4.2)
+// without losing scroll - listens for the custom event from Settings + popover.
+document.addEventListener('furigana-rerender', () => { route(); });
+// Apply audio rate on every route change (any new <audio> elements).
+document.addEventListener('DOMContentLoaded', () => {
+  const obs = new MutationObserver(() => applyAudioRate());
+  obs.observe(document.getElementById('app') || document.body, { childList: true, subtree: true });
 });

@@ -1,7 +1,8 @@
-// Settings panel - per spec §3.6 of the developer brief.
+// Settings panel - per spec §3.6 of the developer brief + Brief 2 §5.
 // On-device only. Reads/writes via storage adapter.
 import * as storage from './storage.js';
 import { setLocale, currentLocale, supportedLocales } from './i18n.js';
+import { renderJa, getFuriganaMode } from './furigana.js';
 
 const LOCALE_NAMES = {
   en: 'English',
@@ -26,13 +27,16 @@ export async function renderSettings(container) {
           ${supportedLocales.map(lc => `<option value="${lc}" ${currentLocale()===lc?'selected':''}>${LOCALE_NAMES[lc] || lc}</option>`).join('')}
         </select>
       </label>
-      <label class="settings-row">
-        <span>Furigana on N5 kanji</span>
-        <select id="set-furigana">
-          <option value="off" ${!s.furiganaOnN5Kanji ? 'selected' : ''}>Off (default for late-N5 learner)</option>
-          <option value="on" ${s.furiganaOnN5Kanji ? 'selected' : ''}>On (always show readings)</option>
-        </select>
-      </label>
+      <fieldset class="settings-row settings-fieldset">
+        <legend>Furigana mode</legend>
+        <label class="radio-row"><input type="radio" name="furi" value="always" ${getFuriganaMode()==='always'?'checked':''}> Always show</label>
+        <label class="radio-row"><input type="radio" name="furi" value="hide-known" ${getFuriganaMode()==='hide-known'?'checked':''}> Hide on kanji I know <span class="muted small">(default)</span></label>
+        <label class="radio-row"><input type="radio" name="furi" value="never" ${getFuriganaMode()==='never'?'checked':''}> Never show</label>
+        <div class="furi-preview" aria-live="polite">
+          <span class="muted small">Preview:</span>
+          <span id="furi-preview-text">${renderJa('日本語の本を 読みます')}</span>
+        </div>
+      </fieldset>
       <label class="settings-row">
         <span>Theme</span>
         <select id="set-theme">
@@ -68,6 +72,22 @@ export async function renderSettings(container) {
         <span>Daily review cap</span>
         <input type="number" id="set-daily-review" min="5" max="200" value="${s.dailyReviewCap||50}">
       </label>
+      <label class="settings-row">
+        <span>Audio playback speed</span>
+        <select id="set-audio-rate">
+          <option value="0.75" ${s.audioPlaybackRate===0.75?'selected':''}>0.75x</option>
+          <option value="1.0"  ${(s.audioPlaybackRate||1.0)===1.0?'selected':''}>1.0x (default)</option>
+          <option value="1.25" ${s.audioPlaybackRate===1.25?'selected':''}>1.25x</option>
+        </select>
+      </label>
+      <label class="settings-row">
+        <span>Reduce motion</span>
+        <select id="set-reduce-motion">
+          <option value="auto" ${s.reduceMotion===null||s.reduceMotion===undefined?'selected':''}>Follow system</option>
+          <option value="on"   ${s.reduceMotion===true?'selected':''}>Always reduce</option>
+          <option value="off"  ${s.reduceMotion===false?'selected':''}>Never reduce</option>
+        </select>
+      </label>
     </section>
 
     <section class="settings-section">
@@ -83,8 +103,16 @@ export async function renderSettings(container) {
 
     <section class="settings-section">
       <h3>Reset</h3>
-      <button id="set-reset" class="btn-danger">Reset all progress</button>
-      <p class="muted small">Clears history, results, weak patterns, and settings. Cannot be undone.</p>
+      <button id="set-reset" class="btn-danger">Reset all progress…</button>
+      <p class="muted small">Clears history, results, weak patterns, settings, and known-kanji flags. Cannot be undone.</p>
+      <div id="reset-confirm" hidden class="reset-confirm-box">
+        <p><strong>Type <code>RESET</code> to confirm.</strong> This wipes every byte of your progress on this device.</p>
+        <input id="reset-phrase" type="text" autocomplete="off" placeholder="Type RESET">
+        <div class="settings-actions">
+          <button id="reset-confirm-btn" class="btn-danger" disabled>Confirm reset</button>
+          <button id="reset-cancel-btn">Cancel</button>
+        </div>
+      </div>
     </section>
   `;
 
@@ -93,9 +121,18 @@ export async function renderSettings(container) {
     await setLocale(e.target.value);
     location.reload();
   });
-  document.getElementById('set-furigana').addEventListener('change', (e) => {
-    storage.setSettings({ furiganaOnN5Kanji: e.target.value === 'on' });
-    applyTheme();
+  // Three-mode furigana radios + live preview (Brief 2 §4.1, §4.3)
+  document.querySelectorAll('input[name="furi"]').forEach(r => {
+    r.addEventListener('change', () => {
+      const mode = document.querySelector('input[name="furi"]:checked').value;
+      storage.setSettings({ furiganaMode: mode, furiganaOnN5Kanji: mode === 'always' });
+      // Update preview, header toggle, and any rendered furigana on the page.
+      const preview = document.getElementById('furi-preview-text');
+      if (preview) preview.innerHTML = renderJa('日本語の本を 読みます');
+      const header = document.getElementById('furigana-toggle');
+      if (header) header.checked = mode === 'always';
+      document.dispatchEvent(new CustomEvent('furigana-rerender'));
+    });
   });
   document.getElementById('set-theme').addEventListener('change', (e) => {
     storage.setSettings({ theme: e.target.value });
@@ -113,6 +150,16 @@ export async function renderSettings(container) {
   });
   document.getElementById('set-daily-review').addEventListener('change', (e) => {
     storage.setSettings({ dailyReviewCap: parseInt(e.target.value, 10) });
+  });
+  document.getElementById('set-audio-rate').addEventListener('change', (e) => {
+    storage.setSettings({ audioPlaybackRate: parseFloat(e.target.value) });
+    applyAudioRate();
+  });
+  document.getElementById('set-reduce-motion').addEventListener('change', (e) => {
+    const v = e.target.value;
+    const stored = v === 'auto' ? null : v === 'on';
+    storage.setSettings({ reduceMotion: stored });
+    applyReduceMotion();
   });
 
   document.getElementById('set-export').addEventListener('click', () => {
@@ -147,9 +194,20 @@ export async function renderSettings(container) {
     }
   });
 
+  // Typed-phrase reset confirm (Brief 2 §5).
   document.getElementById('set-reset').addEventListener('click', () => {
-    if (!confirm('Reset all progress? This clears every test result, the rolling history, and weak-pattern flags.')) return;
-    if (!confirm('Are you sure? This cannot be undone.')) return;
+    document.getElementById('reset-confirm').hidden = false;
+    document.getElementById('reset-phrase').focus();
+  });
+  document.getElementById('reset-cancel-btn').addEventListener('click', () => {
+    document.getElementById('reset-confirm').hidden = true;
+    document.getElementById('reset-phrase').value = '';
+    document.getElementById('reset-confirm-btn').disabled = true;
+  });
+  document.getElementById('reset-phrase').addEventListener('input', (e) => {
+    document.getElementById('reset-confirm-btn').disabled = e.target.value.trim() !== 'RESET';
+  });
+  document.getElementById('reset-confirm-btn').addEventListener('click', () => {
     storage.reset();
     location.hash = '#/learn';
     location.reload();
@@ -165,4 +223,16 @@ export function applyTheme() {
 export function applyFontSize() {
   const s = storage.getSettings();
   document.documentElement.setAttribute('data-font', s.fontSize || 'm');
+}
+// Apply user audio-rate setting to every <audio> on the page (Brief 2 §5).
+export function applyAudioRate() {
+  const rate = storage.getSettings().audioPlaybackRate || 1.0;
+  document.querySelectorAll('audio').forEach(a => { try { a.playbackRate = rate; } catch {} });
+}
+// Apply reduce-motion override on top of prefers-reduced-motion (Brief 2 §5).
+export function applyReduceMotion() {
+  const v = storage.getSettings().reduceMotion;
+  if (v === true) document.documentElement.setAttribute('data-reduce-motion', 'on');
+  else if (v === false) document.documentElement.setAttribute('data-reduce-motion', 'off');
+  else document.documentElement.removeAttribute('data-reduce-motion');
 }

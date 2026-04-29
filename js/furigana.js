@@ -33,16 +33,29 @@ async function loadData() {
 export async function initFuriganaToggle(onChange) {
   await loadData();
   const toggle = document.getElementById('furigana-toggle');
+  if (!toggle) return;
   const settings = storage.getSettings();
-  toggle.checked = !!settings.furiganaOnN5Kanji;
+  // Header toggle is a quick-switch between "always" and the user's saved
+  // non-always mode (defaults to hide-known). This keeps the header simple
+  // while Settings exposes the full 3-way choice.
+  toggle.checked = settings.furiganaMode === 'always';
   toggle.addEventListener('change', () => {
-    storage.setSettings({ furiganaOnN5Kanji: toggle.checked });
+    const mode = toggle.checked ? 'always' : 'hide-known';
+    storage.setSettings({ furiganaMode: mode, furiganaOnN5Kanji: toggle.checked });
     if (typeof onChange === 'function') onChange();
   });
 }
 
+// Legacy: returns true when furigana should appear on every N5 kanji.
 export function isFuriganaOnForN5() {
-  return !!storage.getSettings().furiganaOnN5Kanji;
+  return getFuriganaMode() === 'always';
+}
+
+export function getFuriganaMode() {
+  const s = storage.getSettings();
+  // Migration: if legacy boolean is true and mode unset, treat as 'always'.
+  if (s.furiganaMode) return s.furiganaMode;
+  return s.furiganaOnN5Kanji ? 'always' : 'hide-known';
 }
 
 const KANJI_RE = /[一-鿿]/;
@@ -78,10 +91,15 @@ export function renderJa(text, explicitFurigana = []) {
     }
   }
 
-  // Second: walk the text and apply per-kanji ruby if toggle is ON.
-  const toggleOn = isFuriganaOnForN5();
+  // Second: walk the text and apply per-kanji ruby per the active mode.
+  // Modes (Brief 2 §4.1):
+  //   always      - ruby on every N5 kanji
+  //   hide-known  - ruby on N5 kanji UNLESS user marked "I know this"
+  //   never       - no ruby on N5 kanji (out-of-scope still gets fallback)
+  const mode = getFuriganaMode();
   const readings = n5KanjiReadings || {};
   const inScope = n5KanjiSet || new Set();
+  const known = storage.getKnownKanji ? storage.getKnownKanji() : {};
 
   let html = '';
   for (const ch of working) {
@@ -91,14 +109,15 @@ export function renderJa(text, explicitFurigana = []) {
       continue;
     }
     if (isKanji(ch)) {
-      if (toggleOn && inScope.has(ch) && readings[ch]?.primary) {
-        html += `<ruby>${escapeHtml(ch)}<rt>${escapeHtml(readings[ch].primary)}</rt></ruby>`;
+      const showRuby = mode === 'always'
+        || (mode === 'hide-known' && !known[ch]);
+      if (showRuby && inScope.has(ch) && readings[ch]?.primary) {
+        html += `<ruby data-glyph="${escapeHtml(ch)}">${escapeHtml(ch)}<rt>${escapeHtml(readings[ch].primary)}</rt></ruby>`;
       } else if (!inScope.has(ch)) {
         // Out-of-scope kanji without explicit furigana - at least flag it.
-        // The author should provide explicitFurigana; this is a fallback.
-        html += `<ruby>${escapeHtml(ch)}<rt>?</rt></ruby>`;
+        html += `<ruby data-glyph="${escapeHtml(ch)}">${escapeHtml(ch)}<rt>?</rt></ruby>`;
       } else {
-        html += escapeHtml(ch);
+        html += `<span class="kanji-glyph" data-glyph="${escapeHtml(ch)}">${escapeHtml(ch)}</span>`;
       }
     } else {
       html += escapeHtml(ch);

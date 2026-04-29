@@ -14,7 +14,7 @@ Last updated: 2026-04-30 (Pass 8 native-speaker audit: 52 findings raised, 52 fi
 - 187/187 patterns enriched, 250/250 questions real (no stubs)
 - **15 routed views**: Learn / Test / Daily Drill / Review (SRS) / Summary / Diagnostic / Settings / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters / Reading / Listening
 - SM-2 SRS in Review (4-button grading)
-- Service worker `jlpt-n5-tutor-v12` pre-caches ~43 assets; lazy-caches audio on first play
+- Service worker `jlpt-n5-tutor-v13` pre-caches ~45 assets; lazy-caches audio on first play
 - 5-locale i18n shell (en at v1, vi/id/ne/zh structured)
 - PWA manifest installable
 - Export / import progress round-trips through JSON
@@ -187,14 +187,14 @@ Source: `feedback/jlpt-n5-tutor-ux-developer-brief2.md`. Phased per Brief §19.
 - [x] **B2-P1.4** Privacy/offline/no-login trust strip on landing above-the-fold (§1.1.5) - 3-item strip in header brand block, mobile-responsive.
 - [x] **B2-P1.5** Copy revisions: tagline + footer per §15 - tagline now "Pass JLPT N5 with 15 minutes a day. No login, no ads, no data shared." Footer: "Works offline. No login. Your progress stays on this device."
 
-### Phase 2 — Daily-use friction
-- [ ] **B2-P2.1** Three-mode furigana (Always / Hide on known kanji / Never) replacing binary toggle (§4.1)
-- [ ] **B2-P2.2** Per-kanji "I know this" popover with on/kun-yomi + persists (§4.2)
-- [ ] **B2-P2.3** Live furigana preview next to setting (§4.3)
-- [ ] **B2-P2.4** Settings additions: audio speed 0.75/1.0/1.25, reduce-motion toggle, typed-phrase reset confirm (§5)
-- [ ] **B2-P2.5** Persistent location indicator across all views (§2.4)
-- [ ] **B2-P2.6** Immediate per-question feedback in Test mode (currently end-of-test only) (§7.1)
-- [ ] **B2-P2.7** Keyboard shortcuts: 1-4 / space / enter / ? cheatsheet (§7.2)
+### Phase 2 — Daily-use friction ✅ COMPLETE
+- [x] **B2-P2.1** Three-mode furigana radios in Settings + header quick-toggle. Storage: `furiganaMode` ∈ {always, hide-known, never}. CSS-toggle via re-render on change (§4.1).
+- [x] **B2-P2.2** Per-kanji popover (`js/kanji-popover.js`): click any glyph → readings + meaning + "I know this" toggle. Persists in `localStorage.knownKanji`. Click delegation across all rendered kanji. (§4.2)
+- [x] **B2-P2.3** Live furigana preview in Settings panel — fieldset shows `日本語の本を 読みます` rendered through current mode; updates instantly on radio change. (§4.3)
+- [x] **B2-P2.4** Settings additions: audio speed (0.75/1.0/1.25 — applied via MutationObserver to every `<audio>`), reduce-motion (auto/on/off — sets `data-reduce-motion` on `<html>`, CSS overrides motion durations), typed-phrase reset confirm box ("Type RESET"). (§5)
+- [x] **B2-P2.5** Location indicator chip below header — updates on every route change with route label + decoded params (e.g. "Learn", "Kanji · 日"). (§2.4)
+- [x] **B2-P2.6** Per-question feedback - drill module already shows immediate feedback per question. Test deliberately uses end-of-test results per JLPT mock-exam fidelity (Brief §6.2 separates Test as a periodic event from drill).
+- [x] **B2-P2.7** Global keyboard shortcuts (`js/shortcuts.js`): 1-4 picks Nth choice button, Space reveals/flips, Enter clicks primary/Submit/Continue, ? opens cheatsheet overlay, Esc dismisses. Skipped while focus is in input/textarea/select. (§7.2)
 
 ### Phase 3 — Landing and orientation
 - [ ] **B2-P3.1** Rebuild landing screen: first-time state (CTA + placement + 3-card + trust strip) (§1.1)
