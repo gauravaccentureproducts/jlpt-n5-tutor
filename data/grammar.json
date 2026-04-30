@@ -1535,7 +1535,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-010. See n5-010 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-021",
@@ -1643,7 +1643,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-011. See n5-011 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-023",
@@ -1698,7 +1698,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-012. See n5-012 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-024",
@@ -1753,7 +1753,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-012. See n5-012 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-025",
@@ -2151,7 +2151,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-013. See n5-013 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-033",
@@ -2502,7 +2502,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-014. See n5-014 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-040",
@@ -2557,7 +2557,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-015. See n5-015 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-041",
@@ -2612,7 +2612,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-016. See n5-016 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-042",
@@ -2793,7 +2793,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-017. See n5-017 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-046",
@@ -2848,7 +2848,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-018. See n5-018 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-047",
@@ -2903,7 +2903,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-019. See n5-019 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-048",
@@ -2958,7 +2958,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-016. See n5-016 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-049",
@@ -5807,7 +5807,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-099. See n5-099 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-099",
@@ -6160,7 +6160,7 @@
           "translation_en": "I don't want to go today."
         },
         {
-          "ja": "なにも 食べたくない。",
+          "ja": "なにも たべたくないです。",
           "form": "negative",
           "translation_en": "I don't want to eat anything."
         }
@@ -6202,7 +6202,7 @@
           "translation_en": "I want a new bag."
         },
         {
-          "ja": "おかねが ほしい。",
+          "ja": "おかねが ほしいです。",
           "form": "affirmative",
           "translation_en": "I want money."
         }
@@ -6370,7 +6370,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-054. See n5-054 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-110",
@@ -6486,14 +6486,14 @@
       "explanation_en": "Sound varies: 1ぷん, 3ぷん, 4ぷん, 6ぷん, 8ぷん, 10分 use ぷん; 2ふん, 5ふん, 7ふん, 9分 use ふん.",
       "examples": [
         {
-          "ja": "10分 まちました。",
+          "ja": "10ぷん まちました。",
           "form": "past",
           "translation_en": "I waited 10 minutes."
         },
         {
-          "ja": "5分で 行けます。",
+          "ja": "5ふんまえに いきます。",
           "form": "affirmative",
-          "translation_en": "I can go in 5 minutes."
+          "translation_en": "I'll go 5 minutes earlier."
         }
       ],
       "common_mistakes": [],
@@ -6585,7 +6585,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-021. See n5-021 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-115",
@@ -6640,7 +6640,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-005. See n5-005 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-116",
@@ -7426,7 +7426,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-128. See n5-128 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-134",
@@ -7567,7 +7567,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-078. See n5-078 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-137",
@@ -7612,7 +7612,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-028. See n5-028 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-138",
@@ -7657,7 +7657,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-099. See n5-099 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-139",
@@ -7697,7 +7697,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-100. See n5-100 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-140",
@@ -7742,7 +7742,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-102. See n5-102 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-141",
@@ -7787,7 +7787,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-094. See n5-094 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-142",
@@ -8438,7 +8438,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-126. See n5-126 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-156",
@@ -8488,7 +8488,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-025. See n5-025 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-157",
@@ -8553,14 +8553,14 @@
       "explanation_en": "でしょう = polite probability ('probably') or seeking agreement ('right?'). Borderline N5/N4.\n\n(This pattern is also indexed as '〜だろう' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "あした 雨でしょう。",
+          "ja": "あした 雨だろう。",
           "form": "affirmative",
           "translation_en": "It'll probably rain tomorrow."
         },
         {
-          "ja": "むずかしいでしょう？",
+          "ja": "むずかしいだろう？",
           "form": "question",
-          "translation_en": "It's hard, right?"
+          "translation_en": "It's probably difficult, right?"
         }
       ],
       "common_mistakes": [],
@@ -8570,7 +8570,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-157. See n5-157 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-159",
@@ -8620,7 +8620,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-025. See n5-025 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-160",
@@ -8660,7 +8660,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-120. See n5-120 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-161",
@@ -8700,7 +8700,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-119. See n5-119 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-162",
@@ -8740,7 +8740,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-119. See n5-119 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-163",
@@ -8780,7 +8780,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-120. See n5-120 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-164",
@@ -9164,9 +9164,9 @@
       "explanation_en": "Negative te-form + は + いけない = 'must do' (lit. 'not doing won't work'). Casual contraction: ～なくちゃ.",
       "examples": [
         {
-          "ja": "もう 行かなくては いけません。",
+          "ja": "まいにち べんきょうしなくては いけない。",
           "form": "affirmative",
-          "translation_en": "I have to go now."
+          "translation_en": "I must study every day."
         }
       ],
       "common_mistakes": [],
@@ -9194,9 +9194,9 @@
       "explanation_en": "Negative te-form + は + いけない = 'must do' (lit. 'not doing won't work'). Casual contraction: ～なくちゃ.\n\n(This pattern is also indexed as '～なくてはならない' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "もう 行かなくては いけません。",
+          "ja": "しゅくだいを しなくては ならない。",
           "form": "affirmative",
-          "translation_en": "I have to go now."
+          "translation_en": "I must do my homework."
         }
       ],
       "common_mistakes": [],
@@ -9206,7 +9206,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-173. See n5-173 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-175",
@@ -9229,9 +9229,9 @@
       "explanation_en": "Negative te-form + は + いけない = 'must do' (lit. 'not doing won't work'). Casual contraction: ～なくちゃ.\n\n(This pattern is also indexed as '～ないといけない' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "もう 行かなくては いけません。",
+          "ja": "はやく かえらなきゃ いけない。",
           "form": "affirmative",
-          "translation_en": "I have to go now."
+          "translation_en": "I have to go home quickly."
         }
       ],
       "common_mistakes": [],
@@ -9241,7 +9241,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-173. See n5-173 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-176",
@@ -9276,7 +9276,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-173. See n5-173 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-177",
@@ -9571,7 +9571,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-183. See n5-183 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-185",
@@ -9616,7 +9616,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-183. See n5-183 for the primary discussion of this pattern."
+      "notes": ""
     },
     {
       "id": "n5-186",
@@ -9661,7 +9661,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-183. See n5-183 for the primary discussion of this pattern. Both どこへも and どこにも occur in negative sentences. どこへも emphasises motion ('not going anywhere'); どこにも emphasises location ('not present anywhere'). At N5, treat them as interchangeable for negative sentences."
+      "notes": "Both どこへも and どこにも occur in negative sentences. どこへも emphasises motion ('not going anywhere'); どこにも emphasises location ('not present anywhere'). At N5, treat them as interchangeable for negative sentences."
     },
     {
       "id": "n5-187",
@@ -9706,7 +9706,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-183. See n5-183 for the primary discussion of this pattern."
+      "notes": ""
     }
   ]
 }

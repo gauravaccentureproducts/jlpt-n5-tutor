@@ -28,3 +28,4 @@ test-results/
 # package-lock.json IS committed (removed from gitignore 2026-04-30) — without
 # it, `setup-node@v4 cache: 'npm'` in CI fails because the npm-cache step
 # requires a lock file, and the playwright-p0-smoke workflow could not run.
+audit_out.json

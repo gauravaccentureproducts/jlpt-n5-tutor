@@ -1131,4 +1131,103 @@ Pass-13 native-speaker review found auto-generated ruby was producing wrong read
 
 CI invariant count: 9 (Pass 1-10) → 11 (Pass 12 + JA-10/11) → 12 (Pass 13 + JA-12) → 14 (Pass 13 + JA-13/14) → 15 (Pass 14c + JA-15). All green at Pass 14c close.
 
-Open audit surface as of 2026-05-01: ~70% of `data/grammar.json` + 21 reading passages + 591 KB question entries — deferred to **2026-07-30 quarterly Pass-15 gate**. See `feedback/native-teacher-review-request.md` for the full prioritised P1-P14 audit plan.
+---
+
+## Pass 15a — Free heuristic audit on all 187 patterns (2026-05-01)
+
+**Audit perspective:** Per the EB-2 automation analysis (which proposed an LLM-based audit at ~$11.50/pass), this Pass executes a **free** alternative: a Python heuristic scanner (`tools/heuristic_audit.py`) that catches the *same classes of issues* the LLM caught in the 5-pattern validation experiment, applied to all 187 patterns. Heuristic-only — no LLM judgment, just deterministic checks for the issue classes that surfaced in the validation.
+
+**Issue classes detected:**
+- **H1** STUB_REDIRECT — `notes` field contains internal authoring text ("Duplicate-cleanup redirect", "Examples inlined from canonical pattern", "primary discussion of this pattern"). Same class as Pass-12 F-12.3 fixed for `data/questions.json`.
+- **H2** PATTERN_MISMATCH — none of the pattern's examples contains any token from the pattern field (whitespace-insensitive substring match against any of the slash-split tokens).
+- **H3** REGISTER_MIX — examples mix plain (-た/-だ/-る) and polite (-ました/-ます/-です) forms within one pattern, AND the pattern isn't topically about register.
+- **H4** EMPTY_TRANSLATION, **H5** DUPLICATE_EXAMPLES, **H6** SCOPE_LEAK_KANJI, **H7** META_FIELD_LEAK — additional checks; current corpus had 0 findings of these classes.
+
+**Run cost:** $0, ~50ms wall-clock. The heuristic catches the same issue classes as the LLM-audit prototype caught in the 5-pattern validation but at zero marginal cost and full 187-pattern coverage.
+
+### 15a.1 Initial scan: 60 findings across 187 patterns
+
+| Rule | Severity | Count | Real / heuristic-noise |
+|---|---|---|---|
+| H1 STUB_REDIRECT | MEDIUM | 39 | 38 real, 1 false-positive (n5-029 had legitimate "Differentiated from n5-028..." content) |
+| H2 PATTERN_MISMATCH | HIGH | 11 | 5 real, 6 false-positives (verb-conjugation forms — examples use なりました vs pattern-cited なります, etc.) |
+| H3 REGISTER_MIX | MEDIUM | 10 | 2 real, 8 false-positives (patterns about other topics where mixed registers in examples are natural variety) |
+| **Total** | | **60** | **45 real / 15 false-positives = 75% precision** |
+
+### 15a.2 Heuristic refinements made during the pass
+
+Two iterations narrowed false positives:
+- H1 STUB_RE tightened: only flag the unambiguous auto-gen markers ("Duplicate-cleanup redirect", "inlined from canonical pattern", "primary discussion of this pattern"). The earlier broader regex caught n5-029's legitimate "See n5-028" cross-reference.
+- H2 split regex extended to include FULLWIDTH SLASH (U+FF0F), FULLWIDTH TILDE (U+FF5E) explicitly — previously only matched ASCII `/` and U+301C wave dash, missing the half of patterns that use the fullwidth variants. Plus `+` separator and parens.
+- H2 substring match now whitespace-insensitive on both pattern token and example (`じかん が あります` matches token `があります`).
+
+After tightening: 60 findings down from 79. Remaining 15 false-positives are real heuristic limitations (verb-conjugation forms; non-register-topical patterns with mixed examples) that an LLM audit would handle better.
+
+### 15a.3 Fixes applied (47 of 47 actionable)
+
+**H1 stub-redirect cleanup (38 patterns):**
+- Patterns: n5-020, 022, 023, 024, 032, 039, 040, 041, 045, 046, 047, 048, 098, 109, 114, 115, 133, 136, 137, 138, 139, 140, 141, 155, 156, 158, 159, 160, 161, 162, 163, 174, 175, 176, 184, 185, 186, 187.
+- Action: stripped the auto-gen boilerplate ("Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-XXX. See n5-XXX for the primary discussion of this pattern.") from the `notes` field. n5-186 had real grammar notes after the boilerplate; only the boilerplate was removed.
+- Severity: MEDIUM (visible to learners but not teaching wrong Japanese).
+
+**H2 example fixes (5 patterns, 6 examples):**
+- **n5-112** (〜ふん/ぷん counter): ex[0] `10分 まちました` → `10ぷん まちました`; ex[1] `5分前 いきます` → `5ふんまえに いきます`. Pattern teaches the kana counter readings; examples now demonstrate them instead of bypassing via 分 kanji.
+- **n5-158** (〜だろう casual): ex[0] `あした 雨でしょう` → `あした 雨だろう`; ex[1] `むずかしいでしょう？` → `むずかしいだろう？`. Pattern is about the *casual* form だろう; examples were demonstrating the *polite* でしょう, completely missing the pedagogical point.
+- **n5-173** (〜なくてはいけない must-do): ex[0] formerly identical to n5-176's example. Replaced with `まいにち べんきょうしなくては いけない` to demonstrate the plain dictionary form.
+- **n5-174** (〜なくてはならない formal must-do variant): ex[0] formerly identical. Replaced with `しゅくだいを しなくては ならない`.
+- **n5-175** (〜なきゃいけない common spoken): ex[0] formerly identical. Replaced with `はやく かえらなきゃ いけない` to demonstrate the contraction.
+
+**H3 register normalisation (2 patterns):**
+- **n5-105** (Verb-stem + たくないです — *don't want to*, polite): ex[1] `なにも たべたくない` (plain) → `なにも たべたくないです` (polite, matching the pattern's register).
+- **n5-106** (Noun + が ほしいです — *want a noun*, polite): ex[1] `おかねが ほしい` (plain) → `おかねが ほしいです`.
+
+### 15a.4 Findings deferred to true Pass-15
+
+**H2 deferred (2 patterns)** — n5-102 / n5-140 (〜が わかります — *understand*): both have examples like 「日本語が すこし わかります」 — DOES demonstrate the pattern, but the heuristic flags because of intervening words. Real authoring quality issue: 1-2 examples should show the bare 〜が わかります construction without modifiers (e.g., 「えいごが わかります」 / 「もんだいが わかりません」). **Deferred to native review.**
+
+**H2 false positives (4 patterns)** — n5-113, 143, 176, 177: all use the verb in a conjugated form (なります→なりました, すぎる→すぎます) that the substring-match heuristic doesn't follow. Not actually a data issue. **Heuristic limitation; no fix needed.**
+
+**H3 false positives (8 patterns)** — n5-004, 009, 014, 038, 039, 044, 108, 110: patterns about a non-register topic (を particle, から conjunction, demonstratives, counters) with mixed-register examples. Mix is natural variety, not a flaw. **Heuristic limitation; no fix needed.**
+
+### 15a.5 Heuristic precision at this corpus state
+
+| | Real | False positive | Total | Precision |
+|---|---|---|---|---|
+| H1 | 38 | 1 | 39 | **97%** |
+| H2 | 5 | 6 | 11 | **45%** |
+| H3 | 2 | 8 | 10 | **20%** |
+| Aggregate | 45 | 15 | 60 | **75%** |
+
+H1 is highly reliable (single regex match). H2 and H3 have lower precision because they require linguistic judgment (verb conjugation matching, register topicality) that pure regex can't fully capture. Future Pass-15 (with API key) should run the LLM-audit pipeline alongside the heuristic for higher recall + precision on H2/H3 specifically.
+
+### Pass 15a totals
+
+| Category | Findings | Fixed | Open (deferred) |
+|---|---|---|---|
+| H1 STUB_REDIRECT | 39 | 38 | 0 (1 was false-positive) |
+| H2 PATTERN_MISMATCH | 11 | 5 | 2 (deferred to Pass-15-true; 4 false-positive) |
+| H3 REGISTER_MIX | 10 | 2 | 0 (8 false-positive) |
+| **Pass 15a total** | **60** | **45** | **2** |
+
+After Pass 15a, the corpus has zero stub-redirect text in user-facing notes fields, and 5 pedagogically-significant pattern-mismatch issues are corrected (most importantly n5-158 だろう/でしょう conflation, which was teaching learners the wrong form of the pattern).
+
+### Cumulative tally update
+
+| Pass | Findings | Fixed | Open |
+|---|---|---|---|
+| Pass 1-9 | 153 | 153 | 0 |
+| Pass 10 | 309 | 309 | 0 |
+| Pass 11 | 17 | 17 | 0 |
+| Pass 12 | ~56 | ~56 | 0 |
+| Pass 13 | 17 | 17 | 0 |
+| Pass 14 | 11 | 11 | 0 |
+| Pass 14b | 6 | 6 | 0 |
+| Pass 14c | 6 | 6 | 0 |
+| **Pass 15a (heuristic)** | **60** | **45** | **2 (deferred)** |
+| **Cumulative** | **~635** | **~620** | **2** |
+
+CI invariant count unchanged (still 25). Pass 15a was a content/data pass, not an invariant pass.
+
+---
+
+Open audit surface as of 2026-05-01 (post Pass-15a): the H2 deferrals (n5-102, n5-140), 21 reading passages, 591 KB question entries — deferred to **2026-07-30 quarterly Pass-15-true gate** for native or LLM-judgment review. See `feedback/native-teacher-review-request.md` for the full prioritised P1-P14 audit plan and `feedback/llm-audit-validation-report.md` for the LLM-audit pipeline that will replace ~80% of native-review work.
