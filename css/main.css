@@ -1475,7 +1475,7 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   }
   .cat-chip { flex-shrink: 0; }
 }
-.toc-category { scroll-margin-top: 56px; }  /* offset for sticky chip rail */
+.toc-category, .vocab-section { scroll-margin-top: 56px; }  /* offset for sticky chip rail */
 .cat-count { font-weight: 400; }
 .learn-tools-wrap {
   margin: 8px 0 16px;

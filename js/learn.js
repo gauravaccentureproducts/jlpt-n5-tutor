@@ -112,6 +112,15 @@ function renderVocabList(container, data) {
     if (!isNaN(na) && !isNaN(nb)) return na - nb;
     return a.localeCompare(b);
   });
+  const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  // Strip the leading "NN. " from chip labels so the chip rail scans clean.
+  const chipLabel = (k) => k.replace(/^\d+\.\s*/, '');
+  const jumpItems = sectionKeys.map(k => `
+    <button type="button" class="cat-chip" data-jump="vocab-${slugify(k)}">
+      <span class="cat-chip-label">${esc(chipLabel(k))}</span>
+      <span class="cat-chip-count">${bySection.get(k).length}</span>
+    </button>
+  `).join('');
   const sections = sectionKeys.map((key, idx) => {
     const items = bySection.get(key);
     const cards = items.map(v => `
@@ -124,7 +133,7 @@ function renderVocabList(container, data) {
     // First section open as a preview; the other 39 collapsed to avoid a wall of cards.
     const openAttr = idx === 0 ? 'open' : '';
     return `
-      <details class="vocab-section" ${openAttr}>
+      <details class="vocab-section" id="vocab-${slugify(key)}" ${openAttr}>
         <summary><strong>${esc(key)}</strong> <span class="muted small">(${items.length})</span></summary>
         <div class="vocab-grid">${cards}</div>
       </details>
@@ -134,10 +143,23 @@ function renderVocabList(container, data) {
     <article class="vocab-toc">
       <a class="back-link" href="#/learn">← Back to Learn</a>
       <h2>Vocabulary</h2>
-      <p class="muted">${entries.length} N5 words across ${sectionKeys.length} sections. Tap any card for the word's reading, meaning, and example sentences.</p>
+      <p class="page-lede">${entries.length} N5 words across ${sectionKeys.length} sections. Jump to a topic or scroll.</p>
+      <nav class="cat-jump" aria-label="Vocabulary section jump menu">
+        ${jumpItems}
+      </nav>
       ${sections}
     </article>
   `;
+
+  // Click chip -> open the target section + smooth-scroll to it.
+  container.querySelectorAll('[data-jump]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = container.querySelector(`#${btn.dataset.jump}`);
+      if (!target) return;
+      if (target.tagName === 'DETAILS') target.open = true;
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 }
 
 function renderVocabDetail(container, vocabData, grammarData, form) {
