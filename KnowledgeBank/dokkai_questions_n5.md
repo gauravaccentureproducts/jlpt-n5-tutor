@@ -1,6 +1,6 @@
 # JLPT N5 Dokkai (読解) Practice Questions
 
-100 questions covering the Dokkai (reading comprehension) section of the JLPT N5. The Dokkai section tests reading comprehension across short narrative passages, medium connected paragraphs, and information-retrieval texts (notices, menus, schedules).
+102 questions covering the Dokkai (reading comprehension) section of the JLPT N5. The Dokkai section tests reading comprehension across short narrative passages, medium connected paragraphs, and information-retrieval texts (notices, menus, schedules).
 
 ## Subtypes covered
 
@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | Mondai 4 | 内容理解 短文 (short passage) | ~80-150 chars | 1-2 questions per passage | 30 passages, 60 Qs |
 | Mondai 5 | 内容理解 中文 (medium passage) | ~250-300 chars | 2-3 questions per passage | 10 passages, 30 Qs |
-| Mondai 6 | 情報検索 (information retrieval) | notice / menu / schedule | 1-2 questions per item | 6 items, 10 Qs |
+| Mondai 6 | 情報検索 (information retrieval) | notice / menu / schedule | 2 questions per item | 6 items, 12 Qs |
 
 ## Notation rules
 
@@ -22,6 +22,14 @@
 
 Format and several passage themes are modeled on authentic samples from `learnjapaneseaz.com/jlpt/jlpt-n5` and the official `jlpt.jp` sample set. Original passages adapted to use only N5 vocabulary.
 
+## Engine display note
+
+For mock-test mode, the app's test engine MUST hide the `**Answer:**` line and rationale until the student commits an answer. The visible-by-default format here is for self-study reference; runtime test rendering is the engine's responsibility.
+
+## Numeral convention
+
+Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) and arabic numerals (1, 2, 100, 1000) - mirroring authentic JLPT papers, which use kanji numerals in narrative text and arabic numerals in prices, addresses, schedules, and time tables. This is intentional, not inconsistency.
+
 ---
 
 ## Mondai 4 - 内容理解 短文 (Short Passage Comprehension)
@@ -34,7 +42,9 @@ Format and several passage themes are modeled on authentic samples from `learnja
 
 #### Q1
 
-The blank should be filled with:
+（　　）に 入れる ことばは どれが いちばん よいですか。
+
+_The blank should be filled with:_
 
 1. 来ます
 2. 来ません
@@ -45,7 +55,7 @@ The blank should be filled with:
 
 #### Q2
 
-The writer is currently living in:
+ひっしゃは いま どこに すんでいますか。
 
 1. インド (India)
 2. 友だちの 家
@@ -60,7 +70,9 @@ The writer is currently living in:
 
 #### Q3
 
-How much money does the writer have left?
+おかねは いくら のこって いますか。
+
+_How much money does the writer have left?_
 
 1. 20えん
 2. 120えん
@@ -71,7 +83,9 @@ How much money does the writer have left?
 
 #### Q4
 
-Who did the writer buy these things for?
+書いた 人は だれの ために これを 買いましたか。
+
+_Who did the writer buy these things for?_
 
 1. 友だち
 2. お父さん
@@ -90,7 +104,9 @@ Who did the writer buy these things for?
 
 #### Q5
 
-What does Yamada-san ask Tanaka-san to bring?
+やまださんは たなかさんに 何を もって 来てと 言いましたか。
+
+_What does Yamada-san ask Tanaka-san to bring?_
 
 1. おかし
 2. のみもの
@@ -101,7 +117,9 @@ What does Yamada-san ask Tanaka-san to bring?
 
 #### Q6
 
-What time does the party start?
+パーティーは 何時に はじまりますか。
+
+_What time does the party start?_
 
 1. 一時
 2. 二時
@@ -112,29 +130,33 @@ What time does the party start?
 
 ### Passage 4 (Q7, Q8)
 
-> 私の しゅみは 本を よむ ことです。 一しゅうかんに 三さつ ぐらい よみます。 すきな 本は ぜんぶ 日本ごの 本です。 むずかしい 本も ありますが、 じしょを ひきながら ゆっくり よみます。 本やで 本を 買うのも すきですが、 図しょかんで かりる ことが おおいです。
+> 私の しゅみは 本を よむ ことです。 一しゅうかんに 三さつ よみます。 すきな 本は ぜんぶ 日本ごの 本です。 むずかしい 本も ありますが、 じしょを ひきながら ゆっくり よみます。 本やで 本を 買うのも すきですが、 図書館で かりる ことが おおいです。
 
 #### Q7
 
-How many books does the writer read in a week?
+書いた 人は 一しゅうかんに 本を 何さつ よみますか。
+
+_How many books does the writer read in a week?_
 
 1. 一さつ
 2. 二さつ
 3. 三さつ
 4. 四さつ
 
-**Answer: 3** - 一しゅうかんに三さつ.
+**Answer: 3** - 一しゅうかんに 三さつ よみます.
 
 #### Q8
 
-Where does the writer usually get books?
+書いた 人は ふつう どこで 本を 手に いれますか。
+
+_Where does the writer usually get books?_
 
 1. 本やで 買う
 2. 友だちから かりる
-3. 図しょかんで かりる
+3. 図書館で かりる
 4. 学校で かりる
 
-**Answer: 3** - 図しょかんでかりることがおおい.
+**Answer: 3** - 図書館でかりることがおおい.
 
 ### Passage 5 (Q9, Q10)
 
@@ -142,7 +164,7 @@ Where does the writer usually get books?
 
 #### Q9
 
-What will the writer do first?
+ひっしゃは さいしょに 何を しますか。
 
 1. ホテルに 行く
 2. ばんごはんを 食べる
@@ -153,7 +175,7 @@ What will the writer do first?
 
 #### Q10
 
-What will they eat for dinner?
+ばんごはんに 何を 食べますか。
 
 1. レストランの りょうり
 2. ホテルの りょうり
@@ -172,7 +194,9 @@ What will they eat for dinner?
 
 #### Q11
 
-What does Tanaka-san want Yamada-san to do?
+たなかさんは やまださんに 何を して と たのみましたか。
+
+_What does Tanaka-san want Yamada-san to do?_
 
 1. しゅくだいを 作って くれる
 2. 紙を きょうしつから とって くる
@@ -183,7 +207,9 @@ What does Tanaka-san want Yamada-san to do?
 
 #### Q12
 
-The locker number is:
+ロッカーの ばんごうは いくつですか。
+
+_The locker number is:_
 
 1. 五
 2. 六
@@ -198,7 +224,9 @@ The locker number is:
 
 #### Q13
 
-What does the writer do every morning?
+書いた 人は 毎あさ 何を しますか。
+
+_What does the writer do every morning?_
 
 1. いぬと さんぽする
 2. こうえんを さんぽする
@@ -209,7 +237,9 @@ What does the writer do every morning?
 
 #### Q14
 
-What is the dog like?
+いぬは どんな いぬですか。
+
+_What is the dog like?_
 
 1. 白くて、ちいさい
 2. 白くて、大きい
@@ -224,7 +254,9 @@ What is the dog like?
 
 #### Q15
 
-Who is making the cake?
+だれが ケーキを 作りますか。
+
+_Who is making the cake?_
 
 1. わたし
 2. 友だち
@@ -235,7 +267,9 @@ Who is making the cake?
 
 #### Q16
 
-What time does the party begin?
+パーティーは 何時に はじまりますか。
+
+_What time does the party begin?_
 
 1. 七時
 2. 七時 半
@@ -246,11 +280,13 @@ What time does the party begin?
 
 ### Passage 9 (Q17, Q18)
 
-> こんしゅう、 私は とても いそがしかったです。 月曜日と 火曜日は 学校で テストが ありました。 水曜日は 病院に 行きました。 木曜日と 金曜日は アルバイトを しました。 にちようびに ようやく やすめます。
+> こんしゅう、 私は とても いそがしかったです。 月曜日と 火曜日は 学校で テストが ありました。 水曜日は 病院に 行きました。 木曜日と 金曜日は アルバイトを しました。 にちようびに やっと やすめます。
 
 #### Q17
 
-Which day was the writer NOT busy?
+書いた 人は 何曜日に いそがしくなかったですか。
+
+_Which day was the writer NOT busy?_
 
 1. 月曜日
 2. 水曜日
@@ -261,7 +297,9 @@ Which day was the writer NOT busy?
 
 #### Q18
 
-What did the writer do on Wednesday?
+水曜日に 書いた 人は 何を しましたか。
+
+_What did the writer do on Wednesday?_
 
 1. テストを うけた
 2. 病院に 行った
@@ -280,7 +318,9 @@ What did the writer do on Wednesday?
 
 #### Q19
 
-What does Yamada-san want everyone to do?
+やまださんは みんなに 何を して と 言いましたか。
+
+_What does Yamada-san want everyone to do?_
 
 1. 山の しゃしんを とる
 2. やまだの いえに 来る
@@ -291,7 +331,9 @@ What does Yamada-san want everyone to do?
 
 #### Q20
 
-What should participants bring?
+みんなは 何を もって 来ますか。
+
+_What should participants bring?_
 
 1. ケーキ と コーヒー
 2. 弁当 と 水 と あたたかい ふく
@@ -306,7 +348,9 @@ What should participants bring?
 
 #### Q21
 
-Where does the writer's mother work?
+書いた 人の おかあさんは どこで はたらいて いますか。
+
+_Where does the writer's mother work?_
 
 1. 学校
 2. 病院
@@ -317,7 +361,9 @@ Where does the writer's mother work?
 
 #### Q22
 
-What do the writer's parents do on Sundays?
+書いた 人の りょうしんは 日よう日に 何を しますか。
+
+_What do the writer's parents do on Sundays?_
 
 1. はたらく
 2. 山に 行く
@@ -332,7 +378,9 @@ What do the writer's parents do on Sundays?
 
 #### Q23
 
-What was the weather like last night?
+きのうの よる、 てんきは どうでしたか。
+
+_What was the weather like last night?_
 
 1. はれ
 2. くもり
@@ -343,7 +391,9 @@ What was the weather like last night?
 
 #### Q24
 
-What will the writer do today?
+書いた 人は きょう 何を しますか。
+
+_What will the writer do today?_
 
 1. 家で ねる
 2. 学校に 行く
@@ -358,7 +408,9 @@ What will the writer do today?
 
 #### Q25
 
-What does the writer like?
+書いた 人は 何が すきですか。
+
+_What does the writer like?_
 
 1. アメリカの 国
 2. えいごの じゅぎょう
@@ -369,33 +421,39 @@ What does the writer like?
 
 #### Q26
 
-What does the writer want to be?
+書いた 人は 何に なりたいですか。
+
+_What does the writer want to be?_
 
 1. アメリカ人
 2. 学生
 3. 先生
-4. ていねいな 人
+4. いしゃ
 
 **Answer: 3** - 先生になりたい.
 
 ### Passage 14 (Q27, Q28)
 
-> たなかさんは 毎あさ 七時に おきて、 八時の 電車に のります。 しごとは 九時から はじまります。 家から かいしゃまで 一じかん ぐらい かかります。 ばんごはんは いつも かいしゃの ちかくの レストランで 食べます。 家に かえるのは 十時ごろです。
+> たなかさんは 毎あさ 七時に おきて、 八時の 電車に のります。 しごとは 九時から はじまります。 家から かいしゃまで 一時間 ぐらい かかります。 ばんごはんは いつも かいしゃの ちかくの レストランで 食べます。 家に かえるのは 十時ごろです。
 
 #### Q27
 
-How long does it take Tanaka-san to get to work?
+たなかさんは かいしゃまで どのぐらい かかりますか。
+
+_How long does it take Tanaka-san to get to work?_
 
 1. 三十分
 2. 四十五分
 3. 一時間
 4. 二時間
 
-**Answer: 3**.
+**Answer: 3** - passage says 「一時間ぐらい」.
 
 #### Q28
 
-Where does Tanaka-san eat dinner?
+たなかさんは どこで ばんごはんを 食べますか。
+
+_Where does Tanaka-san eat dinner?_
 
 1. 家
 2. かいしゃ
@@ -410,7 +468,9 @@ Where does Tanaka-san eat dinner?
 
 #### Q29
 
-How old is Shiro?
+シロは 何さいですか。
+
+_How old is Shiro?_
 
 1. 一さい
 2. 三さい
@@ -421,7 +481,9 @@ How old is Shiro?
 
 #### Q30
 
-Why is the dog called "Shiro"?
+どうして いぬの 名前は 「シロ」ですか。
+
+_Why is the dog called "Shiro"?_
 
 1. 大きいから
 2. 子どもが すきだから
@@ -436,7 +498,9 @@ Why is the dog called "Shiro"?
 
 #### Q31
 
-When does Yamada-san play piano alone?
+やまださんは いつ 一人で ピアノを ひきますか。
+
+_When does Yamada-san play piano alone?_
 
 1. あさ
 2. ひる
@@ -447,7 +511,9 @@ When does Yamada-san play piano alone?
 
 #### Q32
 
-Where is the concert this week?
+こんしゅうの コンサートは どこで ありますか。
+
+_Where is the concert this week?_
 
 1. 友だちの 家
 2. やまださんの 家
@@ -462,7 +528,9 @@ Where is the concert this week?
 
 #### Q33
 
-What time does the movie start?
+えいがは 何時に はじまりますか。
+
+_What time does the movie start?_
 
 1. 一時
 2. 二時
@@ -473,7 +541,9 @@ What time does the movie start?
 
 #### Q34
 
-What will the writer do AFTER the movie?
+えいがの あとで 書いた 人は 何を しますか。
+
+_What will the writer do AFTER the movie?_
 
 1. ひるごはんを 食べる
 2. 家に かえる
@@ -488,7 +558,9 @@ What will the writer do AFTER the movie?
 
 #### Q35
 
-Why is the writer's father good at Chinese?
+どうして 書いた 人の おとうさんは 中国語が じょうず ですか。
+
+_Why is the writer's father good at Chinese?_
 
 1. 父は 中国人 だから
 2. 大学で べんきょうしたから
@@ -499,7 +571,9 @@ Why is the writer's father good at Chinese?
 
 #### Q36
 
-How is the writer's Chinese?
+書いた 人の 中国語は どうですか。
+
+_How is the writer's Chinese?_
 
 1. とても じょうず
 2. すこし 上手
@@ -514,7 +588,9 @@ How is the writer's Chinese?
 
 #### Q37
 
-How often does the writer go to the pool?
+書いた 人は どのぐらい プールに 行きますか。
+
+_How often does the writer go to the pool?_
 
 1. 一しゅうかんに 一回
 2. 一しゅうかんに 二回
@@ -525,7 +601,9 @@ How often does the writer go to the pool?
 
 #### Q38
 
-When can the writer NOT use the pool?
+プールが つかえない 日は いつですか。
+
+_When can the writer NOT use the pool?_
 
 1. 月曜日
 2. 水曜日
@@ -540,7 +618,9 @@ When can the writer NOT use the pool?
 
 #### Q39
 
-What did Tanaka-san eat this morning?
+たなかさんは けさ 何を 食べましたか。
+
+_What did Tanaka-san eat this morning?_
 
 1. パン と ぎゅうにゅう
 2. パン と おちゃ
@@ -551,7 +631,9 @@ What did Tanaka-san eat this morning?
 
 #### Q40
 
-Why was breakfast different today?
+どうして きょうの 朝ごはんは いつもと ちがいましたか。
+
+_Why was breakfast different today?_
 
 1. ごはんが なかったから
 2. ぎゅうにゅうが きらいだから
@@ -566,7 +648,9 @@ Why was breakfast different today?
 
 #### Q41
 
-When is the friend's birthday?
+ともだちの たんじょうびは いつですか。
+
+_When is the friend's birthday?_
 
 1. 月曜日
 2. 火曜日
@@ -577,7 +661,9 @@ When is the friend's birthday?
 
 #### Q42
 
-Why doesn't the writer buy a big cake?
+どうして 書いた 人は 大きい ケーキを 買いませんか。
+
+_Why doesn't the writer buy a big cake?_
 
 1. ちいさい ほうが おいしいから
 2. 大きい ケーキは 高いから
@@ -588,11 +674,13 @@ Why doesn't the writer buy a big cake?
 
 ### Passage 22 (Q43, Q44)
 
-> 私の 妹は 来月、 大学に 入ります。 妹は 日本語を べんきょうしたいです。 私たちの 家は 大学から とおいですから、 妹は 大学の ちかくの アパートに ひっこします。 さびしくなりますが、 妹が がんばるのを おうえんします。
+> 私の 妹は 来年の 四月、 大学に 入ります。 妹は 日本語を べんきょうしたいです。 私たちの 家は 大学から とおいですから、 妹は 大学の ちかくの アパートに ひっこします。 さびしくなりますが、 妹が がんばるのを おうえんします。
 
 #### Q43
 
-What will the writer's sister study?
+書いた 人の 妹は 何を べんきょうしますか。
+
+_What will the writer's sister study?_
 
 1. えいご
 2. 中国語
@@ -603,7 +691,9 @@ What will the writer's sister study?
 
 #### Q44
 
-Why is the sister moving?
+どうして 妹は ひっこしますか。
+
+_Why is the sister moving?_
 
 1. 大学が とおいから
 2. 大学が ちかいから
@@ -618,7 +708,9 @@ Why is the sister moving?
 
 #### Q45
 
-What is the writer's hobby?
+書いた 人の しゅみは 何ですか。
+
+_What is the writer's hobby?_
 
 1. え を かく こと
 2. しゃしんを とる こと
@@ -629,7 +721,9 @@ What is the writer's hobby?
 
 #### Q46
 
-What does the writer photograph?
+書いた 人は 何の しゃしんを とりますか。
+
+_What does the writer photograph?_
 
 1. 友だち
 2. 家
@@ -640,11 +734,13 @@ What does the writer photograph?
 
 ### Passage 24 (Q47, Q48)
 
-> やまださんは あした 大さかに しゅっちょうします。 あさ 七時の しんかんせんに のります。 大さかから 東京に かえるのは あさっての よるです。 にもつは ちいさい かばんと スーツケースが 一つです。 あした 朝 はやいので、 きょうは はやく ねます。
+> やまださんは あした 大阪に しゅっちょうします。 あさ 七時の しんかんせんに のります。 大阪から 東京に かえるのは あさっての よるです。 にもつは ちいさい かばんと スーツケースが 一つです。 あした 朝 はやいので、 きょうは はやく ねます。
 
 #### Q47
 
-When does Yamada-san leave for Osaka?
+やまださんは いつ 大阪へ 出ますか。
+
+_When does Yamada-san leave for Osaka?_
 
 1. きょうの 朝
 2. きょうの よる
@@ -655,7 +751,9 @@ When does Yamada-san leave for Osaka?
 
 #### Q48
 
-When does Yamada-san return to Tokyo?
+やまださんは いつ とうきょうに かえりますか。
+
+_When does Yamada-san return to Tokyo?_
 
 1. あしたの 朝
 2. あしたの よる
@@ -670,7 +768,9 @@ When does Yamada-san return to Tokyo?
 
 #### Q49
 
-How does the father go to work?
+おとうさんは 何で かいしゃに 行きますか。
+
+_How does the father go to work?_
 
 1. くるま
 2. でんしゃ
@@ -681,7 +781,9 @@ How does the father go to work?
 
 #### Q50
 
-Why does the father say "I get tired"?
+どうして おとうさんは 「つかれる」と 言いますか。
+
+_Why does the father say "I get tired"?_
 
 1. しごとが むずかしいから
 2. でんしゃで 立って いるから
@@ -696,18 +798,22 @@ Why does the father say "I get tired"?
 
 #### Q51
 
-How long has the older brother been learning piano?
+あには 何さいから ピアノを ならって いますか。
 
-1. 一年
-2. 五年
-3. ５さいから (since age 5)
-4. ぜんぜん ならって いない
+_From what age has the older brother been learning piano?_
 
-**Answer: 3**.
+1. 三さいから
+2. 四さいから
+3. 五さいから
+4. 六さいから
+
+**Answer: 3** - passage says 「五さいから ピアノを ならって います」.
 
 #### Q52
 
-What is happening this week?
+こんしゅう 何が ありますか。
+
+_What is happening this week?_
 
 1. たんじょうびの パーティー
 2. 大学の コンサート
@@ -722,7 +828,9 @@ What is happening this week?
 
 #### Q53
 
-Where does Tanaka-san usually eat breakfast?
+たなかさんは ふつう どこで 朝ごはんを 食べますか。
+
+_Where does Tanaka-san usually eat breakfast?_
 
 1. 家
 2. かいしゃ
@@ -733,7 +841,9 @@ Where does Tanaka-san usually eat breakfast?
 
 #### Q54
 
-Why did Tanaka-san eat more lunch today?
+どうして たなかさんは きょう ひるごはんを たくさん 食べましたか。
+
+_Why did Tanaka-san eat more lunch today?_
 
 1. ひるごはんが おいしかったから
 2. パンが きらいだから
@@ -748,7 +858,9 @@ Why did Tanaka-san eat more lunch today?
 
 #### Q55
 
-What does John-san do now?
+じょんさんは いま 何を して いますか。
+
+_What does John-san do now?_
 
 1. 学校で べんきょうする
 2. 日本の かいしゃで はたらく
@@ -759,7 +871,9 @@ What does John-san do now?
 
 #### Q56
 
-How long has John-san been in Japan?
+じょんさんは 何年 日本に いますか。
+
+_How long has John-san been in Japan?_
 
 1. 一年
 2. 三年
@@ -774,7 +888,9 @@ How long has John-san been in Japan?
 
 #### Q57
 
-When did the cafe open?
+きっさてんは いつ できましたか。
+
+_When did the cafe open?_
 
 1. 一月
 2. 二月
@@ -785,7 +901,9 @@ When did the cafe open?
 
 #### Q58
 
-Why does the writer want to go again with friends?
+どうして 書いた 人は 友だちと もう一どに 行きたいですか。
+
+_Why does the writer want to go again with friends?_
 
 1. 友だちが すきだから
 2. コーヒーが おいしくて、ねだんも 安いから
@@ -800,7 +918,9 @@ Why does the writer want to go again with friends?
 
 #### Q59
 
-When was the hiking originally planned?
+はじめ、ハイキングは いつでしたか。
+
+_When was the hiking originally planned?_
 
 1. 木曜日
 2. 金曜日
@@ -811,7 +931,9 @@ When was the hiking originally planned?
 
 #### Q60
 
-Why was the hiking postponed?
+どうして ハイキングは 後の 日に なりましたか。
+
+_Why was the hiking postponed?_
 
 1. たなかさんが いそがしいから
 2. 雨が ふるから
@@ -832,7 +954,7 @@ Why was the hiking postponed?
 
 #### Q61
 
-How did the writer start learning Japanese?
+ひっしゃは どうして 日本語の べんきょうを はじめましたか。
 
 1. 大学で べんきょうした
 2. 子どもの とき、父から 教わった
@@ -843,7 +965,7 @@ How did the writer start learning Japanese?
 
 #### Q62
 
-When did the writer first visit Japan?
+ひっしゃは いつ 初めて 日本に 来ましたか。
 
 1. 子どもの とき
 2. 高校生の とき
@@ -854,7 +976,7 @@ When did the writer first visit Japan?
 
 #### Q63
 
-What is the writer's plan after graduating?
+ひっしゃは そつぎょうした 後、何を しますか。
 
 1. 大学いんに 入る
 2. 日本に すんで しごとを する
@@ -869,7 +991,7 @@ What is the writer's plan after graduating?
 
 #### Q64
 
-When did Yamada-san start learning piano?
+やまださんは いつ ピアノを はじめましたか。
 
 1. 二さい
 2. 五さい
@@ -880,7 +1002,7 @@ When did Yamada-san start learning piano?
 
 #### Q65
 
-What was Yamada-san's first concert experience like?
+やまださんの 初めての コンサートは どうでしたか。
 
 1. たのしかった
 2. つまらなかった
@@ -891,7 +1013,7 @@ What was Yamada-san's first concert experience like?
 
 #### Q66
 
-What does Yamada-san do now?
+やまださんは いま 何を していますか。
 
 1. ピアノを ならって いる
 2. ピアノを 教えて いる
@@ -906,7 +1028,7 @@ What does Yamada-san do now?
 
 #### Q67
 
-What is the writer's mother good at?
+ひっしゃの おかあさんは 何が じょうずですか。
 
 1. ピアノ
 2. りょうり
@@ -917,7 +1039,9 @@ What is the writer's mother good at?
 
 #### Q68
 
-What is special about the mother's curry?
+おかあさんの カレーは どんな ところが ちがいますか。
+
+_What is special about the mother's curry?_
 
 1. 高い
 2. ピリ辛い
@@ -928,7 +1052,9 @@ What is special about the mother's curry?
 
 #### Q69
 
-What does the writer plan to do?
+書いた 人は これから 何を する つもりですか。
+
+_What does the writer plan to do?_
 
 1. 母に カレーを 作って もらう
 2. レストランで カレーを 食べる
@@ -943,7 +1069,9 @@ What does the writer plan to do?
 
 #### Q70
 
-How long does it take from the writer's house to the station on foot?
+書いた 人の 家から 駅まで あるいて 何分 かかりますか。
+
+_How long does it take from the writer's house to the station on foot?_
 
 1. 五分
 2. 十分
@@ -954,7 +1082,9 @@ How long does it take from the writer's house to the station on foot?
 
 #### Q71
 
-What time did the writer leave home today?
+書いた 人は 今日 何時に 家を 出ましたか。
+
+_What time did the writer leave home today?_
 
 1. 七時 四十分
 2. 七時 四十五分
@@ -965,7 +1095,9 @@ What time did the writer leave home today?
 
 #### Q72
 
-Which train did the writer catch?
+書いた 人は どの でんしゃに のりましたか。
+
+_Which train did the writer catch?_
 
 1. 七時 五十分の でんしゃ
 2. 八時の でんしゃ
@@ -980,7 +1112,9 @@ Which train did the writer catch?
 
 #### Q73
 
-Where will the birthday party be?
+たんじょうびの パーティーは どこで ありますか。
+
+_Where will the birthday party be?_
 
 1. 私の 家
 2. 友だちの 家 (たなかさんの 家)
@@ -991,7 +1125,9 @@ Where will the birthday party be?
 
 #### Q74
 
-How many friends will come?
+何人の 友だちが 来ますか。
+
+_How many friends will come?_
 
 1. 五人
 2. 六人
@@ -1002,7 +1138,9 @@ How many friends will come?
 
 #### Q75
 
-What does the writer want for a birthday gift?
+書いた 人は たんじょうびに 何が ほしいですか。
+
+_What does the writer want for a birthday gift?_
 
 1. 何も いらない
 2. ふるい カメラ
@@ -1013,11 +1151,13 @@ What does the writer want for a birthday gift?
 
 ### Passage F (Q76-Q78)
 
-> 日本で いちばん 高い 山は ふじさんです。 三七七六メートル あります。 ふじさんは とても きれいですから、 たくさんの 人が 見に 行きます。 のぼる ことも できますが、 のぼるのは 七月と 八月の 二か月 だけです。 ほかの 月は ゆきが おおいですから、 のぼれません。 私は こんねんの 八月、 はじめて ふじさんに のぼりました。 とても つかれましたが、 上から 見た けしきは とても きれいでした。
+> 日本で いちばん 高い 山は ふじさんです。 三七七六メートル あります。 ふじさんは とても きれいですから、 たくさんの 人が 見に 行きます。 のぼる ことも できますが、 のぼるのは 七月と 八月の 二か月 だけです。 ほかの 月は ゆきが おおいですから、 のぼれません。 私は ことしの 八月、 はじめて ふじさんに のぼりました。 とても つかれましたが、 上から 見た けしきは とても きれいでした。
 
 #### Q76
 
-How many months can people climb Mt. Fuji?
+何か月 ふじさんに のぼる ことが できますか。
+
+_How many months can people climb Mt. Fuji?_
 
 1. 一か月
 2. 二か月
@@ -1028,7 +1168,9 @@ How many months can people climb Mt. Fuji?
 
 #### Q77
 
-When did the writer climb Mt. Fuji?
+書いた 人は いつ ふじさんに のぼりましたか。
+
+_When did the writer climb Mt. Fuji?_
 
 1. 七月
 2. 八月
@@ -1039,7 +1181,9 @@ When did the writer climb Mt. Fuji?
 
 #### Q78
 
-How was the experience?
+けいけんは どうでしたか。
+
+_How was the experience?_
 
 1. たのしくて、簡単だった
 2. つまらなかった
@@ -1054,7 +1198,9 @@ How was the experience?
 
 #### Q79
 
-What time will Tanaka-san meet friends?
+たなかさんは 何時に 友だちと あいますか。
+
+_What time will Tanaka-san meet friends?_
 
 1. 五時
 2. 六時
@@ -1065,7 +1211,9 @@ What time will Tanaka-san meet friends?
 
 #### Q80
 
-How long does it take to get to the sea?
+うみまで 何分 かかりますか。
+
+_How long does it take to get to the sea?_
 
 1. 三十分
 2. 一時間
@@ -1076,7 +1224,9 @@ How long does it take to get to the sea?
 
 #### Q81
 
-Where will they have lunch?
+ひるごはんは どこで 食べますか。
+
+_Where will they have lunch?_
 
 1. 駅の ちかく
 2. うみの ちかくの レストラン
@@ -1091,7 +1241,9 @@ Where will they have lunch?
 
 #### Q82
 
-How old is the writer's older brother now?
+書いた 人の あには いま 何さいですか。
+
+_How old is the writer's older brother now?_
 
 1. 二十さい
 2. 二十五さい
@@ -1102,18 +1254,22 @@ How old is the writer's older brother now?
 
 #### Q83
 
-What was the older brother's wife's job?
+あにの おくさんの しごとは 何でしたか。
 
-1. かいしゃいん
-2. いしゃ
-3. 学校の 先生
-4. ピアノの 先生
+_What was the older brother's wife's job?_
 
-**Answer: 3**.
+1. かいしゃいんでした
+2. いしゃでした
+3. 学校の 先生でした
+4. ピアノの 先生でした
+
+**Answer: 3** - passage uses past tense でした; answer matches.
 
 #### Q84
 
-What will happen next month?
+来月 何が ありますか。
+
+_What will happen next month?_
 
 1. あにが けっこんする
 2. 子どもが 生まれる
@@ -1128,7 +1284,9 @@ What will happen next month?
 
 #### Q85
 
-Why doesn't the writer have a cat?
+どうして 書いた 人の 家に ねこは いませんか。
+
+_Why doesn't the writer have a cat?_
 
 1. ねこが きらいだから
 2. 父が 「よわいから」と 言ったから
@@ -1139,18 +1297,22 @@ Why doesn't the writer have a cat?
 
 #### Q86
 
-How many cats does Tanaka-san's family have?
+たなかさんの 家には ねこが 何びき いますか。
 
-1. 一ぴき
-2. 二ひき
-3. 三びき
-4. 四ひき
+_How many cats does Tanaka-san's family have?_
 
-**Answer: 3**.
+1. いっぴき
+2. にひき
+3. さんびき
+4. よんひき
+
+**Answer: 3** - passage says ねこが 三びき います (three cats).
 
 #### Q87
 
-What is the brown cat's name?
+ちゃいろの ねこの 名前は 何ですか。
+
+_What is the brown cat's name?_
 
 1. クロ
 2. シロ
@@ -1161,11 +1323,13 @@ What is the brown cat's name?
 
 ### Passage J (Q88-Q90)
 
-> 私の 妹は ちいさい ときから 本を 読むのが すきでした。 まいばん ねる まえに、 一じかん ぐらい 本を 読みます。 妹の へやには 本が いっぱい あります。 妹は とくに 子どもの 本が すきです。 大きく なってからも、 子どもの 本を よく 読みます。 「子どもの 本は きれいで、 やさしくて、 たのしい」と 言って います。 来月、 妹は 子どもの 本を 書きはじめる つもりです。 きっと いい 本に なると 思います。
+> 私の 妹は ちいさい ときから 本を 読むのが すきでした。 まいばん ねる まえに、 一じかん ぐらい 本を 読みます。 妹の へやには 本が いっぱい あります。 妹は とくに 子ども向けの 本が すきです。 大きく なってからも、 子ども向けの 本を よく 読みます。 「子ども向けの 本は きれいで、 やさしくて、 たのしい」と 言って います。 来月、 妹は 子ども向けの 本を 書きはじめる つもりです。 きっと いい 本に なると 思います。
 
 #### Q88
 
-When does the writer's sister read books?
+書いた 人の 妹は いつ 本を よみますか。
+
+_When does the writer's sister read books?_
 
 1. 朝
 2. ひる
@@ -1176,10 +1340,12 @@ When does the writer's sister read books?
 
 #### Q89
 
-What kind of books does she like best?
+妹は どんな 本が いちばん すきですか。
+
+_What kind of books does she like best?_
 
 1. むずかしい 本
-2. 子どもの 本
+2. 子ども向けの 本
 3. しんぶん
 4. ざっし
 
@@ -1187,10 +1353,12 @@ What kind of books does she like best?
 
 #### Q90
 
-What will she do next month?
+妹は 来月 何を しますか。
+
+_What will she do next month?_
 
 1. 大学に 入る
-2. 子どもの 本を 書きはじめる
+2. 子ども向けの 本を 書きはじめる
 3. ひっこしする
 4. 学校で 本を 教える
 
@@ -1200,7 +1368,7 @@ What will she do next month?
 
 ## Mondai 6 - 情報検索 (Information Retrieval)
 
-6 information items (notice / menu / schedule / map). 10 questions total.
+6 information items (notice / menu / schedule / map). 2 questions per item, 12 questions total.
 
 ### Item 1 (Q91, Q92): こうえんの あんない
 
@@ -1215,7 +1383,9 @@ What will she do next month?
 
 #### Q91
 
-A child wants to swim in the pool. How much will it cost?
+子どもが プールで およぐと いくらに なりますか。
+
+_A child wants to swim in the pool. How much will it cost?_
 
 1. 200円
 2. 300円
@@ -1226,7 +1396,9 @@ A child wants to swim in the pool. How much will it cost?
 
 #### Q92
 
-What activity requires a reservation?
+よやくが いる ものは どれですか。
+
+_What activity requires a reservation?_
 
 1. プール
 2. テニス
@@ -1253,7 +1425,9 @@ What activity requires a reservation?
 
 #### Q93
 
-When can students attend the class?
+じゅぎょうは いつ ありますか。
+
+_When can students attend the class?_
 
 1. 月よう日 と 火よう日
 2. 月よう日 と 水よう日
@@ -1264,7 +1438,9 @@ When can students attend the class?
 
 #### Q94
 
-Who CANNOT join this class?
+この きょうしつに 入れない 人は どれですか。
+
+_Who CANNOT join this class?_
 
 1. かいしゃいん
 2. しゅふ (housewife)
@@ -1288,7 +1464,9 @@ Who CANNOT join this class?
 
 #### Q95
 
-Tanaka-san orders curry with a drink at 12:30pm. How much does Tanaka-san pay?
+たなかさんは 12:30に カレーと のみものを たのみました。 いくら はらいますか。
+
+_Tanaka-san orders curry with a drink at 12:30pm. How much does Tanaka-san pay?_
 
 1. 700円
 2. 800円
@@ -1299,7 +1477,9 @@ Tanaka-san orders curry with a drink at 12:30pm. How much does Tanaka-san pay?
 
 #### Q96
 
-Which set comes with both a drink and a salad?
+のみものと サラダが つく セットは どれですか。
+
+_Which set comes with both a drink and a salad?_
 
 1. カレー
 2. ラーメン
@@ -1322,7 +1502,9 @@ Which set comes with both a drink and a salad?
 
 #### Q97
 
-The writer wants to arrive at the park by 9:30 on Monday. Which bus should they take?
+月よう日、 9:30まで に こうえんに つきたいです。 どの バスに のれば いいですか。
+
+_The writer wants to arrive at the park by 9:30 on Monday. Which bus should they take?_
 
 1. 7:00 の バス
 2. 8:30 の バス
@@ -1333,7 +1515,9 @@ The writer wants to arrive at the park by 9:30 on Monday. Which bus should they 
 
 #### Q98
 
-On Sunday morning, how often do buses run?
+日よう日の 朝、 バスは どのぐらいの 時間に 一本 ありますか。
+
+_On Sunday morning, how often do buses run?_
 
 1. 三十分に 一本
 2. 一時間に 一本
@@ -1342,7 +1526,7 @@ On Sunday morning, how often do buses run?
 
 **Answer: 2** - 8:00, 9:00, 10:00 = hourly.
 
-### Item 5 (Q99): びょういんの あんない
+### Item 5 (Q99, Q100): びょういんの あんない
 
 > こころ びょういん
 >
@@ -1356,7 +1540,9 @@ On Sunday morning, how often do buses run?
 
 #### Q99
 
-What time is the dentist (しか) open on Wednesday?
+水曜日に しかは 何時から 何時まで あいて いますか。
+
+_What time is the dentist (しか) open on Wednesday?_
 
 1. 9:00 から 12:00 まで
 2. 14:00 から 19:00 まで
@@ -1365,7 +1551,20 @@ What time is the dentist (しか) open on Wednesday?
 
 **Answer: 2** - しか on 月、水、金 14:00-19:00.
 
-### Item 6 (Q100): 学校の あんない
+#### Q100
+
+みみの かに 行きたいです。 何曜日に 行きますか。
+
+_A patient needs to see an ear doctor (みみの か). Which day can they go?_
+
+1. 月曜日
+2. 水曜日
+3. 木曜日
+4. 土曜日
+
+**Answer: 3** - みみの か opens 火、木; only 木曜日 is in the options.
+
+### Item 6 (Q101, Q102): 学校の あんない
 
 > ABC日本ご学校
 >
@@ -1379,11 +1578,13 @@ What time is the dentist (しか) open on Wednesday?
 >
 > どようびと 日よう日は 学校が やすみです。
 >
-> やすみの 日に 図しょかんを つかいたい 人は、 先生に 聞いて ください。
+> やすみの 日に 図書館を つかいたい 人は、 先生に 言って ください。
 
-#### Q100
+#### Q101
 
-How long is the lunch break?
+ひるの きゅうけいは どのぐらい ですか。
+
+_How long is the lunch break?_
 
 1. 三十分
 2. 一時間
@@ -1391,6 +1592,19 @@ How long is the lunch break?
 4. 二時間
 
 **Answer: 2** - 12:00 to 13:00.
+
+#### Q102
+
+日よう日に 図書館を つかいたい とき、 どう しますか。
+
+_A student wants to use the library on Sunday. What should they do?_
+
+1. 学校に 来て 図書館を つかう
+2. 先生に 言う
+3. 土ようびに 来る
+4. 図書館は つかえない
+
+**Answer: 2** - notice says tell the teacher in advance (give notice / request use).
 
 ---
 

@@ -29,8 +29,8 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 私 (わたし) - I, me
 - 私たち (わたしたち) - we
 - あなた - you
-- かれ - he, boyfriend
-- かのじょ - she, girlfriend
+- かれ - he, him (boyfriend - more advanced sense)
+- かのじょ - she, her (girlfriend - more advanced sense)
 - かた - person (polite)
 - 人 (ひと) - person
 - みなさん - everyone (polite)
@@ -267,7 +267,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - きょねん - last year
 - 今年 (ことし) - this year
 - 来年 (らいねん) - next year
-- 毎年 (まいとし / まいねん) - every year
+- 毎年 (まいとし / まいねん) - every year (まいとし is more common in conversation; まいねん in formal/written contexts)
 - おととし - year before last
 - さらいねん - year after next **[Ext]**
 - たんじょうび - birthday
@@ -284,7 +284,8 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - あまり - not very (with negative)
 - ぜんぜん - not at all (with negative)
 - すぐ - soon, immediately
-- もう - already, soon, more
+- もう - already (with affirmative); anymore (with negative); more (as in もう一つ)
+- もうすぐ - soon, before long
 - まだ - still, not yet
 - はじめて - for the first time
 - さいしょ - first, beginning
@@ -592,7 +593,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - こたえ - answer
 - いみ - meaning
 - ことば - word, language
-- じ - character, letter
+- じ - character (writing), letter (of an alphabet)
 - かんじ - kanji, Chinese characters
 - かな - kana
 - ひらがな - hiragana
@@ -691,6 +692,8 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 
 ## 27. Verbs - Group 1 (う-verbs)
 
+> **Group-1 ru-verb exceptions:** 入る, 帰る, 走る, 知る, 切る, and 要る look like Group 2 verbs (they end in -iる or -eる) but are actually Group 1. They are the standard "Group-1 ru-verb" exceptions tested at N5 and are flagged in this list. Memorize these six.
+
 - 会う (あう) - to meet
 - 言う (いう) - to say
 - 行く (いく) - to go
@@ -699,19 +702,19 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 買う (かう) - to buy
 - 書く (かく) - to write
 - 聞く (きく) - to listen, to ask
-- きる - to cut
+- きる - to cut (Group 1 exception - looks like Group 2)
 - つくる - to make
-- しる - to know
+- しる - to know (Group 1 exception - looks like Group 2)
 - すむ - to live (reside)
 - 立つ (たつ) - to stand
 - とる - to take, to pick up (general)
 - とる - to take (a photo or video) - homophone of the above; uses a different kanji (not in N5 syllabus); semantically a specialization of "take"
 - なく - to cry (animals)
 - 飲む (のむ) - to drink
-- 入る (はいる) - to enter
+- 入る (はいる) - to enter (Group 1 exception - looks like Group 2)
 - はく - to put on (lower body)
 - 話す (はなす) - to speak
-- はしる - to run
+- はしる - to run (Group 1 exception - looks like Group 2)
 - はたらく - to work
 - まつ - to wait
 - もつ - to hold, to have
@@ -721,7 +724,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 分かる (わかる) - to understand
 - おわる - to end
 - はじまる - to begin (intransitive)
-- かえる - to return home
+- かえる - to return home (Group 1 exception - looks like Group 2)
 - うる - to sell
 - おす - to push
 - およぐ - to swim
@@ -821,7 +824,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 
 - ある - to exist (inanimate)
 - いる - to exist (animate) (also in §28 - listed here for thematic completeness with other existence/possession verbs)
-- いる - to need (homophone of the existence いる; this one is godan / Group 1)
+- いる - to need (Group 1 exception - looks like Group 2; homophone of existence-いる which is Group 2)
 - ござる / ございます - to be (very polite)
 - やる - to give (down / casual)
 - あげる - to give
@@ -1027,7 +1030,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - おねがいします - please
 - いただきます - said before eating
 - ごちそうさまでした - said after eating **[Cul]**
-- いってきます - I'm leaving (home) **[Cul]**
+- いってきます - I'm off (and will return) **[Cul]**
 - いってらっしゃい - see you / take care **[Cul]**
 - ただいま - I'm home **[Cul]**
 - おかえりなさい - welcome back **[Cul]**
@@ -1077,6 +1080,8 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - おゆ - hot water
 - おふろ - bath (also in §13)
 - シャワー - shower
+> **Legacy items note:** The items below tagged **[Cul]** (マッチ, フィルム, レコード, テープレコーダー, はいざら) are largely obsolete in modern Japan but appear in some older N5 study sources. Recognize them; do not prioritize.
+
 - マッチ - match (lighting) **[Cul]**
 - たばこ - cigarette
 - はいざら - ashtray **[Cul]**

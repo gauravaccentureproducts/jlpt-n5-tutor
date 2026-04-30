@@ -79,9 +79,32 @@ def extract_kanji_readings(md_path: Path) -> dict[str, dict]:
         if not line.strip() or line.startswith("##"):
             current = None
 
-    # Pick a primary reading per kanji.
+    # Pick a primary reading per kanji. The default "first kun, fall back to
+    # first on" heuristic produces wrong results for most N5 kanji whose
+    # context-most-common reading is the on-yomi (counters, time/date words,
+    # compounds). Pass-10 reference table from
+    # `feedback/ui-testing-plan.md` §12.1 X-6.9 lists the N5-correct primaries
+    # for 35 such kanji - those overrides win. Any kanji not in the override
+    # falls back to the kun-first heuristic.
+    PASS10_PRIMARY_OVERRIDES = {
+        "一": "いち", "二": "に",   "三": "さん", "四": "よん", "五": "ご",
+        "六": "ろく", "七": "しち", "八": "はち", "九": "きゅう","十": "じゅう",
+        "千": "せん", "本": "ほん", "日": "にち", "時": "じ",   "分": "ふん",
+        "円": "えん", "月": "がつ", "学": "がく", "生": "せい", "先": "せん",
+        "半": "はん", "番": "ばん", "国": "こく", "後": "あと", "会": "かい",
+        "車": "しゃ", "高": "こう", "長": "ちょう","安": "あん", "新": "しん",
+        "中": "ちゅう","外": "がい", "東": "とう", "年": "ねん", "人": "にん",
+    }
     for kanji, e in entries.items():
-        e["primary"] = (e["kun"] or e["on"] or [""])[0]
+        override = PASS10_PRIMARY_OVERRIDES.get(kanji)
+        if override:
+            # Make sure the override is in the on/kun pool; if not, append to on
+            # so the schema stays consistent.
+            if override not in (e["on"] + e["kun"]):
+                e["on"].append(override)
+            e["primary"] = override
+        else:
+            e["primary"] = (e["kun"] or e["on"] or [""])[0]
     return entries
 
 
@@ -104,7 +127,12 @@ def extract_kanji_corpus(md_path: Path) -> list[dict]:
     meanings = ""
     for raw in text.splitlines():
         line = raw.rstrip()
-        m = re.match(r"^\s*-\s+\*\*([一-鿿])\*\*\s*$", line)
+        # Tolerate trailing tags like `**[Ext]**` after the kanji header.
+        # Pre-fix bug: the strict `\s*$` end-anchor prevented `[Ext]`-tagged
+        # entries (員, 号, 社, 私) from being recognized as new entries; their
+        # field lines then contaminated the previous entry. See verification.md
+        # Pass-13 F-13.1/F-13.2.
+        m = re.match(r"^\s*-\s+\*\*([一-鿿])\*\*", line)
         if m:
             if current:
                 out.append(current)
@@ -128,18 +156,41 @@ def extract_kanji_corpus(md_path: Path) -> list[dict]:
         if kun_m:
             raws = [r.strip() for r in kun_m.group(1).split(",")]
             cleaned = []
+            seen = set()
             for r in raws:
                 if not r or r == "-":
                     continue
+                # Strip okurigana parentheses to get the bare reading.
                 core = re.sub(r"\(.*?\)", "", r).strip()
-                if core:
+                if core and core not in seen:
+                    seen.add(core)
                     cleaned.append(core)
             current["kun"] = cleaned
             continue
         mn_m = re.match(r"^\s*-\s*Meaning\s*:\s*(.+)$", line)
         if mn_m:
+            # Strip ALL parens (including nested) by repeatedly applying the
+            # innermost match until none remain. Pre-fix bug (Pass 11):
+            # `meaning: above (のぼ(る) "climb" is N4+; standard form is 登る)`
+            # has nested parens; a single regex pass left
+            # `above  "climb" is N4+; standard form is 登る)` and the trailing
+            # commentary survived as fake "meanings".
+            mtext = mn_m.group(1)
+            prev = None
+            while prev != mtext:
+                prev = mtext
+                mtext = re.sub(r"\([^()]*\)", " ", mtext)
+            # Drop any stray closing parens left over from malformed entries.
+            mtext = mtext.replace(")", "").replace("(", "").strip()
+            # Strip trailing dash-prefixed authoring clause like
+            # " - primary N5 use is in compounds...".
+            mtext = re.split(r"\s+-\s+", mtext, maxsplit=1)[0].strip()
+            # Drop entries that smell like leftover annotations (contain
+            # "is N4+", quoted hints, or stray English author notes).
+            BAD_MEANING_MARKERS = ("is N4+", "is N4 +", "standard form", "primary N5 use")
             current["meanings"] = [
-                p.strip() for p in re.split(r"[/,;]", mn_m.group(1)) if p.strip()
+                p.strip() for p in re.split(r"[/,;]", mtext)
+                if p.strip() and not any(b in p for b in BAD_MEANING_MARKERS)
             ]
         # End of entry on blank line or new heading
         if not line.strip() or line.startswith("##"):
@@ -203,6 +254,11 @@ def extract_vocab_corpus(md_path: Path) -> list[dict]:
         form = m.group("form").strip()
         reading = (m.group("reading") or "").strip() or None
         gloss = m.group("gloss").strip()
+        # Strip catalog tag markers like **[Ext]** / **[Cul]** / **[Adv]** so
+        # they don't leak into the user-facing gloss. The tags are author-side
+        # metadata for scope tracking, not translations. Pass-11 finding C-5.
+        gloss = re.sub(r"\s*\*\*\[(?:Ext|Cul|Adv)\]\*\*\s*$", "", gloss).strip()
+        gloss = re.sub(r"\s*\*\*\[(?:Ext|Cul|Adv)\]\*\*\s*", " ", gloss).strip()
         if not form:
             continue
         # Require Japanese in the form

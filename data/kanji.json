@@ -22,7 +22,6 @@
         "に"
       ],
       "kun": [
-        "ふた",
         "ふた"
       ],
       "meanings": [
@@ -97,7 +96,6 @@
         "しち"
       ],
       "kun": [
-        "なな",
         "なな",
         "なの"
       ],
@@ -183,8 +181,7 @@
       "id": "n5.kanji.万",
       "glyph": "万",
       "on": [
-        "まん",
-        "ばん"
+        "まん"
       ],
       "kun": [],
       "meanings": [
@@ -198,13 +195,9 @@
       "on": [
         "えん"
       ],
-      "kun": [
-        "まる"
-      ],
+      "kun": [],
       "meanings": [
-        "yen",
-        "circle",
-        "round"
+        "yen"
       ],
       "stroke_order_svg": "svg/kanji/円.svg"
     },
@@ -375,8 +368,6 @@
         "ぶ"
       ],
       "kun": [
-        "わ",
-        "わ",
         "わ"
       ],
       "meanings": [
@@ -404,8 +395,7 @@
       "id": "n5.kanji.今",
       "glyph": "今",
       "on": [
-        "こん",
-        "きん"
+        "こん"
       ],
       "kun": [
         "いま"
@@ -599,10 +589,82 @@
       ],
       "meanings": [
         "life",
-        "birth (primary N5 use: in compounds like 学生",
-        "先生)"
+        "birth"
       ],
       "stroke_order_svg": "svg/kanji/生.svg"
+    },
+    {
+      "id": "n5.kanji.手",
+      "glyph": "手",
+      "on": [
+        "しゅ"
+      ],
+      "kun": [
+        "て"
+      ],
+      "meanings": [
+        "hand"
+      ],
+      "stroke_order_svg": "svg/kanji/手.svg"
+    },
+    {
+      "id": "n5.kanji.足",
+      "glyph": "足",
+      "on": [
+        "そく"
+      ],
+      "kun": [
+        "あし"
+      ],
+      "meanings": [
+        "foot",
+        "leg"
+      ],
+      "stroke_order_svg": "svg/kanji/足.svg"
+    },
+    {
+      "id": "n5.kanji.目",
+      "glyph": "目",
+      "on": [
+        "もく"
+      ],
+      "kun": [
+        "め"
+      ],
+      "meanings": [
+        "eye"
+      ],
+      "stroke_order_svg": "svg/kanji/目.svg"
+    },
+    {
+      "id": "n5.kanji.口",
+      "glyph": "口",
+      "on": [
+        "こう"
+      ],
+      "kun": [
+        "くち"
+      ],
+      "meanings": [
+        "mouth"
+      ],
+      "stroke_order_svg": "svg/kanji/口.svg"
+    },
+    {
+      "id": "n5.kanji.力",
+      "glyph": "力",
+      "on": [
+        "りょく",
+        "りき"
+      ],
+      "kun": [
+        "ちから"
+      ],
+      "meanings": [
+        "power",
+        "strength"
+      ],
+      "stroke_order_svg": "svg/kanji/力.svg"
     },
     {
       "id": "n5.kanji.学",
@@ -680,16 +742,42 @@
       "id": "n5.kanji.会",
       "glyph": "会",
       "on": [
+        "かい",
+        "え"
+      ],
+      "kun": [
+        "あ"
+      ],
+      "meanings": [
+        "meeting",
+        "association"
+      ],
+      "stroke_order_svg": "svg/kanji/会.svg"
+    },
+    {
+      "id": "n5.kanji.社",
+      "glyph": "社",
+      "on": [
+        "しゃ"
+      ],
+      "kun": [],
+      "meanings": [
+        "company"
+      ],
+      "stroke_order_svg": "svg/kanji/社.svg"
+    },
+    {
+      "id": "n5.kanji.員",
+      "glyph": "員",
+      "on": [
         "いん"
       ],
       "kun": [],
       "meanings": [
         "member",
-        "staff (primary N5 use: in 会社員",
-        "駅員",
-        "店員)"
+        "staff"
       ],
-      "stroke_order_svg": "svg/kanji/会.svg"
+      "stroke_order_svg": "svg/kanji/員.svg"
     },
     {
       "id": "n5.kanji.大",
@@ -743,14 +831,11 @@
       "id": "n5.kanji.上",
       "glyph": "上",
       "on": [
-        "じょう",
-        "しょう"
+        "じょう"
       ],
       "kun": [
         "うえ",
-        "うわ-",
-        "あ",
-        "のぼ"
+        "あ"
       ],
       "meanings": [
         "up",
@@ -767,10 +852,7 @@
       ],
       "kun": [
         "した",
-        "しも",
-        "さ",
-        "くだ",
-        "お"
+        "さ"
       ],
       "meanings": [
         "down",
@@ -844,13 +926,10 @@
       "id": "n5.kanji.外",
       "glyph": "外",
       "on": [
-        "がい",
-        "げ"
+        "がい"
       ],
       "kun": [
-        "そと",
-        "ほか",
-        "はず"
+        "そと"
       ],
       "meanings": [
         "outside"
@@ -1156,8 +1235,6 @@
         "けん"
       ],
       "kun": [
-        "み",
-        "み",
         "み"
       ],
       "meanings": [
@@ -1174,7 +1251,6 @@
         "もん"
       ],
       "kun": [
-        "き",
         "き"
       ],
       "meanings": [
@@ -1289,8 +1365,7 @@
       ],
       "kun": [
         "い",
-        "はい",
-        "い"
+        "はい"
       ],
       "meanings": [
         "enter",
@@ -1306,7 +1381,6 @@
         "りゅう"
       ],
       "kun": [
-        "た",
         "た"
       ],
       "meanings": [
@@ -1321,7 +1395,6 @@
         "きゅう"
       ],
       "kun": [
-        "やす",
         "やす"
       ],
       "meanings": [
@@ -1368,7 +1441,6 @@
         "こう"
       ],
       "kun": [
-        "たか",
         "たか"
       ],
       "meanings": [
@@ -1420,7 +1492,7 @@
         "ふる"
       ],
       "meanings": [
-        "old (not for people)"
+        "old"
       ],
       "stroke_order_svg": "svg/kanji/古.svg"
     },
@@ -1448,7 +1520,6 @@
       ],
       "kun": [
         "しろ",
-        "しろ",
         "しら-"
       ],
       "meanings": [
@@ -1475,14 +1546,39 @@
       "id": "n5.kanji.番",
       "glyph": "番",
       "on": [
+        "ばん"
+      ],
+      "kun": [],
+      "meanings": [
+        "number",
+        "turn"
+      ],
+      "stroke_order_svg": "svg/kanji/番.svg"
+    },
+    {
+      "id": "n5.kanji.号",
+      "glyph": "号",
+      "on": [
         "ごう"
       ],
       "kun": [],
       "meanings": [
-        "number (primary N5 use: in 電話番号",
-        "番号)"
+        "number"
       ],
-      "stroke_order_svg": "svg/kanji/番.svg"
+      "stroke_order_svg": "svg/kanji/号.svg"
+    },
+    {
+      "id": "n5.kanji.私",
+      "glyph": "私",
+      "on": [],
+      "kun": [
+        "わたし"
+      ],
+      "meanings": [
+        "I",
+        "me"
+      ],
+      "stroke_order_svg": "svg/kanji/私.svg"
     }
   ]
 }

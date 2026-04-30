@@ -125,10 +125,11 @@
           "furigana": []
         },
         {
-          "ja": "にくは たべません。",
+          "ja": "コーヒーは 飲みますが、にくは たべません。",
           "form": "negative",
-          "translation_en": "I don't eat meat.",
-          "furigana": []
+          "translation_en": "I drink coffee, but I do not eat meat. (contrastive は: marks the contrast between two topics)",
+          "furigana": [],
+          "note": "Contrastive use of は - distinct from topic-marker は"
         },
         {
           "ja": "あなたは にほんじんですか。",
@@ -337,7 +338,7 @@
       "categoryOrder": 2,
       "patternOrder": 4,
       "meaning_en": "Multi-purpose: location of existence / specific time / direction-destination / indirect object (recipient)",
-      "meaning_ja": "ばしょ・じかん・あいてを しめす",
+      "meaning_ja": "ばしょ・じかん・人を しめす",
       "form_rules": {
         "attaches_to": [
           "noun"
@@ -351,7 +352,7 @@
           {
             "form": "specific_time",
             "label": "Specific clock / calendar time",
-            "example": "7じに おきます。"
+            "example": "7時に おきます。"
           },
           {
             "form": "destination",
@@ -365,10 +366,10 @@
           }
         ]
       },
-      "explanation_en": "に has four core uses at N5: (1) location of EXISTENCE with ある／いる, (2) specific point in TIME (7じに, げつようびに), (3) DESTINATION with movement verbs (いく, くる, かえる), (4) RECIPIENT of giving / sending verbs (あげる, おくる, でんわする). Compare carefully with で (location of ACTION) and へ (purely directional).",
+      "explanation_en": "に has four core uses at N5: (1) location of EXISTENCE with ある／いる, (2) specific point in TIME (7時に, げつようびに), (3) DESTINATION with movement verbs (いく, くる, かえる), (4) RECIPIENT of giving / sending verbs (あげる, おくる, でんわする). Compare carefully with で (location of ACTION) and へ (purely directional).",
       "examples": [
         {
-          "ja": "7じに おきます。",
+          "ja": "7時に おきます。",
           "form": "affirmative",
           "translation_en": "I get up at 7 o'clock.",
           "furigana": []
@@ -407,7 +408,7 @@
         {
           "wrong": "あした に いきます。",
           "right": "あした いきます。",
-          "why": "Relative time words (あした, きょう, きのう, いま, まいにち) DON'T take に. Only specific clock / calendar times do (7じに, げつようびに, 4がつに)."
+          "why": "Relative time words (あした, きょう, きのう, いま, まいにち) DON'T take に. Only specific clock / calendar times do (7時に, げつようびに, 4月に)."
         }
       ],
       "contrasts": [
@@ -619,7 +620,7 @@
         {
           "ja": "パンと コーヒーを たべました。",
           "form": "past",
-          "translation_en": "I ate bread and (only) coffee.",
+          "translation_en": "I ate bread and coffee.",
           "furigana": []
         },
         {
@@ -683,7 +684,7 @@
           {
             "form": "from_time",
             "label": "From (time)",
-            "example": "9じから しごとです。"
+            "example": "9時から しごとです。"
           },
           {
             "form": "because",
@@ -692,10 +693,10 @@
           }
         ]
       },
-      "explanation_en": "から has two roles at N5: (1) FROM - a starting point in time or place, attaching to a noun (9じから, とうきょうから), and (2) BECAUSE - attaching to a full clause (plain or polite form), giving the reason for what follows. Often paired with まで (until). The 'because' use commonly precedes a request or command.",
+      "explanation_en": "から has two roles at N5: (1) FROM - a starting point in time or place, attaching to a noun (9時から, とうきょうから), and (2) BECAUSE - attaching to a full clause (plain or polite form), giving the reason for what follows. Often paired with まで (until). The 'because' use commonly precedes a request or command.",
       "examples": [
         {
-          "ja": "9じから しごとです。",
+          "ja": "9時から しごとです。",
           "form": "affirmative",
           "translation_en": "Work starts at 9.",
           "furigana": []
@@ -740,7 +741,7 @@
       "contrasts": [
         {
           "with_pattern_id": "n5-010",
-          "note": "から (from time/place) is often paired with まで (until time/place): 9じから 5じまで = from 9 to 5."
+          "note": "から (from time/place) is often paired with まで (until time/place): 9時から 5時まで = from 9 to 5."
         }
       ],
       "notes": "Note ので is a softer, more polite alternative for 'because' (Upper N5 / borderline)."
@@ -761,7 +762,7 @@
           {
             "form": "until_time",
             "label": "Until (time)",
-            "example": "5じまで しごとです。"
+            "example": "5時まで しごとです。"
           },
           {
             "form": "up_to_place",
@@ -771,20 +772,20 @@
           {
             "form": "paired",
             "label": "Paired with から (from–to)",
-            "example": "9じから 5じまで しごとです。"
+            "example": "9時から 5時まで しごとです。"
           }
         ]
       },
-      "explanation_en": "まで marks the END of a span - until a time, up to a place. Most often paired with から to mark a range: 9じから 5じまで (from 9 to 5), とうきょうから おおさかまで (from Tokyo to Osaka). Use only with nouns at N5; the までに variant ('by a deadline') is N4.",
+      "explanation_en": "まで marks the END of a span - until a time, up to a place. Most often paired with から to mark a range: 9時から 5時まで (from 9 to 5), とうきょうから おおさかまで (from Tokyo to Osaka). Use only with nouns at N5; the までに variant ('by a deadline') is N4.",
       "examples": [
         {
-          "ja": "5じまで しごとです。",
+          "ja": "5時まで しごとです。",
           "form": "affirmative",
           "translation_en": "I work until 5.",
           "furigana": []
         },
         {
-          "ja": "9じから 5じまで しごとです。",
+          "ja": "9時から 5時まで しごとです。",
           "form": "affirmative",
           "translation_en": "I work from 9 to 5.",
           "furigana": []
@@ -810,9 +811,9 @@
       ],
       "common_mistakes": [
         {
-          "wrong": "5じから しごとです。 (when meaning 'until 5')",
-          "right": "5じまで しごとです。",
-          "why": "から marks the START of a span; まで marks the END. 5じから = 'from 5'; 5じまで = 'until 5'. They are opposites."
+          "wrong": "5時から しごとです。 (when meaning 'until 5')",
+          "right": "5時まで しごとです。",
+          "why": "から marks the START of a span; まで marks the END. 5時から = 'from 5'; 5時まで = 'until 5'. They are opposites."
         },
         {
           "wrong": "あした まで に きます。",
@@ -1527,7 +1528,7 @@
           }
         ]
       },
-      "explanation_en": "いつ asks 'when?'. Often appears WITHOUT a particle (unlike English 'when' / Japanese 7じに). Pairs with から (since when?), まで (until when?), ごろ (around when?). Note: いつ itself doesn't take に - it's already a question, not a time point.",
+      "explanation_en": "いつ asks 'when?'. Often appears WITHOUT a particle (unlike English 'when' / Japanese 7時に). Pairs with から (since when?), まで (until when?), ごろ (around when?). Note: いつ itself doesn't take に - it's already a question, not a time point.",
       "examples": [
         {
           "ja": "いつ いきますか。",
@@ -1564,7 +1565,7 @@
         {
           "wrong": "いつに いきますか。",
           "right": "いつ いきますか。",
-          "why": "いつ does NOT take に. に is only for SPECIFIC time points (7じに, げつようびに). いつ is itself the question - no particle needed."
+          "why": "いつ does NOT take に. に is only for SPECIFIC time points (7時に, げつようびに). いつ is itself the question - no particle needed."
         },
         {
           "wrong": "いつ から いつ まで にほんに いますか。",
@@ -1581,8 +1582,8 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 13,
-      "meaning_en": "Until / up to (see n5-010 for full content)",
-      "meaning_ja": "(n5-010を ごさんしょう)",
+      "meaning_en": "Until / up to",
+      "meaning_ja": "「いつ・どこ まで」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -1593,12 +1594,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-010. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "まで marks the END of a span - until a time, up to a place. Most often paired with から to mark a range: 9時から 5時まで (from 9 to 5), とうきょうから おおさかまで (from Tokyo to Osaka). Use only with nouns at N5; the までに variant ('by a deadline') is N4.\n\n(This pattern is also indexed as 'まで' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-010)",
+          "ja": "5時まで しごとです。",
           "form": "affirmative",
-          "translation_en": "See n5-010 for examples.",
+          "translation_en": "I work until 5.",
+          "furigana": []
+        },
+        {
+          "ja": "9時から 5時まで しごとです。",
+          "form": "affirmative",
+          "translation_en": "I work from 9 to 5.",
+          "furigana": []
+        },
+        {
+          "ja": "うちまで あるいて かえりました。",
+          "form": "past",
+          "translation_en": "I walked back home.",
+          "furigana": []
+        },
+        {
+          "ja": "なんじまで ですか。",
+          "form": "question",
+          "translation_en": "Until what time?",
+          "furigana": []
+        },
+        {
+          "ja": "そこまで タクシーで いきません。",
+          "form": "negative",
+          "translation_en": "I won't take a taxi that far.",
           "furigana": []
         }
       ],
@@ -1609,7 +1634,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-010. See n5-010 for the primary discussion of this pattern."
     },
     {
       "id": "n5-021",
@@ -1627,7 +1652,7 @@
           {
             "form": "time",
             "label": "Time range",
-            "example": "9じから 5じまで"
+            "example": "9時から 5時まで"
           },
           {
             "form": "place",
@@ -1639,7 +1664,7 @@
       "explanation_en": "から marks start, まで marks end. Paired, they express a range - time, place, or distance.",
       "examples": [
         {
-          "ja": "9じから 5じまで しごとです。",
+          "ja": "9時から 5時まで しごとです。",
           "form": "affirmative",
           "translation_en": "Work is from 9 to 5.",
           "furigana": []
@@ -1665,8 +1690,8 @@
       ],
       "common_mistakes": [
         {
-          "wrong": "9じまで 5じから しごとです。",
-          "right": "9じから 5じまで しごとです。",
+          "wrong": "9時まで 5時から しごとです。",
+          "right": "9時から 5時まで しごとです。",
           "why": "Order is start–end: から first, then まで."
         }
       ],
@@ -1679,8 +1704,8 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 15,
-      "meaning_en": "And - non-exhaustive listing (see n5-011 for full content)",
-      "meaning_ja": "(n5-011を ごさんしょう)",
+      "meaning_en": "And - non-exhaustive listing",
+      "meaning_ja": "「Aや B (など)」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -1691,12 +1716,30 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-011. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "や lists nouns NON-EXHAUSTIVELY - A, B, and others (implied). Often paired with など (etc.) at the end of the list. Contrast with と, which is EXHAUSTIVE - only A and B and nothing else.\n\n(This pattern is also indexed as 'や' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-011)",
+          "ja": "りんごや バナナを たべます。",
           "form": "affirmative",
-          "translation_en": "See n5-011 for examples.",
+          "translation_en": "I eat apples, bananas, etc.",
+          "furigana": []
+        },
+        {
+          "ja": "ペンや ノートなどを かいました。",
+          "form": "past",
+          "translation_en": "I bought pens, notebooks, and so on.",
+          "furigana": []
+        },
+        {
+          "ja": "やさいや くだものを 買いました。",
+          "form": "past",
+          "translation_en": "I bought vegetables, fruit, and so on.",
+          "furigana": []
+        },
+        {
+          "ja": "こうえんや えきの ちかくに カフェが あります。",
+          "form": "affirmative",
+          "translation_en": "There are cafes near parks, stations, etc.",
           "furigana": []
         }
       ],
@@ -1707,7 +1750,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-011. See n5-011 for the primary discussion of this pattern."
     },
     {
       "id": "n5-023",
@@ -1715,8 +1758,8 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 16,
-      "meaning_en": "Sentence-final question marker (see n5-012 for full content)",
-      "meaning_ja": "(n5-012を ごさんしょう)",
+      "meaning_en": "Sentence-final question marker",
+      "meaning_ja": "「ぎもん」「Aか B」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -1727,12 +1770,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "か at the END of a sentence makes it a question - works with yes/no AND wh-questions (どこ, なに, etc.). Between two nouns (Aか B), it means 'A or B'. Don't add a question mark in writing - か already signals the question.\n\n(This pattern is also indexed as 'か' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-012)",
+          "ja": "あなたは がくせいですか。",
+          "form": "question",
+          "translation_en": "Are you a student?",
+          "furigana": []
+        },
+        {
+          "ja": "なにを たべましたか。",
+          "form": "question",
+          "translation_en": "What did you eat?",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーか おちゃが いいです。",
           "form": "affirmative",
-          "translation_en": "See n5-012 for examples.",
+          "translation_en": "Coffee or tea would be good.",
+          "furigana": []
+        },
+        {
+          "ja": "いつ いきますか。",
+          "form": "question",
+          "translation_en": "When are you going?",
+          "furigana": []
+        },
+        {
+          "ja": "これは ペンですか、えんぴつですか。",
+          "form": "question",
+          "translation_en": "Is this a pen or a pencil?",
           "furigana": []
         }
       ],
@@ -1743,7 +1810,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-012. See n5-012 for the primary discussion of this pattern."
     },
     {
       "id": "n5-024",
@@ -1751,8 +1818,8 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 17,
-      "meaning_en": "Or (between alternatives) (see n5-012 for full content)",
-      "meaning_ja": "(n5-012を ごさんしょう)",
+      "meaning_en": "Or (between alternatives)",
+      "meaning_ja": "「ぎもん」「Aか B」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -1763,12 +1830,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "か at the END of a sentence makes it a question - works with yes/no AND wh-questions (どこ, なに, etc.). Between two nouns (Aか B), it means 'A or B'. Don't add a question mark in writing - か already signals the question.\n\n(This pattern is also indexed as 'か' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-012)",
+          "ja": "あなたは がくせいですか。",
+          "form": "question",
+          "translation_en": "Are you a student?",
+          "furigana": []
+        },
+        {
+          "ja": "なにを たべましたか。",
+          "form": "question",
+          "translation_en": "What did you eat?",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーか おちゃが いいです。",
           "form": "affirmative",
-          "translation_en": "See n5-012 for examples.",
+          "translation_en": "Coffee or tea would be good.",
+          "furigana": []
+        },
+        {
+          "ja": "いつ いきますか。",
+          "form": "question",
+          "translation_en": "When are you going?",
+          "furigana": []
+        },
+        {
+          "ja": "これは ペンですか、えんぴつですか。",
+          "form": "question",
+          "translation_en": "Is this a pen or a pencil?",
           "furigana": []
         }
       ],
@@ -1779,7 +1870,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-012. See n5-012 for the primary discussion of this pattern."
     },
     {
       "id": "n5-025",
@@ -2006,8 +2097,8 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 22,
-      "meaning_en": "Possessive / noun-modifier (see n5-028 for full content)",
-      "meaning_ja": "(n5-028を ごさんしょう)",
+      "meaning_en": "Possessive / noun-modifier",
+      "meaning_ja": "「〜の〜」(めいしの しゅうしょく)",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2018,12 +2109,30 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-028. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "の links nouns. Can mean possession (わたしの = 'my'), classification (日本語の = 'Japanese (language) X'), or general modification.\n\n(This pattern is also indexed as 'possessive / noun-modifier' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-028)",
+          "ja": "日本語の 先生です。",
           "form": "affirmative",
-          "translation_en": "See n5-028 for examples.",
+          "translation_en": "I am a teacher of Japanese. (noun-modifier の: links a topic to a role)",
+          "furigana": []
+        },
+        {
+          "ja": "木の つくえです。",
+          "form": "affirmative",
+          "translation_en": "It is a wooden desk. (noun-modifier の: links a material to an object)",
+          "furigana": []
+        },
+        {
+          "ja": "駅の まえに あります。",
+          "form": "affirmative",
+          "translation_en": "It is in front of the station. (noun-modifier の: links a location to a positional noun)",
+          "furigana": []
+        },
+        {
+          "ja": "友だちの たんじょうびです。",
+          "form": "affirmative",
+          "translation_en": "It's my friend's birthday. (noun-modifier の: links possessor to event)",
           "furigana": []
         }
       ],
@@ -2034,7 +2143,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Differentiated from n5-028 (possessive sense). This pattern focuses on noun-modifier の: linking a noun to a role/material/location/possessor relationship. See n5-028 for the pure possessive sense (e.g., わたしの本)."
     },
     {
       "id": "n5-030",
@@ -2081,8 +2190,8 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 24,
-      "meaning_en": "Informal question marker (see n5-012 for full content)",
-      "meaning_ja": "(n5-012を ごさんしょう)",
+      "meaning_en": "Informal question marker",
+      "meaning_ja": "「ぎもん」「Aか B」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2093,12 +2202,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "か at the END of a sentence makes it a question - works with yes/no AND wh-questions (どこ, なに, etc.). Between two nouns (Aか B), it means 'A or B'. Don't add a question mark in writing - か already signals the question.\n\n(This pattern is also indexed as 'informal question marker' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-012)",
+          "ja": "あなたは がくせいですか。",
+          "form": "question",
+          "translation_en": "Are you a student?",
+          "furigana": []
+        },
+        {
+          "ja": "なにを たべましたか。",
+          "form": "question",
+          "translation_en": "What did you eat?",
+          "furigana": []
+        },
+        {
+          "ja": "コーヒーか おちゃが いいです。",
           "form": "affirmative",
-          "translation_en": "See n5-012 for examples.",
+          "translation_en": "Coffee or tea would be good.",
+          "furigana": []
+        },
+        {
+          "ja": "いつ いきますか。",
+          "form": "question",
+          "translation_en": "When are you going?",
+          "furigana": []
+        },
+        {
+          "ja": "これは ペンですか、えんぴつですか。",
+          "form": "question",
+          "translation_en": "Is this a pen or a pencil?",
           "furigana": []
         }
       ],
@@ -2109,7 +2242,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-012. See n5-012 for the primary discussion of this pattern."
     },
     {
       "id": "n5-032",
@@ -2117,8 +2250,8 @@
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 25,
-      "meaning_en": "Also / too (see n5-013 for full content)",
-      "meaning_ja": "(n5-013を ごさんしょう)",
+      "meaning_en": "Also / too",
+      "meaning_ja": "「〜も」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2129,12 +2262,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-013. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "も means 'also/too/even'. It REPLACES は, が, or を: わたしも (NOT わたしはも). It STACKS after other particles: にも, でも, とも, からも. With negative verbs and question words like だれ/なに, it forms 'no one / nothing': だれも きませんでした (no one came).\n\n(This pattern is also indexed as 'も' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-013)",
+          "ja": "わたしも がくせいです。",
           "form": "affirmative",
-          "translation_en": "See n5-013 for examples.",
+          "translation_en": "I am a student too.",
+          "furigana": []
+        },
+        {
+          "ja": "りんごも バナナも すきです。",
+          "form": "affirmative",
+          "translation_en": "I like both apples and bananas.",
+          "furigana": []
+        },
+        {
+          "ja": "とうきょうにも いきました。",
+          "form": "past",
+          "translation_en": "I went to Tokyo as well.",
+          "furigana": []
+        },
+        {
+          "ja": "だれも きませんでした。",
+          "form": "negative",
+          "translation_en": "No one came.",
+          "furigana": []
+        },
+        {
+          "ja": "なにも たべませんか。",
+          "form": "question",
+          "translation_en": "Won't you eat anything?",
           "furigana": []
         }
       ],
@@ -2145,7 +2302,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-013. See n5-013 for the primary discussion of this pattern."
     },
     {
       "id": "n5-033",
@@ -2194,7 +2351,7 @@
           "furigana": []
         },
         {
-          "ja": "1000円だけ あります。",
+          "ja": "1,000円だけ あります。",
           "form": "affirmative",
           "translation_en": "I only have 1000 yen.",
           "furigana": []
@@ -2225,14 +2382,14 @@
           {
             "form": "shika_neg",
             "label": "+ negative verb",
-            "example": "1000円しか ありません"
+            "example": "1,000円しか ありません"
           }
         ]
       },
       "explanation_en": "しか REQUIRES a negative verb to mean 'only'. The polarity is grammatically negative but the meaning is affirmative-with-emphasis ('only X, nothing more').",
       "examples": [
         {
-          "ja": "1000円しか ありません。",
+          "ja": "1,000円しか ありません。",
           "form": "negative",
           "translation_en": "I only have 1000 yen.",
           "furigana": []
@@ -2246,8 +2403,8 @@
       ],
       "common_mistakes": [
         {
-          "wrong": "1000円しか あります。",
-          "right": "1000円しか ありません。",
+          "wrong": "1,000円しか あります。",
+          "right": "1,000円しか ありません。",
           "why": "しか requires the verb to be negative."
         }
       ],
@@ -2275,26 +2432,26 @@
           {
             "form": "approx_quantity",
             "label": "Approximate amount",
-            "example": "1じかんぐらい"
+            "example": "1時間ぐらい"
           }
         ]
       },
       "explanation_en": "ぐらい / くらい (interchangeable) attach to a quantity to mean 'about, roughly'. Common with time, money, distance.",
       "examples": [
         {
-          "ja": "1じかんぐらい まちました。",
+          "ja": "1時間ぐらい まちました。",
           "form": "past",
           "translation_en": "I waited about an hour.",
           "furigana": []
         },
         {
-          "ja": "5000円くらいです。",
+          "ja": "5,000円くらいです。",
           "form": "affirmative",
           "translation_en": "It's about 5000 yen.",
           "furigana": []
         },
         {
-          "ja": "10ぷんぐらい かかります。",
+          "ja": "10分ぐらい かかります。",
           "form": "affirmative",
           "translation_en": "It takes about 10 minutes.",
           "furigana": []
@@ -2302,8 +2459,8 @@
       ],
       "common_mistakes": [
         {
-          "wrong": "ぐらい with a specific point (like 9じぐらいに)",
-          "right": "9じぐらいに / 9じごろに are both fine; but specific times like まいにち don't take ぐらい - only quantities/durations.",
+          "wrong": "ぐらい with a specific point (like 9時ぐらいに)",
+          "right": "9時ぐらいに / 9時ごろに are both fine; but specific times like まいにち don't take ぐらい - only quantities/durations.",
           "why": "ぐらい works for amounts and durations; ごろ is preferred for approximate time-points."
         }
       ],
@@ -2331,20 +2488,20 @@
           {
             "form": "approx_time",
             "label": "Approximate time point",
-            "example": "3じごろ"
+            "example": "3時ごろ"
           }
         ]
       },
       "explanation_en": "ごろ attaches to a TIME POINT to mean 'around'. Use ごろ for time points; ぐらい for durations/quantities.",
       "examples": [
         {
-          "ja": "3じごろ あいましょう。",
+          "ja": "3時ごろ あいましょう。",
           "form": "affirmative",
           "translation_en": "Let's meet around 3.",
           "furigana": []
         },
         {
-          "ja": "あした 6じごろ 行きます。",
+          "ja": "あした 6時ごろ 行きます。",
           "form": "affirmative",
           "translation_en": "I'll go around 6 tomorrow.",
           "furigana": []
@@ -2358,8 +2515,8 @@
       ],
       "common_mistakes": [
         {
-          "wrong": "1じかんごろ",
-          "right": "1じかんぐらい",
+          "wrong": "1時間ごろ",
+          "right": "1時間ぐらい",
           "why": "Duration takes ぐらい. ごろ is for clock/calendar time-points."
         }
       ],
@@ -2450,7 +2607,7 @@
           "furigana": []
         },
         {
-          "ja": "1日に 30ぷんずつ べんきょうします。",
+          "ja": "1日に 30分ずつ べんきょうします。",
           "form": "affirmative",
           "translation_en": "I study 30 minutes each day.",
           "furigana": []
@@ -2466,8 +2623,8 @@
       "category": "Demonstratives (こそあど)",
       "categoryOrder": 5,
       "patternOrder": 1,
-      "meaning_en": "Pronouns: this / that / which one (see n5-014 for full content)",
-      "meaning_ja": "(n5-014を ごさんしょう)",
+      "meaning_en": "Pronouns: this / that / which one",
+      "meaning_ja": "「これ・それ・あれ・どれ」(ぶつ)",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2478,12 +2635,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-014. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "The こ/そ/あ/ど pronouns refer to OBJECTS (or abstract things). これ = near speaker, それ = near listener, あれ = far from both, どれ = which one (question). They stand alone - DON'T put a noun after them. For 'this book' use この (n5-015), not これ.\n\n(This pattern is also indexed as 'これ / それ / あれ / どれ' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-014)",
+          "ja": "これは ほんです。",
           "form": "affirmative",
-          "translation_en": "See n5-014 for examples.",
+          "translation_en": "This is a book.",
+          "furigana": []
+        },
+        {
+          "ja": "それは なんですか。",
+          "form": "question",
+          "translation_en": "What is that (near you)?",
+          "furigana": []
+        },
+        {
+          "ja": "あれは くるまじゃありません。",
+          "form": "negative",
+          "translation_en": "That (over there) is not a car.",
+          "furigana": []
+        },
+        {
+          "ja": "どれが いちばん すきですか。",
+          "form": "question",
+          "translation_en": "Which one do you like best?",
+          "furigana": []
+        },
+        {
+          "ja": "これを ください。",
+          "form": "affirmative",
+          "translation_en": "Please give me this.",
           "furigana": []
         }
       ],
@@ -2494,7 +2675,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-014. See n5-014 for the primary discussion of this pattern."
     },
     {
       "id": "n5-040",
@@ -2502,8 +2683,8 @@
       "category": "Demonstratives (こそあど)",
       "categoryOrder": 5,
       "patternOrder": 2,
-      "meaning_en": "Adjectival demonstratives + noun (see n5-015 for full content)",
-      "meaning_ja": "(n5-015を ごさんしょう)",
+      "meaning_en": "Adjectival demonstratives + noun",
+      "meaning_ja": "「この・その・あの・どの ＋ めいし」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2514,12 +2695,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-015. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Use この/その/あの/どの directly before a noun. Mirrors これ/それ/あれ/どれ exactly but ALWAYS followed by a noun: この ほん = 'this book', あの 人 = 'that person'.\n\n(This pattern is also indexed as 'この / その / あの / どの + Noun' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-015)",
-          "form": "affirmative",
-          "translation_en": "See n5-015 for examples.",
+          "ja": "この ほんを よみました。",
+          "form": "past",
+          "translation_en": "I read this book.",
+          "furigana": []
+        },
+        {
+          "ja": "その ペンは あなたのですか。",
+          "form": "question",
+          "translation_en": "Is that pen yours?",
+          "furigana": []
+        },
+        {
+          "ja": "あの 人は だれですか。",
+          "form": "question",
+          "translation_en": "Who is that person?",
+          "furigana": []
+        },
+        {
+          "ja": "どの くるまが いいですか。",
+          "form": "question",
+          "translation_en": "Which car is good?",
+          "furigana": []
+        },
+        {
+          "ja": "この みせは あまり たかくないです。",
+          "form": "negative",
+          "translation_en": "This shop isn't very expensive.",
           "furigana": []
         }
       ],
@@ -2530,7 +2735,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-015. See n5-015 for the primary discussion of this pattern."
     },
     {
       "id": "n5-041",
@@ -2538,8 +2743,8 @@
       "category": "Demonstratives (こそあど)",
       "categoryOrder": 5,
       "patternOrder": 3,
-      "meaning_en": "Location words (see n5-016 for full content)",
-      "meaning_ja": "(n5-016を ごさんしょう)",
+      "meaning_en": "Location words",
+      "meaning_ja": "ばしょの ことば",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2550,12 +2755,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-016. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Same こ/そ/あ/ど logic but for LOCATIONS. Take は, が, に, で, から, まで etc. as needed. ここ/そこ/あそこ are statements; どこ asks 'where?'. With も + negative: どこにも いきません = 'I'm going nowhere'.\n\n(This pattern is also indexed as 'ここ / そこ / あそこ / どこ' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-016)",
+          "ja": "ここは としょかんです。",
           "form": "affirmative",
-          "translation_en": "See n5-016 for examples.",
+          "translation_en": "Here is the library.",
+          "furigana": []
+        },
+        {
+          "ja": "そこに ねこが います。",
+          "form": "affirmative",
+          "translation_en": "There is a cat there.",
+          "furigana": []
+        },
+        {
+          "ja": "どこで かいましたか。",
+          "form": "question",
+          "translation_en": "Where did you buy it?",
+          "furigana": []
+        },
+        {
+          "ja": "あそこは しずかです。",
+          "form": "affirmative",
+          "translation_en": "Over there is quiet.",
+          "furigana": []
+        },
+        {
+          "ja": "どこにも いきません。",
+          "form": "negative",
+          "translation_en": "I'm not going anywhere.",
           "furigana": []
         }
       ],
@@ -2566,7 +2795,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-016. See n5-016 for the primary discussion of this pattern."
     },
     {
       "id": "n5-042",
@@ -2709,8 +2938,8 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 4,
-      "meaning_en": "What (see n5-017 for full content)",
-      "meaning_ja": "(n5-017を ごさんしょう)",
+      "meaning_en": "What",
+      "meaning_ja": "「なに」「なん」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2721,12 +2950,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-017. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "なに and なん both mean 'what'. The pronunciation depends on what follows: なん before です, ですか, でしょう, and counters (なんじ, なんにん, なんさい); なに before を, が, も, は. Memorize the pattern. なんで means 'how/why' (informal); なぜ is the formal 'why'.\n\n(This pattern is also indexed as 'なん / なに' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-017)",
-          "form": "affirmative",
-          "translation_en": "See n5-017 for examples.",
+          "ja": "なにを たべますか。",
+          "form": "question",
+          "translation_en": "What will you eat?",
+          "furigana": []
+        },
+        {
+          "ja": "これは なんですか。",
+          "form": "question",
+          "translation_en": "What is this?",
+          "furigana": []
+        },
+        {
+          "ja": "いま なんじですか。",
+          "form": "question",
+          "translation_en": "What time is it now?",
+          "furigana": []
+        },
+        {
+          "ja": "なにが すきですか。",
+          "form": "question",
+          "translation_en": "What do you like?",
+          "furigana": []
+        },
+        {
+          "ja": "なんで きましたか。",
+          "form": "question",
+          "translation_en": "How (by what means) did you come?",
           "furigana": []
         }
       ],
@@ -2737,7 +2990,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-017. See n5-017 for the primary discussion of this pattern."
     },
     {
       "id": "n5-046",
@@ -2745,8 +2998,8 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 5,
-      "meaning_en": "Who (see n5-018 for full content)",
-      "meaning_ja": "(n5-018を ごさんしょう)",
+      "meaning_en": "Who",
+      "meaning_ja": "「だれ」(ふつう) ／ 「どなた」(ていねい)",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2757,12 +3010,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-018. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "だれ is the standard 'who'. どなた is more polite - used with strangers, customers, or in formal settings. Question words asking for new information take が, not は: だれが きましたか, never だれは.\n\n(This pattern is also indexed as 'だれ / どなた' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-018)",
-          "form": "affirmative",
-          "translation_en": "See n5-018 for examples.",
+          "ja": "だれが きましたか。",
+          "form": "question",
+          "translation_en": "Who came?",
+          "furigana": []
+        },
+        {
+          "ja": "これは だれの かばんですか。",
+          "form": "question",
+          "translation_en": "Whose bag is this?",
+          "furigana": []
+        },
+        {
+          "ja": "どなたですか。",
+          "form": "question",
+          "translation_en": "Who is it (polite)?",
+          "furigana": []
+        },
+        {
+          "ja": "だれと いきますか。",
+          "form": "question",
+          "translation_en": "With whom are you going?",
+          "furigana": []
+        },
+        {
+          "ja": "あの 人は だれですか。",
+          "form": "question",
+          "translation_en": "Who is that person?",
           "furigana": []
         }
       ],
@@ -2773,7 +3050,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-018. See n5-018 for the primary discussion of this pattern."
     },
     {
       "id": "n5-047",
@@ -2781,8 +3058,8 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 6,
-      "meaning_en": "When (see n5-019 for full content)",
-      "meaning_ja": "(n5-019を ごさんしょう)",
+      "meaning_en": "When",
+      "meaning_ja": "「いつ」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2793,12 +3070,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-019. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "いつ asks 'when?'. Often appears WITHOUT a particle (unlike English 'when' / Japanese 7時に). Pairs with から (since when?), まで (until when?), ごろ (around when?). Note: いつ itself doesn't take に - it's already a question, not a time point.\n\n(This pattern is also indexed as 'いつ' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-019)",
+          "ja": "いつ いきますか。",
+          "form": "question",
+          "translation_en": "When are you going?",
+          "furigana": []
+        },
+        {
+          "ja": "いつまで やすみですか。",
+          "form": "question",
+          "translation_en": "Until when are you on holiday?",
+          "furigana": []
+        },
+        {
+          "ja": "いつから にほんに いますか。",
+          "form": "question",
+          "translation_en": "Since when have you been in Japan?",
+          "furigana": []
+        },
+        {
+          "ja": "いつごろ きますか。",
+          "form": "question",
+          "translation_en": "Around when will you come?",
+          "furigana": []
+        },
+        {
+          "ja": "いつでも いいです。",
           "form": "affirmative",
-          "translation_en": "See n5-019 for examples.",
+          "translation_en": "Any time is fine.",
           "furigana": []
         }
       ],
@@ -2809,7 +3110,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-019. See n5-019 for the primary discussion of this pattern."
     },
     {
       "id": "n5-048",
@@ -2817,8 +3118,8 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 7,
-      "meaning_en": "Where (covered by ここ-series) (see n5-016 for full content)",
-      "meaning_ja": "(n5-016を ごさんしょう)",
+      "meaning_en": "Where (covered by ここ-series)",
+      "meaning_ja": "ばしょの ことば",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2829,12 +3130,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-016. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Same こ/そ/あ/ど logic but for LOCATIONS. Take は, が, に, で, から, まで etc. as needed. ここ/そこ/あそこ are statements; どこ asks 'where?'. With も + negative: どこにも いきません = 'I'm going nowhere'.\n\n(This pattern is also indexed as 'どこ' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-016)",
+          "ja": "ここは としょかんです。",
           "form": "affirmative",
-          "translation_en": "See n5-016 for examples.",
+          "translation_en": "Here is the library.",
+          "furigana": []
+        },
+        {
+          "ja": "そこに ねこが います。",
+          "form": "affirmative",
+          "translation_en": "There is a cat there.",
+          "furigana": []
+        },
+        {
+          "ja": "どこで かいましたか。",
+          "form": "question",
+          "translation_en": "Where did you buy it?",
+          "furigana": []
+        },
+        {
+          "ja": "あそこは しずかです。",
+          "form": "affirmative",
+          "translation_en": "Over there is quiet.",
+          "furigana": []
+        },
+        {
+          "ja": "どこにも いきません。",
+          "form": "negative",
+          "translation_en": "I'm not going anywhere.",
           "furigana": []
         }
       ],
@@ -2845,7 +3170,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-016. See n5-016 for the primary discussion of this pattern."
     },
     {
       "id": "n5-049",
@@ -3921,8 +4246,9 @@
         {
           "ja": "がっこうへ いった。",
           "form": "past",
-          "translation_en": "[I] went to school. (NOTE: いく is irregular)",
-          "furigana": []
+          "translation_en": "[I] went to school.",
+          "furigana": [],
+          "note": "いく is irregular"
         }
       ],
       "common_mistakes": [
@@ -4456,7 +4782,7 @@
     },
     {
       "id": "n5-076",
-      "pattern": "Verb-から",
+      "pattern": "Verb-てから",
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
       "patternOrder": 8,
@@ -4858,7 +5184,7 @@
           "furigana": []
         },
         {
-          "ja": "その えいがは おもしろくなかった。",
+          "ja": "その えいがは おもしろくなかったです。",
           "form": "past",
           "translation_en": "That movie wasn't interesting.",
           "furigana": []
@@ -5466,9 +5792,15 @@
           "furigana": []
         },
         {
-          "ja": "きのう ともだちが 来ました。 / ともだちが いました。",
+          "ja": "きのう 友だちが 来ました。",
           "form": "past",
-          "translation_en": "A friend came / was there.",
+          "translation_en": "A friend came yesterday.",
+          "furigana": []
+        },
+        {
+          "ja": "きょうしつに 友だちが いました。",
+          "form": "past",
+          "translation_en": "There was a friend in the classroom.",
           "furigana": []
         },
         {
@@ -5817,8 +6149,8 @@
       "category": "Comparison and Preference",
       "categoryOrder": 11,
       "patternOrder": 4,
-      "meaning_en": "Most ~ of all (covered by superlative pattern) (see n5-099 for full content)",
-      "meaning_ja": "(n5-099を ごさんしょう)",
+      "meaning_en": "Most ~ of all (covered by superlative pattern)",
+      "meaning_ja": "「〜が すき／きらい」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -5829,12 +6161,24 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-099. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "すき / きらい are な-adjectives. The thing liked/disliked takes が, NEVER を.\n\n(This pattern is also indexed as '～' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-099)",
+          "ja": "わたしは ねこが すきです。",
           "form": "affirmative",
-          "translation_en": "See n5-099 for examples.",
+          "translation_en": "I like cats.",
+          "furigana": []
+        },
+        {
+          "ja": "なっとうが きらいです。",
+          "form": "affirmative",
+          "translation_en": "I dislike natto.",
+          "furigana": []
+        },
+        {
+          "ja": "なにが すきですか。",
+          "form": "question",
+          "translation_en": "What do you like?",
           "furigana": []
         }
       ],
@@ -5845,7 +6189,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-099. See n5-099 for the primary discussion of this pattern."
     },
     {
       "id": "n5-099",
@@ -6085,7 +6429,7 @@
         {
           "ja": "日本語が できます。",
           "form": "affirmative",
-          "translation_en": "I can speak Japanese.",
+          "translation_en": "I can use Japanese. / I'm able to do (in) Japanese.",
           "furigana": []
         },
         {
@@ -6106,6 +6450,11 @@
           "wrong": "日本語を できます。",
           "right": "日本語が できます。",
           "why": "できる takes が, not を."
+        },
+        {
+          "wrong": "Treating できる as a single \"can\" verb",
+          "right": "できる has two senses: capability (日本語ができる = \"I am able with Japanese\") AND completion/readiness (ばんごはんができた = \"Dinner is ready\"). Context distinguishes which sense applies.",
+          "why": "A learner who only knows the \"can do\" sense will misread 「ばんごはんができました」 as \"I can make dinner\" (wrong). The completion sense is essential for restaurants, schedules, and announcements."
         }
       ],
       "contrasts": [],
@@ -6400,8 +6749,8 @@
       "category": "Counters and Quantity",
       "categoryOrder": 13,
       "patternOrder": 2,
-      "meaning_en": "How many / how much (counter questions) (see n5-054 for full content)",
-      "meaning_ja": "(n5-054を ごさんしょう)",
+      "meaning_en": "How many / how much (counter questions)",
+      "meaning_ja": "「いくつ」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -6412,12 +6761,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-054. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "いくつ asks 'how many' using the native ひと-counter system. Also used to politely ask age (especially of children).\n\n(This pattern is also indexed as 'いくつ / いくら / なんにん / なんまい etc.' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-054)",
-          "form": "affirmative",
-          "translation_en": "See n5-054 for examples.",
+          "ja": "りんごは いくつ ありますか。",
+          "form": "question",
+          "translation_en": "How many apples are there?",
+          "furigana": []
+        },
+        {
+          "ja": "おこさんは おいくつですか。",
+          "form": "question",
+          "translation_en": "How old is your child?",
           "furigana": []
         }
       ],
@@ -6428,7 +6783,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-054. See n5-054 for the primary discussion of this pattern."
     },
     {
       "id": "n5-110",
@@ -6491,20 +6846,20 @@
           {
             "form": "clock",
             "label": "Number + じ",
-            "example": "3じ"
+            "example": "3時"
           }
         ]
       },
-      "explanation_en": "じ counts hours. Watch sound-changes: 4じ = よじ (not しじ), 7じ = しちじ, 9じ = くじ.",
+      "explanation_en": "じ counts hours. Watch sound-changes: 4時 = よじ (not しじ), 7時 = しちじ, 9時 = くじ.",
       "examples": [
         {
-          "ja": "いま 3じです。",
+          "ja": "いま 3時です。",
           "form": "affirmative",
           "translation_en": "It's 3 o'clock now.",
           "furigana": []
         },
         {
-          "ja": "9じに おきます。",
+          "ja": "9時に おきます。",
           "form": "affirmative",
           "translation_en": "I get up at 9.",
           "furigana": []
@@ -6518,9 +6873,9 @@
       ],
       "common_mistakes": [
         {
-          "wrong": "4じ = しじ",
-          "right": "4じ = よじ",
-          "why": "4じ is read よじ, not しじ. Same as 7じ = しちじ (not なな)."
+          "wrong": "4時 = しじ",
+          "right": "4時 = よじ",
+          "why": "4時 is read よじ, not しじ. Same as 7時 = しちじ (not なな)."
         }
       ],
       "contrasts": [],
@@ -6542,20 +6897,20 @@
           {
             "form": "minutes",
             "label": "Number + ふん/ぷん",
-            "example": "10ぷん"
+            "example": "10分"
           }
         ]
       },
-      "explanation_en": "Sound varies: 1ぷん, 3ぷん, 4ぷん, 6ぷん, 8ぷん, 10ぷん use ぷん; 2ふん, 5ふん, 7ふん, 9ふん use ふん.",
+      "explanation_en": "Sound varies: 1ぷん, 3ぷん, 4ぷん, 6ぷん, 8ぷん, 10分 use ぷん; 2ふん, 5ふん, 7ふん, 9分 use ふん.",
       "examples": [
         {
-          "ja": "10ぷん まちました。",
+          "ja": "10分 まちました。",
           "form": "past",
           "translation_en": "I waited 10 minutes.",
           "furigana": []
         },
         {
-          "ja": "5ふんで 行けます。",
+          "ja": "5分で 行けます。",
           "form": "affirmative",
           "translation_en": "I can go in 5 minutes.",
           "furigana": []
@@ -6581,20 +6936,20 @@
           {
             "form": "half_past",
             "label": "X じはん",
-            "example": "3じはん"
+            "example": "3時はん"
           }
         ]
       },
-      "explanation_en": "じはん = 'half past'. 3じはん = 3:30.",
+      "explanation_en": "じはん = 'half past'. 3時はん = 3:30.",
       "examples": [
         {
-          "ja": "いま 3じはんです。",
+          "ja": "いま 3時はんです。",
           "form": "affirmative",
           "translation_en": "It's 3:30 now.",
           "furigana": []
         },
         {
-          "ja": "9じはんに あいましょう。",
+          "ja": "9時はんに あいましょう。",
           "form": "affirmative",
           "translation_en": "Let's meet at 9:30.",
           "furigana": []
@@ -6610,8 +6965,8 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 4,
-      "meaning_en": "From X to Y (paired range - already covered) (see n5-021 for full content)",
-      "meaning_ja": "(n5-021を ごさんしょう)",
+      "meaning_en": "From X to Y (paired range - already covered)",
+      "meaning_ja": "「〜から 〜まで」(はんい)",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -6622,12 +6977,30 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-021. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "から marks start, まで marks end. Paired, they express a range - time, place, or distance.\n\n(This pattern is also indexed as '～から～まで' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-021)",
+          "ja": "9時から 5時まで しごとです。",
           "form": "affirmative",
-          "translation_en": "See n5-021 for examples.",
+          "translation_en": "Work is from 9 to 5.",
+          "furigana": []
+        },
+        {
+          "ja": "とうきょうから おおさかまで しんかんせんで 行きました。",
+          "form": "past",
+          "translation_en": "I went from Tokyo to Osaka by Shinkansen.",
+          "furigana": []
+        },
+        {
+          "ja": "なんじから なんじまで ですか。",
+          "form": "question",
+          "translation_en": "From what time to what time?",
+          "furigana": []
+        },
+        {
+          "ja": "げつようびから きんようびまで がっこうです。",
+          "form": "affirmative",
+          "translation_en": "School is Monday through Friday.",
           "furigana": []
         }
       ],
@@ -6638,7 +7011,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-021. See n5-021 for the primary discussion of this pattern."
     },
     {
       "id": "n5-115",
@@ -6646,8 +7019,8 @@
       "category": "Time Expressions",
       "categoryOrder": 14,
       "patternOrder": 5,
-      "meaning_en": "に for specific times - covered by に particle (see n5-005 for full content)",
-      "meaning_ja": "(n5-005を ごさんしょう)",
+      "meaning_en": "に for specific times - covered by に particle",
+      "meaning_ja": "ばしょ・じかん・人を しめす",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -6658,12 +7031,36 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-005. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "に has four core uses at N5: (1) location of EXISTENCE with ある／いる, (2) specific point in TIME (7時に, げつようびに), (3) DESTINATION with movement verbs (いく, くる, かえる), (4) RECIPIENT of giving / sending verbs (あげる, おくる, でんわする). Compare carefully with で (location of ACTION) and へ (purely directional).\n\n(This pattern is also indexed as '～に' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-005)",
+          "ja": "7時に おきます。",
           "form": "affirmative",
-          "translation_en": "See n5-005 for examples.",
+          "translation_en": "I get up at 7 o'clock.",
+          "furigana": []
+        },
+        {
+          "ja": "にほんに いきません。",
+          "form": "negative",
+          "translation_en": "I'm not going to Japan.",
+          "furigana": []
+        },
+        {
+          "ja": "へやに なにが ありますか。",
+          "form": "question",
+          "translation_en": "What's in the room?",
+          "furigana": []
+        },
+        {
+          "ja": "ともだちに ほんを あげました。",
+          "form": "past",
+          "translation_en": "I gave a book to my friend.",
+          "furigana": []
+        },
+        {
+          "ja": "うちに かえります。",
+          "form": "affirmative",
+          "translation_en": "I'm going home.",
           "furigana": []
         }
       ],
@@ -6674,7 +7071,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-005. See n5-005 for the primary discussion of this pattern."
     },
     {
       "id": "n5-116",
@@ -7221,7 +7618,7 @@
       "explanation_en": "Casual equivalent of が (clause-final 'but'). けれど is slightly more formal than けど.",
       "examples": [
         {
-          "ja": "むずかしいけど、おもしろいです。",
+          "ja": "むずかしいですけど、おもしろいです。",
           "form": "affirmative",
           "translation_en": "It's hard, but interesting.",
           "furigana": []
@@ -7464,8 +7861,8 @@
       "category": "Asking and Stating with から / ので (basic causation)",
       "categoryOrder": 17,
       "patternOrder": 1,
-      "meaning_en": "Because (sentence connector - already covered) (see n5-128 for full content)",
-      "meaning_ja": "(n5-128を ごさんしょう)",
+      "meaning_en": "Because (sentence connector - already covered)",
+      "meaning_ja": "「〜から、〜」(りゆう)",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -7476,12 +7873,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-128. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "から at end of a clause means 'because'. Reason comes first; result follows.\n\n(This pattern is also indexed as 'Sentence + から、Sentence' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-128)",
+          "ja": "あついから、まどを あけてください。",
           "form": "affirmative",
-          "translation_en": "See n5-128 for examples.",
+          "translation_en": "It's hot, so please open the window.",
+          "furigana": []
+        },
+        {
+          "ja": "おなかが すいたから、なにか たべましょう。",
+          "form": "affirmative",
+          "translation_en": "I'm hungry, so let's eat something.",
           "furigana": []
         }
       ],
@@ -7492,7 +7895,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-128. See n5-128 for the primary discussion of this pattern."
     },
     {
       "id": "n5-134",
@@ -7601,8 +8004,8 @@
       "category": "Nominalization and Modification",
       "categoryOrder": 18,
       "patternOrder": 2,
-      "meaning_en": "Adjective + noun (covered by い-adj+N and な-adj+N) (see n5-078 for full content)",
-      "meaning_ja": "(n5-078を ごさんしょう)",
+      "meaning_en": "Adjective + noun (covered by い-adj+N and な-adj+N)",
+      "meaning_ja": "い-けいようし + めいし",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -7613,12 +8016,24 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-078. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "い-adjectives modify nouns directly, no particles needed. Keep the い: 高い 山 = 'tall mountain'.\n\n(This pattern is also indexed as 'Adjective + Noun' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-078)",
+          "ja": "高い 山が 見えます。",
           "form": "affirmative",
-          "translation_en": "See n5-078 for examples.",
+          "translation_en": "I can see a tall mountain.",
+          "furigana": []
+        },
+        {
+          "ja": "おもしろい 本を 読みました。",
+          "form": "past",
+          "translation_en": "I read an interesting book.",
+          "furigana": []
+        },
+        {
+          "ja": "あつい コーヒーが すきです。",
+          "form": "affirmative",
+          "translation_en": "I like hot coffee.",
           "furigana": []
         }
       ],
@@ -7629,7 +8044,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-078. See n5-078 for the primary discussion of this pattern."
     },
     {
       "id": "n5-137",
@@ -7637,8 +8052,8 @@
       "category": "Nominalization and Modification",
       "categoryOrder": 18,
       "patternOrder": 3,
-      "meaning_en": "Noun の Noun (covered by ～の) (see n5-028 for full content)",
-      "meaning_ja": "(n5-028を ごさんしょう)",
+      "meaning_en": "Noun の Noun (covered by ～の)",
+      "meaning_ja": "「Aの B」(しゅうしょく)",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -7649,12 +8064,24 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-028. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "の links nouns. Can mean possession (わたしの = 'my'), classification (日本語の = 'Japanese (language) X'), or general modification.\n\n(This pattern is also indexed as 'Noun + の + Noun' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-028)",
+          "ja": "これは わたしの 本です。",
           "form": "affirmative",
-          "translation_en": "See n5-028 for examples.",
+          "translation_en": "This is my book.",
+          "furigana": []
+        },
+        {
+          "ja": "日本語の 先生です。",
+          "form": "affirmative",
+          "translation_en": "I'm a teacher of Japanese.",
+          "furigana": []
+        },
+        {
+          "ja": "あれは だれの かばんですか。",
+          "form": "question",
+          "translation_en": "Whose bag is that?",
           "furigana": []
         }
       ],
@@ -7665,7 +8092,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-028. See n5-028 for the primary discussion of this pattern."
     },
     {
       "id": "n5-138",
@@ -7673,8 +8100,8 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 1,
-      "meaning_en": "Like / dislike (see n5-099 for full content)",
-      "meaning_ja": "(n5-099を ごさんしょう)",
+      "meaning_en": "Like / dislike",
+      "meaning_ja": "「〜が すき／きらい」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -7685,12 +8112,24 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-099. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "すき / きらい are な-adjectives. The thing liked/disliked takes が, NEVER を.\n\n(This pattern is also indexed as '～がすきです / きらいです' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-099)",
+          "ja": "わたしは ねこが すきです。",
           "form": "affirmative",
-          "translation_en": "See n5-099 for examples.",
+          "translation_en": "I like cats.",
+          "furigana": []
+        },
+        {
+          "ja": "なっとうが きらいです。",
+          "form": "affirmative",
+          "translation_en": "I dislike natto.",
+          "furigana": []
+        },
+        {
+          "ja": "なにが すきですか。",
+          "form": "question",
+          "translation_en": "What do you like?",
           "furigana": []
         }
       ],
@@ -7701,7 +8140,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-099. See n5-099 for the primary discussion of this pattern."
     },
     {
       "id": "n5-139",
@@ -7709,8 +8148,8 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 2,
-      "meaning_en": "Good at / bad at (see n5-100 for full content)",
-      "meaning_ja": "(n5-100を ごさんしょう)",
+      "meaning_en": "Good at / bad at",
+      "meaning_ja": "「〜が じょうず／へた」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -7721,12 +8160,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-100. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "じょうず (good at) / へた (bad at) are な-adjectives. Subject (skill) takes が. NOTE: don't use じょうず about yourself - sounds boastful. Use とくい instead, or self-deprecating まだまだです.\n\n(This pattern is also indexed as '～がじょうずです / へたです' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-100)",
+          "ja": "あの 人は 日本語が じょうずです。",
           "form": "affirmative",
-          "translation_en": "See n5-100 for examples.",
+          "translation_en": "That person is good at Japanese.",
+          "furigana": []
+        },
+        {
+          "ja": "わたしは りょうりが へたです。",
+          "form": "affirmative",
+          "translation_en": "I'm bad at cooking.",
           "furigana": []
         }
       ],
@@ -7737,7 +8182,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-100. See n5-100 for the primary discussion of this pattern."
     },
     {
       "id": "n5-140",
@@ -7745,8 +8190,8 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 3,
-      "meaning_en": "Understand (see n5-102 for full content)",
-      "meaning_ja": "(n5-102を ごさんしょう)",
+      "meaning_en": "Understand",
+      "meaning_ja": "「〜が わかる」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -7757,12 +8202,24 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-102. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "わかる = 'understand'. The thing understood takes が, never を. Past わかりました often means 'got it / I see'.\n\n(This pattern is also indexed as '～がわかります' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-102)",
+          "ja": "日本語が すこし わかります。",
           "form": "affirmative",
-          "translation_en": "See n5-102 for examples.",
+          "translation_en": "I understand a little Japanese.",
+          "furigana": []
+        },
+        {
+          "ja": "わかりません。",
+          "form": "negative",
+          "translation_en": "I don't understand.",
+          "furigana": []
+        },
+        {
+          "ja": "わかりました。",
+          "form": "past",
+          "translation_en": "I understand. / Got it.",
           "furigana": []
         }
       ],
@@ -7773,7 +8230,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-102. See n5-102 for the primary discussion of this pattern."
     },
     {
       "id": "n5-141",
@@ -7781,8 +8238,8 @@
       "category": "Common Set Patterns",
       "categoryOrder": 19,
       "patternOrder": 4,
-      "meaning_en": "There is / have (event/skill) (see n5-094 for full content)",
-      "meaning_ja": "(n5-094を ごさんしょう)",
+      "meaning_en": "There is / have (event/skill)",
+      "meaning_ja": "「〜が あります」(イベント・スキル)",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -7793,12 +8250,24 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-094. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Beyond physical existence, あります covers events ('there's an exam'), abstract things ('time / money'), and possession ('I have...'). Use が for the subject.\n\n(This pattern is also indexed as '～があります' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-094)",
+          "ja": "あした しけんが あります。",
           "form": "affirmative",
-          "translation_en": "See n5-094 for examples.",
+          "translation_en": "There's an exam tomorrow.",
+          "furigana": []
+        },
+        {
+          "ja": "おかねが ありません。",
+          "form": "negative",
+          "translation_en": "I don't have money.",
+          "furigana": []
+        },
+        {
+          "ja": "なにか しつもんが ありますか。",
+          "form": "question",
+          "translation_en": "Do you have any questions?",
           "furigana": []
         }
       ],
@@ -7809,7 +8278,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-094. See n5-094 for the primary discussion of this pattern."
     },
     {
       "id": "n5-142",
@@ -8128,7 +8597,7 @@
           {
             "form": "itsumo",
             "label": "いつも - always",
-            "example": "いつも 7じに おきます"
+            "example": "いつも 7時に おきます"
           },
           {
             "form": "taitei",
@@ -8145,7 +8614,7 @@
       "explanation_en": "Higher-frequency adverbs. All work with affirmative verbs.",
       "examples": [
         {
-          "ja": "いつも 7じに おきます。",
+          "ja": "いつも 7時に おきます。",
           "form": "affirmative",
           "translation_en": "I always wake up at 7.",
           "furigana": []
@@ -8232,6 +8701,30 @@
           "ja": "コーヒーを おねがいします。",
           "form": "affirmative",
           "translation_en": "Coffee, please.",
+          "furigana": []
+        },
+        {
+          "ja": "メニューを おねがいします。",
+          "form": "affirmative",
+          "translation_en": "The menu, please.",
+          "furigana": []
+        },
+        {
+          "ja": "お水を 二つ おねがいします。",
+          "form": "affirmative",
+          "translation_en": "Two waters, please.",
+          "furigana": []
+        },
+        {
+          "ja": "日本語の 本を おねがいします。",
+          "form": "affirmative",
+          "translation_en": "A Japanese-language book, please.",
+          "furigana": []
+        },
+        {
+          "ja": "もう 一度 おねがいします。",
+          "form": "affirmative",
+          "translation_en": "Once more, please. (e.g., asking for repetition)",
           "furigana": []
         }
       ],
@@ -8433,8 +8926,8 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 3,
-      "meaning_en": "Mid-sentence が (but) - see particle が clause connector (see n5-126 for full content)",
-      "meaning_ja": "(n5-126を ごさんしょう)",
+      "meaning_en": "Mid-sentence が (but) - see particle が clause connector",
+      "meaning_ja": "「〜が、〜」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -8445,12 +8938,24 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-126. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "が at end of a clause (after です/ます or plain) means 'but' as a softening connector. Often introduces a contrast or extends thought.\n\n(This pattern is also indexed as '〜が、〜' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-126)",
+          "ja": "コーヒーは すきですが、おちゃは すきじゃありません。",
           "form": "affirmative",
-          "translation_en": "See n5-126 for examples.",
+          "translation_en": "I like coffee, but I don't like tea.",
+          "furigana": []
+        },
+        {
+          "ja": "むずかしいですが、たのしいです。",
+          "form": "affirmative",
+          "translation_en": "It's hard, but fun.",
+          "furigana": []
+        },
+        {
+          "ja": "すみませんが、もう いちど おねがいします。",
+          "form": "affirmative",
+          "translation_en": "Sorry, but please say it once more.",
           "furigana": []
         }
       ],
@@ -8461,7 +8966,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-126. See n5-126 for the primary discussion of this pattern."
     },
     {
       "id": "n5-156",
@@ -8469,8 +8974,8 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 4,
-      "meaning_en": "Sentence-final ね / よ - see ね / よ entries (see n5-025 for full content)",
-      "meaning_ja": "(n5-025を ごさんしょう)",
+      "meaning_en": "Sentence-final ね / よ - see ね / よ entries",
+      "meaning_ja": "「〜ね」(かくにん)",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -8481,12 +8986,30 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-025. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "ね at sentence-end seeks agreement or shared feeling - 'isn't it?', 'right?'. Used when the speaker assumes the listener has the same view.\n\n(This pattern is also indexed as '〜ね / 〜よ' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-025)",
+          "ja": "いい てんきですね。",
           "form": "affirmative",
-          "translation_en": "See n5-025 for examples.",
+          "translation_en": "Nice weather, isn't it?",
+          "furigana": []
+        },
+        {
+          "ja": "おいしいですね。",
+          "form": "affirmative",
+          "translation_en": "It's delicious, isn't it?",
+          "furigana": []
+        },
+        {
+          "ja": "あの 人は しんせつですね。",
+          "form": "affirmative",
+          "translation_en": "That person is kind, right?",
+          "furigana": []
+        },
+        {
+          "ja": "むずかしかったですね。",
+          "form": "past",
+          "translation_en": "That was tough, wasn't it?",
           "furigana": []
         }
       ],
@@ -8497,7 +9020,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-025. See n5-025 for the primary discussion of this pattern."
     },
     {
       "id": "n5-157",
@@ -8549,8 +9072,8 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 6,
-      "meaning_en": "Casual/plain version of でしょう (see n5-157 for full content)",
-      "meaning_ja": "(n5-157を ごさんしょう)",
+      "meaning_en": "Casual/plain version of でしょう",
+      "meaning_ja": "「〜でしょう」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -8561,12 +9084,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-157. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "でしょう = polite probability ('probably') or seeking agreement ('right?'). Borderline N5/N4.\n\n(This pattern is also indexed as '〜だろう' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-157)",
+          "ja": "あした 雨でしょう。",
           "form": "affirmative",
-          "translation_en": "See n5-157 for examples.",
+          "translation_en": "It'll probably rain tomorrow.",
+          "furigana": []
+        },
+        {
+          "ja": "むずかしいでしょう？",
+          "form": "question",
+          "translation_en": "It's hard, right?",
           "furigana": []
         }
       ],
@@ -8577,7 +9106,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-157. See n5-157 for the primary discussion of this pattern."
     },
     {
       "id": "n5-159",
@@ -8585,8 +9114,8 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 7,
-      "meaning_en": "Polite ね/よ - see ね/よ entries (see n5-025 for full content)",
-      "meaning_ja": "(n5-025を ごさんしょう)",
+      "meaning_en": "Polite ね/よ - see ね/よ entries",
+      "meaning_ja": "「〜ね」(かくにん)",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -8597,12 +9126,30 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-025. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "ね at sentence-end seeks agreement or shared feeling - 'isn't it?', 'right?'. Used when the speaker assumes the listener has the same view.\n\n(This pattern is also indexed as '〜ですね / 〜ですよ' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-025)",
+          "ja": "いい てんきですね。",
           "form": "affirmative",
-          "translation_en": "See n5-025 for examples.",
+          "translation_en": "Nice weather, isn't it?",
+          "furigana": []
+        },
+        {
+          "ja": "おいしいですね。",
+          "form": "affirmative",
+          "translation_en": "It's delicious, isn't it?",
+          "furigana": []
+        },
+        {
+          "ja": "あの 人は しんせつですね。",
+          "form": "affirmative",
+          "translation_en": "That person is kind, right?",
+          "furigana": []
+        },
+        {
+          "ja": "むずかしかったですね。",
+          "form": "past",
+          "translation_en": "That was tough, wasn't it?",
           "furigana": []
         }
       ],
@@ -8613,7 +9160,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-025. See n5-025 for the primary discussion of this pattern."
     },
     {
       "id": "n5-160",
@@ -8621,8 +9168,8 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 8,
-      "meaning_en": "Noun の あとで - see ～あと (see n5-120 for full content)",
-      "meaning_ja": "(n5-120を ごさんしょう)",
+      "meaning_en": "Noun の あとで - see ～あと",
+      "meaning_ja": "「〜あと」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -8633,12 +9180,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-120. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "あと = 'after'. Noun + の + あとで; Verb-PAST + あとで. Verb is PAST here (opposite of まえに).\n\n(This pattern is also indexed as 'Noun + の + あとで' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-120)",
+          "ja": "しごとの あとで のみに 行きました。",
+          "form": "past",
+          "translation_en": "I went for drinks after work.",
+          "furigana": []
+        },
+        {
+          "ja": "じゅぎょうの あとで としょかんに 行きます。",
           "form": "affirmative",
-          "translation_en": "See n5-120 for examples.",
+          "translation_en": "After class, I go to the library.",
           "furigana": []
         }
       ],
@@ -8649,7 +9202,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-120. See n5-120 for the primary discussion of this pattern."
     },
     {
       "id": "n5-161",
@@ -8657,8 +9210,8 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 9,
-      "meaning_en": "Noun の まえに - see ～まえ (see n5-119 for full content)",
-      "meaning_ja": "(n5-119を ごさんしょう)",
+      "meaning_en": "Noun の まえに - see ～まえ",
+      "meaning_ja": "「〜まえ」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -8669,12 +9222,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-119. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "まえ = 'before'. Noun + の + まえ(に); Verb-plain (NON-PAST) + まえに. Note: verb stays NON-PAST even when the meaning is 'before doing X (in the past)'.\n\n(This pattern is also indexed as 'Noun + の + まえに' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-119)",
+          "ja": "ごはんの まえに てを あらいます。",
           "form": "affirmative",
-          "translation_en": "See n5-119 for examples.",
+          "translation_en": "I wash my hands before meals.",
+          "furigana": []
+        },
+        {
+          "ja": "ねる まえに 本を 読みます。",
+          "form": "affirmative",
+          "translation_en": "I read a book before going to bed.",
           "furigana": []
         }
       ],
@@ -8685,7 +9244,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-119. See n5-119 for the primary discussion of this pattern."
     },
     {
       "id": "n5-162",
@@ -8693,8 +9252,8 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 10,
-      "meaning_en": "Verb-plain まえに - see ～まえ (see n5-119 for full content)",
-      "meaning_ja": "(n5-119を ごさんしょう)",
+      "meaning_en": "Verb-plain まえに - see ～まえ",
+      "meaning_ja": "「〜まえ」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -8705,12 +9264,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-119. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "まえ = 'before'. Noun + の + まえ(に); Verb-plain (NON-PAST) + まえに. Note: verb stays NON-PAST even when the meaning is 'before doing X (in the past)'.\n\n(This pattern is also indexed as 'Verb' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-119)",
+          "ja": "ごはんの まえに てを あらいます。",
           "form": "affirmative",
-          "translation_en": "See n5-119 for examples.",
+          "translation_en": "I wash my hands before meals.",
+          "furigana": []
+        },
+        {
+          "ja": "ねる まえに 本を 読みます。",
+          "form": "affirmative",
+          "translation_en": "I read a book before going to bed.",
           "furigana": []
         }
       ],
@@ -8721,7 +9286,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-119. See n5-119 for the primary discussion of this pattern."
     },
     {
       "id": "n5-163",
@@ -8729,8 +9294,8 @@
       "category": "Other Core Patterns",
       "categoryOrder": 22,
       "patternOrder": 11,
-      "meaning_en": "Verb-た あとで - see ～あと (see n5-120 for full content)",
-      "meaning_ja": "(n5-120を ごさんしょう)",
+      "meaning_en": "Verb-た あとで - see ～あと",
+      "meaning_ja": "「〜あと」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -8741,12 +9306,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-120. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "あと = 'after'. Noun + の + あとで; Verb-PAST + あとで. Verb is PAST here (opposite of まえに).\n\n(This pattern is also indexed as 'Verb' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-120)",
+          "ja": "しごとの あとで のみに 行きました。",
+          "form": "past",
+          "translation_en": "I went for drinks after work.",
+          "furigana": []
+        },
+        {
+          "ja": "ばんごはんを たべた あとで テレビを 見ます。",
           "form": "affirmative",
-          "translation_en": "See n5-120 for examples.",
+          "translation_en": "I watch TV after dinner.",
           "furigana": []
         }
       ],
@@ -8757,7 +9328,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-120. See n5-120 for the primary discussion of this pattern."
     },
     {
       "id": "n5-164",
@@ -9174,8 +9745,8 @@
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 3,
-      "meaning_en": "Must do (formal variant - same as いけない) (see n5-173 for full content)",
-      "meaning_ja": "(n5-173を ごさんしょう)",
+      "meaning_en": "Must do (formal variant - same as いけない)",
+      "meaning_ja": "「〜なくては いけない」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -9186,12 +9757,12 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Negative te-form + は + いけない = 'must do' (lit. 'not doing won't work'). Casual contraction: ～なくちゃ.\n\n(This pattern is also indexed as '～なくてはならない' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-173)",
+          "ja": "もう 行かなくては いけません。",
           "form": "affirmative",
-          "translation_en": "See n5-173 for examples.",
+          "translation_en": "I have to go now.",
           "furigana": []
         }
       ],
@@ -9202,7 +9773,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-173. See n5-173 for the primary discussion of this pattern."
     },
     {
       "id": "n5-175",
@@ -9210,8 +9781,8 @@
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 4,
-      "meaning_en": "Must do (common spoken variant) (see n5-173 for full content)",
-      "meaning_ja": "(n5-173を ごさんしょう)",
+      "meaning_en": "Must do (common spoken variant)",
+      "meaning_ja": "「〜なくては いけない」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -9222,12 +9793,12 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Negative te-form + は + いけない = 'must do' (lit. 'not doing won't work'). Casual contraction: ～なくちゃ.\n\n(This pattern is also indexed as '～ないといけない' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-173)",
+          "ja": "もう 行かなくては いけません。",
           "form": "affirmative",
-          "translation_en": "See n5-173 for examples.",
+          "translation_en": "I have to go now.",
           "furigana": []
         }
       ],
@@ -9238,7 +9809,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-173. See n5-173 for the primary discussion of this pattern."
     },
     {
       "id": "n5-176",
@@ -9246,8 +9817,8 @@
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 5,
-      "meaning_en": "Must do (casual contractions) (see n5-173 for full content)",
-      "meaning_ja": "(n5-173を ごさんしょう)",
+      "meaning_en": "Must do (casual contractions)",
+      "meaning_ja": "「〜なくては いけない」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -9258,12 +9829,12 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Negative te-form + は + いけない = 'must do' (lit. 'not doing won't work'). Casual contraction: ～なくちゃ.\n\n(This pattern is also indexed as '～なくちゃ / ～なきゃ' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-173)",
+          "ja": "もう 行かなくては いけません。",
           "form": "affirmative",
-          "translation_en": "See n5-173 for examples.",
+          "translation_en": "I have to go now.",
           "furigana": []
         }
       ],
@@ -9274,7 +9845,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-173. See n5-173 for the primary discussion of this pattern."
     },
     {
       "id": "n5-177",
@@ -9541,8 +10112,8 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 18,
-      "meaning_en": "Something / nothing - see compound rule (see n5-183 for full content)",
-      "meaning_ja": "(n5-183を ごさんしょう)",
+      "meaning_en": "Something / nothing - see compound rule",
+      "meaning_ja": "「question word + か / も」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -9553,12 +10124,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.\n\n(This pattern is also indexed as 'なにか / なにも' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-183)",
+          "ja": "なにか たべたいです。",
           "form": "affirmative",
-          "translation_en": "See n5-183 for examples.",
+          "translation_en": "I want to eat something.",
+          "furigana": []
+        },
+        {
+          "ja": "なにも たべません。",
+          "form": "negative",
+          "translation_en": "I won't eat anything.",
           "furigana": []
         }
       ],
@@ -9569,7 +10146,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-183. See n5-183 for the primary discussion of this pattern."
     },
     {
       "id": "n5-185",
@@ -9577,8 +10154,8 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 19,
-      "meaning_en": "Someone / no one (see n5-183 for full content)",
-      "meaning_ja": "(n5-183を ごさんしょう)",
+      "meaning_en": "Someone / no one",
+      "meaning_ja": "「question word + か / も」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -9589,12 +10166,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.\n\n(This pattern is also indexed as 'だれか / だれも' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-183)",
+          "ja": "なにか たべたいです。",
           "form": "affirmative",
-          "translation_en": "See n5-183 for examples.",
+          "translation_en": "I want to eat something.",
+          "furigana": []
+        },
+        {
+          "ja": "なにも たべません。",
+          "form": "negative",
+          "translation_en": "I won't eat anything.",
           "furigana": []
         }
       ],
@@ -9605,7 +10188,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-183. See n5-183 for the primary discussion of this pattern."
     },
     {
       "id": "n5-186",
@@ -9613,8 +10196,8 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 20,
-      "meaning_en": "Somewhere / nowhere (see n5-183 for full content)",
-      "meaning_ja": "(n5-183を ごさんしょう)",
+      "meaning_en": "Somewhere / nowhere",
+      "meaning_ja": "「question word + か / も」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -9625,12 +10208,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.\n\n(This pattern is also indexed as 'どこか / どこも' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-183)",
+          "ja": "なにか たべたいです。",
           "form": "affirmative",
-          "translation_en": "See n5-183 for examples.",
+          "translation_en": "I want to eat something.",
+          "furigana": []
+        },
+        {
+          "ja": "なにも たべません。",
+          "form": "negative",
+          "translation_en": "I won't eat anything.",
           "furigana": []
         }
       ],
@@ -9641,7 +10230,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-183. See n5-183 for the primary discussion of this pattern."
     },
     {
       "id": "n5-187",
@@ -9649,8 +10238,8 @@
       "category": "Question Words",
       "categoryOrder": 4,
       "patternOrder": 21,
-      "meaning_en": "Sometime / always (see n5-183 for full content)",
-      "meaning_ja": "(n5-183を ごさんしょう)",
+      "meaning_en": "Sometime / always",
+      "meaning_ja": "「question word + か / も」",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -9661,12 +10250,18 @@
           }
         ]
       },
-      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
+      "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.\n\n(This pattern is also indexed as 'いつか / いつも' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "(see n5-183)",
+          "ja": "なにか たべたいです。",
           "form": "affirmative",
-          "translation_en": "See n5-183 for examples.",
+          "translation_en": "I want to eat something.",
+          "furigana": []
+        },
+        {
+          "ja": "なにも たべません。",
+          "form": "negative",
+          "translation_en": "I won't eat anything.",
           "furigana": []
         }
       ],
@@ -9677,7 +10272,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-183. See n5-183 for the primary discussion of this pattern."
     }
   ]
 }

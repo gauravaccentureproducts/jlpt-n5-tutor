@@ -66,13 +66,13 @@ Notation:
   - Kun: ち
   - Meaning: thousand
 - **万**
-  - On: マン, バン
+  - On: マン
   - Kun: -
-  - Meaning: ten thousand
+  - Meaning: ten thousand (バン reading is rare/specialized; not N5)
 - **円**
   - On: エン
-  - Kun: まる(い)
-  - Meaning: yen / circle / round
+  - Kun: -
+  - Meaning: yen (the currency) - primary N5 use is in compounds like 100円. The kun reading まる(い) "round" is N4+; not tested at N5.
 
 ---
 
@@ -127,7 +127,7 @@ Notation:
   - Kun: なか(ば)
   - Meaning: half
 - **今**
-  - On: コン, キン
+  - On: コン
   - Kun: いま
   - Meaning: now
 - **毎**
@@ -190,6 +190,31 @@ Notation:
 
 ---
 
+## Body
+
+- **手**
+  - On: シュ
+  - Kun: て
+  - Meaning: hand
+- **足**
+  - On: ソク
+  - Kun: あし
+  - Meaning: foot, leg
+- **目**
+  - On: モク
+  - Kun: め
+  - Meaning: eye
+- **口**
+  - On: コウ
+  - Kun: くち
+  - Meaning: mouth
+- **力**
+  - On: リョク, リキ
+  - Kun: ちから
+  - Meaning: power, strength
+
+---
+
 ## School and Work
 
 - **学**
@@ -242,12 +267,12 @@ Notation:
   - Kun: ちい(さい), こ-, お-
   - Meaning: small, little
 - **上**
-  - On: ジョウ, ショウ
-  - Kun: うえ, うわ-, あ(げる), のぼ(る)
+  - On: ジョウ
+  - Kun: うえ, あ(げる)
   - Meaning: up, above
 - **下**
   - On: カ, ゲ
-  - Kun: した, しも, さ(げる), くだ(る), お(りる)
+  - Kun: した, さ(げる)
   - Meaning: down, below
 - **左**
   - On: サ
@@ -266,8 +291,8 @@ Notation:
   - Kun: のち, うし(ろ), あと
   - Meaning: after, behind
 - **外**
-  - On: ガイ, ゲ
-  - Kun: そと, ほか, はず(す)
+  - On: ガイ
+  - Kun: そと
   - Meaning: outside
 - **東**
   - On: トウ

@@ -25,14 +25,14 @@
       "id": "n5.vocab.1-people-pronouns-and-se.かれ",
       "form": "かれ",
       "reading": null,
-      "gloss": "he, boyfriend",
+      "gloss": "he, him (boyfriend - more advanced sense)",
       "section": "1. People - Pronouns and Self"
     },
     {
       "id": "n5.vocab.1-people-pronouns-and-se.かのじょ",
       "form": "かのじょ",
       "reading": null,
-      "gloss": "she, girlfriend",
+      "gloss": "she, her (girlfriend - more advanced sense)",
       "section": "1. People - Pronouns and Self"
     },
     {
@@ -312,21 +312,21 @@
       "id": "n5.vocab.3-people-roles.けいかん",
       "form": "けいかん",
       "reading": null,
-      "gloss": "police officer **[Ext]**",
+      "gloss": "police officer",
       "section": "3. People - Roles"
     },
     {
       "id": "n5.vocab.3-people-roles.おまわりさん",
       "form": "おまわりさん",
       "reading": null,
-      "gloss": "police officer (friendly) **[Ext]**",
+      "gloss": "police officer (friendly)",
       "section": "3. People - Roles"
     },
     {
       "id": "n5.vocab.3-people-roles.りゅうがくせい",
       "form": "りゅうがくせい",
       "reading": null,
-      "gloss": "international student **[Ext]**",
+      "gloss": "international student",
       "section": "3. People - Roles"
     },
     {
@@ -809,7 +809,7 @@
       "id": "n5.vocab.7-numbers.おく",
       "form": "おく",
       "reading": null,
-      "gloss": "hundred million **[Ext]**",
+      "gloss": "hundred million",
       "section": "7. Numbers"
     },
     {
@@ -1474,7 +1474,7 @@
       "id": "n5.vocab.11-time-days-weeks-month.毎年",
       "form": "毎年",
       "reading": "まいとし / まいねん",
-      "gloss": "every year",
+      "gloss": "every year (まいとし is more common in conversation; まいねん in formal/written contexts)",
       "section": "11. Time - Days, Weeks, Months, Years"
     },
     {
@@ -1488,7 +1488,7 @@
       "id": "n5.vocab.11-time-days-weeks-month.さらいねん",
       "form": "さらいねん",
       "reading": null,
-      "gloss": "year after next **[Ext]**",
+      "gloss": "year after next",
       "section": "11. Time - Days, Weeks, Months, Years"
     },
     {
@@ -1572,7 +1572,14 @@
       "id": "n5.vocab.12-time-frequency-sequen.もう",
       "form": "もう",
       "reading": null,
-      "gloss": "already, soon, more",
+      "gloss": "already (with affirmative); anymore (with negative); more (as in もう一つ)",
+      "section": "12. Time - Frequency / Sequence"
+    },
+    {
+      "id": "n5.vocab.12-time-frequency-sequen.もうすぐ",
+      "form": "もうすぐ",
+      "reading": null,
+      "gloss": "soon, before long",
       "section": "12. Time - Frequency / Sequence"
     },
     {
@@ -1845,14 +1852,14 @@
       "id": "n5.vocab.13-locations-and-places-.どうぶつえん",
       "form": "どうぶつえん",
       "reading": null,
-      "gloss": "zoo **[Ext]**",
+      "gloss": "zoo",
       "section": "13. Locations and Places (general)"
     },
     {
       "id": "n5.vocab.13-locations-and-places-.びじゅつかん",
       "form": "びじゅつかん",
       "reading": null,
-      "gloss": "art museum **[Ext]**",
+      "gloss": "art museum",
       "section": "13. Locations and Places (general)"
     },
     {
@@ -1873,21 +1880,21 @@
       "id": "n5.vocab.13-locations-and-places-.りょかん",
       "form": "りょかん",
       "reading": null,
-      "gloss": "Japanese inn **[Cul]**",
+      "gloss": "Japanese inn",
       "section": "13. Locations and Places (general)"
     },
     {
       "id": "n5.vocab.13-locations-and-places-.たいしかん",
       "form": "たいしかん",
       "reading": null,
-      "gloss": "embassy **[Ext]**",
+      "gloss": "embassy",
       "section": "13. Locations and Places (general)"
     },
     {
       "id": "n5.vocab.13-locations-and-places-.こうばん",
       "form": "こうばん",
       "reading": null,
-      "gloss": "police box **[Cul]**",
+      "gloss": "police box",
       "section": "13. Locations and Places (general)"
     },
     {
@@ -2419,7 +2426,7 @@
       "id": "n5.vocab.15-animals.ぞう",
       "form": "ぞう",
       "reading": null,
-      "gloss": "elephant **[Cul]**",
+      "gloss": "elephant",
       "section": "15. Animals"
     },
     {
@@ -2615,7 +2622,7 @@
       "id": "n5.vocab.17-food-items.だいこん",
       "form": "だいこん",
       "reading": null,
-      "gloss": "daikon radish **[Cul]**",
+      "gloss": "daikon radish",
       "section": "17. Food - Items"
     },
     {
@@ -2685,14 +2692,14 @@
       "id": "n5.vocab.17-food-items.しょうゆ",
       "form": "しょうゆ",
       "reading": null,
-      "gloss": "soy sauce **[Cul]**",
+      "gloss": "soy sauce",
       "section": "17. Food - Items"
     },
     {
       "id": "n5.vocab.17-food-items.みそ",
       "form": "みそ",
       "reading": null,
-      "gloss": "miso **[Cul]**",
+      "gloss": "miso",
       "section": "17. Food - Items"
     },
     {
@@ -2713,14 +2720,14 @@
       "id": "n5.vocab.17-food-items.すし",
       "form": "すし",
       "reading": null,
-      "gloss": "sushi **[Cul]**",
+      "gloss": "sushi",
       "section": "17. Food - Items"
     },
     {
       "id": "n5.vocab.17-food-items.天ぷら",
       "form": "天ぷら",
       "reading": "てんぷら",
-      "gloss": "tempura **[Cul]**",
+      "gloss": "tempura",
       "section": "17. Food - Items"
     },
     {
@@ -2741,14 +2748,14 @@
       "id": "n5.vocab.17-food-items.うどん",
       "form": "うどん",
       "reading": null,
-      "gloss": "udon **[Cul]**",
+      "gloss": "udon",
       "section": "17. Food - Items"
     },
     {
       "id": "n5.vocab.17-food-items.そば",
       "form": "そば",
       "reading": null,
-      "gloss": "soba **[Cul]**",
+      "gloss": "soba",
       "section": "17. Food - Items"
     },
     {
@@ -3077,7 +3084,7 @@
       "id": "n5.vocab.21-clothing-and-accessor.きもの",
       "form": "きもの",
       "reading": null,
-      "gloss": "kimono, traditional clothes **[Cul]**",
+      "gloss": "kimono, traditional clothes",
       "section": "21. Clothing and Accessories"
     },
     {
@@ -3294,7 +3301,7 @@
       "id": "n5.vocab.22-money-and-shopping.おみやげ",
       "form": "おみやげ",
       "reading": null,
-      "gloss": "souvenir **[Cul]**",
+      "gloss": "souvenir",
       "section": "22. Money and Shopping"
     },
     {
@@ -3357,7 +3364,7 @@
       "id": "n5.vocab.23-transport.きしゃ",
       "form": "きしゃ",
       "reading": null,
-      "gloss": "train (steam, archaic but still in older N5 lists) **[Ext]**",
+      "gloss": "train (steam, archaic but still in older N5 lists)",
       "section": "23. Transport"
     },
     {
@@ -3462,7 +3469,7 @@
       "id": "n5.vocab.24-school-and-study.じ",
       "form": "じ",
       "reading": null,
-      "gloss": "character, letter",
+      "gloss": "character (writing), letter (of an alphabet)",
       "section": "24. School and Study"
     },
     {
@@ -3595,7 +3602,7 @@
       "id": "n5.vocab.24-school-and-study.まんねんひつ",
       "form": "まんねんひつ",
       "reading": null,
-      "gloss": "fountain pen **[Ext]**",
+      "gloss": "fountain pen",
       "section": "24. School and Study"
     },
     {
@@ -3819,7 +3826,7 @@
       "id": "n5.vocab.26-house-and-furniture.マンション",
       "form": "マンション",
       "reading": null,
-      "gloss": "condominium **[Cul]**",
+      "gloss": "condominium",
       "section": "26. House and Furniture"
     },
     {
@@ -3910,7 +3917,7 @@
       "id": "n5.vocab.26-house-and-furniture.ふとん",
       "form": "ふとん",
       "reading": null,
-      "gloss": "futon **[Cul]**",
+      "gloss": "futon",
       "section": "26. House and Furniture"
     },
     {
@@ -4141,7 +4148,7 @@
       "id": "n5.vocab.27-verbs-group-1-verbs.きる",
       "form": "きる",
       "reading": null,
-      "gloss": "to cut",
+      "gloss": "to cut (Group 1 exception - looks like Group 2)",
       "section": "27. Verbs - Group 1 (う-verbs)"
     },
     {
@@ -4155,7 +4162,7 @@
       "id": "n5.vocab.27-verbs-group-1-verbs.しる",
       "form": "しる",
       "reading": null,
-      "gloss": "to know",
+      "gloss": "to know (Group 1 exception - looks like Group 2)",
       "section": "27. Verbs - Group 1 (う-verbs)"
     },
     {
@@ -4204,7 +4211,7 @@
       "id": "n5.vocab.27-verbs-group-1-verbs.入る",
       "form": "入る",
       "reading": "はいる",
-      "gloss": "to enter",
+      "gloss": "to enter (Group 1 exception - looks like Group 2)",
       "section": "27. Verbs - Group 1 (う-verbs)"
     },
     {
@@ -4225,7 +4232,7 @@
       "id": "n5.vocab.27-verbs-group-1-verbs.はしる",
       "form": "はしる",
       "reading": null,
-      "gloss": "to run",
+      "gloss": "to run (Group 1 exception - looks like Group 2)",
       "section": "27. Verbs - Group 1 (う-verbs)"
     },
     {
@@ -4295,7 +4302,7 @@
       "id": "n5.vocab.27-verbs-group-1-verbs.かえる",
       "form": "かえる",
       "reading": null,
-      "gloss": "to return home",
+      "gloss": "to return home (Group 1 exception - looks like Group 2)",
       "section": "27. Verbs - Group 1 (う-verbs)"
     },
     {
@@ -4351,28 +4358,28 @@
       "id": "n5.vocab.27-verbs-group-1-verbs.こまる",
       "form": "こまる",
       "reading": null,
-      "gloss": "to be troubled **[Ext]**",
+      "gloss": "to be troubled",
       "section": "27. Verbs - Group 1 (う-verbs)"
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.ならぶ",
       "form": "ならぶ",
       "reading": null,
-      "gloss": "to line up **[Ext]**",
+      "gloss": "to line up",
       "section": "27. Verbs - Group 1 (う-verbs)"
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.のぼる",
       "form": "のぼる",
       "reading": null,
-      "gloss": "to climb **[Ext]**",
+      "gloss": "to climb",
       "section": "27. Verbs - Group 1 (う-verbs)"
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.わたす",
       "form": "わたす",
       "reading": null,
-      "gloss": "to hand over **[Ext]**",
+      "gloss": "to hand over",
       "section": "27. Verbs - Group 1 (う-verbs)"
     },
     {
@@ -4456,7 +4463,7 @@
       "id": "n5.vocab.27-verbs-group-1-verbs.みがく",
       "form": "みがく",
       "reading": null,
-      "gloss": "to polish, to brush **[Ext]**",
+      "gloss": "to polish, to brush",
       "section": "27. Verbs - Group 1 (う-verbs)"
     },
     {
@@ -4722,7 +4729,7 @@
       "id": "n5.vocab.28-verbs-group-2-verbs.ならべる",
       "form": "ならべる",
       "reading": null,
-      "gloss": "to line up (transitive) **[Ext]**",
+      "gloss": "to line up (transitive)",
       "section": "28. Verbs - Group 2 (る-verbs)"
     },
     {
@@ -4932,7 +4939,7 @@
       "id": "n5.vocab.30-verbs-existence-and-p.いる.2",
       "form": "いる",
       "reading": null,
-      "gloss": "to need (homophone of the existence いる; this one is godan / Group 1)",
+      "gloss": "to need (Group 1 exception - looks like Group 2; homophone of existence-いる which is Group 2)",
       "section": "30. Verbs - Existence and Possession"
     },
     {
@@ -5576,7 +5583,7 @@
       "id": "n5.vocab.32-adjectives.りっぱ",
       "form": "りっぱ",
       "reading": null,
-      "gloss": "splendid **[Ext]**",
+      "gloss": "splendid",
       "section": "32. な-Adjectives"
     },
     {
@@ -6192,35 +6199,35 @@
       "id": "n5.vocab.36-greetings-and-set-phr.ごちそうさまでした",
       "form": "ごちそうさまでした",
       "reading": null,
-      "gloss": "said after eating **[Cul]**",
+      "gloss": "said after eating",
       "section": "36. Greetings and Set Phrases"
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.いってきます",
       "form": "いってきます",
       "reading": null,
-      "gloss": "I'm leaving (home) **[Cul]**",
+      "gloss": "I'm off (and will return)",
       "section": "36. Greetings and Set Phrases"
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.いってらっしゃい",
       "form": "いってらっしゃい",
       "reading": null,
-      "gloss": "see you / take care **[Cul]**",
+      "gloss": "see you / take care",
       "section": "36. Greetings and Set Phrases"
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.ただいま",
       "form": "ただいま",
       "reading": null,
-      "gloss": "I'm home **[Cul]**",
+      "gloss": "I'm home",
       "section": "36. Greetings and Set Phrases"
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.おかえりなさい",
       "form": "おかえりなさい",
       "reading": null,
-      "gloss": "welcome back **[Cul]**",
+      "gloss": "welcome back",
       "section": "36. Greetings and Set Phrases"
     },
     {
@@ -6248,14 +6255,14 @@
       "id": "n5.vocab.36-greetings-and-set-phr.おかげさまで",
       "form": "おかげさまで",
       "reading": null,
-      "gloss": "thanks to you **[Cul]**",
+      "gloss": "thanks to you",
       "section": "36. Greetings and Set Phrases"
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.いらっしゃいませ",
       "form": "いらっしゃいませ",
       "reading": null,
-      "gloss": "welcome (to a shop) **[Cul]**",
+      "gloss": "welcome (to a shop)",
       "section": "36. Greetings and Set Phrases"
     },
     {
@@ -6437,7 +6444,7 @@
       "id": "n5.vocab.37-common-nouns-miscella.おみやげ",
       "form": "おみやげ",
       "reading": null,
-      "gloss": "souvenir (also in §22 - listed here for thematic completeness) **[Cul]**",
+      "gloss": "souvenir (also in §22 - listed here for thematic completeness)",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {
@@ -6451,7 +6458,7 @@
       "id": "n5.vocab.37-common-nouns-miscella.りゅうがく",
       "form": "りゅうがく",
       "reading": null,
-      "gloss": "study abroad **[Ext]**",
+      "gloss": "study abroad",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {
@@ -6472,7 +6479,7 @@
       "id": "n5.vocab.37-common-nouns-miscella.りょかん",
       "form": "りょかん",
       "reading": null,
-      "gloss": "Japanese inn (also in §13) **[Cul]**",
+      "gloss": "Japanese inn (also in §13)",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {
@@ -6528,7 +6535,7 @@
       "id": "n5.vocab.37-common-nouns-miscella.マッチ",
       "form": "マッチ",
       "reading": null,
-      "gloss": "match (lighting) **[Cul]**",
+      "gloss": "match (lighting)",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {
@@ -6542,7 +6549,7 @@
       "id": "n5.vocab.37-common-nouns-miscella.はいざら",
       "form": "はいざら",
       "reading": null,
-      "gloss": "ashtray **[Cul]**",
+      "gloss": "ashtray",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {
@@ -6563,14 +6570,14 @@
       "id": "n5.vocab.37-common-nouns-miscella.フィルム",
       "form": "フィルム",
       "reading": null,
-      "gloss": "film **[Cul]**",
+      "gloss": "film",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.レコード",
       "form": "レコード",
       "reading": null,
-      "gloss": "record **[Cul]**",
+      "gloss": "record",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {
@@ -6710,7 +6717,7 @@
       "id": "n5.vocab.37-common-nouns-miscella.せびろ",
       "form": "せびろ",
       "reading": null,
-      "gloss": "business suit (older term, replaced by スーツ in modern usage) **[Ext]**",
+      "gloss": "business suit (older term, replaced by スーツ in modern usage)",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {
@@ -6752,21 +6759,21 @@
       "id": "n5.vocab.37-common-nouns-miscella.じびき",
       "form": "じびき",
       "reading": null,
-      "gloss": "dictionary (older term, alt for じしょ) **[Ext]**",
+      "gloss": "dictionary (older term, alt for じしょ)",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.テープレコーダー",
       "form": "テープレコーダー",
       "reading": null,
-      "gloss": "tape recorder **[Cul]**",
+      "gloss": "tape recorder",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.ストーブ",
       "form": "ストーブ",
       "reading": null,
-      "gloss": "heater, stove **[Cul]**",
+      "gloss": "heater, stove",
       "section": "37. Common Nouns - Miscellaneous"
     },
     {

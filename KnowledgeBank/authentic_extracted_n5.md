@@ -1,10 +1,23 @@
-# JLPT N5 Authentic Extracted Questions
+# JLPT N5 Externally-Sourced Practice Questions
 
-A supplementary bank of source-attributed JLPT N5 practice questions extracted from authoritative practice-test sites. Use this as a complement to the four primary banks (`moji_questions_n5.md`, `goi_questions_n5.md`, `bunpou_questions_n5.md`, `dokkai_questions_n5.md`) which are mostly original adaptations.
+A supplementary bank of JLPT N5 practice questions extracted from a public third-party prep site. Use this as a complement to the four primary banks (`moji_questions_n5.md`, `goi_questions_n5.md`, `bunpou_questions_n5.md`, `dokkai_questions_n5.md`) which are mostly original adaptations.
+
+## Provenance disclosure
+
+> **Important:** The questions in this file are extracted from `learnjapaneseaz.com`, a third-party JLPT prep site. They are **NOT** drawn from:
+> - JEES (Japan Educational Exchanges and Services) official past papers
+> - 国際交流基金 (Japan Foundation) official sample papers (jlpt.jp)
+> - The 旧日本語能力試験出題基準 (1994/2002 official scope document)
+>
+> The site itself credits the questions to "a mix of past JLPT papers and original prep authors," but this attribution is not independently verified.
+>
+> The filename retains the word "authentic" for backward compatibility with existing tools and references. **The label is misleading and is being phased out.** A future pass (Pass 12) is planned to re-source this file from JEES サンプル問題 (jlpt.jp 公式サンプル問題), which are publicly downloadable and carry official-source attribution.
+>
+> **Until Pass 12:** treat these questions as third-party prep material useful for additional drill volume, not as canonical JLPT specimens. The four primary banks remain the canonical reference for JLPT-format fidelity.
 
 ## Source attribution
 
-All questions in this file are extracted from public practice tests on `learnjapaneseaz.com/jlpt/jlpt-n5`. Each question is tagged with its source URL. The site itself credits the questions to a mix of past JLPT papers and original prep authors.
+All questions in this file are extracted from public practice tests on `learnjapaneseaz.com/jlpt/jlpt-n5`. Each question is tagged with its source URL.
 
 ## Categories
 
@@ -23,6 +36,14 @@ Total: **98 source-attributed authentic questions** across all four sections.
 - Each question records the source URL on the same line as the question heading.
 - Stems are presented as on the source site (which uses some non-N5 kanji - e.g. 友達, 先, 元気, 兄, 妹, 弟, 銀行, 雑誌, 駅, 美術館, 図書館). The kanji-scope exception established in `moji_questions_n5.md` applies to this file too.
 - No em dashes (U+2014).
+
+## Engine display note
+
+For mock-test mode, the app's test engine MUST hide the `**Answer:**` line and rationale until the student commits an answer. The visible-by-default format here is for self-study reference; runtime test rendering is the engine's responsibility.
+
+## Numeral convention
+
+Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) and arabic numerals (1, 2, 100, 1000) - mirroring authentic JLPT papers, which use kanji numerals in narrative text and arabic numerals in prices, addresses, schedules, and time tables. This is intentional, not inconsistency.
 
 ---
 
@@ -146,7 +167,7 @@ Total: **98 source-attributed authentic questions** across all four sections.
 2. に
 3. へ
 4. を
-**Answer: 4** (を with motion verbs over a path).
+**Answer: 4** (motion-を: standard N5 construction. Verbs of movement through / along a path - 渡る (cross), 歩く (walk), とぶ (fly) - take を, not で or に, for the path).
 
 #### Q15
 きょねんの3月（　　）日本へ来ました。
@@ -222,7 +243,7 @@ Total: **98 source-attributed authentic questions** across all four sections.
 2. かりた
 3. かりました
 4. かりて
-**Answer: 2** (relative clause needs plain past).
+**Answer: 2** (relative clause needs plain past. Note on the source-site stem: 「ともだちに かりた」 uses に for the lender; から is also acceptable. Both `〜にかりる` and `〜からかりる` are recognized N5 patterns).
 
 #### Q24
 ラジオを（　　）べんきょうします。
@@ -373,7 +394,7 @@ Total: **98 source-attributed authentic questions** across all four sections.
 In each, four shuffled fragments are arranged. The position marked `★` indicates which fragment number the answer refers to.
 
 #### Q41
-わたし ___ ___ ★___ ___ はです。
+わたし ___ ___ ★ ___ ___ はです。
 1. すき
 2. りょうり
 3. は
@@ -381,7 +402,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 4 (が)** in the ★ slot.
 
 #### Q42
-ぎんこうは ★___ ___ ___ ___ あります。
+ぎんこうは ★ ___ ___ ___ ___ あります。
 1. に
 2. となり
 3. の
@@ -389,15 +410,15 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 4 (スーパー)** in the ★ slot.
 
 #### Q43
-このみちを ★___ ___ ___ ___ をあります。
+このみちを ★ ___ ___ ___ ___ あります。
 1. 行って
 2. ひだりがわ
 3. まっすぐ
 4. に
-**Answer: 3 (まっすぐ)** in the ★ slot.
+**Answer: 3 (まっすぐ)** in the ★ slot. Order: まっすぐ(3=★) 行って(1) ひだりがわ(2) に(4) あります.
 
 #### Q44
-ヤンさん ___ ___ ★___ ___ もらいました。
+ヤンさん ___ ___ ★ ___ ___ もらいました。
 1. を
 2. きれいな
 3. に
@@ -405,7 +426,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 3 (に)** in the ★ slot.
 
 #### Q45
-出かける ___ ___ ___ ★___ 行きます。
+出かける ___ ___ ___ ★ ___ 行きます。
 1. とき
 2. もって
 3. カメラ
@@ -413,7 +434,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 2 (もって)** in the ★ slot.
 
 #### Q46
-さんぽ ___ ★___ ___ ___ 。
+さんぽ ___ ★ ___ ___ ___ 。
 1. ごはんを
 2. あとで
 3. 食べます
@@ -421,7 +442,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 2 (あとで)** in the ★ slot.
 
 #### Q47
-かんじがわかりません ___ ___ ★___ ___ ください。
+かんじがわかりません ___ ___ ★ ___ ___ ください。
 1. ひらがな
 2. 書いて
 3. で
@@ -429,7 +450,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 3 (で)** in the ★ slot.
 
 #### Q48
-これはせんしゅう母 ___ ___ ★___ ___ くつです。
+これはせんしゅう母 ___ ___ ★ ___ ___ くつです。
 1. で
 2. かった
 3. が
@@ -437,7 +458,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 1 (で)** in the ★ slot.
 
 #### Q49
-すみませんが、 ___ ___ ★___ ___ ください 。
+すみませんが、 ___ ___ ★ ___ ___ ください 。
 1. もう
 2. 話して
 3. すこし
@@ -445,7 +466,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 4 (ゆっくり)** in the ★ slot.
 
 #### Q50
-休みの日、へや ★___ ___ ___ ___ 。
+休みの日、へや ★ ___ ___ ___ ___ 。
 1. の
 2. そうじ
 3. を
@@ -461,7 +482,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 > Source: https://learnjapaneseaz.com/jlpt-n5-kanji-practice-test-1.html (page 16)
 
 #### Q51 (CORRECTED - source error replaced with valid item)
-かばんのなかに**五千円**のとけいがあります。
+かばんのなかに<u>五千円</u>のとけいがあります。
 1. ごせんえん
 2. ごまんえん
 3. ごせんねん
@@ -469,7 +490,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 1** - 五千円 = ごせんえん (5,000 yen). Original site Q1 had a misspelled stem and answer set; the canonical reading was not present in the options. Replaced here with a valid 千 / 円 reading question using only N5 kanji.
 
 #### Q52
-としょかんでにほんごのほんを**読みます**。
+としょかんでにほんごのほんを<u>読みます</u>。
 1. よみます
 2. やみます
 3. こみます
@@ -477,7 +498,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 1** (よみます).
 
 #### Q53
-**毎日**晩ご飯のあとさんぽします。
+<u>毎日</u>晩ご飯のあとさんぽします。
 1. まいひ
 2. こんじつ
 3. まいにち
@@ -485,7 +506,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 3** (まいにち).
 
 #### Q54
-このこうえんにはとりが**多い**です。
+このこうえんにはとりが<u>多い</u>です。
 1. おい
 2. おおきい
 3. おいい
@@ -493,7 +514,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 4** (おおい).
 
 #### Q55 (CORRECTED - source typo fixed)
-**今朝**、あめがふりました。
+<u>今朝</u>、あめがふりました。
 1. こんちょう
 2. けさ
 3. いまあさ
@@ -501,7 +522,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 2** - 今朝 (けさ) is a jukujikun (special reading). The original site option set contained a duplicate/typo; corrected here with the canonical reading.
 
 #### Q56
-ねるまえに**風呂**にはいりました。
+ねるまえに<u>風呂</u>にはいりました。
 1. ふろう
 2. ふうろ
 3. ふどう
@@ -509,7 +530,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 4** (ふろ).
 
 #### Q57
-ふゆやすみに**北海道**へあそびにいきました。
+ふゆやすみに<u>北海道</u>へあそびにいきました。
 1. ほっかいど
 2. ほっかいどう
 3. はかいど
@@ -517,40 +538,39 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 2** (ほっかいどう).
 
 #### Q58
-このみちを**みぎ**にまがります。
-1. かど
-2. はし
-3. みち
-4. へん
-*(Note: this is reverse - finding the correct kanji-form for the underlined hiragana, which is 表記 hyouki not kanji-yomi.)*
-**Answer: 3** (みち = 道).
+この<u>みち</u>をまっすぐ行ってください。
+1. 川
+2. 田
+3. 道
+4. 駅
+**Answer: 3** (みち = 道). 表記 (hyouki) item: pick the correct kanji form for the underlined hiragana.
 
-#### Q59
-あのひとはとても**有名**です。
-1. ゆうめ
-2. ゆめい
-3. ゆうまい
-4. ゆうめい
-**Answer: 4** (ゆうめい).
+#### Q59 (REPLACED - source stem used N3 kanji 有名)
+わたしは <u>休み</u> の日に こうえんへ 行きます。
+1. やすみ
+2. やすむ
+3. やすめ
+4. やすま
+**Answer: 1** (やすみ - rest / day off). Replaces the original 有名 stem because 有 (N3) and 名 (N5) together push the compound out of the N5 stem-kanji rule. The replacement uses 休 (N5) with a kun-yomi reading typical of N5 paper.
 
 #### Q60
-つくえの**下**にねこがいます。
+つくえの<u>下</u>にねこがいます。
 1. うえ
 2. すた
 3. した
 4. かた
 **Answer: 3** (した).
 
-#### Q61
-**可愛い**おんなのこがうまれました。
-1. かわい
-2. かわいい
-3. かはい
-4. かはいい
-**Answer: 2** (かわいい).
+#### Q61 (REPLACED - 可愛い uses N3-only kanji in stem)
+わたしの いえは 駅から <u>近い</u>です。
+1. ちかい
+2. とおい
+3. きれい
+4. ながい
+**Answer: 1** (ちかい). Replaces the original 可愛い stem because 可 is N4-level, putting the compound outside the N5 stem-kanji rule. The replacement uses 近 (N5) with its standard kun-yomi.
 
 #### Q62
-**六日**のごごにあいましょう。
+<u>六日</u>のごごにあいましょう。
 1. いつつ
 2. いつか
 3. むつか
@@ -562,7 +582,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 > Source: https://learnjapaneseaz.com/jlpt-n5-kanji-practice-test-2.html (page 20)
 
 #### Q63
-どうぞ お**先**に お入り ください。
+どうぞ お<u>先</u>に お入り ください。
 1. さけ
 2. さき
 3. ざき
@@ -570,7 +590,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 2** (さき).
 
 #### Q64
-りょうりは **十分** よういしましたか。
+りょうりは <u>十分</u> よういしましたか。
 1. じゅうふん
 2. じっぷん
 3. じゅうぶん
@@ -578,7 +598,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 3** (じゅうぶん - here meaning "sufficiently", not "10 minutes").
 
 #### Q65
-にわの **東**に いけが あります。
+にわの <u>東</u>に いけが あります。
 1. みなみ
 2. きた
 3. にし
@@ -586,7 +606,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 4** (ひがし).
 
 #### Q66
-かみが **長く** なりました。
+かみが <u>長く</u> なりました。
 1. ながく
 2. なげく
 3. みじかく
@@ -594,7 +614,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 1** (ながく).
 
 #### Q67
-ぎんこうは 花やと 本やの **間** に あります。
+ぎんこうは 花やと 本やの <u>間</u> に あります。
 1. あえだ
 2. あいだ
 3. がん
@@ -602,7 +622,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 2** (あいだ).
 
 #### Q68
-どんな **会社**で はたらいて いますか。
+どんな <u>会社</u>で はたらいて いますか。
 1. かえじゃ
 2. かいじゃ
 3. がいしゃ
@@ -610,7 +630,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 4** (かいしゃ).
 
 #### Q69
-きょうの **午後**は あめが ふるでしょう。
+きょうの <u>午後</u>は あめが ふるでしょう。
 1. ごご
 2. ここ
 3. ごこ
@@ -618,7 +638,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 1** (ごご).
 
 #### Q70
-**耳**が いたいので おいしゃさんに 行きました。
+<u>耳</u>が いたいので おいしゃさんに 行きました。
 1. あたま
 2. め
 3. みみ
@@ -626,7 +646,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 3** (みみ).
 
 #### Q71
-これは **八百**円です。
+これは <u>八百</u>円です。
 1. はっひゃく
 2. はっぴゃく
 3. はちひゃく
@@ -634,7 +654,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 2** (はっぴゃく).
 
 #### Q72
-きのう **魚**を 食べました。
+きのう <u>魚</u>を 食べました。
 1. さぐな
 2. ざかな
 3. さがな
@@ -642,12 +662,12 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 4** (さかな).
 
 #### Q73
-**夕食** は レストランに 行きましょう。
-1. ゆじょく
-2. ゆしょく
-3. ゆうしょく
-4. ゆうじょく
-**Answer: 3** (ゆうしょく).
+きょうの <u>夕方</u> は さんぽに 行きましょう。
+1. ゆかた
+2. ゆうがた
+3. ゆうほう
+4. ゆかほう
+**Answer: 2** (ゆうがた - early evening). Replaces 夕食 (formal/written register) with the more conversational 夕方 (also testing 夕 with a different second kanji).
 
 ---
 
@@ -713,7 +733,7 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 **Answer: 3**.
 
 #### Q80 (Comprehension)
-Where is the writer currently living?
+ひっしゃは いま どこに すんでいますか。
 1. インド
 2. 友だちの 家
 3. となりの 家
@@ -734,7 +754,7 @@ Where is the writer currently living?
 **Answer: 1**.
 
 #### Q82 (Comprehension)
-What is NOT one of Mei-san's hobbies?
+メイさんの しゅみで ないものは どれですか。
 1. 本を 読む こと
 2. 旅行に 行く こと
 3. スポーツを する こと
@@ -755,7 +775,7 @@ What is NOT one of Mei-san's hobbies?
 **Answer: 2** (people = います).
 
 #### Q84 (Comprehension)
-Which description is correct?
+正しい せつめいは どれですか。
 1. A small supermarket exists there.
 2. Many students are always at the bus stop.
 3. The supermarket contains other shops.
@@ -776,7 +796,7 @@ Which description is correct?
 **Answer: 3**.
 
 #### Q86 (Comprehension)
-What was today's weather like?
+今日の てんきは どうでしたか。
 1. Hot all day.
 2. Cool around 2pm.
 3. Cool only in the evening.
@@ -797,7 +817,7 @@ What was today's weather like?
 **Answer: 2** (na-adj + な + Noun).
 
 #### Q88 (Comprehension)
-How much money is left?
+お金は いくら のこって いますか。
 1. 20円
 2. 120円
 3. 220円
@@ -818,7 +838,7 @@ How much money is left?
 **Answer: 3** (に - time point).
 
 #### Q90 (Comprehension)
-What did this person do yesterday?
+この人は きのう 何を しましたか。
 1. Saw movie then ate.
 2. Met friend in afternoon and ate.
 3. Drank tea alone at cafe.
@@ -839,7 +859,7 @@ What did this person do yesterday?
 **Answer: 2**.
 
 #### Q92 (Comprehension)
-Which is NOT possible?
+できない ことは どれですか。
 1. Send letter at 4:30pm at post office.
 2. Withdraw money at 3:30pm at bank window.
 3. Withdraw money at 10:30am at post office window.
@@ -860,7 +880,7 @@ Which is NOT possible?
 **Answer: 1** (Verb-stem + に + 来る/行く).
 
 #### Q94 (Comprehension)
-How many people ate dinner?
+何人が ばんごはんを 食べましたか。
 1. 3人
 2. 4人
 3. 5人
@@ -881,7 +901,7 @@ How many people ate dinner?
 **Answer: 2** (まだ - still).
 
 #### Q96 (Comprehension)
-How many cakes did the guests bring?
+おきゃくさんは ケーキを 何こ もって きましたか。
 1. 9個
 2. 10個
 3. 11個
@@ -902,7 +922,7 @@ How many cakes did the guests bring?
 **Answer: 3** (Verb-plain + 時).
 
 #### Q98 (Comprehension)
-Where is "here"?
+「ここ」は どこですか。
 1. 本屋
 2. 学校
 3. 図書館
@@ -1024,7 +1044,7 @@ Additional 200+ source-attributed questions added from a second pass over `learn
 **Answer: 3** (の - possessive).
 
 #### Q111
-駅までタクシーで1000円（　　）です。
+駅までタクシーで1,000円（　　）です。
 1. ぐらい
 2. など
 3. ごろ
@@ -1072,12 +1092,12 @@ Additional 200+ source-attributed questions added from a second pass over `learn
 **Answer: 4** (ongoing action).
 
 #### Q117
-これは兄に（　　）。
+これは兄から（　　）。
 1. あげました
 2. もらいました
 3. うりました
 4. かいました
-**Answer: 2** (received from older brother).
+**Answer: 2** (received from older brother). 「兄から + もらう」 explicitly marks source; 「兄に + もらう」 is also acceptable but ambiguous at N5 level.
 
 #### Q118
 かぜのときはこのくすりを（　　）ください。
@@ -1267,9 +1287,9 @@ Elements: 1. バス  2. かよって  3. います  4. で
 **Answer: 2** (かよって) in the ★ slot.
 
 #### Q140
-日本の カメラは ___ ★ ___ ___ 多い。
+日本の カメラは ___ ___ ★ ___ 多い。
 Elements: 1. もの  2. いい  3. が  4. 安くて
-**Answer: 2** (いい) in the ★ slot.
+**Answer: 1** (もの) in the ★ slot. Order: 安くて(4) いい(2) もの(1=★) が(3) 多い = "Many [cameras] are cheap and good."
 
 #### Q141
 弟は いつも ★ ___ ___ ___ います。
@@ -1277,9 +1297,9 @@ Elements: 1. あかるい  2. で  3. 声  4. 笑って
 **Answer: 1** (あかるい) in the ★ slot.
 
 #### Q142
-うちは ___ ___ ★ ___ しています。
+父は ___ ___ ★ ___ しています。
 Elements: 1. せんせい  2. の  3. だいがく  4. を
-**Answer: 1** (せんせい) in the ★ slot.
+**Answer: 1** (せんせい) in the ★ slot. Order: だいがく(3) の(2) せんせい(1=★) を(4) しています = "My father works as a university teacher." Original 「うちは」 + occupation verb is unidiomatic; 父は is natural.
 
 #### Q143
 自転車に 乗って ★ ___ ___ ___ 行きたい。
@@ -1295,7 +1315,7 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 > Source: https://learnjapaneseaz.com/jlpt-n5-kanji-practice-test-25.html (orthography subtype)
 
 #### Q144
-ヤンさんの**(がっこう)**はどこですか。
+ヤンさんの<u>(がっこう)</u>はどこですか。
 1. 学校
 2. 学枚
 3. 宇校
@@ -1303,7 +1323,7 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 1** (学校).
 
 #### Q145
-このざっしを**(みて)**ください。
+このざっしを<u>(みて)</u>ください。
 1. 貝て
 2. 買て
 3. 目て
@@ -1311,7 +1331,7 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 4** (見て).
 
 #### Q146
-このカメラは**(たかい)**ですね。
+このカメラは<u>(たかい)</u>ですね。
 1. 古い
 2. 新い
 3. 安い
@@ -1319,7 +1339,7 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 4** (高い).
 
 #### Q147
-きのうは**(かいしゃ)**をやすみました。
+きのうは<u>(かいしゃ)</u>をやすみました。
 1. 公社
 2. 会仕
 3. 会社
@@ -1327,7 +1347,7 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 3** (会社).
 
 #### Q148
-まだ**(いわないで)**ください。
+まだ<u>(いわないで)</u>ください。
 1. 立わないで
 2. 行わないで
 3. 食わないで
@@ -1335,7 +1355,7 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 4** (言わないで).
 
 #### Q149
-**(らいげつ)**けっこんします。
+<u>(らいげつ)</u>けっこんします。
 1. 今月
 2. 今週
 3. 来月
@@ -1343,7 +1363,7 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 3** (来月).
 
 #### Q150
-わたしのくには**(かわ)**がおおいです。
+わたしのくには<u>(かわ)</u>がおおいです。
 1. 川
 2. 木
 3. 花
@@ -1351,7 +1371,7 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 1** (川).
 
 #### Q151
-**(わいしゃつ)**を着ています。
+<u>(わいしゃつ)</u>を着ています。
 1. ワイシャソ
 2. ウイシャソ
 3. ウイシャツ
@@ -1428,11 +1448,11 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 
 #### Q159
 あのひとは たなかさんの おじさんです
-1. おかあさんの おにいさん
+1. おかあさんか おとうさんの きょうだい
 2. おかあさんの おとうさん
-3. おかあさんの いもうとさん
+3. おかあさんの いもうと
 4. おかあさんの おかあさん
-**Answer: 1** (おじ = mother's older brother in this context).
+**Answer: 1** (おじ = parent's brother - older or younger, not specifically older). The original distractor 「おかあさんの おにいさん」 over-specified "older brother of mother"; おじ is gender/parent-side specific but not age-ranked at the lexical level.
 
 #### Q160
 このケーキは まずいです
@@ -1451,7 +1471,7 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 3** (ちょっと = すこし).
 
 #### Q162
-銀行は９じから３じまでです
+銀行は9時から3時までです
 1. きんこ
 2. きんこう
 3. ぎんこう
@@ -1484,7 +1504,7 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 3**.
 
 #### Q165 (Comprehension)
-What did the writer NOT do last Sunday?
+ひっしゃが せんしゅうの にちようびに しなかった ことは どれですか。
 1. Met friends and played tennis
 2. Read books and drank tea
 3. Played tennis and went out
@@ -1505,6 +1525,8 @@ What did the writer NOT do last Sunday?
 **Answer: 4**.
 
 #### Q167 (Total goldfish)
+
+ぜんぶで きんぎょは 何匹 いますか。
 1. 3匹
 2. 4匹
 3. 5匹
@@ -1525,6 +1547,8 @@ What did the writer NOT do last Sunday?
 **Answer: 1** (Verb-plain + ことができる).
 
 #### Q169 (Why hard to abstain alone)
+
+どうして 一人で のまないのは むずかしいですか。
 1. 体に よいから
 2. 一人で 飲んで いるから
 3. みんなが 飲んで いるから
@@ -1545,6 +1569,8 @@ What did the writer NOT do last Sunday?
 **Answer: 3** (どこ - matches どこでもいい answer).
 
 #### Q171 (Reason for going to festival)
+
+どうして お祭りに 行きましたか。
 1. Speaker really enjoys festivals
 2. A festival was happening nearby
 3. Guest wanted to see a festival
@@ -1565,6 +1591,8 @@ What did the writer NOT do last Sunday?
 **Answer: 2** (Verb-stem + たい + 人 = "people who want to").
 
 #### Q173 (Why izakaya recommended)
+
+どうして いざかやを すすめましたか。
 1. It's a Japanese restaurant
 2. All restaurants there are delicious
 3. It's the best restaurant
