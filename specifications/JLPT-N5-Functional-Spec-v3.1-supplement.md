@@ -76,17 +76,17 @@ This supplement was produced after a section-by-section review of the v3 .docx a
 
 | Role | Name | Sign-off date | Notes |
 |---|---|---|---|
-| Product owner | _Project author / Tutor-Admin_ (to fill in) | pending | Confirms scope and goals |
+| Product owner | **Gaurav Srivastava** | continuous | Confirms scope and goals |
 | Content reviewer (JA) | **Suiraku San** (commissioned 2026-04-30 per `feedback/native-teacher-review-request.md`) | partial sign-off 2026-04-30 (~30% surface; full pass due 2026-07-30) | Confirms JA accuracy bar (§D); Pass-11A brief audit + Pass-11 sample audit logged in TASKS.md |
-| Engineering owner | _Project author_ (filling solo at present; recruit if scope grows) | pending | Confirms architecture and feasibility; current architecture validated against §B.6.3 perf budgets via Lighthouse CI |
-| Accessibility reviewer | _Pending external A11y reviewer; current internal review via axe-core CI_ | pending | Confirms WCAG 2.1 AA; automated axe-core gate on every release |
-| Audit-trail keeper | _Project author_ (writes `verification.md`) | continuous | Records each audit pass with cumulative tally |
+| Engineering owner | **Gaurav Srivastava** | continuous | Confirms architecture and feasibility; current architecture validated against §B.6.3 perf budgets via Lighthouse CI |
+| Accessibility reviewer | **Gaurav Srivastava** (acting; backed by axe-core + Lighthouse CI gates) | continuous | Confirms WCAG 2.1 AA; automated axe-core gate on every release; recommend recruiting an external reviewer for a future formal release |
+| Audit-trail keeper | **Gaurav Srivastava** (writes `verification.md`) | continuous | Records each audit pass with cumulative tally |
 
 **Notes on the current state:**
-- Most slots are unfilled because this is a single-author open-source project; the matrix exists as a template for when external reviewers are formally engaged.
+- All five slots are now named. Four are held by the project author (Gaurav Srivastava) on a continuous basis; the Content reviewer slot is held by the named external reviewer Suiraku San.
 - The Content reviewer slot has a partial sign-off recorded for the Pass-11 sample audit; full sign-off depends on completion of the remaining ~70% Pass-11 surface (deadline 2026-07-30).
-- The Accessibility reviewer slot is currently filled by automated tooling (axe-core + Lighthouse CI in `.github/workflows/`); a human reviewer would strengthen the conformance claim but is not a release blocker.
-- For a future MEXT-aligned release, recommend filling all 5 slots with named, dated, written sign-offs.
+- The Accessibility reviewer slot is held by the project author with backing from automated tooling (axe-core + Lighthouse CI in `.github/workflows/`). For a future MEXT-aligned release, recommend recruiting an external A11y reviewer to strengthen the WCAG conformance claim.
+- For a future formal release, recommend dated, written sign-offs against each release tag.
 
 ### B.2 Glossary
 
