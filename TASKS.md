@@ -89,6 +89,28 @@ Brief 1 complete. Engine, module, and asset layers shipped.
 
 ---
 
+## Functional Spec gap-fill - 2026-04-30
+
+Analyzed `specifications/JLPT N5 Grammar Tutor – Functional Spec.docx` (v3, 33KB) against the standard FSD checklist (Document control / Foundation / Audience / Functional / NFR / Domain / Quality / Appendices).
+
+**Gaps identified + filled** in `specifications/JLPT-N5-Functional-Spec-v3.1-supplement.md`:
+
+- **§A.1 Missing sections (15)**: revision history table, glossary, stakeholders/RACI, user stories, success metrics/KPIs, i18n NFR, PWA NFRs, performance budgets (measurable), content audit protocol (Pass-N), test strategy, risks register, open questions log, maintenance/support model, data dictionary, accessibility conformance target.
+- **§A.2 Drift items (12)**: audio listed out-of-scope but shipped, mobile listed non-goal but shipped, SW listed optional but shipped, Leitner→SM-2, nav restructure, settings schema, repo tree, future-enhancements pruning.
+- **§B Gap-fill content (11 sub-sections)**: Document control + revision template + sign-off matrix; Glossary (24 terms); Stakeholders RACI; 17 user stories; 9 success metrics with measurable targets; expanded NFR (i18n / PWA / perf budgets / a11y conformance); test strategy linking ui-testing-plan.md and tests.html; 9-entry risks register; 5-entry open questions log; maintenance/support model; release process.
+- **§C Errata to existing v3 sections (8)**: §3 scope updates, §5.1 nav rewrite, §5 new UX subsections, §5.8 SM-2 replaces Leitner, §7 new schemas (knownKanji/streak/audio_manifest/updated settings), §9 repo tree replacement, §11 NFR consolidation, §13 future-list pruning.
+- **§D Content audit protocol (Pass-N) made normative**: codifies the 10-pass / 462-finding tradition; quarterly cadence; severity matrix; CRITICAL-blocks-release rule.
+- **§E Acceptance criteria for v4** (10 items) - what "merged into next .docx" means.
+
+**Next steps:**
+
+- [ ] Sign-off matrix (§B.1.2): name a content reviewer, accessibility reviewer, engineering owner.
+- [ ] Open questions (§B.9): triage OQ-1 through OQ-5 with target decision dates.
+- [ ] Merge supplement into a new v4 .docx; archive v3 to `not-required/`.
+- [ ] Calendar reminder: first quarterly Pass-N re-audit on 2026-07-30 (per §D.2).
+
+---
+
 ## UI testing plan - 2026-04-30 (synced to UX Brief 2 Phases 1-4)
 
 Comprehensive UI-level test strategy at `feedback/ui-testing-plan.md` covering 22 perspectives across 17 routes × multiple sub-paths × 5 locales × 8 browsers × 6 OSes.
@@ -112,7 +134,7 @@ Use as a **catalog** - triage by P0/P1/P2 tier, don't run all 22 every release. 
 
 - [ ] Create `tools/check_content_integrity.py` implementing the 16 invariants from §12.1 (X-6.1 through X-6.7 + JA-1 through JA-9). Wire into CI as a release blocker.
 - [ ] Add Playwright + @axe-core/playwright as devDependencies; first test suite covering §17.1 P0 smoke.
-- [ ] Add Lighthouse CI workflow per §19; baseline numbers from current SW v18 build.
+- [x] Add Lighthouse CI workflow per §19; baseline numbers from current SW v24 build. Created `.lighthouserc.json` (assertions: Performance ≥ 0.85, Accessibility ≥ 0.95, Best Practices ≥ 0.85, SEO ≥ 0.85 warn) and `.github/workflows/lighthouse.yml` (runs on push to main + every PR; uploads reports to temporary-public-storage). Auto-skip http2/https/redirect audits since GitHub Pages serves over a different setup at runtime; configured to use `staticDistDir: "."` so no separate serve step needed in CI.
 - [x] First quarterly Pass-N re-audit calendar reminder (§12.3): 2026-07-30. Recurring scheduled task `jlpt-n5-quarterly-pass-audit` set to cron `0 9 30 1,4,7,10 *` (9 AM local on the 30th of Jan/Apr/Jul/Oct). Next run: 2026-07-30. Prompt rotates audit lenses (child-readability / register / honorifics / distractor quality / cross-file consistency) so successive quarters surface different findings.
 
 ---
