@@ -115,7 +115,7 @@ function renderQuestions(container, p) {
         </div>
         ${feedback ? `
           <div class="drill-feedback ${correct ? 'correct' : 'incorrect'}">
-            <div class="feedback-headline">${correct ? '✓ Correct' : '✗ Not quite'}</div>
+            <div class="feedback-headline">${correct ? 'Correct' : 'Wrong'}</div>
             ${q.explanation_en ? `<p class="muted small">${esc(q.explanation_en)}</p>` : ''}
             <button id="reading-next" class="btn-primary">${idx === total - 1 ? 'Finish' : 'Next question'}</button>
           </div>

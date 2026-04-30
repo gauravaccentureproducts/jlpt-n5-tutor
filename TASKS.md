@@ -1,6 +1,6 @@
 # JLPT N5 Grammar Tutor - Tasks
 
-Last updated: 2026-04-30 (Pass-13 fully closed: 4 CRITICAL data-pipeline corruption bugs found + tools/build_data.py root-cause fixed + data/kanji.json regenerated 97→106 entries (recovered 9 missing kanji 手/力/口/目/足/号/員/社/私) + new JA-12 invariant guards future KB-JSON drift. **21/21 CI invariants green** (was 20). Cumulative ~185 content fixes across 13 audit passes.). All 4 fixed manually. Plus 10 grammar/reading findings applied. Cumulative: ~185 content fixes across 13 audit passes. 20/20 CI invariants green. Build-pipeline bug in tools/build_data.py is documented advisory.)
+Last updated: 2026-04-30 (Pass-14 questions.json comprehensive audit registered: 8 issue classes affecting ~50 questions, dominated by 38 stub-pattern-era placeholder questions that teach nothing. Recommended Phase A: delete the 38 (cascade-resolves 5 issue classes; bank 166→128). Pending decisions: q-0418 schema, ID-gap policy.) + new JA-12 invariant guards future KB-JSON drift. **21/21 CI invariants green** (was 20). Cumulative ~185 content fixes across 13 audit passes.). All 4 fixed manually. Plus 10 grammar/reading findings applied. Cumulative: ~185 content fixes across 13 audit passes. 20/20 CI invariants green. Build-pipeline bug in tools/build_data.py is documented advisory.)
 
 ## Live site
 
@@ -184,6 +184,122 @@ Two visible gaps on every kanji detail card (verified in browser preview at `#/k
 - **Effort estimate**: ~1-2 hr (mostly file copying + verification). The KanjiVG dataset is already complete and authoritative — no authoring required.
 - **Priority**: P1 (every kanji card currently shows placeholder text to the learner — visible quality gap). Should ship before next release.
 - **Open question** for the implementer: animated stroke-order (requires KanjiVGAnim or similar runtime) or static numbered strokes (simpler, lighter)? Static is the lower-effort path; animated is the better learner experience but doubles complexity. Recommend static for v1.6, animated for v2.0.
+
+---
+
+## Copy audit: remove sales-promo voice - raised 2026-04-30
+
+**Frame** (user direction 2026-04-30): the current home-page hero reads like a marketing landing page (outcome-promise headline, ✓-prefixed trust ticks, second-person imperative CTAs). For a free static study tool with no funnel, no upsell, and no monetisation, this voice is **mismatched** — it implies a product trying to sell itself, when the product just exists to be used. Strip the sales gloss; keep facts and quiet competence. Reviewer perspective for this audit: a senior copywriter editing an institutional reference site (think MIT OpenCourseWare or arxiv.org), not a SaaS landing page.
+
+**Scope of fix**: copy-only. No content/data changes; only labels, microcopy, headlines, and meta strings. Treat as a single rewriting pass — the goal is consistent voice across all surfaces, so prefer one big PR over piecemeal edits.
+
+**Effort estimate**: ~1.5-2 hr to apply all 17 findings + verify in browser + update specs/CHANGELOG. Low risk (no data invariants touched).
+
+**Priority**: P2 — visible on the home page (the front door); affects every first-time visitor's first impression. Should land before any external-reviewer outreach (Pass-11 native teacher, MEXT alignment).
+
+### Voice guidelines (the rewrite contract)
+
+The rewrite should obey these rules so future copy doesn't drift back:
+
+1. **No outcome promises.** Don't say what the user will achieve ("Pass JLPT N5...", "Master kanji"); say what the tool *contains* ("JLPT N5 study material: grammar, vocab, kanji...").
+2. **No time-to-result claims.** Drop "in 15 minutes a day", "quickly", "easily", "in just X". The tool can't make those guarantees and saying so reads as advertising.
+3. **No second-person imperatives at the brand level.** "Start your first lesson" → "Start a lesson". The possessive "your" + "first" is funnel rhetoric.
+4. **No celebration glyphs.** Drop ✓-prefixed trust ticks, ★ Graduated, etc. State facts plainly; don't decorate them.
+5. **No defensive claims.** "No login required" is a defensive phrasing pattern (compare: "Open access"). Just describe the property.
+6. **No gamification language at the surface level.** Streak counts can be shown as facts ("5 days") but don't pair them with imperative motivators ("Keep your streak alive!"). The number speaks for itself.
+7. **Prefer noun phrases over headlines.** "Continue your N5 study" → "Continue". "Today's review queue" → "Reviews due today". Headlines that try to sound aspirational are the tell of marketing voice.
+8. **One voice, one register.** All microcopy in the same register. No mixing of "Continue lessons" (neutral) with "Start your first lesson" (onboarding-funnel) on the same page.
+
+### Findings (17 items, ordered by visibility)
+
+#### A. Hero — `js/home.js`
+
+| # | Current | Proposed | Reason |
+|---|---|---|---|
+| A1 | `Pass JLPT N5 with 15 minutes a day` (first-time h2) | `JLPT N5 study material` *or* `Practice JLPT N5: grammar, vocab, kanji, reading, listening` | Outcome-promise + time-promise. Tool can't guarantee either. Replace with scope statement. |
+| A2 | `Continue your N5 study` (returning h2) | `Continue` | Possessive "your" + "study" is aspirational. The single word reads as a quiet hand-off back to the work. |
+| A3 | `<ul class="trust-strip">` with `✓ Works offline` / `✓ No login required` / `✓ Your progress stays on this device` | Inline sentence: `Works offline. Open access. Progress stays in your browser.` (or remove the trust strip entirely, since the same facts are now in PRIVACY.md and the footer link makes them discoverable) | ✓-prefixed trust badges are the textbook pattern of a SaaS landing page. The facts are correct; only the framing needs to change. |
+| A4 | `Start your first lesson` (primary CTA, first-time) | `Start a lesson` *or* `Open Learn` | "Your first" is onboarding-funnel rhetoric. |
+| A5 | `Continue lessons` (primary CTA, returning) | Keep as-is — this is already neutral. | — |
+| A6 | `Take a placement check` (secondary CTA) | Keep as-is. The word "Take" is fine in this context (we say "take a quiz" in normal English). | — |
+| A7 | `Already familiar with some N5 material? Take the placement check above to skip what you know.` (footnote) | `If you've studied some N5 already, the placement check above can shorten the path.` *or* simply `Placement check above for partial-N5 starters.` | "to skip what you know" is rationalising the action. The fact (skip-what-you-know) belongs on the placement-check button, not as preemptive copy under the hero. |
+
+#### B. Hero stats — `js/home.js`
+
+| # | Current | Proposed | Reason |
+|---|---|---|---|
+| B1 | Pill badges `187 grammar`, `1003 vocab`, `106 kanji`, `30 reading`, `12 listening` | Keep counts, drop the pill styling for a flatter list: `187 grammar patterns · 1003 vocabulary · 106 kanji · 30 reading passages · 12 listening drills` | Pills look like marketing "stat cards". A plain list reads as a table of contents. The numbers themselves are factual and should stay. (NOTE: this reverses L5 from today's batch. Discuss before applying.) |
+| B2 | Returning-user tagline `${grammarCount} grammar patterns. ${vocabCount} vocab words. ${kanjiCount} N5 kanji.` | `${grammarCount} patterns. ${vocabCount} words. ${kanjiCount} kanji.` | "Vocab words" is redundant; "N5 kanji" is implied by the page context. |
+
+#### C. Recommender widget — `js/home.js`
+
+| # | Current | Proposed | Reason |
+|---|---|---|---|
+| C1 | `What should I study next?` (label) | `Suggested next` | The question form is conversational/marketing. A senior copywriter would use a noun phrase. |
+| C2 | `Clear today's review queue (12 due)` | `12 reviews due today` | "Clear ... queue" is task-app language. Just state the count. |
+| C3 | `Keep your 5-day streak alive` | `5 days · continue` *or* `Continue (5-day streak)` | "Keep your streak alive" is gamification copy. The number alone is the motivator. |
+| C4 | `Run today's review (3 due)` | `3 reviews due today` | "Run" is action-app language. |
+| C5 | `Try a quick mixed drill` | `Mixed drill` *or* `Practice` | "Try" + "quick" both signal sales/persuasion. |
+| C6 | `Pick up the next lesson` | `Next lesson` | Remove the imperative wrapper. |
+
+#### D. Returning resume cards — `js/home.js`
+
+| # | Current | Proposed | Reason |
+|---|---|---|---|
+| D1 | `Continue where you left off` (h3) | `Last lesson` *or* `Resume` | The phrase "where you left off" is ad-copy boilerplate. |
+| D2 | `Today's review queue` (h3) | `Reviews due today` | Remove "queue" (task-app jargon) and the possessive "today's". |
+| D3 | `All caught up - come back tomorrow.` | `No reviews due.` | "Come back tomorrow" is engagement-loop copy that anthropomorphises the tool. |
+| D4 | `Learn something new` (button when no due) | `Open Learn` | "Learn something new" is encouraging-coach voice. |
+
+#### E. CTA elsewhere — across files
+
+| # | Current | Location | Proposed |
+|---|---|---|---|
+| E1 | `Start your first lesson` | `js/summary.js:34` (empty-state) | `Start a lesson` |
+| E2 | `Your dashboard fills in as you study.` | `js/summary.js:32` | `Stats appear here once you've studied.` |
+| E3 | `★ Graduated! This pattern is mastered.` | `js/drill.js:282` | `Graduated. Pattern mastered.` (drop the ★) |
+| E4 | `✓ Correct` / `✗ Not quite` | `js/drill.js:292`, `js/counters.js:222` | `Correct` / `Wrong` (drop the glyphs; rely on color + headline weight) — OR replace ✓/✗ with proper SVG icons. Decision needed; the glyphs render inconsistently across platforms (Windows shows them as plain text, mobile may render as emoji). |
+
+#### F. Site chrome — `index.html`
+
+| # | Current | Proposed | Reason |
+|---|---|---|---|
+| F1 | `<title>JLPT N5 Grammar Tutor</title>` | `<title>JLPT N5</title>` *or* `<title>JLPT N5 — study material</title>` | "Grammar Tutor" undersells (the site has vocab/kanji/reading/listening too) and "Tutor" is brandy. Per existing UI brief §1.1 #1, this contradicts the hero scope statement. |
+| F2 | `<meta name="description" content="Static, on-device, privacy-preserving tutor for JLPT N5 grammar.">` | `<meta name="description" content="Free JLPT N5 study material covering grammar, vocabulary, kanji, reading and listening. Works offline; no account.">` | "Static, on-device, privacy-preserving" is technical jargon a non-developer searcher won't parse. Keep the same *facts* in plain English. |
+| F3 | `aria-label="JLPT N5 Grammar Tutor - return to home"` (brand link) | `aria-label="JLPT N5 — return to home"` | Match the new title. |
+
+#### G. Footer — `index.html`
+
+| # | Current | Proposed | Reason |
+|---|---|---|---|
+| G1 | `v1.5.0 · What's new` (left) | Keep as-is. Plain, factual. | — |
+| G2 | `Privacy · Source on GitHub` (right) | Keep as-is. | — |
+
+#### H. Recommender — minor
+
+| # | Current | Proposed | Reason |
+|---|---|---|---|
+| H1 | `<aside aria-label="Recommended next step">` | `<aside aria-label="Suggested next">` | Match C1. |
+
+### Acceptance criteria for this task
+
+When the rewrite ships:
+
+- [ ] No occurrence of `Pass JLPT N5 with` anywhere in user-facing files (grep `js/`, `index.html`, `*.html`).
+- [ ] No occurrence of `Master`, `Crush`, `Ace`, `Easily`, `Quickly`, `Effortlessly` as adverbs/verbs about study outcomes.
+- [ ] No `✓ ` (check + space) prefix in any visible label outside drill answer-feedback (and even that is reviewed in E4).
+- [ ] No `Start your first` or `Begin your` patterns. Use `Start a` / `Open` instead.
+- [ ] Site title + meta description rewritten per F1, F2.
+- [ ] CHANGELOG.md gets a note that the home tagline + hero copy were updated for voice consistency (no factual changes).
+- [ ] Spec supplement §1.1.5 (Trust strip) and §15 (Copy revisions) updated to match the new voice — these currently codify the old marketing voice and would otherwise drift back on the next pass.
+- [ ] Browser preview verification: home page (first-time + returning), summary empty-state, drill answer feedback all reviewed.
+
+### Open decisions (flag for user before implementer starts)
+
+1. **B1 (pill badges vs flat list)**: today's L5 batch made the stats into pills. Going flat reverses that. Decide: keep pills (visual scoreboard, mild marketing feel) or revert to flat list (institutional, plain). Recommend **revert to flat** to be consistent with the rest of the rewrite.
+2. **A3 (trust strip)**: should the strip stay (rewritten) or be removed entirely now that PRIVACY.md is linked from the footer? Recommend **remove from hero** — the privacy story is one click away in the footer; on-page repetition is the hallmark of a landing page trying to convince a skeptic. Removing it is the most coherent application of the voice guideline.
+3. **E4 (glyphs)**: drop ✓/✗ entirely (rely on color + label) or replace with SVG? Recommend **keep label only** for v1.6 (lowest effort, most consistent with the new voice); SVG icon work belongs in the M-bucket UI polish anyway.
+4. **F1 (site title)**: shorter `JLPT N5` or descriptive `JLPT N5 — study material`? The descriptive form helps SEO and accessibility (screen readers read the title on landing). Recommend the descriptive form.
 
 ---
 
@@ -405,6 +521,45 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 
 - The "[I]" subject-omission convention is used inconsistently across translations. A pass to standardize would improve readability.
 - Pattern-meta questions (the "つぎの いみに あう パターン" format) need a one-line introduction the first time the format appears so learners know what's being asked.
+
+---
+
+## Pass-14 questions.json comprehensive audit - 2026-04-30 (REGISTERED, fixes pending)
+
+Comprehensive audit of `data/questions.json` (166 questions; reduced from original 250 via prior cleanups) from native-speaker + structural-integrity perspective. Found 8 issue classes affecting ~50 questions, dominated by stub-pattern-era placeholder questions that teach nothing.
+
+#### CRITICAL (3 classes)
+
+- [ ] **F-14.1** (CRITICAL) **38 pattern-meta questions teach nothing** (q-0280 through q-0399 family). All match pattern `つぎの いみに あう パターン：`. Distractors are wildly off-category (single particles mixed with phrase patterns), so the correct answer is visually trivial to select. Answer can be picked without any Japanese knowledge. **Recommended action:** delete all 38 (bank shrinks 166 → 128 real questions). Affected IDs: q-0280, q-0281, q-0285, q-0288, q-0290, q-0291, q-0293, q-0294, q-0296, q-0298, q-0300, q-0301, q-0311, q-0313, q-0316, q-0318, q-0319, q-0321, q-0322, q-0327, q-0329, q-0338, q-0344, q-0355, q-0361, q-0363, q-0376, q-0382, q-0383, q-0387, q-0398, q-0399, plus 6 more in the family.
+- [ ] **F-14.2** (CRITICAL) **Answer literally in stem** — 4 questions: q-0311, q-0316, q-0382, q-0398. Stem text contains the exact `correctAnswer` string. Subset of F-14.1 (these are the worst cases). Resolved by F-14.1 deletion.
+- [ ] **F-14.3** (CRITICAL) **q-0382 rendering corruption** — `question_ja` contains stray newline + colon, renders as 「パターン：：どうぞ...」 (double colon). Pass-12 cleanup leftover. Resolved by F-14.1 deletion OR direct edit.
+
+#### HIGH (3 classes)
+
+- [ ] **F-14.4** (HIGH) **Prompt-stem mismatch in 37 pattern-meta questions** — `prompt_ja` says 「（  ）に いちばん いい ものを えらんでください」 (fill the blank) but `question_ja` has no blank. Subset of F-14.1; resolved by deletion.
+- [ ] **F-14.5** (HIGH) **q-0418 dual-mode schema** — `type: text_input` but also has stale `choices` array of 4 distractors. Either runtime renders as MCQ (then `acceptedAnswers` is dead) or as text-input (then `choices` is dead). Likely a copy-paste leftover from type migration. **Fix:** decide canonical type; remove the dead field.
+- [ ] **F-14.6** (HIGH) **33 ID gaps** including the dramatic q-0051 → q-0220 gap of 168 missing IDs. Suggests bulk deletion without renumbering. If any external system or runtime relies on contiguous IDs, those references break unpredictably. **Fix options:** (a) accept gaps as historical record; (b) renumber to q-0001 .. q-0166 contiguous (breaks any external refs); (c) keep gaps but document.
+
+#### MEDIUM (3 classes)
+
+- [ ] **F-14.7** (MEDIUM) **Distractor-length asymmetry in 9 questions** — q-0338, q-0361, q-0376 etc. have answer length 7-10 chars (pattern label) but distractors are single particles (1 char). Visual asymmetry tells the answer. Subset of F-14.1; resolved by deletion.
+- [ ] **F-14.8** (MEDIUM) **Pattern-meta `choices` mix incompatible types** — pattern labels mixed with single particles in same MCQ option set. Same root cause as F-14.7.
+- [ ] **F-14.9** (MEDIUM) **Inconsistent slash convention in `choices`** — some use half-width `/` with spaces (「どうぞ / どうも」), some use full-width `／` no spaces (「これ／それ／あれ／どれ」). Renders inconsistently. Affects ~40 entries. **Fix:** standardize on half-width `/` with surrounding spaces (more common N5 textbook convention).
+
+#### LOW / Schema (informational)
+
+- [ ] **F-14.10** (LOW) **Type distribution heavily skewed** — 161 mcq / 4 sentence_order / 1 text_input. After F-14.1 deletion (38 mcq removed), distribution becomes 123 mcq / 4 sentence_order / 1 text_input — even more skewed. Per spec §6.2, sentence_order and text_input are documented question types; thin coverage suggests unfinished question-type migration. Consider authoring more.
+- [ ] Note: 4 sentence_order questions correctly omit `choices`/`correctAnswer` (use `tiles`/`correctOrder` instead). NOT a bug.
+
+#### Recommended fix sequence
+
+1. **Phase A (mechanical, low-risk):** Delete the 38 pattern-meta questions (F-14.1). Resolves F-14.2, F-14.3, F-14.4, F-14.7, F-14.8 as a cascade.
+2. **Phase B (decision needed):** Resolve q-0418 schema (F-14.5) — pick canonical type.
+3. **Phase C (decision needed):** Decide on ID gap policy (F-14.6) — keep gaps OR renumber.
+4. **Phase D (sweep):** Standardize slash convention across remaining choices (F-14.9).
+5. **Phase E (longer-term):** Author more sentence_order + text_input questions to balance type distribution (F-14.10).
+
+After Phase A, expected state: **128 real questions** (down from 166), all with valid pedagogical structure.
 
 ---
 

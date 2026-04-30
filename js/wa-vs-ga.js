@@ -104,7 +104,7 @@ function renderDrillSection() {
       <div class="waga-blank-row">${inputs}</div>
       ${feedback ? `
         <div class="drill-feedback ${feedback.correct ? 'correct' : 'incorrect'}">
-          <div class="feedback-headline">${feedback.correct ? '✓ Correct' : '✗ Not quite'}</div>
+          <div class="feedback-headline">${feedback.correct ? 'Correct' : 'Wrong'}</div>
           <p>Expected: <strong lang="ja">${esc(Array.isArray(current.particle) ? current.particle.join(' / ') : current.particle)}</strong></p>
           <p class="muted small">${esc(current.context)}</p>
         </div>

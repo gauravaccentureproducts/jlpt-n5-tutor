@@ -29,9 +29,9 @@ export async function renderSummary(container) {
       <h2>Chapter 4 - Summary</h2>
       <div class="empty-state">
         <p class="empty-icon" aria-hidden="true">📊</p>
-        <p><strong>Your dashboard fills in as you study.</strong></p>
-        <p class="muted">Mastered, Need-practice, and Untested counts appear here once you've taken a Test or finished some lessons.</p>
-        <p><a href="#/learn" class="btn-primary" style="text-decoration:none">Start your first lesson</a></p>
+        <p><strong>Stats appear here once you've studied.</strong></p>
+        <p class="muted">Mastered, Need-practice, and Untested counts appear after a Test or completed lessons.</p>
+        <p><a href="#/learn" class="btn-primary" style="text-decoration:none">Start a lesson</a></p>
       </div>
     `;
     return;

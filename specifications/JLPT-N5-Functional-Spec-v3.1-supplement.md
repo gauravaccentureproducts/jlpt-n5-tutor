@@ -268,6 +268,27 @@ These supersede v3's vague "First load under 2s."
 - Tag the commit as `content-v<N>` if KB content changed; `app-v<N>` if engine/UI changed.
 - No release ships with TS-5 conditions failing.
 
+### B.12 Copy voice contract — added 2026-04-30 (supersedes brief2 tagline language)
+
+The home-page hero originally followed UX brief2 §1.1 (`feedback/jlpt-n5-tutor-ux-developer-brief2.md` line 30, 34, 367), which prescribed an outcome-promise tagline (`Pass JLPT N5 with 15 minutes a day…`) and a `✓ Works offline ✓ No login required ✓ Your progress stays on this device` trust strip. That language was inherited verbatim and shipped through v1.5.0.
+
+**Decision 2026-04-30**: voice was reviewed by senior-copywriter lens (TASKS.md "Copy audit: remove sales-promo voice"). Brief2's tagline+trust-strip prescriptions are formally **superseded** by this contract:
+
+1. No outcome promises (don't say what the user will achieve).
+2. No time-to-result claims ("in 15 minutes a day", "quickly", "easily").
+3. No second-person imperatives at the brand level (`Start your first lesson` → `Start a lesson`).
+4. No celebration glyphs (✓-prefixed badges, ★ Graduated).
+5. No defensive claims ("No login required" is defensive phrasing — describe properties plainly).
+6. No gamification at the surface ("Keep your streak alive" → just show the count).
+7. Prefer noun phrases to headlines ("Today's review queue" → "Reviews due today").
+8. One register across all microcopy (no mixing onboarding-funnel with neutral).
+
+The active reference for tagline/CTA/microcopy text is now (a) the live `js/home.js`, `js/summary.js`, `js/drill.js`, `js/counters.js`, and `index.html`, and (b) the rewrite table in TASKS.md "Copy audit". When any future doc cites brief2 §1.1 or §15 for tagline/copy, this section is the override.
+
+**Trust-strip handling**: removed from the page body in v1.6.1. The same facts are now reachable via the `Privacy` link in the footer (which serves `PRIVACY.md`). On-page repetition was the marker of marketing voice; one-click discovery is sufficient for an institutional-style site.
+
+**Pillar count**: `Practice` and `Review` no longer appear in the primary nav or in the home pillar grid. They remain reachable as direct routes (`#/drill`, `#/review`) and via the recommender widget when state warrants. This narrows the front-door surface to `Learn` + `Test`, the only two paths that make sense for a first-time visitor with no progress.
+
 ---
 
 ## C. Updates to existing v3 sections (errata)

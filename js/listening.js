@@ -108,7 +108,7 @@ function renderItem(container) {
       ` : ''}
       ${feedback ? `
         <div class="drill-feedback ${correct ? 'correct' : 'incorrect'}">
-          <div class="feedback-headline">${correct ? '✓ Correct' : '✗ Not quite'}</div>
+          <div class="feedback-headline">${correct ? 'Correct' : 'Wrong'}</div>
           ${it.script_ja ? `<details><summary>Show script</summary><div>${renderJa(it.script_ja)}</div></details>` : ''}
           ${it.explanation_en ? `<p class="muted small">${esc(it.explanation_en)}</p>` : ''}
           <button id="listening-back-list" class="btn-primary">Back to list</button>

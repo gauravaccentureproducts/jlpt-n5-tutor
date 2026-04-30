@@ -98,7 +98,7 @@ function renderDrill() {
       </div>
       ${feedback ? `
         <div class="drill-feedback ${feedback.correct ? 'correct' : 'incorrect'}">
-          <div class="feedback-headline">${feedback.correct ? '✓ Correct' : '✗ Not quite'}</div>
+          <div class="feedback-headline">${feedback.correct ? 'Correct' : 'Wrong'}</div>
           <p>Answer: <strong lang="ja">${esc(question.expected)}</strong></p>
         </div>
         <button id="kosoado-next" class="btn-primary">Next</button>

@@ -1,6 +1,28 @@
 # Changelog
 
-All user-visible changes to the JLPT N5 Grammar Tutor.
+All user-visible changes to the JLPT N5 study material site.
+
+## v1.6.1 - 2026-04-30 (Copy audit: voice consistency)
+
+### Changed
+- **Hero copy rewritten** to remove sales-promo voice. Headline `Pass JLPT N5 with 15 minutes a day` → `JLPT N5 study material`; first-time CTA `Start your first lesson` → `Start a lesson`; returning-visitor h2 `Continue your N5 study` → `Continue`. No factual changes; voice now matches an institutional reference site (think MIT OpenCourseWare) rather than a SaaS landing page.
+- **Hero trust strip removed** from the page body. The same facts (offline, no account, local storage) are now reachable via the `Privacy` link in the footer; on-page repetition was the marker of marketing voice.
+- **Hero stats** reverted from pill badges to a flat dot-separated list — pills read as a stat-card scoreboard; flat reads as a table of contents.
+- **Recommender widget** copy rewritten: `What should I study next?` → `Suggested next`; `Keep your 5-day streak alive` → `Continue (5-day streak)`; `Clear today's review queue` / `Run today's review` → `N reviews due today`; `Try a quick mixed drill` → `Mixed drill`; `Pick up the next lesson` → `Next lesson`. Numbers are the motivator; imperatives removed.
+- **Returning resume cards** copy rewritten: `Continue where you left off` → `Resume`; `Today's review queue` → `Reviews due today`; `All caught up - come back tomorrow.` → `No reviews due.`; `Learn something new` → `Open Learn`.
+- **Streak label** simplified: `5 day streak` → `5 days`; the heading-style "streak" word removed.
+- **Site title** `JLPT N5 Grammar Tutor` → `JLPT N5 — study material`. Per UI brief §1.1 #1: "Grammar Tutor" undersells (vocab, kanji, reading, listening are also part of the corpus).
+- **Meta description** rewritten in plain English (`Free JLPT N5 study material covering grammar, vocabulary, kanji, reading and listening. Works offline; no account.`) — replaces developer jargon (`Static, on-device, privacy-preserving tutor for JLPT N5 grammar.`) which a non-developer searcher couldn't parse.
+- **Drill answer feedback** glyphs dropped: `✓ Correct` / `✗ Not quite` → `Correct` / `Wrong`. Color + label is enough; the glyphs rendered inconsistently across platforms (Windows plain text vs mobile emoji).
+- **Drill graduation message** `★ Graduated! This pattern is mastered.` → `Graduated. Pattern mastered.`
+- **Counter-drill feedback** glyphs dropped (same rationale as above).
+- **Summary empty state** copy rewritten: `Your dashboard fills in as you study.` → `Stats appear here once you've studied.`; `Start your first lesson` → `Start a lesson`.
+
+### Note
+- These are voice-only changes. No grammar/vocab/kanji content was modified. All 23 content-integrity invariants remain green.
+- Voice contract recorded in `TASKS.md` under "Copy audit" so future copy doesn't drift back into marketing register.
+
+---
 
 ## v1.5.0 - 2026-04-30 (UX Brief 2 - Phase 1-4)
 

@@ -106,7 +106,7 @@ function renderRound(container) {
         </div>
         ${feedback ? `
           <div class="drill-feedback ${feedback.correct ? 'correct' : 'incorrect'}">
-            <div class="feedback-headline">${feedback.correct ? '✓ Correct' : '✗ Not quite'}</div>
+            <div class="feedback-headline">${feedback.correct ? 'Correct' : 'Wrong'}</div>
             <p>The intended sentence: <strong lang="ja">${renderJa(r.target.sentence)}</strong></p>
             <p class="muted small">${esc(r.target.en_with)}</p>
             <hr style="border: none; border-top: 1px solid var(--c-border); margin: 8px 0;">

@@ -8,20 +8,20 @@
        script-src omits 'unsafe-inline' so any future inline-script regression
        fails fast. Per OQ-3 in spec supplement §B.9. -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self' blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none';">
-  <title>JLPT N5 Grammar Tutor</title>
-  <meta name="description" content="Static, on-device, privacy-preserving tutor for JLPT N5 grammar.">
+  <title>JLPT N5 — study material</title>
+  <meta name="description" content="Free JLPT N5 study material covering grammar, vocabulary, kanji, reading and listening. Works offline; no account.">
   <meta name="theme-color" content="#14452a">
   <meta name="color-scheme" content="light dark">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://gauravaccentureproducts.github.io/jlpt-n5-tutor/">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/main.css?v=1.6">
+  <link rel="stylesheet" href="css/main.css?v=1.6.1">
 </head>
 <body>
   <a href="#app" class="skip-link">Skip to main content</a>
   <header class="app-header" role="banner">
     <div class="brand">
-      <h1><a href="#/home" class="brand-link" aria-label="JLPT N5 Grammar Tutor - return to home">JLPT N5 Grammar Tutor</a></h1>
+      <h1><a href="#/home" class="brand-link" aria-label="JLPT N5 — return to home">JLPT N5</a></h1>
     </div>
     <nav class="primary-nav" aria-label="Primary">
       <a href="#/learn" data-route="learn">Learn</a>
@@ -46,14 +46,14 @@
   </main>
 
   <footer class="app-footer">
-    <small class="footer-meta">v1.5.0 · <a href="CHANGELOG.md">What's new</a></small>
+    <small class="footer-meta">v1.6.1 · <a href="CHANGELOG.md">What's new</a></small>
     <small class="footer-links">
       <a href="PRIVACY.md">Privacy</a>
       <a href="https://github.com/gauravaccentureproducts/jlpt-n5-tutor" rel="noopener noreferrer" target="_blank">Source on GitHub</a>
     </small>
   </footer>
 
-  <script type="module" src="js/app.js?v=1.6"></script>
+  <script type="module" src="js/app.js?v=1.6.1"></script>
   <script>
     // Register service worker for offline capability. Only runs on http(s) -
     // not when opening index.html directly via file://.

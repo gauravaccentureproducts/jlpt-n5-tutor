@@ -151,7 +151,7 @@ function renderDrill(container) {
         </div>
         ${feedback ? `
           <div class="drill-feedback ${feedback.correct ? 'correct' : 'incorrect'}">
-            <div class="feedback-headline">${feedback.correct ? '✓ Correct' : '✗ Not quite'}</div>
+            <div class="feedback-headline">${feedback.correct ? 'Correct' : 'Wrong'}</div>
             <p>Answer: <strong lang="ja">${esc(item.te)}</strong></p>
             <p class="muted small">Rule: <strong>${esc(item.rule)}</strong></p>
             <button id="te-next" class="btn-primary">${session.idx === total - 1 ? 'Finish' : 'Next'}</button>

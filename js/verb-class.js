@@ -173,7 +173,7 @@ function renderDrill(container) {
         </div>
         ${feedback ? `
           <div class="drill-feedback ${feedback.correct ? 'correct' : 'incorrect'}">
-            <div class="feedback-headline">${feedback.correct ? '✓ Correct' : '✗ Not quite'}</div>
+            <div class="feedback-headline">${feedback.correct ? 'Correct' : 'Wrong'}</div>
             <p>${esc(item.v)} is <strong>Group ${item.g}</strong>${item.except ? ' (a famous Group-1 exception - looks like Group 2 but isn\'t)' : ''}.</p>
             <button id="vc-next" class="btn-primary">${drillState.idx === total - 1 ? 'Finish' : 'Next'}</button>
           </div>

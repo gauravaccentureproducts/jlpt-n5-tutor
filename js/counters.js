@@ -219,7 +219,7 @@ function renderDrill(container) {
                placeholder="Type kana or romaji..." ${feedback ? 'disabled' : ''}>
         ${feedback ? `
           <div class="drill-feedback ${feedback.correct ? 'correct' : 'incorrect'}">
-            <div class="feedback-headline">${feedback.correct ? '✓ Correct' : '✗ Not quite'}</div>
+            <div class="feedback-headline">${feedback.correct ? 'Correct' : 'Wrong'}</div>
             <p>Expected: <strong lang="ja">${esc(expected)}</strong></p>
             <p class="muted small">${esc(item.counter.notes)}</p>
             <button id="ct-next" class="btn-primary">${drillState.idx === total - 1 ? 'Finish' : 'Next'}</button>

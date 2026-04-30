@@ -279,17 +279,17 @@ function renderFeedback(q, answer) {
   let advanceMsg = '';
   if (isCorrect) {
     if (newBox === 'graduated') {
-      advanceMsg = `<strong class="graduated">★ Graduated!</strong> This pattern is mastered.`;
+      advanceMsg = `<strong class="graduated">Graduated.</strong> Pattern mastered.`;
     } else {
       advanceMsg = `Advanced to <strong>${newBox}</strong> box. ${consec}/4 consecutive correct.`;
     }
   } else {
-    advanceMsg = `Reset to the <strong>1d</strong> box. You'll see this pattern again tomorrow.`;
+    advanceMsg = `Reset to the <strong>1d</strong> box. This pattern returns tomorrow.`;
   }
 
   return `
     <div class="drill-feedback ${isCorrect ? 'correct' : 'incorrect'}">
-      <div class="feedback-headline">${isCorrect ? '✓ Correct' : '✗ Not quite'}</div>
+      <div class="feedback-headline">${isCorrect ? 'Correct' : 'Wrong'}</div>
       ${q.explanation_en ? `<p class="feedback-explanation">${esc(q.explanation_en)}</p>` : ''}
       ${distractor ? `<p class="feedback-distractor"><em>Why your choice was off:</em> ${esc(distractor)}</p>` : ''}
       <p class="feedback-srs">${advanceMsg}</p>

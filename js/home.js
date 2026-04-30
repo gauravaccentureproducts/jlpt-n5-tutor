@@ -1,7 +1,11 @@
-// Home / landing screen (Brief 2 §1).
-// First-time visitor: tagline + CTA + placement + 3-card row + trust strip.
-// Returning visitor: Continue card + Today's queue + 7-day streak strip
-// above the 3-card row.
+// Home / landing screen.
+// First-time visitor: scope statement + corpus stats + CTAs.
+// Returning visitor: recommender + resume cards + streak strip.
+//
+// Voice: institutional / reference (think MIT OpenCourseWare, arxiv.org).
+// No outcome promises, no time-to-result claims, no second-person imperatives,
+// no celebration glyphs. State facts; describe what the tool contains.
+// See TASKS.md "Copy audit: remove sales-promo voice" for the full guideline.
 import * as storage from './storage.js';
 
 let grammarCount = null;
@@ -36,40 +40,24 @@ export async function renderHome(container) {
   const dueCount = storage.getDueCount();
   const streak = storage.getStreak();
   const settings = storage.getSettings();
-  // Find the first unstudied pattern for the CTA
-  // (cheap heuristic: any pattern id not in history)
   const lastViewed = settings.lastLearnId || null;
+
+  const firstTimeTagline = `${grammarCount} grammar patterns · ${vocabCount} vocabulary · ${kanjiCount} kanji · 30 reading passages · 12 listening drills.`;
+  const returningTagline = `${grammarCount} patterns. ${vocabCount} words. ${kanjiCount} kanji.`;
 
   container.innerHTML = `
     <section class="home">
       ${isReturning ? renderRecommendation(pickRecommendation({ dueCount, streak, lastViewed })) : ''}
       ${isReturning ? renderReturning({ history, results, dueCount, streak, lastViewed }) : ''}
       <section class="home-cta">
-        <h2>${isReturning ? 'Continue your N5 study' : 'Pass JLPT N5 with 15 minutes a day'}</h2>
-        ${isReturning ? `
-          <p class="home-tagline">${grammarCount} grammar patterns. ${vocabCount} vocab words. ${kanjiCount} N5 kanji.</p>
-        ` : `
-          <ul class="hero-stats" aria-label="Corpus size">
-            <li class="stat"><b>${grammarCount}</b> grammar</li>
-            <li class="stat"><b>${vocabCount}</b> vocab</li>
-            <li class="stat"><b>${kanjiCount}</b> kanji</li>
-            <li class="stat"><b>30</b> reading</li>
-            <li class="stat"><b>12</b> listening</li>
-          </ul>
-        `}
-        ${!isReturning ? `
-          <ul class="trust-strip" aria-label="What this app guarantees">
-            <li>✓ Works offline</li>
-            <li>✓ No login required</li>
-            <li>✓ Your progress stays on this device</li>
-          </ul>
-        ` : ''}
+        <h2>${isReturning ? 'Continue' : 'JLPT N5 study material'}</h2>
+        <p class="home-tagline">${isReturning ? returningTagline : firstTimeTagline}</p>
         <div class="home-cta-buttons">
-          <a class="btn-primary" href="#/learn${lastViewed ? '/' + encodeURIComponent(lastViewed) : ''}">${isReturning ? 'Continue lessons' : 'Start your first lesson'}</a>
+          <a class="btn-primary" href="#/learn${lastViewed ? '/' + encodeURIComponent(lastViewed) : ''}">${isReturning ? 'Continue lessons' : 'Start a lesson'}</a>
           <a class="btn-secondary" href="#/diagnostic">Take a placement check</a>
         </div>
       </section>
-      <section class="home-pillars" aria-label="Product pillars">
+      <section class="home-pillars" aria-label="Sections">
         <a class="pillar-card" href="#/learn">
           <h3>Learn</h3>
           <p>Grammar, vocab, kanji, reading, listening - pick a section.</p>
@@ -82,7 +70,7 @@ export async function renderHome(container) {
         </a>
       </section>
       ${isReturning ? '' : `
-        <p class="muted small home-footnote">Already familiar with some N5 material? Take the placement check above to skip what you know.</p>
+        <p class="muted small home-footnote">If you've studied some N5 already, the placement check above can shorten the path.</p>
       `}
     </section>
   `;
@@ -92,9 +80,9 @@ function renderReturning({ results, dueCount, streak, lastViewed }) {
   const lastResult = results[results.length - 1];
   const dayBoxes = renderHeatmap(streak.days || []);
   return `
-    <section class="home-resume" aria-label="Resume where you left off">
+    <section class="home-resume" aria-label="Resume">
       <div class="resume-card">
-        <h3>Continue where you left off</h3>
+        <h3>Resume</h3>
         ${lastViewed ? `
           <p>Last lesson: <strong>${esc(lastViewed)}</strong></p>
           <a class="btn-primary" href="#/learn/${encodeURIComponent(lastViewed)}">Resume lesson</a>
@@ -104,13 +92,13 @@ function renderReturning({ results, dueCount, streak, lastViewed }) {
         `}
       </div>
       <div class="resume-card">
-        <h3>Today's review queue</h3>
+        <h3>Reviews due today</h3>
         ${dueCount > 0 ? `
-          <p><strong>${dueCount}</strong> ${dueCount === 1 ? 'item is' : 'items are'} due today.</p>
+          <p><strong>${dueCount}</strong> ${dueCount === 1 ? 'item' : 'items'}.</p>
           <a class="btn-primary" href="#/review">Start review</a>
         ` : `
-          <p class="muted">All caught up - come back tomorrow.</p>
-          <a class="btn-secondary" href="#/learn">Learn something new</a>
+          <p class="muted">No reviews due.</p>
+          <a class="btn-secondary" href="#/learn">Open Learn</a>
         `}
       </div>
     </section>
@@ -118,7 +106,7 @@ function renderReturning({ results, dueCount, streak, lastViewed }) {
       <div class="streak-summary">
         <span class="streak-flame" aria-hidden="true">🔥</span>
         <span class="streak-num">${streak.current || 0}</span>
-        <span class="streak-label">${(streak.current || 0) === 1 ? 'day streak' : 'day streak'}</span>
+        <span class="streak-label">${(streak.current || 0) === 1 ? 'day' : 'days'}</span>
         ${streak.longest > 1 ? `<span class="muted small">(longest: ${streak.longest})</span>` : ''}
       </div>
       <div class="streak-heatmap" aria-hidden="true">${dayBoxes}</div>
@@ -152,13 +140,13 @@ function esc(s) {
   }[c]));
 }
 
-// "What should I study next?" minimal recommender (Spec supplement OQ-1, option d).
+// Minimal "Suggested next" recommender (Spec supplement OQ-1, option d).
 // Picks ONE action based on current state, in priority order:
-//   1. Many reviews due (>=10) - clear them first.
+//   1. Many reviews due (>=10) - state count.
 //   2. Streak risk - hasn't studied today and current streak >= 1.
-//   3. Some reviews due - keep retention up.
-//   4. Studied today, nothing due - mix it up with a drill.
-//   5. Default - continue the next lesson.
+//   3. Some reviews due - state count.
+//   4. Studied today, nothing due - mixed drill.
+//   5. Default - next lesson.
 function pickRecommendation({ dueCount, streak, lastViewed }) {
   const today = new Date();
   const todayKey = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
@@ -166,24 +154,24 @@ function pickRecommendation({ dueCount, streak, lastViewed }) {
   const learnHref = lastViewed ? `#/learn/${encodeURIComponent(lastViewed)}` : '#/learn';
 
   if (dueCount >= 10) {
-    return { label: `Clear today's review queue (${dueCount} due)`, href: '#/review' };
+    return { label: `${dueCount} reviews due today`, href: '#/review' };
   }
   if ((streak.current || 0) >= 1 && !studiedToday) {
-    return { label: `Keep your ${streak.current}-day streak alive`, href: learnHref };
+    return { label: `Continue (${streak.current}-day streak)`, href: learnHref };
   }
   if (dueCount >= 1) {
-    return { label: `Run today's review (${dueCount} due)`, href: '#/review' };
+    return { label: `${dueCount} ${dueCount === 1 ? 'review' : 'reviews'} due today`, href: '#/review' };
   }
   if (studiedToday) {
-    return { label: 'Try a quick mixed drill', href: '#/drill' };
+    return { label: 'Mixed drill', href: '#/drill' };
   }
-  return { label: 'Pick up the next lesson', href: learnHref };
+  return { label: 'Next lesson', href: learnHref };
 }
 
 function renderRecommendation(rec) {
   return `
-    <aside class="home-recommend" aria-label="Recommended next step">
-      <span class="rec-prompt">What should I study next?</span>
+    <aside class="home-recommend" aria-label="Suggested next">
+      <span class="rec-prompt">Suggested next</span>
       <a class="rec-link" href="${rec.href}">${esc(rec.label)} →</a>
     </aside>
   `;
