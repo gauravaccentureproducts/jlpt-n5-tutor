@@ -73,7 +73,11 @@ function refreshDrillBadge() {
 function renderSkeleton(container, name) {
   // Skeleton placeholder shapes matching the destination route.
   // Replaces the legacy "Loading..." text per Brief 2 §3.1.
+  // Each shape kind maps to a specific HTML block that approximates the
+  // dimensions of the rendered content, so the layout doesn't shift when
+  // the real content swaps in.
   const shapes = {
+    home:       ['title', 'tagline', 'cta', 'pillars'],
     learn:      ['title', 'rows', 'rows', 'rows'],
     test:       ['title', 'card', 'card'],
     drill:      ['title', 'card'],
@@ -83,10 +87,15 @@ function renderSkeleton(container, name) {
     settings:   ['title', 'rows', 'rows'],
     reading:    ['title', 'rows', 'rows'],
     listening:  ['title', 'rows'],
+    kanji:      ['title', 'grid'],
   };
   const blocks = (shapes[name] || ['title', 'card', 'rows']).map(kind => {
-    if (kind === 'title') return '<div class="skeleton skeleton-title" aria-hidden="true"></div>';
-    if (kind === 'card') return '<div class="skeleton skeleton-card" aria-hidden="true"></div>';
+    if (kind === 'title')   return '<div class="skeleton skeleton-title" aria-hidden="true"></div>';
+    if (kind === 'tagline') return '<div class="skeleton skeleton-tagline" aria-hidden="true"></div>';
+    if (kind === 'cta')     return '<div class="skeleton-ctas" aria-hidden="true"><div class="skeleton skeleton-btn"></div><div class="skeleton skeleton-btn"></div></div>';
+    if (kind === 'pillars') return '<div class="skeleton-pillars" aria-hidden="true"><div class="skeleton skeleton-pillar"></div><div class="skeleton skeleton-pillar"></div></div>';
+    if (kind === 'grid')    return '<div class="skeleton-grid" aria-hidden="true">' + '<div class="skeleton skeleton-grid-cell"></div>'.repeat(18) + '</div>';
+    if (kind === 'card')    return '<div class="skeleton skeleton-card" aria-hidden="true"></div>';
     return '<div class="skeleton skeleton-row" aria-hidden="true"></div>'.repeat(3);
   }).join('');
   container.innerHTML = `<div class="skeleton-wrap" role="status" aria-live="polite" aria-label="Loading">${blocks}</div>`;

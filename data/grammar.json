@@ -928,7 +928,7 @@
       "categoryOrder": 2,
       "patternOrder": 12,
       "meaning_en": "Also / too / even (with negation: 'not even / no one / nothing')",
-      "meaning_ja": "「〜も」",
+      "meaning_ja": "ほかにも おなじだと しめす じょし。「だれも」「なにも」では「ぜんぶ」を あらわす。",
       "form_rules": {
         "attaches_to": [
           "noun"
@@ -1411,7 +1411,7 @@
       "categoryOrder": 4,
       "patternOrder": 3,
       "meaning_en": "When - pairs with から / まで / ごろ for richer time questions",
-      "meaning_ja": "「いつ」",
+      "meaning_ja": "じかんを たずねる ことば。",
       "form_rules": {
         "attaches_to": [
           "question_word"
@@ -2105,7 +2105,7 @@
       "categoryOrder": 2,
       "patternOrder": 25,
       "meaning_en": "Also / too",
-      "meaning_ja": "「〜も」",
+      "meaning_ja": "「Aも Bも」のように おなじものを かさねて 言う じょし。",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2857,7 +2857,7 @@
       "categoryOrder": 4,
       "patternOrder": 6,
       "meaning_en": "When",
-      "meaning_ja": "「いつ」",
+      "meaning_ja": "いつかを たずねる ことば。",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -4056,7 +4056,7 @@
       "categoryOrder": 8,
       "patternOrder": 1,
       "meaning_en": "Verb-て (te-form) - connector / sequence / request base",
-      "meaning_ja": "てけい",
+      "meaning_ja": "ことばを つなぐ どうしの かたち。",
       "form_rules": {
         "attaches_to": [
           "verb_root"
@@ -6422,7 +6422,7 @@
       "categoryOrder": 14,
       "patternOrder": 1,
       "meaning_en": "～じ - o'clock (counter)",
-      "meaning_ja": "「〜じ」",
+      "meaning_ja": "「じ」を かぞえる ことば。",
       "form_rules": {
         "attaches_to": [
           "number"
@@ -6982,7 +6982,7 @@
       "categoryOrder": 15,
       "patternOrder": 3,
       "meaning_en": "でも - 'but / however' (sentence-initial)",
-      "meaning_ja": "「でも」",
+      "meaning_ja": "はんたいの ことを 言う つなぎことば。",
       "form_rules": {
         "attaches_to": [
           "clause_start"
