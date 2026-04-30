@@ -260,6 +260,12 @@ def extract_vocab_corpus(md_path: Path) -> list[dict]:
         form = m.group("form").strip()
         reading = (m.group("reading") or "").strip() or None
         gloss = m.group("gloss").strip()
+        # Pass-14 §3.3: for hiragana-only forms (no kanji), set reading = form
+        # so consumers (SRS, TTS, search) always have a usable reading field.
+        # Without this, ~795 kana-only vocab entries had reading=null and
+        # required null-check defenses scattered across the app.
+        if reading is None and form and not any("一" <= c <= "鿿" for c in form):
+            reading = form
         # Strip catalog tag markers like **[Ext]** / **[Cul]** / **[Adv]** so
         # they don't leak into the user-facing gloss. The tags are author-side
         # metadata for scope tracking, not translations. Pass-11 finding C-5.

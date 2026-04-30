@@ -42,32 +42,27 @@
         {
           "ja": "わたしは がくせいです。",
           "form": "affirmative",
-          "translation_en": "I am a student.",
-          "furigana": []
+          "translation_en": "I am a student."
         },
         {
           "ja": "わたしは がくせいじゃありません。",
           "form": "negative",
-          "translation_en": "I am not a student.",
-          "furigana": []
+          "translation_en": "I am not a student."
         },
         {
           "ja": "あなたは がくせいですか。",
           "form": "question",
-          "translation_en": "Are you a student?",
-          "furigana": []
+          "translation_en": "Are you a student?"
         },
         {
           "ja": "きのうは やすみでした。",
           "form": "past",
-          "translation_en": "Yesterday was a day off.",
-          "furigana": []
+          "translation_en": "Yesterday was a day off."
         },
         {
           "ja": "まいにち にほんごを べんきょうします。",
           "form": "affirmative",
-          "translation_en": "I study Japanese every day.",
-          "furigana": []
+          "translation_en": "I study Japanese every day."
         }
       ],
       "common_mistakes": [
@@ -115,39 +110,33 @@
         {
           "ja": "わたしは がくせいです。",
           "form": "affirmative",
-          "translation_en": "I am a student.",
-          "furigana": []
+          "translation_en": "I am a student."
         },
         {
           "ja": "これは ほんです。",
           "form": "affirmative",
-          "translation_en": "This is a book.",
-          "furigana": []
+          "translation_en": "This is a book."
         },
         {
           "ja": "コーヒーは 飲みますが、にくは たべません。",
           "form": "negative",
           "translation_en": "I drink coffee, but I do not eat meat. (contrastive は: marks the contrast between two topics)",
-          "furigana": [],
           "note": "Contrastive use of は - distinct from topic-marker は"
         },
         {
           "ja": "あなたは にほんじんですか。",
           "form": "question",
-          "translation_en": "Are you Japanese?",
-          "furigana": []
+          "translation_en": "Are you Japanese?"
         },
         {
           "ja": "きのうは あめでした。",
           "form": "past",
-          "translation_en": "Yesterday was rainy.",
-          "furigana": []
+          "translation_en": "Yesterday was rainy."
         },
         {
           "ja": "コーヒーは すきですが、おちゃは すきじゃありません。",
           "form": "affirmative",
-          "translation_en": "I like coffee, but I don't like tea.",
-          "furigana": []
+          "translation_en": "I like coffee, but I don't like tea."
         }
       ],
       "common_mistakes": [
@@ -205,32 +194,27 @@
         {
           "ja": "だれが きましたか。",
           "form": "question",
-          "translation_en": "Who came?",
-          "furigana": []
+          "translation_en": "Who came?"
         },
         {
           "ja": "にほんごが わかります。",
           "form": "affirmative",
-          "translation_en": "I understand Japanese.",
-          "furigana": []
+          "translation_en": "I understand Japanese."
         },
         {
           "ja": "ねこが すきじゃありません。",
           "form": "negative",
-          "translation_en": "I don't like cats.",
-          "furigana": []
+          "translation_en": "I don't like cats."
         },
         {
           "ja": "きのうは あめが ふりました。",
           "form": "past",
-          "translation_en": "It rained yesterday.",
-          "furigana": []
+          "translation_en": "It rained yesterday."
         },
         {
           "ja": "へやに テレビが あります。",
           "form": "affirmative",
-          "translation_en": "There is a TV in the room.",
-          "furigana": []
+          "translation_en": "There is a TV in the room."
         }
       ],
       "common_mistakes": [
@@ -283,32 +267,27 @@
         {
           "ja": "ほんを よみます。",
           "form": "affirmative",
-          "translation_en": "I read a book.",
-          "furigana": []
+          "translation_en": "I read a book."
         },
         {
           "ja": "にくを たべません。",
           "form": "negative",
-          "translation_en": "I don't eat meat.",
-          "furigana": []
+          "translation_en": "I don't eat meat."
         },
         {
           "ja": "なにを かいましたか。",
           "form": "question",
-          "translation_en": "What did you buy?",
-          "furigana": []
+          "translation_en": "What did you buy?"
         },
         {
           "ja": "きのう えいがを みました。",
           "form": "past",
-          "translation_en": "I watched a movie yesterday.",
-          "furigana": []
+          "translation_en": "I watched a movie yesterday."
         },
         {
           "ja": "みずを ください。",
           "form": "affirmative",
-          "translation_en": "Please give me water.",
-          "furigana": []
+          "translation_en": "Please give me water."
         }
       ],
       "common_mistakes": [
@@ -371,32 +350,27 @@
         {
           "ja": "7時に おきます。",
           "form": "affirmative",
-          "translation_en": "I get up at 7 o'clock.",
-          "furigana": []
+          "translation_en": "I get up at 7 o'clock."
         },
         {
           "ja": "にほんに いきません。",
           "form": "negative",
-          "translation_en": "I'm not going to Japan.",
-          "furigana": []
+          "translation_en": "I'm not going to Japan."
         },
         {
           "ja": "へやに なにが ありますか。",
           "form": "question",
-          "translation_en": "What's in the room?",
-          "furigana": []
+          "translation_en": "What's in the room?"
         },
         {
           "ja": "ともだちに ほんを あげました。",
           "form": "past",
-          "translation_en": "I gave a book to my friend.",
-          "furigana": []
+          "translation_en": "I gave a book to my friend."
         },
         {
           "ja": "うちに かえります。",
           "form": "affirmative",
-          "translation_en": "I'm going home.",
-          "furigana": []
+          "translation_en": "I'm going home."
         }
       ],
       "common_mistakes": [
@@ -448,26 +422,22 @@
         {
           "ja": "にほんへ いきます。",
           "form": "affirmative",
-          "translation_en": "I'm going to Japan.",
-          "furigana": []
+          "translation_en": "I'm going to Japan."
         },
         {
           "ja": "うみへ いきません。",
           "form": "negative",
-          "translation_en": "I'm not going to the sea.",
-          "furigana": []
+          "translation_en": "I'm not going to the sea."
         },
         {
           "ja": "どこへ いきますか。",
           "form": "question",
-          "translation_en": "Where are you going?",
-          "furigana": []
+          "translation_en": "Where are you going?"
         },
         {
           "ja": "がっこうへ かえりました。",
           "form": "past",
-          "translation_en": "I returned to school.",
-          "furigana": []
+          "translation_en": "I returned to school."
         }
       ],
       "common_mistakes": [
@@ -530,32 +500,27 @@
         {
           "ja": "としょかんで べんきょうします。",
           "form": "affirmative",
-          "translation_en": "I study at the library.",
-          "furigana": []
+          "translation_en": "I study at the library."
         },
         {
           "ja": "バスで いきます。",
           "form": "affirmative",
-          "translation_en": "I go by bus.",
-          "furigana": []
+          "translation_en": "I go by bus."
         },
         {
           "ja": "ここで たばこを すいません。",
           "form": "negative",
-          "translation_en": "I don't smoke cigarettes here.",
-          "furigana": []
+          "translation_en": "I don't smoke cigarettes here."
         },
         {
           "ja": "なんで きましたか。",
           "form": "question",
-          "translation_en": "How did you come? / By what means?",
-          "furigana": []
+          "translation_en": "How did you come? / By what means?"
         },
         {
           "ja": "にほんごで はなしました。",
           "form": "past",
-          "translation_en": "I spoke in Japanese.",
-          "furigana": []
+          "translation_en": "I spoke in Japanese."
         }
       ],
       "common_mistakes": [
@@ -614,32 +579,27 @@
         {
           "ja": "ともだちと いきます。",
           "form": "affirmative",
-          "translation_en": "I'm going with my friend.",
-          "furigana": []
+          "translation_en": "I'm going with my friend."
         },
         {
           "ja": "パンと コーヒーを たべました。",
           "form": "past",
-          "translation_en": "I ate bread and coffee.",
-          "furigana": []
+          "translation_en": "I ate bread and coffee."
         },
         {
           "ja": "「こんにちは」と いいました。",
           "form": "past",
-          "translation_en": "I said 'hello.'",
-          "furigana": []
+          "translation_en": "I said 'hello.'"
         },
         {
           "ja": "ともだちと あいませんでした。",
           "form": "negative",
-          "translation_en": "I didn't meet my friend.",
-          "furigana": []
+          "translation_en": "I didn't meet my friend."
         },
         {
           "ja": "だれと いきますか。",
           "form": "question",
-          "translation_en": "Who are you going with?",
-          "furigana": []
+          "translation_en": "Who are you going with?"
         }
       ],
       "common_mistakes": [
@@ -698,32 +658,27 @@
         {
           "ja": "9時から しごとです。",
           "form": "affirmative",
-          "translation_en": "Work starts at 9.",
-          "furigana": []
+          "translation_en": "Work starts at 9."
         },
         {
           "ja": "アメリカから きました。",
           "form": "past",
-          "translation_en": "I came from America.",
-          "furigana": []
+          "translation_en": "I came from America."
         },
         {
           "ja": "あついから、まどを あけてください。",
           "form": "affirmative",
-          "translation_en": "It's hot, so please open the window.",
-          "furigana": []
+          "translation_en": "It's hot, so please open the window."
         },
         {
           "ja": "なんじから ですか。",
           "form": "question",
-          "translation_en": "From what time?",
-          "furigana": []
+          "translation_en": "From what time?"
         },
         {
           "ja": "たかいから、かいません。",
           "form": "negative",
-          "translation_en": "It's expensive, so I won't buy it.",
-          "furigana": []
+          "translation_en": "It's expensive, so I won't buy it."
         }
       ],
       "common_mistakes": [
@@ -781,32 +736,27 @@
         {
           "ja": "5時まで しごとです。",
           "form": "affirmative",
-          "translation_en": "I work until 5.",
-          "furigana": []
+          "translation_en": "I work until 5."
         },
         {
           "ja": "9時から 5時まで しごとです。",
           "form": "affirmative",
-          "translation_en": "I work from 9 to 5.",
-          "furigana": []
+          "translation_en": "I work from 9 to 5."
         },
         {
           "ja": "うちまで あるきました。",
           "form": "past",
-          "translation_en": "I walked all the way home.",
-          "furigana": []
+          "translation_en": "I walked all the way home."
         },
         {
           "ja": "なんじまで ですか。",
           "form": "question",
-          "translation_en": "Until what time?",
-          "furigana": []
+          "translation_en": "Until what time?"
         },
         {
           "ja": "そこまで タクシーで いきません。",
           "form": "negative",
-          "translation_en": "I won't take a taxi that far.",
-          "furigana": []
+          "translation_en": "I won't take a taxi that far."
         }
       ],
       "common_mistakes": [
@@ -859,26 +809,22 @@
         {
           "ja": "りんごや バナナを たべます。",
           "form": "affirmative",
-          "translation_en": "I eat apples, bananas, etc.",
-          "furigana": []
+          "translation_en": "I eat apples, bananas, etc."
         },
         {
           "ja": "ペンや ノートなどを かいました。",
           "form": "past",
-          "translation_en": "I bought pens, notebooks, and so on.",
-          "furigana": []
+          "translation_en": "I bought pens, notebooks, and so on."
         },
         {
           "ja": "なにや なにを かいましたか。",
           "form": "question",
-          "translation_en": "What and what did you buy?",
-          "furigana": []
+          "translation_en": "What and what did you buy?"
         },
         {
           "ja": "こうえんや えきの ちかくに カフェが あります。",
           "form": "affirmative",
-          "translation_en": "There are cafes near parks, stations, etc.",
-          "furigana": []
+          "translation_en": "There are cafes near parks, stations, etc."
         }
       ],
       "common_mistakes": [
@@ -937,32 +883,27 @@
         {
           "ja": "あなたは がくせいですか。",
           "form": "question",
-          "translation_en": "Are you a student?",
-          "furigana": []
+          "translation_en": "Are you a student?"
         },
         {
           "ja": "なにを たべましたか。",
           "form": "question",
-          "translation_en": "What did you eat?",
-          "furigana": []
+          "translation_en": "What did you eat?"
         },
         {
           "ja": "コーヒーか おちゃが いいです。",
           "form": "affirmative",
-          "translation_en": "Coffee or tea would be good.",
-          "furigana": []
+          "translation_en": "Coffee or tea would be good."
         },
         {
           "ja": "いつ いきますか。",
           "form": "question",
-          "translation_en": "When are you going?",
-          "furigana": []
+          "translation_en": "When are you going?"
         },
         {
           "ja": "これは ペンですか、えんぴつですか。",
           "form": "question",
-          "translation_en": "Is this a pen or a pencil?",
-          "furigana": []
+          "translation_en": "Is this a pen or a pencil?"
         }
       ],
       "common_mistakes": [
@@ -1020,32 +961,27 @@
         {
           "ja": "わたしも がくせいです。",
           "form": "affirmative",
-          "translation_en": "I am a student too.",
-          "furigana": []
+          "translation_en": "I am a student too."
         },
         {
           "ja": "りんごも バナナも すきです。",
           "form": "affirmative",
-          "translation_en": "I like both apples and bananas.",
-          "furigana": []
+          "translation_en": "I like both apples and bananas."
         },
         {
           "ja": "とうきょうにも いきました。",
           "form": "past",
-          "translation_en": "I went to Tokyo as well.",
-          "furigana": []
+          "translation_en": "I went to Tokyo as well."
         },
         {
           "ja": "だれも きませんでした。",
           "form": "negative",
-          "translation_en": "No one came.",
-          "furigana": []
+          "translation_en": "No one came."
         },
         {
           "ja": "なにも たべませんか。",
           "form": "question",
-          "translation_en": "Won't you eat anything?",
-          "furigana": []
+          "translation_en": "Won't you eat anything?"
         }
       ],
       "common_mistakes": [
@@ -1103,32 +1039,27 @@
         {
           "ja": "これは ほんです。",
           "form": "affirmative",
-          "translation_en": "This is a book.",
-          "furigana": []
+          "translation_en": "This is a book."
         },
         {
           "ja": "それは なんですか。",
           "form": "question",
-          "translation_en": "What is that (near you)?",
-          "furigana": []
+          "translation_en": "What is that (near you)?"
         },
         {
           "ja": "あれは くるまじゃありません。",
           "form": "negative",
-          "translation_en": "That (over there) is not a car.",
-          "furigana": []
+          "translation_en": "That (over there) is not a car."
         },
         {
           "ja": "どれが いちばん すきですか。",
           "form": "question",
-          "translation_en": "Which one do you like best?",
-          "furigana": []
+          "translation_en": "Which one do you like best?"
         },
         {
           "ja": "これを ください。",
           "form": "affirmative",
-          "translation_en": "Please give me this.",
-          "furigana": []
+          "translation_en": "Please give me this."
         }
       ],
       "common_mistakes": [
@@ -1191,32 +1122,27 @@
         {
           "ja": "この ほんを よみました。",
           "form": "past",
-          "translation_en": "I read this book.",
-          "furigana": []
+          "translation_en": "I read this book."
         },
         {
           "ja": "その ペンは あなたのですか。",
           "form": "question",
-          "translation_en": "Is that pen yours?",
-          "furigana": []
+          "translation_en": "Is that pen yours?"
         },
         {
           "ja": "あの 人は だれですか。",
           "form": "question",
-          "translation_en": "Who is that person?",
-          "furigana": []
+          "translation_en": "Who is that person?"
         },
         {
           "ja": "どの くるまが いいですか。",
           "form": "question",
-          "translation_en": "Which car is good?",
-          "furigana": []
+          "translation_en": "Which car is good?"
         },
         {
           "ja": "この みせは あまり たかくないです。",
           "form": "negative",
-          "translation_en": "This shop isn't very expensive.",
-          "furigana": []
+          "translation_en": "This shop isn't very expensive."
         }
       ],
       "common_mistakes": [
@@ -1279,32 +1205,27 @@
         {
           "ja": "ここは としょかんです。",
           "form": "affirmative",
-          "translation_en": "Here is the library.",
-          "furigana": []
+          "translation_en": "Here is the library."
         },
         {
           "ja": "そこに ねこが います。",
           "form": "affirmative",
-          "translation_en": "There is a cat there.",
-          "furigana": []
+          "translation_en": "There is a cat there."
         },
         {
           "ja": "どこで かいましたか。",
           "form": "question",
-          "translation_en": "Where did you buy it?",
-          "furigana": []
+          "translation_en": "Where did you buy it?"
         },
         {
           "ja": "あそこは しずかです。",
           "form": "affirmative",
-          "translation_en": "Over there is quiet.",
-          "furigana": []
+          "translation_en": "Over there is quiet."
         },
         {
           "ja": "どこにも いきません。",
           "form": "negative",
-          "translation_en": "I'm not going anywhere.",
-          "furigana": []
+          "translation_en": "I'm not going anywhere."
         }
       ],
       "common_mistakes": [
@@ -1367,32 +1288,27 @@
         {
           "ja": "なにを たべますか。",
           "form": "question",
-          "translation_en": "What will you eat?",
-          "furigana": []
+          "translation_en": "What will you eat?"
         },
         {
           "ja": "これは なんですか。",
           "form": "question",
-          "translation_en": "What is this?",
-          "furigana": []
+          "translation_en": "What is this?"
         },
         {
           "ja": "いま なんじですか。",
           "form": "question",
-          "translation_en": "What time is it now?",
-          "furigana": []
+          "translation_en": "What time is it now?"
         },
         {
           "ja": "なにが すきですか。",
           "form": "question",
-          "translation_en": "What do you like?",
-          "furigana": []
+          "translation_en": "What do you like?"
         },
         {
           "ja": "なんで きましたか。",
           "form": "question",
-          "translation_en": "How (by what means) did you come?",
-          "furigana": []
+          "translation_en": "How (by what means) did you come?"
         }
       ],
       "common_mistakes": [
@@ -1450,32 +1366,27 @@
         {
           "ja": "だれが きましたか。",
           "form": "question",
-          "translation_en": "Who came?",
-          "furigana": []
+          "translation_en": "Who came?"
         },
         {
           "ja": "これは だれの かばんですか。",
           "form": "question",
-          "translation_en": "Whose bag is this?",
-          "furigana": []
+          "translation_en": "Whose bag is this?"
         },
         {
           "ja": "どなたですか。",
           "form": "question",
-          "translation_en": "Who is it (polite)?",
-          "furigana": []
+          "translation_en": "Who is it (polite)?"
         },
         {
           "ja": "だれと いきますか。",
           "form": "question",
-          "translation_en": "With whom are you going?",
-          "furigana": []
+          "translation_en": "With whom are you going?"
         },
         {
           "ja": "あの 人は だれですか。",
           "form": "question",
-          "translation_en": "Who is that person?",
-          "furigana": []
+          "translation_en": "Who is that person?"
         }
       ],
       "common_mistakes": [
@@ -1533,32 +1444,27 @@
         {
           "ja": "いつ いきますか。",
           "form": "question",
-          "translation_en": "When are you going?",
-          "furigana": []
+          "translation_en": "When are you going?"
         },
         {
           "ja": "いつまで やすみですか。",
           "form": "question",
-          "translation_en": "Until when are you on holiday?",
-          "furigana": []
+          "translation_en": "Until when are you on holiday?"
         },
         {
           "ja": "いつから にほんに いますか。",
           "form": "question",
-          "translation_en": "Since when have you been in Japan?",
-          "furigana": []
+          "translation_en": "Since when have you been in Japan?"
         },
         {
           "ja": "いつごろ きますか。",
           "form": "question",
-          "translation_en": "Around when will you come?",
-          "furigana": []
+          "translation_en": "Around when will you come?"
         },
         {
           "ja": "いつでも いいです。",
           "form": "affirmative",
-          "translation_en": "Any time is fine.",
-          "furigana": []
+          "translation_en": "Any time is fine."
         }
       ],
       "common_mistakes": [
@@ -1599,32 +1505,27 @@
         {
           "ja": "5時まで しごとです。",
           "form": "affirmative",
-          "translation_en": "I work until 5.",
-          "furigana": []
+          "translation_en": "I work until 5."
         },
         {
           "ja": "9時から 5時まで しごとです。",
           "form": "affirmative",
-          "translation_en": "I work from 9 to 5.",
-          "furigana": []
+          "translation_en": "I work from 9 to 5."
         },
         {
           "ja": "うちまで あるいて かえりました。",
           "form": "past",
-          "translation_en": "I walked back home.",
-          "furigana": []
+          "translation_en": "I walked back home."
         },
         {
           "ja": "なんじまで ですか。",
           "form": "question",
-          "translation_en": "Until what time?",
-          "furigana": []
+          "translation_en": "Until what time?"
         },
         {
           "ja": "そこまで タクシーで いきません。",
           "form": "negative",
-          "translation_en": "I won't take a taxi that far.",
-          "furigana": []
+          "translation_en": "I won't take a taxi that far."
         }
       ],
       "common_mistakes": [],
@@ -1666,26 +1567,22 @@
         {
           "ja": "9時から 5時まで しごとです。",
           "form": "affirmative",
-          "translation_en": "Work is from 9 to 5.",
-          "furigana": []
+          "translation_en": "Work is from 9 to 5."
         },
         {
           "ja": "とうきょうから おおさかまで しんかんせんで 行きました。",
           "form": "past",
-          "translation_en": "I went from Tokyo to Osaka by Shinkansen.",
-          "furigana": []
+          "translation_en": "I went from Tokyo to Osaka by Shinkansen."
         },
         {
           "ja": "なんじから なんじまで ですか。",
           "form": "question",
-          "translation_en": "From what time to what time?",
-          "furigana": []
+          "translation_en": "From what time to what time?"
         },
         {
           "ja": "げつようびから きんようびまで がっこうです。",
           "form": "affirmative",
-          "translation_en": "School is Monday through Friday.",
-          "furigana": []
+          "translation_en": "School is Monday through Friday."
         }
       ],
       "common_mistakes": [
@@ -1721,26 +1618,22 @@
         {
           "ja": "りんごや バナナを たべます。",
           "form": "affirmative",
-          "translation_en": "I eat apples, bananas, etc.",
-          "furigana": []
+          "translation_en": "I eat apples, bananas, etc."
         },
         {
           "ja": "ペンや ノートなどを かいました。",
           "form": "past",
-          "translation_en": "I bought pens, notebooks, and so on.",
-          "furigana": []
+          "translation_en": "I bought pens, notebooks, and so on."
         },
         {
           "ja": "やさいや くだものを 買いました。",
           "form": "past",
-          "translation_en": "I bought vegetables, fruit, and so on.",
-          "furigana": []
+          "translation_en": "I bought vegetables, fruit, and so on."
         },
         {
           "ja": "こうえんや えきの ちかくに カフェが あります。",
           "form": "affirmative",
-          "translation_en": "There are cafes near parks, stations, etc.",
-          "furigana": []
+          "translation_en": "There are cafes near parks, stations, etc."
         }
       ],
       "common_mistakes": [],
@@ -1775,32 +1668,27 @@
         {
           "ja": "あなたは がくせいですか。",
           "form": "question",
-          "translation_en": "Are you a student?",
-          "furigana": []
+          "translation_en": "Are you a student?"
         },
         {
           "ja": "なにを たべましたか。",
           "form": "question",
-          "translation_en": "What did you eat?",
-          "furigana": []
+          "translation_en": "What did you eat?"
         },
         {
           "ja": "コーヒーか おちゃが いいです。",
           "form": "affirmative",
-          "translation_en": "Coffee or tea would be good.",
-          "furigana": []
+          "translation_en": "Coffee or tea would be good."
         },
         {
           "ja": "いつ いきますか。",
           "form": "question",
-          "translation_en": "When are you going?",
-          "furigana": []
+          "translation_en": "When are you going?"
         },
         {
           "ja": "これは ペンですか、えんぴつですか。",
           "form": "question",
-          "translation_en": "Is this a pen or a pencil?",
-          "furigana": []
+          "translation_en": "Is this a pen or a pencil?"
         }
       ],
       "common_mistakes": [],
@@ -1835,32 +1723,27 @@
         {
           "ja": "あなたは がくせいですか。",
           "form": "question",
-          "translation_en": "Are you a student?",
-          "furigana": []
+          "translation_en": "Are you a student?"
         },
         {
           "ja": "なにを たべましたか。",
           "form": "question",
-          "translation_en": "What did you eat?",
-          "furigana": []
+          "translation_en": "What did you eat?"
         },
         {
           "ja": "コーヒーか おちゃが いいです。",
           "form": "affirmative",
-          "translation_en": "Coffee or tea would be good.",
-          "furigana": []
+          "translation_en": "Coffee or tea would be good."
         },
         {
           "ja": "いつ いきますか。",
           "form": "question",
-          "translation_en": "When are you going?",
-          "furigana": []
+          "translation_en": "When are you going?"
         },
         {
           "ja": "これは ペンですか、えんぴつですか。",
           "form": "question",
-          "translation_en": "Is this a pen or a pencil?",
-          "furigana": []
+          "translation_en": "Is this a pen or a pencil?"
         }
       ],
       "common_mistakes": [],
@@ -1897,26 +1780,22 @@
         {
           "ja": "いい てんきですね。",
           "form": "affirmative",
-          "translation_en": "Nice weather, isn't it?",
-          "furigana": []
+          "translation_en": "Nice weather, isn't it?"
         },
         {
           "ja": "おいしいですね。",
           "form": "affirmative",
-          "translation_en": "It's delicious, isn't it?",
-          "furigana": []
+          "translation_en": "It's delicious, isn't it?"
         },
         {
           "ja": "あの 人は しんせつですね。",
           "form": "affirmative",
-          "translation_en": "That person is kind, right?",
-          "furigana": []
+          "translation_en": "That person is kind, right?"
         },
         {
           "ja": "むずかしかったですね。",
           "form": "past",
-          "translation_en": "That was tough, wasn't it?",
-          "furigana": []
+          "translation_en": "That was tough, wasn't it?"
         }
       ],
       "common_mistakes": [
@@ -1959,26 +1838,22 @@
         {
           "ja": "あした しけんですよ。",
           "form": "affirmative",
-          "translation_en": "There's an exam tomorrow, you know.",
-          "furigana": []
+          "translation_en": "There's an exam tomorrow, you know."
         },
         {
           "ja": "それは ちがいますよ。",
           "form": "affirmative",
-          "translation_en": "That's wrong (let me tell you).",
-          "furigana": []
+          "translation_en": "That's wrong (let me tell you)."
         },
         {
           "ja": "おいしいですよ、たべてみてください。",
           "form": "affirmative",
-          "translation_en": "It's delicious - try it.",
-          "furigana": []
+          "translation_en": "It's delicious - try it."
         },
         {
           "ja": "あぶないですよ。",
           "form": "affirmative",
-          "translation_en": "It's dangerous!",
-          "furigana": []
+          "translation_en": "It's dangerous!"
         }
       ],
       "common_mistakes": [
@@ -2021,20 +1896,17 @@
         {
           "ja": "あした 来ますよね。",
           "form": "question",
-          "translation_en": "You're coming tomorrow, right?",
-          "furigana": []
+          "translation_en": "You're coming tomorrow, right?"
         },
         {
           "ja": "あの 人は がくせいですよね。",
           "form": "question",
-          "translation_en": "That person is a student, right?",
-          "furigana": []
+          "translation_en": "That person is a student, right?"
         },
         {
           "ja": "これで いいですよね。",
           "form": "question",
-          "translation_en": "This is OK, right?",
-          "furigana": []
+          "translation_en": "This is OK, right?"
         }
       ],
       "common_mistakes": [],
@@ -2071,20 +1943,17 @@
         {
           "ja": "これは わたしの 本です。",
           "form": "affirmative",
-          "translation_en": "This is my book.",
-          "furigana": []
+          "translation_en": "This is my book."
         },
         {
           "ja": "日本語の 先生です。",
           "form": "affirmative",
-          "translation_en": "I'm a teacher of Japanese.",
-          "furigana": []
+          "translation_en": "I'm a teacher of Japanese."
         },
         {
           "ja": "あれは だれの かばんですか。",
           "form": "question",
-          "translation_en": "Whose bag is that?",
-          "furigana": []
+          "translation_en": "Whose bag is that?"
         }
       ],
       "common_mistakes": [],
@@ -2114,26 +1983,22 @@
         {
           "ja": "日本語の 先生です。",
           "form": "affirmative",
-          "translation_en": "I am a teacher of Japanese. (noun-modifier の: links a topic to a role)",
-          "furigana": []
+          "translation_en": "I am a teacher of Japanese. (noun-modifier の: links a topic to a role)"
         },
         {
           "ja": "木の つくえです。",
           "form": "affirmative",
-          "translation_en": "It is a wooden desk. (noun-modifier の: links a material to an object)",
-          "furigana": []
+          "translation_en": "It is a wooden desk. (noun-modifier の: links a material to an object)"
         },
         {
           "ja": "駅の まえに あります。",
           "form": "affirmative",
-          "translation_en": "It is in front of the station. (noun-modifier の: links a location to a positional noun)",
-          "furigana": []
+          "translation_en": "It is in front of the station. (noun-modifier の: links a location to a positional noun)"
         },
         {
           "ja": "友だちの たんじょうびです。",
           "form": "affirmative",
-          "translation_en": "It's my friend's birthday. (noun-modifier の: links possessor to event)",
-          "furigana": []
+          "translation_en": "It's my friend's birthday. (noun-modifier の: links possessor to event)"
         }
       ],
       "common_mistakes": [],
@@ -2170,14 +2035,12 @@
         {
           "ja": "本を 読むのが すきです。",
           "form": "affirmative",
-          "translation_en": "I like reading books.",
-          "furigana": []
+          "translation_en": "I like reading books."
         },
         {
           "ja": "テレビを 見るのは おもしろいです。",
           "form": "affirmative",
-          "translation_en": "Watching TV is fun.",
-          "furigana": []
+          "translation_en": "Watching TV is fun."
         }
       ],
       "common_mistakes": [],
@@ -2207,20 +2070,17 @@
         {
           "ja": "どこへ いくの？",
           "form": "question",
-          "translation_en": "Where are you going?",
-          "furigana": []
+          "translation_en": "Where are you going?"
         },
         {
           "ja": "なにを たべるの？",
           "form": "question",
-          "translation_en": "What are you eating?",
-          "furigana": []
+          "translation_en": "What are you eating?"
         },
         {
           "ja": "あした こないの？",
           "form": "question",
-          "translation_en": "You're not coming tomorrow?",
-          "furigana": []
+          "translation_en": "You're not coming tomorrow?"
         }
       ],
       "common_mistakes": [
@@ -2261,32 +2121,27 @@
         {
           "ja": "わたしも がくせいです。",
           "form": "affirmative",
-          "translation_en": "I am a student too.",
-          "furigana": []
+          "translation_en": "I am a student too."
         },
         {
           "ja": "りんごも バナナも すきです。",
           "form": "affirmative",
-          "translation_en": "I like both apples and bananas.",
-          "furigana": []
+          "translation_en": "I like both apples and bananas."
         },
         {
           "ja": "とうきょうにも いきました。",
           "form": "past",
-          "translation_en": "I went to Tokyo as well.",
-          "furigana": []
+          "translation_en": "I went to Tokyo as well."
         },
         {
           "ja": "だれも きませんでした。",
           "form": "negative",
-          "translation_en": "No one came.",
-          "furigana": []
+          "translation_en": "No one came."
         },
         {
           "ja": "なにも たべませんか。",
           "form": "question",
-          "translation_en": "Won't you eat anything?",
-          "furigana": []
+          "translation_en": "Won't you eat anything?"
         }
       ],
       "common_mistakes": [],
@@ -2329,26 +2184,22 @@
         {
           "ja": "コーヒーだけ 飲みます。",
           "form": "affirmative",
-          "translation_en": "I drink only coffee.",
-          "furigana": []
+          "translation_en": "I drink only coffee."
         },
         {
           "ja": "わたしだけ 行きます。",
           "form": "affirmative",
-          "translation_en": "Only I will go.",
-          "furigana": []
+          "translation_en": "Only I will go."
         },
         {
           "ja": "見るだけです。",
           "form": "affirmative",
-          "translation_en": "I'm only looking.",
-          "furigana": []
+          "translation_en": "I'm only looking."
         },
         {
           "ja": "1,000円だけ あります。",
           "form": "affirmative",
-          "translation_en": "I only have 1000 yen.",
-          "furigana": []
+          "translation_en": "I only have 1000 yen."
         }
       ],
       "common_mistakes": [],
@@ -2385,14 +2236,12 @@
         {
           "ja": "1,000円しか ありません。",
           "form": "negative",
-          "translation_en": "I only have 1000 yen.",
-          "furigana": []
+          "translation_en": "I only have 1000 yen."
         },
         {
           "ja": "わたししか いません。",
           "form": "negative",
-          "translation_en": "Only I am here.",
-          "furigana": []
+          "translation_en": "Only I am here."
         }
       ],
       "common_mistakes": [
@@ -2435,20 +2284,17 @@
         {
           "ja": "1時間ぐらい まちました。",
           "form": "past",
-          "translation_en": "I waited about an hour.",
-          "furigana": []
+          "translation_en": "I waited about an hour."
         },
         {
           "ja": "5,000円くらいです。",
           "form": "affirmative",
-          "translation_en": "It's about 5000 yen.",
-          "furigana": []
+          "translation_en": "It's about 5000 yen."
         },
         {
           "ja": "10分ぐらい かかります。",
           "form": "affirmative",
-          "translation_en": "It takes about 10 minutes.",
-          "furigana": []
+          "translation_en": "It takes about 10 minutes."
         }
       ],
       "common_mistakes": [
@@ -2491,20 +2337,17 @@
         {
           "ja": "3時ごろ あいましょう。",
           "form": "affirmative",
-          "translation_en": "Let's meet around 3.",
-          "furigana": []
+          "translation_en": "Let's meet around 3."
         },
         {
           "ja": "あした 6時ごろ 行きます。",
           "form": "affirmative",
-          "translation_en": "I'll go around 6 tomorrow.",
-          "furigana": []
+          "translation_en": "I'll go around 6 tomorrow."
         },
         {
           "ja": "いつごろ 来ますか。",
           "form": "question",
-          "translation_en": "Around when will you come?",
-          "furigana": []
+          "translation_en": "Around when will you come?"
         }
       ],
       "common_mistakes": [
@@ -2547,20 +2390,17 @@
         {
           "ja": "りんごや バナナなどを よく 食べます。",
           "form": "affirmative",
-          "translation_en": "I often eat apples, bananas, etc.",
-          "furigana": []
+          "translation_en": "I often eat apples, bananas, etc."
         },
         {
           "ja": "ペンや ノートなどを 買いました。",
           "form": "past",
-          "translation_en": "I bought pens, notebooks, and so on.",
-          "furigana": []
+          "translation_en": "I bought pens, notebooks, and so on."
         },
         {
           "ja": "そふぼや ともだちなどに あいました。",
           "form": "past",
-          "translation_en": "I met my grandparents, friends, and others.",
-          "furigana": []
+          "translation_en": "I met my grandparents, friends, and others."
         }
       ],
       "common_mistakes": [],
@@ -2597,14 +2437,12 @@
         {
           "ja": "りんごを ひとつずつ ください。",
           "form": "affirmative",
-          "translation_en": "Please give one apple each.",
-          "furigana": []
+          "translation_en": "Please give one apple each."
         },
         {
           "ja": "1日に 30分ずつ べんきょうします。",
           "form": "affirmative",
-          "translation_en": "I study 30 minutes each day.",
-          "furigana": []
+          "translation_en": "I study 30 minutes each day."
         }
       ],
       "common_mistakes": [],
@@ -2634,32 +2472,27 @@
         {
           "ja": "これは ほんです。",
           "form": "affirmative",
-          "translation_en": "This is a book.",
-          "furigana": []
+          "translation_en": "This is a book."
         },
         {
           "ja": "それは なんですか。",
           "form": "question",
-          "translation_en": "What is that (near you)?",
-          "furigana": []
+          "translation_en": "What is that (near you)?"
         },
         {
           "ja": "あれは くるまじゃありません。",
           "form": "negative",
-          "translation_en": "That (over there) is not a car.",
-          "furigana": []
+          "translation_en": "That (over there) is not a car."
         },
         {
           "ja": "どれが いちばん すきですか。",
           "form": "question",
-          "translation_en": "Which one do you like best?",
-          "furigana": []
+          "translation_en": "Which one do you like best?"
         },
         {
           "ja": "これを ください。",
           "form": "affirmative",
-          "translation_en": "Please give me this.",
-          "furigana": []
+          "translation_en": "Please give me this."
         }
       ],
       "common_mistakes": [],
@@ -2694,32 +2527,27 @@
         {
           "ja": "この ほんを よみました。",
           "form": "past",
-          "translation_en": "I read this book.",
-          "furigana": []
+          "translation_en": "I read this book."
         },
         {
           "ja": "その ペンは あなたのですか。",
           "form": "question",
-          "translation_en": "Is that pen yours?",
-          "furigana": []
+          "translation_en": "Is that pen yours?"
         },
         {
           "ja": "あの 人は だれですか。",
           "form": "question",
-          "translation_en": "Who is that person?",
-          "furigana": []
+          "translation_en": "Who is that person?"
         },
         {
           "ja": "どの くるまが いいですか。",
           "form": "question",
-          "translation_en": "Which car is good?",
-          "furigana": []
+          "translation_en": "Which car is good?"
         },
         {
           "ja": "この みせは あまり たかくないです。",
           "form": "negative",
-          "translation_en": "This shop isn't very expensive.",
-          "furigana": []
+          "translation_en": "This shop isn't very expensive."
         }
       ],
       "common_mistakes": [],
@@ -2754,32 +2582,27 @@
         {
           "ja": "ここは としょかんです。",
           "form": "affirmative",
-          "translation_en": "Here is the library.",
-          "furigana": []
+          "translation_en": "Here is the library."
         },
         {
           "ja": "そこに ねこが います。",
           "form": "affirmative",
-          "translation_en": "There is a cat there.",
-          "furigana": []
+          "translation_en": "There is a cat there."
         },
         {
           "ja": "どこで かいましたか。",
           "form": "question",
-          "translation_en": "Where did you buy it?",
-          "furigana": []
+          "translation_en": "Where did you buy it?"
         },
         {
           "ja": "あそこは しずかです。",
           "form": "affirmative",
-          "translation_en": "Over there is quiet.",
-          "furigana": []
+          "translation_en": "Over there is quiet."
         },
         {
           "ja": "どこにも いきません。",
           "form": "negative",
-          "translation_en": "I'm not going anywhere.",
-          "furigana": []
+          "translation_en": "I'm not going anywhere."
         }
       ],
       "common_mistakes": [],
@@ -2816,20 +2639,17 @@
         {
           "ja": "こちらへ どうぞ。",
           "form": "affirmative",
-          "translation_en": "This way, please.",
-          "furigana": []
+          "translation_en": "This way, please."
         },
         {
           "ja": "そちらの 本は 100円です。",
           "form": "affirmative",
-          "translation_en": "That book (over there by you) is 100 yen.",
-          "furigana": []
+          "translation_en": "That book (over there by you) is 100 yen."
         },
         {
           "ja": "どちらが いいですか。",
           "form": "question",
-          "translation_en": "Which (of two) is good?",
-          "furigana": []
+          "translation_en": "Which (of two) is good?"
         }
       ],
       "common_mistakes": [],
@@ -2861,20 +2681,17 @@
         {
           "ja": "どんな 本が すきですか。",
           "form": "question",
-          "translation_en": "What kind of books do you like?",
-          "furigana": []
+          "translation_en": "What kind of books do you like?"
         },
         {
           "ja": "こんな 人は はじめてです。",
           "form": "affirmative",
-          "translation_en": "I've never met this kind of person before.",
-          "furigana": []
+          "translation_en": "I've never met this kind of person before."
         },
         {
           "ja": "あんな 大きい いえに すみたいです。",
           "form": "affirmative",
-          "translation_en": "I want to live in that kind of big house.",
-          "furigana": []
+          "translation_en": "I want to live in that kind of big house."
         }
       ],
       "common_mistakes": [],
@@ -2906,20 +2723,17 @@
         {
           "ja": "こう してください。",
           "form": "affirmative",
-          "translation_en": "Please do it this way.",
-          "furigana": []
+          "translation_en": "Please do it this way."
         },
         {
           "ja": "そう おもいます。",
           "form": "affirmative",
-          "translation_en": "I think so.",
-          "furigana": []
+          "translation_en": "I think so."
         },
         {
           "ja": "どう 行きますか。",
           "form": "question",
-          "translation_en": "How do we get there?",
-          "furigana": []
+          "translation_en": "How do we get there?"
         }
       ],
       "common_mistakes": [],
@@ -2949,32 +2763,27 @@
         {
           "ja": "なにを たべますか。",
           "form": "question",
-          "translation_en": "What will you eat?",
-          "furigana": []
+          "translation_en": "What will you eat?"
         },
         {
           "ja": "これは なんですか。",
           "form": "question",
-          "translation_en": "What is this?",
-          "furigana": []
+          "translation_en": "What is this?"
         },
         {
           "ja": "いま なんじですか。",
           "form": "question",
-          "translation_en": "What time is it now?",
-          "furigana": []
+          "translation_en": "What time is it now?"
         },
         {
           "ja": "なにが すきですか。",
           "form": "question",
-          "translation_en": "What do you like?",
-          "furigana": []
+          "translation_en": "What do you like?"
         },
         {
           "ja": "なんで きましたか。",
           "form": "question",
-          "translation_en": "How (by what means) did you come?",
-          "furigana": []
+          "translation_en": "How (by what means) did you come?"
         }
       ],
       "common_mistakes": [],
@@ -3009,32 +2818,27 @@
         {
           "ja": "だれが きましたか。",
           "form": "question",
-          "translation_en": "Who came?",
-          "furigana": []
+          "translation_en": "Who came?"
         },
         {
           "ja": "これは だれの かばんですか。",
           "form": "question",
-          "translation_en": "Whose bag is this?",
-          "furigana": []
+          "translation_en": "Whose bag is this?"
         },
         {
           "ja": "どなたですか。",
           "form": "question",
-          "translation_en": "Who is it (polite)?",
-          "furigana": []
+          "translation_en": "Who is it (polite)?"
         },
         {
           "ja": "だれと いきますか。",
           "form": "question",
-          "translation_en": "With whom are you going?",
-          "furigana": []
+          "translation_en": "With whom are you going?"
         },
         {
           "ja": "あの 人は だれですか。",
           "form": "question",
-          "translation_en": "Who is that person?",
-          "furigana": []
+          "translation_en": "Who is that person?"
         }
       ],
       "common_mistakes": [],
@@ -3069,32 +2873,27 @@
         {
           "ja": "いつ いきますか。",
           "form": "question",
-          "translation_en": "When are you going?",
-          "furigana": []
+          "translation_en": "When are you going?"
         },
         {
           "ja": "いつまで やすみですか。",
           "form": "question",
-          "translation_en": "Until when are you on holiday?",
-          "furigana": []
+          "translation_en": "Until when are you on holiday?"
         },
         {
           "ja": "いつから にほんに いますか。",
           "form": "question",
-          "translation_en": "Since when have you been in Japan?",
-          "furigana": []
+          "translation_en": "Since when have you been in Japan?"
         },
         {
           "ja": "いつごろ きますか。",
           "form": "question",
-          "translation_en": "Around when will you come?",
-          "furigana": []
+          "translation_en": "Around when will you come?"
         },
         {
           "ja": "いつでも いいです。",
           "form": "affirmative",
-          "translation_en": "Any time is fine.",
-          "furigana": []
+          "translation_en": "Any time is fine."
         }
       ],
       "common_mistakes": [],
@@ -3129,32 +2928,27 @@
         {
           "ja": "ここは としょかんです。",
           "form": "affirmative",
-          "translation_en": "Here is the library.",
-          "furigana": []
+          "translation_en": "Here is the library."
         },
         {
           "ja": "そこに ねこが います。",
           "form": "affirmative",
-          "translation_en": "There is a cat there.",
-          "furigana": []
+          "translation_en": "There is a cat there."
         },
         {
           "ja": "どこで かいましたか。",
           "form": "question",
-          "translation_en": "Where did you buy it?",
-          "furigana": []
+          "translation_en": "Where did you buy it?"
         },
         {
           "ja": "あそこは しずかです。",
           "form": "affirmative",
-          "translation_en": "Over there is quiet.",
-          "furigana": []
+          "translation_en": "Over there is quiet."
         },
         {
           "ja": "どこにも いきません。",
           "form": "negative",
-          "translation_en": "I'm not going anywhere.",
-          "furigana": []
+          "translation_en": "I'm not going anywhere."
         }
       ],
       "common_mistakes": [],
@@ -3201,20 +2995,17 @@
         {
           "ja": "どれが あなたの ですか。",
           "form": "question",
-          "translation_en": "Which one is yours?",
-          "furigana": []
+          "translation_en": "Which one is yours?"
         },
         {
           "ja": "どの 本が おもしろいですか。",
           "form": "question",
-          "translation_en": "Which book is interesting?",
-          "furigana": []
+          "translation_en": "Which book is interesting?"
         },
         {
           "ja": "コーヒーと おちゃと、どちらが すきですか。",
           "form": "question",
-          "translation_en": "Which do you prefer, coffee or tea?",
-          "furigana": []
+          "translation_en": "Which do you prefer, coffee or tea?"
         }
       ],
       "common_mistakes": [
@@ -3257,26 +3048,22 @@
         {
           "ja": "おしごとは どうですか。",
           "form": "question",
-          "translation_en": "How's work?",
-          "furigana": []
+          "translation_en": "How's work?"
         },
         {
           "ja": "コーヒーは いかがですか。",
           "form": "question",
-          "translation_en": "How about some coffee? (polite)",
-          "furigana": []
+          "translation_en": "How about some coffee? (polite)"
         },
         {
           "ja": "りょこうは どうでしたか。",
           "form": "question",
-          "translation_en": "How was the trip?",
-          "furigana": []
+          "translation_en": "How was the trip?"
         },
         {
           "ja": "もう いっぱい いかがですか。",
           "form": "question",
-          "translation_en": "Would you like another cup?",
-          "furigana": []
+          "translation_en": "Would you like another cup?"
         }
       ],
       "common_mistakes": [],
@@ -3313,20 +3100,17 @@
         {
           "ja": "どうして 来ませんでしたか。",
           "form": "question",
-          "translation_en": "Why didn't you come?",
-          "furigana": []
+          "translation_en": "Why didn't you come?"
         },
         {
           "ja": "なぜ そう おもいますか。",
           "form": "question",
-          "translation_en": "Why do you think so?",
-          "furigana": []
+          "translation_en": "Why do you think so?"
         },
         {
           "ja": "どうして 日本語を べんきょうしていますか。",
           "form": "question",
-          "translation_en": "Why are you studying Japanese?",
-          "furigana": []
+          "translation_en": "Why are you studying Japanese?"
         }
       ],
       "common_mistakes": [],
@@ -3358,14 +3142,12 @@
         {
           "ja": "どうやって 行きますか。",
           "form": "question",
-          "translation_en": "How (by what method) do you go?",
-          "furigana": []
+          "translation_en": "How (by what method) do you go?"
         },
         {
           "ja": "どうやって つくりますか。",
           "form": "question",
-          "translation_en": "How do you make it?",
-          "furigana": []
+          "translation_en": "How do you make it?"
         }
       ],
       "common_mistakes": [],
@@ -3397,20 +3179,17 @@
         {
           "ja": "これは いくらですか。",
           "form": "question",
-          "translation_en": "How much is this?",
-          "furigana": []
+          "translation_en": "How much is this?"
         },
         {
           "ja": "ぜんぶで いくらですか。",
           "form": "question",
-          "translation_en": "How much in total?",
-          "furigana": []
+          "translation_en": "How much in total?"
         },
         {
           "ja": "この りんごは いくらですか。",
           "form": "question",
-          "translation_en": "How much is this apple?",
-          "furigana": []
+          "translation_en": "How much is this apple?"
         }
       ],
       "common_mistakes": [
@@ -3453,14 +3232,12 @@
         {
           "ja": "りんごは いくつ ありますか。",
           "form": "question",
-          "translation_en": "How many apples are there?",
-          "furigana": []
+          "translation_en": "How many apples are there?"
         },
         {
           "ja": "おこさんは おいくつですか。",
           "form": "question",
-          "translation_en": "How old is your child?",
-          "furigana": []
+          "translation_en": "How old is your child?"
         }
       ],
       "common_mistakes": [],
@@ -3497,20 +3274,17 @@
         {
           "ja": "いま なんじですか。",
           "form": "question",
-          "translation_en": "What time is it now?",
-          "furigana": []
+          "translation_en": "What time is it now?"
         },
         {
           "ja": "なんじから しごとですか。",
           "form": "question",
-          "translation_en": "From what time is work?",
-          "furigana": []
+          "translation_en": "From what time is work?"
         },
         {
           "ja": "あした なんじに あいましょうか。",
           "form": "question",
-          "translation_en": "What time shall we meet tomorrow?",
-          "furigana": []
+          "translation_en": "What time shall we meet tomorrow?"
         }
       ],
       "common_mistakes": [
@@ -3548,14 +3322,12 @@
         {
           "ja": "きょうは なんようびですか。",
           "form": "question",
-          "translation_en": "What day is today?",
-          "furigana": []
+          "translation_en": "What day is today?"
         },
         {
           "ja": "テストは なんようびですか。",
           "form": "question",
-          "translation_en": "What day is the test?",
-          "furigana": []
+          "translation_en": "What day is the test?"
         }
       ],
       "common_mistakes": [],
@@ -3592,14 +3364,12 @@
         {
           "ja": "たんじょうびは なんがつ なんにちですか。",
           "form": "question",
-          "translation_en": "What month and day is your birthday?",
-          "furigana": []
+          "translation_en": "What month and day is your birthday?"
         },
         {
           "ja": "きょうは なんにちですか。",
           "form": "question",
-          "translation_en": "What day of the month is it today?",
-          "furigana": []
+          "translation_en": "What day of the month is it today?"
         }
       ],
       "common_mistakes": [],
@@ -3641,26 +3411,22 @@
         {
           "ja": "わたしは ほんを よみます。",
           "form": "affirmative",
-          "translation_en": "I read books.",
-          "furigana": []
+          "translation_en": "I read books."
         },
         {
           "ja": "まいにち コーヒーを のみます。",
           "form": "affirmative",
-          "translation_en": "I drink coffee every day.",
-          "furigana": []
+          "translation_en": "I drink coffee every day."
         },
         {
           "ja": "あした えいがを みますか。",
           "form": "question",
-          "translation_en": "Will you watch a movie tomorrow?",
-          "furigana": []
+          "translation_en": "Will you watch a movie tomorrow?"
         },
         {
           "ja": "まいにち にほんごを べんきょうします。",
           "form": "affirmative",
-          "translation_en": "I study Japanese every day.",
-          "furigana": []
+          "translation_en": "I study Japanese every day."
         }
       ],
       "common_mistakes": [
@@ -3708,26 +3474,22 @@
         {
           "ja": "わたしは にくを たべません。",
           "form": "negative",
-          "translation_en": "I don't eat meat.",
-          "furigana": []
+          "translation_en": "I don't eat meat."
         },
         {
           "ja": "おさけは のみません。",
           "form": "negative",
-          "translation_en": "I don't drink alcohol.",
-          "furigana": []
+          "translation_en": "I don't drink alcohol."
         },
         {
           "ja": "あした がっこうへ いきません。",
           "form": "negative",
-          "translation_en": "I'm not going to school tomorrow.",
-          "furigana": []
+          "translation_en": "I'm not going to school tomorrow."
         },
         {
           "ja": "テレビを みませんか。",
           "form": "question",
-          "translation_en": "Won't you watch TV?",
-          "furigana": []
+          "translation_en": "Won't you watch TV?"
         }
       ],
       "common_mistakes": [
@@ -3770,26 +3532,22 @@
         {
           "ja": "きのう えいがを みました。",
           "form": "past",
-          "translation_en": "I watched a movie yesterday.",
-          "furigana": []
+          "translation_en": "I watched a movie yesterday."
         },
         {
           "ja": "あさごはんを たべました。",
           "form": "past",
-          "translation_en": "I ate breakfast.",
-          "furigana": []
+          "translation_en": "I ate breakfast."
         },
         {
           "ja": "なにを かいましたか。",
           "form": "question",
-          "translation_en": "What did you buy?",
-          "furigana": []
+          "translation_en": "What did you buy?"
         },
         {
           "ja": "ともだちに あいました。",
           "form": "past",
-          "translation_en": "I met a friend.",
-          "furigana": []
+          "translation_en": "I met a friend."
         }
       ],
       "common_mistakes": [
@@ -3827,26 +3585,22 @@
         {
           "ja": "きのうは ばんごはんを たべませんでした。",
           "form": "past",
-          "translation_en": "I didn't eat dinner yesterday.",
-          "furigana": []
+          "translation_en": "I didn't eat dinner yesterday."
         },
         {
           "ja": "せんしゅう がっこうへ いきませんでした。",
           "form": "past",
-          "translation_en": "I didn't go to school last week.",
-          "furigana": []
+          "translation_en": "I didn't go to school last week."
         },
         {
           "ja": "あめは ふりませんでしたか。",
           "form": "question",
-          "translation_en": "Didn't it rain?",
-          "furigana": []
+          "translation_en": "Didn't it rain?"
         },
         {
           "ja": "ともだちに あいませんでした。",
           "form": "past",
-          "translation_en": "I didn't meet my friend.",
-          "furigana": []
+          "translation_en": "I didn't meet my friend."
         }
       ],
       "common_mistakes": [
@@ -3884,26 +3638,22 @@
         {
           "ja": "いっしょに たべましょう。",
           "form": "affirmative",
-          "translation_en": "Let's eat together.",
-          "furigana": []
+          "translation_en": "Let's eat together."
         },
         {
           "ja": "こうえんへ いきましょう。",
           "form": "affirmative",
-          "translation_en": "Let's go to the park.",
-          "furigana": []
+          "translation_en": "Let's go to the park."
         },
         {
           "ja": "ちょっと やすみましょう。",
           "form": "affirmative",
-          "translation_en": "Let's rest a bit.",
-          "furigana": []
+          "translation_en": "Let's rest a bit."
         },
         {
           "ja": "コーヒーを のみましょう。",
           "form": "affirmative",
-          "translation_en": "Let's drink coffee.",
-          "furigana": []
+          "translation_en": "Let's drink coffee."
         }
       ],
       "common_mistakes": [
@@ -3946,20 +3696,17 @@
         {
           "ja": "てつだいましょうか。",
           "form": "question",
-          "translation_en": "Shall I help?",
-          "furigana": []
+          "translation_en": "Shall I help?"
         },
         {
           "ja": "まどを あけましょうか。",
           "form": "question",
-          "translation_en": "Shall I open the window?",
-          "furigana": []
+          "translation_en": "Shall I open the window?"
         },
         {
           "ja": "いっしょに 行きましょうか。",
           "form": "question",
-          "translation_en": "Shall we go together?",
-          "furigana": []
+          "translation_en": "Shall we go together?"
         }
       ],
       "common_mistakes": [],
@@ -3996,26 +3743,22 @@
         {
           "ja": "いっしょに ばんごはんを たべませんか。",
           "form": "question",
-          "translation_en": "Won't you have dinner with me?",
-          "furigana": []
+          "translation_en": "Won't you have dinner with me?"
         },
         {
           "ja": "あした えいがを みませんか。",
           "form": "question",
-          "translation_en": "Won't you watch a movie tomorrow?",
-          "furigana": []
+          "translation_en": "Won't you watch a movie tomorrow?"
         },
         {
           "ja": "コーヒーを のみませんか。",
           "form": "question",
-          "translation_en": "Would you like some coffee?",
-          "furigana": []
+          "translation_en": "Would you like some coffee?"
         },
         {
           "ja": "こうえんへ いきませんか。",
           "form": "question",
-          "translation_en": "Shall we go to the park?",
-          "furigana": []
+          "translation_en": "Shall we go to the park?"
         }
       ],
       "common_mistakes": [
@@ -4068,26 +3811,22 @@
         {
           "ja": "ともだちに あう。",
           "form": "affirmative",
-          "translation_en": "[I] meet a friend. (casual)",
-          "furigana": []
+          "translation_en": "[I] meet a friend. (casual)"
         },
         {
           "ja": "まいにち ほんを よむ。",
           "form": "affirmative",
-          "translation_en": "[I] read a book every day. (casual)",
-          "furigana": []
+          "translation_en": "[I] read a book every day. (casual)"
         },
         {
           "ja": "あした えいがを みる。",
           "form": "affirmative",
-          "translation_en": "[I] will watch a movie tomorrow. (casual)",
-          "furigana": []
+          "translation_en": "[I] will watch a movie tomorrow. (casual)"
         },
         {
           "ja": "べんきょうする じかんが ない。",
           "form": "affirmative",
-          "translation_en": "[I] don't have time to study. (casual)",
-          "furigana": []
+          "translation_en": "[I] don't have time to study. (casual)"
         }
       ],
       "common_mistakes": [
@@ -4140,26 +3879,22 @@
         {
           "ja": "おさけを のまない。",
           "form": "negative",
-          "translation_en": "[I] don't drink alcohol.",
-          "furigana": []
+          "translation_en": "[I] don't drink alcohol."
         },
         {
           "ja": "にくを たべない。",
           "form": "negative",
-          "translation_en": "[I] don't eat meat.",
-          "furigana": []
+          "translation_en": "[I] don't eat meat."
         },
         {
           "ja": "あした こない。",
           "form": "negative",
-          "translation_en": "[I] won't come tomorrow.",
-          "furigana": []
+          "translation_en": "[I] won't come tomorrow."
         },
         {
           "ja": "べんきょうしない 人。",
           "form": "negative",
-          "translation_en": "A person who doesn't study.",
-          "furigana": []
+          "translation_en": "A person who doesn't study."
         }
       ],
       "common_mistakes": [
@@ -4222,26 +3957,22 @@
         {
           "ja": "きのう ほんを よんだ。",
           "form": "past",
-          "translation_en": "[I] read a book yesterday.",
-          "furigana": []
+          "translation_en": "[I] read a book yesterday."
         },
         {
           "ja": "ともだちに あった。",
           "form": "past",
-          "translation_en": "[I] met a friend.",
-          "furigana": []
+          "translation_en": "[I] met a friend."
         },
         {
           "ja": "あさごはんを たべた。",
           "form": "past",
-          "translation_en": "[I] ate breakfast.",
-          "furigana": []
+          "translation_en": "[I] ate breakfast."
         },
         {
           "ja": "がっこうへ いった。",
           "form": "past",
           "translation_en": "[I] went to school.",
-          "furigana": [],
           "note": "いく is irregular"
         }
       ],
@@ -4285,26 +4016,22 @@
         {
           "ja": "きのう おさけを のまなかった。",
           "form": "past",
-          "translation_en": "[I] didn't drink alcohol yesterday.",
-          "furigana": []
+          "translation_en": "[I] didn't drink alcohol yesterday."
         },
         {
           "ja": "テストに 来なかった。",
           "form": "past",
-          "translation_en": "[He] didn't come to the test.",
-          "furigana": []
+          "translation_en": "[He] didn't come to the test."
         },
         {
           "ja": "あさごはんを たべなかった。",
           "form": "past",
-          "translation_en": "[I] didn't eat breakfast.",
-          "furigana": []
+          "translation_en": "[I] didn't eat breakfast."
         },
         {
           "ja": "せんしゅう しけんが なかった。",
           "form": "past",
-          "translation_en": "There was no exam last week.",
-          "furigana": []
+          "translation_en": "There was no exam last week."
         }
       ],
       "common_mistakes": [
@@ -4377,26 +4104,22 @@
         {
           "ja": "あさごはんを たべて、がっこうへ 行きます。",
           "form": "affirmative",
-          "translation_en": "[I] eat breakfast and go to school.",
-          "furigana": []
+          "translation_en": "[I] eat breakfast and go to school."
         },
         {
           "ja": "ほんを 読んで、ねます。",
           "form": "affirmative",
-          "translation_en": "[I] read a book and sleep.",
-          "furigana": []
+          "translation_en": "[I] read a book and sleep."
         },
         {
           "ja": "コーヒーを 飲んで、しごとを します。",
           "form": "affirmative",
-          "translation_en": "[I] drink coffee and do work.",
-          "furigana": []
+          "translation_en": "[I] drink coffee and do work."
         },
         {
           "ja": "はを みがいて、ねてください。",
           "form": "affirmative",
-          "translation_en": "Brush your teeth and go to bed.",
-          "furigana": []
+          "translation_en": "Brush your teeth and go to bed."
         }
       ],
       "common_mistakes": [
@@ -4444,26 +4167,22 @@
         {
           "ja": "あさ おきて、コーヒーを 飲んで、しごとに 行きます。",
           "form": "affirmative",
-          "translation_en": "I get up in the morning, drink coffee, and go to work.",
-          "furigana": []
+          "translation_en": "I get up in the morning, drink coffee, and go to work."
         },
         {
           "ja": "シャワーを あびて、あさごはんを たべて、出かけました。",
           "form": "past",
-          "translation_en": "I showered, ate breakfast, and went out.",
-          "furigana": []
+          "translation_en": "I showered, ate breakfast, and went out."
         },
         {
           "ja": "ほんを 読んで、ねます。",
           "form": "affirmative",
-          "translation_en": "I'll read a book and sleep.",
-          "furigana": []
+          "translation_en": "I'll read a book and sleep."
         },
         {
           "ja": "デパートに 行って、なにを 買いましたか。",
           "form": "question",
-          "translation_en": "You went to the department store and bought what?",
-          "furigana": []
+          "translation_en": "You went to the department store and bought what?"
         }
       ],
       "common_mistakes": [
@@ -4501,26 +4220,22 @@
         {
           "ja": "ちょっと まってください。",
           "form": "affirmative",
-          "translation_en": "Please wait a moment.",
-          "furigana": []
+          "translation_en": "Please wait a moment."
         },
         {
           "ja": "もう いちど 言ってください。",
           "form": "affirmative",
-          "translation_en": "Please say it once more.",
-          "furigana": []
+          "translation_en": "Please say it once more."
         },
         {
           "ja": "ここに 名前を 書いてください。",
           "form": "affirmative",
-          "translation_en": "Please write your name here.",
-          "furigana": []
+          "translation_en": "Please write your name here."
         },
         {
           "ja": "あした 来てください。",
           "form": "affirmative",
-          "translation_en": "Please come tomorrow.",
-          "furigana": []
+          "translation_en": "Please come tomorrow."
         }
       ],
       "common_mistakes": [
@@ -4573,26 +4288,22 @@
         {
           "ja": "いま ごはんを たべています。",
           "form": "affirmative",
-          "translation_en": "I'm eating right now.",
-          "furigana": []
+          "translation_en": "I'm eating right now."
         },
         {
           "ja": "あの 人は けっこんしています。",
           "form": "affirmative",
-          "translation_en": "That person is married.",
-          "furigana": []
+          "translation_en": "That person is married."
         },
         {
           "ja": "ぎんこうで はたらいています。",
           "form": "affirmative",
-          "translation_en": "I work at a bank.",
-          "furigana": []
+          "translation_en": "I work at a bank."
         },
         {
           "ja": "なにを していますか。",
           "form": "question",
-          "translation_en": "What are you doing?",
-          "furigana": []
+          "translation_en": "What are you doing?"
         }
       ],
       "common_mistakes": [
@@ -4635,14 +4346,12 @@
         {
           "ja": "まだ あさごはんを たべていません。",
           "form": "negative",
-          "translation_en": "I haven't eaten breakfast yet.",
-          "furigana": []
+          "translation_en": "I haven't eaten breakfast yet."
         },
         {
           "ja": "けっこんしていません。",
           "form": "negative",
-          "translation_en": "I'm not married.",
-          "furigana": []
+          "translation_en": "I'm not married."
         }
       ],
       "common_mistakes": [
@@ -4680,26 +4389,22 @@
         {
           "ja": "ここで しゃしんを とってもいいですか。",
           "form": "question",
-          "translation_en": "May I take a photo here?",
-          "furigana": []
+          "translation_en": "May I take a photo here?"
         },
         {
           "ja": "もう かえってもいいです。",
           "form": "affirmative",
-          "translation_en": "You may go home now.",
-          "furigana": []
+          "translation_en": "You may go home now."
         },
         {
           "ja": "テレビを 見てもいいですか。",
           "form": "question",
-          "translation_en": "May I watch TV?",
-          "furigana": []
+          "translation_en": "May I watch TV?"
         },
         {
           "ja": "この本を 読んでもいいです。",
           "form": "affirmative",
-          "translation_en": "You can read this book.",
-          "furigana": []
+          "translation_en": "You can read this book."
         }
       ],
       "common_mistakes": [
@@ -4742,26 +4447,22 @@
         {
           "ja": "ここで たばこを すってはいけません。",
           "form": "affirmative",
-          "translation_en": "You must not smoke here.",
-          "furigana": []
+          "translation_en": "You must not smoke here."
         },
         {
           "ja": "じゅぎょうちゅうは 話してはいけません。",
           "form": "affirmative",
-          "translation_en": "You must not talk during class.",
-          "furigana": []
+          "translation_en": "You must not talk during class."
         },
         {
           "ja": "ここで しゃしんを とってはいけません。",
           "form": "affirmative",
-          "translation_en": "You must not take photos here.",
-          "furigana": []
+          "translation_en": "You must not take photos here."
         },
         {
           "ja": "おそく ねてはいけませんよ。",
           "form": "affirmative",
-          "translation_en": "You shouldn't go to bed late.",
-          "furigana": []
+          "translation_en": "You shouldn't go to bed late."
         }
       ],
       "common_mistakes": [
@@ -4804,20 +4505,17 @@
         {
           "ja": "あさごはんを たべてから 行きます。",
           "form": "affirmative",
-          "translation_en": "I'll go after eating breakfast.",
-          "furigana": []
+          "translation_en": "I'll go after eating breakfast."
         },
         {
           "ja": "しごとが おわってから あいましょう。",
           "form": "affirmative",
-          "translation_en": "Let's meet after work ends.",
-          "furigana": []
+          "translation_en": "Let's meet after work ends."
         },
         {
           "ja": "シャワーを あびてから ねます。",
           "form": "affirmative",
-          "translation_en": "I'll go to bed after a shower.",
-          "furigana": []
+          "translation_en": "I'll go to bed after a shower."
         }
       ],
       "common_mistakes": [
@@ -4855,26 +4553,22 @@
         {
           "ja": "ここで しゃしんを とらないでください。",
           "form": "affirmative",
-          "translation_en": "Please don't take photos here.",
-          "furigana": []
+          "translation_en": "Please don't take photos here."
         },
         {
           "ja": "わすれないでください。",
           "form": "affirmative",
-          "translation_en": "Please don't forget.",
-          "furigana": []
+          "translation_en": "Please don't forget."
         },
         {
           "ja": "おおきい こえで 話さないでください。",
           "form": "affirmative",
-          "translation_en": "Please don't speak loudly.",
-          "furigana": []
+          "translation_en": "Please don't speak loudly."
         },
         {
           "ja": "あぶないですから、はいらないでください。",
           "form": "affirmative",
-          "translation_en": "It's dangerous, so please don't enter.",
-          "furigana": []
+          "translation_en": "It's dangerous, so please don't enter."
         }
       ],
       "common_mistakes": [
@@ -4917,20 +4611,17 @@
         {
           "ja": "高い 山が 見えます。",
           "form": "affirmative",
-          "translation_en": "I can see a tall mountain.",
-          "furigana": []
+          "translation_en": "I can see a tall mountain."
         },
         {
           "ja": "おもしろい 本を 読みました。",
           "form": "past",
-          "translation_en": "I read an interesting book.",
-          "furigana": []
+          "translation_en": "I read an interesting book."
         },
         {
           "ja": "あつい コーヒーが すきです。",
           "form": "affirmative",
-          "translation_en": "I like hot coffee.",
-          "furigana": []
+          "translation_en": "I like hot coffee."
         }
       ],
       "common_mistakes": [
@@ -4968,26 +4659,22 @@
         {
           "ja": "この ほんは おもしろいです。",
           "form": "affirmative",
-          "translation_en": "This book is interesting.",
-          "furigana": []
+          "translation_en": "This book is interesting."
         },
         {
           "ja": "きょうは さむいです。",
           "form": "affirmative",
-          "translation_en": "It's cold today.",
-          "furigana": []
+          "translation_en": "It's cold today."
         },
         {
           "ja": "あの 山は 高いですか。",
           "form": "question",
-          "translation_en": "Is that mountain tall?",
-          "furigana": []
+          "translation_en": "Is that mountain tall?"
         },
         {
           "ja": "この りんごは あまいです。",
           "form": "affirmative",
-          "translation_en": "This apple is sweet.",
-          "furigana": []
+          "translation_en": "This apple is sweet."
         }
       ],
       "common_mistakes": [
@@ -5040,26 +4727,22 @@
         {
           "ja": "この ほんは おもしろくないです。",
           "form": "negative",
-          "translation_en": "This book isn't interesting.",
-          "furigana": []
+          "translation_en": "This book isn't interesting."
         },
         {
           "ja": "きょうは さむくありません。",
           "form": "negative",
-          "translation_en": "It's not cold today.",
-          "furigana": []
+          "translation_en": "It's not cold today."
         },
         {
           "ja": "ここは ひろくないですか。",
           "form": "question",
-          "translation_en": "Isn't it spacious here?",
-          "furigana": []
+          "translation_en": "Isn't it spacious here?"
         },
         {
           "ja": "この りんごは あまくないです。",
           "form": "negative",
-          "translation_en": "This apple isn't sweet.",
-          "furigana": []
+          "translation_en": "This apple isn't sweet."
         }
       ],
       "common_mistakes": [
@@ -5107,26 +4790,22 @@
         {
           "ja": "きのうは あつかったです。",
           "form": "past",
-          "translation_en": "Yesterday was hot.",
-          "furigana": []
+          "translation_en": "Yesterday was hot."
         },
         {
           "ja": "その えいがは おもしろかったです。",
           "form": "past",
-          "translation_en": "That movie was interesting.",
-          "furigana": []
+          "translation_en": "That movie was interesting."
         },
         {
           "ja": "テストは むずかしかったですか。",
           "form": "question",
-          "translation_en": "Was the test difficult?",
-          "furigana": []
+          "translation_en": "Was the test difficult?"
         },
         {
           "ja": "きのうの ばんごはんは おいしかったです。",
           "form": "past",
-          "translation_en": "Yesterday's dinner was delicious.",
-          "furigana": []
+          "translation_en": "Yesterday's dinner was delicious."
         }
       ],
       "common_mistakes": [
@@ -5179,26 +4858,22 @@
         {
           "ja": "きのうは さむくなかったです。",
           "form": "past",
-          "translation_en": "Yesterday wasn't cold.",
-          "furigana": []
+          "translation_en": "Yesterday wasn't cold."
         },
         {
           "ja": "その えいがは おもしろくなかったです。",
           "form": "past",
-          "translation_en": "That movie wasn't interesting.",
-          "furigana": []
+          "translation_en": "That movie wasn't interesting."
         },
         {
           "ja": "テストは むずかしくなかったですか。",
           "form": "question",
-          "translation_en": "Wasn't the test difficult?",
-          "furigana": []
+          "translation_en": "Wasn't the test difficult?"
         },
         {
           "ja": "りょうりは おいしくありませんでした。",
           "form": "past",
-          "translation_en": "The meal wasn't tasty.",
-          "furigana": []
+          "translation_en": "The meal wasn't tasty."
         }
       ],
       "common_mistakes": [
@@ -5241,26 +4916,22 @@
         {
           "ja": "この りょうりは あつくて、おいしいです。",
           "form": "affirmative",
-          "translation_en": "This food is hot and delicious.",
-          "furigana": []
+          "translation_en": "This food is hot and delicious."
         },
         {
           "ja": "この本は おもしろくて、やすいです。",
           "form": "affirmative",
-          "translation_en": "This book is interesting and cheap.",
-          "furigana": []
+          "translation_en": "This book is interesting and cheap."
         },
         {
           "ja": "へやが あかるくて、ひろいです。",
           "form": "affirmative",
-          "translation_en": "The room is bright and spacious.",
-          "furigana": []
+          "translation_en": "The room is bright and spacious."
         },
         {
           "ja": "いそがしくて、行けません。",
           "form": "negative",
-          "translation_en": "I'm busy, so I can't go.",
-          "furigana": []
+          "translation_en": "I'm busy, so I can't go."
         }
       ],
       "common_mistakes": [
@@ -5308,20 +4979,17 @@
         {
           "ja": "しずかな へやが すきです。",
           "form": "affirmative",
-          "translation_en": "I like quiet rooms.",
-          "furigana": []
+          "translation_en": "I like quiet rooms."
         },
         {
           "ja": "ゆうめいな 人に あいました。",
           "form": "past",
-          "translation_en": "I met a famous person.",
-          "furigana": []
+          "translation_en": "I met a famous person."
         },
         {
           "ja": "きれいな はなが さきました。",
           "form": "past",
-          "translation_en": "Pretty flowers bloomed.",
-          "furigana": []
+          "translation_en": "Pretty flowers bloomed."
         }
       ],
       "common_mistakes": [
@@ -5369,26 +5037,22 @@
         {
           "ja": "この へやは しずかです。",
           "form": "affirmative",
-          "translation_en": "This room is quiet.",
-          "furigana": []
+          "translation_en": "This room is quiet."
         },
         {
           "ja": "あの 人は ゆうめいです。",
           "form": "affirmative",
-          "translation_en": "That person is famous.",
-          "furigana": []
+          "translation_en": "That person is famous."
         },
         {
           "ja": "この まちは にぎやかですか。",
           "form": "question",
-          "translation_en": "Is this town lively?",
-          "furigana": []
+          "translation_en": "Is this town lively?"
         },
         {
           "ja": "とうきょうは べんりです。",
           "form": "affirmative",
-          "translation_en": "Tokyo is convenient.",
-          "furigana": []
+          "translation_en": "Tokyo is convenient."
         }
       ],
       "common_mistakes": [
@@ -5436,26 +5100,22 @@
         {
           "ja": "この へやは しずかじゃありません。",
           "form": "negative",
-          "translation_en": "This room isn't quiet.",
-          "furigana": []
+          "translation_en": "This room isn't quiet."
         },
         {
           "ja": "あの 人は ゆうめいではありません。",
           "form": "negative",
-          "translation_en": "That person isn't famous.",
-          "furigana": []
+          "translation_en": "That person isn't famous."
         },
         {
           "ja": "ここは べんりじゃありませんか。",
           "form": "question",
-          "translation_en": "Isn't it convenient here?",
-          "furigana": []
+          "translation_en": "Isn't it convenient here?"
         },
         {
           "ja": "わたしは スポーツが すきじゃありません。",
           "form": "negative",
-          "translation_en": "I don't like sports.",
-          "furigana": []
+          "translation_en": "I don't like sports."
         }
       ],
       "common_mistakes": [
@@ -5498,26 +5158,22 @@
         {
           "ja": "きのうの コンサートは にぎやかでした。",
           "form": "past",
-          "translation_en": "Yesterday's concert was lively.",
-          "furigana": []
+          "translation_en": "Yesterday's concert was lively."
         },
         {
           "ja": "むかしは べんりじゃありませんでした。",
           "form": "past",
-          "translation_en": "It wasn't convenient in the past.",
-          "furigana": []
+          "translation_en": "It wasn't convenient in the past."
         },
         {
           "ja": "あの 人は ゆうめいでしたか。",
           "form": "question",
-          "translation_en": "Was that person famous?",
-          "furigana": []
+          "translation_en": "Was that person famous?"
         },
         {
           "ja": "とうきょうは しずかじゃありませんでした。",
           "form": "past",
-          "translation_en": "Tokyo wasn't quiet.",
-          "furigana": []
+          "translation_en": "Tokyo wasn't quiet."
         }
       ],
       "common_mistakes": [
@@ -5560,26 +5216,22 @@
         {
           "ja": "きのうの しけんは かんたんじゃありませんでした。",
           "form": "past",
-          "translation_en": "Yesterday's exam wasn't easy.",
-          "furigana": []
+          "translation_en": "Yesterday's exam wasn't easy."
         },
         {
           "ja": "その まちは しずかじゃありませんでした。",
           "form": "past",
-          "translation_en": "That town wasn't quiet.",
-          "furigana": []
+          "translation_en": "That town wasn't quiet."
         },
         {
           "ja": "あの 人は しんせつじゃありませんでしたか。",
           "form": "question",
-          "translation_en": "Wasn't that person kind?",
-          "furigana": []
+          "translation_en": "Wasn't that person kind?"
         },
         {
           "ja": "りょうりは すきじゃありませんでした。",
           "form": "past",
-          "translation_en": "I didn't like the food.",
-          "furigana": []
+          "translation_en": "I didn't like the food."
         }
       ],
       "common_mistakes": [
@@ -5617,26 +5269,22 @@
         {
           "ja": "この まちは しずかで、きれいです。",
           "form": "affirmative",
-          "translation_en": "This town is quiet and clean.",
-          "furigana": []
+          "translation_en": "This town is quiet and clean."
         },
         {
           "ja": "あの 人は しんせつで、ゆうめいです。",
           "form": "affirmative",
-          "translation_en": "That person is kind and famous.",
-          "furigana": []
+          "translation_en": "That person is kind and famous."
         },
         {
           "ja": "とうきょうは べんりで、にぎやかです。",
           "form": "affirmative",
-          "translation_en": "Tokyo is convenient and lively.",
-          "furigana": []
+          "translation_en": "Tokyo is convenient and lively."
         },
         {
           "ja": "この りんごは あまくて、すきです。",
           "form": "affirmative",
-          "translation_en": "This apple is sweet and I like it.",
-          "furigana": []
+          "translation_en": "This apple is sweet and I like it."
         }
       ],
       "common_mistakes": [
@@ -5699,26 +5347,22 @@
         {
           "ja": "つくえの 上に ほんが あります。",
           "form": "affirmative",
-          "translation_en": "There is a book on the desk.",
-          "furigana": []
+          "translation_en": "There is a book on the desk."
         },
         {
           "ja": "へやに テレビが ありません。",
           "form": "negative",
-          "translation_en": "There is no TV in the room.",
-          "furigana": []
+          "translation_en": "There is no TV in the room."
         },
         {
           "ja": "きのう しけんが ありました。",
           "form": "past",
-          "translation_en": "There was an exam yesterday.",
-          "furigana": []
+          "translation_en": "There was an exam yesterday."
         },
         {
           "ja": "なにか しつもんが ありますか。",
           "form": "question",
-          "translation_en": "Do you have any questions?",
-          "furigana": []
+          "translation_en": "Do you have any questions?"
         }
       ],
       "common_mistakes": [
@@ -5781,32 +5425,27 @@
         {
           "ja": "へやに ねこが います。",
           "form": "affirmative",
-          "translation_en": "There is a cat in the room.",
-          "furigana": []
+          "translation_en": "There is a cat in the room."
         },
         {
           "ja": "きょうしつに がくせいが いません。",
           "form": "negative",
-          "translation_en": "There are no students in the classroom.",
-          "furigana": []
+          "translation_en": "There are no students in the classroom."
         },
         {
           "ja": "うちには いぬが 二ひき います。",
           "form": "affirmative",
-          "translation_en": "We have two dogs at home.",
-          "furigana": []
+          "translation_en": "We have two dogs at home."
         },
         {
           "ja": "きょうしつに 友だちが いました。",
           "form": "past",
-          "translation_en": "There was a friend in the classroom.",
-          "furigana": []
+          "translation_en": "There was a friend in the classroom."
         },
         {
           "ja": "きょうだいが いますか。",
           "form": "question",
-          "translation_en": "Do you have siblings?",
-          "furigana": []
+          "translation_en": "Do you have siblings?"
         }
       ],
       "common_mistakes": [
@@ -5860,26 +5499,22 @@
         {
           "ja": "つくえの 上に 本が あります。",
           "form": "affirmative",
-          "translation_en": "There is a book on the desk.",
-          "furigana": []
+          "translation_en": "There is a book on the desk."
         },
         {
           "ja": "きょうしつに がくせいが います。",
           "form": "affirmative",
-          "translation_en": "There are students in the classroom.",
-          "furigana": []
+          "translation_en": "There are students in the classroom."
         },
         {
           "ja": "へやに テレビが ありません。",
           "form": "negative",
-          "translation_en": "There is no TV in the room.",
-          "furigana": []
+          "translation_en": "There is no TV in the room."
         },
         {
           "ja": "こうえんに 子どもが いますか。",
           "form": "question",
-          "translation_en": "Are there children in the park?",
-          "furigana": []
+          "translation_en": "Are there children in the park?"
         }
       ],
       "common_mistakes": [
@@ -5923,20 +5558,17 @@
         {
           "ja": "本は つくえの 上に あります。",
           "form": "affirmative",
-          "translation_en": "The book is on the desk.",
-          "furigana": []
+          "translation_en": "The book is on the desk."
         },
         {
           "ja": "ねこは そこに います。",
           "form": "affirmative",
-          "translation_en": "The cat is over there.",
-          "furigana": []
+          "translation_en": "The cat is over there."
         },
         {
           "ja": "デパートは どこに ありますか。",
           "form": "question",
-          "translation_en": "Where is the department store?",
-          "furigana": []
+          "translation_en": "Where is the department store?"
         }
       ],
       "common_mistakes": [],
@@ -5983,25 +5615,22 @@
         {
           "ja": "あした しけんが あります。",
           "form": "affirmative",
-          "translation_en": "There's an exam tomorrow.",
-          "furigana": []
+          "translation_en": "There's an exam tomorrow."
         },
         {
           "ja": "おかねが ありません。",
           "form": "negative",
-          "translation_en": "I don't have money.",
-          "furigana": []
+          "translation_en": "I don't have money."
         },
         {
           "ja": "なにか しつもんが ありますか。",
           "form": "question",
-          "translation_en": "Do you have any questions?",
-          "furigana": []
+          "translation_en": "Do you have any questions?"
         }
       ],
       "common_mistakes": [],
       "contrasts": [],
-      "notes": ""
+      "notes": "For animate possessions (children, pets), use いる/います instead of ある/あります: 子どもが 二人 います ('I have two children'). 「子どもが あります」is non-standard in modern Japanese."
     },
     {
       "id": "n5-095",
@@ -6028,20 +5657,17 @@
         {
           "ja": "とうきょうは おおさかより 大きいです。",
           "form": "affirmative",
-          "translation_en": "Tokyo is bigger than Osaka.",
-          "furigana": []
+          "translation_en": "Tokyo is bigger than Osaka."
         },
         {
           "ja": "ねこは いぬより 小さいです。",
           "form": "affirmative",
-          "translation_en": "Cats are smaller than dogs.",
-          "furigana": []
+          "translation_en": "Cats are smaller than dogs."
         },
         {
           "ja": "この本は あの本より おもしろいですか。",
           "form": "question",
-          "translation_en": "Is this book more interesting than that one?",
-          "furigana": []
+          "translation_en": "Is this book more interesting than that one?"
         }
       ],
       "common_mistakes": [
@@ -6084,14 +5710,12 @@
         {
           "ja": "おおさかより とうきょうのほうが 大きいです。",
           "form": "affirmative",
-          "translation_en": "Tokyo is bigger than Osaka.",
-          "furigana": []
+          "translation_en": "Tokyo is bigger than Osaka."
         },
         {
           "ja": "おちゃより コーヒーのほうが すきです。",
           "form": "affirmative",
-          "translation_en": "I prefer coffee over tea.",
-          "furigana": []
+          "translation_en": "I prefer coffee over tea."
         }
       ],
       "common_mistakes": [],
@@ -6128,14 +5752,12 @@
         {
           "ja": "いぬと ねこと、どちらが すきですか。",
           "form": "question",
-          "translation_en": "Which do you like more, dogs or cats?",
-          "furigana": []
+          "translation_en": "Which do you like more, dogs or cats?"
         },
         {
           "ja": "コーヒーと おちゃと、どちらが いいですか。",
           "form": "question",
-          "translation_en": "Coffee or tea - which is good?",
-          "furigana": []
+          "translation_en": "Coffee or tea - which is good?"
         }
       ],
       "common_mistakes": [],
@@ -6165,20 +5787,17 @@
         {
           "ja": "わたしは ねこが すきです。",
           "form": "affirmative",
-          "translation_en": "I like cats.",
-          "furigana": []
+          "translation_en": "I like cats."
         },
         {
           "ja": "なっとうが きらいです。",
           "form": "affirmative",
-          "translation_en": "I dislike natto.",
-          "furigana": []
+          "translation_en": "I dislike natto."
         },
         {
           "ja": "なにが すきですか。",
           "form": "question",
-          "translation_en": "What do you like?",
-          "furigana": []
+          "translation_en": "What do you like?"
         }
       ],
       "common_mistakes": [],
@@ -6220,20 +5839,17 @@
         {
           "ja": "わたしは ねこが すきです。",
           "form": "affirmative",
-          "translation_en": "I like cats.",
-          "furigana": []
+          "translation_en": "I like cats."
         },
         {
           "ja": "なっとうが きらいです。",
           "form": "affirmative",
-          "translation_en": "I dislike natto.",
-          "furigana": []
+          "translation_en": "I dislike natto."
         },
         {
           "ja": "なにが すきですか。",
           "form": "question",
-          "translation_en": "What do you like?",
-          "furigana": []
+          "translation_en": "What do you like?"
         }
       ],
       "common_mistakes": [
@@ -6276,14 +5892,12 @@
         {
           "ja": "あの 人は 日本語が じょうずです。",
           "form": "affirmative",
-          "translation_en": "That person is good at Japanese.",
-          "furigana": []
+          "translation_en": "That person is good at Japanese."
         },
         {
           "ja": "わたしは りょうりが へたです。",
           "form": "affirmative",
-          "translation_en": "I'm bad at cooking.",
-          "furigana": []
+          "translation_en": "I'm bad at cooking."
         }
       ],
       "common_mistakes": [
@@ -6321,20 +5935,17 @@
         {
           "ja": "新しい くるまが ほしいです。",
           "form": "affirmative",
-          "translation_en": "I want a new car.",
-          "furigana": []
+          "translation_en": "I want a new car."
         },
         {
           "ja": "なにが ほしいですか。",
           "form": "question",
-          "translation_en": "What do you want?",
-          "furigana": []
+          "translation_en": "What do you want?"
         },
         {
           "ja": "なにも ほしくないです。",
           "form": "negative",
-          "translation_en": "I don't want anything.",
-          "furigana": []
+          "translation_en": "I don't want anything."
         }
       ],
       "common_mistakes": [
@@ -6377,20 +5988,17 @@
         {
           "ja": "日本語が すこし わかります。",
           "form": "affirmative",
-          "translation_en": "I understand a little Japanese.",
-          "furigana": []
+          "translation_en": "I understand a little Japanese."
         },
         {
           "ja": "わかりません。",
           "form": "negative",
-          "translation_en": "I don't understand.",
-          "furigana": []
+          "translation_en": "I don't understand."
         },
         {
           "ja": "わかりました。",
           "form": "past",
-          "translation_en": "I understand. / Got it.",
-          "furigana": []
+          "translation_en": "I understand. / Got it."
         }
       ],
       "common_mistakes": [
@@ -6428,20 +6036,17 @@
         {
           "ja": "日本語が できます。",
           "form": "affirmative",
-          "translation_en": "I can use Japanese. / I'm able to do (in) Japanese.",
-          "furigana": []
+          "translation_en": "I can use Japanese. / I'm able to do (in) Japanese."
         },
         {
           "ja": "りょうりが できますか。",
           "form": "question",
-          "translation_en": "Can you cook?",
-          "furigana": []
+          "translation_en": "Can you cook?"
         },
         {
           "ja": "ばんごはんが できました。",
           "form": "past",
-          "translation_en": "Dinner is ready.",
-          "furigana": []
+          "translation_en": "Dinner is ready."
         }
       ],
       "common_mistakes": [
@@ -6489,26 +6094,22 @@
         {
           "ja": "にほんへ 行きたいです。",
           "form": "affirmative",
-          "translation_en": "I want to go to Japan.",
-          "furigana": []
+          "translation_en": "I want to go to Japan."
         },
         {
           "ja": "コーヒーが 飲みたいです。",
           "form": "affirmative",
-          "translation_en": "I want to drink coffee.",
-          "furigana": []
+          "translation_en": "I want to drink coffee."
         },
         {
           "ja": "なにを 食べたいですか。",
           "form": "question",
-          "translation_en": "What do you want to eat?",
-          "furigana": []
+          "translation_en": "What do you want to eat?"
         },
         {
           "ja": "もう ねたいです。",
           "form": "affirmative",
-          "translation_en": "I want to sleep already.",
-          "furigana": []
+          "translation_en": "I want to sleep already."
         }
       ],
       "common_mistakes": [
@@ -6556,14 +6157,12 @@
         {
           "ja": "今日は 行きたくないです。",
           "form": "negative",
-          "translation_en": "I don't want to go today.",
-          "furigana": []
+          "translation_en": "I don't want to go today."
         },
         {
           "ja": "なにも 食べたくない。",
           "form": "negative",
-          "translation_en": "I don't want to eat anything.",
-          "furigana": []
+          "translation_en": "I don't want to eat anything."
         }
       ],
       "common_mistakes": [],
@@ -6600,14 +6199,12 @@
         {
           "ja": "新しい かばんが ほしいです。",
           "form": "affirmative",
-          "translation_en": "I want a new bag.",
-          "furigana": []
+          "translation_en": "I want a new bag."
         },
         {
           "ja": "おかねが ほしい。",
           "form": "affirmative",
-          "translation_en": "I want money.",
-          "furigana": []
+          "translation_en": "I want money."
         }
       ],
       "common_mistakes": [],
@@ -6639,20 +6236,17 @@
         {
           "ja": "デパートへ 買いものに 行きます。",
           "form": "affirmative",
-          "translation_en": "I'm going to the department store to shop.",
-          "furigana": []
+          "translation_en": "I'm going to the department store to shop."
         },
         {
           "ja": "日本へ べんきょうに 来ました。",
           "form": "past",
-          "translation_en": "I came to Japan to study.",
-          "furigana": []
+          "translation_en": "I came to Japan to study."
         },
         {
           "ja": "うちへ ごはんを たべに かえります。",
           "form": "affirmative",
-          "translation_en": "I'm going home to eat.",
-          "furigana": []
+          "translation_en": "I'm going home to eat."
         }
       ],
       "common_mistakes": [
@@ -6691,7 +6285,7 @@
           {
             "form": "long",
             "label": "本 (ほん) - long things: 1 いっぽん, 2 にほん, 3 さんぼん, ...",
-            "example": "3ぼん"
+            "example": "3本"
           },
           {
             "form": "books",
@@ -6710,26 +6304,22 @@
         {
           "ja": "りんごを ふたつ ください。",
           "form": "affirmative",
-          "translation_en": "Please give me 2 apples.",
-          "furigana": []
+          "translation_en": "Please give me 2 apples."
         },
         {
           "ja": "学生が 5にん います。",
           "form": "affirmative",
-          "translation_en": "There are 5 students.",
-          "furigana": []
+          "translation_en": "There are 5 students."
         },
         {
           "ja": "本を 3さつ 読みました。",
           "form": "past",
-          "translation_en": "I read 3 books.",
-          "furigana": []
+          "translation_en": "I read 3 books."
         },
         {
-          "ja": "ビールを 2ほん 飲みます。",
+          "ja": "ビールを 2本 飲みます。",
           "form": "affirmative",
-          "translation_en": "I'll drink 2 bottles of beer.",
-          "furigana": []
+          "translation_en": "I'll drink 2 bottles of beer."
         }
       ],
       "common_mistakes": [
@@ -6765,14 +6355,12 @@
         {
           "ja": "りんごは いくつ ありますか。",
           "form": "question",
-          "translation_en": "How many apples are there?",
-          "furigana": []
+          "translation_en": "How many apples are there?"
         },
         {
           "ja": "おこさんは おいくつですか。",
           "form": "question",
-          "translation_en": "How old is your child?",
-          "furigana": []
+          "translation_en": "How old is your child?"
         }
       ],
       "common_mistakes": [],
@@ -6809,14 +6397,12 @@
         {
           "ja": "りんごを ふたつ かいました。",
           "form": "past",
-          "translation_en": "I bought 2 apples.",
-          "furigana": []
+          "translation_en": "I bought 2 apples."
         },
         {
-          "ja": "ビールを 3ぼん ください。",
+          "ja": "ビールを 3本 ください。",
           "form": "affirmative",
-          "translation_en": "Please give me 3 beers.",
-          "furigana": []
+          "translation_en": "Please give me 3 beers."
         }
       ],
       "common_mistakes": [
@@ -6827,7 +6413,7 @@
         }
       ],
       "contrasts": [],
-      "notes": ""
+      "notes": "Counter readings often involve rendaku: 三本 reads さんぼん, 一本 reads いっぽん, 六本 reads ろっぽん. See the Counters reference module for full reading patterns."
     },
     {
       "id": "n5-111",
@@ -6854,20 +6440,17 @@
         {
           "ja": "いま 3時です。",
           "form": "affirmative",
-          "translation_en": "It's 3 o'clock now.",
-          "furigana": []
+          "translation_en": "It's 3 o'clock now."
         },
         {
           "ja": "9時に おきます。",
           "form": "affirmative",
-          "translation_en": "I get up at 9.",
-          "furigana": []
+          "translation_en": "I get up at 9."
         },
         {
           "ja": "なんじですか。",
           "form": "question",
-          "translation_en": "What time is it?",
-          "furigana": []
+          "translation_en": "What time is it?"
         }
       ],
       "common_mistakes": [
@@ -6905,14 +6488,12 @@
         {
           "ja": "10分 まちました。",
           "form": "past",
-          "translation_en": "I waited 10 minutes.",
-          "furigana": []
+          "translation_en": "I waited 10 minutes."
         },
         {
           "ja": "5分で 行けます。",
           "form": "affirmative",
-          "translation_en": "I can go in 5 minutes.",
-          "furigana": []
+          "translation_en": "I can go in 5 minutes."
         }
       ],
       "common_mistakes": [],
@@ -6944,14 +6525,12 @@
         {
           "ja": "いま 3時はんです。",
           "form": "affirmative",
-          "translation_en": "It's 3:30 now.",
-          "furigana": []
+          "translation_en": "It's 3:30 now."
         },
         {
           "ja": "9時はんに あいましょう。",
           "form": "affirmative",
-          "translation_en": "Let's meet at 9:30.",
-          "furigana": []
+          "translation_en": "Let's meet at 9:30."
         }
       ],
       "common_mistakes": [],
@@ -6981,26 +6560,22 @@
         {
           "ja": "9時から 5時まで しごとです。",
           "form": "affirmative",
-          "translation_en": "Work is from 9 to 5.",
-          "furigana": []
+          "translation_en": "Work is from 9 to 5."
         },
         {
           "ja": "とうきょうから おおさかまで しんかんせんで 行きました。",
           "form": "past",
-          "translation_en": "I went from Tokyo to Osaka by Shinkansen.",
-          "furigana": []
+          "translation_en": "I went from Tokyo to Osaka by Shinkansen."
         },
         {
           "ja": "なんじから なんじまで ですか。",
           "form": "question",
-          "translation_en": "From what time to what time?",
-          "furigana": []
+          "translation_en": "From what time to what time?"
         },
         {
           "ja": "げつようびから きんようびまで がっこうです。",
           "form": "affirmative",
-          "translation_en": "School is Monday through Friday.",
-          "furigana": []
+          "translation_en": "School is Monday through Friday."
         }
       ],
       "common_mistakes": [],
@@ -7035,32 +6610,27 @@
         {
           "ja": "7時に おきます。",
           "form": "affirmative",
-          "translation_en": "I get up at 7 o'clock.",
-          "furigana": []
+          "translation_en": "I get up at 7 o'clock."
         },
         {
           "ja": "にほんに いきません。",
           "form": "negative",
-          "translation_en": "I'm not going to Japan.",
-          "furigana": []
+          "translation_en": "I'm not going to Japan."
         },
         {
           "ja": "へやに なにが ありますか。",
           "form": "question",
-          "translation_en": "What's in the room?",
-          "furigana": []
+          "translation_en": "What's in the room?"
         },
         {
           "ja": "ともだちに ほんを あげました。",
           "form": "past",
-          "translation_en": "I gave a book to my friend.",
-          "furigana": []
+          "translation_en": "I gave a book to my friend."
         },
         {
           "ja": "うちに かえります。",
           "form": "affirmative",
-          "translation_en": "I'm going home.",
-          "furigana": []
+          "translation_en": "I'm going home."
         }
       ],
       "common_mistakes": [],
@@ -7097,14 +6667,12 @@
         {
           "ja": "まいにち 日本語を べんきょうします。",
           "form": "affirmative",
-          "translation_en": "I study Japanese every day.",
-          "furigana": []
+          "translation_en": "I study Japanese every day."
         },
         {
           "ja": "まいしゅう 友だちに あいます。",
           "form": "affirmative",
-          "translation_en": "I meet friends every week.",
-          "furigana": []
+          "translation_en": "I meet friends every week."
         }
       ],
       "common_mistakes": [
@@ -7142,20 +6710,17 @@
         {
           "ja": "きょうは あついです。",
           "form": "affirmative",
-          "translation_en": "It's hot today.",
-          "furigana": []
+          "translation_en": "It's hot today."
         },
         {
           "ja": "あした 行きます。",
           "form": "affirmative",
-          "translation_en": "I'll go tomorrow.",
-          "furigana": []
+          "translation_en": "I'll go tomorrow."
         },
         {
           "ja": "きのう しけんでした。",
           "form": "past",
-          "translation_en": "Yesterday was the exam.",
-          "furigana": []
+          "translation_en": "Yesterday was the exam."
         }
       ],
       "common_mistakes": [
@@ -7208,26 +6773,22 @@
         {
           "ja": "いま 行きます。",
           "form": "affirmative",
-          "translation_en": "I'm going now.",
-          "furigana": []
+          "translation_en": "I'm going now."
         },
         {
           "ja": "もう ばんごはんを たべました。",
           "form": "past",
-          "translation_en": "I've already had dinner.",
-          "furigana": []
+          "translation_en": "I've already had dinner."
         },
         {
           "ja": "まだ たべていません。",
           "form": "negative",
-          "translation_en": "I haven't eaten yet.",
-          "furigana": []
+          "translation_en": "I haven't eaten yet."
         },
         {
           "ja": "まだ ここに います。",
           "form": "affirmative",
-          "translation_en": "I'm still here.",
-          "furigana": []
+          "translation_en": "I'm still here."
         }
       ],
       "common_mistakes": [],
@@ -7264,14 +6825,12 @@
         {
           "ja": "ごはんの まえに てを あらいます。",
           "form": "affirmative",
-          "translation_en": "I wash my hands before meals.",
-          "furigana": []
+          "translation_en": "I wash my hands before meals."
         },
         {
           "ja": "ねる まえに 本を 読みます。",
           "form": "affirmative",
-          "translation_en": "I read a book before going to bed.",
-          "furigana": []
+          "translation_en": "I read a book before going to bed."
         }
       ],
       "common_mistakes": [
@@ -7319,14 +6878,12 @@
         {
           "ja": "しごとの あとで のみに 行きました。",
           "form": "past",
-          "translation_en": "I went for drinks after work.",
-          "furigana": []
+          "translation_en": "I went for drinks after work."
         },
         {
           "ja": "ばんごはんを たべた あとで テレビを 見ます。",
           "form": "affirmative",
-          "translation_en": "I watch TV after dinner.",
-          "furigana": []
+          "translation_en": "I watch TV after dinner."
         }
       ],
       "common_mistakes": [
@@ -7364,14 +6921,12 @@
         {
           "ja": "あさごはんを たべました。そして、しごとに 行きました。",
           "form": "past",
-          "translation_en": "I ate breakfast. And then, I went to work.",
-          "furigana": []
+          "translation_en": "I ate breakfast. And then, I went to work."
         },
         {
           "ja": "とうきょうへ 行きました。そして、きょうとへも 行きました。",
           "form": "past",
-          "translation_en": "I went to Tokyo. And to Kyoto too.",
-          "furigana": []
+          "translation_en": "I went to Tokyo. And to Kyoto too."
         }
       ],
       "common_mistakes": [],
@@ -7408,14 +6963,12 @@
         {
           "ja": "シャワーを あびました。それから、ねました。",
           "form": "past",
-          "translation_en": "I showered. After that, I went to bed.",
-          "furigana": []
+          "translation_en": "I showered. After that, I went to bed."
         },
         {
           "ja": "コーヒーを 飲みました。それから、出かけました。",
           "form": "past",
-          "translation_en": "I drank coffee. Then I went out.",
-          "furigana": []
+          "translation_en": "I drank coffee. Then I went out."
         }
       ],
       "common_mistakes": [],
@@ -7447,14 +7000,12 @@
         {
           "ja": "コーヒーが すきです。でも、おちゃは すきじゃありません。",
           "form": "affirmative",
-          "translation_en": "I like coffee. But I don't like tea.",
-          "furigana": []
+          "translation_en": "I like coffee. But I don't like tea."
         },
         {
           "ja": "あつかったです。でも、たのしかったです。",
           "form": "past",
-          "translation_en": "It was hot. But it was fun.",
-          "furigana": []
+          "translation_en": "It was hot. But it was fun."
         }
       ],
       "common_mistakes": [],
@@ -7491,8 +7042,7 @@
         {
           "ja": "テストは むずかしかったです。しかし、できました。",
           "form": "past",
-          "translation_en": "The test was hard. However, I did it.",
-          "furigana": []
+          "translation_en": "The test was hard. However, I did it."
         }
       ],
       "common_mistakes": [],
@@ -7524,14 +7074,12 @@
         {
           "ja": "じゃ、また あした。",
           "form": "affirmative",
-          "translation_en": "Well, see you tomorrow.",
-          "furigana": []
+          "translation_en": "Well, see you tomorrow."
         },
         {
           "ja": "では、はじめましょう。",
           "form": "affirmative",
-          "translation_en": "Now then, let's begin.",
-          "furigana": []
+          "translation_en": "Now then, let's begin."
         }
       ],
       "common_mistakes": [],
@@ -7563,20 +7111,17 @@
         {
           "ja": "コーヒーは すきですが、おちゃは すきじゃありません。",
           "form": "affirmative",
-          "translation_en": "I like coffee, but I don't like tea.",
-          "furigana": []
+          "translation_en": "I like coffee, but I don't like tea."
         },
         {
           "ja": "むずかしいですが、たのしいです。",
           "form": "affirmative",
-          "translation_en": "It's hard, but fun.",
-          "furigana": []
+          "translation_en": "It's hard, but fun."
         },
         {
           "ja": "すみませんが、もう いちど おねがいします。",
           "form": "affirmative",
-          "translation_en": "Sorry, but please say it once more.",
-          "furigana": []
+          "translation_en": "Sorry, but please say it once more."
         }
       ],
       "common_mistakes": [
@@ -7619,14 +7164,12 @@
         {
           "ja": "むずかしいですけど、おもしろいです。",
           "form": "affirmative",
-          "translation_en": "It's hard, but interesting.",
-          "furigana": []
+          "translation_en": "It's hard, but interesting."
         },
         {
           "ja": "行きたいけど、時間が ありません。",
           "form": "negative",
-          "translation_en": "I want to go, but I don't have time.",
-          "furigana": []
+          "translation_en": "I want to go, but I don't have time."
         }
       ],
       "common_mistakes": [],
@@ -7663,14 +7206,12 @@
         {
           "ja": "あついから、まどを あけてください。",
           "form": "affirmative",
-          "translation_en": "It's hot, so please open the window.",
-          "furigana": []
+          "translation_en": "It's hot, so please open the window."
         },
         {
           "ja": "おなかが すいたから、なにか たべましょう。",
           "form": "affirmative",
-          "translation_en": "I'm hungry, so let's eat something.",
-          "furigana": []
+          "translation_en": "I'm hungry, so let's eat something."
         }
       ],
       "common_mistakes": [],
@@ -7707,8 +7248,7 @@
         {
           "ja": "どうして 来ませんでしたか。―あたまが いたかったからです。",
           "form": "dialogue",
-          "translation_en": "Why didn't you come? - Because I had a headache.",
-          "furigana": []
+          "translation_en": "Why didn't you come? - Because I had a headache."
         }
       ],
       "common_mistakes": [],
@@ -7745,14 +7285,12 @@
         {
           "ja": "ともだちに 本を あげました。",
           "form": "past",
-          "translation_en": "I gave a book to my friend.",
-          "furigana": []
+          "translation_en": "I gave a book to my friend."
         },
         {
           "ja": "母に はなを あげます。",
           "form": "affirmative",
-          "translation_en": "I give flowers to my mother.",
-          "furigana": []
+          "translation_en": "I give flowers to my mother."
         }
       ],
       "common_mistakes": [],
@@ -7784,14 +7322,12 @@
         {
           "ja": "ともだちに 本を もらいました。",
           "form": "past",
-          "translation_en": "I received a book from a friend.",
-          "furigana": []
+          "translation_en": "I received a book from a friend."
         },
         {
           "ja": "母から おかねを もらいます。",
           "form": "affirmative",
-          "translation_en": "I receive money from my mother.",
-          "furigana": []
+          "translation_en": "I receive money from my mother."
         }
       ],
       "common_mistakes": [
@@ -7829,14 +7365,12 @@
         {
           "ja": "友だちが 本を くれました。",
           "form": "past",
-          "translation_en": "A friend gave me a book.",
-          "furigana": []
+          "translation_en": "A friend gave me a book."
         },
         {
           "ja": "父が プレゼントを くれました。",
           "form": "past",
-          "translation_en": "My father gave me a present.",
-          "furigana": []
+          "translation_en": "My father gave me a present."
         }
       ],
       "common_mistakes": [
@@ -7877,14 +7411,12 @@
         {
           "ja": "あついから、まどを あけてください。",
           "form": "affirmative",
-          "translation_en": "It's hot, so please open the window.",
-          "furigana": []
+          "translation_en": "It's hot, so please open the window."
         },
         {
           "ja": "おなかが すいたから、なにか たべましょう。",
           "form": "affirmative",
-          "translation_en": "I'm hungry, so let's eat something.",
-          "furigana": []
+          "translation_en": "I'm hungry, so let's eat something."
         }
       ],
       "common_mistakes": [],
@@ -7921,14 +7453,12 @@
         {
           "ja": "あたまが いたいので、休みます。",
           "form": "affirmative",
-          "translation_en": "I have a headache, so I'll rest.",
-          "furigana": []
+          "translation_en": "I have a headache, so I'll rest."
         },
         {
           "ja": "今日は 雨なので、行きません。",
           "form": "negative",
-          "translation_en": "Since it's raining today, I won't go.",
-          "furigana": []
+          "translation_en": "Since it's raining today, I won't go."
         }
       ],
       "common_mistakes": [
@@ -7971,20 +7501,17 @@
         {
           "ja": "わたしが 買った 本",
           "form": "past",
-          "translation_en": "the book I bought",
-          "furigana": []
+          "translation_en": "the book I bought"
         },
         {
           "ja": "友だちが 来る 日",
           "form": "affirmative",
-          "translation_en": "the day my friend comes",
-          "furigana": []
+          "translation_en": "the day my friend comes"
         },
         {
           "ja": "おすしを たべる 人",
           "form": "affirmative",
-          "translation_en": "people who eat sushi",
-          "furigana": []
+          "translation_en": "people who eat sushi"
         }
       ],
       "common_mistakes": [
@@ -8020,20 +7547,17 @@
         {
           "ja": "高い 山が 見えます。",
           "form": "affirmative",
-          "translation_en": "I can see a tall mountain.",
-          "furigana": []
+          "translation_en": "I can see a tall mountain."
         },
         {
           "ja": "おもしろい 本を 読みました。",
           "form": "past",
-          "translation_en": "I read an interesting book.",
-          "furigana": []
+          "translation_en": "I read an interesting book."
         },
         {
           "ja": "あつい コーヒーが すきです。",
           "form": "affirmative",
-          "translation_en": "I like hot coffee.",
-          "furigana": []
+          "translation_en": "I like hot coffee."
         }
       ],
       "common_mistakes": [],
@@ -8068,20 +7592,17 @@
         {
           "ja": "これは わたしの 本です。",
           "form": "affirmative",
-          "translation_en": "This is my book.",
-          "furigana": []
+          "translation_en": "This is my book."
         },
         {
           "ja": "日本語の 先生です。",
           "form": "affirmative",
-          "translation_en": "I'm a teacher of Japanese.",
-          "furigana": []
+          "translation_en": "I'm a teacher of Japanese."
         },
         {
           "ja": "あれは だれの かばんですか。",
           "form": "question",
-          "translation_en": "Whose bag is that?",
-          "furigana": []
+          "translation_en": "Whose bag is that?"
         }
       ],
       "common_mistakes": [],
@@ -8116,20 +7637,17 @@
         {
           "ja": "わたしは ねこが すきです。",
           "form": "affirmative",
-          "translation_en": "I like cats.",
-          "furigana": []
+          "translation_en": "I like cats."
         },
         {
           "ja": "なっとうが きらいです。",
           "form": "affirmative",
-          "translation_en": "I dislike natto.",
-          "furigana": []
+          "translation_en": "I dislike natto."
         },
         {
           "ja": "なにが すきですか。",
           "form": "question",
-          "translation_en": "What do you like?",
-          "furigana": []
+          "translation_en": "What do you like?"
         }
       ],
       "common_mistakes": [],
@@ -8164,14 +7682,12 @@
         {
           "ja": "あの 人は 日本語が じょうずです。",
           "form": "affirmative",
-          "translation_en": "That person is good at Japanese.",
-          "furigana": []
+          "translation_en": "That person is good at Japanese."
         },
         {
           "ja": "わたしは りょうりが へたです。",
           "form": "affirmative",
-          "translation_en": "I'm bad at cooking.",
-          "furigana": []
+          "translation_en": "I'm bad at cooking."
         }
       ],
       "common_mistakes": [],
@@ -8206,20 +7722,17 @@
         {
           "ja": "日本語が すこし わかります。",
           "form": "affirmative",
-          "translation_en": "I understand a little Japanese.",
-          "furigana": []
+          "translation_en": "I understand a little Japanese."
         },
         {
           "ja": "わかりません。",
           "form": "negative",
-          "translation_en": "I don't understand.",
-          "furigana": []
+          "translation_en": "I don't understand."
         },
         {
           "ja": "わかりました。",
           "form": "past",
-          "translation_en": "I understand. / Got it.",
-          "furigana": []
+          "translation_en": "I understand. / Got it."
         }
       ],
       "common_mistakes": [],
@@ -8254,20 +7767,17 @@
         {
           "ja": "あした しけんが あります。",
           "form": "affirmative",
-          "translation_en": "There's an exam tomorrow.",
-          "furigana": []
+          "translation_en": "There's an exam tomorrow."
         },
         {
           "ja": "おかねが ありません。",
           "form": "negative",
-          "translation_en": "I don't have money.",
-          "furigana": []
+          "translation_en": "I don't have money."
         },
         {
           "ja": "なにか しつもんが ありますか。",
           "form": "question",
-          "translation_en": "Do you have any questions?",
-          "furigana": []
+          "translation_en": "Do you have any questions?"
         }
       ],
       "common_mistakes": [],
@@ -8304,14 +7814,12 @@
         {
           "ja": "コーヒーに します。",
           "form": "affirmative",
-          "translation_en": "I'll have coffee.",
-          "furigana": []
+          "translation_en": "I'll have coffee."
         },
         {
           "ja": "なにに しますか。",
           "form": "question",
-          "translation_en": "What will you have?",
-          "furigana": []
+          "translation_en": "What will you have?"
         }
       ],
       "common_mistakes": [],
@@ -8353,20 +7861,17 @@
         {
           "ja": "先生に なりたいです。",
           "form": "affirmative",
-          "translation_en": "I want to become a teacher.",
-          "furigana": []
+          "translation_en": "I want to become a teacher."
         },
         {
           "ja": "へやが しずかに なりました。",
           "form": "past",
-          "translation_en": "The room became quiet.",
-          "furigana": []
+          "translation_en": "The room became quiet."
         },
         {
           "ja": "あつくなりました。",
           "form": "past",
-          "translation_en": "It became hot.",
-          "furigana": []
+          "translation_en": "It became hot."
         }
       ],
       "common_mistakes": [
@@ -8404,14 +7909,12 @@
         {
           "ja": "おんがくを 聞きながら べんきょうします。",
           "form": "affirmative",
-          "translation_en": "I study while listening to music.",
-          "furigana": []
+          "translation_en": "I study while listening to music."
         },
         {
           "ja": "コーヒーを 飲みながら 本を 読みます。",
           "form": "affirmative",
-          "translation_en": "I drink coffee while reading a book.",
-          "furigana": []
+          "translation_en": "I drink coffee while reading a book."
         }
       ],
       "common_mistakes": [
@@ -8449,14 +7952,12 @@
         {
           "ja": "あした 雨が ふると おもいます。",
           "form": "affirmative",
-          "translation_en": "I think it'll rain tomorrow.",
-          "furigana": []
+          "translation_en": "I think it'll rain tomorrow."
         },
         {
           "ja": "いいと おもいます。",
           "form": "affirmative",
-          "translation_en": "I think it's good.",
-          "furigana": []
+          "translation_en": "I think it's good."
         }
       ],
       "common_mistakes": [
@@ -8494,14 +7995,12 @@
         {
           "ja": "「あした 来ます」と 言いました。",
           "form": "past",
-          "translation_en": "He said 'I'll come tomorrow'.",
-          "furigana": []
+          "translation_en": "He said 'I'll come tomorrow'."
         },
         {
           "ja": "ともだちは 行くと 言いました。",
           "form": "past",
-          "translation_en": "My friend said he would go.",
-          "furigana": []
+          "translation_en": "My friend said he would go."
         }
       ],
       "common_mistakes": [],
@@ -8548,26 +8047,22 @@
         {
           "ja": "よく テレビを 見ます。",
           "form": "affirmative",
-          "translation_en": "I often watch TV.",
-          "furigana": []
+          "translation_en": "I often watch TV."
         },
         {
           "ja": "ときどき えいがを 見ます。",
           "form": "affirmative",
-          "translation_en": "I sometimes watch movies.",
-          "furigana": []
+          "translation_en": "I sometimes watch movies."
         },
         {
           "ja": "あまり 行きません。",
           "form": "negative",
-          "translation_en": "I don't go much.",
-          "furigana": []
+          "translation_en": "I don't go much."
         },
         {
           "ja": "ぜんぜん 食べません。",
           "form": "negative",
-          "translation_en": "I don't eat at all.",
-          "furigana": []
+          "translation_en": "I don't eat at all."
         }
       ],
       "common_mistakes": [
@@ -8615,20 +8110,17 @@
         {
           "ja": "いつも 7時に おきます。",
           "form": "affirmative",
-          "translation_en": "I always wake up at 7.",
-          "furigana": []
+          "translation_en": "I always wake up at 7."
         },
         {
           "ja": "たいてい うちで ごはんを たべます。",
           "form": "affirmative",
-          "translation_en": "I usually eat at home.",
-          "furigana": []
+          "translation_en": "I usually eat at home."
         },
         {
           "ja": "たまに 友だちに あいます。",
           "form": "affirmative",
-          "translation_en": "I occasionally meet friends.",
-          "furigana": []
+          "translation_en": "I occasionally meet friends."
         }
       ],
       "common_mistakes": [],
@@ -8660,14 +8152,12 @@
         {
           "ja": "みずを ください。",
           "form": "affirmative",
-          "translation_en": "Water, please.",
-          "furigana": []
+          "translation_en": "Water, please."
         },
         {
           "ja": "コーヒーを ふたつ ください。",
           "form": "affirmative",
-          "translation_en": "Two coffees, please.",
-          "furigana": []
+          "translation_en": "Two coffees, please."
         }
       ],
       "common_mistakes": [],
@@ -8699,32 +8189,27 @@
         {
           "ja": "コーヒーを おねがいします。",
           "form": "affirmative",
-          "translation_en": "Coffee, please.",
-          "furigana": []
+          "translation_en": "Coffee, please."
         },
         {
           "ja": "メニューを おねがいします。",
           "form": "affirmative",
-          "translation_en": "The menu, please.",
-          "furigana": []
+          "translation_en": "The menu, please."
         },
         {
           "ja": "お水を 二つ おねがいします。",
           "form": "affirmative",
-          "translation_en": "Two waters, please.",
-          "furigana": []
+          "translation_en": "Two waters, please."
         },
         {
           "ja": "日本語の 本を おねがいします。",
           "form": "affirmative",
-          "translation_en": "A Japanese-language book, please.",
-          "furigana": []
+          "translation_en": "A Japanese-language book, please."
         },
         {
           "ja": "もう いちど おねがいします。",
           "form": "affirmative",
-          "translation_en": "Once more, please. (e.g., asking for repetition)",
-          "furigana": []
+          "translation_en": "Once more, please. (e.g., asking for repetition)"
         }
       ],
       "common_mistakes": [],
@@ -8756,14 +8241,12 @@
         {
           "ja": "おちゃは いかがですか。",
           "form": "question",
-          "translation_en": "How about some tea?",
-          "furigana": []
+          "translation_en": "How about some tea?"
         },
         {
           "ja": "もう いっぱい いかがですか。",
           "form": "question",
-          "translation_en": "Would you like another cup?",
-          "furigana": []
+          "translation_en": "Would you like another cup?"
         }
       ],
       "common_mistakes": [],
@@ -8810,20 +8293,17 @@
         {
           "ja": "どうぞ 入ってください。",
           "form": "affirmative",
-          "translation_en": "Please come in.",
-          "furigana": []
+          "translation_en": "Please come in."
         },
         {
           "ja": "すみません、いま なんじですか。",
           "form": "question",
-          "translation_en": "Excuse me, what time is it?",
-          "furigana": []
+          "translation_en": "Excuse me, what time is it?"
         },
         {
           "ja": "どうも ありがとうございます。",
           "form": "affirmative",
-          "translation_en": "Thank you very much.",
-          "furigana": []
+          "translation_en": "Thank you very much."
         }
       ],
       "common_mistakes": [],
@@ -8855,14 +8335,12 @@
         {
           "ja": "まだ あさごはんを たべていません。",
           "form": "negative",
-          "translation_en": "I haven't eaten breakfast yet.",
-          "furigana": []
+          "translation_en": "I haven't eaten breakfast yet."
         },
         {
           "ja": "まだ しゅくだいを していません。",
           "form": "negative",
-          "translation_en": "I haven't done my homework yet.",
-          "furigana": []
+          "translation_en": "I haven't done my homework yet."
         }
       ],
       "common_mistakes": [
@@ -8905,14 +8383,12 @@
         {
           "ja": "もう ばんごはんを たべました。",
           "form": "past",
-          "translation_en": "I've already eaten dinner.",
-          "furigana": []
+          "translation_en": "I've already eaten dinner."
         },
         {
           "ja": "もう しゅくだいは おわりましたか。",
           "form": "question",
-          "translation_en": "Have you finished your homework yet?",
-          "furigana": []
+          "translation_en": "Have you finished your homework yet?"
         }
       ],
       "common_mistakes": [],
@@ -8942,20 +8418,17 @@
         {
           "ja": "コーヒーは すきですが、おちゃは すきじゃありません。",
           "form": "affirmative",
-          "translation_en": "I like coffee, but I don't like tea.",
-          "furigana": []
+          "translation_en": "I like coffee, but I don't like tea."
         },
         {
           "ja": "むずかしいですが、たのしいです。",
           "form": "affirmative",
-          "translation_en": "It's hard, but fun.",
-          "furigana": []
+          "translation_en": "It's hard, but fun."
         },
         {
           "ja": "すみませんが、もう いちど おねがいします。",
           "form": "affirmative",
-          "translation_en": "Sorry, but please say it once more.",
-          "furigana": []
+          "translation_en": "Sorry, but please say it once more."
         }
       ],
       "common_mistakes": [],
@@ -8990,26 +8463,22 @@
         {
           "ja": "いい てんきですね。",
           "form": "affirmative",
-          "translation_en": "Nice weather, isn't it?",
-          "furigana": []
+          "translation_en": "Nice weather, isn't it?"
         },
         {
           "ja": "おいしいですね。",
           "form": "affirmative",
-          "translation_en": "It's delicious, isn't it?",
-          "furigana": []
+          "translation_en": "It's delicious, isn't it?"
         },
         {
           "ja": "あの 人は しんせつですね。",
           "form": "affirmative",
-          "translation_en": "That person is kind, right?",
-          "furigana": []
+          "translation_en": "That person is kind, right?"
         },
         {
           "ja": "むずかしかったですね。",
           "form": "past",
-          "translation_en": "That was tough, wasn't it?",
-          "furigana": []
+          "translation_en": "That was tough, wasn't it?"
         }
       ],
       "common_mistakes": [],
@@ -9051,14 +8520,12 @@
         {
           "ja": "あした 雨でしょう。",
           "form": "affirmative",
-          "translation_en": "It'll probably rain tomorrow.",
-          "furigana": []
+          "translation_en": "It'll probably rain tomorrow."
         },
         {
           "ja": "むずかしいでしょう？",
           "form": "question",
-          "translation_en": "It's hard, right?",
-          "furigana": []
+          "translation_en": "It's hard, right?"
         }
       ],
       "common_mistakes": [],
@@ -9088,14 +8555,12 @@
         {
           "ja": "あした 雨でしょう。",
           "form": "affirmative",
-          "translation_en": "It'll probably rain tomorrow.",
-          "furigana": []
+          "translation_en": "It'll probably rain tomorrow."
         },
         {
           "ja": "むずかしいでしょう？",
           "form": "question",
-          "translation_en": "It's hard, right?",
-          "furigana": []
+          "translation_en": "It's hard, right?"
         }
       ],
       "common_mistakes": [],
@@ -9130,26 +8595,22 @@
         {
           "ja": "いい てんきですね。",
           "form": "affirmative",
-          "translation_en": "Nice weather, isn't it?",
-          "furigana": []
+          "translation_en": "Nice weather, isn't it?"
         },
         {
           "ja": "おいしいですね。",
           "form": "affirmative",
-          "translation_en": "It's delicious, isn't it?",
-          "furigana": []
+          "translation_en": "It's delicious, isn't it?"
         },
         {
           "ja": "あの 人は しんせつですね。",
           "form": "affirmative",
-          "translation_en": "That person is kind, right?",
-          "furigana": []
+          "translation_en": "That person is kind, right?"
         },
         {
           "ja": "むずかしかったですね。",
           "form": "past",
-          "translation_en": "That was tough, wasn't it?",
-          "furigana": []
+          "translation_en": "That was tough, wasn't it?"
         }
       ],
       "common_mistakes": [],
@@ -9184,14 +8645,12 @@
         {
           "ja": "しごとの あとで のみに 行きました。",
           "form": "past",
-          "translation_en": "I went for drinks after work.",
-          "furigana": []
+          "translation_en": "I went for drinks after work."
         },
         {
           "ja": "じゅぎょうの あとで としょかんに 行きます。",
           "form": "affirmative",
-          "translation_en": "After class, I go to the library.",
-          "furigana": []
+          "translation_en": "After class, I go to the library."
         }
       ],
       "common_mistakes": [],
@@ -9226,14 +8685,12 @@
         {
           "ja": "ごはんの まえに てを あらいます。",
           "form": "affirmative",
-          "translation_en": "I wash my hands before meals.",
-          "furigana": []
+          "translation_en": "I wash my hands before meals."
         },
         {
           "ja": "ねる まえに 本を 読みます。",
           "form": "affirmative",
-          "translation_en": "I read a book before going to bed.",
-          "furigana": []
+          "translation_en": "I read a book before going to bed."
         }
       ],
       "common_mistakes": [],
@@ -9268,14 +8725,12 @@
         {
           "ja": "ごはんの まえに てを あらいます。",
           "form": "affirmative",
-          "translation_en": "I wash my hands before meals.",
-          "furigana": []
+          "translation_en": "I wash my hands before meals."
         },
         {
           "ja": "ねる まえに 本を 読みます。",
           "form": "affirmative",
-          "translation_en": "I read a book before going to bed.",
-          "furigana": []
+          "translation_en": "I read a book before going to bed."
         }
       ],
       "common_mistakes": [],
@@ -9310,14 +8765,12 @@
         {
           "ja": "しごとの あとで のみに 行きました。",
           "form": "past",
-          "translation_en": "I went for drinks after work.",
-          "furigana": []
+          "translation_en": "I went for drinks after work."
         },
         {
           "ja": "ばんごはんを たべた あとで テレビを 見ます。",
           "form": "affirmative",
-          "translation_en": "I watch TV after dinner.",
-          "furigana": []
+          "translation_en": "I watch TV after dinner."
         }
       ],
       "common_mistakes": [],
@@ -9354,14 +8807,12 @@
         {
           "ja": "田中さんは 先生です。",
           "form": "affirmative",
-          "translation_en": "Tanaka-san is a teacher.",
-          "furigana": []
+          "translation_en": "Tanaka-san is a teacher."
         },
         {
           "ja": "やまださんに あいました。",
           "form": "past",
-          "translation_en": "I met Yamada-san.",
-          "furigana": []
+          "translation_en": "I met Yamada-san."
         }
       ],
       "common_mistakes": [
@@ -9404,20 +8855,17 @@
         {
           "ja": "おちゃを どうぞ。",
           "form": "affirmative",
-          "translation_en": "Please have some tea.",
-          "furigana": []
+          "translation_en": "Please have some tea."
         },
         {
           "ja": "ごはんを たべました。",
           "form": "past",
-          "translation_en": "I ate a meal.",
-          "furigana": []
+          "translation_en": "I ate a meal."
         },
         {
           "ja": "ごりょうしんは おげんきですか。",
           "form": "question",
-          "translation_en": "Are your parents well?",
-          "furigana": []
+          "translation_en": "Are your parents well?"
         }
       ],
       "common_mistakes": [],
@@ -9469,20 +8917,17 @@
         {
           "ja": "いただきます！",
           "form": "affirmative",
-          "translation_en": "Thanks for the food! (before eating)",
-          "furigana": []
+          "translation_en": "Thanks for the food! (before eating)"
         },
         {
           "ja": "ごちそうさまでした。",
           "form": "past",
-          "translation_en": "Thank you for the meal. (after eating)",
-          "furigana": []
+          "translation_en": "Thank you for the meal. (after eating)"
         },
         {
           "ja": "おはようございます。",
           "form": "affirmative",
-          "translation_en": "Good morning.",
-          "furigana": []
+          "translation_en": "Good morning."
         }
       ],
       "common_mistakes": [],
@@ -9514,14 +8959,12 @@
         {
           "ja": "あたまが いたいんです。",
           "form": "affirmative",
-          "translation_en": "(It's because) I have a headache.",
-          "furigana": []
+          "translation_en": "(It's because) I have a headache."
         },
         {
           "ja": "どうしたんですか。",
           "form": "question",
-          "translation_en": "What's wrong?",
-          "furigana": []
+          "translation_en": "What's wrong?"
         }
       ],
       "common_mistakes": [],
@@ -9553,8 +8996,7 @@
         {
           "ja": "しゅうまつは 本を 読んだり、えいがを 見たり します。",
           "form": "affirmative",
-          "translation_en": "On weekends I do things like read books and watch movies.",
-          "furigana": []
+          "translation_en": "On weekends I do things like read books and watch movies."
         }
       ],
       "common_mistakes": [],
@@ -9586,14 +9028,12 @@
         {
           "ja": "日本へ 行ったことが あります。",
           "form": "affirmative",
-          "translation_en": "I've been to Japan before.",
-          "furigana": []
+          "translation_en": "I've been to Japan before."
         },
         {
           "ja": "すしを 食べたことが ありますか。",
           "form": "question",
-          "translation_en": "Have you ever eaten sushi?",
-          "furigana": []
+          "translation_en": "Have you ever eaten sushi?"
         }
       ],
       "common_mistakes": [],
@@ -9625,14 +9065,12 @@
         {
           "ja": "もう ねたほうが いいですよ。",
           "form": "affirmative",
-          "translation_en": "You'd better go to bed already.",
-          "furigana": []
+          "translation_en": "You'd better go to bed already."
         },
         {
           "ja": "びょういんに 行ったほうが いいです。",
           "form": "affirmative",
-          "translation_en": "You should go to the hospital.",
-          "furigana": []
+          "translation_en": "You should go to the hospital."
         }
       ],
       "common_mistakes": [],
@@ -9664,8 +9102,7 @@
         {
           "ja": "あまり 食べないほうが いいです。",
           "form": "negative",
-          "translation_en": "You'd better not eat too much.",
-          "furigana": []
+          "translation_en": "You'd better not eat too much."
         }
       ],
       "common_mistakes": [],
@@ -9697,8 +9134,7 @@
         {
           "ja": "あした 来なくても いいです。",
           "form": "affirmative",
-          "translation_en": "You don't have to come tomorrow.",
-          "furigana": []
+          "translation_en": "You don't have to come tomorrow."
         }
       ],
       "common_mistakes": [],
@@ -9730,8 +9166,7 @@
         {
           "ja": "もう 行かなくては いけません。",
           "form": "affirmative",
-          "translation_en": "I have to go now.",
-          "furigana": []
+          "translation_en": "I have to go now."
         }
       ],
       "common_mistakes": [],
@@ -9761,8 +9196,7 @@
         {
           "ja": "もう 行かなくては いけません。",
           "form": "affirmative",
-          "translation_en": "I have to go now.",
-          "furigana": []
+          "translation_en": "I have to go now."
         }
       ],
       "common_mistakes": [],
@@ -9797,8 +9231,7 @@
         {
           "ja": "もう 行かなくては いけません。",
           "form": "affirmative",
-          "translation_en": "I have to go now.",
-          "furigana": []
+          "translation_en": "I have to go now."
         }
       ],
       "common_mistakes": [],
@@ -9833,8 +9266,7 @@
         {
           "ja": "もう 行かなくては いけません。",
           "form": "affirmative",
-          "translation_en": "I have to go now.",
-          "furigana": []
+          "translation_en": "I have to go now."
         }
       ],
       "common_mistakes": [],
@@ -9871,14 +9303,12 @@
         {
           "ja": "きのう たべすぎました。",
           "form": "past",
-          "translation_en": "I ate too much yesterday.",
-          "furigana": []
+          "translation_en": "I ate too much yesterday."
         },
         {
           "ja": "この りょうりは あますぎます。",
           "form": "affirmative",
-          "translation_en": "This food is too sweet.",
-          "furigana": []
+          "translation_en": "This food is too sweet."
         }
       ],
       "common_mistakes": [],
@@ -9910,8 +9340,7 @@
         {
           "ja": "あした 行くつもりです。",
           "form": "affirmative",
-          "translation_en": "I plan to go tomorrow.",
-          "furigana": []
+          "translation_en": "I plan to go tomorrow."
         }
       ],
       "common_mistakes": [],
@@ -9943,8 +9372,7 @@
         {
           "ja": "「あした 来る」って 言いました。",
           "form": "past",
-          "translation_en": "He said 'I'll come tomorrow'.",
-          "furigana": []
+          "translation_en": "He said 'I'll come tomorrow'."
         }
       ],
       "common_mistakes": [],
@@ -9976,8 +9404,7 @@
         {
           "ja": "この かんじの 読みかたは なんですか。",
           "form": "question",
-          "translation_en": "How do you read this kanji?",
-          "furigana": []
+          "translation_en": "How do you read this kanji?"
         }
       ],
       "common_mistakes": [],
@@ -10009,8 +9436,7 @@
         {
           "ja": "おいしいなあ。",
           "form": "affirmative",
-          "translation_en": "Mmm, this is good.",
-          "furigana": []
+          "translation_en": "Mmm, this is good."
         }
       ],
       "common_mistakes": [],
@@ -10042,8 +9468,7 @@
         {
           "ja": "行くな！",
           "form": "affirmative",
-          "translation_en": "Don't go!",
-          "furigana": []
+          "translation_en": "Don't go!"
         }
       ],
       "common_mistakes": [
@@ -10091,14 +9516,12 @@
         {
           "ja": "なにか たべたいです。",
           "form": "affirmative",
-          "translation_en": "I want to eat something.",
-          "furigana": []
+          "translation_en": "I want to eat something."
         },
         {
           "ja": "なにも たべません。",
           "form": "negative",
-          "translation_en": "I won't eat anything.",
-          "furigana": []
+          "translation_en": "I won't eat anything."
         }
       ],
       "common_mistakes": [],
@@ -10128,20 +9551,17 @@
         {
           "ja": "なにか たべたいです。",
           "form": "affirmative",
-          "translation_en": "I want to eat something.",
-          "furigana": []
+          "translation_en": "I want to eat something."
         },
         {
           "ja": "なにも たべません。",
           "form": "negative",
-          "translation_en": "I won't eat anything.",
-          "furigana": []
+          "translation_en": "I won't eat anything."
         },
         {
           "ja": "なにか のみますか。",
           "form": "question",
-          "translation_en": "Will you have something to drink?",
-          "furigana": []
+          "translation_en": "Will you have something to drink?"
         }
       ],
       "common_mistakes": [],
@@ -10176,20 +9596,17 @@
         {
           "ja": "だれか いますか。",
           "form": "question",
-          "translation_en": "Is anyone there?",
-          "furigana": []
+          "translation_en": "Is anyone there?"
         },
         {
           "ja": "へやに だれも いません。",
           "form": "negative",
-          "translation_en": "There's no one in the room.",
-          "furigana": []
+          "translation_en": "There's no one in the room."
         },
         {
           "ja": "だれかと いっしょに いきましょう。",
           "form": "affirmative",
-          "translation_en": "Let's go with someone.",
-          "furigana": []
+          "translation_en": "Let's go with someone."
         }
       ],
       "common_mistakes": [],
@@ -10224,20 +9641,17 @@
         {
           "ja": "どこかへ いきたいです。",
           "form": "affirmative",
-          "translation_en": "I want to go somewhere.",
-          "furigana": []
+          "translation_en": "I want to go somewhere."
         },
         {
           "ja": "どこも こんで います。",
           "form": "affirmative",
-          "translation_en": "Everywhere is crowded.",
-          "furigana": []
+          "translation_en": "Everywhere is crowded."
         },
         {
           "ja": "きょうは どこへも いきません。",
           "form": "negative",
-          "translation_en": "Today I'm not going anywhere.",
-          "furigana": []
+          "translation_en": "Today I'm not going anywhere."
         }
       ],
       "common_mistakes": [],
@@ -10247,7 +9661,7 @@
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-183. See n5-183 for the primary discussion of this pattern."
+      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-183. See n5-183 for the primary discussion of this pattern. Both どこへも and どこにも occur in negative sentences. どこへも emphasises motion ('not going anywhere'); どこにも emphasises location ('not present anywhere'). At N5, treat them as interchangeable for negative sentences."
     },
     {
       "id": "n5-187",
@@ -10272,20 +9686,17 @@
         {
           "ja": "いつか にほんへ いきたいです。",
           "form": "affirmative",
-          "translation_en": "Someday I want to go to Japan.",
-          "furigana": []
+          "translation_en": "Someday I want to go to Japan."
         },
         {
           "ja": "いつも 7時に おきます。",
           "form": "affirmative",
-          "translation_en": "I always wake up at 7.",
-          "furigana": []
+          "translation_en": "I always wake up at 7."
         },
         {
           "ja": "ちちは いつも しごとで いそがしいです。",
           "form": "affirmative",
-          "translation_en": "My father is always busy with work.",
-          "furigana": []
+          "translation_en": "My father is always busy with work."
         }
       ],
       "common_mistakes": [],
