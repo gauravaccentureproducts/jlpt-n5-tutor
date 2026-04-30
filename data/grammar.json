@@ -2186,12 +2186,12 @@
     },
     {
       "id": "n5-031",
-      "pattern": "informal question marker",
+      "pattern": "〜の",
       "category": "Particles",
       "categoryOrder": 2,
       "patternOrder": 24,
-      "meaning_en": "Informal question marker",
-      "meaning_ja": "「ぎもん」「Aか B」",
+      "meaning_en": "Sentence-final の as informal question marker (plain-form + の?)",
+      "meaning_ja": "ふつうけい + の?",
       "form_rules": {
         "attaches_to": [],
         "conjugations": [
@@ -2202,47 +2202,41 @@
           }
         ]
       },
-      "explanation_en": "か at the END of a sentence makes it a question - works with yes/no AND wh-questions (どこ, なに, etc.). Between two nouns (Aか B), it means 'A or B'. Don't add a question mark in writing - か already signals the question.\n\n(This pattern is also indexed as 'informal question marker' in another category. Same form rules and usage as the canonical entry.)",
+      "explanation_en": "After plain-form verbs and adjectives, sentence-final の forms a casual / familiar question. Used with friends and family. Don't use this in formal contexts; use か with です/ます-form instead. Pairs with n5-012 (formal か).",
       "examples": [
         {
-          "ja": "あなたは がくせいですか。",
+          "ja": "どこへ いくの？",
           "form": "question",
-          "translation_en": "Are you a student?",
+          "translation_en": "Where are you going?",
           "furigana": []
         },
         {
-          "ja": "なにを たべましたか。",
+          "ja": "なにを たべるの？",
           "form": "question",
-          "translation_en": "What did you eat?",
+          "translation_en": "What are you eating?",
           "furigana": []
         },
         {
-          "ja": "コーヒーか おちゃが いいです。",
-          "form": "affirmative",
-          "translation_en": "Coffee or tea would be good.",
-          "furigana": []
-        },
-        {
-          "ja": "いつ いきますか。",
+          "ja": "あした こないの？",
           "form": "question",
-          "translation_en": "When are you going?",
-          "furigana": []
-        },
-        {
-          "ja": "これは ペンですか、えんぴつですか。",
-          "form": "question",
-          "translation_en": "Is this a pen or a pencil?",
+          "translation_en": "You're not coming tomorrow?",
           "furigana": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "あした きますの？",
+          "right": "あした くるの？",
+          "why": "Informal の attaches to PLAIN form, not polite ます-form."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-012",
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
-      "notes": "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-012. See n5-012 for the primary discussion of this pattern."
+      "notes": "Pairs with n5-012 (formal か). Use か in polite contexts; use の in casual ones."
     },
     {
       "id": "n5-032",
@@ -4352,6 +4346,11 @@
             "example": "かく → かいて"
           },
           {
+            "form": "g1_ぐ",
+            "label": "ぐ → いで",
+            "example": "およぐ → およいで"
+          },
+          {
             "form": "g1_す",
             "label": "す → して",
             "example": "はなす → はなして"
@@ -5792,9 +5791,9 @@
           "furigana": []
         },
         {
-          "ja": "きのう 友だちが 来ました。",
-          "form": "past",
-          "translation_en": "A friend came yesterday.",
+          "ja": "うちには いぬが 二ひき います。",
+          "form": "affirmative",
+          "translation_en": "We have two dogs at home.",
           "furigana": []
         },
         {
@@ -6506,9 +6505,9 @@
           "furigana": []
         },
         {
-          "ja": "もう ねたい。",
+          "ja": "もう ねたいです。",
           "form": "affirmative",
-          "translation_en": "I want to sleep already (casual).",
+          "translation_en": "I want to sleep already.",
           "furigana": []
         }
       ],
@@ -10137,6 +10136,12 @@
           "form": "negative",
           "translation_en": "I won't eat anything.",
           "furigana": []
+        },
+        {
+          "ja": "なにか のみますか。",
+          "form": "question",
+          "translation_en": "Will you have something to drink?",
+          "furigana": []
         }
       ],
       "common_mistakes": [],
@@ -10169,15 +10174,21 @@
       "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.\n\n(This pattern is also indexed as 'だれか / だれも' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "なにか たべたいです。",
-          "form": "affirmative",
-          "translation_en": "I want to eat something.",
+          "ja": "だれか いますか。",
+          "form": "question",
+          "translation_en": "Is anyone there?",
           "furigana": []
         },
         {
-          "ja": "なにも たべません。",
+          "ja": "へやに だれも いません。",
           "form": "negative",
-          "translation_en": "I won't eat anything.",
+          "translation_en": "There's no one in the room.",
+          "furigana": []
+        },
+        {
+          "ja": "だれかと いっしょに いきましょう。",
+          "form": "affirmative",
+          "translation_en": "Let's go with someone.",
           "furigana": []
         }
       ],
@@ -10211,15 +10222,21 @@
       "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.\n\n(This pattern is also indexed as 'どこか / どこも' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "なにか たべたいです。",
+          "ja": "どこかへ いきたいです。",
           "form": "affirmative",
-          "translation_en": "I want to eat something.",
+          "translation_en": "I want to go somewhere.",
           "furigana": []
         },
         {
-          "ja": "なにも たべません。",
+          "ja": "どこも こんで います。",
+          "form": "affirmative",
+          "translation_en": "Everywhere is crowded.",
+          "furigana": []
+        },
+        {
+          "ja": "きょうは どこへも いきません。",
           "form": "negative",
-          "translation_en": "I won't eat anything.",
+          "translation_en": "Today I'm not going anywhere.",
           "furigana": []
         }
       ],
@@ -10253,15 +10270,21 @@
       "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.\n\n(This pattern is also indexed as 'いつか / いつも' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "なにか たべたいです。",
+          "ja": "いつか にほんへ いきたいです。",
           "form": "affirmative",
-          "translation_en": "I want to eat something.",
+          "translation_en": "Someday I want to go to Japan.",
           "furigana": []
         },
         {
-          "ja": "なにも たべません。",
-          "form": "negative",
-          "translation_en": "I won't eat anything.",
+          "ja": "いつも 7時に おきます。",
+          "form": "affirmative",
+          "translation_en": "I always wake up at 7.",
+          "furigana": []
+        },
+        {
+          "ja": "ちちは いつも しごとで いそがしいです。",
+          "form": "affirmative",
+          "translation_en": "My father is always busy with work.",
           "furigana": []
         }
       ],

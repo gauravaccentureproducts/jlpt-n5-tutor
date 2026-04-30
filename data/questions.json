@@ -902,7 +902,7 @@
         "まいにち",
         "を",
         "にほんごの",
-        "べんきょうします",
+        "読みます",
         "ほん"
       ],
       "correctOrder": [
@@ -910,9 +910,9 @@
         "にほんごの",
         "ほん",
         "を",
-        "べんきょうします"
+        "読みます"
       ],
-      "translation_en": "I study Japanese books every day.",
+      "translation_en": "Every day I read Japanese books.",
       "explanation_en": "Time word first (まいにち), then the noun phrase with の linking (にほんごの ほん), then the direct-object marker を, then the verb (べんきょうします)."
     },
     {

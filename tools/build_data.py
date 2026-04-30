@@ -47,7 +47,13 @@ def extract_kanji_readings(md_path: Path) -> dict[str, dict]:
     current = None
     for raw in text.splitlines():
         line = raw.rstrip()
-        m = re.match(r"^\s*-\s+\*\*([一-鿿])\*\*\s*$", line)
+        # Tolerate trailing tags like `**[Ext]**` after the kanji header.
+        # Pass-14 fix: previously the strict `\s*$` end-anchor caused 4
+        # [Ext]-tagged entries (号, 員, 社, 私) to be dropped from the
+        # readings file - kanji.json had them via extract_kanji_corpus
+        # (which already had the lenient match) but n5_kanji_readings.json
+        # was missing them. Now both extractors share the same regex.
+        m = re.match(r"^\s*-\s+\*\*([一-鿿])\*\*", line)
         if m:
             current = m.group(1)
             entries[current] = {"on": [], "kun": [], "primary": None}
