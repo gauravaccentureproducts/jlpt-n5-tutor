@@ -57,21 +57,6 @@ function setActiveNav(name) {
   });
 }
 
-const LOCATION_LABELS = {
-  home: 'Home', learn: 'Learn', test: 'Test', drill: 'Practice', review: 'Review',
-  summary: 'Summary', diagnostic: 'Diagnostic', settings: 'Settings',
-  kosoado: 'こそあど grid', waga: 'は vs が', verbclass: 'Verb groups',
-  teform: 'て-form gym', particles: 'Particle pairs', counters: 'Counters',
-  reading: 'Reading', listening: 'Listening', kanji: 'Kanji'
-};
-
-function setLocationIndicator(name, params) {
-  const el = document.getElementById('location-indicator');
-  if (!el) return;
-  const base = LOCATION_LABELS[name] || name;
-  const sub = params ? ` · ${decodeURIComponent(params)}` : '';
-  el.textContent = `${base}${sub}`;
-}
 
 function refreshDrillBadge() {
   const badge = document.getElementById('drill-badge');
@@ -123,7 +108,6 @@ async function route() {
   const { name, params } = parseRoute();
   const handler = ROUTES[name] || renderLearn;
   setActiveNav(handler === renderLearn ? 'learn' : name);
-  setLocationIndicator(handler === renderLearn ? 'learn' : name, params);
   renderSkeleton(container, name);
   let timedOut = false;
   const timeoutId = setTimeout(() => {

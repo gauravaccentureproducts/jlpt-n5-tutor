@@ -50,13 +50,17 @@ export async function renderLearn(container, params) {
 }
 
 function renderHub(container) {
-  // Top-level chooser. Five sections: Grammar, Vocabulary, Kanji, Reading, Listening.
+  // Two semantic groups: Reference (3 cards) + Practice (2 cards).
+  // Avoids the 3+2 orphan a flat 5-card grid produces, and the labels
+  // help the learner pick the right surface for the moment.
   const grammarCount = (grammarCache?.patterns || []).length || 187;
   const vocabCount = (vocabCache?.entries || []).length || 1002;
   container.innerHTML = `
     <h2>Learn</h2>
     <p class="page-lede">Pick what you want to study. Each section is self-contained.</p>
-    <div class="learn-hub">
+
+    <h3 class="hub-group-title">Reference</h3>
+    <div class="learn-hub learn-hub-3">
       <a class="hub-card" href="#/learn/grammar">
         <span class="hub-icon" aria-hidden="true">📖</span>
         <h3>Grammar</h3>
@@ -75,6 +79,10 @@ function renderHub(container) {
         <p>97 kanji with on / kun-yomi, meanings, stroke-order slots. Tap any glyph.</p>
         <span class="hub-cta">Browse →</span>
       </a>
+    </div>
+
+    <h3 class="hub-group-title">Practice</h3>
+    <div class="learn-hub learn-hub-2">
       <a class="hub-card" href="#/reading">
         <span class="hub-icon" aria-hidden="true">📰</span>
         <h3>Dokkai (Reading)</h3>
@@ -228,10 +236,21 @@ function renderTOC(container, data) {
   const settings = storage.getSettings();
   const showDiagBanner = !settings.diagnosticCompleted;
 
+  // Build a category jump menu so users can skip directly to any of the
+  // 32 categories without scrolling 187 cards. Renders as a sticky chip
+  // bar on desktop; collapses to a horizontally-scrolling strip on mobile.
+  const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const jumpItems = sorted.map(([cat, { items }]) => `
+    <button type="button" class="cat-chip" data-jump="${slugify(cat)}">
+      <span class="cat-chip-label">${esc(cat)}</span>
+      <span class="cat-chip-count">${items.length}</span>
+    </button>
+  `).join('');
+
   let html = `
     <a class="back-link" href="#/learn">← Back to Learn</a>
     <h2>Grammar</h2>
-    <p>Pick a grammar pattern to study. Patterns are grouped into ${sorted.length} ${sorted.length === 1 ? 'category' : 'categories'} per the N5 catalog.</p>
+    <p class="page-lede">${data.patterns.length} patterns in ${sorted.length} categories. Jump to a category or scroll.</p>
     ${showDiagBanner ? `
       <div class="diag-cta">
         <div>
@@ -241,21 +260,26 @@ function renderTOC(container, data) {
         <a href="#/diagnostic" class="btn-primary" style="text-decoration:none">Take Diagnostic →</a>
       </div>
     ` : ''}
-    <div class="learn-tools">
-      <strong>Topic deep-dives:</strong>
-      <a href="#/waga">は vs が →</a>
-      <a href="#/kosoado">こそあど grid →</a>
-      <a href="#/verbclass">Verb groups →</a>
-      <a href="#/teform">て-form gym →</a>
-      <a href="#/particles">Particle pairs →</a>
-      <a href="#/counters">Counters →</a>
-      <a href="#/reading">Reading →</a>
-      <a href="#/listening">Listening →</a>
-    </div>
+    <nav class="cat-jump" aria-label="Grammar category jump menu">
+      ${jumpItems}
+    </nav>
+    <details class="learn-tools-wrap">
+      <summary>Topic deep-dives</summary>
+      <div class="learn-tools">
+        <a href="#/waga">は vs が →</a>
+        <a href="#/kosoado">こそあど grid →</a>
+        <a href="#/verbclass">Verb groups →</a>
+        <a href="#/teform">て-form gym →</a>
+        <a href="#/particles">Particle pairs →</a>
+        <a href="#/counters">Counters →</a>
+        <a href="#/reading">Reading →</a>
+        <a href="#/listening">Listening →</a>
+      </div>
+    </details>
   `;
   for (const [cat, { items }] of sorted) {
     items.sort((a, b) => (a.patternOrder ?? 0) - (b.patternOrder ?? 0));
-    html += `<div class="toc-category"><h3>${esc(cat)}</h3><div class="grammar-grid">`;
+    html += `<section class="toc-category" id="cat-${slugify(cat)}"><h3>${esc(cat)} <span class="cat-count muted small">(${items.length})</span></h3><div class="grammar-grid">`;
     for (const p of items) {
       html += `
         <a class="grammar-card" href="#/learn/${encodeURIComponent(p.id)}">
@@ -264,7 +288,7 @@ function renderTOC(container, data) {
         </a>
       `;
     }
-    html += `</div></div>`;
+    html += `</div></section>`;
   }
   if (data.patterns.length === 0) {
     html += `<div class="placeholder"><p>No patterns yet. Add entries to <code>data/grammar.json</code>.</p></div>`;
@@ -272,6 +296,14 @@ function renderTOC(container, data) {
     html += `<div class="placeholder" style="margin-top:24px"><p>Scaffold currently has 1 example pattern. Add more to <code>data/grammar.json</code> as you author content.</p></div>`;
   }
   container.innerHTML = html;
+
+  // Wire jump-menu chips (JS scroll, no hash change so the router stays put).
+  container.querySelectorAll('[data-jump]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = container.querySelector(`#cat-${btn.dataset.jump}`);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 }
 
 function renderPatternDetail(container, p) {
