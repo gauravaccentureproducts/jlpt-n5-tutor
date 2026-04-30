@@ -19,3 +19,10 @@ __pycache__/
 
 # Transient verifier output (regenerated on every audit run; archived copy in not-required/)
 /drift_report.txt
+
+# Node / Playwright (introduced for CI smoke; the app stays vanilla static)
+node_modules/
+playwright-report/
+test-results/
+.lighthouseci/
+package-lock.json
