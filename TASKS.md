@@ -113,7 +113,7 @@ Use as a **catalog** - triage by P0/P1/P2 tier, don't run all 22 every release. 
 - [ ] Create `tools/check_content_integrity.py` implementing the 16 invariants from §12.1 (X-6.1 through X-6.7 + JA-1 through JA-9). Wire into CI as a release blocker.
 - [ ] Add Playwright + @axe-core/playwright as devDependencies; first test suite covering §17.1 P0 smoke.
 - [ ] Add Lighthouse CI workflow per §19; baseline numbers from current SW v18 build.
-- [ ] First quarterly Pass-N re-audit calendar reminder (§12.3): 2026-07-30.
+- [x] First quarterly Pass-N re-audit calendar reminder (§12.3): 2026-07-30. Recurring scheduled task `jlpt-n5-quarterly-pass-audit` set to cron `0 9 30 1,4,7,10 *` (9 AM local on the 30th of Jan/Apr/Jul/Oct). Next run: 2026-07-30. Prompt rotates audit lenses (child-readability / register / honorifics / distractor quality / cross-file consistency) so successive quarters surface different findings.
 
 ---
 
