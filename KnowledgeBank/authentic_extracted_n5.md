@@ -776,10 +776,10 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 
 #### Q84 (Comprehension)
 正しい せつめいは どれですか。
-1. A small supermarket exists there.
-2. Many students are always at the bus stop.
-3. The supermarket contains other shops.
-4. Only students are always there.
+1. ちかくに 小さい スーパーが あります。
+2. バスていに いつも 学生が たくさん います。
+3. スーパーの中に ほかの 店が あります。
+4. 学生だけが いつも います。
 **Answer: 3**.
 
 ### Passage E-4 (Test 4)
@@ -797,10 +797,10 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 
 #### Q86 (Comprehension)
 今日の てんきは どうでしたか。
-1. Hot all day.
-2. Cool around 2pm.
-3. Cool only in the evening.
-4. Not hot from evening onward.
+1. 一日中 あつかった。
+2. 2時ごろ すずしかった。
+3. 夕方だけ すずしかった。
+4. 夕方からは あつくなかった。
 **Answer: 4**.
 
 ### Passage E-5 (Test 5)
@@ -839,10 +839,10 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 
 #### Q90 (Comprehension)
 この人は きのう 何を しましたか。
-1. Saw movie then ate.
-2. Met friend in afternoon and ate.
-3. Drank tea alone at cafe.
-4. Ate before seeing movie.
+1. えいがを みてから 食べました。
+2. 午後に 友だちに 会って 食べました。
+3. カフェで 一人で おちゃを 飲みました。
+4. えいがを 見る前に 食べました。
 **Answer: 4**.
 
 ### Passage E-7 (Test 7)
@@ -860,10 +860,10 @@ In each, four shuffled fragments are arranged. The position marked `★` indicat
 
 #### Q92 (Comprehension)
 できない ことは どれですか。
-1. Send letter at 4:30pm at post office.
-2. Withdraw money at 3:30pm at bank window.
-3. Withdraw money at 10:30am at post office window.
-4. Use ATM at 6pm.
+1. ごご4時半に ゆうびんきょくで てがみを だす。
+2. ごご3時半に ぎんこうの まどぐちで お金を だす。
+3. ごぜん10時半に ゆうびんきょくの まどぐちで お金を だす。
+4. ごご6時に ATMを つかう。
 **Answer: 2** (banks close at 3pm).
 
 ### Passage E-8 (Test 8)
@@ -1505,10 +1505,10 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 
 #### Q165 (Comprehension)
 ひっしゃが せんしゅうの にちようびに しなかった ことは どれですか。
-1. Met friends and played tennis
-2. Read books and drank tea
-3. Played tennis and went out
-4. Played tennis and did laundry
+1. 友だちに 会って テニスを した
+2. 本を 読んで おちゃを 飲んだ
+3. テニスを して でかけた
+4. テニスを して せんたくを した
 **Answer: 4**.
 
 ### Passage J-2 (Test 11)
@@ -1571,10 +1571,10 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 #### Q171 (Reason for going to festival)
 
 どうして お祭りに 行きましたか。
-1. Speaker really enjoys festivals
-2. A festival was happening nearby
-3. Guest wanted to see a festival
-4. To showcase unusual Japanese things
+1. 話している 人が お祭りが 大すきだから
+2. ちかくで お祭りが あったから
+3. ともだちが お祭りを 見たがったから
+4. 日本の めずらしい ものを 見せたかったから
 **Answer: 4**.
 
 ### Passage J-5 (Test 14)
@@ -1593,10 +1593,10 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 #### Q173 (Why izakaya recommended)
 
 どうして いざかやを すすめましたか。
-1. It's a Japanese restaurant
-2. All restaurants there are delicious
-3. It's the best restaurant
-4. Various dishes available
+1. 日本の レストランだから
+2. ほかの レストランも ぜんぶ おいしいから
+3. いちばん いい レストランだから
+4. いろいろな りょうりが あるから
 **Answer: 4**.
 
 ### Passage J-6 (Test 16)
@@ -1613,10 +1613,10 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 3** (past + のですが).
 
 #### Q175 (Why disappointed)
-1. Didn't want fountain pen
-2. Couldn't email friends
-3. Communication impossible
-4. Hadn't entered middle school
+1. まんねんひつが ほしくなかったから
+2. 友だちに メールが できなかったから
+3. れんらくが できなかったから
+4. 中学に 入って いなかったから
 **Answer: 2**.
 
 ### Passage J-7 (Test 17)
@@ -1653,10 +1653,10 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 4** (Noun-で - and / who is).
 
 #### Q179 (Cannot do)
-1. Teach English to colleagues
-2. Speak with customers in Japanese
-3. Create English documents
-4. Create Japanese documents
+1. どうりょうに えいごを おしえる
+2. おきゃくさんと にほんごで はなす
+3. えいごの しょるいを つくる
+4. にほんごの しょるいを つくる
 **Answer: 4** (cannot read/write Japanese).
 
 ### Passage J-9 (Test 19)
@@ -1673,10 +1673,10 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 2** (i-adj + て + reason).
 
 #### Q181 (How was the exam)
-1. Reading failed; listening succeeded
-2. Conversation went well; kanji mediocre
-3. Kanji-related sections all failed
-4. Sections without kanji went well
+1. ぶんを 読む テストは できなかったが、はなしを 聞く テストは できた
+2. はなす テストは よかったが、かんじは ふつうだった
+3. かんじの テストは ぜんぶ できなかった
+4. かんじが ない テストは よくできた
 **Answer: 4**.
 
 ### Passage J-10 (Test 20)
@@ -1693,10 +1693,10 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 1** (Verb-plain + 前に).
 
 #### Q183 (Order of morning activities)
-1. Drank coffee right after waking
-2. Read newspaper before walking
-3. Exercised after newspaper
-4. Ate breakfast after various activities
+1. おきて すぐ コーヒーを 飲んだ
+2. さんぽの 前に しんぶんを 読んだ
+3. しんぶんを 読んでから うんどうを した
+4. いろいろした 後で あさごはんを 食べた
 **Answer: 4**.
 
 ### Passage J-11 (Test 21)
@@ -1713,10 +1713,10 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 4** (Verb-stem + て-form).
 
 #### Q185 (What's described)
-1. SNS where foreigners buy rare items
-2. SNS where foreigners view rare items
-3. SNS where foreigners do unusual activities
-4. SNS where foreigners search for rare items
+1. がいこく人が めずらしい ものを 買う SNS
+2. がいこく人が めずらしい ものを 見る SNS
+3. がいこく人が ふつうじゃない ことを する SNS
+4. がいこく人が めずらしい ものを さがす SNS
 **Answer: 3**.
 
 ### Passage J-12 (Test 22)
@@ -1733,10 +1733,10 @@ Elements: 1. 遠い  2. ところ  3. へ  4. どこか
 **Answer: 4** (て + います).
 
 #### Q187 (Who is in the park)
-1. Person reading a book
-2. Person swimming in pond
-3. Person sleeping in tree
-4. Person playing at pond
+1. 本を 読んでいる 人
+2. いけで およいでいる 人
+3. 木で ねている 人
+4. いけで あそんでいる 人
 **Answer: 4** (3 children fishing in the pond).
 
 ### Passage J-13 (Test 23)

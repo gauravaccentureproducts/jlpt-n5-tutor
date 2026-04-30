@@ -210,7 +210,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "7じ（　）おきます。",
+      "question_ja": "7時（　）おきます。",
       "choices": [
         "に",
         "で",
@@ -218,7 +218,7 @@
         "と"
       ],
       "correctAnswer": "に",
-      "explanation_en": "に marks a SPECIFIC clock or calendar time (7じに, げつようびに, 4がつに).",
+      "explanation_en": "に marks a SPECIFIC clock or calendar time (7時に, げつようびに, 4月に).",
       "distractor_explanations": {
         "で": "で marks location of action or means - wrong for a time point.",
         "へ": "へ marks destination of movement - doesn't fit a time.",
@@ -394,7 +394,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "9じ（　）しごとです。",
+      "question_ja": "9時（　）しごとです。",
       "choices": [
         "は",
         "から",
@@ -402,11 +402,11 @@
         "に"
       ],
       "correctAnswer": "から",
-      "explanation_en": "から after a time means 'from / starting at'. 9じから = 'from 9 o'clock'.",
+      "explanation_en": "から after a time means 'from / starting at'. 9時から = 'from 9 o'clock'.",
       "distractor_explanations": {
         "は": "は marks the topic - could appear elsewhere in the sentence but doesn't mean 'from'.",
-        "まで": "まで means 'until / up to' - opposite direction. 9じまで = 'until 9'.",
-        "に": "に marks a specific time POINT, not a starting point. 9じに おきます = 'wake up AT 9'; 9じから = 'starting AT 9'."
+        "まで": "まで means 'until / up to' - opposite direction. 9時まで = 'until 9'.",
+        "に": "に marks a specific time POINT, not a starting point. 9時に おきます = 'wake up AT 9'; 9時から = 'starting AT 9'."
       },
       "high_confusion": true,
       "difficulty": 2
@@ -440,7 +440,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "5じ（　）しごとです。",
+      "question_ja": "5時（　）しごとです。",
       "choices": [
         "から",
         "まで",
@@ -450,8 +450,8 @@
       "correctAnswer": "まで",
       "explanation_en": "まで marks the END of a span - 'until 5'. から would mean 'from 5'.",
       "distractor_explanations": {
-        "から": "から is the START of a span. 5じから = 'from 5 o'clock'. Opposite of まで.",
-        "に": "に marks a specific time POINT (5じに おきます = 'wake at 5'), not a span endpoint.",
+        "から": "から is the START of a span. 5時から = 'from 5 o'clock'. Opposite of まで.",
+        "に": "に marks a specific time POINT (5時に おきます = 'wake at 5'), not a span endpoint.",
         "で": "で marks means or location of action - wrong for a time endpoint."
       },
       "high_confusion": true,
@@ -578,7 +578,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "わたし（　）がくせいです。 (\"I am also a student\")",
+      "question_ja": "わたし（　）がくせいです。",
       "choices": [
         "は",
         "も",
@@ -601,7 +601,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "だれ（　）きませんでした。 (\"No one came\")",
+      "question_ja": "だれ（　）きませんでした。",
       "choices": [
         "は",
         "が",
@@ -623,8 +623,8 @@
       "grammarPatternId": "n5-014",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "「すみません、（　）は なんですか。」 (pointing at something near the speaker)",
-      "question_ja": "（　）は なんですか。",
+      "prompt_ja": "じぶんの 手に もっている 本を みせて、 友だちに 言います。",
+      "question_ja": "(自分の 手の 中の 本を みせながら)　すみません、（　）は おもしろい 本ですか。",
       "choices": [
         "これ",
         "それ",
@@ -632,11 +632,11 @@
         "どれ"
       ],
       "correctAnswer": "これ",
-      "explanation_en": "これ refers to something near the SPEAKER. それ would be near the listener; あれ far from both; どれ is 'which one?'.",
+      "explanation_en": "これ refers to something held by / near the SPEAKER. The deictic context (showing a book in one's own hand to a friend) forces これ. それ would be in the listener's hand; あれ far from both; どれ asks 'which one?'.",
       "distractor_explanations": {
-        "それ": "それ is for objects near the LISTENER, not the speaker.",
-        "あれ": "あれ is for objects far from BOTH speakers.",
-        "どれ": "どれ asks 'which one (of options)?', not 'what is this?'."
+        "それ": "それ is for objects near the LISTENER (in their hand). The book is in the speaker's hand, not the listener's.",
+        "あれ": "あれ is for objects far from BOTH speakers. The book is in the speaker's own hand.",
+        "どれ": "どれ asks 'which one (of these options)?'; this stem is a yes/no question about a specific book the speaker is showing, not a choice among multiple."
       },
       "high_confusion": false,
       "difficulty": 1
@@ -646,8 +646,8 @@
       "grammarPatternId": "n5-014",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "（　）が あなたの かばんですか。 (asking among several visible bags)",
+      "prompt_ja": "何個も かばんが ある中で、 自分の かばんを たずねます。",
+      "question_ja": "(机の上に かばんが 何個も あります)　（　）が あなたの かばんですか。",
       "choices": [
         "これ",
         "それ",
@@ -670,7 +670,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "（　）ほんを よみました。 (this book)",
+      "question_ja": "（　）ほんを よみました。",
       "choices": [
         "これ",
         "この",
@@ -693,7 +693,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "（　）くるまは だれのですか。 (pointing at a far-away car)",
+      "question_ja": "（　）くるまは だれのですか。",
       "choices": [
         "あれ",
         "あの",
@@ -715,8 +715,8 @@
       "grammarPatternId": "n5-016",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "（　）は としょかんです。",
+      "prompt_ja": "友だちに 学校の 中の ばしょを あんないして います。",
+      "question_ja": "(友だちと 学校の 中を 歩きながら、ある へやの 前で)　（　）は としょかんです。",
       "choices": [
         "これ",
         "ここ",
@@ -724,11 +724,11 @@
         "それ"
       ],
       "correctAnswer": "ここ",
-      "explanation_en": "Locations use the こ-series for places: ここ ('here'). これ is for OBJECTS, not places. この + N is an adjective.",
+      "explanation_en": "ここ is the place pronoun \"here.\" Walking through the building introducing places, ここ identifies the place you are at right now. これ would mean \"this thing\" (object), not appropriate when introducing a room.",
       "distractor_explanations": {
-        "これ": "これ refers to objects, not locations. Use ここ for 'here'.",
-        "この": "この must be followed by a noun and refers to objects, not places.",
-        "それ": "それ is for objects near the listener - and it's still an OBJECT pronoun, not a location."
+        "これ": "これ refers to a thing/object (e.g., これは本です = This is a book), not a place. The stem identifies a room as the library, which calls for the place pronoun.",
+        "この": "この needs to be followed by a noun (この本, この人). It cannot stand alone before は.",
+        "それ": "それ refers to a thing near the listener; the stem is identifying a place you have arrived at, not a thing."
       },
       "high_confusion": false,
       "difficulty": 1
@@ -739,7 +739,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "（　）で かいましたか。 (asking where it was bought)",
+      "question_ja": "（　）で かいましたか。",
       "choices": [
         "これ",
         "ここ",
@@ -1056,7 +1056,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "9じ（　）5じ（　）しごとです。",
+      "question_ja": "9時（　）5時（　）しごとです。",
       "choices": [
         "から ... まで",
         "まで ... から",
@@ -1064,7 +1064,7 @@
         "は ... は"
       ],
       "correctAnswer": "から ... まで",
-      "explanation_en": "9じから 5じまで = 'from 9 to 5'. から marks the start, まで marks the end. They are nearly always paired for ranges.",
+      "explanation_en": "9時から 5時まで = 'from 9 to 5'. から marks the start, まで marks the end. They are nearly always paired for ranges.",
       "distractor_explanations": {
         "まで ... から": "Reversed - 'until 9, from 5' is incoherent.",
         "に ... に": "に marks specific time POINTS, not range endpoints.",
@@ -1079,7 +1079,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "とうきょう（　）いきました。 (\"I went to Tokyo as well\")",
+      "question_ja": "とうきょう（　）いきました。",
       "choices": [
         "にも",
         "がも",
@@ -1101,8 +1101,8 @@
       "grammarPatternId": "n5-014",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "「これは わたしの ペンです。（　）は あなたのですか。」 (pointing at a pen near the listener)",
+      "prompt_ja": "自分の ペンと 友だちの 手の 中の ペンを 指さして 言います。",
+      "question_ja": "(自分の ペンを みせて、それから 友だちの 手の 中の ペンを 指さして)　「これは わたしの ペンです。（　）は あなたのですか。」",
       "choices": [
         "これ",
         "それ",
@@ -1176,13 +1176,14 @@
         "ます",
         "ません",
         "ました",
-        "ません"
+        "たい"
       ],
       "correctAnswer": "ます",
       "explanation_en": "ます is the polite non-past affirmative. 'I read books every day' uses present-tense affirmative.",
       "distractor_explanations": {
         "ません": "ません is negative. The sentence is affirmative ('I read').",
-        "ました": "ました is past. まいにち (every day) implies habitual present, not past."
+        "ました": "ました is past. まいにち (every day) implies habitual present, not past.",
+        "たい": "たい marks desire/want; the stem describes a habit (\"every day\"), which calls for the present-affirmative ます."
       },
       "high_confusion": false,
       "difficulty": 1
@@ -1244,13 +1245,14 @@
         "ます",
         "ません",
         "ました",
-        "ました"
+        "ましょうか"
       ],
       "correctAnswer": "ません",
       "explanation_en": "ません expresses 'will not go'. ます would be affirmative.",
       "distractor_explanations": {
         "ます": "Affirmative - means 'will go'.",
-        "ました": "Past tense - incompatible with あした."
+        "ました": "Past tense - incompatible with あした.",
+        "ましょうか": "ましょうか proposes / asks \"shall we?\"; the stem describes a past event, not a proposal."
       },
       "high_confusion": false,
       "difficulty": 1
@@ -1422,7 +1424,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "コーヒーを のみ（　）か。 (\"Would you like some coffee?\")",
+      "question_ja": "コーヒーを のみ（　）か。",
       "choices": [
         "ます",
         "ません",
@@ -1445,19 +1447,19 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "casual じしょけいを えらんでください。 (Choose the dictionary form)",
-      "question_ja": "「I drink coffee.」 → コーヒーを（　）。",
+      "question_ja": "まいにち コーヒーを（　）。",
       "choices": [
         "のむ",
-        "のみます",
+        "のんで",
         "のんだ",
         "のまない"
       ],
       "correctAnswer": "のむ",
       "explanation_en": "Dictionary (plain) form is のむ. のみます is polite; のんだ is past; のまない is negative.",
       "distractor_explanations": {
-        "のみます": "Polite ます-form - not the dictionary form.",
         "のんだ": "Plain past, not non-past.",
-        "のまない": "Plain negative."
+        "のまない": "Plain negative.",
+        "のんで": "のんで is the te-form, used for sequential actions or requests; the stem requires a finite past or present, not a connector."
       },
       "high_confusion": true,
       "difficulty": 2
@@ -1468,19 +1470,19 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "casual じしょけいを えらんでください。",
-      "question_ja": "「I eat sushi.」 → すしを（　）。",
+      "question_ja": "まいにち すしを（　）。",
       "choices": [
         "たべる",
-        "たべます",
+        "たべて",
         "たべた",
         "たべない"
       ],
       "correctAnswer": "たべる",
       "explanation_en": "Group-2 dictionary form is たべる (drop る for ます/ない/た).",
       "distractor_explanations": {
-        "たべます": "Polite form.",
         "たべた": "Plain past.",
-        "たべない": "Plain negative."
+        "たべない": "Plain negative.",
+        "たべて": "たべて is the te-form, used for sequential actions or requests; the stem requires a finite past or present, not a connector."
       },
       "high_confusion": false,
       "difficulty": 2
@@ -1491,7 +1493,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "casual ひていけいを えらんでください。",
-      "question_ja": "おさけを（　）。 (\"[I] don't drink alcohol.\" - casual)",
+      "question_ja": "おさけを（　）。",
       "choices": [
         "のむ",
         "のまない",
@@ -1514,7 +1516,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "casual ひていけいを えらんでください。",
-      "question_ja": "あした（　）。 (\"[I] won't come tomorrow.\")",
+      "question_ja": "あした（　）。",
       "choices": [
         "くる",
         "こない",
@@ -1559,20 +1561,20 @@
       "grammarPatternId": "n5-067",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "casual かこけいを えらんでください。",
-      "question_ja": "がっこうへ（　）。 (\"[I] went to school.\")",
+      "prompt_ja": "つぎの かこけいの ふつうけい (plain past) を えらんでください。",
+      "question_ja": "きのう、 がっこうへ（　）。",
       "choices": [
         "いた",
         "いった",
         "いきた",
-        "いきました"
+        "いきって"
       ],
       "correctAnswer": "いった",
-      "explanation_en": "いく is the famous exception: いった (with っ), not いいた like other -く verbs.",
+      "explanation_en": "行く is the famous exception: いった (with っ), not いいた like other -く verbs. The diary-entry context forces plain form (not polite いきました).",
       "distractor_explanations": {
-        "いた": "Past of いる (to exist), not いく.",
-        "いきた": "Wrong - いく doesn't follow the regular -く → -いた rule.",
-        "いきました": "Polite past form."
+        "いた": "Past of いる (to exist), not いく. 「がっこうへ いた」 would be ungrammatical (intransitive existence verb does not take へ).",
+        "いきた": "Over-regularized. 行く does not follow the regular -く → -いた rule (otherwise 書いた / 聞いた pattern); it takes the irregular -った.",
+        "いきって": "Hybrid form: ます-stem いき + て-form ending って. No such conjugation exists. Common learner error from confusing the conjugation classes."
       },
       "high_confusion": true,
       "difficulty": 2
@@ -1629,7 +1631,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "この りんごは あま（　）です。 (\"This apple isn't sweet.\")",
+      "question_ja": "この りんごは あま（　）です。",
       "choices": [
         "い",
         "くない",
@@ -1652,7 +1654,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "この えいがは（　）です。 (\"This movie isn't interesting.\")",
+      "question_ja": "この えいがは（　）です。",
       "choices": [
         "おもしろい",
         "おもしろくない",
@@ -1675,7 +1677,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "きのうは あつ（　）です。 (\"Yesterday was hot.\")",
+      "question_ja": "きのうは あつ（　）です。",
       "choices": [
         "い",
         "かった",
@@ -1698,7 +1700,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "テストは（　）ですか。 (\"Was the test difficult?\")",
+      "question_ja": "テストは（　）ですか。",
       "choices": [
         "むずかしい",
         "むずかしかった",
@@ -1744,7 +1746,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "とうきょうは（　）です。 (\"Tokyo is convenient.\")",
+      "question_ja": "とうきょうは（　）です。",
       "choices": [
         "べんり",
         "べんりい",
@@ -1790,7 +1792,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "わたしは スポーツが（　）。 (\"I don't like sports.\")",
+      "question_ja": "わたしは スポーツが（　）。",
       "choices": [
         "すき",
         "すきじゃありません",
@@ -1836,7 +1838,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "きのう しけんが（　）。 (\"There was an exam yesterday.\")",
+      "question_ja": "きのう しけんが（　）。",
       "choices": [
         "あります",
         "ありました",
@@ -1882,7 +1884,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "casual かこ ひていけいを えらんでください。",
-      "question_ja": "あさごはんを（　）。 (\"didn't eat\")",
+      "question_ja": "あさごはんを（　）。",
       "choices": [
         "たべた",
         "たべなかった",
@@ -2066,7 +2068,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "あの 人は けっこん（　）。 (\"That person is married.\")",
+      "question_ja": "あの 人は けっこん（　）。",
       "choices": [
         "します",
         "しました",
@@ -2204,7 +2206,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "（　）でください。 (\"Please don't forget.\")",
+      "question_ja": "（　）でください。",
       "choices": [
         "わすれる",
         "わすれない",
@@ -2227,7 +2229,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "きのうは さむ（　）です。 (\"wasn't cold\")",
+      "question_ja": "きのうは さむ（　）です。",
       "choices": [
         "くなかった",
         "くない",
@@ -2296,7 +2298,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "いそが（　）、行けません。 (\"busy, so I can't go\")",
+      "question_ja": "いそが（　）、行けません。",
       "choices": [
         "しい",
         "しくて",
@@ -2342,7 +2344,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "あの 人は ゆうめい（　）か。 (\"Was that person famous?\")",
+      "question_ja": "あの 人は ゆうめい（　）か。",
       "choices": [
         "でした",
         "かった",
@@ -2480,7 +2482,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "きょうしつに がくせいが（　）。 (\"There are no students in the classroom.\")",
+      "question_ja": "きょうしつに がくせいが（　）。",
       "choices": [
         "いません",
         "ありません",
@@ -2503,7 +2505,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "わたしは にほんへ（　）です。 (\"want to go\")",
+      "question_ja": "わたしは にほんへ（　）です。",
       "choices": [
         "行き",
         "行きたい",
@@ -2549,12 +2551,12 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nUntil / up to (see n5-010 for full content)\nれい：(see n5-010)",
+      "question_ja": "つぎの いみに あう パターン：\nれい：5時まで しごとです。",
       "choices": [
         "が",
-        "が",
+        "まで",
         "ここ／そこ／あそこ／どこ",
-        "まで"
+        "を"
       ],
       "correctAnswer": "まで",
       "explanation_en": "This entry duplicates n5-010. Refer there for full form rules, examples, and common mistakes.",
@@ -2567,7 +2569,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nから ～ まで - from X to Y (paired range marker)\nれい：9じから 5じまで しごとです。",
+      "question_ja": "つぎの いみに あう パターン：\nから ～ まで\nれい：9時から 5時まで しごとです。",
       "choices": [
         "～をおねがいします",
         "～ができます",
@@ -2576,60 +2578,6 @@
       ],
       "correctAnswer": "から～まで",
       "explanation_en": "から marks start, まで marks end. Paired, they express a range - time, place, or distance.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0282",
-      "grammarPatternId": "n5-022",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nAnd - non-exhaustive listing (see n5-011 for full content)\nれい：(see n5-011)",
-      "choices": [
-        "～があります",
-        "や",
-        "Verb-ません",
-        "Verb-ました"
-      ],
-      "correctAnswer": "や",
-      "explanation_en": "This entry duplicates n5-011. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0283",
-      "grammarPatternId": "n5-023",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nSentence-final question marker (see n5-012 for full content)\nれい：(see n5-012)",
-      "choices": [
-        "か",
-        "だれか / だれも",
-        "possessive / noun-modifier",
-        "Verb-てはいけません"
-      ],
-      "correctAnswer": "か",
-      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0284",
-      "grammarPatternId": "n5-024",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nOr (between alternatives) (see n5-012 for full content)\nれい：(see n5-012)",
-      "choices": [
-        "～をおねがいします",
-        "いくら",
-        "か",
-        "Verb-た"
-      ],
-      "correctAnswer": "か",
-      "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -2693,7 +2641,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～の (possessive / noun-modifier)\nれい：これは わたしの 本です。",
+      "question_ja": "つぎの いみに あう パターン：\n～の\nれい：これは わたしの 本です。",
       "choices": [
         "～の",
         "～がすきです / きらいです",
@@ -2706,37 +2654,19 @@
       "difficulty": 1
     },
     {
-      "id": "q-0289",
-      "grammarPatternId": "n5-029",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nPossessive / noun-modifier (see n5-028 for full content)\nれい：(see n5-028)",
-      "choices": [
-        "Verb-stem + ながら",
-        "～より～のほうが～です",
-        "possessive / noun-modifier",
-        "いくつ / いくら / なんにん / なんまい etc."
-      ],
-      "correctAnswer": "possessive / noun-modifier",
-      "explanation_en": "This entry duplicates n5-028. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0290",
       "grammarPatternId": "n5-030",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～の (nominalizer - turns a verb/adj clause into a noun)\nれい：本を 読むのが すきです。",
+      "question_ja": "つぎの いみに あう パターン：\n～の (\nれい：本を 読むのが すきです。",
       "choices": [
         "～にします",
         "だけ",
         "～じはん",
-        "nominalizer in basic use"
+        "～の"
       ],
-      "correctAnswer": "nominalizer in basic use",
+      "correctAnswer": "～の",
       "explanation_en": "の after a plain-form verb makes the action a noun. 'Reading books' = 本を 読むの.",
       "high_confusion": false,
       "difficulty": 1
@@ -2747,33 +2677,15 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nInformal question marker (see n5-012 for full content)\nれい：(see n5-012)",
+      "question_ja": "つぎの いみに あう パターン：\nれい：あなたは がくせいですか。",
       "choices": [
-        "informal question marker",
+        "～か",
         "どうやって",
         "〜です／〜ます",
         "そして"
       ],
-      "correctAnswer": "informal question marker",
+      "correctAnswer": "～か",
       "explanation_en": "This entry duplicates n5-012. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0292",
-      "grammarPatternId": "n5-032",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nAlso / too (see n5-013 for full content)\nれい：(see n5-013)",
-      "choices": [
-        "だれ／どなた",
-        "informal question marker",
-        "も",
-        "Sentence + ので、Sentence"
-      ],
-      "correctAnswer": "も",
-      "explanation_en": "This entry duplicates n5-013. Refer there for full form rules, examples, and common mistakes.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -2801,7 +2713,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nしか〜ない - only (with negative verb)\nれい：1000円しか ありません。",
+      "question_ja": "つぎの いみに あう パターン：\nしか〜ない\nれい：1,000円しか ありません。",
       "choices": [
         "も",
         "〜です／〜ます",
@@ -2814,30 +2726,12 @@
       "difficulty": 1
     },
     {
-      "id": "q-0295",
-      "grammarPatternId": "n5-035",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nぐらい / くらい - about, approximately (used with quantities)\nれい：1じかんぐらい まちました。",
-      "choices": [
-        "Verb-stem + に いきます / きます / かえります",
-        "ぐらい / くらい",
-        "possessive / noun-modifier",
-        "～と～と、どちらが～ですか"
-      ],
-      "correctAnswer": "ぐらい / くらい",
-      "explanation_en": "ぐらい / くらい (interchangeable) attach to a quantity to mean 'about, roughly'. Common with time, money, distance.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0296",
       "grammarPatternId": "n5-036",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "3じ（　） あいましょう。",
+      "question_ja": "3時（　） あいましょう。",
       "choices": [
         "ごろ",
         "で",
@@ -2886,37 +2780,19 @@
       "difficulty": 1
     },
     {
-      "id": "q-0299",
-      "grammarPatternId": "n5-039",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nPronouns: this / that / which one (see n5-014 for full content)\nれい：(see n5-014)",
-      "choices": [
-        "いただきます / ごちそうさま / おはようございます etc.",
-        "これ / それ / あれ / どれ",
-        "Verb-ます",
-        "～じはん"
-      ],
-      "correctAnswer": "これ / それ / あれ / どれ",
-      "explanation_en": "This entry duplicates n5-014. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0300",
       "grammarPatternId": "n5-040",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nAdjectival demonstratives + noun (see n5-015 for full content)\nれい：(see n5-015)",
+      "question_ja": "つぎの いみに あう パターン：\nれい：この ほんを よみました。",
       "choices": [
         "～に～をもらいます",
         "しか～ない",
         "どうやって",
-        "この / その / あの / どの + Noun"
+        "この / その / あの / どの"
       ],
-      "correctAnswer": "この / その / あの / どの + Noun",
+      "correctAnswer": "この / その / あの / どの",
       "explanation_en": "This entry duplicates n5-015. Refer there for full form rules, examples, and common mistakes.",
       "high_confusion": false,
       "difficulty": 1
@@ -2927,7 +2803,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nLocation words (see n5-016 for full content)\nれい：(see n5-016)",
+      "question_ja": "つぎの いみに あう パターン：\nれい：ここは としょかんです。",
       "choices": [
         "～がわかります",
         "ここ / そこ / あそこ / どこ",
@@ -2940,174 +2816,12 @@
       "difficulty": 1
     },
     {
-      "id": "q-0302",
-      "grammarPatternId": "n5-042",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nこちら / そちら / あちら / どちら - polite directions / options\nれい：こちらへ どうぞ。",
-      "choices": [
-        "こちら / そちら / あちら / どちら",
-        "Number + counter",
-        "そして",
-        "Verb-plain + な"
-      ],
-      "correctAnswer": "こちら / そちら / あちら / どちら",
-      "explanation_en": "The こちら-series is the polite version of これ-シリーズ/ここ-シリーズ. Used in business / formal contexts for direction, person reference, and choice.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0303",
-      "grammarPatternId": "n5-043",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nこんな / そんな / あんな / どんな + Noun - 'this/that kind of'\nれい：どんな 本が すきですか。",
-      "choices": [
-        "こんな / そんな / あんな / どんな + Noun",
-        "Verb-ています",
-        "～が～をくれます",
-        "に"
-      ],
-      "correctAnswer": "こんな / そんな / あんな / どんな + Noun",
-      "explanation_en": "こんな/そんな/あんな/どんな are 'this kind of / that kind of / what kind of'. Always followed by a noun.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0304",
-      "grammarPatternId": "n5-044",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nこう / そう / ああ / どう - 'this way / that way / how'\nれい：こう してください。",
-      "choices": [
-        "～なくてはいけない",
-        "Verb-ない",
-        "Verb-ましょう",
-        "こう / そう / ああ / どう"
-      ],
-      "correctAnswer": "こう / そう / ああ / どう",
-      "explanation_en": "The こう-series describes manner: 'this way/that way/how'. Used adverbially with verbs.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0305",
-      "grammarPatternId": "n5-045",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nWhat (see n5-017 for full content)\nれい：(see n5-017)",
-      "choices": [
-        "います",
-        "Verb-ます",
-        "どうやって",
-        "なん / なに"
-      ],
-      "correctAnswer": "なん / なに",
-      "explanation_en": "This entry duplicates n5-017. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0306",
-      "grammarPatternId": "n5-046",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nWho (see n5-018 for full content)\nれい：(see n5-018)",
-      "choices": [
-        "Adjective + Noun",
-        "だれ / どなた",
-        "～んです / ～のです",
-        "Verb + counter + Verb"
-      ],
-      "correctAnswer": "だれ / どなた",
-      "explanation_en": "This entry duplicates n5-018. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0307",
-      "grammarPatternId": "n5-047",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nWhen (see n5-019 for full content)\nれい：(see n5-019)",
-      "choices": [
-        "もう + Verb-ました",
-        "～なくてもいい",
-        "～ないといけない",
-        "いつ"
-      ],
-      "correctAnswer": "いつ",
-      "explanation_en": "This entry duplicates n5-019. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0308",
-      "grammarPatternId": "n5-048",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nWhere (covered by ここ-series) (see n5-016 for full content)\nれい：(see n5-016)",
-      "choices": [
-        "どこ",
-        "な-Adjective past negative: ～じゃありませんでした",
-        "〜が、〜",
-        "な-Adjective + な + Noun"
-      ],
-      "correctAnswer": "どこ",
-      "explanation_en": "This entry duplicates n5-016. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0309",
-      "grammarPatternId": "n5-049",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nどれ / どの / どちら - 'which' (selection from options)\nれい：どれが あなたの ですか。",
-      "choices": [
-        "Verb-ませんでした",
-        "Verb-てください",
-        "どれ / どの / どちら",
-        "Verb-ましょうか"
-      ],
-      "correctAnswer": "どれ / どの / どちら",
-      "explanation_en": "Three 'which' forms: どれ stands alone for 3+ choices. どの precedes a noun. どちら is the polite form, also used for 2-way comparison.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0310",
-      "grammarPatternId": "n5-050",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nどう / いかが - 'how / how about' (state, opinion, polite offer)\nれい：おしごとは どうですか。",
-      "choices": [
-        "いくつ / いくら / なんにん / なんまい etc.",
-        "どう / いかが",
-        "Verb-plain + な",
-        "でも"
-      ],
-      "correctAnswer": "どう / いかが",
-      "explanation_en": "どう = 'how (is X)?' or 'how about'. いかが is the polite form, common in service / offering contexts.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0311",
       "grammarPatternId": "n5-051",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nどうして / なぜ - 'why'\nれい：どうして 来ませんでしたか。",
+      "question_ja": "つぎの いみに あう パターン：\nどうして / なぜ\nれい：どうして 来ませんでしたか。",
       "choices": [
         "ぐらい / くらい",
         "こちら / そちら / あちら / どちら",
@@ -3116,24 +2830,6 @@
       ],
       "correctAnswer": "どうして / なぜ",
       "explanation_en": "どうして is the standard 'why' in conversation. なぜ is more formal/written. Answer typically uses から (because).",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0312",
-      "grammarPatternId": "n5-052",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nどうやって - 'how / by what means'\nれい：どうやって 行きますか。",
-      "choices": [
-        "どうやって",
-        "～に～をあげます",
-        "い-Adjective past: ～かったです",
-        "Verb-てもいいです"
-      ],
-      "correctAnswer": "どうやって",
-      "explanation_en": "どうやって asks the METHOD/MEANS of doing something. More specific than どう.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -3197,7 +2893,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nなんようび - 'what day of the week'\nれい：きょうは なんようびですか。",
+      "question_ja": "つぎの いみに あう パターン：\nなんようび\nれい：きょうは なんようびですか。",
       "choices": [
         "お～ / ご～",
         "～なくてもいい",
@@ -3210,37 +2906,19 @@
       "difficulty": 1
     },
     {
-      "id": "q-0317",
-      "grammarPatternId": "n5-057",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nなんがつ / なんにち - 'what month / what day'\nれい：たんじょうびは なんがつ なんにちですか。",
-      "choices": [
-        "～なくてはいけない",
-        "も",
-        "なんがつ なんにち",
-        "Verb-ない"
-      ],
-      "correctAnswer": "なんがつ なんにち",
-      "explanation_en": "がつ = month-counter; にち = day-of-month-counter. なんがつ / なんにち ask 'what month / day'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0318",
       "grammarPatternId": "n5-063",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-ましょうか - 'shall I / shall we (offer/suggestion)?'\nれい：てつだいましょうか。",
+      "question_ja": "つぎの いみに あう パターン：\nましょうか\nれい：てつだいましょうか。",
       "choices": [
-        "Verb-ましょうか",
+        "〜ましょうか",
         "いつ",
         "なんがつ なんにち",
         "なんようび"
       ],
-      "correctAnswer": "Verb-ましょうか",
+      "correctAnswer": "〜ましょうか",
       "explanation_en": "ましょうか = ましょう + か, asking permission to do or offering help. 'Shall I help?', 'Shall we go?'",
       "high_confusion": false,
       "difficulty": 1
@@ -3251,33 +2929,15 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-ていません - currently NOT doing / NOT in state\nれい：まだ あさごはんを たべていません。",
+      "question_ja": "つぎの いみに あう パターン：\nていません\nれい：まだ あさごはんを たべていません。",
       "choices": [
-        "Verb-ていません",
+        "〜ていません",
         "～がわかります",
         "～になります / ～くなります",
         "～がじょうずです / へたです"
       ],
-      "correctAnswer": "Verb-ていません",
+      "correctAnswer": "〜ていません",
       "explanation_en": "Negative form of ています. Not currently doing / not in resulting state.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0320",
-      "grammarPatternId": "n5-076",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-てから - 'after doing X'\nれい：あさごはんを たべてから 行きます。",
-      "choices": [
-        "いくつ",
-        "なに／なん",
-        "こんな / そんな / あんな / どんな + Noun",
-        "Verb-から"
-      ],
-      "correctAnswer": "Verb-から",
-      "explanation_en": "te-form + から means 'after doing X, then Y'. Stronger sequential than just te-form chain.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -3287,69 +2947,15 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nい-Adjective + Noun - adjective directly before noun\nれい：高い 山が 見えます。",
+      "question_ja": "つぎの いみに あう パターン：\nい-+\nれい：高い 山が 見えます。",
       "choices": [
-        "い-Adjective + Noun",
+        "〜",
         "ずつ",
         "なにか / なにも",
         "～に～をあげます"
       ],
-      "correctAnswer": "い-Adjective + Noun",
+      "correctAnswer": "〜",
       "explanation_en": "い-adjectives modify nouns directly, no particles needed. Keep the い: 高い 山 = 'tall mountain'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0322",
-      "grammarPatternId": "n5-084",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nな-Adjective + な + Noun\nれい：しずかな へやが すきです。",
-      "choices": [
-        "お～ / ご～",
-        "な-Adjective + な + Noun",
-        "い-Adjective + Noun",
-        "なにか / なにも"
-      ],
-      "correctAnswer": "な-Adjective + な + Noun",
-      "explanation_en": "な-adjectives need な before a noun. しずかな へや = 'a quiet room'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0323",
-      "grammarPatternId": "n5-092",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～に～が あります／います - 'there is X at Y' (location-first existence)\nれい：つくえの 上に 本が あります。",
-      "choices": [
-        "Verb-ています",
-        "～なあ",
-        "～に～があります / います",
-        "こんな / そんな / あんな / どんな + Noun"
-      ],
-      "correctAnswer": "～に～があります / います",
-      "explanation_en": "When introducing what's at a location, lead with the LOCATION (に) and follow with the SUBJECT (が) + あります/います. The location is the topic; the subject is new info.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0324",
-      "grammarPatternId": "n5-093",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～は～にあります／います - 'X is at Y' (already-known X)\nれい：本は つくえの 上に あります。",
-      "choices": [
-        "こう / そう / ああ / どう",
-        "Verb",
-        "～は～にあります / います",
-        "Verb-ない"
-      ],
-      "correctAnswer": "～は～にあります / います",
-      "explanation_en": "When the SUBJECT is already known (topic), lead with は + subject, then location + に + あります/います. Compare with ～に～が which leads with the location.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -3359,7 +2965,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～が あります - 'have / there is' (events, skills, possessions)\nれい：あした しけんが あります。",
+      "question_ja": "つぎの いみに あう パターン：\n～が あります\nれい：あした しけんが あります。",
       "choices": [
         "～があります",
         "あります",
@@ -3377,7 +2983,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nAはBより [adj] です - 'A is more [adj] than B'\nれい：とうきょうは おおさかより 大きいです。",
+      "question_ja": "つぎの いみに あう パターン：\nはより [] です\nれい：とうきょうは おおさかより 大きいです。",
       "choices": [
         "～は～より～です",
         "から～まで",
@@ -3390,48 +2996,12 @@
       "difficulty": 1
     },
     {
-      "id": "q-0327",
-      "grammarPatternId": "n5-096",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～より～のほうが [adj] です - '~ is more [adj] than ~' (focuses on the bigger one)\nれい：おおさかより とうきょうのほうが 大きいです。",
-      "choices": [
-        "では / じゃ",
-        "なんじ",
-        "～より～のほうが～です",
-        "Verb-ましょう"
-      ],
-      "correctAnswer": "～より～のほうが～です",
-      "explanation_en": "AよりBのほうが puts emphasis on B as the bigger/more X one. Often answer to a どちら question.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0328",
-      "grammarPatternId": "n5-097",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nAとBと、どちらが ～ですか - 'which is more ~, A or B?' (2-way question)\nれい：いぬと ねこと、どちらが すきですか。",
-      "choices": [
-        "なんようび",
-        "～と～と、どちらが～ですか",
-        "こんな / そんな / あんな / どんな + Noun",
-        "possessive / noun-modifier"
-      ],
-      "correctAnswer": "～と～と、どちらが～ですか",
-      "explanation_en": "Standard 2-way comparison question form. Pair 2 nouns with と...と, end with どちらが + adj/preference.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0329",
       "grammarPatternId": "n5-098",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nMost ~ of all (covered by superlative pattern) (see n5-099 for full content)\nれい：(see n5-099)",
+      "question_ja": "つぎの いみに あう パターン：\nれい：わたしは ねこが すきです。",
       "choices": [
         "や",
         "いつか / いつも",
@@ -3444,163 +3014,19 @@
       "difficulty": 1
     },
     {
-      "id": "q-0330",
-      "grammarPatternId": "n5-099",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～が すきです / きらいです - like / dislike\nれい：わたしは ねこが すきです。",
-      "choices": [
-        "～の",
-        "～がすきです / きらいです",
-        "よ",
-        "Verb-ない"
-      ],
-      "correctAnswer": "～がすきです / きらいです",
-      "explanation_en": "すき / きらい are な-adjectives. The thing liked/disliked takes が, NEVER を.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0331",
-      "grammarPatternId": "n5-100",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～が じょうずです / へたです - good at / bad at\nれい：あの 人は 日本語が じょうずです。",
-      "choices": [
-        "～がじょうずです / へたです",
-        "Verb-stem + に いきます / きます / かえります",
-        "い-Adjective て-form: ～くて",
-        "いつも / たいてい / たまに"
-      ],
-      "correctAnswer": "～がじょうずです / へたです",
-      "explanation_en": "じょうず (good at) / へた (bad at) are な-adjectives. Subject (skill) takes が. NOTE: don't use じょうず about yourself - sounds boastful. Use とくい instead, or self-deprecating まだまだです.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0332",
-      "grammarPatternId": "n5-101",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～が ほしいです - want (an object)\nれい：新しい くるまが ほしいです。",
-      "choices": [
-        "～がほしいです",
-        "い-Adjective past: ～かったです",
-        "どう / いかが",
-        "こう / そう / ああ / どう"
-      ],
-      "correctAnswer": "～がほしいです",
-      "explanation_en": "ほしい is an い-adjective meaning 'want'. The desired thing takes が. Limited to first person (or in questions, second person).",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0333",
-      "grammarPatternId": "n5-102",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～が わかります - understand / know\nれい：日本語が すこし わかります。",
-      "choices": [
-        "〜です／〜ます",
-        "Verb-ましょう",
-        "あります",
-        "～がわかります"
-      ],
-      "correctAnswer": "～がわかります",
-      "explanation_en": "わかる = 'understand'. The thing understood takes が, never を. Past わかりました often means 'got it / I see'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0334",
-      "grammarPatternId": "n5-103",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～が できます - can do / be able to / have ability in\nれい：日本語が できます。",
-      "choices": [
-        "いくつ",
-        "Verb-て、Verb-て、…",
-        "しかし",
-        "～ができます"
-      ],
-      "correctAnswer": "～ができます",
-      "explanation_en": "できる = 'can do, be able to'. Subject (skill / language / activity) takes が. Also 'be ready/finished'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0335",
-      "grammarPatternId": "n5-105",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-stem + たくないです - don't want to\nれい：今日は 行きたくないです。",
-      "choices": [
-        "～なくてはいけない",
-        "Verb-plain + つもりだ / つもりです",
-        "～",
-        "Verb-stem + たくないです"
-      ],
-      "correctAnswer": "Verb-stem + たくないです",
-      "explanation_en": "Negative of たい - drop い from たい, add くない (treats たい as い-adj).",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0336",
-      "grammarPatternId": "n5-106",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nNoun + が ほしいです (same as n5-101 but with explicit noun emphasis)\nれい：新しい かばんが ほしいです。",
-      "choices": [
-        "Noun + が ほしいです",
-        "な-Adjective past: ～でした",
-        "〜だろう",
-        "います"
-      ],
-      "correctAnswer": "Noun + が ほしいです",
-      "explanation_en": "Use ほしい to want a NOUN. Same rule as n5-101: subject (the wanted thing) takes が.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0337",
-      "grammarPatternId": "n5-107",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-stem + に 行きます／来ます／かえります - go/come/return TO DO X\nれい：デパートへ 買いものに 行きます。",
-      "choices": [
-        "〜でしょう",
-        "Verb-ました",
-        "な-Adjective + な + Noun",
-        "Verb-stem + に いきます / きます / かえります"
-      ],
-      "correctAnswer": "Verb-stem + に いきます / きます / かえります",
-      "explanation_en": "Verb-stem + に + movement verb expresses purpose of going/coming. 'Go to buy', 'come to see', 'return to eat'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0338",
       "grammarPatternId": "n5-108",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nNumber + counter - counting things in Japanese (人, まい, 本, はい, さつ, つ, etc.)\nれい：りんごを ふたつ ください。",
+      "question_ja": "つぎの いみに あう パターン：\nれい：りんごを ふたつ ください。",
       "choices": [
         "ね",
         "が",
         "～がじょうずです / へたです",
-        "Number + counter"
+        "数 + 助数詞"
       ],
-      "correctAnswer": "Number + counter",
+      "correctAnswer": "数 + 助数詞",
       "explanation_en": "Japanese requires a counter when stating quantity. Pick the right counter based on the noun's shape/category. Memorize sound-changes: いっ before こ/さ/つ/ぴ; ろっ for 6 with most counters.",
       "high_confusion": false,
       "difficulty": 1
@@ -3611,69 +3037,15 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nHow many / how much (counter questions) (see n5-054 for full content)\nれい：(see n5-054)",
+      "question_ja": "つぎの いみに あう パターン：\nれい：りんごは いくつ ありますか。",
       "choices": [
         "～なくてもいい",
         "あります",
-        "いくつ / いくら / なんにん / なんまい etc.",
+        "いくつ / いくら / なんにん / なんまい",
         "～なあ"
       ],
-      "correctAnswer": "いくつ / いくら / なんにん / なんまい etc.",
+      "correctAnswer": "いくつ / いくら / なんにん / なんまい",
       "explanation_en": "This entry duplicates n5-054. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0340",
-      "grammarPatternId": "n5-110",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nObject + counter + Verb - quantity comes BEFORE the verb\nれい：りんごを ふたつ かいました。",
-      "choices": [
-        "Verb + counter + Verb",
-        "Noun + が ほしいです",
-        "～なくちゃ / ～なきゃ",
-        "Number + counter"
-      ],
-      "correctAnswer": "Verb + counter + Verb",
-      "explanation_en": "When stating quantity, the counter comes BETWEEN the object and the verb (no particle on the counter): NOUN を COUNTER VERB.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0341",
-      "grammarPatternId": "n5-111",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～じ - o'clock (counter)\nれい：いま 3じです。",
-      "choices": [
-        "～じ",
-        "Verb-ていません",
-        "～をください",
-        "に"
-      ],
-      "correctAnswer": "～じ",
-      "explanation_en": "じ counts hours. Watch sound-changes: 4じ = よじ (not しじ), 7じ = しちじ, 9じ = くじ.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0342",
-      "grammarPatternId": "n5-112",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～ふん / ～ぷん - minute(s) (counter)\nれい：10ぷん まちました。",
-      "choices": [
-        "いくつ / いくら / なんにん / なんまい etc.",
-        "～ふん / ぷん",
-        "な-Adjective + な + Noun",
-        "Number + counter"
-      ],
-      "correctAnswer": "～ふん / ぷん",
-      "explanation_en": "Sound varies: 1ぷん, 3ぷん, 4ぷん, 6ぷん, 8ぷん, 10ぷん use ぷん; 2ふん, 5ふん, 7ふん, 9ふん use ふん.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -3683,7 +3055,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～じはん - half past (~30 minutes)\nれい：いま 3じはんです。",
+      "question_ja": "つぎの いみに あう パターン：\n～じはん\nれい：いま 3時はんです。",
       "choices": [
         "～に～をあげます",
         "～じはん",
@@ -3691,7 +3063,7 @@
         "～さん"
       ],
       "correctAnswer": "～じはん",
-      "explanation_en": "じはん = 'half past'. 3じはん = 3:30.",
+      "explanation_en": "じはん = 'half past'. 3時はん = 3:30.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -3701,7 +3073,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nFrom X to Y (paired range - already covered) (see n5-021 for full content)\nれい：(see n5-021)",
+      "question_ja": "つぎの いみに あう パターン：\nれい：9時から 5時まで しごとです。",
       "choices": [
         "いくら",
         "～から～まで",
@@ -3714,84 +3086,12 @@
       "difficulty": 1
     },
     {
-      "id": "q-0345",
-      "grammarPatternId": "n5-115",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nに for specific times - covered by に particle (see n5-005 for full content)\nれい：(see n5-005)",
-      "choices": [
-        "～に",
-        "な-Adjective て-form: ～で",
-        "い-Adjective past negative: ～くなかったです / ～くありませんでした",
-        "どこか / どこも"
-      ],
-      "correctAnswer": "～に",
-      "explanation_en": "This entry duplicates n5-005. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0346",
-      "grammarPatternId": "n5-116",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nまいにち / まいしゅう / まいつき / まいとし - every day / week / month / year\nれい：まいにち 日本語を べんきょうします。",
-      "choices": [
-        "な-Adjective + です",
-        "か",
-        "まいにち / まいしゅう / まいつき / まいとし",
-        "Verb-stem + ながら"
-      ],
-      "correctAnswer": "まいにち / まいしゅう / まいつき / まいとし",
-      "explanation_en": "Prefix まい + time unit = 'every X'. Used adverbially (no particle).",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0347",
-      "grammarPatternId": "n5-117",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nTime-of-day vocabulary: きょう / あした / きのう / あさって / おととい\nれい：きょうは あついです。",
-      "choices": [
-        "きょう / あした / きのう / あさって / おととい",
-        "Verb-stem + に いきます / きます / かえります",
-        "いくら",
-        "～がすきです / きらいです"
-      ],
-      "correctAnswer": "きょう / あした / きのう / あさって / おととい",
-      "explanation_en": "Relative time words. Used WITHOUT に. きょう = today, あした = tomorrow, きのう = yesterday, あさって = day after tomorrow, おととい = day before yesterday.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0348",
-      "grammarPatternId": "n5-118",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nいま / すぐ / もう / まだ - temporal adverbs\nれい：いま 行きます。",
-      "choices": [
-        "いま / すぐ / もう / まだ",
-        "～って",
-        "いただきます / ごちそうさま / おはようございます etc.",
-        "Verb-る / Verb-u"
-      ],
-      "correctAnswer": "いま / すぐ / もう / まだ",
-      "explanation_en": "Four core temporal adverbs. もう pairs with past (already done). まだ + negative = 'not yet', まだ + affirmative = 'still'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0349",
       "grammarPatternId": "n5-119",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～まえ - before\nれい：ごはんの まえに てを あらいます。",
+      "question_ja": "つぎの いみに あう パターン：\n～まえ\nれい：ごはんの まえに てを あらいます。",
       "choices": [
         "ごろ",
         "～まえ",
@@ -3800,24 +3100,6 @@
       ],
       "correctAnswer": "～まえ",
       "explanation_en": "まえ = 'before'. Noun + の + まえ(に); Verb-plain (NON-PAST) + まえに. Note: verb stays NON-PAST even when the meaning is 'before doing X (in the past)'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0350",
-      "grammarPatternId": "n5-120",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～あと - after\nれい：しごとの あとで のみに 行きました。",
-      "choices": [
-        "～あと",
-        "い-Adjective past: ～かったです",
-        "い-Adjective past negative: ～くなかったです / ～くありませんでした",
-        "Verb-plain + つもりだ / つもりです"
-      ],
-      "correctAnswer": "～あと",
-      "explanation_en": "あと = 'after'. Noun + の + あとで; Verb-PAST + あとで. Verb is PAST here (opposite of まえに).",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -3894,24 +3176,6 @@
       "difficulty": 1
     },
     {
-      "id": "q-0355",
-      "grammarPatternId": "n5-125",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nでは / じゃ - 'well then / in that case' (transition)\nれい：じゃ、また あした。",
-      "choices": [
-        "～たり〜たりする",
-        "Verb-ませんでした",
-        "では / じゃ",
-        "に"
-      ],
-      "correctAnswer": "では / じゃ",
-      "explanation_en": "では (formal) / じゃ (casual) signals transition or wrap-up. Common in goodbyes: じゃ、また.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0356",
       "grammarPatternId": "n5-126",
       "type": "mcq",
@@ -3926,24 +3190,6 @@
       ],
       "correctAnswer": "が",
       "explanation_en": "が at end of a clause (after です/ます or plain) means 'but' as a softening connector. Often introduces a contrast or extends thought.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0357",
-      "grammarPatternId": "n5-127",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nけれど / けど - 'but' (informal contrast)\nれい：むずかしいけど、おもしろいです。",
-      "choices": [
-        "けれど / けど",
-        "Verb-ませんでした",
-        "だれか / だれも",
-        "Sentence + から、Sentence"
-      ],
-      "correctAnswer": "けれど / けど",
-      "explanation_en": "Casual equivalent of が (clause-final 'but'). けれど is slightly more formal than けど.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -3966,48 +3212,12 @@
       "difficulty": 1
     },
     {
-      "id": "q-0359",
-      "grammarPatternId": "n5-129",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nどうして〜か。〜から。 - Q-and-A reason pattern\nれい：どうして 来ませんでしたか。―あたまが いたかったからです。",
-      "choices": [
-        "Verb + counter + Verb",
-        "どうして～か。～から。",
-        "な-Adjective past: ～でした",
-        "い-Adjective + Noun"
-      ],
-      "correctAnswer": "どうして～か。～から。",
-      "explanation_en": "Standard pattern: question with どうして, answer using から. The answer often ends ～からです (because + polite).",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0360",
-      "grammarPatternId": "n5-130",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nあげる / あげます - give (to others)\nれい：ともだちに 本を あげました。",
-      "choices": [
-        "だれ／どなた",
-        "な-Adjective past negative: ～じゃありませんでした",
-        "～に～をあげます",
-        "～の"
-      ],
-      "correctAnswer": "～に～をあげます",
-      "explanation_en": "あげる = give from speaker (or in-group) to others. Recipient marked with に. Don't use あげる when receiving from someone - use もらう.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0361",
       "grammarPatternId": "n5-131",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～に～を もらいます - receive (from)\nれい：ともだちに 本を もらいました。",
+      "question_ja": "つぎの いみに あう パターン：\n～に～を もらいます\nれい：ともだちに 本を もらいました。",
       "choices": [
         "～なくてはいけない",
         "も",
@@ -4020,218 +3230,20 @@
       "difficulty": 1
     },
     {
-      "id": "q-0362",
-      "grammarPatternId": "n5-132",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～が～を くれます - give (to me / in-group)\nれい：友だちが 本を くれました。",
-      "choices": [
-        "Verb-ない + ほうがいい",
-        "Verb",
-        "～が～をくれます",
-        "Verb-stem + に いきます / きます / かえります"
-      ],
-      "correctAnswer": "～が～をくれます",
-      "explanation_en": "くれる = give TO ME (or my in-group). Giver is the subject. Use this - NOT あげる - when something is given to you.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0363",
       "grammarPatternId": "n5-133",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nBecause (sentence connector - already covered) (see n5-128 for full content)\nれい：(see n5-128)",
+      "question_ja": "つぎの いみに あう パターン：\nれい：あついから、まどを あけてください。",
       "choices": [
-        "Sentence + から、Sentence",
+        "〜から、〜",
         "か",
         "～ふん / ぷん",
         "きょう / あした / きのう / あさって / おととい"
       ],
-      "correctAnswer": "Sentence + から、Sentence",
+      "correctAnswer": "〜から、〜",
       "explanation_en": "This entry duplicates n5-128. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0364",
-      "grammarPatternId": "n5-134",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～ので、～ - 'because' (softer than から)\nれい：あたまが いたいので、休みます。",
-      "choices": [
-        "～がじょうずです / へたです",
-        "い-Adjective past: ～かったです",
-        "Verb-plain + つもりだ / つもりです",
-        "Sentence + ので、Sentence"
-      ],
-      "correctAnswer": "Sentence + ので、Sentence",
-      "explanation_en": "ので = softer / more polite 'because'. Connects to plain form (Verb-plain ので, い-adj plain ので, な-adj/Noun + な ので).",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0365",
-      "grammarPatternId": "n5-135",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb (plain) + Noun - relative clauses (basic)\nれい：わたしが 買った 本",
-      "choices": [
-        "いま / すぐ / もう / まだ",
-        "いつか / いつも",
-        "Verb",
-        "な-Adjective + な + Noun"
-      ],
-      "correctAnswer": "Verb",
-      "explanation_en": "Plain-form verbs modify nouns directly - same position as adjectives. 読む 本 = 'a book to read'. NEVER use ます-form here.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0366",
-      "grammarPatternId": "n5-136",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nAdjective + noun (covered by い-adj+N and な-adj+N) (see n5-078 for full content)\nれい：(see n5-078)",
-      "choices": [
-        "～とおもいます",
-        "は",
-        "い-Adjective negative: ～くないです / ～くありません",
-        "Adjective + Noun"
-      ],
-      "correctAnswer": "Adjective + Noun",
-      "explanation_en": "This entry duplicates n5-078. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0367",
-      "grammarPatternId": "n5-137",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nNoun の Noun (covered by ～の) (see n5-028 for full content)\nれい：(see n5-028)",
-      "choices": [
-        "い-Adjective negative: ～くないです / ～くありません",
-        "Noun + の + Noun",
-        "〜だろう",
-        "～があります"
-      ],
-      "correctAnswer": "Noun + の + Noun",
-      "explanation_en": "This entry duplicates n5-028. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0368",
-      "grammarPatternId": "n5-138",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nLike / dislike (see n5-099 for full content)\nれい：(see n5-099)",
-      "choices": [
-        "Verb-た + ほうがいい",
-        "～がすきです / きらいです",
-        "〜でしょう",
-        "～なくてはならない"
-      ],
-      "correctAnswer": "～がすきです / きらいです",
-      "explanation_en": "This entry duplicates n5-099. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0369",
-      "grammarPatternId": "n5-139",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nGood at / bad at (see n5-100 for full content)\nれい：(see n5-100)",
-      "choices": [
-        "しか～ない",
-        "Verb-plain + つもりだ / つもりです",
-        "～がじょうずです / へたです",
-        "どうやって"
-      ],
-      "correctAnswer": "～がじょうずです / へたです",
-      "explanation_en": "This entry duplicates n5-100. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0370",
-      "grammarPatternId": "n5-140",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nUnderstand (see n5-102 for full content)\nれい：(see n5-102)",
-      "choices": [
-        "な-Adjective + です",
-        "いつか / いつも",
-        "～がわかります",
-        "〜だろう"
-      ],
-      "correctAnswer": "～がわかります",
-      "explanation_en": "This entry duplicates n5-102. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0371",
-      "grammarPatternId": "n5-141",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nThere is / have (event/skill) (see n5-094 for full content)\nれい：(see n5-094)",
-      "choices": [
-        "～があります",
-        "いくつ / いくら / なんにん / なんまい etc.",
-        "こちら / そちら / あちら / どちら",
-        "Verb"
-      ],
-      "correctAnswer": "～があります",
-      "explanation_en": "This entry duplicates n5-094. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0372",
-      "grammarPatternId": "n5-142",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～にします - decide on / choose\nれい：コーヒーに します。",
-      "choices": [
-        "～があります",
-        "Verb-てください",
-        "～にします",
-        "～がじょうずです / へたです"
-      ],
-      "correctAnswer": "～にします",
-      "explanation_en": "～にする = 'decide on / choose / make it ~'. Common in restaurants for ordering.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0373",
-      "grammarPatternId": "n5-143",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～になります / ～くなります - becomes\nれい：先生に なりたいです。",
-      "choices": [
-        "Verb-てはいけません",
-        "な-Adjective + です",
-        "～になります / ～くなります",
-        "～が～をくれます"
-      ],
-      "correctAnswer": "～になります / ～くなります",
-      "explanation_en": "Change-of-state pattern. Nouns and な-adj take に; い-adj drop い and add くなる.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -4241,33 +3253,15 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-stem + ながら - while doing (simultaneously)\nれい：おんがくを 聞きながら べんきょうします。",
+      "question_ja": "つぎの いみに あう パターン：\n+ ながら\nれい：おんがくを 聞きながら べんきょうします。",
       "choices": [
         "ぐらい / くらい",
-        "Verb-stem + ながら",
+        "〜ながら",
         "～なくてはならない",
         "〜ね / 〜よ"
       ],
-      "correctAnswer": "Verb-stem + ながら",
+      "correctAnswer": "〜ながら",
       "explanation_en": "Drop ます, add ながら. Two simultaneous actions by the SAME subject.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0375",
-      "grammarPatternId": "n5-145",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～と おもいます - I think (that)\nれい：あした 雨が ふると おもいます。",
-      "choices": [
-        "へ",
-        "Verb-て",
-        "お～ / ご～",
-        "～とおもいます"
-      ],
-      "correctAnswer": "～とおもいます",
-      "explanation_en": "Embed a plain-form clause + と + おもいます to express opinion. と marks the quoted/embedded thought.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -4277,7 +3271,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～と 言いました - said that ~\nれい：「あした 来ます」と 言いました。",
+      "question_ja": "つぎの いみに あう パターン：\n～と 言いました\nれい：「あした 来ます」と 言いました。",
       "choices": [
         "なん / なに",
         "～があります",
@@ -4290,48 +3284,12 @@
       "difficulty": 1
     },
     {
-      "id": "q-0377",
-      "grammarPatternId": "n5-147",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nFrequency adverbs: よく / ときどき / あまり / ぜんぜん\nれい：よく テレビを 見ます。",
-      "choices": [
-        "も",
-        "Verb-ましょう",
-        "～にします",
-        "よく / ときどき / あまり / ぜんぜん + Verb"
-      ],
-      "correctAnswer": "よく / ときどき / あまり / ぜんぜん + Verb",
-      "explanation_en": "あまり and ぜんぜん REQUIRE a negative verb. よく/ときどき pair with affirmative. Frequency comes near the verb.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0378",
-      "grammarPatternId": "n5-148",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nいつも / たいてい / たまに - always / usually / occasionally\nれい：いつも 7じに おきます。",
-      "choices": [
-        "Sentence + ので、Sentence",
-        "いつも / たいてい / たまに",
-        "しかし",
-        "か"
-      ],
-      "correctAnswer": "いつも / たいてい / たまに",
-      "explanation_en": "Higher-frequency adverbs. All work with affirmative verbs.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0379",
       "grammarPatternId": "n5-149",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～を ください - please give me ~\nれい：みずを ください。",
+      "question_ja": "つぎの いみに あう パターン：\n～を ください\nれい：みずを ください。",
       "choices": [
         "～まえ",
         "～がじょうずです / へたです",
@@ -4344,48 +3302,12 @@
       "difficulty": 1
     },
     {
-      "id": "q-0380",
-      "grammarPatternId": "n5-150",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～を おねがいします - I'd like ~ / please give ~ (more polite than ください)\nれい：コーヒーを おねがいします。",
-      "choices": [
-        "Verb-ないでください",
-        "～をおねがいします",
-        "Verb",
-        "を"
-      ],
-      "correctAnswer": "～をおねがいします",
-      "explanation_en": "Slightly more polite than ください. Same construction.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0381",
-      "grammarPatternId": "n5-151",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～は いかがですか - how about ~? (polite offer)\nれい：おちゃは いかがですか。",
-      "choices": [
-        "けれど / けど",
-        "～から～まで",
-        "～はいかがですか",
-        "Verb-ましょうか"
-      ],
-      "correctAnswer": "～はいかがですか",
-      "explanation_en": "Polite offer or suggestion form, common in service settings.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0382",
       "grammarPatternId": "n5-152",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nSet polite phrases: どうぞ / どうも / すみません / おねがいします\nれい：どうぞ 入ってください。",
+      "question_ja": "つぎの いみに あう パターン：\n: どうぞ / どうも / すみません / おねがいします\nれい：どうぞ 入ってください。",
       "choices": [
         "だけ",
         "どうぞ / どうも / すみません / おねがいします",
@@ -4398,110 +3320,20 @@
       "difficulty": 1
     },
     {
-      "id": "q-0383",
-      "grammarPatternId": "n5-153",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nまだ + Verb-ていません - not yet (an action that's still pending)\nれい：まだ あさごはんを たべていません。",
-      "choices": [
-        "Number + counter",
-        "まだ + Verb-ていません",
-        "Verb-から",
-        "Verb-stem + に いきます / きます / かえります"
-      ],
-      "correctAnswer": "まだ + Verb-ていません",
-      "explanation_en": "まだ + ていません = action not yet completed but expected. Implies 'still pending'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0384",
       "grammarPatternId": "n5-154",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nもう + Verb-ました - already (action completed)\nれい：もう ばんごはんを たべました。",
+      "question_ja": "つぎの いみに あう パターン：\nもう + ました\nれい：もう ばんごはんを たべました。",
       "choices": [
         "か",
         "いくら",
         "～より～のほうが～です",
-        "もう + Verb-ました"
+        "もう + 〜ました"
       ],
-      "correctAnswer": "もう + Verb-ました",
+      "correctAnswer": "もう + 〜ました",
       "explanation_en": "もう + ました = already done. Often paired with まだ + ていません as a yes/no answer pair.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0385",
-      "grammarPatternId": "n5-155",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nMid-sentence が (but) - see particle が clause connector (see n5-126 for full content)\nれい：(see n5-126)",
-      "choices": [
-        "〜が、〜",
-        "を",
-        "か",
-        "まだ + Verb-ていません"
-      ],
-      "correctAnswer": "〜が、〜",
-      "explanation_en": "This entry duplicates n5-126. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0386",
-      "grammarPatternId": "n5-156",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nSentence-final ね / よ - see ね / よ entries (see n5-025 for full content)\nれい：(see n5-025)",
-      "choices": [
-        "～じはん",
-        "Verb-てください",
-        "こんな / そんな / あんな / どんな + Noun",
-        "〜ね / 〜よ"
-      ],
-      "correctAnswer": "〜ね / 〜よ",
-      "explanation_en": "This entry duplicates n5-025. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0387",
-      "grammarPatternId": "n5-157",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n〜でしょう - probably / right?\nれい：あした 雨でしょう。",
-      "choices": [
-        "なんようび",
-        "か",
-        "〜でしょう",
-        "Noun + の + あとで"
-      ],
-      "correctAnswer": "〜でしょう",
-      "explanation_en": "でしょう = polite probability ('probably') or seeking agreement ('right?'). Borderline N5/N4.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0388",
-      "grammarPatternId": "n5-158",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nCasual/plain version of でしょう (see n5-157 for full content)\nれい：(see n5-157)",
-      "choices": [
-        "など",
-        "〜だろう",
-        "〜ね / 〜よ",
-        "Verb-ない"
-      ],
-      "correctAnswer": "〜だろう",
-      "explanation_en": "This entry duplicates n5-157. Refer there for full form rules, examples, and common mistakes.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -4511,7 +3343,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nPolite ね/よ - see ね/よ entries (see n5-025 for full content)\nれい：(see n5-025)",
+      "question_ja": "つぎの いみに あう パターン：\nね/よ\nれい：いい てんきですね。",
       "choices": [
         "～と～と、どちらが～ですか",
         "〜ですね / 〜ですよ",
@@ -4524,146 +3356,20 @@
       "difficulty": 1
     },
     {
-      "id": "q-0390",
-      "grammarPatternId": "n5-160",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nNoun の あとで - see ～あと (see n5-120 for full content)\nれい：(see n5-120)",
-      "choices": [
-        "い-Adjective past negative: ～くなかったです / ～くありませんでした",
-        "〜ですね / 〜ですよ",
-        "Noun + の + あとで",
-        "どうやって"
-      ],
-      "correctAnswer": "Noun + の + あとで",
-      "explanation_en": "This entry duplicates n5-120. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0391",
-      "grammarPatternId": "n5-161",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nNoun の まえに - see ～まえ (see n5-119 for full content)\nれい：(see n5-119)",
-      "choices": [
-        "Noun + の + まえに",
-        "Verb-なかった",
-        "な-Adjective て-form: ～で",
-        "Verb-た + ことがある"
-      ],
-      "correctAnswer": "Noun + の + まえに",
-      "explanation_en": "This entry duplicates n5-119. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0392",
-      "grammarPatternId": "n5-162",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-plain まえに - see ～まえ (see n5-119 for full content)\nれい：(see n5-119)",
-      "choices": [
-        "Verb-plain + つもりだ / つもりです",
-        "～って",
-        "Verb",
-        "から"
-      ],
-      "correctAnswer": "Verb",
-      "explanation_en": "This entry duplicates n5-119. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0393",
       "grammarPatternId": "n5-163",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-た あとで - see ～あと (see n5-120 for full content)\nれい：(see n5-120)",
+      "question_ja": "つぎの いみに あう パターン：\nた あとで\nれい：しごとの あとで のみに 行きました。",
       "choices": [
-        "Verb",
+        "〜",
         "お～ / ご～",
         "でも",
         "だれ / どなた"
       ],
-      "correctAnswer": "Verb",
+      "correctAnswer": "〜",
       "explanation_en": "This entry duplicates n5-120. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0394",
-      "grammarPatternId": "n5-164",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～さん - name suffix (Mr./Ms./equivalent)\nれい：田中さんは 先生です。",
-      "choices": [
-        "か",
-        "～さん",
-        "だれ / どなた",
-        "Question word + か / も compounds"
-      ],
-      "correctAnswer": "～さん",
-      "explanation_en": "さん attaches to people's names (and some roles). NEVER attach さん to your own name.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0395",
-      "grammarPatternId": "n5-165",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nお～ / ご～ - beautifying / honorific prefixes\nれい：おちゃを どうぞ。",
-      "choices": [
-        "い-Adjective + Noun",
-        "なんがつ なんにち",
-        "なんじ",
-        "お～ / ご～"
-      ],
-      "correctAnswer": "お～ / ご～",
-      "explanation_en": "お/ご prefixes add politeness or are required for some words (おちゃ, ごはん). お for native Japanese; ご for Sino-Japanese (kanji-compound) words.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0396",
-      "grammarPatternId": "n5-166",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nSet greetings: いただきます / ごちそうさま / おはようございます etc.\nれい：いただきます！",
-      "choices": [
-        "Verb-ましょうか",
-        "Noun + の + あとで",
-        "いただきます / ごちそうさま / おはようございます etc.",
-        "Noun + が ほしいです"
-      ],
-      "correctAnswer": "いただきます / ごちそうさま / おはようございます etc.",
-      "explanation_en": "Core daily greetings. Memorize and use unconsciously - not negotiable in polite Japanese.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0397",
-      "grammarPatternId": "n5-167",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～んです / ～のです - explanation / emphasis (borderline)\nれい：あたまが いたいんです。",
-      "choices": [
-        "Verb-stem + ながら",
-        "から",
-        "～んです / ～のです",
-        "～なあ"
-      ],
-      "correctAnswer": "～んです / ～のです",
-      "explanation_en": "Adds explanation or asks for an explanation. Plain-form clause + んです (casual んだ).",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -4673,7 +3379,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～たり〜たりする - do A and B (among other things)\nれい：しゅうまつは 本を 読んだり、えいがを 見たり します。",
+      "question_ja": "つぎの いみに あう パターン：\n～たり〜たりする\nれい：しゅうまつは 本を 読んだり、えいがを 見たり します。",
       "choices": [
         "どうやって",
         "～たり〜たりする",
@@ -4686,164 +3392,20 @@
       "difficulty": 1
     },
     {
-      "id": "q-0399",
-      "grammarPatternId": "n5-169",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-た + ことが ある - have done before (experience)\nれい：日本へ 行ったことが あります。",
-      "choices": [
-        "Verb-ないでください",
-        "〜です／〜ます",
-        "～たり〜たりする",
-        "Verb-た + ことがある"
-      ],
-      "correctAnswer": "Verb-た + ことがある",
-      "explanation_en": "Verb-PAST + ことが + ある = 'have done at some point'. Asks/talks about life experience.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0400",
       "grammarPatternId": "n5-170",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-た + ほうが いい - should do\nれい：もう ねたほうが いいですよ。",
+      "question_ja": "つぎの いみに あう パターン：\nた + ほうが いい\nれい：もう ねたほうが いいですよ。",
       "choices": [
         "います",
         "から",
         "か",
-        "Verb-た + ほうがいい"
+        "〜た + ほうがいい"
       ],
-      "correctAnswer": "Verb-た + ほうがいい",
+      "correctAnswer": "〜た + ほうがいい",
       "explanation_en": "Verb-PAST + ほうが + いい = 'you'd better / should do'. Use PAST form even for future advice.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0401",
-      "grammarPatternId": "n5-171",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-ない + ほうが いい - shouldn't do\nれい：あまり 食べないほうが いいです。",
-      "choices": [
-        "Adjective + Noun",
-        "なんじ",
-        "Noun + の + Noun",
-        "Verb-ない + ほうがいい"
-      ],
-      "correctAnswer": "Verb-ない + ほうがいい",
-      "explanation_en": "Negative version of n5-170: 'you'd better not'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0402",
-      "grammarPatternId": "n5-172",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～なくても いい - don't have to\nれい：あした 来なくても いいです。",
-      "choices": [
-        "～なくてもいい",
-        "Verb-plain + な",
-        "Verb-stem + に いきます / きます / かえります",
-        "あります"
-      ],
-      "correctAnswer": "～なくてもいい",
-      "explanation_en": "Negative te-form (なくて) + も + いい = 'don't have to / it's OK not to'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0403",
-      "grammarPatternId": "n5-173",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～なくては いけない - must do\nれい：もう 行かなくては いけません。",
-      "choices": [
-        "～なくてはいけない",
-        "この / その / あの / どの + Noun",
-        "どうぞ / どうも / すみません / おねがいします",
-        "これ／それ／あれ／どれ"
-      ],
-      "correctAnswer": "～なくてはいけない",
-      "explanation_en": "Negative te-form + は + いけない = 'must do' (lit. 'not doing won't work'). Casual contraction: ～なくちゃ.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0404",
-      "grammarPatternId": "n5-174",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nMust do (formal variant - same as いけない) (see n5-173 for full content)\nれい：(see n5-173)",
-      "choices": [
-        "Verb-て",
-        "～なくてはならない",
-        "Verb-ませんか",
-        "～になります / ～くなります"
-      ],
-      "correctAnswer": "～なくてはならない",
-      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0405",
-      "grammarPatternId": "n5-175",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nMust do (common spoken variant) (see n5-173 for full content)\nれい：(see n5-173)",
-      "choices": [
-        "いま / すぐ / もう / まだ",
-        "ここ / そこ / あそこ / どこ",
-        "～ないといけない",
-        "もう + Verb-ました"
-      ],
-      "correctAnswer": "～ないといけない",
-      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0406",
-      "grammarPatternId": "n5-176",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nMust do (casual contractions) (see n5-173 for full content)\nれい：(see n5-173)",
-      "choices": [
-        "いつ",
-        "～なくちゃ / ～なきゃ",
-        "こんな / そんな / あんな / どんな + Noun",
-        "い-Adjective past: ～かったです"
-      ],
-      "correctAnswer": "～なくちゃ / ～なきゃ",
-      "explanation_en": "This entry duplicates n5-173. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0407",
-      "grammarPatternId": "n5-177",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-stem / Adj-stem + すぎる - too much / excessive\nれい：きのう たべすぎました。",
-      "choices": [
-        "どうして / なぜ",
-        "いつ",
-        "Verb-stem + ながら",
-        "Verb-stem / Adj-stem + すぎる"
-      ],
-      "correctAnswer": "Verb-stem / Adj-stem + すぎる",
-      "explanation_en": "Drop ます/い, add すぎる. 'Too much / too X'.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -4853,14 +3415,14 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-plain + つもりだ - intend to\nれい：あした 行くつもりです。",
+      "question_ja": "つぎの いみに あう パターン：\n+ つもりだ\nれい：あした 行くつもりです。",
       "choices": [
         "こちら / そちら / あちら / どちら",
         "けれど / けど",
-        "Verb-plain + つもりだ / つもりです",
+        "〜つもりだ / 〜つもりです",
         "～たり〜たりする"
       ],
-      "correctAnswer": "Verb-plain + つもりだ / つもりです",
+      "correctAnswer": "〜つもりだ / 〜つもりです",
       "explanation_en": "Verb-plain + つもりだ/です = 'I intend to / plan to'.",
       "high_confusion": false,
       "difficulty": 1
@@ -4871,7 +3433,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～って - casual quotation marker / topic introducer\nれい：「あした 来る」って 言いました。",
+      "question_ja": "つぎの いみに あう パターン：\n～って\nれい：「あした 来る」って 言いました。",
       "choices": [
         "なんがつ なんにち",
         "～じ",
@@ -4884,55 +3446,19 @@
       "difficulty": 1
     },
     {
-      "id": "q-0410",
-      "grammarPatternId": "n5-180",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-stem + ～かた - way of doing\nれい：この かんじの 読みかたは なんですか。",
-      "choices": [
-        "Verb",
-        "～は～より～です",
-        "Verb-stem + ～かた",
-        "や"
-      ],
-      "correctAnswer": "Verb-stem + ～かた",
-      "explanation_en": "Drop ます, add かた. 'How to / way of'.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
-      "id": "q-0411",
-      "grammarPatternId": "n5-181",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\n～なあ - sentence-final exclamation ('I really feel...')\nれい：おいしいなあ。",
-      "choices": [
-        "～って",
-        "～なあ",
-        "な-Adjective past negative: ～じゃありませんでした",
-        "ごろ"
-      ],
-      "correctAnswer": "～なあ",
-      "explanation_en": "Casual sentence-final particle expressing personal feeling.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0412",
       "grammarPatternId": "n5-182",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nVerb-plain + な - strong/casual prohibition (\"don't!\")\nれい：行くな！",
+      "question_ja": "つぎの いみに あう パターン：\n+ な\nれい：行くな！",
       "choices": [
         "～に～があります / います",
         "～ふん / ぷん",
         "よ",
-        "Verb-plain + な"
+        "〜な"
       ],
-      "correctAnswer": "Verb-plain + な",
+      "correctAnswer": "〜な",
       "explanation_en": "Plain dictionary form + な = harsh/casual 'don't!'. Avoid using to people you don't know well.",
       "high_confusion": false,
       "difficulty": 1
@@ -4943,14 +3469,14 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nQuestion word + か / も - 'something / anyone' compounds\nれい：なにか たべたいです。",
+      "question_ja": "つぎの いみに あう パターン：\n+ か / も\nれい：なにか たべたいです。",
       "choices": [
-        "Question word + か / も compounds",
+        "疑問詞 + か / も",
         "～に～があります / います",
         "～にします",
         "いくら"
       ],
-      "correctAnswer": "Question word + か / も compounds",
+      "correctAnswer": "疑問詞 + か / も",
       "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.",
       "high_confusion": false,
       "difficulty": 1
@@ -4961,7 +3487,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nSomething / nothing - see compound rule (see n5-183 for full content)\nれい：(see n5-183)",
+      "question_ja": "つぎの いみに あう パターン：\nれい：なにか たべたいです。",
       "choices": [
         "など",
         "～になります / ～くなります",
@@ -4974,30 +3500,12 @@
       "difficulty": 1
     },
     {
-      "id": "q-0415",
-      "grammarPatternId": "n5-185",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nSomeone / no one (see n5-183 for full content)\nれい：(see n5-183)",
-      "choices": [
-        "Verb-stem + ながら",
-        "だれか / だれも",
-        "Verb-ませんか",
-        "～がほしいです"
-      ],
-      "correctAnswer": "だれか / だれも",
-      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0416",
       "grammarPatternId": "n5-186",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nSomewhere / nowhere (see n5-183 for full content)\nれい：(see n5-183)",
+      "question_ja": "つぎの いみに あう パターン：\nれい：なにか たべたいです。",
       "choices": [
         "も",
         "どこか / どこも",
@@ -5010,40 +3518,28 @@
       "difficulty": 1
     },
     {
-      "id": "q-0417",
-      "grammarPatternId": "n5-187",
-      "type": "mcq",
-      "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "つぎの いみに あう パターン：\nSometime / always (see n5-183 for full content)\nれい：(see n5-183)",
-      "choices": [
-        "いつか / いつも",
-        "か",
-        "～と～と、どちらが～ですか",
-        "Verb-て"
-      ],
-      "correctAnswer": "いつか / いつも",
-      "explanation_en": "This entry duplicates n5-183. Refer there for full form rules, examples, and common mistakes.",
-      "high_confusion": false,
-      "difficulty": 1
-    },
-    {
       "id": "q-0418",
       "grammarPatternId": "n5-001",
       "type": "text_input",
       "direction": "j_to_e",
       "prompt_ja": "こたえを にほんごで タイプしてください。 (kana か romaji どちらでも かのうです)",
-      "question_ja": "I am a student.",
+      "question_ja": "わたしは がくせい（　）。",
       "acceptedAnswers": [
         "わたしは がくせいです",
         "わたしはがくせいです",
         "watashi wa gakusei desu",
         "watashiwagakuseidesu"
       ],
-      "correctAnswer": "わたしは がくせいです。",
+      "correctAnswer": "です",
       "explanation_en": "Topic わたし + は + noun + です. Standard self-introduction.",
       "high_confusion": false,
-      "difficulty": 1
+      "difficulty": 1,
+      "choices": [
+        "です",
+        "する",
+        "いる",
+        "もの"
+      ]
     }
   ]
 }
