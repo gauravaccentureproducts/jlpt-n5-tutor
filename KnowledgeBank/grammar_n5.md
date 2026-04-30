@@ -106,7 +106,10 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 
 ## 6. Verbs - Plain (Dictionary) Form and Negation
 
-- Verb-る / Verb-う (dictionary form - る-verbs / Group 2 end in -る; う-verbs / Group 1 end in any -う row syllable: う/く/ぐ/す/つ/ぬ/ぶ/む/る)
+- Verb-る / Verb-う (dictionary form):
+  - **Group 1 (五段)** verbs end in a syllable from the う-row of the kana chart - i.e., the dictionary form ends in one of: う、く、ぐ、す、つ、ぬ、ぶ、む、る (all of which end in the /u/ sound when romanized).
+  - **Group 2 (一段)** verbs end in -iる or -eる (e.g., みる, たべる).
+  - **Group-1 ru-verb exceptions:** 入る, 帰る, 走る, 知る, 切る, 要る look like Group 2 (-iる / -eる) but conjugate as Group 1. The standard six N5 exceptions; memorize them.
 - Verb-ない (plain negative)
 - Verb-た (plain past)
 - Verb-なかった (plain past negative)
@@ -285,10 +288,12 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 
 ---
 
-## 22. Honorific / Polite Vocabulary at N5 (functional)
+## 22. Polite / Beautifying Vocabulary at N5 (functional)
+
+> **Terminology note:** お〜 / ご〜 prefixes here are **beautifying language (美化語 / bika-go)**, not honorifics (尊敬語 / sonkei-go). Honorific verbs (sonkei-go) like いらっしゃる, おっしゃる are out of scope for N5.
 
 - ～さん
-- お～ / ご～ (beautifying prefixes - limited to common cases)
+- お～ / ご～ (beautifying prefixes - limited to common cases like お茶, お金, ごはん)
 - いただきます / ごちそうさま / おはようございます etc. (set expressions)
 
 ---

@@ -14,9 +14,17 @@
 
 - The blank in Mondai 1 is shown as `（  　）`.
 - In Mondai 2, the four shuffled elements are listed as 1-4 and the original sentence shows positions A B C D where one is marked `★`. The answer identifies which option-number goes in the `★` slot.
-- Mondai 3 passages have multiple inline blanks numbered `（1）` `（2）` etc., each with its own 4-option set.
+- Mondai 3 passages have multiple inline blanks numbered `[ 1 ]` `[ 2 ]` etc., each with its own 4-option set.
 - All stems and correct answers use only N5-syllabus kanji. Distractors may include non-N5 kanji where authentic JLPT format requires it.
 - No em dashes (U+2014) appear in this file.
+
+## Engine display note
+
+For mock-test mode, the app's test engine MUST hide the `**Answer:**` line and rationale until the student commits an answer. The visible-by-default format here is for self-study reference; runtime test rendering is the engine's responsibility.
+
+## Numeral convention
+
+Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) and arabic numerals (1, 2, 100, 1000) - mirroring authentic JLPT papers, which use kanji numerals in narrative text and arabic numerals in prices, addresses, schedules, and time tables. This is intentional, not inconsistency.
 
 ---
 
@@ -220,7 +228,7 @@
 3. に
 4. へ
 
-**Answer: 1** - れんしゅうする takes を when noun-verb compound is split.
+**Answer: 1** - を marks the direct object of れんしゅうする (practice the piano).
 
 ### Q19
 
@@ -279,7 +287,7 @@
 
 ### Q24
 
-東京（　　）大阪まで しんかんせんで いきます。
+東京（　　）大阪まで でんしゃで いきます。
 
 1. に
 2. を
@@ -521,14 +529,14 @@
 
 ### Q46
 
-きょうしつでは たばこを すって （　　）。
+きょうしつでは たばこを すっては （　　）。
 
-1. もいいです
-2. はいけません
+1. いいです
+2. いけません
 3. ください
 4. たいです
 
-**Answer: 2** - prohibition.
+**Answer: 2** - 「~ては いけません」 expresses prohibition.
 
 ### Q47
 
@@ -569,21 +577,21 @@
 
 1. と
 2. から
-3. ので
+3. けど
 4. が
 
-**Answer: 2** - reason connector.
+**Answer: 2** - reason connector. けど (option 3) and が (option 4) are concessive ("although"), not causal; they would invert the logic.
 
 ### Q51
 
 きのうは いそがしかった（　　）、しゅくだいを しませんでした。
 
 1. と
-2. ので
+2. けど
 3. が
 4. から
 
-**Answer: 4** - reason connector with past adj.
+**Answer: 4** - reason connector with past adj. けど (option 2) and が (option 3) are concessive; they would invert the logic.
 
 ### Q52
 
@@ -728,11 +736,11 @@
 ___ ___ ★ ___ ですか。
 
 1. 何
-2. 駅
+2. あの 店
 3. の
 4. 名前は
 
-**Answer: 4** (名前は goes in ★).
+**Answer: 4** (名前は goes in ★). Order: あの店(2) の(3) 名前は(4=★) 何(1) ですか = "What is the name of that shop?"
 
 ### Q65
 
@@ -795,7 +803,7 @@ ___ ___ ★ ___ よみたいです。
 
 1. ある
 2. 本を
-3. 図しょかんに
+3. としょかんに
 4. 三さつ
 
 **Answer: 2** (本を goes in ★).
@@ -938,10 +946,10 @@ ___ ___ ★ ___ ですか。
 
 1. してから
 2. ばんごはんを
-3. すぐに
+3. いえで
 4. みんなで
 
-**Answer: 4** (みんなで goes in ★).
+**Answer: 4** (みんなで goes in ★). Order: してから(1) いえで(3) みんなで(4=★) ばんごはんを(2) 食べました = "After homework, everyone ate dinner together at home."
 
 ### Q84
 
@@ -956,14 +964,14 @@ ___ ___ ★ ___ あります。
 
 ### Q85
 
-___ ___ ★ ___ かいたいです。
+私は ___ ___ ★ ___ 思います。
 
 1. が
 2. 新しい
-3. ほしいので
+3. ほしいと
 4. かばん
 
-**Answer: 1** (が goes in ★).
+**Answer: 1** (が goes in ★). Order: 新しい(2) かばん(4) が(1=★) ほしいと(3) 思います.
 
 ### Q86
 
@@ -1030,7 +1038,7 @@ ___ ___ ★ ___ いません。
 
 > たなかさんの 一日
 
-> わたしは まいにち 朝 六時 （1） おきます。 七時 半 （2） 朝ごはんを 食べます。 朝ごはんは いつも パン （3） 牛乳です。 ８時に いえを 出て、電車で 学校 （4） 行きます。 学校は 九時 （5） 三時までです。
+> わたしは まいにち 朝 六時 [ 1 ] おきます。 七時ごろ [ 2 ] 朝ごはんを 食べます。 朝ごはんは いつも パン [ 3 ] 牛乳です。 ８時に いえを 出て、電車で 学校 [ 4 ] 行きます。 学校は 九時 [ 5 ] 三時までです。
 
 #### Q91 (blank 1)
 
@@ -1045,10 +1053,10 @@ ___ ___ ★ ___ いません。
 
 1. に
 2. が
-3. ごろに
-4. を
+3. を
+4. へ
 
-**Answer: 3** - approximate time + ごろに.
+**Answer: 1** - approximate time (七時ごろ) + に for time of action.
 
 #### Q93 (blank 3)
 
@@ -1081,7 +1089,7 @@ ___ ___ ★ ___ いません。
 
 > わたしの しゅみ
 
-> わたしは おんがく （1） すきです。 まいにち、 ぎんこうから かえってから、いえで ピアノを 一時間 （2）。 にちようびは 友だちと いっしょに （3） に 行きます。 友だち も ピアノが じょうずですから、 とても 楽しいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 （4） ありませんでした。 来週は ぜったいに 一日 （5） ひきたいと 思います。
+> わたしは おんがく [ 1 ] すきです。 まいにち、 ぎんこうから かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても 楽しいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと 思います。
 
 #### Q96 (blank 1)
 
@@ -1104,11 +1112,11 @@ ___ ___ ★ ___ いません。
 #### Q98 (blank 3)
 
 1. ピアノを ひいて
-2. ピアノの きょうしつ
+2. ピアノきょうしつ
 3. ピアノで うた
-4. ピアノを 買い
+4. ピアノは すき
 
-**Answer: 2** - go to piano class (に行きます target).
+**Answer: 2** - 「ピアノきょうしつ」 (compound noun, no の) - に行きます target. (The original option 4 「ピアノを 買い」 was dropped because Verb-stem + に+行く is grammatically valid, making it a structurally-correct second answer; replaced with 「ピアノは すき」 which is broken before に行きます.)
 
 #### Q99 (blank 4)
 
@@ -1126,7 +1134,7 @@ ___ ___ ★ ___ いません。
 3. だけ
 4. でも
 
-**Answer: 1** - 一日ぐらい (about one day).
+**Answer: 4** - 「でも」 attached to a quantity means "even (just)" - 一日でも = "even (just) one day". Combined with 「ぜったいに」, this expresses "I definitely want to play, even just for one day next week." 「ぐらい」 (approximate) would clash with 「ぜったいに」 (firm resolve).
 
 ---
 

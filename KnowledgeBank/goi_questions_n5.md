@@ -16,6 +16,14 @@
 - All stems and correct answers use only N5-syllabus kanji. Distractors may contain non-N5 kanji where authentic JLPT format requires it (see header note in `moji_questions_n5.md` for the full kanji-scope exception).
 - No em dashes (U+2014) appear in this file.
 
+## Engine display note
+
+For mock-test mode, the app's test engine MUST hide the `**Answer:**` line and rationale until the student commits an answer. The visible-by-default format here is for self-study reference; runtime test rendering is the engine's responsibility.
+
+## Numeral convention
+
+Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) and arabic numerals (1, 2, 100, 1000) - mirroring authentic JLPT papers, which use kanji numerals in narrative text and arabic numerals in prices, addresses, schedules, and time tables. This is intentional, not inconsistency.
+
 ---
 
 ## Mondai 3 - 文脈規定 (Contextual Vocabulary)
@@ -255,14 +263,14 @@
 
 ### Q22
 
-その みせは えきから （　　） です。
+その みせは えきの （　　） に あります。
 
 1. たかい
 2. ながい
-3. ちかい
+3. ちかく
 4. つよい
 
-**Answer: 3** - distance + ちかい (close).
+**Answer: 3** - 駅の近く (near the station) - natural location phrase.
 
 ### Q23
 
@@ -332,14 +340,14 @@
 
 ### Q29
 
-きょうは （　　） が ふって います。
+ふゆに なりました。 きょうは （　　） が ふって います。 とても さむいです。
 
 1. かぜ
 2. ゆき
 3. はな
 4. はる
 
-**Answer: 2** - 雪 + ふる. (Note: 雨 also takes ふる; ゆき is more contextual here if marked.)
+**Answer: 2** - winter + さむい disambiguates to ゆき (snow).
 
 ### Q30
 
@@ -387,25 +395,25 @@
 
 ### Q34
 
-しゅくだいは （　　） おわりません でした。
+しゅくだいが むずかしくて、 （　　） わかりませんでした。
 
 1. ぜんぜん
 2. たくさん
 3. すぐ
 4. とても
 
-**Answer: 1** - not at all (with negative).
+**Answer: 1** - ぜんぜん + negative = "not at all".
 
 ### Q35
 
-むずかしい もんだいですが、（　　） がんばります。
+A: あした パーティーに 来ますか。 B: はい、（　　） 行きます。
 
 1. たくさん
 2. すぐ
-3. もう
+3. まだ
 4. もちろん
 
-**Answer: 4** - of course.
+**Answer: 4** - もちろん (of course) is natural as confirmation in response to a Y/N question.
 
 ### Q36
 
@@ -530,25 +538,25 @@
 
 ### Q47
 
-きょねん にほんへ いった ことが （　　）。
+私は にほんへ いった ことが （　　）。
 
 1. います
 2. あります
 3. なります
 4. します
 
-**Answer: 2** - こと + ある (experience).
+**Answer: 2** - こと + ある (experience). Note: 「行ったことがある」 is for indefinite past experience and cannot combine with a specific time marker like きょねん.
 
 ### Q48
 
-来年 大学に （　　） つもりです。
+来年 大学へ （　　） つもりです。
 
-1. はいる
+1. いく
 2. でる
 3. かえる
 4. すむ
 
-**Answer: 1** - enter university.
+**Answer: 1** - 大学へ行く (go to / attend university) - natural form for entering higher education.
 
 ### Q49
 
@@ -583,11 +591,11 @@
 A: わたしの ちちは いしゃです。
 
 1. わたしの ははは いしゃです。
-2. わたしの ちちは びょういんで はたらいて います。
-3. わたしの ちちは 学校で はたらいて います。
+2. わたしの ちちの しごとは いしゃです。
+3. わたしの ちちは 学校の 先生です。
 4. わたしの あには いしゃです。
 
-**Answer: 2** - 医者 ≈ びょういんで はたらく (work at a hospital).
+**Answer: 2** - 「父は医者です」 = 「父の仕事は医者です」 (direct restatement of occupation).
 
 ### Q52
 
@@ -602,14 +610,14 @@ A: この りょうりは おいしくないです。
 
 ### Q53
 
-A: たなかさんは えいごの 先生です。
+A: たなかさんは えいごを おしえて います。
 
-1. たなかさんは 学生です。
-2. たなかさんは 学校で えいごを おしえて います。
+1. たなかさんは えいごの 学生です。
+2. たなかさんは えいごの 先生です。
 3. たなかさんは えいごを ならって います。
 4. たなかさんは アメリカ人です。
 
-**Answer: 2** - 先生 = おしえる person.
+**Answer: 2** - 「英語を教えている」 → 「英語の先生」: a person who teaches X is the teacher of X. Functional relationship; closest among the four options.
 
 ### Q54
 
@@ -679,14 +687,14 @@ A: にちようびは ひまです。
 
 ### Q60
 
-A: きょうしつに 学生が 三十人 います。
+A: きょうしつに 学生が おおぜい います。
 
 1. きょうしつには 学生が ぜんぜん いません。
-2. きょうしつには 学生が おおぜい います。
+2. きょうしつには 学生が たくさん います。
 3. きょうしつには 学生が 一人 います。
 4. きょうしつには 学生が 二人 います。
 
-**Answer: 2** - 三十人 ≈ おおぜい (many people).
+**Answer: 2** - おおぜい ≈ たくさん (many - direct synonym for people).
 
 ### Q61
 
@@ -712,14 +720,14 @@ A: でんしゃの 中で 本を 読みました。
 
 ### Q63
 
-A: わたしの いえから 駅まで あるいて 十分です。
+A: わたしの いえは 駅から とおく ありません。
 
-1. わたしの いえから 駅まで バスで 十分です。
-2. わたしの いえから 駅まで すぐです。
-3. わたしの いえから 駅まで とても とおいです。
-4. わたしの いえは 駅から ちかいです。
+1. わたしの いえは 駅から とても とおいです。
+2. わたしの いえは 駅から ちかいです。
+3. わたしの いえは 駅の 上に あります。
+4. わたしの いえは 駅の 中に あります。
 
-**Answer: 4** - 10 min walk ≈ near.
+**Answer: 2** - とおくない ≈ ちかい (direct antonym pair).
 
 ### Q64
 
@@ -796,7 +804,7 @@ A: たろうさんは スポーツが すきです。
 3. たろうさんは スポーツを ぜんぜん しません。
 4. たろうさんは スポーツが きらいです。
 
-**Answer: 1** - likes → does often.
+**Answer: 1** - closest among the choices. At N5 level, "like X" and "do X often" are treated as paraphrasable. Strictly, liking does not entail doing (one can be a sports fan who watches but doesn't play).
 
 ### Q71
 
@@ -824,12 +832,12 @@ A: あした しけんが あります。
 
 A: 友だちに 本を かしました。
 
-1. 友だちが 私に 本を くれました。
-2. 友だちは 私の 本を よみました。
+1. 友だちは 私に 本を かしました。
+2. 友だちは 私から 本を かりました。
 3. 友だちが 私に 本を あげました。
-4. 私の 本を 友だちに かして あげました。
+4. 私は 友だちから 本を もらいました。
 
-**Answer: 4** - lent → giver perspective.
+**Answer: 2** - 「私が友だちに貸す」 = 「友だちが私から借りる」 (perspective inversion of かす ⇄ かりる).
 
 ### Q74
 
@@ -844,14 +852,14 @@ A: 友だちから 本を かりました。
 
 ### Q75
 
-A: ことしの 一月 二十日に 日本へ きました。
+A: ことしの 一月に 日本へ きました。
 
-1. 二十日 まえに 日本へ きました。
+1. らいねん 日本へ いきます。
 2. ことしの はじめに 日本へ きました。
-3. 一月 まえに 日本へ きました。
-4. らいねん 日本へ いきます。
+3. 一年 まえに 日本へ きました。
+4. きょねんの 一月に 日本へ きました。
 
-**Answer: 2** - Jan 20 = early in year.
+**Answer: 2** - 一月 (January) is the beginning of the year. The other options describe a different time (next year, last year, one year ago).
 
 ### Q76
 
@@ -880,11 +888,11 @@ A: しゅくだいは むずかしくないです。
 A: あの レストランは いつも おきゃくさんが おおいです。
 
 1. あの レストランは おきゃくさんが すくないです。
-2. あの レストランは ゆうめいです。
-3. あの レストランは あたらしいです。
+2. あの レストランは いつも すいて います。
+3. あの レストランは いつも こんで います。
 4. あの レストランは とおいです。
 
-**Answer: 2** - many customers ≈ famous.
+**Answer: 3** - お客さんが多い ≈ こんで いる (crowded). At N5 level these are paraphrasable; strictly, "many customers" describes count and "crowded" describes density.
 
 ### Q79
 
@@ -899,14 +907,14 @@ A: たなかさんの いえは 大きくないです。
 
 ### Q80
 
-A: きょうは とても さむいです。
+A: きょうは あつくないです。
 
 1. きょうは あついです。
-2. きょうは ストーブが いりません。
+2. きょうは すずしいです。
 3. きょうは あたたかいです。
-4. きょうは ストーブを つけました。
+4. きょうは ねむいです。
 
-**Answer: 4** - cold → use heater.
+**Answer: 2** - 暑くない ≈ すずしい (cool). Direct synonym for "not hot."
 
 ### Q81
 
@@ -921,14 +929,14 @@ A: その しごとを する 人は いません。
 
 ### Q82
 
-A: きょうは ふくが ぬれて います。
+A: きょうは あめが ふって います。
 
-1. きょうは あめが ふって います。
-2. きょうは ふくが あついです。
-3. きょうは ふくが きれいです。
-4. きょうは ふくが ふるいです。
+1. きょうは てんきが いいです。
+2. きょうは そらが くもって います。
+3. きょうは てんきが よくないです。
+4. きょうは ゆきが ふって います。
 
-**Answer: 1** - clothes wet → raining.
+**Answer: 3** - 雨が降っている = 天気がよくない (direct weather-state paraphrase).
 
 ### Q83
 
@@ -965,14 +973,14 @@ A: こうえんで さんぽしました。
 
 ### Q86
 
-A: でんわが なりました。
+A: 友だちに でんわを かけました。
 
-1. でんわで 話を しました。
-2. でんわで 友だちを よびました。
-3. でんわが きました。
-4. でんわを 買いました。
+1. 友だちが でんわを くれました。
+2. 友だちと でんわで 話しました。
+3. でんわを 買いました。
+4. 友だちに 手紙を 書きました。
 
-**Answer: 3** - rang ≈ came.
+**Answer: 2** - closest among the choices. Strictly, 電話をかける means "to make a phone call (initiate)" and does not entail successful conversation; 電話で話す means "to talk on the phone." For typical N5 contexts, calling a friend usually involves talking with them, so 電話で話す is the natural paraphrase here.
 
 ### Q87
 
@@ -983,7 +991,7 @@ A: わたしは 二十さいです。
 3. わたしは いま 二十さいです。
 4. わたしは らいねん 二十さいに なります。
 
-**Answer: 3** - statement of present age.
+**Answer: 3** - statement of present age. Note: 二十さい reads にじゅっさい / にじゅうさい. The traditional N5-tested reading for "20 years old" is the special reading **はたち** (二十歳); both forms are acceptable but はたち is the form most commonly drilled at N5.
 
 ### Q88
 
@@ -1013,10 +1021,10 @@ A: たろうさんは げんきです。
 
 1. たろうさんは びょうきです。
 2. たろうさんは つかれて います。
-3. たろうさんは げんき が ありません。
-4. たろうさんは げんき が あります。
+3. たろうさんは びょうきでは ありません。
+4. たろうさんは いそがしいです。
 
-**Answer: 4** - paraphrase with form change.
+**Answer: 3** - 元気 (well, lively) and 病気ではない (not sick) overlap in everyday usage. Closest among the four options; strictly, 元気 implies vigor, not just absence of illness.
 
 ### Q91
 
@@ -1034,11 +1042,11 @@ A: わたしは 日本に きて 一年に なります。
 A: 友だちに たんじょうびの プレゼントを あげました。
 
 1. 友だちが 私に プレゼントを あげました。
-2. 友だちから プレゼントを もらいました。
-3. 友だちに プレゼントを 買って あげました。
+2. 友だちは 私から プレゼントを もらいました。
+3. 私が 友だちから プレゼントを もらいました。
 4. 友だちは プレゼントを 買いませんでした。
 
-**Answer: 3** - gave present.
+**Answer: 2** - 「私が友だちにあげる」 = 「友だちが私からもらう」 (perspective inversion of あげる ⇄ もらう).
 
 ### Q93
 
@@ -1060,7 +1068,7 @@ A: この みせの ケーキは あまくないです。
 3. この みせの ケーキは あまり あまく ないです。
 4. この みせの ケーキは おいしくないです。
 
-**Answer: 3** - not sweet ≈ not very sweet.
+**Answer: 3** - by elimination among the four options. Strictly, あまくない is a stronger negation than あまり あまくない, but the other three options are clearly wrong (opposite meaning, unrelated taste, or unrelated property).
 
 ### Q95
 
@@ -1088,12 +1096,12 @@ A: きょうは ゆうがた に かえります。
 
 A: たろうさんは 日本ごが じょうずです。
 
-1. たろうさんは 日本ごが よく わかります。
+1. たろうさんは 日本ごが よく 話せます。
 2. たろうさんは 日本ごが ぜんぜん わかりません。
 3. たろうさんは 日本ごが すきじゃ ありません。
 4. たろうさんは 日本ごを ならって います。
 
-**Answer: 1** - skilled ≈ understands well.
+**Answer: 1** - 日本語が上手 ≈ よく話せる. At N5, "good at Japanese" is paraphrased as "can speak well"; strictly 上手 covers all language skills (not just speaking).
 
 ### Q98
 
@@ -1108,14 +1116,14 @@ A: しゅくだいは あした まで に だして ください。
 
 ### Q99
 
-A: でんわばんごうを おしえて ください。
+A: あの 人の 名前を しって いますか。
 
-1. でんわばんごうを 書いて ください。
-2. でんわばんごうを 言って ください。
-3. でんわで 話して ください。
-4. でんわを 買って ください。
+1. あの 人の 名前を おしえます。
+2. あの 人の 名前を おぼえて います。
+3. あの 人の 名前が わかりません。
+4. あの 人の 名前は ながいです。
 
-**Answer: 2** - teach number ≈ tell number.
+**Answer: 2** - by elimination: option 1 changes tense (will teach), option 3 reverses meaning (don't know), option 4 is irrelevant (length). 知っている and 覚えている are near-synonyms in the context of remembering someone's name, but they are not interchangeable in general - you can 知っている a name without 覚えている it (knew it but forgot), and vice versa. Don't memorize this as a synonymy rule.
 
 ### Q100
 

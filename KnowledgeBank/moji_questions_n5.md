@@ -11,11 +11,15 @@
 
 ## Notation rules
 
-- Kanji words being tested are surrounded by `**...**` (bold). On the actual paper they are underlined.
-- Hiragana words being tested in Mondai 2 are surrounded by `__...__` (italic-like in markdown - represents underlined hiragana).
-- Each question has 4 numbered choices. **Answer**: shows the correct number.
+- Kanji words being tested are surrounded by `<u>...</u>` (HTML underline). This renders as actual underline in browsers and faithful markdown renderers, matching the underline used on the real JLPT paper.
+- Hiragana words being tested in Mondai 2 are surrounded by `__...__` (markdown underscore-bold; for legacy compatibility the hiragana underline is shown this way).
+- Each question has 4 numbered choices. `**Answer:**` shows the correct number.
 - Rationale (optional) is given as a one-line note.
-- No em dashes (-, U+2014) appear in this file - the project-wide directive to use plain hyphens applies.
+- No em dashes (U+2014) appear in this file.
+
+## Engine display note
+
+For mock-test mode, the app's test engine MUST hide the `**Answer:**` line and rationale until the student commits an answer. The visible-by-default format here is for self-study reference; runtime test rendering is the engine's responsibility.
 
 ## Kanji-scope exception for question files
 
@@ -33,7 +37,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q1
 
-あの 人は **学生** です。
+あの 人は <u>学生</u> です。
 
 1. がくせ
 2. がくせい
@@ -44,7 +48,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q2
 
-きのう **先生** に あいました。
+きのう <u>先生</u> に あいました。
 
 1. せんせ
 2. せんせい
@@ -55,7 +59,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q3
 
-**学校** は いえから ちかいです。
+<u>学校</u> は いえから ちかいです。
 
 1. かっこう
 2. がっこ
@@ -66,7 +70,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q4
 
-**大学** で にほんごを べんきょうします。
+<u>大学</u> で にほんごを べんきょうします。
 
 1. たいかく
 2. だいかく
@@ -77,7 +81,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q5
 
-ちちは **会社員** です。
+ちちは <u>会社員</u> です。
 
 1. かいしゃいん
 2. がいしゃいん
@@ -88,18 +92,18 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q6
 
-**日本** に すんで います。
+<u>日本</u> に すんで います。
 
 1. にほん
 2. にぼん
 3. ひほん
 4. にっほん
 
-**Answer: 1** - both にほん and にっぽん are correct; にほん is the most common.
+**Answer: 1** - 日本 = にほん. (The reading にっぽん also exists for formal/political contexts but is not in the answer choices.)
 
 ### Q7
 
-**日本語** が すこし わかります。
+<u>日本語</u> が すこし わかります。
 
 1. にほんごう
 2. にほんご
@@ -110,7 +114,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q8
 
-**中国** へ いった ことが あります。
+<u>中国</u> へ いった ことが あります。
 
 1. ちゅごく
 2. ちゅうこく
@@ -121,7 +125,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q9
 
-きょうは **月曜日** です。
+きょうは <u>月曜日</u> です。
 
 1. げつようび
 2. かようび
@@ -132,7 +136,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q10
 
-**水曜日** に プールへ いきます。
+<u>水曜日</u> に プールへ いきます。
 
 1. かようび
 2. すいようび
@@ -143,7 +147,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q11
 
-**金曜日** の よる、ともだちと あいます。
+<u>金曜日</u> の よる、ともだちと あいます。
 
 1. きんようび
 2. かようび
@@ -154,7 +158,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q12
 
-**土曜日** は やすみです。
+<u>土曜日</u> は やすみです。
 
 1. つちようび
 2. とようび
@@ -165,7 +169,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q13
 
-**日曜日** に かぞくと こうえんへ いきました。
+<u>日曜日</u> に かぞくと こうえんへ いきました。
 
 1. にちようび
 2. げつようび
@@ -176,7 +180,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q14
 
-きょうは **十月** ついたちです。
+きょうは <u>十月</u> ついたちです。
 
 1. しがつ
 2. はちがつ
@@ -187,7 +191,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q15
 
-**九月** に がっこうが はじまります。
+<u>九月</u> に がっこうが はじまります。
 
 1. くがつ
 2. きゅうがつ
@@ -198,7 +202,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q16
 
-**七月** は あついです。
+<u>七月</u> は あついです。
 
 1. なながつ
 2. なのがつ
@@ -209,7 +213,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q17
 
-**四月** から 大学に いきます。
+<u>四月</u> から 大学に いきます。
 
 1. よがつ
 2. しがつ
@@ -220,7 +224,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q18
 
-**今日** は とても いい てんきです。
+<u>今日</u> は とても いい てんきです。
 
 1. きょう
 2. こんにち
@@ -231,7 +235,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q19
 
-**今年** は さむいです。
+<u>今年</u> は さむいです。
 
 1. こんねん
 2. ことし
@@ -242,7 +246,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q20
 
-**先月** たんじょうびでした。
+<u>先月</u> たんじょうびでした。
 
 1. せんがつ
 2. ぜんげつ
@@ -253,7 +257,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q21
 
-**来週** りょこうに いきます。
+<u>来週</u> りょこうに いきます。
 
 1. らいしゅう
 2. こんしゅう
@@ -264,7 +268,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q22
 
-**毎日** にほんごを べんきょうします。
+<u>毎日</u> にほんごを べんきょうします。
 
 1. まいひ
 2. まいにち
@@ -275,7 +279,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q23
 
-**午前** くじに がっこうへ いきます。
+<u>午前</u> くじに がっこうへ いきます。
 
 1. ごぜん
 2. ごご
@@ -286,7 +290,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q24
 
-**午後** さんじに あいましょう。
+<u>午後</u> さんじに あいましょう。
 
 1. ごぜん
 2. ごこ
@@ -297,7 +301,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q25
 
-ごじ**半** に いえに かえります。
+ごじ<u>半</u> に いえに かえります。
 
 1. ばん
 2. はん
@@ -308,7 +312,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q26
 
-きょうは **何曜日** ですか。
+きょうは <u>何曜日</u> ですか。
 
 1. なんようび
 2. なにようび
@@ -319,7 +323,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q27
 
-**何時** に きますか。
+<u>何時</u> に きますか。
 
 1. なじ
 2. なんじ
@@ -330,7 +334,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q28
 
-つくえの **上** に ほんが あります。
+つくえの <u>上</u> に ほんが あります。
 
 1. うえ
 2. うへ
@@ -341,7 +345,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q29
 
-ねこは いすの **下** に います。
+ねこは いすの <u>下</u> に います。
 
 1. しだ
 2. した
@@ -352,7 +356,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q30
 
-**右** に まがって ください。
+<u>右</u> に まがって ください。
 
 1. みき
 2. みぎ
@@ -363,7 +367,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q31
 
-**左** がわに 大きい きが あります。
+<u>左</u> がわに 大きい きが あります。
 
 1. ひがり
 2. ひだり
@@ -374,7 +378,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q32
 
-ぎんこうの **前** に コンビニが あります。
+ぎんこうの <u>前</u> に コンビニが あります。
 
 1. まい
 2. まえ
@@ -385,18 +389,18 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q33
 
-学校の **後ろ** に こうえんが あります。
+学校の <u>後ろ</u> に こうえんが あります。
 
 1. うしろ
 2. うしる
 3. あしろ
 4. うじろ
 
-**Answer: 1** - 後 has kun-yomi うしろ when used with okurigana ろ.
+**Answer: 1** - 後ろ (うしろ) - kun-yomi reading.
 
 ### Q34
 
-きょうは さむいので、**外** へ でません。
+きょうは さむいので、<u>外</u> へ でません。
 
 1. そど
 2. そと
@@ -407,7 +411,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q35
 
-私の いえは 町の **北** に あります。
+私の いえは 町の <u>北</u> に あります。
 
 1. ひがし
 2. きた
@@ -418,7 +422,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q36
 
-**山** の うえに ゆきが あります。
+<u>山</u> の うえに ゆきが あります。
 
 1. やま
 2. やめ
@@ -429,7 +433,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q37
 
-**川** で さかなを みました。
+<u>川</u> で さかなを みました。
 
 1. かわ
 2. かは
@@ -440,7 +444,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q38
 
-きょうは **天気** が いいです。
+きょうは <u>天気</u> が いいです。
 
 1. てんき
 2. でんき
@@ -451,18 +455,18 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q39
 
-**雨** が ふって います。
+<u>雨</u> が ふって います。
 
 1. あめ
 2. あま
 3. あみ
 4. うめ
 
-**Answer: 1** - 雨 (あめ); 雨 has alt reading あま only in compounds like 雨水.
+**Answer: 1** - 雨 (あめ) - kun-yomi for the standalone noun.
 
 ### Q40
 
-**花** が きれいに さいて います。
+<u>花</u> が きれいに さいて います。
 
 1. はな
 2. はね
@@ -473,7 +477,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q41
 
-**電車** で 駅まで いきます。
+<u>電車</u> で 駅まで いきます。
 
 1. でんしゃ
 2. てんしゃ
@@ -484,7 +488,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q42
 
-**電話** ばんごうを おしえて ください。
+<u>電話</u> ばんごうを おしえて ください。
 
 1. でんわ
 2. てんわ
@@ -495,7 +499,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q43
 
-**駅** の まえで まって います。
+<u>駅</u> の まえで まって います。
 
 1. えき
 2. えぎ
@@ -506,7 +510,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q44
 
-その **店** で パンを 買いました。
+その <u>店</u> で パンを 買いました。
 
 1. みせ
 2. みぜ
@@ -517,7 +521,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q45
 
-**新しい** ノートを 買いました。
+<u>新しい</u> ノートを 買いました。
 
 1. あたらしい
 2. あらたしい
@@ -528,7 +532,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q46
 
-この くつは **古い** です。
+この くつは <u>古い</u> です。
 
 1. ふるい
 2. ふろい
@@ -539,7 +543,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q47
 
-この かばんは **高い** です。
+この かばんは <u>高い</u> です。
 
 1. たかい
 2. たがい
@@ -550,7 +554,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q48
 
-**安い** くつを 買いました。
+<u>安い</u> くつを 買いました。
 
 1. やすい
 2. あすい
@@ -561,7 +565,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q49
 
-**白い** いぬが います。
+<u>白い</u> いぬが います。
 
 1. しろい
 2. しらい
@@ -572,7 +576,7 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ### Q50
 
-この みちは **長い** です。
+この みちは <u>長い</u> です。
 
 1. ながい
 2. なかい
@@ -622,18 +626,18 @@ __がっこう__ で にほんごを べんきょうします。
 
 ### Q54
 
-きょうは __とも__ だちと えいがを 見ました。
+うちの 父は とても __ちから__ が つよいです。
 
-1. 反
-2. 友
-3. 父
-4. 文
+1. 力
+2. 刀
+3. 万
+4. 方
 
-**Answer: 2** - 友 (とも - friend, N5 kanji).
+**Answer: 1** - 力 (ちから - strength, N5 kanji).
 
 ### Q55
 
-うちには __おとな__ が 一人と 子どもが ふたり います。
+この えいがは __おとな__ から 子どもまで みんな たのしめます。
 
 1. 大人
 2. 太人
@@ -655,7 +659,7 @@ __がっこう__ で にほんごを べんきょうします。
 
 ### Q57
 
-__はは__ は きょうし です。
+__はは__ は 学校の 先生です。
 
 1. 父
 2. 妹
@@ -666,14 +670,14 @@ __はは__ は きょうし です。
 
 ### Q58
 
-__おんな__ の __ひと__ が 三人 います。
+ごはんの まえに __て__ を あらいます。
 
-1. 安・人
-2. 女・入
-3. 女・人
-4. 安・入
+1. 手
+2. 毛
+3. 牛
+4. 千
 
-**Answer: 3** - 女 (woman) + 人 (person), both N5.
+**Answer: 1** - 手 (hand, N5).
 
 ### Q59
 
@@ -717,7 +721,7 @@ __おんな__ の 学生が きました。
 3. 小ども
 4. 子供
 
-**Answer: 1** - within N5 syllabus 子 + ども (kana). 子供 uses 供 which is N4 - for purest N5-only spelling, 子ども is the correct form.
+**Answer: 1** - 子ども is selected here because it follows this corpus's N5-only-kanji policy (供 is N4). Both 子供 and 子ども are standard in modern Japanese, and on the actual JLPT both forms appear; the choice between them is a corpus-internal scope rule, not a correctness rule.
 
 ### Q63
 
@@ -754,7 +758,7 @@ __がいこく__ で しごとを して います。
 
 ### Q66
 
-しゅくだいは __なんようび__ までですか。
+きょうは __なんようび__ ですか。
 
 1. 何曜日
 2. 月曜日
@@ -864,7 +868,7 @@ __でんしゃ__ の なかで 本を 読みます。
 
 ### Q76
 
-__でんわ__ ばんごうは いくつですか。
+__でんわ__ で 友だちと 話します。
 
 1. 電語
 2. 田話
@@ -886,7 +890,7 @@ __でんわ__ ばんごうは いくつですか。
 
 ### Q78
 
-つぎの __みち__ を みぎに まがって ください。
+がっこうへ いく __みち__ で 友だちに あいました。
 
 1. 道
 2. 通
@@ -919,7 +923,7 @@ __みせ__ は えきの まえに あります。
 
 ### Q81
 
-__たべます__ - ばんごはんを いまから __たべます__。
+ばんごはんを いまから __たべます__。
 
 1. 食べます
 2. 飲べます
@@ -930,7 +934,7 @@ __たべます__ - ばんごはんを いまから __たべます__。
 
 ### Q82
 
-__のみます__ - まいあさ コーヒーを __のみます__。
+まいあさ コーヒーを __のみます__。
 
 1. 飯みます
 2. 食みます
@@ -941,7 +945,7 @@ __のみます__ - まいあさ コーヒーを __のみます__。
 
 ### Q83
 
-__みます__ - ニュースを テレビで __みます__。
+ニュースを テレビで __みます__。
 
 1. 見ます
 2. 観ます
@@ -952,7 +956,7 @@ __みます__ - ニュースを テレビで __みます__。
 
 ### Q84
 
-__ききます__ - おんがくを __ききます__。
+おんがくを __ききます__。
 
 1. 効きます
 2. 聞きます
@@ -963,7 +967,7 @@ __ききます__ - おんがくを __ききます__。
 
 ### Q85
 
-__はなします__ - にほんごで __はなします__。
+にほんごで __はなします__。
 
 1. 話します
 2. 放します
@@ -974,7 +978,7 @@ __はなします__ - にほんごで __はなします__。
 
 ### Q86
 
-__よみます__ - まいばん 本を __よみます__。
+まいばん 本を __よみます__。
 
 1. 詠みます
 2. 読みます
@@ -985,7 +989,7 @@ __よみます__ - まいばん 本を __よみます__。
 
 ### Q87
 
-__かきます__ - てがみを __かきます__。
+てがみを __かきます__。
 
 1. 描きます
 2. 書きます
@@ -996,7 +1000,7 @@ __かきます__ - てがみを __かきます__。
 
 ### Q88
 
-__きます__ - 友だちが __きます__。
+あした 友だちが いえに __きます__。
 
 1. 来ます
 2. 起ます
@@ -1007,7 +1011,7 @@ __きます__ - 友だちが __きます__。
 
 ### Q89
 
-__いきます__ - がっこうへ __いきます__。
+まいあさ 八時に がっこうへ __いきます__。
 
 1. 生きます
 2. 行きます
@@ -1018,7 +1022,7 @@ __いきます__ - がっこうへ __いきます__。
 
 ### Q90
 
-__でます__ - 七時に いえを __でます__。
+まいあさ 七時に いえを __でます__。
 
 1. 出ます
 2. 入ます
@@ -1029,7 +1033,7 @@ __でます__ - 七時に いえを __でます__。
 
 ### Q91
 
-__はいります__ - おふろに __はいります__。
+ねる まえに おふろに __はいります__。
 
 1. 入ります
 2. 出ります
@@ -1040,7 +1044,7 @@ __はいります__ - おふろに __はいります__。
 
 ### Q92
 
-__たちます__ - 学生が __たちます__。
+先生が きょうしつに 来たので、学生が __たちます__。
 
 1. 立ちます
 2. 起ちます
@@ -1051,7 +1055,7 @@ __たちます__ - 学生が __たちます__。
 
 ### Q93
 
-__やすみます__ - つかれたから __やすみます__。
+つかれたから すこし __やすみます__。
 
 1. 体みます
 2. 休みます
@@ -1062,7 +1066,7 @@ __やすみます__ - つかれたから __やすみます__。
 
 ### Q94
 
-__いいます__ - 先生が なまえを __いいます__。
+先生が なまえを __いいます__。
 
 1. 言います
 2. 云います
@@ -1073,7 +1077,7 @@ __いいます__ - 先生が なまえを __いいます__。
 
 ### Q95
 
-__かいます__ - 八百屋で やさいを __かいます__。
+八百屋で やさいを __かいます__。
 
 1. 飼います
 2. 買います
@@ -1084,7 +1088,7 @@ __かいます__ - 八百屋で やさいを __かいます__。
 
 ### Q96
 
-__たかい__ - この とけいは とても __たかい__。
+この とけいは とても __たかい__ です。
 
 1. 多い
 2. 高い

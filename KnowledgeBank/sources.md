@@ -5,7 +5,7 @@ This document lists authoritative and widely trusted sources used as references 
 ## Official Sources
 
 - **Japan Foundation & Japan Educational Exchanges and Services (JEES)** - [https://www.jlpt.jp](https://www.jlpt.jp)
-  - The official JLPT administering bodies. Their site provides the official test specifications, sample questions, and the "JLPT Can-do Self-Evaluation List" for each level. **Note (verified 2026-04):** Starting December 2025, JLPT score reports include CEFR reference levels alongside the N1-N5 result.
+  - The official JLPT administering bodies. Their site provides the official test specifications, sample questions, and the "JLPT Can-do Self-Evaluation List" for each level. **Note (as of April 2026):** The JLPT site indicates CEFR reference levels may be added to score reports - verify the current status at https://www.jlpt.jp before relying on this.
 
 - **Japan Foundation - JF Standard for Japanese Language Education** - [https://www.jfstandard.jpf.go.jp](https://www.jfstandard.jpf.go.jp)
   - Official framework developed by the Japan Foundation since 2010, based on CEFR. Defines language proficiency benchmarks (A1-C2 mapping) and is the basis for the Japan Foundation's worldwide JF Language Courses.

@@ -1,0 +1,113 @@
+Audit the contents of the attached files from the perspective of a native Japanese language teacher who specializes in teaching JLPT N5 learners.
+
+Objective:
+The objective is to improve the accuracy, naturalness, and pedagogical quality of the Japanese language teaching content. The target standard is zero Japanese language mistakes.
+
+Important Instruction:
+Use the attached files as the reference source for this audit. Analyze the attached files thoroughly and list up only the issues found. Do not rewrite, correct, or fix the content at this stage.
+
+Review Scope:
+Review all attached files, including but not limited to:
+- Grammar lists and grammar explanations
+- Vocabulary lists
+- Kanji / moji lists
+- Goi questions
+- Moji questions
+- Bunpou questions
+- Dokkai questions
+- Authentic extracted N5 content
+- Source/reference files
+
+Audit Requirements:
+Identify and list all issues related to Japanese language accuracy, JLPT N5 suitability, and teaching quality.
+
+Check for the following issue types:
+
+1. Japanese Language Accuracy Issues
+- Incorrect Japanese grammar
+- Unnatural Japanese expressions
+- Incorrect sentence construction
+- Incorrect particle usage
+- Incorrect verb/adjective conjugation
+- Incorrect readings
+- Incorrect kanji usage
+- Incorrect onyomi / kunyomi classification
+- Incorrect vocabulary meanings
+- Incorrect English translations of Japanese items
+
+2. JLPT N5 Scope Issues
+- N4-or-above grammar incorrectly treated as N5
+- N4-or-above vocabulary included without clear labeling
+- N4-or-above kanji included without clear labeling
+- Overly advanced example sentences for N5 learners
+- Items that may be useful but should be marked as borderline / upper N5
+- Content that is technically correct but unsuitable for beginner-level learners
+
+3. Pedagogical Issues
+- Explanations that may confuse N5 learners
+- Missing learner-critical cautions
+- Missing distinction between similar grammar points
+- Ambiguous meanings or explanations
+- Overly broad meanings for beginner kanji or vocabulary
+- Too much information presented without level control
+- Inconsistent terminology across files
+- Inconsistent notation or formatting that may confuse learners
+
+4. Test / Question Quality Issues
+- Questions that are not suitable for JLPT N5 level
+- Questions with more than one possible correct answer
+- Ambiguous answer choices
+- Incorrect correct answer keys
+- Distractors that are too easy, too advanced, or unnatural
+- Questions testing knowledge outside the stated N5 scope
+- Reading passages that are too difficult for N5
+- Vocabulary or kanji in questions that exceed N5 level without proper labeling
+
+Output Format:
+Provide the audit results file by file.
+
+Use the following format strictly:
+
+File: [file name]
+
+Issue 1:
+- Section / location:
+- Original item / text:
+- Issue type:
+- Issue description:
+- Severity: Critical / Major / Minor
+- Reason this is an issue:
+
+Issue 2:
+- Section / location:
+- Original item / text:
+- Issue type:
+- Issue description:
+- Severity: Critical / Major / Minor
+- Reason this is an issue:
+
+Continue until all issues in that file are listed.
+
+After completing the file-wise issue list, provide:
+
+1. Overall quality assessment
+2. Files with the highest number of issues
+3. Critical issues requiring immediate attention
+4. Items likely outside JLPT N5 scope
+5. Items that should be labeled as borderline / upper N5
+6. Areas requiring native-speaker judgment
+7. Final risk assessment for using these files as JLPT N5 teaching material
+
+Strict Rules:
+- Do not fix the issues.
+- Do not rewrite the content.
+- Do not provide corrected versions.
+- Do not generate replacement text.
+- Only list up the issues.
+- Use the attached files as the reference.
+- Do not give generic feedback.
+- Be strict, detailed, and teacher-like.
+- Prioritize Japanese language accuracy over content volume.
+- If something is correct, do not list it as an issue.
+- If an item is useful but above N5 level, list it as a scope-labeling issue rather than recommending deletion.
+- The final output must be actionable
