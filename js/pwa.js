@@ -14,6 +14,24 @@ const INSTALL_DISMISSED_KEY = 'pwa.installDismissed';
 let deferredPrompt = null;
 
 export function initPwa() {
+  // Service worker registration. Previously lived as an inline <script> in
+  // index.html, but that violated the CSP `script-src 'self'` directive
+  // (CSP blocks inline scripts even when same-origin). Moving it here keeps
+  // the strict CSP intact.
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    if (document.readyState === 'complete') {
+      navigator.serviceWorker.register('./sw.js').catch(err => {
+        console.warn('Service worker registration failed:', err);
+      });
+    } else {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(err => {
+          console.warn('Service worker registration failed:', err);
+        });
+      });
+    }
+  }
+
   // Install banner
   window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();

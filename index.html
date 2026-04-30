@@ -53,17 +53,6 @@
     </small>
   </footer>
 
-  <script type="module" src="js/app.js?v=1.6.2"></script>
-  <script>
-    // Register service worker for offline capability. Only runs on http(s) -
-    // not when opening index.html directly via file://.
-    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').catch(err => {
-          console.warn('Service worker registration failed:', err);
-        });
-      });
-    }
-  </script>
+  <script type="module" src="js/app.js?v=1.6.3"></script>
 </body>
 </html>
