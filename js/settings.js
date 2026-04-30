@@ -2,7 +2,7 @@
 // On-device only. Reads/writes via storage adapter.
 import * as storage from './storage.js';
 import { setLocale, currentLocale, supportedLocales } from './i18n.js';
-import { renderJa, getFuriganaMode } from './furigana.js';
+import { renderJa } from './furigana.js';
 
 const LOCALE_NAMES = {
   en: 'English',
@@ -27,16 +27,6 @@ export async function renderSettings(container) {
           ${supportedLocales.map(lc => `<option value="${lc}" ${currentLocale()===lc?'selected':''}>${LOCALE_NAMES[lc] || lc}</option>`).join('')}
         </select>
       </label>
-      <fieldset class="settings-row settings-fieldset">
-        <legend>Furigana mode</legend>
-        <label class="radio-row"><input type="radio" name="furi" value="always" ${getFuriganaMode()==='always'?'checked':''}> Always show</label>
-        <label class="radio-row"><input type="radio" name="furi" value="hide-known" ${getFuriganaMode()==='hide-known'?'checked':''}> Hide on kanji I know <span class="muted small">(default)</span></label>
-        <label class="radio-row"><input type="radio" name="furi" value="never" ${getFuriganaMode()==='never'?'checked':''}> Never show</label>
-        <div class="furi-preview" aria-live="polite">
-          <span class="muted small">Preview:</span>
-          <span id="furi-preview-text">${renderJa('日本語の本を 読みます')}</span>
-        </div>
-      </fieldset>
       <label class="settings-row">
         <span>Theme</span>
         <select id="set-theme">
@@ -121,19 +111,11 @@ export async function renderSettings(container) {
     await setLocale(e.target.value);
     location.reload();
   });
-  // Three-mode furigana radios + live preview (Brief 2 §4.1, §4.3)
-  document.querySelectorAll('input[name="furi"]').forEach(r => {
-    r.addEventListener('change', () => {
-      const mode = document.querySelector('input[name="furi"]:checked').value;
-      storage.setSettings({ furiganaMode: mode, furiganaOnN5Kanji: mode === 'always' });
-      // Update preview, header toggle, and any rendered furigana on the page.
-      const preview = document.getElementById('furi-preview-text');
-      if (preview) preview.innerHTML = renderJa('日本語の本を 読みます');
-      const header = document.getElementById('furigana-toggle');
-      if (header) header.checked = mode === 'always';
-      document.dispatchEvent(new CustomEvent('furigana-rerender'));
-    });
-  });
+  // Pass-13: 3-mode furigana radios removed. Auto-furigana feature was
+  // producing wrong context-dependent readings (e.g., 大学 = だいがく vs
+  // 大[おお]+学[がく]). Native-speaker review concluded the feature should
+  // be dropped entirely; in-scope kanji render plain, out-of-scope words
+  // are authored in kana. See verification.md Pass 13.
   document.getElementById('set-theme').addEventListener('change', (e) => {
     storage.setSettings({ theme: e.target.value });
     applyTheme();

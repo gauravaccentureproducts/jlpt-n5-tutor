@@ -1,139 +1,90 @@
-// Furigana toggle + ruby renderer.
-// Per spec §4.2:
-//   - DEFAULT: furigana OFF on N5-scope kanji (matches a late-N5 learner).
-//   - ALWAYS ON for out-of-scope kanji (passed in via explicitFurigana).
-//   - Per-session TOGGLE: when ON, N5 kanji also get a ruby annotation using
-//     a representative reading from data/n5_kanji_readings.json.
-// Limitation: readings are pragmatic single-pick (kun first, on fallback).
-// Real Japanese reading is context-dependent; without a morphological analyzer
-// (kuromoji, etc.), some readings will be wrong (e.g., 月 = つき alone vs ゲツ
-// in 月よう日). Late-N5 learners can override mentally; future enhancement is
-// to integrate a tokenizer.
+// Furigana renderer (post-Pass-13 simplification).
+//
+// Pass-13 native-speaker review found auto-generated ruby was producing
+// wrong readings (大学 rendered as 大[おお]+学 instead of だいがく) because
+// Japanese kanji readings are context-dependent and a single-primary lookup
+// table can't disambiguate. The auto-furigana feature has been removed.
+//
+// New rule (per user direction 2026-04-30):
+//   - In-scope N5 kanji          → render plain kanji, NO ruby.
+//   - Out-of-scope kanji         → content authors must write the kana form
+//                                  (the renderer flags any leak with `<rt>?</rt>`
+//                                  so it's visually obvious during review).
+//   - Explicit per-word ruby     → still honoured if the JSON entry carries
+//                                  a `furigana: [{word, reading}, ...]` array
+//                                  (escape hatch for cases where an author
+//                                  deliberately wants to annotate a word).
+//
+// The kanji popover (click any glyph) reads `data/n5_kanji_readings.json`
+// directly at popover-time; that file is still used there.
 import * as storage from './storage.js';
 
 let n5KanjiSet = null;
-let n5KanjiReadings = null;
 
 async function loadData() {
-  if (n5KanjiSet && n5KanjiReadings) return;
+  if (n5KanjiSet) return;
   try {
-    const [wl, rd] = await Promise.all([
-      fetch('data/n5_kanji_whitelist.json').then(r => r.json()),
-      fetch('data/n5_kanji_readings.json').then(r => r.json()).catch(() => ({})),
-    ]);
+    const wl = await fetch('data/n5_kanji_whitelist.json').then(r => r.json());
     n5KanjiSet = new Set(wl);
-    n5KanjiReadings = rd;
   } catch (err) {
-    console.warn('Could not load kanji whitelist / readings.', err);
+    console.warn('Could not load kanji whitelist.', err);
     n5KanjiSet = new Set();
-    n5KanjiReadings = {};
   }
 }
 
-export async function initFuriganaToggle(onChange) {
+// initFuriganaToggle is a no-op since the auto-furigana toggle has been
+// removed from the header. Kept for compatibility with app.js wiring.
+export async function initFuriganaToggle(_onChange) {
   await loadData();
   const toggle = document.getElementById('furigana-toggle');
-  if (!toggle) return;
-  const settings = storage.getSettings();
-  // Header toggle is a quick-switch between "always" and the user's saved
-  // non-always mode (defaults to hide-known). This keeps the header simple
-  // while Settings exposes the full 3-way choice.
-  toggle.checked = settings.furiganaMode === 'always';
-  toggle.addEventListener('change', () => {
-    const mode = toggle.checked ? 'always' : 'hide-known';
-    storage.setSettings({ furiganaMode: mode, furiganaOnN5Kanji: toggle.checked });
-    if (typeof onChange === 'function') onChange();
-  });
+  if (toggle) {
+    // Hide the legacy header toggle if it's still in the DOM.
+    const wrapper = toggle.closest('.furigana-toggle, .settings');
+    if (wrapper) wrapper.hidden = true;
+  }
 }
 
-// Legacy: returns true when furigana should appear on every N5 kanji.
-export function isFuriganaOnForN5() {
-  return getFuriganaMode() === 'always';
-}
-
-export function getFuriganaMode() {
-  const s = storage.getSettings();
-  // Migration: if legacy boolean is true and mode unset, treat as 'always'.
-  if (s.furiganaMode) return s.furiganaMode;
-  return s.furiganaOnN5Kanji ? 'always' : 'hide-known';
-}
+// Legacy compatibility shims (some modules import these).
+export function isFuriganaOnForN5() { return false; }
+export function getFuriganaMode() { return 'never'; }
 
 const KANJI_RE = /[一-鿿]/;
-
-function isKanji(ch) {
-  return KANJI_RE.test(ch);
-}
+function isKanji(ch) { return KANJI_RE.test(ch); }
 
 /**
- * Render Japanese text with furigana annotations.
+ * Render Japanese text.
  *
- * Order of precedence (most specific wins):
- *   1. Explicit annotations passed in (out-of-scope words, custom readings).
- *   2. If toggle is ON: best-effort ruby for each N5-scope kanji using the
- *      primary reading from n5_kanji_readings.json.
- *   3. Otherwise: leave kanji as-is.
+ * Per Pass-13 redesign: NO ruby is generated, ever. Explicit-furigana
+ * arrays in the JSON are ignored (the user removed the feature altogether).
+ *   - In-scope N5 kanji   → plain kanji.
+ *   - Out-of-scope kanji  → `<ruby>kanji<rt>?</rt></ruby>` (visible flag for
+ *                            content authors; user-facing data should use
+ *                            kana for any out-of-scope word).
+ *
+ * The explicitFurigana parameter is accepted but ignored (kept in the
+ * signature for backward compatibility with callers).
  *
  * @param {string} text - Japanese text.
- * @param {Array<{word: string, reading: string}>} explicitFurigana
- * @returns {string} HTML string.
+ * @param {Array<{word: string, reading: string}>} _explicitFurigana - ignored.
+ * @returns {string} HTML string wrapped in `<span lang="ja">`.
  */
-export function renderJa(text, explicitFurigana = []) {
+export function renderJa(text, _explicitFurigana = []) {
   if (!text) return '';
-  // First: handle explicit per-word annotations by replacing whole-word matches.
-  let working = text;
-  const placeholders = [];
-  for (const { word, reading } of (explicitFurigana || [])) {
-    if (!word || !reading) continue;
-    while (working.includes(word)) {
-      const token = `\x00FURI${placeholders.length}\x00`;
-      placeholders.push({ word, reading });
-      working = working.replace(word, token);
-    }
-  }
 
-  // Second: walk the text and apply per-kanji ruby per the active mode.
-  // Modes (Brief 2 §4.1):
-  //   always      - ruby on every N5 kanji
-  //   hide-known  - ruby on N5 kanji UNLESS user marked "I know this"
-  //   never       - no ruby on N5 kanji (out-of-scope still gets fallback)
-  const mode = getFuriganaMode();
-  const readings = n5KanjiReadings || {};
   const inScope = n5KanjiSet || new Set();
-  const known = storage.getKnownKanji ? storage.getKnownKanji() : {};
-
   let html = '';
-  for (const ch of working) {
-    if (ch.startsWith('\x00')) {
-      // Will be substituted in third pass.
-      html += ch;
-      continue;
-    }
+  for (const ch of text) {
     if (isKanji(ch)) {
-      const showRuby = mode === 'always'
-        || (mode === 'hide-known' && !known[ch]);
-      if (showRuby && inScope.has(ch) && readings[ch]?.primary) {
-        html += `<ruby data-glyph="${escapeHtml(ch)}">${escapeHtml(ch)}<rt>${escapeHtml(readings[ch].primary)}</rt></ruby>`;
-      } else if (!inScope.has(ch)) {
-        // Out-of-scope kanji without explicit furigana - at least flag it.
-        html += `<ruby data-glyph="${escapeHtml(ch)}">${escapeHtml(ch)}<rt>?</rt></ruby>`;
-      } else {
+      if (inScope.has(ch)) {
         html += `<span class="kanji-glyph" data-glyph="${escapeHtml(ch)}">${escapeHtml(ch)}</span>`;
+      } else {
+        // Out-of-scope kanji. Should never appear in clean data; flag visibly.
+        html += `<ruby data-glyph="${escapeHtml(ch)}">${escapeHtml(ch)}<rt>?</rt></ruby>`;
       }
     } else {
       html += escapeHtml(ch);
     }
   }
-
-  // Third: substitute the explicit-annotation placeholders.
-  for (let i = 0; i < placeholders.length; i++) {
-    const { word, reading } = placeholders[i];
-    const ruby = `<ruby>${escapeHtml(word)}<rt>${escapeHtml(reading)}</rt></ruby>`;
-    html = html.replace(`\x00FURI${i}\x00`, ruby);
-  }
-
-  // Wrap with lang="ja" so screen readers / fonts pick the right pronunciation
-  // and glyph variant. Required for accessibility per WCAG and avoids
-  // Chinese-glyph fallback on Windows systems without a Japanese language pack.
   return `<span lang="ja">${html}</span>`;
 }
 

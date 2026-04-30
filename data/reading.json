@@ -5,7 +5,7 @@
       "level": "easy",
       "topic": "self-introduction",
       "title_en": "Self-introduction",
-      "ja": "わたしは アンナです。アメリカから 来ました。今、東京の大学で 日本語を べんきょうしています。しゅみは えいがを 見ることです。どうぞ よろしく おねがいします。",
+      "ja": "わたしは アンナです。アメリカから 来ました。今、とうきょうの大学で 日本語を べんきょうしています。しゅみは えいがを 見ることです。どうぞ よろしく おねがいします。",
       "translation_en": "I'm Anna. I came from America. Right now, I'm studying Japanese at a university in Tokyo. My hobby is watching movies. Pleased to meet you.",
       "audio": "audio/reading/n5.read.001.mp3",
       "questions": [
@@ -26,11 +26,11 @@
           "prompt_ja": "アンナさんは 今 どこで 日本語を べんきょうしていますか。",
           "choices": [
             "アメリカの 大学",
-            "東京の 大学",
-            "東京の こうこう",
+            "とうきょうの 大学",
+            "とうきょうの こうこう",
             "うち"
           ],
-          "correctAnswer": "東京の 大学",
+          "correctAnswer": "とうきょうの 大学",
           "explanation_en": "'今、東京の だいがくで...'"
         }
       ]
@@ -40,7 +40,7 @@
       "level": "easy",
       "topic": "daily routine",
       "title_en": "Daily routine",
-      "ja": "わたしは 毎日 6時に おきます。あさごはんを 食べてから、しごとに 行きます。しごとは 9時から 5時までです。家に 帰ってから、テレビを 見ます。10時に ねます。",
+      "ja": "わたしは 毎日 6時に おきます。あさごはんを 食べてから、しごとに 行きます。しごとは 9時から 5時までです。うちに かえってから、テレビを 見ます。10時に ねます。",
       "translation_en": "Every day I wake up at 6. After eating breakfast, I go to work. Work is from 9 to 5. After getting home, I watch TV. I go to bed at 10.",
       "audio": "audio/reading/n5.read.002.mp3",
       "questions": [
@@ -70,7 +70,7 @@
         },
         {
           "id": "n5.read.002.q3",
-          "prompt_ja": "家に 帰ってから 何を しますか。",
+          "prompt_ja": "うちに かえってから 何を しますか。",
           "choices": [
             "しごとを します",
             "あさごはんを 食べます",
@@ -110,7 +110,7 @@
             "ねます",
             "ばんごはんを 食べます",
             "本を よみます",
-            "うちに 帰ります"
+            "うちに かえります"
           ],
           "correctAnswer": "ばんごはんを 食べます",
           "explanation_en": "'えいがの あとで、レストランで ばんごはんを 食べます'."
@@ -157,7 +157,7 @@
       "level": "medium",
       "topic": "family",
       "title_en": "My family",
-      "ja": "わたしの かぞくは 4人です。父と 母と 兄が います。父は 先生で、母は いしゃです。兄は 大学生です。わたしは こうこうせいです。みんな 元気です。",
+      "ja": "わたしの かぞくは 4人です。父と 母と あにが います。父は 先生で、母は いしゃです。あには 大学生です。わたしは こうこうせいです。みんな げんきです。",
       "translation_en": "My family has 4 people. There's my father, mother, and older brother. Father is a teacher; mother is a doctor. My brother is a university student. I am a high school student. Everyone is well.",
       "audio": "audio/reading/n5.read.005.mp3",
       "questions": [
@@ -204,7 +204,7 @@
       "level": "medium",
       "topic": "weather",
       "title_en": "Today's weather",
-      "ja": "今日は とても さむいです。あさは あめが ふっていました。今は ふっていませんが、まだ さむいです。あした、ゆきが ふると 思います。",
+      "ja": "今日は とても さむいです。あさは あめが ふっていました。今は ふっていませんが、まだ さむいです。あした、ゆきが ふると おもいます。",
       "translation_en": "Today is very cold. In the morning it was raining. It isn't raining now, but it's still cold. Tomorrow I think it will snow.",
       "audio": "audio/reading/n5.read.006.mp3",
       "questions": [
@@ -274,13 +274,13 @@
       "level": "medium",
       "topic": "transport",
       "title_en": "Going to school",
-      "ja": "わたしの 家から 学校まで 30分くらい かかります。まず、家から えきまで あるきます。10分くらいです。そして、でんしゃに のります。20分で 学校に つきます。",
+      "ja": "わたしの うちから 学校まで 30分くらい かかります。まず、うちから えきまで あるきます。10分くらいです。そして、でんしゃに のります。20分で 学校に つきます。",
       "translation_en": "From my house to school takes about 30 minutes. First, I walk from home to the station - about 10 minutes. Then I get on the train. I arrive at school in 20 minutes.",
       "audio": "audio/reading/n5.read.008.mp3",
       "questions": [
         {
           "id": "n5.read.008.q1",
-          "prompt_ja": "家から 学校まで ぜんぶで 何分 かかりますか。",
+          "prompt_ja": "うちから 学校まで ぜんぶで 何分 かかりますか。",
           "choices": [
             "10分",
             "20分",
@@ -292,7 +292,7 @@
         },
         {
           "id": "n5.read.008.q2",
-          "prompt_ja": "家から えきまで どうやって 行きますか。",
+          "prompt_ja": "うちから えきまで どうやって 行きますか。",
           "choices": [
             "でんしゃで",
             "バスで",
@@ -414,7 +414,7 @@
       "level": "easy",
       "topic": "shopping",
       "title_en": "At the bookstore",
-      "ja": "きのう ほんやで 日本語の 本を 2さつ 買いました。ぜんぶで 1,500円でした。家に 帰ってから よみました。むずかしかったですが、おもしろかったです。",
+      "ja": "きのう ほんやで 日本語の 本を 2さつ 買いました。ぜんぶで 1,500円でした。うちに かえってから よみました。むずかしかったですが、おもしろかったです。",
       "translation_en": "Yesterday I bought 2 Japanese books at the bookstore. The total was 1500 yen. After getting home, I read them. They were difficult but interesting.",
       "audio": "audio/reading/n5.read.012.mp3",
       "questions": [
@@ -449,13 +449,13 @@
       "level": "medium",
       "topic": "travel",
       "title_en": "Trip to Kyoto",
-      "ja": "せんしゅう かぞくと 京都に 行きました。京都は 古い まちです。きれいな おてらが たくさん あります。おみやげに おかしを 買いました。とても たのしい りょこうでした。",
+      "ja": "せんしゅう かぞくと きょうとに 行きました。きょうとは 古い まちです。きれいな おてらが たくさん あります。おみやげに おかしを 買いました。とても たのしい りょこうでした。",
       "translation_en": "Last week I went to Kyoto with my family. Kyoto is an old city. There are many beautiful temples. I bought sweets as souvenirs. It was a very fun trip.",
       "audio": "audio/reading/n5.read.013.mp3",
       "questions": [
         {
           "id": "n5.read.013.q1",
-          "prompt_ja": "いつ 京都に 行きましたか。",
+          "prompt_ja": "いつ きょうとに 行きましたか。",
           "choices": [
             "きのう",
             "せんしゅう",
@@ -467,7 +467,7 @@
         },
         {
           "id": "n5.read.013.q2",
-          "prompt_ja": "京都には 何が ありますか。",
+          "prompt_ja": "きょうとには 何が ありますか。",
           "choices": [
             "うみ",
             "おてら",
@@ -553,7 +553,7 @@
           "choices": [
             "父",
             "母",
-            "兄",
+            "あに",
             "ともだち"
           ],
           "correctAnswer": "母",
@@ -566,7 +566,7 @@
       "level": "medium",
       "topic": "health",
       "title_en": "I'm sick",
-      "ja": "きのうから あたまが いたいです。せきも すこし 出ます。今日は 学校を 休んで、家で ねます。あした、いしゃに 行きます。早く げんきに なりたいです。",
+      "ja": "きのうから あたまが いたいです。せきも すこし 出ます。今日は 学校を 休んで、うちで ねます。あした、いしゃに 行きます。はやく げんきに なりたいです。",
       "translation_en": "I've had a headache since yesterday. I'm coughing a bit too. Today I'm taking the day off school and resting at home. Tomorrow I'll go to the doctor. I want to get well soon.",
       "audio": "audio/reading/n5.read.016.mp3",
       "questions": [
@@ -575,11 +575,11 @@
           "prompt_ja": "今日 何を しますか。",
           "choices": [
             "学校に 行きます",
-            "家で ねます",
+            "うちで ねます",
             "いしゃに 行きます",
             "しごとに 行きます"
           ],
-          "correctAnswer": "家で ねます",
+          "correctAnswer": "うちで ねます",
           "explanation_en": "'今日は 学校を 休んで、家で ねます'."
         },
         {
@@ -587,7 +587,7 @@
           "prompt_ja": "あした 何を しますか。",
           "choices": [
             "学校に 行きます",
-            "家で ねます",
+            "うちで ねます",
             "いしゃに 行きます",
             "ともだちに 会います"
           ],
@@ -659,7 +659,7 @@
             "ひらがな",
             "かたかな",
             "かんじ",
-            "発音"
+            "はつおん"
           ],
           "correctAnswer": "かんじ",
           "explanation_en": "'かんじは むずかしいですが、ひらがなは かんたんです'."
@@ -776,7 +776,7 @@
       "level": "easy",
       "topic": "weekend",
       "title_en": "Yesterday's evening",
-      "ja": "きのうの よる、家で 母と りょうりを しました。カレーを つくりました。とても おいしかったです。父も 兄も よろこびました。",
+      "ja": "きのうの よる、うちで 母と りょうりを しました。カレーを つくりました。とても おいしかったです。父も あにも よろこびました。",
       "translation_en": "Last night, I cooked with my mother at home. We made curry. It was very tasty. My father and brother were happy too.",
       "audio": "audio/reading/n5.read.022.mp3",
       "questions": [
@@ -798,7 +798,7 @@
           "choices": [
             "父",
             "母",
-            "兄",
+            "あに",
             "ともだち"
           ],
           "correctAnswer": "母",
@@ -846,7 +846,7 @@
       "level": "easy",
       "topic": "people",
       "title_en": "My friend",
-      "ja": "わたしの ともだちは マリアさんです。スペイン人です。今、東京の 大学で べんきょうしています。マリアさんは 日本語が とても じょうずです。",
+      "ja": "わたしの ともだちは マリアさんです。スペイン人です。今、とうきょうの 大学で べんきょうしています。マリアさんは 日本語が とても じょうずです。",
       "translation_en": "My friend is Maria. She's Spanish. She's now studying at a university in Tokyo. Maria is very good at Japanese.",
       "audio": "audio/reading/n5.read.024.mp3",
       "questions": [
@@ -881,7 +881,7 @@
       "level": "medium",
       "topic": "daily routine",
       "title_en": "Saturday morning",
-      "ja": "土曜日の あさ、わたしは 早く おきます。7時に おきて、こうえんで さんぽします。それから、家で あさごはんを 食べます。よみたい 本も よみます。土曜日が 大すきです。",
+      "ja": "土曜日の あさ、わたしは はやく おきます。7時に おきて、こうえんで さんぽします。それから、うちで あさごはんを 食べます。よみたい 本も よみます。土曜日が 大すきです。",
       "translation_en": "Saturday morning, I wake up early. I get up at 7 and walk in the park. Then I have breakfast at home. I also read the books I want to read. I love Saturdays.",
       "audio": "audio/reading/n5.read.025.mp3",
       "questions": [
@@ -951,7 +951,7 @@
       "level": "medium",
       "topic": "request",
       "title_en": "A note from a friend",
-      "ja": "ヤマダさんへ\nあした 1時に えきの まえで 会いましょう。いっしょに カフェで お茶を 飲みませんか。それから、デパートで かいものを しましょう。\nスズキより",
+      "ja": "ヤマダさんへ\nあした 1時に えきの まえで 会いましょう。いっしょに カフェで おちゃを 飲みませんか。それから、デパートで かいものを しましょう。\nスズキより",
       "translation_en": "To Yamada-san,\nLet's meet at 1 in front of the station tomorrow. Won't you have tea at a cafe with me? Then let's go shopping at the department store.\nFrom Suzuki",
       "audio": "audio/reading/n5.read.027.mp3",
       "questions": [
@@ -1021,7 +1021,7 @@
       "level": "easy",
       "topic": "weather",
       "title_en": "Summer",
-      "ja": "なつは とても あついです。毎日 30度より 高いです。よる、エアコンを つけて ねます。夏休みに うみに 行きたいです。",
+      "ja": "なつは とても あついです。毎日 30どより 高いです。よる、エアコンを つけて ねます。なつ休みに うみに 行きたいです。",
       "translation_en": "Summer is very hot. Every day it's over 30 degrees. I sleep with the air conditioner on at night. I want to go to the sea during summer vacation.",
       "audio": "audio/reading/n5.read.029.mp3",
       "questions": [

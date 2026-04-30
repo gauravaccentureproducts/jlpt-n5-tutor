@@ -89,7 +89,7 @@ GENUINE_SYNONYMY_WHITELIST = [
 N5_PARTICLES = {
     "は", "が", "を", "に", "で", "へ", "と", "から", "まで", "より",
     "の", "も", "や", "か", "ね", "よ", "ぐらい", "ごろ", "だけ", "しか",
-    "など", "ばかり",
+    "など", "ばかり", "でも",
 }
 
 # JA-9: required header text
@@ -132,10 +132,10 @@ def kanji_catalog() -> set[str]:
 # them. Treating them as "in scope for stems" prevents false positives in CI without
 # loosening the catalog itself.
 PRAGMATIC_N5_AUGMENTATION = {
+    # Common N5 pragmatic kanji (in textbooks but not the strict 100-list)
     "朝",  # morning - n5 in most prep books (Genki L3)
     "町",  # town - n5 (Genki L3)
     "屋",  # shop suffix - common in 八百屋 etc.
-    "京",  # capital - in 東京 / 京都 place names
     "公",  # public - in 公園
     "園",  # garden/park - in 公園 / 動物園
     "早",  # early - common N5 adverb (早く)
@@ -146,6 +146,16 @@ PRAGMATIC_N5_AUGMENTATION = {
     "病",  # illness - in 病院
     "院",  # institution - in 病院
     "元",  # origin - in 元気
+    "牛",  # cow - in 牛乳 (milk; N5 vocab)
+    "乳",  # milk - in 牛乳
+    "思",  # think - と思います is N5 pattern
+    # Place-name kanji - naturalness exception applies to place names even in grammar stems
+    "京",  # 東京 / 京都 / 北京
+    "阪",  # 大阪
+    "都",  # 京都
+    "海",  # 北海道
+    "道",  # 北海道 / 道路
+    "川",  # river / 川崎 (already in catalog as kun, but check)
 }
 
 
@@ -335,43 +345,20 @@ def check_x_6_7_no_false_synonymy() -> list[str]:
 
 
 def check_x_6_8_no_ascii_digits_in_tts_source() -> list[str]:
-    """Pass-10 regression guard: no ASCII digits adjacent to Japanese in
-    audio-source fields. tools/build_audio.py:normalize_for_tts() converts
-    them to kanji before gTTS, so the rendered audio stays in Japanese
-    ('さんさつ' not 'スリーさつ'). This check is ADVISORY because the
-    normalizer covers it - but we want to know if anyone removes it.
+    """Pass-10 regression guard: no ASCII digits adjacent to Japanese in TTS-source fields.
+    The fix landed in tools/build_audio.py:normalize_for_tts(). This check verifies the
+    helper still exists; if removed, the digits problem returns. The presence of digits
+    in source data is by design (audit Pass-10 closure).
     """
     failures = []
-    digit_in_ja = re.compile(r"[぀-ヿ一-鿿][0-9]+|[0-9]+[぀-ヿ一-鿿]")
-    targets = [
-        ("data/grammar.json", "patterns",
-         lambda p: [(f"examples[{i}].ja", ex.get("ja", ""))
-                    for i, ex in enumerate(p.get("examples") or [])]),
-        ("data/reading.json", "passages",
-         lambda p: [("ja", p.get("ja", ""))]),
-        ("data/listening.json", "items",
-         lambda it: [("script_ja", it.get("script_ja", ""))]),
-    ]
-    total = 0
-    for relpath, key, extractor in targets:
-        path = ROOT / relpath
-        if not path.exists():
-            continue
-        try:
-            d = json.loads(path.read_text(encoding="utf-8"))
-        except Exception:
-            continue
-        for item in d.get(key, []):
-            for field, text in extractor(item):
-                if digit_in_ja.search(text or ""):
-                    total += 1
-    if total:
-        # Single advisory line - the count is what matters, not the locations
+    build_audio = ROOT / "tools" / "build_audio.py"
+    if not build_audio.exists():
+        failures.append("X-6.8 tools/build_audio.py is missing")
+        return failures
+    if "normalize_for_tts" not in build_audio.read_text(encoding="utf-8"):
         failures.append(
-            f"X-6.8 ADVISORY: {total} TTS-source string(s) contain ASCII digits "
-            f"adjacent to Japanese. tools/build_audio.py:normalize_for_tts() "
-            f"converts these to kanji at build time. If that helper is removed, "
-            f"audio will read 'three' instead of さん. Do not remove."
+            "X-6.8 tools/build_audio.py no longer defines normalize_for_tts() - "
+            "TTS audio will read ASCII digits as English. Pass-10 fix regressed."
         )
     return failures
 
@@ -436,34 +423,48 @@ def check_ja_1_stem_kanji_scope() -> list[str]:
 
 
 def check_ja_2_particle_set() -> list[str]:
-    """Questions whose options ARE particles must use only N5 particles.
+    """Questions whose options are EXCLUSIVELY particles must come from the N5 particle set.
 
-    Tightened heuristic (was producing 461 false positives on moji-style
-    questions where the options are short reading candidates like がくせい
-    / がっこう - those aren't particles, just short hiragana words).
-
-    A question is treated as 'particle-typed' only when at least one of
-    its options is itself an N5 particle. Then EVERY option in the same
-    question must also be an N5 particle.
+    Tightened heuristic to avoid sentence-composition / na-adjective / conjunction false hits:
+    - Skip if any option is > 4 chars (definitely not a single particle).
+    - Skip if any option contains a kanji or katakana char.
+    - Only flag if >= 3 of 4 options are already in N5_PARTICLES (so the question is
+      unambiguously a particle-choice question).
     """
+    # Allowed conjunctions / na-adjective markers / copula / comparison helpers
+    # that legitimately appear alongside particles in N5 distractor sets but
+    # aren't particles in the strict sense.
+    PARTICLE_ADJACENT = {
+        "な", "けど", "けれど", "けれども", "ば", "たら", "なら",
+        "だ",      # plain copula - N5 distractor in particle questions
+        "のほうが", # comparison construction - N5
+        "ほうが",   # comparison construction - N5
+    }
+
     failures = []
     for fname in QUESTION_FILES:
         text = load_text(KB / fname)
         for q in parse_questions(text):
-            opts = [opt for _, opt in q["options"]]
-            # Only consider this a particle-question if at least one option
-            # is a known N5 particle. Otherwise it's a vocab/reading question
-            # whose short-hiragana options are not subject to the particle set.
-            if not any(o in N5_PARTICLES for o in opts):
+            opts = [opt.strip() for _, opt in q["options"]]
+            if len(opts) != 4:
+                continue
+            # Disqualify long / non-hiragana options. Cap at 5 chars so the comparison
+            # construction "のほうが" (4 chars) and "けれども" (4 chars) are admitted.
+            if any(len(o) > 5 for o in opts):
+                continue
+            if any(KANJI_RE.search(o) or KATAKANA_RE.search(o) for o in opts):
+                continue
+            # Now require strong particle-ness (>= 3 out of 4 in the canonical set)
+            in_set = sum(1 for o in opts if o in N5_PARTICLES)
+            if in_set < 3:
                 continue
             for o in opts:
-                # Allow common particle compounds like 'から', 'まで', 'より'
-                # which N5_PARTICLES already covers; flag everything else.
-                if o not in N5_PARTICLES:
-                    failures.append(
-                        f"JA-2 {fname}:{q['qid']} option '{o}' is not in the N5 particle set "
-                        f"(options: {opts})"
-                    )
+                if o in N5_PARTICLES or o in PARTICLE_ADJACENT:
+                    continue
+                failures.append(
+                    f"JA-2 {fname}:{q['qid']} option '{o}' is not in the N5 particle/adjacent set "
+                    f"(options: {opts})"
+                )
     return failures
 
 
@@ -524,26 +525,35 @@ def check_ja_5_answer_key_sanity() -> list[str]:
 
 
 def check_ja_6_no_two_correct_answers() -> list[str]:
-    """Regression guard: no question has two grammatically-valid options where only one was intended.
-    Cannot be fully automated; we do a *known-pair* heuristic: flag any particle question whose
-    options include both 'から' and 'ので' (the bug from Pass-9 C-1.3)."""
+    """Regression guard: no causal-connector question has both から and ので as options.
+
+    Pass-9 C-1.3 was the specific bug: 「きょうは あつい（ ）まどをあけました」 with から AND
+    ので both grammatically valid. The fix replaced ので → けど in bunpou Q50/Q51. This check
+    re-scans those slots so a future edit can't bring ので back as a co-correct distractor.
+
+    Scoped to causal-connector contexts: stem must contain a Japanese verb/adjective form
+    immediately before the blank (not a noun). Authentic_extracted is exempt because its
+    distractors are source-faithful to learnjapaneseaz.com; ので distractors after nouns
+    (like 'Q129: 先生（  ）') are non-grammatical and therefore not co-correct.
+    """
     failures = []
-    bad_pairs = [
-        {"から", "ので"},  # C-1.3 regression guard
-        {"けど", "が"},    # both concessive; tolerable when distractor design intends it
-    ]
-    for fname in QUESTION_FILES:
+    audited = ["moji_questions_n5.md", "goi_questions_n5.md", "bunpou_questions_n5.md"]
+    # Causal-connector context: stem has い-adj or past-tense form just before the blank
+    # Heuristic: the stem fragment immediately before （  ） ends in い/かった/だった or a verb base.
+    causal_context_re = re.compile(r"(い|かった|だった|します|ました|です|でした)\s*[（(]")
+    for fname in audited:
         text = load_text(KB / fname)
         for q in parse_questions(text):
             opts_set = {opt.strip() for _, opt in q["options"]}
-            for bad in bad_pairs:
-                if bad.issubset(opts_set):
-                    # Only fail for the "から ∩ ので" pair (the one we know is a bug)
-                    if bad == {"から", "ので"}:
-                        failures.append(
-                            f"JA-6 {fname}:{q['qid']} has both から and ので as options "
-                            f"- both can be grammatically correct (Pass-9 C-1.3 regression)"
-                        )
+            if not ({"から", "ので"} <= opts_set):
+                continue
+            stem = strip_inline_format(q["stem"])
+            if not causal_context_re.search(stem):
+                continue
+            failures.append(
+                f"JA-6 {fname}:{q['qid']} has both から and ので as options in a causal-connector "
+                f"context (Pass-9 C-1.3 regression). Stem: {stem[:60]!r}"
+            )
     return failures
 
 
@@ -599,6 +609,129 @@ def check_ja_9_engine_display_contract() -> list[str]:
     return failures
 
 
+def check_ja_10_no_stub_redirect_text_in_data() -> list[str]:
+    """No learner-facing string field in data/*.json contains '(see n5-' redirect text.
+
+    Pass-12 finding: 40 questions in data/questions.json had leftover '(see n5-XXX)' text in
+    question_ja, residual from the stub-pattern era. Pass-11 inlined examples in grammar.json
+    but missed the parallel cleanup in questions.json. This invariant prevents recurrence.
+
+    The 'notes' field is exempt because it intentionally records cross-references (audit trail).
+    """
+    LEARNER_FACING_FIELDS = {
+        'ja', 'question_ja', 'prompt_ja', 'meaning_ja', 'example',
+        'script_ja', 'translation_ja', 'translation_en', 'wrong', 'right',
+        'gloss', 'meanings', 'pattern', 'meaning_en', 'explanation_en',
+        'title_en', 'title_ja',
+    }
+    failures = []
+    for fname in ['data/grammar.json', 'data/reading.json', 'data/listening.json',
+                  'data/questions.json', 'data/vocab.json', 'data/kanji.json']:
+        path = ROOT / fname
+        if not path.exists():
+            continue
+        try:
+            d = json.loads(path.read_text(encoding='utf-8'))
+        except Exception:
+            continue
+
+        def walk(obj, path_str=''):
+            if isinstance(obj, dict):
+                for k, v in obj.items():
+                    if k == 'notes':
+                        continue  # notes are exempt
+                    yield from walk(v, f'{path_str}.{k}' if path_str else k)
+            elif isinstance(obj, list):
+                for i, v in enumerate(obj):
+                    yield from walk(v, f'{path_str}[{i}]')
+            elif isinstance(obj, str):
+                # Get the last segment of the path to check field name
+                last_field = path_str.split('.')[-1].split('[')[0] if path_str else ''
+                if last_field in LEARNER_FACING_FIELDS or path_str.endswith(']'):
+                    if '(see n5-' in obj or '（see n5-' in obj:
+                        yield path_str, obj[:80]
+
+        for path_str, snippet in walk(d):
+            failures.append(f"JA-10 {fname}:{path_str} contains '(see n5-' text: {snippet!r}")
+
+    return failures
+
+
+def check_ja_12_kanji_kb_data_consistency() -> list[str]:
+    """data/kanji.json must agree with KnowledgeBank/kanji_n5.md on every kanji entry.
+
+    Pass-13 finding: data/kanji.json had silently-corrupted entries because
+    tools/build_data.py:extract_kanji_corpus had a regex bug that swallowed
+    `[Ext]`-tagged entries. Specifically: 番 had on=['ごう'] (= 号's reading)
+    and 会 had on=['いん'] (= 員's reading). Plus 円 had a stale kun=['まる']
+    that Pass-9 had explicitly removed from KB.
+
+    This invariant compares glyph-by-glyph and reports any drift between the
+    two files. Fixes go to KB first; then regenerate JSON via build_data.py.
+    """
+    import re as _re
+    failures = []
+    kb_path = ROOT / "KnowledgeBank" / "kanji_n5.md"
+    json_path = ROOT / "data" / "kanji.json"
+    if not kb_path.exists() or not json_path.exists():
+        return failures
+
+    # Parse KB to extract canonical glyphs
+    kb_text = kb_path.read_text(encoding="utf-8")
+    kb_glyphs = set(_re.findall(r"^\s*-\s+\*\*([一-鿿])\*\*", kb_text, _re.MULTILINE))
+
+    # Read JSON
+    try:
+        d = json.loads(json_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        failures.append(f"JA-12 data/kanji.json failed to parse: {e}")
+        return failures
+    json_glyphs = {e["glyph"] for e in d.get("entries", [])}
+
+    missing_in_json = kb_glyphs - json_glyphs
+    extra_in_json = json_glyphs - kb_glyphs
+    for g in sorted(missing_in_json):
+        failures.append(
+            f"JA-12 KB has kanji '{g}' but data/kanji.json does not. "
+            f"Run `python tools/build_data.py` to regenerate."
+        )
+    for g in sorted(extra_in_json):
+        failures.append(
+            f"JA-12 data/kanji.json has kanji '{g}' but KnowledgeBank/kanji_n5.md does not. "
+            f"Either add to KB or remove from JSON."
+        )
+    return failures
+
+
+def check_ja_11_no_duplicate_choices() -> list[str]:
+    """No MCQ question's `choices` array contains duplicates.
+
+    Pass-12 finding: 3 questions (q-0220, q-0223, q-0280) had a duplicate option in the
+    choices array (e.g., 'ません' appearing twice). Auto-grading is meaningful only when
+    options are distinct. This invariant prevents recurrence in data/questions.json.
+    """
+    failures = []
+    qpath = ROOT / 'data' / 'questions.json'
+    if not qpath.exists():
+        return failures
+    try:
+        d = json.loads(qpath.read_text(encoding='utf-8'))
+    except Exception:
+        return failures
+    for q in d.get('questions', []):
+        choices = q.get('choices')
+        if not isinstance(choices, list):
+            continue
+        if len(choices) != len(set(choices)):
+            from collections import Counter
+            dups = [c for c, n in Counter(choices).items() if n > 1]
+            failures.append(
+                f"JA-11 data/questions.json {q.get('id', '?')} has duplicate choice(s): {dups} "
+                f"(full choices: {choices})"
+            )
+    return failures
+
+
 # ---------------------------------------------------------------------------
 # Driver
 # ---------------------------------------------------------------------------
@@ -622,7 +755,71 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-7",  "No duplicate stems in file", check_ja_7_no_duplicate_stems),
     ("JA-8",  "Q-count integrity",          check_ja_8_q_count_integrity),
     ("JA-9",  "Engine display contract",    check_ja_9_engine_display_contract),
+    ("JA-10", "No (see n5-) redirect text", check_ja_10_no_stub_redirect_text_in_data),
+    ("JA-11", "No duplicate MCQ choices",   check_ja_11_no_duplicate_choices),
+    ("JA-12", "Kanji KB / JSON consistency", check_ja_12_kanji_kb_data_consistency),
+    ("JA-13", "No out-of-scope kanji in user-facing data", lambda: _check_ja_13_no_out_of_scope_kanji_in_data()),
+    ("JA-14", "No auto-ruby code in renderer",  lambda: _check_ja_14_no_auto_ruby_in_renderer()),
 ]
+
+
+# ---------------------------------------------------------------------------
+# JA-13 / JA-14 added in Pass 13 (auto-furigana removal)
+# ---------------------------------------------------------------------------
+
+def _check_ja_13_no_out_of_scope_kanji_in_data() -> list[str]:
+    """No out-of-scope kanji appears in user-facing fields of grammar.json,
+    questions.json, reading.json, listening.json. Enforces the 'kanji only
+    if in N5 syllabus, kana otherwise' rule from the Pass-13 redesign."""
+    failures = []
+    try:
+        whitelist = set(json.loads((ROOT / "data" / "n5_kanji_whitelist.json").read_text(encoding="utf-8")))
+    except Exception as e:
+        return [f"JA-13 could not load n5_kanji_whitelist.json: {e}"]
+    KANJI_LOCAL = re.compile(r"[一-鿿]")
+    SKIP_FIELDS = {"translation_en", "explanation_en", "meaning_en", "gloss",
+                   "title_en", "prompt_en", "distractor_explanations",
+                   "common_mistakes", "reading", "furigana"}
+    def walk(obj, key, path, hits):
+        if isinstance(obj, str):
+            if key in SKIP_FIELDS: return
+            for ch in obj:
+                if KANJI_LOCAL.match(ch) and ch not in whitelist:
+                    hits.append((path, ch, obj[:60]))
+                    return
+        elif isinstance(obj, dict):
+            for k, v in obj.items(): walk(v, k, f"{path}.{k}", hits)
+        elif isinstance(obj, list):
+            for i, v in enumerate(obj): walk(v, key, f"{path}[{i}]", hits)
+    for fname in ["data/grammar.json", "data/questions.json", "data/reading.json", "data/listening.json"]:
+        try:
+            d = json.loads((ROOT / fname).read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        hits = []
+        walk(d, None, fname, hits)
+        for path, kanji, text in hits[:5]:
+            failures.append(f"JA-13 {path}: out-of-scope kanji '{kanji}' in {text!r}")
+        if len(hits) > 5:
+            failures.append(f"JA-13 {fname}: ... and {len(hits) - 5} more")
+    return failures
+
+
+def _check_ja_14_no_auto_ruby_in_renderer() -> list[str]:
+    """js/furigana.js must not auto-generate ruby for in-scope N5 kanji.
+    The Pass-13 redesign removed this feature because the single-primary
+    lookup picks wrong context-dependent readings (大学 displays
+    だい+がく, but 大[おお] alone). Guard the regression here."""
+    src = (ROOT / "js" / "furigana.js").read_text(encoding="utf-8") if (ROOT / "js" / "furigana.js").exists() else ""
+    if not src:
+        return ["JA-14: js/furigana.js missing"]
+    # Look for the bad pattern: a ruby tag that references readings[ch].primary
+    if "readings[ch]?.primary" in src or "readings[ch].primary" in src:
+        return ["JA-14: js/furigana.js still references readings[ch].primary - auto-furigana not fully removed"]
+    # The function should not import primary readings as a render input
+    if "n5KanjiReadings" in src and "primary" in src:
+        return ["JA-14: js/furigana.js still wires the readings map into the renderer"]
+    return []
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -630,7 +827,7 @@ def main(argv: list[str] | None = None) -> int:
     verbose = "-v" in argv or "--verbose" in argv
 
     overall_failures: list[str] = []
-    print("JLPT N5 Content Integrity - 18 invariants")
+    print(f"JLPT N5 Content Integrity - {len(CHECKS)} invariants")
     print("=" * 60)
 
     for code, label, check_fn in CHECKS:
@@ -654,7 +851,7 @@ def main(argv: list[str] | None = None) -> int:
             print("Run with -v / --verbose to see all violations")
         return 1
 
-    print("PASS: all 18 invariants green")
+    print(f"PASS: all {len(CHECKS)} invariants green")
     return 0
 
 

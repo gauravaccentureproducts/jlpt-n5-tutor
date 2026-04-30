@@ -624,7 +624,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "じぶんの 手に もっている 本を みせて、 友だちに 言います。",
-      "question_ja": "(自分の 手の 中の 本を みせながら)　すみません、（　）は おもしろい 本ですか。",
+      "question_ja": "(じぶんの 手の 中の 本を みせながら)　すみません、（　）は おもしろい 本ですか。",
       "choices": [
         "これ",
         "それ",
@@ -646,8 +646,8 @@
       "grammarPatternId": "n5-014",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "何個も かばんが ある中で、 自分の かばんを たずねます。",
-      "question_ja": "(机の上に かばんが 何個も あります)　（　）が あなたの かばんですか。",
+      "prompt_ja": "なんこも かばんが ある中で、 じぶんの かばんを たずねます。",
+      "question_ja": "(つくえの上に かばんが なんこも あります)　（　）が あなたの かばんですか。",
       "choices": [
         "これ",
         "それ",
@@ -716,7 +716,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "友だちに 学校の 中の ばしょを あんないして います。",
-      "question_ja": "(友だちと 学校の 中を 歩きながら、ある へやの 前で)　（　）は としょかんです。",
+      "question_ja": "(友だちと 学校の 中を あるきながら、ある へやの 前で)　（　）は としょかんです。",
       "choices": [
         "これ",
         "ここ",
@@ -1101,8 +1101,8 @@
       "grammarPatternId": "n5-014",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "自分の ペンと 友だちの 手の 中の ペンを 指さして 言います。",
-      "question_ja": "(自分の ペンを みせて、それから 友だちの 手の 中の ペンを 指さして)　「これは わたしの ペンです。（　）は あなたのですか。」",
+      "prompt_ja": "じぶんの ペンと 友だちの 手の 中の ペンを ゆびさして 言います。",
+      "question_ja": "(じぶんの ペンを みせて、それから 友だちの 手の 中の ペンを ゆびさして)　「これは わたしの ペンです。（　）は あなたのですか。」",
       "choices": [
         "これ",
         "それ",
@@ -3024,9 +3024,9 @@
         "ね",
         "が",
         "～がじょうずです / へたです",
-        "数 + 助数詞"
+        "すう + じょすうし"
       ],
-      "correctAnswer": "数 + 助数詞",
+      "correctAnswer": "すう + じょすうし",
       "explanation_en": "Japanese requires a counter when stating quantity. Pick the right counter based on the noun's shape/category. Memorize sound-changes: いっ before こ/さ/つ/ぴ; ろっ for 6 with most counters.",
       "high_confusion": false,
       "difficulty": 1
@@ -3471,12 +3471,12 @@
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
       "question_ja": "つぎの いみに あう パターン：\n+ か / も\nれい：なにか たべたいです。",
       "choices": [
-        "疑問詞 + か / も",
+        "ぎもんし + か / も",
         "～に～があります / います",
         "～にします",
         "いくら"
       ],
-      "correctAnswer": "疑問詞 + か / も",
+      "correctAnswer": "ぎもんし + か / も",
       "explanation_en": "Pattern: question word + か = 'some-' (indefinite). + も + affirmative = 'every-'. + も + negative = 'no-'.",
       "high_confusion": false,
       "difficulty": 1
