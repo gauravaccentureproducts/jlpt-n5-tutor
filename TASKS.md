@@ -133,11 +133,31 @@ Four items from the active backlog cannot be closed in code; each has a real ext
 ### EB-2 — Pass-15 deep semantic re-audit
 
 - **Status**: SCHEDULED for 2026-07-30 quarterly gate (cron is set).
-- **Blocker**: native Japanese reviewer time.
+- **Blocker**: native Japanese reviewer time. **PARTIALLY UNBLOCKED 2026-05-01** — see validation experiment below.
 - **Scope** (~70% of corpus): 157 unreviewed `data/grammar.json` patterns; 21 unreviewed `data/reading.json` passages; 591 unreviewed `KnowledgeBank/*_questions_n5.md` entries; full re-audit of KB catalogs (already audited 9× via Pass 1-10).
 - **Also covers** the 69 questions deferred from Item 4 (template generator couldn't handle compound patterns) — the reviewer should hand-author those.
-- **Estimated effort once unblocked**: ~10-12 hr across multiple sessions.
-- **Owner**: Content reviewer (Suiraku San) per §B.1.2 sign-off matrix.
+- **Estimated effort once unblocked**: ~10-12 hr across multiple sessions for native reviewer; **~3 hr triage with LLM-audit pipeline** (see below).
+- **Owner**: Content reviewer (Suiraku San) per §B.1.2 sign-off matrix; LLM-audit pipeline owned by Engineering.
+
+#### LLM-audit validation result — 2026-05-01
+
+Per the deep-research analysis on automating external-blocked items, an LLM-audit pipeline was prototyped (`tools/llm_audit.py`) and validated on a 5-pattern sample from the unreviewed surface. Result: **GO**.
+
+Key data points (full report at `feedback/llm-audit-validation-report.md`):
+- 5 real findings on 5 patterns (1.0 findings/pattern), comparable to Pass-12 native density (1.12) and 3.5× Pass-13's density (0.28).
+- The LLM caught a HIGH-severity PATTERN_MISMATCH on n5-115 (4 of 5 examples don't demonstrate the pattern) that had been sitting in the data through 13 prior native passes.
+- The LLM caught a stub-redirect-text-in-notes-field issue exactly analogous to what Pass-12 F-12.3 fixed in `data/questions.json` — the `data/grammar.json` equivalent had been missed.
+- One false positive caught during validation (encoding-related; UTF-8 vs cp932 round-trip issue). Mitigation: enforce UTF-8 round-trip on the prompt builder.
+
+Cost: ~$11.50 per full 187-pattern pass. Quarterly cost: ~$46/year. Triage time: ~3 hr per pass (vs 10-12 hr for full native review).
+
+**Wiring plan:**
+1. Run `tools/llm_audit.py --all` once now (~$15) and triage findings as Pass-15a entries in `verification.md`.
+2. Wire `--all-uncovered` mode into the existing 2026-07-30 cron so Pass-15 findings are pre-staged before any human review.
+3. Add an incremental CI step that audits only touched patterns on PRs modifying `data/grammar.json`.
+4. Reduce the native-reviewer expectation from "full coverage" to "spot-check + cultural appropriateness" (~10% of patterns).
+
+This converts EB-2 from a fully external-blocked item to a human-light item where the LLM does the bulk of the review and a native spot-checks.
 
 ### EB-3 — OQ-6 Brief translation to Japanese (optional)
 
