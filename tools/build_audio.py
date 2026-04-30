@@ -247,26 +247,66 @@ def main() -> int:
     OUT_READING.mkdir(parents=True, exist_ok=True)
     OUT_LISTENING.mkdir(parents=True, exist_ok=True)
 
+    # Read prior manifest (if any) so per-item `voice: "native"` overrides
+    # are preserved across rebuilds. Per OQ-2 backlog (TASKS.md): items
+    # marked "native" are recorded externally — the builder must NOT try to
+    # synthesise them. This keeps the corpus mixed-voice safe.
+    prior_voice: dict[str, str] = {}
+    if MANIFEST.exists():
+        try:
+            prior = json.loads(MANIFEST.read_text(encoding="utf-8"))
+            for it in prior.get("items", []):
+                if it.get("voice"):
+                    prior_voice[it["id"]] = it["voice"]
+        except Exception:
+            pass  # fall through; treat as no prior voice info
+
+    voice_default = f"synthetic-{backend_name}"  # e.g. synthetic-gtts, synthetic-piper
     jobs = collect_jobs(args.force, args.limit)
     print(f"Backend: {backend_name}. Jobs: {len(jobs)}.")
     rendered = 0
     skipped = 0
+    skipped_native = 0
     failed = 0
-    manifest = {"backend": backend_name, "items": []}
+    manifest = {
+        "backend": backend_name,
+        # `voice_default` is the voice used for items lacking a per-item
+        # `voice` field. Per-item `voice: "native"` overrides this and tells
+        # consumers (and this builder) that the audio is externally recorded
+        # by a human voice talent rather than synthesised.
+        "voice_default": voice_default,
+        "items": [],
+    }
 
     for text, out_base, src_id in jobs:
         # Append suffix manually rather than using with_suffix, because IDs
         # like 'n5-001.0' contain a dot that with_suffix would treat as the
         # existing suffix (causing all examples for one pattern to collide).
         out = Path(str(out_base) + backend.suffix)
+        item: dict = {"id": src_id, "path": str(out.relative_to(ROOT))}
+        # Preserve any prior per-item voice metadata, then decide rendering.
+        prior_v = prior_voice.get(src_id)
+        if prior_v == "native":
+            # Externally recorded; don't synthesise. Just record presence.
+            item["voice"] = "native"
+            skipped_native += 1
+            manifest["items"].append(item)
+            continue
+        if prior_v:
+            item["voice"] = prior_v
         if out.exists() and not args.force:
             skipped += 1
-            manifest["items"].append({"id": src_id, "path": str(out.relative_to(ROOT)), "skipped": True})
+            item["skipped"] = True
+            manifest["items"].append(item)
             continue
         try:
             backend.render(text, out)
             rendered += 1
-            manifest["items"].append({"id": src_id, "path": str(out.relative_to(ROOT))})
+            # Newly rendered items: stamp with the active backend's voice
+            # unless they already inherited a prior voice.
+            if "voice" not in item:
+                item["voice"] = voice_default
+            manifest["items"].append(item)
             if rendered % 25 == 0:
                 print(f"  ... {rendered} rendered")
         except Exception as e:
@@ -277,7 +317,7 @@ def main() -> int:
         json.dumps(manifest, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    print(f"Done. rendered={rendered} skipped={skipped} failed={failed}.")
+    print(f"Done. rendered={rendered} skipped={skipped} skipped_native={skipped_native} failed={failed}.")
     print(f"Manifest: {MANIFEST.relative_to(ROOT)}")
     return 0 if failed == 0 else 1
 

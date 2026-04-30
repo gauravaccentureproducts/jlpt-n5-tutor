@@ -1594,20 +1594,6 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   padding: 24px 28px; margin: 16px 0;
 }
 .home-cta h2 { margin: 0 0 8px; }
-.hero-stats {
-  display: flex; flex-wrap: wrap; gap: 8px;
-  margin: 12px 0 4px; padding: 0;
-  list-style: none;
-}
-.hero-stats .stat {
-  display: inline-flex; align-items: baseline; gap: 4px;
-  background: rgba(20, 69, 42, 0.07);
-  color: var(--c-text-muted, #555);
-  padding: 4px 12px;
-  border-radius: 999px;
-  font-size: 13px;
-}
-.hero-stats .stat b { color: var(--c-primary, #14452a); font-weight: 700; }
 .home-cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
 .home-cta-buttons .btn-primary, .home-cta-buttons .btn-secondary { text-decoration: none; padding: 10px 20px; min-height: 44px; display: inline-flex; align-items: center; }
 .btn-secondary { background: var(--c-bg); border: 1px solid var(--c-border); border-radius: 6px; color: var(--c-primary, #14452a); text-decoration: none; }
@@ -1775,22 +1761,6 @@ ruby[data-glyph] { cursor: pointer; }
   animation-iteration-count: 1 !important;
   transition-duration: 0.01ms !important;
   scroll-behavior: auto !important;
-}
-
-/* Trust strip on landing (Brief 2 s1.1.5) */
-.trust-strip {
-  list-style: none;
-  padding: 0;
-  margin: 6px 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 16px;
-  font-size: 12px;
-  color: var(--c-text-muted, #555);
-}
-.trust-strip li { white-space: nowrap; }
-@media (max-width: 480px) {
-  .trust-strip { font-size: 11px; gap: 4px 12px; }
 }
 
 /* Kanji detail page (Brief 2 s14.1) */

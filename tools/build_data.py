@@ -100,6 +100,12 @@ def extract_kanji_readings(md_path: Path) -> dict[str, dict]:
         "半": "はん", "番": "ばん", "国": "こく", "後": "あと", "会": "かい",
         "車": "しゃ", "高": "こう", "長": "ちょう","安": "あん", "新": "しん",
         "中": "ちゅう","外": "がい", "東": "とう", "年": "ねん", "人": "にん",
+        # Pass-14c add (data-correction brief §3.10): 何's primary changed
+        # から なに → なん. Across N5 vocab (何時/何曜日/何月/何日/何人),
+        # なん dominates; なに is correct only for the standalone 何ですか.
+        # Since `primary` is the default for the bare-kanji case in any
+        # context, the more-frequent compound reading wins.
+        "何": "なん",
     }
     for kanji, e in entries.items():
         override = PASS10_PRIMARY_OVERRIDES.get(kanji)

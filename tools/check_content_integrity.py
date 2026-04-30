@@ -760,6 +760,7 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-12", "Kanji KB / JSON consistency", check_ja_12_kanji_kb_data_consistency),
     ("JA-13", "No out-of-scope kanji in user-facing data", lambda: _check_ja_13_no_out_of_scope_kanji_in_data()),
     ("JA-14", "No auto-ruby code in renderer",  lambda: _check_ja_14_no_auto_ruby_in_renderer()),
+    ("JA-15", "Audio refs resolve to files on disk", lambda: _check_ja_15_audio_refs_on_disk()),
 ]
 
 
@@ -822,12 +823,47 @@ def _check_ja_14_no_auto_ruby_in_renderer() -> list[str]:
     return []
 
 
+def _check_ja_15_audio_refs_on_disk() -> list[str]:
+    """Every entry in data/audio_manifest.json must point to a file that
+    exists on disk. Per data-correction brief §4.1: a release-blocker check
+    for "no question, grammar pattern, listening item references a missing
+    audio file." If this fails, the runtime app would 404 on `<audio src>`.
+
+    The `skipped: true` flag in the manifest is a build-script status (file
+    already on disk, skipped re-rendering); it does NOT mean missing.
+    """
+    failures: list[str] = []
+    manifest_path = ROOT / "data" / "audio_manifest.json"
+    if not manifest_path.exists():
+        return ["JA-15: data/audio_manifest.json missing"]
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-15: could not parse audio_manifest.json: {e}"]
+    items = manifest.get("items", [])
+    for it in items:
+        path = it.get("path", "")
+        # Manifest paths use OS-native separators (Windows backslash on the
+        # author machine). Normalise so the check works on any OS.
+        rel = path.replace("\\", "/")
+        full = ROOT / rel
+        if not full.exists():
+            failures.append(
+                f"JA-15 manifest entry {it.get('id', '?')} points to missing file: {rel}"
+            )
+            if len(failures) >= 20:
+                failures.append(f"JA-15 ... and more (truncated at 20)")
+                break
+    return failures
+
+
 def main(argv: list[str] | None = None) -> int:
     argv = argv or sys.argv[1:]
     verbose = "-v" in argv or "--verbose" in argv
 
     overall_failures: list[str] = []
     print(f"JLPT N5 Content Integrity - {len(CHECKS)} invariants")
+    # Note: invariant count grew from 23 to 24 with JA-15 (audio refs on disk).
     print("=" * 60)
 
     for code, label, check_fn in CHECKS:

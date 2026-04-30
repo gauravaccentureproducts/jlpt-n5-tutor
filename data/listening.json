@@ -78,7 +78,11 @@
         "あさごはんを 食べたから"
       ],
       "correctAnswer": "でんしゃが おくれたから",
-      "explanation_en": "'あさ、でんしゃが おくれました'."
+      "explanation_en": "'あさ、でんしゃが おくれました'.",
+      "requires_patterns": [
+        "n5-030"
+      ],
+      "_curriculum_note": "Choice 1 uses nominalizing の + が (n5-030). Sequence after n5-030 in any curriculum that uses prerequisites."
     },
     {
       "id": "n5.listen.006",
