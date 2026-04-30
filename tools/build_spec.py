@@ -16,7 +16,9 @@ from docx.oxml import OxmlElement
 
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT_PATH = str(ROOT / "JLPT N5 Grammar Tutor – Functional Spec.docx")
+OUT_DIR = ROOT / "specifications"
+OUT_DIR.mkdir(exist_ok=True)
+OUT_PATH = str(OUT_DIR / "JLPT N5 Grammar Tutor – Functional Spec.docx")
 
 doc = Document()
 
@@ -114,18 +116,78 @@ title_run.bold = True
 title_run.font.color.rgb = RGBColor(0x14, 0x45, 0x2A)
 
 sub_p = doc.add_paragraph()
-sub_run = sub_p.add_run("(GitHub-Hosted Static Web App)  •  Version 2  •  Amended 2026-04-29")
+sub_run = sub_p.add_run("(GitHub-Hosted Static Web App)  •  Version 3  •  Amended 2026-04-30")
 sub_run.italic = True
 sub_run.font.size = Pt(11)
 sub_run.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
 
 p("Target learner: late-N5 (wrapping up N5; preparing for JLPT N5 exam).")
-p("Predecessor: Version 1 (preserved as separate file).")
+p("Live site: https://gauravaccentureproducts.github.io/jlpt-n5-tutor/")
+p("Predecessors: v1 (KnowledgeBank/sources.md era) and v2 (post-Brief-1) preserved as separate files.")
 
 hr()
 
-# ---------- Changelog ----------
-h1("0) Changelog from v1")
+# ---------- Changelog from v2 ----------
+h1("0) Changelog from v2")
+p("Shipped between 2026-04-29 and 2026-04-30 across UX Brief 2 (4 phases), the Pass-9 content correction, the Pass-10 audio fixes, and a battery of UI follow-ups.")
+
+h2("New routes & flow (Brief 2 §1, §14)")
+bullet("**`#/home`** is now the default route. First-time visitors see a CTA + 3 pillar cards; returning visitors see a Continue card + Today's review queue + 7-day streak heatmap.")
+bullet("**`#/learn`** is now a 5-card hub (Reference: Grammar / Vocabulary / Kanji ; Practice: Dokkai / Listening). 3+2 semantic split avoids orphaning.")
+bullet("**`#/learn/grammar`** - 187 grammar cards in 32 categories with a sticky chip-rail jump menu.")
+bullet("**`#/learn/vocab`** - 1002 vocab cards in 40 sections (only first section open by default) with a 40-chip jump menu that opens + scrolls the target section.")
+bullet("**`#/learn/vocab/<form>`** - per-word detail page (form / reading / gloss / 5 example sentences sourced from grammar.json by either kanji form OR kana reading).")
+bullet("**`#/kanji`** - card grid (97 entries with glyph + meaning + first kun/on); **`#/kanji/<glyph>`** - per-kanji detail page with prev/next nav.")
+bullet("**`#/test/<n>`** for n in {20,30,50} starts a test of that length directly.")
+
+h2("Settings panel additions (Brief 2 §5)")
+bullet("**3-mode furigana** (Always show / Hide on known kanji / Never) replaces the binary toggle. Live preview next to the radios.")
+bullet("**Per-kanji 'I know this' flag** - click any kanji glyph anywhere to open a popover with on/kun/meaning + a checkbox; flag persists in `localStorage.knownKanji` and feeds the 'hide-known' furigana mode.")
+bullet("**Audio playback speed** (0.75x / 1.0x / 1.25x) - applied via MutationObserver to every `<audio>` element on every route render.")
+bullet("**Reduce motion** override (auto / on / off) - sets `data-reduce-motion` on `<html>`; CSS overrides animation/transition durations.")
+bullet("**Typed-phrase reset** ('Type RESET to confirm') replaces the legacy double-confirm dialog.")
+bullet("**Export schema bumped 1 → 2** to include the new `knownKanji` and `streak` keys (settings, history, results, knownKanji, streak). v1 imports remain accepted - missing keys default to empty.")
+
+h2("PWA / offline upgrades (Brief 2 §12)")
+bullet("**Service worker `jlpt-n5-tutor-v24`** - stale-while-revalidate for the shell (HTML/CSS/JS) and cache-first for content (data/audio/locales).")
+bullet("**'Update available' toast** - SW posts a SW_UPDATE_AVAILABLE message when new shell bytes are detected; click Reload to skipWaiting + reload.")
+bullet("**PWA install banner** - one-time, dismissible, persists in localStorage.")
+bullet("**Offline indicator** - chip in top-right that toggles with `navigator.onLine`. Hidden when online.")
+
+h2("Mobile / responsive / a11y (Brief 2 §9, §10)")
+bullet("**Bottom nav at ≤480 px** - primary nav becomes a fixed bar with `env(safe-area-inset-bottom)` honored.")
+bullet("**44 px tap-target floor** enforced via CSS on every interactive element.")
+bullet("**Skeleton screens** replace the legacy 'Loading...' text on every route. 5-second timeout shows a real 'Couldn't load - Retry' UI.")
+bullet("**Empty states with routing buttons** for Review / Summary / Test (no completed tests / no progress yet / no due items).")
+bullet("**Print stylesheet** (`@media print`) hides chrome, expands `<details>`, switches to serif. Clean Learn-lesson printables.")
+
+h2("Power user / search / shortcuts (Brief 2 §7, §8)")
+bullet("**Cross-corpus search** in the secondary nav: indexes grammar (id/pattern/meaning/explanation), vocab (form/reading/gloss, capped at 1500), kanji (glyph/on/kun/meanings). Results group by type with counts. `/` keyboard shortcut focuses the input.")
+bullet("**Global keyboard shortcuts** (`js/shortcuts.js`): 1-4 picks Nth choice; Space reveal/flip; Enter clicks primary/Submit; ? opens cheatsheet overlay; Esc dismisses overlays.")
+bullet("**Quit-prompt in Test** - `__testInProgress` flag set on test start; beforeunload + hashchange interceptors confirm 'Quit this test?' and revert the hash on cancel.")
+
+h2("Audio + content corrections (Pass 9, Pass 10)")
+bullet("**491 MP3 files** - 449 grammar examples + 30 reading passages + 12 listening scripts (~19 MB) generated via gTTS at build time. App degrades gracefully when MP3s are absent.")
+bullet("**`tools/build_audio.py:normalize_for_tts()`** - converts ASCII digits to kanji digits before passing to gTTS so '3さつ' reads as 'さんさつ' and not as 'スリーさつ'. 274 occurrences across the corpus normalized.")
+bullet("**`data/n5_kanji_readings.json`** - 35 wrong-primary readings fixed (本 もと→ほん, 時 とき→じ, 月 つき→がつ, 学 まな→がく, 人 ひと→にん, etc.) so auto-furigana renders the N5-context-most-common reading.")
+bullet("**Pass 9 (external content brief)** - 27 + 4 sweeps + 7 cross-file consistency checks raised, all 38 fixed, 0 open across moji/goi/bunpou/dokkai/authentic question files.")
+bullet("**Pass 10 (audio + auto-furigana)** - 309 findings (274 ASCII-digit + 35 wrong-primary), all closed.")
+
+h2("Cumulative content audit tally")
+bullet("**Pass 1-9** content corrections: 153 raised, 153 closed.")
+bullet("**Pass 10** audio + auto-furigana: 309 raised, 309 closed.")
+bullet("**Total: 462 raised, 462 closed, 0 open** across 10 audit passes spanning JLPT paper-maker, native-teacher, external 日本語教師, and TTS / rendering correctness perspectives.")
+
+h2("Repo / specifications hygiene")
+bullet("**`specifications/`** directory holds the canonical functional spec (this document).")
+bullet("**`not-required/`** directory archives the v1 spec and other transient artifacts (kept on disk but out of the working tree).")
+bullet("**`CHANGELOG.md`** documents user-visible changes per release; linked from the footer's 'What's new' link.")
+bullet("**Em-dash-free codebase** - 881 occurrences stripped from shipped files for cp932 console safety. Regression guard X-6.5 in the testing plan.")
+
+hr()
+
+# ---------- Changelog from v1 ----------
+h1("0.1) Changelog from v1 (historical)")
 bullet("**§4.2 Furigana default flipped to OFF on N5 kanji** - matches a late-N5 learner. Per-session toggle to flip ON when desired.")
 bullet("**§4.3 Lesson template expanded from 5 blocks to 7** - adds Form & Connection Rules and Common Mistakes / Contrasts blocks.")
 bullet("**§4.4 NEW Canonical pattern source** - locked to local file `KnowledgeBank/grammar_n5.md` (23 categories, exhaustive), not an external website.")
