@@ -99,21 +99,24 @@ test.describe('P0 smoke - core navigation', () => {
     expect(bg).not.toBe('rgb(255, 255, 255)');
   });
 
-  test('Settings: 3-mode furigana radios + audio speed + reset confirm box', async ({ page }) => {
+  test('Settings: audio speed + reset confirm box', async ({ page }) => {
+    // Note: the 3-mode furigana radios were removed in Pass 13 (auto-furigana
+    // feature was killed because single-primary lookup tables couldn't
+    // disambiguate context-dependent kanji readings). Test now covers the
+    // remaining persistent settings.
     await page.goto('/#/settings');
-    await expect(page.locator('input[name="furi"]')).toHaveCount(3);
     await expect(page.locator('#set-audio-rate option')).toHaveCount(3);
     await expect(page.locator('#reset-confirm')).toBeAttached();
     // Reset confirm box hidden until clicked
     await expect(page.locator('#reset-confirm')).toBeHidden();
   });
 
-  test('Settings furigana mode persists across reload', async ({ page }) => {
+  test('Settings audio rate persists across reload', async ({ page }) => {
     await page.goto('/#/settings');
-    await page.locator('input[name="furi"][value="always"]').check();
+    await page.locator('#set-audio-rate').selectOption('1.25');
     await page.reload();
     await page.waitForLoadState('domcontentloaded');
-    await expect(page.locator('input[name="furi"][value="always"]')).toBeChecked();
+    await expect(page.locator('#set-audio-rate')).toHaveValue('1.25');
   });
 });
 
