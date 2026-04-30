@@ -111,6 +111,61 @@ Analyzed `specifications/JLPT N5 Grammar Tutor – Functional Spec.docx` (v3, 33
 
 ---
 
+## External-blocked backlog (2026-05-01)
+
+Four items from the active backlog cannot be closed in code; each has a real external dependency. Capturing them here as explicit handoff entries with the action that unblocks them. The cron `jlpt-n5-quarterly-pass-audit` will surface them again on 2026-07-30.
+
+### EB-1 — OQ-2 Listening corpus expansion 12 → 30+ items
+
+- **Status**: APPROVED for v1.6 (per §B.9 OQ-2 closure 2026-04-30); not started.
+- **Blocker**: native Japanese voice talent. Synthetic TTS (gTTS, Piper) is unacceptable for new items — at N5 the listening test measures phoneme/prosody discrimination, so synthetic prosody artefacts would over-fit learners to artefacts rather than the language.
+- **Unblocks when**: a native-speaker recording channel exists. Three viable channels:
+  1. Paid voice actor (~3-5 hr studio session for ~20 items at N5 length).
+  2. Volunteer Japanese-native already engaged with the project (e.g., the Pass-11 reviewer "Suiraku San" listed in the supplement sign-off matrix).
+  3. License of existing N5-graded audio (rights-clearance question; would need legal review).
+- **Code already in place** for when audio arrives:
+  - `data/audio_manifest.json` schema includes per-item `voice` field.
+  - `tools/build_audio.py` skips items marked `voice: "native"` so externally recorded files aren't synthesised over.
+  - JA-15 invariant verifies any manifest path resolves to a file on disk.
+- **Estimated effort once unblocked**: ~6-10 hr (script authoring + studio session + post-production + integration).
+- **Owner**: Content owner (Suiraku San).
+
+### EB-2 — Pass-15 deep semantic re-audit
+
+- **Status**: SCHEDULED for 2026-07-30 quarterly gate (cron is set).
+- **Blocker**: native Japanese reviewer time.
+- **Scope** (~70% of corpus): 157 unreviewed `data/grammar.json` patterns; 21 unreviewed `data/reading.json` passages; 591 unreviewed `KnowledgeBank/*_questions_n5.md` entries; full re-audit of KB catalogs (already audited 9× via Pass 1-10).
+- **Also covers** the 69 questions deferred from Item 4 (template generator couldn't handle compound patterns) — the reviewer should hand-author those.
+- **Estimated effort once unblocked**: ~10-12 hr across multiple sessions.
+- **Owner**: Content reviewer (Suiraku San) per §B.1.2 sign-off matrix.
+
+### EB-3 — OQ-6 Brief translation to Japanese (optional)
+
+- **Status**: DEFERRED to 2026-07-30 as a separate optional task (per §B.9 OQ-6 closure 2026-04-30 — distinct from the closed UI-stays-English decision).
+- **Blocker**: a Japan-based reviewer engagement to make the translated brief useful. Without one, the translation has no audience.
+- **Unblocks when**: a Japan-based reviewer (e.g., a 文部科学省 contact) commits to reading the brief.
+- **Estimated effort once unblocked**: ~4 hr translation + cross-review.
+- **Owner**: Project author + Content reviewer.
+- **Priority**: P4 (lowest among external backlog) — only worth doing if outreach is in progress.
+
+### EB-4 — OQ-1 v2.0 ML-backed recommender (richer than current minimal widget)
+
+- **Status**: DEFERRED to v2.0 (target 2026-09-30 per §B.9 OQ-1 closure).
+- **Blocker**: learner-base data. The current minimal recommender (state-driven, in-app, no telemetry) is honest about its inputs. A richer ML version would need either (a) on-device learning data we don't currently retain at scale, or (b) a privacy-respecting analytics channel that doesn't exist (and would conflict with Hard constraint #2 "no telemetry").
+- **Unblocks when**: a privacy-respecting input source emerges — e.g., the export/import flow becomes common enough that anonymised analysis of exported state could inform recommendation. Or the Hard-constraint #2 stance is revisited.
+- **Estimated effort once unblocked**: ~6-8 hr design + implementation.
+- **Priority**: P4 — only worth doing if (a) usage justifies it AND (b) a privacy-clean data path exists.
+
+### Summary of what's open after 2026-05-01 sweep
+
+| Code-doable | External-blocked |
+|---|---|
+| 0 items | 4 items (EB-1 through EB-4) |
+
+Code-tier backlog is empty. Every code-doable item from the data-correction brief, the UI design brief, and the kanji-card content gaps has been applied. The only remaining work needs human linguistic / voice / institutional resources that are out of scope for the current automation envelope.
+
+---
+
 ## Open-question follow-ups - decided 2026-04-30
 
 Per the §B.9 batch decision on 2026-04-30, four OQ rows were closed. Three were code-only and have already shipped in v1.6 — the fourth (OQ-2 listening corpus) is a content-authoring task with a hard external dependency, captured below.
