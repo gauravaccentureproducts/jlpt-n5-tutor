@@ -106,8 +106,8 @@ Analyzed `specifications/JLPT N5 Grammar Tutor – Functional Spec.docx` (v3, 33
 
 - [ ] Sign-off matrix (§B.1.2): name a content reviewer, accessibility reviewer, engineering owner.
 - [ ] Open questions (§B.9): triage OQ-1 through OQ-5 with target decision dates.
-- [ ] Merge supplement into a new v4 .docx; archive v3 to `not-required/`.
-- [ ] Calendar reminder: first quarterly Pass-N re-audit on 2026-07-30 (per §D.2).
+- [x] Merge supplement into a new v4 .docx; archive v3 to `not-required/`. Done: extended `tools/build_spec.py` with a small markdown→docx renderer (handles headings, paragraphs, bullets, numbered lists, tables, code fences, **bold** / `code` / [link]() inline). Subtitle bumped v3→v4. v4 .docx is 72 KB (up from v3's 53 KB) at `specifications/JLPT N5 Grammar Tutor – Functional Spec.docx`. v3 archived to `not-required/JLPT N5 Grammar Tutor – Functional Spec v3.docx`.
+- [x] Calendar reminder: first quarterly Pass-N re-audit on 2026-07-30 (per §D.2). Already scheduled in commit `bcd343f` as the recurring task `jlpt-n5-quarterly-pass-audit` (cron `0 9 30 1,4,7,10 *`); next run 2026-07-30 9 AM local. Listed twice in this section so checking both.
 
 ---
 
@@ -124,7 +124,7 @@ Brief at `feedback/native-teacher-review-request.md`. Covers **both** `data/` (r
   - Optional: audio QA on ~20 random MP3s
 - **Effort:** ~10-15 hours total, splittable; partial reviews welcome (P1 alone is ~2-3 hours).
 - **Severity model:** CRITICAL (blocks release) / HIGH (next release) / MEDIUM / LOW.
-- **Output format:** Markdown findings file using template at `feedback/_findings_template.md`. Will be ingested as Pass-11 in `verification.md` once received.
+- **Output format:** Markdown findings - the brief and the fillable template are now merged into a single file (Part A = brief, Part B = template). Reviewer copies `feedback/native-teacher-review-request.md` → `feedback/pass-11-native-review-findings.md`, fills in Part B, returns. Will be ingested as Pass-11 in `verification.md` once received.
 - **Hard constraints documented inline:** N5 syllabus only, no romaji, kanji-scope rule, naturalness exception for reading passages.
 - **Reference list:** Bunpro / JLPT Sensei / Genki / Minna / Try! / Tofugu (full annotated list in `KnowledgeBank/sources.md`).
 - **Acknowledgement:** reviewer credited in `verification.md` Pass-11 entry and CHANGELOG (with their permission; pseudonym/anonymous accepted).

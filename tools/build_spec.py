@@ -116,7 +116,7 @@ title_run.bold = True
 title_run.font.color.rgb = RGBColor(0x14, 0x45, 0x2A)
 
 sub_p = doc.add_paragraph()
-sub_run = sub_p.add_run("(GitHub-Hosted Static Web App)  •  Version 3  •  Amended 2026-04-30")
+sub_run = sub_p.add_run("(GitHub-Hosted Static Web App)  •  Version 4  •  Amended 2026-04-30")
 sub_run.italic = True
 sub_run.font.size = Pt(11)
 sub_run.font.color.rgb = RGBColor(0x55, 0x55, 0x55)
@@ -707,6 +707,171 @@ bullet("Furigana renderer: use `<ruby>...<rt>...</rt></ruby>` for true semantic 
 bullet("All Japanese strings in code/data must be UTF-8 (no Shift-JIS / cp932).")
 bullet("When generating Drill sessions, prefer questions the learner has missed before - but if none exist for a due pattern, sample any question for that pattern.")
 bullet("Keep `js/` modules small (one chapter / mode per file). Aim < 300 LOC per file before splitting.")
+
+# ============================================================
+# v4: append v3.1 supplement (gap-fill addendum)
+# ============================================================
+# The supplement lives as markdown at specifications/JLPT-N5-Functional-
+# Spec-v3.1-supplement.md. We render it inline so v4 is a single docx
+# with all of v3's content PLUS the new sections (document control,
+# glossary, RACI, user stories, KPIs, NFRs, test strategy, risks,
+# open-questions, maintenance, release process, errata, audit protocol).
+
+def _add_inline_runs(para, text, bold=False, italic=False):
+    """Render bold (**...**), inline-code (`...`), and links [text](url)
+    by toggling runs as we walk the string. Anything else is plain text."""
+    i = 0
+    while i < len(text):
+        if text.startswith('**', i):
+            # bold span
+            end = text.find('**', i + 2)
+            if end == -1:
+                _add_inline_runs(para, text[i + 2:], bold=True, italic=italic); return
+            inner = text[i + 2:end]
+            r = para.add_run(inner); r.bold = True; r.italic = italic
+            i = end + 2
+        elif text.startswith('`', i):
+            end = text.find('`', i + 1)
+            if end == -1:
+                r = para.add_run(text[i + 1:]); r.font.name = 'Consolas'; r.font.size = Pt(9); return
+            r = para.add_run(text[i + 1:end]); r.font.name = 'Consolas'; r.font.size = Pt(9)
+            i = end + 1
+        elif text.startswith('[', i):
+            close = text.find('](', i + 1)
+            close2 = text.find(')', close + 2) if close != -1 else -1
+            if close == -1 or close2 == -1:
+                r = para.add_run(text[i]); r.bold = bold; r.italic = italic
+                i += 1
+                continue
+            label = text[i + 1:close]
+            r = para.add_run(label); r.bold = bold; r.italic = italic
+            r.font.color.rgb = RGBColor(0x14, 0x45, 0x2A); r.underline = True
+            i = close2 + 1
+        else:
+            # collect plain run until the next special marker
+            stops = [text.find('**', i), text.find('`', i), text.find('[', i)]
+            stops = [s for s in stops if s != -1]
+            end = min(stops) if stops else len(text)
+            chunk = text[i:end]
+            if chunk:
+                r = para.add_run(chunk); r.bold = bold; r.italic = italic
+            i = end
+
+
+def _emit_table(rows):
+    """rows is a list of list-of-strings. First row is header."""
+    if not rows: return
+    table = doc.add_table(rows=len(rows), cols=len(rows[0]))
+    table.style = 'Light Grid Accent 1'
+    for r_idx, row in enumerate(rows):
+        for c_idx, cell_text in enumerate(row):
+            cell = table.rows[r_idx].cells[c_idx]
+            # The default cell paragraph is empty - reuse it
+            cell.paragraphs[0].text = ''
+            _add_inline_runs(cell.paragraphs[0], cell_text,
+                              bold=(r_idx == 0))
+    doc.add_paragraph()  # spacer after table
+
+
+def render_markdown(md_path):
+    """Walk the supplement markdown line-by-line and emit doc nodes
+    using the existing helpers (h1/h2/h3/p/bullet) plus an inline
+    table renderer.
+
+    Markdown features handled:
+      # / ## / ### headings
+      paragraphs (multi-line collapsed into one paragraph)
+      - bullets (single level)
+      | a | b | tables (with separator row skipped)
+      **bold** / `code` / [text](url) inline
+      --- horizontal rule
+    """
+    text = md_path.read_text(encoding='utf-8')
+    lines = text.split('\n')
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+        # Skip blank lines (the helpers add their own spacing)
+        if not stripped:
+            i += 1
+            continue
+        # Headings
+        if stripped.startswith('#### '):
+            # Treat h4+ as bold paragraph (we don't use h4 in this doc)
+            para = doc.add_paragraph()
+            r = para.add_run(stripped[5:].strip()); r.bold = True
+            i += 1; continue
+        if stripped.startswith('### '):
+            h3(stripped[4:].strip()); i += 1; continue
+        if stripped.startswith('## '):
+            h2(stripped[3:].strip()); i += 1; continue
+        if stripped.startswith('# '):
+            h1(stripped[2:].strip()); i += 1; continue
+        # Horizontal rule
+        if stripped in ('---', '***', '___'):
+            hr(); i += 1; continue
+        # Table: a line starting with | and the next line is a separator |---|---|
+        if stripped.startswith('|') and i + 1 < len(lines) and re.match(r'^\s*\|?\s*:?-+', lines[i + 1].strip()):
+            rows = []
+            # header row
+            header = [c.strip() for c in stripped.strip('|').split('|')]
+            rows.append(header)
+            i += 2  # skip header + separator
+            while i < len(lines) and lines[i].strip().startswith('|'):
+                row = [c.strip() for c in lines[i].strip().strip('|').split('|')]
+                rows.append(row)
+                i += 1
+            _emit_table(rows)
+            continue
+        # Bullet
+        if stripped.startswith('- ') or stripped.startswith('* '):
+            text_after = stripped[2:].strip()
+            # Use the existing bullet() helper (it handles **bold**)
+            # but we need inline-code + link too. Use add_paragraph + _add_inline_runs.
+            para = doc.add_paragraph(style='List Bullet')
+            para.paragraph_format.left_indent = Inches(0.25)
+            _add_inline_runs(para, text_after)
+            i += 1; continue
+        # Numbered list (1. text)
+        if re.match(r'^\d+\.\s', stripped):
+            text_after = re.sub(r'^\d+\.\s+', '', stripped)
+            para = doc.add_paragraph(style='List Number')
+            _add_inline_runs(para, text_after)
+            i += 1; continue
+        # Code fence
+        if stripped.startswith('```'):
+            # Collect until closing fence
+            block = []
+            i += 1
+            while i < len(lines) and not lines[i].strip().startswith('```'):
+                block.append(lines[i]); i += 1
+            i += 1  # consume closing fence
+            code_block('\n'.join(block))
+            continue
+        # Regular paragraph: collect until blank line
+        para_lines = [stripped]
+        i += 1
+        while i < len(lines) and lines[i].strip() and not (
+            lines[i].strip().startswith(('#', '-', '*', '|', '>', '```'))
+            or re.match(r'^\d+\.\s', lines[i].strip())
+        ):
+            para_lines.append(lines[i].strip())
+            i += 1
+        para = doc.add_paragraph()
+        _add_inline_runs(para, ' '.join(para_lines))
+
+
+import re  # used by render_markdown
+
+SUPPLEMENT_PATH = ROOT / "specifications" / "JLPT-N5-Functional-Spec-v3.1-supplement.md"
+if SUPPLEMENT_PATH.exists():
+    hr()
+    p("APPENDIX - v3.1 supplement merged into v4", bold=True, italic=True)
+    p("(Source: specifications/JLPT-N5-Functional-Spec-v3.1-supplement.md)", italic=True)
+    p("This appendix carries the gap-fill content that elevated v3 to v4: document control template, glossary, RACI, user stories, KPIs, full NFRs, test strategy, risks register, open-questions log, maintenance model, release process, errata against v3 sections, and the Pass-N audit protocol. Sections lettered A-E follow.")
+    hr()
+    render_markdown(SUPPLEMENT_PATH)
 
 doc.save(OUT_PATH)
 # stdout on Windows defaults to cp932, which can't encode the en-dash in OUT_PATH.
