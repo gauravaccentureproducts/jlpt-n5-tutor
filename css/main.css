@@ -1810,7 +1810,15 @@ ruby[data-glyph] { cursor: pointer; }
 .kanji-glyph-big { font-size: 96px; line-height: 1; padding: 8px 24px; border: 1px solid var(--c-border); border-radius: var(--r); background: var(--c-bg); }
 .kanji-readings p { margin: 4px 0; }
 .kanji-stroke { margin-top: 24px; }
-.kanji-stroke .stroke-svg { width: 100%; max-width: 320px; min-height: 200px; }
+.kanji-stroke .stroke-svg {
+  width: 100%; max-width: 320px; min-height: 200px;
+  background: #fff;
+  border: 1px solid var(--c-border);
+  border-radius: var(--r);
+  display: block;
+}
+.kanji-stroke-credit { margin-top: 8px; font-size: 12px; }
+.kanji-stroke-credit a { color: var(--c-primary, #14452a); }
 .kanji-nav { display: flex; justify-content: space-between; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--c-border); }
 
 /* Empty states (Brief 2 s3.2) */

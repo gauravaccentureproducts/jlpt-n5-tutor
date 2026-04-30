@@ -14,16 +14,20 @@ test.describe('P0 smoke - core navigation', () => {
   // 'persists across reload' test because it cleared storage on the
   // reload too.
 
-  test('home loads with title, CTA, trust strip, no console errors', async ({ page }) => {
+  test('home loads with title, CTA, two pillars, no console errors', async ({ page }) => {
     const errors = [];
     page.on('pageerror', e => errors.push(e.message));
     page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
 
     await page.goto('/');
-    await expect(page).toHaveTitle('JLPT N5 Grammar Tutor');
-    await expect(page.locator('.brand-link')).toContainText('JLPT N5 Grammar Tutor');
+    // Site title + brand updated in v1.6.1 copy audit (removed "Grammar Tutor"
+    // sub-brand; supplements §B.12 voice contract).
+    await expect(page).toHaveTitle('JLPT N5 — study material');
+    await expect(page.locator('.brand-link')).toContainText('JLPT N5');
     await expect(page.locator('.home-cta h2')).toBeVisible();
-    await expect(page.locator('.trust-strip li')).toHaveCount(3);
+    // Trust strip removed in v1.6.1 (replaced by PRIVACY.md link in footer).
+    // Pillars reduced to Learn + Test in v1.6 nav simplification.
+    await expect(page.locator('.pillar-card')).toHaveCount(2);
     await expect(page.locator('.btn-primary').first()).toContainText(/lesson|continue/i);
     expect(errors, `console errors: ${errors.join('\n')}`).toEqual([]);
   });
@@ -69,10 +73,12 @@ test.describe('P0 smoke - core navigation', () => {
     expect(open).toBe(1);
   });
 
-  test('Kanji index has 97 cards, each linking to a glyph detail', async ({ page }) => {
+  test('Kanji index has 106 cards, each linking to a glyph detail', async ({ page }) => {
+    // Corpus is 106 entries since Pass-13 build-pipeline fix recovered 9 missing
+    // kanji (手/力/口/目/足/号/員/社/私). Was 97 pre-Pass-13.
     await page.goto('/#/kanji');
     await expect(page.locator('h2')).toContainText('Kanji');
-    await expect(page.locator('.kanji-card')).toHaveCount(97);
+    await expect(page.locator('.kanji-card')).toHaveCount(106);
     const firstHref = await page.locator('.kanji-card').first().getAttribute('href');
     expect(firstHref).toMatch(/^#\/kanji\/%E[0-9A-F]/);
   });

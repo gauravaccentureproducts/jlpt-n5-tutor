@@ -2,6 +2,24 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.6.2 - 2026-04-30 (Stroke-order SVGs)
+
+### Added
+- **Stroke-order diagrams on every kanji card.** Drop-in of all 106 KanjiVG SVGs (CC BY-SA 3.0) at `svg/kanji/<glyph>.svg`. The placeholder text "Stroke-order SVG not yet shipped." that was visible on every one of the 106 kanji detail cards is gone. Each kanji card now shows the actual stroke-by-stroke diagram with stroke numbers.
+- **`NOTICES.md`** at the repo root: third-party content attributions. KanjiVG entry includes source, license, copyright, and a note on the only modification made (codepoint-hex filenames renamed to literal-glyph filenames to keep on-disk names learner-readable; SVG payload byte-for-byte preserved).
+- **`tools/fetch_kanjivg.py`** build script: fetches the 106 SVGs from KanjiVG's GitHub raw URLs. Idempotent (skips files already present). Used at build time only.
+
+### Changed
+- **Service worker precache** now derives the 106 SVG URLs at install time from `data/n5_kanji_whitelist.json` rather than hand-listing them. Avoids drift between data and precache.
+- **Kanji card fallback message** rewritten: `Stroke-order SVG not yet shipped. Drop-in target: ...` → `Stroke-order diagram could not load.` (only visible when an SVG is missing or `<object>` fails to render).
+- **CC BY-SA 3.0 attribution line** added under the stroke-order diagram on every kanji card, linking to <https://kanjivg.tagaini.net/>.
+
+### Note
+- This is a content-only addition. Zero changes to grammar/vocab/listening/reading data. All 23 content-integrity invariants remain green.
+- SVG payload size: ~496 KB total across 106 files (avg ~4.7 KB each).
+
+---
+
 ## v1.6.1 - 2026-04-30 (Copy audit: voice consistency)
 
 ### Changed

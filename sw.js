@@ -8,7 +8,7 @@
 //
 // Bump CACHE_VERSION whenever a release ships, so old caches get evicted on
 // the next visit.
-const CACHE_VERSION = 'jlpt-n5-tutor-v38';
+const CACHE_VERSION = 'jlpt-n5-tutor-v39';
 
 const PRECACHE = [
   './',
@@ -17,6 +17,7 @@ const PRECACHE = [
   './README.md',
   './TASKS.md',
   './PRIVACY.md',
+  './NOTICES.md',
   './css/main.css',
   './js/app.js',
   './js/storage.js',
@@ -65,6 +66,22 @@ const PRECACHE = [
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_VERSION);
+
+    // Build the full precache: static shell + 106 kanji stroke-order SVGs.
+    // The SVG paths are derived at install-time from the whitelist file so
+    // the precache list doesn't need to be hand-maintained alongside data.
+    let kanjiSvgs = [];
+    try {
+      const wlResp = await fetch('./data/n5_kanji_whitelist.json', { cache: 'reload' });
+      if (wlResp.ok) {
+        const wl = await wlResp.json();
+        kanjiSvgs = wl.map(g => `./svg/kanji/${g}.svg`);
+      }
+    } catch (err) {
+      console.warn('SW: could not derive kanji SVG list:', err);
+    }
+    const fullList = [...PRECACHE, ...kanjiSvgs];
+
     // CRITICAL: use { cache: 'reload' } on every precache request so the SW
     // bypasses the BROWSER'S HTTP cache and pulls truly-fresh bytes from the
     // network. Without this, a CACHE_VERSION bump alone is insufficient — if
@@ -73,7 +90,7 @@ self.addEventListener('install', (event) => {
     // stale content forward into its own cache. Symptom: bumping the SW
     // doesn't ship the new code. (Diagnosed 2026-04-30 after L1-L10 batch.)
     try {
-      await Promise.all(PRECACHE.map(url =>
+      await Promise.all(fullList.map(url =>
         cache.add(new Request(url, { cache: 'reload' }))
       ));
     } catch (err) {

@@ -72,8 +72,9 @@ function renderDetail(container, entry, entries) {
         <section class="kanji-stroke">
           <h3>Stroke order</h3>
           <object class="stroke-svg" data="${esc(entry.stroke_order_svg)}" type="image/svg+xml" aria-label="Stroke order for ${esc(entry.glyph)}">
-            <p class="muted small">Stroke-order SVG not yet shipped. Drop-in target: <code>${esc(entry.stroke_order_svg)}</code> (KanjiVG-compatible).</p>
+            <p class="muted small">Stroke-order diagram could not load.</p>
           </object>
+          <p class="muted small kanji-stroke-credit">Stroke data: <a href="https://kanjivg.tagaini.net/" rel="noopener noreferrer" target="_blank">KanjiVG</a> (CC BY-SA 3.0).</p>
         </section>
       ` : ''}
       <nav class="kanji-nav">
