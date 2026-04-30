@@ -137,7 +137,7 @@ bullet("**`#/learn`** is now a 5-card hub (Reference: Grammar / Vocabulary / Kan
 bullet("**`#/learn/grammar`** - 187 grammar cards in 32 categories with a sticky chip-rail jump menu.")
 bullet("**`#/learn/vocab`** - 1002 vocab cards in 40 sections (only first section open by default) with a 40-chip jump menu that opens + scrolls the target section.")
 bullet("**`#/learn/vocab/<form>`** - per-word detail page (form / reading / gloss / 5 example sentences sourced from grammar.json by either kanji form OR kana reading).")
-bullet("**`#/kanji`** - card grid (97 entries with glyph + meaning + first kun/on); **`#/kanji/<glyph>`** - per-kanji detail page with prev/next nav.")
+bullet("**`#/kanji`** - card grid (106 entries with glyph + meaning + first kun/on); **`#/kanji/<glyph>`** - per-kanji detail page with prev/next nav.")
 bullet("**`#/test/<n>`** for n in {20,30,50} starts a test of that length directly.")
 
 h2("Settings panel additions (Brief 2 §5)")

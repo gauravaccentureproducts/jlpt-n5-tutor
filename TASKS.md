@@ -20,7 +20,7 @@ Last updated: 2026-04-30 (Pass-13 fully closed: 4 CRITICAL data-pipeline corrupt
 - Export / import progress round-trips through JSON
 - 37 browser-runnable tests
 - **Vocab corpus**: 1002 structured entries (data/vocab.json)
-- **Kanji corpus**: 97 entries with stroke-order SVG slot (data/kanji.json)
+- **Kanji corpus**: 106 entries with stroke-order SVG slot (data/kanji.json) — recovered 9 missing entries via Pass-13 build-pipeline fix.
 - **Reading corpus**: 30 graded passages with 2-3 comprehension Qs each (data/reading.json)
 - **Listening corpus**: 12 items across 3 JLPT formats (4 task / 4 point / 4 utterance) in data/listening.json
 - **Audio assets**: 491 MP3 files committed - 449 grammar examples, 30 reading passages, 12 listening scripts (~19 MB total). Generated via gTTS (build-time only).
@@ -108,6 +108,82 @@ Analyzed `specifications/JLPT N5 Grammar Tutor – Functional Spec.docx` (v3, 33
 - [x] Open questions (§B.9) triaged 2026-04-30. **OQ-1** Recommendation engine: deferred to v2.0 (target 2026-09-30; blocked on Pass-11 corpus completion). **OQ-2** Listening corpus expansion: deferred to v1.6 (target 2026-07-30; blocked on Pass-11 listening review). **OQ-3** CSP meta tag: approved for v1.6 (target 2026-05-15; ~30 min implementation). **OQ-4** Audio playback history in export schema: deferred indefinitely (privacy conflict). **OQ-5** N4 expansion: closed out-of-scope per Brief 1. Plus 2 new: **OQ-6** Japanese-version brief: open (target 2026-07-30; translate brief, defer app). **OQ-7** Empty furigana[] field: closed-keep (functional optional override).
 - [x] Merge supplement into a new v4 .docx; archive v3 to `not-required/`. Done: extended `tools/build_spec.py` with a small markdown→docx renderer (handles headings, paragraphs, bullets, numbered lists, tables, code fences, **bold** / `code` / [link]() inline). Subtitle bumped v3→v4. v4 .docx is 72 KB (up from v3's 53 KB) at `specifications/JLPT N5 Grammar Tutor – Functional Spec.docx`. v3 archived to `not-required/JLPT N5 Grammar Tutor – Functional Spec v3.docx`.
 - [x] Calendar reminder: first quarterly Pass-N re-audit on 2026-07-30 (per §D.2). Already scheduled in commit `bcd343f` as the recurring task `jlpt-n5-quarterly-pass-audit` (cron `0 9 30 1,4,7,10 *`); next run 2026-07-30 9 AM local. Listed twice in this section so checking both.
+
+---
+
+## Open-question follow-ups - decided 2026-04-30
+
+Per the §B.9 batch decision on 2026-04-30, four OQ rows were closed. Three were code-only and have already shipped in v1.6 — the fourth (OQ-2 listening corpus) is a content-authoring task with a hard external dependency, captured below.
+
+### OQ-2 backlog item: listening corpus expansion 12 → 30+ items (native voice required)
+
+- **Decision**: approved for v1.6, target authoring completion **2026-07-30**.
+- **Hard constraint**: new listening items MUST be recorded with a **native Japanese voice talent**. gTTS is acceptable for the existing 12 items as a transitional baseline, but it cannot be used for new items. Rationale: at JLPT N5 the listening section tests phoneme + prosody discrimination; gTTS prosody artefacts are memorisable in a way that doesn't transfer to real human speech, so a corpus dominated by gTTS would over-fit learners to an artefact rather than the language.
+- **Why this isn't a code task**: cannot be done by editing `tools/build_audio.py`. Even if the script accepted a different TTS engine, no synthetic engine satisfies the native-voice requirement. The blocker is procurement / authoring, not code.
+- **What needs to happen** (sequenced):
+  1. Procure native voice talent — options: (a) hire a Japanese voice actor (paid, ~3-5 hr session for ~20 items at N5 length); (b) recruit a fluent Japanese-native volunteer reviewer who is already engaged with the project; (c) license existing N5-graded audio (rights-clearance question).
+  2. Author the new scripts: 18 new items (12 → 30) split across the three JLPT formats (~6 task / ~6 point / ~6 utterance). Scripts must stay strictly inside the N5 grammar/vocab/kanji whitelists per existing JA-13 invariant.
+  3. Record at studio-quality (≥ 44.1 kHz, mono, ≤ -3 dB peak, ≤ -23 LUFS integrated); deliver as MP3 (CBR 128 kbps) to match the existing corpus footprint (~115 KB / item).
+  4. Add per-item `voice` metadata to `data/listening.json` (`voice: "native" | "gtts"`) so the build pipeline + UI can flag transitional gTTS items and the next pass can swap them out individually.
+  5. Update `tools/build_audio.py` to skip items with `voice: "native"` (audio is recorded externally, not synthesised) and to honour a per-item `voice` override on existing items when re-recordings arrive.
+  6. Re-run content-integrity CI; verify JA-13 (no out-of-scope kanji) and the new voice-metadata invariant pass.
+- **Owner**: Content owner (Suiraku San per §B.1.2 sign-off matrix) for script authoring + voice procurement; Engineering owner (Gaurav Srivastava) for the metadata / pipeline plumbing only.
+- **Status**: OPEN, not started. Deferred until a native voice channel is in place. Tracked here so it doesn't get lost in OQ-2's "approved" status — approval is the *decision*, not the *delivery*.
+
+### Other 2026-04-30 closures (already shipped, no follow-up needed)
+
+- [x] **OQ-3** — CSP meta tag added to `index.html`; SW `CACHE_VERSION` bumped (v29 → v30).
+- [x] **OQ-1 (minimal)** — "What should I study next?" recommender widget added to Home (`js/home.js` `pickRecommendation()` + `renderRecommendation()` + `.home-recommend` styles in `css/main.css`). Reads `getStreak()` + `getDueCount()` + `lastLearnId`, routes to one of Learn / Review / Drill. Richer ML-backed engine still deferred to v2.0.
+- [x] **OQ-6** — Decision: app UI/instructions stay in **English** (the app teaches Japanese, but chrome stays English so learners are never blocked). Five existing locales (en/vi/id/ne/zh) translate the English chrome — no `ja` locale will be added. Brief translation still tracked for 2026-07-30 as a separate optional task.
+
+---
+
+## Kanji-card content gaps - raised 2026-04-30
+
+Two visible gaps on every kanji detail card (verified in browser preview at `#/kanji/古` and `#/kanji/長`): no example-usage section, and the stroke-order SVG placeholder is shown to learners as "Stroke-order SVG not yet shipped." Both block the kanji card from being a complete learning surface.
+
+### Task K-1: Add "Example usage (N5)" section to kanji cards
+
+- **Goal**: Each of the 106 kanji cards should show 2-3 N5-syllabus example words containing that kanji, so learners see the kanji in actual context (not just the bare glyph + readings + English meaning).
+- **Selection rule**:
+  - Examples must be real N5-syllabus words — sourced from `data/vocab.json` cross-referenced with `data/n5_vocab_whitelist.json`.
+  - 2-3 examples per kanji is the sweet spot; up to 5 only when high-frequency or pedagogically useful.
+  - Per-example fields: `form` (rendered string), `reading` (full kana reading), `gloss` (short English).
+- **Rendering rule** (critical — aligns with existing JA-13 invariant + post-Pass-13 design):
+  - If **every** kanji in the example word is in `data/n5_kanji_whitelist.json` → render the word in **full kanji** form. Examples:
+    - 新 → `新しい` (新 in scope; しい is kana — keep as-is)
+    - 新 → `新聞` (both 新 and 聞 are in N5 — keep as-is)
+    - 古 → `古い`, `古本` (本 is N5 — keep as-is)
+    - 長 → `長い`, `校長` (校 is N5 — keep as-is)
+  - If **any** kanji in the example word is **out of** N5 → that kanji is **substituted with its contextual kana reading**, while the *target* kanji (the one the card is about) stays as kanji. Hypothetical example given by user 2026-04-30: if 聞 were not in N5, then `新聞` would be authored as `新ぶん` (新 stays kanji because the card is about 新; 聞 → ぶん, the on-reading used in 新聞).
+  - Reading correctness: the kana substitution must use the **contextually correct** reading for the compound (on vs kun depends on the word). This is authoring judgment — cannot be fully auto-generated; requires curated input.
+- **Storage**: add `examples: [{form, reading, gloss}]` field to each entry in `data/kanji.json`. Authoring source: `KnowledgeBank/kanji_n5.md` (curated by content reviewer). `tools/build_data.py` propagates from KB → JSON.
+- **UI**: render between the on/kun/meaning meta-strip and the "Stroke order" heading on the kanji detail view. Match existing label style (bold "On:" / "Kun:" / "Meaning:" pattern). Suggested layout: a small table with three columns (form | reading | gloss).
+- **CI invariant** to add (call it JA-15): every example word's `form` field, when scanned for kanji, contains only kanji that are either (a) the target kanji or (b) members of the N5 whitelist. Any other kanji = build-fail. Mirrors JA-13.
+- **Files touched**: `KnowledgeBank/kanji_n5.md` (add examples per entry), `tools/build_data.py` (parse + emit), `data/kanji.json` (regenerated), `js/kanji.js` + relevant CSS (render), `tools/check_content_integrity.py` (JA-15).
+- **Effort estimate**: ~4-6 hr — most of it authoring (106 kanji × 2-3 examples = ~250-300 example words to curate + verify N5-scope substitutions). Code wiring is ~1 hr.
+- **Priority**: P2 (learner-visible content gap; not release-blocking but degrades the kanji-card pedagogically).
+
+### Task K-2: Ship stroke-order SVGs (KanjiVG drop-in)
+
+- **Goal**: Replace the visible placeholder text "Stroke-order SVG not yet shipped. Drop-in target: `svg/kanji/<glyph>.svg` (KanjiVG-compatible)." with actual stroke-order animations on all 106 kanji cards.
+- **Current state**: `data/kanji.json` already has a `stroke_order_svg` slot per entry; the kanji detail view checks it and falls back to the placeholder text when absent. Verified in browser preview at `#/kanji/古` (slot #100) and `#/kanji/長` (slot #101) — placeholder is shown to learners, which looks unfinished.
+- **Source**: KanjiVG (https://kanjivg.tagaini.net/) is licensed CC BY-SA 3.0. Contains stroke-order SVGs for all 106 N5 kanji. License is compatible with the project (static, attributed).
+- **Drop-in process**:
+  1. Download KanjiVG release SVGs for the 106 N5 glyphs in `data/n5_kanji_whitelist.json`.
+  2. Place under `svg/kanji/<glyph>.svg` (path matches the existing placeholder copy).
+  3. Add an attribution line to `index.html` footer or a NOTICES file: "Stroke-order data from KanjiVG (kanjivg.tagaini.net), CC BY-SA 3.0."
+  4. Add files to `sw.js` PRECACHE list so they're cached on install (offline-first).
+  5. Bump `CACHE_VERSION`.
+- **Verification**:
+  - All 106 SVGs present (one per N5 kanji).
+  - Each renders inline (animated stroke order, or at minimum static numbered strokes).
+  - Footer carries CC BY-SA attribution.
+  - SW precaches all 106 SVGs; offline test confirms each kanji card renders without network.
+- **Files touched**: `svg/kanji/*.svg` (106 new files, ~20-50 KB total), `sw.js` (precache list), `index.html` or `NOTICES.md` (attribution), possibly `js/kanji.js` if the renderer needs to switch from `<img src=...>` to inline `<svg>` for stroke animation.
+- **Effort estimate**: ~1-2 hr (mostly file copying + verification). The KanjiVG dataset is already complete and authoritative — no authoring required.
+- **Priority**: P1 (every kanji card currently shows placeholder text to the learner — visible quality gap). Should ship before next release.
+- **Open question** for the implementer: animated stroke-order (requires KanjiVGAnim or similar runtime) or static numbered strokes (simpler, lighter)? Static is the lower-effort path; animated is the better learner experience but doubles complexity. Recommend static for v1.6, animated for v2.0.
 
 ---
 

@@ -32,7 +32,7 @@ Treat §1-§16 as a **catalog of perspectives**. Pick the ones that match the ch
 | `#/learn/vocab` | 1002 vocab cards across 40 sections | sub-path |
 | `#/learn/vocab/<form>` | Per-word detail (form / reading / gloss / 5 example sentences) | sub-path |
 | `#/learn/<patternId>` | Pattern detail (existing) | sub-path |
-| `#/kanji` | 97 kanji cards (glyph + meaning + readings) | sub-path |
+| `#/kanji` | 106 kanji cards (glyph + meaning + readings) | sub-path |
 | `#/kanji/<glyph>` | Per-kanji detail | sub-path |
 | `#/test` / `#/test/<n>` | Mock exam setup / direct-launch (n ∈ 20/30/50) | quit-prompt protected |
 | `#/drill` (Practice) | Daily mixed drill | renamed from "Daily Drill" |
@@ -393,8 +393,8 @@ For each of the 17 routes that surfaces JA content:
 | `#/test` / `#/test/<n>` | Question stems use only N5 syllabus kanji; correct answer is unambiguous; deep-link `#/test/30` skips setup |
 | `#/drill` (Practice) | Immediate per-question feedback; same content invariants as Test |
 | `#/review` (SRS) | When an item is shown, the reading and gloss match the original lesson |
-| `#/kanji` | 97 cards (glyph + first meaning + first kun/on); cards link to detail |
-| `#/kanji/<glyph>` | Stroke order, on/kun, example compounds match `kanji_n5.md`; prev/next nav stays inside the 97 entries |
+| `#/kanji` | 106 cards (glyph + first meaning + first kun/on); cards link to detail |
+| `#/kanji/<glyph>` | Stroke order, on/kun, example compounds match `kanji_n5.md`; prev/next nav stays inside the 106 entries |
 | `#/reading` | Passage text uses only N5 vocab + documented-exception kanji |
 | `#/listening` | Audio matches the on-screen transcript verbatim |
 | `#/counters` | Counter readings (一本 = いっぽん etc.) are correct; rendaku rules respected |

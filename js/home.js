@@ -5,21 +5,31 @@
 import * as storage from './storage.js';
 
 let grammarCount = null;
+let vocabCount = null;
+let kanjiCount = null;
 
-async function loadGrammarCount() {
-  if (grammarCount !== null) return grammarCount;
+async function loadCorpusCounts() {
+  // Single source of truth for corpus sizes: the data files. Refusing to hardcode
+  // these in the home tagline (per 2026-04-30: 97/106 kanji drift caught in QA).
+  if (grammarCount !== null && vocabCount !== null && kanjiCount !== null) return;
   try {
-    const res = await fetch('data/grammar.json');
-    const d = await res.json();
-    grammarCount = (d.patterns || []).length;
+    const [g, v, k] = await Promise.all([
+      fetch('data/grammar.json').then(r => r.json()),
+      fetch('data/vocab.json').then(r => r.json()),
+      fetch('data/kanji.json').then(r => r.json()),
+    ]);
+    grammarCount = (g.patterns || []).length;
+    vocabCount = (v.entries || []).length;
+    kanjiCount = (k.entries || []).length;
   } catch {
-    grammarCount = 0;
+    grammarCount = grammarCount ?? 0;
+    vocabCount = vocabCount ?? 0;
+    kanjiCount = kanjiCount ?? 0;
   }
-  return grammarCount;
 }
 
 export async function renderHome(container) {
-  await loadGrammarCount();
+  await loadCorpusCounts();
   const history = storage.getHistory();
   const results = storage.getResults();
   const isReturning = Object.keys(history).length > 0 || results.length > 0;
@@ -32,10 +42,21 @@ export async function renderHome(container) {
 
   container.innerHTML = `
     <section class="home">
+      ${isReturning ? renderRecommendation(pickRecommendation({ dueCount, streak, lastViewed })) : ''}
       ${isReturning ? renderReturning({ history, results, dueCount, streak, lastViewed }) : ''}
       <section class="home-cta">
         <h2>${isReturning ? 'Continue your N5 study' : 'Pass JLPT N5 with 15 minutes a day'}</h2>
-        <p class="home-tagline">${isReturning ? `${grammarCount} grammar patterns. ~1000 vocab words. 97 N5 kanji.` : `${grammarCount} grammar patterns · ~1000 vocab · 97 N5 kanji · 30 reading passages · 12 listening drills.`}</p>
+        ${isReturning ? `
+          <p class="home-tagline">${grammarCount} grammar patterns. ${vocabCount} vocab words. ${kanjiCount} N5 kanji.</p>
+        ` : `
+          <ul class="hero-stats" aria-label="Corpus size">
+            <li class="stat"><b>${grammarCount}</b> grammar</li>
+            <li class="stat"><b>${vocabCount}</b> vocab</li>
+            <li class="stat"><b>${kanjiCount}</b> kanji</li>
+            <li class="stat"><b>30</b> reading</li>
+            <li class="stat"><b>12</b> listening</li>
+          </ul>
+        `}
         ${!isReturning ? `
           <ul class="trust-strip" aria-label="What this app guarantees">
             <li>✓ Works offline</li>
@@ -52,18 +73,16 @@ export async function renderHome(container) {
         <a class="pillar-card" href="#/learn">
           <h3>Learn</h3>
           <p>Grammar, vocab, kanji, reading, listening - pick a section.</p>
-        </a>
-        <a class="pillar-card" href="#/drill">
-          <h3>Practice</h3>
-          <p>Daily mixed drills + spaced-repetition Review.</p>
+          <span class="pillar-arrow" aria-hidden="true">→</span>
         </a>
         <a class="pillar-card" href="#/test">
           <h3>Test</h3>
           <p>Mock JLPT-format exams (20 / 30 / 50 questions).</p>
+          <span class="pillar-arrow" aria-hidden="true">→</span>
         </a>
       </section>
       ${isReturning ? '' : `
-        <p class="muted small home-footnote">Already partway through? Take the placement check above so you don't repeat what you know.</p>
+        <p class="muted small home-footnote">Already familiar with some N5 material? Take the placement check above to skip what you know.</p>
       `}
     </section>
   `;
@@ -131,4 +150,41 @@ function esc(s) {
   return String(s ?? '').replace(/[&<>"']/g, c => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   }[c]));
+}
+
+// "What should I study next?" minimal recommender (Spec supplement OQ-1, option d).
+// Picks ONE action based on current state, in priority order:
+//   1. Many reviews due (>=10) - clear them first.
+//   2. Streak risk - hasn't studied today and current streak >= 1.
+//   3. Some reviews due - keep retention up.
+//   4. Studied today, nothing due - mix it up with a drill.
+//   5. Default - continue the next lesson.
+function pickRecommendation({ dueCount, streak, lastViewed }) {
+  const today = new Date();
+  const todayKey = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+  const studiedToday = (streak.days || []).includes(todayKey);
+  const learnHref = lastViewed ? `#/learn/${encodeURIComponent(lastViewed)}` : '#/learn';
+
+  if (dueCount >= 10) {
+    return { label: `Clear today's review queue (${dueCount} due)`, href: '#/review' };
+  }
+  if ((streak.current || 0) >= 1 && !studiedToday) {
+    return { label: `Keep your ${streak.current}-day streak alive`, href: learnHref };
+  }
+  if (dueCount >= 1) {
+    return { label: `Run today's review (${dueCount} due)`, href: '#/review' };
+  }
+  if (studiedToday) {
+    return { label: 'Try a quick mixed drill', href: '#/drill' };
+  }
+  return { label: 'Pick up the next lesson', href: learnHref };
+}
+
+function renderRecommendation(rec) {
+  return `
+    <aside class="home-recommend" aria-label="Recommended next step">
+      <span class="rec-prompt">What should I study next?</span>
+      <a class="rec-link" href="${rec.href}">${esc(rec.label)} →</a>
+    </aside>
+  `;
 }

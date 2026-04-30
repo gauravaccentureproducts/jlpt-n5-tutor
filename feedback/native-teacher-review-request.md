@@ -69,7 +69,7 @@ Read the files below as a native speaker would read a textbook draft. For each e
 | **P11** | `KnowledgeBank/vocabulary_n5.md` | 1002 vocab entries (form + reading + gloss) | 1002 entries | 1 hour |
 | **P12** | `KnowledgeBank/kanji_n5.md` | 102 kanji entries (on/kun + meaning) | 102 entries | 30 min |
 | **P13** | `data/vocab.json` | Runtime vocab JSON (1002 entries; mostly mirrors `KnowledgeBank/vocabulary_n5.md`) | 1002 entries | 30 min spot-check |
-| **P14** | `data/kanji.json` | Runtime kanji JSON (97 entries; mostly mirrors `KnowledgeBank/kanji_n5.md`) | 97 entries | 20 min spot-check |
+| **P14** | `data/kanji.json` | Runtime kanji JSON (106 entries; mostly mirrors `KnowledgeBank/kanji_n5.md`) | 106 entries | 20 min spot-check |
 
 > **Note on P3 prioritization:** Listening was promoted from P9 to P3 because audio quality is the area where native expertise is most uniquely needed (TTS errors in pitch accent / rendaku / gemination are inaudible to non-native maintainers) and the highest-stakes pedagogically (a learner who internalizes a wrong pronunciation carries it for years).
 

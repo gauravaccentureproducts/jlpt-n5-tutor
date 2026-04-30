@@ -8,7 +8,7 @@
 //
 // Bump CACHE_VERSION whenever a release ships, so old caches get evicted on
 // the next visit.
-const CACHE_VERSION = 'jlpt-n5-tutor-v29';
+const CACHE_VERSION = 'jlpt-n5-tutor-v37';
 
 const PRECACHE = [
   './',
@@ -16,6 +16,7 @@ const PRECACHE = [
   './manifest.webmanifest',
   './README.md',
   './TASKS.md',
+  './PRIVACY.md',
   './css/main.css',
   './js/app.js',
   './js/storage.js',
@@ -64,11 +65,17 @@ const PRECACHE = [
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_VERSION);
-    // Cache each asset; if any single one fails (e.g. file rename), the whole
-    // install fails. Use addAll for atomicity. If you want partial-tolerance,
-    // switch to a per-asset try/catch.
+    // CRITICAL: use { cache: 'reload' } on every precache request so the SW
+    // bypasses the BROWSER'S HTTP cache and pulls truly-fresh bytes from the
+    // network. Without this, a CACHE_VERSION bump alone is insufficient — if
+    // the browser HTTP cache already holds stale js/css from a prior visit,
+    // cache.addAll() reads from that stale layer and the SW propagates the
+    // stale content forward into its own cache. Symptom: bumping the SW
+    // doesn't ship the new code. (Diagnosed 2026-04-30 after L1-L10 batch.)
     try {
-      await cache.addAll(PRECACHE);
+      await Promise.all(PRECACHE.map(url =>
+        cache.add(new Request(url, { cache: 'reload' }))
+      ));
     } catch (err) {
       console.warn('Service worker precache failed:', err);
     }

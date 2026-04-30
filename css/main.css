@@ -118,6 +118,9 @@ html, body {
   background: var(--c-surface);
   border-bottom: 1px solid var(--c-border);
   box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 .brand h1 {
   margin: 0;
@@ -323,15 +326,23 @@ main h3 {
 
 /* Footer */
 .app-footer {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 16px;
   padding: 16px 24px;
   color: var(--c-muted);
   border-top: 1px solid var(--c-border);
   margin-top: 40px;
   font-size: 12px;
 }
-.app-footer small { display: block; }
+.app-footer .footer-meta { color: var(--c-muted); }
+.app-footer .footer-links { display: inline-flex; gap: 14px; }
 .app-footer a { color: var(--c-primary, #14452a); }
+@media (max-width: 480px) {
+  .app-footer { justify-content: center; text-align: center; }
+}
 
 /* Furigana ruby */
 ruby rt {
@@ -1583,17 +1594,66 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   padding: 24px 28px; margin: 16px 0;
 }
 .home-cta h2 { margin: 0 0 8px; }
+.hero-stats {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin: 12px 0 4px; padding: 0;
+  list-style: none;
+}
+.hero-stats .stat {
+  display: inline-flex; align-items: baseline; gap: 4px;
+  background: rgba(20, 69, 42, 0.07);
+  color: var(--c-text-muted, #555);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+.hero-stats .stat b { color: var(--c-primary, #14452a); font-weight: 700; }
 .home-cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
 .home-cta-buttons .btn-primary, .home-cta-buttons .btn-secondary { text-decoration: none; padding: 10px 20px; min-height: 44px; display: inline-flex; align-items: center; }
-.btn-secondary { background: var(--c-bg); border: 1px solid var(--c-border); border-radius: 6px; }
+.btn-secondary { background: var(--c-bg); border: 1px solid var(--c-border); border-radius: 6px; color: var(--c-primary, #14452a); text-decoration: none; }
+.btn-secondary:hover { background: rgba(20, 69, 42, 0.06); border-color: var(--c-primary, #14452a); }
 .home-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; }
 .pillar-card {
+  position: relative;
   background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r);
-  padding: 18px 20px; text-decoration: none; color: inherit; display: block; min-height: 110px;
+  padding: 18px 20px; padding-right: 44px;
+  text-decoration: none; color: inherit; display: block; min-height: 110px;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
-.pillar-card:hover { border-color: var(--c-primary, #14452a); }
-.pillar-card h3 { margin: 0 0 6px; }
+.pillar-card:hover {
+  border-color: var(--c-primary, #14452a);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(20, 69, 42, 0.08);
+}
+.pillar-card:focus-visible {
+  outline: 2px solid var(--c-primary, #14452a);
+  outline-offset: 2px;
+}
+.pillar-card h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; color: var(--c-primary, #14452a); }
 .pillar-card p { margin: 0; }
+.pillar-arrow {
+  position: absolute; right: 18px; bottom: 18px;
+  color: var(--c-primary, #14452a);
+  font-size: 18px;
+  transition: transform 160ms ease;
+}
+.pillar-card:hover .pillar-arrow { transform: translateX(4px); }
+@media (prefers-reduced-motion: reduce) {
+  .pillar-card, .pillar-arrow { transition: none; }
+  .pillar-card:hover { transform: none; }
+  .pillar-card:hover .pillar-arrow { transform: none; }
+}
+.home-recommend {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 14px;
+  background: var(--c-bg); border: 1px solid var(--c-border); border-left: 4px solid var(--c-primary, #14452a);
+  border-radius: var(--r);
+  padding: 10px 14px; margin: 16px 0;
+  font-size: 14px;
+}
+.home-recommend .rec-prompt { color: var(--c-text-muted, #555); }
+.home-recommend .rec-link { font-weight: 600; text-decoration: none; }
+.home-recommend .rec-link:hover { text-decoration: underline; }
 .home-resume { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 16px 0; }
 .resume-card { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r); padding: 18px 20px; }
 .resume-card h3 { margin-top: 0; }

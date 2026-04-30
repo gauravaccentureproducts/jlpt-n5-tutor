@@ -4,6 +4,7 @@ import * as storage from './storage.js';
 
 let grammarCache = null;
 let vocabCache = null;
+let kanjiCache = null;
 
 async function loadGrammar() {
   if (grammarCache) return grammarCache;
@@ -21,10 +22,22 @@ async function loadVocab() {
   return vocabCache;
 }
 
+async function loadKanji() {
+  if (kanjiCache) return kanjiCache;
+  const res = await fetch('data/kanji.json');
+  if (!res.ok) throw new Error(`Failed to load kanji.json: ${res.status}`);
+  kanjiCache = await res.json();
+  return kanjiCache;
+}
+
 export async function renderLearn(container, params) {
   const slug = params ? decodeURIComponent(params) : '';
   // Hub: no slug -> 5-card chooser (Brief 2 follow-up).
-  if (!slug) return renderHub(container);
+  if (!slug) {
+    // Pre-load corpora so the hub copy reflects live counts (single source of truth = data files).
+    await Promise.all([loadGrammar(), loadVocab(), loadKanji()]);
+    return renderHub(container);
+  }
   // Sub-section: grammar TOC.
   if (slug === 'grammar') {
     const data = await loadGrammar();
@@ -54,7 +67,8 @@ function renderHub(container) {
   // Avoids the 3+2 orphan a flat 5-card grid produces, and the labels
   // help the learner pick the right surface for the moment.
   const grammarCount = (grammarCache?.patterns || []).length || 187;
-  const vocabCount = (vocabCache?.entries || []).length || 1002;
+  const vocabCount = (vocabCache?.entries || []).length || 1003;
+  const kanjiCount = (kanjiCache?.entries || []).length || 106;
   container.innerHTML = `
     <h2>Learn</h2>
     <p class="page-lede">Pick what you want to study. Each section is self-contained.</p>
@@ -76,7 +90,7 @@ function renderHub(container) {
       <a class="hub-card" href="#/kanji">
         <span class="hub-icon" aria-hidden="true">✍️</span>
         <h3>Kanji</h3>
-        <p>97 kanji with on / kun-yomi, meanings, stroke-order slots. Tap any glyph.</p>
+        <p>${kanjiCount} kanji with on / kun-yomi, meanings, stroke-order slots. Tap any glyph.</p>
         <span class="hub-cta">Browse →</span>
       </a>
     </div>
