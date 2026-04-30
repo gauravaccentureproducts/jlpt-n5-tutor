@@ -1002,7 +1002,7 @@
     {
       "id": "n5-014",
       "pattern": "これ／それ／あれ／どれ",
-      "category": "Demonstratives (こそあど)",
+      "category": "Demonstratives",
       "categoryOrder": 3,
       "patternOrder": 1,
       "meaning_en": "Pronouns: this / that-near-listener / that-far / which-one (standalone, no noun follows)",
@@ -1085,7 +1085,7 @@
     {
       "id": "n5-015",
       "pattern": "この／その／あの／どの ＋ N (noun)",
-      "category": "Demonstratives (こそあど)",
+      "category": "Demonstratives",
       "categoryOrder": 3,
       "patternOrder": 2,
       "meaning_en": "Adjective form: this / that / which + Noun (always followed by a noun)",
@@ -1168,7 +1168,7 @@
     {
       "id": "n5-016",
       "pattern": "ここ／そこ／あそこ／どこ",
-      "category": "Demonstratives (こそあど)",
+      "category": "Demonstratives",
       "categoryOrder": 3,
       "patternOrder": 3,
       "meaning_en": "Location words: here / there-near-listener / over-there / where",
@@ -2452,7 +2452,7 @@
     {
       "id": "n5-039",
       "pattern": "これ / それ / あれ / どれ",
-      "category": "Demonstratives (こそあど)",
+      "category": "Demonstratives",
       "categoryOrder": 5,
       "patternOrder": 1,
       "meaning_en": "Pronouns: this / that / which one",
@@ -2507,7 +2507,7 @@
     {
       "id": "n5-040",
       "pattern": "この / その / あの / どの + Noun",
-      "category": "Demonstratives (こそあど)",
+      "category": "Demonstratives",
       "categoryOrder": 5,
       "patternOrder": 2,
       "meaning_en": "Adjectival demonstratives + noun",
@@ -2562,7 +2562,7 @@
     {
       "id": "n5-041",
       "pattern": "ここ / そこ / あそこ / どこ",
-      "category": "Demonstratives (こそあど)",
+      "category": "Demonstratives",
       "categoryOrder": 5,
       "patternOrder": 3,
       "meaning_en": "Location words",
@@ -2617,7 +2617,7 @@
     {
       "id": "n5-042",
       "pattern": "こちら / そちら / あちら / どちら",
-      "category": "Demonstratives (こそあど)",
+      "category": "Demonstratives",
       "categoryOrder": 5,
       "patternOrder": 4,
       "meaning_en": "こちら / そちら / あちら / どちら - polite directions / options",
@@ -2659,7 +2659,7 @@
     {
       "id": "n5-043",
       "pattern": "こんな / そんな / あんな / どんな + Noun",
-      "category": "Demonstratives (こそあど)",
+      "category": "Demonstratives",
       "categoryOrder": 5,
       "patternOrder": 5,
       "meaning_en": "こんな / そんな / あんな / どんな + Noun - 'this/that kind of'",
@@ -2701,7 +2701,7 @@
     {
       "id": "n5-044",
       "pattern": "こう / そう / ああ / どう",
-      "category": "Demonstratives (こそあど)",
+      "category": "Demonstratives",
       "categoryOrder": 5,
       "patternOrder": 6,
       "meaning_en": "こう / そう / ああ / どう - 'this way / that way / how'",

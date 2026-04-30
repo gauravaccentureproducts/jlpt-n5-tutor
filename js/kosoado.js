@@ -21,7 +21,7 @@ let drillState = null;
 
 export async function renderKosoado(container) {
   container.innerHTML = `
-    <h2>こそあど Demonstrative Systems</h2>
+    <h2>Demonstratives (this / that / which)</h2>
     <p>Japanese demonstratives form a regular 4×4 grid. The first column lists pronouns (standalone), the second adjectives (always followed by a noun), the third locations, and the fourth the polite directions/options.</p>
 
     ${renderProximity()}

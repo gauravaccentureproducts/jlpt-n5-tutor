@@ -303,7 +303,7 @@ function renderTOC(container, data) {
       <summary>Topic deep-dives</summary>
       <div class="learn-tools">
         <a href="#/waga">は vs が →</a>
-        <a href="#/kosoado">こそあど grid →</a>
+        <a href="#/kosoado">Demonstratives →</a>
         <a href="#/verbclass">Verb groups →</a>
         <a href="#/teform">て-form gym →</a>
         <a href="#/particles">Particle pairs →</a>

@@ -13,7 +13,24 @@
       "meanings": [
         "one"
       ],
-      "stroke_order_svg": "svg/kanji/一.svg"
+      "stroke_order_svg": "svg/kanji/一.svg",
+      "examples": [
+        {
+          "form": "一",
+          "reading": "いち",
+          "gloss": "one"
+        },
+        {
+          "form": "十一",
+          "reading": "じゅういち",
+          "gloss": "eleven"
+        },
+        {
+          "form": "一月",
+          "reading": "いちがつ",
+          "gloss": "January"
+        }
+      ]
     },
     {
       "id": "n5.kanji.二",
@@ -27,7 +44,24 @@
       "meanings": [
         "two"
       ],
-      "stroke_order_svg": "svg/kanji/二.svg"
+      "stroke_order_svg": "svg/kanji/二.svg",
+      "examples": [
+        {
+          "form": "二",
+          "reading": "に",
+          "gloss": "two"
+        },
+        {
+          "form": "二つ",
+          "reading": "ふたつ",
+          "gloss": "two"
+        },
+        {
+          "form": "二十",
+          "reading": "にじゅう",
+          "gloss": "twenty"
+        }
+      ]
     },
     {
       "id": "n5.kanji.三",
@@ -42,7 +76,24 @@
       "meanings": [
         "three"
       ],
-      "stroke_order_svg": "svg/kanji/三.svg"
+      "stroke_order_svg": "svg/kanji/三.svg",
+      "examples": [
+        {
+          "form": "三",
+          "reading": "さん",
+          "gloss": "three"
+        },
+        {
+          "form": "三つ",
+          "reading": "みっつ",
+          "gloss": "three"
+        },
+        {
+          "form": "三月",
+          "reading": "さんがつ",
+          "gloss": "March"
+        }
+      ]
     },
     {
       "id": "n5.kanji.四",
@@ -58,7 +109,24 @@
       "meanings": [
         "four"
       ],
-      "stroke_order_svg": "svg/kanji/四.svg"
+      "stroke_order_svg": "svg/kanji/四.svg",
+      "examples": [
+        {
+          "form": "四",
+          "reading": "し / よん",
+          "gloss": "four"
+        },
+        {
+          "form": "四つ",
+          "reading": "よっつ",
+          "gloss": "four"
+        },
+        {
+          "form": "四月",
+          "reading": "しがつ",
+          "gloss": "April"
+        }
+      ]
     },
     {
       "id": "n5.kanji.五",
@@ -72,7 +140,24 @@
       "meanings": [
         "five"
       ],
-      "stroke_order_svg": "svg/kanji/五.svg"
+      "stroke_order_svg": "svg/kanji/五.svg",
+      "examples": [
+        {
+          "form": "五",
+          "reading": "ご",
+          "gloss": "five"
+        },
+        {
+          "form": "五月",
+          "reading": "ごがつ",
+          "gloss": "May"
+        },
+        {
+          "form": "五つ",
+          "reading": "いつつ",
+          "gloss": "five"
+        }
+      ]
     },
     {
       "id": "n5.kanji.六",
@@ -87,7 +172,24 @@
       "meanings": [
         "six"
       ],
-      "stroke_order_svg": "svg/kanji/六.svg"
+      "stroke_order_svg": "svg/kanji/六.svg",
+      "examples": [
+        {
+          "form": "六",
+          "reading": "ろく",
+          "gloss": "six"
+        },
+        {
+          "form": "六つ",
+          "reading": "むっつ",
+          "gloss": "six"
+        },
+        {
+          "form": "六月",
+          "reading": "ろくがつ",
+          "gloss": "June"
+        }
+      ]
     },
     {
       "id": "n5.kanji.七",
@@ -102,7 +204,24 @@
       "meanings": [
         "seven"
       ],
-      "stroke_order_svg": "svg/kanji/七.svg"
+      "stroke_order_svg": "svg/kanji/七.svg",
+      "examples": [
+        {
+          "form": "七",
+          "reading": "しち / なな",
+          "gloss": "seven"
+        },
+        {
+          "form": "七月",
+          "reading": "しちがつ",
+          "gloss": "July"
+        },
+        {
+          "form": "七つ",
+          "reading": "ななつ",
+          "gloss": "seven"
+        }
+      ]
     },
     {
       "id": "n5.kanji.八",
@@ -118,7 +237,24 @@
       "meanings": [
         "eight"
       ],
-      "stroke_order_svg": "svg/kanji/八.svg"
+      "stroke_order_svg": "svg/kanji/八.svg",
+      "examples": [
+        {
+          "form": "八",
+          "reading": "はち",
+          "gloss": "eight"
+        },
+        {
+          "form": "八つ",
+          "reading": "やっつ",
+          "gloss": "eight"
+        },
+        {
+          "form": "八月",
+          "reading": "はちがつ",
+          "gloss": "August"
+        }
+      ]
     },
     {
       "id": "n5.kanji.九",
@@ -133,7 +269,24 @@
       "meanings": [
         "nine"
       ],
-      "stroke_order_svg": "svg/kanji/九.svg"
+      "stroke_order_svg": "svg/kanji/九.svg",
+      "examples": [
+        {
+          "form": "九",
+          "reading": "きゅう / く",
+          "gloss": "nine"
+        },
+        {
+          "form": "九つ",
+          "reading": "ここのつ",
+          "gloss": "nine"
+        },
+        {
+          "form": "九月",
+          "reading": "くがつ",
+          "gloss": "September"
+        }
+      ]
     },
     {
       "id": "n5.kanji.十",
@@ -149,7 +302,24 @@
       "meanings": [
         "ten"
       ],
-      "stroke_order_svg": "svg/kanji/十.svg"
+      "stroke_order_svg": "svg/kanji/十.svg",
+      "examples": [
+        {
+          "form": "十",
+          "reading": "じゅう",
+          "gloss": "ten"
+        },
+        {
+          "form": "十",
+          "reading": "とお",
+          "gloss": "ten"
+        },
+        {
+          "form": "十一",
+          "reading": "じゅういち",
+          "gloss": "eleven"
+        }
+      ]
     },
     {
       "id": "n5.kanji.百",
@@ -161,7 +331,14 @@
       "meanings": [
         "hundred"
       ],
-      "stroke_order_svg": "svg/kanji/百.svg"
+      "stroke_order_svg": "svg/kanji/百.svg",
+      "examples": [
+        {
+          "form": "百",
+          "reading": "ひゃく",
+          "gloss": "hundred"
+        }
+      ]
     },
     {
       "id": "n5.kanji.千",
@@ -175,7 +352,14 @@
       "meanings": [
         "thousand"
       ],
-      "stroke_order_svg": "svg/kanji/千.svg"
+      "stroke_order_svg": "svg/kanji/千.svg",
+      "examples": [
+        {
+          "form": "千",
+          "reading": "せん",
+          "gloss": "thousand"
+        }
+      ]
     },
     {
       "id": "n5.kanji.万",
@@ -187,7 +371,19 @@
       "meanings": [
         "ten thousand"
       ],
-      "stroke_order_svg": "svg/kanji/万.svg"
+      "stroke_order_svg": "svg/kanji/万.svg",
+      "examples": [
+        {
+          "form": "万",
+          "reading": "まん",
+          "gloss": "ten thousand"
+        },
+        {
+          "form": "一万",
+          "reading": "いちまん",
+          "gloss": "ten thousand"
+        }
+      ]
     },
     {
       "id": "n5.kanji.円",
@@ -199,7 +395,14 @@
       "meanings": [
         "yen"
       ],
-      "stroke_order_svg": "svg/kanji/円.svg"
+      "stroke_order_svg": "svg/kanji/円.svg",
+      "examples": [
+        {
+          "form": "円",
+          "reading": "えん",
+          "gloss": "yen"
+        }
+      ]
     },
     {
       "id": "n5.kanji.日",
@@ -217,7 +420,24 @@
         "day",
         "sun"
       ],
-      "stroke_order_svg": "svg/kanji/日.svg"
+      "stroke_order_svg": "svg/kanji/日.svg",
+      "examples": [
+        {
+          "form": "日",
+          "reading": "ひ",
+          "gloss": "day"
+        },
+        {
+          "form": "今日",
+          "reading": "きょう",
+          "gloss": "today"
+        },
+        {
+          "form": "日本",
+          "reading": "にほん / にっぽん",
+          "gloss": "Japan"
+        }
+      ]
     },
     {
       "id": "n5.kanji.月",
@@ -233,7 +453,24 @@
         "month",
         "moon"
       ],
-      "stroke_order_svg": "svg/kanji/月.svg"
+      "stroke_order_svg": "svg/kanji/月.svg",
+      "examples": [
+        {
+          "form": "月",
+          "reading": "つき",
+          "gloss": "moon"
+        },
+        {
+          "form": "月",
+          "reading": "つき",
+          "gloss": "month, moon"
+        },
+        {
+          "form": "五月",
+          "reading": "ごがつ",
+          "gloss": "May"
+        }
+      ]
     },
     {
       "id": "n5.kanji.火",
@@ -248,7 +485,19 @@
         "fire",
         "Tuesday"
       ],
-      "stroke_order_svg": "svg/kanji/火.svg"
+      "stroke_order_svg": "svg/kanji/火.svg",
+      "examples": [
+        {
+          "form": "火",
+          "reading": "ひ",
+          "gloss": "fire"
+        },
+        {
+          "form": "火曜日",
+          "reading": "かようび",
+          "gloss": "Tuesday"
+        }
+      ]
     },
     {
       "id": "n5.kanji.水",
@@ -263,7 +512,24 @@
         "water",
         "Wednesday"
       ],
-      "stroke_order_svg": "svg/kanji/水.svg"
+      "stroke_order_svg": "svg/kanji/水.svg",
+      "examples": [
+        {
+          "form": "水",
+          "reading": "みず",
+          "gloss": "water"
+        },
+        {
+          "form": "水",
+          "reading": "みず",
+          "gloss": "water (cold)"
+        },
+        {
+          "form": "水曜日",
+          "reading": "すいようび",
+          "gloss": "Wednesday"
+        }
+      ]
     },
     {
       "id": "n5.kanji.木",
@@ -281,7 +547,19 @@
         "wood",
         "Thursday"
       ],
-      "stroke_order_svg": "svg/kanji/木.svg"
+      "stroke_order_svg": "svg/kanji/木.svg",
+      "examples": [
+        {
+          "form": "木",
+          "reading": "き",
+          "gloss": "tree"
+        },
+        {
+          "form": "木曜日",
+          "reading": "もくようび",
+          "gloss": "Thursday"
+        }
+      ]
     },
     {
       "id": "n5.kanji.金",
@@ -299,7 +577,19 @@
         "money",
         "Friday"
       ],
-      "stroke_order_svg": "svg/kanji/金.svg"
+      "stroke_order_svg": "svg/kanji/金.svg",
+      "examples": [
+        {
+          "form": "お金",
+          "reading": "おかね",
+          "gloss": "money"
+        },
+        {
+          "form": "金曜日",
+          "reading": "きんようび",
+          "gloss": "Friday"
+        }
+      ]
     },
     {
       "id": "n5.kanji.土",
@@ -316,7 +606,14 @@
         "soil",
         "Saturday"
       ],
-      "stroke_order_svg": "svg/kanji/土.svg"
+      "stroke_order_svg": "svg/kanji/土.svg",
+      "examples": [
+        {
+          "form": "土曜日",
+          "reading": "どようび",
+          "gloss": "Saturday"
+        }
+      ]
     },
     {
       "id": "n5.kanji.曜",
@@ -328,7 +625,24 @@
       "meanings": [
         "weekday"
       ],
-      "stroke_order_svg": "svg/kanji/曜.svg"
+      "stroke_order_svg": "svg/kanji/曜.svg",
+      "examples": [
+        {
+          "form": "月曜日",
+          "reading": "げつようび",
+          "gloss": "Monday"
+        },
+        {
+          "form": "金曜日",
+          "reading": "きんようび",
+          "gloss": "Friday"
+        },
+        {
+          "form": "日曜日",
+          "reading": "にちようび",
+          "gloss": "Sunday"
+        }
+      ]
     },
     {
       "id": "n5.kanji.年",
@@ -342,7 +656,24 @@
       "meanings": [
         "year"
       ],
-      "stroke_order_svg": "svg/kanji/年.svg"
+      "stroke_order_svg": "svg/kanji/年.svg",
+      "examples": [
+        {
+          "form": "年",
+          "reading": "とし / ねん",
+          "gloss": "year"
+        },
+        {
+          "form": "今年",
+          "reading": "ことし",
+          "gloss": "this year"
+        },
+        {
+          "form": "来年",
+          "reading": "らいねん",
+          "gloss": "next year"
+        }
+      ]
     },
     {
       "id": "n5.kanji.時",
@@ -357,7 +688,24 @@
         "time",
         "hour"
       ],
-      "stroke_order_svg": "svg/kanji/時.svg"
+      "stroke_order_svg": "svg/kanji/時.svg",
+      "examples": [
+        {
+          "form": "何時",
+          "reading": "なんじ",
+          "gloss": "what time"
+        },
+        {
+          "form": "時々",
+          "reading": "ときどき",
+          "gloss": "sometimes"
+        },
+        {
+          "form": "時間",
+          "reading": "じかん",
+          "gloss": "time, hour"
+        }
+      ]
     },
     {
       "id": "n5.kanji.分",
@@ -375,7 +723,19 @@
         "part",
         "divide"
       ],
-      "stroke_order_svg": "svg/kanji/分.svg"
+      "stroke_order_svg": "svg/kanji/分.svg",
+      "examples": [
+        {
+          "form": "分",
+          "reading": "ふん / ぷん",
+          "gloss": "minute(s)"
+        },
+        {
+          "form": "分かる",
+          "reading": "わかる",
+          "gloss": "to understand"
+        }
+      ]
     },
     {
       "id": "n5.kanji.半",
@@ -389,7 +749,14 @@
       "meanings": [
         "half"
       ],
-      "stroke_order_svg": "svg/kanji/半.svg"
+      "stroke_order_svg": "svg/kanji/半.svg",
+      "examples": [
+        {
+          "form": "半",
+          "reading": "はん",
+          "gloss": "half (past)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.今",
@@ -403,7 +770,24 @@
       "meanings": [
         "now"
       ],
-      "stroke_order_svg": "svg/kanji/今.svg"
+      "stroke_order_svg": "svg/kanji/今.svg",
+      "examples": [
+        {
+          "form": "今",
+          "reading": "いま",
+          "gloss": "now"
+        },
+        {
+          "form": "今日",
+          "reading": "きょう",
+          "gloss": "today"
+        },
+        {
+          "form": "今週",
+          "reading": "こんしゅう",
+          "gloss": "this week"
+        }
+      ]
     },
     {
       "id": "n5.kanji.毎",
@@ -415,7 +799,24 @@
       "meanings": [
         "every"
       ],
-      "stroke_order_svg": "svg/kanji/毎.svg"
+      "stroke_order_svg": "svg/kanji/毎.svg",
+      "examples": [
+        {
+          "form": "毎日",
+          "reading": "まいにち",
+          "gloss": "every day"
+        },
+        {
+          "form": "毎週",
+          "reading": "まいしゅう",
+          "gloss": "every week"
+        },
+        {
+          "form": "毎月",
+          "reading": "まいつき",
+          "gloss": "every month"
+        }
+      ]
     },
     {
       "id": "n5.kanji.週",
@@ -427,7 +828,24 @@
       "meanings": [
         "week"
       ],
-      "stroke_order_svg": "svg/kanji/週.svg"
+      "stroke_order_svg": "svg/kanji/週.svg",
+      "examples": [
+        {
+          "form": "週",
+          "reading": "しゅう",
+          "gloss": "week"
+        },
+        {
+          "form": "先週",
+          "reading": "せんしゅう",
+          "gloss": "last week"
+        },
+        {
+          "form": "今週",
+          "reading": "こんしゅう",
+          "gloss": "this week"
+        }
+      ]
     },
     {
       "id": "n5.kanji.午",
@@ -439,7 +857,19 @@
       "meanings": [
         "noon"
       ],
-      "stroke_order_svg": "svg/kanji/午.svg"
+      "stroke_order_svg": "svg/kanji/午.svg",
+      "examples": [
+        {
+          "form": "午前",
+          "reading": "ごぜん",
+          "gloss": "A.M."
+        },
+        {
+          "form": "午後",
+          "reading": "ごご",
+          "gloss": "P.M."
+        }
+      ]
     },
     {
       "id": "n5.kanji.何",
@@ -454,7 +884,24 @@
       "meanings": [
         "what"
       ],
-      "stroke_order_svg": "svg/kanji/何.svg"
+      "stroke_order_svg": "svg/kanji/何.svg",
+      "examples": [
+        {
+          "form": "何",
+          "reading": "なに / なん",
+          "gloss": "what"
+        },
+        {
+          "form": "何日",
+          "reading": "なんにち",
+          "gloss": "what day"
+        },
+        {
+          "form": "何時",
+          "reading": "なんじ",
+          "gloss": "what time"
+        }
+      ]
     },
     {
       "id": "n5.kanji.人",
@@ -469,7 +916,24 @@
       "meanings": [
         "person"
       ],
-      "stroke_order_svg": "svg/kanji/人.svg"
+      "stroke_order_svg": "svg/kanji/人.svg",
+      "examples": [
+        {
+          "form": "人",
+          "reading": "ひと",
+          "gloss": "person"
+        },
+        {
+          "form": "人",
+          "reading": "にん",
+          "gloss": "counter for people"
+        },
+        {
+          "form": "大人",
+          "reading": "おとな",
+          "gloss": "adult"
+        }
+      ]
     },
     {
       "id": "n5.kanji.男",
@@ -485,7 +949,19 @@
         "man",
         "male"
       ],
-      "stroke_order_svg": "svg/kanji/男.svg"
+      "stroke_order_svg": "svg/kanji/男.svg",
+      "examples": [
+        {
+          "form": "男",
+          "reading": "おとこ",
+          "gloss": "man"
+        },
+        {
+          "form": "男の子",
+          "reading": "おとこのこ",
+          "gloss": "boy"
+        }
+      ]
     },
     {
       "id": "n5.kanji.女",
@@ -502,7 +978,19 @@
         "woman",
         "female"
       ],
-      "stroke_order_svg": "svg/kanji/女.svg"
+      "stroke_order_svg": "svg/kanji/女.svg",
+      "examples": [
+        {
+          "form": "女",
+          "reading": "おんな",
+          "gloss": "woman"
+        },
+        {
+          "form": "女の子",
+          "reading": "おんなのこ",
+          "gloss": "girl"
+        }
+      ]
     },
     {
       "id": "n5.kanji.子",
@@ -517,7 +1005,24 @@
       "meanings": [
         "child"
       ],
-      "stroke_order_svg": "svg/kanji/子.svg"
+      "stroke_order_svg": "svg/kanji/子.svg",
+      "examples": [
+        {
+          "form": "男の子",
+          "reading": "おとこのこ",
+          "gloss": "boy"
+        },
+        {
+          "form": "女の子",
+          "reading": "おんなのこ",
+          "gloss": "girl"
+        },
+        {
+          "form": "子ども",
+          "reading": "こども",
+          "gloss": "child (often written こども in everyday text)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.父",
@@ -531,7 +1036,19 @@
       "meanings": [
         "father"
       ],
-      "stroke_order_svg": "svg/kanji/父.svg"
+      "stroke_order_svg": "svg/kanji/父.svg",
+      "examples": [
+        {
+          "form": "父",
+          "reading": "ちち",
+          "gloss": "father (own)"
+        },
+        {
+          "form": "お父さん",
+          "reading": "おとうさん",
+          "gloss": "father (someone else's / address form)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.母",
@@ -545,7 +1062,19 @@
       "meanings": [
         "mother"
       ],
-      "stroke_order_svg": "svg/kanji/母.svg"
+      "stroke_order_svg": "svg/kanji/母.svg",
+      "examples": [
+        {
+          "form": "母",
+          "reading": "はは",
+          "gloss": "mother (own)"
+        },
+        {
+          "form": "お母さん",
+          "reading": "おかあさん",
+          "gloss": "mother (someone else's / address form)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.友",
@@ -559,7 +1088,14 @@
       "meanings": [
         "friend"
       ],
-      "stroke_order_svg": "svg/kanji/友.svg"
+      "stroke_order_svg": "svg/kanji/友.svg",
+      "examples": [
+        {
+          "form": "友だち",
+          "reading": "ともだち",
+          "gloss": "friend"
+        }
+      ]
     },
     {
       "id": "n5.kanji.先",
@@ -575,7 +1111,24 @@
         "ahead",
         "tip"
       ],
-      "stroke_order_svg": "svg/kanji/先.svg"
+      "stroke_order_svg": "svg/kanji/先.svg",
+      "examples": [
+        {
+          "form": "先",
+          "reading": "さき",
+          "gloss": "earlier, ahead, previous"
+        },
+        {
+          "form": "先週",
+          "reading": "せんしゅう",
+          "gloss": "last week"
+        },
+        {
+          "form": "先月",
+          "reading": "せんげつ",
+          "gloss": "last month"
+        }
+      ]
     },
     {
       "id": "n5.kanji.生",
@@ -591,7 +1144,24 @@
         "life",
         "birth"
       ],
-      "stroke_order_svg": "svg/kanji/生.svg"
+      "stroke_order_svg": "svg/kanji/生.svg",
+      "examples": [
+        {
+          "form": "学生",
+          "reading": "がくせい",
+          "gloss": "student"
+        },
+        {
+          "form": "先生",
+          "reading": "せんせい",
+          "gloss": "teacher, doctor"
+        },
+        {
+          "form": "生まれる",
+          "reading": "うまれる",
+          "gloss": "to be born"
+        }
+      ]
     },
     {
       "id": "n5.kanji.手",
@@ -605,7 +1175,24 @@
       "meanings": [
         "hand"
       ],
-      "stroke_order_svg": "svg/kanji/手.svg"
+      "stroke_order_svg": "svg/kanji/手.svg",
+      "examples": [
+        {
+          "form": "手",
+          "reading": "て",
+          "gloss": "hand"
+        },
+        {
+          "form": "上手",
+          "reading": "じょうず",
+          "gloss": "skilful, good at"
+        },
+        {
+          "form": "手がみ",
+          "reading": "てがみ",
+          "gloss": "letter (correspondence)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.足",
@@ -620,7 +1207,19 @@
         "foot",
         "leg"
       ],
-      "stroke_order_svg": "svg/kanji/足.svg"
+      "stroke_order_svg": "svg/kanji/足.svg",
+      "examples": [
+        {
+          "form": "足",
+          "reading": "あし",
+          "gloss": "foot, leg"
+        },
+        {
+          "form": "一足",
+          "reading": "いっそく",
+          "gloss": "one pair (footwear)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.目",
@@ -634,7 +1233,19 @@
       "meanings": [
         "eye"
       ],
-      "stroke_order_svg": "svg/kanji/目.svg"
+      "stroke_order_svg": "svg/kanji/目.svg",
+      "examples": [
+        {
+          "form": "目",
+          "reading": "め",
+          "gloss": "eye"
+        },
+        {
+          "form": "三日目",
+          "reading": "みっかめ",
+          "gloss": "the third day"
+        }
+      ]
     },
     {
       "id": "n5.kanji.口",
@@ -648,7 +1259,24 @@
       "meanings": [
         "mouth"
       ],
-      "stroke_order_svg": "svg/kanji/口.svg"
+      "stroke_order_svg": "svg/kanji/口.svg",
+      "examples": [
+        {
+          "form": "入り口",
+          "reading": "いりぐち",
+          "gloss": "entrance"
+        },
+        {
+          "form": "出口",
+          "reading": "でぐち",
+          "gloss": "exit"
+        },
+        {
+          "form": "口",
+          "reading": "くち",
+          "gloss": "mouth"
+        }
+      ]
     },
     {
       "id": "n5.kanji.力",
@@ -664,7 +1292,14 @@
         "power",
         "strength"
       ],
-      "stroke_order_svg": "svg/kanji/力.svg"
+      "stroke_order_svg": "svg/kanji/力.svg",
+      "examples": [
+        {
+          "form": "力",
+          "reading": "ちから",
+          "gloss": "power, strength"
+        }
+      ]
     },
     {
       "id": "n5.kanji.学",
@@ -679,7 +1314,24 @@
         "study",
         "learning"
       ],
-      "stroke_order_svg": "svg/kanji/学.svg"
+      "stroke_order_svg": "svg/kanji/学.svg",
+      "examples": [
+        {
+          "form": "学校",
+          "reading": "がっこう",
+          "gloss": "school"
+        },
+        {
+          "form": "学生",
+          "reading": "がくせい",
+          "gloss": "student"
+        },
+        {
+          "form": "大学",
+          "reading": "だいがく",
+          "gloss": "university"
+        }
+      ]
     },
     {
       "id": "n5.kanji.校",
@@ -691,7 +1343,24 @@
       "meanings": [
         "school"
       ],
-      "stroke_order_svg": "svg/kanji/校.svg"
+      "stroke_order_svg": "svg/kanji/校.svg",
+      "examples": [
+        {
+          "form": "学校",
+          "reading": "がっこう",
+          "gloss": "school"
+        },
+        {
+          "form": "高校",
+          "reading": "こうこう",
+          "gloss": "high school"
+        },
+        {
+          "form": "学校",
+          "reading": "がっこう",
+          "gloss": "school (also in §13)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.本",
@@ -707,7 +1376,24 @@
         "origin",
         "main"
       ],
-      "stroke_order_svg": "svg/kanji/本.svg"
+      "stroke_order_svg": "svg/kanji/本.svg",
+      "examples": [
+        {
+          "form": "本",
+          "reading": "ほん",
+          "gloss": "book"
+        },
+        {
+          "form": "本",
+          "reading": "ほん",
+          "gloss": "counter for long thin objects"
+        },
+        {
+          "form": "日本",
+          "reading": "にほん / にっぽん",
+          "gloss": "Japan"
+        }
+      ]
     },
     {
       "id": "n5.kanji.語",
@@ -722,7 +1408,24 @@
         "language",
         "word"
       ],
-      "stroke_order_svg": "svg/kanji/語.svg"
+      "stroke_order_svg": "svg/kanji/語.svg",
+      "examples": [
+        {
+          "form": "外国語",
+          "reading": "がいこくご",
+          "gloss": "foreign language"
+        },
+        {
+          "form": "中国語",
+          "reading": "ちゅうごくご",
+          "gloss": "Chinese (language)"
+        },
+        {
+          "form": "日本語",
+          "reading": "にほんご",
+          "gloss": "Japanese (language)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.国",
@@ -736,7 +1439,24 @@
       "meanings": [
         "country"
       ],
-      "stroke_order_svg": "svg/kanji/国.svg"
+      "stroke_order_svg": "svg/kanji/国.svg",
+      "examples": [
+        {
+          "form": "国",
+          "reading": "くに",
+          "gloss": "country"
+        },
+        {
+          "form": "中国",
+          "reading": "ちゅうごく",
+          "gloss": "China"
+        },
+        {
+          "form": "外国",
+          "reading": "がいこく",
+          "gloss": "foreign country"
+        }
+      ]
     },
     {
       "id": "n5.kanji.会",
@@ -752,7 +1472,24 @@
         "meeting",
         "association"
       ],
-      "stroke_order_svg": "svg/kanji/会.svg"
+      "stroke_order_svg": "svg/kanji/会.svg",
+      "examples": [
+        {
+          "form": "会社",
+          "reading": "かいしゃ",
+          "gloss": "company"
+        },
+        {
+          "form": "会う",
+          "reading": "あう",
+          "gloss": "to meet"
+        },
+        {
+          "form": "会社員",
+          "reading": "かいしゃいん",
+          "gloss": "company employee"
+        }
+      ]
     },
     {
       "id": "n5.kanji.社",
@@ -764,7 +1501,19 @@
       "meanings": [
         "company"
       ],
-      "stroke_order_svg": "svg/kanji/社.svg"
+      "stroke_order_svg": "svg/kanji/社.svg",
+      "examples": [
+        {
+          "form": "会社",
+          "reading": "かいしゃ",
+          "gloss": "company"
+        },
+        {
+          "form": "会社員",
+          "reading": "かいしゃいん",
+          "gloss": "company employee"
+        }
+      ]
     },
     {
       "id": "n5.kanji.員",
@@ -777,7 +1526,24 @@
         "member",
         "staff"
       ],
-      "stroke_order_svg": "svg/kanji/員.svg"
+      "stroke_order_svg": "svg/kanji/員.svg",
+      "examples": [
+        {
+          "form": "店員",
+          "reading": "てんいん",
+          "gloss": "shop clerk"
+        },
+        {
+          "form": "駅員",
+          "reading": "えきいん",
+          "gloss": "station staff"
+        },
+        {
+          "form": "会社員",
+          "reading": "かいしゃいん",
+          "gloss": "company employee"
+        }
+      ]
     },
     {
       "id": "n5.kanji.大",
@@ -793,7 +1559,24 @@
         "big",
         "large"
       ],
-      "stroke_order_svg": "svg/kanji/大.svg"
+      "stroke_order_svg": "svg/kanji/大.svg",
+      "examples": [
+        {
+          "form": "大人",
+          "reading": "おとな",
+          "gloss": "adult"
+        },
+        {
+          "form": "大学",
+          "reading": "だいがく",
+          "gloss": "university"
+        },
+        {
+          "form": "大きい",
+          "reading": "おおきい",
+          "gloss": "big"
+        }
+      ]
     },
     {
       "id": "n5.kanji.中",
@@ -808,7 +1591,24 @@
         "middle",
         "inside"
       ],
-      "stroke_order_svg": "svg/kanji/中.svg"
+      "stroke_order_svg": "svg/kanji/中.svg",
+      "examples": [
+        {
+          "form": "中",
+          "reading": "なか",
+          "gloss": "inside, middle"
+        },
+        {
+          "form": "中国",
+          "reading": "ちゅうごく",
+          "gloss": "China"
+        },
+        {
+          "form": "中国語",
+          "reading": "ちゅうごくご",
+          "gloss": "Chinese (language)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.小",
@@ -825,7 +1625,14 @@
         "small",
         "little"
       ],
-      "stroke_order_svg": "svg/kanji/小.svg"
+      "stroke_order_svg": "svg/kanji/小.svg",
+      "examples": [
+        {
+          "form": "小さい",
+          "reading": "ちいさい",
+          "gloss": "small"
+        }
+      ]
     },
     {
       "id": "n5.kanji.上",
@@ -841,7 +1648,14 @@
         "up",
         "above"
       ],
-      "stroke_order_svg": "svg/kanji/上.svg"
+      "stroke_order_svg": "svg/kanji/上.svg",
+      "examples": [
+        {
+          "form": "上",
+          "reading": "うえ",
+          "gloss": "top, above"
+        }
+      ]
     },
     {
       "id": "n5.kanji.下",
@@ -858,7 +1672,14 @@
         "down",
         "below"
       ],
-      "stroke_order_svg": "svg/kanji/下.svg"
+      "stroke_order_svg": "svg/kanji/下.svg",
+      "examples": [
+        {
+          "form": "下",
+          "reading": "した",
+          "gloss": "under, below"
+        }
+      ]
     },
     {
       "id": "n5.kanji.左",
@@ -872,7 +1693,14 @@
       "meanings": [
         "left"
       ],
-      "stroke_order_svg": "svg/kanji/左.svg"
+      "stroke_order_svg": "svg/kanji/左.svg",
+      "examples": [
+        {
+          "form": "左",
+          "reading": "ひだり",
+          "gloss": "left"
+        }
+      ]
     },
     {
       "id": "n5.kanji.右",
@@ -887,7 +1715,14 @@
       "meanings": [
         "right"
       ],
-      "stroke_order_svg": "svg/kanji/右.svg"
+      "stroke_order_svg": "svg/kanji/右.svg",
+      "examples": [
+        {
+          "form": "右",
+          "reading": "みぎ",
+          "gloss": "right"
+        }
+      ]
     },
     {
       "id": "n5.kanji.前",
@@ -902,7 +1737,24 @@
         "before",
         "front"
       ],
-      "stroke_order_svg": "svg/kanji/前.svg"
+      "stroke_order_svg": "svg/kanji/前.svg",
+      "examples": [
+        {
+          "form": "前",
+          "reading": "まえ",
+          "gloss": "front"
+        },
+        {
+          "form": "前",
+          "reading": "まえ",
+          "gloss": "before, in front"
+        },
+        {
+          "form": "午前",
+          "reading": "ごぜん",
+          "gloss": "A.M."
+        }
+      ]
     },
     {
       "id": "n5.kanji.後",
@@ -920,7 +1772,24 @@
         "after",
         "behind"
       ],
-      "stroke_order_svg": "svg/kanji/後.svg"
+      "stroke_order_svg": "svg/kanji/後.svg",
+      "examples": [
+        {
+          "form": "午後",
+          "reading": "ごご",
+          "gloss": "P.M."
+        },
+        {
+          "form": "後で",
+          "reading": "あとで",
+          "gloss": "later"
+        },
+        {
+          "form": "後ろ",
+          "reading": "うしろ",
+          "gloss": "back, behind"
+        }
+      ]
     },
     {
       "id": "n5.kanji.外",
@@ -934,7 +1803,24 @@
       "meanings": [
         "outside"
       ],
-      "stroke_order_svg": "svg/kanji/外.svg"
+      "stroke_order_svg": "svg/kanji/外.svg",
+      "examples": [
+        {
+          "form": "外",
+          "reading": "そと",
+          "gloss": "outside"
+        },
+        {
+          "form": "外国",
+          "reading": "がいこく",
+          "gloss": "foreign country"
+        },
+        {
+          "form": "外国人",
+          "reading": "がいこくじん",
+          "gloss": "foreigner"
+        }
+      ]
     },
     {
       "id": "n5.kanji.東",
@@ -948,7 +1834,14 @@
       "meanings": [
         "east"
       ],
-      "stroke_order_svg": "svg/kanji/東.svg"
+      "stroke_order_svg": "svg/kanji/東.svg",
+      "examples": [
+        {
+          "form": "東",
+          "reading": "ひがし",
+          "gloss": "east"
+        }
+      ]
     },
     {
       "id": "n5.kanji.西",
@@ -963,7 +1856,14 @@
       "meanings": [
         "west"
       ],
-      "stroke_order_svg": "svg/kanji/西.svg"
+      "stroke_order_svg": "svg/kanji/西.svg",
+      "examples": [
+        {
+          "form": "西",
+          "reading": "にし",
+          "gloss": "west"
+        }
+      ]
     },
     {
       "id": "n5.kanji.南",
@@ -977,7 +1877,14 @@
       "meanings": [
         "south"
       ],
-      "stroke_order_svg": "svg/kanji/南.svg"
+      "stroke_order_svg": "svg/kanji/南.svg",
+      "examples": [
+        {
+          "form": "南",
+          "reading": "みなみ",
+          "gloss": "south"
+        }
+      ]
     },
     {
       "id": "n5.kanji.北",
@@ -991,7 +1898,14 @@
       "meanings": [
         "north"
       ],
-      "stroke_order_svg": "svg/kanji/北.svg"
+      "stroke_order_svg": "svg/kanji/北.svg",
+      "examples": [
+        {
+          "form": "北",
+          "reading": "きた",
+          "gloss": "north"
+        }
+      ]
     },
     {
       "id": "n5.kanji.間",
@@ -1009,7 +1923,14 @@
         "between",
         "space"
       ],
-      "stroke_order_svg": "svg/kanji/間.svg"
+      "stroke_order_svg": "svg/kanji/間.svg",
+      "examples": [
+        {
+          "form": "時間",
+          "reading": "じかん",
+          "gloss": "time, hour"
+        }
+      ]
     },
     {
       "id": "n5.kanji.山",
@@ -1023,7 +1944,14 @@
       "meanings": [
         "mountain"
       ],
-      "stroke_order_svg": "svg/kanji/山.svg"
+      "stroke_order_svg": "svg/kanji/山.svg",
+      "examples": [
+        {
+          "form": "山",
+          "reading": "やま",
+          "gloss": "mountain"
+        }
+      ]
     },
     {
       "id": "n5.kanji.川",
@@ -1037,7 +1965,14 @@
       "meanings": [
         "river"
       ],
-      "stroke_order_svg": "svg/kanji/川.svg"
+      "stroke_order_svg": "svg/kanji/川.svg",
+      "examples": [
+        {
+          "form": "川",
+          "reading": "かわ",
+          "gloss": "river"
+        }
+      ]
     },
     {
       "id": "n5.kanji.田",
@@ -1051,7 +1986,14 @@
       "meanings": [
         "rice field"
       ],
-      "stroke_order_svg": "svg/kanji/田.svg"
+      "stroke_order_svg": "svg/kanji/田.svg",
+      "examples": [
+        {
+          "form": "田",
+          "reading": "た",
+          "gloss": "rice field"
+        }
+      ]
     },
     {
       "id": "n5.kanji.雨",
@@ -1065,7 +2007,14 @@
       "meanings": [
         "rain"
       ],
-      "stroke_order_svg": "svg/kanji/雨.svg"
+      "stroke_order_svg": "svg/kanji/雨.svg",
+      "examples": [
+        {
+          "form": "雨",
+          "reading": "あめ",
+          "gloss": "rain"
+        }
+      ]
     },
     {
       "id": "n5.kanji.天",
@@ -1081,7 +2030,19 @@
         "heaven",
         "sky"
       ],
-      "stroke_order_svg": "svg/kanji/天.svg"
+      "stroke_order_svg": "svg/kanji/天.svg",
+      "examples": [
+        {
+          "form": "天気",
+          "reading": "てんき",
+          "gloss": "weather"
+        },
+        {
+          "form": "天ぷら",
+          "reading": "てんぷら",
+          "gloss": "tempura"
+        }
+      ]
     },
     {
       "id": "n5.kanji.気",
@@ -1096,7 +2057,24 @@
         "mood",
         "air"
       ],
-      "stroke_order_svg": "svg/kanji/気.svg"
+      "stroke_order_svg": "svg/kanji/気.svg",
+      "examples": [
+        {
+          "form": "電気",
+          "reading": "でんき",
+          "gloss": "light"
+        },
+        {
+          "form": "天気",
+          "reading": "てんき",
+          "gloss": "weather"
+        },
+        {
+          "form": "電気",
+          "reading": "でんき",
+          "gloss": "electricity, light"
+        }
+      ]
     },
     {
       "id": "n5.kanji.花",
@@ -1110,7 +2088,14 @@
       "meanings": [
         "flower"
       ],
-      "stroke_order_svg": "svg/kanji/花.svg"
+      "stroke_order_svg": "svg/kanji/花.svg",
+      "examples": [
+        {
+          "form": "花",
+          "reading": "はな",
+          "gloss": "flower"
+        }
+      ]
     },
     {
       "id": "n5.kanji.空",
@@ -1127,7 +2112,14 @@
         "sky",
         "empty"
       ],
-      "stroke_order_svg": "svg/kanji/空.svg"
+      "stroke_order_svg": "svg/kanji/空.svg",
+      "examples": [
+        {
+          "form": "空",
+          "reading": "そら",
+          "gloss": "sky"
+        }
+      ]
     },
     {
       "id": "n5.kanji.電",
@@ -1139,7 +2131,24 @@
       "meanings": [
         "electricity"
       ],
-      "stroke_order_svg": "svg/kanji/電.svg"
+      "stroke_order_svg": "svg/kanji/電.svg",
+      "examples": [
+        {
+          "form": "電気",
+          "reading": "でんき",
+          "gloss": "light"
+        },
+        {
+          "form": "電話",
+          "reading": "でんわ",
+          "gloss": "telephone"
+        },
+        {
+          "form": "電車",
+          "reading": "でんしゃ",
+          "gloss": "train (electric)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.車",
@@ -1154,7 +2163,19 @@
         "car",
         "vehicle"
       ],
-      "stroke_order_svg": "svg/kanji/車.svg"
+      "stroke_order_svg": "svg/kanji/車.svg",
+      "examples": [
+        {
+          "form": "車",
+          "reading": "くるま",
+          "gloss": "car"
+        },
+        {
+          "form": "電車",
+          "reading": "でんしゃ",
+          "gloss": "train (electric)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.道",
@@ -1169,7 +2190,19 @@
         "road",
         "way"
       ],
-      "stroke_order_svg": "svg/kanji/道.svg"
+      "stroke_order_svg": "svg/kanji/道.svg",
+      "examples": [
+        {
+          "form": "道",
+          "reading": "みち",
+          "gloss": "road"
+        },
+        {
+          "form": "道",
+          "reading": "みち",
+          "gloss": "road, way"
+        }
+      ]
     },
     {
       "id": "n5.kanji.店",
@@ -1184,7 +2217,19 @@
         "shop",
         "store"
       ],
-      "stroke_order_svg": "svg/kanji/店.svg"
+      "stroke_order_svg": "svg/kanji/店.svg",
+      "examples": [
+        {
+          "form": "お店",
+          "reading": "おみせ",
+          "gloss": "shop"
+        },
+        {
+          "form": "店員",
+          "reading": "てんいん",
+          "gloss": "shop clerk"
+        }
+      ]
     },
     {
       "id": "n5.kanji.駅",
@@ -1196,7 +2241,19 @@
       "meanings": [
         "station"
       ],
-      "stroke_order_svg": "svg/kanji/駅.svg"
+      "stroke_order_svg": "svg/kanji/駅.svg",
+      "examples": [
+        {
+          "form": "駅",
+          "reading": "えき",
+          "gloss": "station"
+        },
+        {
+          "form": "駅員",
+          "reading": "えきいん",
+          "gloss": "station staff"
+        }
+      ]
     },
     {
       "id": "n5.kanji.食",
@@ -1212,7 +2269,14 @@
         "eat",
         "food"
       ],
-      "stroke_order_svg": "svg/kanji/食.svg"
+      "stroke_order_svg": "svg/kanji/食.svg",
+      "examples": [
+        {
+          "form": "食べる",
+          "reading": "たべる",
+          "gloss": "to eat"
+        }
+      ]
     },
     {
       "id": "n5.kanji.飲",
@@ -1226,7 +2290,14 @@
       "meanings": [
         "drink"
       ],
-      "stroke_order_svg": "svg/kanji/飲.svg"
+      "stroke_order_svg": "svg/kanji/飲.svg",
+      "examples": [
+        {
+          "form": "飲む",
+          "reading": "のむ",
+          "gloss": "to drink"
+        }
+      ]
     },
     {
       "id": "n5.kanji.見",
@@ -1241,7 +2312,19 @@
         "see",
         "look"
       ],
-      "stroke_order_svg": "svg/kanji/見.svg"
+      "stroke_order_svg": "svg/kanji/見.svg",
+      "examples": [
+        {
+          "form": "見る",
+          "reading": "みる",
+          "gloss": "to see, to watch"
+        },
+        {
+          "form": "見せる",
+          "reading": "みせる",
+          "gloss": "to show"
+        }
+      ]
     },
     {
       "id": "n5.kanji.聞",
@@ -1258,7 +2341,19 @@
         "listen",
         "ask"
       ],
-      "stroke_order_svg": "svg/kanji/聞.svg"
+      "stroke_order_svg": "svg/kanji/聞.svg",
+      "examples": [
+        {
+          "form": "新聞",
+          "reading": "しんぶん",
+          "gloss": "newspaper"
+        },
+        {
+          "form": "聞く",
+          "reading": "きく",
+          "gloss": "to listen, to ask"
+        }
+      ]
     },
     {
       "id": "n5.kanji.読",
@@ -1272,7 +2367,14 @@
       "meanings": [
         "read"
       ],
-      "stroke_order_svg": "svg/kanji/読.svg"
+      "stroke_order_svg": "svg/kanji/読.svg",
+      "examples": [
+        {
+          "form": "読む",
+          "reading": "よむ",
+          "gloss": "to read"
+        }
+      ]
     },
     {
       "id": "n5.kanji.書",
@@ -1286,7 +2388,14 @@
       "meanings": [
         "write"
       ],
-      "stroke_order_svg": "svg/kanji/書.svg"
+      "stroke_order_svg": "svg/kanji/書.svg",
+      "examples": [
+        {
+          "form": "書く",
+          "reading": "かく",
+          "gloss": "to write"
+        }
+      ]
     },
     {
       "id": "n5.kanji.話",
@@ -1303,7 +2412,24 @@
         "speak",
         "story"
       ],
-      "stroke_order_svg": "svg/kanji/話.svg"
+      "stroke_order_svg": "svg/kanji/話.svg",
+      "examples": [
+        {
+          "form": "話",
+          "reading": "はなし",
+          "gloss": "story, talk"
+        },
+        {
+          "form": "話す",
+          "reading": "はなす",
+          "gloss": "to speak"
+        },
+        {
+          "form": "電話",
+          "reading": "でんわ",
+          "gloss": "telephone"
+        }
+      ]
     },
     {
       "id": "n5.kanji.来",
@@ -1318,7 +2444,24 @@
       "meanings": [
         "come"
       ],
-      "stroke_order_svg": "svg/kanji/来.svg"
+      "stroke_order_svg": "svg/kanji/来.svg",
+      "examples": [
+        {
+          "form": "来る",
+          "reading": "くる",
+          "gloss": "to come"
+        },
+        {
+          "form": "来週",
+          "reading": "らいしゅう",
+          "gloss": "next week"
+        },
+        {
+          "form": "来年",
+          "reading": "らいねん",
+          "gloss": "next year"
+        }
+      ]
     },
     {
       "id": "n5.kanji.行",
@@ -1337,7 +2480,14 @@
         "go",
         "conduct"
       ],
-      "stroke_order_svg": "svg/kanji/行.svg"
+      "stroke_order_svg": "svg/kanji/行.svg",
+      "examples": [
+        {
+          "form": "行く",
+          "reading": "いく",
+          "gloss": "to go"
+        }
+      ]
     },
     {
       "id": "n5.kanji.出",
@@ -1355,7 +2505,19 @@
         "go out",
         "put out"
       ],
-      "stroke_order_svg": "svg/kanji/出.svg"
+      "stroke_order_svg": "svg/kanji/出.svg",
+      "examples": [
+        {
+          "form": "出る",
+          "reading": "でる",
+          "gloss": "to leave, to go out"
+        },
+        {
+          "form": "出かける",
+          "reading": "でかける",
+          "gloss": "to go out"
+        }
+      ]
     },
     {
       "id": "n5.kanji.入",
@@ -1371,7 +2533,19 @@
         "enter",
         "put in"
       ],
-      "stroke_order_svg": "svg/kanji/入.svg"
+      "stroke_order_svg": "svg/kanji/入.svg",
+      "examples": [
+        {
+          "form": "入る",
+          "reading": "はいる",
+          "gloss": "to enter (Group 1 exception - looks like Group 2)"
+        },
+        {
+          "form": "入れる",
+          "reading": "いれる",
+          "gloss": "to put in"
+        }
+      ]
     },
     {
       "id": "n5.kanji.立",
@@ -1386,7 +2560,14 @@
       "meanings": [
         "stand"
       ],
-      "stroke_order_svg": "svg/kanji/立.svg"
+      "stroke_order_svg": "svg/kanji/立.svg",
+      "examples": [
+        {
+          "form": "立つ",
+          "reading": "たつ",
+          "gloss": "to stand"
+        }
+      ]
     },
     {
       "id": "n5.kanji.休",
@@ -1401,7 +2582,14 @@
         "rest",
         "holiday"
       ],
-      "stroke_order_svg": "svg/kanji/休.svg"
+      "stroke_order_svg": "svg/kanji/休.svg",
+      "examples": [
+        {
+          "form": "休む",
+          "reading": "やすむ",
+          "gloss": "to rest"
+        }
+      ]
     },
     {
       "id": "n5.kanji.言",
@@ -1418,7 +2606,14 @@
         "say",
         "word"
       ],
-      "stroke_order_svg": "svg/kanji/言.svg"
+      "stroke_order_svg": "svg/kanji/言.svg",
+      "examples": [
+        {
+          "form": "言う",
+          "reading": "いう",
+          "gloss": "to say"
+        }
+      ]
     },
     {
       "id": "n5.kanji.買",
@@ -1432,7 +2627,14 @@
       "meanings": [
         "buy"
       ],
-      "stroke_order_svg": "svg/kanji/買.svg"
+      "stroke_order_svg": "svg/kanji/買.svg",
+      "examples": [
+        {
+          "form": "買う",
+          "reading": "かう",
+          "gloss": "to buy"
+        }
+      ]
     },
     {
       "id": "n5.kanji.高",
@@ -1448,7 +2650,19 @@
         "tall",
         "expensive"
       ],
-      "stroke_order_svg": "svg/kanji/高.svg"
+      "stroke_order_svg": "svg/kanji/高.svg",
+      "examples": [
+        {
+          "form": "高校",
+          "reading": "こうこう",
+          "gloss": "high school"
+        },
+        {
+          "form": "高い",
+          "reading": "たかい",
+          "gloss": "high, tall, expensive"
+        }
+      ]
     },
     {
       "id": "n5.kanji.安",
@@ -1464,7 +2678,14 @@
         "safe",
         "peaceful"
       ],
-      "stroke_order_svg": "svg/kanji/安.svg"
+      "stroke_order_svg": "svg/kanji/安.svg",
+      "examples": [
+        {
+          "form": "安い",
+          "reading": "やすい",
+          "gloss": "cheap"
+        }
+      ]
     },
     {
       "id": "n5.kanji.新",
@@ -1480,7 +2701,19 @@
       "meanings": [
         "new"
       ],
-      "stroke_order_svg": "svg/kanji/新.svg"
+      "stroke_order_svg": "svg/kanji/新.svg",
+      "examples": [
+        {
+          "form": "新聞",
+          "reading": "しんぶん",
+          "gloss": "newspaper"
+        },
+        {
+          "form": "新しい",
+          "reading": "あたらしい",
+          "gloss": "new"
+        }
+      ]
     },
     {
       "id": "n5.kanji.古",
@@ -1494,7 +2727,14 @@
       "meanings": [
         "old"
       ],
-      "stroke_order_svg": "svg/kanji/古.svg"
+      "stroke_order_svg": "svg/kanji/古.svg",
+      "examples": [
+        {
+          "form": "古い",
+          "reading": "ふるい",
+          "gloss": "old (not for people)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.長",
@@ -1509,7 +2749,14 @@
         "long",
         "leader"
       ],
-      "stroke_order_svg": "svg/kanji/長.svg"
+      "stroke_order_svg": "svg/kanji/長.svg",
+      "examples": [
+        {
+          "form": "長い",
+          "reading": "ながい",
+          "gloss": "long"
+        }
+      ]
     },
     {
       "id": "n5.kanji.白",
@@ -1525,7 +2772,24 @@
       "meanings": [
         "white"
       ],
-      "stroke_order_svg": "svg/kanji/白.svg"
+      "stroke_order_svg": "svg/kanji/白.svg",
+      "examples": [
+        {
+          "form": "白",
+          "reading": "しろ",
+          "gloss": "white (noun)"
+        },
+        {
+          "form": "白い",
+          "reading": "しろい",
+          "gloss": "white"
+        },
+        {
+          "form": "白い",
+          "reading": "しろい",
+          "gloss": "white (adj)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.名",
@@ -1540,7 +2804,19 @@
       "meanings": [
         "name"
       ],
-      "stroke_order_svg": "svg/kanji/名.svg"
+      "stroke_order_svg": "svg/kanji/名.svg",
+      "examples": [
+        {
+          "form": "名前",
+          "reading": "なまえ",
+          "gloss": "name"
+        },
+        {
+          "form": "名前",
+          "reading": "なまえ",
+          "gloss": "name (also in §37)"
+        }
+      ]
     },
     {
       "id": "n5.kanji.番",
@@ -1553,7 +2829,24 @@
         "number",
         "turn"
       ],
-      "stroke_order_svg": "svg/kanji/番.svg"
+      "stroke_order_svg": "svg/kanji/番.svg",
+      "examples": [
+        {
+          "form": "番",
+          "reading": "ばん",
+          "gloss": "number, ordinal"
+        },
+        {
+          "form": "番号",
+          "reading": "ばんごう",
+          "gloss": "number"
+        },
+        {
+          "form": "一番",
+          "reading": "いちばん",
+          "gloss": "most, number one"
+        }
+      ]
     },
     {
       "id": "n5.kanji.号",
@@ -1565,7 +2858,24 @@
       "meanings": [
         "number"
       ],
-      "stroke_order_svg": "svg/kanji/号.svg"
+      "stroke_order_svg": "svg/kanji/号.svg",
+      "examples": [
+        {
+          "form": "番号",
+          "reading": "ばんごう",
+          "gloss": "number"
+        },
+        {
+          "form": "番号",
+          "reading": "ばんごう",
+          "gloss": "number (also in §24)"
+        },
+        {
+          "form": "電話番号",
+          "reading": "でんわばんごう",
+          "gloss": "phone number"
+        }
+      ]
     },
     {
       "id": "n5.kanji.私",
@@ -1578,7 +2888,19 @@
         "I",
         "me"
       ],
-      "stroke_order_svg": "svg/kanji/私.svg"
+      "stroke_order_svg": "svg/kanji/私.svg",
+      "examples": [
+        {
+          "form": "私",
+          "reading": "わたし",
+          "gloss": "I, me"
+        },
+        {
+          "form": "私たち",
+          "reading": "わたしたち",
+          "gloss": "we"
+        }
+      ]
     }
   ]
 }

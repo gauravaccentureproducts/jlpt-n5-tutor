@@ -761,6 +761,7 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-13", "No out-of-scope kanji in user-facing data", lambda: _check_ja_13_no_out_of_scope_kanji_in_data()),
     ("JA-14", "No auto-ruby code in renderer",  lambda: _check_ja_14_no_auto_ruby_in_renderer()),
     ("JA-15", "Audio refs resolve to files on disk", lambda: _check_ja_15_audio_refs_on_disk()),
+    ("JA-16", "Kanji examples use only target-or-whitelist kanji", lambda: _check_ja_16_kanji_examples_in_scope()),
 ]
 
 
@@ -821,6 +822,40 @@ def _check_ja_14_no_auto_ruby_in_renderer() -> list[str]:
     if "n5KanjiReadings" in src and "primary" in src:
         return ["JA-14: js/furigana.js still wires the readings map into the renderer"]
     return []
+
+
+def _check_ja_16_kanji_examples_in_scope() -> list[str]:
+    """K-1 invariant: every kanji entry's `examples[*].form` must contain
+    only kanji that are either (a) the target kanji of the card, or (b)
+    in the N5 whitelist. Non-kanji characters (kana) are always allowed.
+
+    Out-of-scope kanji should be substituted with their kana reading
+    BEFORE landing in the data file. The renderer doesn't perform the
+    substitution at display time; the form here is what's shown.
+    """
+    failures: list[str] = []
+    kanji_path = ROOT / "data" / "kanji.json"
+    wl_path = ROOT / "data" / "n5_kanji_whitelist.json"
+    if not kanji_path.exists() or not wl_path.exists():
+        return ["JA-16: data files missing"]
+    try:
+        whitelist = set(json.loads(wl_path.read_text(encoding="utf-8")))
+        data = json.loads(kanji_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-16: parse error: {e}"]
+    KANJI_RE = re.compile(r"[一-鿿]")
+    for entry in data.get("entries", []):
+        target = entry.get("glyph")
+        for ex in entry.get("examples", []):
+            form = ex.get("form", "")
+            for ch in KANJI_RE.findall(form):
+                if ch == target or ch in whitelist:
+                    continue
+                failures.append(
+                    f"JA-16 kanji '{target}' has example '{form}' with "
+                    f"out-of-scope kanji '{ch}'. Substitute with kana per K-1 rule."
+                )
+    return failures
 
 
 def _check_ja_15_audio_refs_on_disk() -> list[str]:

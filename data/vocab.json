@@ -485,7 +485,7 @@
       "form": "これ",
       "reading": "これ",
       "gloss": "this (thing near speaker)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -493,7 +493,7 @@
       "form": "それ",
       "reading": "それ",
       "gloss": "that (thing near listener)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -501,7 +501,7 @@
       "form": "あれ",
       "reading": "あれ",
       "gloss": "that (over there)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -509,7 +509,7 @@
       "form": "どれ",
       "reading": "どれ",
       "gloss": "which (one)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -517,7 +517,7 @@
       "form": "この",
       "reading": "この",
       "gloss": "this (modifier)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -525,7 +525,7 @@
       "form": "その",
       "reading": "その",
       "gloss": "that (modifier)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -533,7 +533,7 @@
       "form": "あの",
       "reading": "あの",
       "gloss": "that over there (modifier)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -541,7 +541,7 @@
       "form": "どの",
       "reading": "どの",
       "gloss": "which (modifier)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -549,7 +549,7 @@
       "form": "ここ",
       "reading": "ここ",
       "gloss": "here",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -557,7 +557,7 @@
       "form": "そこ",
       "reading": "そこ",
       "gloss": "there",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -565,7 +565,7 @@
       "form": "あそこ",
       "reading": "あそこ",
       "gloss": "over there",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -573,7 +573,7 @@
       "form": "どこ",
       "reading": "どこ",
       "gloss": "where",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -581,7 +581,7 @@
       "form": "こちら",
       "reading": "こちら",
       "gloss": "this way / this person (polite)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -589,7 +589,7 @@
       "form": "そちら",
       "reading": "そちら",
       "gloss": "that way",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -597,7 +597,7 @@
       "form": "あちら",
       "reading": "あちら",
       "gloss": "that way (over there)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -605,7 +605,7 @@
       "form": "どちら",
       "reading": "どちら",
       "gloss": "which way",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -613,7 +613,7 @@
       "form": "こっち",
       "reading": "こっち",
       "gloss": "this way (casual)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -621,7 +621,7 @@
       "form": "そっち",
       "reading": "そっち",
       "gloss": "that way (casual)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -629,7 +629,7 @@
       "form": "あっち",
       "reading": "あっち",
       "gloss": "that way over there (casual)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -637,7 +637,7 @@
       "form": "どっち",
       "reading": "どっち",
       "gloss": "which way (casual)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -645,7 +645,7 @@
       "form": "こんな",
       "reading": "こんな",
       "gloss": "this kind of",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -653,7 +653,7 @@
       "form": "そんな",
       "reading": "そんな",
       "gloss": "that kind of",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -661,7 +661,7 @@
       "form": "あんな",
       "reading": "あんな",
       "gloss": "that kind of (over there)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -669,7 +669,7 @@
       "form": "どんな",
       "reading": "どんな",
       "gloss": "what kind of",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -677,7 +677,7 @@
       "form": "こう",
       "reading": "こう",
       "gloss": "like this",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -685,7 +685,7 @@
       "form": "そう",
       "reading": "そう",
       "gloss": "like that",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -693,7 +693,7 @@
       "form": "ああ",
       "reading": "ああ",
       "gloss": "like that (over there)",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {
@@ -701,7 +701,7 @@
       "form": "どう",
       "reading": "どう",
       "gloss": "how",
-      "section": "5. Demonstratives (こそあど)",
+      "section": "5. Demonstratives",
       "pos": "demonstrative"
     },
     {

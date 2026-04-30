@@ -68,6 +68,22 @@ function renderDetail(container, entry, entries) {
           ${entry.meanings?.length ? `<p><strong>Meaning:</strong> ${entry.meanings.map(esc).join(', ')}</p>` : ''}
         </div>
       </div>
+      ${entry.examples?.length ? `
+        <section class="kanji-examples">
+          <h3>Example usage (N5)</h3>
+          <table class="kanji-examples-table">
+            <tbody>
+              ${entry.examples.map(ex => `
+                <tr>
+                  <td class="ex-form" lang="ja">${esc(ex.form)}</td>
+                  <td class="ex-reading" lang="ja">${esc(ex.reading || '')}</td>
+                  <td class="ex-gloss">${esc(ex.gloss || '')}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </section>
+      ` : ''}
       ${entry.stroke_order_svg ? `
         <section class="kanji-stroke">
           <h3>Stroke order</h3>

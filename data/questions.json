@@ -3540,6 +3540,366 @@
         "いる",
         "もの"
       ]
+    },
+    {
+      "id": "q-0419",
+      "grammarPatternId": "n5-022",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "りんご（  ） バナナを たべます。",
+      "choices": [
+        "や",
+        "は",
+        "が",
+        "を"
+      ],
+      "correctAnswer": "や",
+      "explanation_en": "Pattern n5-022: And - non-exhaustive listing. See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "は": "Wrong choice - see pattern detail.",
+        "が": "Wrong choice - see pattern detail.",
+        "を": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0420",
+      "grammarPatternId": "n5-023",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "あなたは がくせいです（  ）。",
+      "choices": [
+        "か",
+        "は",
+        "が",
+        "を"
+      ],
+      "correctAnswer": "か",
+      "explanation_en": "Pattern n5-023: Sentence-final question marker. See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "は": "Wrong choice - see pattern detail.",
+        "が": "Wrong choice - see pattern detail.",
+        "を": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0421",
+      "grammarPatternId": "n5-024",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "あなたは がくせいです（  ）。",
+      "choices": [
+        "か",
+        "は",
+        "が",
+        "を"
+      ],
+      "correctAnswer": "か",
+      "explanation_en": "Pattern n5-024: Or (between alternatives). See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "は": "Wrong choice - see pattern detail.",
+        "が": "Wrong choice - see pattern detail.",
+        "を": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0422",
+      "grammarPatternId": "n5-032",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "わたし（  ） がくせいです。",
+      "choices": [
+        "も",
+        "は",
+        "が",
+        "を"
+      ],
+      "correctAnswer": "も",
+      "explanation_en": "Pattern n5-032: Also / too. See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "は": "Wrong choice - see pattern detail.",
+        "が": "Wrong choice - see pattern detail.",
+        "を": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0423",
+      "grammarPatternId": "n5-035",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "1時間（  ） まちました。",
+      "choices": [
+        "ぐらい",
+        "くらい",
+        "ほど",
+        "ばかり"
+      ],
+      "correctAnswer": "ぐらい",
+      "explanation_en": "Pattern n5-035: ぐらい / くらい - about, approximately (used with quantities). See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "くらい": "Wrong choice - see pattern detail.",
+        "ほど": "Wrong choice - see pattern detail.",
+        "ばかり": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0424",
+      "grammarPatternId": "n5-039",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "（  ）は ほんです。",
+      "choices": [
+        "これ",
+        "それ",
+        "あれ",
+        "どれ"
+      ],
+      "correctAnswer": "これ",
+      "explanation_en": "Pattern n5-039: Pronouns: this / that / which one. See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "それ": "Wrong choice - see pattern detail.",
+        "あれ": "Wrong choice - see pattern detail.",
+        "どれ": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0425",
+      "grammarPatternId": "n5-042",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "（  ）へ どうぞ。",
+      "choices": [
+        "こちら",
+        "そちら",
+        "あちら",
+        "どちら"
+      ],
+      "correctAnswer": "こちら",
+      "explanation_en": "Pattern n5-042: こちら / そちら / あちら / どちら - polite directions / options. See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "そちら": "Wrong choice - see pattern detail.",
+        "あちら": "Wrong choice - see pattern detail.",
+        "どちら": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0426",
+      "grammarPatternId": "n5-043",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "（  ） 本が すきですか。",
+      "choices": [
+        "どんな",
+        "こんな",
+        "そんな",
+        "あんな"
+      ],
+      "correctAnswer": "どんな",
+      "explanation_en": "Pattern n5-043: こんな / そんな / あんな / どんな + Noun - 'this/that kind of'. See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "こんな": "Wrong choice - see pattern detail.",
+        "そんな": "Wrong choice - see pattern detail.",
+        "あんな": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0427",
+      "grammarPatternId": "n5-044",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "（  ） してください。",
+      "choices": [
+        "こう",
+        "そう",
+        "ああ",
+        "どう"
+      ],
+      "correctAnswer": "こう",
+      "explanation_en": "Pattern n5-044: こう / そう / ああ / どう - 'this way / that way / how'. See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "そう": "Wrong choice - see pattern detail.",
+        "ああ": "Wrong choice - see pattern detail.",
+        "どう": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0428",
+      "grammarPatternId": "n5-045",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "（  ）を たべますか。",
+      "choices": [
+        "なに",
+        "なん",
+        "だれ",
+        "どなた"
+      ],
+      "correctAnswer": "なに",
+      "explanation_en": "Pattern n5-045: What. See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "なん": "Wrong choice - see pattern detail.",
+        "だれ": "Wrong choice - see pattern detail.",
+        "どなた": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0429",
+      "grammarPatternId": "n5-046",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "（  ）が きましたか。",
+      "choices": [
+        "だれ",
+        "なに",
+        "なん",
+        "どなた"
+      ],
+      "correctAnswer": "だれ",
+      "explanation_en": "Pattern n5-046: Who. See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "なに": "Wrong choice - see pattern detail.",
+        "なん": "Wrong choice - see pattern detail.",
+        "どなた": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0430",
+      "grammarPatternId": "n5-047",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "（  ） いきますか。",
+      "choices": [
+        "いつ",
+        "なに",
+        "なん",
+        "だれ"
+      ],
+      "correctAnswer": "いつ",
+      "explanation_en": "Pattern n5-047: When. See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "なに": "Wrong choice - see pattern detail.",
+        "なん": "Wrong choice - see pattern detail.",
+        "だれ": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0431",
+      "grammarPatternId": "n5-048",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "（  ）は としょかんです。",
+      "choices": [
+        "ここ",
+        "そこ",
+        "あそこ",
+        "どこ"
+      ],
+      "correctAnswer": "ここ",
+      "explanation_en": "Pattern n5-048: Where (covered by ここ-series). See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "そこ": "Wrong choice - see pattern detail.",
+        "あそこ": "Wrong choice - see pattern detail.",
+        "どこ": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0432",
+      "grammarPatternId": "n5-049",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "（  ）が あなたの ですか。",
+      "choices": [
+        "どれ",
+        "これ",
+        "それ",
+        "あれ"
+      ],
+      "correctAnswer": "どれ",
+      "explanation_en": "Pattern n5-049: どれ / どの / どちら - 'which' (selection from options). See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "これ": "Wrong choice - see pattern detail.",
+        "それ": "Wrong choice - see pattern detail.",
+        "あれ": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
+    },
+    {
+      "id": "q-0433",
+      "grammarPatternId": "n5-050",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
+      "question_ja": "おしごとは （  ）ですか。",
+      "choices": [
+        "どう",
+        "こう",
+        "そう",
+        "ああ"
+      ],
+      "correctAnswer": "どう",
+      "explanation_en": "Pattern n5-050: どう / いかが - 'how / how about' (state, opinion, polite offer). See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "distractor_explanations": {
+        "こう": "Wrong choice - see pattern detail.",
+        "そう": "Wrong choice - see pattern detail.",
+        "ああ": "Wrong choice - see pattern detail."
+      },
+      "high_confusion": false,
+      "difficulty": 1,
+      "auto": true
     }
   ]
 }
