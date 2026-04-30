@@ -1,6 +1,6 @@
 # JLPT N5 Grammar Tutor - Tasks
 
-Last updated: 2026-04-30 (Pass 9 external brief: 27+4+7 items, all fixed, 0 open; cumulative 153/153 across 9 passes)
+Last updated: 2026-04-30 (UX Brief 2 Phases 1-4 shipped; Learn hub + per-vocab detail + SW v18; Pass 9 content brief closed; cumulative 153/153 across 9 audit passes)
 
 ## Live site
 
@@ -12,9 +12,9 @@ Last updated: 2026-04-30 (Pass 9 external brief: 27+4+7 items, all fixed, 0 open
 ## Status snapshot
 
 - 187/187 patterns enriched, 250/250 questions real (no stubs)
-- **17 routed views**: Home / Learn / Test / Practice (Daily Drill) / Review (SRS) / Summary / Diagnostic / Settings / Kanji / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters / Reading / Listening
+- **17 routed views + sub-paths**: Home / **Learn hub (5-card: Grammar/Vocab/Kanji/Dokkai/Listening)** with sub-paths `#/learn/grammar`, `#/learn/vocab`, `#/learn/vocab/<form>` (per-word detail with 5 example sentences), `#/learn/<patternId>` / Kanji (`#/kanji`, `#/kanji/<glyph>`) / Test (`#/test`, `#/test/<n>` direct-launch with quit-prompt) / Practice (`#/drill`, was "Daily Drill") / Review (SM-2 SRS) / Summary / Diagnostic / Settings / Reading / Listening / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters
 - SM-2 SRS in Review (4-button grading)
-- Service worker `jlpt-n5-tutor-v15` (stale-while-revalidate for shell, cache-first for content); update toast on new shell; lazy-caches audio on first play
+- Service worker `jlpt-n5-tutor-v18` (stale-while-revalidate for shell, cache-first for content); update toast on new shell; lazy-caches audio on first play
 - 5-locale i18n shell (en at v1, vi/id/ne/zh structured)
 - PWA manifest installable
 - Export / import progress round-trips through JSON
@@ -89,17 +89,31 @@ Brief 1 complete. Engine, module, and asset layers shipped.
 
 ---
 
-## UI testing plan - 2026-04-30
+## UI testing plan - 2026-04-30 (synced to UX Brief 2 Phases 1-4)
 
-Comprehensive UI-level test strategy at `feedback/ui-testing-plan.md` covering 22 perspectives across 17 routes × 5 locales × 8 browsers × 6 OSes. Sections:
+Comprehensive UI-level test strategy at `feedback/ui-testing-plan.md` covering 22 perspectives across 17 routes × multiple sub-paths × 5 locales × 8 browsers × 6 OSes.
 
-- §1-§16: Perspectives (end-learner, first-time visitor, returning visitor, mobile, a11y, i18n, slow connection, offline, power user, cross-browser, cross-OS, content integrity, performance, security, PWA, visual)
+**★ Foundational concern: §12 Japanese language accuracy & content integrity** - the bar this app must clear:
+- §12.1: 16 automated content invariants (CI release blocker)
+- §12.2: Runtime JA spot-checks at P0 / P1 / P2 tiers
+- §12.3: Quarterly Pass-N re-audit protocol (continues the audit-pass tradition from `verification.md`)
+
+Other sections:
+- §0.1: Route map - canonical reference for all routes + sub-paths (Learn hub, kanji index/detail, vocab per-form, test/<n> direct-launch)
+- §1-§11, §13-§16: Other perspectives (end-learner, first-timer, returning visitor, mobile, a11y, i18n, slow conn, offline, power user, cross-browser, cross-OS, perf, security, PWA, visual)
 - §17: Three-tier execution (P0 smoke 5min / P1 gate 60min / P2 regression 4h)
 - §18-§19: Recommended tooling stack (Playwright + axe-core + Lighthouse CI) and CI integration
 - §20: Nielsen 10 heuristic checklist applied to this app
 - §22-§23: Acceptance criteria + perspective coverage matrix
 
-Use as a **catalog** - triage by P0/P1/P2 tier, don't run all 22 every release.
+Use as a **catalog** - triage by P0/P1/P2 tier, don't run all 22 every release. **§12 always runs.**
+
+### Pending engineering work (not yet wired)
+
+- [ ] Create `tools/check_content_integrity.py` implementing the 16 invariants from §12.1 (X-6.1 through X-6.7 + JA-1 through JA-9). Wire into CI as a release blocker.
+- [ ] Add Playwright + @axe-core/playwright as devDependencies; first test suite covering §17.1 P0 smoke.
+- [ ] Add Lighthouse CI workflow per §19; baseline numbers from current SW v18 build.
+- [ ] First quarterly Pass-N re-audit calendar reminder (§12.3): 2026-07-30.
 
 ---
 
@@ -279,7 +293,7 @@ Source: `feedback/jlpt-n5-tutor-ux-developer-brief2.md`. Phased per Brief §19.
 - [x] **B2-P3.4** New `js/search.js` indexes grammar (id/pattern/meaning/explanation), vocab (form/reading/gloss), kanji (glyph/on/kun/meanings). `<input type="search">` in secondary nav. `/` keyboard shortcut focuses input. Click outside or Esc dismisses panel. Lazy-loads bank on first focus. (§8)
 - [x] **B2-P3.5** Nav restructured per §2.2: primary now has Home / Learn / Practice (renamed from Daily Drill) / Review / Test. Secondary nav row holds search + Summary + Settings.
 
-### Phase 4 - Polish and reach
+### Phase 4 - Polish and reach ✅ COMPLETE
 - [x] **B2-P4.1** Webfont decision: kept system stack `Noto Sans JP / Hiragino Kaku Gothic ProN / Yu Gothic / Meiryo`. Shipping a 200 KB self-hosted woff2 conflicts with static-only / no-third-party-loads constraints. Yu Gothic + Meiryo are preinstalled on Windows 10+; users with the JP language pack get Noto Sans JP. Documented in CHANGELOG.
 - [x] **B2-P4.2** SW now uses stale-while-revalidate for the shell (HTML/CSS/JS): serves cache instantly, refetches in background, posts `SW_UPDATE_AVAILABLE` to clients when new bytes detected. Cache-first preserved for content. New js/pwa.js shows "A new version is available - Reload?" toast on receipt; click sends `SKIP_WAITING` and reloads.
 - [x] **B2-P4.3** Install banner via `beforeinstallprompt` (one-time, dismissed flag in localStorage). Offline indicator chip in top-right that toggles with `navigator.onLine`. Hidden when online.
