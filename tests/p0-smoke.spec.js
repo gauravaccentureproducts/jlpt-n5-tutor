@@ -46,14 +46,16 @@ test.describe('P0 smoke - core navigation', () => {
     await expect(cards.nth(4)).toContainText('Listening');
   });
 
-  test('Grammar TOC has 187 cards across 32 categories', async ({ page }) => {
-    // Categories are rendered as collapsible <details> elements
-    // (changed 2026-05-01 from static <section>) so the page opens with
-    // only the 32 headings visible; cards expand on click. Test asserts
-    // the structural counts regardless of expanded/collapsed state.
+  test('Grammar TOC has 187 cards across 5 super-sections', async ({ page }) => {
+    // 32 fine-grained categories were collapsed into 5 super-sections
+    // (Sentence Basics / Verbs / Adjectives and Comparison / Quantity,
+    // Time and Connectives / Functional and Upper-N5) at render time.
+    // The data file (data/grammar.json) is unchanged; the mapping is in
+    // js/learn.js GRAMMAR_SUPERCATS. Each super-section is a collapsible
+    // <details>; click to expand and see the pattern cards.
     await page.goto('/#/learn/grammar');
     await expect(page.locator('h2')).toContainText('Grammar');
-    await expect(page.locator('details.toc-category')).toHaveCount(32);
+    await expect(page.locator('details.toc-category')).toHaveCount(5);
     await expect(page.locator('.grammar-card')).toHaveCount(187);
   });
 

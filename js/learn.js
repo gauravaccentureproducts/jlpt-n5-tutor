@@ -260,29 +260,79 @@ function renderVocabDetail(container, vocabData, grammarData, form) {
   `;
 }
 
-function renderTOC(container, data) {
-  const byCategory = new Map();
-  for (const p of data.patterns) {
-    const key = p.category || 'Other';
-    if (!byCategory.has(key)) byCategory.set(key, { order: p.categoryOrder ?? 99, items: [] });
-    byCategory.get(key).items.push(p);
+// Render-time mapping from the 32 fine-grained categories in
+// data/grammar.json to 5 pedagogically-coherent super-categories. Order
+// here is pedagogical (basics -> verbs -> adjectives -> quantity/time
+// -> upper-N5). Anything starting with "Additional Upper N5 /
+// Borderline Patterns" auto-maps to "Functional and Upper-N5".
+const GRAMMAR_SUPERCATS = [
+  ['Sentence Basics', [
+    'Copula and Basic Sentence Structure',
+    'Particles',
+    'Demonstratives',
+    'Question Words',
+  ]],
+  ['Verbs', [
+    'Verbs - Tense and Politeness (ます-form)',
+    'Verbs - Plain (Dictionary) Form and Negation',
+    'Te-form and Related Patterns',
+    'Existence and Possession',
+    'Desiderative and Volitional',
+    'Giving and Receiving (basic)',
+  ]],
+  ['Adjectives and Comparison', [
+    'Adjectives',
+    'Comparison and Preference',
+  ]],
+  ['Quantity, Time and Connectives', [
+    'Counters and Quantity',
+    'Time Expressions',
+    'Conjunctions and Connectives',
+    'Asking and Stating with から / ので (basic causation)',
+    'Existence-of-Plans and Frequency',
+  ]],
+  ['Functional and Upper-N5', [
+    'Nominalization and Modification',
+    'Common Set Patterns',
+    'Functional Expressions (Non-Grammar, Common Usage)',
+    'Other Core Patterns',
+    'Honorific / Polite Vocabulary at N5 (functional)',
+  ]],
+];
+
+function superCategoryFor(category) {
+  for (const [supercat, members] of GRAMMAR_SUPERCATS) {
+    if (members.includes(category)) return supercat;
   }
-  const sorted = [...byCategory.entries()].sort((a, b) => a[1].order - b[1].order);
+  // Fallback: any "Additional Upper N5 / Borderline Patterns - ..."
+  // category goes into the Functional and Upper-N5 bucket. Anything
+  // unrecognised also lands there so nothing falls through.
+  return 'Functional and Upper-N5';
+}
+
+function renderTOC(container, data) {
+  // Group by super-category instead of fine-grained category.
+  const bySuperCat = new Map();
+  for (const [supercat] of GRAMMAR_SUPERCATS) bySuperCat.set(supercat, []);
+  for (const p of data.patterns) {
+    const sc = superCategoryFor(p.category || 'Other');
+    bySuperCat.get(sc).push(p);
+  }
 
   const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
   let html = `
     <a class="back-link" href="#/learn">← Back to Learn</a>
     <h2>Grammar</h2>
-    <p class="page-lede">${data.patterns.length} patterns in ${sorted.length} categories.</p>
+    <p class="page-lede">${data.patterns.length} patterns in ${bySuperCat.size} sections.</p>
   `;
-  // Each category renders as a collapsible <details> — only the heading
-  // is visible by default; click to expand. Reduces a 187-card page to
-  // 32 short rows on first paint.
-  for (const [cat, { items }] of sorted) {
+  // Each super-category renders as a collapsible <details>. First paint:
+  // 5 short heading rows (one per super-category). Click to expand a
+  // section to see its cards.
+  for (const [supercat, items] of bySuperCat) {
     items.sort((a, b) => (a.patternOrder ?? 0) - (b.patternOrder ?? 0));
-    html += `<details class="toc-category" id="cat-${slugify(cat)}">`;
-    html += `<summary><h3>${esc(cat)} <span class="cat-count muted small">(${items.length})</span></h3></summary>`;
+    html += `<details class="toc-category" id="cat-${slugify(supercat)}">`;
+    html += `<summary><h3>${esc(supercat)} <span class="cat-count muted small">(${items.length})</span></h3></summary>`;
     html += `<div class="grammar-grid">`;
     for (const p of items) {
       html += `
