@@ -360,14 +360,14 @@ The rewrite should obey these rules so future copy doesn't drift back:
 
 When the rewrite ships:
 
-- [ ] No occurrence of `Pass JLPT N5 with` anywhere in user-facing files (grep `js/`, `index.html`, `*.html`).
-- [ ] No occurrence of `Master`, `Crush`, `Ace`, `Easily`, `Quickly`, `Effortlessly` as adverbs/verbs about study outcomes.
-- [ ] No `✓ ` (check + space) prefix in any visible label outside drill answer-feedback (and even that is reviewed in E4).
-- [ ] No `Start your first` or `Begin your` patterns. Use `Start a` / `Open` instead.
-- [ ] Site title + meta description rewritten per F1, F2.
-- [ ] CHANGELOG.md gets a note that the home tagline + hero copy were updated for voice consistency (no factual changes).
-- [ ] Spec supplement §1.1.5 (Trust strip) and §15 (Copy revisions) updated to match the new voice — these currently codify the old marketing voice and would otherwise drift back on the next pass.
-- [ ] Browser preview verification: home page (first-time + returning), summary empty-state, drill answer feedback all reviewed.
+- [x] No occurrence of `Pass JLPT N5 with` anywhere in user-facing files. **Verified 2026-05-01:** 0 hits across `js/`, `index.html`. Removed during the v1.7.1 hero deletion.
+- [x] No occurrence of `Master`, `Crush`, `Ace`, `Easily`, `Quickly`, `Effortlessly` as adverbs/verbs about study outcomes. **Verified 2026-05-01:** only `★ Mastered` (status badge label, descriptive noun) remains — not the audit target which was about marketing imperatives like "Master JLPT in X days".
+- [x] No `✓ ` (check + space) prefix in any visible label outside drill answer-feedback. **Verified 2026-05-01:** 0 hits. Test-review screen still uses bare ✓/✗ as centered glyphs (typographic dingbats, not emoji), color-coded via CSS classes.
+- [x] No `Start your first` or `Begin your` patterns. **Verified 2026-05-01:** 0 hits. The home page no longer has any CTAs at all (hero removed in v1.7.1).
+- [x] Site title + meta description rewritten per F1, F2. **Verified 2026-05-01:** title is `JLPT N5 — study material` (matches F1 descriptive form). Description: `Free JLPT N5 study material covering grammar, vocabulary, kanji, reading and listening. Works offline; no account.` (factual, no marketing voice).
+- [x] CHANGELOG.md gets a note that the home tagline + hero copy were updated for voice consistency. **Already covered** in CHANGELOG entries v1.7.1 (hero removed) and v1.7.11 (decorative emojis removed) and v1.8.0 (Zen Modern overhaul).
+- [x] Spec supplement §1.1.5 (Trust strip) and §15 (Copy revisions) updated to match the new voice. **Applied 2026-05-01:** see commit on this date — sections retroactively documented to reflect that the trust strip + hero CTA were removed entirely rather than rewritten.
+- [ ] Browser preview verification: home page (first-time + returning), summary empty-state, drill answer feedback all reviewed. **Manual UX QA — pending user action.**
 
 ### Open decisions (flag for user before implementer starts)
 
@@ -605,6 +605,12 @@ Comprehensive audit of `data/questions.json` from native-speaker + structural-in
 
 **Phase A (the 38-question cascade) applied 2026-05-01.** Bank shrunk 181 → 143 real questions. Resolved F-14.1, F-14.2, F-14.3, F-14.4, F-14.7, F-14.8 in one mechanical pass.
 
+**Phase B (q-0418 schema) applied 2026-05-01.** Dropped stale `choices` array from text_input question. F-14.5 resolved.
+
+**F-14.9 cascade-resolved 2026-05-01.** Slash-format issues only existed in the 38 deleted stubs.
+
+**Open: 2 of 10 audit findings remain** — F-14.6 (ID gap policy decision) and F-14.10 (long-term: author more sentence_order / text_input questions).
+
 #### CRITICAL (3 classes — ALL RESOLVED)
 
 - [x] **F-14.1** (CRITICAL) **38 pattern-meta questions teach nothing** (q-0280 through q-0416 family). All matched pattern `つぎの いみに あう パターン：`. Answer was literally quoted in the stem; distractors mixed wildly different types so the correct option was identifiable from format alone. **Applied 2026-05-01:** deleted 38 questions matching the stub pattern. Bank: 181 → 143. IDs deleted: q-0280, q-0281, q-0288, q-0290, q-0291, q-0294, q-0300, q-0301, q-0311, q-0316, q-0318, q-0319, q-0321, q-0325, q-0326, q-0329, q-0338, q-0339, q-0343, q-0344, q-0349, q-0361, q-0363, q-0374, q-0376, q-0379, q-0382, q-0384, q-0389, q-0393, q-0398, q-0400, q-0408, q-0409, q-0412, q-0413, q-0414, q-0416.
@@ -614,14 +620,14 @@ Comprehensive audit of `data/questions.json` from native-speaker + structural-in
 #### HIGH (3 classes — 1 RESOLVED, 2 OPEN)
 
 - [x] **F-14.4** (HIGH) **Prompt-stem mismatch in 37 pattern-meta questions** — Resolved by F-14.1 deletion.
-- [ ] **F-14.5** (HIGH) **q-0418 dual-mode schema** — `type: text_input` but also has stale `choices` array. Likely copy-paste leftover. **Fix:** decide canonical type; remove dead field.
+- [x] **F-14.5** (HIGH) **q-0418 dual-mode schema** — `type: text_input` but also has stale `choices` array. **Applied 2026-05-01:** dropped the `choices` field. q-0418 is now canonical text_input with `acceptedAnswers` (4 entries) + `correctAnswer` ("です") for feedback display.
 - [ ] **F-14.6** (HIGH) **33 ID gaps** including q-0051 → q-0220 (168 missing). **Fix options:** accept gaps / renumber / document.
 
-#### MEDIUM (3 classes — 2 RESOLVED, 1 OPEN)
+#### MEDIUM (3 classes — ALL RESOLVED)
 
 - [x] **F-14.7** (MEDIUM) **Distractor-length asymmetry** — Resolved by F-14.1 deletion.
 - [x] **F-14.8** (MEDIUM) **Pattern-meta choices mix incompatible types** — Resolved by F-14.1 deletion.
-- [ ] **F-14.9** (MEDIUM) **Inconsistent slash convention in choices** — half-width `/` vs full-width `／`. ~40 entries affected.
+- [x] **F-14.9** (MEDIUM) **Inconsistent slash convention in choices** — **Verified 2026-05-01:** 0 full-width `／` remaining in `data/questions.json`; 0 choices contain slashes at all. The slash-format inconsistencies only existed in the 38 stub questions deleted in F-14.1. Cascade-resolved.
 
 #### LOW / Schema (informational)
 

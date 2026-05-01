@@ -2849,13 +2849,7 @@
       "correctAnswer": "です",
       "explanation_en": "Topic わたし + は + noun + です. Standard self-introduction.",
       "high_confusion": false,
-      "difficulty": 1,
-      "choices": [
-        "です",
-        "する",
-        "いる",
-        "もの"
-      ]
+      "difficulty": 1
     },
     {
       "id": "q-0419",

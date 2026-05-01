@@ -289,6 +289,14 @@ The active reference for tagline/CTA/microcopy text is now (a) the live `js/home
 
 **Pillar count**: `Practice` and `Review` no longer appear in the primary nav or in the home pillar grid. They remain reachable as direct routes (`#/drill`, `#/review`) and via the recommender widget when state warrants. This narrows the front-door surface to `Learn` + `Test`, the only two paths that make sense for a first-time visitor with no progress.
 
+**Brief2 section explicit overrides (added 2026-05-01)**: this contract overrides — *by name* — the following sections of `feedback/jlpt-n5-tutor-ux-developer-brief2.md`:
+
+- **Brief2 §1.1.5 (Trust strip)** prescribed `✓ Works offline · ✓ No login required · ✓ Your progress stays on this device` as a hero-band trust strip. **Override**: removed entirely in v1.6.1; same facts remain at `PRIVACY.md` linked from the footer. Do not revive the in-page strip.
+- **Brief2 §15 (Copy revisions)** prescribed an outcome-promise tagline + a Pass-JLPT-in-N-minutes hero headline. **Override**: removed entirely in v1.7.1 (no hero, no tagline, no marketing copy on the home page). The home page now opens directly into the section-grid (`Learn` / `Test` numbered pillar cards). Do not revive the hero.
+- **Brief2 §11.4-11.6 (Reduce noise / Sentence case / Drop celebratory checkmarks)** are still active and were applied in the v1.7.11 emoji cleanup + v1.8.0 Zen Modern design overhaul. The design system at `specifications/jlpt-n5-design-system-zen-modern.md` is now the authoritative source for visual + voice discipline.
+
+**Current home-page state (post-v1.8.0)**: the home shows zero marketing copy. First-time visitors see a "Sections" hairline-rule label followed by 2 numbered pillar cards (`01 Learn` / `02 Test`) and a single-sentence diagnostic-link footnote. Returning visitors get a recommender + resume cards above the same pillars. No hero, no tagline, no trust strip, no celebration glyphs.
+
 ### B.13 External-blocked items reframed — added 2026-05-01 (deep-research result)
 
 Four items were originally classified "external-blocked" with the assumption that they required human-only resources (native voice talent, native reviewer time, Japan-based outreach, learner-base data collection). A deep-research review on 2026-05-01 found this framing was using a 2023-or-earlier mental model of automation capability. The 2026 picture:
