@@ -66,9 +66,40 @@ INTERCHANGEABLE_PAIRS = [
 # of these can read as legitimate completions.
 SCOPE_RESTRICTION_PARTICLES = {'など', 'だけ', 'しか', 'ばかり', 'も', 'は'}
 
-# Frequency / quantity adverb cluster.
-FREQ_ADVERBS = {'いつも', 'よく', 'たまに', 'あまり', 'ぜんぜん', 'とても',
+# Frequency adverbs (calibration grey-zone candidates).
+# Note: とても is intentionally excluded — it's a degree adverb (very), not
+# frequency. Including it caused E-category false positives in Pass-23 r2.
+FREQ_ADVERBS = {'いつも', 'よく', 'たまに', 'あまり', 'ぜんぜん',
                 'たいてい', 'ときどき'}
+
+# Subset of FREQ_ADVERBS where the boundaries are subjective: a learner
+# could defensibly pick either depending on personal threshold.
+# Pass-23 r4 (2026-05-02) — added after q-0488 (月に 1かい → たまに OR よく
+# both defensible) demonstrated that calibration questions need their own
+# stricter audit even when only 2 of these are in the choice set.
+FREQ_GREYZONE_PAIRS = [
+    {'よく', 'たまに'},      # "often" vs "occasionally" — fuzzy mid-low band
+    {'よく', 'ときどき'},    # "often" vs "sometimes" — fuzzy mid band
+    {'たまに', 'ときどき'},  # "occasionally" vs "sometimes" — near synonyms
+    {'いつも', 'たいてい'},  # "always" vs "usually" — near synonyms
+]
+
+# Sentence-final speech-act particles. With a bare statement stem
+# "<S> です（ ）" three of {か, ね, よ} all produce grammatical Japanese
+# with different speech acts (question / confirmation / assertion). The
+# question is single-correct only when the stem fixes the speech act
+# (e.g. via a follow-up "はい/いいえ" answer or an explicit question word).
+SPEECH_ACT_PARTICLES = {'か', 'ね', 'よ'}
+
+# Spatial-position vocabulary cluster. With a stem "<noun>の（ ）に <noun>が
+# あります" all four positions are syntactically valid; only context can
+# pin one. Flag when 2+ are in choices and the stem has no directional
+# verb / map / movement-cue anchor.
+SPATIAL_POSITIONS = {'うえ', 'した', 'まえ', 'うしろ',
+                     'なか', 'そと', 'みぎ', 'ひだり',
+                     'となり', 'よこ', 'ちかく',
+                     '上', '下', '前', '後ろ', '中', '外',
+                     '右', '左', '隣', '横', '近く'}
 
 # --------------------------------------------------------------------
 # Heuristics: scene context detection
@@ -256,6 +287,77 @@ def check_question(q: dict) -> list[dict]:
             'reason': f'three+ frequency adverbs without disambiguator: {sorted(freq_in_choices)}',
             'multi_correct_with': sorted(freq_in_choices - {correct}),
         })
+
+    # F. Frequency calibration grey-zone — stricter than E. A numeric
+    # frequency in the stem (月に Xかい / 週に Xかい / etc.) maps to a
+    # range of frequency adverbs that depend on speaker subjectivity.
+    # Pass-23 r4: q-0488 (月に 1かい → たまに OR よく) demonstrated that
+    # specific 2-element pairs of FREQ_GREYZONE_PAIRS are multi-correct
+    # even with only 2 choices in the set. The numeric anchor is the
+    # disambiguator for *particle* questions but the grey-zone trigger
+    # for adverb questions, so this rule fires regardless of has_scene.
+    has_numeric_frequency = bool(re.search(
+        r'(月|週|年|毎日|毎週|毎月|毎年)に[\s　]*[1-9一二三四五六七八九十]', stem_clean))
+    if has_numeric_frequency:
+        for pair in FREQ_GREYZONE_PAIRS:
+            if pair <= choice_set and correct in pair:
+                other = (pair - {correct}).pop()
+                findings.append({
+                    'category': 'F_frequency_calibration',
+                    'severity': 'HIGH',
+                    'reason': f'numeric frequency in stem + adverb pair {sorted(pair)} '
+                              f'is calibration-grey-zone (subjective threshold)',
+                    'multi_correct_with': [other],
+                })
+                break
+
+    # G. Sentence-final speech-act particles. Stem ends in "<S>です（ ）"
+    # or "<S>ます（ ）" without any context that fixes the speech act
+    # (no follow-up answer pinning question/confirmation/assertion, no
+    # explicit question word). か / ね / よ all produce grammatical
+    # Japanese with different speech acts.
+    sap_in_choices = choice_set & SPEECH_ACT_PARTICLES
+    sentence_final_blank = bool(re.search(
+        r'(です|ます|でした|ました|ません|ませんでした)[\s　]*[（(]\s*[）)][。\s　]*$', stem_clean))
+    if sentence_final_blank and len(sap_in_choices) >= 2 and correct in sap_in_choices:
+        # Disambiguators that fix the speech act:
+        #   - explicit question word in stem (どこ / だれ / いつ / なに / etc.)
+        #   - follow-up "はい / いいえ" turn pinning か
+        #   - explicit context cue (asking / telling / confirming)
+        has_qword = bool(re.search(r'(だれ|どこ|いつ|なに|なん|どう|どれ|どの|いくら|いくつ)', stem_clean))
+        has_yesno_followup = 'はい' in stem_clean or 'いいえ' in stem_clean
+        if not (has_qword or has_yesno_followup):
+            findings.append({
+                'category': 'G_speech_act_particle',
+                'severity': 'HIGH',
+                'reason': f'sentence-final particle pair {sorted(sap_in_choices)} '
+                          f'with no speech-act anchor (no question word, no はい/いいえ follow-up)',
+                'multi_correct_with': sorted(sap_in_choices - {correct}),
+            })
+
+    # H. Spatial-position vocabulary without directional anchor. Stem
+    # "<X>の（ ）に <Y>が あります" is multi-correct when 2+ positions are
+    # in the choices and the stem doesn't pin a direction (no map, no
+    # movement verb, no canonical "X on Y" object pair like book/desk).
+    pos_in_choices = choice_set & SPATIAL_POSITIONS
+    spatial_blank = bool(re.search(r'の[\s　]*[（(]\s*[）)][\s　]*に', stem_clean))
+    if spatial_blank and len(pos_in_choices) >= 2 and correct in pos_in_choices:
+        # Anchors that pin a single position:
+        #   - canonical object/place pair where one position is overwhelming
+        #     (本+つくえ → うえ, ねこ+いえ → なか, etc.)
+        #   - movement verb that fixes direction (出る → そと, 入る → なか)
+        #   - explicit map / coordinate hint
+        canonical_anchors = ['つくえ', '机', 'テーブル', 'ベッド',
+                             'いす', '椅子', 'はこ', '箱',
+                             '出', '入', 'すわ', '座']
+        if not any(a in stem_clean for a in canonical_anchors):
+            findings.append({
+                'category': 'H_spatial_no_anchor',
+                'severity': 'HIGH',
+                'reason': f'multiple spatial positions {sorted(pos_in_choices)} '
+                          f'with no directional anchor in stem',
+                'multi_correct_with': sorted(pos_in_choices - {correct}),
+            })
 
     return findings
 

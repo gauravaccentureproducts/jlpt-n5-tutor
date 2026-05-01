@@ -622,7 +622,7 @@
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "あなたは がくせいです（　）。",
+      "question_ja": "A: あなたは がくせいです（　）。\nB: はい、わたしは がくせいです。",
       "choices": [
         "か",
         "ね",
@@ -630,11 +630,11 @@
         "は"
       ],
       "correctAnswer": "か",
-      "explanation_en": "Sentence-final か turns a statement into a question.",
+      "explanation_en": "B's reply \"Yes, I'm a student\" only makes sense after A asked a yes/no question, so the blank must be the question particle か. Distractors ね (right?) seeks confirmation, not a yes/no answer; よ (assertive) is an assertion, not a question; は is a topic particle, ungrammatical sentence-finally. (2026-05-02: added the B reply to fix the speech-act — without it か / ね / よ all produced grammatical sentences with different acts.)",
       "distractor_explanations": {
-        "ね": "ね seeks confirmation ('isn't it?') but doesn't ASK an open question.",
-        "よ": "よ is for asserting / informing, not asking.",
-        "は": "は is a topic marker - wrong sentence position and wrong function."
+        "ね": "Seeks confirmation \"You're a student, right?\" — B's answer would normally be \"そうです\" not \"はい、わたしは…\".",
+        "よ": "Assertive \"You are a student!\" — informative, not a question; B's reply doesn't fit.",
+        "は": "Topic particle — ungrammatical at sentence end after です."
       },
       "high_confusion": false,
       "difficulty": 1
@@ -4324,14 +4324,14 @@
         "たまに",
         "いつも",
         "とても",
-        "よく"
+        "すぐに"
       ],
       "correctAnswer": "たまに",
-      "explanation_en": "たまに means 'occasionally / once in a while' (low frequency). It naturally pairs with '月に 1かい' ('once a month'), which describes infrequent activity.",
+      "explanation_en": "Once a month maps to たまに (occasionally) on the standard frequency scale (いつも > たいてい > よく > ときどき > たまに > あまり〜ない > ぜんぜん〜ない). Distractors: いつも contradicts \"once a month\"; とても is a degree adverb (very), not frequency; すぐに means \"right away\" (immediacy, not frequency). (2026-05-02: replaced よく which was a defensible alternative to たまに depending on speaker subjectivity — the question is now black-and-white.)",
       "distractor_explanations": {
-        "いつも": "いつも ('always') describes 100% frequency. It contradicts '月に 1かい' (only once a month).",
-        "とても": "とても means 'very' — it modifies degree, not frequency. *とても 見ます is ungrammatical for an action verb.",
-        "よく": "よく ('often / frequently') describes high-medium frequency. It contradicts the explicit '月に 1かい' which is low frequency."
+        "いつも": "Always — contradicts \"once a month.\"",
+        "とても": "Degree adverb (very) — modifies adjectives/adverbs, not action frequency.",
+        "すぐに": "Right away / immediately — describes timing of one event, not recurrence."
       },
       "high_confusion": true,
       "difficulty": 2,
