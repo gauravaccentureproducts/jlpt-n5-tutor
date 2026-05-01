@@ -1,0 +1,221 @@
+{
+  "id": "bunpou-6",
+  "category": "bunpou",
+  "paperNumber": 6,
+  "name": "Bunpou Paper 6",
+  "source_file": "KnowledgeBank/bunpou_questions_n5.md",
+  "source_question_range": "Q76-Q90",
+  "questionCount": 15,
+  "questions": [
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "が",
+        "日本語",
+        "たなかさんは",
+        "とても"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q76",
+      "id": "bunpou-6.1"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "へ",
+        "いっしょに",
+        "行き",
+        "こうえん"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q77",
+      "id": "bunpou-6.2"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "もって",
+        "を",
+        "その本",
+        "ここに"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q78",
+      "id": "bunpou-6.3"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "ぜんぶ",
+        "ケーキ",
+        "を",
+        "その"
+      ],
+      "correctIndex": 2,
+      "rationale": "",
+      "kbSourceId": "Q79",
+      "id": "bunpou-6.4"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "が",
+        "しゅくだい",
+        "あした",
+        "は"
+      ],
+      "correctIndex": 1,
+      "rationale": "",
+      "kbSourceId": "Q80",
+      "id": "bunpou-6.5"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "と",
+        "に",
+        "えいがかん",
+        "友だち"
+      ],
+      "correctIndex": 2,
+      "rationale": "",
+      "kbSourceId": "Q81",
+      "id": "bunpou-6.6"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "の",
+        "これ",
+        "本",
+        "は だれ"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q82",
+      "id": "bunpou-6.7"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "しゅくだいを ___ ___ ★ ___ 食べました。",
+      "choices": [
+        "してから",
+        "ばんごはんを",
+        "いえで",
+        "みんなで"
+      ],
+      "correctIndex": 3,
+      "rationale": "",
+      "kbSourceId": "Q83",
+      "id": "bunpou-6.8"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "の うえに",
+        "やま",
+        "ゆきが",
+        "たくさん"
+      ],
+      "correctIndex": 3,
+      "rationale": "",
+      "kbSourceId": "Q84",
+      "id": "bunpou-6.9"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "私は ___ ___ ★ ___ 思います。",
+      "choices": [
+        "が",
+        "新しい",
+        "ほしいと",
+        "かばん"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q85",
+      "id": "bunpou-6.10"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "すこし",
+        "ピアノを",
+        "ひくことが",
+        "たなかさんは"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q86",
+      "id": "bunpou-6.11"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "に",
+        "朝",
+        "七時",
+        "まいにち"
+      ],
+      "correctIndex": 2,
+      "rationale": "",
+      "kbSourceId": "Q87",
+      "id": "bunpou-6.12"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "が",
+        "おなか",
+        "すいて",
+        "まだ"
+      ],
+      "correctIndex": 3,
+      "rationale": "",
+      "kbSourceId": "Q88",
+      "id": "bunpou-6.13"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "しゅくだい",
+        "が",
+        "まだ",
+        "おわって"
+      ],
+      "correctIndex": 2,
+      "rationale": "",
+      "kbSourceId": "Q89",
+      "id": "bunpou-6.14"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "わたしは ___ ___ ★ ___ つもりです。",
+      "choices": [
+        "に",
+        "らいねん",
+        "大学",
+        "行く"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q90",
+      "id": "bunpou-6.15"
+    }
+  ]
+}

@@ -23,6 +23,7 @@ import { renderListening } from './listening.js';
 import { renderKanji } from './kanji.js';
 import { renderHome } from './home.js';
 import { initI18n } from './i18n.js';
+import { renderPapers } from './papers.js';
 
 const ROUTES = {
   home:       renderHome,
@@ -42,6 +43,7 @@ const ROUTES = {
   reading:    renderReading,
   listening:  renderListening,
   kanji:      renderKanji,
+  papers:     renderPapers,
 };
 
 function parseRoute() {

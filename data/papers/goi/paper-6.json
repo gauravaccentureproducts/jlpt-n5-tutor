@@ -1,0 +1,221 @@
+{
+  "id": "goi-6",
+  "category": "goi",
+  "paperNumber": 6,
+  "name": "Goi Paper 6",
+  "source_file": "KnowledgeBank/goi_questions_n5.md",
+  "source_question_range": "Q76-Q90",
+  "questionCount": 15,
+  "questions": [
+    {
+      "type": "mcq",
+      "stem_html": "A: わたしは おちゃより コーヒーの ほうが すきです。",
+      "choices": [
+        "わたしは コーヒーより おちゃの ほうが すきです。",
+        "わたしは おちゃと コーヒーが すきです。",
+        "わたしは おちゃが きらいで、コーヒーが すきです。",
+        "わたしは コーヒーを よく のみます。"
+      ],
+      "correctIndex": 3,
+      "rationale": "prefers coffee.",
+      "kbSourceId": "Q76",
+      "id": "goi-6.1"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: しゅくだいは むずかしくないです。",
+      "choices": [
+        "しゅくだいは むずかしいです。",
+        "しゅくだいは やさしいです。",
+        "しゅくだいは おもしろいです。",
+        "しゅくだいは ながいです。"
+      ],
+      "correctIndex": 1,
+      "rationale": "not difficult ≈ easy.",
+      "kbSourceId": "Q77",
+      "id": "goi-6.2"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: あの レストランは いつも おきゃくさんが おおいです。",
+      "choices": [
+        "あの レストランは おきゃくさんが すくないです。",
+        "あの レストランは いつも すいて います。",
+        "あの レストランは いつも こんで います。",
+        "あの レストランは とおいです。"
+      ],
+      "correctIndex": 2,
+      "rationale": "お客さんが多い ≈ こんで いる (crowded). At N5 level these are paraphrasable; strictly, \"many customers\" describes count and \"crowded\" describes density.",
+      "kbSourceId": "Q78",
+      "id": "goi-6.3"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: たなかさんの いえは 大きくないです。",
+      "choices": [
+        "たなかさんの いえは 大きいです。",
+        "たなかさんの いえは ちいさいです。",
+        "たなかさんの いえは あたらしいです。",
+        "たなかさんの いえは ふるいです。"
+      ],
+      "correctIndex": 1,
+      "rationale": "not big ≈ small.",
+      "kbSourceId": "Q79",
+      "id": "goi-6.4"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: きょうは あつくないです。",
+      "choices": [
+        "きょうは あついです。",
+        "きょうは すずしいです。",
+        "きょうは あたたかいです。",
+        "きょうは ねむいです。"
+      ],
+      "correctIndex": 1,
+      "rationale": "by elimination among the four options. Strictly, あつくない (not hot) is broader than すずしい (cool) - \"warm\" (あたたかい) also qualifies as \"not hot\" - but the other three options are clearly wrong (あつい = opposite meaning; あたたかい = different temperature property; ねむい = irrelevant property), so すずしい is the closest fit.",
+      "kbSourceId": "Q80",
+      "id": "goi-6.5"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: その しごとを する 人は いません。",
+      "choices": [
+        "みんなが その しごとを します。",
+        "だれも その しごとを しません。",
+        "その しごとは おわりました。",
+        "その しごとは おもしろいです。"
+      ],
+      "correctIndex": 1,
+      "rationale": "人がいない = だれもしない.",
+      "kbSourceId": "Q81",
+      "id": "goi-6.6"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: きょうは あめが ふって います。",
+      "choices": [
+        "きょうは てんきが いいです。",
+        "きょうは そらが くもって います。",
+        "きょうは てんきが よくないです。",
+        "きょうは ゆきが ふって います。"
+      ],
+      "correctIndex": 2,
+      "rationale": "雨が降っている = 天気がよくない (direct weather-state paraphrase).",
+      "kbSourceId": "Q82",
+      "id": "goi-6.7"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: わたしは バスに のって 学校へ いきます。",
+      "choices": [
+        "わたしは あるいて 学校へ いきます。",
+        "わたしは でんしゃで 学校へ いきます。",
+        "わたしは バスで 学校へ いきます。",
+        "わたしは じてんしゃで 学校へ いきます。"
+      ],
+      "correctIndex": 2,
+      "rationale": "のって ≈ で.",
+      "kbSourceId": "Q83",
+      "id": "goi-6.8"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: きょうは 時間が ありません。",
+      "choices": [
+        "きょうは ひまです。",
+        "きょうは いそがしいです。",
+        "きょうは つかれて います。",
+        "きょうは げんきです。"
+      ],
+      "correctIndex": 1,
+      "rationale": "no time ≈ busy.",
+      "kbSourceId": "Q84",
+      "id": "goi-6.9"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: こうえんで さんぽしました。",
+      "choices": [
+        "こうえんで あそびました。",
+        "こうえんを あるきました。",
+        "こうえんで すわりました。",
+        "こうえんに いきました。"
+      ],
+      "correctIndex": 1,
+      "rationale": "散歩 ≈ 歩く.",
+      "kbSourceId": "Q85",
+      "id": "goi-6.10"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: 友だちに でんわを かけました。",
+      "choices": [
+        "友だちが でんわを くれました。",
+        "友だちと でんわで 話しました。",
+        "でんわを 買いました。",
+        "友だちに 手紙を 書きました。"
+      ],
+      "correctIndex": 1,
+      "rationale": "closest among the choices. Strictly, 電話をかける means \"to make a phone call (initiate)\" and does not entail successful conversation; 電話で話す means \"to talk on the phone.\" For typical N5 contexts, calling a friend usually involves talking with them, so 電話で話す is the natural paraphrase here.",
+      "kbSourceId": "Q86",
+      "id": "goi-6.11"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: わたしは 二十さいです。",
+      "choices": [
+        "わたしは ことし 二十さいに なります。",
+        "わたしの たんじょうびは あした です。",
+        "わたしは いま 二十さいです。",
+        "わたしは らいねん 二十さいに なります。"
+      ],
+      "correctIndex": 2,
+      "rationale": "statement of present age. Note: 二十さい reads にじゅっさい / にじゅうさい. The traditional N5-tested reading for \"20 years old\" is the special reading **はたち** (二十歳); both forms are acceptable but はたち is the form most commonly drilled at N5.",
+      "kbSourceId": "Q87",
+      "id": "goi-6.12"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: きょうしつには つくえが いっぱい あります。",
+      "choices": [
+        "きょうしつには つくえが すこし あります。",
+        "きょうしつには つくえが たくさん あります。",
+        "きょうしつには つくえが ありません。",
+        "きょうしつには つくえが ひとつ あります。"
+      ],
+      "correctIndex": 1,
+      "rationale": "いっぱい ≈ たくさん.",
+      "kbSourceId": "Q88",
+      "id": "goi-6.13"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: その くつは 高かったです。",
+      "choices": [
+        "その くつは とても やすいです。",
+        "その くつは とても たかい おかねを はらいました。",
+        "その くつは ながかったです。",
+        "その くつは よかったです。"
+      ],
+      "correctIndex": 1,
+      "rationale": "expensive → paid much.",
+      "kbSourceId": "Q89",
+      "id": "goi-6.14"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: たろうさんは げんきです。",
+      "choices": [
+        "たろうさんは びょうきです。",
+        "たろうさんは つかれて います。",
+        "たろうさんは びょうきでは ありません。",
+        "たろうさんは いそがしいです。"
+      ],
+      "correctIndex": 2,
+      "rationale": "元気 (well, lively) and 病気ではない (not sick) overlap in everyday usage. Closest among the four options; strictly, 元気 implies vigor, not just absence of illness.",
+      "kbSourceId": "Q90",
+      "id": "goi-6.15"
+    }
+  ]
+}

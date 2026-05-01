@@ -1,0 +1,151 @@
+{
+  "id": "goi-7",
+  "category": "goi",
+  "paperNumber": 7,
+  "name": "Goi Paper 7",
+  "source_file": "KnowledgeBank/goi_questions_n5.md",
+  "source_question_range": "Q91-Q100",
+  "questionCount": 10,
+  "questions": [
+    {
+      "type": "mcq",
+      "stem_html": "A: わたしは 日本に きて 一年に なります。",
+      "choices": [
+        "わたしは 来年 日本へ きます。",
+        "わたしは 一年 まえから 日本に います。",
+        "わたしは 一年 まえに 日本を 出ました。",
+        "わたしは 一年 だけ 日本に いました。"
+      ],
+      "correctIndex": 1,
+      "rationale": "here for 1 year = came 1 year ago.",
+      "kbSourceId": "Q91",
+      "id": "goi-7.1"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: 友だちに たんじょうびの プレゼントを あげました。",
+      "choices": [
+        "友だちが 私に プレゼントを あげました。",
+        "友だちは 私から プレゼントを もらいました。",
+        "私が 友だちから プレゼントを もらいました。",
+        "友だちは プレゼントを 買いませんでした。"
+      ],
+      "correctIndex": 1,
+      "rationale": "「私が友だちにあげる」 = 「友だちが私からもらう」 (perspective inversion of あげる ⇄ もらう).",
+      "kbSourceId": "Q92",
+      "id": "goi-7.2"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: あした しごとが ありません。",
+      "choices": [
+        "あした やすみです。",
+        "あした しごとが おそく おわります。",
+        "あした しごとに いきます。",
+        "あした しごとが はじまります。"
+      ],
+      "correctIndex": 0,
+      "rationale": "no work tomorrow = day off.",
+      "kbSourceId": "Q93",
+      "id": "goi-7.3"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: この みせの ケーキは あまくないです。",
+      "choices": [
+        "この みせの ケーキは あまいです。",
+        "この みせの ケーキは からい です。",
+        "この みせの ケーキは あまり あまく ないです。",
+        "この みせの ケーキは おいしくないです。"
+      ],
+      "correctIndex": 2,
+      "rationale": "by elimination among the four options. Strictly, あまくない is a stronger negation than あまり あまくない, but the other three options are clearly wrong (opposite meaning, unrelated taste, or unrelated property).",
+      "kbSourceId": "Q94",
+      "id": "goi-7.4"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: たなかさんは いつも しずかです。",
+      "choices": [
+        "たなかさんは いつも たくさん 話します。",
+        "たなかさんは いつも あまり 話しません。",
+        "たなかさんは いつも うるさいです。",
+        "たなかさんは いつも おこって います。"
+      ],
+      "correctIndex": 1,
+      "rationale": "quiet ≈ doesn't talk much.",
+      "kbSourceId": "Q95",
+      "id": "goi-7.5"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: きょうは ゆうがた に かえります。",
+      "choices": [
+        "きょうは よる おそく かえります。",
+        "きょうは あさ はやく かえります。",
+        "きょうは ひるごろ かえります。",
+        "きょうは よるの まえに かえります。"
+      ],
+      "correctIndex": 3,
+      "rationale": "夕方 ≈ 夜の前 (before night).",
+      "kbSourceId": "Q96",
+      "id": "goi-7.6"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: たろうさんは 日本ごが じょうずです。",
+      "choices": [
+        "たろうさんは 日本ごが よく 話せます。",
+        "たろうさんは 日本ごが ぜんぜん わかりません。",
+        "たろうさんは 日本ごが すきじゃ ありません。",
+        "たろうさんは 日本ごを ならって います。"
+      ],
+      "correctIndex": 0,
+      "rationale": "日本語が上手 ≈ よく話せる. At N5, \"good at Japanese\" is paraphrased as \"can speak well\"; strictly 上手 covers all language skills (not just speaking).",
+      "kbSourceId": "Q97",
+      "id": "goi-7.7"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: しゅくだいは あした まで に だして ください。",
+      "choices": [
+        "あした しゅくだいを はじめて ください。",
+        "あしたの あさまで しゅくだいを 出して ください。",
+        "あした しゅくだいを かいて ください。",
+        "あしたの あと しゅくだいを 出して ください。"
+      ],
+      "correctIndex": 1,
+      "rationale": "by tomorrow.",
+      "kbSourceId": "Q98",
+      "id": "goi-7.8"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: あの 人の 名前を しって いますか。",
+      "choices": [
+        "あの 人の 名前を おしえます。",
+        "あの 人の 名前を おぼえて います。",
+        "あの 人の 名前が わかりません。",
+        "あの 人の 名前は ながいです。"
+      ],
+      "correctIndex": 1,
+      "rationale": "by elimination: option 1 changes tense (will teach), option 3 reverses meaning (don't know), option 4 is irrelevant (length). 知っている and 覚えている are near-synonyms in the context of remembering someone's name, but they are not interchangeable in general - you can 知っている a name without 覚えている it (knew it but forgot), and vice versa. Don't memorize this as a synonymy rule.",
+      "kbSourceId": "Q99",
+      "id": "goi-7.9"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "A: わたしは ピアノを ならって います。",
+      "choices": [
+        "わたしは ピアノが よく わかります。",
+        "わたしは ピアノを 売って います。",
+        "わたしは ピアノを 買いました。",
+        "わたしは ピアノの れんしゅうを して います。"
+      ],
+      "correctIndex": 3,
+      "rationale": "learning ≈ practicing. ---",
+      "kbSourceId": "Q100",
+      "id": "goi-7.10"
+    }
+  ]
+}

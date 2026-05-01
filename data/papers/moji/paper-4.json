@@ -1,0 +1,221 @@
+{
+  "id": "moji-4",
+  "category": "moji",
+  "paperNumber": 4,
+  "name": "Moji Paper 4",
+  "source_file": "KnowledgeBank/moji_questions_n5.md",
+  "source_question_range": "Q46-Q60",
+  "questionCount": 15,
+  "questions": [
+    {
+      "type": "mcq",
+      "stem_html": "この くつは <u>古い</u> です。",
+      "choices": [
+        "ふるい",
+        "ふろい",
+        "ぶるい",
+        "ふらい"
+      ],
+      "correctIndex": 0,
+      "rationale": "古 (ふる) + い.",
+      "kbSourceId": "Q46",
+      "id": "moji-4.1"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "この かばんは <u>高い</u> です。",
+      "choices": [
+        "たかい",
+        "たがい",
+        "たけい",
+        "だかい"
+      ],
+      "correctIndex": 0,
+      "rationale": "高 (たか) + い.",
+      "kbSourceId": "Q47",
+      "id": "moji-4.2"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "<u>安い</u> くつを 買いました。",
+      "choices": [
+        "やすい",
+        "あすい",
+        "やしい",
+        "やせい"
+      ],
+      "correctIndex": 0,
+      "rationale": "安 (やす) + い.",
+      "kbSourceId": "Q48",
+      "id": "moji-4.3"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "<u>白い</u> いぬが います。",
+      "choices": [
+        "しろい",
+        "しらい",
+        "じろい",
+        "しろう"
+      ],
+      "correctIndex": 0,
+      "rationale": "白 (しろ) + い.",
+      "kbSourceId": "Q49",
+      "id": "moji-4.4"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "この みちは <u>長い</u> です。",
+      "choices": [
+        "ながい",
+        "なかい",
+        "のがい",
+        "ねがい"
+      ],
+      "correctIndex": 0,
+      "rationale": "長 (なが) + い. ---",
+      "kbSourceId": "Q50",
+      "id": "moji-4.5"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "あの __がくせい__ は とても しんせつです。",
+      "choices": [
+        "学先",
+        "学生",
+        "字生",
+        "字先"
+      ],
+      "correctIndex": 1,
+      "rationale": "学 (study) + 生 (life / student).",
+      "kbSourceId": "Q51",
+      "id": "moji-4.6"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "先生",
+        "先正",
+        "元生",
+        "先成"
+      ],
+      "correctIndex": 0,
+      "rationale": "先生 (teacher).",
+      "kbSourceId": "Q52",
+      "id": "moji-4.7"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "学校",
+        "字校",
+        "学交",
+        "字交"
+      ],
+      "correctIndex": 0,
+      "rationale": "学校 (school).",
+      "kbSourceId": "Q53",
+      "id": "moji-4.8"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "うちの 父は とても __ちから__ が つよいです。",
+      "choices": [
+        "力",
+        "刀",
+        "万",
+        "方"
+      ],
+      "correctIndex": 0,
+      "rationale": "力 (ちから - strength, N5 kanji).",
+      "kbSourceId": "Q54",
+      "id": "moji-4.9"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "この えいがは __おとな__ から 子どもまで みんな たのしめます。",
+      "choices": [
+        "大人",
+        "太人",
+        "大入",
+        "太入"
+      ],
+      "correctIndex": 0,
+      "rationale": "大人 (おとな - adult; 大 + 人, both N5).",
+      "kbSourceId": "Q55",
+      "id": "moji-4.10"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "うちの __ちち__ は かいしゃいんです。",
+      "choices": [
+        "母",
+        "父",
+        "兄",
+        "友"
+      ],
+      "correctIndex": 1,
+      "rationale": "父 (father).",
+      "kbSourceId": "Q56",
+      "id": "moji-4.11"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "父",
+        "妹",
+        "母",
+        "友"
+      ],
+      "correctIndex": 2,
+      "rationale": "母 (mother).",
+      "kbSourceId": "Q57",
+      "id": "moji-4.12"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "ごはんの まえに __て__ を あらいます。",
+      "choices": [
+        "手",
+        "毛",
+        "牛",
+        "千"
+      ],
+      "correctIndex": 0,
+      "rationale": "手 (hand, N5).",
+      "kbSourceId": "Q58",
+      "id": "moji-4.13"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "入",
+        "人",
+        "八",
+        "大"
+      ],
+      "correctIndex": 1,
+      "rationale": "人 (person).",
+      "kbSourceId": "Q59",
+      "id": "moji-4.14"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "男",
+        "田",
+        "力",
+        "文"
+      ],
+      "correctIndex": 0,
+      "rationale": "男 (man / male).",
+      "kbSourceId": "Q60",
+      "id": "moji-4.15"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "id": "moji-7",
+  "category": "moji",
+  "paperNumber": 7,
+  "name": "Moji Paper 7",
+  "source_file": "KnowledgeBank/moji_questions_n5.md",
+  "source_question_range": "Q91-Q100",
+  "questionCount": 10,
+  "questions": [
+    {
+      "type": "mcq",
+      "stem_html": "ねる まえに おふろに __はいります__。",
+      "choices": [
+        "入ります",
+        "出ります",
+        "立ります",
+        "切ります"
+      ],
+      "correctIndex": 0,
+      "rationale": "入ります.",
+      "kbSourceId": "Q91",
+      "id": "moji-7.1"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "先生が きょうしつに 来たので、学生が __たちます__。",
+      "choices": [
+        "立ちます",
+        "起ちます",
+        "経ちます",
+        "建ちます"
+      ],
+      "correctIndex": 0,
+      "rationale": "立ちます (N5 sense).",
+      "kbSourceId": "Q92",
+      "id": "moji-7.2"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "つかれたから すこし __やすみます__。",
+      "choices": [
+        "体みます",
+        "休みます",
+        "安みます",
+        "寄みます"
+      ],
+      "correctIndex": 1,
+      "rationale": "休みます.",
+      "kbSourceId": "Q93",
+      "id": "moji-7.3"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "先生が なまえを __いいます__。",
+      "choices": [
+        "言います",
+        "云います",
+        "謂います",
+        "議います"
+      ],
+      "correctIndex": 0,
+      "rationale": "N5 standard 言います.",
+      "kbSourceId": "Q94",
+      "id": "moji-7.4"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "八百屋で やさいを __かいます__。",
+      "choices": [
+        "飼います",
+        "買います",
+        "替います",
+        "換います"
+      ],
+      "correctIndex": 1,
+      "rationale": "買います.",
+      "kbSourceId": "Q95",
+      "id": "moji-7.5"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "この とけいは とても __たかい__ です。",
+      "choices": [
+        "多い",
+        "高い",
+        "古い",
+        "長い"
+      ],
+      "correctIndex": 1,
+      "rationale": "高い.",
+      "kbSourceId": "Q96",
+      "id": "moji-7.6"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "安い",
+        "易い",
+        "休い",
+        "寄い"
+      ],
+      "correctIndex": 0,
+      "rationale": "安い.",
+      "kbSourceId": "Q97",
+      "id": "moji-7.7"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "永い",
+        "長い",
+        "強い",
+        "高い"
+      ],
+      "correctIndex": 1,
+      "rationale": "長い.",
+      "kbSourceId": "Q98",
+      "id": "moji-7.8"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "白い",
+        "百い",
+        "自い",
+        "旧い"
+      ],
+      "correctIndex": 0,
+      "rationale": "白い.",
+      "kbSourceId": "Q99",
+      "id": "moji-7.9"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "名前",
+        "名先",
+        "友前",
+        "名間"
+      ],
+      "correctIndex": 0,
+      "rationale": "名前. ---",
+      "kbSourceId": "Q100",
+      "id": "moji-7.10"
+    }
+  ]
+}

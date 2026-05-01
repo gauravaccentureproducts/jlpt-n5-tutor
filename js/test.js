@@ -73,6 +73,12 @@ async function renderSetup(container) {
       <button id="start-test" class="btn-primary">Start Test</button>
       <p class="bank-note">Question bank: <strong>${bank.length}</strong> available. Test length is capped at the bank size.</p>
     </div>
+    <hr style="border:0; border-top:1px solid var(--c-border); margin:32px 0 24px;">
+    <div class="test-papers-cta">
+      <h3 style="margin:0 0 8px; font-weight:400;">Mock-test papers</h3>
+      <p style="margin:0 0 12px; color:var(--c-muted);">Take a focused 15-question paper from a specific JLPT section (Moji / Goi / Bunpou / Dokkai). 25 papers across 4 sections, drawn from the audited <code>KnowledgeBank</code> question files.</p>
+      <a class="btn-secondary" href="#/papers" style="text-decoration:none; padding:10px 18px; display:inline-block; min-height:44px; line-height:24px;">Browse papers →</a>
+    </div>
   `;
   document.getElementById('start-test').addEventListener('click', () => {
     const len = parseInt(document.getElementById('test-length').value, 10);

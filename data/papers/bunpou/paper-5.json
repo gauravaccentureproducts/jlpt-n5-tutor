@@ -1,0 +1,221 @@
+{
+  "id": "bunpou-5",
+  "category": "bunpou",
+  "paperNumber": 5,
+  "name": "Bunpou Paper 5",
+  "source_file": "KnowledgeBank/bunpou_questions_n5.md",
+  "source_question_range": "Q61-Q75",
+  "questionCount": 15,
+  "questions": [
+    {
+      "type": "mcq",
+      "stem_html": "きのう ___ ___ ★ ___ 見ました。",
+      "choices": [
+        "を",
+        "ともだちと",
+        "えいが",
+        "いっしょに"
+      ],
+      "correctIndex": 2,
+      "rationale": "",
+      "kbSourceId": "Q61",
+      "id": "bunpou-5.1"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "わたしは ___ ___ ★ ___ あります。",
+      "choices": [
+        "ことが",
+        "行った",
+        "に",
+        "中国"
+      ],
+      "correctIndex": 1,
+      "rationale": "",
+      "kbSourceId": "Q62",
+      "id": "bunpou-5.2"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "あした ___ ___ ★ ___ 行きます。",
+      "choices": [
+        "に",
+        "の",
+        "ともだち",
+        "うち"
+      ],
+      "correctIndex": 3,
+      "rationale": "",
+      "kbSourceId": "Q63",
+      "id": "bunpou-5.3"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "何",
+        "あの 店",
+        "の",
+        "名前は"
+      ],
+      "correctIndex": 3,
+      "rationale": "",
+      "kbSourceId": "Q64",
+      "id": "bunpou-5.4"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "わたしの ___ ___ ★ ___ あります。",
+      "choices": [
+        "に",
+        "うえ",
+        "本が",
+        "つくえの"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q65",
+      "id": "bunpou-5.5"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "きょうは ___ ___ ★ ___ 食べました。",
+      "choices": [
+        "を",
+        "パン",
+        "ホテルで",
+        "朝ごはんに"
+      ],
+      "correctIndex": 1,
+      "rationale": "",
+      "kbSourceId": "Q66",
+      "id": "bunpou-5.6"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "に",
+        "しゅくだいは",
+        "あした",
+        "まで"
+      ],
+      "correctIndex": 3,
+      "rationale": "",
+      "kbSourceId": "Q67",
+      "id": "bunpou-5.7"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "を",
+        "友だちに",
+        "三さつ",
+        "本"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q68",
+      "id": "bunpou-5.8"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "の",
+        "学校",
+        "友だちに",
+        "まえで"
+      ],
+      "correctIndex": 3,
+      "rationale": "",
+      "kbSourceId": "Q69",
+      "id": "bunpou-5.9"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "ある",
+        "本を",
+        "としょかんに",
+        "三さつ"
+      ],
+      "correctIndex": 1,
+      "rationale": "",
+      "kbSourceId": "Q70",
+      "id": "bunpou-5.10"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "ふって",
+        "が",
+        "雨",
+        "たくさん"
+      ],
+      "correctIndex": 3,
+      "rationale": "",
+      "kbSourceId": "Q71",
+      "id": "bunpou-5.11"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "れいぞうこの ___ ___ ★ ___ ありますか。",
+      "choices": [
+        "に",
+        "のみもの",
+        "中",
+        "が"
+      ],
+      "correctIndex": 1,
+      "rationale": "",
+      "kbSourceId": "Q72",
+      "id": "bunpou-5.12"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "わたしは ___ ___ ★ ___ ません。",
+      "choices": [
+        "に",
+        "あまり",
+        "ぎんこう",
+        "行き"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q73",
+      "id": "bunpou-5.13"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "",
+      "choices": [
+        "の",
+        "かばん",
+        "だれ",
+        "これは"
+      ],
+      "correctIndex": 0,
+      "rationale": "",
+      "kbSourceId": "Q74",
+      "id": "bunpou-5.14"
+    },
+    {
+      "type": "mcq",
+      "stem_html": "あした ___ ___ ★ ___ 来ません。",
+      "choices": [
+        "は",
+        "パーティーに",
+        "ので",
+        "しごとが あります"
+      ],
+      "correctIndex": 1,
+      "rationale": "",
+      "kbSourceId": "Q75",
+      "id": "bunpou-5.15"
+    }
+  ]
+}
