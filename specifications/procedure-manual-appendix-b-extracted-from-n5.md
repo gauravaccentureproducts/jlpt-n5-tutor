@@ -34,7 +34,7 @@ while vid in seen_ids:
 **Rules in plain English:**
 
 1. The section slug is derived from the section heading text in `vocabulary_n5.md`. Lowercase, all non-`[a-z0-9]` characters → `-`, leading/trailing `-` stripped, capped at 24 characters. If the result is empty, use `misc`.
-2. The vocab ID is `n4.vocab.{section-slug}.{form}` for N4 (replace `n5` → `n4`).
+2. The vocab ID is `n<L>.vocab.{section-slug}.{form}` for any next level (replace `n5` → `n<L>`).
 3. The `form` is the head-word as written in the catalog (could be kanji, kana, or katakana).
 4. If a (section, form) pair recurs (i.e., the same vocab item is listed in multiple sections OR the section repeats a form), the second occurrence appends `.2`, third `.3`, etc.
 
@@ -47,9 +47,9 @@ while vid in seen_ids:
 | `27. Verbs (Group 1)` | `27-verbs-group-1-verb` (truncated to 24) | おく | `n5.vocab.27-verbs-group-1-verb.おく` |
 | (collision case) | (same as above) | きる (2nd occurrence) | `<same-prefix>.きる.2` |
 
-**For N4:**
-- Replace `n5.` → `n4.` in the prefix.
-- Section structure follows `vocabulary_n4.md` — the agent must NOT invent section names; they should be derived from the authored KB file.
+**For any next level N<L>:**
+- Replace `n5.` → `n<L>.` in the prefix.
+- Section structure follows `vocabulary_n<L>.md` — the agent must NOT invent section names; they should be derived from the authored KB file.
 - Cross-listings in multiple thematic sections are intentional (N5 has 10 such pairs); use the same slug-encoding strategy. Annotate the second-occurrence gloss with `(also in §X)` for human readability.
 
 **CI invariant** that depends on this rule: JA-12 (Kanji KB / JSON consistency) implicitly checks the round-trip from MD section → JSON id; if the slug rule diverges, the consistency check fails.
@@ -82,15 +82,15 @@ while vid in seen_ids:
 ```
 
 **ID conventions per corpus:**
-- Grammar examples: `grammar.<patternId>.<exampleIndex>` (e.g., `grammar.n4-042.2`)
-- Reading passages: `reading.<passageId>` (e.g., `reading.n4.read.012`)
-- Listening items: `listening.<itemId>` (e.g., `listening.n4.listen.005`)
+- Grammar examples: `grammar.<patternId>.<exampleIndex>` (e.g., `grammar.n<L>-042.2`)
+- Reading passages: `reading.<passageId>` (e.g., `reading.n<L>.read.012`)
+- Listening items: `listening.<itemId>` (e.g., `listening.n<L>.listen.005`)
 
-**Voice tag enum (for N4):**
+**Voice tag enum (level-agnostic; same set used at every level):**
 - `"synthetic-gtts"` — Google Translate TTS, web-synthesized
 - `"synthetic-piper"` — Piper local TTS (ONNX models)
 - `"synthetic-pyttsx3"` — pyttsx3 local fallback
-- `"native"` — recorded by a native speaker (preferred for listening at N4+)
+- `"native"` — recorded by a native speaker (preferred for listening at any level lower than N5)
 - `"native-{speaker-id}"` — when multiple native voices used (e.g., `"native-suiraku"`)
 
 **JA-15 invariant rule (the audio-resolution check):**
@@ -109,15 +109,15 @@ For items where `skipped === true`:
 - For `voice: "native"` items, the script SKIPS generation (assumes externally provided).
 - Manifest is rewritten on every run with current state.
 
-**For N4 transition:**
-- The schema is identical. Just update `n5` → `n4` in IDs.
+**For any next-level transition:**
+- The schema is identical. Just update `n5` → `n<L>` in IDs.
 - Plan to mix `native` for listening items + `synthetic-gtts` for grammar/reading. Voice mixing is supported in the same manifest.
 
 ---
 
 ## B.3 JSON schemas for data/*.json (closes F-20.16)
 
-Inferred from N5 `data/*.json` shapes. These should be formalized as `specifications/schemas/<file>.schema.json` files at N4 build time. The agent can run `python -c "import genson; ..."` to auto-generate JSON Schema from N5 files, or hand-author from these inventories.
+Inferred from N5 `data/*.json` shapes. These should be formalized as `specifications/schemas/<file>.schema.json` files at next-level (N<L>) build time. The agent can run `python -c "import genson; ..."` to auto-generate JSON Schema from N5 files, or hand-author from these inventories.
 
 ### B.3.1 grammar.json
 
@@ -133,12 +133,12 @@ Inferred from N5 `data/*.json` shapes. These should be formalized as `specificat
 }
 
 Pattern = {
-  "id": str (req)                     // "n4-NNN"
+  "id": str (req)                     // "n<L>-NNN"
   "pattern": str (req)                // surface form, e.g., "～です／～ます"
   "meaning_en": str (req)
   "meaning_ja": str (req)             // やさしい にほんご
   "category": str (req)               // fine-grained, e.g., "Particles"
-  "tier": "core_n4" | "late_n4" | "n3_borderline" (req)
+  "tier": "core_n<L>" | "late_n<L>" | "n<L-1>_borderline" (req)
   "patternOrder": int (req)           // for stable sort within category
   "form_rules": {
     "attaches_to": str[],             // e.g., ["noun", "verb_stem_i"]
@@ -186,7 +186,7 @@ Question = MCQQuestion | SentenceOrderQuestion | TextInputQuestion
 
 MCQQuestion = {
   "id": str (req)                     // "q-NNNN"
-  "grammarPatternId": str (req),      // n4-NNN
+  "grammarPatternId": str (req),      // n<L>-NNN
   "type": "mcq" (req),
   "subtype": "paraphrase" | "kanji_writing" | null,  // optional MCQ flavor
   "direction": "j_to_e" | "e_to_j",
@@ -234,13 +234,13 @@ TextInputQuestion = {
 ```
 {
   "entries": [{
-    "id": str,                        // n4.vocab.{slug}.{form}[.disambiguator] — see B.1
+    "id": str,                        // n<L>.vocab.{slug}.{form}[.disambiguator] — see B.1
     "form": str,                      // headword
     "reading": str,                   // kana reading; equals form for kana-only entries
     "gloss": str,                     // English meaning
     "section": str,                   // section heading text (the slug source)
     "pos": str?,                      // part-of-speech tag — see B.6 vocab POS values
-    "tier"?: "core_n4" | "late_n4" | "prerequisite_n5"  // for N4: include N5 prerequisites with tier flag
+    "tier"?: "core_n<L>" | "late_n<L>" | "prerequisite_n<P>"  // for any N<L>: include lower-level prerequisites with tier flag
   }],
   "_meta": { "vocab_count": int, "section_count": int, "history": str[] }
 }
@@ -256,7 +256,7 @@ TextInputQuestion = {
     "kun": str[],                     // kun-yomi readings (hiragana, with ( ) markers for okurigana)
     "meanings": str[],                // English meanings
     "stroke_order_svg": str?,         // path to SVG file
-    "tier": "core_n4" | "late_n4" | "prerequisite_n5"  // see B.10
+    "tier": "core_n<L>" | "late_n<L>" | "prerequisite_n<P>"  // see B.10
   }],
   "_meta": { "kanji_count": int, "history": str[] }
 }
@@ -267,7 +267,7 @@ TextInputQuestion = {
 ```
 {
   "passages": [{
-    "id": str,                        // "n4.read.NNN"
+    "id": str,                        // "n<L>.read.NNN"
     "level": "easy" | "medium" | "hard",
     "topic": str,                     // e.g., "shopping"
     "title_en": str,
@@ -275,14 +275,14 @@ TextInputQuestion = {
     "translation_en": str,
     "audio": str?,                    // path; matches AudioItem.path
     "questions": [{
-      "id": str,                      // "n4.read.NNN.qM"
+      "id": str,                      // "n<L>.read.NNN.qM"
       "prompt_ja": str,
       "choices": str[4],
       "correctAnswer": str,
       "explanation_en": str,
       "format_role": "primary" | "extra" | "info_search"  // mondai sub-format
     }],
-    "tier": "core_n4" | "late_n4",
+    "tier": "core_n<L>" | "late_n<L>",
     "kanji_used": str[],              // populated by build pipeline
     "vocab_used": str[]               // populated by build pipeline
   }],
@@ -295,7 +295,7 @@ TextInputQuestion = {
 ```
 {
   "items": [{
-    "id": str,                        // "n4.listen.NNN"
+    "id": str,                        // "n<L>.listen.NNN"
     "format": "task" | "point" | "utterance",  // mondai-1 / 2 / 3-4
     "script_ja": str,                 // dialog or narration
     "translation_en": str,
@@ -344,16 +344,16 @@ See B.2.
 }
 ```
 
-**Source-locale-of-truth:** `locales/en.json` is canonical. When a new key is added at N4, add it to `en.json` first; other locales fall back to en until translated.
+**Source-locale-of-truth:** `locales/en.json` is canonical. When a new key is added at any N<L> build, add it to `en.json` first; other locales fall back to en until translated.
 
 **Translation pipeline (N5 has no automation; translations are manually authored):**
 - Translator reads `en.json`, produces a parallel `<lang>.json` keeping the SAME key structure.
 - Missing keys → fall back to en (no warning at runtime; the string just renders in English).
 - Extra keys → ignored.
 
-**For N4 (recommendation):**
+**For any next level (recommendation):**
 - Keep all 5 N5 locales for parity.
-- N4-new content (grammar explanations, distractor reasons) is English-only at v1; translate in v2 if learner base justifies the cost.
+- N<L>-new content (grammar explanations, distractor reasons) is English-only at v1; translate in v2 if learner base justifies the cost.
 - Add a `tools/extract_locale_keys.py` script (Pass-22) that diffs the en JSON against each non-en JSON and produces a TODO list of missing keys.
 
 **Runtime contract (i18n.js):**
@@ -427,9 +427,9 @@ npm run test:smoke              # full suite headless
 npm run test:smoke:headed       # watch the browser
 ```
 
-**For N4:**
+**For any next level:**
 - Copy `playwright.config.js` verbatim.
-- Adapt smoke tests to N4 routes/IDs (find/replace `n5` → `n4`; replace pattern IDs).
+- Adapt smoke tests to N<L> routes/IDs (find/replace `n5` → `n<L>`; replace pattern IDs).
 - Wire into `.github/workflows/playwright-p0-smoke.yml` as a CI gate.
 
 ---
@@ -468,7 +468,7 @@ npm run test:smoke:headed       # watch the browser
 | `normalize.js` | Text normalization helpers (full-width → half-width, NFC, etc.) | (none) | `normalize(s)`, `normalizeAnswer(s)` |
 
 **State contract:**
-- All persistent state lives in `localStorage` under keys prefixed `jlpt-n5-tutor.*` (replace `n5` → `n4`).
+- All persistent state lives in `localStorage` under keys prefixed `jlpt-n5-tutor.*` (replace `n5` → `n<L>`).
 - Read/write goes through `storage.js` only (no direct `localStorage.getItem` elsewhere).
 - Export/import dumps all keys with the prefix as a single JSON blob.
 
@@ -476,7 +476,7 @@ npm run test:smoke:headed       # watch the browser
 - Hash router in `app.js`; URL fragment after `#/` is the route.
 - `#/learn`, `#/learn/grammar`, `#/learn/<patternId>`, `#/learn/vocab`, `#/learn/vocab/<form>`, `#/kanji`, `#/kanji/<glyph>`, `#/test`, `#/test/<n>`, `#/drill`, `#/review`, `#/summary`, `#/settings`, `#/diagnostic`, `#/reading`, `#/reading/<id>`, `#/listening`, `#/listening/<id>`, `#/kosoado`, `#/wa-ga`, `#/verbs`, `#/te-form`, `#/particle-pairs`, `#/counters`, `#/search`.
 
-**For N4:** copy the module list verbatim; adapt `n5` references.
+**For any next level:** copy the module list verbatim; adapt `n5` → `n<L>` references.
 
 ---
 
@@ -484,18 +484,18 @@ npm run test:smoke:headed       # watch the browser
 
 **Source:** `tools/build_data.py` parsing rules + observed structure of `KnowledgeBank/*.md`.
 
-### B.7.1 grammar_n4.md (catalog of grammar patterns)
+### B.7.1 grammar_n<L>.md (catalog of grammar patterns)
 
 ```
 File         := Header SectionList
-Header       := "# JLPT N4 Grammar Patterns" "\n" Preamble
+Header       := "# JLPT N<L> Grammar Patterns" "\n" Preamble
 Preamble     := free-form markdown until first "## "
 SectionList  := Section+
 Section      := "## " SectionTitle "\n" PatternEntry+
 SectionTitle := plain text (e.g., "Particles", "Common Set Patterns")
 PatternEntry := PatternHeader Body
 PatternHeader:= "### " PatternId " — " PatternSurfaceForm "\n"
-PatternId    := "n4-" 3*DIGIT
+PatternId    := "n<L>-" 3*DIGIT
 Body         := YamlFrontMatter? FreeForm Examples? CommonMistakes? Notes?
 YamlFrontMatter := "```yaml" "\n" key-value-pairs "\n" "```"
                    // populates: meaning_en, meaning_ja, category, tier,
@@ -509,18 +509,18 @@ Notes        := "**Notes**" "\n" free-form
 ```
 
 **Parser rules (from `tools/build_data.py`):**
-- Pattern ID detection: `^### (n4-\d{3}) — (.+)$`
+- Pattern ID detection: `^### (n<L>-\d{3}) — (.+)$`
 - Example detection: `^- ` (with optional `\(form\)\s+` prefix)
-- The em-dash separator in examples is U+2014; X-6.5 forbids it. **N5 used a hyphen** ` - ` instead. **For N4, use hyphen too** to keep X-6.5 invariant green.
+- The em-dash separator in examples is U+2014; X-6.5 forbids it. **N5 used a hyphen** ` - ` instead. **At any next level, use hyphen too** to keep X-6.5 invariant green.
 
-### B.7.2 vocabulary_n4.md (catalog of vocab)
+### B.7.2 vocabulary_n<L>.md (catalog of vocab)
 
 ```
 File        := Header SectionList
 Section     := "## " N "." " " SectionTitle "\n" VocabEntry+
 VocabEntry  := "- " form (" (" reading ")")? " - " gloss tags?
 tags        := " **[Ext]**" | " **[Cul]**" | " **[Adv]**"
-              // [Ext] = extension (out of strict N4 but commonly in materials)
+              // [Ext] = extension (out of strict N<L> but commonly in materials)
               // [Cul] = cultural item
               // [Adv] = advanced (N3-borderline)
 ```
@@ -530,7 +530,7 @@ tags        := " **[Ext]**" | " **[Cul]**" | " **[Adv]**"
 - The reading is in parentheses immediately after the form. For kana-only words, the reading is the form itself (the parser auto-fills it).
 - Tags `[Ext]` / `[Cul]` / `[Adv]` are stripped from the gloss before output but stored as `tier` metadata.
 
-### B.7.3 kanji_n4.md (catalog of kanji)
+### B.7.3 kanji_n<L>.md (catalog of kanji)
 
 ```
 File         := Header KanjiList
@@ -552,7 +552,7 @@ meanings     := plain English, comma-separated
 - Header regex (from N5 `build_data.py` after Pass-13 fix): `r"^\s*-\s+\*\*([一-鿿])\*\*"` — note the relaxed end (no `\s*$`) to allow `**[Ext]**`-tagged entries.
 - Each kanji entry must have at least one reading on On OR Kun line; meaning is required.
 
-### B.7.4 *_questions_n4.md (moji / goi / bunpou / dokkai / chokai)
+### B.7.4 *_questions_n<L>.md (moji / goi / bunpou / dokkai / chokai)
 
 ```
 File          := Header MondaiList
@@ -572,7 +572,7 @@ AnswerLine    := "**Answer: " N "**" (" - " rationale)?
 - Question ID derived from file + Mondai number + Q number; e.g., `bunpou-Q94`. The build pipeline maps these to `q-NNNN` IDs in the unified `questions.json`.
 - For `dokkai`: stems may reference passage IDs; the parser cross-references to `reading.json` IDs.
 
-### B.7.5 reading_n4.md (passages with comprehension questions)
+### B.7.5 reading_n<L>.md (passages with comprehension questions)
 
 ```
 File         := Header MondaiList
@@ -591,10 +591,10 @@ FormatRoleLine := "**Format role:** primary" | "**Format role:** extra"
 - `> ` prefix on each passage line is the Markdown blockquote convention; the parser strips it before storing.
 - `format_role` defaults to `primary` if absent; explicit value required for info_search (Mondai 6).
 
-### B.7.6 chokai_n4.md (listening — same as reading_n4 but with audio path required)
+### B.7.6 chokai_n<L>.md (listening — same as reading_n<L> but with audio path required)
 
-Same shape as reading_n4 with these additions:
-- `**Audio:** audio/listening/n4.listen.NNN.mp3` line per item (parser populates `audio` field)
+Same shape as reading_n<L> with these additions:
+- `**Audio:** audio/listening/n<L>.listen.NNN.mp3` line per item (parser populates `audio` field)
 - `**Format:** task | point | utterance` line (mondai-1 / 2 / 3-4)
 
 ---
@@ -615,13 +615,13 @@ Same shape as reading_n4 with these additions:
 | X-6.6 Ru-verb exception flags | Group-1 verbs that LOOK like Group-2 (帰る, 入る, 切る, 知る, 走る, 要る, etc.) MUST be flagged in BOTH the section header AND on each individual entry. | "{file}: vocab entry '{form}' is a known Group-1 ru-verb exception but lacks the **(group 1)** flag" |
 | X-6.7 No false synonymy | The strings `Direct synonym|directly equivalent|same as` in goi rationales — except for whitelisted true-synonym pairs. | "{file}:{line} synonym overclaim: '{snippet}'" |
 | X-6.8 No ASCII digits in TTS source | The fields used as TTS source (grammar.examples[].ja, reading.passages[].ja, listening.items[].script_ja) must have all numbers as kanji (一二三...) or kana (いち, に, さん). ASCII digits 0-9 forbidden. | "{file}:{path} ASCII digit '{d}' in TTS source" |
-| X-6.9 Primary-reading sanity | Each kanji's primary on-yomi (first in `on[]`) and kun-yomi (first in `kun[]`) must be the most-frequent reading per the Tanos N4 (or appropriate level) data. | "{kanji} primary on/kun divergence from level authority" |
+| X-6.9 Primary-reading sanity | Each kanji's primary on-yomi (first in `on[]`) and kun-yomi (first in `kun[]`) must be the most-frequent reading per the Tanos N<L> (or appropriate level) data. | "{kanji} primary on/kun divergence from level authority" |
 
 ### JA series (Japanese-language-accuracy invariants)
 
 | Invariant | Rule |
 |---|---|
-| JA-1 Stem-kanji scope | Every kanji in `questions[].question_ja` AND `questions[].prompt_ja` must be in `data/n4_kanji_whitelist.json` |
+| JA-1 Stem-kanji scope | Every kanji in `questions[].question_ja` AND `questions[].prompt_ja` must be in `data/n<L>_kanji_whitelist.json` (the level-specific whitelist) |
 | JA-2 Particle-set sanity | For MCQs where `correctAnswer` is a single particle (length ≤ 2 chars, all in the particle set), all distractors must also be valid particles from the set: `{は, が, を, に, で, と, も, へ, から, まで, より, の, ね, よ, か, や, ぐらい, ごろ, など, しか, だけ, ばかり, でも, ても}` |
 | JA-3 Furigana / catalog match | Every `furigana[].reading` in grammar.examples MUST be a valid kana sequence (regex `^[ぁ-んー]+$`); `indices` MUST be in-bounds of the `ja` string |
 | JA-4 Vocab reading uniqueness | Within a single section, no two entries may have the SAME (form, reading) pair (cross-section duplicates are allowed and intentional — see B.1) |
@@ -630,19 +630,19 @@ Same shape as reading_n4 with these additions:
 | JA-7 No duplicate stems in file | No two questions share the same `question_ja` (or `prompt_ja + question_ja` if both are content-bearing). Exception: same stem in different `type` (mcq vs text_input parallel pair, like q-0001 / q-0418) is allowed |
 | JA-8 Q-count integrity | `_meta.question_count == len(questions)` |
 | JA-9 Engine display contract | The runtime test engine (test.js + drill.js + review.js) hides `**Answer:** N` and any rationale lines until `submit()` is called. CI test that loads a question and asserts the answer is NOT in the visible DOM before commit |
-| JA-10 No "(see n4-)" redirect text | The strings `(see n4-` and `see pattern detail` and `Wrong choice - see` are forbidden in any user-facing field (`question_ja`, `prompt_ja`, `explanation_en`, `distractor_explanations.*`) |
+| JA-10 No "(see n<L>-)" redirect text | The strings `(see n<L>-` and `see pattern detail` and `Wrong choice - see` are forbidden in any user-facing field (`question_ja`, `prompt_ja`, `explanation_en`, `distractor_explanations.*`) |
 | JA-11 No duplicate MCQ choices | For every MCQ, `len(set(choices)) == len(choices)` |
-| JA-12 Kanji KB / JSON consistency | The set of kanji headers in `KnowledgeBank/kanji_n4.md` must equal the set of `kanji` fields in `data/kanji.json` |
-| JA-13 No out-of-scope kanji | Every CJK character in `questions[].question_ja`, `questions[].prompt_ja`, `questions[].distractor_explanations.*`, `vocab.entries[].gloss`, `grammar.patterns[].notes`, `grammar.patterns[].explanation_en` must be in the N4 whitelist |
+| JA-12 Kanji KB / JSON consistency | The set of kanji headers in `KnowledgeBank/kanji_n<L>.md` must equal the set of `kanji` fields in `data/kanji.json` |
+| JA-13 No out-of-scope kanji | Every CJK character in `questions[].question_ja`, `questions[].prompt_ja`, `questions[].distractor_explanations.*`, `vocab.entries[].gloss`, `grammar.patterns[].notes`, `grammar.patterns[].explanation_en` must be in the N<L> whitelist |
 | JA-14 No auto-ruby in renderer | The string `auto-ruby` or any code path that auto-applies furigana to whitelisted kanji must NOT exist in `js/furigana.js`. (Auto-furigana was removed in Pass-13; this guards regression.) |
 | JA-15 Audio refs resolve | Every `audio_manifest.json` `items[].path` where `skipped !== true` must exist on disk with size > 100B. See B.2 |
-| JA-16 Kanji example whitelist | For each kanji entry in `data/kanji.json`, every kanji in its example sentences must be either the target kanji itself OR in the N4 whitelist OR in the prerequisite-N5 whitelist (when the agent has both loaded) |
+| JA-16 Kanji example whitelist | For each kanji entry in `data/kanji.json`, every kanji in its example sentences must be either the target kanji itself OR in the N<L> whitelist OR in any prerequisite-level whitelist (i.e., the union of N5..N<L> per §11.2) |
 | JA-17 Grammar examples have vocab_ids | Every `grammar.patterns[].examples[]` must have a `vocab_ids` field populated by `tools/link_grammar_examples_to_vocab.py` (homograph guard linkage) |
 | JA-18 Reading explanation kanji ⊂ passage | Every kanji in `reading.passages[].questions[].explanation_en` must appear in the passage's `ja` text |
 | JA-19 Reading info-search has format_type | Mondai-6 (情報検索) reading questions must have `format_role: "info_search"` |
 | JA-20 Reading choices kanji ⊂ passage | Every kanji in `reading.passages[].questions[].correctAnswer` AND in the choices must appear in the passage's `ja` text |
-| JA-21 N4 grammar markers require tier=late_n4 | (At N4) any pattern in `data/grammar.json` whose `pattern` string is in the late-N4 set (e.g., contains `~ところ`, `~ようと思う`, `~とき`, etc.) must have `tier: "late_n4"` or `tier: "n3_borderline"`. The N4-equivalent of N5's late_n5 check |
-| JA-22 No "direct synonym" in goi rationales | Same as X-6.7 but specifically scoped to `KnowledgeBank/goi_questions_n4.md` (catches synonym-overclaim regressions; added Pass-15) |
+| JA-21 Late-tier grammar markers require tier=late_n<L> | At any level N<L>, any pattern in `data/grammar.json` whose `pattern` string is in the late-N<L> set (per Bunpro vs Tanos contrast — see Appendix A.7) must have `tier: "late_n<L>"` or `tier: "n<L-1>_borderline"`. The level-parametric equivalent of N5's late_n5 check |
+| JA-22 No "direct synonym" in goi rationales | Same as X-6.7 but specifically scoped to `KnowledgeBank/goi_questions_n<L>.md` (catches synonym-overclaim regressions; added Pass-15) |
 | JA-23 Multi-correct scanner advisory | Same logic as JA-6 but emits as WARN (not FAIL) for native review. Wire as `--warn` mode of the integrity check |
 | JA-24 No duplicate pattern strings | No two grammar entries with overlapping `meaning_en` may share the same `pattern` string (catches Pass-19 redundancy class) |
 
@@ -687,11 +687,11 @@ All recommendations carry an estimated time ("~5 min", "~15 min") computed as `w
 - Hover shows pattern title + last-seen date.
 - Layout: super-category sections, patterns sorted by `patternOrder`.
 
-### B.9.5 Implementation contract for N4
+### B.9.5 Implementation contract for any next level
 
-- Storage shape (from `storage.js`):
+- Storage shape (from `storage.js`; substitute the level number for `<L>`):
   ```
-  jlpt-n4-tutor.progress = {
+  jlpt-n<L>-tutor.progress = {
     "patterns": { [patternId]: { isMastered, isWeak, isManuallyKnown, lastAttemptIso, attempts, correctCount } },
     "sessions": [{ date, mode, score, duration, attemptedIds[] }],
     "srs": { [patternId]: { EF, rep, due, interval, lapses } }    // see A.10
@@ -705,40 +705,40 @@ All recommendations carry an estimated time ("~5 min", "~15 min") computed as `w
 
 ### B.10.1 Tier values per corpus
 
-| Corpus | Tier values (N4 example) |
+| Corpus | Tier values (N4 example; substitute `n<L>` for any other level) |
 |---|---|
-| Grammar | `core_n4` / `late_n4` / `n3_borderline` |
-| Kanji   | `core_n4` / `late_n4` / `prerequisite_n5` |
-| Vocab   | `core_n4` / `late_n4` / `prerequisite_n5` |
+| Grammar | `core_n<L>` / `late_n<L>` / `n<L-1>_borderline` |
+| Kanji   | `core_n<L>` / `late_n<L>` / `prerequisite_n<P>` |
+| Vocab   | `core_n<L>` / `late_n<L>` / `prerequisite_n<P>` |
 
 ### B.10.2 Whitelist composition rule (recommended)
 
-The `data/n4_kanji_whitelist.json` should be the UNION of N5 + N4 kanji (~280 entries). Each kanji entry in `data/kanji.json` carries a `tier` field distinguishing prerequisite vs new:
+The `data/n<L>_kanji_whitelist.json` should be the UNION of N5 ∪ N4 ∪ ... ∪ N<L> kanji (level-cumulative; e.g., ~280 entries at N4, ~650 at N3, etc.). Each kanji entry in `data/kanji.json` carries a `tier` field distinguishing prerequisite vs new:
 
 ```json
 [
-  { "kanji": "人", "tier": "prerequisite_n5", "on": [...], "kun": [...] },
-  { "kanji": "立", "tier": "prerequisite_n5", ... },
-  { "kanji": "案", "tier": "core_n4", ... },
-  { "kanji": "達", "tier": "late_n4", ... }
+  { "kanji": "人", "tier": "prerequisite_n<P>", "on": [...], "kun": [...] },
+  { "kanji": "立", "tier": "prerequisite_n<P>", ... },
+  { "kanji": "案", "tier": "core_n<L>", ... },
+  { "kanji": "達", "tier": "late_n<L>", ... }
 ]
 ```
 
-**Why UNION not strict-N4-only:**
-- Reading passages at N4 naturally use both N5 and N4 kanji.
-- Forcing strict-N4-only would require either kana-only passages (unrealistic) OR N5-kanji-as-violations (false positives).
+**Why UNION not strict-N<L>-only:**
+- Reading passages at any level naturally use a mix of the target-level kanji AND prerequisite-level kanji.
+- Forcing strict-N<L>-only would require either kana-only passages (unrealistic) OR prerequisite-level-kanji-as-violations (false positives).
 - The `tier` field lets the UI optionally hide prerequisite-N5 from "new kanji" stats while still allowing them in passages.
 
 ### B.10.3 JA-13 invariant interaction
 
-JA-13 ("no out-of-scope kanji in user-facing data") consults `data/n4_kanji_whitelist.json`. With the union approach, the whitelist contains both N5 and N4 kanji, so prerequisite use is allowed.
+JA-13 ("no out-of-scope kanji in user-facing data") consults `data/n<L>_kanji_whitelist.json`. With the union approach, the whitelist contains both target-level and prerequisite-level kanji, so prerequisite use is allowed.
 
-For mock-test mode: the engine should still highlight "this kanji is in your N4 study list" (tier=core_n4 or late_n4) vs "you should know this from N5" (tier=prerequisite_n5).
+For mock-test mode: the engine should still highlight "this kanji is in your N<L> study list" (tier=core_n<L> or late_n<L>) vs "you should know this from N<P>" (tier=prerequisite_n<P>).
 
 ### B.10.4 Cross-level scaling (N3 / N2 / N1)
 
 For each higher level X:
-- Kanji whitelist = N5 ∪ N4 ∪ ... ∪ NX
+- Kanji whitelist = N5 ∪ N4 ∪ ... ∪ N<L> (the cumulative-down-to-target union)
 - Each kanji entry gets `tier: prerequisite_<lower-level>` or `tier: core_X` / `tier: late_X`
 - JA-13 invariant uses the union whitelist; no per-level strict mode.
 
@@ -799,77 +799,80 @@ Every external-corpus extract must have:
 
 These three items require AUTHORITATIVE source data, not invention. The agent should NOT generate content without source attribution. Instead, use these extraction recipes:
 
-### B.12.1 N4 kanji whitelist (~280 entries)
+### B.12.1 N<L> kanji whitelist (size per §0 table)
 
 ```python
-# tools/extract_n4_kanji_from_tanos.py
+# tools/extract_n<L>_kanji_from_tanos.py — substitute the level digit
 import requests, json, re
 from pathlib import Path
 
-URL = "https://www.tanos.co.uk/jlpt/jlpt4/kanji/"
+LEVEL = 4  # change per build: 4 for N4, 3 for N3, 2 for N2, 1 for N1
+URL = f"https://www.tanos.co.uk/jlpt/jlpt{LEVEL}/kanji/"
 html = requests.get(URL, timeout=30).text
 # Tanos publishes a table; parse <td class="kanji">X</td> entries
 kanji = re.findall(r'<td[^>]*class="[^"]*kanji[^"]*"[^>]*>([一-鿿])</td>', html)
 
-# Cross-reference with JLPT Sensei for readings
-# (script omitted; uses similar regex on jlptsensei.com)
+# Cross-reference with JLPT Sensei (https://jlptsensei.com/jlpt-n{LEVEL}-kanji-list/)
+# (script omitted; uses similar regex)
 
-# Output to data/n4_kanji_whitelist.json
 out = sorted(set(kanji))
-Path("data/n4_kanji_whitelist.json").write_text(
+Path(f"data/n{LEVEL}_kanji_whitelist.json").write_text(
     json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8"
 )
-print(f"Wrote {len(out)} N4 kanji to whitelist")
+print(f"Wrote {len(out)} N{LEVEL} kanji to whitelist")
 ```
 
-The agent runs this script as part of Day-1 bootstrap. The output (~170-280 kanji depending on source) becomes the whitelist; cross-reference with TWO sources to resolve discrepancies.
+The agent runs this script as part of Day-1 bootstrap. The expected output count varies by level (per §0 size table); cross-reference with TWO sources to resolve discrepancies.
 
-### B.12.2 N4 vocab inventory (~1500 entries)
+### B.12.2 N<L> vocab inventory (size per §0 table)
 
 ```python
-# tools/extract_n4_vocab_from_tanos.py
+# tools/extract_n<L>_vocab_from_tanos.py — substitute the level digit
 import requests, csv
 from pathlib import Path
 
-URL = "https://www.tanos.co.uk/jlpt/jlpt4/vocab/n4_vocab.csv"
+LEVEL = 4  # change per build
+URL = f"https://www.tanos.co.uk/jlpt/jlpt{LEVEL}/vocab/n{LEVEL}_vocab.csv"
 csv_text = requests.get(URL, timeout=30).text
 reader = csv.DictReader(csv_text.splitlines())
 rows = list(reader)
 # Each row has: kanji, hiragana, English, romaji, category
 
-# Write to KnowledgeBank/vocabulary_n4.md per the format in B.7.2
+# Write to KnowledgeBank/vocabulary_n<L>.md per the format in B.7.2
 # Group by category, then output entries
 # (full script omitted)
 
-print(f"Wrote {len(rows)} N4 vocab entries to KB")
+print(f"Wrote {len(rows)} N{LEVEL} vocab entries to KB")
 ```
 
 After running, the agent runs `tools/build_data.py` to derive `data/vocab.json` from the markdown.
 
-### B.12.3 N4 grammar pattern catalog (~210 entries)
+### B.12.3 N<L> grammar pattern catalog (size per §0 table)
 
 ```python
-# tools/extract_n4_grammar_from_bunpro.py
-# Bunpro's N4 grammar list is publicly accessible
+# tools/extract_n<L>_grammar_from_bunpro.py — substitute level digit
+# Bunpro's per-level grammar list is publicly accessible
 import requests, re
 from pathlib import Path
 
-URL = "https://bunpro.jp/jlpt/n4"
+LEVEL = 4  # change per build
+URL = f"https://bunpro.jp/jlpt/n{LEVEL}"
 # Bunpro renders a list of grammar items; each links to a detail page
 # with examples and meaning. Scrape the index, then per-item.
 
 # (Full script involves WebFetch with structured prompt; ~30 min runtime
-# for 210 items. Result is a markdown file matching B.7.1 grammar.md format.)
+# for ~210 items at N4, scaling up at lower levels. Result is a markdown
+# file matching B.7.1 grammar.md format.)
 
 # Tier classification per A.7:
-#   tier=core_n4 if also in Tanos N4
-#   tier=late_n4 if only in Bunpro N4
-#   tier=n3_borderline if in Tanos N3 + commonly N4-taught
+#   tier=core_n<L>          if also in Tanos N<L>
+#   tier=late_n<L>          if only in Bunpro N<L> (typically borderline upper-N<L>)
+#   tier=n<L-1>_borderline  if in Tanos N<L-1> + commonly N<L>-taught
 ```
 
 ### B.12.4 Why the agent must NOT invent content
 
-- Inventing kanji / vocab / grammar items would produce a corpus the agent THINKS is N4 but isn't authoritative.
+- Inventing kanji / vocab / grammar items would produce a corpus the agent THINKS is N<L> but isn't authoritative.
 - A learner studying with invented content would be tested on items not on the actual JLPT.
 - This violates the "production-ready" expectation more than missing content.
 

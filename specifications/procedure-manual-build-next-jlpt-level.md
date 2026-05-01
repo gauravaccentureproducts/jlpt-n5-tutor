@@ -3,9 +3,24 @@
 **Source project:** JLPT N5 Tutor (this repo)
 **Target audience:** any future JLPT level app (N4, N3, N2, N1) using the same architecture
 **Prepared:** 2026-05-01 from accumulated N5 build experience (Phases 1-5 + Passes 1-19)
-**Status:** Living document — update as the N4 build adds new lessons
+**Status:** Living document — update as each next-level build adds new lessons
 
 This manual is written prescriptively. Where N5 hit a problem, the manual tells the next level how to avoid it. Generic best-practice advice has been omitted; only N5-specific learnings are included.
+
+## How to read this manual: level placeholders
+
+This manual is **level-agnostic**. It documents the procedure for building ANY next JLPT level app (N4, N3, N2, N1) starting from the N5 source. To keep the prose readable while remaining precise, the following conventions are used:
+
+- **`<L>`** = the target level number you are building (4 for N4, 3 for N3, 2 for N2, 1 for N1).
+- **`<P>`** = the prior level number you are building from (typically `<L>+1`; usually 5 if you start from this N5 repo, but can be any lower-numbered level once intermediate apps exist).
+- **`<L-1>`** = one level above the target (e.g., when `<L>=4`, `<L-1>=3`; this is the level whose grammar starts to "leak in" as borderline content). JLPT levels are numbered with N1 as the highest, so smaller `<L>` is harder.
+- **`N<L>`** in narrative = "the target level" (read as N4 / N3 / N2 / N1 depending on which build you are doing).
+- **`n<L>-` / `n<L>.` / `n<L>_`** in code, paths, and IDs = the lowercase level prefix (read as `n4-`, `n3-`, etc.).
+- **"N5"** appearances refer specifically to the source project (this repo) and remain literal regardless of which target level you are building. If you ever build a NEW source level lower than N5 (unlikely — N5 is the lowest JLPT level), substitute `N<P>` for "N5" throughout.
+
+The §0 scope table below shows the actual size deltas at each level transition; everything else uses placeholders so the manual works whether you are building N4, N3, N2, or N1.
+
+When the manual references "the source level" or "the source repo", it always means N5 (this repo) unless an explicit `<P>` token is used.
 
 ---
 
@@ -24,7 +39,7 @@ This document supports **two execution modes**. The bulk of the manual (§§0–
 - Required inputs: this manual **plus the entire N5 repo as a tarball or directory** that the agent can read.
 - **Without the N5 repo**, this manual is approximately a table of contents — most "copy from N5" / "port" instructions are unresolvable, schemas and content inventories are not embedded, and one-shot completion is **not feasible**.
 - Even WITH the N5 repo: a one-shot agent should use **Appendix A** — it provides default decisions for the §15 open questions, fallback procedures for external-blocked items, a definition-of-done, and a minimum-viable subset to ship if the full scope can't fit in one run.
-- Honest expectation: a zero-interaction agent producing a *complete* N4 app in one run is unrealistic. Realistic one-shot deliverable = scaffolded skeleton (build pipeline, schemas, CI, UI shell, ~20% of content) that a human team finishes in subsequent passes.
+- Honest expectation: a zero-interaction agent producing a *complete* N<L> app in one run is unrealistic. Realistic one-shot deliverable = scaffolded skeleton (build pipeline, schemas, CI, UI shell, ~20% of content) that a human team finishes in subsequent passes.
 
 This split is a direct response to the Pass-20 manual review (`feedback/procedure-manual-review-issues.md`, 40 issues across 6 risk categories). The review's core finding stands: this manual is a *playbook*, not a *self-contained build spec*. Pass-20 closure ships in two parts:
 - **Appendix A (§17 of this file)** — closes 15 issues by adding operating-modes preamble, default decisions, fallback procedures, MVS, definition of done, schemas recipe, source authorities, exam structure, SM-2 params, furigana procedure.
@@ -36,7 +51,7 @@ Together, Appendix A and Appendix B close 27 of 40 Pass-20 issues. The remaining
 
 ## 0. Scope of "next level"
 
-The same playbook scales N5 → N4 → N3 → N2 → N1, but each transition adds:
+The same playbook scales **N5 → N4 → N3 → N2 → N1**. Each level transition adds the deltas shown below. To use this manual, locate the row matching your target `<L>` and source `<P>` (typically `<P>=<L>+1`):
 
 | | N5 → N4 | N4 → N3 | N3 → N2 | N2 → N1 |
 |---|---|---|---|---|
@@ -45,9 +60,9 @@ The same playbook scales N5 → N4 → N3 → N2 → N1, but each transition add
 | Grammar patterns | ~187 → ~210 | ~210 → ~250 | ~250 → ~280 | ~280 → ~300 |
 | Reading passage length | 80-150 / 250-300 chars | +long-form essays | +newspaper articles | +academic texts |
 | Listening pace | slow / clear | natural-but-paced | natural | rapid + dialect |
-| Borderline tier | `late_n5` | `late_n4` + `n3_borderline` | etc. | etc. |
+| Borderline tier | `late_n5` | `late_n<L>` + `n<L-1>_borderline` | etc. | etc. |
 
-The N4 transition is the smallest content jump but introduces the most architectural decisions (tier taxonomy, kanji-policy contention, borderline-grammar handling). N3+ is mostly content scaling.
+The **N5 → N4** transition is the smallest content jump but introduces the most architectural decisions (tier taxonomy, kanji-policy contention, borderline-grammar handling). For N3 and lower (`<L> ≤ 3`) it is mostly content scaling once those one-time architectural choices are committed.
 
 ---
 
@@ -64,16 +79,16 @@ The N4 transition is the smallest content jump but introduces the most architect
 │   └── workflows/
 │       └── content-integrity.yml
 ├── KnowledgeBank/          # source-of-truth Markdown
-│   ├── grammar_n4.md
-│   ├── kanji_n4.md
-│   ├── vocabulary_n4.md
+│   ├── grammar_n<L>.md
+│   ├── kanji_n<L>.md
+│   ├── vocabulary_n<L>.md
 │   ├── sources.md
-│   ├── moji_questions_n4.md
-│   ├── goi_questions_n4.md
-│   ├── bunpou_questions_n4.md
-│   ├── dokkai_questions_n4.md
-│   ├── chokai_questions_n4.md   # NEW: listening was inline at N5; promote to its own file at N4+
-│   └── authentic_extracted_n4.md
+│   ├── moji_questions_n<L>.md
+│   ├── goi_questions_n<L>.md
+│   ├── bunpou_questions_n<L>.md
+│   ├── dokkai_questions_n<L>.md
+│   ├── chokai_questions_n<L>.md   # NEW: listening was inline at N5; promote to its own file at N<L> (any next level)
+│   └── authentic_extracted_n<L>.md
 ├── data/                   # JSON derived from KB by build_data.py
 │   ├── grammar.json
 │   ├── kanji.json
@@ -81,9 +96,9 @@ The N4 transition is the smallest content jump but introduces the most architect
 │   ├── reading.json
 │   ├── listening.json
 │   ├── questions.json
-│   ├── n4_kanji_whitelist.json
-│   ├── n4_vocab_whitelist.json
-│   ├── n4_kanji_readings.json
+│   ├── n<L>_kanji_whitelist.json
+│   ├── n<L>_vocab_whitelist.json
+│   ├── n<L>_kanji_readings.json
 │   └── audio_manifest.json
 ├── tools/
 │   ├── build_data.py
@@ -120,18 +135,18 @@ The N4 transition is the smallest content jump but introduces the most architect
 These are expensive to change later. N5 paid for several of these via mid-project migrations.
 
 - **Question IDs:** `q-NNNN` (4-digit zero-pad, opaque string, never re-numbered). N5 has gaps from deletions; that's fine — document the gap policy in `_meta.id_gap_policy` and treat IDs as opaque keys.
-- **Pattern IDs:** `n4-NNN` (3-digit zero-pad). Reserve a numeric range up front for each thematic cluster (e.g., n4-001..n4-050 for Sentence Basics) so insertions don't force renumbering.
-- **Vocab IDs:** `n4.vocab.<section-slug>.<form>[.<disambiguator>]`. The section-slug encoding allows the same word to be cross-listed in multiple thematic sections, which the runtime UI uses (do NOT collapse cross-listings — N5 has 10 such pairs, all intentional).
-- **Reading IDs:** `n4.read.NNN`. Listening: `n4.listen.NNN`.
+- **Pattern IDs:** `n<L>-NNN` (3-digit zero-pad). Reserve a numeric range up front for each thematic cluster (e.g., n<L>-001..n<L>-050 for Sentence Basics) so insertions don't force renumbering.
+- **Vocab IDs:** `n<L>.vocab.<section-slug>.<form>[.<disambiguator>]`. The section-slug encoding allows the same word to be cross-listed in multiple thematic sections, which the runtime UI uses (do NOT collapse cross-listings — N5 has 10 such pairs, all intentional).
+- **Reading IDs:** `n<L>.read.NNN`. Listening: `n<L>.listen.NNN`.
 - **Universal `_meta` block** in every data/*.json: `schema_version`, `entity_count`, `id_range`, `id_gap_policy`, `history` (append-only log of cumulative changes).
-- **Tier taxonomy on grammar entries:** `core_n4`, `late_n4`, `n3_borderline`. **Add this from day 1.** N5 paid for tier-taxonomy retrofit in Pass-13/14.
+- **Tier taxonomy on grammar entries:** `core_n<L>`, `late_n<L>`, `n<L-1>_borderline`. **Add this from day 1.** N5 paid for tier-taxonomy retrofit in Pass-13/14.
 - **`auto: bool`** flag on every authored entry. `false` = human-reviewed; `true` = template-generated. Used for prioritized native review.
 
 ### 1.4 Permissions / automation setup (10 min)
 
 If using Claude Code:
 
-- Copy `.claude/CLAUDE.md` from N5; replace "N5" → "N4".
+- Copy `.claude/CLAUDE.md` from N5; replace "N5" → "N<L>" throughout.
 - `defaultMode: bypassPermissions` in `.claude/settings.local.json`. Add gitignore for `*.local.json`.
 - Allow lists for `Bash(git *)`, `Bash(cd *)`, `Edit(**)`, `Write(**)`, plus the `gh pr/release/issue` flavors.
 - Deny list for destructive ops: `git push --force`, `git reset --hard`, `rm -rf`, `git branch -D`, etc.
@@ -164,7 +179,7 @@ Test the pipeline IMMEDIATELY with `tools/test_build_data.py` covering the regre
 
 ### 2.2 Content integrity invariants (Day 1)
 
-These were added piecewise in N5 (across X-6.1..X-6.9 and JA-1..JA-21). Pre-wire ALL of them on N4 day 1.
+These were added piecewise in N5 (across X-6.1..X-6.9 and JA-1..JA-21). Pre-wire ALL of them on N<L> day 1.
 
 | Invariant | What it checks | Lesson |
 |---|---|---|
@@ -177,7 +192,7 @@ These were added piecewise in N5 (across X-6.1..X-6.9 and JA-1..JA-21). Pre-wire
 | `X-6.7` No false synonymy | "Direct synonym" rationales flagged for review | Pass-11 |
 | `X-6.8` No ASCII digits in TTS source | Numbers must be in kanji or kana for TTS | Pass-8 |
 | `X-6.9` Primary-reading sanity | Each kanji's primary on/kun reading is most-frequent | Pass-12 |
-| `JA-1` Stem-kanji scope | Question stems use only N4 kanji | Pass-12 |
+| `JA-1` Stem-kanji scope | Question stems use only N<L>-whitelisted kanji | Pass-12 |
 | `JA-2` Particle-set sanity | Particle MCQs have valid particle distractors | Pass-13 |
 | `JA-3` Furigana / catalog match | Furigana annotations match catalog entries | Pass-9 |
 | `JA-4` Vocab reading uniqueness | Watch for accidental duplicate readings | Pass-13 |
@@ -186,10 +201,10 @@ These were added piecewise in N5 (across X-6.1..X-6.9 and JA-1..JA-21). Pre-wire
 | `JA-7` No duplicate stems in file | Even with different answers, dedupe stems | Pass-19 |
 | `JA-8` Q-count integrity | `_meta.question_count` matches `len(questions)` | Pass-14 |
 | `JA-9` Engine display contract | UI hides `**Answer:**` until commit (test passes) | Pass-2 |
-| `JA-10` No "(see n4-)" redirect text | Auto-gen stub redirects forbidden in user-facing fields | Pass-12 |
+| `JA-10` No "(see n<L>-)" redirect text | Auto-gen stub redirects forbidden in user-facing fields | Pass-12 |
 | `JA-11` No duplicate MCQ choices | All 4 choices distinct per question | Pass-9 |
 | `JA-12` Kanji KB / JSON consistency | KB markdown and JSON have same kanji set | Pass-13 |
-| `JA-13` No out-of-scope kanji | Anything user-facing limited to N4 whitelist | Pass-13 |
+| `JA-13` No out-of-scope kanji | Anything user-facing limited to N<L> whitelist | Pass-13 |
 | `JA-14` No auto-ruby in renderer | UI never auto-applies furigana to whitelisted kanji | Pass-13 (regression of Pass-7) |
 | `JA-15` Audio refs resolve | Every audio path in JSON has a file on disk | Pass-7 |
 | `JA-16` Kanji example whitelist | Example sentences use only target+whitelist kanji | Pass-13 |
@@ -197,9 +212,9 @@ These were added piecewise in N5 (across X-6.1..X-6.9 and JA-1..JA-21). Pre-wire
 | `JA-18` Reading explanation kanji ⊂ passage | Question explanation can't introduce new kanji | Pass-15 |
 | `JA-19` Reading info-search has format_type | Mondai-6 format tagged for UI rendering | Pass-15 |
 | `JA-20` Reading choices kanji ⊂ passage | MCQ correctAnswer matches passage's kanji form | Pass-15 |
-| `JA-21` N4-grammar markers require tier=late_n4 | Mid-tier patterns properly tagged (rename for N4) | Pass-15 |
+| `JA-21` Late-tier markers require tier=late_n<L> | Mid-tier patterns properly tagged | Pass-15 |
 
-**Add 3 more on N4 from Pass-15/Pass-19 lessons:**
+**Add 3 more on the next level from Pass-15/Pass-19 lessons:**
 - `JA-22` No "direct synonym / directly equivalent / same as" in goi rationales (catches synonym-overclaim regression).
 - `JA-23` Multi-correct scanner: every MCQ where choices include known-interchangeable particle pairs (`に`/`へ` for direction, `から`/`ので` for reason, `は`/`が` for topic-or-subject) is flagged for native review.
 - `JA-24` No duplicate `pattern` strings in grammar.json across entries with overlapping `meaning_en` (catches the Pass-19 redundancy class).
@@ -269,20 +284,20 @@ Roughly the N5 trajectory by week:
 | Week | Activity | Deliverable |
 |------|----------|-------------|
 | 1 | Bootstrap + pipeline | Empty corpus, all CI invariants green on empty content |
-| 2-3 | Grammar catalog (KB + build) | grammar.json with N4 patterns, no examples yet |
+| 2-3 | Grammar catalog (KB + build) | grammar.json with N<L> patterns, no examples yet |
 | 3-4 | Examples + furigana | Each pattern has 2-5 example sentences |
 | 4-5 | Vocab catalog | vocab.json with ~1500 entries, sectionalized |
-| 5-6 | Kanji catalog | kanji.json with ~280 entries, on/kun trimmed to N4 scope |
+| 5-6 | Kanji catalog | kanji.json with N<L>-whitelist entries, on/kun trimmed to N<L> scope (per §0 size table) |
 | 6-7 | Reading passages | reading.json with ~30 passages |
 | 7-8 | Listening items | listening.json with ~30 items |
 | 8-10 | Questions (moji + goi + bunpou + dokkai) | 100 each = 400+ questions |
 | 10-12 | Native review (Pass-1) | First teacher review of corpus |
 
-Plan ~12 weeks of full-time content work for N4. This was the N5 timeline; N4 is similar.
+Plan ~12 weeks of full-time content work for the N5 → N4 transition (the smallest jump). For N3 and below, multiply by ~1.5x per level (per §13).
 
 ### 3.4 External corpus extraction (1-2 days)
 
-Pull questions from learnjapaneseaz.com or similar third-party JLPT N4 practice sites for **triangulation only** (do NOT copy verbatim into your bank — copyright). Use them to:
+Pull questions from learnjapaneseaz.com or similar third-party JLPT N<L> practice sites for **triangulation only** (do NOT copy verbatim into your bank — copyright). Use them to:
 - Cross-check your coverage (do you test the same patterns?).
 - Spot multi-correct bugs in their bank that you might inherit.
 - Anchor distractor styles.
@@ -298,7 +313,7 @@ N5 extracted 175 questions across 17 tests in ~30 minutes via WebFetch. Saved as
 **No framework. No build step for runtime.** N5 ships HTML + JS modules + CSS. Everything works offline (PWA). Hash router (`#/learn/...`) means no server. This was the right call; the entire UI is ~3000 lines of JS across ~25 modules and loads instantly.
 
 If you need a build step, limit it to:
-- Font subsetting (woff2 + N4 kanji range only — keeps assets small)
+- Font subsetting (woff2 + N<L> kanji range only — keeps assets small)
 - Service worker version bump
 - Locale extraction (if i18n)
 
@@ -323,9 +338,9 @@ N5 is on `jlpt-n5-tutor-v71` after 71 ship cycles. Bump on every shell change. T
 
 ### 4.4 Audio
 
-Use `tools/build_audio.py` from N5 (auto-detects piper-tts / gtts / pyttsx3, idempotent, writes `data/audio_manifest.json`). At N4, **at least listening items SHOULD be native-recorded** — synthetic prosody artifacts at N5 level are tolerable; at N4 they teach learners to discriminate against synthesis artifacts rather than against real Japanese.
+Use `tools/build_audio.py` from N5 (auto-detects piper-tts / gtts / pyttsx3, idempotent, writes `data/audio_manifest.json`). At N4 and lower (`<L> ≤ 4`), **at least listening items SHOULD be native-recorded** — synthetic prosody artifacts at N5 level are tolerable; at higher difficulty they teach learners to discriminate against synthesis artifacts rather than against real Japanese.
 
-This was N5's EB-1 external-blocked item: listening corpus expansion 12 → 30 was approved but blocked on native voice talent. Plan for native recording from the start at N4.
+This was N5's EB-1 external-blocked item: listening corpus expansion 12 → 30 was approved but blocked on native voice talent. Plan for native recording from the start at N<L>.
 
 ---
 
@@ -342,7 +357,7 @@ Every audit cycle is a "Pass" with:
 
 N5 ran 13+ passes. Each was 1-3 days of audit + 1-3 days of fix application.
 
-### 5.2 Recommended pass schedule for N4
+### 5.2 Recommended pass schedule for N<L>
 
 | Pass | Focus | Trigger |
 |------|-------|---------|
@@ -366,7 +381,7 @@ Validation: 5 patterns sampled before going wide. Native-density baseline = 0.28
 
 ### 5.5 Quarterly cron
 
-Set up a cron / scheduled job that fires every 90 days to surface external-blocked items and trigger a fresh quarterly audit. N5's is `jlpt-n5-quarterly-pass-audit` — see `.github/workflows/quarterly-audit.yml` (port to N4).
+Set up a cron / scheduled job that fires every 90 days to surface external-blocked items and trigger a fresh quarterly audit. N5's is `jlpt-n5-quarterly-pass-audit` — see `.github/workflows/quarterly-audit.yml` (port to `jlpt-n<L>-quarterly-pass-audit`).
 
 ---
 
@@ -380,7 +395,7 @@ GitHub Actions workflow `.github/workflows/content-integrity.yml`:
 - Runs `python tools/test_build_data.py`
 - Hard fail on any violation. **Never `continue-on-error: true`.**
 
-If a fix introduces a violation, fix the data OR add the kanji/particle/construct to the appropriate augmented set in the integrity check tool with a comment explaining why it's legitimately in N4 scope. Never silence by removing the check.
+If a fix introduces a violation, fix the data OR add the kanji/particle/construct to the appropriate augmented set in the integrity check tool with a comment explaining why it's legitimately in N<L> scope. Never silence by removing the check.
 
 ### 6.2 Add new invariants when bugs recur
 
@@ -403,14 +418,14 @@ In rough priority order:
 
 1. **`tools/build_data.py`** — KB markdown → JSON. The single most important script. Port + adapt.
 2. **`tools/check_content_integrity.py`** — all invariants. Port the framework + the X-6.x ones; add JA-x as you author content.
-3. **`tools/test_build_data.py`** — regression tests for the build pipeline. Port the structure; write new tests as N4-specific bugs surface.
-4. **`tools/link_grammar_examples_to_vocab.py`** — homograph-aware vocab linking. Has a sophisticated boundary-check + HOMOGRAPH_RULES system. Port verbatim and extend the rules as new homograph clusters appear at N4 (e.g., 込 readings).
+3. **`tools/test_build_data.py`** — regression tests for the build pipeline. Port the structure; write new tests as N<L>-specific bugs surface.
+4. **`tools/link_grammar_examples_to_vocab.py`** — homograph-aware vocab linking. Has a sophisticated boundary-check + HOMOGRAPH_RULES system. Port verbatim and extend the rules as new homograph clusters appear at the next level (at N4: 込 readings; at N3: 形 / 化 readings; etc.).
 5. **`tools/scan_multi_correct.py`** — 5-category multi-correct candidate scanner. Wire as advisory CI gate.
 6. **`tools/heuristic_audit.py`** — cheap mass-scan with deterministic findings (precision ~75% per N5 Pass-15a). Use for first-pass triage.
-7. **`tools/llm_audit.py`** — Claude API for deep semantic review. Production-ready in N5; just update prompt template for N4 scope.
-8. **`tools/build_audio.py`** — TTS pipeline. Idempotent. Port + add native-recording skip-flag for N4.
+7. **`tools/llm_audit.py`** — Claude API for deep semantic review. Production-ready in N5; just update prompt template for N<L> scope.
+8. **`tools/build_audio.py`** — TTS pipeline. Idempotent. Port + add native-recording skip-flag for N<L>.
 9. **`tools/tag_vocab_pos.py`** — POS tagging for vocab. Adapt rules.
-10. **`tools/coverage_compare.py`** — external-corpus gap analysis. Port + update for N4 corpus.
+10. **`tools/coverage_compare.py`** — external-corpus gap analysis. Port + update for N<L> corpus.
 
 Skip these (one-shot diagnostics from N5):
 - `_inspect_*.py`, `_check_*.py`, `_dup_*.py` — N5-specific debugging.
@@ -461,9 +476,9 @@ The next Claude session reads this on startup. Without it, every session re-disc
 
 ## 9. External-blocked items — anticipate up front
 
-N5 has 4 EB items, all foreseeable from the start. Plan for these in N4:
+N5 has 4 EB items, all foreseeable from the start. Plan for these in N<L>:
 
-1. **Listening corpus needs native voice talent.** Synthetic TTS is unacceptable at N4. Identify a recording channel (paid voice actor / volunteer / licensed audio) by month 3.
+1. **Listening corpus needs native voice talent.** Synthetic TTS is unacceptable at any level lower than N5. Identify a recording channel (paid voice actor / volunteer / licensed audio) by month 3.
 2. **Native teacher reviewer.** ~10-12 hours per full pass. Identify reviewer + budget by month 1. The Suiraku San (N5) reviewer model worked.
 3. **Translation of brief / supplement to Japanese.** Only if outreach is in progress; otherwise defer.
 4. **Recommender ML.** Defer to v2.0 unless you have a privacy-respecting input source and >10k learners.
@@ -479,7 +494,7 @@ These are the things that genuinely worked and should carry forward verbatim:
 - **Zen Modern (Muji-inspired) design system** — hairlines not borders, no shadows, no gradients, weights 300/400/500 only. Source of truth at `specifications/jlpt-n5-design-system-zen-modern.md`. Port the spec, replace level references.
 - **5-locale i18n shell** (en/vi/id/ne/zh) — the en at v1 + others structured pattern works.
 - **Hash-based routing** (`#/learn/...`) — no server, full PWA.
-- **Self-hosted fonts** — Inter (300/400/500) + Noto Sans JP 400 subset to N5 kanji range. ~500KB total. Replace subset with N4 kanji range for next level.
+- **Self-hosted fonts** — Inter (300/400/500) + Noto Sans JP 400 subset to N5 kanji range. ~500KB total. Replace subset with N<L> kanji range for the next-level build (the union of N5 + ... + N<L> per §11.2).
 - **Diagnostic Summary** with error patterns + recommended next session + session log.
 - **SM-2 SRS** with 4-button grading (Again/Hard/Good/Easy) and verified reps (rep 1→1d, rep 2→6d, rep 3→15d, lapse → 1d + EF drops).
 - **Export/import** for cross-device portability without telemetry.
@@ -489,31 +504,31 @@ These are the things that genuinely worked and should carry forward verbatim:
 
 ---
 
-## 11. Migration considerations N5 → N4
+## 11. Migration considerations from level <P> to level <L>
 
 Beyond the obvious content scaling, three architectural decisions:
 
 ### 11.1 Tier taxonomy
 
-At N5 we had `core_n5` and `late_n5` (borderline). At N4, plan for THREE tiers from day 1:
-- `core_n4` — solidly N4 scope
-- `late_n4` — N4 scope but only typically taught at end of N4
-- `n3_borderline` — appears in N4 materials but is N3 nuance
+At N5 we had `core_n5` and `late_n5` (borderline). At N<L>, plan for THREE tiers from day 1:
+- `core_n<L>` — solidly N<L> scope
+- `late_n<L>` — N<L> scope but only typically taught at end of N<L>
+- `n<L-1>_borderline` — appears in N<L> materials but is N<L-1> nuance
 
-JA-21 invariant enforces tier=late_n5 for N4 grammar in N5 content. At N4, the equivalent invariant should enforce tier=n3_borderline for N3 grammar that appears in N4 materials.
+JA-21 invariant enforces tier=late_n5 for late-N5 grammar in the N5 source content. At N<L>, the equivalent invariant should enforce tier=n<L-1>_borderline for level-`<L-1>` grammar that leaks into N<L> materials.
 
 ### 11.2 Kanji policy escalation
 
-N5 has ~106 kanji in the whitelist, with strict scope enforcement. N4 adds ~170, taking the whitelist to ~280.
+N5 has ~106 kanji in the whitelist, with strict scope enforcement. The next level adds more kanji per the §0 size table (e.g., N4 adds ~170 to take the whitelist to ~280; N3 adds ~370 more for ~650 total; etc.).
 
-**Decision to make on day 1:** does the N4 app re-use N5 kanji (yes — they're prerequisites) or only test the N4-additional 170? Recommended: include all N5+N4 in the whitelist (~280 total) and use the `tier` field on each kanji entry to distinguish prerequisite vs new.
+**Decision to make on day 1:** does the N<L> app re-use N<P> kanji (yes — they're prerequisites) or only test the N<L>-additional set? Recommended: include all N5 ∪ ... ∪ N<L> in the whitelist and use the `tier` field on each kanji entry to distinguish prerequisite vs new (see §11.2 / Appendix B.10).
 
 ### 11.3 Borderline grammar promotion
 
-Patterns like `んです` / `のです` (N5 borderline per F-15.23) become **core N4**. The grammar.json migration:
-- Each former-borderline N5 pattern becomes a core_n4 pattern at the new level.
-- Existing N5 examples get re-tagged as N4-prerequisite.
-- New questions can be authored at full N4 scope.
+Patterns like `んです` / `のです` (N5 borderline per F-15.23) become **core at the next level** (e.g., core_n4). The grammar.json migration:
+- Each former-borderline pattern at level N<P> becomes a core_n<L> pattern at the new level.
+- Existing examples from level N<P> get re-tagged as `prerequisite_n<P>`.
+- New questions can be authored at full N<L> scope.
 
 Plan ~30-40 such promotions. The N5 pattern catalog `late_n5` tier is your migration manifest — copy it, retag, expand.
 
@@ -577,15 +592,15 @@ Print these and tape them above your monitor:
 
 ---
 
-## 15. Open questions / decisions to make for N4
+## 15. Open questions / decisions to make for N<L>
 
 Known unknowns from N5 experience:
 
 - **Native voice for listening:** budget? (answer affects content-authoring schedule)
-- **Whether to support handwriting** (kanji writing practice) — N5 didn't; N4 might benefit
-- **Whether to add IME-typing input** for text_input questions — N5 used kana-strict input; N4 with kanji could use IME mode
-- **Reading-comprehension speed test mode** — N4 introduces timed reading; UI affordance?
-- **Mock test mode timing** — N4 mock tests have stricter time limits than N5
+- **Whether to support handwriting** (kanji writing practice) — N5 didn't; lower levels (more kanji) might benefit more
+- **Whether to add IME-typing input** for text_input questions — N5 used kana-strict input; N<L> with more kanji could use IME mode
+- **Reading-comprehension speed test mode** — applicable from N4 down; UI affordance?
+- **Mock test mode timing** — each level has stricter time limits than N5; see §A.9 for the exam structure table
 - **Subscription / monetization** — N5 is free; if monetizing, it changes a lot architecturally
 
 Each of these blocks ~1-2 weeks of architecture work. Decide before week 4 of the build.
@@ -601,7 +616,7 @@ Each of these blocks ~1-2 weeks of architecture work. Decide before week 4 of th
 - N5 native-teacher review brief: `feedback/native-teacher-review-request.md`
 - N5 UI testing plan: `feedback/ui-testing-plan.md`
 
-For N4 development, copy these as starting templates and update level references.
+For any next-level development, copy these as starting templates and update level references (replace `n5` with `n<L>`).
 
 ---
 
@@ -623,7 +638,7 @@ This appendix addresses the highest-impact gaps identified in the Pass-20 review
 
 ### A.1 Required inputs (precondition for both modes)
 
-The N4 (or any next-level) build agent MUST have read access to:
+The next-level build agent MUST have read access to:
 
 1. **This manual** (`specifications/procedure-manual-build-next-jlpt-level.md`).
 2. **The N5 source repository in full**, at a known absolute path. Specifically the agent must be able to read:
@@ -649,9 +664,9 @@ A zero-interaction agent has no human decider. Use these defaults:
 |---|---|---|
 | Native voice budget | **Skip native recording. Use synthetic TTS via `gtts`.** Mark all listening items with `voice: "synthetic"` so the JA-15 invariant doesn't fail and a future native-recording pass can identify them. | Native recording requires human resource the agent doesn't have. Synthetic ships; native upgrades later. |
 | Handwriting kanji practice | **Defer.** Don't include in v1. | Requires a stroke-order canvas component and SVG kanji data. Out of one-shot scope. |
-| IME-typing input | **Defer.** Use the N5 kana-strict text_input flow; do not introduce IME mode. | IME state management is non-trivial; kana-strict works for N4 vocab questions. |
+| IME-typing input | **Defer.** Use the N5 kana-strict text_input flow; do not introduce IME mode. | IME state management is non-trivial; kana-strict works for vocab questions at any level. |
 | Reading-comprehension speed test | **Defer.** Ship dokkai mode without timer for v1. | Speed mode is a UI affordance, not a content blocker. |
-| Mock test mode timing | **Use the JLPT N4 official time table** (see A.9). Hardcode at component level; expose as setting in v2. | Time per section is a known quantity per JLPT.jp specs. |
+| Mock test mode timing | **Use the JLPT N<L> official time table** (see A.9 — N5..N1 timings tabulated). Hardcode at component level; expose as setting in v2. | Time per section is a known quantity per JLPT.jp specs. |
 | Subscription / monetization | **Free, no monetization.** Match N5 architectural posture. | Adding payment changes hosting, telemetry, and privacy posture; out of scope. |
 
 Mark each as a one-shot default in TASKS.md `Pass-1` so a follow-up human pass knows to reconsider.
@@ -674,14 +689,14 @@ If the agent runs out of execution time or cannot finish all 17 weeks worth of w
 1. **Layer 0 — Build pipeline + CI (must ship).** `tools/build_data.py`, `tools/check_content_integrity.py`, `tools/test_build_data.py`, `.github/workflows/content-integrity.yml`. Empty content is acceptable here; the pipeline must be runnable.
 2. **Layer 1 — Schemas + skeleton corpora (must ship).** All `data/*.json` files exist with empty arrays + populated `_meta` blocks. All `KnowledgeBank/*.md` files exist with the section structure but minimal content.
 3. **Layer 2 — UI shell (must ship).** `index.html`, hash router, 5-card hub, empty Learn views, settings. Service worker registered. PWA manifest valid.
-4. **Layer 3 — Grammar catalog (~50% of patterns).** Author the core_n4 patterns; defer late_n4 + n3_borderline.
-5. **Layer 4 — Vocab catalog (~50%).** Author the most-frequent N4 vocabulary.
-6. **Layer 5 — Kanji catalog (full).** All ~280 N4 kanji must be authored; this is non-negotiable for the kanji whitelist invariants.
+4. **Layer 3 — Grammar catalog (~50% of patterns).** Author the core_n<L> patterns; defer late_n<L> + n<L-1>_borderline.
+5. **Layer 4 — Vocab catalog (~50%).** Author the most-frequent N<L> vocabulary.
+6. **Layer 5 — Kanji catalog (full).** All N<L>-whitelist kanji (per §0 size table) must be authored; this is non-negotiable for the kanji whitelist invariants.
 7. **Layer 6 — Reading + listening passages (~30% / ~30%).** ~10 passages each with synthetic audio.
 8. **Layer 7 — Question banks (~25% per section).** ~25 questions per moji/goi/bunpou/dokkai.
 9. **Layer 8 — Translation, advanced UI features, native audio.** Defer all to v2.
 
-A truly minimal deliverable that satisfies layers 0-2 + skeleton content for 3-7 produces a runnable app shell that a human team can flesh out. Roughly **20-30% of the full N4 deliverable** in one shot.
+A truly minimal deliverable that satisfies layers 0-2 + skeleton content for 3-7 produces a runnable app shell that a human team can flesh out. Roughly **20-30% of the full N<L> deliverable** in one shot.
 
 ### A.5 Definition of done
 
@@ -692,8 +707,8 @@ The build is **complete for v1 release** when ALL of the following are true (a o
 3. **JSON schema valid:** every `data/*.json` parses, has the required `_meta` block, and `_meta.entity_count == len(entries)`.
 4. **No duplicate IDs:** across questions / patterns / vocab / kanji / reading / listening corpora.
 5. **No empty user-facing fields:** every authored question has `question_ja`, `correctAnswer`, `choices` (if MCQ), and `distractor_explanations` populated.
-6. **No "see pattern" stubs:** zero matches for `see n4-` / `see pattern detail` in user-facing fields.
-7. **No out-of-scope kanji:** all user-facing text uses only N4-whitelist kanji (JA-13).
+6. **No "see pattern" stubs:** zero matches for `see n<L>-` / `see pattern detail` in user-facing fields.
+7. **No out-of-scope kanji:** all user-facing text uses only N<L>-whitelist kanji (JA-13).
 8. **Browser smoke test:** `index.html` loads in a clean browser, hash routes resolve, no console errors, service worker registers.
 9. **Question count meets layer-7 minimum:** ≥25 questions per Mondai section per A.4 layer 7.
 10. **PWA installable:** manifest valid, icons present, offline shell works.
@@ -715,42 +730,42 @@ Save derived schemas at `specifications/schemas/*.schema.json`. Validate every J
 
 ### A.7 Source authorities for content inventories
 
-The agent must NOT invent N4 content. Use these published sources as authority:
+The agent must NOT invent N<L> content. Use these published sources as authority. Substitute the level number in URLs (`n4` → `n<L>` or `jlpt4` → `jlpt<L>` depending on the host's URL convention; full per-level URL list is in Appendix B.11):
 
-- **Kanji whitelist (~280 entries):** JLPT N4 kanji list at https://jlptsensei.com/jlpt-n4-kanji-list/ + cross-reference https://www.tanos.co.uk/jlpt/jlpt4/kanji/
-- **Vocabulary (~1500 entries):** https://www.tanos.co.uk/jlpt/jlpt4/vocab/ (CSV download available)
-- **Grammar patterns (~210):** https://bunpro.jp/jlpt/n4 + https://www.tanos.co.uk/jlpt/jlpt4/grammar/
-- **Reading passages:** authentic sample at https://www.jlpt.jp/e/samples/n4/index.html
+- **Kanji whitelist:** JLPT-Sensei N<L> kanji list (e.g., https://jlptsensei.com/jlpt-n4-kanji-list/) + cross-reference Tanos (e.g., https://www.tanos.co.uk/jlpt/jlpt4/kanji/)
+- **Vocabulary:** Tanos N<L> vocab CSV (e.g., https://www.tanos.co.uk/jlpt/jlpt4/vocab/)
+- **Grammar patterns:** Bunpro N<L> (e.g., https://bunpro.jp/jlpt/n4) + Tanos N<L>
+- **Reading passages:** authentic samples at https://www.jlpt.jp/e/samples/n<L>/index.html
 - **Listening scripts:** same official samples
 
 Cross-reference at least TWO sources per item before adding to the catalog. Discrepancies between sources should be resolved in favor of the most-recent JLPT.jp official spec.
 
-For tier classification (`core_n4` / `late_n4` / `n3_borderline`):
-- `core_n4` = appears in both Bunpro N4 AND Tanos N4
-- `late_n4` = appears in Bunpro N4 only (Bunpro tends to include borderline upper-N4)
-- `n3_borderline` = appears in Tanos N3 but commonly taught in N4 textbooks
+For tier classification (`core_n<L>` / `late_n<L>` / `n<L-1>_borderline`):
+- `core_n<L>` = appears in both Bunpro N<L> AND Tanos N<L>
+- `late_n<L>` = appears in Bunpro N<L> only (Bunpro tends to include borderline upper-`<L>`)
+- `n<L-1>_borderline` = appears in Tanos N<L-1> but commonly taught in N<L> textbooks
 
 ### A.8 Question-count budget per Mondai per file
 
-JLPT N4 question section structure (mirror this in question count targets):
+JLPT N<L> question section structure (the table below uses N4 numbers as the canonical example; N3..N1 follow the same Mondai layout with adjusted counts per JLPT.jp official specs):
 
 | File | Mondai | Subtype | Target count |
 |------|--------|---------|--------------|
-| moji_questions_n4.md | Mondai 1 (kanji reading) | 漢字読み | 50 |
-| moji_questions_n4.md | Mondai 2 (orthography) | 表記 | 50 |
-| moji_questions_n4.md | (alt) Mondai 3 (word formation) | 語形成 | 50 (N4-specific) |
-| goi_questions_n4.md | Mondai 4 (context) | 文脈規定 | 50 |
-| goi_questions_n4.md | Mondai 5 (paraphrase) | 言い換え類義 | 50 |
-| goi_questions_n4.md | Mondai 6 (usage) | 用法 | 50 (N4-specific) |
-| bunpou_questions_n4.md | Mondai 1 (sentence grammar 1) | 文の文法1 | 50 |
-| bunpou_questions_n4.md | Mondai 2 (sentence grammar 2) | 文の文法2 | 30 |
-| bunpou_questions_n4.md | Mondai 3 (text grammar) | 文章の文法 | 20 |
-| dokkai_questions_n4.md | Mondai 4 (short) | 内容理解 短文 | 30 |
-| dokkai_questions_n4.md | Mondai 5 (medium) | 内容理解 中文 | 30 |
-| dokkai_questions_n4.md | Mondai 6 (info retrieval) | 情報検索 | 12 |
-| chokai_questions_n4.md | Mondai 1-4 | (multiple) | 60 |
+| moji_questions_n<L>.md | Mondai 1 (kanji reading) | 漢字読み | 50 |
+| moji_questions_n<L>.md | Mondai 2 (orthography) | 表記 | 50 |
+| moji_questions_n<L>.md | (alt) Mondai 3 (word formation) | 語形成 | 50 (N4-specific; not present at N5) |
+| goi_questions_n<L>.md | Mondai 4 (context) | 文脈規定 | 50 |
+| goi_questions_n<L>.md | Mondai 5 (paraphrase) | 言い換え類義 | 50 |
+| goi_questions_n<L>.md | Mondai 6 (usage) | 用法 | 50 (introduced at N4; persists at lower levels) |
+| bunpou_questions_n<L>.md | Mondai 1 (sentence grammar 1) | 文の文法1 | 50 |
+| bunpou_questions_n<L>.md | Mondai 2 (sentence grammar 2) | 文の文法2 | 30 |
+| bunpou_questions_n<L>.md | Mondai 3 (text grammar) | 文章の文法 | 20 |
+| dokkai_questions_n<L>.md | Mondai 4 (short) | 内容理解 短文 | 30 |
+| dokkai_questions_n<L>.md | Mondai 5 (medium) | 内容理解 中文 | 30 |
+| dokkai_questions_n<L>.md | Mondai 6 (info retrieval) | 情報検索 | 12 |
+| chokai_questions_n<L>.md | Mondai 1-4 | (multiple) | 60 |
 
-**Total target N4: ~530 questions across 4 question files + 1 listening file.** This is larger than N5's ~400 due to N4's expanded grammar/vocab scope.
+**Total target at N4: ~530 questions across 4 question files + 1 listening file.** This is larger than N5's ~400 due to N4's expanded grammar/vocab scope. For N3..N1 multiply roughly 1.3-1.5x per level.
 
 ### A.9 JLPT exam structure tables
 
@@ -799,7 +814,7 @@ Cross-device merge on import: take MAX of (rep, interval) per item;
   prefer most-recent EF; sum lapses.
 ```
 
-This is the N5-verified spec. Reuse verbatim for N4.
+This is the N5-verified spec. Reuse verbatim for any next level.
 
 ### A.11 Furigana generation procedure
 
@@ -807,10 +822,10 @@ For each example sentence in `grammar.json` and each passage in `reading.json`:
 
 1. Run a Japanese tokenizer (mecab via `mecab-python3` OR Yahoo morphological API OR client-side kuromoji.js) over the Japanese text.
 2. For each kanji-containing token, output `{"reading": <hiragana>, "indices": [start, end]}` annotations.
-3. Filter: only include annotations where the kanji is NOT in the level's prerequisite tier (i.e., for N4 content, annotate kanji that are N4-new but not the N5-prerequisite ones — by default; settings allow toggling).
+3. Filter: only include annotations where the kanji is NOT in the level's prerequisite tier (i.e., for N<L> content, annotate kanji that are N<L>-new but not the prerequisite ones from N5..N<L+1> — by default; settings allow toggling).
 4. Store as `furigana` field on the example/passage entry.
 
-UI render: wrap annotated spans in `<ruby><rb>kanji</rb><rt>reading</rt></ruby>`. CSS controls visibility (3-mode: always-show / show-on-hover / never). Default for N4 = show-on-hover.
+UI render: wrap annotated spans in `<ruby><rb>kanji</rb><rt>reading</rt></ruby>`. CSS controls visibility (3-mode: always-show / show-on-hover / never). Default at N4 and lower (more kanji to learn) = show-on-hover; at N5 the default was always-show.
 
 **One-shot fallback:** if a tokenizer is unavailable in the agent's runtime, ship without furigana. The UI gracefully degrades to plain kanji rendering. Mark this in TASKS.md as Pass-2 candidate.
 
@@ -848,5 +863,5 @@ The Pass-20 manual review (`feedback/procedure-manual-review-issues.md`) identif
 
 ---
 
-*Living document. Update on every fresh learning at N4 (or beyond).*
+*Living document. Update on every fresh learning at any next level.*
 *Prepared 2026-05-01. Pass-20 review ingested 2026-05-01. JLPT N5 Tutor v1.x at HEAD `1f91400`.*
