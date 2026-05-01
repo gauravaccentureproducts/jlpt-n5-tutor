@@ -97,8 +97,12 @@ def split_questions(md: str) -> list[tuple[str, str]]:
     for i, m in enumerate(matches):
         end = matches[i + 1].start() if i + 1 < len(matches) else len(md)
         body = md[m.end():end].strip()
-        # Stop body at the next `## ` (section break) within the slice
-        section_break = re.search(r'(?m)^## ', body)
+        # Stop body at the next ## or ### heading (but NOT #### Q...).
+        # Without this, a Mondai-3 Q's body slurps the next `### Passage`
+        # header and the answer-rationale regex (DOTALL) treats the whole
+        # passage as rationale text. The negative lookahead skips Q-headers
+        # at any level so we don't break the Q-to-Q boundary.
+        section_break = re.search(r'(?m)^#{2,3}\s+(?!Q\d)', body)
         if section_break:
             body = body[:section_break.start()].strip()
         label = f"Q{m.group(2)}"
@@ -157,11 +161,65 @@ def parse_mcq_question(body: str) -> dict | None:
 # Per-category builders
 # -----------------------------------------------------------------------
 
+def parse_mondai3_passages(md: str) -> dict[str, dict]:
+    """Bunpou Mondai 3 has passage-grouped questions: each passage carries
+    inline `[ 1 ]`..`[ 5 ]` blanks, and each question (Q91..Q100) supplies
+    choices for the corresponding numbered blank.
+
+    Returns a map: { question_label: {passage_text, blank_number} } so
+    the simple-category parser can stamp those fields onto questions
+    that fall inside a Mondai-3 region.
+
+    Returns empty dict if the file has no Mondai 3 section.
+    """
+    out: dict[str, dict] = {}
+    # Find the Mondai 3 section
+    m3 = re.search(r'(?ms)^## Mondai 3.*?(?=^## |\Z)', md)
+    if not m3:
+        return out
+    m3_text = m3.group(0)
+    # Split into passage blocks: `### Passage <name> (Q<a>-Q<b>)`
+    p_re = re.compile(r'(?m)^### (Passage \S+)\s*\(Q(\d+)-Q(\d+)\)\s*$')
+    p_matches = list(p_re.finditer(m3_text))
+    for i, pm in enumerate(p_matches):
+        passage_label = pm.group(1)
+        q_start = int(pm.group(2))
+        q_end = int(pm.group(3))
+        end = p_matches[i + 1].start() if i + 1 < len(p_matches) else len(m3_text)
+        body = m3_text[pm.end():end]
+        # The passage is in `> ...` blockquotes BEFORE the first `#### Q`
+        first_q = re.search(r'(?m)^#### Q\d', body)
+        before_qs = body[:first_q.start()] if first_q else body
+        # Pull blockquote lines
+        passage_lines = []
+        for line in before_qs.split('\n'):
+            line = line.strip()
+            if line.startswith('>'):
+                passage_lines.append(line.lstrip('>').strip())
+        passage_text = '\n'.join(p for p in passage_lines if p).strip()
+        # Map each Q in this passage to its blank number (1-based, inside
+        # the passage; blank N corresponds to the Nth Q in the range)
+        for offset, q_num in enumerate(range(q_start, q_end + 1), 1):
+            label = f'Q{q_num}'
+            out[label] = {
+                'passage_text': passage_text,
+                'passage_label': passage_label,
+                'blank_number': offset,
+            }
+    return out
+
+
 def build_simple_category(category: str, md_path: Path) -> list[dict]:
     """For moji/goi/bunpou: parse all questions, slice into 15-question
-    sequential papers. Returns list of paper dicts."""
+    sequential papers. Returns list of paper dicts.
+
+    For bunpou specifically, also detects Mondai 3 (passage-grouped
+    grammar) and stamps passage_text + blank_number on those questions
+    so the runtime can render the passage context."""
     md = md_path.read_text(encoding='utf-8')
     blocks = split_questions(md)
+    # Mondai-3 metadata (only relevant for bunpou)
+    mondai3_map = parse_mondai3_passages(md)
     parsed: list[dict] = []
     for label, body in blocks:
         q = parse_mcq_question(body)
@@ -170,6 +228,16 @@ def build_simple_category(category: str, md_path: Path) -> list[dict]:
                   file=sys.stderr)
             continue
         q["kbSourceId"] = label
+        # If this Q is part of a Mondai-3 passage, attach passage context
+        if label in mondai3_map:
+            m3 = mondai3_map[label]
+            q['passage_text'] = m3['passage_text']
+            q['passage_label'] = m3['passage_label']
+            q['blank_number'] = m3['blank_number']
+            # The original `body` already had the stem set to a "(blank N)"
+            # subtitle. Set stem_html to that so the UI shows which blank
+            # the question is for.
+            q['stem_html'] = f'→ blank [{m3["blank_number"]}]'
         parsed.append(q)
 
     papers: list[dict] = []

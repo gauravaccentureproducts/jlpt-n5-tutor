@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "totalPapers": 24,
-  "totalQuestions": 350,
+  "totalPapers": 25,
+  "totalQuestions": 360,
   "categories": [
     {
       "label": "Moji",
@@ -126,8 +126,8 @@
       "label_ja": "文法",
       "description": "Grammar (choose form / arrange / passage)",
       "id": "bunpou",
-      "paperCount": 6,
-      "questionCount": 90,
+      "paperCount": 7,
+      "questionCount": 100,
       "papers": [
         {
           "id": "bunpou-1",
@@ -170,6 +170,13 @@
           "name": "Bunpou Paper 6",
           "questionCount": 15,
           "source_question_range": "Q76-Q90"
+        },
+        {
+          "id": "bunpou-7",
+          "paperNumber": 7,
+          "name": "Bunpou Paper 7",
+          "questionCount": 10,
+          "source_question_range": "Q91-Q100"
         }
       ]
     },

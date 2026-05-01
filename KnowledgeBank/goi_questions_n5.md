@@ -208,7 +208,7 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 ### Q17
 
-朝ごはんに パンを 二まい （　　）。
+あさごはんに パンを 二まい （　　）。
 
 1. のみました
 2. たべました
