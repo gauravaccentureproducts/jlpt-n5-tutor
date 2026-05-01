@@ -152,14 +152,15 @@
       "stem_html": "スーパーで パンや ぎゅうにゅう（　　）を 買いました。",
       "choices": [
         "を",
-        "と",
+        "へ",
         "に",
         "など"
       ],
       "correctIndex": 3,
       "rationale": "listing with や...など.",
       "kbSourceId": "Q56",
-      "id": "bunpou-4.11"
+      "id": "bunpou-4.11",
+      "explanation_en": "や〜などを 'X, Y, etc.' non-exhaustive list. Distractors: を is the object marker (already follows the blank); へ is direction (no destination here); に is recipient/time."
     },
     {
       "type": "mcq",

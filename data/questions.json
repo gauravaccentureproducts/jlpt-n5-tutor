@@ -2700,13 +2700,13 @@
       "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
       "question_ja": "わたしは コーヒー（  ）飲みます。 おちゃや ジュースは 飲みません。",
       "choices": [
-        "など",
+        "か",
         "だけ",
         "に",
         "や"
       ],
       "correctAnswer": "だけ",
-      "explanation_en": "だけ means 'only / nothing but' — it limits the action to the noun marked. The follow-up sentence 'I don't drink tea or juice' confirms the scope: only coffee, nothing else.",
+      "explanation_en": "だけ (only) — the second sentence 'I don't drink tea or juice' reinforces the exclusion sense. Distractors: か is a question/or particle (doesn't fit declarative); に is a recipient/location particle; や is non-exhaustive listing. Replaces earlier choice that included など (etc.) which contradicted the follow-up sentence.",
       "high_confusion": false,
       "difficulty": 1,
       "distractor_explanations": {
@@ -2743,12 +2743,12 @@
       "question_ja": "りんごや バナナ（　）を よく 食べます。",
       "choices": [
         "など",
-        "は",
+        "もの",
         "よ",
         "で"
       ],
       "correctAnswer": "など",
-      "explanation_en": "など follows a list (often with や) to add 'etc., and so on'.",
+      "explanation_en": "や〜などを is the canonical 'X, Y, etc.' non-exhaustive list pattern. Distractors: もの is a noun (doesn't compose with や), よ is a sentence-final particle, で is means/location.",
       "high_confusion": false,
       "difficulty": 1
     },
@@ -3295,12 +3295,12 @@
       "question_ja": "おしごとは （  ）ですか。",
       "choices": [
         "どう",
-        "こう",
-        "そう",
-        "ああ"
+        "だれ",
+        "いつ",
+        "どこ"
       ],
       "correctAnswer": "どう",
-      "explanation_en": "Pattern n5-050: どう / いかが - 'how / how about' (state, opinion, polite offer). See the pattern detail page for full examples and notes. (Auto-generated template; pending Pass-15 native review.)",
+      "explanation_en": "How is your work? — どう (how) is the natural question word for asking about state. The distractors are other question words that don't fit the predicate: だれ (who) for people, いつ (when) for time, どこ (where) for place. Replaces the earlier kosoado quartet (どう/こう/そう/ああ) which had no scene-direction anchor — see Pass-15 anti-pattern §3.2.4.",
       "distractor_explanations": {
         "こう": "Wrong choice - see pattern detail.",
         "そう": "Wrong choice - see pattern detail.",
@@ -4424,13 +4424,13 @@
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
       "question_ja": "100えん（  ）ありません。",
       "choices": [
-        "だけ",
+        "です",
         "しか",
         "まで",
         "から"
       ],
       "correctAnswer": "しか",
-      "explanation_en": "しか〜ない construction means 'only X (and that's a limited amount)'. Always paired with negative verb (ありません here). The だけ alternative would require a positive verb (100えんだけ あります).",
+      "explanation_en": "しか〜ない/ません construction = 'only X (and that's a limited amount)'. Always paired with a negative verb (ありません). Distractors fail because です is the copula (not a particle), まで is endpoint, から is start point.",
       "difficulty": 2
     },
     {

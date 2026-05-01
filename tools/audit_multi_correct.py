@@ -111,9 +111,59 @@ def has_scene_context(stem: str) -> bool:
                # Quote-marker anchor (forces と uniquely)
                'いいました', 'と いいました',
                # Bracket-quoted strings (force と as quote-marker)
-               '「', '」']
+               '「', '」',
+               # Existence verbs: only に for location-of-existence
+               # (excludes へ as direction, excludes と as "and")
+               'います', 'あります', 'いません', 'ありません',
+               'いる', 'ある', 'いない', 'ない です',
+               # Recipient/source verbs: only に, not へ/と
+               'もらいました', 'もらう', 'もらって',
+               'あげました', 'あげる', 'あげて',
+               'くれました', 'くれる', 'くれて',
+               'おしえました', 'ならいました',
+               # Comparison anchor: どちら / どっち forces と uniquely
+               'どちら', 'どっち', 'くらべ', '比べ',
+               # Companion anchor: と "with X" structure (verb of joint
+               # activity with two-person stem)
+               'いっしょに', '一緒に',
+               # Purpose anchor: かいもの / べんきょう + に + 行く/来る
+               'かいもの', '勉強', 'べんきょう', 'しょくじ', '食事',
+               # Time anchor: numeric時 / 分 → に, never へ
+               '時', '分', '半', 'ごろ',
+               # Range complement: if まで appears the other endpoint is から
+               'まで',
+               ]
     if any(a in stem for a in anchors):
         return True
+    # Question-word + ( ) + negative-verb pattern: tests the n5-013
+    # "question word + も + negative" pattern. は can't attach to question
+    # words (だれは, なには are ungrammatical), so even though は and も
+    # are both scope-restriction particles, the question is single-correct.
+    qword_pattern = re.search(
+        r'(だれ|なに|なん|どこ|いつ|どう|どれ|どの|いくら|いくつ)[\s　]*[（(]',
+        stem,
+    )
+    if qword_pattern:
+        # Confirm a negative verb form follows the blank
+        if re.search(r'(ません|ない|なかった)', stem):
+            return True
+    # Joint-activity-verb pattern: "<person>（ ）<obj>を <verb>" where
+    # the verb is one that doesn't take a に-recipient (見る, 食べる, 飲む,
+    # あそぶ). The person-noun + blank takes と (companion), not に — so
+    # に/と aren't actually interchangeable here.
+    joint_verbs = ['見ました', '見ます', '見る',
+                   '食べました', '食べます', '食べる',
+                   '飲みました', '飲みます', '飲む',
+                   'あそびました', 'あそびます', 'あそぶ',
+                   'べんきょうしました', 'べんきょうします',
+                   '勉強しました', '勉強します']
+    if re.search(r'を[\s　]*\S*(' + '|'.join(map(re.escape, joint_verbs)) + r')', stem):
+        # Confirm there's a person noun (proper noun, さん-suffix, kinship)
+        # before the blank.
+        if re.search(r'(ともだち|友だち|友達|さん|せんせい|先生|'
+                     r'おかあさん|おとうさん|あに|あね|いもうと|おとうと|'
+                     r'かれ|かのじょ|ひと|人|きょうだい|兄弟)[\s　]*[（(]', stem):
+            return True
     return False
 
 
@@ -239,11 +289,18 @@ def load_paper_questions():
                 continue
             paper = json.load(paper_path.open(encoding='utf-8'))
             for q in paper['questions']:
-                # Translate the paper format to a unified shape
+                # Translate the paper format to a unified shape. For
+                # passage-context questions the stem_html is just a pointer
+                # ("→ blank [2]") and the disambiguating context lives in
+                # passage_text — splice them so the anchor heuristics see
+                # the full context.
+                stem = q.get('stem_html', '')
+                if q.get('passage_text'):
+                    stem = q['passage_text'] + '\n' + stem
                 out.append({
                     'id': q['id'],
                     'type': 'mcq',
-                    'question_ja': q.get('stem_html', ''),
+                    'question_ja': stem,
                     'choices': q.get('choices', []),
                     'correctIndex': q.get('correctIndex'),
                     '_source': f'data/papers/{cat["id"]}/paper-{paper_meta["paperNumber"]}.json',
