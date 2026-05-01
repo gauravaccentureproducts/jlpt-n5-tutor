@@ -103,6 +103,18 @@ N5 passages must use only N5 grammar markers. The two patterns most likely to sl
 
 The `JA-21` content-integrity invariant catches both heuristically. Passages that intentionally include borderline late-N5 grammar should set `tier: "late_n5"` to opt out of the strict check.
 
+### Kanji reading display convention
+
+`data/n5_kanji_readings.json` stores both `on` and `kun` readings as **hiragana** (e.g., 高 → on `["こう"]`, kun `["たか"]`). This is a deliberate choice — the traditional pedagogical convention is on-yomi in katakana / kun in hiragana, but uniform-hiragana is simpler to render, easier to compare for invariant checks (JA-22 dedup, JA-24 i-adj-primary-kun), and the on/kun distinction is already conveyed via the labelled fields. UI surfaces that want the typographic split can apply it at render time. Closes OPEN-4 from `feedback/MASTER-TASK-LIST.md`.
+
+### Counter-numeral display convention
+
+The corpus standardises on **arabic numeral + counter** with the counter as kanji when it is in the N5 whitelist (e.g., `7時`, `5本`, `3人`, `100円`) and as kana when it is not (e.g., `1かい`, `8ふん`, `1ぱい` since 階 / 分 / 杯 are out-of-scope). Survey of the corpus 2026-05-01: 194 occurrences arabic+N5-kanji, 43 arabic+kana, 34 kanji+kanji (legacy), 29 kanji+kana (legacy). The arabic-first style dominates and is the going-forward convention. The remaining ~30 kanji+kanji occurrences (e.g., `二人`) appear inside passage prose where the kanji-form is natural reading-text style and don't need normalisation. Closes OPEN-5 from `feedback/MASTER-TASK-LIST.md`.
+
+### Furigana mode
+
+The app exposes a binary on/off furigana toggle (Settings panel). The `feedback/jlpt-n5-tutor-ux-developer-brief2.md` §4.1 originally called for a 3-mode toggle (always / known-only-hide / never), but Pass-13 native-teacher review concluded that auto-furigana produces wrong context-dependent readings (大学 = だいがく vs 大[おお]+学[がく]) and the feature was dropped. In-scope kanji render plain; out-of-scope words are authored in kana. The 3-mode requirement is formally dropped — see `js/settings.js` line 119 + `verification.md` Pass 13. Closes OPEN-8 from `feedback/MASTER-TASK-LIST.md`.
+
 ## Spec
 
 See [`JLPT N5 Grammar Tutor – Functional Spec.docx`](JLPT%20N5%20Grammar%20Tutor%20%E2%80%93%20Functional%20Spec.docx) for the full functional specification, including content rules, UX requirements, data model, and acceptance criteria.

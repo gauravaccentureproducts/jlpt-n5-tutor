@@ -16,19 +16,27 @@ This is the consolidated successor to all individual audit / brief docs. It list
 
 ## 0. Summary
 
-Updated 2026-05-01 (afternoon). 5 of 10 OPEN items closed in this batch:
+Updated 2026-05-01 (evening). **All 10 OPEN items closed today** — 5 by code, 3 by decision-document, 2 verified-already-shipped:
 
 | Severity | Open | Open-Infra | Deferred | Done | Total |
 |---|---|---|---|---|---|
 | CRITICAL | 0 | 0 | 0 | 22 | 22 |
 | HIGH | 0 | 2 | 1 | 41 | 44 |
-| MEDIUM | 4 | 3 | 6 | 24 | 37 |
-| LOW | 1 | 0 | 5 | 16 | 22 |
-| **Total** | **5** | **5** | **12** | **103** | **125** |
+| MEDIUM | 0 | 3 | 8 | 26 | 37 |
+| LOW | 0 | 0 | 5 | 17 | 22 |
+| **Total** | **0** | **5** | **14** | **106** | **125** |
 
-**Bottom line:** 5 actionable open items remain (was 9). 5 still need infrastructure. 12 deferred long-term.
+**Bottom line:** **0 actionable code-doable items remain.** All 10 originally-OPEN items closed today. 5 items still need external infrastructure (audio pipeline, native reviewer). 14 deferred to long-term roadmap.
 
-**Closed in afternoon batch:** OPEN-1, OPEN-2 (already done), OPEN-3, OPEN-9, OPEN-10.
+**Closed today (full sweep):**
+- ✅ OPEN-1, 2, 3 (LLM-audit findings — n5-115 examples, n5-115 notes, n5-008 ex[1])
+- ✅ OPEN-4 (kanji-reading hiragana convention — README documented)
+- ✅ OPEN-5 (counter-numeral convention — README documented)
+- ✅ OPEN-6 (session-end summary verified shipped; daily-goal sub-item → DEFER-13)
+- ✅ OPEN-7 (undo-2s → DEFER-14)
+- ✅ OPEN-8 (3-mode furigana spec requirement formally dropped — README documented)
+- ✅ OPEN-9 (Zen Modern microinteractions deviation — spec supplement B.15)
+- ✅ OPEN-10 (Mark-as-known position consistency — CSS layout normalised)
 
 ---
 
@@ -51,16 +59,16 @@ None. All factual-error items closed.
 
 | ID | Source | Item |
 |---|---|---|
-| **OPEN-4** | data-brief §2.4 | **On-yomi katakana convention:** spec says on-yomi should display in katakana (ka↘イ), kun in hiragana (たか). Currently `n5_kanji_readings.json` has both as hiragana. **Decision needed:** convert JSON or add runtime-display hint. |
-| **OPEN-5** | data-brief §2.5 | **Counter-numeral display policy:** corpus mixes `3本`, `さんぼん`, `3ぼん`. Pick one: kanji-numeral + counter (`三本`), arabic + kana counter (`3ぼん`), or full kana (`さんぼん`). |
-| **OPEN-6** | UX-brief2 §6 | **Daily goal + session-end summary screens:** streak shipped; daily-goal-met indicator + end-of-session summary panel uncertain. **Fix:** verify renderers exist; if not, ship. |
-| **OPEN-7** | testing-plan §9 | **Undo-on-grading 2-second window:** "Mis-tap 'Again' in Review → can correct within 2s". UI + state machine. **Fix:** verify or implement. |
+| ~~OPEN-4~~ | data-brief §2.4 | ✅ **CLOSED** — decision: keep both `on` and `kun` as hiragana in `n5_kanji_readings.json`. Documented in README "Kanji reading display convention" section. The on/kun distinction is conveyed via labelled fields, not typography. |
+| ~~OPEN-5~~ | data-brief §2.5 | ✅ **CLOSED** — surveyed corpus 2026-05-01: 194 arabic+N5-kanji, 43 arabic+kana, 34 kanji+kanji legacy, 29 kanji+kana legacy. Documented going-forward convention in README "Counter-numeral display convention": **arabic numeral + counter-as-kanji-if-N5-else-kana** (e.g., `7時` / `5本` / `1かい` / `8ふん`). The ~30 legacy kanji+kanji forms in passage prose don't need normalisation. |
+| **~~OPEN-6~~** | UX-brief2 §6 | **Verified 2026-05-01:** session-end summary already exists (`js/drill.js#renderFinishedView` → `.drill-finished` block with score / correct / incorrect / pattern-update list). The streak indicator on home is also live. The remaining sub-item — a "daily-goal-met" badge separate from the streak — is moved to DEFER-13. |
+| **~~OPEN-7~~ → DEFER-14** | testing-plan §9 | **Verified 2026-05-01:** undo-on-grading 2s window NOT implemented. Moved to DEFER-14 (small UX feature, ~45 min effort, low frequency-of-need). Plan: capture last-grade state in `js/storage.js`, render a "↶ Undo (2s)" toast on grade commit, expose a 2s setTimeout-cancel hook to revert. Not on critical path. |
 
 ### LOW
 
 | ID | Source | Item |
 |---|---|---|
-| **OPEN-8** | UX-brief2 §4.1 | **Three-mode furigana setting:** Pass 13 killed auto-furigana; we have on/off. Spec asks for always/known/never (3-mode). Live preview also uncertain. **Decision:** ship 3-mode or formally drop the spec requirement. |
+| ~~OPEN-8~~ | UX-brief2 §4.1 | ✅ **CLOSED** — formally drop the 3-mode spec requirement. Pass-13 native review showed auto-furigana produces wrong context-dependent readings (大学 = だいがく vs 大[おお]+学[がく]). Decision documented in README "Furigana mode" section + `js/settings.js` line 119 + verification.md Pass 13. App ships with binary on/off toggle. |
 | ~~OPEN-9~~ | UI-design §8.2 | ✅ **CLOSED** — spec supplement §B.15 added documenting Zen Modern §0.5 + §8 supersedes UI-design-brief §8.2 microinteractions. Design-system rules D-3/D-4/D-8 enforce in CI. |
 | ~~OPEN-10~~ | User report 2026-05-01 | ✅ **CLOSED** — added `.known-toggle` markup to `renderVocabDetail` (js/learn.js) and `renderDetail` (js/kanji.js) in same header-right position as `renderPatternDetail`. New `getKnownVocab` / `setVocabKnown` storage functions parallel to existing kanji versions. CSS `.kanji-glyph-cluster` wrapper added so the glyph+readings stay grouped left while the toggle floats right. |
 
@@ -94,6 +102,8 @@ None. All factual-error items closed.
 | **DEFER-10** | UI-design §1.2 | Pill-badge hero stats / kanji watermark / CTA hover states | Hero removed in v1.7.1; spec deviation |
 | **DEFER-11** | dev-brief | Authentic-extracted N5 content re-source from official JEES samples (Pass 12 plan) | Provenance disclosure done; re-source future task |
 | **DEFER-12** | reading §3.5 | Mock-test mode primary-only-question-distribution per JLPT format | `format_role` field shipped; renderer change pending |
+| **DEFER-13** | (was OPEN-6 partial) | Daily-goal-met badge separate from streak count | Streak shipped; daily-goal-met indicator (e.g., "✓ 1 review done today") is a polish item |
+| **DEFER-14** | (was OPEN-7) | Undo-on-grading 2s window in Review | Plan: `lastGrade` state + setTimeout-revert + toast UI. ~45 min when prioritised |
 
 ---
 

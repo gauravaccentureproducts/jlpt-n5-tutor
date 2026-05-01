@@ -2199,7 +2199,12 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
 
 /* Vocab detail page */
 .vocab-detail { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r); padding: 20px 24px; }
-.vocab-header { padding-bottom: 12px; border-bottom: 1px solid var(--c-border); margin-bottom: 16px; }
+/* Vocab header reuses .pattern-header for layout (flex / justify-content
+ * space-between / align-items / gap / margin-bottom). It only adds the
+ * sectional chrome (border + padding-bottom). Do NOT override margin-bottom
+ * here — the .pattern-header value (24px) is the canonical detail-header
+ * spacing per OPEN-10 Mark-as-known position consistency. */
+.vocab-header { padding-bottom: 12px; border-bottom: 1px solid var(--c-border); }
 .vocab-form-big { font-size: 48px; line-height: 1.1; margin: 6px 0; }
 .vocab-reading-big { font-size: 22px; color: var(--c-text-muted, #555); margin: 0 0 6px; }
 .vocab-gloss-big { font-size: 18px; margin: 0; }
@@ -2520,7 +2525,13 @@ ruby[data-glyph] { cursor: pointer; }
 }
 .kanji-grid-cell:hover { background: rgba(20, 69, 42, 0.08); }
 .kanji-detail { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r); padding: 20px 24px; }
-.kanji-glyph-row { display: flex; gap: 24px; align-items: flex-start; margin: 16px 0; flex-wrap: wrap; }
+/* Kanji glyph row reuses .pattern-header for layout. It does NOT override
+ * gap / margin / flex-wrap any more — those used to be 24/16/wrap which
+ * desynced the Mark-as-known toggle position vs grammar + vocab detail
+ * pages. Per OPEN-10 (Mark-as-known position consistency, 2026-05-01)
+ * the canonical detail-header layout is the .pattern-header rule (gap 16,
+ * margin-bottom 24). */
+.kanji-glyph-row {}
 .kanji-glyph-big { font-size: 96px; line-height: 1; padding: 8px 24px; border: 1px solid var(--c-border); border-radius: var(--r); background: var(--c-bg); }
 .kanji-readings p { margin: 4px 0; }
 .kanji-examples { margin-top: 24px; }
