@@ -11,18 +11,18 @@ Last updated: 2026-04-30 (Pass-14 questions.json comprehensive audit registered:
 
 ## Status snapshot
 
-- 187/187 patterns enriched, 163 real questions (no stubs; post-Pass-14 + Pass-15 cleanup)
+- 187/187 patterns enriched, **198 real questions** (no stubs; post-Pass-14/15/16/17 cleanup). Distribution: 168 mcq / 16 sentence_order / 14 text_input. New mcq subtypes: `paraphrase` (10 from external-corpus Pass-15 P0), `kanji_writing` (6 from Pass-15 P1).
 - **17 routed views + sub-paths**: Home / **Learn hub (5-card: Grammar/Vocab/Kanji/Dokkai/Listening)** with sub-paths `#/learn/grammar`, `#/learn/vocab`, `#/learn/vocab/<form>` (per-word detail with 5 example sentences), `#/learn/<patternId>` / Kanji (`#/kanji`, `#/kanji/<glyph>`) / Test (`#/test`, `#/test/<n>` direct-launch with quit-prompt) / Practice (`#/drill`, was "Daily Drill") / Review (SM-2 SRS) / Summary / Diagnostic / Settings / Reading / Listening / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters
 - SM-2 SRS in Review (4-button grading)
-- Service worker `jlpt-n5-tutor-v18` (stale-while-revalidate for shell, cache-first for content); update toast on new shell; lazy-caches audio on first play
+- Service worker `jlpt-n5-tutor-v71` (stale-while-revalidate for shell, cache-first for content); update toast on new shell; lazy-caches audio on first play
 - 5-locale i18n shell (en at v1, vi/id/ne/zh structured)
 - PWA manifest installable
 - Export / import progress round-trips through JSON
 - 37 browser-runnable tests
-- **Vocab corpus**: 1002 structured entries (data/vocab.json)
+- **Vocab corpus**: 1003 structured entries (data/vocab.json); whitelist 951 entries
 - **Kanji corpus**: 106 entries with stroke-order SVG slot (data/kanji.json) — recovered 9 missing entries via Pass-13 build-pipeline fix.
 - **Reading corpus**: 30 graded passages with 2-3 comprehension Qs each (data/reading.json)
-- **Listening corpus**: 12 items across 3 JLPT formats (4 task / 4 point / 4 utterance) in data/listening.json
+- **Listening corpus**: 30 items across 3 JLPT formats in data/listening.json (expanded from 12 by Pass-15-adjacent corpus work)
 - **Audio assets**: 491 MP3 files committed - 449 grammar examples, 30 reading passages, 12 listening scripts (~19 MB total). Generated via gTTS (build-time only).
 - **Audio TTS pipeline**: tools/build_audio.py - auto-detects piper-tts / gtts / pyttsx3. Idempotent. Uses string-suffix concat (not Path.with_suffix) so example IDs like 'n5-001.0' don't collide.
 - **Codebase em-dash-free** (881 occurrences stripped)
