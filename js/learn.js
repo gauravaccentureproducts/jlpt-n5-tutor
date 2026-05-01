@@ -269,24 +269,12 @@ function renderTOC(container, data) {
   }
   const sorted = [...byCategory.entries()].sort((a, b) => a[1].order - b[1].order);
 
-  // Build a category jump menu so users can skip directly to any of the
-  // 32 categories without scrolling 187 cards. Renders as a sticky chip
-  // bar on desktop; collapses to a horizontally-scrolling strip on mobile.
   const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  const jumpItems = sorted.map(([cat, { items }]) => `
-    <button type="button" class="cat-chip" data-jump="${slugify(cat)}">
-      <span class="cat-chip-label">${esc(cat)}</span>
-      <span class="cat-chip-count">${items.length}</span>
-    </button>
-  `).join('');
 
   let html = `
     <a class="back-link" href="#/learn">← Back to Learn</a>
     <h2>Grammar</h2>
-    <p class="page-lede">${data.patterns.length} patterns in ${sorted.length} categories. Jump to a category or scroll.</p>
-    <nav class="cat-jump" aria-label="Grammar category jump menu">
-      ${jumpItems}
-    </nav>
+    <p class="page-lede">${data.patterns.length} patterns in ${sorted.length} categories.</p>
     <details class="learn-tools-wrap">
       <summary>Topic deep-dives</summary>
       <div class="learn-tools">
@@ -320,14 +308,6 @@ function renderTOC(container, data) {
     html += `<div class="placeholder" style="margin-top:24px"><p>Scaffold currently has 1 example pattern. Add more to <code>data/grammar.json</code> as you author content.</p></div>`;
   }
   container.innerHTML = html;
-
-  // Wire jump-menu chips (JS scroll, no hash change so the router stays put).
-  container.querySelectorAll('[data-jump]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const target = container.querySelector(`#cat-${btn.dataset.jump}`);
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
 }
 
 function renderPatternDetail(container, p) {
