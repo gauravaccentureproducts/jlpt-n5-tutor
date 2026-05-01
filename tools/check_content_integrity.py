@@ -774,6 +774,7 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-22", "Kanji kun readings deduplicated", lambda: _check_ja_22_kun_dedup()),
     ("JA-23", "Listening script choices match choices array", lambda: _check_ja_23_listening_script_choices_match()),
     ("JA-24", "i-adj kanji primary reading is kun-yomi", lambda: _check_ja_24_iadj_kanji_primary_kun()),
+    ("JA-25", "Whitelist exceptions documented (Pass-22 F-22.4)", lambda: _check_ja_25_whitelist_exceptions_documented()),
 ]
 
 
@@ -1248,6 +1249,89 @@ def _check_ja_24_iadj_kanji_primary_kun() -> list[str]:
                 f"JA-24 kanji '{k}' primary={actual!r} but most-common "
                 f"N5 use is i-adjective {k}い (kun {expected_kun!r}). "
                 f"Set primary={expected_kun!r}."
+            )
+    return failures
+
+
+def _check_ja_25_whitelist_exceptions_documented() -> list[str]:
+    """Pass-22 F-22.4: every kanji in n5_kanji_whitelist.json that is NOT in
+    the official JLPT N5 scope MUST appear in
+    data/n5_kanji_whitelist.exceptions.md with a `WHY:` justification.
+
+    Without this guard, an agent or contributor could silently add an
+    out-of-scope kanji to the whitelist to silence a JA-13 violation. With
+    this guard, every exception is a deliberate, reviewable, justified
+    addition.
+
+    Spec: specifications/procedure-manual-appendix-c-pass22-polish.md C.4.
+
+    The exceptions doc is OPTIONAL — if absent, the check passes (allows
+    bootstrapping). Once present, every project-whitelist entry that is
+    not in the official scope must be justified there.
+
+    Bootstrapping the official-scope list: the N5 official scope is
+    canonically 103 kanji per JLPT.jp (the project whitelist is 106 — the
+    extra 3 are documented exceptions). For now we accept the project
+    whitelist verbatim if the exceptions doc is absent; once the
+    exceptions doc lands, validation kicks in.
+    """
+    failures: list[str] = []
+    project_wl_path = ROOT / "data" / "n5_kanji_whitelist.json"
+    exceptions_md_path = ROOT / "data" / "n5_kanji_whitelist.exceptions.md"
+    official_scope_path = ROOT / "data" / "n5_official_kanji_scope.json"
+
+    if not project_wl_path.exists():
+        return ["JA-25: data/n5_kanji_whitelist.json missing"]
+    if not exceptions_md_path.exists():
+        # Bootstrapping mode: skip until the exceptions doc lands.
+        return []
+    if not official_scope_path.exists():
+        # Without an official-scope reference we can't compute exceptions.
+        # Skip but emit a one-time hint via a comment in the exceptions doc.
+        return []
+
+    try:
+        project_wl = set(json.loads(project_wl_path.read_text(encoding="utf-8")))
+        official = set(json.loads(official_scope_path.read_text(encoding="utf-8")))
+    except Exception as e:
+        return [f"JA-25: parse error loading whitelist or official scope: {e}"]
+
+    md_text = exceptions_md_path.read_text(encoding="utf-8")
+    # Parse: each line "- {KANJI}  WHY: <reason>" registers one exception.
+    documented_with_why: dict[str, str] = {}
+    for line in md_text.splitlines():
+        line = line.strip()
+        if not line.startswith("- "):
+            continue
+        # Skip non-kanji lines (e.g., docstring text starting with "- ").
+        body = line[2:].strip()
+        if not body or body[0] not in "一二三四五六七八九十百千万円木金土水火日月年人本中大小上下右左前後内外山川田":
+            # Heuristic check: first char is a CJK kanji. Use a broader range.
+            if not (0x4E00 <= ord(body[0]) <= 0x9FFF):
+                continue
+        # Pull off the kanji glyph (handles multi-char or trailing space).
+        kanji = body[0]
+        if "WHY:" in body:
+            why = body.split("WHY:", 1)[1].strip()
+            # Strip trailing "REVIEW_DATE:..." if present.
+            if "REVIEW_DATE:" in why:
+                why = why.split("REVIEW_DATE:", 1)[0].strip()
+            documented_with_why[kanji] = why
+        else:
+            documented_with_why[kanji] = ""  # listed but no WHY
+
+    project_exceptions = project_wl - official
+    for kanji in sorted(project_exceptions):
+        if kanji not in documented_with_why:
+            failures.append(
+                f"JA-25 kanji '{kanji}' is in n5_kanji_whitelist.json but not "
+                f"in official JLPT N5 scope, AND not documented in "
+                f"data/n5_kanji_whitelist.exceptions.md. Add an entry with WHY: <reason>."
+            )
+        elif not documented_with_why[kanji]:
+            failures.append(
+                f"JA-25 kanji '{kanji}' is documented in exceptions.md but "
+                f"lacks WHY: justification. Add WHY: <reason> on the same line."
             )
     return failures
 

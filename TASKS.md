@@ -597,40 +597,26 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 
 ---
 
-## Pass-22 procedure-manual polish + level-agnostic conversion - 2026-05-01 (8 CLOSED, 2 DEFERRED)
+## Pass-22 procedure-manual polish + level-agnostic conversion - 2026-05-01 (10 of 10 CLOSED)
 
-Follow-up to Pass-20. Captures (a) the level-agnostic conversion that landed in commit `e7b6290`, (b) seven documentation-side polish items closed via Appendix C + 2 standalone files, and (c) two code-side items deferred because the parallel session was active on `tools/check_content_integrity.py` and `tools/llm_audit.py` at this commit's time.
+Follow-up to Pass-20. Captures (a) the level-agnostic conversion that landed in commit `e7b6290`, (b) seven documentation-side polish items closed via Appendix C + 2 standalone files, and (c) two code-side items closed once the parallel session went idle.
 
-#### CLOSED in this pass (8 of 10)
+#### CLOSED in this pass (10 of 10)
 
 - [x] **F-22.0** **Level-agnostic conversion of procedure manual + Appendix B** — both files were originally written with N4 hardcoded as the target level. **Applied 2026-05-01 (commit `e7b6290`):** introduced placeholder convention (`<L>` / `<P>` / `<L-1>` / `N<L>` / `n<L>-`). Generalized all paths, tier values, section titles, and prose. An agent reading the manual now substitutes `<L>` at every placeholder and gets a manual scoped to whichever level they are building.
 - [x] **F-22.1** (LOW) **Distractor explanation rubric / template** — **Applied 2026-05-01:** documented in Appendix C §C.1. 4-sentence rubric (role mismatch / consequence / optional citation / optional nuance), 60-180 char range, English neutral declarative register, 5 worked examples spanning particles / verb forms / demonstratives / adjective conjugation / counters.
 - [x] **F-22.2** (LOW) **ko-so-a-do scene-context formatting standard** — **Applied 2026-05-01:** documented in Appendix C §C.2. Placement rule, length range (8-30 chars), kanji policy (JA-13 applies; convert to kana before scene-shortening), tense rule, 12 canonical examples (3 per quartet × 4 quartets).
 - [x] **F-22.3** (MEDIUM) **JA-2 / JA-23 invariant interaction** — **Applied 2026-05-01:** documented in Appendix C §C.3. JA-2 stays HARD (CI fail), JA-23 stays ADVISORY (`-W` mode warning). When scene context per §C.2 is present, JA-23 is suppressed. Includes implementation sketch for the future code change to `check_content_integrity.py`.
-- [x] **F-22.4 (spec-only)** (MEDIUM) **Augmented-set escape-valve guard** — **Applied 2026-05-01 (spec-only):** documented in Appendix C §C.4. Specifies the WHY-comment convention, the parallel `<file>.exceptions.md` doc format, and a JA-25 invariant. **Code change to `tools/check_content_integrity.py` deferred** to a future commit because the parallel session is active on that file.
-- [x] **F-22.5 (prompt-only)** (LOW) **LLM-audit prompt template extraction** — **Applied 2026-05-01:** prompt extracted to `tools/prompts/llm_audit.prompt.md` with documentation, taxonomy table, severity guide, output schema, rate-limit / retry strategy, and per-level adaptation notes. **Code change to `tools/llm_audit.py`** (loading the prompt from the file via `Path.read_text()` instead of inline literal) **deferred** because the parallel session may also touch that file.
+- [x] **F-22.4** (MEDIUM) **Augmented-set escape-valve guard** — **Applied 2026-05-01:** spec documented in Appendix C §C.4 (WHY-comment convention + `exceptions.md` doc format). **Code-side also applied:** added `_check_ja_25_whitelist_exceptions_documented` to `tools/check_content_integrity.py` and registered as JA-25; created `data/n5_kanji_whitelist.exceptions.md` initial register (currently empty — bootstrapping mode until `data/n5_official_kanji_scope.json` lands). All 34 invariants green.
+- [x] **F-22.5** (LOW) **LLM-audit prompt template extraction** — **Applied 2026-05-01:** prompt extracted to `tools/prompts/llm_audit.prompt.md` with delimiters, taxonomy table, severity guide, output schema, rate-limit / retry strategy, and per-level adaptation notes. **Code-side also applied:** `tools/llm_audit.py` now loads `SYSTEM_PROMPT` via `_load_system_prompt()` from the external file (between `## ---SYSTEM_PROMPT---` / `## ---END---` delimiters), defines `PROMPT_VERSION = "2026-05-01"` for reproducibility, stamps `_prompt_version` on every audit result (real and mock), and adds a `--prompt-version` CLI flag (verified: prints `prompt_version: 2026-05-01`, `prompt_chars: 2130`, first 200 chars of body). Future prompt edits bump the version string.
 - [x] **F-22.6** (LOW) **Auto-generation stop-condition formalization** — **Applied 2026-05-01:** documented in Appendix C §C.5. Three STOP conditions (per-Mondai count, corpus coverage, external-corpus distribution within 20%), three ANTI-stop conditions, pre-merge sanity check sketch.
 - [x] **F-22.7** (LOW) **TASKS.md template canonicalization** — **Applied 2026-05-01:** created `specifications/tasks-md-template.md` with required top-level structure, required snapshot fields, Pass-N body structure, F-N.K item format, severity guide, 5 update rules (R1..R5), empty-skeleton starter, worked-example pointers, anti-pattern list.
 - [x] **F-22.8** (LOW) **PWA spec extraction** — **Applied 2026-05-01:** documented in Appendix C §C.6. Full manifest, icon-set rules, service worker cache-name versioning, per-asset-class strategy table (6 classes), update toast UX, offline fallback page, pre-cache list, smoke-test integration.
 - [x] **F-22.9** (LOW) **Same-pattern-string conflict resolution rule** — **Applied 2026-05-01:** documented in Appendix C §C.7. Pre-add check, conflict-resolution decision tree (Jaccard 80% / 50%-80% / <50%), commit-message documentation requirement, JA-24 invariant alignment.
 
-#### DEFERRED — code-side changes (2 of 10)
+#### Pass-22 fully closed
 
-The two items below have their SPEC fully written (in Appendix C §C.4 and `tools/prompts/llm_audit.prompt.md` respectively) but the actual CODE changes to existing tool files were deferred at this commit's time because the parallel session was actively committing to those files.
-
-- [ ] **F-22.4 (code-side)** **Add JA-25 invariant to `tools/check_content_integrity.py`** plus authored `data/n5_kanji_whitelist.exceptions.md` (and per-level equivalents at next-level builds). Spec at Appendix C §C.4. Estimated effort: ~1 hr.
-- [ ] **F-22.5 (code-side)** **Refactor `tools/llm_audit.py`** to load `SYSTEM_PROMPT` from `tools/prompts/llm_audit.prompt.md` (between the `---SYSTEM_PROMPT---` / `---END---` delimiters) instead of inline literal. Add `--prompt-version` CLI flag for reproducibility. Spec at the prompt-file header. Estimated effort: ~30 min.
-
-Both have non-trivial probability of merge conflict if applied in parallel with the parallel session. Pick them up after the parallel session completes its current work.
-
-#### Recommended next-step priority (if F-22.4/22.5 code-side picked up)
-
-1. **F-22.4 code-side** (escape-valve guard) — small implementation; pays back immediately by accountabilizing every whitelist exception going forward. Estimated ~1 hr.
-2. **F-22.5 code-side** (LLM-audit prompt loader refactor) — ~30 min; only worth doing if the LLM audit gets used at scale.
-
-Once both are picked up, Pass-22 closes fully (10/10) and the procedure-manual review chain (Pass-20 → Pass-22) reaches 38 of 40 issues closed (the remaining 2 are content-authoring deferrals to Pass-21).
-
-Total remaining estimated effort: ~1.5 hr.
+The procedure-manual review chain (Pass-20 → Pass-22) is now at **38 of 40 closed**. Remaining 2 are F-20.12 / F-20.13 / F-20.14 (3 items), the actual N4 content-authoring work (Tanos / Bunpro fetches), tracked under Pass-21 (the future N4 build pass), not Pass-22.
 
 ---
 

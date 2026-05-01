@@ -49,40 +49,53 @@ except ImportError:
     SDK_AVAILABLE = False
 
 
-SYSTEM_PROMPT = """You are a senior 日本語教師 (Japanese-language teacher) auditing JLPT N5 grammar pattern data. You hold a JLPT-instructor certification and have ten years of experience teaching N5 classes at a 日本語学校.
+# SYSTEM_PROMPT is loaded from tools/prompts/llm_audit.prompt.md so the
+# prompt is human-readable, version-controllable, and reusable across
+# levels (Pass-22 F-22.5). The prompt body lives between the
+# `---SYSTEM_PROMPT---` and `---END---` delimiters in that file;
+# everything else in the file is documentation. If the prompt file is
+# missing or malformed, fall back to a placeholder so callers get a
+# clear error rather than silent corruption.
+PROMPT_FILE = ROOT / "tools" / "prompts" / "llm_audit.prompt.md"
+PROMPT_VERSION = "2026-05-01"  # bump on every prompt-body edit; surfaced in audit output
 
-Your job: review one grammar pattern's data and flag any QUALITY issues. Be conservative — flag CLEAR errors, not stylistic preferences. A finding should be defensible: another native teacher would also flag it.
 
-Issue taxonomy (use exactly these `type` values):
+def _load_system_prompt() -> str:
+    """Extract the SYSTEM_PROMPT body from the external prompt file.
 
-- WRONG_READING — a kanji or word's reading is incorrect for the context (e.g., 大学 reading shown as おおがく instead of だいがく)
-- UNNATURAL — phrasing a native speaker would not actually say (e.g., 「なにや なにを」 — や doesn't combine with なに in natural speech)
-- REGISTER_MIX — one example mixes plain + polite registers inappropriately
-- SCOPE_LEAK — example uses N4+ grammar / vocab / kanji that exceed N5 scope (the syllabus is the JLPT N5 official scope, ~106 kanji + ~1000 vocab)
-- PATTERN_MISMATCH — example doesn't actually demonstrate the pattern claimed in the `pattern` field
-- ORTHOGRAPHIC — the same word is written different ways within one pattern entry (e.g., 「ともだち」 in one example and 「友だち」 in another)
-- TRANSLATION — the English translation doesn't match the Japanese intent
-- OTHER — any other clear issue (you must explain in `issue`)
+    The file is structured as:
+        ... documentation ...
+        ## ---SYSTEM_PROMPT---
+        <prompt body>
+        ## ---END---
+        ... more documentation ...
 
-Severity guide:
-- CRITICAL: directly teaches wrong Japanese. Block release.
-- HIGH: pedagogical error that causes learner confusion. Fix in next release.
-- MEDIUM: inconsistency or minor inaccuracy. Batch in next quarterly pass.
-- LOW: polish / orthographic preference.
+    The two `## ---...---` delimiters are exact-match strings (with the
+    leading `## ` heading marker so they round-trip through Markdown
+    renderers without breaking). Anything between them is the prompt.
+    """
+    if not PROMPT_FILE.exists():
+        raise FileNotFoundError(
+            f"LLM-audit prompt file missing: {PROMPT_FILE}. "
+            "Pass-22 F-22.5 expected this file at tools/prompts/llm_audit.prompt.md. "
+            "Check the procedure-manual Appendix C or restore from git history."
+        )
+    text = PROMPT_FILE.read_text(encoding="utf-8")
+    start_marker = "## ---SYSTEM_PROMPT---"
+    end_marker = "## ---END---"
+    if start_marker not in text or end_marker not in text:
+        raise ValueError(
+            f"Prompt file at {PROMPT_FILE} is missing required delimiters. "
+            f"Expected to find '{start_marker}' and '{end_marker}'. "
+            "Did the file get edited in a way that broke the markers?"
+        )
+    body = text.split(start_marker, 1)[1].split(end_marker, 1)[0].strip()
+    if not body:
+        raise ValueError(f"Prompt body is empty in {PROMPT_FILE}.")
+    return body
 
-Output STRICT JSON only — no prose, no markdown. Schema:
 
-{"findings": [{
-  "severity": "CRITICAL|HIGH|MEDIUM|LOW",
-  "type": "WRONG_READING|UNNATURAL|REGISTER_MIX|SCOPE_LEAK|PATTERN_MISMATCH|ORTHOGRAPHIC|TRANSLATION|OTHER",
-  "field": "<json path, e.g. examples[0].ja>",
-  "issue": "<one-sentence description>",
-  "suggested_fix": "<concrete replacement text or change>"
-}]}
-
-If the pattern is clean, output {"findings": []}.
-
-You are NOT being asked to assess teaching quality, ordering, or completeness. Only the specific issues in the taxonomy above."""
+SYSTEM_PROMPT = _load_system_prompt()
 
 
 def build_user_prompt(pattern: dict, n5_kanji: list[str]) -> str:
@@ -130,8 +143,15 @@ def audit_one(pattern: dict, n5_kanji: list[str], mock: bool = False) -> dict:
             "_mock": True,
             "_prompt_chars": len(SYSTEM_PROMPT) + len(user),
             "_pattern_id": pattern["id"],
+            "_prompt_version": PROMPT_VERSION,
         }
-    return call_claude(SYSTEM_PROMPT, user)
+    result = call_claude(SYSTEM_PROMPT, user)
+    # Stamp the prompt version on every real result for reproducibility
+    # (Pass-22 F-22.5). The model's findings are sensitive to the prompt
+    # content; without this stamp, comparing historical audits is unsafe.
+    if isinstance(result, dict):
+        result["_prompt_version"] = PROMPT_VERSION
+    return result
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -145,7 +165,22 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--mock", action="store_true", help="Don't call the API; print prompts and exit")
     parser.add_argument("--out", default="-", help="Output file (- for stdout)")
+    parser.add_argument(
+        "--prompt-version",
+        action="store_true",
+        help="Print the loaded prompt's version + first 200 chars and exit (for reproducibility audits)",
+    )
     args = parser.parse_args(argv)
+
+    # Pass-22 F-22.5: surface the prompt version so historical audit results
+    # remain reproducible. Run with --prompt-version to dump the active version
+    # without spending API tokens.
+    if args.prompt_version:
+        print(f"prompt_version: {PROMPT_VERSION}")
+        print(f"prompt_file: {PROMPT_FILE.relative_to(ROOT)}")
+        print(f"prompt_chars: {len(SYSTEM_PROMPT)}")
+        print(f"first_200_chars: {SYSTEM_PROMPT[:200]}...")
+        return 0
 
     grammar = json.loads(GRAMMAR.read_text(encoding="utf-8"))
     n5_kanji = json.loads(N5_KANJI_WL.read_text(encoding="utf-8"))

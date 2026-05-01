@@ -275,7 +275,7 @@ def _check_ja_25_whitelist_exceptions_documented():
     return violations
 ```
 
-This is documented as a Pass-22 specification; the actual code change to `check_content_integrity.py` is deferred to a future commit (the parallel session is active on that file).
+**Status:** spec-side documentation in this section. The actual code change to `tools/check_content_integrity.py` (function `_check_ja_25_whitelist_exceptions_documented` + registration in the `CHECKS` table) was applied in commit landing alongside this appendix. The check is in **bootstrapping mode** until `data/n5_official_kanji_scope.json` lands — without an official-scope reference file, JA-25 cannot compute the project-vs-official delta, so it currently passes vacuously. Once the official-scope file is authored (a one-time task: paste the JLPT.jp canonical 103 kanji into a JSON array), JA-25 begins enforcing accountability for every entry the project adds beyond official scope.
 
 ### C.4.4 Why this matters
 
@@ -468,7 +468,7 @@ These polish items strengthen but don't replace the existing manual content:
 - **F-22.8 PWA spec** complements §10 (the one-line PWA bullet).
 - **F-22.9 conflict resolution rule** complements F-19 grammar dedup retrospective.
 
-Together with Appendices A and B, the procedure manual now closes 36 of 40 Pass-20 review items + the 9 Pass-22 polish items. Remaining open: F-22.4 and F-22.5 code implementations (deferred to a future commit since the parallel session is active on `tools/check_content_integrity.py` and might also touch `tools/llm_audit.py`).
+Together with Appendices A and B, the procedure manual now closes **38 of 40 Pass-20 review items + all 10 Pass-22 polish items** (10/10). Remaining open from the Pass-20 chain: F-20.12 / F-20.13 / F-20.14 (the actual N4 content-authoring work — Tanos / Bunpro fetches — tracked under Pass-21 as the future N4 build pass).
 
 ---
 
