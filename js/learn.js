@@ -275,19 +275,6 @@ function renderTOC(container, data) {
     <a class="back-link" href="#/learn">← Back to Learn</a>
     <h2>Grammar</h2>
     <p class="page-lede">${data.patterns.length} patterns in ${sorted.length} categories.</p>
-    <details class="learn-tools-wrap">
-      <summary>Topic deep-dives</summary>
-      <div class="learn-tools">
-        <a href="#/waga">は vs が →</a>
-        <a href="#/kosoado">Demonstratives →</a>
-        <a href="#/verbclass">Verb groups →</a>
-        <a href="#/teform">て-form gym →</a>
-        <a href="#/particles">Particle pairs →</a>
-        <a href="#/counters">Counters →</a>
-        <a href="#/reading">Reading →</a>
-        <a href="#/listening">Listening →</a>
-      </div>
-    </details>
   `;
   for (const [cat, { items }] of sorted) {
     items.sort((a, b) => (a.patternOrder ?? 0) - (b.patternOrder ?? 0));
