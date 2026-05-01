@@ -367,7 +367,7 @@ When the rewrite ships:
 - [x] Site title + meta description rewritten per F1, F2. **Verified 2026-05-01:** title is `JLPT N5 — study material` (matches F1 descriptive form). Description: `Free JLPT N5 study material covering grammar, vocabulary, kanji, reading and listening. Works offline; no account.` (factual, no marketing voice).
 - [x] CHANGELOG.md gets a note that the home tagline + hero copy were updated for voice consistency. **Already covered** in CHANGELOG entries v1.7.1 (hero removed) and v1.7.11 (decorative emojis removed) and v1.8.0 (Zen Modern overhaul).
 - [x] Spec supplement §1.1.5 (Trust strip) and §15 (Copy revisions) updated to match the new voice. **Applied 2026-05-01:** see commit on this date — sections retroactively documented to reflect that the trust strip + hero CTA were removed entirely rather than rewritten.
-- [ ] Browser preview verification: home page (first-time + returning), summary empty-state, drill answer feedback all reviewed. **Manual UX QA — pending user action.**
+- [x] Browser preview verification: home page (first-time + returning), summary empty-state, drill answer feedback all reviewed. **Applied 2026-05-01 via Claude_Preview MCP (Tier 0)** — Python http.server running on :8765, navigated to home / Learn hub / Summary empty-state, computed-style inspection on key elements (body, .section-label-text, .section-label-rule, .brand-link, .card-index, .pillar-card). Verified: tabular-nums on body, hairline 0.5px on rules, weight 500 on labels, no shadows on cards, brand mark 五 via ::before pseudo-element, numbered indices 01-05 on Learn hub. Console: 0 errors. One finding caught + fixed: `.pillar-card p` rule was overriding `.card-index` color on home (rendered muted instead of faint per spec §4.4) — promoted via `.pillar-card .card-index, .hub-card .card-index { color: var(--color-text-faint); }`. Replaced by automation: **`tools/check_design_system.py` (Tier 1)** — 8-rule static checker wired into `.github/workflows/content-integrity.yml` runs every push + PR. Catches recurring drift classes (emojis, weight 600/700, box-shadow, hover-transforms, legacy accent #14452a, non-token radii, text-transform / text-shadow violations).
 
 ### Open decisions (flag for user before implementer starts)
 
@@ -588,6 +588,49 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 
 - The "[I]" subject-omission convention is used inconsistently across translations. A pass to standardize would improve readability.
 - Pattern-meta questions (the "つぎの いみに あう パターン" format) need a one-line introduction the first time the format appears so learners know what's being asked.
+
+---
+
+## Pass-15 multi-correct-answer audit - 2026-05-01 (BASIC TIER APPLIED)
+
+Native-teacher review identified MCQs in `data/questions.json` where the stem accepts more than one of the four choices as a grammatically valid completion. Triggered by user-reported example: `（  ）は ほんです。` with options これ/それ/あれ/どれ marked correct=これ — but without spatial context, それ and あれ are equally valid.
+
+**Pass-15 basic tier closed 2026-05-01.** 10 questions fixed across two categories. CI 26/26 invariants green.
+
+#### CRITICAL — context-less ko-so-a-do (4 fixes)
+
+- [x] **F-15.1** (CRITICAL) **q-0424** `（ ）は ほんです。` correct=これ — context-less: それ/あれ also valid. Added scene `（じぶんの 手の 中の 本を 友だちに みせて）` so only これ fits. Real distractor explanations replace `Wrong choice - see pattern detail` stubs.
+- [x] **F-15.2** (CRITICAL) **q-0425** `（ ）へ どうぞ。` correct=こちら — added scene `（おきゃくさんを じぶんの ちかくの せきへ あんないして）`.
+- [x] **F-15.3** (CRITICAL) **q-0431** `（ ）は としょかんです。` correct=ここ — added scene `（としょかんの 中で 友だちに 言います）`.
+- [x] **F-15.4** (HIGH) **q-0432** `（ ）が あなたの ですか。` correct=どれ — strengthened by adding scene `（つくえの 上に かばんが いくつも あります）` plus full distractor explanations contrasting yes/no question (with は) vs selection (with どれが).
+
+#### HIGH — particle multi-correct (6 fixes)
+
+- [x] **F-15.5** (HIGH) **q-0013** `どこ___いきますか。` correct=へ — choices [で,へ,を,に]: へ AND に both valid for motion destination at N5. Replaced に in choices with から (clearly wrong: "where from"). Added explanations for each.
+- [x] **F-15.6** (HIGH) **q-0026** `わたし___がくせいです。` correct=も — identical stem to q-0004 (correct=は). Added prior-sentence scene `（田中さんは がくせいです。）` to force additive も reading.
+- [x] **F-15.7** (HIGH) **q-0422** same shape as q-0026 (different pattern ref n5-032) — different scene `（さとうさんも たなかさんも がくせいです。）` to avoid being a near-duplicate of q-0026.
+- [x] **F-15.8** (HIGH) **q-0016** `ともだち___いきました。` correct=と — と (with friend) and に (to friend) both valid. Added explicit destination `こうえんへ` so と (companion) is the only natural reading.
+- [x] **F-15.9** (HIGH) **q-0020** `5時___しごとです。` correct=まで — まで (until 5) and から (from 5) both valid. Added prior sentence `（あさは 9時から はじまります。）` so まで is the matching range-end.
+- [x] **F-15.10** (HIGH) **q-0044** `ともだち___でんわをしました。` correct=に — に (recipient) and と (companion) both valid for general 〜をする. Tightened verb to `かけました` ("placed a call") which lexically requires に for the recipient.
+
+#### Side-effects (kanji scope cleanup, integrity-driven)
+
+- [x] **F-15.11** Three out-of-scope kanji introduced by the new scenes were caught by JA-13 invariant: `文` (q-0020 prompt, q-0026 prompt) → `ぶん`; `近` (q-0425 question) → `ちか`. Conversion to kana fixed all three.
+
+#### Flagged but NOT fixed (out of multi-correct scope)
+
+- [ ] **F-15.12** (MEDIUM) **q-0420 and q-0421 are exact duplicates** — both `あなたは がくせいです（ ）。` correct=か, identical choices `[か,は,が,を]`, but assigned to different grammar patterns (n5-023 vs n5-024). This is a duplicate-question bug. Either delete one or differentiate stems. Not fixed in Pass-15 — register as Pass-16 candidate.
+
+#### Reviewed false positives (no fix needed)
+
+q-0007 ねこ___すきです (が only at N5); q-0008 ほん___よみます (を only at N5); q-0027 だれ___きませんでした (も only — interrogative+negative pattern); q-0419 りんご___バナナをたべます (や is correct among the 4 choices; と is not present); q-0043 こうえん___さんぽしました (canonical N5 answer is を, although で is borderline acceptable in colloquial Japanese — flagged for native review but kept).
+
+#### Tooling
+
+- `tools/scan_multi_correct.py` — scanner that flags candidate multi-correct MCQs across 5 categories (に/へ, は/が, で/に, ko-so-a-do without context, polite/casual copula mix). Run after any future bulk edits to questions.json.
+- `tools/fix_kosoado_basic.py` — idempotent applier for the 4 ko-so-a-do fixes.
+- `tools/fix_particle_basic.py` — idempotent applier for the 6 particle fixes.
+- `tools/inspect_candidates.py` — diagnostic dump of question_ja / choices / correct for a fixed list of IDs.
 
 ---
 
