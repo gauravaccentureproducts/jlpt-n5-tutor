@@ -276,9 +276,14 @@ function renderTOC(container, data) {
     <h2>Grammar</h2>
     <p class="page-lede">${data.patterns.length} patterns in ${sorted.length} categories.</p>
   `;
+  // Each category renders as a collapsible <details> — only the heading
+  // is visible by default; click to expand. Reduces a 187-card page to
+  // 32 short rows on first paint.
   for (const [cat, { items }] of sorted) {
     items.sort((a, b) => (a.patternOrder ?? 0) - (b.patternOrder ?? 0));
-    html += `<section class="toc-category" id="cat-${slugify(cat)}"><h3>${esc(cat)} <span class="cat-count muted small">(${items.length})</span></h3><div class="grammar-grid">`;
+    html += `<details class="toc-category" id="cat-${slugify(cat)}">`;
+    html += `<summary><h3>${esc(cat)} <span class="cat-count muted small">(${items.length})</span></h3></summary>`;
+    html += `<div class="grammar-grid">`;
     for (const p of items) {
       html += `
         <a class="grammar-card" href="#/learn/${encodeURIComponent(p.id)}">
@@ -287,7 +292,7 @@ function renderTOC(container, data) {
         </a>
       `;
     }
-    html += `</div></section>`;
+    html += `</div></details>`;
   }
   if (data.patterns.length === 0) {
     html += `<div class="placeholder"><p>No patterns yet. Add entries to <code>data/grammar.json</code>.</p></div>`;

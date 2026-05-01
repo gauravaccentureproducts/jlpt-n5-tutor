@@ -47,11 +47,13 @@ test.describe('P0 smoke - core navigation', () => {
   });
 
   test('Grammar TOC has 187 cards across 32 categories', async ({ page }) => {
-    // Note: chip jump menu removed 2026-05-01 per user direction. The
-    // category grouping itself remains; navigation is via plain scroll.
+    // Categories are rendered as collapsible <details> elements
+    // (changed 2026-05-01 from static <section>) so the page opens with
+    // only the 32 headings visible; cards expand on click. Test asserts
+    // the structural counts regardless of expanded/collapsed state.
     await page.goto('/#/learn/grammar');
     await expect(page.locator('h2')).toContainText('Grammar');
-    await expect(page.locator('section.toc-category')).toHaveCount(32);
+    await expect(page.locator('details.toc-category')).toHaveCount(32);
     await expect(page.locator('.grammar-card')).toHaveCount(187);
   });
 

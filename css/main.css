@@ -196,14 +196,39 @@ main h3 {
 }
 .loading { color: var(--c-muted); font-style: italic; }
 
-/* Lessons */
+/* Lessons. Categories are collapsible <details> elements so the Grammar
+ * TOC opens with only the 32 headings visible; cards expand on click. */
 .toc-category {
   background: var(--c-surface);
   border: 1px solid var(--c-border);
   border-radius: var(--r);
   padding: 16px 20px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
+.toc-category > summary {
+  cursor: pointer;
+  list-style: none;          /* hide default disclosure marker (Firefox/Safari) */
+  padding-right: 24px;       /* room for the custom indicator */
+  position: relative;
+  user-select: none;
+}
+.toc-category > summary::-webkit-details-marker { display: none; }  /* Chrome/Safari */
+.toc-category > summary::after {
+  content: "+";
+  position: absolute;
+  right: 0; top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--c-text-muted, #666);
+  transition: transform 160ms ease;
+}
+.toc-category[open] > summary::after { content: "−"; }
+.toc-category > summary h3 {
+  display: inline;
+  margin: 0;
+  font-size: 16px;
+}
+.toc-category[open] > summary { margin-bottom: 12px; }
 .toc-category h3 {
   margin: 0 0 12px;
   font-size: 16px;
