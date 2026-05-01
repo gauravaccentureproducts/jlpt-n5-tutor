@@ -5,7 +5,7 @@
       "level": "easy",
       "topic": "self-introduction",
       "title_en": "Self-introduction",
-      "ja": "わたしは アンナです。アメリカから 来ました。今、とうきょうの大学で 日本語を べんきょうしています。しゅみは えいがを 見ることです。どうぞ よろしく おねがいします。",
+      "ja": "わたしは アンナです。アメリカから 来ました。今、とうきょうの 大学で 日本語を べんきょうしています。しゅみは えいがを 見ることです。どうぞ よろしく おねがいします。",
       "translation_en": "I'm Anna. I came from America. Right now, I'm studying Japanese at a university in Tokyo. My hobby is watching movies. Pleased to meet you.",
       "audio": "audio/reading/n5.read.001.mp3",
       "questions": [
@@ -19,7 +19,8 @@
             "とうきょう"
           ],
           "correctAnswer": "アメリカ",
-          "explanation_en": "'アメリカから 来ました'."
+          "explanation_en": "'アメリカから 来ました'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.001.q2",
@@ -31,9 +32,11 @@
             "うち"
           ],
           "correctAnswer": "とうきょうの 大学",
-          "explanation_en": "'今、東京の だいがくで...'"
+          "explanation_en": "'今、とうきょうの 大学で 日本語を べんきょうしています'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.002",
@@ -54,7 +57,8 @@
             "10時"
           ],
           "correctAnswer": "6時",
-          "explanation_en": "'毎日 6時に おきます'."
+          "explanation_en": "'毎日 6時に おきます'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.002.q2",
@@ -66,7 +70,8 @@
             "5時から 9時まで"
           ],
           "correctAnswer": "9時から 5時まで",
-          "explanation_en": "'しごとは 9時から 5時までです'."
+          "explanation_en": "'しごとは 9時から 5時までです'.",
+          "format_role": "extra"
         },
         {
           "id": "n5.read.002.q3",
@@ -78,9 +83,11 @@
             "あるきます"
           ],
           "correctAnswer": "テレビを 見ます",
-          "explanation_en": "'家に 帰ってから、テレビを 見ます'."
+          "explanation_en": "'うちに かえってから、テレビを 見ます'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.003",
@@ -101,7 +108,8 @@
             "りょこうします"
           ],
           "correctAnswer": "ともだちと えいがを 見ます",
-          "explanation_en": "'ともだちと えいがを 見に 行きます'."
+          "explanation_en": "'ともだちと えいがを 見に 行きます'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.003.q2",
@@ -113,9 +121,11 @@
             "うちに かえります"
           ],
           "correctAnswer": "ばんごはんを 食べます",
-          "explanation_en": "'えいがの あとで、レストランで ばんごはんを 食べます'."
+          "explanation_en": "'えいがの あとで、レストランで ばんごはんを 食べます'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.004",
@@ -136,7 +146,8 @@
             "おかしと ジュース"
           ],
           "correctAnswer": "パンと コーヒー",
-          "explanation_en": "'パンと コーヒーを 買いました'."
+          "explanation_en": "'パンと コーヒーを 買いました'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.004.q2",
@@ -148,9 +159,11 @@
             "500円"
           ],
           "correctAnswer": "350円",
-          "explanation_en": "200 + 150 = 350."
+          "explanation_en": "200 + 150 = 350.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.005",
@@ -171,7 +184,8 @@
             "6人"
           ],
           "correctAnswer": "4人",
-          "explanation_en": "'わたしの かぞくは 4人です'."
+          "explanation_en": "'わたしの かぞくは 4人です'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.005.q2",
@@ -183,7 +197,8 @@
             "こうこうせい"
           ],
           "correctAnswer": "いしゃ",
-          "explanation_en": "'母は いしゃです'."
+          "explanation_en": "'母は いしゃです'.",
+          "format_role": "extra"
         },
         {
           "id": "n5.read.005.q3",
@@ -195,9 +210,11 @@
             "こうこうせい"
           ],
           "correctAnswer": "こうこうせい",
-          "explanation_en": "'わたしは こうこうせいです'."
+          "explanation_en": "'わたしは こうこうせいです'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.006",
@@ -218,7 +235,8 @@
             "すずしいです"
           ],
           "correctAnswer": "さむいです",
-          "explanation_en": "'今日は とても さむいです'."
+          "explanation_en": "'今日は とても さむいです'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.006.q2",
@@ -230,9 +248,11 @@
             "くもりでした"
           ],
           "correctAnswer": "あめが ふっていました",
-          "explanation_en": "'あさは あめが ふっていました'."
+          "explanation_en": "'あさは あめが ふっていました'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.007",
@@ -253,11 +273,12 @@
             "10時から 18時まで"
           ],
           "correctAnswer": "いいえ、休みです",
-          "explanation_en": "'にちようび：休み'."
+          "explanation_en": "'にちようび：休み'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.007.q2",
-          "prompt_ja": "本は どのくらい かりられますか。",
+          "prompt_ja": "本は どのくらい かりる ことが できますか。",
           "choices": [
             "1しゅうかん",
             "2しゅうかん",
@@ -265,9 +286,12 @@
             "2かげつ"
           ],
           "correctAnswer": "2しゅうかん",
-          "explanation_en": "'本は 2しゅうかん かりられます'."
+          "explanation_en": "'本は 二週間まで かりる ことが できます'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "format_type": "schedule_table",
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.008",
@@ -288,7 +312,8 @@
             "1時間"
           ],
           "correctAnswer": "30分くらい",
-          "explanation_en": "'家から 学校まで 30分くらい かかります'."
+          "explanation_en": "'うちから 学校まで 30分くらい かかります'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.008.q2",
@@ -300,9 +325,11 @@
             "じてんしゃで"
           ],
           "correctAnswer": "あるいて",
-          "explanation_en": "'家から えきまで あるきます'."
+          "explanation_en": "'うちから えきまで あるきます'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.009",
@@ -323,7 +350,8 @@
             "およぎます"
           ],
           "correctAnswer": "はしります",
-          "explanation_en": "'毎日 あさ こうえんで はしります'."
+          "explanation_en": "'毎日 あさ こうえんで はしります'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.009.q2",
@@ -335,9 +363,11 @@
             "テレビを 見ます"
           ],
           "correctAnswer": "サッカーを します",
-          "explanation_en": "'土曜日は ともだちと サッカーを します'."
+          "explanation_en": "'土曜日は ともだちと サッカーを します'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.010",
@@ -352,13 +382,14 @@
           "id": "n5.read.010.q1",
           "prompt_ja": "つくえは いくつ ありますか。",
           "choices": [
-            "10",
-            "15",
-            "20",
-            "25"
+            "10こ",
+            "15こ",
+            "20こ",
+            "25こ"
           ],
-          "correctAnswer": "25",
-          "explanation_en": "'つくえが 25あります'."
+          "correctAnswer": "25こ",
+          "explanation_en": "'つくえが 25こ あります'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.010.q2",
@@ -370,9 +401,11 @@
             "がっこう"
           ],
           "correctAnswer": "こうえん",
-          "explanation_en": "'まどから こうえんが 見えます'."
+          "explanation_en": "'まどから こうえんが 見えます'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.011",
@@ -393,7 +426,8 @@
             "そばと サラダ"
           ],
           "correctAnswer": "ラーメンと サラダ",
-          "explanation_en": "'おひるごはんは ラーメンと サラダでした'."
+          "explanation_en": "'おひるごはんは ラーメンと サラダでした'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.011.q2",
@@ -405,9 +439,11 @@
             "やすかった"
           ],
           "correctAnswer": "おいしかった",
-          "explanation_en": "'ラーメンは...おいしかったです'."
+          "explanation_en": "'ラーメンは...おいしかったです'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.012",
@@ -428,7 +464,8 @@
             "5さつ"
           ],
           "correctAnswer": "2さつ",
-          "explanation_en": "'2さつ 買いました'."
+          "explanation_en": "'2さつ 買いました'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.012.q2",
@@ -440,9 +477,11 @@
             "たかかった"
           ],
           "correctAnswer": "むずかしくて おもしろかった",
-          "explanation_en": "'むずかしかったですが、おもしろかったです'."
+          "explanation_en": "'むずかしかったですが、おもしろかったです'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.013",
@@ -463,7 +502,8 @@
             "きょねん"
           ],
           "correctAnswer": "せんしゅう",
-          "explanation_en": "'せんしゅう かぞくと 京都に 行きました'."
+          "explanation_en": "'せんしゅう かぞくと きょうとに 行きました'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.013.q2",
@@ -475,7 +515,8 @@
             "ゆうえんち"
           ],
           "correctAnswer": "おてら",
-          "explanation_en": "'きれいな おてらが たくさん あります'."
+          "explanation_en": "'きれいな おてらが たくさん あります'.",
+          "format_role": "extra"
         },
         {
           "id": "n5.read.013.q3",
@@ -487,9 +528,11 @@
             "ふく"
           ],
           "correctAnswer": "おかし",
-          "explanation_en": "'おみやげに おかしを 買いました'."
+          "explanation_en": "'おみやげに おかしを 買いました'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "late_n5"
     },
     {
       "id": "n5.read.014",
@@ -510,7 +553,8 @@
             "10,000円"
           ],
           "correctAnswer": "3,000円",
-          "explanation_en": "'シャツは 3,000円で'."
+          "explanation_en": "'シャツは 3,000円で'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.014.q2",
@@ -522,9 +566,11 @@
             "13,000円"
           ],
           "correctAnswer": "8,000円",
-          "explanation_en": "3000 + 5000 = 8000."
+          "explanation_en": "3000 + 5000 = 8000.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.015",
@@ -545,7 +591,8 @@
             "5月"
           ],
           "correctAnswer": "4月",
-          "explanation_en": "'今は 4月です'."
+          "explanation_en": "'今は 4月です'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.015.q2",
@@ -557,9 +604,11 @@
             "ともだち"
           ],
           "correctAnswer": "母",
-          "explanation_en": "'土曜日に 母と さくらを 見に 行きます'."
+          "explanation_en": "'土曜日に 母と さくらを 見に 行きます'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.016",
@@ -580,7 +629,8 @@
             "しごとに 行きます"
           ],
           "correctAnswer": "うちで ねます",
-          "explanation_en": "'今日は 学校を 休んで、家で ねます'."
+          "explanation_en": "'今日は 学校を 休んで、うちで ねます'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.016.q2",
@@ -592,9 +642,11 @@
             "ともだちに 会います"
           ],
           "correctAnswer": "いしゃに 行きます",
-          "explanation_en": "'あした、いしゃに 行きます'."
+          "explanation_en": "'あした、いしゃに 行きます'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.017",
@@ -615,7 +667,8 @@
             "1,000円"
           ],
           "correctAnswer": "800円",
-          "explanation_en": "300 + 500 = 800. (The set is 700, but bought separately costs 800.)"
+          "explanation_en": "300 + 500 = 800. (The set is 700, but bought separately costs 800.)",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.017.q2",
@@ -627,9 +680,12 @@
             "サンドイッチ"
           ],
           "correctAnswer": "おちゃ",
-          "explanation_en": "Tea is 250, the lowest priced drink."
+          "explanation_en": "Tea is 250, the lowest priced drink.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "format_type": "menu_list",
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.018",
@@ -650,7 +706,8 @@
             "60分"
           ],
           "correctAnswer": "30分",
-          "explanation_en": "'毎日 30分くらい べんきょうします'."
+          "explanation_en": "'毎日 30分くらい べんきょうします'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.018.q2",
@@ -659,12 +716,14 @@
             "ひらがな",
             "かたかな",
             "かんじ",
-            "はつおん"
+            "たんご"
           ],
           "correctAnswer": "かんじ",
-          "explanation_en": "'かんじは むずかしいですが、ひらがなは かんたんです'."
+          "explanation_en": "'かんじは むずかしいですが、ひらがなは かんたんです'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "late_n5"
     },
     {
       "id": "n5.read.019",
@@ -685,7 +744,8 @@
             "デパート"
           ],
           "correctAnswer": "うみ",
-          "explanation_en": "'ともだちと うみに 行きました'."
+          "explanation_en": "'ともだちと うみに 行きました'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.019.q2",
@@ -697,9 +757,11 @@
             "かいものを しました"
           ],
           "correctAnswer": "およぎました",
-          "explanation_en": "'およぎました'."
+          "explanation_en": "'およぎました'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.020",
@@ -720,7 +782,8 @@
             "わかいです"
           ],
           "correctAnswer": "しんせつです",
-          "explanation_en": "'たなか先生は とても しんせつです'."
+          "explanation_en": "'たなか先生は とても しんせつです'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.020.q2",
@@ -732,9 +795,11 @@
             "ながいです"
           ],
           "correctAnswer": "おもしろいです",
-          "explanation_en": "'じゅぎょうは おもしろいです'."
+          "explanation_en": "'じゅぎょうは おもしろいです'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.021",
@@ -755,7 +820,8 @@
             "5時間"
           ],
           "correctAnswer": "1時間",
-          "explanation_en": "The schedule shows '時間：1時間'."
+          "explanation_en": "The schedule shows '時間：1時間'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.021.q2",
@@ -767,17 +833,20 @@
             "62,500円"
           ],
           "correctAnswer": "62,500円",
-          "explanation_en": "25,000 × 2 + 12,500 = 62,500 yen."
+          "explanation_en": "25,000 × 2 + 12,500 = 62,500 yen.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "format_type": "schedule_table",
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.022",
       "level": "easy",
       "topic": "weekend",
       "title_en": "Yesterday's evening",
-      "ja": "きのうの よる、うちで 母と りょうりを しました。カレーを つくりました。とても おいしかったです。父も あにも よろこびました。",
-      "translation_en": "Last night, I cooked with my mother at home. We made curry. It was very tasty. My father and brother were happy too.",
+      "ja": "きのうの よる、うちで 母と りょうりを しました。カレーを つくりました。とても おいしかったです。父も あにも 「おいしい」と 言いました。",
+      "translation_en": "Last night, I cooked with my mother at home. We made curry. It was very tasty. My father and elder brother also said it was delicious.",
       "audio": "audio/reading/n5.read.022.mp3",
       "questions": [
         {
@@ -790,7 +859,8 @@
             "サラダ"
           ],
           "correctAnswer": "カレー",
-          "explanation_en": "'カレーを つくりました'."
+          "explanation_en": "'カレーを つくりました'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.022.q2",
@@ -802,9 +872,11 @@
             "ともだち"
           ],
           "correctAnswer": "母",
-          "explanation_en": "'家で 母と りょうりを しました'."
+          "explanation_en": "'うちで 母と りょうりを しました'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.023",
@@ -825,7 +897,8 @@
             "あさだけ"
           ],
           "correctAnswer": "いいえ、休みです",
-          "explanation_en": "'日曜日：休み'."
+          "explanation_en": "'日曜日：休み'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.023.q2",
@@ -837,9 +910,11 @@
             "750円"
           ],
           "correctAnswer": "600円",
-          "explanation_en": "300 + 150×2 = 600."
+          "explanation_en": "300 + 150×2 = 600.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.024",
@@ -860,11 +935,12 @@
             "かんこく"
           ],
           "correctAnswer": "スペイン",
-          "explanation_en": "'スペイン人です'."
+          "explanation_en": "'スペイン人です'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.024.q2",
-          "prompt_ja": "マリアさんは 日本ごが どうですか。",
+          "prompt_ja": "マリアさんは 日本語が どうですか。",
           "choices": [
             "へたです",
             "じょうずです",
@@ -872,9 +948,11 @@
             "むずかしいです"
           ],
           "correctAnswer": "じょうずです",
-          "explanation_en": "'マリアさんは 日本ごが とても じょうずです'."
+          "explanation_en": "'マリアさんは 日本語が とても じょうずです'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.025",
@@ -895,7 +973,8 @@
             "9時"
           ],
           "correctAnswer": "7時",
-          "explanation_en": "'7時に おきて'."
+          "explanation_en": "'7時に おきて'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.025.q2",
@@ -907,9 +986,11 @@
             "テレビを 見ます"
           ],
           "correctAnswer": "さんぽします",
-          "explanation_en": "'おきて、こうえんで さんぽします'."
+          "explanation_en": "'おきて、こうえんで さんぽします'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "late_n5"
     },
     {
       "id": "n5.read.026",
@@ -917,7 +998,7 @@
       "topic": "shopping",
       "title_en": "Buying fruit",
       "ja": "やおやで くだものを 買いました。りんごを 3つと、バナナを 5本 買いました。ぜんぶで 700円でした。とても やすかったです。",
-      "translation_en": "I bought fruit at the greengrocer. I bought 3 apples and 5 bananas. The total was 700 yen. It was very very cheap.",
+      "translation_en": "I bought fruit at the greengrocer. I bought 3 apples and 5 bananas. The total was 700 yen. It was very cheap.",
       "audio": "audio/reading/n5.read.026.mp3",
       "questions": [
         {
@@ -930,7 +1011,8 @@
             "5つ"
           ],
           "correctAnswer": "3つ",
-          "explanation_en": "'りんごを 3つ'."
+          "explanation_en": "'りんごを 3つ'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.026.q2",
@@ -942,9 +1024,11 @@
             "7本"
           ],
           "correctAnswer": "5本",
-          "explanation_en": "'バナナを 5本'."
+          "explanation_en": "'バナナを 5本'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.027",
@@ -965,7 +1049,8 @@
             "12時"
           ],
           "correctAnswer": "1時",
-          "explanation_en": "'あした 1時に...会いましょう'."
+          "explanation_en": "'あした 1時に...会いましょう'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.027.q2",
@@ -977,9 +1062,11 @@
             "がっこう"
           ],
           "correctAnswer": "えきの まえ",
-          "explanation_en": "'えきの まえで 会いましょう'."
+          "explanation_en": "'えきの まえで 会いましょう'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.028",
@@ -1000,7 +1087,8 @@
             "うるさいです"
           ],
           "correctAnswer": "小さくて しずかです",
-          "explanation_en": "'あまり 大きくないです'+'しずかな へやです'."
+          "explanation_en": "'あまり 大きくないです'+'しずかな へやです'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.028.q2",
@@ -1012,9 +1100,11 @@
             "こうえん"
           ],
           "correctAnswer": "にわ",
-          "explanation_en": "'まどから にわが 見えます'."
+          "explanation_en": "'まどから にわが 見えます'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.029",
@@ -1035,7 +1125,8 @@
             "わかりません"
           ],
           "correctAnswer": "30どより 上",
-          "explanation_en": "'毎日 30どより 上です'."
+          "explanation_en": "'毎日 30どより 高いです'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.029.q2",
@@ -1047,16 +1138,18 @@
             "本を よみたい"
           ],
           "correctAnswer": "うみに 行きたい",
-          "explanation_en": "'なつ休みに うみに 行きたいです'."
+          "explanation_en": "'なつ休みに うみに 行きたいです'.",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     },
     {
       "id": "n5.read.030",
       "level": "medium",
       "topic": "directions",
       "title_en": "How to get to the post office",
-      "ja": "えきの 出口を 出て、まっすぐ 行きます。はじめの しんごうを 右に まがります。100メートルくらい あるくと、左に ゆうびんきょくが あります。あいています：月〜金の 9時から 17時まで。",
+      "ja": "えきの 出口を 出て、まっすぐ 行きます。はじめの しんごうを 右に まがります。100メートルくらい あるいて ください。左に ゆうびんきょくが あります。あいています：月〜金の 9時から 17時まで。",
       "translation_en": "Exit the station, go straight. Turn right at the first traffic light. After about 100 meters, the post office is on your left. Open: Mon-Fri, 9:00 to 17:00.",
       "audio": "audio/reading/n5.read.030.mp3",
       "questions": [
@@ -1070,7 +1163,8 @@
             "うしろ"
           ],
           "correctAnswer": "右",
-          "explanation_en": "'はじめの しんごうを 右に まがります'."
+          "explanation_en": "'はじめの しんごうを 右に まがります'.",
+          "format_role": "primary"
         },
         {
           "id": "n5.read.030.q2",
@@ -1082,9 +1176,17 @@
             "よるだけ"
           ],
           "correctAnswer": "いいえ",
-          "explanation_en": "'月〜金の 9時から 17時まで' (Mon-Fri only)."
+          "explanation_en": "'月〜金の 9時から 17時まで' (Mon-Fri only).",
+          "format_role": "extra"
         }
-      ]
+      ],
+      "tier": "core_n5"
     }
-  ]
+  ],
+  "_meta": {
+    "last_audit": "Pass-15-reading 2026-05-01",
+    "audit_doc": "feedback/jlpt-n5-reading-feedback.md",
+    "fixes_applied": "5 CRITICAL (1.1-1.5), 5 HIGH (2.1-2.5 incl. 8 rendering mismatches), 6 MEDIUM (3.1 vocab fix; 3.2/3/4 tier flags; 3.5 format_role; 3.6 format_type), 4 LOW (1 actionable, 3 accepted/documented). Acceptance §6 native-review gate for 1.4/1.5/2.1 still pending.",
+    "schema_additions": "passages[].tier (core_n5|late_n5|info_search), passages[].format_type (info-search only: schedule_table|menu_list), passages[].questions[].format_role (primary|extra)."
+  }
 }

@@ -763,6 +763,8 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-15", "Audio refs resolve to files on disk", lambda: _check_ja_15_audio_refs_on_disk()),
     ("JA-16", "Kanji examples use only target-or-whitelist kanji", lambda: _check_ja_16_kanji_examples_in_scope()),
     ("JA-17", "Grammar examples have vocab_ids (homograph guard)", lambda: _check_ja_17_examples_have_vocab_ids()),
+    ("JA-18", "Reading explanation kanji subset of passage", lambda: _check_ja_18_reading_explanation_kanji()),
+    ("JA-19", "Reading info-search has format_type", lambda: _check_ja_19_reading_info_search_format()),
 ]
 
 
@@ -925,6 +927,99 @@ def _check_ja_15_audio_refs_on_disk() -> list[str]:
             if len(failures) >= 20:
                 failures.append(f"JA-15 ... and more (truncated at 20)")
                 break
+    return failures
+
+
+def _check_ja_18_reading_explanation_kanji() -> list[str]:
+    """Every kanji that appears INSIDE a single-quoted phrase in an
+    explanation_en field must also appear in the passage's `ja` text.
+
+    The convention in data/reading.json is that explanations quote the
+    relevant passage line in single quotes, like `'毎日 30どより 高いです'`.
+    These quoted phrases must match the passage rendering exactly — if
+    the passage uses うち (kana) but the explanation quotes 家 (kanji),
+    the learner scans for the quoted phrase in the passage, fails to
+    find it, and trust degrades.
+
+    We deliberately do NOT check prompt_ja or unquoted explanation text,
+    because prompts legitimately use question words (何, 人, etc.) that
+    the passage doesn't echo. Only the quoted-quote-of-the-passage
+    convention is checked.
+
+    Originally Pass-15-reading audit §2.2: 8 explicit occurrences across
+    n5.read.001 / 002 / 008 / 013 / 016 / 022. This invariant prevents
+    recurrence and would have flagged all 8.
+    """
+    failures: list[str] = []
+    reading_path = ROOT / "data" / "reading.json"
+    if not reading_path.exists():
+        return ["JA-18: data/reading.json missing"]
+    try:
+        data = json.loads(reading_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-18: parse error: {e}"]
+
+    def is_kanji(ch: str) -> bool:
+        cp = ord(ch)
+        return 0x3400 <= cp <= 0x9FFF
+
+    # Match either ASCII '...' or Japanese 「...」 quoted phrases.
+    QUOTE_RE = re.compile(r"'([^']+)'|「([^」]+)」")
+
+    for p in data.get("passages", []):
+        pid = p.get("id", "?")
+        passage_kanji = {ch for ch in p.get("ja", "") if is_kanji(ch)}
+        for q in p.get("questions", []):
+            qid = q.get("id", "?")
+            text = q.get("explanation_en", "")
+            for m in QUOTE_RE.finditer(text):
+                quoted = m.group(1) or m.group(2) or ""
+                for ch in quoted:
+                    if is_kanji(ch) and ch not in passage_kanji:
+                        failures.append(
+                            f"JA-18 {qid} explanation quotes kanji "
+                            f"'{ch}' not in passage {pid} "
+                            f"(passage uses different rendering — "
+                            f"likely kana). Quote: {quoted[:50]!r}"
+                        )
+                        if len(failures) >= 20:
+                            failures.append("JA-18 ... (truncated at 20)")
+                            return failures
+                        break
+    return failures
+
+
+def _check_ja_19_reading_info_search_format() -> list[str]:
+    """Reading passages with `level: info-search` must declare a
+    `format_type` (schedule_table | menu_list | notice | etc.) so the
+    renderer can give them the appropriate visual treatment. Originally
+    Pass-15-reading audit §3.6.
+    """
+    failures: list[str] = []
+    reading_path = ROOT / "data" / "reading.json"
+    if not reading_path.exists():
+        return ["JA-19: data/reading.json missing"]
+    try:
+        data = json.loads(reading_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-19: parse error: {e}"]
+    allowed_formats = {"schedule_table", "menu_list", "notice",
+                       "signage", "form"}
+    for p in data.get("passages", []):
+        if p.get("level") != "info-search":
+            continue
+        pid = p.get("id", "?")
+        if "format_type" not in p:
+            failures.append(
+                f"JA-19 {pid} (level=info-search) is missing the "
+                f"`format_type` field. Allowed: {sorted(allowed_formats)}"
+            )
+            continue
+        if p["format_type"] not in allowed_formats:
+            failures.append(
+                f"JA-19 {pid} format_type {p['format_type']!r} not in "
+                f"allowed set {sorted(allowed_formats)}"
+            )
     return failures
 
 
