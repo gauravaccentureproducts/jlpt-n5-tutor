@@ -631,7 +631,7 @@ Comprehensive audit of `data/questions.json` from native-speaker + structural-in
 
 #### LOW / Schema (informational)
 
-- [ ] **F-14.10** (LOW) **Type distribution skewed** — after F-14.1: 138 mcq / 4 sentence_order / 1 text_input. Author more non-mcq.
+- [x] **F-14.10** (LOW) **Type distribution skewed** — **Phase F applied 2026-05-01:** authored 12 sentence_order + 8 text_input questions (q-0434..q-0453) covering productive N5 grammar (topic は ordering, location あります, te-form chains, counter ordering, comparison より, want が ほしい, Verb-tai, prohibition Verb-てはいけません, particle selection は/を/に/で/が, te-form / past / negative production). Bank: 143 → 163. Distribution: 138 mcq / 16 sentence_order / 9 text_input. Mcq still leads but non-mcq types are no longer token presence.
 - [ ] Note: 4 sentence_order questions correctly omit `choices`/`correctAnswer` (use `tiles`/`correctOrder` instead). NOT a bug.
 
 #### Recommended fix sequence (updated 2026-05-01)

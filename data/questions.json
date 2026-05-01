@@ -1,15 +1,15 @@
 {
   "_meta": {
     "schema_version": "1.0",
-    "question_count": 143,
+    "question_count": 163,
     "type_distribution": {
       "mcq": 138,
-      "sentence_order": 4,
-      "text_input": 1
+      "sentence_order": 16,
+      "text_input": 9
     },
     "id_range": {
       "first": "q-0001",
-      "last": "q-0433"
+      "last": "q-0453"
     },
     "id_gap_policy": "documented",
     "id_gap_explanation": "IDs are non-contiguous. The declared range q-0001..q-0433 spans 433 slots but only 143 are populated (290 missing). Cause: bulk deletions across audit passes (Pass-9 to Pass-14) without renumbering. Specifically: Pass-9 removed first-edition stubs (q-0052..q-0219), Pass-12 removed duplicates / corrupted items, Pass-14 (2026-05-01) removed 38 pattern-meta stubs (q-0280..q-0416 family). Renumbering was rejected as too risky — any external reference (URL bookmarks of past test results, exported localStorage state, verification.md cross-references) would break unpredictably. Per F-14.6 closure: gaps are accepted as historical record. Tooling MUST treat IDs as opaque strings, not contiguous-integer suffixes.",
@@ -66,7 +66,8 @@
       "Pass-11 (2026-04-30): 30 of 187 patterns sampled by native teacher. Critical fixes applied.",
       "Pass-12 (2026-04-30): re-audit, 3 systemic clusters resolved + duplicate removal.",
       "Pass-13 (2026-04-30): native-accuracy audit, build-pipeline corruption fixed (recovered 9 missing kanji entries).",
-      "Pass-14 (2026-04-30 audit, 2026-05-01 Phase A applied): 8 issue classes. Phase A deleted 38 pattern-meta stubs (q-0280..q-0416). Cascade-resolved F-14.1/2/3/4/7/8/9. F-14.5 fixed (q-0418 schema). F-14.6 closed via this metadata block. F-14.10 deferred (long-term content authoring)."
+      "Pass-14 (2026-04-30 audit, 2026-05-01 Phase A applied): 8 issue classes. Phase A deleted 38 pattern-meta stubs (q-0280..q-0416). Cascade-resolved F-14.1/2/3/4/7/8/9. F-14.5 fixed (q-0418 schema). F-14.6 closed via this metadata block. F-14.10 deferred (long-term content authoring).",
+      "Pass-14 Phase F (2026-05-01): authored 12 sentence_order + 8 text_input questions (q-0434..q-0453) to address F-14.10 type-distribution skew. Bank: 143 -> 163. Distribution: {'mcq': 138, 'sentence_order': 16, 'text_input': 9}."
     ],
     "authoritative_audit_log": "verification.md (cumulative findings tally)",
     "integrity_invariants": "26 checks in tools/check_content_integrity.py (X-6.1..X-6.9, JA-1..JA-17)"
@@ -3282,6 +3283,364 @@
       "high_confusion": false,
       "difficulty": 1,
       "auto": true
+    },
+    {
+      "id": "q-0434",
+      "grammarPatternId": "n5-002",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "わたしの",
+        "たなかです",
+        "名前は"
+      ],
+      "correctOrder": [
+        "わたしの",
+        "名前は",
+        "たなかです"
+      ],
+      "translation_en": "My name is Tanaka.",
+      "explanation_en": "Possessive わたしの + noun-phrase 名前 + topic は + predicate. The topic marker は attaches to 名前, not to わたし directly."
+    },
+    {
+      "id": "q-0435",
+      "grammarPatternId": "n5-018",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "ひとは",
+        "あの",
+        "ですか",
+        "だれ"
+      ],
+      "correctOrder": [
+        "あの",
+        "ひとは",
+        "だれ",
+        "ですか"
+      ],
+      "translation_en": "Who is that person?",
+      "explanation_en": "Demonstrative あの + noun + topic は + question word だれ + ですか. The question word slots into the position the answer would occupy."
+    },
+    {
+      "id": "q-0436",
+      "grammarPatternId": "n5-090",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "上に",
+        "あります",
+        "本が",
+        "つくえの"
+      ],
+      "correctOrder": [
+        "つくえの",
+        "上に",
+        "本が",
+        "あります"
+      ],
+      "translation_en": "There is a book on the desk.",
+      "explanation_en": "Location pattern: NOUN の 上に X が あります. Possessive の chains 上 to つくえ. The subject 本 takes が because it is new information."
+    },
+    {
+      "id": "q-0437",
+      "grammarPatternId": "n5-007",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "読みます",
+        "としょかんで",
+        "本を"
+      ],
+      "correctOrder": [
+        "としょかんで",
+        "本を",
+        "読みます"
+      ],
+      "translation_en": "I read books at the library.",
+      "explanation_en": "Location-of-action で comes before the object phrase. Standard order: location-で, object-を, verb."
+    },
+    {
+      "id": "q-0438",
+      "grammarPatternId": "n5-070",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "あさ",
+        "ごはんを",
+        "おきて、",
+        "食べます"
+      ],
+      "correctOrder": [
+        "あさ",
+        "おきて、",
+        "ごはんを",
+        "食べます"
+      ],
+      "translation_en": "In the morning I get up and eat breakfast.",
+      "explanation_en": "Sequential te-form chain: TIME, Verb1-て、Object Verb2. The te-form おきて signals 'and then'. The first clause has no explicit object; the second has ごはんを 食べます."
+    },
+    {
+      "id": "q-0439",
+      "grammarPatternId": "n5-071",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "まって",
+        "すこし",
+        "ください"
+      ],
+      "correctOrder": [
+        "すこし",
+        "まって",
+        "ください"
+      ],
+      "translation_en": "Please wait a little.",
+      "explanation_en": "Adverb すこし comes before the verb. Verb-て + ください = polite request. Order: adverb + Verb-て + ください."
+    },
+    {
+      "id": "q-0440",
+      "grammarPatternId": "n5-110",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "かいました",
+        "三つ",
+        "りんごを"
+      ],
+      "correctOrder": [
+        "りんごを",
+        "三つ",
+        "かいました"
+      ],
+      "translation_en": "I bought three apples.",
+      "explanation_en": "Counter pattern: Object を Counter Verb. Quantity 三つ sits between the object marker を and the verb — it does NOT take its own particle, and it is NOT placed before the noun."
+    },
+    {
+      "id": "q-0441",
+      "grammarPatternId": "n5-074",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "とっても",
+        "ここで",
+        "いいですか",
+        "しゃしんを"
+      ],
+      "correctOrder": [
+        "ここで",
+        "しゃしんを",
+        "とっても",
+        "いいですか"
+      ],
+      "translation_en": "May I take photos here?",
+      "explanation_en": "Permission request: Place で + Object を + Verb-て + も + いいですか. The Verb-てもいい construction asks/grants permission; か turns it into a question."
+    },
+    {
+      "id": "q-0442",
+      "grammarPatternId": "n5-095",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "アメリカより",
+        "日本は",
+        "ちいさいです"
+      ],
+      "correctOrder": [
+        "日本は",
+        "アメリカより",
+        "ちいさいです"
+      ],
+      "translation_en": "Japan is smaller than America.",
+      "explanation_en": "Comparison pattern: A は B より [adj] です. Topic A first, then B より (the comparison reference), then the i-adjective predicate."
+    },
+    {
+      "id": "q-0443",
+      "grammarPatternId": "n5-101",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "くるまが",
+        "あたらしい",
+        "ほしいです",
+        "私は"
+      ],
+      "correctOrder": [
+        "私は",
+        "あたらしい",
+        "くるまが",
+        "ほしいです"
+      ],
+      "translation_en": "I want a new car.",
+      "explanation_en": "Want pattern: Topic は + (adjective +) Noun が + ほしいです. The desired object is marked with が, not を."
+    },
+    {
+      "id": "q-0444",
+      "grammarPatternId": "n5-104",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "日本へ",
+        "行きたいです",
+        "私は"
+      ],
+      "correctOrder": [
+        "私は",
+        "日本へ",
+        "行きたいです"
+      ],
+      "translation_en": "I want to go to Japan.",
+      "explanation_en": "Verb-stem + たい: 'want to V'. Direction marker へ before the verb-tai phrase. たい conjugates as an i-adjective."
+    },
+    {
+      "id": "q-0445",
+      "grammarPatternId": "n5-075",
+      "type": "sentence_order",
+      "prompt_ja": "ただしい じゅんに ならべてください。",
+      "tiles": [
+        "とっては",
+        "ここで",
+        "いけません",
+        "しゃしんを"
+      ],
+      "correctOrder": [
+        "ここで",
+        "しゃしんを",
+        "とっては",
+        "いけません"
+      ],
+      "translation_en": "You must not take photos here.",
+      "explanation_en": "Prohibition: Place で + Object を + Verb-て + は + いけません. The contrast ては + いけません = 'doing X is not allowed'."
+    },
+    {
+      "id": "q-0446",
+      "grammarPatternId": "n5-002",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "（ ）に ただしい じょしを いれてください。",
+      "question_ja": "わたし（　）学生です。",
+      "acceptedAnswers": [
+        "は",
+        "ha",
+        "wa"
+      ],
+      "correctAnswer": "は",
+      "explanation_en": "Topic marker は. わたし is the topic (already-known referent). Romaji 'wa' is the standard romanisation of the particle.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0447",
+      "grammarPatternId": "n5-004",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "（ ）に ただしい じょしを いれてください。",
+      "question_ja": "本（　）読みます。",
+      "acceptedAnswers": [
+        "を",
+        "wo",
+        "o"
+      ],
+      "correctAnswer": "を",
+      "explanation_en": "Direct-object marker を. 本 is the thing being read. Romaji 'o' is the standard romanisation; 'wo' also accepted.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0448",
+      "grammarPatternId": "n5-005",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "（ ）に ただしい じょしを いれてください。",
+      "question_ja": "七時（　）おきます。",
+      "acceptedAnswers": [
+        "に",
+        "ni"
+      ],
+      "correctAnswer": "に",
+      "explanation_en": "Time particle に. Specific clock-times take に. Note: relative time words like きょう / あした do NOT take に; only specific times, dates, days do.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0449",
+      "grammarPatternId": "n5-007",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "（ ）に ただしい じょしを いれてください。",
+      "question_ja": "バス（　）行きます。",
+      "acceptedAnswers": [
+        "で",
+        "de"
+      ],
+      "correctAnswer": "で",
+      "explanation_en": "Means/instrument で. バスで = 'by bus'. Compare: バスに 行きます would mean 'go TO the bus' (to board it).",
+      "high_confusion": true,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0450",
+      "grammarPatternId": "n5-099",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "（ ）に ただしい じょしを いれてください。",
+      "question_ja": "わたしは ねこ（　）すきです。",
+      "acceptedAnswers": [
+        "が",
+        "ga"
+      ],
+      "correctAnswer": "が",
+      "explanation_en": "With すき/きらい/ほしい/わかる/できる, the object of the feeling or ability takes が, not を. Topic わたし takes は; thing-liked ねこ takes が.",
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0451",
+      "grammarPatternId": "n5-069",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "ひらがなで かいてください。",
+      "question_ja": "「たべる」の て-けい は ___ です。",
+      "acceptedAnswers": [
+        "たべて",
+        "tabete"
+      ],
+      "correctAnswer": "たべて",
+      "explanation_en": "たべる is a Group-2 (る-verb): drop る + add て = たべて. Group-2 conjugation is uniform.",
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0452",
+      "grammarPatternId": "n5-060",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "ひらがなで かいてください。",
+      "question_ja": "「いく」の ました-けい は ___ です。",
+      "acceptedAnswers": [
+        "いきました",
+        "ikimashita"
+      ],
+      "correctAnswer": "いきました",
+      "explanation_en": "いく is a Group-1 (う-verb). Polite past: stem いき + ました = いきました. Note: いく's te-form is 行って (irregular), but the ます-form is regular.",
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0453",
+      "grammarPatternId": "n5-059",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "ひらがなで かいてください。",
+      "question_ja": "「する」の ません-けい は ___ です。",
+      "acceptedAnswers": [
+        "しません",
+        "shimasen"
+      ],
+      "correctAnswer": "しません",
+      "explanation_en": "する is irregular. Negative polite: し + ません = しません. The stem mutates to し for all polite forms (します / しました / しません / しませんでした).",
+      "high_confusion": false,
+      "difficulty": 2
     }
   ]
 }
