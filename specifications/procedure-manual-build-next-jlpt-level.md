@@ -601,5 +601,248 @@ For N4 development, copy these as starting templates and update level references
 
 ---
 
+## 17. Appendix A — One-Shot Mode supplements
+
+This appendix addresses the highest-impact gaps identified in the Pass-20 review (`feedback/procedure-manual-review-issues.md`). It does NOT close every gap — full closure requires embedding ~5000+ lines of content inventories and schemas (registered as Pass-21). It DOES close the most actionable ones:
+
+- A.1 Required-inputs precondition (Issue 4, 16, 33, 36)
+- A.2 Default decisions for §15 open questions (Issue 25)
+- A.3 Fallback procedures for external-blocked items (Issues 19, 21, 39)
+- A.4 Minimum-viable subset / what to ship if running out of run time (Issue 20)
+- A.5 Definition of done (Issue 40)
+- A.6 JSON schemas (Issue 3) — pointer + extraction recipe
+- A.7 Source authorities for content inventories (Issues 1, 8)
+- A.8 Question-count budget per Mondai (Issue 37)
+- A.9 JLPT exam structure tables (Issue 38)
+- A.10 SM-2 exact parameters (Issue 29)
+- A.11 Furigana generation procedure (Issue 26)
+
+### A.1 Required inputs (precondition for both modes)
+
+The N4 (or any next-level) build agent MUST have read access to:
+
+1. **This manual** (`specifications/procedure-manual-build-next-jlpt-level.md`).
+2. **The N5 source repository in full**, at a known absolute path. Specifically the agent must be able to read:
+   - `KnowledgeBank/*.md` (all 9 KB files — these are the markdown grammar reference)
+   - `data/*.json` (all corpora — these are the JSON schema reference)
+   - `tools/build_data.py`, `tools/check_content_integrity.py`, `tools/test_build_data.py`, `tools/link_grammar_examples_to_vocab.py`, `tools/scan_multi_correct.py`, `tools/llm_audit.py`, `tools/heuristic_audit.py`, `tools/build_audio.py`, `tools/tag_vocab_pos.py`, `tools/coverage_compare.py` (the 10 scripts to port from §7)
+   - `specifications/jlpt-n5-design-system-zen-modern.md` (full design system spec — see A.6.5)
+   - `js/` (all front-end modules — UI module list per A.6.4)
+   - `css/main.css` (design tokens implementation)
+   - `index.html`, `sw.js`, `manifest.webmanifest`
+   - `locales/*.json` (i18n message catalogs)
+   - `.claude/CLAUDE.md` (binding rule template)
+   - `TASKS.md` and `MEMORY.md` (state-tracking templates)
+3. **Network access** for: external corpus extraction (WebFetch), Anthropic API (LLM audit, optional), font CDN downloads (one-time, replaceable).
+
+If any of these inputs is unavailable, the agent MUST halt and report what is missing rather than proceed with invented content.
+
+### A.2 Default decisions for §15 open questions (zero-interaction defaults)
+
+A zero-interaction agent has no human decider. Use these defaults:
+
+| §15 question | Default for one-shot mode | Rationale |
+|---|---|---|
+| Native voice budget | **Skip native recording. Use synthetic TTS via `gtts`.** Mark all listening items with `voice: "synthetic"` so the JA-15 invariant doesn't fail and a future native-recording pass can identify them. | Native recording requires human resource the agent doesn't have. Synthetic ships; native upgrades later. |
+| Handwriting kanji practice | **Defer.** Don't include in v1. | Requires a stroke-order canvas component and SVG kanji data. Out of one-shot scope. |
+| IME-typing input | **Defer.** Use the N5 kana-strict text_input flow; do not introduce IME mode. | IME state management is non-trivial; kana-strict works for N4 vocab questions. |
+| Reading-comprehension speed test | **Defer.** Ship dokkai mode without timer for v1. | Speed mode is a UI affordance, not a content blocker. |
+| Mock test mode timing | **Use the JLPT N4 official time table** (see A.9). Hardcode at component level; expose as setting in v2. | Time per section is a known quantity per JLPT.jp specs. |
+| Subscription / monetization | **Free, no monetization.** Match N5 architectural posture. | Adding payment changes hosting, telemetry, and privacy posture; out of scope. |
+
+Mark each as a one-shot default in TASKS.md `Pass-1` so a follow-up human pass knows to reconsider.
+
+### A.3 Fallback procedures for external-blocked items
+
+If the agent encounters an EB item with no resource available:
+
+| EB item | Synthetic fallback | Quality marker |
+|---|---|---|
+| Native voice talent | Synthetic TTS via gtts; flag `voice: "synthetic"` per item | Listening invariant relaxed for synthetic; ship with banner "Audio: synthetic; native v2" |
+| Native teacher reviewer | Run `tools/llm_audit.py` instead, flag every item with `auto: true` and `review_status: "llm_only"` | A subsequent human pass filters by `review_status: "llm_only"` for review |
+| Translation to Japanese (brief) | English-only brief shipped; create translation task in TASKS.md EB-3 | Don't block ship on translation |
+| Recommender ML | Use the minimal state-driven recommender from N5 (no ML). Mark `recommender_version: 1` | Ship with v1 recommender; v2 ML deferred |
+
+### A.4 Minimum-viable subset (one-shot deliverable)
+
+If the agent runs out of execution time or cannot finish all 17 weeks worth of work in one pass, ship in this priority order. Stop at any layer; the layers below it are non-blocking for a working v0.
+
+1. **Layer 0 — Build pipeline + CI (must ship).** `tools/build_data.py`, `tools/check_content_integrity.py`, `tools/test_build_data.py`, `.github/workflows/content-integrity.yml`. Empty content is acceptable here; the pipeline must be runnable.
+2. **Layer 1 — Schemas + skeleton corpora (must ship).** All `data/*.json` files exist with empty arrays + populated `_meta` blocks. All `KnowledgeBank/*.md` files exist with the section structure but minimal content.
+3. **Layer 2 — UI shell (must ship).** `index.html`, hash router, 5-card hub, empty Learn views, settings. Service worker registered. PWA manifest valid.
+4. **Layer 3 — Grammar catalog (~50% of patterns).** Author the core_n4 patterns; defer late_n4 + n3_borderline.
+5. **Layer 4 — Vocab catalog (~50%).** Author the most-frequent N4 vocabulary.
+6. **Layer 5 — Kanji catalog (full).** All ~280 N4 kanji must be authored; this is non-negotiable for the kanji whitelist invariants.
+7. **Layer 6 — Reading + listening passages (~30% / ~30%).** ~10 passages each with synthetic audio.
+8. **Layer 7 — Question banks (~25% per section).** ~25 questions per moji/goi/bunpou/dokkai.
+9. **Layer 8 — Translation, advanced UI features, native audio.** Defer all to v2.
+
+A truly minimal deliverable that satisfies layers 0-2 + skeleton content for 3-7 produces a runnable app shell that a human team can flesh out. Roughly **20-30% of the full N4 deliverable** in one shot.
+
+### A.5 Definition of done
+
+The build is **complete for v1 release** when ALL of the following are true (a one-shot agent should self-check against this list):
+
+1. **CI green:** `python tools/check_content_integrity.py` exits 0 with all invariants passing.
+2. **Build pipeline regression:** `python tools/test_build_data.py` exits 0.
+3. **JSON schema valid:** every `data/*.json` parses, has the required `_meta` block, and `_meta.entity_count == len(entries)`.
+4. **No duplicate IDs:** across questions / patterns / vocab / kanji / reading / listening corpora.
+5. **No empty user-facing fields:** every authored question has `question_ja`, `correctAnswer`, `choices` (if MCQ), and `distractor_explanations` populated.
+6. **No "see pattern" stubs:** zero matches for `see n4-` / `see pattern detail` in user-facing fields.
+7. **No out-of-scope kanji:** all user-facing text uses only N4-whitelist kanji (JA-13).
+8. **Browser smoke test:** `index.html` loads in a clean browser, hash routes resolve, no console errors, service worker registers.
+9. **Question count meets layer-7 minimum:** ≥25 questions per Mondai section per A.4 layer 7.
+10. **PWA installable:** manifest valid, icons present, offline shell works.
+11. **TASKS.md current:** status snapshot reflects current corpus counts; no `[ ]` items in the active Pass section without "deferred" rationale.
+12. **No em-dashes:** zero matches for `—` or `–` in any committed file (X-6.5).
+
+A one-shot agent that can mark items 1-8 + 10-12 GREEN and item 9 at "≥25" has shipped a defensible v1.
+
+### A.6 JSON schemas — extraction recipe
+
+Rather than embedding all schemas (~1500 lines of JSON Schema), the agent should DERIVE them from the N5 reference files in this order:
+
+1. Read `data/grammar.json` — observe top-level shape: `{"patterns": [...], "_meta": {...}}`. Each pattern entry has: `id`, `pattern`, `meaning_en`, `meaning_ja`, `category`, `tier`, `form_rules` (with `attaches_to`, `conjugations`), `examples` (each with `form`, `ja`, `translation_en`, `furigana?`, `vocab_ids?`), `common_mistakes`, `notes?`.
+2. Read `data/questions.json` — top-level: `{"questions": [...], "_meta": {...}}`. Each question has: `id`, `grammarPatternId`, `type` (mcq/sentence_order/text_input), `subtype?`, `direction`, `prompt_ja`, `question_ja` OR `tiles`, `choices?`, `correctAnswer?`, `correctOrder?`, `acceptedAnswers?`, `explanation_en`, `distractor_explanations?`, `high_confusion?`, `difficulty`, `auto`.
+3. Read `data/vocab.json`, `data/kanji.json`, `data/reading.json`, `data/listening.json`, `data/audio_manifest.json` similarly.
+4. Generate JSON Schema files with `python -c "import genson; ..."` or hand-derive from observed shapes.
+
+Save derived schemas at `specifications/schemas/*.schema.json`. Validate every JSON build against them in CI.
+
+### A.7 Source authorities for content inventories
+
+The agent must NOT invent N4 content. Use these published sources as authority:
+
+- **Kanji whitelist (~280 entries):** JLPT N4 kanji list at https://jlptsensei.com/jlpt-n4-kanji-list/ + cross-reference https://www.tanos.co.uk/jlpt/jlpt4/kanji/
+- **Vocabulary (~1500 entries):** https://www.tanos.co.uk/jlpt/jlpt4/vocab/ (CSV download available)
+- **Grammar patterns (~210):** https://bunpro.jp/jlpt/n4 + https://www.tanos.co.uk/jlpt/jlpt4/grammar/
+- **Reading passages:** authentic sample at https://www.jlpt.jp/e/samples/n4/index.html
+- **Listening scripts:** same official samples
+
+Cross-reference at least TWO sources per item before adding to the catalog. Discrepancies between sources should be resolved in favor of the most-recent JLPT.jp official spec.
+
+For tier classification (`core_n4` / `late_n4` / `n3_borderline`):
+- `core_n4` = appears in both Bunpro N4 AND Tanos N4
+- `late_n4` = appears in Bunpro N4 only (Bunpro tends to include borderline upper-N4)
+- `n3_borderline` = appears in Tanos N3 but commonly taught in N4 textbooks
+
+### A.8 Question-count budget per Mondai per file
+
+JLPT N4 question section structure (mirror this in question count targets):
+
+| File | Mondai | Subtype | Target count |
+|------|--------|---------|--------------|
+| moji_questions_n4.md | Mondai 1 (kanji reading) | 漢字読み | 50 |
+| moji_questions_n4.md | Mondai 2 (orthography) | 表記 | 50 |
+| moji_questions_n4.md | (alt) Mondai 3 (word formation) | 語形成 | 50 (N4-specific) |
+| goi_questions_n4.md | Mondai 4 (context) | 文脈規定 | 50 |
+| goi_questions_n4.md | Mondai 5 (paraphrase) | 言い換え類義 | 50 |
+| goi_questions_n4.md | Mondai 6 (usage) | 用法 | 50 (N4-specific) |
+| bunpou_questions_n4.md | Mondai 1 (sentence grammar 1) | 文の文法1 | 50 |
+| bunpou_questions_n4.md | Mondai 2 (sentence grammar 2) | 文の文法2 | 30 |
+| bunpou_questions_n4.md | Mondai 3 (text grammar) | 文章の文法 | 20 |
+| dokkai_questions_n4.md | Mondai 4 (short) | 内容理解 短文 | 30 |
+| dokkai_questions_n4.md | Mondai 5 (medium) | 内容理解 中文 | 30 |
+| dokkai_questions_n4.md | Mondai 6 (info retrieval) | 情報検索 | 12 |
+| chokai_questions_n4.md | Mondai 1-4 | (multiple) | 60 |
+
+**Total target N4: ~530 questions across 4 question files + 1 listening file.** This is larger than N5's ~400 due to N4's expanded grammar/vocab scope.
+
+### A.9 JLPT exam structure tables
+
+Per official JLPT.jp:
+
+| Level | Total time | Sections | Section times | Pass score | Section thresholds |
+|-------|-----------|----------|---------------|------------|-------------------|
+| N5 | 105 min | 文字・語彙 / 文法・読解 / 聴解 | 25 / 50 / 30 | 80/180 | 38/120 + 19/60 |
+| N4 | 125 min | 文字・語彙 / 文法・読解 / 聴解 | 30 / 60 / 35 | 90/180 | 38/120 + 19/60 |
+| N3 | 140 min | 文字・語彙 / 文法・読解 / 聴解 | 30 / 70 / 40 | 95/180 | 19/60 each |
+| N2 | 155 min | 言語知識・読解 / 聴解 | 105 / 50 | 90/180 | 19/60 each |
+| N1 | 170 min | 言語知識・読解 / 聴解 | 110 / 60 | 100/180 | 19/60 each |
+
+Embed this table in mock-test mode timing config.
+
+### A.10 SM-2 SRS exact parameters
+
+From N5's verified implementation:
+
+```
+Initial easiness factor (EF) = 2.5
+EF formula on Good/Easy: EF' = EF + (0.1 - (5-q) * (0.08 + (5-q)*0.02))
+  where q = quality (Easy=5, Good=4, Hard=3, Again=2)
+EF clamped to [1.3, ∞]
+
+Interval after rep N (rep counter increments on Good/Easy only):
+  rep 1 (first success after Again or fresh): 1 day
+  rep 2: 6 days
+  rep 3+: previous_interval * EF (rounded to integer days)
+
+On Again:
+  rep counter resets to 0
+  EF drops by 0.20 (e.g., 2.50 → 2.30)
+  next interval = 1 day
+  item goes to "Lapses" bucket for tracking
+
+On Hard (q=3):
+  rep counter does NOT advance
+  EF drops slightly (~0.15)
+  next interval = previous_interval * 1.2 (instead of * EF)
+
+LocalStorage key: `jlpt-{level}-tutor.srs.{itemId}` storing JSON
+  { "EF": float, "rep": int, "due": ISO8601-date, "interval": int, "lapses": int }
+
+Cross-device merge on import: take MAX of (rep, interval) per item;
+  prefer most-recent EF; sum lapses.
+```
+
+This is the N5-verified spec. Reuse verbatim for N4.
+
+### A.11 Furigana generation procedure
+
+For each example sentence in `grammar.json` and each passage in `reading.json`:
+
+1. Run a Japanese tokenizer (mecab via `mecab-python3` OR Yahoo morphological API OR client-side kuromoji.js) over the Japanese text.
+2. For each kanji-containing token, output `{"reading": <hiragana>, "indices": [start, end]}` annotations.
+3. Filter: only include annotations where the kanji is NOT in the level's prerequisite tier (i.e., for N4 content, annotate kanji that are N4-new but not the N5-prerequisite ones — by default; settings allow toggling).
+4. Store as `furigana` field on the example/passage entry.
+
+UI render: wrap annotated spans in `<ruby><rb>kanji</rb><rt>reading</rt></ruby>`. CSS controls visibility (3-mode: always-show / show-on-hover / never). Default for N4 = show-on-hover.
+
+**One-shot fallback:** if a tokenizer is unavailable in the agent's runtime, ship without furigana. The UI gracefully degrades to plain kanji rendering. Mark this in TASKS.md as Pass-2 candidate.
+
+---
+
+## 18. Pass-20 review findings — disposition
+
+The Pass-20 manual review (`feedback/procedure-manual-review-issues.md`) identified 40 issues. Their disposition in this revision:
+
+**Closed in this pass (15 of 40):**
+- Issue 1, 8, 33: source authorities for content inventories (A.7)
+- Issue 4, 16: required inputs precondition (A.1) + design-system file pointer
+- Issue 19, 21, 39: fallback procedures for external-blocked items (A.3)
+- Issue 20: minimum-viable subset (A.4)
+- Issue 25: default decisions for §15 (A.2)
+- Issue 29: SM-2 exact parameters (A.10)
+- Issue 26: furigana generation procedure (A.11)
+- Issue 37: question-count budget (A.8)
+- Issue 38: JLPT exam structure (A.9)
+- Issue 40: definition of done (A.5)
+- Issue 3: schema extraction recipe (A.6)
+
+**Deferred to Pass-21 — embedding ~5000 lines of inventories (15 of 40):**
+- Issues 2, 7, 9, 11: full executable invariant specs, level-cross-cutting scaling
+- Issue 5, 30, 31, 32: complete UI module list, SM-2 schema, test framework, PWA spec
+- Issue 6, 35: audio manifest schema, i18n locale convention
+- Issue 10: external-corpus URL list per level
+- Issue 14, 15, 17, 18: i18n translation pipeline, kanji-tier convention, KB markdown grammar, vocab-ID slug rules
+
+**Closed-by-pointer (8 of 40):**
+- Issue 12, 13, 22, 23, 24, 27, 28, 34, 36: each refers to a section that already exists in the manual but the reviewer judged it underspecified. The closed-in-this-pass items strengthen these enough that they're now "minimum acceptable, not strong" — registered as Pass-22 polish candidates.
+
+**Open structural concern (2 of 40):**
+- Issue 6 (audio manifest), Issue 18 (vocab-ID slug rule): these touch data integrity and need explicit schemas embedded, not just pointers. Must be closed before any Mode-B agent run produces shippable content. Tagged P0 in Pass-21.
+
+---
+
 *Living document. Update on every fresh learning at N4 (or beyond).*
-*Prepared 2026-05-01. JLPT N5 Tutor v1.x at HEAD `5dcdd0d`.*
+*Prepared 2026-05-01. Pass-20 review ingested 2026-05-01. JLPT N5 Tutor v1.x at HEAD `1f91400`.*

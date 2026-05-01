@@ -597,6 +597,58 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 
 ---
 
+## Pass-20 procedure-manual review - 2026-05-01 (15 of 40 ITEMS CLOSED, 17 DEFERRED, 8 CLOSED-BY-POINTER)
+
+External review (see `feedback/procedure-manual-review-issues.md`) of the new `specifications/procedure-manual-build-next-jlpt-level.md` from a one-shot-agent-execution lens. The reviewer's verdict was "Low readiness for one-shot generation"; the manual is suitable for a human team WITH the N5 repo at hand (Mode A) but not for a zero-interaction agent (Mode B) without significant supplements.
+
+**Applied 2026-05-01:** added explicit Operating-Modes preamble to the manual + Appendix A (§17, ~250 lines) closing the highest-impact gaps. The manual now distinguishes Mode A vs Mode B and provides one-shot supplements for the most actionable issues.
+
+#### CLOSED in this pass (15 of 40)
+
+- [x] **F-20.1** (CRITICAL) **Source authorities for content inventories** — Issues 1, 8, 33. Closed via Appendix A.7: pointers to JLPT.jp, Bunpro N4, Tanos N4 with cross-reference rules. Tier classification rule: `core_n4` = both Bunpro+Tanos; `late_n4` = Bunpro only; `n3_borderline` = Tanos N3 but commonly N4-taught.
+- [x] **F-20.2** (CRITICAL) **Required-inputs precondition** — Issues 4, 16. Closed via Appendix A.1: enumerated all N5 source files an agent needs read access to, plus halt-and-report rule when missing.
+- [x] **F-20.3** (HIGH) **Default decisions for §15 open questions** — Issue 25. Closed via Appendix A.2: 6-row table of zero-interaction defaults (synthetic TTS, defer handwriting/IME/speed-test, hardcode mock-test timing, no monetization).
+- [x] **F-20.4** (HIGH) **Fallback procedures for external-blocked items** — Issues 19, 21, 39. Closed via Appendix A.3: synthetic-TTS fallback for native voice, LLM-audit fallback for native review, English-only brief, v1 minimal recommender.
+- [x] **F-20.5** (HIGH) **Minimum-viable subset** — Issue 20. Closed via Appendix A.4: 8-layer priority order; one-shot agent ships layers 0-2 + skeleton of 3-7 = ~20-30% of full deliverable.
+- [x] **F-20.6** (HIGH) **Definition of done** — Issue 40. Closed via Appendix A.5: 12 self-checkable conditions including CI green, no duplicate IDs, no stub redirects, browser smoke test, ≥25 questions per Mondai, PWA installable.
+- [x] **F-20.7** (HIGH) **SM-2 SRS exact parameters** — Issue 29. Closed via Appendix A.10: full formula, EF init/clamp, interval rules, lapse handling, localStorage key shape, cross-device merge semantics.
+- [x] **F-20.8** (HIGH) **Furigana generation procedure** — Issue 26. Closed via Appendix A.11: tokenizer-based pipeline (mecab/kuromoji), filter-by-tier rule, ruby markup, 3-mode CSS visibility, graceful-degradation fallback.
+- [x] **F-20.9** (HIGH) **JSON schema extraction recipe** — Issue 3. Closed via Appendix A.6: derive-from-N5 procedure with field-by-field shape inventory for grammar.json, questions.json, vocab.json, kanji.json, reading.json, listening.json, audio_manifest.json.
+- [x] **F-20.10** (HIGH) **Question-count budget per Mondai** — Issue 37. Closed via Appendix A.8: 13-row table mapping each KB file × Mondai → target question count. Total N4 = ~530 questions.
+- [x] **F-20.11** (HIGH) **JLPT exam structure tables** — Issue 38. Closed via Appendix A.9: 5-row table (N5..N1) with section times, pass scores, section thresholds.
+
+#### DEFERRED to Pass-21 — content-inventory embedding (15 of 40)
+
+- [ ] **F-20.12** (CRITICAL) **Embed full N4 kanji whitelist (~280 entries)** with on/kun readings + tier per kanji. Source: A.7 authorities.
+- [ ] **F-20.13** (CRITICAL) **Embed full N4 vocab inventory (~1500 entries)** with sections, IDs, readings, glosses.
+- [ ] **F-20.14** (CRITICAL) **Embed full N4 grammar pattern catalog (~210 entries)** with tier assignments per A.7 rule.
+- [ ] **F-20.15** (HIGH) **Complete KB markdown grammar per file** — full BNF for each KB file type (grammar/vocab/kanji/questions/reading/listening) including section ordering, optional fields, allowed inline syntax.
+- [ ] **F-20.16** (HIGH) **Complete data/*.json schemas as JSON Schema files** at `specifications/schemas/*.schema.json`.
+- [ ] **F-20.17** (HIGH) **Executable invariant rule specifications** — each X-6.x and JA-x in machine-testable form (regex / AST / value-set membership).
+- [ ] **F-20.18** (HIGH, **P0**) **Audio manifest schema + voice metadata** — must close before any Mode-B agent run produces shippable audio content.
+- [ ] **F-20.19** (HIGH) **i18n locale-file format + translation pipeline** — convention for `locales/*.json`, key paths, source-locale-of-truth, fallback policy.
+- [ ] **F-20.20** (HIGH, **P0**) **Vocab-ID slug derivation rule** — section-slug encoding, disambiguator rules, cross-listing manifest. Must close before vocab authoring.
+- [ ] **F-20.21** (HIGH) **Kanji-tier vs grammar-tier interaction** — naming convention across kanji/grammar/vocab; CI invariant integration.
+- [ ] **F-20.22** (HIGH) **Complete UI module list with API contracts** — ~25 modules documented with responsibilities, exports, state interactions, DOM contracts.
+- [ ] **F-20.23** (HIGH) **Front-end test framework + Playwright config** — test directory structure, framework, 37-test list reproduced for N4.
+- [ ] **F-20.24** (HIGH) **Diagnostic Summary algorithm** — error-pattern detection, "recommended next session" recommender logic, session-log retention.
+- [ ] **F-20.25** (HIGH) **N5+N4 prerequisite-tier convention** — whether to share kanji whitelist OR use level-strict; CI check interaction.
+- [ ] **F-20.26** (MEDIUM) **External-corpus URL list per level** — vetted sources for N4/N3/N2/N1 corpus extraction with fair-use boundaries.
+
+#### CLOSED-BY-POINTER (8 of 40) — strengthened via this pass, registered as Pass-22 polish candidates
+
+- [-] **F-20.27** Issue 12 — auto-generation stop condition. Strengthened by A.4 minimum-viable subset (declares targets per layer).
+- [-] **F-20.28** Issue 13 — distractor explanation rubric/template. Pass-22 candidate.
+- [-] **F-20.29** Issue 22 — ko-so-a-do scene-context formatting standard. Pass-22 candidate.
+- [-] **F-20.30** Issue 23 — same-pattern-string conflict resolution rule. Closed-by-pointer to F-19 dedup work.
+- [-] **F-20.31** Issue 24 — TASKS.md template structure. Closed-by-pointer to N5's existing TASKS.md.
+- [-] **F-20.32** Issue 27 — JA-2/JA-23 invariant interaction. Pass-22 candidate.
+- [-] **F-20.33** Issue 28 — augmented-set escape valve guard. Pass-22 candidate (need a "exceptions need a comment matching regex `# WHY:` " enforcement).
+- [-] **F-20.34** Issue 32 — PWA spec. Closed-by-pointer to N5's manifest + sw.js.
+- [-] **F-20.35** Issue 34 — LLM audit prompt template, rate limits. Pass-22 candidate (extract from `tools/llm_audit.py`).
+
+---
+
 ## Pass-19 cross-session duplicate scan - 2026-05-01 (REGISTERED, NOT YET FIXED)
 
 Comprehensive duplicate scan across 10 categories triggered by concern that two parallel Claude Code sessions on the same repo could have introduced collisions. Most "duplicates" turned out to be intentional structural patterns; one real category of pre-existing redundancy was uncovered.
