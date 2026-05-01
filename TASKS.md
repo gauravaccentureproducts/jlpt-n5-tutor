@@ -29,6 +29,12 @@ Last updated: 2026-04-30 (Pass-14 questions.json comprehensive audit registered:
 
 ---
 
+## Open user-reported items (2026-05-01)
+
+- [ ] **UX-CONSISTENCY-1: "Mark as known" checkbox positional inconsistency.** User reported 2026-05-01 (screenshot of particle が detail page). Currently the checkbox + label appears only on grammar pattern detail (`js/learn.js#renderPatternDetail`, inside `.pattern-header` flex). Missing from vocab detail (`renderVocabDetail`) and kanji detail (`js/kanji.js`). **Fix:** decide which detail surfaces should expose the toggle (recommend all 3 — grammar / vocab / kanji), then ensure same vertical position relative to the entry title across pages via a shared `.known-toggle` markup pattern. Cross-referenced as OPEN-10 in `feedback/MASTER-TASK-LIST.md`. ~30 min effort.
+
+---
+
 ## Done - Phase 4 + 5
 
 ### Phase 4.1 Foundation

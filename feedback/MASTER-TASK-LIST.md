@@ -56,6 +56,7 @@ None. All factual-error items closed.
 |---|---|---|
 | **OPEN-8** | UX-brief2 §4.1 | **Three-mode furigana setting:** Pass 13 killed auto-furigana; we have on/off. Spec asks for always/known/never (3-mode). Live preview also uncertain. **Decision:** ship 3-mode or formally drop the spec requirement. |
 | **OPEN-9** | UI-design §8.2 | **Microinteractions audit:** spec lists card-hover-lift / button-press-scale / shake-on-error. Zen Modern explicitly forbids card-lift. **Decision:** formally document spec deviation in design-system supplement. |
+| **OPEN-10** | User report 2026-05-01 | **"Mark as known" checkbox positional inconsistency.** Currently appears only on grammar pattern detail page (`js/learn.js#renderPatternDetail`, inside `.pattern-header` flex). Missing from vocab detail (`renderVocabDetail`) and kanji detail (`js/kanji.js`). User screenshot: particle が detail page shows the checkbox; equivalent vocab page for a single word does not. **Fix:** (a) decide which detail surfaces should have it (recommend: all 3 — grammar / vocab / kanji), (b) add a shared component or consistent markup pattern (`.known-toggle` class with same structure under `<header>`), (c) ensure same vertical position relative to the entry title across all detail pages. |
 
 ---
 
