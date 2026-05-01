@@ -4,6 +4,48 @@
  * sparingly, hairlines not borders, no shadows / no gradients / no decorative
  * icons, weights 300/400/500 only. */
 
+/* === Self-hosted fonts (CSP 'self' — no third-party requests) ===
+ * Inter: 3 weights (Light 300, Regular 400, Medium 500). The design's
+ * Muji signature relies on Inter Light for hero headlines; system fonts
+ * lack a true Light. Total Inter footprint: ~338KB.
+ * Noto Sans JP: weight 400 only (per spec §2.3 Japanese is always 400),
+ * subset to hiragana + katakana + N5/N4 kanji + ASCII punctuation =
+ * ~165KB. Subset built via fontTools+brotli at build-time.
+ * font-display: swap so latin renders immediately with system fallback
+ * while the woff2 streams in. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/inter-300.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/noto-sans-jp-400.woff2") format("woff2");
+  /* Constrain to JP-relevant ranges so the browser doesn't try this font
+   * for latin characters (Inter is preferred there). */
+  unicode-range: U+0020-007F, U+3000-303F, U+3040-309F, U+30A0-30FF,
+                 U+3400-9FFF, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF;
+}
+
 :root {
   /* === Surfaces (light mode) === */
   --color-bg:           #FFFFFF;

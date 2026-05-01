@@ -8,7 +8,7 @@
 //
 // Bump CACHE_VERSION whenever a release ships, so old caches get evicted on
 // the next visit.
-const CACHE_VERSION = 'jlpt-n5-tutor-v58';
+const CACHE_VERSION = 'jlpt-n5-tutor-v59';
 
 const PRECACHE = [
   './',
@@ -61,6 +61,13 @@ const PRECACHE = [
   './data/n5_kanji_whitelist.json',
   './data/n5_kanji_readings.json',
   './data/n5_vocab_whitelist.json',
+  // Self-hosted fonts (Phase-4 of the Zen Modern overhaul). Inter L/R/M
+  // covers all latin UI. Noto Sans JP 400 is N5+N4-subsetted so the file
+  // is ~165 KB instead of ~5 MB. Total font footprint: ~503 KB.
+  './fonts/inter-300.woff2',
+  './fonts/inter-400.woff2',
+  './fonts/inter-500.woff2',
+  './fonts/noto-sans-jp-400.woff2',
 ];
 
 self.addEventListener('install', (event) => {

@@ -2,6 +2,64 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.8.0 - 2026-05-01 (Zen Modern design overhaul)
+
+A comprehensive visual refresh per `specifications/jlpt-n5-design-system-zen-modern.md` (Muji-inspired). Hierarchy through typography and whitespace, hairlines instead of borders, no shadows / no gradients / no decorative icons. Total work shipped across 4 commits.
+
+### Phase 1 — Foundation (commit `af38e11`)
+- New `:root` token system: surfaces (bg/surface/surface-alt), hairlines (line/line-strong), text (text/text-muted/text-faint), brand accent (`#1F4D2E` deep forest, replaces warmer `#14452a`), semantic state (correct/incorrect/due each with tint).
+- Type scale: `--text-2xs` (11px) through `--text-2xl` (32px). Body 15px (down from 16px) — tighter, content-heavy correct.
+- Weights: 300 / 400 / 500 only. Audited and replaced 41 occurrences of weight 600/700 in `css/main.css`.
+- Spacing scale 4px–128px; Muji aesthetic favours the BIG end (96px between major sections).
+- Container widths narrow/base/wide (640/880/1120).
+- Border radius: 2/4/6 only — geometric, hard-edged, no SaaS 12-16px curves.
+- Motion tokens: 120ms / 180ms / 300ms with iOS ease-out.
+- **Dark mode: full parity** — every light token has a dark twin. Triggers via `prefers-color-scheme: dark` OR `data-theme="dark"`.
+- Body has `font-variant-numeric: tabular-nums` globally (stats, counters, timers, SRS intervals align vertically).
+- Smooth color transition on theme toggle.
+
+### Phase 2 — Components (commit `4703202`)
+- **Header**: 56px sticky, 0.5px hairline bottom; container-wide max; brand-link gets a `五` mark in a 24px hairline-bordered square (cultural anchor per spec §4.1).
+- **Primary nav**: tabs with 1.5px accent underline on `.active` (replaces filled-pill background).
+- **Section labels**: new component — ALL-CAPS text-2xs label + flex-1 hairline rule, used between major page sections.
+- **Buttons**: unified `.btn-primary` / `.btn-secondary` / `.btn-ghost` / `.btn-danger` at h-36 base, h-28 sm, h-44 lg. Focus ring 2px accent + 2px offset.
+- **Cards**: 0.5px hairline, 6px radius, hover lightens to surface-alt (no transform, no shadow).
+- **`.card-index`** numbered indicator (Muji signature 01/02/03).
+- **Pills**: status-only, 4 tinted variants.
+- **Progress bar**: 2px height (was 6px) — present but barely there.
+- **Table**: hairlines only, no vertical borders, no striping.
+- **Form controls**: h-40, focus border-accent.
+- **Footer**: hairline-top, muted single row.
+- **Furigana ruby**: `.furigana-off rt {display:none}` + `.furigana-known rt {visibility:hidden}` toggle classes.
+- **Dropped**: 8 `box-shadow` declarations + 5 `transform: translateY` hover lifts (spec §8 forbids both).
+
+### Phase 3 — Page treatments (commit `70f5ad2`)
+- **Learn hub**: 5 numbered cards (`01 Grammar` / `02 Vocabulary` / `03 Kanji` / `04 Dokkai` / `05 Listening`). Section labels "Reference" / "Practice" with hairline rule. Copy: "32 categories" → "5 sections" (matches v1.7.5 supercategories); "~1003" → "1003".
+- **Home**: "Sections" section label above the 2 pillar cards, which now show `01 Learn` / `02 Test` numbered indices. Hyphens upgraded to em-dashes in body copy.
+- **Header**: gear glyph `⚙` (rendering as colored emoji on some platforms) → "Settings" text link.
+- **Drill choice grid**: 2-col fixed, max-width 560px, centered. 56px tall buttons, hairline border, accent-tint on `.selected` (was filled green).
+- **Test setup card**: 1.5px top border in `--color-text` (formality cue per spec §5.8).
+- **Settings**: single-column max-width 640px, transparent bg, hairline rows. New `.settings-danger-zone` scaffold with red top border + "DANGER ZONE" label.
+
+### Phase 4 — Self-hosted fonts (this commit)
+- **Inter** (300 / 400 / 500) shipped as woff2 in `fonts/`. Total Inter footprint: ~338 KB. Critical because the Muji aesthetic requires Inter Light (300) for hero headlines — system fonts have no true Light.
+- **Noto Sans JP** (weight 400, per spec §2.3 Japanese is always 400) subset to N5 + N4 character coverage (hiragana + katakana + 106 N5 kanji + ~85 N4 kanji + ASCII + JP punctuation = ~740 chars). Built via `python -m fontTools.subset` with `brotli` compression. Output: 165 KB woff2 (down from 4.5 MB unsubsetted).
+- **Total font footprint: ~503 KB**, all CSP `'self'` (no third-party network).
+- **`<link rel=preload>`** on the two most-used (Inter 400 + Noto Sans JP 400) so first paint isn't a system-font flash.
+- **`@font-face`** with `font-display: swap` so latin renders immediately with system fallback while the woff2 streams in.
+- **`unicode-range`** on the Noto Sans JP face so the browser doesn't try this font for latin characters (Inter is preferred there).
+- **SW precache** updated: 4 new woff2 entries, cache `v59`.
+
+### Stats
+- 4 commits / 4 phases.
+- ~600 lines of CSS replaced or added.
+- 41 weight-600/700 → 500 replacements.
+- 8 box-shadows + 5 hover-lifts purged.
+- 4 woff2 fonts, ~503 KB total install footprint addition.
+- 26/26 content-integrity invariants green throughout.
+
+---
+
 ## v1.7.11 - 2026-05-01 (UI cleanup: remove decorative emojis)
 
 ### Removed
