@@ -1,15 +1,15 @@
 {
   "_meta": {
     "schema_version": "1.0",
-    "question_count": 163,
+    "question_count": 192,
     "type_distribution": {
-      "mcq": 138,
+      "mcq": 162,
       "sentence_order": 16,
-      "text_input": 9
+      "text_input": 14
     },
     "id_range": {
       "first": "q-0001",
-      "last": "q-0453"
+      "last": "q-0472"
     },
     "id_gap_policy": "documented",
     "id_gap_explanation": "IDs are non-contiguous. The declared range q-0001..q-0433 spans 433 slots but only 143 are populated (290 missing). Cause: bulk deletions across audit passes (Pass-9 to Pass-14) without renumbering. Specifically: Pass-9 removed first-edition stubs (q-0052..q-0219), Pass-12 removed duplicates / corrupted items, Pass-14 (2026-05-01) removed 38 pattern-meta stubs (q-0280..q-0416 family). Renumbering was rejected as too risky — any external reference (URL bookmarks of past test results, exported localStorage state, verification.md cross-references) would break unpredictably. Per F-14.6 closure: gaps are accepted as historical record. Tooling MUST treat IDs as opaque strings, not contiguous-integer suffixes.",
@@ -67,10 +67,14 @@
       "Pass-12 (2026-04-30): re-audit, 3 systemic clusters resolved + duplicate removal.",
       "Pass-13 (2026-04-30): native-accuracy audit, build-pipeline corruption fixed (recovered 9 missing kanji entries).",
       "Pass-14 (2026-04-30 audit, 2026-05-01 Phase A applied): 8 issue classes. Phase A deleted 38 pattern-meta stubs (q-0280..q-0416). Cascade-resolved F-14.1/2/3/4/7/8/9. F-14.5 fixed (q-0418 schema). F-14.6 closed via this metadata block. F-14.10 deferred (long-term content authoring).",
-      "Pass-14 Phase F (2026-05-01): authored 12 sentence_order + 8 text_input questions (q-0434..q-0453) to address F-14.10 type-distribution skew. Bank: 143 -> 163. Distribution: {'mcq': 138, 'sentence_order': 16, 'text_input': 9}."
+      "Pass-14 Phase F (2026-05-01): authored 12 sentence_order + 8 text_input questions (q-0434..q-0453) to address F-14.10 type-distribution skew. Bank: 143 -> 163. Distribution: {'mcq': 138, 'sentence_order': 16, 'text_input': 9}.",
+      "Pass-15 P0 (2026-05-01): authored 19 new questions per external-corpus audit. 10 paraphrase mcq (q-0454..0463), 5 counter-rendaku text_input (q-0464..0468), 4 reading-context particle mcq (q-0469..0472). Adds 'paraphrase' subtype on mcq for synonym/antonym/equivalence drills. Bank: 173 -> 192."
     ],
     "authoritative_audit_log": "verification.md (cumulative findings tally)",
-    "integrity_invariants": "26 checks in tools/check_content_integrity.py (X-6.1..X-6.9, JA-1..JA-17)"
+    "integrity_invariants": "26 checks in tools/check_content_integrity.py (X-6.1..X-6.9, JA-1..JA-17)",
+    "subtype_distribution": {
+      "paraphrase": 10
+    }
   },
   "questions": [
     {
@@ -3888,6 +3892,343 @@
       "high_confusion": true,
       "difficulty": 2,
       "auto": false
+    },
+    {
+      "id": "q-0454",
+      "grammarPatternId": "n5-117",
+      "type": "mcq",
+      "subtype": "paraphrase",
+      "prompt_ja": "おなじ いみの ぶんを えらんで ください。",
+      "question_ja": "おととい がっこうを やすみました。",
+      "choices": [
+        "いつかまえ がっこうを やすみました。",
+        "みっかまえ がっこうを やすみました。",
+        "ふつかまえ がっこうを やすみました。",
+        "よっかまえ がっこうを やすみました。"
+      ],
+      "correctAnswer": "ふつかまえ がっこうを やすみました。",
+      "explanation_en": "おととい = day before yesterday = 2 days ago = ふつかまえ. The native counter ふつか (2 days) + まえ (before) is the synonym chain.",
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0455",
+      "grammarPatternId": "n5-117",
+      "type": "mcq",
+      "subtype": "paraphrase",
+      "prompt_ja": "おなじ いみの ぶんを えらんで ください。",
+      "question_ja": "あさって うちに かえります。",
+      "choices": [
+        "あしたの つぎの ひに うちに かえります。",
+        "きのうの つぎの ひに うちに かえります。",
+        "きょうの つぎの ひに うちに かえります。",
+        "せんしゅうの あとに うちに かえります。"
+      ],
+      "correctAnswer": "あしたの つぎの ひに うちに かえります。",
+      "explanation_en": "あさって = day after tomorrow = the day after tomorrow (あしたの つぎの ひ).",
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0456",
+      "grammarPatternId": "n5-002",
+      "type": "mcq",
+      "subtype": "paraphrase",
+      "prompt_ja": "おなじ いみの ぶんを えらんで ください。",
+      "question_ja": "ちちと ははは げんきです。",
+      "choices": [
+        "りょうしんは げんきです。",
+        "きょうだいは げんきです。",
+        "そふぼは げんきです。",
+        "かぞくは みんな げんきです。"
+      ],
+      "correctAnswer": "りょうしんは げんきです。",
+      "explanation_en": "ちち + はは (father + mother) = りょうしん (parents). Direct lexical equivalence.",
+      "high_confusion": false,
+      "difficulty": 1
+    },
+    {
+      "id": "q-0457",
+      "grammarPatternId": "n5-079",
+      "type": "mcq",
+      "subtype": "paraphrase",
+      "prompt_ja": "おなじ いみの ぶんを えらんで ください。",
+      "question_ja": "この へやは くらいです。",
+      "choices": [
+        "この へやは あかるいです。",
+        "この へやは あかるくないです。",
+        "この へやは ひろいです。",
+        "この へやは しずかです。"
+      ],
+      "correctAnswer": "この へやは あかるくないです。",
+      "explanation_en": "くらい (dark) = あかるくない (not bright). Antonym-via-negation tests the i-adjective negative form + opposite-meaning pair.",
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0458",
+      "grammarPatternId": "n5-080",
+      "type": "mcq",
+      "subtype": "paraphrase",
+      "prompt_ja": "おなじ いみの ぶんを えらんで ください。",
+      "question_ja": "この くるまは やすいです。",
+      "choices": [
+        "この くるまは ひくいです。",
+        "この くるまは みじかいです。",
+        "この くるまは たかくないです。",
+        "この くるまは あたらしくないです。"
+      ],
+      "correctAnswer": "この くるまは たかくないです。",
+      "explanation_en": "やすい (cheap) = たかくない (not expensive). Common antonym pair; たかい also means 'tall' but in price context = expensive.",
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0459",
+      "grammarPatternId": "n5-080",
+      "type": "mcq",
+      "subtype": "paraphrase",
+      "prompt_ja": "おなじ いみの ぶんを えらんで ください。",
+      "question_ja": "この もんだいは やさしいです。",
+      "choices": [
+        "この もんだいは おもしろいです。",
+        "この もんだいは むずかしくないです。",
+        "この もんだいは ながいです。",
+        "この もんだいは あたらしいです。"
+      ],
+      "correctAnswer": "この もんだいは むずかしくないです。",
+      "explanation_en": "やさしい (easy, 易しい) = むずかしくない (not difficult). Note: やさしい also has a 'kind' sense (優しい), but the easy sense is most common in N5.",
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0460",
+      "grammarPatternId": "n5-002",
+      "type": "mcq",
+      "subtype": "paraphrase",
+      "prompt_ja": "おなじ いみの ぶんを えらんで ください。",
+      "question_ja": "プレゼントを たくさん もらいました。",
+      "choices": [
+        "プレゼントを いっぱい もらいました。",
+        "プレゼントを すこし もらいました。",
+        "プレゼントを ちょっと もらいました。",
+        "プレゼントを ぜんぜん もらいませんでした。"
+      ],
+      "correctAnswer": "プレゼントを いっぱい もらいました。",
+      "explanation_en": "たくさん = いっぱい (a lot, plenty). Both adverbs of quantity meaning 'a large amount'.",
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0461",
+      "grammarPatternId": "n5-004",
+      "type": "mcq",
+      "subtype": "paraphrase",
+      "prompt_ja": "おなじ いみの ぶんを えらんで ください。",
+      "question_ja": "ふくを せんたくしました。",
+      "choices": [
+        "ふくを きました。",
+        "ふくを ぬぎました。",
+        "ふくを あらいました。",
+        "ふくを かいました。"
+      ],
+      "correctAnswer": "ふくを あらいました。",
+      "explanation_en": "せんたくする (to do laundry, 洗濯する) = あらう (to wash). Specific-to-general lexical equivalence; both target the same action.",
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0462",
+      "grammarPatternId": "n5-002",
+      "type": "mcq",
+      "subtype": "paraphrase",
+      "prompt_ja": "おなじ いみの ぶんを えらんで ください。",
+      "question_ja": "リーさんは もりさんに ペンを かしました。",
+      "choices": [
+        "もりさんは リーさんに ペンを もらいました。",
+        "もりさんは リーさんに ペンを かしました。",
+        "もりさんは リーさんから ペンを かりました。",
+        "リーさんは もりさんから ペンを かりました。"
+      ],
+      "correctAnswer": "もりさんは リーさんから ペンを かりました。",
+      "explanation_en": "AがBにかす (A lends to B) = BがAからかりる (B borrows from A). Same event from the recipient's perspective. Note the particle change: にかす → からかりる.",
+      "high_confusion": true,
+      "difficulty": 3
+    },
+    {
+      "id": "q-0463",
+      "grammarPatternId": "n5-079",
+      "type": "mcq",
+      "subtype": "paraphrase",
+      "prompt_ja": "おなじ いみの ぶんを えらんで ください。",
+      "question_ja": "この ケーキは まずいです。",
+      "choices": [
+        "この ケーキは おいしいです。",
+        "この ケーキは おいしくないです。",
+        "この ケーキは あまいです。",
+        "この ケーキは やすくないです。"
+      ],
+      "correctAnswer": "この ケーキは おいしくないです。",
+      "explanation_en": "まずい (bad-tasting) = おいしくない (not delicious). Antonym pair; まずい is the i-adjective directly opposite to おいしい.",
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0464",
+      "grammarPatternId": "n5-108",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "ひらがなで かいてください。",
+      "question_ja": "「1 + かい」 (one floor counter) は ひらがなで ___ です。",
+      "acceptedAnswers": [
+        "いっかい",
+        "ikkai"
+      ],
+      "correctAnswer": "いっかい",
+      "explanation_en": "Counter 階 (floor): 1 takes the small っ rule → いっかい. The 1/6/8/10 cluster of counters with k-row often takes っ + double-consonant.",
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0465",
+      "grammarPatternId": "n5-108",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "ひらがなで かいてください。",
+      "question_ja": "「3 + かい」 (three floor counter, rendaku) は ひらがなで ___ です。",
+      "acceptedAnswers": [
+        "さんがい",
+        "sangai"
+      ],
+      "correctAnswer": "さんがい",
+      "explanation_en": "Counter 階 with 3: rendaku (sequential voicing) k → g. さん + かい → さんがい. This is the famous rendaku rule for 階; 3階 is the highest-frequency exception learners must memorise.",
+      "high_confusion": true,
+      "difficulty": 3
+    },
+    {
+      "id": "q-0466",
+      "grammarPatternId": "n5-108",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "ひらがなで かいてください。",
+      "question_ja": "「6 + ほん」 (six long-thin counter) は ひらがなで ___ です。",
+      "acceptedAnswers": [
+        "ろっぽん",
+        "roppon"
+      ],
+      "correctAnswer": "ろっぽん",
+      "explanation_en": "Counter 本 with 6: ろく + ほん → ろっぽん. The 1/6/8/10 cluster of 本 takes ぽん (handakuten + small っ): いっぽん / ろっぽん / はっぽん / じゅっぽん.",
+      "high_confusion": true,
+      "difficulty": 3
+    },
+    {
+      "id": "q-0467",
+      "grammarPatternId": "n5-108",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "ひらがなで かいてください。",
+      "question_ja": "「1 + はい」 (one cup counter) は ひらがなで ___ です。",
+      "acceptedAnswers": [
+        "いっぱい",
+        "ippai"
+      ],
+      "correctAnswer": "いっぱい",
+      "explanation_en": "Counter 杯 with 1: いち + はい → いっぱい. Same rule as 本 — 1/6/8/10 take ぱい (handakuten). Note: いっぱい also means 'full/plenty' as an adverb (homograph).",
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0468",
+      "grammarPatternId": "n5-112",
+      "type": "text_input",
+      "direction": "e_to_j",
+      "prompt_ja": "ひらがなで かいてください。",
+      "question_ja": "「8 + ふん」 (eight minutes counter) は ひらがなで ___ です。",
+      "acceptedAnswers": [
+        "はっぷん",
+        "happun"
+      ],
+      "correctAnswer": "はっぷん",
+      "explanation_en": "Counter 分 with 8: はち + ふん → はっぷん. The 1/3/4/6/8/10 cluster of 分 takes ぷん (handakuten + small っ for 1/6/8/10): いっぷん / さんぷん / よんぷん / ろっぷん / はっぷん / じゅっぷん.",
+      "high_confusion": true,
+      "difficulty": 3
+    },
+    {
+      "id": "q-0469",
+      "grammarPatternId": "n5-005",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "わたしは バス（  ）まいにち かいしゃ（  ）行きます。",
+      "choices": [
+        "を / に",
+        "で / に",
+        "に / で",
+        "で / を"
+      ],
+      "correctAnswer": "で / に",
+      "explanation_en": "Means + destination: バスで (by bus, means/instrument particle で) and かいしゃに (to the company, direction-of-motion に). The two-particle test of に vs で is the highest-frequency mistake source for N5 learners.",
+      "high_confusion": true,
+      "difficulty": 2,
+      "distractor_explanations": {
+        "を / に": "を marks direct objects, not means or paths.",
+        "に / で": "Reverses the rule: location-of-action is で, direction-of-motion is に. Here it's both means + destination.",
+        "で / を": "を doesn't mark destinations of go-verbs; に or へ does."
+      }
+    },
+    {
+      "id": "q-0470",
+      "grammarPatternId": "n5-005",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "ちちは びょういん（  ）はたらいて います。あには ぎんこう（  ）つとめて います。",
+      "choices": [
+        "に / に",
+        "で / で",
+        "に / で",
+        "で / に"
+      ],
+      "correctAnswer": "で / に",
+      "explanation_en": "はたらく (general 'to work') takes location-of-action で. つとめる (to be employed at) takes に because it expresses 'state of being attached to'. Same workplace-meaning, different particle — direct N5 vs N4-edge minimal pair from external reading 17.",
+      "high_confusion": true,
+      "difficulty": 3,
+      "distractor_explanations": {
+        "に / に": "はたらく + に would suggest direction-of-motion ('going to work at'), not the routine activity.",
+        "で / で": "つとめる + で is wrong; つとめる pairs with に because employment is a stative attachment."
+      }
+    },
+    {
+      "id": "q-0471",
+      "grammarPatternId": "n5-005",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "まいあさ 七時（  ）おきて、八時（  ）うちを 出ます。",
+      "choices": [
+        "に / に",
+        "で / で",
+        "に / を",
+        "を / に"
+      ],
+      "correctAnswer": "に / に",
+      "explanation_en": "Specific clock-times take に: 七時に (at 7) + 八時に (at 8). Both clauses are time-anchored events; に is the only correct particle for specific time. The 'うちを 出る' (leave home) construction uses を for the source of the leave-action — but the question only blanks the time particles.",
+      "high_confusion": true,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0472",
+      "grammarPatternId": "n5-007",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "ともだち（  ）えいが（  ）見ました。それから きっさてん（  ）コーヒー（  ）飲みました。",
+      "choices": [
+        "と / を / で / を",
+        "に / が / に / が",
+        "を / と / を / で",
+        "が / を / に / を"
+      ],
+      "correctAnswer": "と / を / で / を",
+      "explanation_en": "Companion と (with friend), object を (saw a movie), location-of-action で (at the cafe), object を (drank coffee). All four particles in a connected narrative: distinguishes companion-と from subject-が, location-で from time-に, and reinforces を for direct objects.",
+      "high_confusion": true,
+      "difficulty": 3
     }
   ]
 }
