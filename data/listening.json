@@ -3,7 +3,7 @@
     {
       "id": "n5.listen.001",
       "format": "task",
-      "title_en": "Where to meet",
+      "title_ja": "どこで 会いますか",
       "audio": "audio/listening/n5.listen.001.mp3",
       "script_ja": "男の人と 女の人が 話しています。あした、二人は どこで 会いますか。\n男：あした、えいがを 見に 行きませんか。\n女：いいですね。何時に 会いますか。\n男：三時に えきの 前で どうですか。\n女：えきの 前は 人が おおいですね。カフェの 前で 会いましょう。\n男：はい、わかりました。",
       "prompt_ja": "あした、二人は どこで 会いますか。",
@@ -19,7 +19,7 @@
     {
       "id": "n5.listen.002",
       "format": "task",
-      "title_en": "What to buy",
+      "title_ja": "何を 買いますか",
       "audio": "audio/listening/n5.listen.002.mp3",
       "script_ja": "女の人が 男の人に 電話しています。男の人は 何を 買いますか。\n女：もしもし。今 スーパーですか。\n男：はい、いま スーパーに います。\n女：パンと たまごを かって ください。\n男：パンと たまごですね。\n女：あ、ぎゅうにゅうも おねがいします。\n男：はい、わかりました。",
       "prompt_ja": "男の人は 何を 買いますか。",
@@ -35,7 +35,7 @@
     {
       "id": "n5.listen.003",
       "format": "task",
-      "title_en": "What time to leave",
+      "title_ja": "何時に 出ますか",
       "audio": "audio/listening/n5.listen.003.mp3",
       "script_ja": "男の人と 女の人が 話しています。あした 何時に うちを 出ますか。\n女：あしたの あさ、何時に 出ますか。\n男：そうですね。九時の でんしゃに のりたいです。\n女：では、うちを 八時半に 出ましょう。\n男：いいですね。そう しましょう。",
       "prompt_ja": "あした 何時に うちを 出ますか。",
@@ -51,7 +51,7 @@
     {
       "id": "n5.listen.004",
       "format": "task",
-      "title_en": "Choosing a drink",
+      "title_ja": "のみものを えらぶ",
       "audio": "audio/listening/n5.listen.004.mp3",
       "script_ja": "カフェで 男の人が ちゅうもんしています。男の人は 何を 飲みますか。\n店員：いらっしゃいませ。\n男：すみません、コーヒーを ください。\n店員：あつい コーヒーですか。\n男：いいえ、つめたい コーヒーで おねがいします。\n店員：はい、つめたい コーヒーですね。",
       "prompt_ja": "男の人は 何を 飲みますか。",
@@ -67,7 +67,7 @@
     {
       "id": "n5.listen.005",
       "format": "point",
-      "title_en": "Reason for being late",
+      "title_ja": "おくれた りゆう",
       "audio": "audio/listening/n5.listen.005.mp3",
       "script_ja": "学校で 先生と 学生が 話しています。学生は どうして おそく なりましたか。\n先生：今日は どうして おそく 来ましたか。\n学生：すみません。あさ、でんしゃが おくれました。\n先生：そうですか。だいじょうぶですか。\n学生：はい、もう だいじょうぶです。",
       "prompt_ja": "学生は どうして おそく なりましたか。",
@@ -87,7 +87,7 @@
     {
       "id": "n5.listen.006",
       "format": "point",
-      "title_en": "Where the book is",
+      "title_ja": "本は どこですか",
       "audio": "audio/listening/n5.listen.006.mp3",
       "script_ja": "女の人が 男の人と 話しています。本は どこに ありますか。\n女：日本語の 本は どこですか。\n男：あの たなの 上です。\n女：上ですか。下では ありませんか。\n男：はい、上です。一番 大きい 本です。\n女：わかりました。ありがとう。",
       "prompt_ja": "本は どこに ありますか。",
@@ -103,7 +103,7 @@
     {
       "id": "n5.listen.007",
       "format": "point",
-      "title_en": "Favorite season",
+      "title_ja": "すきな きせつ",
       "audio": "audio/listening/n5.listen.007.mp3",
       "script_ja": "男の人が はなしています。男の人は どの きせつが いちばん すきですか。\nぼくは きせつの 中で あきが いちばん すきです。あきは あつくないです。さむくないです。たべものも おいしいです。なつは あついですから、すきじゃありません。ふゆは さむいですから、すきじゃありません。はるも すきですが、あきが いちばん すきです。",
       "prompt_ja": "男の人は どの きせつが いちばん すきですか。",
@@ -119,7 +119,7 @@
     {
       "id": "n5.listen.008",
       "format": "point",
-      "title_en": "What he wants for his birthday",
+      "title_ja": "たんじょうびに ほしい もの",
       "audio": "audio/listening/n5.listen.008.mp3",
       "script_ja": "女の人と 男の人が 話しています。男の人は たんじょうびに 何が ほしいですか。\n女：たんじょうび、何が ほしいですか。本ですか。\n男：本も いいですが、もっと ほしい ものが あります。\n女：何ですか。とけいですか。\n男：いいえ、新しい カメラが ほしいです。\n女：そうですか。",
       "prompt_ja": "男の人は たんじょうびに 何が ほしいですか。",
@@ -135,7 +135,7 @@
     {
       "id": "n5.listen.009",
       "format": "utterance",
-      "title_en": "Asking for the time",
+      "title_ja": "時間を 聞く",
       "audio": "audio/listening/n5.listen.009.mp3",
       "script_ja": "（しらない人に 時間を 聞く とき）",
       "prompt_ja": "あなたは いま 何時か しりたいです。何と 言いますか。",
@@ -150,7 +150,7 @@
     {
       "id": "n5.listen.010",
       "format": "utterance",
-      "title_en": "Buying a ticket",
+      "title_ja": "きっぷを 買う",
       "audio": "audio/listening/n5.listen.010.mp3",
       "script_ja": "（えきの まどぐちで）",
       "prompt_ja": "あなたは とうきょうまでの きっぷを 一まい かいたいです。何と 言いますか。",
@@ -165,7 +165,7 @@
     {
       "id": "n5.listen.011",
       "format": "utterance",
-      "title_en": "Refusing politely",
+      "title_ja": "ていねいに ことわる",
       "audio": "audio/listening/n5.listen.011.mp3",
       "script_ja": "（友だちが ケーキを すすめました。でも、もう おなかが いっぱいです）",
       "prompt_ja": "ともだちが ケーキを すすめました。たべたく ありません。何と 言いますか。",
@@ -180,7 +180,7 @@
     {
       "id": "n5.listen.012",
       "format": "utterance",
-      "title_en": "Greeting in the morning",
+      "title_ja": "あさの あいさつ",
       "audio": "audio/listening/n5.listen.012.mp3",
       "script_ja": "（あさ、先生に 会った とき）",
       "prompt_ja": "あさ、学校で 先生に 会いました。何と 言いますか。",
@@ -195,7 +195,7 @@
     {
       "id": "n5.listen.013",
       "format": "task",
-      "title_en": "What time to meet",
+      "title_ja": "何時に 会いますか",
       "audio": "audio/listening/n5.listen.013.mp3",
       "script_ja": "A: あした 学校で 会いましょう。\nB: はい。何時に 会いますか。\nA: 九時はんに しましょう。\nB: わかりました。",
       "prompt_ja": "あした 何時に 会いますか。",
@@ -212,7 +212,7 @@
     {
       "id": "n5.listen.014",
       "format": "task",
-      "title_en": "Where to wait",
+      "title_ja": "どこで まちますか",
       "audio": "audio/listening/n5.listen.014.mp3",
       "script_ja": "男: 来週の 土ようび、駅の 前で まってください。\n女: 駅の どこですか。\n男: 北の 出口です。\n女: わかりました。",
       "prompt_ja": "女の人は どこで まちますか。",
@@ -229,7 +229,7 @@
     {
       "id": "n5.listen.015",
       "format": "task",
-      "title_en": "What to buy at the shop",
+      "title_ja": "店で 何を 買いますか",
       "audio": "audio/listening/n5.listen.015.mp3",
       "script_ja": "母: 店で 何を 買いますか。\n子: りんごを 三つと、ぎゅうにゅうを 一本 買います。\n母: パンも 買いますか。\n子: いいえ、パンは いりません。",
       "prompt_ja": "子どもは 何を 買いますか。",
@@ -246,7 +246,7 @@
     {
       "id": "n5.listen.016",
       "format": "task",
-      "title_en": "Going with whom",
+      "title_ja": "だれと 行きますか",
       "audio": "audio/listening/n5.listen.016.mp3",
       "script_ja": "A: あしたの えいがは だれと 行きますか。\nB: はじめは 友だちと 行きました。 でも、友だちは いそがしいです。\nA: そうですか。\nB: ですから、母と 行きます。",
       "prompt_ja": "B さんは あした だれと 行きますか。",
@@ -263,7 +263,7 @@
     {
       "id": "n5.listen.017",
       "format": "task",
-      "title_en": "When the teacher will arrive",
+      "title_ja": "先生は いつ 来ますか",
       "audio": "audio/listening/n5.listen.017.mp3",
       "script_ja": "男: 先生は 何時に 来ますか。\n女: 三時に 来ます。 でも、道が こんで います。\n男: では、何時に なりますか。\n女: たぶん 三時はんです。",
       "prompt_ja": "先生は 何時に 来ますか。",
@@ -280,7 +280,7 @@
     {
       "id": "n5.listen.018",
       "format": "task",
-      "title_en": "How to travel",
+      "title_ja": "どうやって 行きますか",
       "audio": "audio/listening/n5.listen.018.mp3",
       "script_ja": "A: あした どこへ 行きますか。\nB: 父の 友だちの いえへ 行きます。\nA: 何で 行きますか。\nB: 電車で 行きます。",
       "prompt_ja": "あした B さんは 何で 行きますか。",
@@ -297,7 +297,7 @@
     {
       "id": "n5.listen.019",
       "format": "point",
-      "title_en": "Why no homework",
+      "title_ja": "しゅくだいが ない りゆう",
       "audio": "audio/listening/n5.listen.019.mp3",
       "script_ja": "先生: しゅくだいは しましたか。\n学生: すみません。 きのう しゅくだいを しませんでした。\n先生: どうしてですか。\n学生: あたまが いたかったです。",
       "prompt_ja": "学生は どうして しゅくだいを しませんでしたか。",
@@ -314,7 +314,7 @@
     {
       "id": "n5.listen.020",
       "format": "point",
-      "title_en": "How much was the book",
+      "title_ja": "本は いくらでしたか",
       "audio": "audio/listening/n5.listen.020.mp3",
       "script_ja": "A: その 本は いくらでしたか。\nB: 千五百円でした。\nA: 高いですね。\nB: でも、おもしろい 本ですよ。",
       "prompt_ja": "本は いくらでしたか。",
@@ -331,7 +331,7 @@
     {
       "id": "n5.listen.021",
       "format": "point",
-      "title_en": "Library hours",
+      "title_ja": "としょかんの 時間",
       "audio": "audio/listening/n5.listen.021.mp3",
       "script_ja": "学生: としょかんは 何時から 何時までですか。\n先生: 月よう日から 金よう日までは 九時から 五時までです。 土ようびは 一時から 四時までです。",
       "prompt_ja": "月よう日の としょかんは 何時から 何時までですか。",
@@ -348,7 +348,7 @@
     {
       "id": "n5.listen.022",
       "format": "point",
-      "title_en": "Tomorrow's weather",
+      "title_ja": "あしたの てんき",
       "audio": "audio/listening/n5.listen.022.mp3",
       "script_ja": "女: あしたの 天気は どうですか。\n男: あしたは 雨です。 でも、あさっては 天気が いいです。\n女: そうですか。",
       "prompt_ja": "あしたの 天気は どうですか。",
@@ -365,7 +365,7 @@
     {
       "id": "n5.listen.023",
       "format": "point",
-      "title_en": "Which days for homework",
+      "title_ja": "しゅくだいは 何よう日",
       "audio": "audio/listening/n5.listen.023.mp3",
       "script_ja": "男: しゅくだいは いつですか。\n女: 火よう日と 木よう日です。\n男: 水よう日は ありませんか。\n女: ありません。",
       "prompt_ja": "しゅくだいは 何よう日に ありますか。",
@@ -382,7 +382,7 @@
     {
       "id": "n5.listen.024",
       "format": "point",
-      "title_en": "Who is coming today",
+      "title_ja": "きょう だれが 来ますか",
       "audio": "audio/listening/n5.listen.024.mp3",
       "script_ja": "母: 今日は だれが 来ますか。\n子: 父の 先生と、母の 友だちが 来ます。 父も 六時に 来ます。\n母: わかりました。",
       "prompt_ja": "今日は だれが 来ますか。",
@@ -399,7 +399,7 @@
     {
       "id": "n5.listen.025",
       "format": "utterance",
-      "title_en": "Greeting the teacher in the morning",
+      "title_ja": "あさの 先生への あいさつ",
       "audio": "audio/listening/n5.listen.025.mp3",
       "script_ja": "あさ 学校で 先生に 会いました。",
       "prompt_ja": "あさ 学校で 先生に 会いました。何と 言いますか。",
@@ -416,7 +416,7 @@
     {
       "id": "n5.listen.026",
       "format": "utterance",
-      "title_en": "Asking for coffee at a shop",
+      "title_ja": "店で コーヒーを たのむ",
       "audio": "audio/listening/n5.listen.026.mp3",
       "script_ja": "店で コーヒーを 買いたいです。",
       "prompt_ja": "店で コーヒーを 買いたいです。何と 言いますか。",
@@ -433,7 +433,7 @@
     {
       "id": "n5.listen.027",
       "format": "utterance",
-      "title_en": "Politely declining a drink",
+      "title_ja": "のみものを ていねいに ことわる",
       "audio": "audio/listening/n5.listen.027.mp3",
       "script_ja": "友だちが おちゃを すすめました。 飲みたく ないです。",
       "prompt_ja": "友だちが おちゃを すすめました。 飲みたく ないです。何と 言いますか。",
@@ -450,7 +450,7 @@
     {
       "id": "n5.listen.028",
       "format": "utterance",
-      "title_en": "Entering a friend's home",
+      "title_ja": "友だちの いえに 入る",
       "audio": "audio/listening/n5.listen.028.mp3",
       "script_ja": "友だちの いえへ 入ります。",
       "prompt_ja": "友だちの いえへ 入ります。何と 言いますか。",
@@ -467,7 +467,7 @@
     {
       "id": "n5.listen.029",
       "format": "utterance",
-      "title_en": "Before eating",
+      "title_ja": "食べる まえ",
       "audio": "audio/listening/n5.listen.029.mp3",
       "script_ja": "ごはんを 食べる 前です。",
       "prompt_ja": "ごはんを 食べる 前です。何と 言いますか。",
@@ -484,7 +484,7 @@
     {
       "id": "n5.listen.030",
       "format": "utterance",
-      "title_en": "Asking the way",
+      "title_ja": "みちを 聞く",
       "audio": "audio/listening/n5.listen.030.mp3",
       "script_ja": "駅へ 行きたいです。 道が わかりません。",
       "prompt_ja": "駅へ 行きたいです。 道が わかりません。 しらない 人に 何と 聞きますか。",

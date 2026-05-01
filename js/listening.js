@@ -64,7 +64,7 @@ function renderIndex(container) {
       <details class="listening-section">
         <summary><h3>${esc(FORMATS[fmt] || fmt)} <span class="muted small">(${list.length})</span></h3></summary>
         <ul class="listening-list">
-          ${list.map(it => `<li><button class="listening-pick" data-id="${esc(it.id)}">${esc(it.title_en || it.id)}</button></li>`).join('')}
+          ${list.map(it => `<li><button class="listening-pick" data-id="${esc(it.id)}">${it.title_ja ? renderJa(it.title_ja) : esc(it.id)}</button></li>`).join('')}
         </ul>
       </details>
     `).join('')}
@@ -98,7 +98,7 @@ function renderItem(container) {
       <div class="srs-progress">
         <span><a id="listening-back" href="#/listening">← Back to list</a></span>
       </div>
-      <h2>${esc(it.title_en || it.id)}</h2>
+      <h2>${it.title_ja ? renderJa(it.title_ja) : esc(it.id)}</h2>
       <p class="muted small">Format: ${esc(FORMATS[it.format] || it.format)}</p>
       <div class="listening-audio">
         ${it.audio ? `<audio controls preload="none" src="${esc(it.audio)}">Audio</audio>` : '<p class="muted small">No audio file linked yet.</p>'}
