@@ -96,6 +96,19 @@ export function setKanjiKnown(glyph, known) {
   set('knownKanji', m);
 }
 
+// Per-vocab "I know this word" flags (added 2026-05-01 per OPEN-10:
+// the Mark-as-known control needs parity across grammar / vocab / kanji
+// detail surfaces). Keyed by vocab `form` (the surface kana/kanji word)
+// rather than by id, so the user-visible identity matches what they see
+// on the detail page.
+export function getKnownVocab() { return get('knownVocab', {}); }
+export function isVocabKnown(form) { return !!getKnownVocab()[form]; }
+export function setVocabKnown(form, known) {
+  const m = getKnownVocab();
+  if (known) m[form] = true; else delete m[form];
+  set('knownVocab', m);
+}
+
 // ---- Pattern history per spec §7.4 + §6.6 ----
 
 const FRESH_PATTERN_ENTRY = {

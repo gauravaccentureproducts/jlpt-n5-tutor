@@ -332,6 +332,38 @@ A free, deterministic alternative to the LLM-audit pipeline ran on all 187 gramm
 
 Full Pass-15a log in `verification.md`. Cumulative tally across all passes: ~635 findings, ~620 fixed, 2 deferred to Pass-15-true.
 
+### B.15 Microinteractions vs Zen Modern — formal spec deviation (2026-05-01)
+
+The original UI design brief (`feedback/jlpt-n5-ui-design-brief.md` §8.2) called for the following microinteractions:
+
+- Card hover lift (translateY -2px on hover)
+- Button press scale (transform: scale(0.98) on `:active`)
+- Shake animation on incorrect answer
+- Pulse / glow on correct answer
+
+The v1.8.0 Zen Modern design overhaul (`specifications/jlpt-n5-design-system-zen-modern.md` §0.5 + §8) explicitly forbids these:
+
+> **§0.5:** "No shadows, no gradients, no glass effects. Ever. Including hover states."
+>
+> **§8:** Forbidden motion: bouncy springs, confetti, **card lift / shadow on hover**, wiggle, shake, pulse, glow, sliding panes, fading in entire pages from blank.
+
+**Resolution (this section is the formal record):** the Zen Modern spec **supersedes** the UI design brief on microinteractions. Hover affordances are rendered through:
+
+1. Background lightening (surface → surface-alt)
+2. Border-color strengthening (line → line-strong)
+3. Underline on `.card-action` text only
+
+Correctness feedback in drill / test surfaces uses **color + class change only** — `.choice-button.correct-choice` gets `color: var(--color-correct)` + tinted background; `.choice-button.wrong-choice` gets the incorrect tint + strikethrough. No motion, no shake.
+
+The Pass-15 design-system static checker (`tools/check_design_system.py`) enforces this:
+- **D-3** No `box-shadow:` declarations (other than `none`)
+- **D-4** No `transform:` inside `:hover` blocks
+- **D-8** No decorative `text-shadow`
+
+Any future re-introduction of the UI design brief's microinteractions would fail D-3, D-4, or D-8 in CI. This guards the Zen Modern aesthetic against drift back to the SaaS-default microinteraction palette.
+
+OPEN-9 from `feedback/MASTER-TASK-LIST.md` closed via this section.
+
 ---
 
 ## C. Updates to existing v3 sections (errata)

@@ -282,16 +282,23 @@ function renderVocabDetail(container, vocabData, grammarData, form) {
   const prev = idx > 0 ? sectionEntries[idx - 1] : null;
   const next = idx >= 0 && idx < sectionEntries.length - 1 ? sectionEntries[idx + 1] : null;
 
+  // Mark-as-known parity (OPEN-10): vocab detail gets the same toggle
+  // affordance as grammar pattern detail, in the same header-right position.
+  const isVocabKnown = storage.isVocabKnown(entry.form);
   container.innerHTML = `
     <article class="vocab-detail">
       <a class="back-link" href="#/learn/vocab">← Back to Vocabulary</a>
-      <header class="vocab-header">
+      <header class="vocab-header pattern-header">
         <div>
           <p class="muted small">${esc(entry.section || '')}</p>
           <h2 class="vocab-form-big" lang="ja">${esc(entry.form)}</h2>
           ${entry.reading ? `<p class="vocab-reading-big" lang="ja">${esc(entry.reading)}</p>` : ''}
           <p class="vocab-gloss-big">${esc(entry.gloss || '')}</p>
         </div>
+        <label class="known-toggle" title="Manually mark this word as known. Cleared on the next miss in Test or Drill.">
+          <input type="checkbox" id="mark-known-vocab" ${isVocabKnown ? 'checked' : ''}>
+          <span>Mark as known</span>
+        </label>
       </header>
 
       <section>
@@ -323,6 +330,11 @@ function renderVocabDetail(container, vocabData, grammarData, form) {
       </nav>
     </article>
   `;
+
+  // Wire Mark-as-known toggle (parity with renderPatternDetail). OPEN-10.
+  document.getElementById('mark-known-vocab')?.addEventListener('change', (ev) => {
+    storage.setVocabKnown(entry.form, ev.target.checked);
+  });
 }
 
 // Render-time mapping: 32 fine-grained categories in data/grammar.json

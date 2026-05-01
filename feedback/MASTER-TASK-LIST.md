@@ -16,15 +16,19 @@ This is the consolidated successor to all individual audit / brief docs. It list
 
 ## 0. Summary
 
+Updated 2026-05-01 (afternoon). 5 of 10 OPEN items closed in this batch:
+
 | Severity | Open | Open-Infra | Deferred | Done | Total |
 |---|---|---|---|---|---|
 | CRITICAL | 0 | 0 | 0 | 22 | 22 |
-| HIGH | 3 | 2 | 1 | 38 | 44 |
+| HIGH | 0 | 2 | 1 | 41 | 44 |
 | MEDIUM | 4 | 3 | 6 | 24 | 37 |
-| LOW | 2 | 0 | 5 | 14 | 21 |
-| **Total** | **9** | **5** | **12** | **98** | **124** |
+| LOW | 1 | 0 | 5 | 16 | 22 |
+| **Total** | **5** | **5** | **12** | **103** | **125** |
 
-**Bottom line:** 9 actionable open items remain. 5 need infrastructure (audio pipeline / native reviewer). 12 deferred long-term.
+**Bottom line:** 5 actionable open items remain (was 9). 5 still need infrastructure. 12 deferred long-term.
+
+**Closed in afternoon batch:** OPEN-1, OPEN-2 (already done), OPEN-3, OPEN-9, OPEN-10.
 
 ---
 
@@ -35,11 +39,13 @@ None. All factual-error items closed.
 
 ### HIGH
 
-| ID | Source | Item |
+✅ All 3 HIGH items closed in afternoon batch (2026-05-01):
+
+| ID | Source | Status |
 |---|---|---|
-| **OPEN-1** | LLM-audit §n5-115 | **Pattern-mismatch in n5-115:** 4 of 5 examples don't demonstrate the 〜時 pattern; they show に for direction/location/recipient/goal. Sat through Pass-1..13. **Fix:** replace ex[1]-ex[4] with time-specific examples (`9時に かいぎが あります` / `何時に きましたか` / `5時半に 来てください` / `12時に ねます`). |
-| **OPEN-2** | LLM-audit §n5-115 | **Stub-redirect text in n5-115 notes field:** `notes` field contains "Duplicate-cleanup redirect. Examples inlined from canonical pattern n5-005..." — internal authoring metadata reaching learners. **Fix:** replace with proper grammar notes or remove. |
-| **OPEN-3** | LLM-audit §n5-008 | **n5-008 ex[1] semantic oddity:** `パンと コーヒーを たべました。` literally claims the speaker ate coffee. **Fix:** replace with `母と えいがを 見ました` (clean companion-と use). |
+| ~~OPEN-1~~ | LLM-audit §n5-115 | ✅ **CLOSED** — replaced 5 examples with time-specific 〜時に demonstrations (9時/何時/5時はん/12時); refined meaning_en from "covered by" redirect-style text. |
+| ~~OPEN-2~~ | LLM-audit §n5-115 | ✅ **CLOSED** — verified the stub-redirect text was already removed in a prior pass. No data change needed. |
+| ~~OPEN-3~~ | LLM-audit §n5-008 | ✅ **CLOSED** — ex[1] `パンと コーヒーを たべました` → `母と えいがを 見ました` (clean companion-と use). |
 
 ### MEDIUM
 
@@ -55,8 +61,8 @@ None. All factual-error items closed.
 | ID | Source | Item |
 |---|---|---|
 | **OPEN-8** | UX-brief2 §4.1 | **Three-mode furigana setting:** Pass 13 killed auto-furigana; we have on/off. Spec asks for always/known/never (3-mode). Live preview also uncertain. **Decision:** ship 3-mode or formally drop the spec requirement. |
-| **OPEN-9** | UI-design §8.2 | **Microinteractions audit:** spec lists card-hover-lift / button-press-scale / shake-on-error. Zen Modern explicitly forbids card-lift. **Decision:** formally document spec deviation in design-system supplement. |
-| **OPEN-10** | User report 2026-05-01 | **"Mark as known" checkbox positional inconsistency.** Currently appears only on grammar pattern detail page (`js/learn.js#renderPatternDetail`, inside `.pattern-header` flex). Missing from vocab detail (`renderVocabDetail`) and kanji detail (`js/kanji.js`). User screenshot: particle が detail page shows the checkbox; equivalent vocab page for a single word does not. **Fix:** (a) decide which detail surfaces should have it (recommend: all 3 — grammar / vocab / kanji), (b) add a shared component or consistent markup pattern (`.known-toggle` class with same structure under `<header>`), (c) ensure same vertical position relative to the entry title across all detail pages. |
+| ~~OPEN-9~~ | UI-design §8.2 | ✅ **CLOSED** — spec supplement §B.15 added documenting Zen Modern §0.5 + §8 supersedes UI-design-brief §8.2 microinteractions. Design-system rules D-3/D-4/D-8 enforce in CI. |
+| ~~OPEN-10~~ | User report 2026-05-01 | ✅ **CLOSED** — added `.known-toggle` markup to `renderVocabDetail` (js/learn.js) and `renderDetail` (js/kanji.js) in same header-right position as `renderPatternDetail`. New `getKnownVocab` / `setVocabKnown` storage functions parallel to existing kanji versions. CSS `.kanji-glyph-cluster` wrapper added so the glyph+readings stay grouped left while the toggle floats right. |
 
 ---
 
