@@ -1,39 +1,18 @@
 // Home / landing screen.
-// First-time visitor: scope statement + corpus stats + CTAs.
-// Returning visitor: recommender + resume cards + streak strip.
+// First-time visitor: 2 pillar cards (Learn / Test) + small placement-check link.
+// Returning visitor: recommender + resume cards + streak strip + pillars.
 //
 // Voice: institutional / reference (think MIT OpenCourseWare, arxiv.org).
 // No outcome promises, no time-to-result claims, no second-person imperatives,
 // no celebration glyphs. State facts; describe what the tool contains.
 // See TASKS.md "Copy audit: remove sales-promo voice" for the full guideline.
+//
+// 2026-05-01: hero (heading + tagline + CTAs) removed entirely per user
+// direction. Pillars are now the front door. Corpus counts no longer
+// appear on the home page; they're on the Learn hub instead.
 import * as storage from './storage.js';
 
-let grammarCount = null;
-let vocabCount = null;
-let kanjiCount = null;
-
-async function loadCorpusCounts() {
-  // Single source of truth for corpus sizes: the data files. Refusing to hardcode
-  // these in the home tagline (per 2026-04-30: 97/106 kanji drift caught in QA).
-  if (grammarCount !== null && vocabCount !== null && kanjiCount !== null) return;
-  try {
-    const [g, v, k] = await Promise.all([
-      fetch('data/grammar.json').then(r => r.json()),
-      fetch('data/vocab.json').then(r => r.json()),
-      fetch('data/kanji.json').then(r => r.json()),
-    ]);
-    grammarCount = (g.patterns || []).length;
-    vocabCount = (v.entries || []).length;
-    kanjiCount = (k.entries || []).length;
-  } catch {
-    grammarCount = grammarCount ?? 0;
-    vocabCount = vocabCount ?? 0;
-    kanjiCount = kanjiCount ?? 0;
-  }
-}
-
 export async function renderHome(container) {
-  await loadCorpusCounts();
   const history = storage.getHistory();
   const results = storage.getResults();
   const isReturning = Object.keys(history).length > 0 || results.length > 0;
@@ -42,21 +21,10 @@ export async function renderHome(container) {
   const settings = storage.getSettings();
   const lastViewed = settings.lastLearnId || null;
 
-  const firstTimeTagline = `${grammarCount} grammar patterns · ${vocabCount} vocabulary · ${kanjiCount} kanji · 30 reading passages · 12 listening drills.`;
-  const returningTagline = `${grammarCount} patterns. ${vocabCount} words. ${kanjiCount} kanji.`;
-
   container.innerHTML = `
     <section class="home">
       ${isReturning ? renderRecommendation(pickRecommendation({ dueCount, streak, lastViewed })) : ''}
       ${isReturning ? renderReturning({ history, results, dueCount, streak, lastViewed }) : ''}
-      <section class="home-cta">
-        <h2>${isReturning ? 'Continue' : 'JLPT N5 study material'}</h2>
-        <p class="home-tagline">${isReturning ? returningTagline : firstTimeTagline}</p>
-        <div class="home-cta-buttons">
-          <a class="btn-primary" href="#/learn${lastViewed ? '/' + encodeURIComponent(lastViewed) : ''}">${isReturning ? 'Continue lessons' : 'Start a lesson'}</a>
-          <a class="btn-secondary" href="#/diagnostic">Take a placement check</a>
-        </div>
-      </section>
       <section class="home-pillars" aria-label="Sections">
         <a class="pillar-card" href="#/learn">
           <h3>Learn</h3>
@@ -70,7 +38,7 @@ export async function renderHome(container) {
         </a>
       </section>
       ${isReturning ? '' : `
-        <p class="muted small home-footnote">If you've studied some N5 already, the placement check above can shorten the path.</p>
+        <p class="muted small home-footnote"><a href="#/diagnostic">Take a placement check</a> to skip what you already know.</p>
       `}
     </section>
   `;

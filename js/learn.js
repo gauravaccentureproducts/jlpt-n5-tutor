@@ -269,9 +269,6 @@ function renderTOC(container, data) {
   }
   const sorted = [...byCategory.entries()].sort((a, b) => a[1].order - b[1].order);
 
-  const settings = storage.getSettings();
-  const showDiagBanner = !settings.diagnosticCompleted;
-
   // Build a category jump menu so users can skip directly to any of the
   // 32 categories without scrolling 187 cards. Renders as a sticky chip
   // bar on desktop; collapses to a horizontally-scrolling strip on mobile.
@@ -287,15 +284,6 @@ function renderTOC(container, data) {
     <a class="back-link" href="#/learn">← Back to Learn</a>
     <h2>Grammar</h2>
     <p class="page-lede">${data.patterns.length} patterns in ${sorted.length} categories. Jump to a category or scroll.</p>
-    ${showDiagBanner ? `
-      <div class="diag-cta">
-        <div>
-          <strong>New here?</strong> Take a quick 10-question diagnostic to map your strengths.
-          It seeds the Drill queue without affecting your test history.
-        </div>
-        <a href="#/diagnostic" class="btn-primary" style="text-decoration:none">Take Diagnostic →</a>
-      </div>
-    ` : ''}
     <nav class="cat-jump" aria-label="Grammar category jump menu">
       ${jumpItems}
     </nav>
