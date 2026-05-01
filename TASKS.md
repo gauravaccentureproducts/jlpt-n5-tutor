@@ -657,9 +657,17 @@ Appendix B at `specifications/procedure-manual-appendix-b-extracted-from-n5.md` 
 - [x] **F-20.25** (HIGH) N5+N4 prerequisite-tier convention — closed via Appendix B.10.2 (UNION composition recommended; alternative strict-level mode rejected with rationale).
 - [x] **F-20.26** (MEDIUM) External-corpus URL list per level — closed via Appendix B.11 (per-level grammar/kanji/vocab/practice URLs for N5..N1; jlpt.jp official samples; fair-use boundaries; attribution requirements).
 
-#### MOVED to N4 sibling project — content-inventory authoring (3 items, 2026-05-01)
+#### MOVED to N4 sibling project + bootstrapped via inventory manifests (3 items, 2026-05-01)
 
 F-20.12 (N4 kanji whitelist), F-20.13 (N4 vocab inventory), F-20.14 (N4 grammar catalog) are content-authoring tasks for a future N4 project, NOT N5 maintenance. They were inflating the N5 unchecked-item count without ever being actionable here. Moved to `specifications/N4-PLANNING.md` as the starter task list for whenever the N4 build begins. The procedure-manual Appendix B.12 still hosts the extraction-script recipes the N4 agent will need.
+
+**Native-teacher bootstrapping addendum (2026-05-01):** acting on user direction "close these items as well from the perspective of a native japanese language teacher; refer the sources mentioned in `KnowledgeBank/sources.md`", produced authoritative-source-cited draft inventories in `feedback/`:
+
+- [x] **F-20.12 (bootstrapped)** — `feedback/n4-kanji-inventory.md`: 166 N4-additional kanji from JLPT Sensei (pages 1+2) with on/kun/meaning. Tanos verification deferred (server returned 500 at fetch time — N4 build should retry). Edge-case borderline N5↔N4 placements (会, 事, 自, 言, 兄, 弟, 妹, 姉) flagged for native-review at N4 build time.
+- [x] **F-20.13 (bootstrapped)** — `feedback/n4-vocab-inventory-sample.md`: ~100-entry alphabetical sample (a-h) from JLPT Sensei + section-breakdown estimate (~600 N4-additional split across 11 categories). Honorific / kenjougo entries flagged for structural section. Full corpus deferred to N4-build-time fetch from Tanos N4 CSV (per Appendix B.12.2 recipe).
+- [x] **F-20.14 (bootstrapped)** — `feedback/n4-grammar-inventory.md`: ~130 patterns from JLPT Sensei (pages 1-4). Tier-distribution estimate (~92 core_n4, ~26 late_n4, ~13 n3_borderline). Genki II Lessons 13-23 cross-coverage check confirms alignment. META-topic entries (transitive/intransitive, volitional, passive) flagged for consolidation. Pattern-family split decisions (みたい / よう / そう) called out.
+
+Master index at `feedback/n4-inventory-manifest.md` ties all three together with source-authority map, headcounts, edge-case annotations, and a "what an actual N4 build should do" guide. **Note:** these manifests do NOT modify N5 live data; they live in `feedback/` as bootstrap input for the future N4 build.
 
 #### CLOSED-BY-POINTER (8 of 40) — strengthened via this pass, registered as Pass-22 polish candidates
 
