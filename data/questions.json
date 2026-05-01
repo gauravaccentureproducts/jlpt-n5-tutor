@@ -528,7 +528,7 @@
       "grammarPatternId": "n5-010",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "前の ぶんの 「9時から」と セットで 「いつまで」を あらわす ことばを えらんで ください。",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
       "question_ja": "（あさは 9時から はじまります。）　5時（　）しごとです。",
       "choices": [
         "から",
@@ -578,7 +578,7 @@
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
       "question_ja": "ペン（　）ノートなどを かいました。",
       "choices": [
-        "と",
+        "へ",
         "や",
         "は",
         "で"
@@ -591,7 +591,8 @@
         "で": "で marks location / means - not for listing nouns."
       },
       "high_confusion": true,
-      "difficulty": 2
+      "difficulty": 2,
+      "auto": false
     },
     {
       "id": "q-0023",
@@ -2696,7 +2697,7 @@
       "grammarPatternId": "n5-033",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "「ほかは 飲まない」こと を あらわす ことばを えらんで ください。",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
       "question_ja": "わたしは コーヒー（  ）飲みます。 おちゃや ジュースは 飲みません。",
       "choices": [
         "など",
@@ -4237,7 +4238,7 @@
       "grammarPatternId": "n5-134",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "なまえ（めいし）に 「ので」を つける ときに ひつような もじを えらんで ください。",
+      "prompt_ja": "「ので」の まえに つける もじを えらんで ください。",
       "question_ja": "今日は 雨（  ）ので、行きません。",
       "choices": [
         "な",
@@ -4261,7 +4262,7 @@
       "grammarPatternId": "n5-144",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "「べんきょうしながら」「ラジオを ―」のように、ふたつの ことを どうじに する ことを あらわす かたちを えらんで ください。",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
       "question_ja": "ラジオを （  ）べんきょうします。",
       "choices": [
         "ききながら",
@@ -4285,7 +4286,7 @@
       "grammarPatternId": "n5-144",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "どうしの 「のみ」と いっしょに つかって、「どうじに」を あらわす ことばを えらんで ください。",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
       "question_ja": "コーヒーを のみ（  ）、本を 読みます。",
       "choices": [
         "ながら",

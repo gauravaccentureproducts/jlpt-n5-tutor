@@ -76,7 +76,14 @@ FREQ_ADVERBS = {'いつも', 'よく', 'たまに', 'あまり', 'ぜんぜん',
 
 def has_scene_context(stem: str) -> bool:
     """True if the stem contains a scene-setting parenthetical preceding
-    the blank, OR contains an explicit anchor phrase that disambiguates."""
+    the blank, OR contains an explicit anchor phrase that disambiguates,
+    OR carries an explicit destination/recipient/source that pins one
+    role of an interchangeable particle pair.
+
+    Refined 2026-05-02 (Pass-23 round 2) to reduce false-positive rate:
+    the previous version flagged questions where one of the OTHER choices
+    was a clearly-distinguishing distractor. The audit shouldn't trip on
+    those — they're not actually multi-correct."""
     if not stem:
         return False
     # Pattern: (scene)　stem-with-blank — full-width parens before blank
@@ -84,14 +91,27 @@ def has_scene_context(stem: str) -> bool:
         return True
     # Pattern: prior-sentence ending in 。 followed by stem
     if '。' in stem and stem.index('。') < stem.find('（'):
-        # The blank typically comes after a 。 if a prior sentence is set up
         if re.search(r'。[\s　]*[^（]*（', stem):
             return True
     # Anchor-phrase heuristic: stem mentions a frequency / time / numeric
     # anchor that pins one answer
     anchors = ['毎日', '毎週', '毎年', '毎朝', 'いつも', '一日', '月に',
                '年に', '週に', '一回', '1回', '1かい', '一度', 'しか',
-               'ぜんぜん', 'あまり', '前', 'まえ', 'あとで', 'すこし']
+               'ぜんぜん', 'あまり', '前', 'まえ', 'あとで', 'すこし',
+               # Destination/recipient/source anchors — if a separate
+               # destination is given (e.g., へ, に at another position
+               # in the stem), the blank can't ALSO be a destination
+               # particle, so に/へ are not multi-correct.
+               'こうえんへ', 'がっこうへ', 'いえへ', 'えきへ', 'みせへ',
+               'にちようびに', 'げつようびに', 'かようびに',
+               # Verb-specific disambiguators — these verbs only pair
+               # with one of an interchangeable pair, not both.
+               'はじまります', 'はじまる', 'おわります', 'おわる',
+               'かけました', 'かけます', 'いいました', 'いう',
+               # Quote-marker anchor (forces と uniquely)
+               'いいました', 'と いいました',
+               # Bracket-quoted strings (force と as quote-marker)
+               '「', '」']
     if any(a in stem for a in anchors):
         return True
     return False
