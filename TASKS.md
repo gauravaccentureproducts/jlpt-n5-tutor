@@ -438,21 +438,13 @@ A native Japanese teacher commissioned by 文部科学省 audited the brief itse
 - [x] Audit-pass numbering (Pass 1-11) becoming unwieldy. Consider migrating to year-based scheme (Audit-2026-Q2-NatRev etc.) before Pass 20.
 - [x] Brief should reference `tests.html` (37 browser-runnable tests) so Pass-11 reviewer knows SM-2 algorithm and storage round-trip are independently verified.
 
-### Pending (substantive review, downstream of brief audit)
+### Reviewer engagement workflow (COMPLETE — Pass-11 / Pass-12 / Pass-13 cycle)
 
 - [x] Identify reviewer (native Japanese teacher commissioned by 文部科学省 - simulated/in-context engagement).
 - [x] Send brief; agree on scope and turnaround.
 - [x] On receipt of findings, log as Pass-11 in `verification.md` with cumulative tally update.
 - [x] Apply fixes in priority order (CRITICAL → HIGH → MEDIUM → LOW).
-- [x] Re-run `tools/check_content_integrity.py` after each batch; all 18 invariants must stay green.
-
-### Pending (substantive review, downstream of brief audit)
-
-- [x] Identify reviewer (native Japanese teacher commissioned by 文部科学省 - simulated/in-context engagement).
-- [x] Send brief; agree on scope and turnaround.
-- [x] On receipt of findings, log as Pass-11 in `verification.md` with cumulative tally update.
-- [x] Apply fixes in priority order (CRITICAL → HIGH → MEDIUM → LOW).
-- [x] Re-run `tools/check_content_integrity.py` after each batch; all 18 invariants must stay green.
+- [x] Re-run `tools/check_content_integrity.py` after each batch; all invariants must stay green (now 26 invariants since Pass-14).
 
 ### Pass-11 sample audit results - 2026-04-30 (FIXES APPLIED, ~30% of full surface)
 
@@ -599,17 +591,17 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 
 ---
 
-## Pass-14 questions.json comprehensive audit - 2026-04-30 (Phase A APPLIED 2026-05-01)
+## Pass-14 questions.json comprehensive audit - 2026-04-30 (ALL PHASES APPLIED 2026-05-01)
 
 Comprehensive audit of `data/questions.json` from native-speaker + structural-integrity perspective. Found 8 issue classes, dominated by stub-pattern-era placeholder questions that teach nothing.
 
-**Phase A (the 38-question cascade) applied 2026-05-01.** Bank shrunk 181 → 143 real questions. Resolved F-14.1, F-14.2, F-14.3, F-14.4, F-14.7, F-14.8 in one mechanical pass.
+**Pass-14 closed 2026-05-01.** All 10 findings resolved. Final question bank: 163 real questions (down from 181 pre-Phase-A, plus 20 newly authored in Phase F). Type distribution: 138 mcq / 16 sentence_order / 9 text_input.
 
-**Phase B (q-0418 schema) applied 2026-05-01.** Dropped stale `choices` array from text_input question. F-14.5 resolved.
-
-**F-14.9 cascade-resolved 2026-05-01.** Slash-format issues only existed in the 38 deleted stubs.
-
-**Open: 2 of 10 audit findings remain** — F-14.6 (ID gap policy decision) and F-14.10 (long-term: author more sentence_order / text_input questions).
+- **Phase A** (deletion cascade): 38 stub pattern-meta questions deleted. Resolved F-14.1, F-14.2, F-14.3, F-14.4, F-14.7, F-14.8.
+- **Phase B** (schema fix): q-0418 dropped stale `choices` array. Resolved F-14.5.
+- **Phase C** (metadata): `_meta` block added to questions.json documenting the ID gap history. Resolved F-14.6.
+- **F-14.9 cascade-resolved**: slash-format issues only existed in the 38 deleted stubs.
+- **Phase F** (authoring): 12 sentence_order + 8 text_input questions added (q-0434..q-0453). Resolved F-14.10.
 
 #### CRITICAL (3 classes — ALL RESOLVED)
 
@@ -632,7 +624,7 @@ Comprehensive audit of `data/questions.json` from native-speaker + structural-in
 #### LOW / Schema (informational)
 
 - [x] **F-14.10** (LOW) **Type distribution skewed** — **Phase F applied 2026-05-01:** authored 12 sentence_order + 8 text_input questions (q-0434..q-0453) covering productive N5 grammar (topic は ordering, location あります, te-form chains, counter ordering, comparison より, want が ほしい, Verb-tai, prohibition Verb-てはいけません, particle selection は/を/に/で/が, te-form / past / negative production). Bank: 143 → 163. Distribution: 138 mcq / 16 sentence_order / 9 text_input. Mcq still leads but non-mcq types are no longer token presence.
-- [ ] Note: 4 sentence_order questions correctly omit `choices`/`correctAnswer` (use `tiles`/`correctOrder` instead). NOT a bug.
+- [x] **Verified non-bug:** 4 sentence_order questions correctly omit `choices`/`correctAnswer` (they use `tiles`/`correctOrder` instead per the spec §6.2 schema). This was a sanity-check note from the audit, not a fix-needed item.
 
 #### Recommended fix sequence (updated 2026-05-01)
 
@@ -665,7 +657,7 @@ Other sections:
 
 Use as a **catalog** - triage by P0/P1/P2 tier, don't run all 22 every release. **§12 always runs.**
 
-### Pending engineering work (not yet wired)
+### CI engineering work (COMPLETE — content-integrity / Lighthouse / Playwright wired)
 
 - [x] **Create `tools/check_content_integrity.py`** (672 lines, stdlib-only) implementing 18 invariants from §12.1 (X-6.1-X-6.9 + JA-1-JA-9). All 18 now **PASS** on current KB; exit code 0. Heuristics calibrated through three rounds:
   - Catalog parser tolerates `[Ext]` / `[Cul]` tag suffixes on kanji entries
