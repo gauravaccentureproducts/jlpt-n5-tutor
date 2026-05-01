@@ -636,14 +636,20 @@ Native-teacher review identified MCQs in `data/questions.json` where the stem ac
 
 Cross-coverage report at `feedback/coverage-comparison.md`. Six N5 grammar patterns have ZERO question coverage in our bank; they appear in `data/grammar.json` but no question references their pattern ID, and a full-text search for their key forms across all 163 questions returns zero hits:
 
-- [ ] **F-15.18** (MEDIUM) **n5-130 あげる (give to others)** — no question coverage. External corpus tests this implicitly (Test 7 Q9 inverse with もらう). Pass-16 candidate: author 2 MCQs.
-- [ ] **F-15.19** (MEDIUM) **n5-131 もらう (receive from)** — no question coverage. External tests this directly (Test 7 Q9 / Test 16 Q10). Pass-16 candidate: author 2 MCQs.
-- [ ] **F-15.20** (MEDIUM) **n5-134 ので (because, softer than から)** — no question coverage. External tests this twice (Test 16 Q5 / Test 11 Q2). Pass-16 candidate: author 1-2 MCQs contrasting from `から`.
-- [ ] **F-15.21** (MEDIUM) **n5-144 Verb-stem + ながら (while doing)** — no question coverage. External tests this twice (Test 3 Q4 / Test 5 Q10). Pass-16 candidate: author 1-2 MCQs; can mirror the `ラジオを___べんきょうします` shape from external Test 5.
-- [ ] **F-15.22** (LOW) **n5-148 いつも / たいてい / たまに (always / usually / occasionally)** — no question coverage. Frequency adverbs. Pass-16 candidate: author 1 sentence-completion MCQ.
-- [ ] **F-15.23** (LOW) **n5-167 ～んです / ～のです (explanation / emphasis)** — no question coverage. Borderline N5/N4 nuance. Pass-16 candidate: author only if confident the contrast with plain です-form is N5-appropriate.
+- [x] **F-15.18** (MEDIUM) **n5-130 あげる (give to others)** — **Applied 2026-05-01:** authored 2 MCQs (q-0454 recipient-に, q-0455 object-を).
+- [x] **F-15.19** (MEDIUM) **n5-131 もらう (receive from)** — **Applied 2026-05-01:** authored 2 MCQs (q-0456 source-から, q-0457 object-を).
+- [x] **F-15.20** (MEDIUM) **n5-134 ので (because, softer than から)** — **Applied 2026-05-01:** authored 2 MCQs (q-0458 ので-vs-{ながら,ても,のに}, q-0459 testing the noun+な+ので connector — hits the common mistake from the pattern's `common_mistakes`).
+- [x] **F-15.21** (MEDIUM) **n5-144 Verb-stem + ながら (while doing)** — **Applied 2026-05-01:** authored 2 MCQs (q-0460 verb-stem form ききながら-vs-other-conjugations, q-0461 ながら-vs-other-particle).
+- [x] **F-15.22** (LOW) **n5-148 いつも / たいてい / たまに (always / usually / occasionally)** — **Applied 2026-05-01:** authored 2 MCQs anchoring on frequency phrases — q-0462 (毎日 → いつも) and q-0463 (月に 1かい → たまに). たいてい distractor reserved for future expansion (no question explicitly tests it as the answer; would need a "ほとんど 毎日" anchor that risks ambiguity with いつも).
+- [ ] **F-15.23** (LOW) **n5-167 ～んです / ～のです (explanation / emphasis)** — **Skipped Pass-16:** borderline N5/N4 nuance; needs native-teacher input on N5-appropriate framing. Defer to a later pass where the contrast with plain です can be tested without leaking N4 territory.
 
-These six patterns produce "no real questions" experience for ~3% of the curriculum. Authoring requires native-teacher quality on distractors to avoid reintroducing multi-correct bugs (see Pass-15 lessons), so deferring to Pass-16 with explicit native review.
+#### Pass-16 questions added (10) and side-effects
+
+- 10 new MCQs landed: q-0454 .. q-0463. Bank size 163 → 173.
+- Side-effect: 6 out-of-scope kanji introductions caught by JA-13 invariant (兄, 文, 字, 回 across 3 questions) — converted to kana (あに, もじ, じ, かい) in `tools/author_pass16_questions.py` and applied via inline kanji-replacement before commit. JA-13 now PASS again.
+- All 30 content invariants green; 4/4 build-pipeline regression tests pass.
+
+These six patterns produced a "no real questions" experience for ~3% of the curriculum before this pass. Five are now closed; n5-167 remains for native review.
 
 #### Reviewed false positives (no fix needed)
 
