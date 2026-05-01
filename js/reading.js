@@ -23,7 +23,7 @@ function renderIndex(container) {
   const items = passages.map(p => `
     <li>
       <button class="reading-pick" data-id="${esc(p.id)}">
-        <span class="reading-title"><strong lang="ja">${renderJa(p.title_ja)}</strong> <span class="muted small">(${esc(p.level)})</span></span>
+        <span class="reading-title"><strong>${renderJa(p.title_ja)}</strong> <span class="muted small">(${esc(p.level)})</span></span>
         <span class="muted small">${esc(p.topic)}</span>
       </button>
     </li>
@@ -55,7 +55,7 @@ function renderRead(container, p) {
       <div class="srs-progress">
         <span><a href="#/reading" id="reading-back">← Back</a> · Read the passage, then start the questions.</span>
       </div>
-      <h2 lang="ja">${renderJa(p.title_ja)}</h2>
+      <h2>${renderJa(p.title_ja)}</h2>
       <p class="muted small">Level: ${esc(p.level)} · Topic: ${esc(p.topic)}</p>
       <div class="passage-text">${renderJa(p.ja)}</div>
       ${p.audio ? `
@@ -89,7 +89,7 @@ function renderQuestions(container, p) {
   container.innerHTML = `
     <article class="reading-passage">
       <div class="srs-progress">
-        <span><span lang="ja">${renderJa(p.title_ja)}</span> - Q ${idx + 1} of ${total}</span>
+        <span>${renderJa(p.title_ja)} - Q ${idx + 1} of ${total}</span>
       </div>
       <details class="passage-recap">
         <summary>Show passage</summary>
@@ -142,7 +142,7 @@ function renderResults(container, p) {
   const pct = Math.round((score / total) * 100);
   container.innerHTML = `
     <div class="reading-results">
-      <h2><span lang="ja">${renderJa(p.title_ja)}</span> - Results</h2>
+      <h2>${renderJa(p.title_ja)} - Results</h2>
       <section class="srs-summary-stats">
         <div class="stat-card mastered"><div class="stat-num">${score}/${total}</div><div class="stat-label">Score</div></div>
         <div class="stat-card ${pct >= 70 ? 'mastered' : 'weak'}"><div class="stat-num">${pct}%</div><div class="stat-label">Accuracy</div></div>
