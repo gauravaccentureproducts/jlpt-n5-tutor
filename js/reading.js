@@ -2,6 +2,36 @@
 // Each session: pick a passage, show it, then run comprehension questions.
 import { renderJa } from './furigana.js';
 
+// Display labels for level / topic taxonomy. Data values stay English
+// (stable code keys for lookup); we localize at render time so the
+// learner-facing surface is Japanese (per 2026-05-02 user direction).
+const LEVEL_JA = {
+  'easy':        'やさしい',
+  'medium':      'ふつう',
+  'info-search': 'じょうほうけんさく',
+};
+const TOPIC_JA = {
+  'self-introduction': 'じこしょうかい',
+  'daily routine':     'まいにちの せいかつ',
+  'weekend plan':      'しゅうまつの よてい',
+  'weekend':           'しゅうまつ',
+  'shopping':          'かいもの',
+  'family':            'かぞく',
+  'weather':           'てんき',
+  'schedule':          'よてい',
+  'transport':         'こうつう',
+  'hobby':             'しゅみ',
+  'school':            '学校',
+  'food':              'たべもの',
+  'travel':            'りょこう',
+  'health':            'けんこう',
+  'study':             'べんきょう',
+  'people':            'ひと',
+  'request':           'おねがい',
+  'room':              'へや',
+  'directions':        'みちあんない',
+};
+
 let bank = null;
 let session = null;
 
@@ -23,14 +53,14 @@ function renderIndex(container) {
   const items = passages.map(p => `
     <li>
       <button class="reading-pick" data-id="${esc(p.id)}">
-        <span class="reading-title"><strong>${renderJa(p.title_ja)}</strong> <span class="muted small">(${esc(p.level)})</span></span>
-        <span class="muted small">${esc(p.topic)}</span>
+        <span class="reading-title"><strong>${renderJa(p.title_ja)}</strong> <span class="muted small">(${renderJa(LEVEL_JA[p.level] || p.level)})</span></span>
+        <span class="muted small">${renderJa(TOPIC_JA[p.topic] || p.topic)}</span>
       </button>
     </li>
   `).join('');
   container.innerHTML = `
-    <h2>Reading practice</h2>
-    <p>Short JLPT-format passages with comprehension questions. ${passages.length} passages available, sorted by difficulty (easy → medium → info-search).</p>
+    <h2>${renderJa('どっかい れんしゅう')}</h2>
+    <p>${renderJa('みじかい JLPT けいしきの ぶんしょうと しつもんです。')} ${passages.length} ${renderJa('ぶんしょうが あります。やさしい → ふつう → じょうほうけんさく の じゅんに ならんで います。')}</p>
     <ul class="reading-list">${items}</ul>
   `;
   container.querySelectorAll('[data-id]').forEach(btn => {
@@ -53,18 +83,18 @@ function renderRead(container, p) {
   container.innerHTML = `
     <article class="reading-passage">
       <div class="srs-progress">
-        <span><a href="#/reading" id="reading-back">← Back</a> · Read the passage, then start the questions.</span>
+        <span><a href="#/reading" id="reading-back">← ${renderJa('もどる')}</a> ・ ${renderJa('ぶんしょうを 読んで、しつもんを はじめて ください。')}</span>
       </div>
       <h2>${renderJa(p.title_ja)}</h2>
-      <p class="muted small">Level: ${esc(p.level)} · Topic: ${esc(p.topic)}</p>
+      <p class="muted small">レベル: ${renderJa(LEVEL_JA[p.level] || p.level)} ・ トピック: ${renderJa(TOPIC_JA[p.topic] || p.topic)}</p>
       <div class="passage-text">${renderJa(p.ja)}</div>
       ${p.audio ? `
         <div class="reading-audio">
-          <p class="muted small">Audio (if available):</p>
+          <p class="muted small">${renderJa('おんせい (ある とき):')}</p>
           <audio controls preload="none" src="${esc(p.audio)}">Your browser does not support audio.</audio>
         </div>
       ` : ''}
-      <button id="reading-start-q" class="btn-primary">Start questions (${p.questions.length})</button>
+      <button id="reading-start-q" class="btn-primary">${renderJa('しつもんを はじめる')} (${p.questions.length})</button>
     </article>
   `;
   document.getElementById('reading-back').addEventListener('click', (e) => {
@@ -89,10 +119,10 @@ function renderQuestions(container, p) {
   container.innerHTML = `
     <article class="reading-passage">
       <div class="srs-progress">
-        <span>${renderJa(p.title_ja)} - Q ${idx + 1} of ${total}</span>
+        <span>${renderJa(p.title_ja)} ・ ${renderJa('もんだい')} ${idx + 1} / ${total}</span>
       </div>
       <details class="passage-recap">
-        <summary>Show passage</summary>
+        <summary>${renderJa('ぶんしょうを 見る')}</summary>
         <div class="passage-text">${renderJa(p.ja)}</div>
       </details>
       <div class="question-card">
@@ -111,9 +141,9 @@ function renderQuestions(container, p) {
         </div>
         ${feedback ? `
           <div class="drill-feedback ${correct ? 'correct' : 'incorrect'}">
-            <div class="feedback-headline">${correct ? 'Correct' : 'Wrong'}</div>
+            <div class="feedback-headline">${correct ? renderJa('せいかい') : renderJa('ざんねん')}</div>
             ${q.explanation_en ? `<p class="muted small">${esc(q.explanation_en)}</p>` : ''}
-            <button id="reading-next" class="btn-primary">${idx === total - 1 ? 'Finish' : 'Next question'}</button>
+            <button id="reading-next" class="btn-primary">${idx === total - 1 ? renderJa('おわり') : renderJa('つぎの しつもん')}</button>
           </div>
         ` : ''}
       </div>
@@ -142,13 +172,13 @@ function renderResults(container, p) {
   const pct = Math.round((score / total) * 100);
   container.innerHTML = `
     <div class="reading-results">
-      <h2>${renderJa(p.title_ja)} - Results</h2>
+      <h2>${renderJa(p.title_ja)} ・ ${renderJa('けっか')}</h2>
       <section class="srs-summary-stats">
-        <div class="stat-card mastered"><div class="stat-num">${score}/${total}</div><div class="stat-label">Score</div></div>
-        <div class="stat-card ${pct >= 70 ? 'mastered' : 'weak'}"><div class="stat-num">${pct}%</div><div class="stat-label">Accuracy</div></div>
+        <div class="stat-card mastered"><div class="stat-num">${score}/${total}</div><div class="stat-label">${renderJa('スコア')}</div></div>
+        <div class="stat-card ${pct >= 70 ? 'mastered' : 'weak'}"><div class="stat-num">${pct}%</div><div class="stat-label">${renderJa('せいかいりつ')}</div></div>
       </section>
       <div class="test-nav">
-        <button id="reading-back-list" class="btn-primary">Pick another passage</button>
+        <button id="reading-back-list" class="btn-primary">${renderJa('ほかの ぶんしょうを えらぶ')}</button>
       </div>
     </div>
   `;

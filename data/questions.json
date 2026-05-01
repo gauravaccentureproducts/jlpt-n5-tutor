@@ -147,7 +147,6 @@
         "の",
         "がくせいです"
       ],
-      "translation_en": "I am a university student.",
       "explanation_en": "の links nouns: だいがくの がくせい = 'university's student'. Topic は comes first, then the noun phrase, then です."
     },
     {
@@ -936,7 +935,6 @@
         "かばん",
         "ですか"
       ],
-      "translation_en": "Whose bag is that?",
       "explanation_en": "Topic は first, then question word だれ, then の (possessive), then noun かばん, then ですか. The だれの NOUN structure parallels わたしの NOUN."
     },
     {
@@ -1004,7 +1002,6 @@
         "を",
         "読みます"
       ],
-      "translation_en": "Every day I read Japanese books.",
       "explanation_en": "Time word first (まいにち), then the noun phrase with の linking (にほんごの ほん), then the direct-object marker を, then the verb (べんきょうします)."
     },
     {
@@ -1140,7 +1137,6 @@
         "と",
         "いいました"
       ],
-      "translation_en": "I said 'thanks' to my friend.",
       "explanation_en": "Recipient first (ともだちに), then quoted speech (「ありがとう」), then the quotation marker と, then いう (here past いいました)."
     },
     {
@@ -3325,7 +3321,6 @@
         "名前は",
         "たなかです"
       ],
-      "translation_en": "My name is Tanaka.",
       "explanation_en": "Possessive わたしの + noun-phrase 名前 + topic は + predicate. The topic marker は attaches to 名前, not to わたし directly."
     },
     {
@@ -3345,7 +3340,6 @@
         "だれ",
         "ですか"
       ],
-      "translation_en": "Who is that person?",
       "explanation_en": "Demonstrative あの + noun + topic は + question word だれ + ですか. The question word slots into the position the answer would occupy."
     },
     {
@@ -3365,7 +3359,6 @@
         "本が",
         "あります"
       ],
-      "translation_en": "There is a book on the desk.",
       "explanation_en": "Location pattern: NOUN の 上に X が あります. Possessive の chains 上 to つくえ. The subject 本 takes が because it is new information."
     },
     {
@@ -3383,7 +3376,6 @@
         "本を",
         "読みます"
       ],
-      "translation_en": "I read books at the library.",
       "explanation_en": "Location-of-action で comes before the object phrase. Standard order: location-で, object-を, verb."
     },
     {
@@ -3403,7 +3395,6 @@
         "ごはんを",
         "食べます"
       ],
-      "translation_en": "In the morning I get up and eat breakfast.",
       "explanation_en": "Sequential te-form chain: TIME, Verb1-て、Object Verb2. The te-form おきて signals 'and then'. The first clause has no explicit object; the second has ごはんを 食べます."
     },
     {
@@ -3421,7 +3412,6 @@
         "まって",
         "ください"
       ],
-      "translation_en": "Please wait a little.",
       "explanation_en": "Adverb すこし comes before the verb. Verb-て + ください = polite request. Order: adverb + Verb-て + ください."
     },
     {
@@ -3439,7 +3429,6 @@
         "三つ",
         "かいました"
       ],
-      "translation_en": "I bought three apples.",
       "explanation_en": "Counter pattern: Object を Counter Verb. Quantity 三つ sits between the object marker を and the verb — it does NOT take its own particle, and it is NOT placed before the noun."
     },
     {
@@ -3459,7 +3448,6 @@
         "とっても",
         "いいですか"
       ],
-      "translation_en": "May I take photos here?",
       "explanation_en": "Permission request: Place で + Object を + Verb-て + も + いいですか. The Verb-てもいい construction asks/grants permission; か turns it into a question."
     },
     {
@@ -3477,7 +3465,6 @@
         "アメリカより",
         "ちいさいです"
       ],
-      "translation_en": "Japan is smaller than America.",
       "explanation_en": "Comparison pattern: A は B より [adj] です. Topic A first, then B より (the comparison reference), then the i-adjective predicate."
     },
     {
@@ -3497,7 +3484,6 @@
         "くるまが",
         "ほしいです"
       ],
-      "translation_en": "I want a new car.",
       "explanation_en": "Want pattern: Topic は + (adjective +) Noun が + ほしいです. The desired object is marked with が, not を."
     },
     {
@@ -3515,7 +3501,6 @@
         "日本へ",
         "行きたいです"
       ],
-      "translation_en": "I want to go to Japan.",
       "explanation_en": "Verb-stem + たい: 'want to V'. Direction marker へ before the verb-tai phrase. たい conjugates as an i-adjective."
     },
     {
@@ -3535,7 +3520,6 @@
         "とっては",
         "いけません"
       ],
-      "translation_en": "You must not take photos here.",
       "explanation_en": "Prohibition: Place で + Object を + Verb-て + は + いけません. The contrast ては + いけません = 'doing X is not allowed'."
     },
     {

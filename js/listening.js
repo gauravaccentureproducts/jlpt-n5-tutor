@@ -8,10 +8,13 @@ import { renderJa } from './furigana.js';
 let bank = null;
 let session = null;
 
+// 課題理解 / ポイント理解 / 発話表現 are official JLPT format names; the
+// kanji 課 解 達 表 現 are not in the N5 catalog, but these labels are
+// authentic JLPT taxonomy and the kana gloss is shown alongside.
 const FORMATS = {
-  task: '課題理解 (Task comprehension)',
-  point: 'ポイント理解 (Point comprehension)',
-  utterance: '発話表現 (Utterance expression)',
+  task:      'かだいりかい (タスクりかい)',
+  point:     'ポイントりかい',
+  utterance: 'はつわひょうげん',
 };
 
 async function loadBank() {
@@ -39,7 +42,7 @@ function renderIndex(container) {
   const items = bank.items || [];
   if (items.length === 0) {
     container.innerHTML = `
-      <h2>Listening practice</h2>
+      <h2>${renderJa('ちょうかい れんしゅう')}</h2>
       <div class="placeholder">
         <p><strong>No listening items shipped yet.</strong></p>
         <p>The listening module is wired and will activate as soon as audio assets ship.</p>
@@ -54,15 +57,15 @@ function renderIndex(container) {
     return acc;
   }, {});
   container.innerHTML = `
-    <h2>Listening practice</h2>
-    <p>JLPT N5 listening drills in three formats. Each item plays an audio clip; you pick the correct response.</p>
+    <h2>${renderJa('ちょうかい れんしゅう')}</h2>
+    <p>${renderJa('JLPT N5 ちょうかいの 三つの けいしき。おんせいを 聞いて、ただしい こたえを えらんで ください。')}</p>
     <div class="toc-controls">
-      <button type="button" class="btn-secondary toc-expand-all">Expand all</button>
-      <button type="button" class="btn-secondary toc-collapse-all">Collapse all</button>
+      <button type="button" class="btn-secondary toc-expand-all">${renderJa('ぜんぶ ひらく')}</button>
+      <button type="button" class="btn-secondary toc-collapse-all">${renderJa('ぜんぶ とじる')}</button>
     </div>
     ${Object.entries(byFormat).map(([fmt, list]) => `
       <details class="listening-section">
-        <summary><h3>${esc(FORMATS[fmt] || fmt)} <span class="muted small">(${list.length})</span></h3></summary>
+        <summary><h3>${renderJa(FORMATS[fmt] || fmt)} <span class="muted small">(${list.length})</span></h3></summary>
         <ul class="listening-list">
           ${list.map(it => `<li><button class="listening-pick" data-id="${esc(it.id)}">${it.title_ja ? renderJa(it.title_ja) : esc(it.id)}</button></li>`).join('')}
         </ul>
@@ -96,14 +99,13 @@ function renderItem(container) {
   container.innerHTML = `
     <article class="listening-item">
       <div class="srs-progress">
-        <span><a id="listening-back" href="#/listening">← Back to list</a></span>
+        <span><a id="listening-back" href="#/listening">← ${renderJa('リストに もどる')}</a></span>
       </div>
       <h2>${it.title_ja ? renderJa(it.title_ja) : esc(it.id)}</h2>
-      <p class="muted small">Format: ${esc(FORMATS[it.format] || it.format)}</p>
+      <p class="muted small">${renderJa('けいしき')}: ${renderJa(FORMATS[it.format] || it.format)}</p>
       <div class="listening-audio">
-        ${it.audio ? `<audio controls preload="none" src="${esc(it.audio)}">Audio</audio>` : '<p class="muted small">No audio file linked yet.</p>'}
+        ${it.audio ? `<audio controls preload="none" src="${esc(it.audio)}">Audio</audio>` : `<p class="muted small">${renderJa('おんせいファイルは まだ ありません。')}</p>`}
       </div>
-      ${it.prompt_en ? `<p>${esc(it.prompt_en)}</p>` : ''}
       ${it.prompt_ja ? `<p>${renderJa(it.prompt_ja)}</p>` : ''}
       ${it.choices ? `
         <div class="choice-grid">
@@ -121,10 +123,10 @@ function renderItem(container) {
       ` : ''}
       ${feedback ? `
         <div class="drill-feedback ${correct ? 'correct' : 'incorrect'}">
-          <div class="feedback-headline">${correct ? 'Correct' : 'Wrong'}</div>
-          ${it.script_ja ? `<details><summary>Show script</summary><div>${renderJa(it.script_ja)}</div></details>` : ''}
+          <div class="feedback-headline">${correct ? renderJa('せいかい') : renderJa('ざんねん')}</div>
+          ${it.script_ja ? `<details><summary>${renderJa('スクリプトを 見る')}</summary><div>${renderJa(it.script_ja)}</div></details>` : ''}
           ${it.explanation_en ? `<p class="muted small">${esc(it.explanation_en)}</p>` : ''}
-          <button id="listening-back-list" class="btn-primary">Back to list</button>
+          <button id="listening-back-list" class="btn-primary">${renderJa('リストに もどる')}</button>
         </div>
       ` : ''}
     </article>

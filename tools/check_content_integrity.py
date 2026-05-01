@@ -776,6 +776,8 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-24", "i-adj kanji primary reading is kun-yomi", lambda: _check_ja_24_iadj_kanji_primary_kun()),
     ("JA-25", "Whitelist exceptions documented (Pass-22 F-22.4)", lambda: _check_ja_25_whitelist_exceptions_documented()),
     ("JA-26", "No duplicate question IDs (Pass-23 2026-05-02)", lambda: _check_ja_26_no_duplicate_question_ids()),
+    ("JA-27", "No English-translation/title fields in reading/listening (2026-05-02)", lambda: _check_ja_27_no_english_in_japanese_modules()),
+    ("JA-28", "Dokkai-paper kanji bounded by N5 + exception list (2026-05-02)", lambda: _check_ja_28_dokkai_kanji_bounded()),
 ]
 
 
@@ -1365,6 +1367,115 @@ def _check_ja_26_no_duplicate_question_ids() -> list[str]:
             f"data/questions.json. Run a dedup tool to renumber the "
             f"second occurrence."
         )
+    return failures
+
+
+def _check_ja_27_no_english_in_japanese_modules() -> list[str]:
+    """Per user direction 2026-05-02: dokkai (data/reading.json) and
+    listening (data/listening.json) are Japanese-first learner surfaces
+    and must not carry English title or English-passage-translation
+    fields, since both are rendered to the learner.
+
+    Specifically banned at the item level:
+      - title_en       (replaced by title_ja, used in renderIndex/renderRead/
+                        renderQuestions/renderResults for reading and
+                        renderListening/renderItem for listening)
+      - translation_en (was rendered in a "Show English translation"
+                        <details> panel on reading; that panel and field
+                        are now removed from data + renderer)
+
+    Allowed because they teach (NOT banned):
+      - explanation_en (rationale shown after a wrong answer)
+      - prompt_en      (legacy on listening; no items currently carry it)
+      - any field on data/grammar.json (grammar pattern teaching genuinely
+        needs English glosses — out of scope for this invariant)
+      - any field on data/questions.json (question stems are short and
+        sometimes carry translation_en for the learner; orthogonal to the
+        passage-EN-translation rule we are locking down here)
+    """
+    BANNED = {"title_en", "translation_en"}
+    failures: list[str] = []
+    for fname, item_key in [
+        ("data/reading.json",   "passages"),
+        ("data/listening.json", "items"),
+    ]:
+        path = ROOT / fname
+        if not path.exists():
+            continue
+        try:
+            d = json.loads(path.read_text(encoding="utf-8"))
+        except Exception as e:
+            failures.append(f"JA-27: {fname} parse error: {e}")
+            continue
+        items = d.get(item_key, [])
+        for it in items:
+            for bad in BANNED:
+                if bad in it:
+                    failures.append(
+                        f"JA-27 {fname} item id={it.get('id','?')!r} carries "
+                        f"banned field '{bad}'. The learner-facing surface "
+                        f"in dokkai/listening must be Japanese only; remove "
+                        f"the field (and migrate title_en -> title_ja if "
+                        f"applicable). See tools/fix_dokkai_titles_remove_en.py "
+                        f"and tools/fix_listening_titles_ja.py for prior "
+                        f"migrations."
+                    )
+    return failures
+
+
+def _check_ja_28_dokkai_kanji_bounded() -> list[str]:
+    """data/papers/dokkai/*.json passages may contain non-N5 kanji ONLY
+    if those kanji are explicitly documented in
+    data/dokkai_kanji_exception.json. This formalizes the dokkai
+    naturalness exception (KnowledgeBank/dokkai_questions_n5.md line 17)
+    so the runtime can't silently introduce a new non-N5 kanji.
+
+    Bunpou / moji / goi are NOT covered here; they stay strictly N5
+    via JA-13.
+    """
+    failures: list[str] = []
+    try:
+        whitelist = set(json.loads(
+            (ROOT / "data" / "n5_kanji_whitelist.json").read_text(encoding="utf-8")))
+    except Exception as e:
+        return [f"JA-28: could not load n5_kanji_whitelist.json: {e}"]
+    try:
+        exc_doc = json.loads(
+            (ROOT / "data" / "dokkai_kanji_exception.json").read_text(encoding="utf-8"))
+        exception_kanji = set(exc_doc.get("exception_kanji", []))
+    except Exception as e:
+        return [f"JA-28: could not load dokkai_kanji_exception.json: {e}"]
+    allowed = whitelist | exception_kanji
+    KANJI_RE = re.compile(r"[一-鿿]")
+    dokkai_dir = ROOT / "data" / "papers" / "dokkai"
+    if not dokkai_dir.exists():
+        return []
+    offenders: dict[str, list[str]] = {}  # kanji -> sample passages
+    for p in sorted(dokkai_dir.glob("*.json")):
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+        except Exception as e:
+            failures.append(f"JA-28: parse error on {p.name}: {e}")
+            continue
+        def walk(obj):
+            if isinstance(obj, str):
+                for ch in obj:
+                    if KANJI_RE.match(ch) and ch not in allowed:
+                        offenders.setdefault(ch, []).append(
+                            f"{p.name}: {obj[:60]!r}")
+            elif isinstance(obj, dict):
+                for v in obj.values(): walk(v)
+            elif isinstance(obj, list):
+                for v in obj: walk(v)
+        walk(d)
+    for ch, samples in sorted(offenders.items()):
+        s = samples[0]
+        failures.append(
+            f"JA-28: kanji '{ch}' is neither in N5 catalog nor in "
+            f"dokkai_kanji_exception.json. Either replace with kana, "
+            f"or add to data/dokkai_kanji_exception.json (with "
+            f"justification in KnowledgeBank/dokkai_questions_n5.md "
+            f"header). First seen: {s}")
     return failures
 
 
