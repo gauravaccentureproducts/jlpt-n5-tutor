@@ -762,6 +762,7 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-14", "No auto-ruby code in renderer",  lambda: _check_ja_14_no_auto_ruby_in_renderer()),
     ("JA-15", "Audio refs resolve to files on disk", lambda: _check_ja_15_audio_refs_on_disk()),
     ("JA-16", "Kanji examples use only target-or-whitelist kanji", lambda: _check_ja_16_kanji_examples_in_scope()),
+    ("JA-17", "Grammar examples have vocab_ids (homograph guard)", lambda: _check_ja_17_examples_have_vocab_ids()),
 ]
 
 
@@ -855,6 +856,41 @@ def _check_ja_16_kanji_examples_in_scope() -> list[str]:
                     f"JA-16 kanji '{target}' has example '{form}' with "
                     f"out-of-scope kanji '{ch}'. Substitute with kana per K-1 rule."
                 )
+    return failures
+
+
+def _check_ja_17_examples_have_vocab_ids() -> list[str]:
+    """Every non-empty example in data/grammar.json must have a
+    `vocab_ids` field (a list, possibly empty). This prevents the
+    homograph mismatch class flagged 2026-05-01 — without explicit
+    example→vocab links, the renderer falls back to substring matching
+    on the form field, which can't disambiguate homographs.
+
+    Auto-population: tools/link_grammar_examples_to_vocab.py walks every
+    example and assigns vocab_ids. Run that tool whenever new examples
+    are added; this invariant guards the result.
+    """
+    failures: list[str] = []
+    grammar_path = ROOT / "data" / "grammar.json"
+    if not grammar_path.exists():
+        return ["JA-17: data/grammar.json missing"]
+    try:
+        data = json.loads(grammar_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-17: parse error: {e}"]
+    for p in data.get("patterns", []):
+        for i, ex in enumerate(p.get("examples", [])):
+            if not ex.get("ja"):
+                continue  # placeholder examples without ja text are ignored
+            if "vocab_ids" not in ex or not isinstance(ex["vocab_ids"], list):
+                failures.append(
+                    f"JA-17 {p.get('id', '?')} examples[{i}] is missing the "
+                    f"`vocab_ids` field. Run "
+                    f"`python tools/link_grammar_examples_to_vocab.py` to populate."
+                )
+                if len(failures) >= 20:
+                    failures.append("JA-17 ... (truncated at 20 failures)")
+                    return failures
     return failures
 
 

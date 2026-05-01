@@ -217,18 +217,31 @@ function renderVocabDetail(container, vocabData, grammarData, form) {
     `;
     return;
   }
-  // Pull example sentences from grammar.json that contain this word.
-  // Match on either the kanji form OR the kana reading - many examples
-  // are written in kana even when the dictionary form is kanji.
-  const needles = [form];
-  if (entry.reading && entry.reading !== form) needles.push(entry.reading);
+  // Pull example sentences from grammar.json. Each example carries a
+  // `vocab_ids: [...]` field (populated by tools/link_grammar_examples_to_vocab.py)
+  // listing exactly which vocab entries it demonstrates. We filter by ID
+  // — not by substring on the form field — so homographs (e.g., かた "person"
+  // vs かた "way of doing") never cross-contaminate. See JA-17 invariant.
+  //
+  // Backward-compat fallback: if an example has no vocab_ids field (older
+  // data, or auto-tagger hasn't run), fall back to substring match. Future
+  // CI run will catch and fix.
   const seen = new Set();
   const examples = [];
   for (const p of (grammarData.patterns || [])) {
     for (const ex of (p.examples || [])) {
       if (!ex.ja || ex.ja.includes('(see ')) continue;
       if (seen.has(ex.ja)) continue;
-      if (needles.some(n => ex.ja.includes(n))) {
+      let matches = false;
+      if (Array.isArray(ex.vocab_ids)) {
+        matches = ex.vocab_ids.includes(entry.id);
+      } else {
+        // Legacy substring fallback (kanji form OR kana reading)
+        const needles = [form];
+        if (entry.reading && entry.reading !== form) needles.push(entry.reading);
+        matches = needles.some(n => ex.ja.includes(n));
+      }
+      if (matches) {
         seen.add(ex.ja);
         examples.push({ ja: ex.ja, en: ex.translation_en, source: p.pattern });
         if (examples.length >= 24) break;
