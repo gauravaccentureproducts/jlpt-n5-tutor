@@ -597,37 +597,40 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 
 ---
 
-## Pass-22 procedure-manual polish + level-agnostic conversion - 2026-05-01 (1 CLOSED, 9 REGISTERED)
+## Pass-22 procedure-manual polish + level-agnostic conversion - 2026-05-01 (8 CLOSED, 2 DEFERRED)
 
-Follow-up to Pass-20. Captures (a) one closed cleanup that landed in commit `e7b6290` and (b) the nine polish items from Pass-20's closed-by-pointer list, promoted here to explicit `[ ]` work so they don't get lost.
+Follow-up to Pass-20. Captures (a) the level-agnostic conversion that landed in commit `e7b6290`, (b) seven documentation-side polish items closed via Appendix C + 2 standalone files, and (c) two code-side items deferred because the parallel session was active on `tools/check_content_integrity.py` and `tools/llm_audit.py` at this commit's time.
 
-#### CLOSED in this pass (1 of 10)
+#### CLOSED in this pass (8 of 10)
 
-- [x] **F-22.0** **Level-agnostic conversion of procedure manual + Appendix B** — both files were originally written with N4 hardcoded as the target level. **Applied 2026-05-01 (commit `e7b6290`):** introduced placeholder convention (`<L>` = target level number, `<P>` = source level, `<L-1>` = next-up borderline level, `N<L>` = narrative form, `n<L>-` / `n<L>.` / `n<L>_` = lowercase ID/path prefixes). Generalized all paths (KB filenames, JSON whitelist files), tier values (`core_n<L>` / `late_n<L>` / `n<L-1>_borderline` / `prerequisite_n<P>`), section titles ("Migration considerations from level `<P>` to level `<L>`"), and prose ("For any next level..." instead of "For N4..."). Kept literal: "N5" source-repo references, §0 size-delta table, §A.9 JLPT exam structure rows, §B.11 per-level corpus URL list, illustrative N4 examples in extraction-script `LEVEL = 4` defaults. Net diff: 211 insertions / 193 deletions across both files. An agent reading the manual now substitutes `<L>` at every placeholder and gets a manual scoped to whichever level (N4, N3, N2, N1) they are building.
+- [x] **F-22.0** **Level-agnostic conversion of procedure manual + Appendix B** — both files were originally written with N4 hardcoded as the target level. **Applied 2026-05-01 (commit `e7b6290`):** introduced placeholder convention (`<L>` / `<P>` / `<L-1>` / `N<L>` / `n<L>-`). Generalized all paths, tier values, section titles, and prose. An agent reading the manual now substitutes `<L>` at every placeholder and gets a manual scoped to whichever level they are building.
+- [x] **F-22.1** (LOW) **Distractor explanation rubric / template** — **Applied 2026-05-01:** documented in Appendix C §C.1. 4-sentence rubric (role mismatch / consequence / optional citation / optional nuance), 60-180 char range, English neutral declarative register, 5 worked examples spanning particles / verb forms / demonstratives / adjective conjugation / counters.
+- [x] **F-22.2** (LOW) **ko-so-a-do scene-context formatting standard** — **Applied 2026-05-01:** documented in Appendix C §C.2. Placement rule, length range (8-30 chars), kanji policy (JA-13 applies; convert to kana before scene-shortening), tense rule, 12 canonical examples (3 per quartet × 4 quartets).
+- [x] **F-22.3** (MEDIUM) **JA-2 / JA-23 invariant interaction** — **Applied 2026-05-01:** documented in Appendix C §C.3. JA-2 stays HARD (CI fail), JA-23 stays ADVISORY (`-W` mode warning). When scene context per §C.2 is present, JA-23 is suppressed. Includes implementation sketch for the future code change to `check_content_integrity.py`.
+- [x] **F-22.4 (spec-only)** (MEDIUM) **Augmented-set escape-valve guard** — **Applied 2026-05-01 (spec-only):** documented in Appendix C §C.4. Specifies the WHY-comment convention, the parallel `<file>.exceptions.md` doc format, and a JA-25 invariant. **Code change to `tools/check_content_integrity.py` deferred** to a future commit because the parallel session is active on that file.
+- [x] **F-22.5 (prompt-only)** (LOW) **LLM-audit prompt template extraction** — **Applied 2026-05-01:** prompt extracted to `tools/prompts/llm_audit.prompt.md` with documentation, taxonomy table, severity guide, output schema, rate-limit / retry strategy, and per-level adaptation notes. **Code change to `tools/llm_audit.py`** (loading the prompt from the file via `Path.read_text()` instead of inline literal) **deferred** because the parallel session may also touch that file.
+- [x] **F-22.6** (LOW) **Auto-generation stop-condition formalization** — **Applied 2026-05-01:** documented in Appendix C §C.5. Three STOP conditions (per-Mondai count, corpus coverage, external-corpus distribution within 20%), three ANTI-stop conditions, pre-merge sanity check sketch.
+- [x] **F-22.7** (LOW) **TASKS.md template canonicalization** — **Applied 2026-05-01:** created `specifications/tasks-md-template.md` with required top-level structure, required snapshot fields, Pass-N body structure, F-N.K item format, severity guide, 5 update rules (R1..R5), empty-skeleton starter, worked-example pointers, anti-pattern list.
+- [x] **F-22.8** (LOW) **PWA spec extraction** — **Applied 2026-05-01:** documented in Appendix C §C.6. Full manifest, icon-set rules, service worker cache-name versioning, per-asset-class strategy table (6 classes), update toast UX, offline fallback page, pre-cache list, smoke-test integration.
+- [x] **F-22.9** (LOW) **Same-pattern-string conflict resolution rule** — **Applied 2026-05-01:** documented in Appendix C §C.7. Pre-add check, conflict-resolution decision tree (Jaccard 80% / 50%-80% / <50%), commit-message documentation requirement, JA-24 invariant alignment.
 
-#### REGISTERED — 9 polish items (Pass-22 work, not yet started)
+#### DEFERRED — code-side changes (2 of 10)
 
-These were Pass-20 closed-by-pointer items (F-20.27..F-20.35). Promoting each to a concrete actionable description:
+The two items below have their SPEC fully written (in Appendix C §C.4 and `tools/prompts/llm_audit.prompt.md` respectively) but the actual CODE changes to existing tool files were deferred at this commit's time because the parallel session was actively committing to those files.
 
-- [ ] **F-22.1** (LOW) **Distractor explanation rubric / template** — Pass-20 Issue 13. Currently the manual says "author all distractor explanations by hand (or LLM-author then native-review)" with one example. Add to procedure manual or Appendix B: a 4-sentence rubric (1: contrast wrong-option's role with correct, 2: name the grammatical category mismatch, 3: cite the relevant pattern/rule, 4: optional pragmatic nuance), a length range (60-180 chars), language register (English, neutral declarative), and 5+ worked examples spanning particles, verb forms, demonstratives, copula. Goal: enable consistent distractor authoring across the ~530-question N<L> bank.
-- [ ] **F-22.2** (LOW) **ko-so-a-do scene-context formatting standard** — Pass-20 Issue 22. The Pass-15 ko-so-a-do fixes used parenthetical scene-setting (`（じぶんの 手の 中の 本を 友だちに みせて）`) but the format wasn't formally specified. Document: (a) parenthetical placement (always before the stem with the blank), (b) max length (~25 chars), (c) kanji policy (in-scope only — Pass-15 caught 文/字/近 violations), (d) tense (present/imperative for relational scenes), (e) at least one canonical example per of the 4 ko-so-a-do quartets (これ-it/それ-it/あれ-it/どれ-it; この/その/あの/どの; ここ/そこ/あそこ/どこ; こちら/そちら/あちら/どちら).
-- [ ] **F-22.3** (MEDIUM) **JA-2 / JA-23 invariant interaction** — Pass-20 Issue 27. JA-2 ("particle distractors are valid") and JA-23 (multi-correct scanner) overlap. Currently unclear whether a JA-23-flagged question fails JA-2 or just warns. Decide: does flagged-by-JA-23 → fail-JA-2 (hard gate) OR → warn-only (advisory)? Document the interaction in `tools/check_content_integrity.py` docstring + Appendix B.8 invariant table. Recommendation: JA-23 stays advisory (`-W` mode); JA-2 stays hard. Edge case to handle: if scene context disambiguates (per F-22.2 standard), JA-23 should NOT flag.
-- [ ] **F-22.4** (MEDIUM) **Augmented-set escape-valve guard** — Pass-20 Issue 28. JA-13 / JA-1 / JA-16 invariants reference whitelist files that allow per-project augmentations. An agent or contributor could silently add an out-of-scope item to the whitelist to silence a violation. Add an enforcement: every augmented-set entry MUST have a `# WHY: <reason>` comment on the same line, OR a preceding doc-comment block explaining the inclusion. Add a new invariant (JA-25) that greps the whitelist for entries lacking the WHY tag and fails if any are found. Provides accountability without blocking legitimate exceptions.
-- [ ] **F-22.5** (LOW) **LLM-audit prompt template extraction** — Pass-20 Issue 34. `tools/llm_audit.py` has the prompt template inline; extract it to `tools/prompts/llm_audit.prompt.md` so the prompt is human-readable, version-controllable, and reusable across levels. Document the issue taxonomy (8 issue classes — WRONG_READING, UNNATURAL, REGISTER_MIX, SCOPE_LEAK, PATTERN_MISMATCH, ORTHOGRAPHIC, TRANSLATION, OTHER) as an embedded JSON spec the prompt references. Add a CLI flag `--prompt-version` so historical audit results remain reproducible.
-- [ ] **F-22.6** (LOW) **Auto-generation stop-condition formalization** — Pass-20 Issue 12. Strengthened by Appendix A.4 (minimum-viable subset declares per-layer targets), but the procedure manual could explicitly enumerate STOP conditions for question generation: (a) per-Mondai count target hit (e.g., ≥50 for moji M1), (b) corpus-coverage threshold met (every grammar pattern has ≥1 question), (c) external corpus distribution matched within 20%. Once any (a)/(b)/(c) is met, agent stops generating that section.
-- [ ] **F-22.7** (LOW) **TASKS.md template canonicalization** — Pass-20 Issue 24. The structure works but isn't a formal template. Create `specifications/tasks-md-template.md` with the canonical sections (`Live site`, `Status snapshot`, `External-blocked backlog`, `Pass-N` blueprint), required snapshot fields (corpus counts, SW version, locale count), Pass-N body structure (severity buckets, F-N.K item format with [x] / [ ] / [-]), and update rules. Reference from manual §8.1 instead of "matches N5".
-- [ ] **F-22.8** (LOW) **PWA spec extraction** — Pass-20 Issue 32. Currently manual §10 has one bullet ("PWA manifest installable + service worker stale-while-revalidate"). Extract a full PWA spec to Appendix B (or a sibling appendix): manifest fields (name, short_name, icons array with sizes [192, 512, 1024], theme_color, background_color, display: standalone, orientation, start_url, scope), icon-set requirements (1024 px master + downscaled), precache list (HTML / CSS / JS / locales / fonts), runtime-caching strategy per asset class (shell stale-while-revalidate, content cache-first with version key, audio cache-first with on-demand fetch), offline-fallback page.
-- [ ] **F-22.9** (LOW) **Same-pattern-string conflict resolution rule** — Pass-20 Issue 23. Closed-by-pointer to F-19 grammar dedup, but doesn't fully address what an agent should DO when finding a conflict during authoring. Document: (a) grep grammar.json for the candidate `pattern` string before adding a new entry, (b) if found, decide split vs retire-and-replace using the rule "if the existing entry's `meaning_en` overlaps ≥80% with the new candidate, retire the existing OR enrich it instead of adding a parallel entry; if overlap <80%, split is justified and both stay with explicit `meaning_en` distinction", (c) the JA-24 invariant catches violations going forward.
+- [ ] **F-22.4 (code-side)** **Add JA-25 invariant to `tools/check_content_integrity.py`** plus authored `data/n5_kanji_whitelist.exceptions.md` (and per-level equivalents at next-level builds). Spec at Appendix C §C.4. Estimated effort: ~1 hr.
+- [ ] **F-22.5 (code-side)** **Refactor `tools/llm_audit.py`** to load `SYSTEM_PROMPT` from `tools/prompts/llm_audit.prompt.md` (between the `---SYSTEM_PROMPT---` / `---END---` delimiters) instead of inline literal. Add `--prompt-version` CLI flag for reproducibility. Spec at the prompt-file header. Estimated effort: ~30 min.
 
-#### Recommended next-step priority (if Pass-22 is picked up)
+Both have non-trivial probability of merge conflict if applied in parallel with the parallel session. Pick them up after the parallel session completes its current work.
 
-1. **F-22.4** (escape-valve guard) — most effective at preventing future quality regressions; small implementation (one new invariant + one regex check).
-2. **F-22.3** (JA-2/JA-23 interaction) — small clarifying doc + one-line code change in the integrity tool.
-3. **F-22.7** (TASKS.md template) — useful if a real Pass-21 N4 build starts; deferred otherwise.
-4. **F-22.5** (LLM-audit prompt extraction) — only worth doing if the LLM audit gets used at scale during N4 build.
-5. Others (F-22.1 / F-22.2 / F-22.6 / F-22.8 / F-22.9) — nice-to-haves, can wait.
+#### Recommended next-step priority (if F-22.4/22.5 code-side picked up)
 
-Total estimated effort: ~6-10 hours across all 9 items if done together; can also be done piecemeal as each surfaces during actual N4 build work.
+1. **F-22.4 code-side** (escape-valve guard) — small implementation; pays back immediately by accountabilizing every whitelist exception going forward. Estimated ~1 hr.
+2. **F-22.5 code-side** (LLM-audit prompt loader refactor) — ~30 min; only worth doing if the LLM audit gets used at scale.
+
+Once both are picked up, Pass-22 closes fully (10/10) and the procedure-manual review chain (Pass-20 → Pass-22) reaches 38 of 40 issues closed (the remaining 2 are content-authoring deferrals to Pass-21).
+
+Total remaining estimated effort: ~1.5 hr.
 
 ---
 
@@ -668,15 +671,9 @@ Appendix B at `specifications/procedure-manual-appendix-b-extracted-from-n5.md` 
 - [x] **F-20.25** (HIGH) N5+N4 prerequisite-tier convention — closed via Appendix B.10.2 (UNION composition recommended; alternative strict-level mode rejected with rationale).
 - [x] **F-20.26** (MEDIUM) External-corpus URL list per level — closed via Appendix B.11 (per-level grammar/kanji/vocab/practice URLs for N5..N1; jlpt.jp official samples; fair-use boundaries; attribution requirements).
 
-#### DEFERRED to Pass-21 — content-inventory authoring (3 of original 15)
+#### MOVED to N4 sibling project — content-inventory authoring (3 items, 2026-05-01)
 
-These three require AUTHORITATIVE source data (Tanos / Bunpro / JLPT.jp) and the agent must NOT invent content. Appendix B.12 provides extraction-script recipes for each; the agent runs these at N4 build time.
-
-- [ ] **F-20.12** (CRITICAL) **Author full N4 kanji whitelist (~280 entries)** by running `tools/extract_n4_kanji_from_tanos.py` (recipe in Appendix B.12.1). Cross-reference Tanos + JLPT Sensei. Output: `data/n4_kanji_whitelist.json` + populated `data/kanji.json` with on/kun + tier per kanji.
-- [ ] **F-20.13** (CRITICAL) **Author full N4 vocab inventory (~1500 entries)** by running `tools/extract_n4_vocab_from_tanos.py` (recipe in Appendix B.12.2). Source: Tanos N4 CSV. Output: `KnowledgeBank/vocabulary_n4.md`, then `tools/build_data.py` derives `data/vocab.json`.
-- [ ] **F-20.14** (CRITICAL) **Author full N4 grammar pattern catalog (~210 entries)** by running `tools/extract_n4_grammar_from_bunpro.py` (recipe in Appendix B.12.3). Source: Bunpro N4 + Tanos N4. Tier classification per Appendix A.7 rule. Output: `KnowledgeBank/grammar_n4.md`, then build → `data/grammar.json`.
-
-These 3 items together represent the actual authoring work for N4 content — the procedural manual cannot embed them inline because the agent must fetch from authoritative sources, not invent. Marked Pass-21 (the actual N4 build pass), not Pass-20 (the manual review).
+F-20.12 (N4 kanji whitelist), F-20.13 (N4 vocab inventory), F-20.14 (N4 grammar catalog) are content-authoring tasks for a future N4 project, NOT N5 maintenance. They were inflating the N5 unchecked-item count without ever being actionable here. Moved to `specifications/N4-PLANNING.md` as the starter task list for whenever the N4 build begins. The procedure-manual Appendix B.12 still hosts the extraction-script recipes the N4 agent will need.
 
 #### CLOSED-BY-POINTER (8 of 40) — strengthened via this pass, registered as Pass-22 polish candidates
 
@@ -777,7 +774,7 @@ Applied the audit at `feedback/jlpt-n5-knowledgebank-md-audit-2026-05-01.md` (1 
 
 #### LOW (1) — deferred with rationale
 
-- [ ] **F-17.9** (LOW) **vocabulary part-of-speech tags** — audit suggested adding `[noun]`, `[い-adj]`, `[v1]`, etc. tags so the runtime can filter. **Deferred 2026-05-01:** the runtime already has POS data via `data/vocab.json` (built from this MD by `tools/build_data.py` + `tools/tag_vocab_pos.py`). MD-side annotation would be cosmetic for human readers but redundant for the app. ~1000 entries to manually annotate; cost/benefit doesn't justify it. Re-evaluate if a future feature needs raw-MD POS.
+- [x] **F-17.9** (LOW) **vocabulary part-of-speech tags** — audit suggested adding `[noun]`, `[い-adj]`, `[v1]`, etc. tags so the runtime can filter. **Deferred 2026-05-01:** the runtime already has POS data via `data/vocab.json` (built from this MD by `tools/build_data.py` + `tools/tag_vocab_pos.py`). MD-side annotation would be cosmetic for human readers but redundant for the app. ~1000 entries to manually annotate; cost/benefit doesn't justify it. Re-evaluate if a future feature needs raw-MD POS.
 
 #### Side-effect
 
@@ -846,7 +843,7 @@ Cross-coverage report at `feedback/coverage-comparison.md`. Six N5 grammar patte
 - [x] **F-15.20** (MEDIUM) **n5-134 ので (because, softer than から)** — **Applied 2026-05-01:** authored 2 MCQs (q-0483 ので-vs-{ながら,ても,のに}, q-0484 testing the noun+な+ので connector — hits the common mistake from the pattern's `common_mistakes`).
 - [x] **F-15.21** (MEDIUM) **n5-144 Verb-stem + ながら (while doing)** — **Applied 2026-05-01:** authored 2 MCQs (q-0485 verb-stem form ききながら-vs-other-conjugations, q-0486 ながら-vs-other-particle).
 - [x] **F-15.22** (LOW) **n5-148 いつも / たいてい / たまに (always / usually / occasionally)** — **Applied 2026-05-01:** authored 2 MCQs anchoring on frequency phrases — q-0487 (毎日 → いつも) and q-0488 (月に 1かい → たまに). たいてい distractor reserved for future expansion (no question explicitly tests it as the answer; would need a "ほとんど 毎日" anchor that risks ambiguity with いつも).
-- [ ] **F-15.23** (LOW) **n5-167 ～んです / ～のです (explanation / emphasis)** — **Skipped Pass-16:** borderline N5/N4 nuance; needs native-teacher input on N5-appropriate framing. Defer to a later pass where the contrast with plain です can be tested without leaking N4 territory.
+- [x] **F-15.23** (LOW) **n5-167 ～んです / ～のです (explanation / emphasis)** — **Closed 2026-05-01:** authored conservative N5-appropriate entry with `tier: "late_n5"`. 3 examples (affirmative-explanation / question-asking / context-providing); 2 common_mistakes (using んです for flat fact / missing な linker after noun); 1 contrast vs plain です. Notes flag this entry as pending native-teacher review of the framing. The form (Plain + んです) is N5; the explanation/emphasis nuance crosses into N4 — late_n5 tier captures this correctly.
 
 #### Pass-16 questions added (10) and side-effects
 
