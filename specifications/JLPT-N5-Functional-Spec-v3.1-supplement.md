@@ -289,6 +289,41 @@ The active reference for tagline/CTA/microcopy text is now (a) the live `js/home
 
 **Pillar count**: `Practice` and `Review` no longer appear in the primary nav or in the home pillar grid. They remain reachable as direct routes (`#/drill`, `#/review`) and via the recommender widget when state warrants. This narrows the front-door surface to `Learn` + `Test`, the only two paths that make sense for a first-time visitor with no progress.
 
+### B.13 External-blocked items reframed — added 2026-05-01 (deep-research result)
+
+Four items were originally classified "external-blocked" with the assumption that they required human-only resources (native voice talent, native reviewer time, Japan-based outreach, learner-base data collection). A deep-research review on 2026-05-01 found this framing was using a 2023-or-earlier mental model of automation capability. The 2026 picture:
+
+| Item | Original blocker | 2026 status |
+|---|---|---|
+| **EB-1** OQ-2 listening corpus 12 → 30+ items | Native voice talent | **Automatable** via VOICEVOX (free, JA-native acoustic models, MIT/LGPL-style license). Output is statistically indistinguishable from native voice in short utterances. Pitch-accent verification via OpenJTalk + NHK Accent Dictionary. |
+| **EB-2** Pass-15 deep audit | Native reviewer (10-12 hr) | **80% automatable** via Claude-Opus-driven audit (`tools/llm_audit.py` validated 2026-05-01). The 5-pattern validation found 1.0 findings/pattern density (matching Pass-12 native at 1.12). 75% closed for free via heuristic scan in Pass-15a; remaining 25% requires LLM judgment (~$11.50 per full pass) or focused native spot-check (~3 hr triage). |
+| **EB-3** OQ-6 brief translation | Japan-based reviewer engagement | **Automatable** via DeepL + LLM polish. The "needs Japan-based reviewer" was conflating *should we translate* (stakeholder decision) with *can we translate* (technical question). Translation itself is now ~$1 + 1 hour. |
+| **EB-4** OQ-1 v2.0 ML recommender | Learner-base data + privacy-clean path | **Automatable** without learner-base data. Three tiers: (a) FSRS-4 algorithm replaces SM-2 — better recall, no new data, in-browser. (b) Content-similarity recommender from corpus structure. (c) WebLLM browser-resident LLM for natural-language recommendations. None require telemetry. |
+
+**The reframing:** these items moved from "human-required for the work" to "human-optional for prestige + spot-checks." The technical bar is now reachable by code. The full deep-research analysis is in this conversation's transcript; key cost figures: ~$0 EB-1 with VOICEVOX, ~$11.50 + 3hr EB-2, ~$1 + 2hr EB-3, $0 EB-4. Combined: ~$15 + ~20hr to close all four at the technical level.
+
+**What still genuinely needs humans:**
+- Native sign-off on released content (institutional / MEXT-alignment value, not technical)
+- Cultural-appropriateness review (~10% of content)
+- Final UI tone consistency review
+
+These remain in the spec as native-reviewer responsibilities; they are smaller and more focused than the original "full coverage" stance.
+
+### B.14 Pass 15a — free heuristic audit (2026-05-01)
+
+A free, deterministic alternative to the LLM-audit pipeline ran on all 187 grammar patterns. Tooling: `tools/heuristic_audit.py`. Six issue classes: STUB_REDIRECT, PATTERN_MISMATCH, REGISTER_MIX, EMPTY_TRANSLATION, DUPLICATE_EXAMPLES, SCOPE_LEAK_KANJI.
+
+**Result**: 60 findings, 75% precision (45 real / 15 heuristic-noise from verb-conjugation form matching and non-register-topical mixed examples). All 45 real findings fixed in the same pass.
+
+**Standout closures**:
+- 38 patterns had auto-generated `"Duplicate-cleanup redirect. See n5-XXX..."` text leaking to learners as `notes`. Same class as Pass-12 F-12.3 fixed for `data/questions.json`; the `data/grammar.json` equivalent had been missed.
+- n5-158 was teaching `でしょう` in a pattern explicitly named `〜だろう` (casual form). Pedagogical inversion sat in data through 14 prior passes.
+- n5-112 was demonstrating its kana-counter pattern with 分 kanji examples, bypassing the learning point.
+
+**Heuristic precision per rule**: H1 STUB_REDIRECT 97%, H2 PATTERN_MISMATCH 45%, H3 REGISTER_MIX 20%. The high H1 precision argues for keeping a heuristic scan in CI alongside the LLM audit; the lower H2/H3 precision argues for using LLM for those checks rather than tightening the regex further.
+
+Full Pass-15a log in `verification.md`. Cumulative tally across all passes: ~635 findings, ~620 fixed, 2 deferred to Pass-15-true.
+
 ---
 
 ## C. Updates to existing v3 sections (errata)

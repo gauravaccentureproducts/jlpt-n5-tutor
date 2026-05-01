@@ -2,6 +2,44 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.6.4 - 2026-05-01 (K-1 kanji example usage + Pass 14c/15a corrections)
+
+### Added
+- **Example-usage section on every kanji card.** Each of the 106 kanji detail pages now shows 1-3 N5-syllabus example words in a three-column table (form / reading / English gloss). Added between the readings strip and the Stroke order block. Form, reading, and gloss come from `data/kanji.json#examples`. The K-1 substitution rule is applied at data-time: if a useful word like 手紙 (letter) contains an out-of-scope kanji (紙), the form is authored as 手がみ — the target kanji stays kanji, the OOS kanji becomes its contextual reading. New JA-16 invariant guards this rule.
+- **`tools/populate_kanji_examples.py`** (idempotent): auto-picks examples for 100 kanji from `data/vocab.json`; hand-curated `MANUAL_EXAMPLES` for 6 kanji (口/目/力/手/友/足) that had no vocab references in the corpus (recovered in Pass-13 but vocab corpus didn't catch up).
+
+### Changed (Pass 14c — low-effort backlog batch, 2026-04-30 → 2026-05-01)
+- **`audio_manifest.json` voice metadata.** Top-level `voice_default: "synthetic-gtts"`; per-item `voice` field stamped on all 631 entries. `tools/build_audio.py` now skips items marked `voice: "native"` so externally-recorded items (when EB-1 lands) aren't synthesized over.
+- **何 primary reading**: なに → なん. Across N5 vocab compounds (何時/何曜日/何月/何日/何人), なん dominates; なに is correct only for the standalone 何ですか. Source (`tools/build_data.py` PASS10_PRIMARY_OVERRIDES) and generated JSON now agree. Note: the `primary` field is unused at runtime since Pass 13 auto-furigana removal — this is data correctness, not behaviour.
+- **`questions.json` half-width parens** in 4 stage-direction wrappers (q-0028, q-0029, q-0032, q-0049): ASCII `(...)` → fullwidth `（...）` per Japanese typography norms.
+- **Listening curriculum-prerequisite metadata.** `data/listening.json#n5.listen.005` got `requires_patterns: ["n5-030"]` + `_curriculum_note` documenting the nominalising-の dependency.
+- **Dead CSS removed.** `.hero-stats`, `.trust-strip` and their nested rules were orphaned after v1.6.1's copy audit removed those DOM elements. ~28 lines.
+- **meaning_ja consistency.** 7 patterns (n5-013, 019, 032, 047, 069, 111, 123) had placeholder meaning_ja (just the form quoted, or wrong concept); rewritten as proper short-noun-phrase definitions. n5-069 specifically had `「てある」` which is a different N4 grammar — replaced with `ことばを つなぐ どうしの かたち`.
+- **vocab.json POS tagging.** Every one of 1003 entries now has a `pos` field (noun / verb-1 / verb-2 / verb-3 / i-adj / na-adj / adverb / particle / conjunction / interjection / pronoun / counter / numeral / demonstrative / question-word / expression). Section-name heuristic + gloss-pattern fallback.
+- **こそあど → "Demonstratives" in user-facing UI.** Page heading, Learn-hub deep-dive link, grammar.json category labels, and vocab.json section labels all renamed. Code-internal use of こそあど (file names, route slugs, CSS classes, function names) retained — backend-only term.
+
+### Added (CI tooling)
+- **JA-15 invariant** "Audio refs resolve to files on disk" — walks `data/audio_manifest.json`, normalises Windows-style backslashes, asserts every entry's `path` exists. 631/631 verified at landing.
+- **JA-16 invariant** "Kanji examples use only target-or-whitelist kanji" — guards the K-1 substitution rule.
+- **`tools/test_build_data.py`** (4 regression tests): Bug A `[Ext]`-tagged headers parse, Bug B parenthetical doesn't fragment meanings, smoke test for plain headers, E2E real KB produces 106 clean entries. Wired into `content-integrity.yml` workflow.
+- **`tools/llm_audit.py`** — Anthropic-API-driven content audit script as Pass-15 substitute (per the EB-2 automation analysis). Validated on a 5-pattern sample; full report at `feedback/llm-audit-validation-report.md`.
+- **`tools/heuristic_audit.py`** — free $0 alternative to llm_audit.py: deterministic Python scans for the same issue classes the LLM caught. Run on full corpus in ~50ms.
+
+### Changed (Pass 15a — heuristic audit, 2026-05-01)
+- **45 fixes from a free heuristic audit of all 187 patterns.** Surfaced 60 findings (75% precision); fixed 45.
+  - 38 patterns had auto-gen `Duplicate-cleanup redirect. See n5-XXX...` text reaching learners as `notes`. All cleaned.
+  - n5-158 (〜だろう casual): examples were teaching the *polite* でしょう, not the casual だろう. Pedagogical inversion fixed.
+  - n5-112 (〜ふん/ぷん counter): examples used 分 kanji, bypassing the kana counter readings the pattern teaches. Converted to ふん/ぷん.
+  - n5-173/174/175 (must-do variants): 3 patterns shared a single example that demonstrated only n5-176. Each now has a distinct example.
+  - n5-105 / n5-106: plain-form examples in patterns explicitly teaching the polite form. Standardised to polite.
+- **Cumulative:** ~635 findings raised across Pass 1-15a, ~620 fixed, 2 deferred.
+
+### Note
+- v1.6.3 was an internal-only asset-version bump for the Demonstratives UI rename + skeleton polish; no separate user-facing changes beyond what's listed under v1.6.4.
+- All changes verified: 25/25 content-integrity invariants green; all 4 CI workflows (`pages-build-deployment`, `content-integrity`, `lighthouse-ci`, `playwright-p0-smoke`) green on every commit since the playwright workflow was unblocked.
+
+---
+
 ## v1.6.2 - 2026-04-30 (Stroke-order SVGs)
 
 ### Added
