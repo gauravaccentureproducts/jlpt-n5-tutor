@@ -1,151 +1,114 @@
 // Home / landing screen.
-// First-time visitor: 2 pillar cards (Learn / Test) + small placement-check link.
-// Returning visitor: recommender + resume cards + streak strip + pillars.
 //
-// Voice: institutional / reference (think MIT OpenCourseWare, arxiv.org).
-// No outcome promises, no time-to-result claims, no second-person imperatives,
-// no celebration glyphs. State facts; describe what the tool contains.
-// See TASKS.md "Copy audit: remove sales-promo voice" for the full guideline.
+// Layout per `specifications/jlpt-n5-design-system-zen-modern.md` §5.1
+// (homepage rewrite, 2026-05-02):
+//   1. Hero: "JLPT N5 study material." + 5-line inventory (counts read at
+//      runtime from data/*.json so the homepage updates automatically when
+//      content is added).
+//   2. Resume strip: single line above SECTIONS for returning users only.
+//   3. SECTIONS label + 2 cards (Learn / Test, no "Browse" text label, →
+//      chevron is the affordance).
+//   4. "Placement check available." inline link.
 //
-// 2026-05-01: hero (heading + tagline + CTAs) removed entirely per user
-// direction. Pillars are now the front door. Corpus counts no longer
-// appear on the home page; they're on the Learn hub instead.
+// Copy register (§5.1.1, mandatory): describe contents, no opinion. No
+// outcome claims, no second-person, no verbs of encouragement, no trust
+// reassurance, no superlatives. Counts are bare numerals + nouns.
 import * as storage from './storage.js';
+
+// Cache the corpus counts at module scope so we fetch each file once.
+let corpusCounts = null;
+async function loadCorpusCounts() {
+  if (corpusCounts) return corpusCounts;
+  const files = ['grammar', 'vocab', 'kanji', 'reading', 'listening'];
+  const fetches = files.map(name =>
+    fetch(`data/${name}.json`)
+      .then(r => r.ok ? r.json() : null)
+      .catch(() => null)
+  );
+  const [grammar, vocab, kanji, reading, listening] = await Promise.all(fetches);
+  // Each data file uses a different top-level key for its main array.
+  const count = (d, ...keys) => {
+    if (!d) return 0;
+    for (const k of keys) {
+      if (Array.isArray(d[k])) return d[k].length;
+    }
+    return 0;
+  };
+  corpusCounts = {
+    grammar: count(grammar, 'patterns'),
+    vocab: count(vocab, 'entries'),
+    kanji: count(kanji, 'entries'),
+    reading: count(reading, 'passages'),
+    listening: count(listening, 'items'),
+  };
+  return corpusCounts;
+}
+
+// Render a number with US-locale thousands separators (1003 → "1,003"). Bare
+// digits otherwise. Per spec §5.1 rule 4.
+const fmt = (n) => Intl.NumberFormat('en-US').format(n || 0);
 
 export async function renderHome(container) {
   const history = storage.getHistory();
   const results = storage.getResults();
   const isReturning = Object.keys(history).length > 0 || results.length > 0;
-  const dueCount = storage.getDueCount();
-  const streak = storage.getStreak();
   const settings = storage.getSettings();
   const lastViewed = settings.lastLearnId || null;
+  const counts = await loadCorpusCounts();
+
+  // Resume strip: single-line link above SECTIONS, ONLY for returning users.
+  // Format: "Last session: <topic>." per spec §5.1 rule 9. We keep this
+  // minimal -- full session/topic mapping is approximated via the
+  // last-viewed pattern ID. First-time visitors see no strip at all.
+  const resumeStrip = (isReturning && lastViewed)
+    ? `<a class="resume-strip" href="#/learn/${encodeURIComponent(lastViewed)}">Last session: ${esc(lastViewed)}.</a>`
+    : '';
 
   container.innerHTML = `
     <section class="home">
-      ${isReturning ? renderRecommendation(pickRecommendation({ dueCount, streak, lastViewed })) : ''}
-      ${isReturning ? renderReturning({ history, results, dueCount, streak, lastViewed }) : ''}
-      <div class="section-label">
-        <span class="section-label-text">Sections</span>
-        <span class="section-label-rule" aria-hidden="true"></span>
-      </div>
-      <section class="home-pillars" aria-label="Sections">
-        <a class="pillar-card" href="#/learn">
-          <p class="card-index" aria-hidden="true">01</p>
-          <h3>Learn</h3>
-          <p>Grammar, vocabulary, kanji, reading, listening — pick a section.</p>
-          <span class="pillar-arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="pillar-card" href="#/test">
-          <p class="card-index" aria-hidden="true">02</p>
-          <h3>Test</h3>
-          <p>Mock JLPT-format exams (20 / 30 / 50 questions).</p>
-          <span class="pillar-arrow" aria-hidden="true">→</span>
-        </a>
+      <section class="hero">
+        <h1 class="hero-headline">JLPT N5 study material.</h1>
+        <ul class="hero-inventory">
+          <li>${fmt(counts.grammar)} grammar patterns.</li>
+          <li>${fmt(counts.vocab)} vocabulary items.</li>
+          <li>${fmt(counts.kanji)} kanji.</li>
+          <li>${fmt(counts.reading)} reading passages.</li>
+          <li>${fmt(counts.listening)} listening drills.</li>
+        </ul>
       </section>
-      ${isReturning ? '' : `
-        <p class="home-footnote"><a href="#/diagnostic">Take a placement check</a> to skip what you already know.</p>
-      `}
+
+      ${resumeStrip}
+
+      <section class="sections" aria-label="Sections">
+        <header class="section-label">
+          <span class="section-label-text">Sections</span>
+          <span class="section-label-rule" aria-hidden="true"></span>
+        </header>
+        <div class="learn-grid">
+          <a class="card card-link" href="#/learn">
+            <p class="card-index" aria-hidden="true">01</p>
+            <h3 class="card-title">Learn</h3>
+            <p class="card-meta">Grammar, vocabulary, kanji, reading, listening.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="card card-link" href="#/test">
+            <p class="card-index" aria-hidden="true">02</p>
+            <h3 class="card-title">Test</h3>
+            <p class="card-meta">15-question mock exam.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <p class="placement-link">
+        <a href="#/diagnostic">Placement check available.</a>
+      </p>
     </section>
   `;
-}
-
-function renderReturning({ results, dueCount, streak, lastViewed }) {
-  const lastResult = results[results.length - 1];
-  const dayBoxes = renderHeatmap(streak.days || []);
-  return `
-    <section class="home-resume" aria-label="Resume">
-      <div class="resume-card">
-        <h3>Resume</h3>
-        ${lastViewed ? `
-          <p>Last lesson: <strong>${esc(lastViewed)}</strong></p>
-          <a class="btn-primary" href="#/learn/${encodeURIComponent(lastViewed)}">Resume lesson</a>
-        ` : `
-          <p>Pick up the next pattern in order.</p>
-          <a class="btn-primary" href="#/learn">Continue lessons</a>
-        `}
-      </div>
-      <div class="resume-card">
-        <h3>Reviews due today</h3>
-        ${dueCount > 0 ? `
-          <p><strong>${dueCount}</strong> ${dueCount === 1 ? 'item' : 'items'}.</p>
-          <a class="btn-primary" href="#/review">Start review</a>
-        ` : `
-          <p class="muted">No reviews due.</p>
-          <a class="btn-secondary" href="#/learn">Open Learn</a>
-        `}
-      </div>
-    </section>
-    <section class="home-streak" aria-label="Study streak">
-      <div class="streak-summary">
-        <span class="streak-num">${streak.current || 0}</span>
-        <span class="streak-label">${(streak.current || 0) === 1 ? 'day' : 'days'}</span>
-        ${streak.longest > 1 ? `<span class="muted small">(longest: ${streak.longest})</span>` : ''}
-      </div>
-      <div class="streak-heatmap" aria-hidden="true">${dayBoxes}</div>
-      ${lastResult ? `<p class="muted small">Last test: ${formatDate(lastResult.timestamp)} - ${lastResult.correct}/${lastResult.total}.</p>` : ''}
-    </section>
-  `;
-}
-
-function renderHeatmap(days) {
-  // 7-day window ending today
-  const today = new Date();
-  const cells = [];
-  for (let i = 6; i >= 0; i--) {
-    const d = new Date(today);
-    d.setDate(today.getDate() - i);
-    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-    const studied = days.includes(key);
-    cells.push(`<span class="heat-cell ${studied ? 'studied' : ''}" title="${key}${studied ? ' - studied' : ''}"></span>`);
-  }
-  return cells.join('');
-}
-
-function formatDate(iso) {
-  if (!iso) return '';
-  try { return new Date(iso).toLocaleDateString(); } catch { return iso; }
 }
 
 function esc(s) {
   return String(s ?? '').replace(/[&<>"']/g, c => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   }[c]));
-}
-
-// Minimal "Suggested next" recommender (Spec supplement OQ-1, option d).
-// Picks ONE action based on current state, in priority order:
-//   1. Many reviews due (>=10) - state count.
-//   2. Streak risk - hasn't studied today and current streak >= 1.
-//   3. Some reviews due - state count.
-//   4. Studied today, nothing due - mixed drill.
-//   5. Default - next lesson.
-function pickRecommendation({ dueCount, streak, lastViewed }) {
-  const today = new Date();
-  const todayKey = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
-  const studiedToday = (streak.days || []).includes(todayKey);
-  const learnHref = lastViewed ? `#/learn/${encodeURIComponent(lastViewed)}` : '#/learn';
-
-  if (dueCount >= 10) {
-    return { label: `${dueCount} reviews due today`, href: '#/review' };
-  }
-  if ((streak.current || 0) >= 1 && !studiedToday) {
-    return { label: `Continue (${streak.current}-day streak)`, href: learnHref };
-  }
-  if (dueCount >= 1) {
-    return { label: `${dueCount} ${dueCount === 1 ? 'review' : 'reviews'} due today`, href: '#/review' };
-  }
-  if (studiedToday) {
-    return { label: 'Mixed drill', href: '#/drill' };
-  }
-  return { label: 'Next lesson', href: learnHref };
-}
-
-function renderRecommendation(rec) {
-  return `
-    <aside class="home-recommend" aria-label="Suggested next">
-      <span class="rec-prompt">Suggested next</span>
-      <a class="rec-link" href="${rec.href}">${esc(rec.label)} →</a>
-    </aside>
-  `;
 }

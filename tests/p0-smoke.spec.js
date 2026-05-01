@@ -14,23 +14,29 @@ test.describe('P0 smoke - core navigation', () => {
   // 'persists across reload' test because it cleared storage on the
   // reload too.
 
-  test('home loads with title, two pillars, no console errors', async ({ page }) => {
+  test('home loads with hero, inventory, two cards, no console errors', async ({ page }) => {
     const errors = [];
     page.on('pageerror', e => errors.push(e.message));
     page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
 
     await page.goto('/');
-    // Site title + brand updated in v1.6.1 copy audit (removed "Grammar Tutor"
-    // sub-brand; supplements §B.12 voice contract).
-    await expect(page).toHaveTitle('JLPT N5 — study material');
+    // Tab title dropped the em-dash subtitle in homepage update 2026-05-02
+    // per spec §2.1 (the em-dash form was a project-policy violation).
+    await expect(page).toHaveTitle('JLPT N5');
     await expect(page.locator('.brand-link')).toContainText('JLPT N5');
-    // Hero CTA (.home-cta) removed in v1.7.1 — home now opens directly into
-    // the section grid. The first-time visitor sees a "Sections" section
-    // label + 2 numbered pillar cards (01 Learn / 02 Test).
+    // Hero: noun-phrase headline + 5-line inventory.
+    await expect(page.locator('.hero-headline')).toContainText('JLPT N5 study material.');
+    await expect(page.locator('.hero-inventory li')).toHaveCount(5);
+    // SECTIONS label + 2 cards (Learn / Test) with 01/02 indices.
     await expect(page.locator('.section-label-text').first()).toContainText('Sections');
-    await expect(page.locator('.pillar-card')).toHaveCount(2);
-    // Numbered indices added by v1.8.0 design overhaul (Muji affordance).
-    await expect(page.locator('.pillar-card .card-index').first()).toContainText('01');
+    await expect(page.locator('.learn-grid .card-link')).toHaveCount(2);
+    await expect(page.locator('.learn-grid .card-index').first()).toContainText('01');
+    await expect(page.locator('.learn-grid .card-title').first()).toContainText('Learn');
+    await expect(page.locator('.learn-grid .card-title').nth(1)).toContainText('Test');
+    // Inline placement-check link below cards (not a button).
+    await expect(page.locator('.placement-link a')).toContainText('Placement check available.');
+    // Fullscreen toggle present in header (top-right cluster).
+    await expect(page.locator('#fullscreen-toggle')).toBeVisible();
     expect(errors, `console errors: ${errors.join('\n')}`).toEqual([]);
   });
 

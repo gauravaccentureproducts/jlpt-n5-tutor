@@ -737,6 +737,7 @@ main h3 {
   font-weight: var(--weight-base);
 }
 .app-footer .footer-meta { color: var(--color-text-muted); }
+.app-footer .footer-nav,
 .app-footer .footer-links { display: inline-flex; gap: var(--space-5); }
 .app-footer a {
   color: var(--color-text-muted);
@@ -2313,8 +2314,147 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
 .vocab-table th, .vocab-table td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--c-border); font-size: 14px; }
 .vocab-table th { font-weight: 500; background: var(--c-bg); }
 
-/* Home / landing screen (Brief 2 s1) */
-.home { padding: 12px 0; }
+/* Home / landing screen (rewritten 2026-05-02 per
+ * specifications/jlpt-n5-design-system-zen-modern.md §5.1).
+ * Layout: hero (headline + 5-line inventory), optional resume strip,
+ * SECTIONS label, 2-card grid, "Placement check available." link. */
+.home { padding: var(--space-5) 0; max-width: var(--container-base); margin: 0 auto; }
+
+/* Hero: noun-phrase headline + 5-line inventory. No CTAs, no trust line.
+ * Per spec §0 principle 11: describe contents, offer no opinion. */
+.home .hero { margin-top: var(--space-10); margin-bottom: var(--space-12); }
+.hero-headline {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-light);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  color: var(--color-text);
+  margin: 0 0 var(--space-5);
+}
+.hero-inventory {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--text-base);
+  font-weight: var(--weight-base);
+  line-height: var(--leading-loose);
+  color: var(--color-text);
+}
+.hero-inventory li { font-variant-numeric: tabular-nums; }
+
+/* Resume strip — single-line link above SECTIONS, returning users only.
+ * Hidden entirely for first-time visitors (renderHome controls visibility
+ * via DOM presence). Hairline border, surface bg, full clickable area. */
+.resume-strip {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  margin: 0 0 var(--space-6);
+  text-decoration: none;
+  transition: background var(--motion-fast) var(--easing),
+              border-color var(--motion-fast) var(--easing);
+}
+.resume-strip:hover {
+  background: var(--color-surface-alt);
+  border-color: var(--color-line-strong);
+}
+
+/* Sections grid — 2 cards, 50/50 desktop, stacked mobile. */
+.learn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+@media (max-width: 768px) {
+  .learn-grid { grid-template-columns: 1fr; }
+}
+/* Re-use .card + .card-link from §4.3, but the homepage variant has the
+ * arrow chevron in the bottom-right corner instead of a "Browse" text. */
+.home .card-link {
+  position: relative;
+  padding-right: var(--space-10);   /* leave room for the corner chevron */
+  min-height: 130px;
+}
+.home .card-arrow {
+  position: absolute;
+  right: var(--space-5);
+  bottom: var(--space-4);
+  font-size: var(--text-md);
+  color: var(--color-text-muted);
+  transition: color var(--motion-fast) var(--easing);
+}
+.home .card-link:hover .card-arrow { color: var(--color-text); }
+
+/* "Placement check available." inline link — hairline-underline-on-hover,
+ * no purple/blue browser default, no icon. */
+.placement-link {
+  margin: var(--space-6) 0 0;
+  font-size: var(--text-base);
+  text-align: center;
+}
+.placement-link a {
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 0.5px solid transparent;
+  transition: border-color var(--motion-fast) var(--easing);
+}
+.placement-link a:hover {
+  border-bottom-color: var(--color-text-muted);
+}
+
+/* Header icon buttons (settings cog, fullscreen toggle). 32px square,
+ * monochrome SVG, hairline border on hover only. */
+.app-header .icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: 0.5px solid transparent;
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: background var(--motion-fast) var(--easing),
+              color var(--motion-fast) var(--easing),
+              border-color var(--motion-fast) var(--easing);
+}
+.app-header .icon-btn:hover {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+.app-header .icon-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+.app-header .icon-btn .icon { width: 18px; height: 18px; display: block; }
+/* Fullscreen-on state: invert the SVG via filter so the "minimize" intent
+ * reads visually. Optional flourish; the aria-label updates regardless. */
+#fullscreen-toggle.is-fullscreen { color: var(--color-accent); }
+
+/* Changelog page (CHANGELOG.md rendered via js/changelog.js) */
+.changelog { max-width: var(--container-base); margin: var(--space-8) auto; }
+.changelog h1 { font-size: var(--text-2xl); font-weight: var(--weight-light); margin: 0 0 var(--space-6); }
+.changelog h2 { font-size: var(--text-xl); font-weight: var(--weight-medium); margin: var(--space-8) 0 var(--space-3); }
+.changelog h3 { font-size: var(--text-lg); margin: var(--space-6) 0 var(--space-2); }
+.changelog h4 { font-size: var(--text-md); margin: var(--space-4) 0 var(--space-2); }
+.changelog p, .changelog li { font-size: var(--text-base); line-height: var(--leading-base); }
+.changelog ul { padding-left: var(--space-5); }
+.changelog hr { border: none; border-top: 0.5px solid var(--color-line); margin: var(--space-8) 0; }
+.changelog code { font-family: ui-monospace, "SF Mono", Consolas, monospace; font-size: 0.95em; padding: 1px 4px; background: var(--color-surface); border: 0.5px solid var(--color-line); border-radius: var(--radius-sm); }
+.changelog pre { background: var(--color-surface); padding: var(--space-3); border-radius: var(--radius-md); overflow-x: auto; }
+.changelog pre code { background: none; border: none; padding: 0; }
+
+/* === legacy home rules below — older pillars + recommender layouts; kept
+ * for non-homepage surfaces that still reference these classes. The new
+ * homepage doesn't use .pillar-card or .home-cta. === */
+
 .home-cta {
   background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r);
   padding: 24px 28px; margin: 16px 0;

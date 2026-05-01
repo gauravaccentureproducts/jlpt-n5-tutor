@@ -20,6 +20,7 @@ This document is the source of truth. Every page, component, and interaction in 
 8. **All text is sentence case.** Never Title Case. Never ALL CAPS except for tiny letter-spaced labels (e.g., "REFERENCE" above a card group).
 9. **Numerals are tabular (`font-variant-numeric: tabular-nums`).** Stats, counters, timers, and SRS intervals must align vertically.
 10. **Japanese text uses Noto Sans JP weight 400.** Mixing weights between latin and ja text creates uneven visual rhythm.
+11. **Describe the contents. Offer no opinion about them.** Homepage copy is neutral and inventorial. No outcome claims, no second-person, no verbs of encouragement, no trust reassurance, no superlatives, no quantifier softeners. Counts are bare numerals plus nouns. The product is a study material; the copy says what it is, not what it does for the visitor.
 
 If a proposed change would violate any of these, the proposed change is wrong.
 
@@ -340,8 +341,6 @@ Some browsers round 0.5px to 0px. Defensive fallback: ship `border: 1px solid va
     </a>
     <nav class="primary-nav">
       <a href="#/learn">Learn</a>
-      <a href="#/practice">Practice</a>
-      <a href="#/review" class="has-badge">Review<span class="badge">12</span></a>
       <a href="#/test">Test</a>
     </nav>
     <div class="header-tools">
@@ -702,46 +701,48 @@ Layout:
 │                                                      │
 │   [container 880px, centered, top margin 96px]      │
 │                                                      │
-│   Pass JLPT N5 with                                 │  <- text-2xl, weight 300
-│   15 minutes a day                                   │
+│   JLPT N5 study material.                           │  <- text-2xl, weight 300
 │                                                      │
 │   [space-5]                                          │
-│   187 patterns · 1003 words · 106 kanji ·            │  <- text-sm, muted
-│   30 reading · 12 listening                          │
-│                                                      │
-│   [space-6]                                          │
-│   [ Start your first lesson ]  Take placement check  │  <- primary + ghost
-│                                                      │
-│   [space-3]                                          │
-│   Works offline · No login · Stays on device         │  <- text-xs, faint
+│   187 grammar patterns.                              │  <- text-base, default
+│   1,003 vocabulary items.                            │     weight, one line each
+│   106 kanji.                                         │
+│   30 reading passages.                               │
+│   12 listening drills.                               │
 │                                                      │
 │   [space-12]                                         │
-│   ── REFERENCE ────────────────────────────────       │
+│   ── SECTIONS ─────────────────────────────────       │
 │                                                      │
 │   [space-6]                                          │
-│   ┌──────────────┐ ┌──────────────┐ ┌──────────────┐│
-│   │ 01           │ │ 02           │ │ 03           ││
-│   │              │ │              │ │              ││
-│   │ Grammar      │ │ Vocabulary   │ │ Kanji        ││
-│   │ 187 patterns │ │ 1003 words   │ │ 106 chars    ││
-│   │              │ │              │ │              ││
-│   │ Browse       │ │ Browse       │ │ Browse       ││
-│   └──────────────┘ └──────────────┘ └──────────────┘│
+│   ┌─────────────────────────┐ ┌─────────────────────┐│
+│   │ 01                      │ │ 02                  ││
+│   │                         │ │                     ││
+│   │ Learn                   │ │ Test                ││
+│   │ Grammar, vocabulary,    │ │ 15-question mock    ││
+│   │ kanji, reading,         │ │ exam.               ││
+│   │ listening.              │ │                     ││
+│   │                       → │ │                   → ││
+│   └─────────────────────────┘ └─────────────────────┘│
 │                                                      │
-│   [space-12]                                         │
-│   ── PRACTICE ─────────────────────────────────       │
-│                                                      │
-│   [ Reading 30 ]  [ Listening 12 ]                   │
+│   [space-6]                                          │
+│   Placement check available.                         │  <- inline link
 │                                                      │
 └──────────────────────────────────────────────────────┘
 ```
 
 Specific rules for this page:
 
-- The headline wraps to two lines deliberately. Don't stretch the container to put it on one line - the wrap is a design feature.
-- Stats line uses middle-dot separators with `--space-1` margin on each side: `<span> · </span>`.
-- Trust line ("Works offline · ...") sits BELOW the CTA, not above. Trust statements are reassurance after the call to action, not preconditions.
-- Section labels ("REFERENCE", "PRACTICE") use the `.label` class with a thin hairline rule extending to the right edge:
+- The headline is a single noun phrase terminated by a period: `JLPT N5 study material.` Not a verb phrase. No subtitle.
+- Below the headline, render a five-line inventory. Each line is a numeral plus a noun phrase plus a period. Lines are stacked, not bulleted. Do not use middle-dots between items. Do not add a heading above this list.
+- Counts in the inventory must be read at runtime from `data/*.json` `_meta.entity_count` fields (or equivalent). Do not hardcode. If a count changes by one, the homepage updates automatically.
+- Use comma as thousands separator for 4+ digit numbers (`1,003`). Bare digits otherwise.
+- No primary CTA button. No "Start your first lesson", no "Take the placement check" as a green button. The cards in the SECTIONS grid are the entry points.
+- No trust line. Do not render `Works offline · No login required · Stays on device` on the homepage. Those properties live in About / Privacy.
+- No "What's new" callout, no "New!" badges, no version chip.
+- Returning users (when `localStorage` shows progress) get a single resume strip ABOVE the SECTIONS label. Format: `Last session: [section name], [topic]. [N] of [M].` The whole line is a link to the resumption point. No "continue", no "resume", no exclamation. Hide the strip entirely for first-time visitors. No fallback.
+- Section labels (`SECTIONS`) use `.section-label` from §5.1 unchanged.
+- Two cards in the grid, full-width 50/50 on desktop, stacked on mobile. Each card has the standard structure: index number, h3 title, single-sentence body terminated by a period, `→` chevron right-aligned. No "Browse" text label.
+- Below the cards: a single inline sentence `Placement check available.` The whole sentence is a link to `/placement`. Link styling uses `--color-text` with a hairline underline on hover only. Not browser-default purple/blue.
 
 ```css
 .section-label {
@@ -762,7 +763,25 @@ Specific rules for this page:
 }
 ```
 
-- Returning users (localStorage shows progress): replace the hero with a "Pick up where you left off" card. Same typographic treatment, different content.
+### 5.1.1 Copy register (mandatory)
+
+The homepage is the most-seen surface in the app. Its copy sets the
+register for everything else. The rules:
+
+1. Describe the contents. Offer no opinion about them.
+2. No outcome claims. The product is a study material, not a promise.
+3. No second-person ("you", "your"). Use noun phrases or impersonal sentences.
+4. No verbs of encouragement ("start", "begin", "explore", "discover").
+5. No trust reassurance ("works offline", "no login", "privacy-first") on the homepage. Those properties live in About / Privacy.
+6. No service-encounter politeness ("please", "feel free to").
+7. Counts are bare numerals plus nouns. No "~1000", no "1000+", no "carefully selected", no "all".
+8. No superlatives: best, most comprehensive, complete, definitive.
+9. No flattering self-description: clean, minimal, elegant, distraction-free. The design demonstrates these; the copy must not assert them.
+10. Sentence case throughout. ALL CAPS only for the small letter-spaced section labels.
+
+If a proposed homepage string violates any of these, the string is wrong.
+
+The same register applies to all homepage variants: light mode, dark mode, mobile, returning-user, and translated locales.
 
 ### 5.2 Learn index
 
@@ -1148,7 +1167,7 @@ Destructive actions (Reset progress) at the bottom, separated by `--space-8` of 
 ```html
 <footer class="app-footer">
   <div class="container footer-grid">
-    <p class="footer-meta">v1.5.0 · Updated April 2026</p>
+    <p class="footer-meta">v1.8.10</p>
     <nav class="footer-nav">
       <a href="#/changelog">What's new</a>
       <a href="#/about">About</a>
@@ -1158,6 +1177,8 @@ Destructive actions (Reset progress) at the bottom, separated by `--space-8` of 
   </div>
 </footer>
 ```
+
+The version number must be read at runtime (e.g., from `package.json` or a build-time constant), not hardcoded. The "Updated [Month Year]" suffix from earlier drafts is dropped — the changelog link replaces that affordance. "What's new" links to the in-app `#/changelog` route which renders the markdown changelog with the app's typography; never to a raw `.md` file on GitHub.
 
 ```css
 .app-footer {

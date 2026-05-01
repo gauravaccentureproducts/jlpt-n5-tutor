@@ -24,6 +24,7 @@ import { renderKanji } from './kanji.js';
 import { renderHome } from './home.js';
 import { initI18n } from './i18n.js';
 import { renderPapers } from './papers.js';
+import { renderChangelog } from './changelog.js';
 
 const ROUTES = {
   home:       renderHome,
@@ -44,6 +45,7 @@ const ROUTES = {
   listening:  renderListening,
   kanji:      renderKanji,
   papers:     renderPapers,
+  changelog:  renderChangelog,
 };
 
 function parseRoute() {
@@ -180,6 +182,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   initShortcuts();
   initSearch();
   initPwa();
+  initFullscreenToggle();
   // Record study activity for streak (Brief 2 §6.1) on any meaningful interaction
   ['click', 'keydown'].forEach(evt => {
     document.addEventListener(evt, () => recordStudyToday(), { once: true });
@@ -197,3 +200,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const obs = new MutationObserver(() => applyAudioRate());
   obs.observe(document.getElementById('app') || document.body, { childList: true, subtree: true });
 });
+
+// Fullscreen toggle (top-right header). Clicking the button toggles between
+// document fullscreen and windowed mode. We swap the SVG icon between the
+// "maximize" (4 corners) and "minimize" (inward arrows) shapes via CSS state.
+// The browser's own Esc key exits fullscreen too — we listen for the
+// fullscreenchange event so the button label reflects current state.
+function initFullscreenToggle() {
+  const btn = document.getElementById('fullscreen-toggle');
+  if (!btn) return;
+  const targetEl = () => document.documentElement;
+  const isFullscreen = () => !!(document.fullscreenElement || document.webkitFullscreenElement);
+  const updateLabel = () => {
+    const fs = isFullscreen();
+    btn.setAttribute('aria-label', fs ? 'Exit fullscreen' : 'Toggle fullscreen');
+    btn.setAttribute('title', fs ? 'Exit fullscreen' : 'Toggle fullscreen');
+    btn.classList.toggle('is-fullscreen', fs);
+  };
+  btn.addEventListener('click', async () => {
+    try {
+      if (isFullscreen()) {
+        if (document.exitFullscreen) await document.exitFullscreen();
+        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+      } else {
+        const el = targetEl();
+        if (el.requestFullscreen) await el.requestFullscreen();
+        else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+      }
+    } catch (err) {
+      // Permissions-Policy or user gesture issues — fail silently; the button
+      // is opportunistic and shouldn't block the rest of the UI.
+      console.warn('Fullscreen toggle failed:', err);
+    }
+  });
+  document.addEventListener('fullscreenchange', updateLabel);
+  document.addEventListener('webkitfullscreenchange', updateLabel);
+  updateLabel();
+}
