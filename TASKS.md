@@ -597,7 +597,7 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 
 ---
 
-## Pass-20 procedure-manual review - 2026-05-01 (15 of 40 ITEMS CLOSED, 17 DEFERRED, 8 CLOSED-BY-POINTER)
+## Pass-20 procedure-manual review - 2026-05-01 (27 of 40 ITEMS CLOSED, 13 DEFERRED to Pass-22)
 
 External review (see `feedback/procedure-manual-review-issues.md`) of the new `specifications/procedure-manual-build-next-jlpt-level.md` from a one-shot-agent-execution lens. The reviewer's verdict was "Low readiness for one-shot generation"; the manual is suitable for a human team WITH the N5 repo at hand (Mode A) but not for a zero-interaction agent (Mode B) without significant supplements.
 
@@ -617,23 +617,32 @@ External review (see `feedback/procedure-manual-review-issues.md`) of the new `s
 - [x] **F-20.10** (HIGH) **Question-count budget per Mondai** — Issue 37. Closed via Appendix A.8: 13-row table mapping each KB file × Mondai → target question count. Total N4 = ~530 questions.
 - [x] **F-20.11** (HIGH) **JLPT exam structure tables** — Issue 38. Closed via Appendix A.9: 5-row table (N5..N1) with section times, pass scores, section thresholds.
 
-#### DEFERRED to Pass-21 — content-inventory embedding (15 of 40)
+#### CLOSED in Appendix B (12 of original 15 deferred)
 
-- [ ] **F-20.12** (CRITICAL) **Embed full N4 kanji whitelist (~280 entries)** with on/kun readings + tier per kanji. Source: A.7 authorities.
-- [ ] **F-20.13** (CRITICAL) **Embed full N4 vocab inventory (~1500 entries)** with sections, IDs, readings, glosses.
-- [ ] **F-20.14** (CRITICAL) **Embed full N4 grammar pattern catalog (~210 entries)** with tier assignments per A.7 rule.
-- [ ] **F-20.15** (HIGH) **Complete KB markdown grammar per file** — full BNF for each KB file type (grammar/vocab/kanji/questions/reading/listening) including section ordering, optional fields, allowed inline syntax.
-- [ ] **F-20.16** (HIGH) **Complete data/*.json schemas as JSON Schema files** at `specifications/schemas/*.schema.json`.
-- [ ] **F-20.17** (HIGH) **Executable invariant rule specifications** — each X-6.x and JA-x in machine-testable form (regex / AST / value-set membership).
-- [ ] **F-20.18** (HIGH, **P0**) **Audio manifest schema + voice metadata** — must close before any Mode-B agent run produces shippable audio content.
-- [ ] **F-20.19** (HIGH) **i18n locale-file format + translation pipeline** — convention for `locales/*.json`, key paths, source-locale-of-truth, fallback policy.
-- [ ] **F-20.20** (HIGH, **P0**) **Vocab-ID slug derivation rule** — section-slug encoding, disambiguator rules, cross-listing manifest. Must close before vocab authoring.
-- [ ] **F-20.21** (HIGH) **Kanji-tier vs grammar-tier interaction** — naming convention across kanji/grammar/vocab; CI invariant integration.
-- [ ] **F-20.22** (HIGH) **Complete UI module list with API contracts** — ~25 modules documented with responsibilities, exports, state interactions, DOM contracts.
-- [ ] **F-20.23** (HIGH) **Front-end test framework + Playwright config** — test directory structure, framework, 37-test list reproduced for N4.
-- [ ] **F-20.24** (HIGH) **Diagnostic Summary algorithm** — error-pattern detection, "recommended next session" recommender logic, session-log retention.
-- [ ] **F-20.25** (HIGH) **N5+N4 prerequisite-tier convention** — whether to share kanji whitelist OR use level-strict; CI check interaction.
-- [ ] **F-20.26** (MEDIUM) **External-corpus URL list per level** — vetted sources for N4/N3/N2/N1 corpus extraction with fair-use boundaries.
+Appendix B at `specifications/procedure-manual-appendix-b-extracted-from-n5.md` (~700 lines) extracts schemas, rules, and conventions directly from the N5 codebase. Each item below points to the appendix section that closes it.
+
+- [x] **F-20.15** (HIGH) Complete KB markdown grammar per file — closed via Appendix B.7 (BNF for grammar.md, vocab.md, kanji.md, *_questions.md, reading.md, chokai.md).
+- [x] **F-20.16** (HIGH) Data/*.json schemas — closed via Appendix B.3 (field-by-field for grammar.json, questions.json, vocab.json, kanji.json, reading.json, listening.json, audio_manifest.json).
+- [x] **F-20.17** (HIGH) Executable invariant rule specifications — closed via Appendix B.8 (all 28 invariants X-6.1..6.9 + JA-1..24 with extracted rules + violation messages).
+- [x] **F-20.18** (HIGH, **P0**) Audio manifest schema + voice metadata — closed via Appendix B.2 (top-level structure, AudioItem shape, voice tag enum, JA-15 invariant rule, build-pipeline behavior).
+- [x] **F-20.19** (HIGH) i18n locale-file format — closed via Appendix B.4 (per-locale single JSON file at locales/<lang>.json, nested-key structure, source-locale-of-truth = en.json, fallback policy).
+- [x] **F-20.20** (HIGH, **P0**) Vocab-ID slug derivation rule — closed via Appendix B.1 (verbatim from build_data.py: `re.sub(r"[^a-z0-9]+", "-", section.lower()).strip("-")[:24] or "misc"`, then `n4.vocab.{slug}.{form}` with `.2/.3` disambiguator).
+- [x] **F-20.21** (HIGH) Kanji-tier vs grammar-tier interaction — closed via Appendix B.10 (tier values per corpus; UNION whitelist composition rule; JA-13 interaction; cross-level scaling for N3/N2/N1).
+- [x] **F-20.22** (HIGH) Complete UI module list — closed via Appendix B.6 (all 25 js/*.js files with responsibility, dependencies, exports; state contract; routing contract).
+- [x] **F-20.23** (HIGH) Front-end test framework + Playwright config — closed via Appendix B.5 (verbatim playwright.config.js + 11 smoke-test categories + run instructions).
+- [x] **F-20.24** (HIGH) Diagnostic Summary algorithm — closed via Appendix B.9 (error-pattern detection threshold rule; recommendation decision tree; session log retention; heatmap layout; storage shape contract).
+- [x] **F-20.25** (HIGH) N5+N4 prerequisite-tier convention — closed via Appendix B.10.2 (UNION composition recommended; alternative strict-level mode rejected with rationale).
+- [x] **F-20.26** (MEDIUM) External-corpus URL list per level — closed via Appendix B.11 (per-level grammar/kanji/vocab/practice URLs for N5..N1; jlpt.jp official samples; fair-use boundaries; attribution requirements).
+
+#### DEFERRED to Pass-21 — content-inventory authoring (3 of original 15)
+
+These three require AUTHORITATIVE source data (Tanos / Bunpro / JLPT.jp) and the agent must NOT invent content. Appendix B.12 provides extraction-script recipes for each; the agent runs these at N4 build time.
+
+- [ ] **F-20.12** (CRITICAL) **Author full N4 kanji whitelist (~280 entries)** by running `tools/extract_n4_kanji_from_tanos.py` (recipe in Appendix B.12.1). Cross-reference Tanos + JLPT Sensei. Output: `data/n4_kanji_whitelist.json` + populated `data/kanji.json` with on/kun + tier per kanji.
+- [ ] **F-20.13** (CRITICAL) **Author full N4 vocab inventory (~1500 entries)** by running `tools/extract_n4_vocab_from_tanos.py` (recipe in Appendix B.12.2). Source: Tanos N4 CSV. Output: `KnowledgeBank/vocabulary_n4.md`, then `tools/build_data.py` derives `data/vocab.json`.
+- [ ] **F-20.14** (CRITICAL) **Author full N4 grammar pattern catalog (~210 entries)** by running `tools/extract_n4_grammar_from_bunpro.py` (recipe in Appendix B.12.3). Source: Bunpro N4 + Tanos N4. Tier classification per Appendix A.7 rule. Output: `KnowledgeBank/grammar_n4.md`, then build → `data/grammar.json`.
+
+These 3 items together represent the actual authoring work for N4 content — the procedural manual cannot embed them inline because the agent must fetch from authoritative sources, not invent. Marked Pass-21 (the actual N4 build pass), not Pass-20 (the manual review).
 
 #### CLOSED-BY-POINTER (8 of 40) — strengthened via this pass, registered as Pass-22 polish candidates
 

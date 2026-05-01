@@ -26,7 +26,11 @@ This document supports **two execution modes**. The bulk of the manual (§§0–
 - Even WITH the N5 repo: a one-shot agent should use **Appendix A** — it provides default decisions for the §15 open questions, fallback procedures for external-blocked items, a definition-of-done, and a minimum-viable subset to ship if the full scope can't fit in one run.
 - Honest expectation: a zero-interaction agent producing a *complete* N4 app in one run is unrealistic. Realistic one-shot deliverable = scaffolded skeleton (build pipeline, schemas, CI, UI shell, ~20% of content) that a human team finishes in subsequent passes.
 
-This split is a direct response to the Pass-20 manual review (`feedback/procedure-manual-review-issues.md`, 40 issues across 6 risk categories). The review's core finding stands: this manual is a *playbook*, not a *self-contained build spec*. Closing that gap fully requires embedding ~5000+ lines of content inventories, schemas, and executable rules — work that is registered as Pass-21 candidate but not yet done.
+This split is a direct response to the Pass-20 manual review (`feedback/procedure-manual-review-issues.md`, 40 issues across 6 risk categories). The review's core finding stands: this manual is a *playbook*, not a *self-contained build spec*. Pass-20 closure ships in two parts:
+- **Appendix A (§17 of this file)** — closes 15 issues by adding operating-modes preamble, default decisions, fallback procedures, MVS, definition of done, schemas recipe, source authorities, exam structure, SM-2 params, furigana procedure.
+- **Appendix B (separate file `procedure-manual-appendix-b-extracted-from-n5.md`)** — closes the remaining "extract from N5" cluster (12 items) by directly extracting schemas, rules, and conventions from the N5 codebase. Sections B.1 through B.12 cover: vocab-ID slug rule (P0), audio manifest schema (P0), JSON schemas for all data files, i18n locale format, Playwright test framework, UI module list, KB markdown grammar (BNF), all 28 invariant rule specifications, Diagnostic Summary algorithm, kanji-tier interaction, external-corpus URL list per level, and content-inventory extraction recipes (N4 kanji/vocab/grammar via authoritative-source scripts, since the agent must FETCH not INVENT content).
+
+Together, Appendix A and Appendix B close 27 of 40 Pass-20 issues. The remaining 13 are documented Pass-22 polish candidates (rubrics, templates, prompt extraction).
 
 ---
 
