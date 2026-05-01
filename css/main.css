@@ -196,6 +196,19 @@ main h3 {
 }
 .loading { color: var(--c-muted); font-style: italic; }
 
+/* Expand-all / Collapse-all bar shown above collapsible-section pages
+ * (Grammar TOC, Vocab list, Listening index). Small inline buttons. */
+.toc-controls {
+  display: flex; gap: 8px;
+  margin: 8px 0 16px;
+}
+.toc-controls .btn-secondary {
+  font-size: 13px;
+  padding: 4px 12px;
+  min-height: 0;
+  cursor: pointer;
+}
+
 /* Lessons. Categories are collapsible <details> elements so the Grammar
  * TOC opens with only the 32 headings visible; cards expand on click. */
 .toc-category {

@@ -56,6 +56,10 @@ function renderIndex(container) {
   container.innerHTML = `
     <h2>Listening practice</h2>
     <p>JLPT N5 listening drills in three formats. Each item plays an audio clip; you pick the correct response.</p>
+    <div class="toc-controls">
+      <button type="button" class="btn-secondary toc-expand-all">Expand all</button>
+      <button type="button" class="btn-secondary toc-collapse-all">Collapse all</button>
+    </div>
     ${Object.entries(byFormat).map(([fmt, list]) => `
       <details class="listening-section">
         <summary><h3>${esc(FORMATS[fmt] || fmt)} <span class="muted small">(${list.length})</span></h3></summary>
@@ -65,6 +69,15 @@ function renderIndex(container) {
       </details>
     `).join('')}
   `;
+  // Wire Expand-all / Collapse-all
+  const expandBtn = container.querySelector('.toc-expand-all');
+  const collapseBtn = container.querySelector('.toc-collapse-all');
+  if (expandBtn) expandBtn.addEventListener('click', () => {
+    container.querySelectorAll('details.listening-section').forEach(d => d.open = true);
+  });
+  if (collapseBtn) collapseBtn.addEventListener('click', () => {
+    container.querySelectorAll('details.listening-section').forEach(d => d.open = false);
+  });
   container.querySelectorAll('[data-id]').forEach(btn => {
     btn.addEventListener('click', () => {
       const item = items.find(x => x.id === btn.dataset.id);

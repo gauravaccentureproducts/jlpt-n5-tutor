@@ -194,10 +194,14 @@ function renderVocabList(container, data) {
       <a class="back-link" href="#/learn">← Back to Learn</a>
       <h2>Vocabulary</h2>
       <p class="page-lede">${entries.length} N5 words in ${VOCAB_SUPERSECTS.length} sections.</p>
+      <div class="toc-controls">
+        <button type="button" class="btn-secondary toc-expand-all">Expand all</button>
+        <button type="button" class="btn-secondary toc-collapse-all">Collapse all</button>
+      </div>
       ${sections}
     </article>
   `;
-
+  wireExpandCollapseControls(container, 'details.vocab-section');
 }
 
 function renderVocabDetail(container, vocabData, grammarData, form) {
@@ -346,7 +350,29 @@ const GRAMMAR_SUPERCATS = [
   ]],
 ];
 
-function superCategoryFor(category) {
+// Per-pattern overrides for cases where the fine-grained `category` value
+// doesn't match the pattern's true type. These are individual patterns
+// that live inside a non-verb subcategory but are actually verb patterns
+// (verb relative clauses, verb-stem constructions, ています/ました with
+// time markers, etc.). Moved to "Verbs" to remove the cross-bucket
+// duplication the user flagged 2026-05-01.
+const PATTERN_SUPERCAT_OVERRIDES = {
+  'n5-135': 'Verbs',  // Verb (plain) + Noun — relative clauses
+  'n5-144': 'Verbs',  // Verb-stem + ながら — while doing
+  'n5-153': 'Verbs',  // まだ + Verb-ていません — not yet
+  'n5-154': 'Verbs',  // もう + Verb-ました — already
+  'n5-162': 'Verbs',  // Verb-plain ましょう (see 〜ます)
+  'n5-163': 'Verbs',  // Verb-た あとで (see 〜あと)
+};
+
+function superCategoryFor(pattern) {
+  // Allow per-pattern override when the category-level rule misroutes.
+  // Caller passes the full pattern object so we can read both `id` and
+  // `category`; legacy callers passing just a string still work.
+  if (typeof pattern === 'object' && pattern && pattern.id in PATTERN_SUPERCAT_OVERRIDES) {
+    return PATTERN_SUPERCAT_OVERRIDES[pattern.id];
+  }
+  const category = (typeof pattern === 'string') ? pattern : (pattern?.category || '');
   for (const [supercat, members] of GRAMMAR_SUPERCATS) {
     if (members.includes(category)) return supercat;
   }
@@ -360,7 +386,9 @@ function renderTOC(container, data) {
   const bySuperCat = new Map();
   for (const [supercat] of GRAMMAR_SUPERCATS) bySuperCat.set(supercat, []);
   for (const p of data.patterns) {
-    const sc = superCategoryFor(p.category || 'Other');
+    // Pass full pattern so per-id overrides apply (verb-pattern leakers
+    // that live inside non-verb subcategories — see PATTERN_SUPERCAT_OVERRIDES).
+    const sc = superCategoryFor(p);
     bySuperCat.get(sc).push(p);
   }
 
@@ -370,6 +398,10 @@ function renderTOC(container, data) {
     <a class="back-link" href="#/learn">← Back to Learn</a>
     <h2>Grammar</h2>
     <p class="page-lede">${data.patterns.length} patterns in ${bySuperCat.size} sections.</p>
+    <div class="toc-controls">
+      <button type="button" class="btn-secondary toc-expand-all">Expand all</button>
+      <button type="button" class="btn-secondary toc-collapse-all">Collapse all</button>
+    </div>
   `;
   // Each super-category renders as a collapsible <details>. First paint:
   // 5 short heading rows (one per super-category). Click to expand a
@@ -395,6 +427,21 @@ function renderTOC(container, data) {
     html += `<div class="placeholder" style="margin-top:24px"><p>Scaffold currently has 1 example pattern. Add more to <code>data/grammar.json</code> as you author content.</p></div>`;
   }
   container.innerHTML = html;
+  wireExpandCollapseControls(container, 'details.toc-category');
+}
+
+// Wire Expand-all / Collapse-all buttons to the matching details elements.
+// Used by Grammar TOC, Vocab list, and Listening index.
+function wireExpandCollapseControls(container, detailsSelector) {
+  const expand = container.querySelector('.toc-expand-all');
+  const collapse = container.querySelector('.toc-collapse-all');
+  if (!expand || !collapse) return;
+  expand.addEventListener('click', () => {
+    container.querySelectorAll(detailsSelector).forEach(d => d.open = true);
+  });
+  collapse.addEventListener('click', () => {
+    container.querySelectorAll(detailsSelector).forEach(d => d.open = false);
+  });
 }
 
 function renderPatternDetail(container, p) {
