@@ -616,7 +616,7 @@
     },
     {
       "id": "q-0024",
-      "grammarPatternId": "n5-012",
+      "grammarPatternId": "n5-023",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
@@ -639,7 +639,7 @@
     },
     {
       "id": "q-0025",
-      "grammarPatternId": "n5-012",
+      "grammarPatternId": "n5-024",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
@@ -2907,7 +2907,7 @@
     },
     {
       "id": "q-0358",
-      "grammarPatternId": "n5-128",
+      "grammarPatternId": "n5-009",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
@@ -2943,7 +2943,7 @@
     },
     {
       "id": "q-0419",
-      "grammarPatternId": "n5-022",
+      "grammarPatternId": "n5-011",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
@@ -3015,7 +3015,7 @@
     },
     {
       "id": "q-0422",
-      "grammarPatternId": "n5-032",
+      "grammarPatternId": "n5-013",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "ほかにも がくせいが いる ことを ふまえて、じぶんも おなじだと 言う ことばを えらんで ください。",
@@ -3207,7 +3207,7 @@
     },
     {
       "id": "q-0430",
-      "grammarPatternId": "n5-047",
+      "grammarPatternId": "n5-019",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
@@ -4106,7 +4106,7 @@
     },
     {
       "id": "q-0479",
-      "grammarPatternId": "n5-130",
+      "grammarPatternId": "n5-021",
       "type": "mcq",
       "direction": "j_to_e",
       "prompt_ja": "「あげる」と いっしょに つかう、もらう人を しめす ことばを えらんで ください。",
@@ -4346,7 +4346,7 @@
     },
     {
       "id": "q-0479",
-      "grammarPatternId": "n5-020",
+      "grammarPatternId": "n5-021",
       "type": "mcq",
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
       "question_ja": "がっこうは 9じ（  ）3じ までです。",

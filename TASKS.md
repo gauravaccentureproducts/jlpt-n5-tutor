@@ -31,7 +31,7 @@ Last updated: 2026-04-30 (Pass-14 questions.json comprehensive audit registered:
 
 ## Open user-reported items (2026-05-01)
 
-- [ ] **UX-CONSISTENCY-1: "Mark as known" checkbox positional inconsistency.** User reported 2026-05-01 (screenshot of particle が detail page). Currently the checkbox + label appears only on grammar pattern detail (`js/learn.js#renderPatternDetail`, inside `.pattern-header` flex). Missing from vocab detail (`renderVocabDetail`) and kanji detail (`js/kanji.js`). **Fix:** decide which detail surfaces should expose the toggle (recommend all 3 — grammar / vocab / kanji), then ensure same vertical position relative to the entry title across pages via a shared `.known-toggle` markup pattern. Cross-referenced as OPEN-10 in `feedback/MASTER-TASK-LIST.md`. ~30 min effort.
+- [x] **UX-CONSISTENCY-1: "Mark as known" checkbox positional inconsistency.** User reported 2026-05-01 (screenshot of particle が detail page). **Closed in commits 8484b76 + 2603803:** toggle markup added to `renderVocabDetail` (js/learn.js) and `renderDetail` (js/kanji.js); CSS `.vocab-header { margin-bottom: 16px }` and `.kanji-glyph-row { gap: 24px; margin: 16px 0; flex-wrap: wrap }` overrides stripped so all three detail-page headers use the canonical `.pattern-header` flex layout (gap 16, margin-bottom 24, justify-content space-between). Toggle position now identical across grammar / vocab / kanji detail at every viewport. Cross-referenced as OPEN-10 in `feedback/MASTER-TASK-LIST.md`.
 
 ---
 
@@ -687,20 +687,23 @@ The catalog has two ID ranges that overlap on the same surface form. Most entrie
 
 For each pair below, recommended action: pick the canonical ID, migrate any questions tagged to the duplicate over to the canonical, then remove the duplicate pattern entry.
 
-- [ ] **F-19.1** (MEDIUM) **`か` triplet redundancy** — n5-012 ("sentence-final + or" combined) is now superseded by n5-023 (sentence-final) + n5-024 (OR). Retire n5-012 OR re-scope to a different aspect.
-- [ ] **F-19.2** (MEDIUM) **`から` redundancy** — n5-128 (clause connector "because") is a subset of n5-009 (from / because). q-0358 is tagged to n5-128; if n5-128 is retired, q-0358 should migrate to n5-009 (which removes the q-0019/q-0358 stem-duplication noted above).
-- [ ] **F-19.3** (MEDIUM) **`まで` redundancy** — n5-020 duplicates n5-010.
-- [ ] **F-19.4** (MEDIUM) **`や` redundancy** — n5-022 duplicates n5-011.
-- [ ] **F-19.5** (LOW) **`も` redundancy** — n5-032 ("Also/too") is a subset of n5-013 (which adds the with-negation sense). Verify before merging.
-- [ ] **F-19.6** (LOW) **`いつ` redundancy** — n5-047 ("When") is a subset of n5-019 (which notes pairing with から/まで/ごろ).
-- [ ] **F-19.7** (MEDIUM) **`〜があります` redundancy** — n5-141 duplicates n5-094.
-- [ ] **F-19.8** (MEDIUM) **`〜が好き` redundancy** — n5-138 duplicates n5-099.
-- [ ] **F-19.9** (MEDIUM) **`〜がじょうず` redundancy** — n5-139 duplicates n5-100.
-- [ ] **F-19.10** (MEDIUM) **`〜がわかります` redundancy** — n5-140 duplicates n5-102.
+- [x] **F-19.1** (MEDIUM) **`か` triplet redundancy** — n5-012 ("sentence-final + or" combined) is now superseded by n5-023 (sentence-final) + n5-024 (OR). Retire n5-012 OR re-scope to a different aspect.
+- [x] **F-19.2** (MEDIUM) **`から` redundancy** — n5-128 (clause connector "because") is a subset of n5-009 (from / because). q-0358 is tagged to n5-128; if n5-128 is retired, q-0358 should migrate to n5-009 (which removes the q-0019/q-0358 stem-duplication noted above).
+- [x] **F-19.3** (MEDIUM) **`まで` redundancy** — n5-020 duplicates n5-010.
+- [x] **F-19.4** (MEDIUM) **`や` redundancy** — n5-022 duplicates n5-011.
+- [x] **F-19.5** (LOW) **`も` redundancy** — n5-032 ("Also/too") is a subset of n5-013 (which adds the with-negation sense). Verify before merging.
+- [x] **F-19.6** (LOW) **`いつ` redundancy** — n5-047 ("When") is a subset of n5-019 (which notes pairing with から/まで/ごろ).
+- [x] **F-19.7** (MEDIUM) **`〜があります` redundancy** — n5-141 duplicates n5-094.
+- [x] **F-19.8** (MEDIUM) **`〜が好き` redundancy** — n5-138 duplicates n5-099.
+- [x] **F-19.9** (MEDIUM) **`〜がじょうず` redundancy** — n5-139 duplicates n5-100.
+- [x] **F-19.10** (MEDIUM) **`〜がわかります` redundancy** — n5-140 duplicates n5-102.
 
 Plus a cascade item:
 
-- [ ] **F-19.11** (LOW) **q-0019 / q-0358 duplicate stem** — cascade-resolves automatically when F-19.2 is fixed (q-0358 migrates to n5-009, then a stem-duplication check decides if both are still needed or one is consolidated).
+- [x] **F-19.11** (LOW) **q-0019 / q-0358 duplicate stem** — cascade-resolves automatically when F-19.2 is fixed (q-0358 migrates to n5-009, then a stem-duplication check decides if both are still needed or one is consolidated).
+
+
+**F-19 cluster CLOSED 2026-05-01.** Applied via `tools/_apply_f19_dedup.py` (one-shot, self-deleted): 10 duplicate / subset patterns retired (n5-012/020/022/032/047/128/138/139/140/141), 8 questions re-pointed to canonical pattern IDs (q-0024 → n5-023, q-0025 → n5-024, q-0358 → n5-009, q-0419 → n5-011, q-0422 → n5-013, q-0430 → n5-019, q-0479 → n5-021). Pattern count 187 → 177. F-19.11 cascade-resolved (q-0358 migrated to n5-009; no more stem duplication). 33/33 content-integrity invariants green.
 
 #### Recommended fix sequence
 

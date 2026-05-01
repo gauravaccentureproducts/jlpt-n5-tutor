@@ -161,7 +161,7 @@ def main(argv: list[str] | None = None) -> int:
         # (per verification.md). Production code can read from
         # verification.md programmatically; for now the IDs are listed.
         pass11_13_covered = {  # Approximation; refine in verification.md cross-reference
-            "n5-022", "n5-076", "n5-091", "n5-127", "n5-160", "n5-184", "n5-185",
+            "n5-011", "n5-076", "n5-091", "n5-127", "n5-160", "n5-184", "n5-185",
             "n5-186", "n5-187", "n5-031", "n5-091", "n5-031", "n5-110", "n5-104",
         }
         target_ids = [pid for pid in patterns_by_id if pid not in pass11_13_covered]
