@@ -621,7 +621,7 @@ Comprehensive audit of `data/questions.json` from native-speaker + structural-in
 
 - [x] **F-14.4** (HIGH) **Prompt-stem mismatch in 37 pattern-meta questions** — Resolved by F-14.1 deletion.
 - [x] **F-14.5** (HIGH) **q-0418 dual-mode schema** — `type: text_input` but also has stale `choices` array. **Applied 2026-05-01:** dropped the `choices` field. q-0418 is now canonical text_input with `acceptedAnswers` (4 entries) + `correctAnswer` ("です") for feedback display.
-- [ ] **F-14.6** (HIGH) **33 ID gaps** including q-0051 → q-0220 (168 missing). **Fix options:** accept gaps / renumber / document.
+- [x] **F-14.6** (HIGH) **ID gaps** — 9 gaps totalling 290 missing IDs in declared range q-0001..q-0433. **Applied 2026-05-01 (option C — keep gaps but document):** added `_meta` block to `data/questions.json` with `id_gap_policy: "documented"`, `id_gaps[]` array enumerating each gap, `id_gap_explanation` text covering Pass-9/12/14 deletion history, and a contract note that "tooling MUST treat IDs as opaque strings, not contiguous-integer suffixes." Renumbering rejected as too risky — would break URL bookmarks, exported localStorage state, and verification.md cross-references.
 
 #### MEDIUM (3 classes — ALL RESOLVED)
 

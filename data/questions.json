@@ -1,4 +1,76 @@
 {
+  "_meta": {
+    "schema_version": "1.0",
+    "question_count": 143,
+    "type_distribution": {
+      "mcq": 138,
+      "sentence_order": 4,
+      "text_input": 1
+    },
+    "id_range": {
+      "first": "q-0001",
+      "last": "q-0433"
+    },
+    "id_gap_policy": "documented",
+    "id_gap_explanation": "IDs are non-contiguous. The declared range q-0001..q-0433 spans 433 slots but only 143 are populated (290 missing). Cause: bulk deletions across audit passes (Pass-9 to Pass-14) without renumbering. Specifically: Pass-9 removed first-edition stubs (q-0052..q-0219), Pass-12 removed duplicates / corrupted items, Pass-14 (2026-05-01) removed 38 pattern-meta stubs (q-0280..q-0416 family). Renumbering was rejected as too risky — any external reference (URL bookmarks of past test results, exported localStorage state, verification.md cross-references) would break unpredictably. Per F-14.6 closure: gaps are accepted as historical record. Tooling MUST treat IDs as opaque strings, not contiguous-integer suffixes.",
+    "id_gaps": [
+      {
+        "after": "q-0051",
+        "before": "q-0220",
+        "missing": 168
+      },
+      {
+        "after": "q-0279",
+        "before": "q-0285",
+        "missing": 5
+      },
+      {
+        "after": "q-0287",
+        "before": "q-0293",
+        "missing": 5
+      },
+      {
+        "after": "q-0293",
+        "before": "q-0296",
+        "missing": 2
+      },
+      {
+        "after": "q-0298",
+        "before": "q-0313",
+        "missing": 14
+      },
+      {
+        "after": "q-0315",
+        "before": "q-0351",
+        "missing": 35
+      },
+      {
+        "after": "q-0354",
+        "before": "q-0356",
+        "missing": 1
+      },
+      {
+        "after": "q-0356",
+        "before": "q-0358",
+        "missing": 1
+      },
+      {
+        "after": "q-0358",
+        "before": "q-0418",
+        "missing": 59
+      }
+    ],
+    "audit_history": [
+      "Pass-1 through Pass-8: 9 native-teacher audits 2026-04-25..2026-04-30 (462 findings cumulative).",
+      "Pass-9 (2026-04-30): 27 findings + 4 systematic sweeps + 7 cross-file checks. Bulk-deleted first-edition stubs.",
+      "Pass-11 (2026-04-30): 30 of 187 patterns sampled by native teacher. Critical fixes applied.",
+      "Pass-12 (2026-04-30): re-audit, 3 systemic clusters resolved + duplicate removal.",
+      "Pass-13 (2026-04-30): native-accuracy audit, build-pipeline corruption fixed (recovered 9 missing kanji entries).",
+      "Pass-14 (2026-04-30 audit, 2026-05-01 Phase A applied): 8 issue classes. Phase A deleted 38 pattern-meta stubs (q-0280..q-0416). Cascade-resolved F-14.1/2/3/4/7/8/9. F-14.5 fixed (q-0418 schema). F-14.6 closed via this metadata block. F-14.10 deferred (long-term content authoring)."
+    ],
+    "authoritative_audit_log": "verification.md (cumulative findings tally)",
+    "integrity_invariants": "26 checks in tools/check_content_integrity.py (X-6.1..X-6.9, JA-1..JA-17)"
+  },
   "questions": [
     {
       "id": "q-0001",
