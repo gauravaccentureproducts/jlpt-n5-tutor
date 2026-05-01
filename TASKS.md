@@ -11,7 +11,7 @@ Last updated: 2026-04-30 (Pass-14 questions.json comprehensive audit registered:
 
 ## Status snapshot
 
-- 187/187 patterns enriched, 250/250 questions real (no stubs)
+- 187/187 patterns enriched, 163 real questions (no stubs; post-Pass-14 + Pass-15 cleanup)
 - **17 routed views + sub-paths**: Home / **Learn hub (5-card: Grammar/Vocab/Kanji/Dokkai/Listening)** with sub-paths `#/learn/grammar`, `#/learn/vocab`, `#/learn/vocab/<form>` (per-word detail with 5 example sentences), `#/learn/<patternId>` / Kanji (`#/kanji`, `#/kanji/<glyph>`) / Test (`#/test`, `#/test/<n>` direct-launch with quit-prompt) / Practice (`#/drill`, was "Daily Drill") / Review (SM-2 SRS) / Summary / Diagnostic / Settings / Reading / Listening / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters
 - SM-2 SRS in Review (4-button grading)
 - Service worker `jlpt-n5-tutor-v18` (stale-while-revalidate for shell, cache-first for content); update toast on new shell; lazy-caches audio on first play
@@ -619,7 +619,31 @@ Native-teacher review identified MCQs in `data/questions.json` where the stem ac
 
 #### Flagged but NOT fixed (out of multi-correct scope)
 
-- [ ] **F-15.12** (MEDIUM) **q-0420 and q-0421 are exact duplicates** — both `あなたは がくせいです（ ）。` correct=か, identical choices `[か,は,が,を]`, but assigned to different grammar patterns (n5-023 vs n5-024). This is a duplicate-question bug. Either delete one or differentiate stems. Not fixed in Pass-15 — register as Pass-16 candidate.
+- [x] **F-15.12** (MEDIUM) **q-0420 / q-0421 duplicate** — both stems were `あなたは がくせいです（ ）。` correct=か, but tagged to different patterns (n5-023 = sentence-final か, n5-024 = OR-between-alternatives か). The duplicate stem only tested the n5-023 sense. **Applied 2026-05-01:** rewrote q-0421 stem to `コーヒー（ ）おちゃが いいです。` with prompt `ふたつの えらびかたを ならべる ことばを えらんで ください。` so it tests the n5-024 OR sense. Real distractor explanations replace the stub `Wrong choice` text.
+
+#### Tier-2 Japanese-accuracy fixes (3 more)
+
+- [x] **F-15.13** (HIGH) **n5-024 grammar pattern had wrong examples** — first two examples (`あなたは がくせいですか。` / `なにを たべましたか。`) were copy-pasted from n5-023 (sentence-final か); they don't illustrate the OR sense the pattern teaches. **Applied 2026-05-01:** replaced examples with three OR-か illustrations (`コーヒーか おちゃが いいです。` / `ペンか えんぴつで かいてください。` / `あしたか あさってに いきます。`). Re-ran `tools/link_grammar_examples_to_vocab.py` to populate `vocab_ids` (JA-17 invariant).
+- [x] **F-15.14** (MEDIUM) **q-0007 ねこ___すきです** — stem accepted は (contrastive topic) as a grammatically valid alternative to が. **Applied 2026-05-01:** added Q&A scaffold `A：「どんな どうぶつが すきですか。」　B：「ねこ（ ）すきです。」` so が is the natural answer (the question pattern X が すき forces が in the response). Real distractor explanations added.
+- [x] **F-15.15** (MEDIUM) **q-0008 ほん___よみます** — stem accepted は (contrastive topic) as alternative to を. **Applied 2026-05-01:** added scene `（としょかんで）　わたしは ほん（ ）よみます。` so を is the natural direct-object marker. Real distractor explanations added.
+- [x] **F-15.16** Side-effect: 好 kanji in q-0007 distractor explanation breached JA-13 (out-of-scope). Removed the `(好き)` parenthetical; the distractor still reads naturally without it.
+
+#### Linker tooling fix (caught while verifying Tier-2 metadata)
+
+- [x] **F-15.17** (MEDIUM) **Vocab linker false-positive substring matches** — `tools/link_grammar_examples_to_vocab.py` was substring-matching short standalone nouns/adjectives without right-side word-boundary checking. Caught by the new n5-024 example `あしたか あさってに いきます。` which got a spurious link to `n5.vocab.4-body-parts.あし` (foot) because `あし` is a substring of `あした` (tomorrow). **Applied 2026-05-01:** extended the existing 2-char left-boundary check (formerly only `expression` / `interjection` POS) to include `noun` / `na-adjective` / `i-adjective` / `adverb`, AND added a right-boundary check that accepts `_BOUNDARY` chars + particles (はがをにでとも) + common copula/modifier starts (のなだへやかねよ). Re-ran linker: still 587/587 examples linked (100%); the false positive is gone. The HOMOGRAPH_RULES dispatch system was the wrong place for this fix because it only fires for vocab-form clusters with multiple entries, and `あし` has only one entry in vocab.json.
+
+#### Coverage gap analysis vs external corpus — 2026-05-01
+
+Cross-coverage report at `feedback/coverage-comparison.md`. Six N5 grammar patterns have ZERO question coverage in our bank; they appear in `data/grammar.json` but no question references their pattern ID, and a full-text search for their key forms across all 163 questions returns zero hits:
+
+- [ ] **F-15.18** (MEDIUM) **n5-130 あげる (give to others)** — no question coverage. External corpus tests this implicitly (Test 7 Q9 inverse with もらう). Pass-16 candidate: author 2 MCQs.
+- [ ] **F-15.19** (MEDIUM) **n5-131 もらう (receive from)** — no question coverage. External tests this directly (Test 7 Q9 / Test 16 Q10). Pass-16 candidate: author 2 MCQs.
+- [ ] **F-15.20** (MEDIUM) **n5-134 ので (because, softer than から)** — no question coverage. External tests this twice (Test 16 Q5 / Test 11 Q2). Pass-16 candidate: author 1-2 MCQs contrasting from `から`.
+- [ ] **F-15.21** (MEDIUM) **n5-144 Verb-stem + ながら (while doing)** — no question coverage. External tests this twice (Test 3 Q4 / Test 5 Q10). Pass-16 candidate: author 1-2 MCQs; can mirror the `ラジオを___べんきょうします` shape from external Test 5.
+- [ ] **F-15.22** (LOW) **n5-148 いつも / たいてい / たまに (always / usually / occasionally)** — no question coverage. Frequency adverbs. Pass-16 candidate: author 1 sentence-completion MCQ.
+- [ ] **F-15.23** (LOW) **n5-167 ～んです / ～のです (explanation / emphasis)** — no question coverage. Borderline N5/N4 nuance. Pass-16 candidate: author only if confident the contrast with plain です-form is N5-appropriate.
+
+These six patterns produce "no real questions" experience for ~3% of the curriculum. Authoring requires native-teacher quality on distractors to avoid reintroducing multi-correct bugs (see Pass-15 lessons), so deferring to Pass-16 with explicit native review.
 
 #### Reviewed false positives (no fix needed)
 
@@ -652,7 +676,7 @@ Comprehensive audit of `data/questions.json` from native-speaker + structural-in
 - [x] **F-14.2** (CRITICAL) **Answer literally in stem** — q-0311, q-0316, q-0382, q-0398. Resolved by F-14.1 deletion.
 - [x] **F-14.3** (CRITICAL) **q-0382 rendering corruption** — double colon. Resolved by F-14.1 deletion.
 
-#### HIGH (3 classes — 1 RESOLVED, 2 OPEN)
+#### HIGH (3 classes — ALL RESOLVED)
 
 - [x] **F-14.4** (HIGH) **Prompt-stem mismatch in 37 pattern-meta questions** — Resolved by F-14.1 deletion.
 - [x] **F-14.5** (HIGH) **q-0418 dual-mode schema** — `type: text_input` but also has stale `choices` array. **Applied 2026-05-01:** dropped the `choices` field. q-0418 is now canonical text_input with `acceptedAnswers` (4 entries) + `correctAnswer` ("です") for feedback display.

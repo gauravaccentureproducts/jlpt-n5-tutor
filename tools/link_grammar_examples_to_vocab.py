@@ -271,27 +271,39 @@ def matches_in_example(form: str, ja: str, pos: str = "") -> bool:
                     return True
                 idx = i + 1
         # Short-standalone-word boundary: 2-char standalone words
-        # (noun / expression / interjection) need a left word-boundary
-        # so that はい (yes) doesn't false-match inside すってはい
-        # けません, and いけ (lake) doesn't false-match inside
-        # はいけません. We require the preceding char to be a
-        # boundary OR another word's particle (after は/が/を/に/で/
-        # と/も/から/へ/まで). This is best-effort — Japanese has
-        # no real word boundaries, but the most common false-positive
-        # pattern is "verb-stem + 2char-word substring".
-        if pos in ("expression", "interjection") and len(form) <= 2:
+        # (noun / expression / interjection / adjective / adverb) need
+        # word-boundary checks on BOTH sides so that:
+        #   - はい (yes) doesn't false-match inside すってはいけません
+        #     (left boundary catch)
+        #   - あし (foot) doesn't false-match inside あした / あさって
+        #     (right boundary catch)
+        #
+        # _PARTICLE_END catches the typical "previous word ended on a
+        # particle" left context. _RIGHT_OK extends _BOUNDARY with the
+        # particles and copula/modifier starts that legitimately attach
+        # to the END of a noun/adj (e.g., 「あしを」 — を attaches and
+        # IS a valid right context).
+        #
+        # Best-effort: Japanese has no real word boundaries, but the
+        # common false-positive pattern is "verb-stem or longer-noun
+        # substring contains short-noun".
+        if pos in ("noun", "expression", "interjection",
+                   "na-adjective", "i-adjective", "adverb") and len(form) <= 2:
             _PARTICLE_END = set("はがをにでとも")
+            _RIGHT_OK = _BOUNDARY | _PARTICLE_END | set("のなだへやかねよ")
             idx = 0
             flen = len(form)
             while True:
                 i = ja.find(form, idx)
                 if i < 0:
                     return False
-                # Boundary: start, _BOUNDARY, or after a particle
-                # (which itself signals end-of-previous-phrase).
-                if (i == 0
-                    or ja[i-1] in _BOUNDARY
-                    or ja[i-1] in _PARTICLE_END):
+                left_ok = (i == 0
+                           or ja[i-1] in _BOUNDARY
+                           or ja[i-1] in _PARTICLE_END)
+                right_pos = i + flen
+                right_ok = (right_pos >= len(ja)
+                            or ja[right_pos] in _RIGHT_OK)
+                if left_ok and right_ok:
                     return True
                 idx = i + 1
         return True

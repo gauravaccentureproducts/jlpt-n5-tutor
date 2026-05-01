@@ -81,7 +81,6 @@
           "translation_en": "I study Japanese every day.",
           "vocab_ids": [
             "n5.vocab.24-school-and-study.べんきょう",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.35-particles-functional-.を"
           ]
         }
@@ -371,7 +370,6 @@
           "form": "question",
           "translation_en": "What did you buy?",
           "vocab_ids": [
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.か"
@@ -657,7 +655,6 @@
           "vocab_ids": [
             "n5.vocab.13-locations-and-places-.としょかん",
             "n5.vocab.24-school-and-study.べんきょう",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.35-particles-functional-.で"
           ]
         },
@@ -678,7 +675,6 @@
           "vocab_ids": [
             "n5.vocab.37-common-nouns-miscella.たばこ",
             "n5.vocab.5-demonstratives.ここ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.すう",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.で"
@@ -699,7 +695,6 @@
           "form": "past",
           "translation_en": "I spoke in Japanese.",
           "vocab_ids": [
-            "n5.vocab.4-body-parts.はな",
             "n5.vocab.27-verbs-group-1-verbs.話す",
             "n5.vocab.35-particles-functional-.で"
           ]
@@ -786,7 +781,6 @@
           "translation_en": "I said 'hello.'",
           "vocab_ids": [
             "n5.vocab.36-greetings-and-set-phr.こんにちは",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.言う",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.と"
@@ -798,7 +792,6 @@
           "translation_en": "I didn't meet my friend.",
           "vocab_ids": [
             "n5.vocab.2-people-family.ともだち",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.と"
           ]
@@ -918,7 +911,6 @@
           "form": "negative",
           "translation_en": "It's expensive, so I won't buy it.",
           "vocab_ids": [
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.34-conjunctions.から"
           ]
@@ -1098,7 +1090,6 @@
           "vocab_ids": [
             "n5.vocab.24-school-and-study.ノート",
             "n5.vocab.24-school-and-study.ペン",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.など",
             "n5.vocab.35-particles-functional-.を",
@@ -1110,7 +1101,6 @@
           "form": "question",
           "translation_en": "What and what did you buy?",
           "vocab_ids": [
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.か",
@@ -1428,7 +1418,6 @@
           "translation_en": "Which one do you like best?",
           "vocab_ids": [
             "n5.vocab.5-demonstratives.どれ",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.32-adjectives.すき",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
@@ -1636,7 +1625,6 @@
           "vocab_ids": [
             "n5.vocab.5-demonstratives.そこ",
             "n5.vocab.15-animals.ねこ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.に"
@@ -1648,7 +1636,6 @@
           "translation_en": "Where did you buy it?",
           "vocab_ids": [
             "n5.vocab.5-demonstratives.どこ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.で",
             "n5.vocab.35-particles-functional-.か"
@@ -1854,7 +1841,6 @@
             "n5.vocab.21-clothing-and-accessor.かばん",
             "n5.vocab.1-people-pronouns-and-se.だれ",
             "n5.vocab.5-demonstratives.これ",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か",
             "n5.vocab.35-particles-functional-.の"
@@ -1974,7 +1960,6 @@
           "translation_en": "Since when have you been in Japan?",
           "vocab_ids": [
             "n5.vocab.6-question-words.いつ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.から",
             "n5.vocab.35-particles-functional-.に",
@@ -2226,7 +2211,6 @@
           "vocab_ids": [
             "n5.vocab.24-school-and-study.ノート",
             "n5.vocab.24-school-and-study.ペン",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.など",
             "n5.vocab.35-particles-functional-.を",
@@ -2240,11 +2224,8 @@
           "vocab_ids": [
             "n5.vocab.17-food-items.くだもの",
             "n5.vocab.17-food-items.やさい",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.32-adjectives.いや",
-            "n5.vocab.37-common-nouns-miscella.もの",
-            "n5.vocab.40-misc-useful-items.もの",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.や"
           ]
@@ -2379,28 +2360,8 @@
       "explanation_en": "か at the END of a sentence makes it a question - works with yes/no AND wh-questions (どこ, なに, etc.). Between two nouns (Aか B), it means 'A or B'. Don't add a question mark in writing - か already signals the question.\n\n(This pattern is also indexed as 'か' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "あなたは がくせいですか。",
-          "form": "question",
-          "translation_en": "Are you a student?",
-          "vocab_ids": [
-            "n5.vocab.1-people-pronouns-and-se.あなた",
-            "n5.vocab.35-particles-functional-.は",
-            "n5.vocab.35-particles-functional-.か"
-          ]
-        },
-        {
-          "ja": "なにを たべましたか。",
-          "form": "question",
-          "translation_en": "What did you eat?",
-          "vocab_ids": [
-            "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.35-particles-functional-.を",
-            "n5.vocab.35-particles-functional-.か"
-          ]
-        },
-        {
+          "form": "noun か noun",
           "ja": "コーヒーか おちゃが いいです。",
-          "form": "affirmative",
           "translation_en": "Coffee or tea would be good.",
           "vocab_ids": [
             "n5.vocab.18-drinks.コーヒー",
@@ -2410,24 +2371,26 @@
           ]
         },
         {
-          "ja": "いつ いきますか。",
-          "form": "question",
-          "translation_en": "When are you going?",
+          "form": "noun か noun",
+          "ja": "ペンか えんぴつで かいてください。",
+          "translation_en": "Please write with a pen or pencil.",
           "vocab_ids": [
-            "n5.vocab.6-question-words.いつ",
-            "n5.vocab.27-verbs-group-1-verbs.行く",
+            "n5.vocab.24-school-and-study.えんぴつ",
+            "n5.vocab.24-school-and-study.ペン",
+            "n5.vocab.27-verbs-group-1-verbs.書く",
+            "n5.vocab.35-particles-functional-.で",
             "n5.vocab.35-particles-functional-.か"
           ]
         },
         {
-          "ja": "これは ペンですか、えんぴつですか。",
-          "form": "question",
-          "translation_en": "Is this a pen or a pencil?",
+          "form": "time-noun か time-noun",
+          "ja": "あしたか あさってに いきます。",
+          "translation_en": "I'll go tomorrow or the day after.",
           "vocab_ids": [
-            "n5.vocab.24-school-and-study.えんぴつ",
-            "n5.vocab.5-demonstratives.これ",
-            "n5.vocab.24-school-and-study.ペン",
-            "n5.vocab.35-particles-functional-.は",
+            "n5.vocab.10-time-general.あさって",
+            "n5.vocab.10-time-general.あした",
+            "n5.vocab.27-verbs-group-1-verbs.行く",
+            "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.か"
           ]
         }
@@ -2477,7 +2440,6 @@
           "translation_en": "It's delicious, isn't it?",
           "vocab_ids": [
             "n5.vocab.31-adjectives.おいしい",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.35-particles-functional-.ね"
           ]
         },
@@ -2549,7 +2511,6 @@
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
             "n5.vocab.24-school-and-study.しけん",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.35-particles-functional-.よ"
           ]
         },
@@ -2560,7 +2521,6 @@
           "vocab_ids": [
             "n5.vocab.27-verbs-group-1-verbs.ちがう",
             "n5.vocab.5-demonstratives.それ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.よ"
           ]
@@ -2572,7 +2532,6 @@
           "vocab_ids": [
             "n5.vocab.31-adjectives.おいしい",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.35-particles-functional-.よ"
           ]
         },
@@ -2629,7 +2588,6 @@
           "translation_en": "You're coming tomorrow, right?",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.29-verbs-irregular-and-v.来る",
             "n5.vocab.35-particles-functional-.ね"
           ]
@@ -2705,7 +2663,6 @@
           "vocab_ids": [
             "n5.vocab.25-languages-and-countri.日本語",
             "n5.vocab.3-people-roles.先生",
-            "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.35-particles-functional-.の"
           ]
         },
@@ -2717,7 +2674,6 @@
             "n5.vocab.21-clothing-and-accessor.かばん",
             "n5.vocab.1-people-pronouns-and-se.だれ",
             "n5.vocab.5-demonstratives.あれ",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か",
             "n5.vocab.35-particles-functional-.の"
@@ -2755,7 +2711,6 @@
           "vocab_ids": [
             "n5.vocab.25-languages-and-countri.日本語",
             "n5.vocab.3-people-roles.先生",
-            "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.35-particles-functional-.の"
           ]
         },
@@ -2894,7 +2849,6 @@
           "translation_en": "You're not coming tomorrow?",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.29-verbs-irregular-and-v.来る",
             "n5.vocab.35-particles-functional-.の"
           ]
@@ -3105,7 +3059,6 @@
           "form": "negative",
           "translation_en": "Only I am here.",
           "vocab_ids": [
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.しか",
             "n5.vocab.35-particles-functional-.か"
@@ -3154,8 +3107,6 @@
           "form": "past",
           "translation_en": "I waited about an hour.",
           "vocab_ids": [
-            "n5.vocab.10-time-general.時間",
-            "n5.vocab.13-locations-and-places-.まち",
             "n5.vocab.27-verbs-group-1-verbs.まつ"
           ]
         },
@@ -3218,7 +3169,6 @@
           "form": "affirmative",
           "translation_en": "Let's meet around 3.",
           "vocab_ids": [
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.ごろ"
           ]
@@ -3229,7 +3179,6 @@
           "translation_en": "I'll go around 6 tomorrow.",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.27-verbs-group-1-verbs.行く",
             "n5.vocab.35-particles-functional-.ごろ"
           ]
@@ -3304,7 +3253,6 @@
           "vocab_ids": [
             "n5.vocab.24-school-and-study.ノート",
             "n5.vocab.24-school-and-study.ペン",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.など",
             "n5.vocab.35-particles-functional-.を",
@@ -3317,8 +3265,6 @@
           "translation_en": "I met my grandparents, friends, and others.",
           "vocab_ids": [
             "n5.vocab.2-people-family.ともだち",
-            "n5.vocab.2-people-family.そふ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.など",
             "n5.vocab.35-particles-functional-.に",
@@ -3373,7 +3319,6 @@
           "translation_en": "I study 30 minutes each day.",
           "vocab_ids": [
             "n5.vocab.24-school-and-study.べんきょう",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.35-particles-functional-.ずつ",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -3437,7 +3382,6 @@
           "translation_en": "Which one do you like best?",
           "vocab_ids": [
             "n5.vocab.5-demonstratives.どれ",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.32-adjectives.すき",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
@@ -3589,7 +3533,6 @@
           "vocab_ids": [
             "n5.vocab.5-demonstratives.そこ",
             "n5.vocab.15-animals.ねこ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.に"
@@ -3601,7 +3544,6 @@
           "translation_en": "Where did you buy it?",
           "vocab_ids": [
             "n5.vocab.5-demonstratives.どこ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.で",
             "n5.vocab.35-particles-functional-.か"
@@ -3669,7 +3611,6 @@
             "n5.vocab.33-adverbs.どうぞ",
             "n5.vocab.36-greetings-and-set-phr.どうぞ",
             "n5.vocab.5-demonstratives.どう",
-            "n5.vocab.33-adverbs.どう",
             "n5.vocab.35-particles-functional-.へ"
           ]
         },
@@ -3796,8 +3737,7 @@
           "vocab_ids": [
             "n5.vocab.27-verbs-group-1-verbs.おもう",
             "n5.vocab.31-adjectives.おもい",
-            "n5.vocab.5-demonstratives.そう",
-            "n5.vocab.26-house-and-furniture.いま"
+            "n5.vocab.5-demonstratives.そう"
           ]
         },
         {
@@ -3934,7 +3874,6 @@
             "n5.vocab.21-clothing-and-accessor.かばん",
             "n5.vocab.1-people-pronouns-and-se.だれ",
             "n5.vocab.5-demonstratives.これ",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か",
             "n5.vocab.35-particles-functional-.の"
@@ -4031,7 +3970,6 @@
           "translation_en": "Since when have you been in Japan?",
           "vocab_ids": [
             "n5.vocab.6-question-words.いつ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.から",
             "n5.vocab.35-particles-functional-.に",
@@ -4106,7 +4044,6 @@
           "vocab_ids": [
             "n5.vocab.5-demonstratives.そこ",
             "n5.vocab.15-animals.ねこ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.に"
@@ -4118,7 +4055,6 @@
           "translation_en": "Where did you buy it?",
           "vocab_ids": [
             "n5.vocab.5-demonstratives.どこ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.で",
             "n5.vocab.35-particles-functional-.か"
@@ -4351,8 +4287,6 @@
             "n5.vocab.6-question-words.どうして",
             "n5.vocab.33-adverbs.どうして",
             "n5.vocab.5-demonstratives.どう",
-            "n5.vocab.33-adverbs.どう",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.29-verbs-irregular-and-v.来る",
             "n5.vocab.35-particles-functional-.か"
           ]
@@ -4367,7 +4301,6 @@
             "n5.vocab.5-demonstratives.そう",
             "n5.vocab.6-question-words.なぜ",
             "n5.vocab.33-adverbs.なぜ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.か"
           ]
         },
@@ -4381,10 +4314,6 @@
             "n5.vocab.33-adverbs.どうして",
             "n5.vocab.25-languages-and-countri.日本語",
             "n5.vocab.5-demonstratives.どう",
-            "n5.vocab.33-adverbs.どう",
-            "n5.vocab.15-animals.うし",
-            "n5.vocab.25-languages-and-countri.日本",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.か"
           ]
@@ -4546,7 +4475,6 @@
           "vocab_ids": [
             "n5.vocab.6-question-words.いくつ",
             "n5.vocab.17-food-items.りんご",
-            "n5.vocab.21-clothing-and-accessor.くつ",
             "n5.vocab.30-verbs-existence-and-p.ある",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
@@ -4558,7 +4486,6 @@
           "translation_en": "How old is your child?",
           "vocab_ids": [
             "n5.vocab.6-question-words.いくつ",
-            "n5.vocab.21-clothing-and-accessor.くつ",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
           ]
@@ -4621,8 +4548,6 @@
           "translation_en": "What time shall we meet tomorrow?",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.か"
@@ -4795,7 +4720,6 @@
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
             "n5.vocab.26-house-and-furniture.えいが",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.28-verbs-group-2-verbs.見る",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.か"
@@ -4807,7 +4731,6 @@
           "translation_en": "I study Japanese every day.",
           "vocab_ids": [
             "n5.vocab.24-school-and-study.べんきょう",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.35-particles-functional-.を"
           ]
         }
@@ -4881,7 +4804,6 @@
           "translation_en": "I'm not going to school tomorrow.",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.5-demonstratives.こう",
             "n5.vocab.27-verbs-group-1-verbs.行く",
             "n5.vocab.35-particles-functional-.へ"
@@ -4955,7 +4877,6 @@
             "n5.vocab.16-food-and-drink-genera.あさごはん",
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.あさ",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -4964,7 +4885,6 @@
           "form": "question",
           "translation_en": "What did you buy?",
           "vocab_ids": [
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.か"
@@ -4976,7 +4896,6 @@
           "translation_en": "I met a friend.",
           "vocab_ids": [
             "n5.vocab.2-people-family.ともだち",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -5023,7 +4942,6 @@
             "n5.vocab.10-time-general.きのう",
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.を"
           ]
@@ -5055,7 +4973,6 @@
           "translation_en": "I didn't meet my friend.",
           "vocab_ids": [
             "n5.vocab.2-people-family.ともだち",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -5178,7 +5095,6 @@
           "form": "question",
           "translation_en": "Shall I help?",
           "vocab_ids": [
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.か"
           ]
         },
@@ -5245,7 +5161,6 @@
             "n5.vocab.33-adverbs.いっしょに",
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.か"
@@ -5258,7 +5173,6 @@
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
             "n5.vocab.26-house-and-furniture.えいが",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.28-verbs-group-2-verbs.見る",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.か"
@@ -5359,7 +5273,6 @@
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
             "n5.vocab.26-house-and-furniture.えいが",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -5448,7 +5361,6 @@
           "translation_en": "[I] won't come tomorrow.",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.29-verbs-irregular-and-v.来る"
           ]
         },
@@ -5458,7 +5370,6 @@
           "translation_en": "A person who doesn't study.",
           "vocab_ids": [
             "n5.vocab.24-school-and-study.べんきょう",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.1-people-pronouns-and-se.人"
           ]
         }
@@ -5548,7 +5459,6 @@
             "n5.vocab.16-food-and-drink-genera.あさごはん",
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.あさ",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -5632,7 +5542,6 @@
             "n5.vocab.16-food-and-drink-genera.あさごはん",
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.あさ",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -5722,7 +5631,6 @@
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
             "n5.vocab.5-demonstratives.こう",
-            "n5.vocab.10-time-general.あさ",
             "n5.vocab.27-verbs-group-1-verbs.行く",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.へ"
@@ -5834,7 +5742,6 @@
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
             "n5.vocab.28-verbs-group-2-verbs.あびる",
-            "n5.vocab.10-time-general.あさ",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -5855,7 +5762,6 @@
           "translation_en": "You went to the department store and bought what?",
           "vocab_ids": [
             "n5.vocab.13-locations-and-places-.デパート",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に",
@@ -5934,7 +5840,6 @@
           "translation_en": "Please come tomorrow.",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.29-verbs-irregular-and-v.来る"
           ]
         }
@@ -6005,7 +5910,6 @@
             "n5.vocab.37-common-nouns-miscella.けっこん",
             "n5.vocab.5-demonstratives.あの",
             "n5.vocab.39-function-filler-expre.あの",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.の"
           ]
@@ -6018,7 +5922,6 @@
             "n5.vocab.13-locations-and-places-.ぎんこう",
             "n5.vocab.27-verbs-group-1-verbs.はたらく",
             "n5.vocab.5-demonstratives.こう",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.で"
           ]
         },
@@ -6027,7 +5930,6 @@
           "form": "question",
           "translation_en": "What are you doing?",
           "vocab_ids": [
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.29-verbs-irregular-and-v.する",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.か"
@@ -6079,10 +5981,8 @@
             "n5.vocab.16-food-and-drink-genera.あさごはん",
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.あさ",
             "n5.vocab.12-time-frequency-sequen.まだ",
             "n5.vocab.33-adverbs.まだ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -6091,8 +5991,7 @@
           "form": "negative",
           "translation_en": "I'm not married.",
           "vocab_ids": [
-            "n5.vocab.37-common-nouns-miscella.けっこん",
-            "n5.vocab.26-house-and-furniture.いま"
+            "n5.vocab.37-common-nouns-miscella.けっこん"
           ]
         }
       ],
@@ -6305,7 +6204,6 @@
             "n5.vocab.16-food-and-drink-genera.あさごはん",
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.あさ",
             "n5.vocab.27-verbs-group-1-verbs.行く",
             "n5.vocab.35-particles-functional-.から",
             "n5.vocab.35-particles-functional-.を"
@@ -6319,7 +6217,6 @@
             "n5.vocab.27-verbs-group-1-verbs.おわる",
             "n5.vocab.37-common-nouns-miscella.しごと",
             "n5.vocab.40-misc-useful-items.しごと",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.から",
             "n5.vocab.35-particles-functional-.が"
@@ -6742,8 +6639,6 @@
             "n5.vocab.31-adjectives.おいしい",
             "n5.vocab.10-time-general.きのう",
             "n5.vocab.16-food-and-drink-genera.ごはん",
-            "n5.vocab.10-time-general.ばん",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.35-particles-functional-.しか",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.の"
@@ -6837,7 +6732,6 @@
           "vocab_ids": [
             "n5.vocab.31-adjectives.おいしい",
             "n5.vocab.37-common-nouns-miscella.りょうり",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.35-particles-functional-.は"
           ]
         }
@@ -6890,7 +6784,6 @@
             "n5.vocab.31-adjectives.あつい.2",
             "n5.vocab.31-adjectives.あつい.3",
             "n5.vocab.5-demonstratives.この",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.27-verbs-group-1-verbs.つく",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.の"
@@ -6915,7 +6808,6 @@
             "n5.vocab.31-adjectives.ひろい",
             "n5.vocab.13-locations-and-places-.へや",
             "n5.vocab.26-house-and-furniture.へや",
-            "n5.vocab.20-colors.あか",
             "n5.vocab.35-particles-functional-.が"
           ]
         },
@@ -6979,7 +6871,6 @@
             "n5.vocab.32-adjectives.しずか",
             "n5.vocab.13-locations-and-places-.へや",
             "n5.vocab.26-house-and-furniture.へや",
-            "n5.vocab.24-school-and-study.かな",
             "n5.vocab.32-adjectives.すき",
             "n5.vocab.35-particles-functional-.が"
           ]
@@ -6990,7 +6881,6 @@
           "translation_en": "I met a famous person.",
           "vocab_ids": [
             "n5.vocab.32-adjectives.ゆうめい",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -7002,7 +6892,6 @@
           "vocab_ids": [
             "n5.vocab.32-adjectives.きれい",
             "n5.vocab.4-body-parts.はな",
-            "n5.vocab.24-school-and-study.れい",
             "n5.vocab.27-verbs-group-1-verbs.さく",
             "n5.vocab.35-particles-functional-.が"
           ]
@@ -7394,7 +7283,6 @@
             "n5.vocab.32-adjectives.きれい",
             "n5.vocab.5-demonstratives.この",
             "n5.vocab.13-locations-and-places-.まち",
-            "n5.vocab.24-school-and-study.れい",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.で",
             "n5.vocab.35-particles-functional-.の"
@@ -7540,7 +7428,6 @@
           "translation_en": "Do you have any questions?",
           "vocab_ids": [
             "n5.vocab.24-school-and-study.しつもん",
-            "n5.vocab.26-house-and-furniture.もん",
             "n5.vocab.30-verbs-existence-and-p.ある",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
@@ -7612,7 +7499,6 @@
             "n5.vocab.13-locations-and-places-.へや",
             "n5.vocab.26-house-and-furniture.へや",
             "n5.vocab.15-animals.ねこ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.に"
@@ -7624,8 +7510,6 @@
           "translation_en": "There are no students in the classroom.",
           "vocab_ids": [
             "n5.vocab.13-locations-and-places-.きょうしつ",
-            "n5.vocab.15-animals.うし",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.に"
@@ -7638,7 +7522,6 @@
           "vocab_ids": [
             "n5.vocab.9-counters-common.ひき",
             "n5.vocab.15-animals.いぬ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.が"
@@ -7650,8 +7533,6 @@
           "translation_en": "There was a friend in the classroom.",
           "vocab_ids": [
             "n5.vocab.13-locations-and-places-.きょうしつ",
-            "n5.vocab.15-animals.うし",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.に"
@@ -7663,7 +7544,6 @@
           "translation_en": "Do you have siblings?",
           "vocab_ids": [
             "n5.vocab.2-people-family.きょうだい",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
@@ -7738,8 +7618,6 @@
           "translation_en": "There are students in the classroom.",
           "vocab_ids": [
             "n5.vocab.13-locations-and-places-.きょうしつ",
-            "n5.vocab.15-animals.うし",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.に"
@@ -7766,7 +7644,6 @@
             "n5.vocab.13-locations-and-places-.こうえん",
             "n5.vocab.2-people-family.子ども",
             "n5.vocab.5-demonstratives.こう",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.に",
@@ -7833,7 +7710,6 @@
           "vocab_ids": [
             "n5.vocab.5-demonstratives.そこ",
             "n5.vocab.15-animals.ねこ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.に"
@@ -7901,7 +7777,6 @@
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
             "n5.vocab.24-school-and-study.しけん",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.30-verbs-existence-and-p.ある",
             "n5.vocab.35-particles-functional-.が"
           ]
@@ -7921,7 +7796,6 @@
           "translation_en": "Do you have any questions?",
           "vocab_ids": [
             "n5.vocab.24-school-and-study.しつもん",
-            "n5.vocab.26-house-and-furniture.もん",
             "n5.vocab.30-verbs-existence-and-p.ある",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
@@ -7982,7 +7856,6 @@
             "n5.vocab.31-adjectives.おもしろい",
             "n5.vocab.5-demonstratives.この",
             "n5.vocab.5-demonstratives.あの",
-            "n5.vocab.39-function-filler-expre.あの",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
           ]
@@ -8031,7 +7904,6 @@
           "translation_en": "Tokyo is bigger than Osaka.",
           "vocab_ids": [
             "n5.vocab.31-adjectives.大きい",
-            "n5.vocab.40-misc-useful-items.ほう",
             "n5.vocab.35-particles-functional-.が"
           ]
         },
@@ -8043,7 +7915,6 @@
             "n5.vocab.18-drinks.コーヒー",
             "n5.vocab.18-drinks.おちゃ",
             "n5.vocab.32-adjectives.すき",
-            "n5.vocab.40-misc-useful-items.ほう",
             "n5.vocab.35-particles-functional-.が"
           ]
         }
@@ -8088,8 +7959,6 @@
             "n5.vocab.15-animals.いぬ",
             "n5.vocab.15-animals.ねこ",
             "n5.vocab.32-adjectives.すき",
-            "n5.vocab.37-common-nouns-miscella.こと",
-            "n5.vocab.40-misc-useful-items.こと",
             "n5.vocab.35-particles-functional-.と",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
@@ -8277,7 +8146,6 @@
             "n5.vocab.25-languages-and-countri.日本語",
             "n5.vocab.5-demonstratives.あの",
             "n5.vocab.39-function-filler-expre.あの",
-            "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.の"
@@ -8334,7 +8202,6 @@
           "vocab_ids": [
             "n5.vocab.31-adjectives.新しい",
             "n5.vocab.31-adjectives.ほしい",
-            "n5.vocab.14-nature-and-weather.ほし",
             "n5.vocab.35-particles-functional-.が"
           ]
         },
@@ -8344,7 +8211,6 @@
           "translation_en": "What do you want?",
           "vocab_ids": [
             "n5.vocab.31-adjectives.ほしい",
-            "n5.vocab.14-nature-and-weather.ほし",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
           ]
@@ -8355,7 +8221,6 @@
           "translation_en": "I don't want anything.",
           "vocab_ids": [
             "n5.vocab.31-adjectives.ほしい",
-            "n5.vocab.14-nature-and-weather.ほし",
             "n5.vocab.35-particles-functional-.も"
           ]
         }
@@ -8405,7 +8270,6 @@
             "n5.vocab.25-languages-and-countri.日本語",
             "n5.vocab.27-verbs-group-1-verbs.分かる",
             "n5.vocab.33-adverbs.すこし",
-            "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.35-particles-functional-.が"
           ]
         },
@@ -8464,7 +8328,6 @@
           "translation_en": "I can use Japanese. / I'm able to do (in) Japanese.",
           "vocab_ids": [
             "n5.vocab.25-languages-and-countri.日本語",
-            "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.29-verbs-irregular-and-v.する",
             "n5.vocab.35-particles-functional-.が"
           ]
@@ -8487,7 +8350,6 @@
           "vocab_ids": [
             "n5.vocab.16-food-and-drink-genera.ばんごはん",
             "n5.vocab.16-food-and-drink-genera.ごはん",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.29-verbs-irregular-and-v.する",
             "n5.vocab.35-particles-functional-.が"
           ]
@@ -8676,8 +8538,6 @@
             "n5.vocab.21-clothing-and-accessor.かばん",
             "n5.vocab.31-adjectives.新しい",
             "n5.vocab.31-adjectives.ほしい",
-            "n5.vocab.10-time-general.ばん",
-            "n5.vocab.14-nature-and-weather.ほし",
             "n5.vocab.35-particles-functional-.が"
           ]
         },
@@ -8687,7 +8547,6 @@
           "translation_en": "I want money.",
           "vocab_ids": [
             "n5.vocab.31-adjectives.ほしい",
-            "n5.vocab.14-nature-and-weather.ほし",
             "n5.vocab.35-particles-functional-.が"
           ]
         }
@@ -8725,8 +8584,6 @@
           "vocab_ids": [
             "n5.vocab.13-locations-and-places-.デパート",
             "n5.vocab.27-verbs-group-1-verbs.行く",
-            "n5.vocab.37-common-nouns-miscella.もの",
-            "n5.vocab.40-misc-useful-items.もの",
             "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.へ"
           ]
@@ -8823,7 +8680,6 @@
           "translation_en": "There are 5 students.",
           "vocab_ids": [
             "n5.vocab.3-people-roles.学生",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.が"
           ]
@@ -8886,7 +8742,6 @@
           "vocab_ids": [
             "n5.vocab.6-question-words.いくつ",
             "n5.vocab.17-food-items.りんご",
-            "n5.vocab.21-clothing-and-accessor.くつ",
             "n5.vocab.30-verbs-existence-and-p.ある",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
@@ -8898,7 +8753,6 @@
           "translation_en": "How old is your child?",
           "vocab_ids": [
             "n5.vocab.6-question-words.いくつ",
-            "n5.vocab.21-clothing-and-accessor.くつ",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
           ]
@@ -8941,7 +8795,6 @@
           "translation_en": "I bought 2 apples.",
           "vocab_ids": [
             "n5.vocab.17-food-items.りんご",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.買う",
             "n5.vocab.35-particles-functional-.を"
           ]
@@ -9052,7 +8905,6 @@
           "form": "past",
           "translation_en": "I waited 10 minutes.",
           "vocab_ids": [
-            "n5.vocab.13-locations-and-places-.まち",
             "n5.vocab.27-verbs-group-1-verbs.まつ"
           ]
         },
@@ -9105,7 +8957,6 @@
           "form": "affirmative",
           "translation_en": "Let's meet at 9:30.",
           "vocab_ids": [
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -9300,8 +9151,6 @@
           "vocab_ids": [
             "n5.vocab.24-school-and-study.べんきょう",
             "n5.vocab.25-languages-and-countri.日本語",
-            "n5.vocab.15-animals.うし",
-            "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -9310,8 +9159,6 @@
           "form": "affirmative",
           "translation_en": "I meet friends every week.",
           "vocab_ids": [
-            "n5.vocab.14-nature-and-weather.いし",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -9367,7 +9214,6 @@
           "translation_en": "I'll go tomorrow.",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.27-verbs-group-1-verbs.行く"
           ]
         },
@@ -9445,7 +9291,6 @@
             "n5.vocab.16-food-and-drink-genera.ばんごはん",
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.12-time-frequency-sequen.もう",
             "n5.vocab.33-adverbs.もう",
             "n5.vocab.35-particles-functional-.を"
@@ -9458,8 +9303,7 @@
           "vocab_ids": [
             "n5.vocab.28-verbs-group-2-verbs.食べる",
             "n5.vocab.12-time-frequency-sequen.まだ",
-            "n5.vocab.33-adverbs.まだ",
-            "n5.vocab.26-house-and-furniture.いま"
+            "n5.vocab.33-adverbs.まだ"
           ]
         },
         {
@@ -9470,7 +9314,6 @@
             "n5.vocab.5-demonstratives.ここ",
             "n5.vocab.12-time-frequency-sequen.まだ",
             "n5.vocab.33-adverbs.まだ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -9514,7 +9357,6 @@
           "vocab_ids": [
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.27-verbs-group-1-verbs.あらう",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.の"
@@ -9596,7 +9438,6 @@
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.26-house-and-furniture.テレビ",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.28-verbs-group-2-verbs.見る",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.で"
@@ -9646,7 +9487,6 @@
             "n5.vocab.34-conjunctions.そして",
             "n5.vocab.37-common-nouns-miscella.しごと",
             "n5.vocab.40-misc-useful-items.しごと",
-            "n5.vocab.10-time-general.あさ",
             "n5.vocab.27-verbs-group-1-verbs.行く",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に"
@@ -9855,8 +9695,7 @@
           "form": "affirmative",
           "translation_en": "Well, see you tomorrow.",
           "vocab_ids": [
-            "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし"
+            "n5.vocab.10-time-general.あした"
           ]
         },
         {
@@ -9926,7 +9765,6 @@
             "n5.vocab.36-greetings-and-set-phr.すみません",
             "n5.vocab.12-time-frequency-sequen.もう",
             "n5.vocab.33-adverbs.もう",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.27-verbs-group-1-verbs.すむ",
             "n5.vocab.35-particles-functional-.が"
           ]
@@ -10091,8 +9929,6 @@
             "n5.vocab.4-body-parts.あたま",
             "n5.vocab.31-adjectives.いたい",
             "n5.vocab.5-demonstratives.どう",
-            "n5.vocab.33-adverbs.どう",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.29-verbs-irregular-and-v.来る",
             "n5.vocab.34-conjunctions.から",
@@ -10186,7 +10022,6 @@
           "vocab_ids": [
             "n5.vocab.2-people-family.ともだち",
             "n5.vocab.30-verbs-existence-and-p.もらう",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -10197,7 +10032,6 @@
           "translation_en": "I receive money from my mother.",
           "vocab_ids": [
             "n5.vocab.30-verbs-existence-and-p.もらう",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.から",
             "n5.vocab.35-particles-functional-.を"
           ]
@@ -10437,7 +10271,6 @@
           "form": "affirmative",
           "translation_en": "people who eat sushi",
           "vocab_ids": [
-            "n5.vocab.17-food-items.すし",
             "n5.vocab.27-verbs-group-1-verbs.おす",
             "n5.vocab.1-people-pronouns-and-se.人",
             "n5.vocab.35-particles-functional-.を"
@@ -10554,7 +10387,6 @@
           "vocab_ids": [
             "n5.vocab.25-languages-and-countri.日本語",
             "n5.vocab.3-people-roles.先生",
-            "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.35-particles-functional-.の"
           ]
         },
@@ -10566,7 +10398,6 @@
             "n5.vocab.21-clothing-and-accessor.かばん",
             "n5.vocab.1-people-pronouns-and-se.だれ",
             "n5.vocab.5-demonstratives.あれ",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か",
             "n5.vocab.35-particles-functional-.の"
@@ -10671,7 +10502,6 @@
             "n5.vocab.25-languages-and-countri.日本語",
             "n5.vocab.5-demonstratives.あの",
             "n5.vocab.39-function-filler-expre.あの",
-            "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.の"
@@ -10726,7 +10556,6 @@
             "n5.vocab.25-languages-and-countri.日本語",
             "n5.vocab.27-verbs-group-1-verbs.分かる",
             "n5.vocab.33-adverbs.すこし",
-            "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.35-particles-functional-.が"
           ]
         },
@@ -10783,7 +10612,6 @@
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
             "n5.vocab.24-school-and-study.しけん",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.30-verbs-existence-and-p.ある",
             "n5.vocab.35-particles-functional-.が"
           ]
@@ -10803,7 +10631,6 @@
           "translation_en": "Do you have any questions?",
           "vocab_ids": [
             "n5.vocab.24-school-and-study.しつもん",
-            "n5.vocab.26-house-and-furniture.もん",
             "n5.vocab.30-verbs-existence-and-p.ある",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
@@ -10970,7 +10797,6 @@
           "vocab_ids": [
             "n5.vocab.24-school-and-study.べんきょう",
             "n5.vocab.26-house-and-furniture.おんがく",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -11025,8 +10851,6 @@
             "n5.vocab.10-time-general.あした",
             "n5.vocab.27-verbs-group-1-verbs.おもう",
             "n5.vocab.31-adjectives.おもい",
-            "n5.vocab.4-body-parts.あし",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.ふる",
             "n5.vocab.35-particles-functional-.と",
             "n5.vocab.35-particles-functional-.が"
@@ -11039,7 +10863,6 @@
           "vocab_ids": [
             "n5.vocab.27-verbs-group-1-verbs.おもう",
             "n5.vocab.31-adjectives.おもい",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.と"
           ]
         }
@@ -11082,8 +10905,6 @@
           "translation_en": "He said 'I'll come tomorrow'.",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.言う",
             "n5.vocab.29-verbs-irregular-and-v.来る",
             "n5.vocab.35-particles-functional-.と"
@@ -11095,7 +10916,6 @@
           "translation_en": "My friend said he would go.",
           "vocab_ids": [
             "n5.vocab.2-people-family.ともだち",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.言う",
             "n5.vocab.27-verbs-group-1-verbs.行く",
             "n5.vocab.35-particles-functional-.は",
@@ -11161,8 +10981,6 @@
           "translation_en": "I sometimes watch movies.",
           "vocab_ids": [
             "n5.vocab.26-house-and-furniture.えいが",
-            "n5.vocab.10-time-general.とき",
-            "n5.vocab.40-misc-useful-items.とき",
             "n5.vocab.28-verbs-group-2-verbs.見る",
             "n5.vocab.35-particles-functional-.を"
           ]
@@ -11258,7 +11076,6 @@
           "translation_en": "I occasionally meet friends.",
           "vocab_ids": [
             "n5.vocab.12-time-frequency-sequen.たまに",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -11341,7 +11158,6 @@
           "vocab_ids": [
             "n5.vocab.36-greetings-and-set-phr.おねがいします",
             "n5.vocab.18-drinks.コーヒー",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -11351,7 +11167,6 @@
           "translation_en": "The menu, please.",
           "vocab_ids": [
             "n5.vocab.36-greetings-and-set-phr.おねがいします",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -11361,7 +11176,6 @@
           "translation_en": "Two waters, please.",
           "vocab_ids": [
             "n5.vocab.36-greetings-and-set-phr.おねがいします",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -11372,8 +11186,6 @@
           "vocab_ids": [
             "n5.vocab.36-greetings-and-set-phr.おねがいします",
             "n5.vocab.25-languages-and-countri.日本語",
-            "n5.vocab.14-nature-and-weather.いし",
-            "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.の"
           ]
@@ -11385,8 +11197,7 @@
           "vocab_ids": [
             "n5.vocab.36-greetings-and-set-phr.おねがいします",
             "n5.vocab.12-time-frequency-sequen.もう",
-            "n5.vocab.33-adverbs.もう",
-            "n5.vocab.14-nature-and-weather.いし"
+            "n5.vocab.33-adverbs.もう"
           ]
         }
       ],
@@ -11488,7 +11299,6 @@
             "n5.vocab.33-adverbs.どうぞ",
             "n5.vocab.36-greetings-and-set-phr.どうぞ",
             "n5.vocab.5-demonstratives.どう",
-            "n5.vocab.33-adverbs.どう",
             "n5.vocab.27-verbs-group-1-verbs.入る"
           ]
         },
@@ -11514,7 +11324,6 @@
             "n5.vocab.36-greetings-and-set-phr.どうも",
             "n5.vocab.5-demonstratives.どう",
             "n5.vocab.33-adverbs.どう",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.も"
           ]
         }
@@ -11553,10 +11362,8 @@
             "n5.vocab.16-food-and-drink-genera.あさごはん",
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.あさ",
             "n5.vocab.12-time-frequency-sequen.まだ",
             "n5.vocab.33-adverbs.まだ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -11568,7 +11375,6 @@
             "n5.vocab.24-school-and-study.しゅくだい",
             "n5.vocab.12-time-frequency-sequen.まだ",
             "n5.vocab.33-adverbs.まだ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.29-verbs-irregular-and-v.する",
             "n5.vocab.35-particles-functional-.を"
           ]
@@ -11619,7 +11425,6 @@
             "n5.vocab.16-food-and-drink-genera.ばんごはん",
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.12-time-frequency-sequen.もう",
             "n5.vocab.33-adverbs.もう",
             "n5.vocab.35-particles-functional-.を"
@@ -11694,7 +11499,6 @@
             "n5.vocab.36-greetings-and-set-phr.すみません",
             "n5.vocab.12-time-frequency-sequen.もう",
             "n5.vocab.33-adverbs.もう",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.27-verbs-group-1-verbs.すむ",
             "n5.vocab.35-particles-functional-.が"
           ]
@@ -11743,7 +11547,6 @@
           "translation_en": "It's delicious, isn't it?",
           "vocab_ids": [
             "n5.vocab.31-adjectives.おいしい",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.35-particles-functional-.ね"
           ]
         },
@@ -11812,8 +11615,7 @@
           "form": "affirmative",
           "translation_en": "It'll probably rain tomorrow.",
           "vocab_ids": [
-            "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし"
+            "n5.vocab.10-time-general.あした"
           ]
         },
         {
@@ -11854,8 +11656,7 @@
           "form": "affirmative",
           "translation_en": "It'll probably rain tomorrow.",
           "vocab_ids": [
-            "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし"
+            "n5.vocab.10-time-general.あした"
           ]
         },
         {
@@ -11910,7 +11711,6 @@
           "translation_en": "It's delicious, isn't it?",
           "vocab_ids": [
             "n5.vocab.31-adjectives.おいしい",
-            "n5.vocab.14-nature-and-weather.いし",
             "n5.vocab.35-particles-functional-.ね"
           ]
         },
@@ -12030,7 +11830,6 @@
           "vocab_ids": [
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.27-verbs-group-1-verbs.あらう",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.の"
@@ -12084,7 +11883,6 @@
           "vocab_ids": [
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.27-verbs-group-1-verbs.あらう",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.の"
@@ -12153,7 +11951,6 @@
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.26-house-and-furniture.テレビ",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.10-time-general.ばん",
             "n5.vocab.28-verbs-group-2-verbs.見る",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.で"
@@ -12205,9 +12002,6 @@
           "form": "past",
           "translation_en": "I met Yamada-san.",
           "vocab_ids": [
-            "n5.vocab.12-time-frequency-sequen.まだ",
-            "n5.vocab.33-adverbs.まだ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -12259,7 +12053,6 @@
             "n5.vocab.33-adverbs.どうぞ",
             "n5.vocab.36-greetings-and-set-phr.どうぞ",
             "n5.vocab.5-demonstratives.どう",
-            "n5.vocab.33-adverbs.どう",
             "n5.vocab.35-particles-functional-.を"
           ]
         },
@@ -12281,7 +12074,6 @@
             "n5.vocab.36-greetings-and-set-phr.おげんきですか",
             "n5.vocab.2-people-family.りょうしん",
             "n5.vocab.32-adjectives.げんき",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
           ]
@@ -12357,8 +12149,7 @@
           "form": "affirmative",
           "translation_en": "Good morning.",
           "vocab_ids": [
-            "n5.vocab.36-greetings-and-set-phr.おはようございます",
-            "n5.vocab.26-house-and-furniture.いま"
+            "n5.vocab.36-greetings-and-set-phr.おはようございます"
           ]
         }
       ],
@@ -12405,8 +12196,6 @@
           "translation_en": "What's wrong?",
           "vocab_ids": [
             "n5.vocab.5-demonstratives.どう",
-            "n5.vocab.33-adverbs.どう",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.35-particles-functional-.か"
           ]
         }
@@ -12444,7 +12233,6 @@
           "vocab_ids": [
             "n5.vocab.11-time-days-weeks-month.しゅうまつ",
             "n5.vocab.26-house-and-furniture.えいが",
-            "n5.vocab.15-animals.うま",
             "n5.vocab.27-verbs-group-1-verbs.まつ",
             "n5.vocab.28-verbs-group-2-verbs.見る",
             "n5.vocab.29-verbs-irregular-and-v.する",
@@ -12486,8 +12274,6 @@
           "vocab_ids": [
             "n5.vocab.25-languages-and-countri.日本",
             "n5.vocab.30-verbs-existence-and-p.ある",
-            "n5.vocab.37-common-nouns-miscella.こと",
-            "n5.vocab.40-misc-useful-items.こと",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.へ"
           ]
@@ -12500,8 +12286,6 @@
             "n5.vocab.28-verbs-group-2-verbs.食べる",
             "n5.vocab.17-food-items.すし",
             "n5.vocab.30-verbs-existence-and-p.ある",
-            "n5.vocab.37-common-nouns-miscella.こと",
-            "n5.vocab.40-misc-useful-items.こと",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.か"
@@ -12542,7 +12326,6 @@
             "n5.vocab.12-time-frequency-sequen.もう",
             "n5.vocab.33-adverbs.もう",
             "n5.vocab.28-verbs-group-2-verbs.ねる",
-            "n5.vocab.40-misc-useful-items.ほう",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.よ"
           ]
@@ -12554,7 +12337,6 @@
           "vocab_ids": [
             "n5.vocab.13-locations-and-places-.びょういん",
             "n5.vocab.10-time-general.びょう",
-            "n5.vocab.40-misc-useful-items.ほう",
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.に"
           ]
@@ -12593,7 +12375,6 @@
           "vocab_ids": [
             "n5.vocab.12-time-frequency-sequen.あまり",
             "n5.vocab.28-verbs-group-2-verbs.食べる",
-            "n5.vocab.40-misc-useful-items.ほう",
             "n5.vocab.35-particles-functional-.が"
           ]
         }
@@ -12630,7 +12411,6 @@
           "translation_en": "You don't have to come tomorrow.",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
             "n5.vocab.27-verbs-group-1-verbs.なく",
             "n5.vocab.35-particles-functional-.も"
           ]
@@ -12668,7 +12448,6 @@
           "translation_en": "I must study every day.",
           "vocab_ids": [
             "n5.vocab.24-school-and-study.べんきょう",
-            "n5.vocab.15-animals.うし",
             "n5.vocab.27-verbs-group-1-verbs.行く",
             "n5.vocab.27-verbs-group-1-verbs.なく",
             "n5.vocab.35-particles-functional-.は"
@@ -12786,7 +12565,6 @@
           "vocab_ids": [
             "n5.vocab.12-time-frequency-sequen.もう",
             "n5.vocab.33-adverbs.もう",
-            "n5.vocab.24-school-and-study.かな",
             "n5.vocab.27-verbs-group-1-verbs.行く",
             "n5.vocab.27-verbs-group-1-verbs.なく",
             "n5.vocab.35-particles-functional-.は"
@@ -12876,9 +12654,6 @@
           "translation_en": "I plan to go tomorrow.",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
-            "n5.vocab.14-nature-and-weather.もり",
-            "n5.vocab.21-clothing-and-accessor.くつ",
             "n5.vocab.27-verbs-group-1-verbs.行く"
           ]
         }
@@ -12915,8 +12690,6 @@
           "translation_en": "He said 'I'll come tomorrow'.",
           "vocab_ids": [
             "n5.vocab.10-time-general.あした",
-            "n5.vocab.4-body-parts.あし",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.27-verbs-group-1-verbs.言う",
             "n5.vocab.29-verbs-irregular-and-v.来る"
           ]
@@ -12954,7 +12727,7 @@
           "translation_en": "How do you read this kanji?",
           "vocab_ids": [
             "n5.vocab.24-school-and-study.かんじ",
-            "n5.vocab.37-common-nouns-miscella.かた",
+            "n5.vocab.1-people-pronouns-and-se.かた",
             "n5.vocab.5-demonstratives.この",
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か",
@@ -12993,8 +12766,7 @@
           "form": "affirmative",
           "translation_en": "Mmm, this is good.",
           "vocab_ids": [
-            "n5.vocab.31-adjectives.おいしい",
-            "n5.vocab.14-nature-and-weather.いし"
+            "n5.vocab.31-adjectives.おいしい"
           ]
         }
       ],
@@ -13181,7 +12953,6 @@
           "translation_en": "Is anyone there?",
           "vocab_ids": [
             "n5.vocab.1-people-pronouns-and-se.だれ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.か"
           ]
@@ -13194,7 +12965,6 @@
             "n5.vocab.1-people-pronouns-and-se.だれ",
             "n5.vocab.13-locations-and-places-.へや",
             "n5.vocab.26-house-and-furniture.へや",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.も"
@@ -13258,7 +13028,6 @@
           "translation_en": "Everywhere is crowded.",
           "vocab_ids": [
             "n5.vocab.5-demonstratives.どこ",
-            "n5.vocab.26-house-and-furniture.いま",
             "n5.vocab.28-verbs-group-2-verbs.いる",
             "n5.vocab.35-particles-functional-.で",
             "n5.vocab.35-particles-functional-.も"

@@ -57,9 +57,28 @@ export async function renderLearn(container, params) {
   // Otherwise treat as a pattern ID.
   const data = await loadGrammar();
   const pattern = data.patterns.find(p => p.id === slug);
-  if (pattern) return renderPatternDetail(container, pattern);
+  if (pattern) return renderPatternDetail(container, pattern, data.patterns);
   // Unknown slug - fall back to hub.
   return renderHub(container);
+}
+
+// Flatten patterns into the same order the TOC presents them: super-category
+// declaration order, sorted by patternOrder within each group. Used by the
+// detail-page prev/next nav so navigation matches the user's mental model
+// (the order they see when browsing the grammar list).
+function buildOrderedPatternList(allPatterns) {
+  const bySuperCat = new Map();
+  for (const [supercat] of GRAMMAR_SUPERCATS) bySuperCat.set(supercat, []);
+  for (const pat of allPatterns) {
+    const sc = superCategoryFor(pat);
+    if (bySuperCat.has(sc)) bySuperCat.get(sc).push(pat);
+  }
+  const flat = [];
+  for (const [, items] of bySuperCat) {
+    items.sort((a, b) => (a.patternOrder ?? 0) - (b.patternOrder ?? 0));
+    flat.push(...items);
+  }
+  return flat;
 }
 
 function renderHub(container) {
@@ -462,7 +481,7 @@ function wireExpandCollapseControls(container, detailsSelector) {
   });
 }
 
-function renderPatternDetail(container, p) {
+function renderPatternDetail(container, p, allPatterns) {
   const conj = p.form_rules?.conjugations ?? [];
   const examples = p.examples ?? [];
   const mistakes = p.common_mistakes ?? [];
@@ -471,6 +490,23 @@ function renderPatternDetail(container, p) {
   const isKnown = !!entry?.isManuallyKnown;
   const isMastered = !!entry?.isMastered;
   const isWeak = !!entry?.isWeak && !isMastered;
+
+  // Prev / next pattern in TOC order. allPatterns may be undefined if a future
+  // caller forgets to thread it through — degrade gracefully (no nav row).
+  const ordered = Array.isArray(allPatterns) ? buildOrderedPatternList(allPatterns) : [];
+  const idx = ordered.findIndex(x => x.id === p.id);
+  const prev = idx > 0 ? ordered[idx - 1] : null;
+  const next = idx >= 0 && idx < ordered.length - 1 ? ordered[idx + 1] : null;
+  const navHtml = (prev || next) ? `
+    <div class="pattern-nav">
+      ${prev
+        ? `<a class="pattern-nav-prev" href="#/learn/${encodeURIComponent(prev.id)}" title="Previous: ${esc(prev.pattern)}">&larr; <span class="pattern-nav-name" lang="ja">${esc(prev.pattern)}</span></a>`
+        : `<span class="pattern-nav-prev pattern-nav-empty" aria-hidden="true"></span>`}
+      ${next
+        ? `<a class="pattern-nav-next" href="#/learn/${encodeURIComponent(next.id)}" title="Next: ${esc(next.pattern)}"><span class="pattern-nav-name" lang="ja">${esc(next.pattern)}</span> &rarr;</a>`
+        : `<span class="pattern-nav-next pattern-nav-empty" aria-hidden="true"></span>`}
+    </div>
+  ` : '';
 
   const conjRows = conj.map(c => `
     <tr><td>${esc(c.label || c.form)}</td><td>${renderJa(c.example)}</td></tr>
@@ -505,6 +541,7 @@ function renderPatternDetail(container, p) {
 
   const html = `
     <article class="pattern-detail">
+      ${navHtml}
       <a class="back-link" href="#/learn/grammar">← Back to grammar list</a>
       <div class="pattern-header">
         <div>
@@ -554,7 +591,7 @@ function renderPatternDetail(container, p) {
   document.getElementById('mark-known')?.addEventListener('change', (ev) => {
     storage.setManuallyKnown(p.id, ev.target.checked);
     // Re-render so the badge updates without a full route() call.
-    renderPatternDetail(container, p);
+    renderPatternDetail(container, p, allPatterns);
   });
 }
 
