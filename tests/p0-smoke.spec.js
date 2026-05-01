@@ -55,7 +55,7 @@ test.describe('P0 smoke - core navigation', () => {
     await expect(cards.nth(4)).toContainText('Listening');
   });
 
-  test('Grammar TOC has 187 cards across 5 super-sections', async ({ page }) => {
+  test('Grammar TOC has 177 cards across 5 super-sections', async ({ page }) => {
     // 32 fine-grained categories were collapsed into 5 super-sections
     // (Sentence Basics / Verbs / Adjectives and Comparison / Quantity,
     // Time and Connectives / Functional and Upper-N5) at render time.
@@ -65,7 +65,9 @@ test.describe('P0 smoke - core navigation', () => {
     await page.goto('/#/learn/grammar');
     await expect(page.locator('h2')).toContainText('Grammar');
     await expect(page.locator('details.toc-category')).toHaveCount(5);
-    await expect(page.locator('.grammar-card')).toHaveCount(187);
+    // Pattern count: 187 → 177 after Pass-19 F-19 dedup (commit 4c9b9c4) retired
+    // 10 duplicate / subset patterns. See data/grammar.json#_meta.retired_pattern_ids.
+    await expect(page.locator('.grammar-card')).toHaveCount(177);
   });
 
   test('pattern detail (n5-001) shows pattern, EN + JA meaning, examples', async ({ page }) => {

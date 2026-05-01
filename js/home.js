@@ -31,13 +31,13 @@ export async function renderHome(container) {
       </div>
       <section class="home-pillars" aria-label="Sections">
         <a class="pillar-card" href="#/learn">
-          <p class="card-index">01</p>
+          <p class="card-index" aria-hidden="true">01</p>
           <h3>Learn</h3>
           <p>Grammar, vocabulary, kanji, reading, listening — pick a section.</p>
           <span class="pillar-arrow" aria-hidden="true">→</span>
         </a>
         <a class="pillar-card" href="#/test">
-          <p class="card-index">02</p>
+          <p class="card-index" aria-hidden="true">02</p>
           <h3>Test</h3>
           <p>Mock JLPT-format exams (20 / 30 / 50 questions).</p>
           <span class="pillar-arrow" aria-hidden="true">→</span>

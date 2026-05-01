@@ -97,19 +97,19 @@ function renderHub(container) {
     </div>
     <div class="learn-hub learn-hub-3">
       <a class="hub-card" href="#/learn/grammar">
-        <p class="card-index">01</p>
+        <p class="card-index" aria-hidden="true">01</p>
         <h3>Grammar</h3>
         <p>${grammarCount} patterns across 5 sections. Form, examples, common mistakes.</p>
         <span class="hub-cta">Browse</span>
       </a>
       <a class="hub-card" href="#/learn/vocab">
-        <p class="card-index">02</p>
+        <p class="card-index" aria-hidden="true">02</p>
         <h3>Vocabulary</h3>
         <p>${vocabCount} words grouped by topic — people, time, places, verbs, adjectives.</p>
         <span class="hub-cta">Browse</span>
       </a>
       <a class="hub-card" href="#/kanji">
-        <p class="card-index">03</p>
+        <p class="card-index" aria-hidden="true">03</p>
         <h3>Kanji</h3>
         <p>${kanjiCount} kanji with on / kun-yomi, meanings, stroke order. Tap any glyph.</p>
         <span class="hub-cta">Browse</span>
@@ -122,13 +122,13 @@ function renderHub(container) {
     </div>
     <div class="learn-hub learn-hub-2">
       <a class="hub-card" href="#/reading">
-        <p class="card-index">04</p>
+        <p class="card-index" aria-hidden="true">04</p>
         <h3>Dokkai (Reading)</h3>
         <p>30 graded passages with comprehension questions. Audio for every passage.</p>
         <span class="hub-cta">Practice</span>
       </a>
       <a class="hub-card" href="#/listening">
-        <p class="card-index">05</p>
+        <p class="card-index" aria-hidden="true">05</p>
         <h3>Listening</h3>
         <p>12 items across the three JLPT N5 listening formats. Audio for every script.</p>
         <span class="hub-cta">Practice</span>
