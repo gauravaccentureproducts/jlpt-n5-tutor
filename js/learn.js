@@ -284,11 +284,22 @@ function renderVocabDetail(container, vocabData, grammarData, form) {
   `;
 }
 
-// Render-time mapping from the 32 fine-grained categories in
-// data/grammar.json to 5 pedagogically-coherent super-categories. Order
-// here is pedagogical (basics -> verbs -> adjectives -> quantity/time
-// -> upper-N5). Anything starting with "Additional Upper N5 /
-// Borderline Patterns" auto-maps to "Functional and Upper-N5".
+// Render-time mapping: 32 fine-grained categories in data/grammar.json
+// to 5 pedagogically-coherent super-categories.
+//
+// Revised 2026-05-01 to fix two issues from the prior mapping:
+// (a) "Functional and Upper-N5" was a catchall that swept up 7 sub-
+//     categories which are actually verb-modal patterns (Permission and
+//     Obligation, Experience and Advice, Compound and Listed Actions,
+//     Excess, Intention, Way of Doing, Prohibitive). Those duplicated
+//     the "Verbs" bucket — moved them in.
+// (b) The catchall name described its origin ("the leftovers from N5")
+//     rather than its current contents. Renamed "Set Phrases and
+//     Discourse" — what's now actually inside is set phrases and
+//     idioms, nominalisation markers, polite/honorific vocabulary,
+//     sentence-final particles, quotation, and explanatory んです.
+//
+// Every fine category is now explicitly mapped (no fallback needed).
 const GRAMMAR_SUPERCATS = [
   ['Sentence Basics', [
     'Copula and Basic Sentence Structure',
@@ -303,24 +314,35 @@ const GRAMMAR_SUPERCATS = [
     'Existence and Possession',
     'Desiderative and Volitional',
     'Giving and Receiving (basic)',
+    // Verb-modal patterns moved here from the old catchall bucket
+    'Additional Upper N5 / Borderline Patterns - Permission and Obligation',
+    'Additional Upper N5 / Borderline Patterns - Experience and Advice',
+    'Additional Upper N5 / Borderline Patterns - Compound and Listed Actions',
+    'Additional Upper N5 / Borderline Patterns - Excess',
+    'Additional Upper N5 / Borderline Patterns - Intention',
+    'Additional Upper N5 / Borderline Patterns - Way of Doing',
+    'Additional Upper N5 / Borderline Patterns - Prohibitive (Casual)',
   ]],
   ['Adjectives and Comparison', [
     'Adjectives',
     'Comparison and Preference',
   ]],
-  ['Quantity, Time and Connectives', [
+  ['Time, Counters, Connectives', [
     'Counters and Quantity',
     'Time Expressions',
     'Conjunctions and Connectives',
     'Asking and Stating with から / ので (basic causation)',
     'Existence-of-Plans and Frequency',
   ]],
-  ['Functional and Upper-N5', [
+  ['Set Phrases and Discourse', [
     'Nominalization and Modification',
     'Common Set Patterns',
     'Functional Expressions (Non-Grammar, Common Usage)',
     'Other Core Patterns',
     'Honorific / Polite Vocabulary at N5 (functional)',
+    'Additional Upper N5 / Borderline Patterns - Explanation and Emphasis',
+    'Additional Upper N5 / Borderline Patterns - Quotation (Casual)',
+    'Additional Upper N5 / Borderline Patterns - Sentence-Final Exclamation',
   ]],
 ];
 
@@ -328,10 +350,9 @@ function superCategoryFor(category) {
   for (const [supercat, members] of GRAMMAR_SUPERCATS) {
     if (members.includes(category)) return supercat;
   }
-  // Fallback: any "Additional Upper N5 / Borderline Patterns - ..."
-  // category goes into the Functional and Upper-N5 bucket. Anything
-  // unrecognised also lands there so nothing falls through.
-  return 'Functional and Upper-N5';
+  // Should never fire on the current 32 categories (all explicitly
+  // mapped). Fallback for any future category not in the explicit map.
+  return 'Set Phrases and Discourse';
 }
 
 function renderTOC(container, data) {
