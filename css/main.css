@@ -304,7 +304,9 @@ html, body {
 
 /* Danger zone — destructive actions (Reset progress) sit below the
  * regular settings, separated by space-8 + a thin top border in
- * --color-incorrect with a small "Danger zone" label. Spec §5.10. */
+ * --color-incorrect with a small "Danger zone" label. Spec §5.10.
+ * The visual stop-sign sits ABOVE the typed-phrase confirmation gate
+ * already wired in js/settings.js — belt + suspenders. */
 .settings-danger-zone {
   max-width: var(--container-narrow);
   margin: var(--space-8) auto 0;
@@ -318,6 +320,35 @@ html, body {
   text-transform: uppercase;
   color: var(--color-incorrect);
   margin: 0 0 var(--space-3);
+}
+.settings-danger-zone .settings-row { border-bottom: none; padding: var(--space-3) 0; }
+.settings-danger-zone .setting-help {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin: var(--space-1) 0 0;
+  line-height: var(--leading-base);
+}
+/* Typed-phrase confirmation box (RESET gate). */
+.reset-confirm-box {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-incorrect-tint);
+  border: 0.5px solid var(--color-incorrect);
+  border-radius: var(--radius-md);
+}
+.reset-confirm-box p { margin: 0 0 var(--space-3); font-size: var(--text-sm); color: var(--color-text); }
+.reset-confirm-box code {
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.95em;
+  padding: 1px 4px;
+  background: var(--color-bg);
+  border: 0.5px solid var(--color-line);
+  border-radius: var(--radius-sm);
+}
+.reset-confirm-box input[type="text"] {
+  margin-bottom: var(--space-3);
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  letter-spacing: var(--tracking-wide);
 }
 
 /* Header — Zen Modern (sticky, 56px tall, hairline, brand mark + wordmark) */

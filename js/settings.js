@@ -91,16 +91,21 @@ export async function renderSettings(container) {
       <p id="set-import-msg" class="muted small" role="status" aria-live="polite"></p>
     </section>
 
-    <section class="settings-section">
-      <h3>Reset</h3>
-      <button id="set-reset" class="btn-danger">Reset all progress…</button>
-      <p class="muted small">Clears history, results, weak patterns, settings, and known-kanji flags. Cannot be undone.</p>
+    <section class="settings-danger-zone" aria-labelledby="danger-zone-label">
+      <p class="danger-label" id="danger-zone-label">Danger zone</p>
+      <div class="settings-row">
+        <div>
+          <span>Reset all progress</span>
+          <p class="setting-help">Clears study history, FSRS schedule, test results, streak, known-kanji flags, and settings. Cannot be undone.</p>
+        </div>
+        <button id="set-reset" class="btn-danger">Reset…</button>
+      </div>
       <div id="reset-confirm" hidden class="reset-confirm-box">
         <p><strong>Type <code>RESET</code> to confirm.</strong> This wipes every byte of your progress on this device.</p>
         <input id="reset-phrase" type="text" autocomplete="off" placeholder="Type RESET">
         <div class="settings-actions">
           <button id="reset-confirm-btn" class="btn-danger" disabled>Confirm reset</button>
-          <button id="reset-cancel-btn">Cancel</button>
+          <button id="reset-cancel-btn" class="btn-secondary">Cancel</button>
         </div>
       </div>
     </section>
