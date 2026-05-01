@@ -11434,8 +11434,8 @@
       "category": "Additional Upper N5 / Borderline Patterns - Explanation and Emphasis",
       "categoryOrder": 24,
       "patternOrder": 1,
-      "meaning_en": "～んです / ～のです - explanation / emphasis (borderline)",
-      "meaning_ja": "「〜んです」",
+      "meaning_en": "～んです / ～のです — explanation, emphasis, or asking for an explanation",
+      "meaning_ja": "「〜んです」（せつめい・きょうちょう）",
       "form_rules": {
         "attaches_to": [
           "plain_clause"
@@ -11448,12 +11448,13 @@
           }
         ]
       },
-      "explanation_en": "Adds explanation or asks for an explanation. Plain-form clause + んです (casual んだ).",
+      "explanation_en": "Plain-form clause + んです (or のです in writing). Used to GIVE an explanation ('It's because...') or to ASK FOR one ('Why...?'). Compare with bare です: 'たかいです' is a flat statement of fact, while 'たかいんです' adds 'and that's why...' or 'it turns out that...'. Casual form: ～んだ (です→だ). Marked late_n5 because the explanation/emphasis nuance is on the N5/N4 boundary; the form itself is N5.",
       "examples": [
         {
           "ja": "あたまが いたいんです。",
-          "form": "affirmative",
+          "form": "affirmative-explanation",
           "translation_en": "(It's because) I have a headache.",
+          "explanation_en": "The んです signals the speaker is giving a reason or context, not just stating the fact. Compare 'あたまが いたいです' (flat statement: 'My head hurts').",
           "vocab_ids": [
             "n5.vocab.4-body-parts.あたま",
             "n5.vocab.31-adjectives.いたい",
@@ -11463,17 +11464,47 @@
         },
         {
           "ja": "どうしたんですか。",
-          "form": "question",
-          "translation_en": "What's wrong?",
+          "form": "question-asking-for-explanation",
+          "translation_en": "What's wrong? / What happened?",
+          "explanation_en": "Asking the listener to explain a situation. The standard medical/concerned greeting when someone looks unwell. Bare 'どうしましたか' is more clinical/formal; どうしたんですか is the everyday social form.",
           "vocab_ids": [
             "n5.vocab.5-demonstratives.どう",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "あした しけんが あるんです。",
+          "form": "affirmative-explanation",
+          "translation_en": "(The reason is) I have an exam tomorrow.",
+          "explanation_en": "Provides the unstated reason for a prior comment (e.g., 'why are you studying so late?' → 'I have an exam tomorrow'). Without んです, the sentence is just a flat schedule announcement.",
+          "vocab_ids": [
+            "n5.vocab.10-time-general.あした",
+            "n5.vocab.24-school-and-study.しけん",
+            "n5.vocab.30-verbs-existence-and-p.ある",
+            "n5.vocab.35-particles-functional-.が"
+          ]
         }
       ],
-      "common_mistakes": [],
-      "contrasts": [],
-      "notes": "Upper N5 / borderline."
+      "common_mistakes": [
+        {
+          "wrong": "あたまが いたいんです。(used as a flat fact, e.g., when filling out a medical form)",
+          "right": "あたまが いたいです。(flat fact)",
+          "why": "んです carries an explanation/context nuance. Using it for a flat statement (e.g., on a form) sounds like the speaker is giving a reason no-one asked for. Reserve んです for contexts where you're explaining or reacting."
+        },
+        {
+          "wrong": "学生んです。",
+          "right": "学生なんです。",
+          "why": "After a noun or na-adjective, the linking copula is な (not bare ん). Pattern: noun + な + んです / noun + なのです. With i-adjectives and verbs, attach ん directly: 高いんです / 食べるんです."
+        }
+      ],
+      "contrasts": [
+        {
+          "with": "～です (plain copula)",
+          "difference": "～です = flat statement of fact. ～んです = explanation, emphasis, or reaction to context. Use ～です on forms and in objective writing; ～んです in conversation when reacting or explaining."
+        }
+      ],
+      "notes": "late_n5 tier: the form is N5 but the explanation/emphasis nuance crosses into N4 territory. The 3 examples here cover the most common N5-appropriate uses (giving a reason, asking for one, providing context). For deeper discussion of the contrast register-shift behavior or the assertive ～んだ casual form, see N4 sources. Pending native-teacher review of the framing per Pass-16 F-15.23 note (2026-05-01).",
+      "tier": "late_n5"
     },
     {
       "id": "n5-168",
