@@ -765,6 +765,8 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-17", "Grammar examples have vocab_ids (homograph guard)", lambda: _check_ja_17_examples_have_vocab_ids()),
     ("JA-18", "Reading explanation kanji subset of passage", lambda: _check_ja_18_reading_explanation_kanji()),
     ("JA-19", "Reading info-search has format_type", lambda: _check_ja_19_reading_info_search_format()),
+    ("JA-20", "Reading choices kanji subset of passage", lambda: _check_ja_20_reading_choices_kanji()),
+    ("JA-21", "N4-grammar markers require tier=late_n5", lambda: _check_ja_21_n4_grammar_tier_flag()),
 ]
 
 
@@ -986,6 +988,118 @@ def _check_ja_18_reading_explanation_kanji() -> list[str]:
                             failures.append("JA-18 ... (truncated at 20)")
                             return failures
                         break
+    return failures
+
+
+def _check_ja_20_reading_choices_kanji() -> list[str]:
+    """Reading-question MCQ choices must use the same kana/kanji rendering
+    as the passage. If a choice contains a kanji that the passage doesn't
+    use, the learner cannot match-answer-to-text and answer authority is
+    undermined. Pass-15-reading audit §5.4 (3).
+
+    We accept the case where a choice contains a kanji that ALSO doesn't
+    appear in the passage but is conceptually allowed (e.g., 何 or 人 in
+    a question-style distractor). Specifically: only flag kanji that
+    appear in the OTHER choices' rendering as kana — that's the strong
+    inconsistency signal (n5.read.010 q1 had bare numbers but the passage
+    used 〜こ counter; that's the class to catch).
+    """
+    failures: list[str] = []
+    reading_path = ROOT / "data" / "reading.json"
+    if not reading_path.exists():
+        return ["JA-20: data/reading.json missing"]
+    try:
+        data = json.loads(reading_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-20: parse error: {e}"]
+
+    def is_kanji(ch: str) -> bool:
+        cp = ord(ch)
+        return 0x3400 <= cp <= 0x9FFF
+
+    for p in data.get("passages", []):
+        pid = p.get("id", "?")
+        passage_text = p.get("ja", "")
+        passage_kanji = {ch for ch in passage_text if is_kanji(ch)}
+        for q in p.get("questions", []):
+            qid = q.get("id", "?")
+            choices = q.get("choices", [])
+            correct = q.get("correctAnswer", "")
+            # The strong consistency check: every kanji in the
+            # CORRECT-answer choice must appear in the passage. If the
+            # correct answer rendering doesn't match the passage, the
+            # question is inconsistent. (Distractors get more leeway —
+            # they're foils.)
+            for ch in correct:
+                if is_kanji(ch) and ch not in passage_kanji:
+                    failures.append(
+                        f"JA-20 {qid} correctAnswer uses kanji '{ch}' "
+                        f"not in passage {pid} (rendering mismatch — "
+                        f"the answer should match the passage's form). "
+                        f"correctAnswer={correct!r}"
+                    )
+                    if len(failures) >= 20:
+                        failures.append("JA-20 ... (truncated at 20)")
+                        return failures
+                    break
+    return failures
+
+
+# Heuristic patterns that strongly suggest N4 grammar in a passage. Each
+# entry: (regex, description). Used by JA-21. Patterns are deliberately
+# conservative — false negatives are acceptable, false positives must be
+# rare since they'd block release.
+#
+# Calibrated against the live corpus 2026-05-01:
+# - Original "(?:う|く|...)と、" pattern false-fired on `3つと、` (counter
+#   + と for noun-listing). Tightened with a negative-look-behind on
+#   numerals + counter kana so only verb dictionary forms match.
+N4_GRAMMAR_PATTERNS = [
+    # 〜と conditional: verb-dictionary-form + と + comma. The verb-dict
+    # ends in u-row hiragana. Exclude counter kana (つ/こ/本/etc.) which
+    # are preceded by a digit or kanji numeral.
+    # Negative-look-behind: NOT preceded by a digit, fullwidth digit, or
+    # kanji numeral. Then a verb-dict-ending hiragana, then と + 、.
+    (re.compile(
+        r"(?<![0-9０-９一二三四五六七八九十百千万])"
+        r"(?:う|く|ぐ|す|ぬ|ぶ|む|る)と、"),
+     "〜と conditional (Verb-dict + と + comma)"),
+    # Potential form -られ + ます/ません/た/ない (verb-2 potential).
+    (re.compile(r"(?:け|げ|せ|て|ね|べ|め|れ)られ(?:ます|ません|た|ない)"),
+     "Potential form (-られ + ます/ません/た/ない)"),
+]
+
+
+def _check_ja_21_n4_grammar_tier_flag() -> list[str]:
+    """Reading passages that use heuristically-detected N4 grammar markers
+    must be flagged with `tier: "late_n5"` (or be rewritten). Pass-15-
+    reading audit §5.4 (4).
+
+    Currently checks for: 〜と conditional, potential form. Both were
+    audit-flagged on n5.read.030 / n5.read.007 and have been fixed. This
+    check guards against re-introduction.
+    """
+    failures: list[str] = []
+    reading_path = ROOT / "data" / "reading.json"
+    if not reading_path.exists():
+        return ["JA-21: data/reading.json missing"]
+    try:
+        data = json.loads(reading_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-21: parse error: {e}"]
+    for p in data.get("passages", []):
+        pid = p.get("id", "?")
+        ja = p.get("ja", "")
+        tier = p.get("tier", "core_n5")
+        for pat, desc in N4_GRAMMAR_PATTERNS:
+            m = pat.search(ja)
+            if m and tier not in ("late_n5", "info_search"):
+                failures.append(
+                    f"JA-21 {pid} contains N4 grammar pattern "
+                    f"({desc}) at {m.group(0)!r} but tier is "
+                    f"{tier!r}. Either rewrite to N5 or set "
+                    f"tier=late_n5."
+                )
     return failures
 
 

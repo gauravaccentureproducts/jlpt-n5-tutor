@@ -74,6 +74,35 @@ JLPT N5 Grammar Tutor – Functional Spec.docx     full functional spec
 
 The learner never runs any of these scripts - they are author-side only.
 
+## Authoring conventions
+
+### Vocabulary whitelist exemptions
+
+The `data/n5_vocab_whitelist.json` lookup is the source of truth for "what counts as N5 vocabulary." Two classes of items are intentionally excluded from the whitelist:
+
+1. **Personal names** (e.g., マリア, ヤマダ, スズキ, たなか, アンナ) — universally exempted from textbook vocabulary lists. Names appear in passages and questions but never in the whitelist; CI does not flag this. If you add a new passage with a new personal name, do NOT add the name to the whitelist.
+2. **Place names with no compound logic** (e.g., スペイン, アメリカ, メキシコ) — country names already in the whitelist are fine. Compound forms like スペイン人 / アメリカ人 are tracked since they're useful learner vocabulary. Don't bulk-add every conceivable place name.
+
+Where to add: append the new term to `data/n5_vocab_whitelist.json` (sorted alphabetically) and run `python tools/check_content_integrity.py` to confirm the JA-13 / JA-15 / JA-16 invariants still pass.
+
+### Spacing policy in passages
+
+Insert a single space at every word boundary in `ja` text — particles, kanji compounds, demonstrative + noun, etc. The corpus is consistently spaced; new content must match.
+
+- ✓ `わたしは とうきょうの 大学で 日本語を べんきょうしています。`
+- ✗ `わたしは とうきょうの大学で 日本語を べんきょうしています。` (missing space before 大学)
+
+Exceptions: spaces are NOT inserted within a single compound (e.g., `日本語` stays as one token; do not split as `日本 語`).
+
+### N4 grammar leakage
+
+N5 passages must use only N5 grammar markers. The two patterns most likely to slip through are:
+
+- **〜と conditional** (`Verb-dict + と + comma + result-clause`) — this is N4 (Genki II L18, Minna I L23). Use te-form imperative or split into two sentences instead.
+- **Potential form** (`Verb-stem + える/られる`) — this is N4 (Genki II L13). Use `Verb-dict + ことが できる` instead.
+
+The `JA-21` content-integrity invariant catches both heuristically. Passages that intentionally include borderline late-N5 grammar should set `tier: "late_n5"` to opt out of the strict check.
+
 ## Spec
 
 See [`JLPT N5 Grammar Tutor – Functional Spec.docx`](JLPT%20N5%20Grammar%20Tutor%20%E2%80%93%20Functional%20Spec.docx) for the full functional specification, including content rules, UX requirements, data model, and acceptance criteria.
