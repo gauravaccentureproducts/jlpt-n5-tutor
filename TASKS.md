@@ -591,6 +591,65 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 
 ---
 
+## Pass-19 cross-session duplicate scan - 2026-05-01 (REGISTERED, NOT YET FIXED)
+
+Comprehensive duplicate scan across 10 categories triggered by concern that two parallel Claude Code sessions on the same repo could have introduced collisions. Most "duplicates" turned out to be intentional structural patterns; one real category of pre-existing redundancy was uncovered.
+
+**Scan tool:** the scan + triage scripts (`_dup_scan.py`, `_dup_triage.py`) were one-shot diagnostics and were cleaned up after producing this finding list. Re-run by hand if needed.
+
+#### Clean (no duplicates) — 8 categories
+
+- Question IDs (questions.json) — clean after the Pass-16 dedup (renumber to q-0479..q-0488).
+- Pattern IDs (grammar.json), Vocab IDs (vocab.json), Kanji glyphs, Reading passage IDs, Listening item IDs — all unique.
+- TASKS.md Pass-N headers — unique.
+- Audio manifest paths — unique.
+
+#### Confirmed-intentional duplicates — NOT bugs
+
+- 2 duplicate `question_ja` stems:
+  - `q-0001` / `q-0418` share `わたしは がくせい（ ）。` — q-0001 is the MCQ form, q-0418 is the text_input form. Same canonical stem rendered in both formats by design.
+  - `q-0019` / `q-0358` share `あつい（ ）、まどを あけてください。` — both target `から` but are tagged to two different pattern IDs (n5-009 vs n5-128). The question pair isn't strictly wrong; the **root cause** is the duplicate pattern entries (cascade — see F-19.2 below).
+- 62 of 72 vocab `(form, reading)` pairs are documented homographs (は = tooth/leaf/particle; かた = person/way; いる = exist/need; etc.). Handled by `tools/link_grammar_examples_to_vocab.py` HOMOGRAPH_RULES.
+- 10 of 72 vocab pairs are intentional cross-section listings (e.g., `おゆ` listed in §14 nature, §18 drinks, §37 common-nouns). The ID encodes the section so unique IDs are preserved; the section duplication enables the section-based vocab UI. Some entries carry an explicit `(also in §X)` annotation; an annotation-completeness sub-pass might be worth doing if the catalog ever lints for this, but it's not a duplicate-bug.
+- 3 grammar entries with pattern string `Verb` (n5-135 relative clauses / n5-162 まえに / n5-163 あとで) — different constructs, identically prefixed. Not duplicates.
+- 1 grammar pair with pattern string `が` (n5-003 subject marker vs n5-126 clause connector "but") — genuine functional split. Keep both.
+
+#### Real cleanup candidates — 9 grammar-pattern redundancies
+
+The catalog has two ID ranges that overlap on the same surface form. Most entries in the higher-numbered range duplicate earlier ones in scope/meaning. This is pre-existing drift from Pass-15-era splits that introduced new IDs without retiring the merged-form ones; it is **not** caused by the parallel-session collision.
+
+For each pair below, recommended action: pick the canonical ID, migrate any questions tagged to the duplicate over to the canonical, then remove the duplicate pattern entry.
+
+- [ ] **F-19.1** (MEDIUM) **`か` triplet redundancy** — n5-012 ("sentence-final + or" combined) is now superseded by n5-023 (sentence-final) + n5-024 (OR). Retire n5-012 OR re-scope to a different aspect.
+- [ ] **F-19.2** (MEDIUM) **`から` redundancy** — n5-128 (clause connector "because") is a subset of n5-009 (from / because). q-0358 is tagged to n5-128; if n5-128 is retired, q-0358 should migrate to n5-009 (which removes the q-0019/q-0358 stem-duplication noted above).
+- [ ] **F-19.3** (MEDIUM) **`まで` redundancy** — n5-020 duplicates n5-010.
+- [ ] **F-19.4** (MEDIUM) **`や` redundancy** — n5-022 duplicates n5-011.
+- [ ] **F-19.5** (LOW) **`も` redundancy** — n5-032 ("Also/too") is a subset of n5-013 (which adds the with-negation sense). Verify before merging.
+- [ ] **F-19.6** (LOW) **`いつ` redundancy** — n5-047 ("When") is a subset of n5-019 (which notes pairing with から/まで/ごろ).
+- [ ] **F-19.7** (MEDIUM) **`〜があります` redundancy** — n5-141 duplicates n5-094.
+- [ ] **F-19.8** (MEDIUM) **`〜が好き` redundancy** — n5-138 duplicates n5-099.
+- [ ] **F-19.9** (MEDIUM) **`〜がじょうず` redundancy** — n5-139 duplicates n5-100.
+- [ ] **F-19.10** (MEDIUM) **`〜がわかります` redundancy** — n5-140 duplicates n5-102.
+
+Plus a cascade item:
+
+- [ ] **F-19.11** (LOW) **q-0019 / q-0358 duplicate stem** — cascade-resolves automatically when F-19.2 is fixed (q-0358 migrates to n5-009, then a stem-duplication check decides if both are still needed or one is consolidated).
+
+#### Recommended fix sequence
+
+1. Decide migration policy (lower-numbered ID = canonical, OR newer-tier ID = canonical). Default: **lower-numbered ID is canonical** because the 100-range entries are older and have richer existing content (examples, common_mistakes, vocab_id linkage).
+2. For each F-19.1..F-19.10:
+   a. Find all questions tagged to the duplicate ID.
+   b. Re-tag them to the canonical ID.
+   c. Remove the duplicate from `data/grammar.json`.
+   d. Re-run `tools/link_grammar_examples_to_vocab.py` since example positions shift.
+   e. Run integrity check.
+3. Clean up F-19.11 by re-running the duplicate-stem check (a one-line addition to `check_content_integrity.py` would prevent this class of bug going forward — see Pass-18 §5 candidate).
+
+Estimated effort: ~1-2 hours for all 10 + the cascade. Idempotent script feasible. Not blocking; defer to a focused Pass-19 commit.
+
+---
+
 ## Pass-17 KnowledgeBank/*.md consolidated audit - 2026-05-01 (8 of 9 ITEMS APPLIED)
 
 Applied the audit at `feedback/jlpt-n5-knowledgebank-md-audit-2026-05-01.md` (1 critical, 3 high, 4 medium, 1 low). 8 actionable items closed; 1 LOW item deliberately deferred.
