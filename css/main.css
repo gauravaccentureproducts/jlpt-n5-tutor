@@ -555,9 +555,12 @@ main h3 {
   content: "+";
   position: absolute;
   right: 0; top: 50%;
+  /* translateY(-50%) is required to vertically center against top:50%. The
+   * v1.8.0 Phase-2 transform sweep accidentally stripped this; restored
+   * 2026-05-01. The transform is purely for centering — no hover lift. */
+  transform: translateY(-50%);
   font-size: 20px;
-  color: var(--c-text-muted, #666);
-  transition: transform 160ms ease;
+  color: var(--color-text-muted, var(--c-text-muted, #666));
 }
 .toc-category[open] > summary::after { content: "−"; }
 .toc-category > summary h3 {
@@ -1986,8 +1989,10 @@ textarea:focus-visible,
   content: "+";
   position: absolute;
   right: 0; top: 50%;
+  /* translateY(-50%) for vertical centering — see toc-category note above. */
+  transform: translateY(-50%);
   font-size: 20px;
-  color: var(--c-text-muted, #666);
+  color: var(--color-text-muted, var(--c-text-muted, #666));
 }
 .listening-section[open] > summary::after { content: "−"; }
 .listening-section > summary h3 {
@@ -2240,8 +2245,10 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   content: "+";
   position: absolute;
   right: 0; top: 50%;
+  /* translateY(-50%) for vertical centering — see toc-category note above. */
+  transform: translateY(-50%);
   font-size: 20px;
-  color: var(--c-text-muted, #666);
+  color: var(--color-text-muted, var(--c-text-muted, #666));
 }
 .vocab-toc .vocab-section[open] > summary::after { content: "−"; }
 .vocab-toc .vocab-section[open] > summary { margin-bottom: 12px; }
