@@ -599,42 +599,44 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 
 ---
 
-## Pass-14 questions.json comprehensive audit - 2026-04-30 (REGISTERED, fixes pending)
+## Pass-14 questions.json comprehensive audit - 2026-04-30 (Phase A APPLIED 2026-05-01)
 
-Comprehensive audit of `data/questions.json` (166 questions; reduced from original 250 via prior cleanups) from native-speaker + structural-integrity perspective. Found 8 issue classes affecting ~50 questions, dominated by stub-pattern-era placeholder questions that teach nothing.
+Comprehensive audit of `data/questions.json` from native-speaker + structural-integrity perspective. Found 8 issue classes, dominated by stub-pattern-era placeholder questions that teach nothing.
 
-#### CRITICAL (3 classes)
+**Phase A (the 38-question cascade) applied 2026-05-01.** Bank shrunk 181 → 143 real questions. Resolved F-14.1, F-14.2, F-14.3, F-14.4, F-14.7, F-14.8 in one mechanical pass.
 
-- [ ] **F-14.1** (CRITICAL) **38 pattern-meta questions teach nothing** (q-0280 through q-0399 family). All match pattern `つぎの いみに あう パターン：`. Distractors are wildly off-category (single particles mixed with phrase patterns), so the correct answer is visually trivial to select. Answer can be picked without any Japanese knowledge. **Recommended action:** delete all 38 (bank shrinks 166 → 128 real questions). Affected IDs: q-0280, q-0281, q-0285, q-0288, q-0290, q-0291, q-0293, q-0294, q-0296, q-0298, q-0300, q-0301, q-0311, q-0313, q-0316, q-0318, q-0319, q-0321, q-0322, q-0327, q-0329, q-0338, q-0344, q-0355, q-0361, q-0363, q-0376, q-0382, q-0383, q-0387, q-0398, q-0399, plus 6 more in the family.
-- [ ] **F-14.2** (CRITICAL) **Answer literally in stem** — 4 questions: q-0311, q-0316, q-0382, q-0398. Stem text contains the exact `correctAnswer` string. Subset of F-14.1 (these are the worst cases). Resolved by F-14.1 deletion.
-- [ ] **F-14.3** (CRITICAL) **q-0382 rendering corruption** — `question_ja` contains stray newline + colon, renders as 「パターン：：どうぞ...」 (double colon). Pass-12 cleanup leftover. Resolved by F-14.1 deletion OR direct edit.
+#### CRITICAL (3 classes — ALL RESOLVED)
 
-#### HIGH (3 classes)
+- [x] **F-14.1** (CRITICAL) **38 pattern-meta questions teach nothing** (q-0280 through q-0416 family). All matched pattern `つぎの いみに あう パターン：`. Answer was literally quoted in the stem; distractors mixed wildly different types so the correct option was identifiable from format alone. **Applied 2026-05-01:** deleted 38 questions matching the stub pattern. Bank: 181 → 143. IDs deleted: q-0280, q-0281, q-0288, q-0290, q-0291, q-0294, q-0300, q-0301, q-0311, q-0316, q-0318, q-0319, q-0321, q-0325, q-0326, q-0329, q-0338, q-0339, q-0343, q-0344, q-0349, q-0361, q-0363, q-0374, q-0376, q-0379, q-0382, q-0384, q-0389, q-0393, q-0398, q-0400, q-0408, q-0409, q-0412, q-0413, q-0414, q-0416.
+- [x] **F-14.2** (CRITICAL) **Answer literally in stem** — q-0311, q-0316, q-0382, q-0398. Resolved by F-14.1 deletion.
+- [x] **F-14.3** (CRITICAL) **q-0382 rendering corruption** — double colon. Resolved by F-14.1 deletion.
 
-- [ ] **F-14.4** (HIGH) **Prompt-stem mismatch in 37 pattern-meta questions** — `prompt_ja` says 「（  ）に いちばん いい ものを えらんでください」 (fill the blank) but `question_ja` has no blank. Subset of F-14.1; resolved by deletion.
-- [ ] **F-14.5** (HIGH) **q-0418 dual-mode schema** — `type: text_input` but also has stale `choices` array of 4 distractors. Either runtime renders as MCQ (then `acceptedAnswers` is dead) or as text-input (then `choices` is dead). Likely a copy-paste leftover from type migration. **Fix:** decide canonical type; remove the dead field.
-- [ ] **F-14.6** (HIGH) **33 ID gaps** including the dramatic q-0051 → q-0220 gap of 168 missing IDs. Suggests bulk deletion without renumbering. If any external system or runtime relies on contiguous IDs, those references break unpredictably. **Fix options:** (a) accept gaps as historical record; (b) renumber to q-0001 .. q-0166 contiguous (breaks any external refs); (c) keep gaps but document.
+#### HIGH (3 classes — 1 RESOLVED, 2 OPEN)
 
-#### MEDIUM (3 classes)
+- [x] **F-14.4** (HIGH) **Prompt-stem mismatch in 37 pattern-meta questions** — Resolved by F-14.1 deletion.
+- [ ] **F-14.5** (HIGH) **q-0418 dual-mode schema** — `type: text_input` but also has stale `choices` array. Likely copy-paste leftover. **Fix:** decide canonical type; remove dead field.
+- [ ] **F-14.6** (HIGH) **33 ID gaps** including q-0051 → q-0220 (168 missing). **Fix options:** accept gaps / renumber / document.
 
-- [ ] **F-14.7** (MEDIUM) **Distractor-length asymmetry in 9 questions** — q-0338, q-0361, q-0376 etc. have answer length 7-10 chars (pattern label) but distractors are single particles (1 char). Visual asymmetry tells the answer. Subset of F-14.1; resolved by deletion.
-- [ ] **F-14.8** (MEDIUM) **Pattern-meta `choices` mix incompatible types** — pattern labels mixed with single particles in same MCQ option set. Same root cause as F-14.7.
-- [ ] **F-14.9** (MEDIUM) **Inconsistent slash convention in `choices`** — some use half-width `/` with spaces (「どうぞ / どうも」), some use full-width `／` no spaces (「これ／それ／あれ／どれ」). Renders inconsistently. Affects ~40 entries. **Fix:** standardize on half-width `/` with surrounding spaces (more common N5 textbook convention).
+#### MEDIUM (3 classes — 2 RESOLVED, 1 OPEN)
+
+- [x] **F-14.7** (MEDIUM) **Distractor-length asymmetry** — Resolved by F-14.1 deletion.
+- [x] **F-14.8** (MEDIUM) **Pattern-meta choices mix incompatible types** — Resolved by F-14.1 deletion.
+- [ ] **F-14.9** (MEDIUM) **Inconsistent slash convention in choices** — half-width `/` vs full-width `／`. ~40 entries affected.
 
 #### LOW / Schema (informational)
 
-- [ ] **F-14.10** (LOW) **Type distribution heavily skewed** — 161 mcq / 4 sentence_order / 1 text_input. After F-14.1 deletion (38 mcq removed), distribution becomes 123 mcq / 4 sentence_order / 1 text_input — even more skewed. Per spec §6.2, sentence_order and text_input are documented question types; thin coverage suggests unfinished question-type migration. Consider authoring more.
+- [ ] **F-14.10** (LOW) **Type distribution skewed** — after F-14.1: 138 mcq / 4 sentence_order / 1 text_input. Author more non-mcq.
 - [ ] Note: 4 sentence_order questions correctly omit `choices`/`correctAnswer` (use `tiles`/`correctOrder` instead). NOT a bug.
 
-#### Recommended fix sequence
+#### Recommended fix sequence (updated 2026-05-01)
 
-1. **Phase A (mechanical, low-risk):** Delete the 38 pattern-meta questions (F-14.1). Resolves F-14.2, F-14.3, F-14.4, F-14.7, F-14.8 as a cascade.
-2. **Phase B (decision needed):** Resolve q-0418 schema (F-14.5) — pick canonical type.
-3. **Phase C (decision needed):** Decide on ID gap policy (F-14.6) — keep gaps OR renumber.
-4. **Phase D (sweep):** Standardize slash convention across remaining choices (F-14.9).
-5. **Phase E (longer-term):** Author more sentence_order + text_input questions to balance type distribution (F-14.10).
+1. ~~**Phase A:** Delete 38 pattern-meta questions.~~ ✅ Applied 2026-05-01. Bank 181 → 143. Cascade-resolved F-14.1/2/3/4/7/8.
+2. **Phase B (decision needed):** Resolve q-0418 schema (F-14.5).
+3. **Phase C (decision needed):** Decide on ID gap policy (F-14.6).
+4. **Phase D (sweep):** Standardize slash convention (F-14.9).
+5. **Phase E (longer-term):** Author more sentence_order + text_input (F-14.10).
 
-After Phase A, expected state: **128 real questions** (down from 166), all with valid pedagogical structure.
+Current state: **143 real questions**, all with valid pedagogical structure (no answer-in-stem, no distractor-type-mismatch, no prompt-stem-mismatch).
 
 ---
 

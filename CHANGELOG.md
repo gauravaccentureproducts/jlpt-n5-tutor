@@ -2,6 +2,42 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.8.2 - 2026-05-01 (Pass-14 Phase A: delete 38 stub questions)
+
+### Fixed
+- **Question bank quality** — applied F-14.1 from the Pass-14 audit. Deleted 38 "pattern-meta" questions (q-0280 through q-0416 family) that taught nothing. All matched the stub format `「つぎの いみに あう パターン: ～X～ れい:...」`. The flaws:
+  - Answer was literally quoted in the stem (e.g., stem said "パターン: ～たり～たりする" and "～たり～たりする" was one of the choices).
+  - Distractors mixed wildly different types in the same option set (a particle alongside a pattern label alongside an adverb chain), so a learner could rule out 3 of 4 options just from format.
+  - Prompt said "fill the blank" but the stem had no blank.
+  - One question (q-0382) had a rendering corruption — double colon from a Pass-12 cleanup leftover.
+- **Bank size**: 181 → 143 real questions. Every remaining question has valid pedagogical structure (no answer-in-stem, no distractor-type mismatch, no prompt-stem mismatch).
+
+### Cascade-resolved
+Deleting F-14.1 also closed F-14.2 (answer-in-stem, 4 questions), F-14.3 (q-0382 corruption), F-14.4 (prompt-stem mismatch in 37 questions), F-14.7 (distractor-length asymmetry), and F-14.8 (incompatible-type mixing). 6 audit findings closed in one mechanical pass.
+
+### Still open from Pass-14
+- F-14.5: q-0418 dual-mode schema (text_input + stale `choices` array). Decision needed.
+- F-14.6: 33 ID gaps (q-0051 → q-0220 jumps 168). Decision needed: keep / renumber / document.
+- F-14.9: inconsistent slash convention in `choices` (~40 entries).
+- F-14.10: type distribution skew (138 mcq / 4 sentence_order / 1 text_input). Author more non-mcq.
+
+v1.8.2 / SW v61. 26/26 invariants green.
+
+---
+
+## v1.8.1 - 2026-05-01 (Settings danger zone)
+
+### Added
+- **Danger-zone visual treatment** for the existing Reset Progress flow (`js/settings.js`). The destructive action now sits below the regular settings, separated by `--space-8` of whitespace and a thin red top border. A red "DANGER ZONE" label in `--tracking-label` ALL-CAPS calls extra attention. The pre-existing typed-phrase confirmation gate ("Type `RESET` to confirm") still gates the actual destruction — belt + suspenders.
+- New `.reset-confirm-box` styling: red-tinted bg, hairline incorrect border, monospace `RESET` input, secondary Cancel button.
+
+### Why
+The Reset action wipes 11 categories of state (FSRS schedule, study history, test results, streak, known-kanji flags, drill stats, manual overrides, diagnostic results, settings preferences, last-viewed lesson, weak-pattern tracking). For users who've used the app for weeks, that's a lot of personalized state. The danger zone adds visual quarantine to match the action's actual consequence.
+
+v1.8.1 / SW v60. 26/26 invariants green.
+
+---
+
 ## v1.8.0 - 2026-05-01 (Zen Modern design overhaul)
 
 A comprehensive visual refresh per `specifications/jlpt-n5-design-system-zen-modern.md` (Muji-inspired). Hierarchy through typography and whitespace, hairlines instead of borders, no shadows / no gradients / no decorative icons. Total work shipped across 4 commits.
