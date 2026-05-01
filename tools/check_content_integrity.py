@@ -775,6 +775,7 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-23", "Listening script choices match choices array", lambda: _check_ja_23_listening_script_choices_match()),
     ("JA-24", "i-adj kanji primary reading is kun-yomi", lambda: _check_ja_24_iadj_kanji_primary_kun()),
     ("JA-25", "Whitelist exceptions documented (Pass-22 F-22.4)", lambda: _check_ja_25_whitelist_exceptions_documented()),
+    ("JA-26", "No duplicate question IDs (Pass-23 2026-05-02)", lambda: _check_ja_26_no_duplicate_question_ids()),
 ]
 
 
@@ -1333,6 +1334,37 @@ def _check_ja_25_whitelist_exceptions_documented() -> list[str]:
                 f"JA-25 kanji '{kanji}' is documented in exceptions.md but "
                 f"lacks WHY: justification. Add WHY: <reason> on the same line."
             )
+    return failures
+
+
+def _check_ja_26_no_duplicate_question_ids() -> list[str]:
+    """Pass-23 (2026-05-02): no two entries in data/questions.json may
+    share the same `id` field. JA-7 catches duplicate STEMS but not
+    duplicate IDs — and the latter happened twice (Pass-16 ↔ Pass-15-P0
+    over q-0454..q-0463; parallel-session ↔ Pass-16 over q-0479..q-0488).
+
+    The runtime uses IDs as primary keys for storage and SRS state, so
+    duplicate IDs cause one entry's progress to silently overwrite the
+    other's. This invariant prevents the regression class going forward.
+    """
+    from collections import Counter
+    failures: list[str] = []
+    qpath = ROOT / "data" / "questions.json"
+    if not qpath.exists():
+        return ["JA-26: data/questions.json missing"]
+    try:
+        data = json.loads(qpath.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-26: parse error: {e}"]
+    ids = [q.get("id") for q in data.get("questions", [])]
+    counts = Counter(ids)
+    dups = sorted(qid for qid, n in counts.items() if n > 1)
+    for qid in dups:
+        failures.append(
+            f"JA-26 question id '{qid}' appears {counts[qid]} times in "
+            f"data/questions.json. Run a dedup tool to renumber the "
+            f"second occurrence."
+        )
     return failures
 
 

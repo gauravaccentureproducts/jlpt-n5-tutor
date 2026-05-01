@@ -9,7 +9,7 @@
     },
     "id_range": {
       "first": "q-0001",
-      "last": "q-0503"
+      "last": "q-0513"
     },
     "id_gap_policy": "documented",
     "id_gap_explanation": "IDs are non-contiguous. The declared range q-0001..q-0433 spans 433 slots but only 143 are populated (290 missing). Cause: bulk deletions across audit passes (Pass-9 to Pass-14) without renumbering. Specifically: Pass-9 removed first-edition stubs (q-0052..q-0219), Pass-12 removed duplicates / corrupted items, Pass-14 (2026-05-01) removed 38 pattern-meta stubs (q-0280..q-0416 family). Renumbering was rejected as too risky — any external reference (URL bookmarks of past test results, exported localStorage state, verification.md cross-references) would break unpredictably. Per F-14.6 closure: gaps are accepted as historical record. Tooling MUST treat IDs as opaque strings, not contiguous-integer suffixes.",
@@ -79,7 +79,8 @@
       "paraphrase": 10
     },
     "history": [
-      "Pass-17 dedup (2026-05-01): repaired duplicate-ID collision between Pass-16 (giving/receiving + ので + ながら + frequency adverbs) and a parallel Pass-15 P0 (paraphrase) that both claimed q-0454..q-0463. The Pass-15 P0 set kept those IDs; Pass-16 questions were renumbered to q-0479..q-0488 (after Pass-15 P1 kanji_writing q-0478)."
+      "Pass-17 dedup (2026-05-01): repaired duplicate-ID collision between Pass-16 (giving/receiving + ので + ながら + frequency adverbs) and a parallel Pass-15 P0 (paraphrase) that both claimed q-0454..q-0463. The Pass-15 P0 set kept those IDs; Pass-16 questions were renumbered to q-0479..q-0488 (after Pass-15 P1 kanji_writing q-0478).",
+      "Pass-23 dedup (2026-05-02): renumbered 10 duplicate-ID question entries (q-0479..q-0488 collision between Pass-16 content and parallel-session particle/nominalizer batch). Second occurrences moved to q-0504..q-0513."
     ]
   },
   "questions": [
@@ -480,8 +481,8 @@
       "grammarPatternId": "n5-009",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "9時（　）しごとです。",
+      "prompt_ja": "「いつから はじまるか」を しめす ことばを えらんで ください。",
+      "question_ja": "しごとは 9時（　）はじまります。",
       "choices": [
         "は",
         "から",
@@ -489,14 +490,15 @@
         "に"
       ],
       "correctAnswer": "から",
-      "explanation_en": "から after a time means 'from / starting at'. 9時から = 'from 9 o'clock'.",
+      "explanation_en": "から marks the starting point ('from'). Paired with the verb はじまる ('to start'), the natural reading is 'work starts FROM 9'.",
       "distractor_explanations": {
-        "は": "は marks the topic - could appear elsewhere in the sentence but doesn't mean 'from'.",
-        "まで": "まで means 'until / up to' - opposite direction. 9時まで = 'until 9'.",
-        "に": "に marks a specific time POINT, not a starting point. 9時に おきます = 'wake up AT 9'; 9時から = 'starting AT 9'."
+        "は": "は is the topic marker. It cannot mark a time as a start/end point.",
+        "まで": "まで marks an end point ('until'). With はじまる ('start'), an end-point marker doesn't fit — start-verbs pair with から.",
+        "に": "に marks a single specific time ('at 9'), not the start of a range. With はじまる, a starting point is what's being marked, so から is the natural fit."
       },
       "high_confusion": true,
-      "difficulty": 2
+      "difficulty": 2,
+      "auto": false
     },
     {
       "id": "q-0019",
@@ -2694,8 +2696,8 @@
       "grammarPatternId": "n5-033",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "（　）に いちばん いい ものを えらんでください。",
-      "question_ja": "コーヒー（　） 飲みます。",
+      "prompt_ja": "「ほかは 飲まない」こと を あらわす ことばを えらんで ください。",
+      "question_ja": "わたしは コーヒー（  ）飲みます。 おちゃや ジュースは 飲みません。",
       "choices": [
         "など",
         "だけ",
@@ -2703,9 +2705,15 @@
         "や"
       ],
       "correctAnswer": "だけ",
-      "explanation_en": "だけ means 'only' - limiting the scope to that one item. Used with affirmative or negative verbs (compare with しか, which forces negative).",
+      "explanation_en": "だけ means 'only / nothing but' — it limits the action to the noun marked. The follow-up sentence 'I don't drink tea or juice' confirms the scope: only coffee, nothing else.",
       "high_confusion": false,
-      "difficulty": 1
+      "difficulty": 1,
+      "distractor_explanations": {
+        "など": "など means 'and others / etc.' — it implies more than just coffee. The follow-up sentence ('I don't drink tea or juice') contradicts that, so など is wrong here.",
+        "に": "に marks destinations, recipients, or specific times. It does not mark scope-limitation on a direct object before a transitive verb.",
+        "や": "や means 'and (non-exhaustive)' BETWEEN two nouns. It needs a second noun after the blank — there isn't one here."
+      },
+      "auto": false
     },
     {
       "id": "q-0296",
@@ -4301,7 +4309,7 @@
       "grammarPatternId": "n5-148",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "「毎日」と おなじ いみで、「100%」を あらわす ことばを えらんで ください。",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
       "question_ja": "わたしは 毎日 7時に おきます。（  ）7時に おきます。",
       "choices": [
         "いつも",
@@ -4325,7 +4333,7 @@
       "grammarPatternId": "n5-148",
       "type": "mcq",
       "direction": "j_to_e",
-      "prompt_ja": "「月に 1かい」のような ひくい ひんどを あらわす ことばを えらんで ください。",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
       "question_ja": "わたしは 月に 1かい えいがを 見ます。（  ）えいがを 見ます。",
       "choices": [
         "たまに",
@@ -4345,7 +4353,7 @@
       "auto": false
     },
     {
-      "id": "q-0479",
+      "id": "q-0504",
       "grammarPatternId": "n5-021",
       "type": "mcq",
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
@@ -4361,7 +4369,7 @@
       "difficulty": 1
     },
     {
-      "id": "q-0480",
+      "id": "q-0505",
       "grammarPatternId": "n5-021",
       "type": "mcq",
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
@@ -4377,7 +4385,7 @@
       "difficulty": 1
     },
     {
-      "id": "q-0481",
+      "id": "q-0506",
       "grammarPatternId": "n5-028",
       "type": "mcq",
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
@@ -4393,7 +4401,7 @@
       "difficulty": 1
     },
     {
-      "id": "q-0482",
+      "id": "q-0507",
       "grammarPatternId": "n5-030",
       "type": "mcq",
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
@@ -4409,7 +4417,7 @@
       "difficulty": 2
     },
     {
-      "id": "q-0483",
+      "id": "q-0508",
       "grammarPatternId": "n5-034",
       "type": "mcq",
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
@@ -4425,7 +4433,7 @@
       "difficulty": 2
     },
     {
-      "id": "q-0484",
+      "id": "q-0509",
       "grammarPatternId": "n5-040",
       "type": "mcq",
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
@@ -4441,7 +4449,7 @@
       "difficulty": 1
     },
     {
-      "id": "q-0485",
+      "id": "q-0510",
       "grammarPatternId": "n5-051",
       "type": "mcq",
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
@@ -4457,7 +4465,7 @@
       "difficulty": 1
     },
     {
-      "id": "q-0486",
+      "id": "q-0511",
       "grammarPatternId": "n5-052",
       "type": "mcq",
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
@@ -4473,10 +4481,10 @@
       "difficulty": 2
     },
     {
-      "id": "q-0487",
+      "id": "q-0512",
       "grammarPatternId": "n5-056",
       "type": "mcq",
-      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
       "question_ja": "きょうは（  ）ですか。",
       "choices": [
         "なんがつ",
@@ -4486,13 +4494,14 @@
       ],
       "correctAnswer": "なんようび",
       "explanation_en": "なんようび = what day of the week. Expected answer: げつようび / かようび / etc.",
-      "difficulty": 1
+      "difficulty": 1,
+      "auto": false
     },
     {
-      "id": "q-0488",
+      "id": "q-0513",
       "grammarPatternId": "n5-057",
       "type": "mcq",
-      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "prompt_ja": "（  ）に いれる ことばを えらんで ください。",
       "question_ja": "おたんじょうびは（  ）ですか。",
       "choices": [
         "なんようび",
@@ -4502,7 +4511,8 @@
       ],
       "correctAnswer": "なんがつなんにち",
       "explanation_en": "なんがつなんにち = what month, what day. The standard Japanese way to ask for a date (vs なんようび which is day-of-week).",
-      "difficulty": 2
+      "difficulty": 2,
+      "auto": false
     },
     {
       "id": "q-0489",
