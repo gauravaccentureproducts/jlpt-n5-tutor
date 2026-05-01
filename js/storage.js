@@ -111,9 +111,14 @@ const FRESH_PATTERN_ENTRY = {
   // Legacy Leitner-light state (kept for migration / existing UI badges)
   srsBox: null,         // null | '1d' | '3d' | '7d' | '14d' | 'graduated'
   nextDue: null,        // ISO date string when this pattern next appears in Drill
-  // SM-2 state (Brief §2.11)
-  easeFactor: 2.5,      // EF - adjusts up/down with each grade
-  interval: 0,          // days until next review
+  // FSRS-4 state (replaced SM-2 2026-05-01; see EB-4 Tier-1)
+  stability: null,      // S - days the memory holds at 90% recall
+  difficulty: null,     // D - clamped [1..10]
+  lastReview: null,     // ISO timestamp of most recent review
+  // Legacy SM-2 fields kept for backward compat / migration. Not used at
+  // runtime since 2026-05-01; FSRS-4 is the active scheduler.
+  easeFactor: 2.5,      // EF - SM-2 ease factor
+  interval: 0,          // days until next review (also kept by FSRS)
   reps: 0,              // consecutive correct streak (resets on lapse)
   lapses: 0,            // total times the user has forgotten this item
 };
@@ -258,19 +263,24 @@ export function getPatternEntry(id) {
   return h[id] || null;
 }
 
-// =============== SM-2 SRS algorithm (Brief §2.11) ===============
+// =============== SRS algorithm: FSRS-4 (EB-4 Tier-1, 2026-05-01) ===============
 //
-// Standard SM-2 with N5-friendly defaults. Per-item state: easeFactor,
-// interval (days), reps, lapses, due (ISO). 4-button grading mapped to
-// SM-2 quality scores:
-//   Again → q=1   (forgotten, lapse)
-//   Hard  → q=3   (correct but difficult)
-//   Good  → q=4   (correct, normal)
-//   Easy  → q=5   (correct, easy - bigger interval bump)
+// Replaces SM-2 with FSRS-4 (Free Spaced Repetition Scheduler v4) — the
+// algorithm Anki 23.10+ uses by default. Better recall prediction than SM-2,
+// no new data collection required, fully on-device.
 //
-// On q < 3: reps reset, interval back to 1 day, lapses++.
-// On q ≥ 3: reps++; interval = 1, 6, or prev*EF depending on rep count.
-// EF adjusts each grade: EF' = max(1.3, EF + 0.1 - (5-q)*(0.08 + (5-q)*0.02)).
+// FSRS-4 reference: https://github.com/open-spaced-repetition/fsrs4anki/wiki
+//
+// Per-item state:
+//   stability (S): days the memory holds at 90% recall probability
+//   difficulty (D): clamped [1..10], how "hard" this card is
+//   last_review: ISO timestamp of the most recent review
+// 4-button grading. The UI buttons emit 1/3/4/5 (SM-2 legacy) which we
+// translate internally to FSRS's 1/2/3/4 scale.
+//
+// SM-2 fields (easeFactor / interval / reps) are preserved on each entry
+// for compatibility with the existing Drill SRS-box UI badges and for
+// migration. New reviews update FSRS state; legacy SM-2 fields decay.
 
 const GRADE_AGAIN = 1;
 const GRADE_HARD = 3;
@@ -278,10 +288,128 @@ const GRADE_GOOD = 4;
 const GRADE_EASY = 5;
 
 export const SM2 = { GRADE_AGAIN, GRADE_HARD, GRADE_GOOD, GRADE_EASY };
+export const FSRS_GRADE = { AGAIN: 1, HARD: 2, GOOD: 3, EASY: 4 };
 
+// FSRS-4 default weights from the Anki/Open-SR community calibration set.
+// These are general-purpose defaults; per-user optimization (which would
+// need cross-user data we don't have) could improve them but isn't worth
+// the complexity for an N5 study tool.
+const FSRS_W = [0.4, 0.6, 2.4, 5.8, 4.93, 0.94, 0.86, 0.01, 1.49, 0.14,
+                0.94, 2.18, 0.05, 0.34, 1.26, 0.29, 2.61];
+const FSRS_DESIRED_RETENTION = 0.9;
+const FSRS_LN_TARGET = Math.log(FSRS_DESIRED_RETENTION);  // -0.1054
+const FSRS_LN_09 = Math.log(0.9);  // identical to LN_TARGET when retention = 0.9
+
+// Translate the legacy SM-2 1/3/4/5 grade scale to FSRS's 1/2/3/4 scale.
+// We do this internally so review.js can keep its existing data-grade
+// attributes (1/3/4/5) without UI changes.
+function toFsrsGrade(g) {
+  if (g <= 1) return 1;       // Again
+  if (g === 3) return 2;      // Hard
+  if (g === 4) return 3;      // Good
+  return 4;                   // 5 → Easy
+}
+
+function clampDifficulty(d) {
+  return Math.max(1, Math.min(10, d));
+}
+
+function initialFsrsState(grade) {
+  // First-ever review of an item — no prior memory state.
+  const fg = toFsrsGrade(grade);
+  const stability = Math.max(0.1, FSRS_W[fg - 1]);  // w[0..3] index by grade-1
+  const difficulty = clampDifficulty(FSRS_W[4] - (fg - 3) * FSRS_W[5]);
+  return { stability, difficulty };
+}
+
+function nextStability(S_old, D_old, R_actual, fg) {
+  if (fg === 1) {
+    // Lapse. Stability drops toward post-lapse formula.
+    return FSRS_W[11]
+      * Math.pow(D_old, -FSRS_W[12])
+      * (Math.pow(S_old + 1, FSRS_W[13]) - 1)
+      * Math.exp(FSRS_W[14] * (1 - R_actual));
+  }
+  // Recall. Stability grows.
+  const factor = Math.exp(FSRS_W[8])
+    * (11 - D_old)
+    * Math.pow(S_old, -FSRS_W[9])
+    * (Math.exp(FSRS_W[10] * (1 - R_actual)) - 1);
+  const hardPenalty = fg === 2 ? FSRS_W[15] : 1;
+  const easyBonus = fg === 4 ? FSRS_W[16] : 1;
+  return S_old * (1 + factor * hardPenalty * easyBonus);
+}
+
+function nextDifficulty(D_old, fg) {
+  // Update step
+  const D_step = D_old - FSRS_W[6] * (fg - 3);
+  // Mean reversion toward the difficulty for an Easy first review (D_init_4)
+  const D_init_4 = FSRS_W[4] - (4 - 3) * FSRS_W[5];
+  const D_reverted = FSRS_W[7] * D_init_4 + (1 - FSRS_W[7]) * D_step;
+  return clampDifficulty(D_reverted);
+}
+
+function applyFsrs(entry, grade, nowIso) {
+  const e = { ...FRESH_PATTERN_ENTRY, ...entry };
+  const fg = toFsrsGrade(grade);
+  let S_old = e.stability;
+  let D_old = e.difficulty;
+
+  // Migration: if no FSRS state but legacy SM-2 state exists, seed FSRS from it.
+  // Otherwise, this is a first-ever review.
+  if (S_old === undefined || S_old === null) {
+    if (e.easeFactor && e.interval) {
+      // Translate SM-2 → FSRS:
+      // - SM-2 interval is roughly stability when targeting 90% retention
+      // - SM-2 easeFactor (1.3..2.5+) maps inversely to difficulty (1..10)
+      S_old = Math.max(0.1, e.interval || 1);
+      D_old = clampDifficulty(10 - 8 * (((e.easeFactor || 2.5) - 1.3) / (2.5 - 1.3)));
+    } else {
+      // First review of this item.
+      const init = initialFsrsState(grade);
+      e.stability = init.stability;
+      e.difficulty = init.difficulty;
+      e.lastReview = nowIso;
+      // Schedule next due
+      const intervalDays = Math.max(1, Math.round(init.stability));
+      e.interval = intervalDays;  // keep for legacy badge UI
+      const next = new Date();
+      next.setDate(next.getDate() + intervalDays);
+      e.nextDue = next.toISOString();
+      e.lastSeen = nowIso;
+      if (fg === 1) e.lapses = (e.lapses || 0) + 1;
+      return e;
+    }
+  }
+
+  // Subsequent review: update S and D.
+  const lastReview = e.lastReview ? new Date(e.lastReview) : new Date(nowIso);
+  const elapsedDays = Math.max(0, (Date.parse(nowIso) - lastReview.getTime()) / 86400000);
+  const R_actual = Math.exp(FSRS_LN_09 * elapsedDays / Math.max(0.1, S_old));
+
+  e.stability = Math.max(0.1, nextStability(S_old, D_old, R_actual, fg));
+  e.difficulty = nextDifficulty(D_old, fg);
+  e.lastReview = nowIso;
+  if (fg === 1) e.lapses = (e.lapses || 0) + 1;
+
+  // Schedule next due
+  const intervalDays = Math.max(1,
+    Math.round(e.stability * (FSRS_LN_TARGET / FSRS_LN_09))
+  );
+  e.interval = intervalDays;  // keep for legacy badge UI
+  const next = new Date();
+  next.setDate(next.getDate() + intervalDays);
+  e.nextDue = next.toISOString();
+  e.lastSeen = nowIso;
+  return e;
+}
+
+// SM-2 implementation kept as a fallback / migration reference. Not called
+// at runtime since 2026-05-01; FSRS-4 (above) is the active scheduler.
+// Removing this would lose the ability to interpret old entries that have
+// only easeFactor/interval and no stability/difficulty.
 function applySm2(entry, grade, nowIso) {
   const e = { ...FRESH_PATTERN_ENTRY, ...entry };
-  // Lapse
   if (grade < 3) {
     e.lapses = (e.lapses || 0) + 1;
     e.reps = 0;
@@ -292,11 +420,8 @@ function applySm2(entry, grade, nowIso) {
     else if (e.reps === 2) e.interval = 6;
     else e.interval = Math.round((e.interval || 1) * (e.easeFactor || 2.5));
   }
-  // Adjust ease factor
   const newEf = (e.easeFactor || 2.5) + (0.1 - (5 - grade) * (0.08 + (5 - grade) * 0.02));
   e.easeFactor = Math.max(1.3, newEf);
-
-  // Schedule next due
   const next = new Date();
   next.setDate(next.getDate() + e.interval);
   e.nextDue = next.toISOString();
@@ -305,16 +430,17 @@ function applySm2(entry, grade, nowIso) {
 }
 
 /**
- * Record an SM-2 graded response. Call from drill UIs that present 4-button
- * (Again/Hard/Good/Easy) grading.
+ * Record an SRS graded response. The drill UI sends grades on the legacy
+ * SM-2 1/3/4/5 scale (Again/Hard/Good/Easy); the FSRS scheduler translates
+ * internally to FSRS's 1/2/3/4 scale.
  */
 export function recordSrsResponse(grammarPatternId, grade) {
   if (!grammarPatternId) return;
   const history = getHistory();
   const now = new Date().toISOString();
   const existing = history[grammarPatternId] || FRESH_PATTERN_ENTRY;
-  const updated = applySm2(existing, grade, now);
-  // Also keep the rolling-history fields in sync for the existing weak-detection code.
+  const updated = applyFsrs(existing, grade, now);
+  // Keep rolling-history fields in sync for the existing weak-detection code.
   updated.attempts = (updated.attempts || 0) + 1;
   if (grade < 3) {
     updated.incorrect = (updated.incorrect || 0) + 1;
@@ -334,6 +460,11 @@ export function getSrsState(grammarPatternId) {
   const e = getHistory()[grammarPatternId];
   if (!e) return null;
   return {
+    // FSRS-4 state (the active scheduler since 2026-05-01)
+    stability: e.stability ?? null,
+    difficulty: e.difficulty ?? null,
+    lastReview: e.lastReview ?? null,
+    // Legacy SM-2 state (informational; not used at runtime)
     easeFactor: e.easeFactor ?? 2.5,
     interval: e.interval ?? 0,
     reps: e.reps ?? 0,

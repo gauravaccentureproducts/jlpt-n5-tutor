@@ -2,6 +2,23 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.7.0 - 2026-05-01 (FSRS-4 replaces SM-2)
+
+### Changed
+- **SRS scheduler upgraded from SM-2 to FSRS-4** (Free Spaced Repetition Scheduler v4 — the algorithm Anki ≥23.10 uses by default). FSRS-4 has empirically better recall prediction than SM-2 in published comparisons; for our use case it's a drop-in replacement that requires no new data collection and runs entirely in the browser.
+- **Per-item state schema** gained `stability` (S, days the memory holds at 90% recall), `difficulty` (D, clamped 1-10), and `lastReview` (ISO timestamp). Legacy SM-2 fields (`easeFactor`, `interval`, `reps`, `lapses`) are preserved for migration and legacy badge UI but are no longer used at runtime.
+- **Migration is automatic and lossless.** On the first FSRS-graded review of any pre-existing entry that has SM-2 state but no FSRS state, the scheduler seeds `stability` from the SM-2 `interval` and `difficulty` from the inverted ease-factor curve (EF 1.3 → D 10, EF 2.5+ → D ~2). Subsequent reviews update via FSRS-4. No user action needed; no progress lost.
+- **Grading UI unchanged.** Drill review buttons still emit grades on the SM-2 1/3/4/5 scale (Again/Hard/Good/Easy); the scheduler translates internally to FSRS's 1/2/3/4 scale.
+
+### Why it matters
+- Better recall predictions → fewer items re-shown when not needed, fewer items missed when they are needed.
+- Closes EB-4 Tier-1 from the 2026-05-01 external-blocked-items reframing (the v2.0 recommender was originally deferred indefinitely on the assumption that "richer recommender = needs telemetry"; FSRS-4 demonstrates a richer scheduler with zero new data).
+
+### Note
+- This is a code-only change. No grammar/vocab/listening/reading/kanji content was modified. All 25 content-integrity invariants remain green.
+
+---
+
 ## v1.6.4 - 2026-05-01 (K-1 kanji example usage + Pass 14c/15a corrections)
 
 ### Added
