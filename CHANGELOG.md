@@ -2,6 +2,29 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.7.10 - 2026-05-01 (homograph disambiguation: vocab_ids per example)
+
+### Fixed
+- **Wrong example sentences on homograph vocab pages.** The かた "person (polite)" detail page was showing the example 「この かんじの 読みかたは なんですか」 — but 読みかた "way of reading" is a different かた (n5.vocab.37 "way of doing", not n5.vocab.1 "person"). Same class of bug existed for 75 other homograph clusters: は (tooth / leaf / topic-marker), ひと (person / one), ある (to be / a certain), いる (to need / to be), おく (to put / 100 million), ほん (book / counter for cylindrical), はい (yes / counter for cupfuls), かい (counter for floors / counter for times / shellfish), きる (to wear / to cut), から (from / because), が (subject-marker / but), と (with / when / and), どうも (somehow / thanks), and 60 more. Every example now carries an explicit `vocab_ids: [...]` list naming exactly which vocab entries it demonstrates; the renderer matches by ID, never by substring.
+
+### Changed
+- **`data/grammar.json`**: every example sentence (589 total) gained a `vocab_ids` field. Auto-tagged via `tools/link_grammar_examples_to_vocab.py` with 13 hand-coded disambiguation rules + POS-aware substring matching + verb / i-adj conjugation matching (handles ます-form, te-form, た-form, ない-form, potential, and i-adj くて / かった forms).
+- **`js/learn.js#renderVocabDetail`**: filters examples by `ex.vocab_ids.includes(entry.id)` instead of substring on the form field. Backward-compat fallback to substring kept for any legacy data.
+
+### Added (CI)
+- **JA-17 invariant** "Grammar examples have vocab_ids (homograph guard)" — every grammar example with non-empty `ja` text must declare a `vocab_ids` list. Blocks any future regression. Now 26/26 invariants green.
+
+### Tooling
+- **`tools/link_grammar_examples_to_vocab.py`** (idempotent re-runnable): scans every grammar example, finds POS-aware substring matches against `data/vocab.json`, applies homograph disambiguation rules, and writes `vocab_ids` back. Falls back to over-linking for ambiguous homograph forms without explicit rules (safe per "over-link beats under-link" direction). Conjugation-fallback covers verbs and i-adjectives in inflected form (e.g. 行けません → 行く, いそがしくて → いそがしい, わかります → 分かる via reading).
+- **Conjugation-collision post-filters**: 来る/きる kana ms-stem き collision (drops きる "to wear / cut" unless clothing/cutting context); 入る/はい kana stem collision (drops "yes" expression and "cupful" counter unless example starts with greeting); 行く/いけ collision in the Verb-て+はいけません idiom (drops "lake" noun).
+- **Counter numeral-prefix guard**: 2-char counter forms (かい / ほん / はい) require an immediately-preceding numeral (0-9, fullwidth digits, 一二三…) so that かい inside かいました (買う conjugated) doesn't false-match the counter "1階".
+- **Standalone-word boundary guard**: 2-char `expression`/`interjection` POS forms require a left word-boundary so that はい (yes) doesn't false-match inside すってはいけません.
+
+### Stats
+- 75 homograph clusters fully covered. 589/589 (100%) examples linked to ≥1 vocab entry. 473 homograph-disambiguation decisions made by the auto-tagger across the corpus.
+
+---
+
 ## v1.7.0 - 2026-05-01 (FSRS-4 replaces SM-2)
 
 ### Changed

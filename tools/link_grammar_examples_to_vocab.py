@@ -254,6 +254,46 @@ def matches_in_example(form: str, ja: str, pos: str = "") -> bool:
     # risk at 2 chars is low — vocab forms aren't typically substrings
     # of other vocab forms at this length.
     if len(form) >= 2:
+        # Counter-specific boundary: a 2-char counter (かい / ほん /
+        # はい) must be preceded by a numeral so that かい inside かい
+        # ました (the verb 買う) doesn't false-match. Numeral context =
+        # ASCII digit, full-width digit, or kanji numeral.
+        if pos == "counter":
+            _NUMERAL = set("0123456789０１２３４５６７８９"
+                           "一二三四五六七八九十百千万")
+            idx = 0
+            flen = len(form)
+            while True:
+                i = ja.find(form, idx)
+                if i < 0:
+                    return False
+                if i > 0 and ja[i-1] in _NUMERAL:
+                    return True
+                idx = i + 1
+        # Short-standalone-word boundary: 2-char standalone words
+        # (noun / expression / interjection) need a left word-boundary
+        # so that はい (yes) doesn't false-match inside すってはい
+        # けません, and いけ (lake) doesn't false-match inside
+        # はいけません. We require the preceding char to be a
+        # boundary OR another word's particle (after は/が/を/に/で/
+        # と/も/から/へ/まで). This is best-effort — Japanese has
+        # no real word boundaries, but the most common false-positive
+        # pattern is "verb-stem + 2char-word substring".
+        if pos in ("expression", "interjection") and len(form) <= 2:
+            _PARTICLE_END = set("はがをにでとも")
+            idx = 0
+            flen = len(form)
+            while True:
+                i = ja.find(form, idx)
+                if i < 0:
+                    return False
+                # Boundary: start, _BOUNDARY, or after a particle
+                # (which itself signals end-of-previous-phrase).
+                if (i == 0
+                    or ja[i-1] in _BOUNDARY
+                    or ja[i-1] in _PARTICLE_END):
+                    return True
+                idx = i + 1
         return True
     # 1-char forms: high false-positive risk (で in です, は in はな,
     # こ in この). Enforce per-POS boundary rules.
@@ -272,6 +312,126 @@ def matches_in_example(form: str, ja: str, pos: str = "") -> bool:
             if before_b and after_b:
                 return True
         idx = i + 1
+
+
+def _has_left_boundary(ja: str, candidate: str) -> bool:
+    """True iff `candidate` appears in `ja` at a position whose
+    preceding character is a word-boundary (start-of-string, space,
+    or Japanese punctuation).
+
+    Used by conjugation_matches to avoid false positives where one
+    verb's conjugated form happens to be a substring of another verb's
+    conjugated form. E.g., かります (かりる polite) is a substring of
+    わかります (わかる polite). Without this check, わかります examples
+    would link to BOTH わかる AND かりる. With it, the match for
+    かります requires "boundary then か"; in わかります the か is
+    preceded by わ (not a boundary), so the false link is rejected.
+    """
+    idx = 0
+    while True:
+        i = ja.find(candidate, idx)
+        if i < 0:
+            return False
+        if i == 0 or ja[i-1] in _BOUNDARY:
+            return True
+        idx = i + 1
+
+
+def conjugation_matches(dict_form: str, pos: str, ja: str) -> bool:
+    """Check whether a verb's or i-adjective's dictionary form appears in
+    the example as one of its common conjugated forms (ます / ました /
+    ません / て / た / ない / なかった / よう, plus potential
+    -える/-られる, plus i-adj -くて/-く/-くない/-かった).
+
+    Best-effort heuristic: handles regular Group-1 (う-verb), Group-2
+    (る-verb), the two common irregulars (する, 来る), the verb potential
+    form (which itself conjugates as verb-2), and i-adjectives.
+
+    The dict_form must already not appear literally in `ja`.
+    Each candidate must occur at a left word-boundary to avoid the
+    かります-substring-of-わかります class of false positives.
+    """
+    if not dict_form or len(dict_form) < 2:
+        return False
+    last = dict_form[-1]
+    stem = dict_form[:-1]
+    candidates: list[str] = []
+
+    if pos == "verb-2":
+        # Ichidan: drop る, add ます/ました/ません/て/た/ない/なかった
+        if last == "る":
+            for suf in ("ます", "ました", "ません", "ませんでした",
+                        "て", "た", "ない", "なかった",
+                        "ています", "ていません",
+                        "たい", "たくない", "ましょう"):
+                candidates.append(stem + suf)
+            # Potential / passive: 食べる → 食べられる, conjugates as verb-2
+            for suf in ("られる", "られます", "られました", "られません",
+                        "られない", "られなかった"):
+                candidates.append(stem + suf)
+    elif pos == "verb-1":
+        # Godan: stem mutation depending on the dictionary-form ending.
+        # ます-form: change う-row to い-row
+        u_to_i = {"う":"い","く":"き","ぐ":"ぎ","す":"し",
+                  "つ":"ち","ぬ":"に","ぶ":"び","む":"み","る":"り"}
+        i_stem = stem + u_to_i.get(last, "")
+        if u_to_i.get(last):
+            for suf in ("ます", "ました", "ません", "ませんでした",
+                        "たい", "たくない", "ましょう"):
+                candidates.append(i_stem + suf)
+        # て / た forms have their own euphonic rules:
+        te_form = {
+            "う": stem + "って", "つ": stem + "って", "る": stem + "って",
+            "ぶ": stem + "んで", "ぬ": stem + "んで", "む": stem + "んで",
+            "く": stem + "いて", "ぐ": stem + "いで",
+            "す": stem + "して",
+        }.get(last)
+        if te_form:
+            candidates.extend([te_form, te_form[:-1] + "た",
+                               te_form + "います", te_form + "いません"])
+        # 行く is the famous exception: te=行って, ta=行った (already covered above)
+        # ない-form: change う-row to あ-row
+        u_to_a = {"う":"わ","く":"か","ぐ":"が","す":"さ",
+                  "つ":"た","ぬ":"な","ぶ":"ば","む":"ま","る":"ら"}
+        a_stem = stem + u_to_a.get(last, "")
+        if u_to_a.get(last):
+            for suf in ("ない", "なかった", "なくて", "なければ"):
+                candidates.append(a_stem + suf)
+        # Potential form: change う-row to え-row + る → behaves as verb-2.
+        # 行く → 行ける → 行けます/行けません/行けない/行けて...
+        u_to_e = {"う":"え","く":"け","ぐ":"げ","す":"せ",
+                  "つ":"て","ぬ":"ね","ぶ":"べ","む":"め","る":"れ"}
+        e_stem = stem + u_to_e.get(last, "")
+        if u_to_e.get(last):
+            # The potential dict form itself (e_stem + る), then the
+            # full verb-2 conjugation set on that potential stem:
+            potential_dict = e_stem + "る"
+            candidates.append(potential_dict)
+            for suf in ("ます", "ました", "ません", "ませんでした",
+                        "て", "た", "ない", "なかった",
+                        "ています", "ていません"):
+                candidates.append(e_stem + suf)
+    elif pos == "verb-3":
+        # Irregular: する / 来る (くる) — handle by exact-form lookup
+        if dict_form == "する":
+            candidates.extend(["します","しました","しません","しませんでした",
+                                "して","した","しない","しなかった","しよう","しましょう",
+                                "できる","できます","できました","できません",
+                                "できない","できなかった","できて"])
+        elif dict_form in ("くる", "来る"):
+            candidates.extend(["きます","きました","きません","きませんでした",
+                                "きて","きた","こない","こなかった",
+                                "来ます","来ました","来ません","来て","来た",
+                                "来ない","来なかった",
+                                "こられる","こられます","来られる","来られます"])
+    elif pos == "i-adj":
+        # i-adjective: drop い, add くて/く/くない/くなかった/かった/ければ
+        if last == "い":
+            for suf in ("くて", "く", "くない", "くなかった",
+                        "かった", "ければ", "くありません"):
+                candidates.append(stem + suf)
+
+    return any(_has_left_boundary(ja, c) for c in candidates if c)
 
 
 def disambiguate(form: str, candidates: list, example_ja: str) -> list:
@@ -329,6 +489,29 @@ def main() -> int:
                 candidates = by_form[form]
                 matched = [c for c in candidates
                            if matches_in_example(form, ja, c.get("pos", ""))]
+                # Conjugation fallback for verbs and i-adjectives: try
+                # common conjugated forms when the dictionary form doesn't
+                # appear literally. Catches わかります / わかりません /
+                # 行きました / 食べて / 行けません / いそがしくて / etc.
+                # Only fires for POS verb-1/2/3 and i-adj where applicable.
+                # Try both the kanji form AND the kana reading so that
+                # 分かる ↔ わかります (kana-only example) is caught.
+                if not matched and len(form) >= 2 and any(
+                    c.get("pos","").startswith("verb")
+                    or c.get("pos","") == "i-adj"
+                    for c in candidates
+                ):
+                    def _conj_any(c):
+                        pos = c.get("pos","")
+                        if not (pos.startswith("verb") or pos == "i-adj"):
+                            return False
+                        if conjugation_matches(form, pos, ja):
+                            return True
+                        reading = c.get("reading","")
+                        if reading and reading != form:
+                            return conjugation_matches(reading, pos, ja)
+                        return False
+                    matched = [c for c in candidates if _conj_any(c)]
                 if not matched:
                     continue
                 seen_forms.add(form)
@@ -339,6 +522,54 @@ def main() -> int:
                 if len(candidates) > 1:
                     examples_with_homograph += 1
                     homograph_decisions[form] += 1
+            # Post-filter: kana-conjugation collisions between irregular
+            # 来る (verb-3, ます-stem き) and きる (verb-2 "to wear",
+            # ms-stem also き) — surface forms きました / きます /
+            # きませんでした / きて / きた are ambiguous between the
+            # two. When 来る is linked AND the example has no clothing
+            # context (シャツ / セーター / 服 / きもの / ようふく),
+            # drop きる verb-1/verb-2 from the link set. Same for the
+            # verb-1 "to cut" きる: drop unless cutting context
+            # (紙 / はさみ).
+            kuru_id = "n5.vocab.29-verbs-irregular-and-v.来る"
+            kiru_wear_id = "n5.vocab.28-verbs-group-2-verbs.きる"
+            kiru_cut_id = "n5.vocab.27-verbs-group-1-verbs.きる"
+            if kuru_id in linked:
+                if kiru_wear_id in linked and not any(
+                    s in ja for s in ("シャツ", "セーター", "コート",
+                                       "服", "きもの", "ようふく",
+                                       "ジャケット")):
+                    linked = [v for v in linked if v != kiru_wear_id]
+                if kiru_cut_id in linked and not any(
+                    s in ja for s in ("紙", "はさみ", "ハサミ", "切")):
+                    linked = [v for v in linked if v != kiru_cut_id]
+            # 入る (はいる "to enter") collides with はい (yes /
+            # counter for cupfuls) at kana-substring level. When 入る
+            # is in the link set, drop はい unless the example has a
+            # standalone はい greeting (== "はい、" at start).
+            hairu_id = "n5.vocab.27-verbs-group-1-verbs.入る"
+            hai_yes_id = "n5.vocab.39-function-filler-expre.はい"
+            hai_counter_id = "n5.vocab.9-counters-common.はい"
+            if hairu_id in linked:
+                if hai_yes_id in linked and not ja.startswith("はい"):
+                    linked = [v for v in linked if v != hai_yes_id]
+                if hai_counter_id in linked:
+                    linked = [v for v in linked if v != hai_counter_id]
+            # Also: いけません (cannot go / must not) is the negative
+            # potential of 行く and contains the substring いけ which
+            # collides with いけ (pond / lake). Drop いけ noun when
+            # 行く is linked AND no nature/water context.
+            iku_id = "n5.vocab.27-verbs-group-1-verbs.行く"
+            ike_lake_id = "n5.vocab.14-nature-and-weather.いけ"
+            if iku_id in linked and ike_lake_id in linked:
+                if not any(s in ja for s in ("水", "魚", "公園", "庭")):
+                    linked = [v for v in linked if v != ike_lake_id]
+            # Also: 行く's negative-potential いけません contains いけ
+            # which can also surface even when 行く isn't directly
+            # linked (e.g., the idiomatic "Verb-て + は + いけません"
+            # = "must not Verb"). Catch the bare いけません idiom.
+            if "いけません" in ja and ike_lake_id in linked:
+                linked = [v for v in linked if v != ike_lake_id]
             ex["vocab_ids"] = linked
             if linked:
                 examples_linked += 1
