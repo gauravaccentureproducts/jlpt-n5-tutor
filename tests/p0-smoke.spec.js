@@ -14,7 +14,7 @@ test.describe('P0 smoke - core navigation', () => {
   // 'persists across reload' test because it cleared storage on the
   // reload too.
 
-  test('home loads with hero, inventory, two cards, no console errors', async ({ page }) => {
+  test('home loads as syllabus dashboard with 6 cards + study order + progress, no console errors', async ({ page }) => {
     const errors = [];
     page.on('pageerror', e => errors.push(e.message));
     page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
@@ -24,17 +24,30 @@ test.describe('P0 smoke - core navigation', () => {
     // per spec §2.1 (the em-dash form was a project-policy violation).
     await expect(page).toHaveTitle('JLPT N5');
     await expect(page.locator('.brand-link')).toContainText('JLPT N5');
-    // Hero: noun-phrase headline + 5-line inventory.
-    await expect(page.locator('.hero-headline')).toContainText('JLPT N5 study material.');
-    await expect(page.locator('.hero-inventory li')).toHaveCount(5);
-    // SECTIONS label + 2 cards (Learn / Test) with 01/02 indices.
-    await expect(page.locator('.section-label-text').first()).toContainText('Sections');
-    await expect(page.locator('.learn-grid .card-link')).toHaveCount(2);
-    await expect(page.locator('.learn-grid .card-index').first()).toContainText('01');
-    await expect(page.locator('.learn-grid .card-title').first()).toContainText('Learn');
-    await expect(page.locator('.learn-grid .card-title').nth(1)).toContainText('Test');
-    // Inline placement-check link below cards (not a button).
-    await expect(page.locator('.placement-link a')).toContainText('Placement check available.');
+    // Header: syllabus title + subtitle (replaces the marketing-style hero
+    // headline and inventory list shipped 2026-05-02 first iteration).
+    await expect(page.locator('.syllabus-title')).toContainText('JLPT N5 Syllabus');
+    await expect(page.locator('.syllabus-subtitle')).toContainText('Study grammar, vocabulary, kanji');
+    // Six syllabus cards in canonical order.
+    await expect(page.locator('.syllabus-card')).toHaveCount(6);
+    const titles = page.locator('.syllabus-card-title');
+    await expect(titles.nth(0)).toContainText('Grammar');
+    await expect(titles.nth(1)).toContainText('Vocabulary');
+    await expect(titles.nth(2)).toContainText('Kanji');
+    await expect(titles.nth(3)).toContainText('Reading');
+    await expect(titles.nth(4)).toContainText('Listening');
+    await expect(titles.nth(5)).toContainText('Mock Test');
+    // 01..06 indices on every card.
+    await expect(page.locator('.syllabus-card-index').first()).toContainText('01');
+    await expect(page.locator('.syllabus-card-index').nth(5)).toContainText('06');
+    // Recommended study order: 8 numbered steps.
+    await expect(page.locator('.study-order-item')).toHaveCount(8);
+    // Progress overview: 6 rows.
+    await expect(page.locator('.progress-row')).toHaveCount(6);
+    // Action block: prompt + 2 buttons (placement + grammar).
+    await expect(page.locator('.syllabus-action-prompt')).toContainText('Not sure where to start?');
+    await expect(page.locator('.btn-action-primary')).toContainText('Take Placement Check');
+    await expect(page.locator('.btn-action-secondary')).toContainText('Start with Grammar');
     // Fullscreen toggle present in header (top-right cluster).
     await expect(page.locator('#fullscreen-toggle')).toBeVisible();
     expect(errors, `console errors: ${errors.join('\n')}`).toEqual([]);

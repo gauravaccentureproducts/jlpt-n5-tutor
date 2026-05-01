@@ -20,7 +20,7 @@
        Light + Medium load on demand via the @font-face fallback chain. -->
   <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/noto-sans-jp-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/main.css?v=1.8.11">
+  <link rel="stylesheet" href="css/main.css?v=1.8.12">
 </head>
 <body>
   <a href="#app" class="skip-link">Skip to main content</a>
@@ -29,12 +29,16 @@
       <h1><a href="#/home" class="brand-link" aria-label="JLPT N5, return to home">JLPT N5</a></h1>
     </div>
     <nav class="primary-nav" aria-label="Primary">
-      <a href="#/learn" data-route="learn">Learn</a>
+      <a href="#/learn/grammar" data-route="learn/grammar">Grammar</a>
+      <a href="#/learn/vocab" data-route="learn/vocab">Vocabulary</a>
+      <a href="#/kanji" data-route="kanji">Kanji</a>
+      <a href="#/reading" data-route="reading">Reading</a>
+      <a href="#/listening" data-route="listening">Listening</a>
       <a href="#/test" data-route="test">Test</a>
+      <a href="#/summary" data-route="summary">Progress</a>
     </nav>
     <nav class="secondary-nav" aria-label="Secondary">
       <input type="search" id="search-input" placeholder="Search" aria-label="Search grammar / vocab / kanji" autocomplete="off">
-      <a href="#/summary" data-route="summary" class="secondary-nav-link">Summary</a>
       <button type="button" id="fullscreen-toggle" class="icon-btn" aria-label="Toggle fullscreen" title="Toggle fullscreen">
         <!-- lucide-style maximize icon (4 corner brackets). aria-hidden on the
              SVG itself; the button carries the accessible name. -->
@@ -72,7 +76,7 @@
   </main>
 
   <footer class="app-footer">
-    <small class="footer-meta">v1.8.11</small>
+    <small class="footer-meta">v1.8.12</small>
     <nav class="footer-nav" aria-label="Footer">
       <a href="#/changelog" data-route="changelog">What's new</a>
       <a href="PRIVACY.md">Privacy</a>
@@ -80,6 +84,6 @@
     </nav>
   </footer>
 
-  <script type="module" src="js/app.js?v=1.8.11"></script>
+  <script type="module" src="js/app.js?v=1.8.12"></script>
 </body>
 </html>

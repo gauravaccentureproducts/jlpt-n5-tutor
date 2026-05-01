@@ -1,18 +1,25 @@
-// Home / landing screen.
+// Home / landing screen — JLPT N5 syllabus dashboard.
 //
-// Layout per `specifications/jlpt-n5-design-system-zen-modern.md` §5.1
-// (homepage rewrite, 2026-05-02):
-//   1. Hero: "JLPT N5 study material." + 5-line inventory (counts read at
-//      runtime from data/*.json so the homepage updates automatically when
-//      content is added).
-//   2. Resume strip: single line above SECTIONS for returning users only.
-//   3. SECTIONS label + 2 cards (Learn / Test, no "Browse" text label, →
-//      chevron is the affordance).
-//   4. "Placement check available." inline link.
+// Redesigned 2026-05-02 from the bare "study material." inventory hero into a
+// full syllabus control center. Sections, in order:
+//   1. Optional resume strip (returning users only).
+//   2. Page title: "JLPT N5 Syllabus" + subtitle.
+//   3. Syllabus overview: 6 cards (Grammar / Vocab / Kanji / Reading /
+//      Listening / Mock Test) with count, description, and action link.
+//   4. Recommended study order: 8-step ordered list.
+//   5. Progress overview: 6 rows with progress bars (Grammar / Vocab / Kanji /
+//      Reading / Listening / Mock Test).
+//   6. Placement action block: "Not sure where to start?" + 2 buttons.
 //
-// Copy register (§5.1.1, mandatory): describe contents, no opinion. No
-// outcome claims, no second-person, no verbs of encouragement, no trust
-// reassurance, no superlatives. Counts are bare numerals + nouns.
+// Counts in the syllabus cards are read live from data/*.json so the page
+// stays accurate as content changes. Progress is computed from localStorage
+// (knownKanji + knownVocab + history.isMastered/isManuallyKnown). Reading
+// and Listening don't currently track per-passage completion, so they show
+// 0/30 until that feature lands.
+//
+// Copy register: describe contents, no marketing language. No "Master JLPT
+// N5" / "Your ultimate study companion" / "Start your journey." Counts are
+// bare numerals + nouns. (Spec §5.1.1, mandatory.)
 import * as storage from './storage.js';
 
 // Cache the corpus counts at module scope so we fetch each file once.
@@ -48,6 +55,151 @@ async function loadCorpusCounts() {
 // digits otherwise. Per spec §5.1 rule 4.
 const fmt = (n) => Intl.NumberFormat('en-US').format(n || 0);
 
+// Compute current progress per syllabus section. Reads localStorage —
+// completely cold (first-time visitors) returns zeros for every section.
+function computeProgress(counts) {
+  const history = storage.getHistory();
+  const knownKanji = storage.getKnownKanji ? storage.getKnownKanji() : {};
+  const knownVocab = storage.getKnownVocab ? storage.getKnownVocab() : {};
+  const results = storage.getResults();
+
+  // Grammar: pattern is "studied" when SRS has graduated it OR the user
+  // marked it manually known. Mirrors the Mark-as-known affordance on the
+  // grammar detail page.
+  const grammarStudied = Object.values(history)
+    .filter(v => v && (v.isMastered || v.isManuallyKnown))
+    .length;
+
+  // Vocab + Kanji: count of explicit "known" flags (set via the
+  // Mark-as-known checkbox on the detail pages).
+  const vocabKnown = Object.keys(knownVocab).length;
+  const kanjiKnown = Object.keys(knownKanji).length;
+
+  // Reading + Listening: completion tracking not implemented yet. Show 0
+  // until per-passage / per-drill recording lands.
+  const readingDone = 0;
+  const listeningDone = 0;
+
+  // Mock Test: most recent result if any.
+  const lastTest = results.length ? results[results.length - 1] : null;
+
+  return {
+    grammar:   { done: grammarStudied,   total: counts.grammar },
+    vocab:     { done: vocabKnown,       total: counts.vocab },
+    kanji:     { done: kanjiKnown,       total: counts.kanji },
+    reading:   { done: readingDone,      total: counts.reading },
+    listening: { done: listeningDone,    total: counts.listening },
+    mockTest:  lastTest
+      ? { done: lastTest.correct, total: lastTest.total, percent: lastTest.percent }
+      : { done: 0, total: 0, percent: null, notAttempted: true },
+  };
+}
+
+// Single source of truth for the 6 syllabus cards. Description + action copy
+// stays in sync with what the linked page actually contains. Update the
+// description whenever a section's scope changes.
+function syllabusCards(counts) {
+  return [
+    {
+      idx: '01', id: 'grammar',
+      title: 'Grammar',
+      count: `${fmt(counts.grammar)} patterns`,
+      desc: 'Basic sentence structure, particles, verb forms, adjectives, comparison, requests, and common N5 expressions.',
+      href: '#/learn/grammar',
+      action: 'Open Grammar Syllabus',
+    },
+    {
+      idx: '02', id: 'vocab',
+      title: 'Vocabulary',
+      count: `${fmt(counts.vocab)} words`,
+      desc: 'Daily life words, time expressions, family, food, school, travel, verbs, adjectives, and common expressions.',
+      href: '#/learn/vocab',
+      action: 'Open Vocabulary List',
+    },
+    {
+      idx: '03', id: 'kanji',
+      title: 'Kanji',
+      count: `${fmt(counts.kanji)} characters`,
+      desc: 'Numbers, time, people, school, directions, nature, common verbs, and basic recognition kanji.',
+      href: '#/kanji',
+      action: 'Open Kanji List',
+    },
+    {
+      idx: '04', id: 'reading',
+      title: 'Reading',
+      count: `${fmt(counts.reading)} passages`,
+      desc: 'Short notices, simple messages, daily-life paragraphs, and basic comprehension practice.',
+      href: '#/reading',
+      action: 'Start Reading Practice',
+    },
+    {
+      idx: '05', id: 'listening',
+      title: 'Listening',
+      count: `${fmt(counts.listening)} drills`,
+      desc: 'Greetings, classroom phrases, daily conversations, time, shopping, directions, and simple Q&A.',
+      href: '#/listening',
+      action: 'Start Listening Practice',
+    },
+    {
+      idx: '06', id: 'test',
+      title: 'Mock Test',
+      count: '15 questions',
+      desc: 'Auto-scored mock test with correct answers, explanations, and weak-area review.',
+      href: '#/test',
+      action: 'Take Mock Test',
+    },
+  ];
+}
+
+// 8 study-order steps per spec §5.1 — ordered, beginner-friendly, no
+// promotional framing. Each step is a sentence, no period (matches list
+// register elsewhere on the site).
+const STUDY_ORDER = [
+  'Learn basic sentence structure and particles',
+  'Study core vocabulary',
+  'Learn basic kanji recognition',
+  'Practice grammar questions',
+  'Practice short reading passages',
+  'Practice listening drills',
+  'Take the mock test',
+  'Review weak areas',
+];
+
+function renderSyllabusCard(card) {
+  return `
+    <a class="syllabus-card" href="${card.href}" data-section="${card.id}">
+      <p class="syllabus-card-index" aria-hidden="true">${card.idx}</p>
+      <h3 class="syllabus-card-title">${card.title}</h3>
+      <p class="syllabus-card-count">${esc(card.count)}</p>
+      <p class="syllabus-card-desc">${esc(card.desc)}</p>
+      <span class="syllabus-card-action">${esc(card.action)} <span aria-hidden="true">→</span></span>
+    </a>
+  `;
+}
+
+function renderProgressRow(label, p) {
+  if (p.notAttempted) {
+    return `
+      <li class="progress-row">
+        <span class="progress-label">${esc(label)}</span>
+        <span class="progress-bar" aria-hidden="true"><span class="progress-fill" style="width:0%"></span></span>
+        <span class="progress-value">Not attempted</span>
+      </li>
+    `;
+  }
+  const pct = p.total > 0 ? Math.min(100, Math.round((p.done / p.total) * 100)) : 0;
+  const valueText = label === 'Mock Test'
+    ? `${p.done} / ${p.total} (${p.percent ?? pct}%)`
+    : `${fmt(p.done)} / ${fmt(p.total)}`;
+  return `
+    <li class="progress-row">
+      <span class="progress-label">${esc(label)}</span>
+      <span class="progress-bar" aria-hidden="true"><span class="progress-fill" style="width:${pct}%"></span></span>
+      <span class="progress-value">${valueText}</span>
+    </li>
+  `;
+}
+
 export async function renderHome(container) {
   const history = storage.getHistory();
   const results = storage.getResults();
@@ -55,54 +207,72 @@ export async function renderHome(container) {
   const settings = storage.getSettings();
   const lastViewed = settings.lastLearnId || null;
   const counts = await loadCorpusCounts();
+  const progress = computeProgress(counts);
+  const cards = syllabusCards(counts);
 
-  // Resume strip: single-line link above SECTIONS, ONLY for returning users.
-  // Format: "Last session: <topic>." per spec §5.1 rule 9. We keep this
-  // minimal -- full session/topic mapping is approximated via the
-  // last-viewed pattern ID. First-time visitors see no strip at all.
+  // Resume strip — single-line link above the syllabus title for returning
+  // users. First-time visitors see no strip at all.
   const resumeStrip = (isReturning && lastViewed)
     ? `<a class="resume-strip" href="#/learn/${encodeURIComponent(lastViewed)}">Last session: ${esc(lastViewed)}.</a>`
     : '';
 
   container.innerHTML = `
-    <section class="home">
-      <section class="hero">
-        <h1 class="hero-headline">JLPT N5 study material.</h1>
-        <ul class="hero-inventory">
-          <li>${fmt(counts.grammar)} grammar patterns.</li>
-          <li>${fmt(counts.vocab)} vocabulary items.</li>
-          <li>${fmt(counts.kanji)} kanji.</li>
-          <li>${fmt(counts.reading)} reading passages.</li>
-          <li>${fmt(counts.listening)} listening drills.</li>
-        </ul>
-      </section>
-
+    <section class="home-syllabus">
       ${resumeStrip}
 
-      <section class="sections" aria-label="Sections">
+      <header class="syllabus-header">
+        <h1 class="syllabus-title">JLPT N5 Syllabus</h1>
+        <p class="syllabus-subtitle">Study grammar, vocabulary, kanji, reading, and listening in a structured order.</p>
+        <p class="syllabus-note">This page shows the complete study scope for JLPT N5.</p>
+      </header>
+
+      <section class="syllabus-overview" aria-label="Syllabus overview">
         <header class="section-label">
-          <span class="section-label-text">Sections</span>
+          <span class="section-label-text">Syllabus</span>
           <span class="section-label-rule" aria-hidden="true"></span>
         </header>
-        <div class="learn-grid">
-          <a class="card card-link" href="#/learn">
-            <p class="card-index" aria-hidden="true">01</p>
-            <h3 class="card-title">Learn</h3>
-            <p class="card-meta">Grammar, vocabulary, kanji, reading, listening.</p>
-            <span class="card-arrow" aria-hidden="true">→</span>
-          </a>
-          <a class="card card-link" href="#/test">
-            <p class="card-index" aria-hidden="true">02</p>
-            <h3 class="card-title">Test</h3>
-            <p class="card-meta">15-question mock exam.</p>
-            <span class="card-arrow" aria-hidden="true">→</span>
-          </a>
+        <div class="syllabus-grid">
+          ${cards.map(renderSyllabusCard).join('')}
         </div>
       </section>
 
-      <p class="placement-link">
-        <a href="#/diagnostic">Placement check available.</a>
-      </p>
+      <section class="syllabus-study-order" aria-label="Recommended study order">
+        <header class="section-label">
+          <span class="section-label-text">Recommended Study Order</span>
+          <span class="section-label-rule" aria-hidden="true"></span>
+        </header>
+        <ol class="study-order-list">
+          ${STUDY_ORDER.map((step, i) => `
+            <li class="study-order-item">
+              <span class="study-order-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
+              <span class="study-order-text">${esc(step)}</span>
+            </li>
+          `).join('')}
+        </ol>
+      </section>
+
+      <section class="syllabus-progress" aria-label="Progress overview">
+        <header class="section-label">
+          <span class="section-label-text">Progress</span>
+          <span class="section-label-rule" aria-hidden="true"></span>
+        </header>
+        <ul class="progress-list">
+          ${renderProgressRow('Grammar', progress.grammar)}
+          ${renderProgressRow('Vocabulary', progress.vocab)}
+          ${renderProgressRow('Kanji', progress.kanji)}
+          ${renderProgressRow('Reading', progress.reading)}
+          ${renderProgressRow('Listening', progress.listening)}
+          ${renderProgressRow('Mock Test', progress.mockTest)}
+        </ul>
+      </section>
+
+      <section class="syllabus-action" aria-label="Where to start">
+        <p class="syllabus-action-prompt">Not sure where to start?</p>
+        <div class="syllabus-action-buttons">
+          <a class="btn-action btn-action-primary" href="#/diagnostic">Take Placement Check</a>
+          <a class="btn-action btn-action-secondary" href="#/learn/grammar">Start with Grammar</a>
+        </div>
+      </section>
     </section>
   `;
 }
