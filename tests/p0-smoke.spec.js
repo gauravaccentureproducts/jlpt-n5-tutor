@@ -14,7 +14,7 @@ test.describe('P0 smoke - core navigation', () => {
   // 'persists across reload' test because it cleared storage on the
   // reload too.
 
-  test('home loads with title, CTA, two pillars, no console errors', async ({ page }) => {
+  test('home loads with title, two pillars, no console errors', async ({ page }) => {
     const errors = [];
     page.on('pageerror', e => errors.push(e.message));
     page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
@@ -24,20 +24,29 @@ test.describe('P0 smoke - core navigation', () => {
     // sub-brand; supplements §B.12 voice contract).
     await expect(page).toHaveTitle('JLPT N5 — study material');
     await expect(page.locator('.brand-link')).toContainText('JLPT N5');
-    await expect(page.locator('.home-cta h2')).toBeVisible();
-    // Trust strip removed in v1.6.1 (replaced by PRIVACY.md link in footer).
-    // Pillars reduced to Learn + Test in v1.6 nav simplification.
+    // Hero CTA (.home-cta) removed in v1.7.1 — home now opens directly into
+    // the section grid. The first-time visitor sees a "Sections" section
+    // label + 2 numbered pillar cards (01 Learn / 02 Test).
+    await expect(page.locator('.section-label-text').first()).toContainText('Sections');
     await expect(page.locator('.pillar-card')).toHaveCount(2);
-    await expect(page.locator('.btn-primary').first()).toContainText(/lesson|continue/i);
+    // Numbered indices added by v1.8.0 design overhaul (Muji affordance).
+    await expect(page.locator('.pillar-card .card-index').first()).toContainText('01');
     expect(errors, `console errors: ${errors.join('\n')}`).toEqual([]);
   });
 
-  test('Learn hub shows 5 cards in two semantic groups', async ({ page }) => {
+  test('Learn hub shows 5 numbered cards in two section-label groups', async ({ page }) => {
     await page.goto('/#/learn');
-    await expect(page.locator('.hub-group-title')).toHaveCount(2);
-    await expect(page.locator('.hub-group-title').nth(0)).toContainText('Reference');
-    await expect(page.locator('.hub-group-title').nth(1)).toContainText('Practice');
+    // v1.8.0 design overhaul replaced .hub-group-title <h3> dividers with
+    // .section-label components (ALL-CAPS text + flex-1 hairline rule).
+    await expect(page.locator('.section-label-text')).toHaveCount(2);
+    await expect(page.locator('.section-label-text').nth(0)).toContainText('Reference');
+    await expect(page.locator('.section-label-text').nth(1)).toContainText('Practice');
     await expect(page.locator('.hub-card')).toHaveCount(5);
+    // Numbered indices 01..05 added in v1.8.0 (replaced removed emoji icons).
+    const indices = page.locator('.hub-card .card-index');
+    await expect(indices).toHaveCount(5);
+    await expect(indices.nth(0)).toContainText('01');
+    await expect(indices.nth(4)).toContainText('05');
     const cards = page.locator('.hub-card h3');
     await expect(cards.nth(0)).toContainText('Grammar');
     await expect(cards.nth(1)).toContainText('Vocabulary');
