@@ -9,6 +9,27 @@ This manual is written prescriptively. Where N5 hit a problem, the manual tells 
 
 ---
 
+## ⚠ Operating modes — read this first
+
+This document supports **two execution modes**. The bulk of the manual (§§0–16) was written for **Mode A**. **Appendix A (§17+)** carries the supplements required for **Mode B**.
+
+### Mode A — human team + N5 repo as co-resident reference (default)
+- Reader: a human + AI assistant (Claude Code) working together over weeks-to-months.
+- Required inputs: this manual **and** the N5 source repo at a known path (so "copy from N5" instructions resolve to actual files).
+- The manual reads as a prescriptive playbook; "see N5", "copy from N5", "port verbatim" are concrete actions with files to read.
+- Estimated effort: 17-25 weeks (per §13).
+
+### Mode B — zero-interaction one-shot agent (limited)
+- Reader: a single coding-agent run with no human in the loop.
+- Required inputs: this manual **plus the entire N5 repo as a tarball or directory** that the agent can read.
+- **Without the N5 repo**, this manual is approximately a table of contents — most "copy from N5" / "port" instructions are unresolvable, schemas and content inventories are not embedded, and one-shot completion is **not feasible**.
+- Even WITH the N5 repo: a one-shot agent should use **Appendix A** — it provides default decisions for the §15 open questions, fallback procedures for external-blocked items, a definition-of-done, and a minimum-viable subset to ship if the full scope can't fit in one run.
+- Honest expectation: a zero-interaction agent producing a *complete* N4 app in one run is unrealistic. Realistic one-shot deliverable = scaffolded skeleton (build pipeline, schemas, CI, UI shell, ~20% of content) that a human team finishes in subsequent passes.
+
+This split is a direct response to the Pass-20 manual review (`feedback/procedure-manual-review-issues.md`, 40 issues across 6 risk categories). The review's core finding stands: this manual is a *playbook*, not a *self-contained build spec*. Closing that gap fully requires embedding ~5000+ lines of content inventories, schemas, and executable rules — work that is registered as Pass-21 candidate but not yet done.
+
+---
+
 ## 0. Scope of "next level"
 
 The same playbook scales N5 → N4 → N3 → N2 → N1, but each transition adds:
