@@ -881,12 +881,17 @@ button:disabled { cursor: not-allowed; opacity: 0.5; }
 }
 .card-link:hover .card-action { text-decoration: underline; }
 
-/* Numbered indicator (spec §4.4 — the signature Muji affordance) */
+/* Numbered indicator (spec §4.4 — the signature Muji affordance).
+ * Uses --color-text-muted (4.5:1 contrast on surface) not --color-text-faint
+ * (2.82:1 — fails WCAG AA on body-size text). Faint stays available for
+ * non-critical decorative text where contrast can be lower; the Muji-numbered
+ * marker is small + medium-weight and below the "large text" threshold so
+ * the strict 4.5:1 rule applies. axe-core 4.11 audits aria-hidden text too. */
 .card-index {
   font-size: var(--text-xs);
   font-weight: var(--weight-medium);
   letter-spacing: var(--tracking-label);
-  color: var(--color-text-faint);
+  color: var(--color-text-muted);
   margin: 0 0 var(--space-3);
   font-variant-numeric: tabular-nums;
 }
@@ -2350,7 +2355,10 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
  * more specific than .card-index, so the numbered indicator inherits muted.
  * Promote to faint per spec §4.4. Caught via Claude_Preview MCP QA. */
 .pillar-card .card-index,
-.hub-card .card-index { color: var(--color-text-faint); }
+.hub-card .card-index { color: var(--color-text-muted); }
+/* Color was --color-text-faint pre-2026-05-01; bumped to --color-text-muted
+ * to satisfy axe-core color-contrast (WCAG AA 4.5:1). aria-hidden alone is
+ * not sufficient — axe-core 4.11 still audits decorative text. */
 .pillar-arrow {
   position: absolute; right: var(--space-5); bottom: var(--space-5);
   color: var(--color-text-muted);
