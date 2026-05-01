@@ -2,6 +2,40 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.9.0 - 2026-05-02 (Japanese-first language sweep)
+
+User direction: the learner-facing surface should be in Japanese, not English. Closes a series of parallel cleanups across reading, listening, and shared UI chrome.
+
+### Changed (user-visible)
+- **Dokkai (reading) passage titles → Japanese.** All 30 passage titles in `data/reading.json` rewritten from English (e.g. "My family") to N5-scope Japanese (e.g. わたしの かぞく). Title kanji verified against the 111-entry N5 catalog.
+- **English passage translation panel removed from dokkai.** The "Show English translation" `<details>` block is gone from `js/reading.js`; the corresponding `translation_en` field has been deleted from all 30 passages in `data/reading.json`.
+- **Reading-list metadata Japanified.** Level (`easy`/`medium`/`info-search` → やさしい/ふつう/じょうほうけんさく) and topic (19 distinct values, e.g. `family` → かぞく) now render in Japanese via lookup maps. Data values remain English keys for code stability.
+- **Listening item titles → Japanese.** All 30 `title_en` fields in `data/listening.json` migrated to `title_ja` (e.g. "Where to meet" → どこで 会いますか, "Buying a ticket" → きっぷを 買う). Renderer uses the existing furigana pipeline; kanji-glyph popovers still work.
+- **Listening format taxonomy in kana.** `課題理解 / ポイント理解 / 発話表現` (which contain non-N5 kanji) now render as `かだいりかい (タスクりかい) / ポイントりかい / はつわひょうげん` so the format names stay readable for an N5 learner.
+- **UI page chrome Japanified** across reading + listening modules: page titles ("Reading practice" → どっかい れんしゅう, "Listening practice" → ちょうかい れんしゅう), intro paragraphs, back/start buttons, feedback labels (Correct/Wrong → せいかい/ざんねん), result stats (Score/Accuracy → スコア/せいかいりつ), section toggles (Show passage → ぶんしょうを 見る), expand/collapse-all controls.
+- **Mock-test paper bunpou paper-7 restored.** New `parse_mondai3_passages()` in `tools/build_papers.py` correctly handles passage-grouped Mondai-3 grammar questions (Q91-Q100 from `KnowledgeBank/bunpou_questions_n5.md`); the rationale-leak bug that swallowed the next passage header into Q95's rationale is also fixed (tightened section-break regex to `^#{2,3}\s+(?!Q\d)`).
+- **Bunpou stem N5-kanji cleanup.** Replaced 朝→あさ, 東京→とうきょう, 大阪→おおさか, 公園→こうえん, 牛乳→ぎゅうにゅう, 思います→おもいます, 楽しい→たのしい across 10 occurrences in bunpou paper stems and Mondai-3 passages. Also fixed one goi stem (Q17). Dokkai retains these kanji per its formalized naturalness exception (see JA-28 below).
+
+### Added (invariants — locks the work in)
+- **JA-26** — no duplicate question IDs in `data/questions.json` (closes a parallel-session collision class that hit twice across Pass-15 / Pass-16).
+- **JA-27** — `data/reading.json` and `data/listening.json` may not carry `title_en` or `translation_en` fields. Prevents regression of the EN-removal direction.
+- **JA-28** — `data/papers/dokkai/*.json` content is bounded by N5 catalog ∪ documented exception list (`data/dokkai_kanji_exception.json`, 25 kanji). Any new non-N5 kanji must be either kana-ized or explicitly added to the exception JSON. Bunpou / moji / goi stay strictly N5 via JA-13.
+
+### Removed (cleanup)
+- 16 dead `translation_en` fields in `data/questions.json` that no runtime path read (verified zero `q.translation_en` / `question.translation_en` / `item.translation_en` references). Grammar.json `translation_en` is intentionally retained — `js/learn.js` and `js/review.js` actively render those for grammar-pattern teaching.
+- Redundant `lang="ja"` attributes on wrapper elements in `js/reading.js`. `renderJa()` already wraps output in `<span lang="ja">` so the parent attributes were producing nested duplicates in the DOM; the parent-level attribute is dropped.
+
+### Tooling
+- `tools/fix_dokkai_titles_remove_en.py` — idempotent EN→JA migration for reading.json
+- `tools/fix_listening_titles_ja.py` — idempotent EN→JA migration for listening.json
+- `tools/audit_dokkai_kanji_scope.py` — read-only inventory of non-N5 kanji in dokkai papers (used to seed JA-28's exception list)
+- `tools/fix_remove_dead_translation_en.py` — idempotent removal of dead questions.json fields
+- `tools/fix_pass23_round2.py` and `tools/fix_dedup_q0479_q0488.py` — Pass-23 round 2 audit fixes (multi-correct prompts, scope-leak prompts, q-0479..q-0488 ID dedup)
+
+v1.9.0 / SW v82. **37/37 invariants green** (was 35; added JA-26 + JA-27 + JA-28 across this milestone).
+
+---
+
 ## v1.8.2 - 2026-05-01 (Pass-14 Phase A: delete 38 stub questions)
 
 ### Fixed
