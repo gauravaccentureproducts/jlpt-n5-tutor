@@ -1069,12 +1069,12 @@ ___ ___ ★ ___ いません。
 
 #### Q94 (blank 4)
 
-1. に
+1. で
 2. を
 3. へ
 4. が
 
-**Answer: 3** - direction.
+**Answer: 3** - direction. (Note: に would also be grammatically valid for a motion-verb destination at N5, so it has been replaced with で as a clearly-wrong distractor: 学校で 行きます would mark 学校 as the location of the going-action, which is ungrammatical.)
 
 #### Q95 (blank 5)
 

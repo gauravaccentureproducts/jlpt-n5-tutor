@@ -15,6 +15,7 @@
 - Each passage is shown in a blockquote (`>`) so it visually mirrors the test paper.
 - Questions follow each passage. Choices are numbered 1-4. **Answer**: shows the correct number.
 - Passages use predominantly N5-syllabus kanji and N5 vocabulary. **Naturalness exception:** authentic JLPT N5 reading passages routinely use a small number of common non-N5 kanji (e.g., 部屋, 病院, 教室, 公園, 兄, 妹, 弟, 自分) where forcing kana would harm readability. These passages mirror that practice.
+- **Question-stem kanji policy (formalized 2026-05-01):** question stems may reuse any non-N5 kanji that already appears in the passage they reference, so the question phrasing stays parallel to the source text (e.g., a passage that uses 妹 may have a stem `書いた 人の 妹は 何を べんきょうしますか。`). Standalone non-N5 kanji that are NOT present in the corresponding passage are forbidden in stems and must be written in kana.
 - Distractor choices may contain non-N5 vocabulary where authentic JLPT distractor variety requires it (see header note in `moji_questions_n5.md` for the kanji-scope exception applied to question files).
 - No em dashes (U+2014) appear in this file.
 
@@ -1185,7 +1186,7 @@ _When did the writer climb Mt. Fuji?_
 
 _How was the experience?_
 
-1. たのしくて、簡単だった
+1. たのしくて、らくだった
 2. つまらなかった
 3. つかれたが、けしきが きれいだった
 4. ふじさんに のぼれなかった

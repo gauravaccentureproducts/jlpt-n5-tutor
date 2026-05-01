@@ -29,6 +29,10 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 - **Distractor options** in 表記 (orthography) questions may contain non-N5 kanji because authentic JLPT distractors mimic visually-similar wrong forms - some of which are N4 or higher kanji that look like the N5 target. Forcing N5-only distractors would either require random hiragana (defeats the orthography test) or unrelated N5 kanji (no longer plausible distractors).
 - This exception is scoped strictly to question files and does not relax the catalog rule applied to `vocabulary_n5.md` / `kanji_n5.md` / `grammar_n5.md`.
 
+## Distractor verb-form convention (orthography questions)
+
+In Mondai 2 (orthography), distractor verb forms may be **invented** (not real conjugations) or use **non-N5 kanji** with the same on-yomi as the target. The test asks "which kanji visually belongs in this word", not "is this conjugation pattern independently grammatical". Examples: a 入ります distractor of `出ります` is NOT a real conjugation (the correct form is 出ます); a 立ちます distractor of `経ちます` IS a real verb but uses N3+ kanji. Both are acceptable distractor types because the question is purely orthographic.
+
 ---
 
 ## Mondai 1 - 漢字読み (Kanji Reading)

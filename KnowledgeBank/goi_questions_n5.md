@@ -694,7 +694,7 @@ A: きょうしつに 学生が おおぜい います。
 3. きょうしつには 学生が 一人 います。
 4. きょうしつには 学生が 二人 います。
 
-**Answer: 2** - おおぜい ≈ たくさん (many - direct synonym for people).
+**Answer: 2** - おおぜい (many people) is the closest match among the choices. Strictly, おおぜい is restricted to people while たくさん is general (people, things, abstract); the substitution works here because the noun is 学生 (people).
 
 ### Q61
 
@@ -914,7 +914,7 @@ A: きょうは あつくないです。
 3. きょうは あたたかいです。
 4. きょうは ねむいです。
 
-**Answer: 2** - 暑くない ≈ すずしい (cool). Direct synonym for "not hot."
+**Answer: 2** - by elimination among the four options. Strictly, あつくない (not hot) is broader than すずしい (cool) - "warm" (あたたかい) also qualifies as "not hot" - but the other three options are clearly wrong (あつい = opposite meaning; あたたかい = different temperature property; ねむい = irrelevant property), so すずしい is the closest fit.
 
 ### Q81
 

@@ -591,6 +591,48 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 
 ---
 
+## Pass-17 KnowledgeBank/*.md consolidated audit - 2026-05-01 (8 of 9 ITEMS APPLIED)
+
+Applied the audit at `feedback/jlpt-n5-knowledgebank-md-audit-2026-05-01.md` (1 critical, 3 high, 4 medium, 1 low). 8 actionable items closed; 1 LOW item deliberately deferred.
+
+#### CRITICAL (1) — closed
+
+- [x] **F-17.1** (CRITICAL) **bunpou Q94 (Mondai 3 Passage A blank 4) had two valid answers (に / へ)** — same multi-correct class as the previously-fixed Q50/Q51. **Applied 2026-05-01:** replaced choice 1 (に) with で in `KnowledgeBank/bunpou_questions_n5.md`. With で as a clearly-wrong distractor (学校で 行きます would mark the location of the going-action and is ungrammatical), へ remains the unique correct answer. Sweep performed across 11 questions in bunpou where both に and へ appear in the choice list — Q94 was the ONLY actual multi-correct case; the others have a different correct answer entirely (で / が / を / から), so に+へ-as-distractors are fine.
+
+#### HIGH (3) — all closed
+
+- [x] **F-17.2** (HIGH) **goi Q60, Q80 residual "direct synonym" overclaims** — two more cases that escaped the previous synonym-softening sweep. **Applied 2026-05-01:** softened both rationales. Q60 (おおぜい ≈ たくさん) now reads "...closest match... Strictly, おおぜい is restricted to people while たくさん is general; the substitution works here because the noun is 学生 (people)." Q80 (あつくない ≈ すずしい) now reads "...by elimination... Strictly, あつくない (not hot) is broader than すずしい (cool) - 'warm' (あたたかい) also qualifies as 'not hot' - but the other three options are clearly wrong..." Cross-file grep for `irect synonym|directly equivalent|same as` returns zero hits.
+- [x] **F-17.3** (HIGH) **dokkai stem-kanji policy** — 17 of 102 stems use non-N5 kanji (妹, 家, 朝, 初, 作, 阪, 図, 館). The header documented an exception for *passages* but not stems. **Applied 2026-05-01 (option 1 — formalize the practical pattern):** added a `Question-stem kanji policy` line to the dokkai header stating "question stems may reuse any non-N5 kanji that already appears in the passage they reference, so the question phrasing stays parallel to the source text. Standalone non-N5 kanji that are NOT present in the corresponding passage are forbidden in stems and must be written in kana." The 17 existing stems all satisfy this rule (their non-N5 kanji also appears in the passage), so no content changes were needed.
+- [x] **F-17.4** (HIGH) **vocabulary かれ / かのじょ glosses still marked boyfriend/girlfriend as "more advanced"** — flagged in prior audit, not previously fixed. The boyfriend/girlfriend sense is the *common* spoken sense at N5 level. **Applied 2026-05-01:** rewrote both glosses. かれ now reads "boyfriend; he, him (the third-person sense is somewhat literary; spoken Japanese normally drops the pronoun)"; かのじょ parallel.
+
+#### MEDIUM (4) — 3 closed, 1 closed-by-policy
+
+- [x] **F-17.5** (MEDIUM) **kanji 上 / 下 kun lists include N4 verb readings (あげる / さげる)** — at N5 the standalone use of 上 is overwhelmingly うえ; the verb forms are N4. **Applied 2026-05-01:** kept the readings (so learners who encounter them recognize them) but flagged each with `[N4+ verb reading; listed for recognition only]` so the N5 scope is explicit.
+- [x] **F-17.6** (MEDIUM) **goi remaining "synonym" claims sweep** — searched the file for `irect synonym|directly equivalent|same as`; only the Q60 / Q80 cases were present, both fixed in F-17.2. No further action.
+- [x] **F-17.7** (MEDIUM) **moji invented distractor verb forms** — the test is orthographic (which kanji visually belongs), not conjugation-grammaticality, but the invented distractors could mislead. **Applied 2026-05-01:** added a `Distractor verb-form convention (orthography questions)` section to the moji header explicitly documenting the convention with examples (出ります / 経ちます).
+- [x] **F-17.8** (MEDIUM) **dokkai Q78 distractor uses non-N5 kanji 簡単** — covered by the documented exception, but visually inconsistent. **Applied 2026-05-01:** replaced `たのしくて、簡単だった` with `たのしくて、らくだった` (kana for the same semantic content).
+
+#### LOW (1) — deferred with rationale
+
+- [ ] **F-17.9** (LOW) **vocabulary part-of-speech tags** — audit suggested adding `[noun]`, `[い-adj]`, `[v1]`, etc. tags so the runtime can filter. **Deferred 2026-05-01:** the runtime already has POS data via `data/vocab.json` (built from this MD by `tools/build_data.py` + `tools/tag_vocab_pos.py`). MD-side annotation would be cosmetic for human readers but redundant for the app. ~1000 entries to manually annotate; cost/benefit doesn't justify it. Re-evaluate if a future feature needs raw-MD POS.
+
+#### Side-effect
+
+- 2 em-dash (U+2014) characters were introduced in the Q80 softened rationale; X-6.5 invariant flagged immediately. Replaced with hyphens before commit.
+
+#### CI checks recommended by §5 (not yet wired)
+
+The audit recommends 6 cross-file consistency checks for CI. Three are already covered (X-6.5 em-dash check; JA-13 kanji whitelist; JA-1 stem-kanji scope). Three are scaffolded but not yet wired:
+1. Two-valid-answers detection — `tools/scan_multi_correct.py` exists from Pass-15; could be wired as a non-blocking warn.
+2. Synonym-overclaim regex — could be a one-line addition to `check_content_integrity.py`.
+3. Question-stem-kanji-in-passage cross-check (dokkai) — would need new logic to read both stem and passage and compute set intersection.
+
+Pass-18 candidate: wire these three checks. Not blocking, but valuable preventive infrastructure.
+
+CI: 30/30 content invariants green, 4/4 build-pipeline regression tests pass.
+
+---
+
 ## Pass-15 multi-correct-answer audit - 2026-05-01 (BASIC TIER APPLIED)
 
 Native-teacher review identified MCQs in `data/questions.json` where the stem accepts more than one of the four choices as a grammatically valid completion. Triggered by user-reported example: `（  ）は ほんです。` with options これ/それ/あれ/どれ marked correct=これ — but without spatial context, それ and あれ are equally valid.
@@ -636,17 +678,18 @@ Native-teacher review identified MCQs in `data/questions.json` where the stem ac
 
 Cross-coverage report at `feedback/coverage-comparison.md`. Six N5 grammar patterns have ZERO question coverage in our bank; they appear in `data/grammar.json` but no question references their pattern ID, and a full-text search for their key forms across all 163 questions returns zero hits:
 
-- [x] **F-15.18** (MEDIUM) **n5-130 あげる (give to others)** — **Applied 2026-05-01:** authored 2 MCQs (q-0454 recipient-に, q-0455 object-を).
-- [x] **F-15.19** (MEDIUM) **n5-131 もらう (receive from)** — **Applied 2026-05-01:** authored 2 MCQs (q-0456 source-から, q-0457 object-を).
-- [x] **F-15.20** (MEDIUM) **n5-134 ので (because, softer than から)** — **Applied 2026-05-01:** authored 2 MCQs (q-0458 ので-vs-{ながら,ても,のに}, q-0459 testing the noun+な+ので connector — hits the common mistake from the pattern's `common_mistakes`).
-- [x] **F-15.21** (MEDIUM) **n5-144 Verb-stem + ながら (while doing)** — **Applied 2026-05-01:** authored 2 MCQs (q-0460 verb-stem form ききながら-vs-other-conjugations, q-0461 ながら-vs-other-particle).
-- [x] **F-15.22** (LOW) **n5-148 いつも / たいてい / たまに (always / usually / occasionally)** — **Applied 2026-05-01:** authored 2 MCQs anchoring on frequency phrases — q-0462 (毎日 → いつも) and q-0463 (月に 1かい → たまに). たいてい distractor reserved for future expansion (no question explicitly tests it as the answer; would need a "ほとんど 毎日" anchor that risks ambiguity with いつも).
+- [x] **F-15.18** (MEDIUM) **n5-130 あげる (give to others)** — **Applied 2026-05-01:** authored 2 MCQs (q-0479 recipient-に, q-0480 object-を). _Originally q-0454/0455; renumbered after a parallel Pass-15 P0 commit landed paraphrase questions at the same IDs._
+- [x] **F-15.19** (MEDIUM) **n5-131 もらう (receive from)** — **Applied 2026-05-01:** authored 2 MCQs (q-0481 source-から, q-0482 object-を).
+- [x] **F-15.20** (MEDIUM) **n5-134 ので (because, softer than から)** — **Applied 2026-05-01:** authored 2 MCQs (q-0483 ので-vs-{ながら,ても,のに}, q-0484 testing the noun+な+ので connector — hits the common mistake from the pattern's `common_mistakes`).
+- [x] **F-15.21** (MEDIUM) **n5-144 Verb-stem + ながら (while doing)** — **Applied 2026-05-01:** authored 2 MCQs (q-0485 verb-stem form ききながら-vs-other-conjugations, q-0486 ながら-vs-other-particle).
+- [x] **F-15.22** (LOW) **n5-148 いつも / たいてい / たまに (always / usually / occasionally)** — **Applied 2026-05-01:** authored 2 MCQs anchoring on frequency phrases — q-0487 (毎日 → いつも) and q-0488 (月に 1かい → たまに). たいてい distractor reserved for future expansion (no question explicitly tests it as the answer; would need a "ほとんど 毎日" anchor that risks ambiguity with いつも).
 - [ ] **F-15.23** (LOW) **n5-167 ～んです / ～のです (explanation / emphasis)** — **Skipped Pass-16:** borderline N5/N4 nuance; needs native-teacher input on N5-appropriate framing. Defer to a later pass where the contrast with plain です can be tested without leaking N4 territory.
 
 #### Pass-16 questions added (10) and side-effects
 
-- 10 new MCQs landed: q-0454 .. q-0463. Bank size 163 → 173.
+- 10 new MCQs landed: originally q-0454 .. q-0463; **renumbered to q-0479 .. q-0488 on 2026-05-01 after dedup** (a parallel Pass-15 P0 commit had independently authored 19 questions at q-0454 .. q-0472, colliding with my IDs in q-0454 .. q-0463). Bank size: 163 → 173 (no change post-dedup; the Pass-15 P0 set added separately).
 - Side-effect: 6 out-of-scope kanji introductions caught by JA-13 invariant (兄, 文, 字, 回 across 3 questions) — converted to kana (あに, もじ, じ, かい) in `tools/author_pass16_questions.py` and applied via inline kanji-replacement before commit. JA-13 now PASS again.
+- Dedup repair: `tools/renumber_pass16_dedup.py` is idempotent and documents the collision in `_meta.history`.
 - All 30 content invariants green; 4/4 build-pipeline regression tests pass.
 
 These six patterns produced a "no real questions" experience for ~3% of the curriculum before this pass. Five are now closed; n5-167 remains for native review.

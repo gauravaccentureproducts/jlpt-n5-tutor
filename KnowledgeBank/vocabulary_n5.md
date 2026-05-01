@@ -29,8 +29,8 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 私 (わたし) - I, me
 - 私たち (わたしたち) - we
 - あなた - you
-- かれ - he, him (boyfriend - more advanced sense)
-- かのじょ - she, her (girlfriend - more advanced sense)
+- かれ - boyfriend; he, him (the third-person sense is somewhat literary; spoken Japanese normally drops the pronoun)
+- かのじょ - girlfriend; she, her (the third-person sense is somewhat literary; spoken Japanese normally drops the pronoun)
 - かた - person (polite)
 - 人 (ひと) - person
 - みなさん - everyone (polite)

@@ -268,11 +268,11 @@ Notation:
   - Meaning: small, little
 - **上**
   - On: ジョウ
-  - Kun: うえ, あ(げる)
+  - Kun: うえ, あ(げる) [N4+ verb reading; listed for recognition only]
   - Meaning: up, above
 - **下**
   - On: カ, ゲ
-  - Kun: した, さ(げる)
+  - Kun: した, さ(げる) [N4+ verb reading; listed for recognition only]
   - Meaning: down, below
 - **左**
   - On: サ
