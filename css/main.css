@@ -2014,7 +2014,7 @@ textarea:focus-visible,
   line-height: 1.8;
   white-space: pre-wrap;
 }
-.passage-recap, .reading-translation {
+.passage-recap {
   margin: 8px 0;
   font-size: 13px;
 }

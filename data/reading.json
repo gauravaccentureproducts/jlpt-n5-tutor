@@ -4,9 +4,8 @@
       "id": "n5.read.001",
       "level": "easy",
       "topic": "self-introduction",
-      "title_en": "Self-introduction",
+      "title_ja": "じこしょうかい",
       "ja": "わたしは アンナです。アメリカから 来ました。今、とうきょうの 大学で 日本語を べんきょうしています。しゅみは えいがを 見ることです。どうぞ よろしく おねがいします。",
-      "translation_en": "I'm Anna. I came from America. Right now, I'm studying Japanese at a university in Tokyo. My hobby is watching movies. Pleased to meet you.",
       "audio": "audio/reading/n5.read.001.mp3",
       "questions": [
         {
@@ -86,9 +85,8 @@
       "id": "n5.read.002",
       "level": "easy",
       "topic": "daily routine",
-      "title_en": "Daily routine",
+      "title_ja": "まいにちの せいかつ",
       "ja": "わたしは 毎日 6時に おきます。あさごはんを 食べてから、しごとに 行きます。しごとは 9時から 5時までです。うちに かえってから、テレビを 見ます。10時に ねます。",
-      "translation_en": "Every day I wake up at 6. After eating breakfast, I go to work. Work is from 9 to 5. After getting home, I watch TV. I go to bed at 10.",
       "audio": "audio/reading/n5.read.002.mp3",
       "questions": [
         {
@@ -165,9 +163,8 @@
       "id": "n5.read.003",
       "level": "easy",
       "topic": "weekend plan",
-      "title_en": "Weekend plan",
+      "title_ja": "しゅうまつの よてい",
       "ja": "あした、ともだちと えいがを 見に 行きます。えいがの あとで、レストランで ばんごはんを 食べます。とても たのしみです。",
-      "translation_en": "Tomorrow, I'm going to see a movie with a friend. After the movie, we'll eat dinner at a restaurant. I'm really looking forward to it.",
       "audio": "audio/reading/n5.read.003.mp3",
       "questions": [
         {
@@ -229,9 +226,8 @@
       "id": "n5.read.004",
       "level": "medium",
       "topic": "shopping",
-      "title_en": "At the convenience store",
+      "title_ja": "コンビニで",
       "ja": "きのう、コンビニで パンと コーヒーを 買いました。パンは 200円で、コーヒーは 150円でした。ぜんぶで 350円でした。やすかったです。",
-      "translation_en": "Yesterday, I bought bread and coffee at the convenience store. The bread was 200 yen, and the coffee was 150 yen. The total was 350 yen. It was cheap.",
       "audio": "audio/reading/n5.read.004.mp3",
       "questions": [
         {
@@ -287,9 +283,8 @@
       "id": "n5.read.005",
       "level": "medium",
       "topic": "family",
-      "title_en": "My family",
+      "title_ja": "わたしの かぞく",
       "ja": "わたしの かぞくは 4人です。父と 母と あにが います。父は 先生で、母は いしゃです。あには 大学生です。わたしは こうこうせいです。みんな げんきです。",
-      "translation_en": "My family has 4 people. There's my father, mother, and older brother. Father is a teacher; mother is a doctor. My brother is a university student. I am a high school student. Everyone is well.",
       "audio": "audio/reading/n5.read.005.mp3",
       "questions": [
         {
@@ -374,9 +369,8 @@
       "id": "n5.read.006",
       "level": "medium",
       "topic": "weather",
-      "title_en": "Today's weather",
+      "title_ja": "きょうの てんき",
       "ja": "今日は とても さむいです。あさは あめが ふっていました。今は ふっていませんが、まだ さむいです。あした、ゆきが ふると おもいます。",
-      "translation_en": "Today is very cold. In the morning it was raining. It isn't raining now, but it's still cold. Tomorrow I think it will snow.",
       "audio": "audio/reading/n5.read.006.mp3",
       "questions": [
         {
@@ -440,9 +434,8 @@
       "id": "n5.read.007",
       "level": "info-search",
       "topic": "schedule",
-      "title_en": "Library notice",
+      "title_ja": "としょかんの おしらせ",
       "ja": "としょかんの 時間\nげつようび 〜 きんようび：9:00 〜 21:00\nどようび：10:00 〜 18:00\nにちようび：休み\n本は 二週間まで かりる ことが できます。",
-      "translation_en": "Library hours\nMon-Fri: 9:00-21:00\nSat: 10:00-18:00\nSun: Closed\nBooks can be borrowed for 2 weeks.",
       "audio": "audio/reading/n5.read.007.mp3",
       "questions": [
         {
@@ -507,9 +500,8 @@
       "id": "n5.read.008",
       "level": "medium",
       "topic": "transport",
-      "title_en": "Going to school",
+      "title_ja": "学校へ",
       "ja": "わたしの うちから 学校まで 30分くらい かかります。まず、うちから えきまで あるきます。10分くらいです。そして、でんしゃに のります。20分で 学校に つきます。",
-      "translation_en": "From my house to school takes about 30 minutes. First, I walk from home to the station - about 10 minutes. Then I get on the train. I arrive at school in 20 minutes.",
       "audio": "audio/reading/n5.read.008.mp3",
       "questions": [
         {
@@ -566,9 +558,8 @@
       "id": "n5.read.009",
       "level": "easy",
       "topic": "hobby",
-      "title_en": "My hobby",
+      "title_ja": "わたしの しゅみ",
       "ja": "わたしの しゅみは スポーツです。毎日 あさ こうえんで はしります。土曜日は ともだちと サッカーを します。とても たのしいです。",
-      "translation_en": "My hobby is sports. Every morning I run in the park. On Saturdays I play soccer with friends. It's a lot of fun.",
       "audio": "audio/reading/n5.read.009.mp3",
       "questions": [
         {
@@ -633,9 +624,8 @@
       "id": "n5.read.010",
       "level": "easy",
       "topic": "school",
-      "title_en": "My classroom",
+      "title_ja": "わたしの きょうしつ",
       "ja": "わたしの きょうしつには つくえが 25こ あります。いすも 25こ あります。先生の つくえは おおきいです。まどから こうえんが 見えます。きれいな きょうしつです。",
-      "translation_en": "There are 25 desks in my classroom. There are 25 chairs too. The teacher's desk is big. I can see the park from the window. It's a pretty classroom.",
       "audio": "audio/reading/n5.read.010.mp3",
       "questions": [
         {
@@ -701,9 +691,8 @@
       "id": "n5.read.011",
       "level": "easy",
       "topic": "food",
-      "title_en": "Lunch today",
+      "title_ja": "きょうの ひるごはん",
       "ja": "今日の おひるごはんは ラーメンと サラダでした。ラーメンは あつかったですが、おいしかったです。サラダは すこし からかったです。コーヒーも 飲みました。",
-      "translation_en": "Today's lunch was ramen and salad. The ramen was hot, but delicious. The salad was a bit spicy. I drank coffee too.",
       "audio": "audio/reading/n5.read.011.mp3",
       "questions": [
         {
@@ -767,9 +756,8 @@
       "id": "n5.read.012",
       "level": "easy",
       "topic": "shopping",
-      "title_en": "At the bookstore",
+      "title_ja": "本やで",
       "ja": "きのう ほんやで 日本語の 本を 2さつ 買いました。ぜんぶで 1,500円でした。うちに かえってから よみました。むずかしかったですが、おもしろかったです。",
-      "translation_en": "Yesterday I bought 2 Japanese books at the bookstore. The total was 1500 yen. After getting home, I read them. They were difficult but interesting.",
       "audio": "audio/reading/n5.read.012.mp3",
       "questions": [
         {
@@ -837,9 +825,8 @@
       "id": "n5.read.013",
       "level": "medium",
       "topic": "travel",
-      "title_en": "Trip to Kyoto",
+      "title_ja": "きょうとへの りょこう",
       "ja": "せんしゅう かぞくと きょうとに 行きました。きょうとは 古い まちです。きれいな おてらが たくさん あります。おみやげに おかしを 買いました。とても たのしい りょこうでした。",
-      "translation_en": "Last week I went to Kyoto with my family. Kyoto is an old city. There are many beautiful temples. I bought sweets as souvenirs. It was a very fun trip.",
       "audio": "audio/reading/n5.read.013.mp3",
       "questions": [
         {
@@ -923,9 +910,8 @@
       "id": "n5.read.014",
       "level": "medium",
       "topic": "shopping",
-      "title_en": "New clothes",
+      "title_ja": "あたらしい ふく",
       "ja": "きのう デパートで あたらしい ふくを 買いました。シャツは 3,000円で、ズボンは 5,000円でした。ぜんぶで 8,000円でした。すこし たかかったですが、とても きれいです。",
-      "translation_en": "Yesterday I bought new clothes at a department store. The shirt was 3000 yen, the pants were 5000 yen. The total was 8000 yen. It was a bit expensive, but very nice.",
       "audio": "audio/reading/n5.read.014.mp3",
       "questions": [
         {
@@ -989,9 +975,8 @@
       "id": "n5.read.015",
       "level": "easy",
       "topic": "weather",
-      "title_en": "Spring",
+      "title_ja": "はる",
       "ja": "今は 4月です。だんだん あたたかく なりました。こうえんに さくらが さきました。土曜日に 母と さくらを 見に 行きます。",
-      "translation_en": "It's April now. It's getting warmer. The cherry blossoms are blooming in the park. I'll go see them with my mother on Saturday.",
       "audio": "audio/reading/n5.read.015.mp3",
       "questions": [
         {
@@ -1057,9 +1042,8 @@
       "id": "n5.read.016",
       "level": "medium",
       "topic": "health",
-      "title_en": "I'm sick",
+      "title_ja": "びょうきです",
       "ja": "きのうから あたまが いたいです。せきも すこし 出ます。今日は 学校を 休んで、うちで ねます。あした、いしゃに 行きます。はやく げんきに なりたいです。",
-      "translation_en": "I've had a headache since yesterday. I'm coughing a bit too. Today I'm taking the day off school and resting at home. Tomorrow I'll go to the doctor. I want to get well soon.",
       "audio": "audio/reading/n5.read.016.mp3",
       "questions": [
         {
@@ -1132,9 +1116,8 @@
       "id": "n5.read.017",
       "level": "info-search",
       "topic": "schedule",
-      "title_en": "Cafe menu",
+      "title_ja": "カフェの メニュー",
       "ja": "メニュー\nコーヒー：300円\nおちゃ：250円\nケーキ：500円\nサンドイッチ：600円\nセット (コーヒー＋ケーキ)：700円",
-      "translation_en": "Menu\nCoffee: 300 yen\nTea: 250 yen\nCake: 500 yen\nSandwich: 600 yen\nSet (Coffee + Cake): 700 yen",
       "audio": "audio/reading/n5.read.017.mp3",
       "questions": [
         {
@@ -1181,9 +1164,8 @@
       "id": "n5.read.018",
       "level": "medium",
       "topic": "study",
-      "title_en": "Studying Japanese",
+      "title_ja": "日本語の べんきょう",
       "ja": "わたしは 1年前から 日本語を べんきょうしています。毎日 30分くらい べんきょうします。かんじは むずかしいですが、ひらがなは かんたんです。来年 日本に 行きたいです。",
-      "translation_en": "I've been studying Japanese for 1 year. I study about 30 minutes every day. Kanji is difficult, but hiragana is easy. I want to go to Japan next year.",
       "audio": "audio/reading/n5.read.018.mp3",
       "questions": [
         {
@@ -1258,9 +1240,8 @@
       "id": "n5.read.019",
       "level": "easy",
       "topic": "weekend",
-      "title_en": "Last Sunday",
+      "title_ja": "せんしゅうの 日よう日",
       "ja": "せんしゅうの 日曜日に、ともだちと うみに 行きました。天気は とても よかったです。およぎました。さかなも 見ました。とても たのしかったです。",
-      "translation_en": "Last Sunday, I went to the sea with friends. The weather was very good. We swam. We saw fish too. It was a lot of fun.",
       "audio": "audio/reading/n5.read.019.mp3",
       "questions": [
         {
@@ -1325,9 +1306,8 @@
       "id": "n5.read.020",
       "level": "medium",
       "topic": "school",
-      "title_en": "My teacher",
+      "title_ja": "わたしの 先生",
       "ja": "わたしの 日本語の 先生は たなか先生です。たなか先生は とても しんせつです。いつも にこにこ しています。じゅぎょうは おもしろいです。みんな たなか先生が すきです。",
-      "translation_en": "My Japanese teacher is Mr./Ms. Tanaka. Tanaka-sensei is very kind, always smiling. The classes are interesting. Everyone likes Tanaka-sensei.",
       "audio": "audio/reading/n5.read.020.mp3",
       "questions": [
         {
@@ -1400,9 +1380,8 @@
       "id": "n5.read.021",
       "level": "info-search",
       "topic": "schedule",
-      "title_en": "Flight schedule",
+      "title_ja": "ひこうきの じかん",
       "ja": "とうきょうから おおさかまで ひこうきが あります。\nあさ：6時、7時、8時\nひる：12時、13時\nよる：18時、19時、20時\n時間：1時間\nおとな：25,000円\n子ども：12,500円",
-      "translation_en": "There are flights from Tokyo to Osaka.\nMorning: 6, 7, 8 o'clock\nNoon: 12, 13 o'clock\nEvening: 18, 19, 20 o'clock\nTime: 1 hour\nAdult: 25,000 yen\nChild: 12,500 yen",
       "audio": "audio/reading/n5.read.021.mp3",
       "questions": [
         {
@@ -1467,9 +1446,8 @@
       "id": "n5.read.022",
       "level": "easy",
       "topic": "weekend",
-      "title_en": "Yesterday's evening",
+      "title_ja": "きのうの ばん",
       "ja": "きのうの よる、うちで 母と りょうりを しました。カレーを つくりました。とても おいしかったです。父も あにも 「おいしい」と 言いました。",
-      "translation_en": "Last night, I cooked with my mother at home. We made curry. It was very tasty. My father and elder brother also said it was delicious.",
       "audio": "audio/reading/n5.read.022.mp3",
       "questions": [
         {
@@ -1534,9 +1512,8 @@
       "id": "n5.read.023",
       "level": "medium",
       "topic": "transport",
-      "title_en": "Bus stop notice",
+      "title_ja": "バスていの おしらせ",
       "ja": "バスの じかん\n月曜日 〜 金曜日：8:00、10:00、12:00、14:00、16:00、18:00\n土曜日：9:00、12:00、15:00\n日曜日：休み\n大人：300円　子ども：150円",
-      "translation_en": "Bus times\nMon-Fri: 8, 10, 12, 14, 16, 18\nSat: 9, 12, 15\nSun: No service\nAdult: 300 yen, Child: 150 yen",
       "audio": "audio/reading/n5.read.023.mp3",
       "questions": [
         {
@@ -1602,9 +1579,8 @@
       "id": "n5.read.024",
       "level": "easy",
       "topic": "people",
-      "title_en": "My friend",
+      "title_ja": "わたしの 友だち",
       "ja": "わたしの ともだちは マリアさんです。スペイン人です。今、とうきょうの 大学で べんきょうしています。マリアさんは 日本語が とても じょうずです。",
-      "translation_en": "My friend is Maria. She's Spanish. She's now studying at a university in Tokyo. Maria is very good at Japanese.",
       "audio": "audio/reading/n5.read.024.mp3",
       "questions": [
         {
@@ -1674,9 +1650,8 @@
       "id": "n5.read.025",
       "level": "medium",
       "topic": "daily routine",
-      "title_en": "Saturday morning",
+      "title_ja": "土よう日の あさ",
       "ja": "土曜日の あさ、わたしは はやく おきます。7時に おきて、こうえんで さんぽします。それから、うちで あさごはんを 食べます。よみたい 本も よみます。土曜日が 大すきです。",
-      "translation_en": "Saturday morning, I wake up early. I get up at 7 and walk in the park. Then I have breakfast at home. I also read the books I want to read. I love Saturdays.",
       "audio": "audio/reading/n5.read.025.mp3",
       "questions": [
         {
@@ -1749,9 +1724,8 @@
       "id": "n5.read.026",
       "level": "easy",
       "topic": "shopping",
-      "title_en": "Buying fruit",
+      "title_ja": "くだものを かいに",
       "ja": "やおやで くだものを 買いました。りんごを 3つと、バナナを 5本 買いました。ぜんぶで 700円でした。とても やすかったです。",
-      "translation_en": "I bought fruit at the greengrocer. I bought 3 apples and 5 bananas. The total was 700 yen. It was very cheap.",
       "audio": "audio/reading/n5.read.026.mp3",
       "questions": [
         {
@@ -1812,9 +1786,8 @@
       "id": "n5.read.027",
       "level": "medium",
       "topic": "request",
-      "title_en": "A note from a friend",
+      "title_ja": "友だちからの メモ",
       "ja": "ヤマダさんへ\nあした 1時に えきの まえで 会いましょう。いっしょに カフェで おちゃを 飲みませんか。それから、デパートで かいものを しましょう。\nスズキより",
-      "translation_en": "To Yamada-san,\nLet's meet at 1 in front of the station tomorrow. Won't you have tea at a cafe with me? Then let's go shopping at the department store.\nFrom Suzuki",
       "audio": "audio/reading/n5.read.027.mp3",
       "questions": [
         {
@@ -1879,9 +1852,8 @@
       "id": "n5.read.028",
       "level": "medium",
       "topic": "room",
-      "title_en": "My room",
+      "title_ja": "わたしの へや",
       "ja": "わたしの へやは あまり 大きくないです。ベッドと つくえと いすが あります。本だなには たくさんの 本が あります。まどから にわが 見えます。とても しずかな へやです。",
-      "translation_en": "My room isn't very big. It has a bed, a desk, and a chair. There are many books on the bookshelf. I can see the garden from the window. It's a very quiet room.",
       "audio": "audio/reading/n5.read.028.mp3",
       "questions": [
         {
@@ -1952,9 +1924,8 @@
       "id": "n5.read.029",
       "level": "easy",
       "topic": "weather",
-      "title_en": "Summer",
+      "title_ja": "なつ",
       "ja": "なつは とても あついです。毎日 30どより 高いです。よる、エアコンを つけて ねます。なつ休みに うみに 行きたいです。",
-      "translation_en": "Summer is very hot. Every day it's over 30 degrees. I sleep with the air conditioner on at night. I want to go to the sea during summer vacation.",
       "audio": "audio/reading/n5.read.029.mp3",
       "questions": [
         {
@@ -2017,9 +1988,8 @@
       "id": "n5.read.030",
       "level": "medium",
       "topic": "directions",
-      "title_en": "How to get to the post office",
+      "title_ja": "ゆうびんきょくへの 行きかた",
       "ja": "えきの 出口を 出て、まっすぐ 行きます。はじめの しんごうを 右に まがります。100メートルくらい あるいて ください。左に ゆうびんきょくが あります。あいています：月〜金の 9時から 17時まで。",
-      "translation_en": "Exit the station, go straight. Turn right at the first traffic light. After about 100 meters, the post office is on your left. Open: Mon-Fri, 9:00 to 17:00.",
       "audio": "audio/reading/n5.read.030.mp3",
       "questions": [
         {
