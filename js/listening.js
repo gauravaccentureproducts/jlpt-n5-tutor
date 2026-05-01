@@ -57,12 +57,12 @@ function renderIndex(container) {
     <h2>Listening practice</h2>
     <p>JLPT N5 listening drills in three formats. Each item plays an audio clip; you pick the correct response.</p>
     ${Object.entries(byFormat).map(([fmt, list]) => `
-      <section class="listening-section">
-        <h3>${esc(FORMATS[fmt] || fmt)} <span class="muted small">(${list.length})</span></h3>
+      <details class="listening-section">
+        <summary><h3>${esc(FORMATS[fmt] || fmt)} <span class="muted small">(${list.length})</span></h3></summary>
         <ul class="listening-list">
           ${list.map(it => `<li><button class="listening-pick" data-id="${esc(it.id)}">${esc(it.title_en || it.id)}</button></li>`).join('')}
         </ul>
-      </section>
+      </details>
     `).join('')}
   `;
   container.querySelectorAll('[data-id]').forEach(btn => {

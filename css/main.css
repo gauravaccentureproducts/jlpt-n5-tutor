@@ -1386,7 +1386,8 @@ textarea:focus-visible,
 .reading-audio { margin: 10px 0; }
 .reading-audio audio { width: 100%; }
 
-/* Listening module */
+/* Listening module — sections are collapsible <details>; same +/- pattern
+ * as the Grammar TOC supersections. */
 .listening-section {
   background: var(--c-surface);
   border: 1px solid var(--c-border);
@@ -1394,6 +1395,29 @@ textarea:focus-visible,
   padding: 14px 18px;
   margin: 12px 0;
 }
+.listening-section > summary {
+  cursor: pointer;
+  list-style: none;
+  padding-right: 24px;
+  position: relative;
+  user-select: none;
+}
+.listening-section > summary::-webkit-details-marker { display: none; }
+.listening-section > summary::after {
+  content: "+";
+  position: absolute;
+  right: 0; top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--c-text-muted, #666);
+}
+.listening-section[open] > summary::after { content: "−"; }
+.listening-section > summary h3 {
+  display: inline;
+  margin: 0;
+  font-size: 16px;
+}
+.listening-section[open] > summary { margin-bottom: 12px; }
 .listening-list { list-style: none; padding: 0; margin: 0; }
 .listening-list li { margin: 4px 0; }
 .listening-pick {
@@ -1606,8 +1630,26 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   .hub-card { transition: none; }
   .hub-card:hover { transform: none; }
 }
-.vocab-toc .vocab-section { margin: 8px 0; padding: 10px 14px; background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r); }
-.vocab-toc .vocab-section summary { cursor: pointer; padding: 4px 0; min-height: 32px; }
+.vocab-toc .vocab-section { margin: 12px 0; padding: 14px 18px; background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r); }
+.vocab-toc .vocab-section > summary {
+  cursor: pointer;
+  list-style: none;
+  padding-right: 24px;
+  position: relative;
+  user-select: none;
+  min-height: 32px;
+}
+.vocab-toc .vocab-section > summary::-webkit-details-marker { display: none; }
+.vocab-toc .vocab-section > summary::after {
+  content: "+";
+  position: absolute;
+  right: 0; top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--c-text-muted, #666);
+}
+.vocab-toc .vocab-section[open] > summary::after { content: "−"; }
+.vocab-toc .vocab-section[open] > summary { margin-bottom: 12px; }
 .vocab-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
 .vocab-table th, .vocab-table td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--c-border); font-size: 14px; }
 .vocab-table th { font-weight: 600; background: var(--c-bg); }

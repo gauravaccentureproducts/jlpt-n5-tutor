@@ -113,30 +113,67 @@ function renderHub(container) {
   `;
 }
 
+// Render-time mapping: 40 fine-grained vocab sections -> 6 super-sections.
+// Same pattern as GRAMMAR_SUPERCATS in renderTOC. Data file unchanged.
+const VOCAB_SUPERSECTS = [
+  ['People and Body', [
+    '1. People - Pronouns and Self', '2. People - Family',
+    '3. People - Roles', '4. Body Parts',
+  ]],
+  ['Demonstratives, Questions, Numbers, Time', [
+    '5. Demonstratives', '6. Question Words', '7. Numbers',
+    '8. Native Counters (つ-series)', '9. Counters (Common)',
+    '10. Time - General', '11. Time - Days, Weeks, Months, Years',
+    '12. Time - Frequency / Sequence',
+  ]],
+  ['Places and Things', [
+    '13. Locations and Places (general)', '14. Nature and Weather',
+    '15. Animals', '16. Food and Drink - General', '17. Food - Items',
+    '18. Drinks', '19. Tableware and Cooking', '20. Colors',
+    '21. Clothing and Accessories', '22. Money and Shopping',
+    '23. Transport', '24. School and Study',
+    '25. Languages and Countries', '26. House and Furniture',
+  ]],
+  ['Verbs', [
+    '27. Verbs - Group 1 (う-verbs)', '28. Verbs - Group 2 (る-verbs)',
+    '29. Verbs - Irregular and する-verbs', '30. Verbs - Existence and Possession',
+  ]],
+  ['Adjectives and Function Words', [
+    '31. い-Adjectives', '32. な-Adjectives', '33. Adverbs',
+    '34. Conjunctions', '35. Particles (functional vocabulary)',
+    '36. Greetings and Set Phrases',
+  ]],
+  ['Misc', [
+    '37. Common Nouns - Miscellaneous', '38. Sounds and Voice',
+    '39. Function / Filler Expressions', '40. Misc Useful Items',
+  ]],
+];
+
+function vocabSuperSectionFor(section) {
+  for (const [supersect, members] of VOCAB_SUPERSECTS) {
+    if (members.includes(section)) return supersect;
+  }
+  return 'Misc';  // safe fallback
+}
+
 function renderVocabList(container, data) {
   const entries = data.entries || [];
-  const bySection = new Map();
+  const bySuper = new Map();
+  for (const [s] of VOCAB_SUPERSECTS) bySuper.set(s, []);
   for (const e of entries) {
-    const key = e.section || 'Other';
-    if (!bySection.has(key)) bySection.set(key, []);
-    bySection.get(key).push(e);
+    const sup = vocabSuperSectionFor(e.section || 'Other');
+    bySuper.get(sup).push(e);
   }
-  const sectionKeys = [...bySection.keys()].sort((a, b) => {
-    const na = parseInt(a, 10); const nb = parseInt(b, 10);
-    if (!isNaN(na) && !isNaN(nb)) return na - nb;
-    return a.localeCompare(b);
-  });
   const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  // Strip the leading "NN. " from chip labels so the chip rail scans clean.
-  const chipLabel = (k) => k.replace(/^\d+\.\s*/, '');
-  const jumpItems = sectionKeys.map(k => `
-    <button type="button" class="cat-chip" data-jump="vocab-${slugify(k)}">
-      <span class="cat-chip-label">${esc(chipLabel(k))}</span>
-      <span class="cat-chip-count">${bySection.get(k).length}</span>
-    </button>
-  `).join('');
-  const sections = sectionKeys.map((key, idx) => {
-    const items = bySection.get(key);
+
+  const sections = [...bySuper.entries()].map(([sup, items]) => {
+    // Sort items within a supersection by their original section number then by form
+    items.sort((a, b) => {
+      const na = parseInt(a.section || '', 10);
+      const nb = parseInt(b.section || '', 10);
+      if (!isNaN(na) && !isNaN(nb) && na !== nb) return na - nb;
+      return (a.form || '').localeCompare(b.form || '');
+    });
     const cards = items.map(v => `
       <a class="vocab-card" href="#/learn/vocab/${encodeURIComponent(v.form || '')}">
         <span class="vocab-form" lang="ja">${esc(v.form || '')}</span>
@@ -144,36 +181,23 @@ function renderVocabList(container, data) {
         <span class="vocab-gloss">${esc(v.gloss || '')}</span>
       </a>
     `).join('');
-    // First section open as a preview; the other 39 collapsed to avoid a wall of cards.
-    const openAttr = idx === 0 ? 'open' : '';
     return `
-      <details class="vocab-section" id="vocab-${slugify(key)}" ${openAttr}>
-        <summary><strong>${esc(key)}</strong> <span class="muted small">(${items.length})</span></summary>
+      <details class="vocab-section" id="vocab-${slugify(sup)}">
+        <summary><strong>${esc(sup)}</strong> <span class="muted small">(${items.length})</span></summary>
         <div class="vocab-grid">${cards}</div>
       </details>
     `;
   }).join('');
+
   container.innerHTML = `
     <article class="vocab-toc">
       <a class="back-link" href="#/learn">← Back to Learn</a>
       <h2>Vocabulary</h2>
-      <p class="page-lede">${entries.length} N5 words across ${sectionKeys.length} sections. Jump to a topic or scroll.</p>
-      <nav class="cat-jump" aria-label="Vocabulary section jump menu">
-        ${jumpItems}
-      </nav>
+      <p class="page-lede">${entries.length} N5 words in ${VOCAB_SUPERSECTS.length} sections.</p>
       ${sections}
     </article>
   `;
 
-  // Click chip -> open the target section + smooth-scroll to it.
-  container.querySelectorAll('[data-jump]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const target = container.querySelector(`#${btn.dataset.jump}`);
-      if (!target) return;
-      if (target.tagName === 'DETAILS') target.open = true;
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
 }
 
 function renderVocabDetail(container, vocabData, grammarData, form) {

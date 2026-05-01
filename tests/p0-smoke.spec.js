@@ -68,14 +68,18 @@ test.describe('P0 smoke - core navigation', () => {
     await expect(page.getByText('意味')).toBeVisible();
   });
 
-  test('Vocab list has 40 sections with chip jump menu, only first open', async ({ page }) => {
+  test('Vocab list collapses 40 categories into 6 super-sections, all closed', async ({ page }) => {
+    // 40 fine-grained sections collapsed into 6 super-sections
+    // (changed 2026-05-01) following the same pattern as Grammar TOC.
+    // All sections collapsed by default; chip jump menu removed.
     await page.goto('/#/learn/vocab');
     await expect(page.locator('h2')).toContainText('Vocabulary');
-    await expect(page.locator('details.vocab-section')).toHaveCount(40);
-    await expect(page.locator('.cat-chip')).toHaveCount(40);
-    // Default-open invariant from the Brief 2 follow-up
+    await expect(page.locator('details.vocab-section')).toHaveCount(6);
+    // No chip menu anymore
+    await expect(page.locator('.cat-chip')).toHaveCount(0);
+    // No section default-open
     const open = await page.locator('details.vocab-section[open]').count();
-    expect(open).toBe(1);
+    expect(open).toBe(0);
   });
 
   test('Kanji index has 106 cards, each linking to a glyph detail', async ({ page }) => {
