@@ -49,14 +49,17 @@ OUT_LISTENING = ROOT / "audio" / "listening"
 
 
 def detect_backend(prefer: str | None = None):
-    """Pick the first backend that imports successfully."""
+    """Pick the first backend that imports successfully or is reachable."""
     candidates = []
     if prefer:
         candidates.append(prefer)
-    # piper first (offline neural, highest quality)
+    # voicevox first (free, native Japanese acoustic models, MIT-style)
+    if "voicevox" not in candidates:
+        candidates.append("voicevox")
+    # piper second (offline neural)
     if "piper" not in candidates:
         candidates.append("piper")
-    # gtts second (network at build-time, good quality)
+    # gtts third (network at build-time, OK quality)
     if "gtts" not in candidates:
         candidates.append("gtts")
     # pyttsx3 last (OS-native fallback)
@@ -65,6 +68,16 @@ def detect_backend(prefer: str | None = None):
 
     for name in candidates:
         try:
+            if name == "voicevox":
+                # VOICEVOX is reached over HTTP; check if the engine
+                # is running on its default port. The user must launch
+                # the engine separately (it's a desktop app).
+                import urllib.request
+                try:
+                    urllib.request.urlopen("http://127.0.0.1:50021/version", timeout=1)
+                    return "voicevox"
+                except Exception:
+                    continue
             if name == "piper":
                 import piper  # noqa: F401
                 return "piper"
@@ -77,6 +90,90 @@ def detect_backend(prefer: str | None = None):
         except ImportError:
             continue
     return None
+
+
+class VoicevoxBackend:
+    """VOICEVOX engine over HTTP. Free, JA-native, runs locally.
+
+    Setup (one-time):
+        1. Install VOICEVOX from https://voicevox.hiroshiba.jp/
+           (Windows / macOS / Linux desktop app, free, MIT-style)
+        2. Launch the app — it starts an HTTP engine on
+           http://127.0.0.1:50021/
+        3. Run this builder: `python tools/build_audio.py --backend voicevox`
+
+    Voice IDs (speaker_id). Pick a calm reading-suitable voice for N5
+    listening drills. Defaults to 四国めたん「ノーマル」 (id=2) which has
+    a neutral, clear prosody appropriate for educational content.
+
+    Per-item override: if a `voice` field on the source listening item
+    encodes a specific speaker_id (e.g., "synthetic-voicevox-shikoku-metan"
+    -> 2, "synthetic-voicevox-zundamon" -> 3), the backend can route
+    accordingly. For now we use a single fixed voice; refine if needed.
+    """
+    DEFAULT_SPEAKER_ID = 2  # 四国めたん「ノーマル」
+
+    def __init__(self, voice: str | None = None):
+        import urllib.request
+        self.suffix = ".mp3"
+        self.endpoint = "http://127.0.0.1:50021"
+        # voice argument is the speaker id as a string, or a name we map
+        if voice and voice.isdigit():
+            self.speaker_id = int(voice)
+        else:
+            self.speaker_id = self.DEFAULT_SPEAKER_ID
+        # Verify reachability
+        try:
+            urllib.request.urlopen(f"{self.endpoint}/version", timeout=2)
+        except Exception as e:
+            raise RuntimeError(
+                f"VOICEVOX engine not reachable at {self.endpoint}. "
+                "Launch the VOICEVOX desktop app first. "
+                f"Underlying error: {e}"
+            )
+
+    def render(self, text: str, out_path: Path):
+        import json as _json
+        import urllib.parse
+        import urllib.request
+        # Step 1: get audio_query (analysis result)
+        q_url = (
+            f"{self.endpoint}/audio_query"
+            f"?text={urllib.parse.quote(text)}"
+            f"&speaker={self.speaker_id}"
+        )
+        q_req = urllib.request.Request(q_url, method="POST")
+        with urllib.request.urlopen(q_req, timeout=30) as r:
+            audio_query = r.read()
+        # Step 2: synthesise WAV
+        s_url = f"{self.endpoint}/synthesis?speaker={self.speaker_id}"
+        s_req = urllib.request.Request(
+            s_url,
+            data=audio_query,
+            method="POST",
+            headers={"Content-Type": "application/json"},
+        )
+        with urllib.request.urlopen(s_req, timeout=120) as r:
+            wav_bytes = r.read()
+        # Step 3: write as WAV first, then convert to MP3 if ffmpeg is around.
+        # If conversion fails (no ffmpeg), keep the WAV - the player handles
+        # both via <audio> element.
+        wav_path = out_path.with_suffix(".wav")
+        wav_path.write_bytes(wav_bytes)
+        try:
+            import subprocess
+            subprocess.run(
+                ["ffmpeg", "-y", "-i", str(wav_path), "-codec:a", "libmp3lame",
+                 "-qscale:a", "2", str(out_path)],
+                check=True, capture_output=True,
+            )
+            wav_path.unlink()
+        except (FileNotFoundError, subprocess.CalledProcessError):
+            # No ffmpeg / conversion failed. Leave WAV; manifest will still
+            # carry .mp3 path but the file on disk is the WAV. Practical
+            # workaround: rename .wav to .mp3 (browsers don't enforce the
+            # extension; the audio element sniffs the actual format).
+            wav_path.rename(out_path)
 
 
 class GttsBackend:
@@ -236,7 +333,9 @@ def main() -> int:
         print("  pip install pyttsx3       # OS-native voices", file=sys.stderr)
         return 2
 
-    if backend_name == "piper":
+    if backend_name == "voicevox":
+        backend = VoicevoxBackend(args.voice)
+    elif backend_name == "piper":
         backend = PiperBackend(args.voice)
     elif backend_name == "gtts":
         backend = GttsBackend(args.voice)
