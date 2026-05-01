@@ -3783,5 +3783,6 @@
       "skipped": true,
       "voice": "synthetic-gtts"
     }
-  ]
+  ],
+  "_audit_note_2026_05_01": "Listening items 13-30 declare voice='synthetic-voicevox-shikoku-metan' in data/listening.json but have NO entries in this manifest because the actual MP3 files were never generated to audio/listening/. The 'voice' field is aspirational metadata; until VOICEVOX audio is actually rendered and committed, those items run silently. JA-15 enforces that every manifest entry resolves to a real file. Audit doc: feedback/jlpt-n5-consolidated-audit-2026-05-01.md §2.3. Pending action: regenerate VOICEVOX audio + add manifest entries together."
 }

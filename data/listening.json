@@ -5,7 +5,7 @@
       "format": "task",
       "title_en": "Where to meet",
       "audio": "audio/listening/n5.listen.001.mp3",
-      "script_ja": "男の人と 女の人が 話しています。あした、二人は どこで 会いますか。\n男：あした、えいがを 見に 行きませんか。\n女：いいですね。何時に 会いますか。\n男：3時に えきの 前で どうですか。\n女：えきの 前は 人が おおいですね。カフェの 前で 会いましょう。\n男：はい、わかりました。",
+      "script_ja": "男の人と 女の人が 話しています。あした、二人は どこで 会いますか。\n男：あした、えいがを 見に 行きませんか。\n女：いいですね。何時に 会いますか。\n男：三時に えきの 前で どうですか。\n女：えきの 前は 人が おおいですね。カフェの 前で 会いましょう。\n男：はい、わかりました。",
       "prompt_ja": "あした、二人は どこで 会いますか。",
       "choices": [
         "えきの 前",
@@ -37,7 +37,7 @@
       "format": "task",
       "title_en": "What time to leave",
       "audio": "audio/listening/n5.listen.003.mp3",
-      "script_ja": "男の人と 女の人が 話しています。あした 何時に うちを 出ますか。\n女：あしたの あさ、何時に 出ますか。\n男：そうですね。9時の でんしゃに のりたいです。\n女：では、うちを 8時半に 出ましょう。\n男：いいですね。そう しましょう。",
+      "script_ja": "男の人と 女の人が 話しています。あした 何時に うちを 出ますか。\n女：あしたの あさ、何時に 出ますか。\n男：そうですね。九時の でんしゃに のりたいです。\n女：では、うちを 八時半に 出ましょう。\n男：いいですね。そう しましょう。",
       "prompt_ja": "あした 何時に うちを 出ますか。",
       "choices": [
         "8時",
@@ -137,7 +137,7 @@
       "format": "utterance",
       "title_en": "Asking for the time",
       "audio": "audio/listening/n5.listen.009.mp3",
-      "script_ja": "（しらない人に 時間を 聞く とき）\n1. 何時から はじまりますか。\n2. すみません、いま 何時ですか。\n3. どこに 行きますか。",
+      "script_ja": "（しらない人に 時間を 聞く とき）",
       "prompt_ja": "あなたは いま 何時か しりたいです。何と 言いますか。",
       "choices": [
         "何時から はじまりますか。",
@@ -152,7 +152,7 @@
       "format": "utterance",
       "title_en": "Buying a ticket",
       "audio": "audio/listening/n5.listen.010.mp3",
-      "script_ja": "（えきの まどぐちで）\n1. このきっぷは いくらですか。\n2. とうきょうまで 一まい おねがいします。\n3. どようびに 行きます。",
+      "script_ja": "（えきの まどぐちで）",
       "prompt_ja": "あなたは とうきょうまでの きっぷを 一まい かいたいです。何と 言いますか。",
       "choices": [
         "このきっぷは いくらですか。",
@@ -167,7 +167,7 @@
       "format": "utterance",
       "title_en": "Refusing politely",
       "audio": "audio/listening/n5.listen.011.mp3",
-      "script_ja": "（友だちが ケーキを すすめました。でも、もう おなかが いっぱいです）\n1. ありがとう、いただきます。\n2. すみません、もう おなかが いっぱいです。\n3. もう 一つ ください。",
+      "script_ja": "（友だちが ケーキを すすめました。でも、もう おなかが いっぱいです）",
       "prompt_ja": "ともだちが ケーキを すすめました。たべたく ありません。何と 言いますか。",
       "choices": [
         "ありがとうございます、いただきます。",
@@ -182,7 +182,7 @@
       "format": "utterance",
       "title_en": "Greeting in the morning",
       "audio": "audio/listening/n5.listen.012.mp3",
-      "script_ja": "（あさ、先生に 会った とき）\n1. こんばんは。\n2. おはようございます。\n3. おやすみなさい。",
+      "script_ja": "（あさ、先生に 会った とき）",
       "prompt_ja": "あさ、学校で 先生に 会いました。何と 言いますか。",
       "choices": [
         "こんばんは。",
@@ -197,7 +197,7 @@
       "format": "task",
       "title_en": "What time to meet",
       "audio": "audio/listening/n5.listen.013.mp3",
-      "script_ja": "A: あした 学校で 会いましょう。\nB: はい。何時に 会いますか。\nA: 9時はんに しましょう。\nB: わかりました。",
+      "script_ja": "A: あした 学校で 会いましょう。\nB: はい。何時に 会いますか。\nA: 九時はんに しましょう。\nB: わかりました。",
       "prompt_ja": "あした 何時に 会いますか。",
       "choices": [
         "8時",
@@ -333,7 +333,7 @@
       "format": "point",
       "title_en": "Library hours",
       "audio": "audio/listening/n5.listen.021.mp3",
-      "script_ja": "学生: としょかんは 何時から 何時までですか。\n先生: 月よう日から 金よう日までは 9時から 5時までです。 土ようびは 1時から 4時までです。",
+      "script_ja": "学生: としょかんは 何時から 何時までですか。\n先生: 月よう日から 金よう日までは 九時から 五時までです。 土ようびは 一時から 四時までです。",
       "prompt_ja": "月よう日の としょかんは 何時から 何時までですか。",
       "choices": [
         "8時から 4時まで",
@@ -384,7 +384,7 @@
       "format": "point",
       "title_en": "Who is coming today",
       "audio": "audio/listening/n5.listen.024.mp3",
-      "script_ja": "母: 今日は だれが 来ますか。\n子: 父の 先生と、母の 友だちが 来ます。 父も 6時に 来ます。\n母: わかりました。",
+      "script_ja": "母: 今日は だれが 来ますか。\n子: 父の 先生と、母の 友だちが 来ます。 父も 六時に 来ます。\n母: わかりました。",
       "prompt_ja": "今日は だれが 来ますか。",
       "choices": [
         "父・母・先生",

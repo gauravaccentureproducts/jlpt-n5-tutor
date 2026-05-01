@@ -371,7 +371,11 @@ EXPECTED_PRIMARY_READING = {
     "千": "せん", "本": "ほん", "日": "にち", "時": "じ", "分": "ふん",
     "円": "えん", "月": "がつ", "学": "がく", "生": "せい", "先": "せん",
     "半": "はん", "番": "ばん", "国": "こく", "後": "あと", "会": "かい",
-    "車": "しゃ", "高": "こう", "長": "ちょう", "安": "あん", "新": "しん",
+    "車": "しゃ", "新": "しん",
+    # 高/長/安: kun-yomi primary (Pass-15 consolidated audit §2.1, applied
+    # 2026-05-01). At N5, the i-adjective use (高い/長い/安い) is the
+    # high-frequency standalone form; on-yomi compounds are mostly N4+.
+    "高": "たか", "長": "なが", "安": "やす",
     "中": "ちゅう", "外": "がい", "東": "とう", "年": "ねん", "人": "にん",
 }
 
@@ -767,6 +771,9 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-19", "Reading info-search has format_type", lambda: _check_ja_19_reading_info_search_format()),
     ("JA-20", "Reading choices kanji subset of passage", lambda: _check_ja_20_reading_choices_kanji()),
     ("JA-21", "N4-grammar markers require tier=late_n5", lambda: _check_ja_21_n4_grammar_tier_flag()),
+    ("JA-22", "Kanji kun readings deduplicated", lambda: _check_ja_22_kun_dedup()),
+    ("JA-23", "Listening script choices match choices array", lambda: _check_ja_23_listening_script_choices_match()),
+    ("JA-24", "i-adj kanji primary reading is kun-yomi", lambda: _check_ja_24_iadj_kanji_primary_kun()),
 ]
 
 
@@ -1133,6 +1140,114 @@ def _check_ja_19_reading_info_search_format() -> list[str]:
             failures.append(
                 f"JA-19 {pid} format_type {p['format_type']!r} not in "
                 f"allowed set {sorted(allowed_formats)}"
+            )
+    return failures
+
+
+def _check_ja_22_kun_dedup() -> list[str]:
+    """Every kanji's `kun` reading list in n5_kanji_readings.json must
+    contain no duplicate entries. Pass-15 consolidated audit §2.2 found
+    10 entries with repeats (二/七/分/見/聞/入/立/休/高/白) — artefacts
+    of stripping okurigana.
+    """
+    failures: list[str] = []
+    path = ROOT / "data" / "n5_kanji_readings.json"
+    if not path.exists():
+        return ["JA-22: data/n5_kanji_readings.json missing"]
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-22: parse error: {e}"]
+    for k, entry in data.items():
+        kun = entry.get("kun", [])
+        if not isinstance(kun, list):
+            continue
+        if len(kun) != len(set(kun)):
+            seen = set()
+            dups = []
+            for r in kun:
+                if r in seen and r not in dups:
+                    dups.append(r)
+                seen.add(r)
+            failures.append(
+                f"JA-22 kanji '{k}' has duplicate kun reading(s): "
+                f"{dups} (full list: {kun})"
+            )
+    return failures
+
+
+def _check_ja_23_listening_script_choices_match() -> list[str]:
+    """Listening utterance items that embed numbered choices in
+    `script_ja` (style: '1. xxx\\n2. yyy\\n3. zzz') must have those exact
+    strings in the `choices` array. Pass-15 consolidated audit §1.1
+    found n5.listen.011 mismatch (script said 'ありがとう' but choices
+    array said 'ありがとうございます') — a direct grading bug.
+
+    We do not require items to embed numbered choices; this check only
+    fires when items DO embed them and validates consistency.
+    """
+    failures: list[str] = []
+    path = ROOT / "data" / "listening.json"
+    if not path.exists():
+        return ["JA-23: data/listening.json missing"]
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-23: parse error: {e}"]
+    for item in data.get("items", []):
+        script = item.get("script_ja", "")
+        choices = item.get("choices", [])
+        if not script or not choices:
+            continue
+        # Extract numbered lines: '1. xxx', '2. yyy' etc.
+        embedded: list[str] = []
+        for line in script.split("\n"):
+            m = re.match(r"^\s*(\d+)\.\s*(.+?)\s*$", line)
+            if m:
+                embedded.append(m.group(2).strip())
+        if not embedded:
+            continue  # No embedded choices; nothing to check.
+        # Each embedded choice must appear in the choices array.
+        for emb in embedded:
+            if emb not in choices:
+                failures.append(
+                    f"JA-23 {item.get('id','?')} embedded script choice "
+                    f"{emb!r} not found in choices array {choices!r}"
+                )
+    return failures
+
+
+def _check_ja_24_iadj_kanji_primary_kun() -> list[str]:
+    """For kanji whose most common N5 use is as an i-adjective, the
+    `primary` reading in n5_kanji_readings.json must be the kun-yomi.
+    Pass-15 consolidated audit §2.1: 高/長/安 had on-yomi primaries
+    that mis-rendered the high-frequency standalone use 高い/長い/安い.
+
+    The list is curated; new i-adjective kanji can be added when N5
+    scope shifts.
+    """
+    IADJ_KANJI_EXPECTED_KUN = {
+        "高": "たか",
+        "長": "なが",
+        "安": "やす",
+    }
+    failures: list[str] = []
+    path = ROOT / "data" / "n5_kanji_readings.json"
+    if not path.exists():
+        return ["JA-24: data/n5_kanji_readings.json missing"]
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-24: parse error: {e}"]
+    for k, expected_kun in IADJ_KANJI_EXPECTED_KUN.items():
+        if k not in data:
+            continue  # JA-12 already catches missing entries.
+        actual = data[k].get("primary")
+        if actual != expected_kun:
+            failures.append(
+                f"JA-24 kanji '{k}' primary={actual!r} but most-common "
+                f"N5 use is i-adjective {k}い (kun {expected_kun!r}). "
+                f"Set primary={expected_kun!r}."
             )
     return failures
 

@@ -1,15 +1,15 @@
 {
   "_meta": {
     "schema_version": "1.0",
-    "question_count": 198,
+    "question_count": 223,
     "type_distribution": {
-      "mcq": 168,
+      "mcq": 193,
       "sentence_order": 16,
       "text_input": 14
     },
     "id_range": {
       "first": "q-0001",
-      "last": "q-0488"
+      "last": "q-0503"
     },
     "id_gap_policy": "documented",
     "id_gap_explanation": "IDs are non-contiguous. The declared range q-0001..q-0433 spans 433 slots but only 143 are populated (290 missing). Cause: bulk deletions across audit passes (Pass-9 to Pass-14) without renumbering. Specifically: Pass-9 removed first-edition stubs (q-0052..q-0219), Pass-12 removed duplicates / corrupted items, Pass-14 (2026-05-01) removed 38 pattern-meta stubs (q-0280..q-0416 family). Renumbering was rejected as too risky — any external reference (URL bookmarks of past test results, exported localStorage state, verification.md cross-references) would break unpredictably. Per F-14.6 closure: gaps are accepted as historical record. Tooling MUST treat IDs as opaque strings, not contiguous-integer suffixes.",
@@ -69,13 +69,14 @@
       "Pass-14 (2026-04-30 audit, 2026-05-01 Phase A applied): 8 issue classes. Phase A deleted 38 pattern-meta stubs (q-0280..q-0416). Cascade-resolved F-14.1/2/3/4/7/8/9. F-14.5 fixed (q-0418 schema). F-14.6 closed via this metadata block. F-14.10 deferred (long-term content authoring).",
       "Pass-14 Phase F (2026-05-01): authored 12 sentence_order + 8 text_input questions (q-0434..q-0453) to address F-14.10 type-distribution skew. Bank: 143 -> 163. Distribution: {'mcq': 138, 'sentence_order': 16, 'text_input': 9}.",
       "Pass-15 P0 (2026-05-01): authored 19 new questions per external-corpus audit. 10 paraphrase mcq (q-0454..0463), 5 counter-rendaku text_input (q-0464..0468), 4 reading-context particle mcq (q-0469..0472). Adds 'paraphrase' subtype on mcq for synonym/antonym/equivalence drills. Bank: 173 -> 192.",
-      "Pass-15 P1 (2026-05-01): authored 6 kanji-writing mcq (q-0473..0478) with subtype='kanji_writing'. Tests 'given kana, pick correct kanji' format from external corpus tests 17/19/25. Bank: 192 -> 198."
+      "Pass-15 P1 (2026-05-01): authored 6 kanji-writing mcq (q-0473..0478) with subtype='kanji_writing'. Tests 'given kana, pick correct kanji' format from external corpus tests 17/19/25. Bank: 192 -> 198.",
+      "Pass-15 coverage batch (2026-05-01): authored 25 mcq (q-0479..0503) to close coverage gap on uncovered grammar patterns. Bank: 198 -> 223. Coverage moves from ~50% to ~63% of 187 grammar patterns."
     ],
     "authoritative_audit_log": "verification.md (cumulative findings tally)",
     "integrity_invariants": "26 checks in tools/check_content_integrity.py (X-6.1..X-6.9, JA-1..JA-17)",
     "subtype_distribution": {
-      "paraphrase": 10,
-      "kanji_writing": 6
+      "kanji_writing": 6,
+      "paraphrase": 10
     },
     "history": [
       "Pass-17 dedup (2026-05-01): repaired duplicate-ID collision between Pass-16 (giving/receiving + ので + ながら + frequency adverbs) and a parallel Pass-15 P0 (paraphrase) that both claimed q-0454..q-0463. The Pass-15 P0 set kept those IDs; Pass-16 questions were renumbered to q-0479..q-0488 (after Pass-15 P1 kanji_writing q-0478)."
@@ -4342,6 +4343,406 @@
       "high_confusion": true,
       "difficulty": 2,
       "auto": false
+    },
+    {
+      "id": "q-0479",
+      "grammarPatternId": "n5-020",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "がっこうは 9じ（  ）3じ までです。",
+      "choices": [
+        "まで",
+        "から",
+        "に",
+        "で"
+      ],
+      "correctAnswer": "から",
+      "explanation_en": "から〜まで paired range. The Xから Yまで construction marks 'from X to Y'. The まで is already in place; から is the starting marker.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0480",
+      "grammarPatternId": "n5-021",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "げつようび（  ）きんようびまで はたらきます。",
+      "choices": [
+        "から",
+        "と",
+        "に",
+        "へ"
+      ],
+      "correctAnswer": "から",
+      "explanation_en": "から〜まで paired range marker — 'from Monday to Friday'. から marks the start point of a time range.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0481",
+      "grammarPatternId": "n5-028",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "これは わたし（  ）ほんです。",
+      "choices": [
+        "の",
+        "は",
+        "が",
+        "を"
+      ],
+      "correctAnswer": "の",
+      "explanation_en": "Possessive の links a possessor to a noun: わたしの ほん = my book. Direct N5 grammar.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0482",
+      "grammarPatternId": "n5-030",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "えいがを 見る（  ）が すきです。",
+      "choices": [
+        "こと",
+        "の",
+        "もの",
+        "ところ"
+      ],
+      "correctAnswer": "の",
+      "explanation_en": "Nominaliser の turns the verb-clause 見る into a noun phrase 'watching movies'. Compare with こと (also a nominaliser); both are N5 but の is more colloquial. Either could work; の is the most direct.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0483",
+      "grammarPatternId": "n5-034",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "100えん（  ）ありません。",
+      "choices": [
+        "だけ",
+        "しか",
+        "まで",
+        "から"
+      ],
+      "correctAnswer": "しか",
+      "explanation_en": "しか〜ない construction means 'only X (and that's a limited amount)'. Always paired with negative verb (ありません here). The だけ alternative would require a positive verb (100えんだけ あります).",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0484",
+      "grammarPatternId": "n5-040",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "（  ）ほんを ください。",
+      "choices": [
+        "これ",
+        "この",
+        "それ",
+        "ここ"
+      ],
+      "correctAnswer": "この",
+      "explanation_en": "Adjectival demonstrative この (this + noun). この/その/あの always precede a noun. これ is the standalone pronoun form (これ ほん is ungrammatical).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0485",
+      "grammarPatternId": "n5-051",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "（  ）にほんへ 行きますか。",
+      "choices": [
+        "どうして",
+        "どこ",
+        "どうやって",
+        "いくら"
+      ],
+      "correctAnswer": "どうして",
+      "explanation_en": "どうして = why. The expected answer would be 'because of X'. なぜ is interchangeable.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0486",
+      "grammarPatternId": "n5-052",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "がっこうへ（  ）行きますか。",
+      "choices": [
+        "どうして",
+        "なぜ",
+        "どうやって",
+        "どこ"
+      ],
+      "correctAnswer": "どうやって",
+      "explanation_en": "どうやって = how / by what means. Expected answer is means: バスで, でんしゃで, etc.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0487",
+      "grammarPatternId": "n5-056",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "きょうは（  ）ですか。",
+      "choices": [
+        "なんがつ",
+        "なんにち",
+        "なんようび",
+        "なんじ"
+      ],
+      "correctAnswer": "なんようび",
+      "explanation_en": "なんようび = what day of the week. Expected answer: げつようび / かようび / etc.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0488",
+      "grammarPatternId": "n5-057",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "おたんじょうびは（  ）ですか。",
+      "choices": [
+        "なんようび",
+        "なんじ",
+        "なんがつなんにち",
+        "なんねん"
+      ],
+      "correctAnswer": "なんがつなんにち",
+      "explanation_en": "なんがつなんにち = what month, what day. The standard Japanese way to ask for a date (vs なんようび which is day-of-week).",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0489",
+      "grammarPatternId": "n5-063",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "てつだい（  ）か。",
+      "choices": [
+        "ます",
+        "ました",
+        "ません",
+        "ましょう"
+      ],
+      "correctAnswer": "ましょう",
+      "explanation_en": "Verb-ましょうか = 'shall I / shall we ~?' The か at the end + the offer-context make ましょう the only fit. ます would be a plain statement, not an offer.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0490",
+      "grammarPatternId": "n5-073",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "いま、ごはんを たべて（  ）。",
+      "choices": [
+        "います",
+        "いません",
+        "あります",
+        "ありません"
+      ],
+      "correctAnswer": "いません",
+      "explanation_en": "Verb-ていません = 'not currently doing'. The progressive ています + negative ません. The context 'いま (now)' triggers progressive aspect.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0491",
+      "grammarPatternId": "n5-076",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "ばんごはんを たべ（  ）、テレビを 見ます。",
+      "choices": [
+        "て",
+        "てから",
+        "ながら",
+        "ても"
+      ],
+      "correctAnswer": "てから",
+      "explanation_en": "Verb-てから = 'after doing X'. Sequential meaning: first eat dinner, THEN watch TV. て alone would also work but てから makes the sequence explicit.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0492",
+      "grammarPatternId": "n5-078",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "（  ）くるまを かいました。",
+      "choices": [
+        "あたらしい",
+        "あたらしいの",
+        "あたらしく",
+        "あたらしくて"
+      ],
+      "correctAnswer": "あたらしい",
+      "explanation_en": "i-Adjective directly before a noun: あたらしい くるま (new car). The dictionary form あたらしい is the noun-modifier form. -く is for connecting to verbs/adjectives.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0493",
+      "grammarPatternId": "n5-084",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "（  ）へやが ほしいです。",
+      "choices": [
+        "きれい",
+        "きれいな",
+        "きれいで",
+        "きれいに"
+      ],
+      "correctAnswer": "きれいな",
+      "explanation_en": "na-Adjective + な + Noun: きれいな へや. The な is mandatory before a noun. きれい (without な) is the standalone form used as a predicate, not as a modifier.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0494",
+      "grammarPatternId": "n5-092",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "つくえの うえ（  ）ほんが あります。",
+      "choices": [
+        "に",
+        "で",
+        "を",
+        "と"
+      ],
+      "correctAnswer": "に",
+      "explanation_en": "Location of existence takes に: 'on the desk, there is a book'. The pattern is XにYが あります — に for location, が for the existing thing.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0495",
+      "grammarPatternId": "n5-093",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "わたしの ほんは つくえの うえ（  ）あります。",
+      "choices": [
+        "に",
+        "で",
+        "を",
+        "と"
+      ],
+      "correctAnswer": "に",
+      "explanation_en": "XはYに あります = 'X is at Y' (already-known X first). Same locating particle に as the location-first variant. Topic は marks the already-known thing.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0496",
+      "grammarPatternId": "n5-096",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "とうきょう（  ）おおさかの ほうが ちかいです。",
+      "choices": [
+        "より",
+        "から",
+        "と",
+        "は"
+      ],
+      "correctAnswer": "より",
+      "explanation_en": "Yより Xの ほうが [adj] です = 'X is more [adj] than Y'. より marks the comparison reference. The のほうが construction emphasises the focused side.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0497",
+      "grammarPatternId": "n5-097",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "ねこ（  ）いぬと、（  ）が すきですか。",
+      "choices": [
+        "を / どっち",
+        "と / どちら",
+        "は / どこ",
+        "で / どれ"
+      ],
+      "correctAnswer": "と / どちら",
+      "explanation_en": "AとBと、どちらが ~ですか = '(among A and B,) which is more ~?'. と marks each item in the 2-way comparison; どちら is the 'which-of-two' question word.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0498",
+      "grammarPatternId": "n5-100",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "わたしは ピアノ（  ）じょうずです。",
+      "choices": [
+        "を",
+        "に",
+        "が",
+        "で"
+      ],
+      "correctAnswer": "が",
+      "explanation_en": "~がじょうずです / ~がへたです takes が, not を. This is the same が-class as ~がすきです / ~がほしいです / ~がわかります / ~ができます — with ability/feeling predicates, the object/skill takes が.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0499",
+      "grammarPatternId": "n5-102",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "にほんご（  ）すこし わかります。",
+      "choices": [
+        "を",
+        "が",
+        "に",
+        "で"
+      ],
+      "correctAnswer": "が",
+      "explanation_en": "~がわかります = 'understand X'. が, not を. The understood-thing is grammatically the subject of the understanding-state, not the object.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0500",
+      "grammarPatternId": "n5-103",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "わたしは およぎ（  ）できます。",
+      "choices": [
+        "が",
+        "を",
+        "に",
+        "で"
+      ],
+      "correctAnswer": "が",
+      "explanation_en": "~ができます = 'can do X / be able to'. The ability-target takes が. Note: with a verb stem like およぎ, ~ことができます would also work (using こと as nominaliser); both are N5.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0501",
+      "grammarPatternId": "n5-105",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "きょうは あめだから、（  ）です。",
+      "choices": [
+        "でかけたい",
+        "でかけたくない",
+        "でかけたかった",
+        "でかけた"
+      ],
+      "correctAnswer": "でかけたくない",
+      "explanation_en": "Verb-stem + たくない = 'don't want to do'. Negative form of たい. The context 'rain today' makes 'don't want to go out' the natural fit.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0502",
+      "grammarPatternId": "n5-107",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "スーパーへ かいもの（  ）行きます。",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "と"
+      ],
+      "correctAnswer": "に",
+      "explanation_en": "Verb-stem + に行く = 'go to do X'. Purposive に. かいもの is a verbal noun acting as the purpose. The destination へ + purpose に combination is the canonical 'go shopping' construction.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0503",
+      "grammarPatternId": "n5-109",
+      "type": "mcq",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "ほんを（  ）かいましたか。",
+      "choices": [
+        "いくら",
+        "なんさつ",
+        "いくつ",
+        "どれくらい"
+      ],
+      "correctAnswer": "なんさつ",
+      "explanation_en": "なん + counter is the standard 'how many [counter]?' form. For books, the counter is さつ (冊). いくら is for prices; いくつ is the general 'how many' for native counters.",
+      "difficulty": 2
     }
   ]
 }

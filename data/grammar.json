@@ -2844,14 +2844,11 @@
           ]
         },
         {
-          "ja": "あした こないの？",
+          "ja": "ごはん 食べないの？",
           "form": "question",
-          "translation_en": "You're not coming tomorrow?",
-          "vocab_ids": [
-            "n5.vocab.10-time-general.あした",
-            "n5.vocab.29-verbs-irregular-and-v.来る",
-            "n5.vocab.35-particles-functional-.の"
-          ]
+          "translation_en": "Aren't you going to eat?",
+          "vocab_ids": [],
+          "explanation_en": "Plain non-past negative + sentence-final の as informal question marker. 食べる is a transparent Group-2 verb so the conjugation 食べない is unambiguous (compare 来ない / こない which requires irregular-verb knowledge)."
         }
       ],
       "common_mistakes": [
