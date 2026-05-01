@@ -210,44 +210,73 @@ html, body {
   letter-spacing: 0;
 }
 
-/* Settings panel */
+/* Settings panel — single column max-width 640px (spec §5.10) */
 .settings-section {
-  background: var(--c-surface);
-  border: 1px solid var(--c-border);
-  border-radius: var(--r);
-  padding: 18px 20px;
-  margin: 16px 0;
+  max-width: var(--container-narrow);
+  margin: var(--space-8) auto;
+  padding: 0;
+  background: transparent;
+  border: none;
 }
-.settings-section h3 { margin-top: 0; color: var(--c-primary); }
+.settings-section h3 {
+  margin: 0 0 var(--space-4);
+  color: var(--color-text);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+}
 .settings-row {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 12px;
+  gap: var(--space-4);
   align-items: center;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--c-border);
+  padding: var(--space-4) 0;
+  border-bottom: 0.5px solid var(--color-line);
 }
 .settings-row:last-of-type { border-bottom: none; }
-.settings-row > span { font-size: 14px; }
-.settings-row select, .settings-row input[type=number] {
-  padding: 6px 10px;
-  border: 1px solid var(--c-border);
-  border-radius: var(--r);
-  background: var(--c-bg);
-  color: var(--c-text);
-  font-size: 14px;
-  min-width: 120px;
+.settings-row > span,
+.settings-row > label {
+  font-size: var(--text-base);
+  font-weight: var(--weight-base);
+  color: var(--color-text);
 }
-.settings-actions { display: flex; gap: 10px; flex-wrap: wrap; }
-.settings-actions button {
-  background: white;
-  border: 1px solid var(--c-border);
-  border-radius: var(--r);
-  padding: 8px 14px;
-  font-size: 14px;
-  cursor: pointer;
+.settings-row select,
+.settings-row input[type=number],
+.settings-row input[type=text] {
+  width: auto;
+  height: 36px;
+  padding: 0 var(--space-3);
+  border: 0.5px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  min-width: 140px;
 }
-.settings-actions button:hover { background: var(--c-bg); }
+.settings-actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-4);
+}
+
+/* Danger zone — destructive actions (Reset progress) sit below the
+ * regular settings, separated by space-8 + a thin top border in
+ * --color-incorrect with a small "Danger zone" label. Spec §5.10. */
+.settings-danger-zone {
+  max-width: var(--container-narrow);
+  margin: var(--space-8) auto 0;
+  padding: var(--space-5) 0 0;
+  border-top: 0.5px solid var(--color-incorrect);
+}
+.settings-danger-zone .danger-label {
+  font-size: var(--text-2xs);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-incorrect);
+  margin: 0 0 var(--space-3);
+}
 
 /* Header — Zen Modern (sticky, 56px tall, hairline, brand mark + wordmark) */
 .app-header {
@@ -851,24 +880,36 @@ label {
   margin-bottom: var(--space-2);
 }
 
-/* Test - Setup */
+/* Test setup card. Spec §5.8: test mode looks subtly different from
+ * Practice — surface bg + slightly thicker top edge mark it as
+ * authoritative. */
 .test-setup {
-  background: var(--c-surface);
-  border: 1px solid var(--c-border);
-  border-radius: var(--r);
-  padding: 24px;
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-line);
+  border-top: 1.5px solid var(--color-text);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: var(--space-4);
   align-items: center;
 }
-.length-picker { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--c-muted); }
+.length-picker {
+  display: flex; flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  letter-spacing: var(--tracking-wide);
+}
 .length-picker select {
-  padding: 8px 12px;
-  border-radius: var(--r);
-  border: 1px solid var(--c-border);
-  font-size: 14px;
-  background: white;
+  height: 36px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--color-line);
+  font-size: var(--text-sm);
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-width: 140px;
 }
 .bank-note {
   flex-basis: 100%;
@@ -893,25 +934,45 @@ label {
 .question-card .prompt { color: var(--c-muted); font-size: 14px; margin: 0 0 8px; }
 .question-card .question { font-size: 22px; line-height: 1.5; margin: 0 0 24px; }
 
+/* Drill / test choices — Zen Modern (spec §5.6) */
 .choice-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  max-width: 560px;
+  margin: 0 auto;
 }
 .choice-button {
-  background: white;
-  border: 2px solid var(--c-border);
-  border-radius: var(--r);
-  padding: 14px 18px;
-  font-size: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0 var(--space-4);
+  background: var(--color-bg);
+  border: 0.5px solid var(--color-line);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: var(--text-md);
+  font-weight: var(--weight-base);
+  color: var(--color-text);
   text-align: center;
-  transition: all 0.15s;
+  cursor: pointer;
+  transition: background var(--motion-fast) var(--easing),
+              border-color var(--motion-fast) var(--easing);
 }
-.choice-button:hover { border-color: var(--c-primary-light); background: var(--c-bg); }
+.choice-button:hover {
+  border-color: var(--color-line-strong);
+  background: var(--color-surface);
+}
 .choice-button.selected {
-  border-color: var(--c-primary);
-  background: rgba(20, 69, 42, 0.08);
-  font-weight: 500;
+  border-color: var(--color-accent);
+  background: var(--color-accent-tint);
+  color: var(--color-accent);
+}
+.choice-button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 .sentence-order { display: flex; flex-direction: column; gap: 16px; }
@@ -1161,15 +1222,15 @@ label {
 .feedback-pattern a { color: var(--c-primary-light); }
 
 .choice-button.correct-choice {
-  border-color: var(--c-success);
-  background: rgba(22, 101, 52, 0.1);
-  color: var(--c-success);
-  font-weight: 500;
+  border-color: var(--color-correct);
+  background: var(--color-correct-tint);
+  color: var(--color-correct);
+  font-weight: var(--weight-medium);
 }
 .choice-button.wrong-choice {
-  border-color: var(--c-error);
-  background: rgba(185, 28, 28, 0.08);
-  color: var(--c-error);
+  border-color: var(--color-incorrect);
+  background: var(--color-incorrect-tint);
+  color: var(--color-incorrect);
   text-decoration: line-through;
 }
 .tile.correct-tile { background: var(--c-success); border-color: var(--c-success); color: white; }

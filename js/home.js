@@ -25,20 +25,26 @@ export async function renderHome(container) {
     <section class="home">
       ${isReturning ? renderRecommendation(pickRecommendation({ dueCount, streak, lastViewed })) : ''}
       ${isReturning ? renderReturning({ history, results, dueCount, streak, lastViewed }) : ''}
+      <div class="section-label">
+        <span class="section-label-text">Sections</span>
+        <span class="section-label-rule" aria-hidden="true"></span>
+      </div>
       <section class="home-pillars" aria-label="Sections">
         <a class="pillar-card" href="#/learn">
+          <p class="card-index">01</p>
           <h3>Learn</h3>
-          <p>Grammar, vocab, kanji, reading, listening - pick a section.</p>
+          <p>Grammar, vocabulary, kanji, reading, listening — pick a section.</p>
           <span class="pillar-arrow" aria-hidden="true">→</span>
         </a>
         <a class="pillar-card" href="#/test">
+          <p class="card-index">02</p>
           <h3>Test</h3>
           <p>Mock JLPT-format exams (20 / 30 / 50 questions).</p>
           <span class="pillar-arrow" aria-hidden="true">→</span>
         </a>
       </section>
       ${isReturning ? '' : `
-        <p class="muted small home-footnote"><a href="#/diagnostic">Take a placement check</a> to skip what you already know.</p>
+        <p class="home-footnote"><a href="#/diagnostic">Take a placement check</a> to skip what you already know.</p>
       `}
     </section>
   `;
