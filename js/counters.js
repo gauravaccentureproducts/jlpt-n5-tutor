@@ -1,16 +1,21 @@
 // Counters module (Brief §2.4)
 // Reference table for the major N5 counters with rendaku/irregular readings,
-// plus a "how many?" drill using emoji-based objects (no image assets needed).
+// plus a "how many?" drill that uses a neutral geometric dot (●) repeated
+// to visualise the count (no images, no emoji).
 import { matchesAnswer } from './normalize.js';
 import * as storage from './storage.js';
 
-// Each counter: name, suffix, emoji icon for visual drills, full reading
-// table 1..10 + "how many", with notes on irregularities.
+// Visual marker for "1 thing" in the count drill — Unicode geometric
+// shape (Black Circle, U+25CF), renders as plain typography on every
+// platform. Repeat this N times to show "this many objects".
+const COUNT_DOT = '●';
+
+// Each counter: name, suffix, full reading table 1..10 + "how many",
+// with notes on irregularities.
 const COUNTERS = {
   'tsu': {
     label: '〜つ',
     desc: 'Native Japanese counter (general things, ages 1-9)',
-    emoji: '🍎',
     readings: {
       1: 'ひとつ', 2: 'ふたつ', 3: 'みっつ', 4: 'よっつ', 5: 'いつつ',
       6: 'むっつ', 7: 'ななつ', 8: 'やっつ', 9: 'ここのつ', 10: 'とお',
@@ -21,7 +26,6 @@ const COUNTERS = {
   'nin': {
     label: '〜人 (にん)',
     desc: 'People',
-    emoji: '👤',
     readings: {
       1: 'ひとり', 2: 'ふたり', 3: 'さんにん', 4: 'よにん', 5: 'ごにん',
       6: 'ろくにん', 7: 'しちにん / ななにん', 8: 'はちにん', 9: 'きゅうにん',
@@ -32,7 +36,6 @@ const COUNTERS = {
   'mai': {
     label: '〜枚 (まい)',
     desc: 'Flat thin objects (paper, plates, tickets, t-shirts)',
-    emoji: '📄',
     readings: {
       1: 'いちまい', 2: 'にまい', 3: 'さんまい', 4: 'よんまい', 5: 'ごまい',
       6: 'ろくまい', 7: 'ななまい / しちまい', 8: 'はちまい', 9: 'きゅうまい',
@@ -43,7 +46,6 @@ const COUNTERS = {
   'hon': {
     label: '〜本 (ほん / ぼん / ぽん)',
     desc: 'Long thin objects (bottles, pens, umbrellas, trees)',
-    emoji: '🍶',
     readings: {
       1: 'いっぽん', 2: 'にほん', 3: 'さんぼん', 4: 'よんほん', 5: 'ごほん',
       6: 'ろっぽん', 7: 'ななほん', 8: 'はっぽん', 9: 'きゅうほん',
@@ -54,7 +56,6 @@ const COUNTERS = {
   'satsu': {
     label: '〜冊 (さつ)',
     desc: 'Books, magazines, bound volumes',
-    emoji: '📕',
     readings: {
       1: 'いっさつ', 2: 'にさつ', 3: 'さんさつ', 4: 'よんさつ', 5: 'ごさつ',
       6: 'ろくさつ', 7: 'ななさつ', 8: 'はっさつ', 9: 'きゅうさつ',
@@ -65,7 +66,6 @@ const COUNTERS = {
   'kai': {
     label: '〜階 (かい / がい)',
     desc: 'Floor of a building',
-    emoji: '🏢',
     readings: {
       1: 'いっかい', 2: 'にかい', 3: 'さんがい / さんかい', 4: 'よんかい',
       5: 'ごかい', 6: 'ろっかい', 7: 'ななかい', 8: 'はっかい / はちかい',
@@ -76,7 +76,6 @@ const COUNTERS = {
   'sai': {
     label: '〜歳 / 〜才 (さい)',
     desc: 'Age',
-    emoji: '🎂',
     readings: {
       1: 'いっさい', 2: 'にさい', 3: 'さんさい', 4: 'よんさい', 5: 'ごさい',
       6: 'ろくさい', 7: 'ななさい', 8: 'はっさい', 9: 'きゅうさい',
@@ -87,7 +86,6 @@ const COUNTERS = {
   'hai': {
     label: '〜杯 (はい / ばい / ぱい)',
     desc: 'Cups / glasses (drinks)',
-    emoji: '🍵',
     readings: {
       1: 'いっぱい', 2: 'にはい', 3: 'さんばい', 4: 'よんはい', 5: 'ごはい',
       6: 'ろっぱい', 7: 'ななはい', 8: 'はっぱい', 9: 'きゅうはい',
@@ -98,7 +96,6 @@ const COUNTERS = {
   'fun': {
     label: '〜分 (ふん / ぷん)',
     desc: 'Minutes',
-    emoji: '⏱️',
     readings: {
       1: 'いっぷん', 2: 'にふん', 3: 'さんぷん', 4: 'よんぷん', 5: 'ごふん',
       6: 'ろっぷん', 7: 'ななふん', 8: 'はっぷん', 9: 'きゅうふん',
@@ -109,7 +106,6 @@ const COUNTERS = {
   'ji': {
     label: '〜時 (じ)',
     desc: 'O\'clock',
-    emoji: '🕒',
     readings: {
       1: 'いちじ', 2: 'にじ', 3: 'さんじ', 4: 'よじ', 5: 'ごじ',
       6: 'ろくじ', 7: 'しちじ', 8: 'はちじ', 9: 'くじ', 10: 'じゅうじ',
@@ -120,7 +116,6 @@ const COUNTERS = {
   'en': {
     label: '〜円 (えん)',
     desc: 'Yen (currency)',
-    emoji: '💴',
     readings: {
       1: 'いちえん', 2: 'にえん', 3: 'さんえん', 4: 'よえん', 5: 'ごえん',
       6: 'ろくえん', 7: 'ななえん', 8: 'はちえん', 9: 'きゅうえん',
@@ -143,7 +138,7 @@ function renderBrowse(container) {
   const sections = Object.entries(COUNTERS).map(([key, c]) => `
     <section class="counter-row">
       <header class="counter-row-head">
-        <h3>${c.emoji} ${esc(c.label)} <span class="muted small">${esc(c.desc)}</span></h3>
+        <h3>${esc(c.label)} <span class="muted small">${esc(c.desc)}</span></h3>
       </header>
       <table class="counter-table">
         <thead><tr>${[1,2,3,4,5,6,7,8,9,10,'q'].map(n => `<th>${n === 'q' ? '?' : n}</th>`).join('')}</tr></thead>
@@ -161,7 +156,7 @@ function renderBrowse(container) {
 
     <section class="drill-cta">
       <h3>How many? drill</h3>
-      <p>Drill randomly picks a counter and a count, displays the matching emoji that many times, and asks you to type the counter phrase. Kana or romaji is accepted.</p>
+      <p>Drill randomly picks a counter and a count, shows that many neutral dots, and asks you to type the counter phrase. Kana or romaji is accepted.</p>
       <button id="ct-start" class="btn-primary">Start drill (15 questions)</button>
     </section>
   `;
@@ -197,12 +192,12 @@ function renderDrill(container) {
   const feedback = drillState.feedback;
   const expected = item.counter.readings[item.num];
 
-  // For object-based counters, render the emoji n times. For abstract
+  // For object-based counters, render N geometric dots. For abstract
   // counters (time, age, currency, floor), show the unit + a number.
   const isObject = ['tsu', 'nin', 'mai', 'hon', 'satsu', 'hai'].includes(item.key);
   const visual = isObject
-    ? `<div class="counter-visual" aria-label="${item.num} ${item.counter.label}">${item.counter.emoji.repeat(item.num)}</div>`
-    : `<div class="counter-abstract">${item.counter.emoji} <span style="font-size: 32px">${item.num}</span> <span class="muted">${esc(item.counter.label)}</span></div>`;
+    ? `<div class="counter-visual" aria-label="${item.num} ${item.counter.label}">${COUNT_DOT.repeat(item.num)}</div>`
+    : `<div class="counter-abstract"><span style="font-size: 32px">${item.num}</span> <span class="muted">${esc(item.counter.label)}</span></div>`;
 
   container.innerHTML = `
     <div class="counter-drill">

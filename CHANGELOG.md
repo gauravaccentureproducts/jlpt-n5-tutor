@@ -2,6 +2,24 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.7.11 - 2026-05-01 (UI cleanup: remove decorative emojis)
+
+### Removed
+- **All decorative pictograph emojis** from the UI per user direction. Specifically:
+  - **Learn hub** (`renderHub` in `js/learn.js`): the 5 hub-card icons (📖 Grammar, 📚 Vocabulary, ✍️ Kanji, 📰 Dokkai, 🎧 Listening) and the lede sentence "Pick what you want to study. Each section is self-contained."
+  - **Home streak** (`js/home.js`): 🔥 streak-flame icon. Streak count + label remain.
+  - **Empty states**: 🌱 in `js/review.js` (2 places — no-due and no-history empty states); 📊 in `js/summary.js`.
+  - **Offline indicator** (`js/pwa.js`): leading ⚠ removed; banner now reads plain "Offline - cached content only".
+  - **Verb-class warning section** (`js/verb-class.js`): leading ⚠ removed from the "famous Group-1 exceptions" heading.
+  - **Counter drill** (`js/counters.js`): the 11 per-counter pictograph icons (🍎 つ, 👤 人, 📄 枚, 🍶 本, 📕 冊, 🏢 階, 🎂 歳, 🍵 杯, ⏱ 分, 🕒 時, 💴 円). Replaced with the neutral geometric Black-Circle dot (`●`, U+25CF) for the count visualisation so the "show N objects" drill still works without using emoji.
+- **Dead CSS**: `.hub-icon`, `.streak-flame`, `.empty-state .empty-icon` rules — orphaned after the markup removal above.
+
+### Kept (intentional)
+- **Typographic correctness markers** (✓/✗ in `js/test.js`'s review screen): Unicode Dingbats (U+2713 / U+2717), classified as text-presentation glyphs by default; these are the standard correct/incorrect indicators every testing UI uses, with color-coded CSS (green/red). Not pictograph emojis.
+- **★ Mastered badge** and **★ graduated** labels: Black Star (U+2605), pure typographic geometric symbol, never renders as pictograph.
+
+---
+
 ## v1.7.10 - 2026-05-01 (homograph disambiguation: vocab_ids per example)
 
 ### Fixed

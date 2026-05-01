@@ -98,7 +98,7 @@ function renderTeach(container) {
     </section>
 
     <section class="verb-group-section warning-section">
-      <h3>⚠ The famous Group-1 exceptions</h3>
+      <h3>The famous Group-1 exceptions</h3>
       <p>These verbs end in <code>-iる</code> or <code>-eる</code> and LOOK like Group 2, but they are actually <strong>Group 1</strong>. Memorize them - the drill below over-samples them deliberately.</p>
       <p class="verb-list" lang="ja">かえる (return)・はいる (enter)・はしる (run)・しる (know)・きる (cut)・いる (need)・しゃべる (chatter)・すべる (slip)</p>
     </section>

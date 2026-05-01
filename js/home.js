@@ -72,7 +72,6 @@ function renderReturning({ results, dueCount, streak, lastViewed }) {
     </section>
     <section class="home-streak" aria-label="Study streak">
       <div class="streak-summary">
-        <span class="streak-flame" aria-hidden="true">🔥</span>
         <span class="streak-num">${streak.current || 0}</span>
         <span class="streak-label">${(streak.current || 0) === 1 ? 'day' : 'days'}</span>
         ${streak.longest > 1 ? `<span class="muted small">(longest: ${streak.longest})</span>` : ''}

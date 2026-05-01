@@ -91,7 +91,7 @@ function ensureOfflineIndicator() {
   el.className = 'offline-indicator';
   el.setAttribute('role', 'status');
   el.setAttribute('aria-live', 'polite');
-  el.textContent = '⚠ Offline - cached content only';
+  el.textContent = 'Offline - cached content only';
   el.hidden = true;
   document.body.appendChild(el);
   return el;

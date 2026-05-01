@@ -28,7 +28,6 @@ export async function renderSummary(container) {
     container.innerHTML = `
       <h2>Chapter 4 - Summary</h2>
       <div class="empty-state">
-        <p class="empty-icon" aria-hidden="true">📊</p>
         <p><strong>Stats appear here once you've studied.</strong></p>
         <p class="muted">Mastered, Need-practice, and Untested counts appear after a Test or completed lessons.</p>
         <p><a href="#/learn" class="btn-primary" style="text-decoration:none">Start a lesson</a></p>

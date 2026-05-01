@@ -1635,7 +1635,6 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 .hub-card:focus-visible { outline: 2px solid var(--c-primary, #14452a); outline-offset: 2px; }
-.hub-icon { font-size: 28px; line-height: 1; }
 .hub-card h3 { margin: 0; font-size: 18px; }
 .hub-card p { margin: 0; flex: 1; }
 .hub-cta { font-size: 13px; color: var(--c-primary, #14452a); font-weight: 600; margin-top: auto; }
@@ -1732,7 +1731,6 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
 .streak-summary { display: flex; align-items: center; gap: 6px; font-weight: 600; }
 .streak-num { font-size: 22px; }
 .streak-label { font-weight: 400; }
-.streak-flame { font-size: 22px; }
 .streak-heatmap { display: inline-flex; gap: 4px; }
 .heat-cell { display: inline-block; width: 18px; height: 18px; border-radius: 3px; background: rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.04); }
 .heat-cell.studied { background: var(--c-primary, #14452a); }
@@ -1892,7 +1890,6 @@ ruby[data-glyph] { cursor: pointer; }
   text-align: center;
   margin: 24px 0;
 }
-.empty-state .empty-icon { font-size: 36px; margin: 0 0 8px; }
 .empty-state strong { display: inline-block; margin-bottom: 6px; }
 .empty-state p { margin: 8px 0; }
 .empty-state-banner {

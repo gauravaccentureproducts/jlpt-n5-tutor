@@ -97,14 +97,12 @@ function renderSetup(container) {
       <button id="srs-start" class="btn-primary">Start review session</button>
     ` : (Object.keys(storage.getHistory()).length === 0 ? `
       <div class="empty-state">
-        <p class="empty-icon" aria-hidden="true">🌱</p>
         <p><strong>Reviews appear here after you finish your first lesson.</strong></p>
         <p class="muted small">SM-2 spaced repetition starts as soon as you've grade-rated a few patterns.</p>
         <p><a href="#/learn" class="btn-primary" style="text-decoration:none">Go to Learn</a></p>
       </div>
     ` : `
       <div class="empty-state">
-        <p class="empty-icon" aria-hidden="true">🌱</p>
         <p><strong>No reviews due right now.</strong> Come back later, or start a new lesson.</p>
         <p><a href="#/learn" class="btn-primary" style="text-decoration:none">Go to Learn</a></p>
       </div>

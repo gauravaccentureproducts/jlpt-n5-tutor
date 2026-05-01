@@ -71,24 +71,20 @@ function renderHub(container) {
   const kanjiCount = (kanjiCache?.entries || []).length || 106;
   container.innerHTML = `
     <h2>Learn</h2>
-    <p class="page-lede">Pick what you want to study. Each section is self-contained.</p>
 
     <h3 class="hub-group-title">Reference</h3>
     <div class="learn-hub learn-hub-3">
       <a class="hub-card" href="#/learn/grammar">
-        <span class="hub-icon" aria-hidden="true">📖</span>
         <h3>Grammar</h3>
         <p>${grammarCount} patterns across 32 categories. Form, examples, common mistakes.</p>
         <span class="hub-cta">Browse →</span>
       </a>
       <a class="hub-card" href="#/learn/vocab">
-        <span class="hub-icon" aria-hidden="true">📚</span>
         <h3>Vocabulary</h3>
         <p>~${vocabCount} words grouped by topic - people, time, places, verbs, adjectives.</p>
         <span class="hub-cta">Browse →</span>
       </a>
       <a class="hub-card" href="#/kanji">
-        <span class="hub-icon" aria-hidden="true">✍️</span>
         <h3>Kanji</h3>
         <p>${kanjiCount} kanji with on / kun-yomi, meanings, stroke-order slots. Tap any glyph.</p>
         <span class="hub-cta">Browse →</span>
@@ -98,13 +94,11 @@ function renderHub(container) {
     <h3 class="hub-group-title">Practice</h3>
     <div class="learn-hub learn-hub-2">
       <a class="hub-card" href="#/reading">
-        <span class="hub-icon" aria-hidden="true">📰</span>
         <h3>Dokkai (Reading)</h3>
         <p>30 graded passages with comprehension questions. Audio for every passage.</p>
         <span class="hub-cta">Practice →</span>
       </a>
       <a class="hub-card" href="#/listening">
-        <span class="hub-icon" aria-hidden="true">🎧</span>
         <h3>Listening</h3>
         <p>12 items across the three JLPT N5 listening formats. Audio for every script.</p>
         <span class="hub-cta">Practice →</span>
