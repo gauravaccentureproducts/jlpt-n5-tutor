@@ -2,6 +2,67 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.11.0 - 2026-05-03 (Example-coverage authoring pass)
+
+Per user direction: many vocabulary, grammar, and kanji entries
+lacked example sentences / example words. Audited the gap and
+authored content to bring all three categories to a baseline.
+
+### Content (corpus)
+
+- **Kanji: 35 entries gained a 2nd example word.** Every one of the
+  106 N5 kanji entries now has at least 2 example words on its
+  detail page (was: 35 entries had only 1). Examples chosen to
+  showcase typical N5 compound usage:
+    - Numerals: 三百, 千円, 百円, 半分
+    - Body parts: 左手, 右手
+    - Cardinal directions: 東口, 西口, 南口, 北口
+    - Time/quantity: 一時間
+    - Daily verbs: 食べもの, 飲みもの, 読みかた, 書きかた, 行きかた
+    - Adjective/noun forms: 安く, 古本, 長さ, 休み
+    - Compounds: 火山, 小川, 田中, 大雨, 花見, 空気, 上手, 下手, 小学校
+  All forms verified against JA-16 (target-or-whitelist kanji only;
+  non-N5 kanji is rendered in kana).
+
+- **Grammar: 77 new examples across 63 patterns.** Every one of the
+  177 grammar patterns now has 3+ example sentences (was: 63
+  patterns sat at 1-2). 8 mid-authoring fixes corrected non-N5 kanji
+  in stems (早く -> はやく, 字 -> かんじ, 時計 -> とけい, 思う -> おもう,
+  皿 -> さら, 京都 -> きょうと, 教えて -> おしえて). All examples
+  carry vocab_ids: [] (JA-17 satisfied; auto-population available
+  via tools/link_grammar_examples_to_vocab.py).
+
+- **Vocab: 51 foundational entries gained an inline example
+  sentence.** Pronouns (私, 私たち, かれ, かのじょ, みなさん, じぶん),
+  family terms (かぞく, 父, 母, あに, あね, おとうと, いもうと, etc.),
+  body parts (からだ, かお, め, みみ, くち, は, て, あし), demonstratives
+  (あちら, こっち, そっち, あっち, どっち), question words (何, 何曜日,
+  何月, 何日, 何で), and roles (せいと, いしゃ, 会社員, 駅員, 店員). Each
+  example demonstrates typical use in a single short N5 sentence.
+
+### Tooling
+
+- `tools/audit_example_coverage.py` — read-only inventory of
+  uncovered entries across all three corpora. Re-runnable to track
+  remaining gaps (vocab is the biggest remaining: 690 entries still
+  without inline examples — Phase 4 backlog item).
+- `tools/add_kanji_2nd_examples.py` — idempotent kanji example
+  additions.
+- `tools/add_grammar_examples.py` — idempotent grammar example
+  additions (77 entries).
+- `tools/add_vocab_examples.py` — idempotent vocab example
+  additions (51 foundational entries).
+
+### Service worker
+
+Bumped `CACHE_VERSION` v103 -> v104. data/grammar.json,
+data/vocab.json, data/kanji.json all updated.
+
+v1.11.0 / SW v104. **40/40 invariants green** (unchanged from
+v1.10.2 — this is a content pass, no new invariants needed).
+
+---
+
 ## v1.10.2 - 2026-05-02 (Search-result navigation + provenance lock-in)
 
 Two fixes that landed without their own version bump and are folded

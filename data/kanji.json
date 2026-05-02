@@ -359,6 +359,11 @@
           "form": "百",
           "reading": "ひゃく",
           "gloss": "hundred"
+        },
+        {
+          "form": "三百",
+          "reading": "さんびゃく",
+          "gloss": "three hundred"
         }
       ]
     },
@@ -382,6 +387,11 @@
           "form": "千",
           "reading": "せん",
           "gloss": "thousand"
+        },
+        {
+          "form": "千円",
+          "reading": "せんえん",
+          "gloss": "1000 yen"
         }
       ]
     },
@@ -429,6 +439,11 @@
           "form": "円",
           "reading": "えん",
           "gloss": "yen"
+        },
+        {
+          "form": "百円",
+          "reading": "ひゃくえん",
+          "gloss": "100 yen"
         }
       ]
     },
@@ -654,6 +669,11 @@
           "form": "土曜日",
           "reading": "どようび",
           "gloss": "Saturday"
+        },
+        {
+          "form": "土",
+          "reading": "つち",
+          "gloss": "soil, earth (kun)"
         }
       ]
     },
@@ -807,6 +827,11 @@
           "form": "半",
           "reading": "はん",
           "gloss": "half (past)"
+        },
+        {
+          "form": "半分",
+          "reading": "はんぶん",
+          "gloss": "half"
         }
       ]
     },
@@ -1170,6 +1195,11 @@
           "form": "友だち",
           "reading": "ともだち",
           "gloss": "friend"
+        },
+        {
+          "form": "友",
+          "reading": "とも",
+          "gloss": "friend (kun)"
         }
       ]
     },
@@ -1388,6 +1418,11 @@
           "form": "力",
           "reading": "ちから",
           "gloss": "power, strength"
+        },
+        {
+          "form": "力もち",
+          "reading": "ちからもち",
+          "gloss": "strong person"
         }
       ]
     },
@@ -1743,6 +1778,11 @@
           "form": "小さい",
           "reading": "ちいさい",
           "gloss": "small"
+        },
+        {
+          "form": "小学校",
+          "reading": "しょうがっこう",
+          "gloss": "elementary school"
         }
       ]
     },
@@ -1768,6 +1808,11 @@
           "form": "上",
           "reading": "うえ",
           "gloss": "top, above"
+        },
+        {
+          "form": "上手",
+          "reading": "じょうず",
+          "gloss": "skillful, good at"
         }
       ]
     },
@@ -1794,6 +1839,11 @@
           "form": "下",
           "reading": "した",
           "gloss": "under, below"
+        },
+        {
+          "form": "下手",
+          "reading": "へた",
+          "gloss": "unskillful, bad at"
         }
       ]
     },
@@ -1817,6 +1867,11 @@
           "form": "左",
           "reading": "ひだり",
           "gloss": "left"
+        },
+        {
+          "form": "左手",
+          "reading": "ひだりて",
+          "gloss": "left hand"
         }
       ]
     },
@@ -1841,6 +1896,11 @@
           "form": "右",
           "reading": "みぎ",
           "gloss": "right"
+        },
+        {
+          "form": "右手",
+          "reading": "みぎて",
+          "gloss": "right hand"
         }
       ]
     },
@@ -1968,6 +2028,11 @@
           "form": "東",
           "reading": "ひがし",
           "gloss": "east"
+        },
+        {
+          "form": "東口",
+          "reading": "ひがしぐち",
+          "gloss": "east exit"
         }
       ]
     },
@@ -1992,6 +2057,11 @@
           "form": "西",
           "reading": "にし",
           "gloss": "west"
+        },
+        {
+          "form": "西口",
+          "reading": "にしぐち",
+          "gloss": "west exit"
         }
       ]
     },
@@ -2015,6 +2085,11 @@
           "form": "南",
           "reading": "みなみ",
           "gloss": "south"
+        },
+        {
+          "form": "南口",
+          "reading": "みなみぐち",
+          "gloss": "south exit"
         }
       ]
     },
@@ -2038,6 +2113,11 @@
           "form": "北",
           "reading": "きた",
           "gloss": "north"
+        },
+        {
+          "form": "北口",
+          "reading": "きたぐち",
+          "gloss": "north exit"
         }
       ]
     },
@@ -2065,6 +2145,11 @@
           "form": "時間",
           "reading": "じかん",
           "gloss": "time, hour"
+        },
+        {
+          "form": "一時間",
+          "reading": "いちじかん",
+          "gloss": "one hour"
         }
       ]
     },
@@ -2088,6 +2173,11 @@
           "form": "山",
           "reading": "やま",
           "gloss": "mountain"
+        },
+        {
+          "form": "火山",
+          "reading": "かざん",
+          "gloss": "volcano"
         }
       ]
     },
@@ -2111,6 +2201,11 @@
           "form": "川",
           "reading": "かわ",
           "gloss": "river"
+        },
+        {
+          "form": "小川",
+          "reading": "おがわ",
+          "gloss": "small stream / Ogawa (surname)"
         }
       ]
     },
@@ -2134,6 +2229,11 @@
           "form": "田",
           "reading": "た",
           "gloss": "rice field"
+        },
+        {
+          "form": "田中",
+          "reading": "たなか",
+          "gloss": "Tanaka (surname)"
         }
       ]
     },
@@ -2157,6 +2257,11 @@
           "form": "雨",
           "reading": "あめ",
           "gloss": "rain"
+        },
+        {
+          "form": "大雨",
+          "reading": "おおあめ",
+          "gloss": "heavy rain"
         }
       ]
     },
@@ -2244,6 +2349,11 @@
           "form": "花",
           "reading": "はな",
           "gloss": "flower"
+        },
+        {
+          "form": "花見",
+          "reading": "はなみ",
+          "gloss": "flower viewing (cherry blossom)"
         }
       ]
     },
@@ -2270,6 +2380,11 @@
           "form": "空",
           "reading": "そら",
           "gloss": "sky"
+        },
+        {
+          "form": "空気",
+          "reading": "くうき",
+          "gloss": "air"
         }
       ]
     },
@@ -2439,6 +2554,11 @@
           "form": "食べる",
           "reading": "たべる",
           "gloss": "to eat"
+        },
+        {
+          "form": "食べもの",
+          "reading": "たべもの",
+          "gloss": "food"
         }
       ]
     },
@@ -2462,6 +2582,11 @@
           "form": "飲む",
           "reading": "のむ",
           "gloss": "to drink"
+        },
+        {
+          "form": "飲みもの",
+          "reading": "のみもの",
+          "gloss": "drink, beverage"
         }
       ]
     },
@@ -2545,6 +2670,11 @@
           "form": "読む",
           "reading": "よむ",
           "gloss": "to read"
+        },
+        {
+          "form": "読みかた",
+          "reading": "よみかた",
+          "gloss": "way of reading; reading (of a kanji)"
         }
       ]
     },
@@ -2568,6 +2698,11 @@
           "form": "書く",
           "reading": "かく",
           "gloss": "to write"
+        },
+        {
+          "form": "書きかた",
+          "reading": "かきかた",
+          "gloss": "way of writing"
         }
       ]
     },
@@ -2666,6 +2801,11 @@
           "form": "行く",
           "reading": "いく",
           "gloss": "to go"
+        },
+        {
+          "form": "行きかた",
+          "reading": "いきかた",
+          "gloss": "way of going / how to get there"
         }
       ]
     },
@@ -2752,6 +2892,11 @@
           "form": "立つ",
           "reading": "たつ",
           "gloss": "to stand"
+        },
+        {
+          "form": "立ち上がる",
+          "reading": "たちあがる",
+          "gloss": "to stand up"
         }
       ]
     },
@@ -2776,6 +2921,11 @@
           "form": "休む",
           "reading": "やすむ",
           "gloss": "to rest"
+        },
+        {
+          "form": "休み",
+          "reading": "やすみ",
+          "gloss": "holiday, rest, day off"
         }
       ]
     },
@@ -2802,6 +2952,11 @@
           "form": "言う",
           "reading": "いう",
           "gloss": "to say"
+        },
+        {
+          "form": "言いかた",
+          "reading": "いいかた",
+          "gloss": "way of saying, expression"
         }
       ]
     },
@@ -2825,6 +2980,11 @@
           "form": "買う",
           "reading": "かう",
           "gloss": "to buy"
+        },
+        {
+          "form": "買いもの",
+          "reading": "かいもの",
+          "gloss": "shopping"
         }
       ]
     },
@@ -2882,6 +3042,11 @@
           "form": "安い",
           "reading": "やすい",
           "gloss": "cheap"
+        },
+        {
+          "form": "安く",
+          "reading": "やすく",
+          "gloss": "cheaply (adverb)"
         }
       ],
       "primary_reading": "やす",
@@ -2937,6 +3102,11 @@
           "form": "古い",
           "reading": "ふるい",
           "gloss": "old (not for people)"
+        },
+        {
+          "form": "古本",
+          "reading": "ふるほん",
+          "gloss": "second-hand book"
         }
       ]
     },
@@ -2961,6 +3131,11 @@
           "form": "長い",
           "reading": "ながい",
           "gloss": "long"
+        },
+        {
+          "form": "長さ",
+          "reading": "ながさ",
+          "gloss": "length"
         }
       ],
       "primary_reading": "なが",

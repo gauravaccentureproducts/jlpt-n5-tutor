@@ -6,7 +6,13 @@
       "reading": "わたし",
       "gloss": "I, me",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "examples": [
+        {
+          "ja": "私は 学生です。",
+          "translation_en": "I am a student."
+        }
+      ]
     },
     {
       "id": "n5.vocab.1-people-pronouns-and-se.私たち",
@@ -14,7 +20,13 @@
       "reading": "わたしたち",
       "gloss": "we",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "examples": [
+        {
+          "ja": "私たちは 友だちです。",
+          "translation_en": "We are friends."
+        }
+      ]
     },
     {
       "id": "n5.vocab.1-people-pronouns-and-se.あなた",
@@ -30,7 +42,13 @@
       "reading": "かれ",
       "gloss": "he, him (boyfriend - more advanced sense)",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "examples": [
+        {
+          "ja": "かれは とても しんせつです。",
+          "translation_en": "He is very kind."
+        }
+      ]
     },
     {
       "id": "n5.vocab.1-people-pronouns-and-se.かのじょ",
@@ -38,7 +56,13 @@
       "reading": "かのじょ",
       "gloss": "she, her (girlfriend - more advanced sense)",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "examples": [
+        {
+          "ja": "かのじょは 日本語が じょうずです。",
+          "translation_en": "She is good at Japanese."
+        }
+      ]
     },
     {
       "id": "n5.vocab.1-people-pronouns-and-se.かた",
@@ -62,7 +86,13 @@
       "reading": "みなさん",
       "gloss": "everyone (polite)",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "examples": [
+        {
+          "ja": "みなさん、こんにちは。",
+          "translation_en": "Hello everyone."
+        }
+      ]
     },
     {
       "id": "n5.vocab.1-people-pronouns-and-se.だれ",
@@ -86,7 +116,13 @@
       "reading": "じぶん",
       "gloss": "oneself",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun"
+      "pos": "pronoun",
+      "examples": [
+        {
+          "ja": "じぶんで しゅくだいを します。",
+          "translation_en": "I do my homework by myself."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.かぞく",
@@ -94,7 +130,13 @@
       "reading": "かぞく",
       "gloss": "family",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "わたしの かぞくは 四人です。",
+          "translation_en": "My family has four people."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.父",
@@ -102,7 +144,13 @@
       "reading": "ちち",
       "gloss": "father (own)",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "父は 先生です。",
+          "translation_en": "My father is a teacher."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.母",
@@ -110,7 +158,13 @@
       "reading": "はは",
       "gloss": "mother (own)",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "母は りょうりが じょうずです。",
+          "translation_en": "My mother is good at cooking."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.お父さん",
@@ -118,7 +172,13 @@
       "reading": "おとうさん",
       "gloss": "father (someone else's / address form)",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "田中さんの お父さんは いしゃです。",
+          "translation_en": "Tanaka-san's father is a doctor."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.お母さん",
@@ -126,7 +186,13 @@
       "reading": "おかあさん",
       "gloss": "mother (someone else's / address form)",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "やまださんの お母さんは やさしいです。",
+          "translation_en": "Yamada-san's mother is kind."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.あに",
@@ -134,7 +200,13 @@
       "reading": "あに",
       "gloss": "older brother (own)",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あには 大学生です。",
+          "translation_en": "My older brother is a university student."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.あね",
@@ -142,7 +214,13 @@
       "reading": "あね",
       "gloss": "older sister (own)",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あねは 二十さいです。",
+          "translation_en": "My older sister is twenty years old."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.おとうと",
@@ -150,7 +228,13 @@
       "reading": "おとうと",
       "gloss": "younger brother",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おとうとは 七さいです。",
+          "translation_en": "My younger brother is seven years old."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.いもうと",
@@ -158,7 +242,13 @@
       "reading": "いもうと",
       "gloss": "younger sister",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "いもうとは 学校に 行きます。",
+          "translation_en": "My younger sister goes to school."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.おにいさん",
@@ -166,7 +256,13 @@
       "reading": "おにいさん",
       "gloss": "older brother (polite)",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おにいさんは どこに いますか。",
+          "translation_en": "Where is your older brother?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.おねえさん",
@@ -174,7 +270,13 @@
       "reading": "おねえさん",
       "gloss": "older sister (polite)",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おねえさんは とても きれいです。",
+          "translation_en": "Your older sister is very pretty."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.きょうだい",
@@ -198,7 +300,13 @@
       "reading": "そふ",
       "gloss": "grandfather (own)",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "そふは げんきです。",
+          "translation_en": "My grandfather is healthy."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.そぼ",
@@ -206,7 +314,13 @@
       "reading": "そぼ",
       "gloss": "grandmother (own)",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "そぼは 八十さいです。",
+          "translation_en": "My grandmother is eighty years old."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.おじいさん",
@@ -214,7 +328,13 @@
       "reading": "おじいさん",
       "gloss": "grandfather, elderly man",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おじいさんは 本を 読んで います。",
+          "translation_en": "The old man is reading a book."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.おばあさん",
@@ -222,7 +342,13 @@
       "reading": "おばあさん",
       "gloss": "grandmother, elderly woman",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おばあさんが あいさつを しました。",
+          "translation_en": "The old woman greeted me."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.おじさん",
@@ -230,7 +356,13 @@
       "reading": "おじさん",
       "gloss": "uncle, middle-aged man",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おじさんは アメリカに すんで います。",
+          "translation_en": "My uncle lives in America."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.おばさん",
@@ -238,7 +370,13 @@
       "reading": "おばさん",
       "gloss": "aunt, middle-aged woman",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おばさんは 花が すきです。",
+          "translation_en": "My aunt likes flowers."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.子ども",
@@ -254,7 +392,13 @@
       "reading": "おとこのこ",
       "gloss": "boy",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こうえんで 男の子が あそんで います。",
+          "translation_en": "A boy is playing in the park."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.女の子",
@@ -262,7 +406,13 @@
       "reading": "おんなのこ",
       "gloss": "girl",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "女の子が うたを うたって います。",
+          "translation_en": "A girl is singing a song."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.男",
@@ -270,7 +420,13 @@
       "reading": "おとこ",
       "gloss": "man",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あの 男の 人は 先生です。",
+          "translation_en": "That man is a teacher."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.女",
@@ -278,7 +434,13 @@
       "reading": "おんな",
       "gloss": "woman",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あの 女の 人は いしゃです。",
+          "translation_en": "That woman is a doctor."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.大人",
@@ -286,7 +448,13 @@
       "reading": "おとな",
       "gloss": "adult",
       "section": "2. People - Family",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "大人は 千円、子どもは 五百円です。",
+          "translation_en": "Adults are 1000 yen, children are 500 yen."
+        }
+      ]
     },
     {
       "id": "n5.vocab.2-people-family.ともだち",
@@ -310,7 +478,13 @@
       "reading": "せいと",
       "gloss": "pupil, schoolchild",
       "section": "3. People - Roles",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "この 学校の せいとは 百人です。",
+          "translation_en": "This school has 100 pupils."
+        }
+      ]
     },
     {
       "id": "n5.vocab.3-people-roles.先生",
@@ -326,7 +500,13 @@
       "reading": "いしゃ",
       "gloss": "doctor",
       "section": "3. People - Roles",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ちちは いしゃです。",
+          "translation_en": "My father is a doctor."
+        }
+      ]
     },
     {
       "id": "n5.vocab.3-people-roles.会社員",
@@ -334,7 +514,13 @@
       "reading": "かいしゃいん",
       "gloss": "company employee",
       "section": "3. People - Roles",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あには 会社員です。",
+          "translation_en": "My older brother is a company employee."
+        }
+      ]
     },
     {
       "id": "n5.vocab.3-people-roles.駅員",
@@ -342,7 +528,13 @@
       "reading": "えきいん",
       "gloss": "station staff",
       "section": "3. People - Roles",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "駅員に みちを 聞きました。",
+          "translation_en": "I asked the station staff for directions."
+        }
+      ]
     },
     {
       "id": "n5.vocab.3-people-roles.店員",
@@ -350,7 +542,13 @@
       "reading": "てんいん",
       "gloss": "shop clerk",
       "section": "3. People - Roles",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "店員さんに ねだんを 聞きました。",
+          "translation_en": "I asked the shop clerk the price."
+        }
+      ]
     },
     {
       "id": "n5.vocab.3-people-roles.けいかん",
@@ -390,7 +588,13 @@
       "reading": "からだ",
       "gloss": "body",
       "section": "4. Body Parts",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "からだが つかれました。",
+          "translation_en": "My body is tired."
+        }
+      ]
     },
     {
       "id": "n5.vocab.4-body-parts.あたま",
@@ -406,7 +610,13 @@
       "reading": "かお",
       "gloss": "face",
       "section": "4. Body Parts",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "朝、かおを あらいます。",
+          "translation_en": "I wash my face in the morning."
+        }
+      ]
     },
     {
       "id": "n5.vocab.4-body-parts.め",
@@ -414,7 +624,13 @@
       "reading": "め",
       "gloss": "eye",
       "section": "4. Body Parts",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "めが いたいです。",
+          "translation_en": "My eyes hurt."
+        }
+      ]
     },
     {
       "id": "n5.vocab.4-body-parts.みみ",
@@ -422,7 +638,13 @@
       "reading": "みみ",
       "gloss": "ear",
       "section": "4. Body Parts",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "みみで おんがくを 聞きます。",
+          "translation_en": "I listen to music with my ears."
+        }
+      ]
     },
     {
       "id": "n5.vocab.4-body-parts.はな",
@@ -438,7 +660,13 @@
       "reading": "くち",
       "gloss": "mouth",
       "section": "4. Body Parts",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "くちを あけて ください。",
+          "translation_en": "Please open your mouth."
+        }
+      ]
     },
     {
       "id": "n5.vocab.4-body-parts.は",
@@ -446,7 +674,13 @@
       "reading": "は",
       "gloss": "tooth",
       "section": "4. Body Parts",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "まいにち はを みがきます。",
+          "translation_en": "I brush my teeth every day."
+        }
+      ]
     },
     {
       "id": "n5.vocab.4-body-parts.て",
@@ -454,7 +688,13 @@
       "reading": "て",
       "gloss": "hand",
       "section": "4. Body Parts",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ごはんの まえに てを あらいます。",
+          "translation_en": "I wash my hands before meals."
+        }
+      ]
     },
     {
       "id": "n5.vocab.4-body-parts.あし",
@@ -462,7 +702,13 @@
       "reading": "あし",
       "gloss": "leg, foot",
       "section": "4. Body Parts",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あしが いたいです。",
+          "translation_en": "My feet hurt."
+        }
+      ]
     },
     {
       "id": "n5.vocab.4-body-parts.おなか",
@@ -598,7 +844,13 @@
       "reading": "あちら",
       "gloss": "that way (over there)",
       "section": "5. Demonstratives",
-      "pos": "demonstrative"
+      "pos": "demonstrative",
+      "examples": [
+        {
+          "ja": "あちらが 田中さんです。",
+          "translation_en": "That person over there is Tanaka-san."
+        }
+      ]
     },
     {
       "id": "n5.vocab.5-demonstratives.どちら",
@@ -614,7 +866,13 @@
       "reading": "こっち",
       "gloss": "this way (casual)",
       "section": "5. Demonstratives",
-      "pos": "demonstrative"
+      "pos": "demonstrative",
+      "examples": [
+        {
+          "ja": "こっちに 来て ください。",
+          "translation_en": "Come this way please."
+        }
+      ]
     },
     {
       "id": "n5.vocab.5-demonstratives.そっち",
@@ -622,7 +880,13 @@
       "reading": "そっち",
       "gloss": "that way (casual)",
       "section": "5. Demonstratives",
-      "pos": "demonstrative"
+      "pos": "demonstrative",
+      "examples": [
+        {
+          "ja": "そっちは あぶないですよ。",
+          "translation_en": "That way is dangerous."
+        }
+      ]
     },
     {
       "id": "n5.vocab.5-demonstratives.あっち",
@@ -630,7 +894,13 @@
       "reading": "あっち",
       "gloss": "that way over there (casual)",
       "section": "5. Demonstratives",
-      "pos": "demonstrative"
+      "pos": "demonstrative",
+      "examples": [
+        {
+          "ja": "あっちに えきが あります。",
+          "translation_en": "The station is over that way."
+        }
+      ]
     },
     {
       "id": "n5.vocab.5-demonstratives.どっち",
@@ -638,7 +908,13 @@
       "reading": "どっち",
       "gloss": "which way (casual)",
       "section": "5. Demonstratives",
-      "pos": "demonstrative"
+      "pos": "demonstrative",
+      "examples": [
+        {
+          "ja": "どっちが いいですか。",
+          "translation_en": "Which one is better?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.5-demonstratives.こんな",
@@ -710,7 +986,13 @@
       "reading": "なに / なん",
       "gloss": "what",
       "section": "6. Question Words",
-      "pos": "question-word"
+      "pos": "question-word",
+      "examples": [
+        {
+          "ja": "これは 何ですか。",
+          "translation_en": "What is this?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.6-question-words.いつ",
@@ -750,7 +1032,13 @@
       "reading": "なんようび",
       "gloss": "what day of the week",
       "section": "6. Question Words",
-      "pos": "question-word"
+      "pos": "question-word",
+      "examples": [
+        {
+          "ja": "きょうは 何曜日ですか。",
+          "translation_en": "What day of the week is it today?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.6-question-words.何月",
@@ -758,7 +1046,13 @@
       "reading": "なんがつ",
       "gloss": "what month",
       "section": "6. Question Words",
-      "pos": "question-word"
+      "pos": "question-word",
+      "examples": [
+        {
+          "ja": "たんじょうびは 何月ですか。",
+          "translation_en": "What month is your birthday?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.6-question-words.何日",
@@ -766,7 +1060,13 @@
       "reading": "なんにち",
       "gloss": "what day",
       "section": "6. Question Words",
-      "pos": "question-word"
+      "pos": "question-word",
+      "examples": [
+        {
+          "ja": "きょうは 何日ですか。",
+          "translation_en": "What day of the month is it today?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.6-question-words.なぜ",
@@ -790,7 +1090,13 @@
       "reading": "なんで",
       "gloss": "why, by what means",
       "section": "6. Question Words",
-      "pos": "question-word"
+      "pos": "question-word",
+      "examples": [
+        {
+          "ja": "何で 学校に 行きますか。",
+          "translation_en": "How do you go to school?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.7-numbers.一",

@@ -2553,6 +2553,12 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.を"
           ]
+        },
+        {
+          "ja": "にほんごを 話すのは むずかしいです。",
+          "form": "affirmative",
+          "translation_en": "Speaking Japanese is difficult.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -2744,6 +2750,12 @@
             "n5.vocab.35-particles-functional-.しか",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "りんごは 一つしか ありません。",
+          "form": "affirmative",
+          "translation_en": "There is only one apple.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -3007,6 +3019,12 @@
             "n5.vocab.35-particles-functional-.ずつ",
             "n5.vocab.35-particles-functional-.に"
           ]
+        },
+        {
+          "ja": "子どもたちに あめを 二つずつ あげました。",
+          "form": "affirmative",
+          "translation_en": "I gave each child two candies.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -3980,6 +3998,12 @@
             "n5.vocab.27-verbs-group-1-verbs.つく",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "この かんじは どうやって 書きますか。",
+          "form": "affirmative",
+          "translation_en": "How do you write this kanji?",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -4104,6 +4128,12 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "かばんの 中に 本が いくつ ありますか。",
+          "form": "affirmative",
+          "translation_en": "How many books are in your bag?",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -4221,6 +4251,12 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "やすみは なんようびですか。",
+          "form": "affirmative",
+          "translation_en": "What day of the week is your day off?",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -4273,6 +4309,12 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "なつ休みは なんがつからですか。",
+          "form": "affirmative",
+          "translation_en": "When (what month) does summer vacation start?",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -5627,6 +5669,12 @@
           "vocab_ids": [
             "n5.vocab.37-common-nouns-miscella.けっこん"
           ]
+        },
+        {
+          "ja": "しゅくだいを まだ していません。",
+          "form": "negative",
+          "translation_en": "I haven't done my homework yet.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -7574,6 +7622,12 @@
             "n5.vocab.32-adjectives.すき",
             "n5.vocab.35-particles-functional-.が"
           ]
+        },
+        {
+          "ja": "あにより わたしのほうが はやく おきます。",
+          "form": "affirmative",
+          "translation_en": "I get up earlier than my older brother.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -7634,6 +7688,12 @@
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "なつと ふゆと、どちらが すきですか。",
+          "form": "affirmative",
+          "translation_en": "Which do you like better, summer or winter?",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -7822,6 +7882,12 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.が"
           ]
+        },
+        {
+          "ja": "母は かんじを 書くのが じょうずです。",
+          "form": "affirmative",
+          "translation_en": "My mother is good at writing.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -8163,6 +8229,12 @@
             "n5.vocab.28-verbs-group-2-verbs.食べる",
             "n5.vocab.35-particles-functional-.も"
           ]
+        },
+        {
+          "ja": "びょういんに 行きたくないです。",
+          "form": "negative",
+          "translation_en": "I don't want to go to the hospital.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -8216,6 +8288,12 @@
             "n5.vocab.31-adjectives.ほしい",
             "n5.vocab.35-particles-functional-.が"
           ]
+        },
+        {
+          "ja": "休みが ほしいです。",
+          "form": "affirmative",
+          "translation_en": "I want a day off.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -8426,6 +8504,12 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "クラスに 学生は なんにん いますか。",
+          "form": "affirmative",
+          "translation_en": "How many students are in the class?",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -8478,6 +8562,12 @@
             "n5.vocab.18-drinks.ビール",
             "n5.vocab.35-particles-functional-.を"
           ]
+        },
+        {
+          "ja": "本を 三さつ 読みました。",
+          "form": "affirmative",
+          "translation_en": "I read three books.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -8589,6 +8679,12 @@
             "n5.vocab.27-verbs-group-1-verbs.行く",
             "n5.vocab.35-particles-functional-.に"
           ]
+        },
+        {
+          "ja": "バスで 二十ぷん かかります。",
+          "form": "affirmative",
+          "translation_en": "It takes 20 minutes by bus.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -8634,6 +8730,12 @@
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に"
           ]
+        },
+        {
+          "ja": "えいがは 七時はんに はじまります。",
+          "form": "affirmative",
+          "translation_en": "The movie starts at 7:30.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -8837,6 +8939,12 @@
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に"
           ]
+        },
+        {
+          "ja": "まいとし 友だちと たんじょうびを いわいます。",
+          "form": "affirmative",
+          "translation_en": "Every year I celebrate my birthday with friends.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -9050,6 +9158,12 @@
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に"
           ]
+        },
+        {
+          "ja": "テストの まえに よく べんきょうしました。",
+          "form": "affirmative",
+          "translation_en": "I studied well before the test.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -9121,6 +9235,12 @@
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.で"
           ]
+        },
+        {
+          "ja": "えいがを 見た あとで コーヒーを 飲みました。",
+          "form": "affirmative",
+          "translation_en": "After watching the movie, I drank coffee.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -9182,6 +9302,12 @@
             "n5.vocab.35-particles-functional-.へ",
             "n5.vocab.35-particles-functional-.も"
           ]
+        },
+        {
+          "ja": "スーパーに 行きました。そして、パンを かいました。",
+          "form": "affirmative",
+          "translation_en": "I went to the supermarket. And then I bought bread.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -9243,6 +9369,12 @@
             "n5.vocab.35-particles-functional-.から",
             "n5.vocab.35-particles-functional-.を"
           ]
+        },
+        {
+          "ja": "本を 読みました。それから、休みました。",
+          "form": "affirmative",
+          "translation_en": "I read a book. After that, I rested.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -9299,6 +9431,12 @@
             "n5.vocab.35-particles-functional-.しか",
             "n5.vocab.35-particles-functional-.も"
           ]
+        },
+        {
+          "ja": "ねむかったです。でも、ねませんでした。",
+          "form": "affirmative",
+          "translation_en": "I was sleepy. But I did not sleep.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -9345,6 +9483,18 @@
             "n5.vocab.35-particles-functional-.しか",
             "n5.vocab.35-particles-functional-.は"
           ]
+        },
+        {
+          "ja": "雨が ふっていました。しかし、出かけました。",
+          "form": "affirmative",
+          "translation_en": "It was raining. However, I went out.",
+          "vocab_ids": []
+        },
+        {
+          "ja": "日本語は むずかしいです。しかし、たのしいです。",
+          "form": "affirmative",
+          "translation_en": "Japanese is difficult. However, it is fun.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -9390,6 +9540,12 @@
             "n5.vocab.28-verbs-group-2-verbs.はじめる",
             "n5.vocab.35-particles-functional-.は"
           ]
+        },
+        {
+          "ja": "では、しつもんは ありませんか。",
+          "form": "affirmative",
+          "translation_en": "Well then, are there any questions?",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -9512,6 +9668,12 @@
             "n5.vocab.30-verbs-existence-and-p.ある",
             "n5.vocab.35-particles-functional-.が"
           ]
+        },
+        {
+          "ja": "日本語は たのしいけど、かんじが むずかしい。",
+          "form": "affirmative",
+          "translation_en": "Japanese is fun, but kanji is hard.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -9562,6 +9724,18 @@
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "どうして 行きませんでしたか。―ねつが あったからです。",
+          "form": "affirmative",
+          "translation_en": "Why didn't you go? — Because I had a fever.",
+          "vocab_ids": []
+        },
+        {
+          "ja": "どうして 学校を 休みましたか。―あたまが いたかったからです。",
+          "form": "affirmative",
+          "translation_en": "Why did you skip school? — Because I had a headache.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -9615,6 +9789,12 @@
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に"
           ]
+        },
+        {
+          "ja": "先生に 花を あげました。",
+          "form": "affirmative",
+          "translation_en": "I gave flowers to the teacher.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -9664,6 +9844,12 @@
             "n5.vocab.35-particles-functional-.から",
             "n5.vocab.35-particles-functional-.を"
           ]
+        },
+        {
+          "ja": "父に とけいを もらいました。",
+          "form": "affirmative",
+          "translation_en": "I received a watch from my father.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -9717,6 +9903,12 @@
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.を"
           ]
+        },
+        {
+          "ja": "先生が 本を くれました。",
+          "form": "affirmative",
+          "translation_en": "The teacher gave me a book.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -9782,6 +9974,12 @@
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "さむいから、まどを しめてください。",
+          "form": "affirmative",
+          "translation_en": "It's cold, so please close the window.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -9839,6 +10037,12 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.で"
           ]
+        },
+        {
+          "ja": "お金が ないので、買えません。",
+          "form": "negative",
+          "translation_en": "I have no money, so I can't buy it.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -10090,6 +10294,12 @@
             "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "のみものは おちゃに します。",
+          "form": "affirmative",
+          "translation_en": "I'll have tea for the drink.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -10214,6 +10424,12 @@
             "n5.vocab.27-verbs-group-1-verbs.読む",
             "n5.vocab.35-particles-functional-.を"
           ]
+        },
+        {
+          "ja": "テレビを 見ながら ごはんを 食べます。",
+          "form": "affirmative",
+          "translation_en": "I eat while watching TV.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -10271,6 +10487,12 @@
             "n5.vocab.31-adjectives.おもい",
             "n5.vocab.35-particles-functional-.と"
           ]
+        },
+        {
+          "ja": "この えいがは おもしろいと おもいます。",
+          "form": "affirmative",
+          "translation_en": "I think this movie is interesting.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -10328,6 +10550,12 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.と"
           ]
+        },
+        {
+          "ja": "田中さんは 「行きません」と 言いました。",
+          "form": "negative",
+          "translation_en": "Tanaka-san said, \"I will not go.\"",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -10533,6 +10761,12 @@
             "n5.vocab.18-drinks.コーヒー",
             "n5.vocab.35-particles-functional-.を"
           ]
+        },
+        {
+          "ja": "すみません、メニューを ください。",
+          "form": "affirmative",
+          "translation_en": "Excuse me, please give me the menu.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -10660,6 +10894,12 @@
             "n5.vocab.33-adverbs.もう",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "コーヒーは いかがですか。",
+          "form": "affirmative",
+          "translation_en": "How about some coffee?",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -10792,6 +11032,12 @@
             "n5.vocab.29-verbs-irregular-and-v.する",
             "n5.vocab.35-particles-functional-.を"
           ]
+        },
+        {
+          "ja": "まだ ばんごはんを 食べていません。",
+          "form": "negative",
+          "translation_en": "I haven't eaten dinner yet.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -10857,6 +11103,12 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "もう 学校に 行きました。",
+          "form": "affirmative",
+          "translation_en": "I already went to school.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11043,6 +11295,12 @@
           "vocab_ids": [
             "n5.vocab.31-adjectives.むずかしい"
           ]
+        },
+        {
+          "ja": "あした 友だちが 来るでしょう。",
+          "form": "affirmative",
+          "translation_en": "My friend will probably come tomorrow.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11085,6 +11343,12 @@
           "vocab_ids": [
             "n5.vocab.31-adjectives.むずかしい"
           ]
+        },
+        {
+          "ja": "たぶん 田中さんは 学生だろう。",
+          "form": "affirmative",
+          "translation_en": "Tanaka-san is probably a student.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11213,6 +11477,12 @@
             "n5.vocab.35-particles-functional-.で",
             "n5.vocab.35-particles-functional-.の"
           ]
+        },
+        {
+          "ja": "学校の あとで としょかんに 行きます。",
+          "form": "affirmative",
+          "translation_en": "After school I go to the library.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11267,6 +11537,12 @@
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に"
           ]
+        },
+        {
+          "ja": "ばんごはんの まえに 休みました。",
+          "form": "affirmative",
+          "translation_en": "I rested before dinner.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11321,6 +11597,12 @@
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に"
           ]
+        },
+        {
+          "ja": "出かける まえに かさを もちます。",
+          "form": "affirmative",
+          "translation_en": "I take an umbrella before going out.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11379,6 +11661,12 @@
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.で"
           ]
+        },
+        {
+          "ja": "ごはんを 食べた あとで おさらを あらいます。",
+          "form": "affirmative",
+          "translation_en": "After eating, I wash the dishes.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11430,6 +11718,12 @@
             "n5.vocab.27-verbs-group-1-verbs.会う",
             "n5.vocab.35-particles-functional-.に"
           ]
+        },
+        {
+          "ja": "すずきさんは わたしの 友だちです。",
+          "form": "affirmative",
+          "translation_en": "Suzuki-san is my friend.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -11698,6 +11992,18 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.を"
           ]
+        },
+        {
+          "ja": "日曜日は そうじしたり、せんたくしたり します。",
+          "form": "affirmative",
+          "translation_en": "On Sundays I clean, do laundry, and so on.",
+          "vocab_ids": []
+        },
+        {
+          "ja": "パーティーで 食べたり 飲んだり しました。",
+          "form": "past",
+          "translation_en": "At the party we ate, drank, and so on.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11750,6 +12056,12 @@
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.か"
           ]
+        },
+        {
+          "ja": "きょうとに 行ったことが あります。",
+          "form": "affirmative",
+          "translation_en": "I have been to Kyoto.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11801,6 +12113,12 @@
             "n5.vocab.35-particles-functional-.が",
             "n5.vocab.35-particles-functional-.に"
           ]
+        },
+        {
+          "ja": "はやく ねたほうが いいです。",
+          "form": "affirmative",
+          "translation_en": "It's better to go to bed early.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11839,6 +12157,18 @@
             "n5.vocab.28-verbs-group-2-verbs.食べる",
             "n5.vocab.35-particles-functional-.が"
           ]
+        },
+        {
+          "ja": "おそく ねないほうが いいです。",
+          "form": "negative",
+          "translation_en": "It's better not to go to bed late.",
+          "vocab_ids": []
+        },
+        {
+          "ja": "たくさん 飲まないほうが いいですよ。",
+          "form": "negative",
+          "translation_en": "You shouldn't drink too much.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11877,6 +12207,18 @@
             "n5.vocab.27-verbs-group-1-verbs.なく",
             "n5.vocab.35-particles-functional-.も"
           ]
+        },
+        {
+          "ja": "日曜日は 学校に 行かなくても いいです。",
+          "form": "negative",
+          "translation_en": "You don't have to go to school on Sundays.",
+          "vocab_ids": []
+        },
+        {
+          "ja": "いそがなくても いいですよ。",
+          "form": "negative",
+          "translation_en": "You don't have to hurry.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11916,6 +12258,18 @@
             "n5.vocab.27-verbs-group-1-verbs.なく",
             "n5.vocab.35-particles-functional-.は"
           ]
+        },
+        {
+          "ja": "はやく かえらなくては いけません。",
+          "form": "affirmative",
+          "translation_en": "I have to go home early.",
+          "vocab_ids": []
+        },
+        {
+          "ja": "くすりを 飲まなくては いけない。",
+          "form": "affirmative",
+          "translation_en": "I must take the medicine.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11953,6 +12307,18 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.を"
           ]
+        },
+        {
+          "ja": "あした はやく おきなくては なりません。",
+          "form": "affirmative",
+          "translation_en": "I have to get up early tomorrow.",
+          "vocab_ids": []
+        },
+        {
+          "ja": "まいにち べんきょうしなくては ならない。",
+          "form": "affirmative",
+          "translation_en": "I have to study every day.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -11993,6 +12359,18 @@
             "n5.vocab.31-adjectives.はやい",
             "n5.vocab.27-verbs-group-1-verbs.行く"
           ]
+        },
+        {
+          "ja": "もう 行かないと いけません。",
+          "form": "affirmative",
+          "translation_en": "I have to go now.",
+          "vocab_ids": []
+        },
+        {
+          "ja": "しゅくだいを しないと いけない。",
+          "form": "affirmative",
+          "translation_en": "I have to do my homework.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -12036,6 +12414,18 @@
             "n5.vocab.27-verbs-group-1-verbs.なく",
             "n5.vocab.35-particles-functional-.は"
           ]
+        },
+        {
+          "ja": "もう 行かなきゃ。",
+          "form": "affirmative",
+          "translation_en": "I gotta go now. (casual)",
+          "vocab_ids": []
+        },
+        {
+          "ja": "はやく ねなくちゃ。",
+          "form": "affirmative",
+          "translation_en": "I gotta go to bed early. (casual)",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -12088,6 +12478,12 @@
             "n5.vocab.35-particles-functional-.は",
             "n5.vocab.35-particles-functional-.の"
           ]
+        },
+        {
+          "ja": "この くつは 大きすぎます。",
+          "form": "affirmative",
+          "translation_en": "These shoes are too big.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -12125,6 +12521,18 @@
             "n5.vocab.10-time-general.あした",
             "n5.vocab.27-verbs-group-1-verbs.行く"
           ]
+        },
+        {
+          "ja": "なつ休みに 国へ かえるつもりです。",
+          "form": "affirmative",
+          "translation_en": "I intend to go back home for summer break.",
+          "vocab_ids": []
+        },
+        {
+          "ja": "たばこを やめるつもりです。",
+          "form": "affirmative",
+          "translation_en": "I intend to quit smoking.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -12163,6 +12571,18 @@
             "n5.vocab.27-verbs-group-1-verbs.言う",
             "n5.vocab.29-verbs-irregular-and-v.来る"
           ]
+        },
+        {
+          "ja": "田中さんは 「行かない」って 言ってた。",
+          "form": "negative",
+          "translation_en": "Tanaka-san said he's not going. (casual)",
+          "vocab_ids": []
+        },
+        {
+          "ja": "えいがは おもしろかったって。",
+          "form": "past",
+          "translation_en": "(They said) the movie was fun. (casual)",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -12204,6 +12624,18 @@
             "n5.vocab.35-particles-functional-.か",
             "n5.vocab.35-particles-functional-.の"
           ]
+        },
+        {
+          "ja": "日本語の 書きかたを おしえてください。",
+          "form": "affirmative",
+          "translation_en": "Please teach me how to write Japanese.",
+          "vocab_ids": []
+        },
+        {
+          "ja": "えきまでの 行きかたが わかりません。",
+          "form": "affirmative",
+          "translation_en": "I don't know how to get to the station.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -12240,6 +12672,18 @@
           "vocab_ids": [
             "n5.vocab.31-adjectives.おいしい"
           ]
+        },
+        {
+          "ja": "きょうは いい 天気だなあ。",
+          "form": "affirmative",
+          "translation_en": "What nice weather today!",
+          "vocab_ids": []
+        },
+        {
+          "ja": "この ケーキは おいしいなあ。",
+          "form": "affirmative",
+          "translation_en": "This cake is really delicious!",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
@@ -12276,6 +12720,18 @@
           "vocab_ids": [
             "n5.vocab.27-verbs-group-1-verbs.行く"
           ]
+        },
+        {
+          "ja": "うるさい！しゃべるな！",
+          "form": "affirmative",
+          "translation_en": "Quiet! Stop talking! (rough)",
+          "vocab_ids": []
+        },
+        {
+          "ja": "ここに 入るな。",
+          "form": "affirmative",
+          "translation_en": "Do not enter here. (sign)",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [
@@ -12338,6 +12794,12 @@
             "n5.vocab.28-verbs-group-2-verbs.食べる",
             "n5.vocab.35-particles-functional-.も"
           ]
+        },
+        {
+          "ja": "だれか 手つだってください。",
+          "form": "affirmative",
+          "translation_en": "Someone please help me.",
+          "vocab_ids": []
         }
       ],
       "common_mistakes": [],
