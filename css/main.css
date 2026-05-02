@@ -2291,8 +2291,15 @@ textarea:focus-visible,
     display: inline-flex; align-items: center; justify-content: center;
     text-align: center; font-size: 13px; padding: 4px 6px;
   }
-  .secondary-nav { flex-wrap: wrap; gap: 8px; }
-  .secondary-nav input[type="search"] { width: 100%; max-width: 100%; }
+  /* Mobile secondary-nav: keep search + settings on a single row.
+   * Was: search forced to 100% width, wrapping settings to row 2 →
+   * 84px tall chrome. Now: search takes natural ~140px, single row. */
+  .secondary-nav { flex-wrap: nowrap; gap: 8px; align-items: center; }
+  .secondary-nav input[type="search"] {
+    flex: 1 1 auto;
+    min-width: 100px;
+    max-width: 200px;
+  }
 }
 
 /* Tap-target floor (Brief 2 s9.2) */
@@ -4176,3 +4183,74 @@ html[data-protect="on"][data-blur="true"] body::before {
 }
 .feedback-confirmation p { margin: 0 0 var(--space-3); }
 .feedback-confirmation .btn-action { margin-top: var(--space-2); }
+
+/* ============================================================================
+ * Mobile UI fixes (added 2026-05-03 per user direction).
+ *
+ * The 4 issues fixed in this block — all mobile-only, none of these
+ * rules touch desktop. Verified at 1280×800: layout is byte-identical
+ * before/after. Verified at 375×812: each issue resolved.
+ *
+ *   1. Bottom primary-nav had 7 items (Grammar / Vocab / Kanji /
+ *      Reading / Listening / Test / Progress); only ~5 fit at 375px,
+ *      items 6 and 7 overflowed off the right edge → unreachable.
+ *      Fix: hide Test + Progress from the bottom-nav on mobile.
+ *      Test is still reachable from the home page Mock Test card;
+ *      Progress IS the home dashboard's Progress section.
+ *
+ *   2. Header secondary-nav wrapped to 2 rows on mobile (search on
+ *      row 1, fullscreen + settings on row 2 → 84px tall chrome).
+ *      Fix: hide the fullscreen toggle on mobile — fullscreen is a
+ *      desktop affordance; mobile browsers collapse the address bar
+ *      on scroll for the same effect, no manual toggle needed.
+ *
+ *   3. Home action block ("Not sure where to start?" + 2 buttons) had
+ *      flex-direction: row on mobile; the buttons wrapped awkwardly
+ *      with leftover space on the right. Fix: column layout with
+ *      full-width buttons on mobile — cleaner stacked CTA pattern.
+ *
+ *   4. Levels page had 45px side margins on a 375px viewport (90px
+ *      total wasted). Fix: tighter side padding on mobile so the
+ *      cards take more of the available width.
+ * ============================================================================ */
+@media (max-width: 599px) {
+  /* 1. Bottom-nav: hide Test + Progress on mobile */
+  .primary-nav a[data-route="test"],
+  .primary-nav a[data-route="summary"] {
+    display: none;
+  }
+
+  /* 2. Hide fullscreen toggle in header secondary-nav */
+  #fullscreen-toggle {
+    display: none;
+  }
+
+  /* 3. Home action block: stack vertically, full-width buttons */
+  .syllabus-action {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+  }
+  .syllabus-action-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-2);
+  }
+  .syllabus-action-buttons .btn-action {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* 4. Levels page: tighter side margin on mobile */
+  .levels-page {
+    padding: var(--space-4) var(--space-3) var(--space-6);
+  }
+  .levels-grid {
+    gap: var(--space-3);
+  }
+  .levels-title {
+    /* Slightly smaller hero text on mobile so it doesn't dominate */
+    font-size: var(--text-xl);
+  }
+}
