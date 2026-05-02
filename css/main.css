@@ -1509,7 +1509,33 @@ label {
   align-items: flex-start;
   gap: 16px;
   margin-bottom: 24px;
-  flex-wrap: wrap;
+  /* Don't wrap at the parent level — long titles like
+   * "これ／それ／あれ／どれ" used to flex-wrap the Mark-as-known toggle
+   * onto a new row, breaking position-consistency with shorter titles
+   * (reported 2026-05-02). Instead, give the left side `flex: 1` +
+   * `min-width: 0` so its TEXT wraps internally; the toggle stays
+   * anchored at top-right regardless of title length. */
+  flex-wrap: nowrap;
+}
+/* Left-side cluster: takes all remaining space and is allowed to
+ * shrink below its intrinsic content min, so its h2 / p children
+ * wrap text instead of pushing the toggle off-row.
+ * Targets the FIRST child of .pattern-header which is, depending on
+ * the page:
+ *   - grammar pattern: <div> with .pattern-name + .meaning-en
+ *   - vocab detail:    <div> with .vocab-form-big + reading + gloss
+ *   - kanji detail:    .kanji-glyph-cluster (already overridden in
+ *                      the fit-screen media query, harmless here). */
+.pattern-header > *:first-child {
+  flex: 1;
+  min-width: 0;
+}
+/* Very narrow screens (tiny phones): re-enable wrapping so the toggle
+ * doesn't get crushed when the viewport itself can't fit both. */
+@media (max-width: 480px) {
+  .pattern-header {
+    flex-wrap: wrap;
+  }
 }
 .known-toggle {
   display: inline-flex;
