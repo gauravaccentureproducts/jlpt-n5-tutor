@@ -2903,8 +2903,16 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
 .search-group h4 { margin: 4px 0 6px; font-size: 12px; text-transform: uppercase; color: var(--c-text-muted, #555); }
 .search-group ul { list-style: none; margin: 0; padding: 0; }
 .search-group li a { display: block; padding: 6px 8px; text-decoration: none; color: inherit; border-radius: 4px; }
-.search-group li a:hover { background: rgba(20, 69, 42, 0.06); }
+.search-group li a:hover,
+.search-group li a.is-active { background: rgba(20, 69, 42, 0.08); }
+.search-group li a.is-active { outline: 1px solid var(--color-accent); outline-offset: -1px; }
 .search-empty { padding: 12px 16px; }
+/* Screen-reader-only result-count announcement (aria-live region). */
+.search-status.visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0;
+  margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0);
+  white-space: nowrap; border: 0;
+}
 
 @media (max-width: 600px) {
   .secondary-nav input[type="search"] { max-width: 100%; }
