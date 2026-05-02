@@ -25,6 +25,19 @@
 //       * Mobile screenshot (no API exists)
 //
 // Usage: imported and initialized once from js/app.js.
+//
+// FEATURE FLAG (2026-05-02): the content-protection layer is currently
+// MASKED — initContentProtection() is a no-op and the CSS rules below
+// are scoped to `html[data-protect="on"]` (which is never set when the
+// flag is off). Reason: the user needs to take screenshots / copy text
+// to file bug reports against the site, and the layer was blocking that.
+// To re-enable the full layer (right-click block, copy/cut block,
+// devtools-shortcut block, screenshot blur, print-page blank, body
+// user-select:none, etc.) flip CONTENT_PROTECT_ENABLED back to true.
+// No other change required — JS init re-attaches handlers AND sets the
+// `data-protect="on"` attribute on <html>, which activates the gated
+// CSS rules at css/main.css §3478.
+const CONTENT_PROTECT_ENABLED = false;
 
 const ALLOW_SELECT_TAGS = new Set(['INPUT', 'TEXTAREA']);
 const ALLOW_SELECT_CLASS = 'allow-select';
@@ -46,6 +59,15 @@ function blockEvent(e) {
 }
 
 export function initContentProtection() {
+  if (!CONTENT_PROTECT_ENABLED) {
+    // Masked. Make doubly sure the CSS rules don't apply by clearing
+    // the gate attribute (no-op if it was never set, but defensive).
+    document.documentElement.removeAttribute('data-protect');
+    return;
+  }
+  // Activate the gated CSS rules.
+  document.documentElement.setAttribute('data-protect', 'on');
+
   // 1. Right-click context menu
   document.addEventListener('contextmenu', blockEvent, { capture: true });
 

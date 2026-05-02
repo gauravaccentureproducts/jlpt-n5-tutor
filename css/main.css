@@ -3484,7 +3484,15 @@ ruby[data-glyph] { cursor: pointer; }
  * blur-on-defocus). Allow text input (search, settings) and audio
  * controls to remain interactive via opt-out classes / element types.
  */
-html, body {
+/* All rules below are gated by `html[data-protect="on"]`. The attribute
+ * is set by js/content-protect.js at boot, but ONLY when its
+ * CONTENT_PROTECT_ENABLED flag is true. When the flag is false (the
+ * 2026-05-02 default — see the flag's WHY comment in content-protect.js)
+ * none of these rules apply, normal browser behavior resumes, and
+ * screenshots / Ctrl+C / right-click / printing all work. To re-enable
+ * the full layer: flip CONTENT_PROTECT_ENABLED to true. */
+html[data-protect="on"],
+html[data-protect="on"] body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3493,21 +3501,24 @@ html, body {
   -webkit-tap-highlight-color: transparent;
 }
 /* Allow selection where the user legitimately needs to type or copy */
-input,
-textarea,
-[contenteditable="true"],
-.allow-select,
-.allow-select * {
+html[data-protect="on"] input,
+html[data-protect="on"] textarea,
+html[data-protect="on"] [contenteditable="true"],
+html[data-protect="on"] .allow-select,
+html[data-protect="on"] .allow-select * {
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
 }
 /* Hide caret/highlight artifacts */
-::selection { background: transparent; color: inherit; }
-::-moz-selection { background: transparent; color: inherit; }
+html[data-protect="on"] ::selection { background: transparent; color: inherit; }
+html[data-protect="on"] ::-moz-selection { background: transparent; color: inherit; }
 /* Block image dragging */
-img, svg, ruby, rt {
+html[data-protect="on"] img,
+html[data-protect="on"] svg,
+html[data-protect="on"] ruby,
+html[data-protect="on"] rt {
   -webkit-user-drag: none;
   user-drag: none;
   pointer-events: auto;
@@ -3515,11 +3526,11 @@ img, svg, ruby, rt {
 /* Best-effort screenshot deterrent: when the window loses focus
  * (Cmd+Shift+4 / Win+Shift+S / PrtScn often steals focus first),
  * obscure the content. Toggled by JS via [data-blur] on <html>. */
-html[data-blur="true"] body {
+html[data-protect="on"][data-blur="true"] body {
   filter: blur(18px) saturate(0.4);
   pointer-events: none;
 }
-html[data-blur="true"] body::before {
+html[data-protect="on"][data-blur="true"] body::before {
   content: "コンテンツは ほごされて います";
   position: fixed;
   inset: 0;
@@ -3535,8 +3546,8 @@ html[data-blur="true"] body::before {
 }
 /* Print blank page (Ctrl+P workaround). The site is digital-only. */
 @media print {
-  body * { visibility: hidden !important; }
-  body::before {
+  html[data-protect="on"] body * { visibility: hidden !important; }
+  html[data-protect="on"] body::before {
     content: "Printing is disabled. The content of this site is digital-only.";
     visibility: visible !important;
     display: block;
