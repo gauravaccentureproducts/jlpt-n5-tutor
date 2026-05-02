@@ -25,6 +25,7 @@ import { renderHome } from './home.js';
 import { initI18n } from './i18n.js';
 import { renderPapers } from './papers.js';
 import { renderChangelog } from './changelog.js';
+import { renderFeedback } from './feedback.js';
 import { initContentProtection } from './content-protect.js';
 
 const ROUTES = {
@@ -47,6 +48,7 @@ const ROUTES = {
   kanji:      renderKanji,
   papers:     renderPapers,
   changelog:  renderChangelog,
+  feedback:   renderFeedback,
 };
 
 function parseRoute() {

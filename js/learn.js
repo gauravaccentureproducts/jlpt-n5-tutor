@@ -180,24 +180,49 @@ function vocabSuperSectionFor(section) {
   return 'Misc';  // safe fallback
 }
 
-function renderVocabList(container, data) {
-  const entries = data.entries || [];
+// Flatten the vocab corpus into the same order the list page presents it:
+//   super-section declaration order, then ascending section-number,
+//   then form-alphabetical within each section.
+// Used by BOTH renderVocabList (to render) and renderVocabDetail (to
+// compute prev/next) so the detail-page ←/→ navigation matches the
+// order the user sees on the list page. Without this shared source of
+// truth the two pages disagree at section boundaries — reported
+// 2026-05-02 (毎日 list-next is いりぐち; detail-next was まいあさ).
+function buildOrderedVocabList(entries) {
   const bySuper = new Map();
   for (const [s] of VOCAB_SUPERSECTS) bySuper.set(s, []);
   for (const e of entries) {
     const sup = vocabSuperSectionFor(e.section || 'Other');
     bySuper.get(sup).push(e);
   }
-  const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-
-  const sections = [...bySuper.entries()].map(([sup, items]) => {
-    // Sort items within a supersection by their original section number then by form
+  const flat = [];
+  for (const [sup, items] of bySuper.entries()) {
     items.sort((a, b) => {
       const na = parseInt(a.section || '', 10);
       const nb = parseInt(b.section || '', 10);
       if (!isNaN(na) && !isNaN(nb) && na !== nb) return na - nb;
       return (a.form || '').localeCompare(b.form || '');
     });
+    flat.push(...items);
+  }
+  return flat;
+}
+
+function renderVocabList(container, data) {
+  const entries = data.entries || [];
+  // Use the shared ordering helper so the list and the detail-page
+  // prev/next chain agree byte-for-byte.
+  const ordered = buildOrderedVocabList(entries);
+  const bySuper = new Map();
+  for (const [s] of VOCAB_SUPERSECTS) bySuper.set(s, []);
+  for (const e of ordered) {
+    const sup = vocabSuperSectionFor(e.section || 'Other');
+    bySuper.get(sup).push(e);
+  }
+  const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+  const sections = [...bySuper.entries()].map(([sup, items]) => {
+    // No re-sort: items are already in canonical order from buildOrderedVocabList.
     const cards = items.map(v => `
       <a class="vocab-card" href="#/learn/vocab/${encodeURIComponent(v.form || '')}">
         <span class="vocab-form" lang="ja">${esc(v.form || '')}</span>
@@ -276,17 +301,17 @@ function renderVocabDetail(container, vocabData, grammarData, form) {
   examples.sort((a, b) => (a.ja?.length || 0) - (b.ja?.length || 0));
   const top = examples.slice(0, 5);
 
-  // prev / next: walk the ENTIRE vocab list (not just the current
-  // section) so navigation chains naturally across section boundaries
-  // — pressing → on the last entry of "6. Question Words" jumps to
-  // the first entry of "7. Numbers" instead of dead-ending. Match by
+  // prev / next: walk the SAME canonical order the list page uses
+  // (super-section → section-number → form-alpha) via the shared
+  // buildOrderedVocabList helper. This guarantees the list page and
+  // the detail page agree on what comes after each entry. Match by
   // `id` (unique per entry) so homographs like きる v1/v2 or はい
   // counter/expression don't collide.
-  // Reported 2026-05-02 — the previous within-section scope hid the
-  // next link on every last-of-section entry.
-  const idx = entries.findIndex(e => e.id === entry.id);
-  const prev = idx > 0 ? entries[idx - 1] : null;
-  const next = idx >= 0 && idx < entries.length - 1 ? entries[idx + 1] : null;
+  // Reported 2026-05-02 (毎日 → list-next いりぐち vs detail-next まいあさ).
+  const ordered = buildOrderedVocabList(entries);
+  const idx = ordered.findIndex(e => e.id === entry.id);
+  const prev = idx > 0 ? ordered[idx - 1] : null;
+  const next = idx >= 0 && idx < ordered.length - 1 ? ordered[idx + 1] : null;
 
   // Mark-as-known parity (OPEN-10): vocab detail gets the same toggle
   // affordance as grammar pattern detail, in the same header-right position.

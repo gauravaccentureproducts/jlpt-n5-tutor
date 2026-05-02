@@ -3555,3 +3555,193 @@ html[data-protect="on"][data-blur="true"] body::before {
     font-family: sans-serif;
   }
 }
+
+/* ============================================================================
+ * Tile uniformity sweep (added 2026-05-02 per user direction).
+ *
+ * Issue: card grids (vocab list, kanji index, grammar TOC, learn hub,
+ * homepage syllabus) had variable-height tiles because long content
+ * fields (gloss / description / disambiguation notes) made some cards
+ * grow taller than their siblings. The first vocab row containing
+ * かい with a 6-line disambiguation note made the whole row 4× taller
+ * than every other row.
+ *
+ * Fix: fixed `height` per card type + `-webkit-line-clamp` on the
+ * variable text field. Long content gets ellipsis-truncated at the
+ * grid level; the full content is still rendered on the detail page.
+ *
+ * Applies uniformly to: vocab-card, kanji-card, grammar-card,
+ * hub-card, syllabus-card. .reading-pick is a vertical list (not
+ * a grid), so uniform tile height isn't a concern there.
+ * ============================================================================ */
+
+/* Reusable line-clamp helper — set the line count via inline style or
+ * a custom property on the parent (--clamp-lines). Default 2. */
+.line-clamp,
+.vocab-card .vocab-gloss,
+.kanji-card .kanji-card-meaning,
+.grammar-card .grammar-gloss,
+.hub-card p,
+.syllabus-card .syllabus-card-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Vocab list — was variable-height; the long disambiguation glosses
+ * (e.g. かい "number of times / occurrences (e.g., 3-かい = three times).
+ * Same kana, different counter (different kanji); context disambiguates.")
+ * blew up first-row height. Fixed at 96px; gloss clamped to 2 lines. */
+.vocab-card {
+  height: 96px;
+  overflow: hidden;
+}
+.vocab-card .vocab-gloss { -webkit-line-clamp: 2; }
+
+/* Kanji index — fairly uniform already (3-line layout: glyph + meaning
+ * + readings), but multi-meaning entries occasionally pushed past 2 lines. */
+.kanji-card {
+  height: 76px;
+  overflow: hidden;
+}
+.kanji-card .kanji-card-meaning { -webkit-line-clamp: 2; }
+
+/* Grammar TOC */
+.grammar-card {
+  height: 76px;
+  overflow: hidden;
+}
+.grammar-card .grammar-gloss { -webkit-line-clamp: 2; }
+
+/* Learn hub — 5-card grid; descriptions vary 1-3 lines. */
+.hub-card {
+  height: 170px;
+}
+.hub-card p { -webkit-line-clamp: 3; }
+
+/* Homepage syllabus dashboard — 6 cards already at min-height: 200px
+ * with flex layout, but description lengths vary (e.g., the kanji
+ * card description is shorter than the vocab card description).
+ * Fix at 220px so all 6 are exactly the same height. */
+.syllabus-card {
+  height: 220px;
+}
+.syllabus-card .syllabus-card-desc { -webkit-line-clamp: 4; }
+
+/* ============================================================================
+ * Feedback page (#/feedback) — added 2026-05-02 per user direction.
+ * A simple form that opens the user's email client via a mailto: URL
+ * with the recipient address obfuscated in source. Uses the existing
+ * .btn-action-* button styles for submit / cancel.
+ * ============================================================================ */
+.feedback-page {
+  max-width: 720px;
+  margin: var(--space-6) auto;
+  padding: 0 var(--space-5);
+}
+.feedback-header {
+  margin-bottom: var(--space-6);
+}
+.feedback-header h2 {
+  margin: 0 0 var(--space-3);
+}
+.feedback-intro {
+  font-size: var(--text-base);
+  color: var(--color-text);
+  line-height: var(--leading-relaxed, 1.55);
+  margin: 0;
+  max-width: 640px;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+.feedback-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.feedback-label {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium, 500);
+  color: var(--color-text);
+}
+.feedback-required {
+  color: var(--color-accent);
+  font-weight: var(--weight-medium, 500);
+}
+.feedback-help {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: var(--leading-base);
+}
+.feedback-form select,
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-base);
+  font-family: inherit;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 0.5px solid var(--color-line-strong);
+  border-radius: var(--radius-md);
+  transition: border-color var(--motion-fast) var(--easing),
+              outline var(--motion-fast) var(--easing);
+}
+.feedback-form select:focus,
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -1px;
+  border-color: var(--color-accent);
+}
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 8em;
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  line-height: var(--leading-relaxed, 1.55);
+}
+.feedback-error {
+  padding: var(--space-3) var(--space-4);
+  background: rgba(217, 89, 89, 0.08);
+  border: 0.5px solid #d95959;
+  border-radius: var(--radius-md);
+  color: #b14040;
+  font-size: var(--text-sm);
+}
+.feedback-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+.feedback-privacy {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-line);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed, 1.55);
+}
+.feedback-privacy strong {
+  color: var(--color-text);
+  font-weight: var(--weight-medium, 500);
+}
+.feedback-confirmation {
+  margin-top: var(--space-5);
+  padding: var(--space-5);
+  background: var(--color-accent-tint);
+  border: 0.5px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: var(--leading-relaxed, 1.55);
+}
+.feedback-confirmation p { margin: 0 0 var(--space-3); }
+.feedback-confirmation .btn-action { margin-top: var(--space-2); }

@@ -8,7 +8,7 @@
 //
 // Bump CACHE_VERSION whenever a release ships, so old caches get evicted on
 // the next visit.
-const CACHE_VERSION = 'jlpt-n5-tutor-v95';
+const CACHE_VERSION = 'jlpt-n5-tutor-v96';
 
 const PRECACHE = [
   './',
@@ -46,6 +46,7 @@ const PRECACHE = [
   './js/search.js',
   './js/home.js',
   './js/changelog.js',
+  './js/feedback.js',
   './js/content-protect.js',
   './js/pwa.js',
   './CHANGELOG.md',
