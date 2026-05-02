@@ -1650,7 +1650,13 @@
       "reading": "とき",
       "gloss": "time, when",
       "section": "10. Time - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "小さい とき、よく あそびました。",
+          "translation_en": "When I was little, I used to play a lot."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.時間",
@@ -1666,7 +1672,13 @@
       "reading": "とけい",
       "gloss": "clock, watch",
       "section": "10. Time - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "とけいを 見ます。",
+          "translation_en": "I look at the clock."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.今",
@@ -1738,7 +1750,13 @@
       "reading": "おととい",
       "gloss": "day before yesterday",
       "section": "10. Time - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おととい 友だちに 会いました。",
+          "translation_en": "I met a friend the day before yesterday."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.あさ",
@@ -1816,7 +1834,13 @@
       "reading": "けさ",
       "gloss": "this morning",
       "section": "10. Time - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "けさ パンを 食べました。",
+          "translation_en": "This morning I ate bread."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.こんばん",
@@ -1824,7 +1848,13 @@
       "reading": "こんばん",
       "gloss": "this evening",
       "section": "10. Time - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こんばん えいがを 見ます。",
+          "translation_en": "This evening I will watch a movie."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.こんや",
@@ -1832,7 +1862,13 @@
       "reading": "こんや",
       "gloss": "tonight",
       "section": "10. Time - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こんや 家に います。",
+          "translation_en": "I'll be home tonight."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.午前",
@@ -1840,7 +1876,13 @@
       "reading": "ごぜん",
       "gloss": "A.M.",
       "section": "10. Time - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "午前 九時に はじまります。",
+          "translation_en": "It starts at 9 a.m."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.午後",
@@ -1848,7 +1890,13 @@
       "reading": "ごご",
       "gloss": "P.M.",
       "section": "10. Time - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "午後 三時に 会いましょう。",
+          "translation_en": "Let's meet at 3 p.m."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.半",
@@ -1856,7 +1904,13 @@
       "reading": "はん",
       "gloss": "half (past)",
       "section": "10. Time - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "今 三時半です。",
+          "translation_en": "It's 3:30 now."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.分",
@@ -1864,7 +1918,13 @@
       "reading": "ふん / ぷん",
       "gloss": "minute(s)",
       "section": "10. Time - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "十分 まって ください。",
+          "translation_en": "Please wait ten minutes."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.びょう",
@@ -1888,7 +1948,13 @@
       "reading": "ついたち",
       "gloss": "1st of the month",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "一日に 田中さんに 会います。",
+          "translation_en": "I'll see Tanaka-san on the 1st."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.一日.2",
@@ -1896,7 +1962,13 @@
       "reading": "いちにち",
       "gloss": "one day, a whole day (note: same kanji 一日 with a different reading, distinct from ついたち; context disambiguates)",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "一日 ゆっくり 休みました。",
+          "translation_en": "I rested for a whole day."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.二日",
@@ -1904,7 +1976,13 @@
       "reading": "ふつか",
       "gloss": "2nd / two days",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "二日 休みを とります。",
+          "translation_en": "I'll take two days off."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.三日",
@@ -1912,7 +1990,13 @@
       "reading": "みっか",
       "gloss": "3rd / three days",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "三日 まえに 来ました。",
+          "translation_en": "I came three days ago."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.四日",
@@ -1920,7 +2004,13 @@
       "reading": "よっか",
       "gloss": "4th / four days",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "四日 まちました。",
+          "translation_en": "I waited four days."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.五日",
@@ -1928,7 +2018,13 @@
       "reading": "いつか",
       "gloss": "5th / five days",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "五日に 出かけます。",
+          "translation_en": "I'll go out on the 5th."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.六日",
@@ -1936,7 +2032,13 @@
       "reading": "むいか",
       "gloss": "6th / six days",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "六日まで 休みです。",
+          "translation_en": "I'm off until the 6th."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.七日",
@@ -1944,7 +2046,13 @@
       "reading": "なのか",
       "gloss": "7th / seven days",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "七日に 友だちと 会います。",
+          "translation_en": "I'll meet a friend on the 7th."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.八日",
@@ -1952,7 +2060,13 @@
       "reading": "ようか",
       "gloss": "8th / eight days",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "八日に たんじょうびが あります。",
+          "translation_en": "There's a birthday on the 8th."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.九日",
@@ -1960,7 +2074,13 @@
       "reading": "ここのか",
       "gloss": "9th / nine days",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "九日に かえります。",
+          "translation_en": "I'll return on the 9th."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.十日",
@@ -1968,7 +2088,13 @@
       "reading": "とおか",
       "gloss": "10th / ten days",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "十日 やすみます。",
+          "translation_en": "I'll rest for ten days."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.二十日",
@@ -1976,7 +2102,13 @@
       "reading": "はつか",
       "gloss": "20th / twenty days",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "二十日に しゅっぱつします。",
+          "translation_en": "I'll depart on the 20th."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.週",
@@ -1984,7 +2116,13 @@
       "reading": "しゅう",
       "gloss": "week",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "一週に 二かい じゅぎょうが あります。",
+          "translation_en": "There are classes twice a week."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.先週",
@@ -1992,7 +2130,13 @@
       "reading": "せんしゅう",
       "gloss": "last week",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "先週 京都に 行きました。",
+          "translation_en": "I went to Kyoto last week."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.今週",
@@ -2148,7 +2292,13 @@
       "reading": "つき",
       "gloss": "month, moon",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "月が きれいです。",
+          "translation_en": "The moon is beautiful."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.一月",
@@ -2156,7 +2306,13 @@
       "reading": "いちがつ",
       "gloss": "January",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "一月は さむいです。",
+          "translation_en": "January is cold."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.二月",
@@ -2164,7 +2320,13 @@
       "reading": "にがつ",
       "gloss": "February",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "二月に たんじょうびが あります。",
+          "translation_en": "My birthday is in February."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.三月",
@@ -2172,7 +2334,13 @@
       "reading": "さんがつ",
       "gloss": "March",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "三月は はるです。",
+          "translation_en": "March is spring."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.四月",
@@ -2180,7 +2348,13 @@
       "reading": "しがつ",
       "gloss": "April",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "四月に 学校が はじまります。",
+          "translation_en": "School begins in April."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.五月",
@@ -2188,7 +2362,13 @@
       "reading": "ごがつ",
       "gloss": "May",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "五月は あたたかいです。",
+          "translation_en": "May is warm."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.六月",
@@ -2196,7 +2376,13 @@
       "reading": "ろくがつ",
       "gloss": "June",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "六月は 雨が おおいです。",
+          "translation_en": "June has lots of rain."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.七月",
@@ -2204,7 +2390,13 @@
       "reading": "しちがつ",
       "gloss": "July",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "七月は 夏です。",
+          "translation_en": "July is summer."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.八月",
@@ -2212,7 +2404,13 @@
       "reading": "はちがつ",
       "gloss": "August",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "八月は あついです。",
+          "translation_en": "August is hot."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.九月",
@@ -2220,7 +2418,13 @@
       "reading": "くがつ",
       "gloss": "September",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "九月に 学校が はじまります。",
+          "translation_en": "School starts in September."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.十月",
@@ -2228,7 +2432,13 @@
       "reading": "じゅうがつ",
       "gloss": "October",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "十月は すずしいです。",
+          "translation_en": "October is cool."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.十一月",
@@ -2236,7 +2446,13 @@
       "reading": "じゅういちがつ",
       "gloss": "November",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "十一月は あきです。",
+          "translation_en": "November is autumn."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.十二月",
@@ -2244,7 +2460,13 @@
       "reading": "じゅうにがつ",
       "gloss": "December",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "十二月は さむいです。",
+          "translation_en": "December is cold."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.先月",
@@ -2252,7 +2474,13 @@
       "reading": "せんげつ",
       "gloss": "last month",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "先月 旅行しました。",
+          "translation_en": "I traveled last month."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.今月",
@@ -2288,7 +2516,13 @@
       "reading": "まいつき",
       "gloss": "every month",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "毎月 一回 あいます。",
+          "translation_en": "We meet once a month."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.年",
@@ -2296,7 +2530,13 @@
       "reading": "とし / ねん",
       "gloss": "year",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "一年は 十二か月です。",
+          "translation_en": "One year is twelve months."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.きょねん",
@@ -2304,7 +2544,13 @@
       "reading": "きょねん",
       "gloss": "last year",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "きょねん 日本に 行きました。",
+          "translation_en": "I went to Japan last year."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.今年",
@@ -2340,7 +2586,13 @@
       "reading": "まいとし / まいねん",
       "gloss": "every year (まいとし is more common in conversation; まいねん in formal/written contexts)",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "毎年 たんじょうびを いわいます。",
+          "translation_en": "I celebrate my birthday every year."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.おととし",
@@ -2348,7 +2600,13 @@
       "reading": "おととし",
       "gloss": "year before last",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おととし 大学を そつぎょうしました。",
+          "translation_en": "I graduated university the year before last."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.さらいねん",
@@ -2356,7 +2614,13 @@
       "reading": "さらいねん",
       "gloss": "year after next",
       "section": "11. Time - Days, Weeks, Months, Years",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "さらいねん 日本に 行きます。",
+          "translation_en": "I'll go to Japan the year after next."
+        }
+      ]
     },
     {
       "id": "n5.vocab.11-time-days-weeks-month.たんじょうび",
@@ -2386,7 +2650,13 @@
       "reading": "まいあさ",
       "gloss": "every morning",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "まいあさ コーヒーを 飲みます。",
+          "translation_en": "I drink coffee every morning."
+        }
+      ]
     },
     {
       "id": "n5.vocab.12-time-frequency-sequen.まいばん",
@@ -2394,7 +2664,13 @@
       "reading": "まいばん",
       "gloss": "every night",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "まいばん 本を 読みます。",
+          "translation_en": "I read a book every night."
+        }
+      ]
     },
     {
       "id": "n5.vocab.12-time-frequency-sequen.いつも",
@@ -2486,7 +2762,13 @@
       "reading": "すぐ",
       "gloss": "soon, immediately",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "すぐ 来ます。",
+          "translation_en": "I'll come right away."
+        }
+      ]
     },
     {
       "id": "n5.vocab.12-time-frequency-sequen.もう",
@@ -2508,7 +2790,13 @@
       "reading": "もうすぐ",
       "gloss": "soon, before long",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "もうすぐ 学校が はじまります。",
+          "translation_en": "School starts soon."
+        }
+      ]
     },
     {
       "id": "n5.vocab.12-time-frequency-sequen.まだ",
@@ -2538,7 +2826,13 @@
       "reading": "さいしょ",
       "gloss": "first, beginning",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "さいしょに 名前を 書きます。",
+          "translation_en": "First, write your name."
+        }
+      ]
     },
     {
       "id": "n5.vocab.12-time-frequency-sequen.さいご",
@@ -2560,7 +2854,13 @@
       "reading": "つぎ",
       "gloss": "next",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "つぎは わたしです。",
+          "translation_en": "I'm next."
+        }
+      ]
     },
     {
       "id": "n5.vocab.12-time-frequency-sequen.後で",
@@ -2568,7 +2868,13 @@
       "reading": "あとで",
       "gloss": "later",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "後で でんわします。",
+          "translation_en": "I'll call later."
+        }
+      ]
     },
     {
       "id": "n5.vocab.12-time-frequency-sequen.前",
@@ -2590,7 +2896,13 @@
       "reading": "ところ",
       "gloss": "place",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しずかな ところで 休みます。",
+          "translation_en": "I rest in a quiet place."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.へや",
@@ -2612,7 +2924,13 @@
       "reading": "だいどころ",
       "gloss": "kitchen",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "だいどころで りょうりを します。",
+          "translation_en": "I cook in the kitchen."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.おてあらい",
@@ -2620,7 +2938,13 @@
       "reading": "おてあらい",
       "gloss": "restroom",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おてあらいは どこですか。",
+          "translation_en": "Where is the restroom?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.トイレ",
@@ -2628,7 +2952,13 @@
       "reading": "トイレ",
       "gloss": "toilet",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "トイレは あちらです。",
+          "translation_en": "The toilet is over there."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.おふろ",
@@ -2636,7 +2966,13 @@
       "reading": "おふろ",
       "gloss": "bath",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おふろに 入ります。",
+          "translation_en": "I take a bath."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.げんかん",
@@ -2644,7 +2980,13 @@
       "reading": "げんかん",
       "gloss": "entrance",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "げんかんで くつを ぬぎます。",
+          "translation_en": "I take off my shoes at the entrance."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.にわ",
@@ -2652,7 +2994,13 @@
       "reading": "にわ",
       "gloss": "garden",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "にわに 花が あります。",
+          "translation_en": "There are flowers in the garden."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.学校",
@@ -2688,7 +3036,13 @@
       "reading": "こうこう",
       "gloss": "high school",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "高校に かよって います。",
+          "translation_en": "I'm attending high school."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.きょうしつ",
@@ -2760,7 +3114,13 @@
       "reading": "かいしゃ",
       "gloss": "company",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "父は 会社で はたらきます。",
+          "translation_en": "My father works at a company."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.じむしょ",
@@ -2768,7 +3128,13 @@
       "reading": "じむしょ",
       "gloss": "office",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "じむしょは 二かいです。",
+          "translation_en": "The office is on the 2nd floor."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.お店",
@@ -2776,7 +3142,13 @@
       "reading": "おみせ",
       "gloss": "shop",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "お店で 買いものを します。",
+          "translation_en": "I shop at the store."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.スーパー",
@@ -2840,7 +3212,13 @@
       "reading": "やおや",
       "gloss": "greengrocer",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "やおやで やさいを 買います。",
+          "translation_en": "I buy vegetables at the greengrocer."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.ほんや",
@@ -2848,7 +3226,13 @@
       "reading": "ほんや",
       "gloss": "bookstore",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ほんやで 本を 買いました。",
+          "translation_en": "I bought a book at the bookstore."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.はなや",
@@ -2856,7 +3240,13 @@
       "reading": "はなや",
       "gloss": "flower shop",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "はなやで 花を 買います。",
+          "translation_en": "I buy flowers at the florist."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.にくや",
@@ -2864,7 +3254,13 @@
       "reading": "にくや",
       "gloss": "butcher",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "にくやで にくを 買います。",
+          "translation_en": "I buy meat at the butcher."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.パンや",
@@ -2872,7 +3268,13 @@
       "reading": "パンや",
       "gloss": "bakery",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "パンやで パンを 買いました。",
+          "translation_en": "I bought bread at the bakery."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.駅",
@@ -2898,7 +3300,13 @@
       "reading": "くうこう",
       "gloss": "airport",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "くうこうで ともだちを むかえます。",
+          "translation_en": "I'll meet my friend at the airport."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.こうえん",
@@ -2920,7 +3328,13 @@
       "reading": "どうぶつえん",
       "gloss": "zoo",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "どうぶつえんで パンダを 見ました。",
+          "translation_en": "I saw a panda at the zoo."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.びじゅつかん",
@@ -2928,7 +3342,13 @@
       "reading": "びじゅつかん",
       "gloss": "art museum",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "びじゅつかんで えを 見ます。",
+          "translation_en": "I look at paintings at the art museum."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.えいがかん",
@@ -2936,7 +3356,13 @@
       "reading": "えいがかん",
       "gloss": "movie theater",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "えいがかんで えいがを 見ます。",
+          "translation_en": "I watch movies at the theater."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.ホテル",
@@ -2944,7 +3370,13 @@
       "reading": "ホテル",
       "gloss": "hotel",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ホテルに とまります。",
+          "translation_en": "I'll stay at the hotel."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.りょかん",
@@ -2952,7 +3384,13 @@
       "reading": "りょかん",
       "gloss": "Japanese inn",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "りょかんで 一ぱく しました。",
+          "translation_en": "I stayed one night at a Japanese inn."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.たいしかん",
@@ -2968,7 +3406,13 @@
       "reading": "こうばん",
       "gloss": "police box",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こうばんで みちを 聞きます。",
+          "translation_en": "I ask for directions at the police box."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.こうじょう",
@@ -2984,7 +3428,13 @@
       "reading": "こうさてん",
       "gloss": "intersection",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こうさてんで まがります。",
+          "translation_en": "I turn at the intersection."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.いりぐち",
@@ -2992,7 +3442,13 @@
       "reading": "いりぐち",
       "gloss": "entrance, entry",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "いりぐちは あちらです。",
+          "translation_en": "The entrance is over there."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.しょくどう",
@@ -3000,7 +3456,13 @@
       "reading": "しょくどう",
       "gloss": "cafeteria, dining room",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しょくどうで ひるごはんを 食べます。",
+          "translation_en": "I eat lunch in the cafeteria."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.たてもの",
@@ -3008,7 +3470,13 @@
       "reading": "たてもの",
       "gloss": "building",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あの たてものは 大学です。",
+          "translation_en": "That building is a university."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.ろうか",
@@ -3016,7 +3484,13 @@
       "reading": "ろうか",
       "gloss": "hallway, corridor",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ろうかで 走らないで ください。",
+          "translation_en": "Don't run in the hallway."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.プール",
@@ -3024,7 +3498,13 @@
       "reading": "プール",
       "gloss": "swimming pool",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "プールで およぎます。",
+          "translation_en": "I swim in the pool."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.ポスト",
@@ -3032,7 +3512,13 @@
       "reading": "ポスト",
       "gloss": "post (mailbox)",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ポストに てがみを 入れます。",
+          "translation_en": "I put a letter in the mailbox."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.道",
@@ -3040,7 +3526,13 @@
       "reading": "みち",
       "gloss": "road, way",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "道を わたります。",
+          "translation_en": "I cross the road."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.とおり",
@@ -3048,7 +3540,13 @@
       "reading": "とおり",
       "gloss": "street",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "この とおりは にぎやかです。",
+          "translation_en": "This street is lively."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.かど",
@@ -3056,7 +3554,13 @@
       "reading": "かど",
       "gloss": "corner",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かどを みぎに まがります。",
+          "translation_en": "Turn right at the corner."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.はし",
@@ -3064,7 +3568,13 @@
       "reading": "はし",
       "gloss": "bridge",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "はしを わたります。",
+          "translation_en": "I cross the bridge."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.まち",
@@ -3086,7 +3596,13 @@
       "reading": "むら",
       "gloss": "village",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "小さい むらに すんで います。",
+          "translation_en": "I live in a small village."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.国",
@@ -3094,7 +3610,13 @@
       "reading": "くに",
       "gloss": "country",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "わたしの 国は 大きいです。",
+          "translation_en": "My country is big."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.外",
@@ -3158,7 +3680,13 @@
       "reading": "まえ",
       "gloss": "front",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "えきの 前で 会いましょう。",
+          "translation_en": "Let's meet in front of the station."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.後ろ",
@@ -3166,7 +3694,13 @@
       "reading": "うしろ",
       "gloss": "back, behind",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "わたしの 後ろに 田中さんが います。",
+          "translation_en": "Tanaka-san is behind me."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.左",
@@ -3174,7 +3708,13 @@
       "reading": "ひだり",
       "gloss": "left",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "左に 学校が あります。",
+          "translation_en": "The school is on the left."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.右",
@@ -3182,7 +3722,13 @@
       "reading": "みぎ",
       "gloss": "right",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "右に スーパーが あります。",
+          "translation_en": "There's a supermarket on the right."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.となり",
@@ -3190,7 +3736,13 @@
       "reading": "となり",
       "gloss": "next to",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "となりに 友だちが すんで います。",
+          "translation_en": "My friend lives next door."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.よこ",
@@ -3198,7 +3750,13 @@
       "reading": "よこ",
       "gloss": "side",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "テーブルの よこに いすが あります。",
+          "translation_en": "There's a chair next to the table."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.ちかく",
@@ -3214,7 +3772,13 @@
       "reading": "とおく",
       "gloss": "far",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "とおくに 山が 見えます。",
+          "translation_en": "I can see mountains in the distance."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.むこう",
@@ -3222,7 +3786,13 @@
       "reading": "むこう",
       "gloss": "over there, beyond",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "むこうに 大きい ビルが あります。",
+          "translation_en": "There's a big building over there."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.北",
@@ -3230,7 +3800,13 @@
       "reading": "きた",
       "gloss": "north",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "北は さむいです。",
+          "translation_en": "The north is cold."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.南",
@@ -3238,7 +3814,13 @@
       "reading": "みなみ",
       "gloss": "south",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "南は あついです。",
+          "translation_en": "The south is hot."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.東",
@@ -3246,7 +3828,13 @@
       "reading": "ひがし",
       "gloss": "east",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "東に 山が あります。",
+          "translation_en": "There are mountains to the east."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.西",
@@ -3254,7 +3842,13 @@
       "reading": "にし",
       "gloss": "west",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "西に 海が あります。",
+          "translation_en": "There's the sea to the west."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.山",
@@ -3304,7 +3898,13 @@
       "reading": "いけ",
       "gloss": "pond",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こうえんに いけが あります。",
+          "translation_en": "There's a pond in the park."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.みずうみ",
@@ -3312,7 +3912,13 @@
       "reading": "みずうみ",
       "gloss": "lake",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "みずうみで およぎました。",
+          "translation_en": "I swam in the lake."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.もり",
@@ -3320,7 +3926,13 @@
       "reading": "もり",
       "gloss": "forest",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "もりに 入ります。",
+          "translation_en": "I enter the forest."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.木",
@@ -3356,7 +3968,13 @@
       "reading": "くさ",
       "gloss": "grass",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "にわに くさが はえて います。",
+          "translation_en": "Grass is growing in the garden."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.は",
@@ -3364,7 +3982,13 @@
       "reading": "は",
       "gloss": "leaf",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "木の はが おちました。",
+          "translation_en": "A tree leaf fell."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.いし",
@@ -3372,7 +3996,13 @@
       "reading": "いし",
       "gloss": "stone",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "道に 大きい いしが あります。",
+          "translation_en": "There's a big stone on the road."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.田",
@@ -3380,7 +4010,13 @@
       "reading": "た",
       "gloss": "rice field",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "田の 中で 米を つくります。",
+          "translation_en": "They grow rice in the rice field."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.空",
@@ -3402,7 +4038,13 @@
       "reading": "くも",
       "gloss": "cloud",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "そらに くもが あります。",
+          "translation_en": "There are clouds in the sky."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.たいよう",
@@ -3410,7 +4052,13 @@
       "reading": "たいよう",
       "gloss": "sun",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "たいようが 出ました。",
+          "translation_en": "The sun came out."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.月",
@@ -3474,7 +4122,13 @@
       "reading": "かぜ",
       "gloss": "wind",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "今日は かぜが つよいです。",
+          "translation_en": "The wind is strong today."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.天気",
@@ -3496,7 +4150,13 @@
       "reading": "はれ",
       "gloss": "clear weather",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "今日は はれです。",
+          "translation_en": "It's clear today."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.くもり",
@@ -3504,7 +4164,13 @@
       "reading": "くもり",
       "gloss": "cloudy",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あした くもりです。",
+          "translation_en": "Tomorrow will be cloudy."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.はる",
@@ -3526,7 +4192,13 @@
       "reading": "なつ",
       "gloss": "summer",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "なつは あついです。",
+          "translation_en": "Summer is hot."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.あき",
@@ -3548,7 +4220,13 @@
       "reading": "ふゆ",
       "gloss": "winter",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ふゆは ゆきが ふります。",
+          "translation_en": "It snows in winter."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.あつい",
@@ -3600,7 +4278,13 @@
       "reading": "ひ",
       "gloss": "fire",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "火に 気を つけて ください。",
+          "translation_en": "Please be careful with fire."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.水",
@@ -3608,7 +4292,13 @@
       "reading": "みず",
       "gloss": "water (cold)",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "水を 飲みます。",
+          "translation_en": "I drink water."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.おゆ",
@@ -3616,7 +4306,13 @@
       "reading": "おゆ",
       "gloss": "hot water",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おゆを わかします。",
+          "translation_en": "I boil water."
+        }
+      ]
     },
     {
       "id": "n5.vocab.15-animals.どうぶつ",
@@ -3736,7 +4432,13 @@
       "reading": "にわとり",
       "gloss": "chicken",
       "section": "15. Animals",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "にわとりが たまごを うみます。",
+          "translation_en": "Hens lay eggs."
+        }
+      ]
     },
     {
       "id": "n5.vocab.15-animals.ぞう",
@@ -3744,7 +4446,13 @@
       "reading": "ぞう",
       "gloss": "elephant",
       "section": "15. Animals",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ぞうは とても 大きいです。",
+          "translation_en": "Elephants are very big."
+        }
+      ]
     },
     {
       "id": "n5.vocab.15-animals.むし",
@@ -3752,7 +4460,13 @@
       "reading": "むし",
       "gloss": "insect",
       "section": "15. Animals",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "にわに むしが います。",
+          "translation_en": "There are insects in the garden."
+        }
+      ]
     },
     {
       "id": "n5.vocab.16-food-and-drink-genera.たべもの",
@@ -3760,7 +4474,13 @@
       "reading": "たべもの",
       "gloss": "food",
       "section": "16. Food and Drink - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "日本の たべものが すきです。",
+          "translation_en": "I like Japanese food."
+        }
+      ]
     },
     {
       "id": "n5.vocab.16-food-and-drink-genera.のみもの",
@@ -3768,7 +4488,13 @@
       "reading": "のみもの",
       "gloss": "drink",
       "section": "16. Food and Drink - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "のみものは 何が いいですか。",
+          "translation_en": "What would you like to drink?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.16-food-and-drink-genera.あさごはん",
@@ -3818,7 +4544,13 @@
       "reading": "ゆうはん",
       "gloss": "dinner (alternate)",
       "section": "16. Food and Drink - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ゆうはんは すしを 食べました。",
+          "translation_en": "I ate sushi for dinner."
+        }
+      ]
     },
     {
       "id": "n5.vocab.16-food-and-drink-genera.ごはん",
@@ -3840,7 +4572,13 @@
       "reading": "しょくじ",
       "gloss": "meal",
       "section": "16. Food and Drink - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しょくじの じかんです。",
+          "translation_en": "It's mealtime."
+        }
+      ]
     },
     {
       "id": "n5.vocab.16-food-and-drink-genera.おべんとう",
@@ -3848,7 +4586,13 @@
       "reading": "おべんとう",
       "gloss": "boxed lunch",
       "section": "16. Food and Drink - General",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おべんとうを もって 行きます。",
+          "translation_en": "I bring a packed lunch."
+        }
+      ]
     },
     {
       "id": "n5.vocab.16-food-and-drink-genera.おかし",
@@ -3912,7 +4656,13 @@
       "reading": "ぎゅうにく",
       "gloss": "beef",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ぎゅうにくは 高いです。",
+          "translation_en": "Beef is expensive."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.ぶたにく",
@@ -3920,7 +4670,13 @@
       "reading": "ぶたにく",
       "gloss": "pork",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ぶたにくを 食べます。",
+          "translation_en": "I eat pork."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.とりにく",
@@ -3928,7 +4684,13 @@
       "reading": "とりにく",
       "gloss": "chicken (meat)",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "とりにくは あっさりして います。",
+          "translation_en": "Chicken is light/mild."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.さかな",
@@ -3936,7 +4698,13 @@
       "reading": "さかな",
       "gloss": "fish",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "さかなを 食べます。",
+          "translation_en": "I eat fish."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.やさい",
@@ -4014,7 +4782,13 @@
       "reading": "いちご",
       "gloss": "strawberry",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "いちごは あまいです。",
+          "translation_en": "Strawberries are sweet."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.ぶどう",
@@ -4022,7 +4796,13 @@
       "reading": "ぶどう",
       "gloss": "grape",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ぶどうを 買いました。",
+          "translation_en": "I bought grapes."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.すいか",
@@ -4030,7 +4810,13 @@
       "reading": "すいか",
       "gloss": "watermelon",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "夏は すいかが おいしいです。",
+          "translation_en": "Watermelon is tasty in summer."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.レモン",
@@ -4038,7 +4824,13 @@
       "reading": "レモン",
       "gloss": "lemon",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "レモンは すっぱいです。",
+          "translation_en": "Lemons are sour."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.だいこん",
@@ -4046,7 +4838,13 @@
       "reading": "だいこん",
       "gloss": "daikon radish",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "だいこんで サラダを つくります。",
+          "translation_en": "I make salad with daikon."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.にんじん",
@@ -4054,7 +4852,13 @@
       "reading": "にんじん",
       "gloss": "carrot",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "にんじんは あかい やさいです。",
+          "translation_en": "Carrots are red vegetables."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.たまねぎ",
@@ -4062,7 +4866,13 @@
       "reading": "たまねぎ",
       "gloss": "onion",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "たまねぎを 切ります。",
+          "translation_en": "I cut onions."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.じゃがいも",
@@ -4070,7 +4880,13 @@
       "reading": "じゃがいも",
       "gloss": "potato",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "じゃがいもを 入れて ください。",
+          "translation_en": "Please add potatoes."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.トマト",
@@ -4078,7 +4894,13 @@
       "reading": "トマト",
       "gloss": "tomato",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "トマトは あかい くだものです。",
+          "translation_en": "Tomatoes are red."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.きゅうり",
@@ -4086,7 +4908,13 @@
       "reading": "きゅうり",
       "gloss": "cucumber",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "きゅうりを サラダに 入れます。",
+          "translation_en": "I put cucumber in the salad."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.キャベツ",
@@ -4094,7 +4922,13 @@
       "reading": "キャベツ",
       "gloss": "cabbage",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "キャベツを 切ります。",
+          "translation_en": "I cut cabbage."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.こめ",
@@ -4102,7 +4936,13 @@
       "reading": "こめ",
       "gloss": "uncooked rice",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こめは 日本の しゅしょくです。",
+          "translation_en": "Rice is the staple food in Japan."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.しお",
@@ -4110,7 +4950,13 @@
       "reading": "しお",
       "gloss": "salt",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しおを 入れて ください。",
+          "translation_en": "Please add salt."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.さとう",
@@ -4118,7 +4964,13 @@
       "reading": "さとう",
       "gloss": "sugar",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "コーヒーに さとうを 入れます。",
+          "translation_en": "I put sugar in my coffee."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.しょうゆ",
@@ -4126,7 +4978,13 @@
       "reading": "しょうゆ",
       "gloss": "soy sauce",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "すしに しょうゆを つけます。",
+          "translation_en": "I dip sushi in soy sauce."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.みそ",
@@ -4134,7 +4992,13 @@
       "reading": "みそ",
       "gloss": "miso",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "みそしるが すきです。",
+          "translation_en": "I like miso soup."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.バター",
@@ -4198,7 +5062,13 @@
       "reading": "カレー",
       "gloss": "curry",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "夕ごはんは カレーです。",
+          "translation_en": "Dinner is curry."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.ラーメン",
@@ -4220,7 +5090,13 @@
       "reading": "うどん",
       "gloss": "udon",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "うどんを 食べます。",
+          "translation_en": "I eat udon."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.そば",
@@ -4228,7 +5104,13 @@
       "reading": "そば",
       "gloss": "soba",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おみそかに そばを 食べます。",
+          "translation_en": "I eat soba on New Year's Eve."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.ハンバーガー",
@@ -4236,7 +5118,13 @@
       "reading": "ハンバーガー",
       "gloss": "hamburger",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ハンバーガーを 二つ ください。",
+          "translation_en": "Two hamburgers please."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.サンドイッチ",
@@ -4244,7 +5132,13 @@
       "reading": "サンドイッチ",
       "gloss": "sandwich",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "サンドイッチを 食べました。",
+          "translation_en": "I ate a sandwich."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.サラダ",
@@ -4252,7 +5146,13 @@
       "reading": "サラダ",
       "gloss": "salad",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "サラダが すきです。",
+          "translation_en": "I like salad."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.スープ",
@@ -4260,7 +5160,13 @@
       "reading": "スープ",
       "gloss": "soup",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "スープを 飲みます。",
+          "translation_en": "I have soup."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.ケーキ",
@@ -4296,7 +5202,13 @@
       "reading": "チョコレート",
       "gloss": "chocolate",
       "section": "17. Food - Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "チョコレートが すきです。",
+          "translation_en": "I like chocolate."
+        }
+      ]
     },
     {
       "id": "n5.vocab.17-food-items.あめ",
@@ -4326,7 +5238,13 @@
       "reading": "おゆ",
       "gloss": "hot water",
       "section": "18. Drinks",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おゆを ください。",
+          "translation_en": "Hot water please."
+        }
+      ]
     },
     {
       "id": "n5.vocab.18-drinks.おちゃ",
@@ -4348,7 +5266,13 @@
       "reading": "こうちゃ",
       "gloss": "black tea",
       "section": "18. Drinks",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こうちゃを 飲みます。",
+          "translation_en": "I drink black tea."
+        }
+      ]
     },
     {
       "id": "n5.vocab.18-drinks.コーヒー",
@@ -4440,7 +5364,13 @@
       "reading": "さら",
       "gloss": "plate",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "さらに りょうりを のせます。",
+          "translation_en": "I put the food on a plate."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.おさら",
@@ -4448,7 +5378,13 @@
       "reading": "おさら",
       "gloss": "plate (polite)",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おさらを あらいます。",
+          "translation_en": "I wash the plates."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.ちゃわん",
@@ -4456,7 +5392,13 @@
       "reading": "ちゃわん",
       "gloss": "rice bowl",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ちゃわんに ごはんを 入れます。",
+          "translation_en": "I put rice in the bowl."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.おわん",
@@ -4464,7 +5406,13 @@
       "reading": "おわん",
       "gloss": "bowl",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おわんで みそしるを 飲みます。",
+          "translation_en": "I drink miso soup from a bowl."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.はし",
@@ -4472,7 +5420,13 @@
       "reading": "はし",
       "gloss": "chopsticks",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "はしで ごはんを 食べます。",
+          "translation_en": "I eat rice with chopsticks."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.スプーン",
@@ -4480,7 +5434,13 @@
       "reading": "スプーン",
       "gloss": "spoon",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "スプーンで スープを 飲みます。",
+          "translation_en": "I eat soup with a spoon."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.フォーク",
@@ -4488,7 +5448,13 @@
       "reading": "フォーク",
       "gloss": "fork",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "フォークで サラダを 食べます。",
+          "translation_en": "I eat salad with a fork."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.ナイフ",
@@ -4496,7 +5462,13 @@
       "reading": "ナイフ",
       "gloss": "knife",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ナイフで パンを 切ります。",
+          "translation_en": "I cut bread with a knife."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.コップ",
@@ -4504,7 +5476,13 @@
       "reading": "コップ",
       "gloss": "cup, glass",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "コップに 水を 入れます。",
+          "translation_en": "I put water in the glass."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.カップ",
@@ -4512,7 +5490,13 @@
       "reading": "カップ",
       "gloss": "cup (alt of コップ)",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "カップで コーヒーを 飲みます。",
+          "translation_en": "I drink coffee from a cup."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.れいぞうこ",
@@ -4520,7 +5504,13 @@
       "reading": "れいぞうこ",
       "gloss": "refrigerator",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "れいぞうこに ぎゅうにゅうが あります。",
+          "translation_en": "There's milk in the fridge."
+        }
+      ]
     },
     {
       "id": "n5.vocab.19-tableware-and-cooking.なべ",
@@ -4528,7 +5518,13 @@
       "reading": "なべ",
       "gloss": "pot, pan",
       "section": "19. Tableware and Cooking",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "なべで スープを つくります。",
+          "translation_en": "I make soup in the pot."
+        }
+      ]
     },
     {
       "id": "n5.vocab.20-colors.いろ",
@@ -4536,7 +5532,13 @@
       "reading": "いろ",
       "gloss": "color",
       "section": "20. Colors",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "すきな いろは あおです。",
+          "translation_en": "My favorite color is blue."
+        }
+      ]
     },
     {
       "id": "n5.vocab.20-colors.白",
@@ -4712,7 +5714,13 @@
       "reading": "ピンク",
       "gloss": "pink",
       "section": "20. Colors",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ピンクの 花が きれいです。",
+          "translation_en": "The pink flowers are pretty."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.ふく",
@@ -4734,7 +5742,13 @@
       "reading": "ようふく",
       "gloss": "Western clothes",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ようふくを 買いました。",
+          "translation_en": "I bought Western clothes."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.きもの",
@@ -4742,7 +5756,13 @@
       "reading": "きもの",
       "gloss": "kimono, traditional clothes",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "お正月に きものを きます。",
+          "translation_en": "I wear a kimono on New Year's."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.うわぎ",
@@ -4750,7 +5770,13 @@
       "reading": "うわぎ",
       "gloss": "jacket, coat",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "うわぎを ぬぎます。",
+          "translation_en": "I take off my jacket."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.コート",
@@ -4758,7 +5784,13 @@
       "reading": "コート",
       "gloss": "coat",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "冬に コートを きます。",
+          "translation_en": "I wear a coat in winter."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.セーター",
@@ -4766,7 +5798,13 @@
       "reading": "セーター",
       "gloss": "sweater",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "さむい とき、セーターを きます。",
+          "translation_en": "I wear a sweater when cold."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.シャツ",
@@ -4788,7 +5826,13 @@
       "reading": "ティーシャツ",
       "gloss": "T-shirt",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "夏に Tシャツを きます。",
+          "translation_en": "I wear T-shirts in summer."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.ワイシャツ",
@@ -4796,7 +5840,13 @@
       "reading": "ワイシャツ",
       "gloss": "dress shirt",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しごとには ワイシャツを きます。",
+          "translation_en": "I wear a dress shirt to work."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.ズボン",
@@ -4832,7 +5882,13 @@
       "reading": "ネクタイ",
       "gloss": "necktie",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ネクタイを しめます。",
+          "translation_en": "I tie my necktie."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.ぼうし",

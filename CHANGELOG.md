@@ -2,6 +2,67 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.11.3 - 2026-05-03 (Vocab examples Phase 6 — +176 entries)
+
+Phase 6 of the example-coverage authoring pass. Targets the still-
+uncovered sections after Phase 5: time-general tail, days-of-month +
+months, locations tail, food items tail, tableware, clothing tail,
+animals tail. All 176 new IDs verified against actual data — zero
+form-mismatches this batch (we now dump the live data and key against
+real IDs rather than guessing).
+
+### Content (176 new vocab inline examples)
+
+  - **Time-general tail (10)**: とき, とけい, おととい, けさ, こんばん,
+    こんや, 午前, 午後, 半, 分.
+  - **Days/Months (32)**: ついたち..二十日 (1st-20th), 一月..十二月 (all
+    12 months), 週, 先週, 月, 先月, 毎月, 年, きょねん, 毎年, おととし,
+    さらいねん.
+  - **Frequency tail (7)**: まいあさ, まいばん, すぐ, もうすぐ, さいしょ,
+    つぎ, 後で.
+  - **Locations tail (49)**: ところ, だいどころ, おてあらい, トイレ, おふろ,
+    げんかん, にわ, 高校, 会社, じむしょ, お店, やおや, ほんや, はなや,
+    にくや, パンや, くうこう, どうぶつえん, びじゅつかん, えいがかん,
+    ホテル, りょかん, こうばん, こうさてん, いりぐち, しょくどう, たてもの,
+    ろうか, プール, ポスト, 道, とおり, かど, はし, むら, 国, 前, 後ろ,
+    左, 右, となり, よこ, とおく, むこう, 北, 南, 東, 西.
+  - **Nature tail (17)**: いけ, みずうみ, もり, くさ, は (leaf), いし,
+    田, くも, たいよう, かぜ, はれ, くもり, なつ, ふゆ, 火, 水, おゆ.
+  - **Animals tail (3)**: にわとり, ぞう, むし.
+  - **Food/drink general (5)**: たべもの, のみもの, ゆうはん, しょくじ,
+    おべんとう.
+  - **Food items tail (28)**: ぎゅうにく, ぶたにく, とりにく, さかな,
+    いちご, ぶどう, すいか, レモン, だいこん, にんじん, たまねぎ,
+    じゃがいも, トマト, きゅうり, キャベツ, こめ, しお, さとう, しょうゆ,
+    みそ, カレー, うどん, そば, ハンバーガー, サンドイッチ, サラダ,
+    スープ, チョコレート.
+  - **Drinks tail (2)**: おゆ (drinks ID), こうちゃ.
+  - **Tableware (12)**: さら, おさら, ちゃわん, おわん, はし
+    (chopsticks), スプーン, フォーク, ナイフ, コップ, カップ, れいぞうこ,
+    なべ.
+  - **Colors tail (2)**: いろ, ピンク.
+  - **Clothing tail (8)**: ようふく, きもの, うわぎ, コート, セーター,
+    Tシャツ, ワイシャツ, ネクタイ.
+
+### Coverage status
+
+- Vocab fully-uncovered: **321** (was 497 → 321; **-176**).
+- Sections now fully covered: 11 (days/months), 12 (frequency), 14
+  (nature/weather), 15 (animals), 16 (food/drink general), 18 (drinks),
+  19 (tableware), 20 (colors), 21 (clothing), plus most of 13
+  (locations) and 17 (food items).
+- Remaining biggest buckets for Phase 7+: common nouns misc (~60),
+  verb tail (~30), adverbs tail (~10), school/study tail (~10),
+  some money/transport, set phrases, body parts.
+
+### Service worker
+
+Bumped `CACHE_VERSION` v107 -> v108.
+
+v1.11.3 / SW v108. **40/40 invariants green.**
+
+---
+
 ## v1.11.2 - 2026-05-03 (Vocab examples Phase 5 — +179 entries)
 
 Continuation of the vocab-example coverage pass. This batch combines
