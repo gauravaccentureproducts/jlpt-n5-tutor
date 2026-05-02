@@ -783,6 +783,16 @@ main h3 {
   font-size: 13px;
   margin-top: 4px;
 }
+/* Audio control inside grammar/vocab example list. Native <audio>
+ * defaults to 300px wide which overflows a 320-px viewport (causes
+ * horizontal scroll and pushes the fixed bottom-nav off-screen).
+ * Mirror the .reading-audio / .listening-audio convention. */
+.example-audio {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 6px;
+}
 .mistakes-list { list-style: none; padding: 0; margin: 0; }
 .mistakes-list li {
   background: rgba(185, 28, 28, 0.05);
@@ -1607,11 +1617,60 @@ label {
   flex: 1;
   min-width: 0;
 }
-/* Very narrow screens (tiny phones): re-enable wrapping so the toggle
- * doesn't get crushed when the viewport itself can't fit both. */
+/* Very narrow screens (tiny phones): stack the pattern-header vertically.
+ *
+ * Why: the desktop fix (`flex: 1; min-width: 0` on the title cluster +
+ * `flex-shrink: 0` on the toggle) lets the toggle hold its ~150px
+ * width while the title cluster shrinks. On a 320px viewport (Galaxy
+ * S9+) that leaves only ~45px for the title — and CJK Japanese
+ * characters break per-character, so a 7-character title like
+ * 〜です／〜ます ended up 1 char per line, 7 lines tall (reported
+ * with screenshot 2026-05-03).
+ *
+ * Stacking puts the title on its own row at full container width; the
+ * toggle drops below, anchored to the right edge. Title text now fits
+ * naturally on one line.
+ */
 @media (max-width: 480px) {
   .pattern-header {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+  .pattern-header > *:first-child {
+    /* Reset the desktop flex:1 behavior; on column flex,
+     * min-width:0 isn't needed and was a no-op anyway. */
+    flex: initial;
+    min-width: auto;
+  }
+  .pattern-header .known-toggle {
+    align-self: flex-end;
+  }
+
+  /* Pattern usage table at narrow widths.
+   *
+   * The right cell (form display, e.g. 〜です／〜ます) was wrapping ONE
+   * CHARACTER PER LINE — a 7-char title became a 7-line vertical stack
+   * — because the cell was ~85px wide on a 320px viewport and CJK
+   * Japanese text has soft-wrap opportunities at every character.
+   * `word-break: keep-all` alone wasn't enough: the wave dash 〜 (NS
+   * class) and full-width solidus ／ (BA class) still allow breaks.
+   *
+   * Solution: `white-space: nowrap` forces the form display onto a
+   * single line. Since N5 pattern names are short (3-15 chars), the
+   * cell expands under auto table-layout to fit the content; the POS
+   * column (English prose, wraps naturally) absorbs the remaining
+   * space. We also tighten cell padding to reclaim ~8px of horizontal
+   * room. Tested at 320 / 371 / 480px. */
+  .pattern-usage-table td,
+  .pattern-conjugation-table th,
+  .pattern-conjugation-table td {
+    padding: 8px 8px;
+  }
+  .pattern-usage-form {
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: nowrap;
   }
 }
 .known-toggle {
@@ -2280,9 +2339,20 @@ textarea:focus-visible,
 /* Mobile bottom nav + safe-area (Brief 2 s9.1, s9.3) */
 @media (max-width: 480px) {
   body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
+  /* Header on mobile: tighten the grid gap (was var(--space-6) = 30px) and
+   * inline padding (was 22.5px) so brand + secondary-nav (search + settings)
+   * fit on a 320px viewport. Without this, secondary-nav extends 18px past
+   * the right edge → page-wide horizontal scroll. */
+  .app-header { gap: 12px; padding-inline: 16px; }
   .primary-nav {
     position: fixed; bottom: 0; left: 0; right: 0; z-index: 900;
     display: flex; justify-content: space-around;
+    /* Reset desktop gap (var(--space-6) = 30px). With 5 mobile bottom-nav
+     * items each at min-width: 44px, four 30px gaps would total 348px and
+     * overflow a 320px viewport (Galaxy S9+) — pushing the rightmost item
+     * off-screen and triggering page-wide horizontal scroll. space-around
+     * already distributes whitespace, so no explicit gap needed. */
+    gap: 0;
     background: var(--c-surface); border-top: 1px solid var(--c-border);
     padding: 6px 4px calc(6px + env(safe-area-inset-bottom, 0px));
   }
@@ -2299,6 +2369,22 @@ textarea:focus-visible,
     flex: 1 1 auto;
     min-width: 100px;
     max-width: 200px;
+  }
+}
+/* Galaxy S9+ tier (320-380 px). Bottom-nav labels ("Vocabulary",
+ * "Listening") at 13 px are wide enough that flex: 1 1 0 + min-width: 44
+ * still bottoms out at the text's intrinsic min-content (~66 px each),
+ * so 5 items × 66 + 8 padding = 338 px > 320 px viewport → page-wide
+ * horizontal scroll. Drop font, padding, and min-width to let the items
+ * actually shrink-to-fit. Min-height: 44 (tap-target floor) is set
+ * globally and is unaffected. */
+@media (max-width: 380px) {
+  .primary-nav { padding: 6px 0 calc(6px + env(safe-area-inset-bottom, 0px)); }
+  .primary-nav a {
+    font-size: 11px;
+    padding: 4px 2px;
+    min-width: 0;
+    letter-spacing: -0.01em;
   }
 }
 
