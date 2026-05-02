@@ -24,9 +24,9 @@ You can:
 
 Audio assets (MP3 files for grammar examples, listening drills, reading passages) are static files served from the same origin. They are not streamed from a third party.
 
-## Source code
+## Independently verifiable
 
-The full source is at <https://github.com/gauravaccentureproducts/jlpt-n5-tutor>. Anything stated here can be verified against the code: there is no build pipeline that injects analytics or trackers post-deploy.
+Open the browser's Network tab and watch a session. You will see only same-origin requests for the assets the app needs to run (HTML, CSS, JS, JSON, fonts, MP3s, SVGs). No third-party hosts, no analytics endpoints, no tracking pixels. The build does not inject analytics or trackers post-deploy.
 
 ## Updates
 
@@ -34,4 +34,4 @@ If this app's privacy posture ever changes, the change will be documented in the
 
 ---
 
-*Last updated: 2026-04-30*
+*Last updated: 2026-05-02*

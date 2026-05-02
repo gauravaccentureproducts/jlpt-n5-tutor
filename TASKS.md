@@ -1,6 +1,6 @@
 # JLPT N5 Grammar Tutor - Tasks
 
-Last updated: 2026-05-02 (Japanese-first language sweep — v1.9.0 / SW v82 / 37 invariants. Closed: dokkai EN-translation removal + JA titles, listening EN titles → JA, UI page-chrome JA, reading-list level/topic Japanified, Mondai-3 parser fix + bunpou stem N5-cleanup, dokkai naturalness exception formalized in `data/dokkai_kanji_exception.json`. Added invariants: JA-26 (no duplicate question IDs), JA-27 (no `title_en`/`translation_en` in reading/listening), JA-28 (dokkai kanji bounded by N5 ∪ exception list). Removed 16 dead `translation_en` fields from `data/questions.json`. **37/37 CI invariants green** (was 35).)
+Last updated: 2026-05-02 (Content-protection layer — v1.10.1 / SW v90 / 38 invariants. Closes the JA-first language sweep + DEFER-1 backlog + content-deterrent layer in three releases on the same day: v1.9.0 (Japanese-first surface), v1.10.0 (syllabus dashboard + 100% grammar-pattern test coverage + multi-correct categories F/G/H + JA-29 subtype-taxonomy lock), v1.10.1 (content-protection layer + GitHub-link removal). Added invariants over the day: JA-26..JA-29. Content-protection layer raises friction against casual copying; honest limitations documented in `js/content-protect.js`. **39/39 CI invariants green**.)
 
 ## Live site
 
@@ -14,7 +14,7 @@ Last updated: 2026-05-02 (Japanese-first language sweep — v1.9.0 / SW v82 / 37
 - 187/187 patterns enriched, **198 real questions** (no stubs; post-Pass-14/15/16/17 cleanup). Distribution: 168 mcq / 16 sentence_order / 14 text_input. New mcq subtypes: `paraphrase` (10 from external-corpus Pass-15 P0), `kanji_writing` (6 from Pass-15 P1).
 - **17 routed views + sub-paths**: Home / **Learn hub (5-card: Grammar/Vocab/Kanji/Dokkai/Listening)** with sub-paths `#/learn/grammar`, `#/learn/vocab`, `#/learn/vocab/<form>` (per-word detail with 5 example sentences), `#/learn/<patternId>` / Kanji (`#/kanji`, `#/kanji/<glyph>`) / Test (`#/test`, `#/test/<n>` direct-launch with quit-prompt) / Practice (`#/drill`, was "Daily Drill") / Review (SM-2 SRS) / Summary / Diagnostic / Settings / Reading / Listening / こそあど / は vs が / Verb groups / て-form gym / Particle pairs / Counters
 - SM-2 SRS in Review (4-button grading)
-- Service worker `jlpt-n5-tutor-v82` (stale-while-revalidate for shell, cache-first for content); update toast on new shell; lazy-caches audio on first play
+- Service worker `jlpt-n5-tutor-v90` (stale-while-revalidate for shell, cache-first for content); update toast on new shell; lazy-caches audio on first play
 - 5-locale i18n shell (en at v1, vi/id/ne/zh structured)
 - PWA manifest installable
 - Export / import progress round-trips through JSON
@@ -27,6 +27,7 @@ Last updated: 2026-05-02 (Japanese-first language sweep — v1.9.0 / SW v82 / 37
 - **Audio TTS pipeline**: tools/build_audio.py - auto-detects piper-tts / gtts / pyttsx3. Idempotent. Uses string-suffix concat (not Path.with_suffix) so example IDs like 'n5-001.0' don't collide.
 - **Codebase em-dash-free** (881 occurrences stripped)
 - **Japanese-first learner surface (2026-05-02)**: dokkai + listening titles all in JA; English passage-translation panel removed from dokkai; UI page chrome (titles, intro, buttons, feedback labels, stat labels, level/topic) all rendered in JA via `renderJa()`. English glosses retained only on grammar examples (`grammar.json` `translation_en`) and after-answer rationales (`explanation_en`) where L1 scaffolding teaches new patterns.
+- **Content-protection layer (2026-05-02 v1.10.1)**: deters casual copying of question content. CSS `user-select: none` on body (with input/textarea/`.allow-select` opt-outs); JS module `js/content-protect.js` blocks contextmenu / copy / cut / dragstart / selectstart / Ctrl+C/A/X/S/P/U / F12 / Ctrl+Shift+I/J/K/C; window-blur sets `html[data-blur=true]` to obscure during region-screenshots; `@media print` blanks the page. NOT security — devtools / view-source / phone-camera-of-screen still work; honest limits documented in module header. GitHub source links removed from footer + changelog fallback + PRIVACY.md.
 
 ---
 

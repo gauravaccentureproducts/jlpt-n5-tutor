@@ -2,6 +2,69 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.10.1 - 2026-05-02 (Content-protection layer)
+
+Per user direction: deter casual copying / sharing of question
+content from the deployed site, and remove the "Source on GitHub"
+surface.
+
+### Removed (user-visible)
+
+- **"Source on GitHub" footer link** removed from `index.html`. Footer
+  now reads `What's new · Privacy`.
+- **"View on GitHub" link** removed from `js/changelog.js` (was in
+  the CHANGELOG-fetch-error fallback).
+- **GitHub source link** removed from `PRIVACY.md`. The "Source code"
+  section was rewritten as "Independently verifiable" with guidance
+  to inspect the browser's Network tab to verify the no-tracker
+  claim — same level of assurance, no public-source-link dependency.
+
+### Added (deterrent layer — friction, not security)
+
+Important framing: the site is a static PWA. Anyone with browser
+devtools can still read `data/*.json` directly, and there is no W3C
+API to truly block OS screenshots. The layer below raises friction
+against casual copying and accidental clipboard captures.
+
+- **`css/main.css`** — `user-select: none` on html/body with opt-outs
+  for inputs, textareas, contenteditable elements, and elements
+  carrying `.allow-select`. `::selection` cleared. `user-drag: none`
+  on images / svg / ruby / rt. `@media print` blanks the page with
+  a "Printing is disabled" notice. `html[data-blur=true]` blurs the
+  body and shows a Japanese overlay above z-index 99999.
+- **`js/content-protect.js`** (new) — capture-phase blockers for
+  `contextmenu`, `copy`, `cut`, `dragstart`, `drop`, `selectstart`.
+  Keyboard shortcut blockers for `Ctrl+C/A/X/S/P/U`, `F12`,
+  `Ctrl+Shift+I/J/K/C`. `window blur` + `visibilitychange (hidden)`
+  set `html[data-blur=true]` to obscure content during region
+  screenshots. `window.getSelection()` overridden to return empty
+  when the active element is not an input.
+- **`js/app.js`** — wires `initContentProtection()` from the
+  DOMContentLoaded handler before any route renders.
+
+### Service worker
+
+- Bumped `CACHE_VERSION` to `jlpt-n5-tutor-v90` (was v89). Added
+  `./js/content-protect.js` to the PRECACHE list.
+
+### Honest limitations (called out in `js/content-protect.js`)
+
+- OS region screenshots (Win+Shift+S, Cmd+Shift+4) — page blurs on
+  window blur, but the OS often captures before the JS event fires.
+- PrtScn key — most OSes don't deliver this event to the browser.
+- Browser menu → Save / Print, `view-source:` URL prefix, devtools
+  Network tab — all bypass the JS layer.
+- Phone-camera-of-screen — always works, no defence possible.
+- Mobile screenshot APIs — no JS API exists to intercept them.
+
+If true protection matters more than reasonable friction, the
+architecture has to change (server-side rendering with per-session
+watermarks, video DRM, or moving off the public web).
+
+v1.10.1 / SW v90. **39/39 invariants green.**
+
+---
+
 ## v1.10.0 - 2026-05-02 (Syllabus dashboard + DEFER backlog closeout)
 
 Big sweep: new homepage as a JLPT N5 syllabus dashboard, full
