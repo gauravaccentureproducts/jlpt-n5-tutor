@@ -1,9 +1,394 @@
 {
   "grammar": [
     {
+      "id": "grammar.n5-030.2",
+      "expected_path": "audio\\grammar\\n5-030.2.mp3",
+      "ja_preview": "にほんごを 話すのは むずかしいです。"
+    },
+    {
+      "id": "grammar.n5-034.2",
+      "expected_path": "audio\\grammar\\n5-034.2.mp3",
+      "ja_preview": "りんごは 一つしか ありません。"
+    },
+    {
+      "id": "grammar.n5-038.2",
+      "expected_path": "audio\\grammar\\n5-038.2.mp3",
+      "ja_preview": "子どもたちに あめを 二つずつ あげました。"
+    },
+    {
+      "id": "grammar.n5-052.2",
+      "expected_path": "audio\\grammar\\n5-052.2.mp3",
+      "ja_preview": "この かんじは どうやって 書きますか。"
+    },
+    {
+      "id": "grammar.n5-054.2",
+      "expected_path": "audio\\grammar\\n5-054.2.mp3",
+      "ja_preview": "かばんの 中に 本が いくつ ありますか。"
+    },
+    {
+      "id": "grammar.n5-056.2",
+      "expected_path": "audio\\grammar\\n5-056.2.mp3",
+      "ja_preview": "やすみは なんようびですか。"
+    },
+    {
+      "id": "grammar.n5-057.2",
+      "expected_path": "audio\\grammar\\n5-057.2.mp3",
+      "ja_preview": "なつ休みは なんがつからですか。"
+    },
+    {
+      "id": "grammar.n5-073.2",
+      "expected_path": "audio\\grammar\\n5-073.2.mp3",
+      "ja_preview": "しゅくだいを まだ していません。"
+    },
+    {
+      "id": "grammar.n5-096.2",
+      "expected_path": "audio\\grammar\\n5-096.2.mp3",
+      "ja_preview": "あにより わたしのほうが はやく おきます。"
+    },
+    {
+      "id": "grammar.n5-097.2",
+      "expected_path": "audio\\grammar\\n5-097.2.mp3",
+      "ja_preview": "なつと ふゆと、どちらが すきですか。"
+    },
+    {
+      "id": "grammar.n5-100.2",
+      "expected_path": "audio\\grammar\\n5-100.2.mp3",
+      "ja_preview": "母は かんじを 書くのが じょうずです。"
+    },
+    {
+      "id": "grammar.n5-105.2",
+      "expected_path": "audio\\grammar\\n5-105.2.mp3",
+      "ja_preview": "びょういんに 行きたくないです。"
+    },
+    {
+      "id": "grammar.n5-106.2",
+      "expected_path": "audio\\grammar\\n5-106.2.mp3",
+      "ja_preview": "休みが ほしいです。"
+    },
+    {
+      "id": "grammar.n5-109.2",
+      "expected_path": "audio\\grammar\\n5-109.2.mp3",
+      "ja_preview": "クラスに 学生は なんにん いますか。"
+    },
+    {
+      "id": "grammar.n5-110.2",
+      "expected_path": "audio\\grammar\\n5-110.2.mp3",
+      "ja_preview": "本を 三さつ 読みました。"
+    },
+    {
+      "id": "grammar.n5-112.2",
+      "expected_path": "audio\\grammar\\n5-112.2.mp3",
+      "ja_preview": "バスで 二十ぷん かかります。"
+    },
+    {
+      "id": "grammar.n5-113.2",
+      "expected_path": "audio\\grammar\\n5-113.2.mp3",
+      "ja_preview": "えいがは 七時はんに はじまります。"
+    },
+    {
+      "id": "grammar.n5-116.2",
+      "expected_path": "audio\\grammar\\n5-116.2.mp3",
+      "ja_preview": "まいとし 友だちと たんじょうびを いわいます。"
+    },
+    {
+      "id": "grammar.n5-119.2",
+      "expected_path": "audio\\grammar\\n5-119.2.mp3",
+      "ja_preview": "テストの まえに よく べんきょうしました。"
+    },
+    {
+      "id": "grammar.n5-120.2",
+      "expected_path": "audio\\grammar\\n5-120.2.mp3",
+      "ja_preview": "えいがを 見た あとで コーヒーを 飲みました。"
+    },
+    {
+      "id": "grammar.n5-121.2",
+      "expected_path": "audio\\grammar\\n5-121.2.mp3",
+      "ja_preview": "スーパーに 行きました。そして、パンを かいました。"
+    },
+    {
+      "id": "grammar.n5-122.2",
+      "expected_path": "audio\\grammar\\n5-122.2.mp3",
+      "ja_preview": "本を 読みました。それから、休みました。"
+    },
+    {
+      "id": "grammar.n5-123.2",
+      "expected_path": "audio\\grammar\\n5-123.2.mp3",
+      "ja_preview": "ねむかったです。でも、ねませんでした。"
+    },
+    {
+      "id": "grammar.n5-124.1",
+      "expected_path": "audio\\grammar\\n5-124.1.mp3",
+      "ja_preview": "雨が ふっていました。しかし、出かけました。"
+    },
+    {
+      "id": "grammar.n5-124.2",
+      "expected_path": "audio\\grammar\\n5-124.2.mp3",
+      "ja_preview": "日本語は むずかしいです。しかし、たのしいです。"
+    },
+    {
+      "id": "grammar.n5-125.2",
+      "expected_path": "audio\\grammar\\n5-125.2.mp3",
+      "ja_preview": "では、しつもんは ありませんか。"
+    },
+    {
+      "id": "grammar.n5-127.2",
+      "expected_path": "audio\\grammar\\n5-127.2.mp3",
+      "ja_preview": "日本語は たのしいけど、かんじが むずかしい。"
+    },
+    {
+      "id": "grammar.n5-129.1",
+      "expected_path": "audio\\grammar\\n5-129.1.mp3",
+      "ja_preview": "どうして 行きませんでしたか。―ねつが あったからです。"
+    },
+    {
+      "id": "grammar.n5-129.2",
+      "expected_path": "audio\\grammar\\n5-129.2.mp3",
+      "ja_preview": "どうして 学校を 休みましたか。―あたまが いたかったからです。"
+    },
+    {
+      "id": "grammar.n5-130.2",
+      "expected_path": "audio\\grammar\\n5-130.2.mp3",
+      "ja_preview": "先生に 花を あげました。"
+    },
+    {
+      "id": "grammar.n5-131.2",
+      "expected_path": "audio\\grammar\\n5-131.2.mp3",
+      "ja_preview": "父に とけいを もらいました。"
+    },
+    {
+      "id": "grammar.n5-132.2",
+      "expected_path": "audio\\grammar\\n5-132.2.mp3",
+      "ja_preview": "先生が 本を くれました。"
+    },
+    {
+      "id": "grammar.n5-133.2",
+      "expected_path": "audio\\grammar\\n5-133.2.mp3",
+      "ja_preview": "さむいから、まどを しめてください。"
+    },
+    {
+      "id": "grammar.n5-134.2",
+      "expected_path": "audio\\grammar\\n5-134.2.mp3",
+      "ja_preview": "お金が ないので、買えません。"
+    },
+    {
+      "id": "grammar.n5-142.2",
+      "expected_path": "audio\\grammar\\n5-142.2.mp3",
+      "ja_preview": "のみものは おちゃに します。"
+    },
+    {
+      "id": "grammar.n5-144.2",
+      "expected_path": "audio\\grammar\\n5-144.2.mp3",
+      "ja_preview": "テレビを 見ながら ごはんを 食べます。"
+    },
+    {
+      "id": "grammar.n5-145.2",
+      "expected_path": "audio\\grammar\\n5-145.2.mp3",
+      "ja_preview": "この えいがは おもしろいと おもいます。"
+    },
+    {
+      "id": "grammar.n5-146.2",
+      "expected_path": "audio\\grammar\\n5-146.2.mp3",
+      "ja_preview": "田中さんは 「行きません」と 言いました。"
+    },
+    {
+      "id": "grammar.n5-149.2",
+      "expected_path": "audio\\grammar\\n5-149.2.mp3",
+      "ja_preview": "すみません、メニューを ください。"
+    },
+    {
+      "id": "grammar.n5-151.2",
+      "expected_path": "audio\\grammar\\n5-151.2.mp3",
+      "ja_preview": "コーヒーは いかがですか。"
+    },
+    {
+      "id": "grammar.n5-153.2",
+      "expected_path": "audio\\grammar\\n5-153.2.mp3",
+      "ja_preview": "まだ ばんごはんを 食べていません。"
+    },
+    {
+      "id": "grammar.n5-154.2",
+      "expected_path": "audio\\grammar\\n5-154.2.mp3",
+      "ja_preview": "もう 学校に 行きました。"
+    },
+    {
+      "id": "grammar.n5-157.2",
+      "expected_path": "audio\\grammar\\n5-157.2.mp3",
+      "ja_preview": "あした 友だちが 来るでしょう。"
+    },
+    {
+      "id": "grammar.n5-158.2",
+      "expected_path": "audio\\grammar\\n5-158.2.mp3",
+      "ja_preview": "たぶん 田中さんは 学生だろう。"
+    },
+    {
+      "id": "grammar.n5-160.2",
+      "expected_path": "audio\\grammar\\n5-160.2.mp3",
+      "ja_preview": "学校の あとで としょかんに 行きます。"
+    },
+    {
+      "id": "grammar.n5-161.2",
+      "expected_path": "audio\\grammar\\n5-161.2.mp3",
+      "ja_preview": "ばんごはんの まえに 休みました。"
+    },
+    {
+      "id": "grammar.n5-162.2",
+      "expected_path": "audio\\grammar\\n5-162.2.mp3",
+      "ja_preview": "出かける まえに かさを もちます。"
+    },
+    {
+      "id": "grammar.n5-163.2",
+      "expected_path": "audio\\grammar\\n5-163.2.mp3",
+      "ja_preview": "ごはんを 食べた あとで おさらを あらいます。"
+    },
+    {
+      "id": "grammar.n5-164.2",
+      "expected_path": "audio\\grammar\\n5-164.2.mp3",
+      "ja_preview": "すずきさんは わたしの 友だちです。"
+    },
+    {
       "id": "grammar.n5-167.2",
       "expected_path": "audio\\grammar\\n5-167.2.mp3",
       "ja_preview": "あした しけんが あるんです。"
+    },
+    {
+      "id": "grammar.n5-168.1",
+      "expected_path": "audio\\grammar\\n5-168.1.mp3",
+      "ja_preview": "日曜日は そうじしたり、せんたくしたり します。"
+    },
+    {
+      "id": "grammar.n5-168.2",
+      "expected_path": "audio\\grammar\\n5-168.2.mp3",
+      "ja_preview": "パーティーで 食べたり 飲んだり しました。"
+    },
+    {
+      "id": "grammar.n5-169.2",
+      "expected_path": "audio\\grammar\\n5-169.2.mp3",
+      "ja_preview": "きょうとに 行ったことが あります。"
+    },
+    {
+      "id": "grammar.n5-170.2",
+      "expected_path": "audio\\grammar\\n5-170.2.mp3",
+      "ja_preview": "はやく ねたほうが いいです。"
+    },
+    {
+      "id": "grammar.n5-171.1",
+      "expected_path": "audio\\grammar\\n5-171.1.mp3",
+      "ja_preview": "おそく ねないほうが いいです。"
+    },
+    {
+      "id": "grammar.n5-171.2",
+      "expected_path": "audio\\grammar\\n5-171.2.mp3",
+      "ja_preview": "たくさん 飲まないほうが いいですよ。"
+    },
+    {
+      "id": "grammar.n5-172.1",
+      "expected_path": "audio\\grammar\\n5-172.1.mp3",
+      "ja_preview": "日曜日は 学校に 行かなくても いいです。"
+    },
+    {
+      "id": "grammar.n5-172.2",
+      "expected_path": "audio\\grammar\\n5-172.2.mp3",
+      "ja_preview": "いそがなくても いいですよ。"
+    },
+    {
+      "id": "grammar.n5-173.1",
+      "expected_path": "audio\\grammar\\n5-173.1.mp3",
+      "ja_preview": "はやく かえらなくては いけません。"
+    },
+    {
+      "id": "grammar.n5-173.2",
+      "expected_path": "audio\\grammar\\n5-173.2.mp3",
+      "ja_preview": "くすりを 飲まなくては いけない。"
+    },
+    {
+      "id": "grammar.n5-174.1",
+      "expected_path": "audio\\grammar\\n5-174.1.mp3",
+      "ja_preview": "あした はやく おきなくては なりません。"
+    },
+    {
+      "id": "grammar.n5-174.2",
+      "expected_path": "audio\\grammar\\n5-174.2.mp3",
+      "ja_preview": "まいにち べんきょうしなくては ならない。"
+    },
+    {
+      "id": "grammar.n5-175.1",
+      "expected_path": "audio\\grammar\\n5-175.1.mp3",
+      "ja_preview": "もう 行かないと いけません。"
+    },
+    {
+      "id": "grammar.n5-175.2",
+      "expected_path": "audio\\grammar\\n5-175.2.mp3",
+      "ja_preview": "しゅくだいを しないと いけない。"
+    },
+    {
+      "id": "grammar.n5-176.1",
+      "expected_path": "audio\\grammar\\n5-176.1.mp3",
+      "ja_preview": "もう 行かなきゃ。"
+    },
+    {
+      "id": "grammar.n5-176.2",
+      "expected_path": "audio\\grammar\\n5-176.2.mp3",
+      "ja_preview": "はやく ねなくちゃ。"
+    },
+    {
+      "id": "grammar.n5-177.2",
+      "expected_path": "audio\\grammar\\n5-177.2.mp3",
+      "ja_preview": "この くつは 大きすぎます。"
+    },
+    {
+      "id": "grammar.n5-178.1",
+      "expected_path": "audio\\grammar\\n5-178.1.mp3",
+      "ja_preview": "なつ休みに 国へ かえるつもりです。"
+    },
+    {
+      "id": "grammar.n5-178.2",
+      "expected_path": "audio\\grammar\\n5-178.2.mp3",
+      "ja_preview": "たばこを やめるつもりです。"
+    },
+    {
+      "id": "grammar.n5-179.1",
+      "expected_path": "audio\\grammar\\n5-179.1.mp3",
+      "ja_preview": "田中さんは 「行かない」って 言ってた。"
+    },
+    {
+      "id": "grammar.n5-179.2",
+      "expected_path": "audio\\grammar\\n5-179.2.mp3",
+      "ja_preview": "えいがは おもしろかったって。"
+    },
+    {
+      "id": "grammar.n5-180.1",
+      "expected_path": "audio\\grammar\\n5-180.1.mp3",
+      "ja_preview": "日本語の 書きかたを おしえてください。"
+    },
+    {
+      "id": "grammar.n5-180.2",
+      "expected_path": "audio\\grammar\\n5-180.2.mp3",
+      "ja_preview": "えきまでの 行きかたが わかりません。"
+    },
+    {
+      "id": "grammar.n5-181.1",
+      "expected_path": "audio\\grammar\\n5-181.1.mp3",
+      "ja_preview": "きょうは いい 天気だなあ。"
+    },
+    {
+      "id": "grammar.n5-181.2",
+      "expected_path": "audio\\grammar\\n5-181.2.mp3",
+      "ja_preview": "この ケーキは おいしいなあ。"
+    },
+    {
+      "id": "grammar.n5-182.1",
+      "expected_path": "audio\\grammar\\n5-182.1.mp3",
+      "ja_preview": "うるさい！しゃべるな！"
+    },
+    {
+      "id": "grammar.n5-182.2",
+      "expected_path": "audio\\grammar\\n5-182.2.mp3",
+      "ja_preview": "ここに 入るな。"
+    },
+    {
+      "id": "grammar.n5-183.2",
+      "expected_path": "audio\\grammar\\n5-183.2.mp3",
+      "ja_preview": "だれか 手つだってください。"
     }
   ],
   "reading": [],
