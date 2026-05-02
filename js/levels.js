@@ -63,19 +63,38 @@ export function renderLevels(container) {
         <p class="levels-subtitle">Choose a level to start. Each level has its own grammar, vocabulary, kanji, reading, and listening study material.</p>
       </header>
       <div class="levels-grid">
-        ${LEVELS.map((lvl, i) => `
-          <a class="level-card ${lvl.available ? 'is-available' : 'is-coming-soon'}" href="${lvl.href}" data-level="${lvl.id}">
-            <div class="level-card-row">
-              <span class="level-card-code">${lvl.code}</span>
-              <span class="level-card-status">
-                ${lvl.available ? 'Available' : 'Coming soon'}
-              </span>
+        ${LEVELS.map(lvl => {
+          // Available levels render as anchors (clickable). Unavailable
+          // levels render as <div> with aria-disabled — visible, in
+          // their own grid cell, but not focusable + not clickable.
+          // Keeps the layout intact without inviting a click that
+          // would route to a "nothing here" placeholder.
+          if (lvl.available) {
+            return `
+              <a class="level-card is-available" href="${lvl.href}" data-level="${lvl.id}">
+                <div class="level-card-row">
+                  <span class="level-card-code">${lvl.code}</span>
+                  <span class="level-card-status">Available</span>
+                </div>
+                <h2 class="level-card-label">${lvl.label}</h2>
+                <p class="level-card-desc">${lvl.desc}</p>
+                <span class="level-card-arrow" aria-hidden="true">→</span>
+              </a>
+            `;
+          }
+          return `
+            <div class="level-card is-disabled" data-level="${lvl.id}"
+                 aria-disabled="true"
+                 title="Content not yet available">
+              <div class="level-card-row">
+                <span class="level-card-code">${lvl.code}</span>
+                <span class="level-card-status">Coming soon</span>
+              </div>
+              <h2 class="level-card-label">${lvl.label}</h2>
+              <p class="level-card-desc">${lvl.desc}</p>
             </div>
-            <h2 class="level-card-label">${lvl.label}</h2>
-            <p class="level-card-desc">${lvl.desc}</p>
-            <span class="level-card-arrow" aria-hidden="true">→</span>
-          </a>
-        `).join('')}
+          `;
+        }).join('')}
       </div>
       <p class="levels-foot">
         N5 is currently the only level with content. N4 → N1 will fill in over time.

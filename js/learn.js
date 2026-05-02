@@ -524,6 +524,125 @@ function wireExpandCollapseControls(container, detailsSelector) {
   });
 }
 
+// Friendly labels for the raw `form_rules.attaches_to` category strings.
+// When a key isn't in this map, we humanize it on the fly (snake_case →
+// "Snake case"). The mapping covers all 35 keys present in grammar.json
+// as of 2026-05-02.
+const ATTACHES_TO_LABEL = {
+  'noun':                    'Noun',
+  'noun_subject':            'Noun (subject)',
+  'noun_location':           'Noun (location)',
+  'noun_time':               'Noun (time)',
+  'noun_quantity':           'Noun (quantity)',
+  'noun_or_adj':             'Noun or adjective',
+  'na_adjective':            'な-adjective',
+  'i_adjective':             'い-adjective',
+  'verb':                    'Verb',
+  'verb_stem':               'Verb stem (ます-base)',
+  'verb_stem_i':             'Verb i-stem',
+  'verb_root':               'Verb root',
+  'verb_dictionary':         'Verb (dictionary form)',
+  'verb_plain':              'Verb (plain form)',
+  'verb_te':                 'Verb (て-form)',
+  'verb_ta':                 'Verb (た-form)',
+  'verb_nai':                'Verb (ない-form)',
+  'verb_mashita':            'Verb (ました form)',
+  'verb_te_imasu_neg':       'Verb (て-いません)',
+  'verb_or_adj_stem':        'Verb or adjective stem',
+  'pronoun':                 'Pronoun',
+  'question_word':           'Question word',
+  'before_noun':             'Before a noun',
+  'adverbial':               'Adverbial position',
+  'sentence_end':            'Sentence end',
+  'sentence_pattern':        'Full sentence',
+  'clause':                  'Clause',
+  'clause_start':            'Clause-initial',
+  'clause_end':              'Clause-final',
+  'plain_clause':            'Plain-form clause',
+  'plain_or_polite_clause':  'Plain or polite clause',
+  'quoted_clause':           'Quoted clause',
+  'quantity':                'Quantity expression',
+  'number':                  'Number',
+  'set_phrase':              'Set phrase',
+  'standalone':              'Standalone',
+  'dialogue':                'Dialogue line',
+  'after_name':              'After a name',
+};
+
+function attachesLabel(key) {
+  if (ATTACHES_TO_LABEL[key]) return ATTACHES_TO_LABEL[key];
+  // Humanize unknown snake_case keys defensively.
+  return String(key)
+    .replace(/_/g, ' ')
+    .replace(/^./, c => c.toUpperCase());
+}
+
+// Build the "How to use / 使い方" table. Two layouts depending on the
+// pattern's form-shape:
+//
+//   (A) Uniform pattern — same surface form attaches to every entry in
+//       `attaches_to` (typical: ～だろう, ～ながら, etc.). Render rows of
+//       attach-points on the left and one merged cell on the right
+//       carrying the literal pattern. Mirrors the layout in the
+//       reference image.
+//
+//   (B) Conjugating pattern — `conjugations` lists multiple forms with
+//       distinct examples (typical: 〜です／〜ます, ーは, etc.). The
+//       attach-point table at top still shows the rowspan layout for
+//       quick scanning; a secondary "Forms" table underneath shows the
+//       conjugation labels + examples.
+function renderHowToUseTable(p) {
+  const attaches = p.form_rules?.attaches_to ?? [];
+  const conjugations = p.form_rules?.conjugations ?? [];
+  if (!attaches.length && !conjugations.length) return '';
+
+  const usageHeader = `
+    <div class="pattern-usage-header">
+      <h3 class="section-title">How to use</h3>
+      <span class="pattern-usage-chip" lang="ja">使い方</span>
+    </div>
+  `;
+
+  // Top table: attach-points → pattern. Single merged right-column cell
+  // shows the pattern itself in JA. If attaches is empty we skip this
+  // table and render only the conjugation breakdown.
+  const topTable = attaches.length ? `
+    <table class="pattern-usage-table" aria-label="Attach points for ${esc(p.pattern)}">
+      <tbody>
+        ${attaches.map((a, i) => `
+          <tr>
+            <td class="pattern-usage-pos">${esc(attachesLabel(a))}</td>
+            ${i === 0
+              ? `<td class="pattern-usage-form" rowspan="${attaches.length}" lang="ja">${renderJa(p.pattern)}</td>`
+              : ''}
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  ` : '';
+
+  // Bottom table: conjugation breakdown. Only render if there are 2+
+  // distinct conjugation entries (a single conjugation is redundant
+  // with the top table).
+  const conjTable = conjugations.length >= 2 ? `
+    <table class="pattern-conjugation-table" aria-label="Conjugation forms">
+      <thead>
+        <tr><th scope="col">Form</th><th scope="col">Example</th></tr>
+      </thead>
+      <tbody>
+        ${conjugations.map(c => `
+          <tr>
+            <td>${esc(c.label || c.form)}</td>
+            <td lang="ja">${renderJa(c.example)}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  ` : '';
+
+  return `<section class="pattern-usage">${usageHeader}${topTable}${conjTable}</section>`;
+}
+
 function renderPatternDetail(container, p, allPatterns) {
   const conj = p.form_rules?.conjugations ?? [];
   const examples = p.examples ?? [];
@@ -598,11 +717,7 @@ function renderPatternDetail(container, p, allPatterns) {
         </label>
       </div>
 
-      <section>
-        <h3 class="section-title">Form &amp; Connection</h3>
-        ${attaches.length ? `<p>Attaches to: <strong>${attaches.map(esc).join(', ')}</strong></p>` : ''}
-        ${conjRows ? `<table class="conjugation-table"><tbody>${conjRows}</tbody></table>` : ''}
-      </section>
+      ${renderHowToUseTable(p)}
 
       <section>
         <h3 class="section-title">Explanation</h3>
