@@ -2579,14 +2579,33 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   .study-order-list { grid-template-columns: 1fr; }
 }
 .study-order-item {
+  border-bottom: 0.5px solid var(--color-line);
+}
+/* Each study-order step is now a clickable link to the most directly-
+ * actionable surface for that step (per user 2026-05-02). The link
+ * fills the entire row so the click target is the full width on every
+ * viewport — index + text both clickable, no dead zone in the gap. */
+.study-order-link {
   display: flex;
   align-items: baseline;
   gap: var(--space-3);
   padding: var(--space-2) 0;
-  border-bottom: 0.5px solid var(--color-line);
   font-size: var(--text-sm);
   color: var(--color-text);
   line-height: var(--leading-relaxed, 1.55);
+  text-decoration: none;
+  transition: color var(--motion-fast) var(--easing);
+}
+.study-order-link:hover {
+  color: var(--color-accent);
+}
+.study-order-link:hover .study-order-num {
+  color: var(--color-accent);
+}
+.study-order-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
 }
 .study-order-num {
   display: inline-block;
@@ -2595,6 +2614,7 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   font-weight: var(--weight-medium, 500);
   color: var(--color-text-muted);
   letter-spacing: 0.04em;
+  transition: color var(--motion-fast) var(--easing);
 }
 .study-order-text { flex: 1; }
 

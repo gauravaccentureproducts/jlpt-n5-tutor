@@ -176,16 +176,20 @@ function syllabusCards(counts) {
 
 // 8 study-order steps per spec §5.1 — ordered, beginner-friendly, no
 // promotional framing. Each step is a sentence, no period (matches list
-// register elsewhere on the site).
+// register elsewhere on the site). Each step links to the most directly-
+// actionable surface (per user request 2026-05-02): grammar/vocab/kanji
+// land on the canonical learn TOCs; "Practice grammar questions" routes
+// to the daily Drill (the grammar-question practice loop, distinct from
+// the mock test); "Review weak areas" routes to the SRS Review queue.
 const STUDY_ORDER = [
-  'Learn basic sentence structure and particles',
-  'Study core vocabulary',
-  'Learn basic kanji recognition',
-  'Practice grammar questions',
-  'Practice short reading passages',
-  'Practice listening drills',
-  'Take the mock test',
-  'Review weak areas',
+  { text: 'Learn basic sentence structure and particles', href: '#/learn/grammar' },
+  { text: 'Study core vocabulary',                         href: '#/learn/vocab' },
+  { text: 'Learn basic kanji recognition',                 href: '#/kanji' },
+  { text: 'Practice grammar questions',                    href: '#/drill' },
+  { text: 'Practice short reading passages',               href: '#/reading' },
+  { text: 'Practice listening drills',                     href: '#/listening' },
+  { text: 'Take the mock test',                            href: '#/test' },
+  { text: 'Review weak areas',                             href: '#/review' },
 ];
 
 function renderSyllabusCard(card) {
@@ -291,8 +295,10 @@ export async function renderHome(container) {
         <ol class="study-order-list">
           ${STUDY_ORDER.map((step, i) => `
             <li class="study-order-item">
-              <span class="study-order-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
-              <span class="study-order-text">${esc(step)}</span>
+              <a class="study-order-link" href="${step.href}">
+                <span class="study-order-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
+                <span class="study-order-text">${esc(step.text)}</span>
+              </a>
             </li>
           `).join('')}
         </ol>

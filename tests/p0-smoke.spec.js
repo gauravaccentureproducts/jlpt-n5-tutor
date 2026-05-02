@@ -40,8 +40,12 @@ test.describe('P0 smoke - core navigation', () => {
     // 01..06 indices on every card.
     await expect(page.locator('.syllabus-card-index').first()).toContainText('01');
     await expect(page.locator('.syllabus-card-index').nth(5)).toContainText('06');
-    // Recommended study order: 8 numbered steps.
+    // Recommended study order: 8 numbered steps, each a clickable link
+    // to the relevant section (added 2026-05-02 per user request).
     await expect(page.locator('.study-order-item')).toHaveCount(8);
+    await expect(page.locator('.study-order-link')).toHaveCount(8);
+    await expect(page.locator('.study-order-link').first()).toHaveAttribute('href', '#/learn/grammar');
+    await expect(page.locator('.study-order-link').nth(7)).toHaveAttribute('href', '#/review');
     // Progress overview: 6 rows.
     await expect(page.locator('.progress-row')).toHaveCount(6);
     // Action block: prompt + 2 buttons (placement + grammar).
