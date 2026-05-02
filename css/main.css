@@ -615,10 +615,17 @@ main h3 {
 }
 .pattern-detail .back-link {
   display: inline-block;
-  margin-bottom: 16px;
-  color: var(--c-primary);
+  margin-bottom: 12px;
+  /* Demoted to muted gray — was --c-primary which competed with the
+   * green pattern-name h2 directly below. As secondary navigation it
+   * should sit in the muted register. */
+  color: var(--c-muted);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
+}
+.pattern-detail .back-link:hover {
+  color: var(--c-primary);
+  text-decoration: underline;
 }
 /* Prev / next pattern arrows in the top corners. Small font so they're
    peripheral, not competing with the pattern title for attention. */
@@ -628,6 +635,10 @@ main h3 {
   align-items: center;
   margin-bottom: 8px;
   gap: 16px;
+  /* Prevent right-edge clipping when the next-pattern label is long.
+   * The container clips its overflow rather than letting the link bleed
+   * past the article padding. */
+  overflow: hidden;
 }
 .pattern-detail .pattern-nav a {
   color: var(--c-muted);
@@ -636,7 +647,11 @@ main h3 {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  max-width: 45%;
+  /* Widen from 45% so the next-link doesn't truncate aggressively on
+   * mid-width viewports. min-width:0 lets the inner ellipsis kick in
+   * cleanly when content really exceeds the available space. */
+  max-width: 48%;
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -656,14 +671,24 @@ main h3 {
   font-size: 28px;
   margin: 0 0 4px;
   color: var(--c-primary);
+  line-height: 1.25;
 }
 .pattern-detail .meaning-en {
   color: var(--c-muted);
-  margin: 0 0 24px;
+  margin: 0 0 16px;
   font-size: 16px;
 }
 .pattern-detail section {
   margin: 20px 0;
+}
+/* Mobile: shrink the pattern title and reduce article gutters so the
+ * h2 doesn't dominate a 430px viewport and the table gets back the
+ * horizontal room it lost to the article padding. */
+@media (max-width: 600px) {
+  .pattern-detail { padding: 20px 16px; }
+  .pattern-detail .pattern-name { font-size: 22px; }
+  .pattern-detail .meaning-en { font-size: 14px; margin-bottom: 12px; }
+  .pattern-detail section { margin: 16px 0; }
 }
 .pattern-detail .section-title {
   color: var(--c-primary-light);
@@ -715,6 +740,13 @@ main h3 {
   max-width: 560px;
   margin: 0;
   font-size: 15px;
+  /* Auto layout so columns size to their content. The right column
+   * (pattern form, e.g. 〜です／〜ます) was filling 40% of a 100%-width
+   * table, leaving large empty whitespace on either side of a short
+   * string. With table-layout:auto + width:1% on the form cell, the
+   * right column shrinks to content and the left column (English POS
+   * labels which need more room) absorbs the slack. */
+  table-layout: auto;
 }
 .pattern-usage-table td,
 .pattern-conjugation-table th,
@@ -725,16 +757,31 @@ main h3 {
   text-align: left;
 }
 .pattern-usage-pos {
+  /* Reserve at least 60% of the table for the POS labels — they're
+   * longer English phrases ("Verb stem (ます-base)", "な-adjective")
+   * than the typical pattern form (3-15 char Japanese). Without a
+   * floor, table-layout:auto starves this column on narrow viewports. */
   width: 60%;
   color: var(--c-text);
   font-weight: 400;
 }
-.pattern-usage-form {
+/* Specificity: the upstream `.pattern-usage-table td` rule has the same
+ * spec count (1 class + 1 tag), and is declared first, so .pattern-
+ * usage-form's `text-align: center` was being lost to the upstream's
+ * `text-align: left`. Anchor by .pattern-usage-table.pattern-usage-form
+ * so we win both source-order and specificity ties. */
+.pattern-usage-table td.pattern-usage-form {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
   background: var(--c-bg, #fafafa);
   color: var(--c-primary-dark, #14452a);
+  /* 40% complement to the POS column's 60%. Centered short patterns
+   * (〜だろう, は) sit comfortably with breathing room; longer ones
+   * (〜です／〜ます) still fit on one line via white-space:nowrap. */
+  width: 40%;
+  white-space: nowrap;
+  padding-inline: 16px;
 }
 .pattern-conjugation-table { margin-top: 16px; }
 .pattern-conjugation-table th {
@@ -1631,7 +1678,12 @@ label {
  * toggle drops below, anchored to the right edge. Title text now fits
  * naturally on one line.
  */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  /* Stacking moved up from 480px to 600px (2026-05-03 UI polish):
+   * even at 430-500px, the side-by-side title + Mark-as-known toggle
+   * was cramped — title wrapped to 2-3 lines and the toggle button
+   * collided with the title's right edge. Stacking earlier gives each
+   * a full row. */
   .pattern-header {
     flex-direction: column;
     align-items: stretch;
@@ -1667,10 +1719,13 @@ label {
   .pattern-conjugation-table td {
     padding: 8px 8px;
   }
-  .pattern-usage-form {
+  /* Higher specificity to override .pattern-usage-table td.pattern-
+   * usage-form which sits later in source order (cf. width override). */
+  .pattern-usage-table td.pattern-usage-form {
     font-size: 14px;
     line-height: 1.4;
     white-space: nowrap;
+    padding-inline: 12px;
   }
 }
 .known-toggle {
@@ -2374,9 +2429,13 @@ textarea:focus-visible,
    * 84px tall chrome. Now: search takes natural ~140px, single row. */
   .secondary-nav { flex-wrap: nowrap; gap: 8px; align-items: center; }
   .secondary-nav input[type="search"] {
+    /* Let the search input claim the full available row width on mobile
+     * (was capped at 200px and looked afterthought-ish next to the
+     * brand mark — UI polish 2026-05-03). The settings icon stays at
+     * its intrinsic 18px+padding via flex-shrink:0 on .icon-btn. */
     flex: 1 1 auto;
-    min-width: 100px;
-    max-width: 200px;
+    min-width: 120px;
+    max-width: none;
   }
 }
 /* Galaxy S9+ tier (320-380 px). Bottom-nav labels ("Vocabulary",
