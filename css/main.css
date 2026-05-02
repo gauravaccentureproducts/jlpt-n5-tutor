@@ -3465,3 +3465,74 @@ ruby[data-glyph] { cursor: pointer; }
   .paper-question-stem { font-size: 16px; }
   .paper-score-big { font-size: 48px; }
 }
+
+/* === Content protection layer (2026-05-02) ====================
+ * Goal: deter casual copying / sharing of question content. NOT
+ * security — the data is still in the browser, anyone with devtools
+ * can extract it. This raises friction for accidental Ctrl+C / right-
+ * click / drag-select / OS screenshots while the page is interactive.
+ *
+ * Pair with the JS handlers in js/app.js (paste-prevent, key-block,
+ * blur-on-defocus). Allow text input (search, settings) and audio
+ * controls to remain interactive via opt-out classes / element types.
+ */
+html, body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS long-press menu */
+  -webkit-tap-highlight-color: transparent;
+}
+/* Allow selection where the user legitimately needs to type or copy */
+input,
+textarea,
+[contenteditable="true"],
+.allow-select,
+.allow-select * {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+/* Hide caret/highlight artifacts */
+::selection { background: transparent; color: inherit; }
+::-moz-selection { background: transparent; color: inherit; }
+/* Block image dragging */
+img, svg, ruby, rt {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: auto;
+}
+/* Best-effort screenshot deterrent: when the window loses focus
+ * (Cmd+Shift+4 / Win+Shift+S / PrtScn often steals focus first),
+ * obscure the content. Toggled by JS via [data-blur] on <html>. */
+html[data-blur="true"] body {
+  filter: blur(18px) saturate(0.4);
+  pointer-events: none;
+}
+html[data-blur="true"] body::before {
+  content: "コンテンツは ほごされて います";
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.92);
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  color: #333;
+  z-index: 99999;
+  filter: none;
+}
+/* Print blank page (Ctrl+P workaround). The site is digital-only. */
+@media print {
+  body * { visibility: hidden !important; }
+  body::before {
+    content: "Printing is disabled. The content of this site is digital-only.";
+    visibility: visible !important;
+    display: block;
+    padding: 40px;
+    font-family: sans-serif;
+  }
+}

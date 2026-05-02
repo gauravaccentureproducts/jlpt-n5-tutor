@@ -25,6 +25,7 @@ import { renderHome } from './home.js';
 import { initI18n } from './i18n.js';
 import { renderPapers } from './papers.js';
 import { renderChangelog } from './changelog.js';
+import { initContentProtection } from './content-protect.js';
 
 const ROUTES = {
   home:       renderHome,
@@ -176,6 +177,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   applyTheme();
   applyFontSize();
   applyReduceMotion();
+  initContentProtection();   // <-- copy / right-click / screenshot deterrents
   await initI18n();
   await initFuriganaToggle(route);
   initKanjiPopover();

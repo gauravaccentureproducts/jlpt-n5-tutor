@@ -24,7 +24,6 @@ export async function renderChangelog(container) {
         <article class="changelog">
           <h2>What's new</h2>
           <p class="muted">Could not load CHANGELOG.md (${esc(String(err))}).</p>
-          <p><a href="https://github.com/gauravaccentureproducts/jlpt-n5-tutor/blob/main/CHANGELOG.md" rel="noopener noreferrer" target="_blank">View on GitHub</a>.</p>
         </article>
       `;
       return;
