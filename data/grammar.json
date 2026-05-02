@@ -11691,6 +11691,7 @@
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 1,
+      "tier": "late_n5",
       "meaning_en": "～なくても いい - don't have to",
       "meaning_ja": "「〜なくても いい」",
       "form_rules": {
@@ -11846,6 +11847,7 @@
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 5,
+      "tier": "late_n5",
       "meaning_en": "Must do (casual contractions)",
       "meaning_ja": "「〜なくては いけない」",
       "form_rules": {

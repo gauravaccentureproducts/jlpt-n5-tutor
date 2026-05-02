@@ -4392,13 +4392,13 @@
       "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
       "question_ja": "えいがを 見る（  ）が すきです。",
       "choices": [
-        "こと",
+        "で",
         "の",
         "もの",
         "ところ"
       ],
       "correctAnswer": "の",
-      "explanation_en": "Nominaliser の turns the verb-clause 見る into a noun phrase 'watching movies'. Compare with こと (also a nominaliser); both are N5 but の is more colloquial. Either could work; の is the most direct.",
+      "explanation_en": "Nominaliser の turns the verb-clause 見る into a noun phrase 'watching movies'. もの and ところ form different noun phrases (thing-to-watch / place-to-watch) that don't fit the 'X が すきです' frame as cleanly. で is a particle, not a nominaliser. (Earlier this question listed こと in the choice set; こと is also a valid nominaliser here, so it was replaced with で to remove the multi-correct hazard. Native speakers freely use either の or こと for sensory verbs like 見る.)",
       "difficulty": 2
     },
     {
