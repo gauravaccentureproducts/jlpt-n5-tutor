@@ -1,0 +1,102 @@
+{
+  "grammar": [
+    {
+      "id": "grammar.n5-167.2",
+      "expected_path": "audio\\grammar\\n5-167.2.mp3",
+      "ja_preview": "あした しけんが あるんです。"
+    }
+  ],
+  "reading": [],
+  "listening": [
+    {
+      "id": "listening.n5.listen.013",
+      "expected_path": "audio/listening/n5.listen.013.mp3",
+      "ja_preview": "A: あした 学校で 会いましょう。\nB: はい。何時に 会いますか。\nA: 九時はんに しましょう。\nB: わかりまし"
+    },
+    {
+      "id": "listening.n5.listen.014",
+      "expected_path": "audio/listening/n5.listen.014.mp3",
+      "ja_preview": "男: 来週の 土ようび、駅の 前で まってください。\n女: 駅の どこですか。\n男: 北の 出口です。\n女: わかりまし"
+    },
+    {
+      "id": "listening.n5.listen.015",
+      "expected_path": "audio/listening/n5.listen.015.mp3",
+      "ja_preview": "母: 店で 何を 買いますか。\n子: りんごを 三つと、ぎゅうにゅうを 一本 買います。\n母: パンも 買いますか。\n子"
+    },
+    {
+      "id": "listening.n5.listen.016",
+      "expected_path": "audio/listening/n5.listen.016.mp3",
+      "ja_preview": "A: あしたの えいがは だれと 行きますか。\nB: はじめは 友だちと 行きました。 でも、友だちは いそがしいです。"
+    },
+    {
+      "id": "listening.n5.listen.017",
+      "expected_path": "audio/listening/n5.listen.017.mp3",
+      "ja_preview": "男: 先生は 何時に 来ますか。\n女: 三時に 来ます。 でも、道が こんで います。\n男: では、何時に なりますか。"
+    },
+    {
+      "id": "listening.n5.listen.018",
+      "expected_path": "audio/listening/n5.listen.018.mp3",
+      "ja_preview": "A: あした どこへ 行きますか。\nB: 父の 友だちの いえへ 行きます。\nA: 何で 行きますか。\nB: 電車で 行"
+    },
+    {
+      "id": "listening.n5.listen.019",
+      "expected_path": "audio/listening/n5.listen.019.mp3",
+      "ja_preview": "先生: しゅくだいは しましたか。\n学生: すみません。 きのう しゅくだいを しませんでした。\n先生: どうしてですか"
+    },
+    {
+      "id": "listening.n5.listen.020",
+      "expected_path": "audio/listening/n5.listen.020.mp3",
+      "ja_preview": "A: その 本は いくらでしたか。\nB: 千五百円でした。\nA: 高いですね。\nB: でも、おもしろい 本ですよ。"
+    },
+    {
+      "id": "listening.n5.listen.021",
+      "expected_path": "audio/listening/n5.listen.021.mp3",
+      "ja_preview": "学生: としょかんは 何時から 何時までですか。\n先生: 月よう日から 金よう日までは 九時から 五時までです。 土よう"
+    },
+    {
+      "id": "listening.n5.listen.022",
+      "expected_path": "audio/listening/n5.listen.022.mp3",
+      "ja_preview": "女: あしたの 天気は どうですか。\n男: あしたは 雨です。 でも、あさっては 天気が いいです。\n女: そうですか。"
+    },
+    {
+      "id": "listening.n5.listen.023",
+      "expected_path": "audio/listening/n5.listen.023.mp3",
+      "ja_preview": "男: しゅくだいは いつですか。\n女: 火よう日と 木よう日です。\n男: 水よう日は ありませんか。\n女: ありません。"
+    },
+    {
+      "id": "listening.n5.listen.024",
+      "expected_path": "audio/listening/n5.listen.024.mp3",
+      "ja_preview": "母: 今日は だれが 来ますか。\n子: 父の 先生と、母の 友だちが 来ます。 父も 六時に 来ます。\n母: わかりまし"
+    },
+    {
+      "id": "listening.n5.listen.025",
+      "expected_path": "audio/listening/n5.listen.025.mp3",
+      "ja_preview": "あさ 学校で 先生に 会いました。"
+    },
+    {
+      "id": "listening.n5.listen.026",
+      "expected_path": "audio/listening/n5.listen.026.mp3",
+      "ja_preview": "店で コーヒーを 買いたいです。"
+    },
+    {
+      "id": "listening.n5.listen.027",
+      "expected_path": "audio/listening/n5.listen.027.mp3",
+      "ja_preview": "友だちが おちゃを すすめました。 飲みたく ないです。"
+    },
+    {
+      "id": "listening.n5.listen.028",
+      "expected_path": "audio/listening/n5.listen.028.mp3",
+      "ja_preview": "友だちの いえへ 入ります。"
+    },
+    {
+      "id": "listening.n5.listen.029",
+      "expected_path": "audio/listening/n5.listen.029.mp3",
+      "ja_preview": "ごはんを 食べる 前です。"
+    },
+    {
+      "id": "listening.n5.listen.030",
+      "expected_path": "audio/listening/n5.listen.030.mp3",
+      "ja_preview": "駅へ 行きたいです。 道が わかりません。"
+    }
+  ]
+}

@@ -99,30 +99,79 @@ def synth_segment(text: str, speaker: int, endpoint: str) -> bytes:
     POST /synthesis with those params + same speaker → get audio.
 
     Network call is intentionally synchronous; the caller batches.
+    Retries up to 3 times on transient errors (timeouts, 5xx, conn reset)
+    with exponential backoff. Hard 4xx errors fail immediately.
     """
+    import urllib.request
+    import urllib.parse
+    import urllib.error
+    import time
+
+    last_err: Exception | None = None
+    for attempt in range(3):
+        try:
+            qs = urllib.parse.urlencode({"text": text, "speaker": speaker})
+            q_url = f"{endpoint}/audio_query?{qs}"
+            req = urllib.request.Request(q_url, method="POST")
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                if resp.status != 200:
+                    raise RuntimeError(f"VOICEVOX /audio_query → {resp.status}")
+                params = resp.read()
+
+            s_url = f"{endpoint}/synthesis?speaker={speaker}"
+            s_req = urllib.request.Request(
+                s_url, data=params, method="POST",
+                headers={"Content-Type": "application/json"},
+            )
+            with urllib.request.urlopen(s_req, timeout=60) as resp:
+                if resp.status != 200:
+                    raise RuntimeError(f"VOICEVOX /synthesis → {resp.status}")
+                return resp.read()
+        except (urllib.error.URLError, TimeoutError, ConnectionResetError) as e:
+            last_err = e
+            if attempt < 2:
+                # Exponential backoff: 0.5s, 1s, then give up
+                time.sleep(0.5 * (2 ** attempt))
+                continue
+            raise
+        except urllib.error.HTTPError as e:
+            # 4xx is a hard failure (e.g., bad speaker id, malformed text)
+            if 400 <= e.code < 500:
+                raise
+            last_err = e
+            if attempt < 2:
+                time.sleep(0.5 * (2 ** attempt))
+                continue
+            raise
+    raise RuntimeError(f"VOICEVOX retry exhausted: {last_err}")
+
+
+def preflight_engine(endpoint: str) -> dict:
+    """Verify the VOICEVOX engine is reachable before kicking off a batch.
+
+    Returns a dict with engine version + speaker count when up. Raises
+    RuntimeError with a clear message when the engine is unreachable so
+    the caller can either fall back to gTTS or fail loudly.
+    """
+    import urllib.request
+    import urllib.error
     try:
-        import urllib.request
-        import urllib.parse
-    except ImportError:  # pragma: no cover
-        raise RuntimeError("urllib not available — non-CPython runtime?")
-
-    qs = urllib.parse.urlencode({"text": text, "speaker": speaker})
-    q_url = f"{endpoint}/audio_query?{qs}"
-    req = urllib.request.Request(q_url, method="POST")
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        if resp.status != 200:
-            raise RuntimeError(f"VOICEVOX /audio_query → {resp.status}")
-        params = resp.read()
-
-    s_url = f"{endpoint}/synthesis?speaker={speaker}"
-    s_req = urllib.request.Request(
-        s_url, data=params, method="POST",
-        headers={"Content-Type": "application/json"},
-    )
-    with urllib.request.urlopen(s_req, timeout=60) as resp:
-        if resp.status != 200:
-            raise RuntimeError(f"VOICEVOX /synthesis → {resp.status}")
-        return resp.read()
+        with urllib.request.urlopen(f"{endpoint}/version", timeout=3) as r:
+            if r.status != 200:
+                raise RuntimeError(
+                    f"VOICEVOX engine reachable but /version returned {r.status}")
+            version = r.read().decode("utf-8").strip(' "')
+        with urllib.request.urlopen(f"{endpoint}/speakers", timeout=3) as r:
+            speakers = json.loads(r.read())
+        return {"version": version, "speaker_count": len(speakers),
+                "endpoint": endpoint}
+    except (urllib.error.URLError, TimeoutError, ConnectionRefusedError) as e:
+        raise RuntimeError(
+            f"VOICEVOX engine not reachable at {endpoint}.\n"
+            f"  Cause: {type(e).__name__}: {e}\n"
+            f"  Fix:   Download + run the engine from https://voicevox.hiroshiba.jp/\n"
+            f"         (default port :50021). Then re-run this script."
+        ) from e
 
 
 def text_hash(s: str) -> str:
@@ -132,7 +181,12 @@ def text_hash(s: str) -> str:
 def render_one(item_id: str, text: str, out_path: Path,
                speaker: int, endpoint: str,
                manifest: dict, dry_run: bool, resume: bool) -> str:
-    """Render one item. Returns 'rendered' / 'skipped' / 'cached'."""
+    """Render one item. Returns 'rendered' / 'skipped' / 'cached'.
+
+    out_path is the FINAL .mp3 path. The script synthesizes WAV via
+    VOICEVOX (uncompressed PCM) and transcodes to MP3 via ffmpeg so the
+    runtime <audio> elements work without code changes.
+    """
     h = text_hash(text)
     prior = manifest.get(item_id, {})
     if resume and out_path.exists() and prior.get("hash") == h:
@@ -172,8 +226,26 @@ def render_one(item_id: str, text: str, out_path: Path,
             wav = out_wav.read_bytes()
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_bytes(wav)
-    manifest[item_id] = {"hash": h, "path": str(out_path.relative_to(ROOT))}
+    # Transcode WAV → MP3 via ffmpeg. The runtime <audio> elements all
+    # reference .mp3 paths (set in data/*.json), so we land directly in
+    # the right format. -ab 128k is plenty for speech; -y overwrites
+    # without prompting; suppressed stderr so workers don't interleave.
+    import subprocess
+    import tempfile
+    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tf:
+        tf.write(wav)
+        wav_path = tf.name
+    try:
+        subprocess.run(
+            ["ffmpeg", "-y", "-loglevel", "error",
+             "-i", wav_path, "-acodec", "libmp3lame", "-ab", "128k",
+             str(out_path)],
+            check=True, capture_output=True,
+        )
+    finally:
+        Path(wav_path).unlink(missing_ok=True)
+    manifest[item_id] = {"hash": h, "path": str(out_path.relative_to(ROOT)),
+                         "voice": f"voicevox-speaker-{speaker}"}
     return "rendered"
 
 
@@ -186,7 +258,26 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--resume", action="store_true",
                         help="skip files already rendered with same input hash")
+    parser.add_argument("--workers", type=int, default=4,
+                        help="concurrent synth requests (default: 4). "
+                             "Reduce to 1 if your VOICEVOX engine is slow / "
+                             "underpowered; raise to 8 if you have a beefy GPU.")
+    parser.add_argument("--missing-only", action="store_true",
+                        help="only render items where the output .mp3 doesn't "
+                             "already exist (faster than --resume since it "
+                             "skips the hash compare).")
     args = parser.parse_args(argv)
+
+    # Preflight: refuse to start a batch if the engine isn't running.
+    # Skipped for --dry-run since we won't make any synth calls.
+    if not args.dry_run:
+        try:
+            info = preflight_engine(args.endpoint)
+            print(f"VOICEVOX engine OK: v{info['version']}, "
+                  f"{info['speaker_count']} speakers @ {info['endpoint']}")
+        except RuntimeError as e:
+            print(f"\nERROR: {e}", file=sys.stderr)
+            return 2
 
     src_path = ROOT / "data" / f"{args.target}.json"
     if not src_path.exists():
@@ -203,45 +294,89 @@ def main(argv: list[str] | None = None) -> int:
     out_dir = ROOT / "audio" / args.target
 
     # Item iteration depends on data shape. Each module has its own.
+    # listening uses script_ja (per data/listening.json convention,
+    # confirmed 2026-05-02); the older `script` field is kept as a
+    # fallback for legacy items.
     if args.target == "listening":
         items = src.get("items", [])
-        text_for = lambda item: item.get("script") or item.get("ja") or ""
+        text_for = lambda item: (item.get("script_ja")
+                                  or item.get("script")
+                                  or item.get("ja") or "")
     elif args.target == "reading":
         items = src.get("passages", [])
         text_for = lambda item: item.get("ja") or ""
     else:  # grammar
         items = []
         for p in src.get("patterns", []):
-            for ex in (p.get("examples") or []):
-                items.append({"id": f"{p['id']}.{ex.get('idx', 0)}",
+            for i, ex in enumerate(p.get("examples") or []):
+                items.append({"id": f"{p['id']}.{i}",
                               "ja": ex.get("ja", "")})
         text_for = lambda item: item.get("ja") or ""
 
-    n_rendered = n_skipped = n_cached = 0
+    # Build the work list first so we can short-circuit empty batches and
+    # report progress accurately.
+    work = []
     for it in items:
         iid = it.get("id")
         if not iid:
             continue
         text = text_for(it)
         if not text:
-            n_skipped += 1
             continue
-        out_path = out_dir / f"{iid}.wav"
-        try:
-            status = render_one(
-                iid, text, out_path, args.speaker, args.endpoint,
-                target_manifest, args.dry_run, args.resume,
-            )
-        except Exception as e:
-            print(f"  {iid}: ERROR — {e}")
-            continue
-        if status == "rendered":
-            n_rendered += 1
-        elif status == "cached":
-            n_cached += 1
+        # Output is .mp3 (transcoded post-synth). Final path varies per
+        # module — listening uses the explicit `audio` field if given.
+        if args.target == "listening" and it.get("audio"):
+            out_path = ROOT / it["audio"]
         else:
-            n_skipped += 1
-        print(f"  {iid}: {status}")
+            out_path = out_dir / f"{iid}.mp3"
+        if args.missing_only and out_path.exists():
+            continue
+        work.append((iid, text, out_path))
+
+    if not work:
+        print(f"Nothing to render: {args.target} already up-to-date.")
+        return 0
+    print(f"Queue: {len(work)} items, {args.workers} workers, "
+          f"speaker={args.speaker}")
+
+    n_rendered = n_skipped = n_cached = n_failed = 0
+    if args.workers > 1 and not args.dry_run:
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        with ThreadPoolExecutor(max_workers=args.workers) as ex:
+            futures = {
+                ex.submit(render_one, iid, text, out_path, args.speaker,
+                          args.endpoint, target_manifest, args.dry_run,
+                          args.resume): iid
+                for iid, text, out_path in work
+            }
+            for fut in as_completed(futures):
+                iid = futures[fut]
+                try:
+                    status = fut.result()
+                except Exception as e:
+                    print(f"  {iid}: ERROR — {e}")
+                    n_failed += 1
+                    continue
+                if status == "rendered":   n_rendered += 1
+                elif status == "cached":   n_cached += 1
+                else:                       n_skipped += 1
+                print(f"  {iid}: {status}")
+    else:
+        # Serial path (used for --dry-run and --workers=1)
+        for iid, text, out_path in work:
+            try:
+                status = render_one(
+                    iid, text, out_path, args.speaker, args.endpoint,
+                    target_manifest, args.dry_run, args.resume,
+                )
+            except Exception as e:
+                print(f"  {iid}: ERROR — {e}")
+                n_failed += 1
+                continue
+            if status == "rendered":   n_rendered += 1
+            elif status == "cached":   n_cached += 1
+            else:                       n_skipped += 1
+            print(f"  {iid}: {status}")
 
     if not args.dry_run:
         manifest_path.write_text(
@@ -249,8 +384,9 @@ def main(argv: list[str] | None = None) -> int:
             encoding="utf-8",
         )
 
-    print(f"\nSummary: rendered={n_rendered}, cached={n_cached}, skipped={n_skipped}")
-    return 0
+    print(f"\nSummary: rendered={n_rendered}, cached={n_cached}, "
+          f"skipped={n_skipped}, failed={n_failed}")
+    return 0 if n_failed == 0 else 1
 
 
 if __name__ == "__main__":
