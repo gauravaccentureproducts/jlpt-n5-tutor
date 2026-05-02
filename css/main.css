@@ -2344,6 +2344,14 @@ textarea:focus-visible,
    * fit on a 320px viewport. Without this, secondary-nav extends 18px past
    * the right edge → page-wide horizontal scroll. */
   .app-header { gap: 12px; padding-inline: 16px; }
+  /* Main + footer inline padding: desktop var(--space-5) = 22.5px on each
+   * side eats 14% of a 320px viewport, leaving the content card looking
+   * inset/"framed" with too much side gutter. Tighten to 16px (matches
+   * the header) so the card uses ~90% of the viewport on narrow phones.
+   * Also tighten main's vertical margin: 60px (var(--space-10)) above and
+   * below the card pushes content below the fold on a 658-px-tall S9+. */
+  main { padding-inline: 16px; margin-block: 16px; }
+  .app-footer { padding-inline: 16px; }
   .primary-nav {
     position: fixed; bottom: 0; left: 0; right: 0; z-index: 900;
     display: flex; justify-content: space-around;
