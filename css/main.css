@@ -3036,6 +3036,131 @@ ruby[data-glyph] { cursor: pointer; }
 .kanji-stroke-credit a { color: var(--color-accent, #1F4D2E); }
 .kanji-nav { display: flex; justify-content: space-between; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--c-border); }
 
+/* ============================================================================
+ * Fit-screen layout for kanji detail (added 2026-05-02 per user direction).
+ *
+ * Goal: on screens wide AND tall enough, the entire kanji detail page
+ * fits in the viewport with no vertical scrolling — glyph + readings on
+ * the left, examples + nav in the middle, stroke order on the right.
+ * Browser zoom (Ctrl++) is the user's tool if they want detail larger.
+ * On narrow / short screens (mobile, etc.) the layout falls back to
+ * the existing vertical flow with normal scroll.
+ *
+ * Threshold: ≥1100px wide AND ≥640px tall. Calibrated for laptops
+ * (typical 1366×768 = passes; typical 1920×1080 = passes; iPad 1024×768
+ * landscape = misses width). Tall phones and small windows skip this
+ * layout and stay scrollable.
+ *
+ * Trick: the article fills calc(100vh − chrome). Sections use
+ * grid-template-areas so the markup stays untouched (just css selectors).
+ * ============================================================================ */
+@media (min-width: 1100px) and (min-height: 640px) {
+  .kanji-detail {
+    /* Header (~80px) + footer (~60px) + main top-margin (~64px) +
+     * article internal padding (~40px). Tuned, not guessed —
+     * adjust if the chrome heights change. */
+    height: calc(100vh - 240px);
+    min-height: 480px;
+    display: grid;
+    grid-template-columns: minmax(220px, 280px) 1fr minmax(260px, 320px);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "topbar topbar topbar"
+      "glyph  meta   stroke"
+      "nav    nav    nav";
+    column-gap: 24px;
+    row-gap: 16px;
+    padding: 16px 20px;
+    overflow: hidden;       /* sections handle their own overflow */
+  }
+
+  .kanji-detail .srs-progress { grid-area: topbar; margin: 0; }
+
+  /* Left column: glyph + readings + Mark-as-known stacked vertically */
+  .kanji-detail .kanji-glyph-row {
+    grid-area: glyph;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    min-height: 0;
+  }
+  .kanji-detail .kanji-glyph-cluster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .kanji-detail .kanji-glyph-big {
+    /* Glyph scales with viewport so it stays large but fits */
+    font-size: clamp(72px, 10vh, 120px);
+    padding: 4px 18px;
+    margin: 0 auto;
+  }
+  .kanji-detail .kanji-readings {
+    text-align: center;
+    width: 100%;
+  }
+  .kanji-detail .kanji-readings p {
+    margin: 2px 0;
+    font-size: 13px;
+  }
+  .kanji-detail .known-toggle {
+    align-self: center;
+    margin-top: auto;
+  }
+
+  /* Middle column: examples (overflow-scroll if many) */
+  .kanji-detail .kanji-examples {
+    grid-area: meta;
+    margin: 0;
+    overflow: auto;
+    min-height: 0;
+  }
+  .kanji-detail .kanji-examples h3 {
+    margin-top: 0;
+    font-size: 15px;
+  }
+  .kanji-detail .kanji-examples-table td {
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+  .kanji-detail .kanji-examples-table .ex-form { font-size: 16px; }
+
+  /* Right column: stroke-order SVG sized to fit available space */
+  .kanji-detail .kanji-stroke {
+    grid-area: stroke;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .kanji-detail .kanji-stroke h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+  }
+  .kanji-detail .kanji-stroke .stroke-svg {
+    width: 100%;
+    max-width: none;
+    flex: 1;
+    min-height: 0;
+    height: auto;
+    /* Maintain a sensible aspect ratio so the SVG isn't squashed */
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+  }
+  .kanji-detail .kanji-stroke-credit { margin-top: 4px; font-size: 11px; }
+
+  .kanji-detail .kanji-nav {
+    grid-area: nav;
+    margin: 0;
+    padding-top: 8px;
+  }
+}
+
 /* Empty states (Brief 2 s3.2) */
 .empty-state {
   background: var(--c-surface);
