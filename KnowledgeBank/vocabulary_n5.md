@@ -981,9 +981,9 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - かならず - [adv.] surely, definitely
 - きっと - [adv.] surely
 - もちろん - [adv.] of course
-- どうぞ - [adv.] please (offering)
-- どうも - [adv.] thanks, indeed
-- どうぞよろしく - [adv.] please treat me well
+- どうぞ - [exp.] please (offering)
+- どうも - [exp.] thanks, indeed
+- どうぞよろしく - [exp.] please treat me well
 - どう - [adv.] how
 - なぜ - [adv.] why
 - どうして - [adv.] why
@@ -991,7 +991,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - もういちど - [adv.] once more
 - まず - [adv.] first of all
 - では / じゃ - well then
-- もしもし - [adv.] hello (telephone)
+- もしもし - [exp.] hello (telephone)
 
 ## 34. Conjunctions
 
@@ -1147,9 +1147,9 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 
 ## 38. Sounds and Voice
 
-- こえ - [interj.] voice
-- おと - [interj.] sound
-- うた - [interj.] song
+- こえ - [n.] voice
+- おと - [n.] sound
+- うた - [n.] song
 
 ## 39. Function / Filler Expressions
 

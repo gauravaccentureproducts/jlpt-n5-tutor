@@ -1,6 +1,6 @@
 # 02 — Vocab (borderline / register-sensitive)
 
-Filtered to 122 entries where the part-of-speech tag (`verb-3` / `adverb` / `expression` / `interjection` / `conjunction` / `particle`) suggests register or usage subtlety. Cite as the `id` field in `review_log.csv`.
+Filtered to 119 entries where the part-of-speech tag (`verb-3` / `adverb` / `expression` / `interjection` / `conjunction` / `particle`) suggests register or usage subtlety. Cite as the `id` field in `review_log.csv`.
 
 ---
 
@@ -42,16 +42,16 @@ Filtered to 122 entries where the part-of-speech tag (`verb-3` / `adverb` / `exp
 - **`n5.vocab.33-adverbs.かならず`** — `かならず` (かならず) [adverb] — surely, definitely
 - **`n5.vocab.33-adverbs.きっと`** — `きっと` (きっと) [adverb] — surely
 - **`n5.vocab.33-adverbs.もちろん`** — `もちろん` (もちろん) [adverb] — of course
-- **`n5.vocab.33-adverbs.どうぞ`** — `どうぞ` (どうぞ) [adverb] — please (offering)
-- **`n5.vocab.33-adverbs.どうも`** — `どうも` (どうも) [adverb] — thanks, indeed
-- **`n5.vocab.33-adverbs.どうぞよろしく`** — `どうぞよろしく` (どうぞよろしく) [adverb] — please treat me well
+- **`n5.vocab.33-adverbs.どうぞ`** — `どうぞ` (どうぞ) [expression] — please (offering)
+- **`n5.vocab.33-adverbs.どうも`** — `どうも` (どうも) [expression] — thanks, indeed
+- **`n5.vocab.33-adverbs.どうぞよろしく`** — `どうぞよろしく` (どうぞよろしく) [expression] — please treat me well
 - **`n5.vocab.33-adverbs.どう`** — `どう` (どう) [adverb] — how
 - **`n5.vocab.33-adverbs.なぜ`** — `なぜ` (なぜ) [adverb] — why
 - **`n5.vocab.33-adverbs.どうして`** — `どうして` (どうして) [adverb] — why
 - **`n5.vocab.33-adverbs.まっすぐ`** — `まっすぐ` (まっすぐ) [adverb] — straight ahead
 - **`n5.vocab.33-adverbs.もういちど`** — `もういちど` (もういちど) [adverb] — once more
 - **`n5.vocab.33-adverbs.まず`** — `まず` (まず) [adverb] — first of all
-- **`n5.vocab.33-adverbs.もしもし`** — `もしもし` (もしもし) [adverb] — hello (telephone)
+- **`n5.vocab.33-adverbs.もしもし`** — `もしもし` (もしもし) [expression] — hello (telephone)
 - **`n5.vocab.34-conjunctions.そして`** — `そして` (そして) [conjunction] — and then
 - **`n5.vocab.34-conjunctions.それから`** — `それから` (それから) [conjunction] — and then, after that
 - **`n5.vocab.34-conjunctions.それで`** — `それで` (それで) [conjunction] — and so
@@ -111,9 +111,6 @@ Filtered to 122 entries where the part-of-speech tag (`verb-3` / `adverb` / `exp
 - **`n5.vocab.36-greetings-and-set-phr.どうぞ`** — `どうぞ` (どうぞ) [expression] — please (offering)
 - **`n5.vocab.36-greetings-and-set-phr.どうも`** — `どうも` (どうも) [expression] — thanks
 - **`n5.vocab.36-greetings-and-set-phr.もしもし`** — `もしもし` (もしもし) [expression] — hello (phone)
-- **`n5.vocab.38-sounds-and-voice.こえ`** — `こえ` (こえ) [interjection] — voice
-- **`n5.vocab.38-sounds-and-voice.おと`** — `おと` (おと) [interjection] — sound
-- **`n5.vocab.38-sounds-and-voice.うた`** — `うた` (うた) [interjection] — song
 - **`n5.vocab.39-function-filler-expre.えーと`** — `えーと` (えーと) [expression] — um, let me see
 - **`n5.vocab.39-function-filler-expre.あの`** — `あの` (あの) [expression] — um (hesitation)
 - **`n5.vocab.39-function-filler-expre.そうですね`** — `そうですね` (そうですね) [expression] — let me think / that's right

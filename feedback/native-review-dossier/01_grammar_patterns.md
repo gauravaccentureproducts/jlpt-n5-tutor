@@ -132,7 +132,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 - **tier:** core_n5
 - **meaning_en:** With (companion) / and (exhaustive listing) / quotation marker
-- **meaning_ja:** 「いっしょに」「と」「いう」
+- **meaning_ja:** 〜と(いっしょに / れっきょ / いんよう)
 - **examples:**
   - `[0]` ともだちと いきます。
     > I'm going with my friend.
@@ -147,7 +147,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-009 — `から`
 
-- **tier:** late_n5
+- **tier:** core_n5
 - **meaning_en:** From (starting point in time / place) / because (reason)
 - **meaning_ja:** 「いつ・どこ から」「りゆう」
 - **notes:** Note ので is a softer, more polite alternative for 'because' (Upper N5 / borderline).
@@ -716,7 +716,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-052 — `どうやって`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** どうやって - 'how / by what means'
 - **meaning_ja:** 「どうやって」
 - **examples:**
@@ -1877,7 +1877,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-145 — `～とおもいます`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** ～と おもいます - I think (that)
 - **meaning_ja:** 「〜と おもいます」
 - **examples:**
@@ -1888,7 +1888,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-146 — `～と言いました`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** ～と 言いました - said that ~
 - **meaning_ja:** 「〜と 言いました」
 - **examples:**
@@ -1968,7 +1968,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 - **tier:** core_n5
 - **meaning_en:** Set polite phrases: どうぞ / どうも / すみません / おねがいします
-- **meaning_ja:** あいさつ・しゃいいご
+- **meaning_ja:** あいさつ・しゃこうご
 - **examples:**
   - `[0]` どうぞ 入ってください。
     > Please come in.
@@ -2041,7 +2041,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-158 — `〜だろう`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** Casual/plain version of でしょう
 - **meaning_ja:** 「〜でしょう」
 - **examples:**
@@ -2196,7 +2196,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-171 — `Verb-ない + ほうがいい`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** Verb-ない + ほうが いい - shouldn't do
 - **meaning_ja:** 「〜ないほうが いい」
 - **examples:**
@@ -2225,7 +2225,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-174 — `～なくてはならない`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** Must do (formal variant - same as いけない)
 - **meaning_ja:** 「〜なくては いけない」
 - **examples:**
@@ -2234,12 +2234,12 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-175 — `～ないといけない`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** Must do (common spoken variant)
 - **meaning_ja:** 「〜なくては いけない」
 - **examples:**
-  - `[0]` はやく かえらなきゃ いけない。
-    > I have to go home quickly.
+  - `[0]` はやく かえらないと いけない。
+    > I must go home soon.
 
 ## n5-176 — `～なくちゃ / ～なきゃ`
 
@@ -2252,7 +2252,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-177 — `Verb-stem / Adj-stem + すぎる`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** Verb-stem / Adj-stem + すぎる - too much / excessive
 - **meaning_ja:** 「〜すぎる」
 - **examples:**
@@ -2263,7 +2263,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-178 — `Verb-plain + つもりだ / つもりです`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** Verb-plain + つもりだ - intend to
 - **meaning_ja:** 「〜つもり」
 - **examples:**
@@ -2272,7 +2272,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-179 — `～って`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** ～って - casual quotation marker / topic introducer
 - **meaning_ja:** 「〜って」(カジュアル)
 - **examples:**
@@ -2281,7 +2281,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-180 — `Verb-stem + ～かた`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** Verb-stem + ～かた - way of doing
 - **meaning_ja:** 「〜かた」
 - **examples:**
@@ -2290,7 +2290,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-181 — `～なあ`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** ～なあ - sentence-final exclamation ('I really feel...')
 - **meaning_ja:** 「〜なあ」
 - **examples:**
@@ -2299,7 +2299,7 @@ use `n5-NNN.examples[K]` where K is the 0-based index.
 
 ## n5-182 — `Verb-plain + な`
 
-- **tier:** core_n5
+- **tier:** late_n5
 - **meaning_en:** Verb-plain + な - strong/casual prohibition ("don't!")
 - **meaning_ja:** 「Verb-plain + な」
 - **examples:**

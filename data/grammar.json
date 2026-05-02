@@ -735,7 +735,7 @@
       "categoryOrder": 2,
       "patternOrder": 7,
       "meaning_en": "With (companion) / and (exhaustive listing) / quotation marker",
-      "meaning_ja": "「いっしょに」「と」「いう」",
+      "meaning_ja": "〜と(いっしょに / れっきょ / いんよう)",
       "form_rules": {
         "attaches_to": [
           "noun",
@@ -838,7 +838,7 @@
     },
     {
       "id": "n5-009",
-      "tier": "late_n5",
+      "tier": "core_n5",
       "pattern": "から",
       "category": "Particles",
       "categoryOrder": 2,
@@ -3937,7 +3937,7 @@
     },
     {
       "id": "n5-052",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "どうやって",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -10228,7 +10228,7 @@
     },
     {
       "id": "n5-145",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "～とおもいます",
       "category": "Common Set Patterns",
       "categoryOrder": 19,
@@ -10285,7 +10285,7 @@
     },
     {
       "id": "n5-146",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "～と言いました",
       "category": "Common Set Patterns",
       "categoryOrder": 19,
@@ -10674,7 +10674,7 @@
       "categoryOrder": 21,
       "patternOrder": 4,
       "meaning_en": "Set polite phrases: どうぞ / どうも / すみません / おねがいします",
-      "meaning_ja": "あいさつ・しゃいいご",
+      "meaning_ja": "あいさつ・しゃこうご",
       "form_rules": {
         "attaches_to": [
           "set_phrase"
@@ -11051,7 +11051,7 @@
     },
     {
       "id": "n5-158",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "〜だろう",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -11809,7 +11809,7 @@
     },
     {
       "id": "n5-171",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "Verb-ない + ほうがいい",
       "category": "Additional Upper N5 / Borderline Patterns - Experience and Advice",
       "categoryOrder": 26,
@@ -11924,7 +11924,7 @@
     },
     {
       "id": "n5-174",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "～なくてはならない",
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
@@ -11966,7 +11966,7 @@
     },
     {
       "id": "n5-175",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "～ないといけない",
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
@@ -11986,9 +11986,9 @@
       "explanation_en": "Negative te-form + は + いけない = 'must do' (lit. 'not doing won't work'). Casual contraction: ～なくちゃ.\n\n(This pattern is also indexed as '～ないといけない' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
         {
-          "ja": "はやく かえらなきゃ いけない。",
+          "ja": "はやく かえらないと いけない。",
           "form": "affirmative",
-          "translation_en": "I have to go home quickly.",
+          "translation_en": "I must go home soon.",
           "vocab_ids": [
             "n5.vocab.31-adjectives.はやい",
             "n5.vocab.27-verbs-group-1-verbs.行く"
@@ -12049,7 +12049,7 @@
     },
     {
       "id": "n5-177",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "Verb-stem / Adj-stem + すぎる",
       "category": "Additional Upper N5 / Borderline Patterns - Excess",
       "categoryOrder": 28,
@@ -12096,7 +12096,7 @@
     },
     {
       "id": "n5-178",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "Verb-plain + つもりだ / つもりです",
       "category": "Additional Upper N5 / Borderline Patterns - Intention",
       "categoryOrder": 29,
@@ -12133,7 +12133,7 @@
     },
     {
       "id": "n5-179",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "～って",
       "category": "Additional Upper N5 / Borderline Patterns - Quotation (Casual)",
       "categoryOrder": 30,
@@ -12171,7 +12171,7 @@
     },
     {
       "id": "n5-180",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "Verb-stem + ～かた",
       "category": "Additional Upper N5 / Borderline Patterns - Way of Doing",
       "categoryOrder": 31,
@@ -12212,7 +12212,7 @@
     },
     {
       "id": "n5-181",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "～なあ",
       "category": "Additional Upper N5 / Borderline Patterns - Sentence-Final Exclamation",
       "categoryOrder": 32,
@@ -12248,7 +12248,7 @@
     },
     {
       "id": "n5-182",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "Verb-plain + な",
       "category": "Additional Upper N5 / Borderline Patterns - Prohibitive (Casual)",
       "categoryOrder": 33,

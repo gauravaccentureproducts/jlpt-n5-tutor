@@ -6638,7 +6638,7 @@
       "reading": "どうぞ",
       "gloss": "please (offering)",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "expression"
     },
     {
       "id": "n5.vocab.33-adverbs.どうも",
@@ -6646,7 +6646,7 @@
       "reading": "どうも",
       "gloss": "thanks, indeed",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "expression"
     },
     {
       "id": "n5.vocab.33-adverbs.どうぞよろしく",
@@ -6654,7 +6654,7 @@
       "reading": "どうぞよろしく",
       "gloss": "please treat me well",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "expression"
     },
     {
       "id": "n5.vocab.33-adverbs.どう",
@@ -6710,7 +6710,7 @@
       "reading": "もしもし",
       "gloss": "hello (telephone)",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "expression"
     },
     {
       "id": "n5.vocab.34-conjunctions.そして",
@@ -7798,7 +7798,7 @@
       "reading": "こえ",
       "gloss": "voice",
       "section": "38. Sounds and Voice",
-      "pos": "interjection"
+      "pos": "noun"
     },
     {
       "id": "n5.vocab.38-sounds-and-voice.おと",
@@ -7806,7 +7806,7 @@
       "reading": "おと",
       "gloss": "sound",
       "section": "38. Sounds and Voice",
-      "pos": "interjection"
+      "pos": "noun"
     },
     {
       "id": "n5.vocab.38-sounds-and-voice.うた",
@@ -7814,7 +7814,7 @@
       "reading": "うた",
       "gloss": "song",
       "section": "38. Sounds and Voice",
-      "pos": "interjection"
+      "pos": "noun"
     },
     {
       "id": "n5.vocab.39-function-filler-expre.えーと",

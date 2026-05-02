@@ -73,7 +73,7 @@ without ambiguity.
 |---|---|---|
 | `01_grammar_patterns.md` | 177 grammar patterns | Confirm each pattern's *meaning_en* + *notes* match standard N5 textbook framing. Flag any example that sounds unnatural to a native ear. |
 | `02_vocab_borderline.md` | ~100 vocab entries with high register / usage variability | Flag entries where the gloss obscures a register split (e.g. casual vs polite vs formal). |
-| `03_kanji_readings.md` | 106 kanji | Confirm primary on/kun reading (the FIRST in each list is the one used by the runtime). Flag any entry where the listed primary is not the most common N5-context reading. |
+| `03_kanji_readings.md` | 106 kanji | Confirm primary reading (see precedence rule below). Flag any entry where the listed primary is not the most common N5-context reading. |
 | `04_reading_passages.md` | 30 dokkai passages + comprehension Qs | Especially Pass-15 rewrites (flagged inline). Naturalness > textbook-strictness for these. |
 | `05_listening_scripts.md` | 30 listening dialogues | Speaker-turn naturalness; pacing of greetings; correctness of context (e.g. shop vs office vs school register). |
 
@@ -100,6 +100,34 @@ Optional:
 
 - `reviewer_initials` — for multi-reviewer setups
 - `confidence` — 1-5 (5 = certain; 1 = "I'd want to check with a colleague")
+
+## Kanji primary-reading precedence (file 03)
+
+Each kanji record lists `on:` and `kun:` reading lists, and may also
+carry an explicit `primary_reading:` field. The runtime surfaces the
+primary in this order:
+
+1. If `primary_reading:` is set explicitly, that's the primary
+   regardless of which list it came from.
+2. Otherwise: if the kanji has any kun readings, the **first kun**
+   is primary (the standalone i-adjective / verb-stem form is what
+   N5 learners encounter first — see `高い`, `長い`, `安い`, `白い`).
+3. Otherwise: the **first on** is primary.
+
+Some kanji are genuinely tied (e.g. `新` — 新聞 しんぶん and 新しい
+あたらしい are both N5 contexts). For those, either reading is
+acceptable as primary; the listed one is fine unless you have a
+strong textbook-aligned reason to swap.
+
+## Empty meaning_ja in file 01
+
+Some grammar patterns have a `meaning_ja:` field that contains only
+the pattern itself in 「」 brackets (e.g., `「いつ・どこ まで」` for
+`まで`). This is intentional — those patterns are particles or
+function words whose meaning is best explained in English at N5
+level; a Japanese gloss would be circular. **Skip these as
+"deliberately blank"** unless you can supply a learner-friendly
+Japanese explanation that adds information beyond the pattern itself.
 
 ## Turnaround
 
@@ -175,10 +203,22 @@ def write_kanji():
         on = " / ".join(e.get("on") or []) or "—"
         kun = " / ".join(e.get("kun") or []) or "—"
         meanings = ", ".join(e.get("meanings") or [])
+        # Primary-reading surface: prefer the explicit `primary_reading`
+        # field when set; else fall back to the first-kun rule then
+        # first-on (matches the precedence documented in cover.md).
+        primary = e.get("primary_reading")
+        primary_kind = e.get("primary_kind")
+        if not primary:
+            if e.get("kun"):
+                primary, primary_kind = e["kun"][0], "kun"
+            elif e.get("on"):
+                primary, primary_kind = e["on"][0], "on"
         lines.append(f"## `{e['id']}` — {e['glyph']}")
         lines.append("")
         lines.append(f"- **on:** {on}")
         lines.append(f"- **kun:** {kun}")
+        if primary:
+            lines.append(f"- **primary reading:** {primary} ({primary_kind})")
         lines.append(f"- **meanings:** {meanings}")
         if e.get("frequency_rank"):
             lines.append(f"- **freq rank (within N5):** {e['frequency_rank']}")
@@ -223,23 +263,31 @@ def write_listening():
              "",
              "Cite as `n5.listen.NNN`. Speaker-turn naturalness, pacing, ",
              "and register fit (e.g. shop / school / office) are the main ",
-             "concerns. Per-item: format / setup / script / question / choices.",
+             "concerns. Per-item: format / setup + dialogue script / ",
+             "comprehension question / choices.",
              "",
              "---", ""]
     for it in items:
         lines.append(f"## `{it['id']}` — {it.get('title_ja') or ''}")
         lines.append("")
         lines.append(f"- **format:** {it.get('format','')}")
-        if it.get("setup_ja"):
-            lines.append(f"- **setup:** {it['setup_ja']}")
-        lines.append("")
-        if it.get("script"):
+        # The setup line is the first line of script_ja (the speakers-and-
+        # situation context, e.g. "男の人と 女の人が 話しています。…");
+        # everything after that is the dialogue itself. We keep them
+        # together in one fenced block so the reviewer sees the same
+        # rendering the runtime audio is built from.
+        script = it.get("script_ja") or it.get("script") or ""
+        if script:
+            lines.append("- **script (setup + dialogue):**")
+            lines.append("")
             lines.append("```")
-            lines.append(it["script"])
+            lines.append(script)
             lines.append("```")
             lines.append("")
-        if it.get("question_ja"):
-            lines.append(f"- **question:** {it['question_ja']}")
+        # The comprehension question is the prompt_ja field.
+        prompt = it.get("prompt_ja") or it.get("question_ja") or ""
+        if prompt:
+            lines.append(f"- **question:** {prompt}")
         for c in it.get("choices") or []:
             marker = "✓" if c == it.get("correctAnswer") else " "
             lines.append(f"  - [{marker}] {c}")
