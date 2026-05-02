@@ -2,6 +2,72 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.11.2 - 2026-05-03 (Vocab examples Phase 5 — +179 entries)
+
+Continuation of the vocab-example coverage pass. This batch combines
+the 23 Phase-4 stragglers (entries my earlier script couldn't match
+due to kanji-vs-kana form mismatch — re-keyed to actual IDs) with
+~155 new entries across the remaining-uncovered sections.
+
+### Content (179 new vocab inline examples)
+
+  - **Phase-4 stragglers re-keyed** (23): 今, 今日, 毎日, 時々, 前 (time);
+    白 / 白い (colors); 会う / 言う / 聞く / かえる / 出る (verbs);
+    新しい / 高い / 小さい / 古い / 安い (adjectives); まず, 先,
+    りょうり (nouns); はい / いいえ / はい-counter (function/filler).
+  - **Locations & places** (+15): 学校, いえ, へや, えき / 駅, バスてい,
+    びょういん, こうえん, としょかん, デパート, スーパー, コンビニ,
+    レストラン, カフェ, きっさてん, ぎんこう, ゆうびんきょく, 大学, まち,
+    中, 外, 上, 下.
+  - **Nature & weather** (+13): 雨, ゆき, 風, そら, つき, 太陽, ほし,
+    山, 川, うみ, 木, 花, てんき, あつい, さむい, 夏, 冬, はる, あき.
+  - **Animals** (+8): いぬ, ねこ, とり, さかな, うま, うし, ぶた, どうぶつ.
+  - **Food & drink** (+22): ごはん, あさ/ひる/ばんごはん, おかし, パン,
+    たまご, りんご, みかん, バナナ, やさい, くだもの, にく, おにぎり,
+    おべんとう, ケーキ, アイスクリーム, チーズ, バター, ラーメン, すし,
+    てんぷら + drinks 水, おちゃ, コーヒー, ぎゅうにゅう, ジュース,
+    ビール, ワイン, おさけ.
+  - **Clothing** (+10): シャツ, ズボン, スカート, くつ, くつした, ぼうし,
+    ふく, めがね, とけい, かばん.
+  - **Money/shopping** (+5): お金, いくら, ねだん, きって, はがき.
+  - **Transport** (+8): でんしゃ, バス, くるま, じてんしゃ, ちかてつ,
+    タクシー, ひこうき, ふね.
+  - **School & study** (+17): 学生, 先生, 大学生, 高校生, じゅぎょう,
+    しゅくだい, テスト, しけん, きょうしつ, 本, じしょ, ノート, えんぴつ,
+    ペン, かみ, つくえ, いす.
+  - **Languages & countries** (+8): 日本, 日本語, アメリカ, えいご,
+    中国, 中国語, かんこく, 国.
+  - **House & furniture** (+12): まど, ドア, テーブル, ベッド, しょくどう,
+    だいどころ, お風呂, シャワー, テレビ, でんわ, れいぞうこ, でんき.
+  - **Verb tail** (+17): あらう, おわる, のる, のぼる, はたらく, はじまる,
+    まつ, もつ, つくる, つかう, あるく; おしえる, おぼえる, あける, しめる,
+    おりる, かりる.
+  - **Adjective tail** (+22 i-adj + 4 na-adj): おもしろい, おいしい,
+    いそがしい, あたたかい, すずしい, あまい, からい, いい, わるい,
+    いたい, ながい, みじかい, ひろい, せまい, おもい, かるい, つよい,
+    よわい, はやい, おそい, とおい, ちかい + だいすき, だいきらい,
+    げんき, ゆうめい.
+  - **Adverb tail** (+11): とても, すこし, たくさん, ちょっと, いっしょに,
+    はやく, ゆっくり, もっと, だんだん, きっと, たぶん.
+
+### Coverage status
+
+- Vocab inline examples: now ~506 / 1003 (was 313 pre-Phase-3, was
+  467 post-Phase-4, now ~506).
+- Remaining fully uncovered: 497 (was 690 pre-Phase-3).
+- Big remaining buckets (next phase): common nouns misc (~60),
+  food items tail (~25), school/study tail (~25), adverbs tail (~20),
+  verb tail (~30), some house/furniture, body parts variants, time
+  variants.
+
+### Service worker
+
+Bumped `CACHE_VERSION` v106 -> v107.
+
+v1.11.2 / SW v107. **40/40 invariants green.**
+
+---
+
 ## v1.11.1 - 2026-05-03 (Vocab examples Phase 4 — +154 entries)
 
 Continuation of v1.11.0's example-coverage pass. Authored 154 more
