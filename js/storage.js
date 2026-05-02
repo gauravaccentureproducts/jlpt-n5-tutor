@@ -109,6 +109,32 @@ export function setVocabKnown(form, known) {
   set('knownVocab', m);
 }
 
+// Per-passage / per-drill completion tracking (added 2026-05-02 for the
+// homepage syllabus-dashboard Progress section; previously reading and
+// listening had no per-item completion state, so the dashboard's Reading
+// and Listening rows were stuck at 0/30). A passage is "completed" the
+// first time a user finishes its question set with at least one correct
+// answer; a listening drill is "completed" the first time the user
+// submits an answer (right or wrong, since listening is graded
+// auto-submit).
+export function getCompletedReading() { return get('completedReading', {}); }
+export function isReadingCompleted(id) { return !!getCompletedReading()[id]; }
+export function setReadingCompleted(id) {
+  const m = getCompletedReading();
+  if (m[id]) return; // idempotent — first-completion only
+  m[id] = { at: new Date().toISOString() };
+  set('completedReading', m);
+}
+
+export function getCompletedListening() { return get('completedListening', {}); }
+export function isListeningCompleted(id) { return !!getCompletedListening()[id]; }
+export function setListeningCompleted(id) {
+  const m = getCompletedListening();
+  if (m[id]) return;
+  m[id] = { at: new Date().toISOString() };
+  set('completedListening', m);
+}
+
 // ---- Pattern history per spec §7.4 + §6.6 ----
 
 const FRESH_PATTERN_ENTRY = {
@@ -452,6 +478,10 @@ export function recordSrsResponse(grammarPatternId, grade) {
   const history = getHistory();
   const now = new Date().toISOString();
   const existing = history[grammarPatternId] || FRESH_PATTERN_ENTRY;
+  // Snapshot the pre-update entry so the 2s-undo flow in Review can
+  // restore it byte-for-byte (DEFER-14, shipped 2026-05-02). The clone
+  // is JSON-safe because every field on a history entry is a primitive.
+  const preUpdateSnapshot = JSON.parse(JSON.stringify(existing));
   const updated = applyFsrs(existing, grade, now);
   // Keep rolling-history fields in sync for the existing weak-detection code.
   updated.attempts = (updated.attempts || 0) + 1;
@@ -467,6 +497,22 @@ export function recordSrsResponse(grammarPatternId, grade) {
   updated.isMastered = updated.isManuallyKnown || updated.consecutiveCorrect >= 4;
   history[grammarPatternId] = updated;
   setHistory(history);
+  return preUpdateSnapshot;
+}
+
+// Restore a single pattern's history entry to a prior snapshot. Used by
+// the Review undo-2s flow (DEFER-14): the caller stashes the return
+// value of recordSrsResponse, and if the user clicks Undo within the
+// window, calls undoSrsResponse(pid, snapshot) to roll back.
+export function undoSrsResponse(grammarPatternId, snapshot) {
+  if (!grammarPatternId || !snapshot) return false;
+  const history = getHistory();
+  // Defensive: only restore if the entry still exists (user might have
+  // hit Reset progress in the meantime).
+  if (!history[grammarPatternId]) return false;
+  history[grammarPatternId] = snapshot;
+  setHistory(history);
+  return true;
 }
 
 export function getSrsState(grammarPatternId) {

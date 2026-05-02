@@ -729,6 +729,74 @@ main h3 {
 }
 .placeholder h2 { color: var(--c-primary); border: none; }
 
+/* Reading mock-test-mode toggle (DEFER-12). Hairline, no chrome — sits
+ * inline above the passage list, persists via storage settings. */
+.reading-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: var(--space-3) 0 var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+.reading-mode-toggle input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-accent);
+}
+.reading-mode-toggle:hover { color: var(--color-text); }
+
+/* Undo-grading toast (DEFER-14) — fixed-bottom, single-instance, 2s
+ * auto-dismiss. Sits above the bottom-nav on mobile (z-index > 900). */
+.undo-toast {
+  position: fixed;
+  left: 50%;
+  bottom: var(--space-5);
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-line-strong);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  z-index: 1000;
+  animation: undo-toast-in 120ms var(--easing) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .undo-toast { animation: none; }
+}
+@media (max-width: 599px) {
+  .undo-toast { bottom: calc(var(--space-5) + 64px); }
+}
+@keyframes undo-toast-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(8px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.undo-toast-text { color: var(--color-text-muted); }
+.undo-toast-text strong { color: var(--color-text); font-weight: var(--weight-medium, 500); }
+.undo-toast-btn {
+  background: transparent;
+  border: 0.5px solid var(--color-line-strong);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium, 500);
+  padding: var(--space-1) var(--space-3);
+  cursor: pointer;
+  transition: background var(--motion-fast) var(--easing),
+              border-color var(--motion-fast) var(--easing);
+}
+.undo-toast-btn:hover {
+  background: var(--color-surface-alt);
+  border-color: var(--color-text-muted);
+}
+
 /* Footer — Zen Modern lean (hairline top, single muted row) */
 .app-footer {
   display: flex;
@@ -2376,6 +2444,36 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   color: var(--color-text-muted);
   margin: 0;
   max-width: 680px;
+}
+/* Daily-status row — sits under the syllabus subtitle for returning
+ * users only. Two parts: current streak + today's practice flag (✓ or
+ * ○). Decoupled so a 5-day streak with "not yet practiced today" reads
+ * unambiguously as "you've been consistent but haven't logged in yet
+ * today." Hidden entirely for first-time visitors. */
+.syllabus-daily-status {
+  margin-top: var(--space-3);
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.syllabus-daily-streak { color: var(--color-text); }
+.syllabus-daily-today {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+.syllabus-daily-today.is-met { color: var(--color-accent); }
+.syllabus-daily-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1em;
+  height: 1.1em;
+  font-weight: var(--weight-medium, 500);
 }
 
 /* All four major homepage sections share the same vertical rhythm. */

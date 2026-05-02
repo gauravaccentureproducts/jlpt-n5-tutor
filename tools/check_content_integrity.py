@@ -295,14 +295,20 @@ def check_x_6_6_ru_verb_flags() -> list[str]:
     """All 6 Group-1 ru-verb exceptions in vocabulary_n5.md carry the flag annotation."""
     failures = []
     vocab = load_text(KB / "vocabulary_n5.md")
-    # Required verbs by their list-item form
+    # Required verbs by their disambiguating substring. Hints are matched
+    # case-sensitively as substrings; they tolerate a `[pos]` tag inserted
+    # between the leading "- form -" and the gloss (added 2026-05-02 by
+    # DEFER-5 PoS-tag pass) by using OR-form fallback hints.
     required = {
-        "入る": "入る (はいる)",
-        "かえる": "かえる",
-        "はしる": "はしる",
-        "しる": "しる",
-        "きる": "きる - to cut",  # disambiguates from きる "to wear"
-        "要る": "いる - to need",  # disambiguates from existence いる
+        "入る": ["入る (はいる)"],
+        "かえる": ["かえる"],
+        "はしる": ["はしる"],
+        "しる": ["しる"],
+        # "きる - to cut" disambiguates from "きる - to wear". After the PoS
+        # pass the gloss is "[v1] to cut" so we accept either substring.
+        "きる": ["きる - to cut", "to cut (Group 1 exception"],
+        # "いる - to need" disambiguates from existence いる.
+        "要る": ["いる - to need", "to need (Group 1 exception"],
     }
     flag_count = vocab.count(RU_VERB_FLAG_TEXT)
     if flag_count < 6:
@@ -310,11 +316,12 @@ def check_x_6_6_ru_verb_flags() -> list[str]:
             f"X-6.6 vocabulary_n5.md has only {flag_count} '{RU_VERB_FLAG_TEXT}' annotation(s); expected >= 6"
         )
     # Spot-check that each required verb's entry line carries the flag
-    for verb, hint in required.items():
-        # Find a line that starts with `- ` and contains `hint`
+    for verb, hints in required.items():
         found_flagged = False
         for line in vocab.split("\n"):
-            if line.startswith("- ") and hint in line:
+            if not line.startswith("- "):
+                continue
+            if any(h in line for h in hints):
                 if RU_VERB_FLAG_TEXT in line:
                     found_flagged = True
                 break
@@ -778,6 +785,7 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-26", "No duplicate question IDs (Pass-23 2026-05-02)", lambda: _check_ja_26_no_duplicate_question_ids()),
     ("JA-27", "No English-translation/title fields in reading/listening (2026-05-02)", lambda: _check_ja_27_no_english_in_japanese_modules()),
     ("JA-28", "Dokkai-paper kanji bounded by N5 + exception list (2026-05-02)", lambda: _check_ja_28_dokkai_kanji_bounded()),
+    ("JA-29", "Question subtype taxonomy is closed (paraphrase / kanji_writing only) (2026-05-02)", lambda: _check_ja_29_subtype_taxonomy()),
 ]
 
 
@@ -1476,6 +1484,40 @@ def _check_ja_28_dokkai_kanji_bounded() -> list[str]:
             f"or add to data/dokkai_kanji_exception.json (with "
             f"justification in KnowledgeBank/dokkai_questions_n5.md "
             f"header). First seen: {s}")
+    return failures
+
+
+def _check_ja_29_subtype_taxonomy() -> list[str]:
+    """Question subtypes are a closed taxonomy. New subtypes must be added
+    here AND get explicit renderer support before shipping; an unknown
+    subtype slipping through means the renderer treats it as a plain mcq
+    silently, which masks design intent.
+
+    Closing DEFER-2 (Pass-23 r5, 2026-05-02): rather than promote
+    paraphrase to a top-level question type (which would require renderer
+    changes for marginal gain), we lock the subtype field as the canonical
+    extension point. Any new subtype must be registered here.
+    """
+    ALLOWED_SUBTYPES = {"paraphrase", "kanji_writing"}
+    failures: list[str] = []
+    qpath = ROOT / "data" / "questions.json"
+    if not qpath.exists():
+        return ["JA-29: data/questions.json missing"]
+    try:
+        data = json.loads(qpath.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-29: parse error: {e}"]
+    for q in data.get("questions", []):
+        sub = q.get("subtype")
+        if sub is None:
+            continue
+        if sub not in ALLOWED_SUBTYPES:
+            failures.append(
+                f"JA-29 question id '{q.get('id', '?')}' has unknown "
+                f"subtype '{sub}'. Allowed: {sorted(ALLOWED_SUBTYPES)}. "
+                f"Register the subtype in tools/check_content_integrity.py "
+                f"and confirm renderer support before adding new instances."
+            )
     return failures
 
 

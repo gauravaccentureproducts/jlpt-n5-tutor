@@ -3,6 +3,8 @@
     {
       "id": "n5.kanji.一",
       "glyph": "一",
+      "lesson_order": 1,
+      "frequency_rank": 6,
       "on": [
         "いち",
         "いつ"
@@ -35,6 +37,8 @@
     {
       "id": "n5.kanji.二",
       "glyph": "二",
+      "lesson_order": 2,
+      "frequency_rank": 7,
       "on": [
         "に"
       ],
@@ -66,6 +70,8 @@
     {
       "id": "n5.kanji.三",
       "glyph": "三",
+      "lesson_order": 3,
+      "frequency_rank": 32,
       "on": [
         "さん"
       ],
@@ -98,6 +104,8 @@
     {
       "id": "n5.kanji.四",
       "glyph": "四",
+      "lesson_order": 4,
+      "frequency_rank": 72,
       "on": [
         "し"
       ],
@@ -131,6 +139,8 @@
     {
       "id": "n5.kanji.五",
       "glyph": "五",
+      "lesson_order": 5,
+      "frequency_rank": 67,
       "on": [
         "ご"
       ],
@@ -162,6 +172,8 @@
     {
       "id": "n5.kanji.六",
       "glyph": "六",
+      "lesson_order": 6,
+      "frequency_rank": 100,
       "on": [
         "ろく"
       ],
@@ -194,6 +206,8 @@
     {
       "id": "n5.kanji.七",
       "glyph": "七",
+      "lesson_order": 7,
+      "frequency_rank": 73,
       "on": [
         "しち"
       ],
@@ -226,6 +240,8 @@
     {
       "id": "n5.kanji.八",
       "glyph": "八",
+      "lesson_order": 8,
+      "frequency_rank": 8,
       "on": [
         "はち"
       ],
@@ -259,6 +275,8 @@
     {
       "id": "n5.kanji.九",
       "glyph": "九",
+      "lesson_order": 9,
+      "frequency_rank": 62,
       "on": [
         "きゅう",
         "く"
@@ -291,6 +309,8 @@
     {
       "id": "n5.kanji.十",
       "glyph": "十",
+      "lesson_order": 10,
+      "frequency_rank": 31,
       "on": [
         "じゅう",
         "じっ"
@@ -324,6 +344,8 @@
     {
       "id": "n5.kanji.百",
       "glyph": "百",
+      "lesson_order": 11,
+      "frequency_rank": 11,
       "on": [
         "ひゃく"
       ],
@@ -343,6 +365,8 @@
     {
       "id": "n5.kanji.千",
       "glyph": "千",
+      "lesson_order": 12,
+      "frequency_rank": 85,
       "on": [
         "せん"
       ],
@@ -364,6 +388,8 @@
     {
       "id": "n5.kanji.万",
       "glyph": "万",
+      "lesson_order": 13,
+      "frequency_rank": 51,
       "on": [
         "まん"
       ],
@@ -388,6 +414,8 @@
     {
       "id": "n5.kanji.円",
       "glyph": "円",
+      "lesson_order": 14,
+      "frequency_rank": 55,
       "on": [
         "えん"
       ],
@@ -407,6 +435,8 @@
     {
       "id": "n5.kanji.日",
       "glyph": "日",
+      "lesson_order": 15,
+      "frequency_rank": 93,
       "on": [
         "にち",
         "じつ"
@@ -442,6 +472,8 @@
     {
       "id": "n5.kanji.月",
       "glyph": "月",
+      "lesson_order": 16,
+      "frequency_rank": 64,
       "on": [
         "げつ",
         "がつ"
@@ -475,6 +507,8 @@
     {
       "id": "n5.kanji.火",
       "glyph": "火",
+      "lesson_order": 17,
+      "frequency_rank": 56,
       "on": [
         "か"
       ],
@@ -502,6 +536,8 @@
     {
       "id": "n5.kanji.水",
       "glyph": "水",
+      "lesson_order": 18,
+      "frequency_rank": 82,
       "on": [
         "すい"
       ],
@@ -534,6 +570,8 @@
     {
       "id": "n5.kanji.木",
       "glyph": "木",
+      "lesson_order": 19,
+      "frequency_rank": 97,
       "on": [
         "もく",
         "ぼく"
@@ -564,6 +602,8 @@
     {
       "id": "n5.kanji.金",
       "glyph": "金",
+      "lesson_order": 20,
+      "frequency_rank": 65,
       "on": [
         "きん",
         "こん"
@@ -594,6 +634,8 @@
     {
       "id": "n5.kanji.土",
       "glyph": "土",
+      "lesson_order": 21,
+      "frequency_rank": 89,
       "on": [
         "ど",
         "と"
@@ -618,6 +660,8 @@
     {
       "id": "n5.kanji.曜",
       "glyph": "曜",
+      "lesson_order": 22,
+      "frequency_rank": 22,
       "on": [
         "よう"
       ],
@@ -647,6 +691,8 @@
     {
       "id": "n5.kanji.年",
       "glyph": "年",
+      "lesson_order": 23,
+      "frequency_rank": 95,
       "on": [
         "ねん"
       ],
@@ -678,6 +724,8 @@
     {
       "id": "n5.kanji.時",
       "glyph": "時",
+      "lesson_order": 24,
+      "frequency_rank": 9,
       "on": [
         "じ"
       ],
@@ -710,6 +758,8 @@
     {
       "id": "n5.kanji.分",
       "glyph": "分",
+      "lesson_order": 25,
+      "frequency_rank": 23,
       "on": [
         "ぶん",
         "ふん",
@@ -740,6 +790,8 @@
     {
       "id": "n5.kanji.半",
       "glyph": "半",
+      "lesson_order": 26,
+      "frequency_rank": 50,
       "on": [
         "はん"
       ],
@@ -761,6 +813,8 @@
     {
       "id": "n5.kanji.今",
       "glyph": "今",
+      "lesson_order": 27,
+      "frequency_rank": 21,
       "on": [
         "こん"
       ],
@@ -792,6 +846,8 @@
     {
       "id": "n5.kanji.毎",
       "glyph": "毎",
+      "lesson_order": 28,
+      "frequency_rank": 28,
       "on": [
         "まい"
       ],
@@ -821,6 +877,8 @@
     {
       "id": "n5.kanji.週",
       "glyph": "週",
+      "lesson_order": 29,
+      "frequency_rank": 74,
       "on": [
         "しゅう"
       ],
@@ -850,6 +908,8 @@
     {
       "id": "n5.kanji.午",
       "glyph": "午",
+      "lesson_order": 30,
+      "frequency_rank": 68,
       "on": [
         "ご"
       ],
@@ -874,6 +934,8 @@
     {
       "id": "n5.kanji.何",
       "glyph": "何",
+      "lesson_order": 31,
+      "frequency_rank": 20,
       "on": [
         "か"
       ],
@@ -906,6 +968,8 @@
     {
       "id": "n5.kanji.人",
       "glyph": "人",
+      "lesson_order": 32,
+      "frequency_rank": 1,
       "on": [
         "じん",
         "にん"
@@ -938,6 +1002,8 @@
     {
       "id": "n5.kanji.男",
       "glyph": "男",
+      "lesson_order": 33,
+      "frequency_rank": 33,
       "on": [
         "だん",
         "なん"
@@ -966,6 +1032,8 @@
     {
       "id": "n5.kanji.女",
       "glyph": "女",
+      "lesson_order": 34,
+      "frequency_rank": 77,
       "on": [
         "じょ",
         "にょ"
@@ -995,6 +1063,8 @@
     {
       "id": "n5.kanji.子",
       "glyph": "子",
+      "lesson_order": 35,
+      "frequency_rank": 69,
       "on": [
         "し",
         "す"
@@ -1027,6 +1097,8 @@
     {
       "id": "n5.kanji.父",
       "glyph": "父",
+      "lesson_order": 36,
+      "frequency_rank": 37,
       "on": [
         "ふ"
       ],
@@ -1053,6 +1125,8 @@
     {
       "id": "n5.kanji.母",
       "glyph": "母",
+      "lesson_order": 37,
+      "frequency_rank": 38,
       "on": [
         "ぼ"
       ],
@@ -1079,6 +1153,8 @@
     {
       "id": "n5.kanji.友",
       "glyph": "友",
+      "lesson_order": 38,
+      "frequency_rank": 98,
       "on": [
         "ゆう"
       ],
@@ -1100,6 +1176,8 @@
     {
       "id": "n5.kanji.先",
       "glyph": "先",
+      "lesson_order": 39,
+      "frequency_rank": 87,
       "on": [
         "せん"
       ],
@@ -1133,6 +1211,8 @@
     {
       "id": "n5.kanji.生",
       "glyph": "生",
+      "lesson_order": 40,
+      "frequency_rank": 13,
       "on": [
         "せい"
       ],
@@ -1166,6 +1246,8 @@
     {
       "id": "n5.kanji.手",
       "glyph": "手",
+      "lesson_order": 41,
+      "frequency_rank": 41,
       "on": [
         "しゅ"
       ],
@@ -1197,6 +1279,8 @@
     {
       "id": "n5.kanji.足",
       "glyph": "足",
+      "lesson_order": 42,
+      "frequency_rank": 42,
       "on": [
         "そく"
       ],
@@ -1224,6 +1308,8 @@
     {
       "id": "n5.kanji.目",
       "glyph": "目",
+      "lesson_order": 43,
+      "frequency_rank": 43,
       "on": [
         "もく"
       ],
@@ -1250,6 +1336,8 @@
     {
       "id": "n5.kanji.口",
       "glyph": "口",
+      "lesson_order": 44,
+      "frequency_rank": 44,
       "on": [
         "こう"
       ],
@@ -1281,6 +1369,8 @@
     {
       "id": "n5.kanji.力",
       "glyph": "力",
+      "lesson_order": 45,
+      "frequency_rank": 45,
       "on": [
         "りょく",
         "りき"
@@ -1304,6 +1394,8 @@
     {
       "id": "n5.kanji.学",
       "glyph": "学",
+      "lesson_order": 46,
+      "frequency_rank": 59,
       "on": [
         "がく"
       ],
@@ -1336,6 +1428,8 @@
     {
       "id": "n5.kanji.校",
       "glyph": "校",
+      "lesson_order": 47,
+      "frequency_rank": 41,
       "on": [
         "こう"
       ],
@@ -1365,6 +1459,8 @@
     {
       "id": "n5.kanji.本",
       "glyph": "本",
+      "lesson_order": 48,
+      "frequency_rank": 3,
       "on": [
         "ほん"
       ],
@@ -1398,6 +1494,8 @@
     {
       "id": "n5.kanji.語",
       "glyph": "語",
+      "lesson_order": 49,
+      "frequency_rank": 66,
       "on": [
         "ご"
       ],
@@ -1430,6 +1528,8 @@
     {
       "id": "n5.kanji.国",
       "glyph": "国",
+      "lesson_order": 50,
+      "frequency_rank": 50,
       "on": [
         "こく"
       ],
@@ -1461,6 +1561,8 @@
     {
       "id": "n5.kanji.会",
       "glyph": "会",
+      "lesson_order": 51,
+      "frequency_rank": 15,
       "on": [
         "かい",
         "え"
@@ -1494,6 +1596,8 @@
     {
       "id": "n5.kanji.社",
       "glyph": "社",
+      "lesson_order": 52,
+      "frequency_rank": 106,
       "on": [
         "しゃ"
       ],
@@ -1518,6 +1622,8 @@
     {
       "id": "n5.kanji.員",
       "glyph": "員",
+      "lesson_order": 53,
+      "frequency_rank": 105,
       "on": [
         "いん"
       ],
@@ -1548,6 +1654,8 @@
     {
       "id": "n5.kanji.大",
       "glyph": "大",
+      "lesson_order": 54,
+      "frequency_rank": 5,
       "on": [
         "だい",
         "たい"
@@ -1581,6 +1689,8 @@
     {
       "id": "n5.kanji.中",
       "glyph": "中",
+      "lesson_order": 55,
+      "frequency_rank": 4,
       "on": [
         "ちゅう"
       ],
@@ -1613,6 +1723,8 @@
     {
       "id": "n5.kanji.小",
       "glyph": "小",
+      "lesson_order": 56,
+      "frequency_rank": 30,
       "on": [
         "しょう"
       ],
@@ -1637,6 +1749,8 @@
     {
       "id": "n5.kanji.上",
       "glyph": "上",
+      "lesson_order": 57,
+      "frequency_rank": 79,
       "on": [
         "じょう"
       ],
@@ -1660,6 +1774,8 @@
     {
       "id": "n5.kanji.下",
       "glyph": "下",
+      "lesson_order": 58,
+      "frequency_rank": 33,
       "on": [
         "か",
         "げ"
@@ -1684,6 +1800,8 @@
     {
       "id": "n5.kanji.左",
       "glyph": "左",
+      "lesson_order": 59,
+      "frequency_rank": 70,
       "on": [
         "さ"
       ],
@@ -1705,6 +1823,8 @@
     {
       "id": "n5.kanji.右",
       "glyph": "右",
+      "lesson_order": 60,
+      "frequency_rank": 52,
       "on": [
         "う",
         "ゆう"
@@ -1727,6 +1847,8 @@
     {
       "id": "n5.kanji.前",
       "glyph": "前",
+      "lesson_order": 61,
+      "frequency_rank": 22,
       "on": [
         "ぜん"
       ],
@@ -1759,6 +1881,8 @@
     {
       "id": "n5.kanji.後",
       "glyph": "後",
+      "lesson_order": 62,
+      "frequency_rank": 24,
       "on": [
         "ご",
         "こう"
@@ -1794,6 +1918,8 @@
     {
       "id": "n5.kanji.外",
       "glyph": "外",
+      "lesson_order": 63,
+      "frequency_rank": 58,
       "on": [
         "がい"
       ],
@@ -1825,6 +1951,8 @@
     {
       "id": "n5.kanji.東",
       "glyph": "東",
+      "lesson_order": 64,
+      "frequency_rank": 90,
       "on": [
         "とう"
       ],
@@ -1846,6 +1974,8 @@
     {
       "id": "n5.kanji.西",
       "glyph": "西",
+      "lesson_order": 65,
+      "frequency_rank": 65,
       "on": [
         "せい",
         "さい"
@@ -1868,6 +1998,8 @@
     {
       "id": "n5.kanji.南",
       "glyph": "南",
+      "lesson_order": 66,
+      "frequency_rank": 92,
       "on": [
         "なん"
       ],
@@ -1889,6 +2021,8 @@
     {
       "id": "n5.kanji.北",
       "glyph": "北",
+      "lesson_order": 67,
+      "frequency_rank": 96,
       "on": [
         "ほく"
       ],
@@ -1910,6 +2044,8 @@
     {
       "id": "n5.kanji.間",
       "glyph": "間",
+      "lesson_order": 68,
+      "frequency_rank": 60,
       "on": [
         "かん",
         "けん"
@@ -1935,6 +2071,8 @@
     {
       "id": "n5.kanji.山",
       "glyph": "山",
+      "lesson_order": 69,
+      "frequency_rank": 71,
       "on": [
         "さん"
       ],
@@ -1956,6 +2094,8 @@
     {
       "id": "n5.kanji.川",
       "glyph": "川",
+      "lesson_order": 70,
+      "frequency_rank": 88,
       "on": [
         "せん"
       ],
@@ -1977,6 +2117,8 @@
     {
       "id": "n5.kanji.田",
       "glyph": "田",
+      "lesson_order": 71,
+      "frequency_rank": 71,
       "on": [
         "でん"
       ],
@@ -1998,6 +2140,8 @@
     {
       "id": "n5.kanji.雨",
       "glyph": "雨",
+      "lesson_order": 72,
+      "frequency_rank": 53,
       "on": [
         "う"
       ],
@@ -2019,6 +2163,8 @@
     {
       "id": "n5.kanji.天",
       "glyph": "天",
+      "lesson_order": 73,
+      "frequency_rank": 73,
       "on": [
         "てん"
       ],
@@ -2047,6 +2193,8 @@
     {
       "id": "n5.kanji.気",
       "glyph": "気",
+      "lesson_order": 74,
+      "frequency_rank": 61,
       "on": [
         "き",
         "け"
@@ -2079,6 +2227,8 @@
     {
       "id": "n5.kanji.花",
       "glyph": "花",
+      "lesson_order": 75,
+      "frequency_rank": 57,
       "on": [
         "か"
       ],
@@ -2100,6 +2250,8 @@
     {
       "id": "n5.kanji.空",
       "glyph": "空",
+      "lesson_order": 76,
+      "frequency_rank": 63,
       "on": [
         "くう"
       ],
@@ -2124,6 +2276,8 @@
     {
       "id": "n5.kanji.電",
       "glyph": "電",
+      "lesson_order": 77,
+      "frequency_rank": 40,
       "on": [
         "でん"
       ],
@@ -2153,6 +2307,8 @@
     {
       "id": "n5.kanji.車",
       "glyph": "車",
+      "lesson_order": 78,
+      "frequency_rank": 39,
       "on": [
         "しゃ"
       ],
@@ -2180,6 +2336,8 @@
     {
       "id": "n5.kanji.道",
       "glyph": "道",
+      "lesson_order": 79,
+      "frequency_rank": 79,
       "on": [
         "どう"
       ],
@@ -2207,6 +2365,8 @@
     {
       "id": "n5.kanji.店",
       "glyph": "店",
+      "lesson_order": 80,
+      "frequency_rank": 80,
       "on": [
         "てん"
       ],
@@ -2234,6 +2394,8 @@
     {
       "id": "n5.kanji.駅",
       "glyph": "駅",
+      "lesson_order": 81,
+      "frequency_rank": 54,
       "on": [
         "えき"
       ],
@@ -2258,6 +2420,8 @@
     {
       "id": "n5.kanji.食",
       "glyph": "食",
+      "lesson_order": 82,
+      "frequency_rank": 80,
       "on": [
         "しょく"
       ],
@@ -2281,6 +2445,8 @@
     {
       "id": "n5.kanji.飲",
       "glyph": "飲",
+      "lesson_order": 83,
+      "frequency_rank": 83,
       "on": [
         "いん"
       ],
@@ -2302,6 +2468,8 @@
     {
       "id": "n5.kanji.見",
       "glyph": "見",
+      "lesson_order": 84,
+      "frequency_rank": 10,
       "on": [
         "けん"
       ],
@@ -2329,6 +2497,8 @@
     {
       "id": "n5.kanji.聞",
       "glyph": "聞",
+      "lesson_order": 85,
+      "frequency_rank": 35,
       "on": [
         "ぶん",
         "もん"
@@ -2358,6 +2528,8 @@
     {
       "id": "n5.kanji.読",
       "glyph": "読",
+      "lesson_order": 86,
+      "frequency_rank": 91,
       "on": [
         "どく"
       ],
@@ -2379,6 +2551,8 @@
     {
       "id": "n5.kanji.書",
       "glyph": "書",
+      "lesson_order": 87,
+      "frequency_rank": 46,
       "on": [
         "しょ"
       ],
@@ -2400,6 +2574,8 @@
     {
       "id": "n5.kanji.話",
       "glyph": "話",
+      "lesson_order": 88,
+      "frequency_rank": 101,
       "on": [
         "わ"
       ],
@@ -2434,6 +2610,8 @@
     {
       "id": "n5.kanji.来",
       "glyph": "来",
+      "lesson_order": 89,
+      "frequency_rank": 99,
       "on": [
         "らい"
       ],
@@ -2466,6 +2644,8 @@
     {
       "id": "n5.kanji.行",
       "glyph": "行",
+      "lesson_order": 90,
+      "frequency_rank": 8,
       "on": [
         "こう",
         "ぎょう",
@@ -2492,6 +2672,8 @@
     {
       "id": "n5.kanji.出",
       "glyph": "出",
+      "lesson_order": 91,
+      "frequency_rank": 76,
       "on": [
         "しゅつ",
         "すい"
@@ -2522,6 +2704,8 @@
     {
       "id": "n5.kanji.入",
       "glyph": "入",
+      "lesson_order": 92,
+      "frequency_rank": 94,
       "on": [
         "にゅう"
       ],
@@ -2550,6 +2734,8 @@
     {
       "id": "n5.kanji.立",
       "glyph": "立",
+      "lesson_order": 93,
+      "frequency_rank": 93,
       "on": [
         "りつ",
         "りゅう"
@@ -2572,6 +2758,8 @@
     {
       "id": "n5.kanji.休",
       "glyph": "休",
+      "lesson_order": 94,
+      "frequency_rank": 48,
       "on": [
         "きゅう"
       ],
@@ -2594,6 +2782,8 @@
     {
       "id": "n5.kanji.言",
       "glyph": "言",
+      "lesson_order": 95,
+      "frequency_rank": 26,
       "on": [
         "げん",
         "ごん"
@@ -2618,6 +2808,8 @@
     {
       "id": "n5.kanji.買",
       "glyph": "買",
+      "lesson_order": 96,
+      "frequency_rank": 96,
       "on": [
         "ばい"
       ],
@@ -2639,6 +2831,8 @@
     {
       "id": "n5.kanji.高",
       "glyph": "高",
+      "lesson_order": 97,
+      "frequency_rank": 28,
       "on": [
         "こう"
       ],
@@ -2667,6 +2861,8 @@
     {
       "id": "n5.kanji.安",
       "glyph": "安",
+      "lesson_order": 98,
+      "frequency_rank": 98,
       "on": [
         "あん"
       ],
@@ -2690,6 +2886,8 @@
     {
       "id": "n5.kanji.新",
       "glyph": "新",
+      "lesson_order": 99,
+      "frequency_rank": 81,
       "on": [
         "しん"
       ],
@@ -2718,6 +2916,8 @@
     {
       "id": "n5.kanji.古",
       "glyph": "古",
+      "lesson_order": 100,
+      "frequency_rank": 100,
       "on": [
         "こ"
       ],
@@ -2739,6 +2939,8 @@
     {
       "id": "n5.kanji.長",
       "glyph": "長",
+      "lesson_order": 101,
+      "frequency_rank": 29,
       "on": [
         "ちょう"
       ],
@@ -2761,6 +2963,8 @@
     {
       "id": "n5.kanji.白",
       "glyph": "白",
+      "lesson_order": 102,
+      "frequency_rank": 102,
       "on": [
         "はく",
         "びゃく"
@@ -2794,6 +2998,8 @@
     {
       "id": "n5.kanji.名",
       "glyph": "名",
+      "lesson_order": 103,
+      "frequency_rank": 25,
       "on": [
         "めい",
         "みょう"
@@ -2821,6 +3027,8 @@
     {
       "id": "n5.kanji.番",
       "glyph": "番",
+      "lesson_order": 104,
+      "frequency_rank": 104,
       "on": [
         "ばん"
       ],
@@ -2851,6 +3059,8 @@
     {
       "id": "n5.kanji.号",
       "glyph": "号",
+      "lesson_order": 105,
+      "frequency_rank": 104,
       "on": [
         "ごう"
       ],
@@ -2880,6 +3090,8 @@
     {
       "id": "n5.kanji.私",
       "glyph": "私",
+      "lesson_order": 106,
+      "frequency_rank": 102,
       "on": [],
       "kun": [
         "わたし"

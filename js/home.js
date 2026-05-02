@@ -22,8 +22,10 @@
 // bare numerals + nouns. (Spec §5.1.1, mandatory.)
 import * as storage from './storage.js';
 
-// Cache the corpus counts at module scope so we fetch each file once.
+// Cache the corpus counts and pattern label map at module scope so we
+// fetch each data file once per session.
 let corpusCounts = null;
+let patternLabels = null;  // patternId → friendly label (e.g. "n5-001 — です/だ")
 async function loadCorpusCounts() {
   if (corpusCounts) return corpusCounts;
   const files = ['grammar', 'vocab', 'kanji', 'reading', 'listening'];
@@ -48,6 +50,21 @@ async function loadCorpusCounts() {
     reading: count(reading, 'passages'),
     listening: count(listening, 'items'),
   };
+  // Build the pattern-id → friendly-label map so the resume strip can
+  // show "n5-001 — です/だ" instead of the bare ID. Falls back to the
+  // bare ID if the pattern lookup fails for any reason.
+  if (grammar && Array.isArray(grammar.patterns)) {
+    patternLabels = {};
+    for (const p of grammar.patterns) {
+      if (!p?.id) continue;
+      // Prefer the canonical 'pattern' field (the form Japanese learners
+      // recognize, e.g. "〜は です"); fall back to 'name' or 'meaning_en'.
+      const label = p.pattern || p.name || p.meaning_en || '';
+      patternLabels[p.id] = label
+        ? `${p.id} — ${label}`
+        : p.id;
+    }
+  }
   return corpusCounts;
 }
 
@@ -75,10 +92,16 @@ function computeProgress(counts) {
   const vocabKnown = Object.keys(knownVocab).length;
   const kanjiKnown = Object.keys(knownKanji).length;
 
-  // Reading + Listening: completion tracking not implemented yet. Show 0
-  // until per-passage / per-drill recording lands.
-  const readingDone = 0;
-  const listeningDone = 0;
+  // Reading + Listening: per-item completion is recorded in storage by
+  // js/reading.js (on first results screen with score>0) and
+  // js/listening.js (on first answer submit). The dashboard reflects the
+  // count of unique passages / drills the user has engaged with.
+  const completedReading = storage.getCompletedReading
+    ? storage.getCompletedReading() : {};
+  const completedListening = storage.getCompletedListening
+    ? storage.getCompletedListening() : {};
+  const readingDone = Object.keys(completedReading).length;
+  const listeningDone = Object.keys(completedListening).length;
 
   // Mock Test: most recent result if any.
   const lastTest = results.length ? results[results.length - 1] : null;
@@ -210,10 +233,25 @@ export async function renderHome(container) {
   const progress = computeProgress(counts);
   const cards = syllabusCards(counts);
 
+  // Daily-goal-met badge: shows ✓ when the user has practiced at least
+  // once today (any action that records a study day in the streak
+  // tracker). Decoupled from the streak count so a returning user sees
+  // separately "current streak: 5" + "today: ✓ done" / "today: not yet."
+  const streak = storage.getStreak ? storage.getStreak() : null;
+  const todayKey = (() => {
+    const d = new Date();
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  })();
+  const dailyGoalMet = isReturning && streak && streak.lastStudyDate === todayKey;
+
   // Resume strip — single-line link above the syllabus title for returning
-  // users. First-time visitors see no strip at all.
+  // users. First-time visitors see no strip at all. Show the friendly
+  // pattern label ("n5-001 — です/だ") instead of just the ID when the
+  // grammar lookup map is loaded.
+  const resumeLabel = (patternLabels && patternLabels[lastViewed])
+    || lastViewed;
   const resumeStrip = (isReturning && lastViewed)
-    ? `<a class="resume-strip" href="#/learn/${encodeURIComponent(lastViewed)}">Last session: ${esc(lastViewed)}.</a>`
+    ? `<a class="resume-strip" href="#/learn/${encodeURIComponent(lastViewed)}">Last session: ${esc(resumeLabel)}.</a>`
     : '';
 
   container.innerHTML = `
@@ -224,6 +262,15 @@ export async function renderHome(container) {
         <h1 class="syllabus-title">JLPT N5 Syllabus</h1>
         <p class="syllabus-subtitle">Study grammar, vocabulary, kanji, reading, and listening in a structured order.</p>
         <p class="syllabus-note">This page shows the complete study scope for JLPT N5.</p>
+        ${isReturning ? `
+          <div class="syllabus-daily-status">
+            <span class="syllabus-daily-streak">Streak: ${streak?.current ?? 0} ${(streak?.current ?? 0) === 1 ? 'day' : 'days'}</span>
+            <span class="syllabus-daily-today ${dailyGoalMet ? 'is-met' : 'is-pending'}">
+              <span class="syllabus-daily-mark" aria-hidden="true">${dailyGoalMet ? '✓' : '○'}</span>
+              <span class="syllabus-daily-text">${dailyGoalMet ? 'Practiced today' : 'Not yet practiced today'}</span>
+            </span>
+          </div>
+        ` : ''}
       </header>
 
       <section class="syllabus-overview" aria-label="Syllabus overview">

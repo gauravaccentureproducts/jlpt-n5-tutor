@@ -42,7 +42,13 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run P0 smoke
-        run: npx playwright test
+        # Visual-regression suite is excluded from the default CI run —
+        # it requires committed baselines (tests/__screenshots__/) to
+        # work, and the suite was scaffolded under DEFER-6 without an
+        # initial baseline-approval round. To enable: capture baselines
+        # via `npx playwright test visual-regression --update-snapshots`
+        # locally, commit the .png files, then drop --grep-invert here.
+        run: npx playwright test --grep-invert visual-regression
         env:
           CI: '1'
 

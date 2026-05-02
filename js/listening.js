@@ -4,6 +4,7 @@
 // When MP3s are absent, the module degrades gracefully: shows the script
 // text + plays nothing, with a clear "audio not yet generated" notice.
 import { renderJa } from './furigana.js';
+import * as storage from './storage.js';
 
 let bank = null;
 let session = null;
@@ -95,6 +96,12 @@ function renderItem(container) {
   const picked = session.picked;
   const feedback = picked != null;
   const correct = picked === it.correctAnswer;
+  // Mark as completed the first time the user submits any answer (right
+  // or wrong — listening counts toward syllabus progress on engagement,
+  // not just correctness, since the audio comprehension is the practice).
+  if (feedback) {
+    storage.setListeningCompleted(it.id);
+  }
 
   container.innerHTML = `
     <article class="listening-item">

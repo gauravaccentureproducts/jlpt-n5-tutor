@@ -186,9 +186,11 @@ function renderCard(container) {
   container.querySelectorAll('[data-grade]').forEach(btn => {
     btn.addEventListener('click', () => {
       const grade = parseInt(btn.dataset.grade, 10);
-      session.grades.push({ pid: item.pid, grade });
-      storage.recordSrsResponse(item.pid, grade);
-      advance(container, grade);
+      // Capture the pre-update snapshot so the 2s-undo flow can restore
+      // it; recordSrsResponse returns the cloned old entry.
+      const snapshot = storage.recordSrsResponse(item.pid, grade);
+      session.grades.push({ pid: item.pid, grade, snapshot });
+      advance(container, grade, { lastGraded: { pid: item.pid, grade, snapshot } });
     });
   });
 
@@ -198,14 +200,76 @@ function renderCard(container) {
   });
 }
 
-function advance(container) {
+function advance(container, _grade, opts = {}) {
   session.idx += 1;
   if (session.idx >= session.queue.length) {
     view = 'finished';
     renderFinished(container);
   } else {
     renderCard(container);
+    // After the next card has rendered, mount a transient 2s-undo toast
+    // referring to the GRADE WE JUST RECORDED. Clicking it rolls the
+    // last grade back via storage.undoSrsResponse, removes it from
+    // session.grades, and dismisses the toast. Auto-dismisses at 2s.
+    if (opts.lastGraded) {
+      mountUndoToast(container, opts.lastGraded);
+    }
   }
+}
+
+// 2-second undo toast for DEFER-14. Single-instance: any prior toast is
+// torn down before a new one mounts. The toast button is a real focus
+// target for keyboard users; auto-dismiss timer is cleared on hover.
+let undoTimer = null;
+function mountUndoToast(container, lastGraded) {
+  const existing = document.getElementById('undo-grade-toast');
+  if (existing) existing.remove();
+  if (undoTimer) { clearTimeout(undoTimer); undoTimer = null; }
+
+  const GRADE_LABELS = { 1: 'Again', 3: 'Hard', 4: 'Good', 5: 'Easy' };
+  const label = GRADE_LABELS[lastGraded.grade] || `Grade ${lastGraded.grade}`;
+
+  const toast = document.createElement('div');
+  toast.id = 'undo-grade-toast';
+  toast.className = 'undo-toast';
+  toast.setAttribute('role', 'status');
+  toast.setAttribute('aria-live', 'polite');
+  toast.innerHTML = `
+    <span class="undo-toast-text">Recorded: <strong>${label}</strong></span>
+    <button type="button" class="undo-toast-btn" id="undo-grade-btn">↶ Undo</button>
+  `;
+  document.body.appendChild(toast);
+
+  // Roll back on click. Removes the just-recorded grade from the
+  // session log AND restores storage to the pre-grade snapshot.
+  document.getElementById('undo-grade-btn').addEventListener('click', () => {
+    const ok = storage.undoSrsResponse(lastGraded.pid, lastGraded.snapshot);
+    if (ok) {
+      // Pop the last grade entry from the session log so the finished
+      // screen + summary stats stay in sync with storage.
+      const idx = session.grades.findIndex(g =>
+        g.pid === lastGraded.pid && g.grade === lastGraded.grade);
+      if (idx >= 0) session.grades.splice(idx, 1);
+    }
+    teardownUndoToast();
+  });
+
+  // Pause the auto-dismiss while the user hovers over the toast — gives
+  // people on slow reading speed a chance to react.
+  toast.addEventListener('mouseenter', () => {
+    if (undoTimer) { clearTimeout(undoTimer); undoTimer = null; }
+  });
+  toast.addEventListener('mouseleave', () => {
+    if (!undoTimer) undoTimer = setTimeout(teardownUndoToast, 2000);
+  });
+
+  undoTimer = setTimeout(teardownUndoToast, 2000);
+}
+
+function teardownUndoToast() {
+  if (undoTimer) { clearTimeout(undoTimer); undoTimer = null; }
+  const t = document.getElementById('undo-grade-toast');
+  if (t) t.remove();
 }
 
 function renderFinished(container) {

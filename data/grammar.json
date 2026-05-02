@@ -2,6 +2,7 @@
   "patterns": [
     {
       "id": "n5-001",
+      "tier": "core_n5",
       "pattern": "〜です／〜ます",
       "category": "Copula and Basic Sentence Structure",
       "categoryOrder": 1,
@@ -102,6 +103,7 @@
     },
     {
       "id": "n5-002",
+      "tier": "core_n5",
       "pattern": "は",
       "category": "Particles",
       "categoryOrder": 2,
@@ -213,6 +215,7 @@
     },
     {
       "id": "n5-003",
+      "tier": "core_n5",
       "pattern": "が",
       "category": "Particles",
       "categoryOrder": 2,
@@ -321,6 +324,7 @@
     },
     {
       "id": "n5-004",
+      "tier": "core_n5",
       "pattern": "を",
       "category": "Particles",
       "categoryOrder": 2,
@@ -417,6 +421,7 @@
     },
     {
       "id": "n5-005",
+      "tier": "core_n5",
       "pattern": "に",
       "category": "Particles",
       "categoryOrder": 2,
@@ -530,6 +535,7 @@
     },
     {
       "id": "n5-006",
+      "tier": "core_n5",
       "pattern": "へ",
       "category": "Particles",
       "categoryOrder": 2,
@@ -613,6 +619,7 @@
     },
     {
       "id": "n5-007",
+      "tier": "core_n5",
       "pattern": "で",
       "category": "Particles",
       "categoryOrder": 2,
@@ -722,6 +729,7 @@
     },
     {
       "id": "n5-008",
+      "tier": "core_n5",
       "pattern": "と",
       "category": "Particles",
       "categoryOrder": 2,
@@ -830,6 +838,7 @@
     },
     {
       "id": "n5-009",
+      "tier": "late_n5",
       "pattern": "から",
       "category": "Particles",
       "categoryOrder": 2,
@@ -938,6 +947,7 @@
     },
     {
       "id": "n5-010",
+      "tier": "core_n5",
       "pattern": "まで",
       "category": "Particles",
       "categoryOrder": 2,
@@ -1046,6 +1056,7 @@
     },
     {
       "id": "n5-011",
+      "tier": "core_n5",
       "pattern": "や",
       "category": "Particles",
       "categoryOrder": 2,
@@ -1146,6 +1157,7 @@
     },
     {
       "id": "n5-013",
+      "tier": "core_n5",
       "pattern": "も",
       "category": "Particles",
       "categoryOrder": 2,
@@ -1247,6 +1259,7 @@
     },
     {
       "id": "n5-014",
+      "tier": "core_n5",
       "pattern": "これ／それ／あれ／どれ",
       "category": "Demonstratives",
       "categoryOrder": 3,
@@ -1353,6 +1366,7 @@
     },
     {
       "id": "n5-015",
+      "tier": "core_n5",
       "pattern": "この／その／あの／どの ＋ N (noun)",
       "category": "Demonstratives",
       "categoryOrder": 3,
@@ -1471,6 +1485,7 @@
     },
     {
       "id": "n5-016",
+      "tier": "core_n5",
       "pattern": "ここ／そこ／あそこ／どこ",
       "category": "Demonstratives",
       "categoryOrder": 3,
@@ -1583,6 +1598,7 @@
     },
     {
       "id": "n5-017",
+      "tier": "core_n5",
       "pattern": "なに／なん",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -1685,6 +1701,7 @@
     },
     {
       "id": "n5-018",
+      "tier": "core_n5",
       "pattern": "だれ／どなた",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -1795,6 +1812,7 @@
     },
     {
       "id": "n5-019",
+      "tier": "core_n5",
       "pattern": "いつ",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -1903,6 +1921,7 @@
     },
     {
       "id": "n5-021",
+      "tier": "core_n5",
       "pattern": "から～まで",
       "category": "Particles",
       "categoryOrder": 2,
@@ -1986,6 +2005,7 @@
     },
     {
       "id": "n5-023",
+      "tier": "core_n5",
       "pattern": "か",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2069,6 +2089,7 @@
     },
     {
       "id": "n5-024",
+      "tier": "core_n5",
       "pattern": "か",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2134,6 +2155,7 @@
     },
     {
       "id": "n5-025",
+      "tier": "core_n5",
       "pattern": "ね",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2212,6 +2234,7 @@
     },
     {
       "id": "n5-026",
+      "tier": "core_n5",
       "pattern": "よ",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2290,6 +2313,7 @@
     },
     {
       "id": "n5-027",
+      "tier": "core_n5",
       "pattern": "よね",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2349,6 +2373,7 @@
     },
     {
       "id": "n5-028",
+      "tier": "core_n5",
       "pattern": "～の",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2414,6 +2439,7 @@
     },
     {
       "id": "n5-029",
+      "tier": "core_n5",
       "pattern": "possessive / noun-modifier",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2484,6 +2510,7 @@
     },
     {
       "id": "n5-030",
+      "tier": "core_n5",
       "pattern": "nominalizer in basic use",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2534,6 +2561,7 @@
     },
     {
       "id": "n5-031",
+      "tier": "core_n5",
       "pattern": "〜の",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2600,6 +2628,7 @@
     },
     {
       "id": "n5-033",
+      "tier": "core_n5",
       "pattern": "だけ",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2675,6 +2704,7 @@
     },
     {
       "id": "n5-034",
+      "tier": "core_n5",
       "pattern": "しか～ない",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2733,6 +2763,7 @@
     },
     {
       "id": "n5-035",
+      "tier": "core_n5",
       "pattern": "ぐらい / くらい",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2795,6 +2826,7 @@
     },
     {
       "id": "n5-036",
+      "tier": "core_n5",
       "pattern": "ごろ",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2863,6 +2895,7 @@
     },
     {
       "id": "n5-037",
+      "tier": "core_n5",
       "pattern": "など",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2934,6 +2967,7 @@
     },
     {
       "id": "n5-038",
+      "tier": "core_n5",
       "pattern": "ずつ",
       "category": "Particles",
       "categoryOrder": 2,
@@ -2981,6 +3015,7 @@
     },
     {
       "id": "n5-039",
+      "tier": "core_n5",
       "pattern": "これ / それ / あれ / どれ",
       "category": "Demonstratives",
       "categoryOrder": 5,
@@ -3059,6 +3094,7 @@
     },
     {
       "id": "n5-040",
+      "tier": "core_n5",
       "pattern": "この / その / あの / どの + Noun",
       "category": "Demonstratives",
       "categoryOrder": 5,
@@ -3149,6 +3185,7 @@
     },
     {
       "id": "n5-041",
+      "tier": "core_n5",
       "pattern": "ここ / そこ / あそこ / どこ",
       "category": "Demonstratives",
       "categoryOrder": 5,
@@ -3233,6 +3270,7 @@
     },
     {
       "id": "n5-042",
+      "tier": "core_n5",
       "pattern": "こちら / そちら / あちら / どちら",
       "category": "Demonstratives",
       "categoryOrder": 5,
@@ -3292,6 +3330,7 @@
     },
     {
       "id": "n5-043",
+      "tier": "core_n5",
       "pattern": "こんな / そんな / あんな / どんな + Noun",
       "category": "Demonstratives",
       "categoryOrder": 5,
@@ -3352,6 +3391,7 @@
     },
     {
       "id": "n5-044",
+      "tier": "core_n5",
       "pattern": "こう / そう / ああ / どう",
       "category": "Demonstratives",
       "categoryOrder": 5,
@@ -3409,6 +3449,7 @@
     },
     {
       "id": "n5-045",
+      "tier": "core_n5",
       "pattern": "なん / なに",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -3488,6 +3529,7 @@
     },
     {
       "id": "n5-046",
+      "tier": "core_n5",
       "pattern": "だれ / どなた",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -3575,6 +3617,7 @@
     },
     {
       "id": "n5-048",
+      "tier": "core_n5",
       "pattern": "どこ",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -3659,6 +3702,7 @@
     },
     {
       "id": "n5-049",
+      "tier": "core_n5",
       "pattern": "どれ / どの / どちら",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -3740,6 +3784,7 @@
     },
     {
       "id": "n5-050",
+      "tier": "core_n5",
       "pattern": "どう / いかが",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -3820,6 +3865,7 @@
     },
     {
       "id": "n5-051",
+      "tier": "core_n5",
       "pattern": "どうして / なぜ",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -3891,6 +3937,7 @@
     },
     {
       "id": "n5-052",
+      "tier": "core_n5",
       "pattern": "どうやって",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -3941,6 +3988,7 @@
     },
     {
       "id": "n5-053",
+      "tier": "core_n5",
       "pattern": "いくら",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -4009,6 +4057,7 @@
     },
     {
       "id": "n5-054",
+      "tier": "core_n5",
       "pattern": "いくつ",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -4068,6 +4117,7 @@
     },
     {
       "id": "n5-055",
+      "tier": "core_n5",
       "pattern": "なんじ",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -4132,6 +4182,7 @@
     },
     {
       "id": "n5-056",
+      "tier": "core_n5",
       "pattern": "なんようび",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -4178,6 +4229,7 @@
     },
     {
       "id": "n5-057",
+      "tier": "core_n5",
       "pattern": "なんがつ なんにち",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -4229,6 +4281,7 @@
     },
     {
       "id": "n5-058",
+      "tier": "core_n5",
       "pattern": "Verb-ます",
       "category": "Verbs - Tense and Politeness (ます-form)",
       "categoryOrder": 6,
@@ -4323,6 +4376,7 @@
     },
     {
       "id": "n5-059",
+      "tier": "core_n5",
       "pattern": "Verb-ません",
       "category": "Verbs - Tense and Politeness (ます-form)",
       "categoryOrder": 6,
@@ -4404,6 +4458,7 @@
     },
     {
       "id": "n5-060",
+      "tier": "core_n5",
       "pattern": "Verb-ました",
       "category": "Verbs - Tense and Politeness (ます-form)",
       "categoryOrder": 6,
@@ -4479,6 +4534,7 @@
     },
     {
       "id": "n5-061",
+      "tier": "core_n5",
       "pattern": "Verb-ませんでした",
       "category": "Verbs - Tense and Politeness (ます-form)",
       "categoryOrder": 6,
@@ -4556,6 +4612,7 @@
     },
     {
       "id": "n5-062",
+      "tier": "core_n5",
       "pattern": "Verb-ましょう",
       "category": "Verbs - Tense and Politeness (ます-form)",
       "categoryOrder": 6,
@@ -4636,6 +4693,7 @@
     },
     {
       "id": "n5-063",
+      "tier": "core_n5",
       "pattern": "Verb-ましょうか",
       "category": "Verbs - Tense and Politeness (ます-form)",
       "categoryOrder": 6,
@@ -4698,6 +4756,7 @@
     },
     {
       "id": "n5-064",
+      "tier": "core_n5",
       "pattern": "Verb-ませんか",
       "category": "Verbs - Tense and Politeness (ます-form)",
       "categoryOrder": 6,
@@ -4785,6 +4844,7 @@
     },
     {
       "id": "n5-065",
+      "tier": "core_n5",
       "pattern": "Verb-る / Verb-う",
       "category": "Verbs - Plain (Dictionary) Form and Negation",
       "categoryOrder": 7,
@@ -4871,6 +4931,7 @@
     },
     {
       "id": "n5-066",
+      "tier": "core_n5",
       "pattern": "Verb-ない",
       "category": "Verbs - Plain (Dictionary) Form and Negation",
       "categoryOrder": 7,
@@ -4957,6 +5018,7 @@
     },
     {
       "id": "n5-067",
+      "tier": "core_n5",
       "pattern": "Verb-た",
       "category": "Verbs - Plain (Dictionary) Form and Negation",
       "categoryOrder": 7,
@@ -5059,6 +5121,7 @@
     },
     {
       "id": "n5-068",
+      "tier": "core_n5",
       "pattern": "Verb-なかった",
       "category": "Verbs - Plain (Dictionary) Form and Negation",
       "categoryOrder": 7,
@@ -5138,6 +5201,7 @@
     },
     {
       "id": "n5-069",
+      "tier": "core_n5",
       "pattern": "Verb-て",
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
@@ -5260,6 +5324,7 @@
     },
     {
       "id": "n5-070",
+      "tier": "core_n5",
       "pattern": "Verb-て、Verb-て、…",
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
@@ -5347,6 +5412,7 @@
     },
     {
       "id": "n5-071",
+      "tier": "core_n5",
       "pattern": "Verb-てください",
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
@@ -5427,6 +5493,7 @@
     },
     {
       "id": "n5-072",
+      "tier": "core_n5",
       "pattern": "Verb-ています",
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
@@ -5519,6 +5586,7 @@
     },
     {
       "id": "n5-073",
+      "tier": "core_n5",
       "pattern": "Verb-ていません",
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
@@ -5573,6 +5641,7 @@
     },
     {
       "id": "n5-074",
+      "tier": "core_n5",
       "pattern": "Verb-てもいいです",
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
@@ -5658,6 +5727,7 @@
     },
     {
       "id": "n5-075",
+      "tier": "core_n5",
       "pattern": "Verb-てはいけません",
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
@@ -5742,6 +5812,7 @@
     },
     {
       "id": "n5-076",
+      "tier": "core_n5",
       "pattern": "Verb-てから",
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
@@ -5813,6 +5884,7 @@
     },
     {
       "id": "n5-077",
+      "tier": "core_n5",
       "pattern": "Verb-ないでください",
       "category": "Te-form and Related Patterns",
       "categoryOrder": 8,
@@ -5894,6 +5966,7 @@
     },
     {
       "id": "n5-078",
+      "tier": "core_n5",
       "pattern": "い-Adjective + Noun",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -5960,6 +6033,7 @@
     },
     {
       "id": "n5-079",
+      "tier": "core_n5",
       "pattern": "い-Adjective + です",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6049,6 +6123,7 @@
     },
     {
       "id": "n5-080",
+      "tier": "core_n5",
       "pattern": "い-Adjective negative: ～くないです / ～くありません",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6135,6 +6210,7 @@
     },
     {
       "id": "n5-081",
+      "tier": "core_n5",
       "pattern": "い-Adjective past: ～かったです",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6233,6 +6309,7 @@
     },
     {
       "id": "n5-082",
+      "tier": "core_n5",
       "pattern": "い-Adjective past negative: ～くなかったです / ～くありませんでした",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6319,6 +6396,7 @@
     },
     {
       "id": "n5-083",
+      "tier": "core_n5",
       "pattern": "い-Adjective て-form: ～くて",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6409,6 +6487,7 @@
     },
     {
       "id": "n5-084",
+      "tier": "core_n5",
       "pattern": "な-Adjective + な + Noun",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6480,6 +6559,7 @@
     },
     {
       "id": "n5-085",
+      "tier": "core_n5",
       "pattern": "な-Adjective + です",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6575,6 +6655,7 @@
     },
     {
       "id": "n5-086",
+      "tier": "core_n5",
       "pattern": "な-Adjective negative: ～じゃありません / ～ではありません",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6660,6 +6741,7 @@
     },
     {
       "id": "n5-087",
+      "tier": "core_n5",
       "pattern": "な-Adjective past: ～でした",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6740,6 +6822,7 @@
     },
     {
       "id": "n5-088",
+      "tier": "core_n5",
       "pattern": "な-Adjective past negative: ～じゃありませんでした",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6820,6 +6903,7 @@
     },
     {
       "id": "n5-089",
+      "tier": "core_n5",
       "pattern": "な-Adjective て-form: ～で",
       "category": "Adjectives",
       "categoryOrder": 9,
@@ -6915,6 +6999,7 @@
     },
     {
       "id": "n5-090",
+      "tier": "core_n5",
       "pattern": "あります",
       "category": "Existence and Possession",
       "categoryOrder": 10,
@@ -7022,6 +7107,7 @@
     },
     {
       "id": "n5-091",
+      "tier": "core_n5",
       "pattern": "います",
       "category": "Existence and Possession",
       "categoryOrder": 10,
@@ -7138,6 +7224,7 @@
     },
     {
       "id": "n5-092",
+      "tier": "core_n5",
       "pattern": "～に～があります / います",
       "category": "Existence and Possession",
       "categoryOrder": 10,
@@ -7234,6 +7321,7 @@
     },
     {
       "id": "n5-093",
+      "tier": "core_n5",
       "pattern": "～は～にあります / います",
       "category": "Existence and Possession",
       "categoryOrder": 10,
@@ -7306,6 +7394,7 @@
     },
     {
       "id": "n5-094",
+      "tier": "core_n5",
       "pattern": "～があります",
       "category": "Existence and Possession",
       "categoryOrder": 10,
@@ -7374,6 +7463,7 @@
     },
     {
       "id": "n5-095",
+      "tier": "core_n5",
       "pattern": "～は～より～です",
       "category": "Comparison and Preference",
       "categoryOrder": 11,
@@ -7444,6 +7534,7 @@
     },
     {
       "id": "n5-096",
+      "tier": "core_n5",
       "pattern": "～より～のほうが～です",
       "category": "Comparison and Preference",
       "categoryOrder": 11,
@@ -7496,6 +7587,7 @@
     },
     {
       "id": "n5-097",
+      "tier": "core_n5",
       "pattern": "～と～と、どちらが～ですか",
       "category": "Comparison and Preference",
       "categoryOrder": 11,
@@ -7550,6 +7642,7 @@
     },
     {
       "id": "n5-098",
+      "tier": "core_n5",
       "pattern": "～",
       "category": "Comparison and Preference",
       "categoryOrder": 11,
@@ -7610,6 +7703,7 @@
     },
     {
       "id": "n5-099",
+      "tier": "core_n5",
       "pattern": "～がすきです / きらいです",
       "category": "Comparison and Preference",
       "categoryOrder": 11,
@@ -7678,6 +7772,7 @@
     },
     {
       "id": "n5-100",
+      "tier": "core_n5",
       "pattern": "～がじょうずです / へたです",
       "category": "Comparison and Preference",
       "categoryOrder": 11,
@@ -7741,6 +7836,7 @@
     },
     {
       "id": "n5-101",
+      "tier": "core_n5",
       "pattern": "～がほしいです",
       "category": "Comparison and Preference",
       "categoryOrder": 11,
@@ -7808,6 +7904,7 @@
     },
     {
       "id": "n5-102",
+      "tier": "core_n5",
       "pattern": "～がわかります",
       "category": "Comparison and Preference",
       "categoryOrder": 11,
@@ -7868,6 +7965,7 @@
     },
     {
       "id": "n5-103",
+      "tier": "core_n5",
       "pattern": "～ができます",
       "category": "Comparison and Preference",
       "categoryOrder": 11,
@@ -7938,6 +8036,7 @@
     },
     {
       "id": "n5-104",
+      "tier": "core_n5",
       "pattern": "Verb-stem + たいです",
       "category": "Desiderative and Volitional",
       "categoryOrder": 12,
@@ -8025,6 +8124,7 @@
     },
     {
       "id": "n5-105",
+      "tier": "core_n5",
       "pattern": "Verb-stem + たくないです",
       "category": "Desiderative and Volitional",
       "categoryOrder": 12,
@@ -8076,6 +8176,7 @@
     },
     {
       "id": "n5-106",
+      "tier": "core_n5",
       "pattern": "Noun + が ほしいです",
       "category": "Desiderative and Volitional",
       "categoryOrder": 12,
@@ -8123,6 +8224,7 @@
     },
     {
       "id": "n5-107",
+      "tier": "core_n5",
       "pattern": "Verb-stem + に いきます / きます / かえります",
       "category": "Desiderative and Volitional",
       "categoryOrder": 12,
@@ -8191,6 +8293,7 @@
     },
     {
       "id": "n5-108",
+      "tier": "core_n5",
       "pattern": "Number + counter",
       "category": "Counters and Quantity",
       "categoryOrder": 13,
@@ -8283,6 +8386,7 @@
     },
     {
       "id": "n5-109",
+      "tier": "core_n5",
       "pattern": "いくつ / いくら / なんにん / なんまい etc.",
       "category": "Counters and Quantity",
       "categoryOrder": 13,
@@ -8335,6 +8439,7 @@
     },
     {
       "id": "n5-110",
+      "tier": "core_n5",
       "pattern": "Verb + counter + Verb",
       "category": "Counters and Quantity",
       "categoryOrder": 13,
@@ -8387,6 +8492,7 @@
     },
     {
       "id": "n5-111",
+      "tier": "core_n5",
       "pattern": "～じ",
       "category": "Time Expressions",
       "categoryOrder": 14,
@@ -8446,6 +8552,7 @@
     },
     {
       "id": "n5-112",
+      "tier": "core_n5",
       "pattern": "～ふん / ぷん",
       "category": "Time Expressions",
       "categoryOrder": 14,
@@ -8490,6 +8597,7 @@
     },
     {
       "id": "n5-113",
+      "tier": "core_n5",
       "pattern": "～じはん",
       "category": "Time Expressions",
       "categoryOrder": 14,
@@ -8534,6 +8642,7 @@
     },
     {
       "id": "n5-114",
+      "tier": "core_n5",
       "pattern": "～から～まで",
       "category": "Time Expressions",
       "categoryOrder": 14,
@@ -8609,6 +8718,7 @@
     },
     {
       "id": "n5-115",
+      "tier": "core_n5",
       "pattern": "～に",
       "category": "Time Expressions",
       "categoryOrder": 14,
@@ -8688,6 +8798,7 @@
     },
     {
       "id": "n5-116",
+      "tier": "core_n5",
       "pattern": "まいにち / まいしゅう / まいつき / まいとし",
       "category": "Time Expressions",
       "categoryOrder": 14,
@@ -8740,6 +8851,7 @@
     },
     {
       "id": "n5-117",
+      "tier": "core_n5",
       "pattern": "きょう / あした / きのう / あさって / おととい",
       "category": "Time Expressions",
       "categoryOrder": 14,
@@ -8803,6 +8915,7 @@
     },
     {
       "id": "n5-118",
+      "tier": "core_n5",
       "pattern": "いま / すぐ / もう / まだ",
       "category": "Time Expressions",
       "categoryOrder": 14,
@@ -8889,6 +9002,7 @@
     },
     {
       "id": "n5-119",
+      "tier": "core_n5",
       "pattern": "～まえ",
       "category": "Time Expressions",
       "categoryOrder": 14,
@@ -8955,6 +9069,7 @@
     },
     {
       "id": "n5-120",
+      "tier": "core_n5",
       "pattern": "～あと",
       "category": "Time Expressions",
       "categoryOrder": 14,
@@ -9020,6 +9135,7 @@
     },
     {
       "id": "n5-121",
+      "tier": "core_n5",
       "pattern": "そして",
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
@@ -9079,6 +9195,7 @@
     },
     {
       "id": "n5-122",
+      "tier": "core_n5",
       "pattern": "それから",
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
@@ -9134,6 +9251,7 @@
     },
     {
       "id": "n5-123",
+      "tier": "core_n5",
       "pattern": "でも",
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
@@ -9194,6 +9312,7 @@
     },
     {
       "id": "n5-124",
+      "tier": "core_n5",
       "pattern": "しかし",
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
@@ -9234,6 +9353,7 @@
     },
     {
       "id": "n5-125",
+      "tier": "core_n5",
       "pattern": "では / じゃ",
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
@@ -9278,6 +9398,7 @@
     },
     {
       "id": "n5-126",
+      "tier": "core_n5",
       "pattern": "が",
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
@@ -9351,6 +9472,7 @@
     },
     {
       "id": "n5-127",
+      "tier": "core_n5",
       "pattern": "けれど / けど",
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
@@ -9403,6 +9525,7 @@
     },
     {
       "id": "n5-129",
+      "tier": "core_n5",
       "pattern": "どうして～か。～から。",
       "category": "Conjunctions and Connectives",
       "categoryOrder": 15,
@@ -9447,6 +9570,7 @@
     },
     {
       "id": "n5-130",
+      "tier": "core_n5",
       "pattern": "～に～をあげます",
       "category": "Giving and Receiving (basic)",
       "categoryOrder": 16,
@@ -9499,6 +9623,7 @@
     },
     {
       "id": "n5-131",
+      "tier": "core_n5",
       "pattern": "～に～をもらいます",
       "category": "Giving and Receiving (basic)",
       "categoryOrder": 16,
@@ -9553,6 +9678,7 @@
     },
     {
       "id": "n5-132",
+      "tier": "core_n5",
       "pattern": "～が～をくれます",
       "category": "Giving and Receiving (basic)",
       "categoryOrder": 16,
@@ -9610,6 +9736,7 @@
     },
     {
       "id": "n5-133",
+      "tier": "core_n5",
       "pattern": "Sentence + から、Sentence",
       "category": "Asking and Stating with から / ので (basic causation)",
       "categoryOrder": 17,
@@ -9668,6 +9795,7 @@
     },
     {
       "id": "n5-134",
+      "tier": "core_n5",
       "pattern": "Sentence + ので、Sentence",
       "category": "Asking and Stating with から / ので (basic causation)",
       "categoryOrder": 17,
@@ -9730,6 +9858,7 @@
     },
     {
       "id": "n5-135",
+      "tier": "core_n5",
       "pattern": "Verb",
       "category": "Nominalization and Modification",
       "categoryOrder": 18,
@@ -9793,6 +9922,7 @@
     },
     {
       "id": "n5-136",
+      "tier": "core_n5",
       "pattern": "Adjective + Noun",
       "category": "Nominalization and Modification",
       "categoryOrder": 18,
@@ -9856,6 +9986,7 @@
     },
     {
       "id": "n5-137",
+      "tier": "core_n5",
       "pattern": "Noun + の + Noun",
       "category": "Nominalization and Modification",
       "categoryOrder": 18,
@@ -9919,6 +10050,7 @@
     },
     {
       "id": "n5-142",
+      "tier": "core_n5",
       "pattern": "～にします",
       "category": "Common Set Patterns",
       "categoryOrder": 19,
@@ -9966,6 +10098,7 @@
     },
     {
       "id": "n5-143",
+      "tier": "core_n5",
       "pattern": "～になります / ～くなります",
       "category": "Common Set Patterns",
       "categoryOrder": 19,
@@ -10041,6 +10174,7 @@
     },
     {
       "id": "n5-144",
+      "tier": "late_n5",
       "pattern": "Verb-stem + ながら",
       "category": "Common Set Patterns",
       "categoryOrder": 19,
@@ -10094,6 +10228,7 @@
     },
     {
       "id": "n5-145",
+      "tier": "core_n5",
       "pattern": "～とおもいます",
       "category": "Common Set Patterns",
       "categoryOrder": 19,
@@ -10150,6 +10285,7 @@
     },
     {
       "id": "n5-146",
+      "tier": "core_n5",
       "pattern": "～と言いました",
       "category": "Common Set Patterns",
       "categoryOrder": 19,
@@ -10200,6 +10336,7 @@
     },
     {
       "id": "n5-147",
+      "tier": "core_n5",
       "pattern": "よく / ときどき / あまり / ぜんぜん + Verb",
       "category": "Existence-of-Plans and Frequency",
       "categoryOrder": 20,
@@ -10287,6 +10424,7 @@
     },
     {
       "id": "n5-148",
+      "tier": "core_n5",
       "pattern": "いつも / たいてい / たまに",
       "category": "Existence-of-Plans and Frequency",
       "categoryOrder": 20,
@@ -10358,6 +10496,7 @@
     },
     {
       "id": "n5-149",
+      "tier": "core_n5",
       "pattern": "～をください",
       "category": "Functional Expressions (Non-Grammar, Common Usage)",
       "categoryOrder": 21,
@@ -10402,6 +10541,7 @@
     },
     {
       "id": "n5-150",
+      "tier": "core_n5",
       "pattern": "～をおねがいします",
       "category": "Functional Expressions (Non-Grammar, Common Usage)",
       "categoryOrder": 21,
@@ -10478,6 +10618,7 @@
     },
     {
       "id": "n5-151",
+      "tier": "core_n5",
       "pattern": "～はいかがですか",
       "category": "Functional Expressions (Non-Grammar, Common Usage)",
       "categoryOrder": 21,
@@ -10527,6 +10668,7 @@
     },
     {
       "id": "n5-152",
+      "tier": "core_n5",
       "pattern": "どうぞ / どうも / すみません / おねがいします",
       "category": "Functional Expressions (Non-Grammar, Common Usage)",
       "categoryOrder": 21,
@@ -10605,6 +10747,7 @@
     },
     {
       "id": "n5-153",
+      "tier": "core_n5",
       "pattern": "まだ + Verb-ていません",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -10668,6 +10811,7 @@
     },
     {
       "id": "n5-154",
+      "tier": "core_n5",
       "pattern": "もう + Verb-ました",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -10721,6 +10865,7 @@
     },
     {
       "id": "n5-155",
+      "tier": "core_n5",
       "pattern": "〜が、〜",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -10786,6 +10931,7 @@
     },
     {
       "id": "n5-156",
+      "tier": "core_n5",
       "pattern": "〜ね / 〜よ",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -10856,6 +11002,7 @@
     },
     {
       "id": "n5-157",
+      "tier": "late_n5",
       "pattern": "〜でしょう",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -10904,6 +11051,7 @@
     },
     {
       "id": "n5-158",
+      "tier": "core_n5",
       "pattern": "〜だろう",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -10950,6 +11098,7 @@
     },
     {
       "id": "n5-159",
+      "tier": "core_n5",
       "pattern": "〜ですね / 〜ですよ",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -11020,6 +11169,7 @@
     },
     {
       "id": "n5-160",
+      "tier": "core_n5",
       "pattern": "Noun + の + あとで",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -11076,6 +11226,7 @@
     },
     {
       "id": "n5-161",
+      "tier": "core_n5",
       "pattern": "Noun + の + まえに",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -11129,6 +11280,7 @@
     },
     {
       "id": "n5-162",
+      "tier": "core_n5",
       "pattern": "Verb",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -11182,6 +11334,7 @@
     },
     {
       "id": "n5-163",
+      "tier": "core_n5",
       "pattern": "Verb",
       "category": "Other Core Patterns",
       "categoryOrder": 22,
@@ -11239,6 +11392,7 @@
     },
     {
       "id": "n5-164",
+      "tier": "core_n5",
       "pattern": "～さん",
       "category": "Honorific / Polite Vocabulary at N5 (functional)",
       "categoryOrder": 23,
@@ -11290,6 +11444,7 @@
     },
     {
       "id": "n5-165",
+      "tier": "core_n5",
       "pattern": "お～ / ご～",
       "category": "Honorific / Polite Vocabulary at N5 (functional)",
       "categoryOrder": 23,
@@ -11356,6 +11511,7 @@
     },
     {
       "id": "n5-166",
+      "tier": "core_n5",
       "pattern": "いただきます / ごちそうさま / おはようございます etc.",
       "category": "Honorific / Polite Vocabulary at N5 (functional)",
       "categoryOrder": 23,
@@ -11430,6 +11586,7 @@
     },
     {
       "id": "n5-167",
+      "tier": "late_n5",
       "pattern": "～んです / ～のです",
       "category": "Additional Upper N5 / Borderline Patterns - Explanation and Emphasis",
       "categoryOrder": 24,
@@ -11503,11 +11660,11 @@
           "difference": "～です = flat statement of fact. ～んです = explanation, emphasis, or reaction to context. Use ～です on forms and in objective writing; ～んです in conversation when reacting or explaining."
         }
       ],
-      "notes": "late_n5 tier: the form is N5 but the explanation/emphasis nuance crosses into N4 territory. The 3 examples here cover the most common N5-appropriate uses (giving a reason, asking for one, providing context). For deeper discussion of the contrast register-shift behavior or the assertive ～んだ casual form, see N4 sources. Pending native-teacher review of the framing per Pass-16 F-15.23 note (2026-05-01).",
-      "tier": "late_n5"
+      "notes": "late_n5 tier: the form is N5 but the explanation/emphasis nuance crosses into N4 territory. The 3 examples here cover the most common N5-appropriate uses (giving a reason, asking for one, providing context). For deeper discussion of the contrast register-shift behavior or the assertive ～んだ casual form, see N4 sources. Pending native-teacher review of the framing per Pass-16 F-15.23 note (2026-05-01)."
     },
     {
       "id": "n5-168",
+      "tier": "late_n5",
       "pattern": "～たり〜たりする",
       "category": "Additional Upper N5 / Borderline Patterns - Compound and Listed Actions",
       "categoryOrder": 25,
@@ -11549,6 +11706,7 @@
     },
     {
       "id": "n5-169",
+      "tier": "late_n5",
       "pattern": "Verb-た + ことがある",
       "category": "Additional Upper N5 / Borderline Patterns - Experience and Advice",
       "categoryOrder": 26,
@@ -11600,6 +11758,7 @@
     },
     {
       "id": "n5-170",
+      "tier": "late_n5",
       "pattern": "Verb-た + ほうがいい",
       "category": "Additional Upper N5 / Borderline Patterns - Experience and Advice",
       "categoryOrder": 26,
@@ -11650,6 +11809,7 @@
     },
     {
       "id": "n5-171",
+      "tier": "core_n5",
       "pattern": "Verb-ない + ほうがいい",
       "category": "Additional Upper N5 / Borderline Patterns - Experience and Advice",
       "categoryOrder": 26,
@@ -11687,11 +11847,11 @@
     },
     {
       "id": "n5-172",
+      "tier": "late_n5",
       "pattern": "～なくてもいい",
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 1,
-      "tier": "late_n5",
       "meaning_en": "～なくても いい - don't have to",
       "meaning_ja": "「〜なくても いい」",
       "form_rules": {
@@ -11725,6 +11885,7 @@
     },
     {
       "id": "n5-173",
+      "tier": "late_n5",
       "pattern": "～なくてはいけない",
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
@@ -11763,6 +11924,7 @@
     },
     {
       "id": "n5-174",
+      "tier": "core_n5",
       "pattern": "～なくてはならない",
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
@@ -11804,6 +11966,7 @@
     },
     {
       "id": "n5-175",
+      "tier": "core_n5",
       "pattern": "～ないといけない",
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
@@ -11843,11 +12006,11 @@
     },
     {
       "id": "n5-176",
+      "tier": "late_n5",
       "pattern": "～なくちゃ / ～なきゃ",
       "category": "Additional Upper N5 / Borderline Patterns - Permission and Obligation",
       "categoryOrder": 27,
       "patternOrder": 5,
-      "tier": "late_n5",
       "meaning_en": "Must do (casual contractions)",
       "meaning_ja": "「〜なくては いけない」",
       "form_rules": {
@@ -11886,6 +12049,7 @@
     },
     {
       "id": "n5-177",
+      "tier": "core_n5",
       "pattern": "Verb-stem / Adj-stem + すぎる",
       "category": "Additional Upper N5 / Borderline Patterns - Excess",
       "categoryOrder": 28,
@@ -11932,6 +12096,7 @@
     },
     {
       "id": "n5-178",
+      "tier": "core_n5",
       "pattern": "Verb-plain + つもりだ / つもりです",
       "category": "Additional Upper N5 / Borderline Patterns - Intention",
       "categoryOrder": 29,
@@ -11968,6 +12133,7 @@
     },
     {
       "id": "n5-179",
+      "tier": "core_n5",
       "pattern": "～って",
       "category": "Additional Upper N5 / Borderline Patterns - Quotation (Casual)",
       "categoryOrder": 30,
@@ -12005,6 +12171,7 @@
     },
     {
       "id": "n5-180",
+      "tier": "core_n5",
       "pattern": "Verb-stem + ～かた",
       "category": "Additional Upper N5 / Borderline Patterns - Way of Doing",
       "categoryOrder": 31,
@@ -12045,6 +12212,7 @@
     },
     {
       "id": "n5-181",
+      "tier": "core_n5",
       "pattern": "～なあ",
       "category": "Additional Upper N5 / Borderline Patterns - Sentence-Final Exclamation",
       "categoryOrder": 32,
@@ -12080,6 +12248,7 @@
     },
     {
       "id": "n5-182",
+      "tier": "core_n5",
       "pattern": "Verb-plain + な",
       "category": "Additional Upper N5 / Borderline Patterns - Prohibitive (Casual)",
       "categoryOrder": 33,
@@ -12121,6 +12290,7 @@
     },
     {
       "id": "n5-183",
+      "tier": "core_n5",
       "pattern": "Question word + か / も compounds",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -12176,6 +12346,7 @@
     },
     {
       "id": "n5-184",
+      "tier": "core_n5",
       "pattern": "なにか / なにも",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -12233,6 +12404,7 @@
     },
     {
       "id": "n5-185",
+      "tier": "core_n5",
       "pattern": "だれか / だれも",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -12298,6 +12470,7 @@
     },
     {
       "id": "n5-186",
+      "tier": "late_n5",
       "pattern": "どこか / どこも",
       "category": "Question Words",
       "categoryOrder": 4,
@@ -12360,6 +12533,7 @@
     },
     {
       "id": "n5-187",
+      "tier": "late_n5",
       "pattern": "いつか / いつも",
       "category": "Question Words",
       "categoryOrder": 4,

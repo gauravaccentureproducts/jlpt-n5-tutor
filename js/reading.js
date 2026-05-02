@@ -1,6 +1,7 @@
 // Reading passages module (Brief §3.2)
 // Each session: pick a passage, show it, then run comprehension questions.
 import { renderJa } from './furigana.js';
+import * as storage from './storage.js';
 
 // Display labels for level / topic taxonomy. Data values stay English
 // (stable code keys for lookup); we localize at render time so the
@@ -50,23 +51,50 @@ export async function renderReading(container) {
 
 function renderIndex(container) {
   const passages = bank.passages || [];
-  const items = passages.map(p => `
-    <li>
-      <button class="reading-pick" data-id="${esc(p.id)}">
-        <span class="reading-title"><strong>${renderJa(p.title_ja)}</strong> <span class="muted small">(${renderJa(LEVEL_JA[p.level] || p.level)})</span></span>
-        <span class="muted small">${renderJa(TOPIC_JA[p.topic] || p.topic)}</span>
-      </button>
-    </li>
-  `).join('');
+  // Mock-test mode (DEFER-12): when on, filters each passage's questions
+  // down to those tagged `format_role: "primary"` so the per-passage
+  // question count matches the official JLPT-N5 distribution. Persists
+  // across navigation via the same settings store as everything else.
+  const settings = (typeof storage !== 'undefined' && storage.getSettings)
+    ? storage.getSettings() : {};
+  const mockTestMode = !!settings.readingMockTestMode;
+
+  const items = passages.map(p => {
+    const totalQ = (p.questions || []).length;
+    const primaryQ = (p.questions || []).filter(
+      q => q.format_role === 'primary' || !q.format_role).length;
+    const shownCount = mockTestMode ? primaryQ : totalQ;
+    return `
+      <li>
+        <button class="reading-pick" data-id="${esc(p.id)}">
+          <span class="reading-title"><strong>${renderJa(p.title_ja)}</strong> <span class="muted small">(${renderJa(LEVEL_JA[p.level] || p.level)})</span></span>
+          <span class="muted small">${renderJa(TOPIC_JA[p.topic] || p.topic)} ・ ${shownCount} ${renderJa('もん')}</span>
+        </button>
+      </li>
+    `;
+  }).join('');
   container.innerHTML = `
     <h2>${renderJa('どっかい れんしゅう')}</h2>
     <p>${renderJa('みじかい JLPT けいしきの ぶんしょうと しつもんです。')} ${passages.length} ${renderJa('ぶんしょうが あります。やさしい → ふつう → じょうほうけんさく の じゅんに ならんで います。')}</p>
+    <label class="reading-mode-toggle">
+      <input type="checkbox" id="reading-mock-mode" ${mockTestMode ? 'checked' : ''}>
+      <span>${renderJa('もぎテストモード')} (primary questions only — matches official JLPT N5 distribution)</span>
+    </label>
     <ul class="reading-list">${items}</ul>
   `;
+  document.getElementById('reading-mock-mode').addEventListener('change', (e) => {
+    storage.setSettings({ readingMockTestMode: e.target.checked });
+    renderIndex(container);
+  });
   container.querySelectorAll('[data-id]').forEach(btn => {
     btn.addEventListener('click', () => {
       const p = passages.find(x => x.id === btn.dataset.id);
-      session = { passage: p, phase: 'read', answers: {}, idx: 0 };
+      // When mock-test mode is on, narrow the question list to primaries.
+      const filtered = mockTestMode
+        ? { ...p, questions: (p.questions || []).filter(
+              q => q.format_role === 'primary' || !q.format_role) }
+        : p;
+      session = { passage: filtered, phase: 'read', answers: {}, idx: 0 };
       renderSession(container);
     });
   });
@@ -170,6 +198,12 @@ function renderResults(container, p) {
   const total = p.questions.length;
   const score = p.questions.filter(q => session.answers[q.id] === q.correctAnswer).length;
   const pct = Math.round((score / total) * 100);
+  // Mark this passage as completed the first time the user reaches the
+  // results screen with at least one correct answer. Powers the homepage
+  // Progress section's Reading row.
+  if (score > 0) {
+    storage.setReadingCompleted(p.id);
+  }
   container.innerHTML = `
     <div class="reading-results">
       <h2>${renderJa(p.title_ja)} ・ ${renderJa('けっか')}</h2>
