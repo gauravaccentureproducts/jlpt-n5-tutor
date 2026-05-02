@@ -276,11 +276,17 @@ function renderVocabDetail(container, vocabData, grammarData, form) {
   examples.sort((a, b) => (a.ja?.length || 0) - (b.ja?.length || 0));
   const top = examples.slice(0, 5);
 
-  // prev / next within the same section for keyboard-style navigation.
-  const sectionEntries = entries.filter(e => e.section === entry.section);
-  const idx = sectionEntries.findIndex(e => e.form === entry.form);
-  const prev = idx > 0 ? sectionEntries[idx - 1] : null;
-  const next = idx >= 0 && idx < sectionEntries.length - 1 ? sectionEntries[idx + 1] : null;
+  // prev / next: walk the ENTIRE vocab list (not just the current
+  // section) so navigation chains naturally across section boundaries
+  // — pressing → on the last entry of "6. Question Words" jumps to
+  // the first entry of "7. Numbers" instead of dead-ending. Match by
+  // `id` (unique per entry) so homographs like きる v1/v2 or はい
+  // counter/expression don't collide.
+  // Reported 2026-05-02 — the previous within-section scope hid the
+  // next link on every last-of-section entry.
+  const idx = entries.findIndex(e => e.id === entry.id);
+  const prev = idx > 0 ? entries[idx - 1] : null;
+  const next = idx >= 0 && idx < entries.length - 1 ? entries[idx + 1] : null;
 
   // Mark-as-known parity (OPEN-10): vocab detail gets the same toggle
   // affordance as grammar pattern detail, in the same header-right position.
