@@ -100,7 +100,7 @@ None. All factual-error items closed.
 | **DEFER-8** | external-corpus | Coverage-comparison gap: tokens external tests but we don't (の×4, 行く×3, etc.) | Folded into DEFER-1 |
 | **DEFER-9** | data-brief §3 | 9 MEDIUM data-brief items (meaning_ja consistency, gloss reordering, register mixing, 〜があります overload, 何 primary ambiguity) | Most addressed in Pass-13/14/15; remaining are polish |
 | **DEFER-10** | UI-design §1.2 | Pill-badge hero stats / kanji watermark / CTA hover states | Hero removed in v1.7.1; spec deviation |
-| **DEFER-11** | dev-brief | Authentic-extracted N5 content re-source from official JEES samples (Pass 12 plan) | Provenance disclosure done; re-source future task |
+| ~~**DEFER-11**~~ | dev-brief | ~~Authentic-extracted N5 content re-source from official JEES samples~~ | **Closed by decision 2026-05-02:** original-content policy formalized in `CONTENT-LICENSE.md`. Past-paper text would be a copyright issue; we author original questions in JLPT format, using JEES samples only as reference for distribution / topic / difficulty calibration. JA-30 invariant + `tools/audit_provenance.py` enforce the policy at CI time. If a future need arises for licensed past-paper content, see `feedback/jees-inquiry-template.md` for the formal-permission path. |
 | **DEFER-12** | reading §3.5 | Mock-test mode primary-only-question-distribution per JLPT format | `format_role` field shipped; renderer change pending |
 | **DEFER-13** | (was OPEN-6 partial) | Daily-goal-met badge separate from streak count | Streak shipped; daily-goal-met indicator (e.g., "✓ 1 review done today") is a polish item |
 | **DEFER-14** | (was OPEN-7) | Undo-on-grading 2s window in Review | Plan: `lastGrade` state + setTimeout-revert + toast UI. ~45 min when prioritised |

@@ -786,6 +786,7 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-27", "No English-translation/title fields in reading/listening (2026-05-02)", lambda: _check_ja_27_no_english_in_japanese_modules()),
     ("JA-28", "Dokkai-paper kanji bounded by N5 + exception list (2026-05-02)", lambda: _check_ja_28_dokkai_kanji_bounded()),
     ("JA-29", "Question subtype taxonomy is closed (paraphrase / kanji_writing only) (2026-05-02)", lambda: _check_ja_29_subtype_taxonomy()),
+    ("JA-30", "No past-paper provenance signatures in question text (2026-05-02)", lambda: _check_ja_30_provenance()),
 ]
 
 
@@ -1484,6 +1485,75 @@ def _check_ja_28_dokkai_kanji_bounded() -> list[str]:
             f"or add to data/dokkai_kanji_exception.json (with "
             f"justification in KnowledgeBank/dokkai_questions_n5.md "
             f"header). First seen: {s}")
+    return failures
+
+
+def _check_ja_30_provenance() -> list[str]:
+    """Past-paper provenance scan: no question text may contain markers
+    that suggest direct copying from JLPT past papers (JEES citations,
+    year-numbered exam markers, "過去問" / "真題" terminology, etc.).
+
+    Mirrors the standalone tool tools/audit_provenance.py — kept inline
+    here so the standard CI integrity check (one command) catches a
+    leak without needing a separate workflow step. See CONTENT-LICENSE.md
+    §3 for the policy this enforces.
+
+    Failure here means: a contributor introduced text that could be
+    interpreted as a past-paper reference. Fix by re-authoring the
+    stem/rationale/note in the project's own voice, not by exempting
+    the rule.
+    """
+    failures: list[str] = []
+    SUSPECT = [
+        (re.compile(r"\bJEES\b"), "JEES citation"),
+        (re.compile(r"Japan\s*Educational\s*Exchanges?", re.I), "JEES full name"),
+        (re.compile(r"(19|20)\d{2}年[\s　]*[1-9七十二]+月.*?(本試験|公開|JLPT)"),
+         "year+month past-paper marker"),
+        (re.compile(r"本試験[\s　]*第\d+回"), "past-paper round number"),
+        (re.compile(r"実試験|実問題|真題"), "past-paper terminology"),
+        (re.compile(r"(JLPT|日本語能力試験)\s*N[1-5]\s*(20\d{2}|19\d{2})年"),
+         "JLPT year-paper citation"),
+        (re.compile(r"過去問"), "kakomon (past-question) self-attestation"),
+    ]
+
+    def _scan(text: str, where: str) -> None:
+        if not isinstance(text, str) or not text:
+            return
+        for pat, why in SUSPECT:
+            m = pat.search(text)
+            if m:
+                failures.append(
+                    f"JA-30 {where}: {why} — '{m.group(0)[:60]}'"
+                )
+
+    qpath = ROOT / "data" / "questions.json"
+    if qpath.exists():
+        try:
+            data = json.loads(qpath.read_text(encoding="utf-8"))
+        except Exception as e:
+            return [f"JA-30: parse error questions.json: {e}"]
+        for qq in data.get("questions", []):
+            qid = qq.get("id", "?")
+            for f in ("question_ja", "prompt_ja", "explanation_en", "rationale"):
+                _scan(qq.get(f, ""), f"{qid}.{f}")
+            de = qq.get("distractor_explanations") or {}
+            if isinstance(de, dict):
+                for k, v in de.items():
+                    _scan(v, f"{qid}.distractor_explanations.{k}")
+
+    papers_dir = ROOT / "data" / "papers"
+    if papers_dir.exists():
+        for f in papers_dir.rglob("paper-*.json"):
+            try:
+                p = json.loads(f.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            for qq in p.get("questions", []):
+                qid = qq.get("id", "?")
+                for fld in ("stem_html", "rationale", "explanation_en",
+                            "passage_text", "prompt_ja"):
+                    _scan(qq.get(fld, ""), f"{qid}.{fld}")
+
     return failures
 
 
