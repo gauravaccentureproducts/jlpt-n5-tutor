@@ -4993,6 +4993,346 @@
       "correctAnswer": "おもしろい",
       "explanation_en": "i-adjective in dictionary form modifies a following noun directly: omoshiroi hon = interesting book. Distractors: omoshiroku (adverb form), omoshirokute (te-form, conjunction), omoshirokunai (negative) — none modify a noun in this slot.",
       "difficulty": 1
+    },
+    {
+      "id": "q-0529",
+      "grammarPatternId": "n5-114",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "じゅぎょうは ９じ（  ）１２じまでです。",
+      "choices": [
+        "から",
+        "まで",
+        "に",
+        "へ"
+      ],
+      "correctAnswer": "から",
+      "explanation_en": "X kara Y made = from X to Y. The blank pairs with まで in the second half, so から (start) is the only fit. Distractors: まで is already used; に is recipient/time-point (not range); へ is direction.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0530",
+      "grammarPatternId": "n5-137",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "これは わたし（  ）ほんです。",
+      "choices": [
+        "の",
+        "は",
+        "が",
+        "を"
+      ],
+      "correctAnswer": "の",
+      "explanation_en": "Noun の Noun = possessive/attributive linking. watashi no hon = my book. Distractors: は marks topic (would change meaning to topic-comment); が marks subject; を marks object.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0531",
+      "grammarPatternId": "n5-142",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "わたしは コーヒー（  ）します。",
+      "choices": [
+        "に",
+        "を",
+        "が",
+        "で"
+      ],
+      "correctAnswer": "に",
+      "explanation_en": "X に します = decide on / choose X (e.g., when ordering at a restaurant). The choice marker is に. Distractors: を + する is generic 'do X'; が marks subject; で is means/place.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0532",
+      "grammarPatternId": "n5-143",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "そらが あおく（  ）。",
+      "choices": [
+        "なりました",
+        "しました",
+        "あります",
+        "います"
+      ],
+      "correctAnswer": "なりました",
+      "explanation_en": "i-adj-stem + ku + narimasu = becomes [adj]. aoku narimashita = became blue. Distractors: shimashita is 'did' (transitive change); arimasu / imasu are 'exist'.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0533",
+      "grammarPatternId": "n5-145",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "あした、あめが ふる（  ）おもいます。",
+      "choices": [
+        "と",
+        "を",
+        "に",
+        "で"
+      ],
+      "correctAnswer": "と",
+      "explanation_en": "Plain-form sentence + と + omoimasu = I think that ~. と is the quote-marker linking the embedded clause to omoimasu. Distractors: を marks direct object (omou doesn't take a を for embedded thoughts); に/で wrong category.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0534",
+      "grammarPatternId": "n5-146",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "せんせいは「あした テストです」（  ）言いました。",
+      "choices": [
+        "と",
+        "を",
+        "に",
+        "で"
+      ],
+      "correctAnswer": "と",
+      "explanation_en": "Direct-quote + と + iimashita = said that ~. The brackets「」around the quoted speech force と as the quote-marker. Distractors: を/に/で don't function as quote-markers.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0535",
+      "grammarPatternId": "n5-149",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "すみません、コーヒー（  ）ください。",
+      "choices": [
+        "を",
+        "に",
+        "が",
+        "の"
+      ],
+      "correctAnswer": "を",
+      "explanation_en": "Noun + を + kudasai = please give me [noun]. The thing requested takes the object marker を. Distractors: に is recipient/time; が marks subject; の is possessive.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0536",
+      "grammarPatternId": "n5-150",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "すみません、おちゃ（  ）おねがいします。",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "と"
+      ],
+      "correctAnswer": "を",
+      "explanation_en": "Noun + を + onegaishimasu = I'd like [noun] please (more polite than wo kudasai). Same を-marks-the-thing pattern. Distractors: に/で/と don't fit this request frame.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0537",
+      "grammarPatternId": "n5-151",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "コーヒー（  ）いかがですか。",
+      "choices": [
+        "は",
+        "を",
+        "に",
+        "が"
+      ],
+      "correctAnswer": "は",
+      "explanation_en": "Noun は ikaga desu ka = how about [noun]? (polite offer). は marks the noun as topic of the offer. Distractors: を/に/が don't fit the offer-introduction pattern.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0538",
+      "grammarPatternId": "n5-153",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "「ごはんを たべましたか。」「いいえ、（  ）たべて いません。」",
+      "choices": [
+        "まだ",
+        "もう",
+        "いま",
+        "すぐ"
+      ],
+      "correctAnswer": "まだ",
+      "explanation_en": "mada + V-te imasen = not yet (action still pending). The negative answer 'no, I have not eaten yet' pins まだ. Distractors: もう would pair with the affirmative 'already ate'; いま (now) and すぐ (right away) don't fit the not-yet frame.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0539",
+      "grammarPatternId": "n5-154",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "「しゅくだいを しましたか。」「はい、（  ）しました。」",
+      "choices": [
+        "もう",
+        "まだ",
+        "いま",
+        "あとで"
+      ],
+      "correctAnswer": "もう",
+      "explanation_en": "mou + V-mashita = already (action completed). The affirmative answer 'yes, already did' pins もう. Distractors: まだ would pair with negative; いま (now) doesn't match completed-past; あとで (later) is future.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0540",
+      "grammarPatternId": "n5-155",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "この りょうりは おいしいです（  ）、すこし からいです。",
+      "choices": [
+        "が",
+        "から",
+        "ので",
+        "まで"
+      ],
+      "correctAnswer": "が",
+      "explanation_en": "Mid-sentence が = but (contrast connector). 'Tasty BUT a bit spicy.' Distractors: から/ので are causal (because); まで is endpoint.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0541",
+      "grammarPatternId": "n5-157",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "あした、たぶん あめが ふる（  ）。",
+      "choices": [
+        "でしょう",
+        "でした",
+        "ですか",
+        "でして"
+      ],
+      "correctAnswer": "でしょう",
+      "explanation_en": "deshou = probably / I expect (paired with tabun 'probably' in the stem for emphasis). Distractors: deshita (past copula), desu ka (question ending — would change meaning), deshite (te-form, ungrammatical sentence-finally).",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0542",
+      "grammarPatternId": "n5-164",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "あの ひとは たなか（  ）です。",
+      "choices": [
+        "さん",
+        "ちゃん",
+        "くん",
+        "さま"
+      ],
+      "correctAnswer": "さん",
+      "explanation_en": "san is the standard polite name suffix (Mr./Ms.) for adults in neutral contexts. Distractors: chan (young children / very close friends), kun (young men / juniors), sama (extremely formal — overkill for everyday use).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0543",
+      "grammarPatternId": "n5-165",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "（  ）ちゃを のみますか。",
+      "choices": [
+        "お",
+        "ご",
+        "の",
+        "を"
+      ],
+      "correctAnswer": "お",
+      "explanation_en": "o-cha = (honorific) tea. Native-Japanese-origin words usually take お (o-); Sino-Japanese words take ご (go-). Distractors: ご is for Sino-Japanese stems (gohan, gokazoku); の is possessive; を is object marker.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0544",
+      "grammarPatternId": "n5-168",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "にちようびは ほんを よんだり、おんがくを きいたり（  ）。",
+      "choices": [
+        "します",
+        "あります",
+        "います",
+        "なります"
+      ],
+      "correctAnswer": "します",
+      "explanation_en": "V-tari V-tari + suru = do A and B (among other things). The pattern needs the suru helper at the end to bind the listed activities. Distractors: arimasu/imasu are existence verbs; narimasu is 'become' — none bind tari-listings.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0545",
+      "grammarPatternId": "n5-169",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "わたしは にほんへ 行った（  ）が あります。",
+      "choices": [
+        "こと",
+        "もの",
+        "ところ",
+        "とき"
+      ],
+      "correctAnswer": "こと",
+      "explanation_en": "V-ta + koto + ga arimasu = have done [V] before (experiential). Only こと forms this experience-pattern. Distractors: もの is a physical thing; ところ is a place; とき is a time/occasion.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0546",
+      "grammarPatternId": "n5-170",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "つかれた ときは、はやく ねた（  ）が いいです。",
+      "choices": [
+        "ほう",
+        "もの",
+        "こと",
+        "ところ"
+      ],
+      "correctAnswer": "ほう",
+      "explanation_en": "V-ta + hou + ga + ii = should do [V] (recommendation). Only ほう forms this recommendation pattern. Distractors: もの/こと/ところ don't fit this comparative-recommendation frame.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0547",
+      "grammarPatternId": "n5-177",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "この にもつは おも（  ）。",
+      "choices": [
+        "すぎます",
+        "すぎる",
+        "すぎて",
+        "すぎない"
+      ],
+      "correctAnswer": "すぎます",
+      "explanation_en": "i-adj-stem (drop い) + sugimasu = too [adj]. omoi → omo + sugimasu = 'too heavy'. Distractors: sugiru (plain form, would need different polite-level context), sugite (te-form, conjunction not a sentence ender), suginai (negative — would mean 'not too heavy' which contradicts the implied complaint).",
+      "difficulty": 3
+    },
+    {
+      "id": "q-0548",
+      "grammarPatternId": "n5-178",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "らいねん、にほんへ 行く（  ）です。",
+      "choices": [
+        "つもり",
+        "もの",
+        "こと",
+        "とき"
+      ],
+      "correctAnswer": "つもり",
+      "explanation_en": "V-plain + tsumori desu = intend to do [V]. Only つもり forms this intention pattern. Distractors: もの (physical thing), こと (matter/fact), とき (time/occasion) don't carry the future-intention sense.",
+      "difficulty": 2
     }
   ]
 }
