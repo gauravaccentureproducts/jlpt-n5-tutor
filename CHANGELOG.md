@@ -2,6 +2,57 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.11.1 - 2026-05-03 (Vocab examples Phase 4 — +154 entries)
+
+Continuation of v1.11.0's example-coverage pass. Authored 154 more
+vocab example sentences this batch covering the highest-leverage
+foundational categories.
+
+### Content
+
+- **Vocab: +154 inline examples** across:
+  - Numbers (1, 2, ..., 11, 20, 100, 1000, 10000, 100M)
+  - Native counters (一つ..十, いくつ)
+  - Common counters (人, 一人, 二人, まい)
+  - Time-general (いま, きょう, あした, きのう, あさ, ひる, よる, ばん, ゆうがた)
+  - Days/weeks/months (月曜日..日曜日, 今日, 毎日/毎週, 今週/来週,
+    今月/来月, 今年/来年)
+  - Frequency (いつも, よく, ときどき, たまに, あまり, ぜんぜん, まず,
+    つぎに, さいご, さき, あと, まえ, まだ, もう)
+  - Colors (あかい, あおい, しろい, くろい, きいろい, ちゃいろ, みどり
+    + な-noun forms)
+  - Particles (は, が, を, に, で, へ, と, から, まで, の, も, や, か,
+    ね, よ, より) — each with a typical-use sentence
+  - Greetings (おはよう, こんにちは, こんばんは, おやすみ, さようなら,
+    ありがとう, すみません, ごめんなさい, いただきます, ごちそうさま,
+    おねがいします, どうぞ, どうも, はい, いいえ)
+  - Demonstrative tail (そんな, ああ)
+  - Top verbs (行く, 書く, 聞く, 読む, 飲む, 話す, 買う, あう, あらう,
+    あそぶ, いう, およぐ, おわる, かかる, きく, のる, のぼる, はたらく,
+    はじまる; 見る, 食べる, おきる, ねる, あける, しめる, おしえる,
+    おぼえる, かえる, でる; する, 来る, べんきょうする, りょうりする;
+    ある, いる)
+  - Top adjectives (大きい/小さい, あたらしい/古い, 高い/安い, あつい/
+    さむい, おもしろい, おいしい, いそがしい + na-adj きれい, げんき,
+    しずか, にぎやか, ひま, すき/きらい, じょうず/へた, ゆうめい,
+    しんせつ, だいじょうぶ, たいせつ, べんり, いろいろ)
+
+### Coverage status
+
+- Vocab inline examples: 313 → 467 (out of 1003)
+- Remaining uncovered: ~536 (down from ~690)
+- Big remaining categories: Locations (70), House/Furniture (39),
+  Food items (44), Common nouns misc (76), School/Study (43),
+  Adverbs tail (20+), Verb tail (~50), i-adj tail (~50)
+
+### Service worker
+
+Bumped `CACHE_VERSION` v104 -> v105.
+
+v1.11.1 / SW v105. **40/40 invariants green.**
+
+---
+
 ## v1.11.0 - 2026-05-03 (Example-coverage authoring pass)
 
 Per user direction: many vocabulary, grammar, and kanji entries
