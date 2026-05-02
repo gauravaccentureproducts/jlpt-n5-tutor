@@ -2,6 +2,90 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.10.2 - 2026-05-02 (Search-result navigation + provenance lock-in)
+
+Two fixes that landed without their own version bump and are folded
+in here:
+
+### Fixed
+
+- **Header search results were not clickable to vocab content.**
+  Vocab results all routed to `#/learn` (the Learn hub) instead of
+  the per-word detail page `#/learn/vocab/<form>`. Fixed in
+  `js/search.js`: centralized URL builders into a `HREFS` map; vocab
+  now correctly routes via `encodeURIComponent(form)`. Browser-
+  verified: clicking かるい → `#/learn/vocab/%E3%81%8B%E3%82%8B%E3%81%84`
+  → detail page renders with `h2: かるい`.
+
+### Improved (search panel)
+
+While the bug was being fixed, several adjacent issues were closed:
+
+- **Kanji-form vocab now shows its kana reading inline:** `新しい
+  (あたらしい) - new` (was: `新しい - new`).
+- **Vocab dedupe by `form`** so words appearing in multiple thematic
+  sections (e.g. 名前 in §1 and §15) don't show up twice with the
+  same destination.
+- **Keyboard navigation:** ↓/↑ moves a highlight through the flat
+  result list (wraps top↔bottom); Enter follows the highlighted link;
+  Escape clears the input and closes the panel. Active item gets
+  `.is-active` class with accent outline + background tint.
+- **ARIA combobox semantics on the input:** `aria-combobox`,
+  `aria-autocomplete="list"`, `aria-expanded` toggle.
+  `.search-status[aria-live="polite"]` announces the result count
+  to screen readers (visually hidden).
+- **Mobile responsive:** `positionPanel()` now clamps width to
+  `viewport - 24px` and shifts left if the panel would overflow the
+  right edge. Verified at 375 px viewport: 320 px panel, 12 px
+  margin.
+
+### Added (legal lock-in)
+
+- **`CONTENT-LICENSE.md`** — explicit content-provenance policy.
+  States that every grammar pattern / vocab entry / kanji record /
+  mock-test question / reading passage / listening drill is
+  original (with per-file inventory: 177 + 1003 + 106 + 288 + 360 +
+  30 + 30). Lists the public-information sources used as references
+  for distribution / topic / scope (JEES sample-paper format,
+  JOYO / KANJIDIC2, learner references like Tofugu / Bunpro / Imabi)
+  and explicitly states what was NOT taken (any specific question
+  text). Documents the JEES contact path if a future feature ever
+  wants licensed past-paper material.
+- **`tools/audit_provenance.py`** — standalone scanner with 7
+  detection rules (JEES citations, year-numbered past-paper markers,
+  past-paper terminology like 過去問 / 真題 / 本試験第N回, JLPT-year-paper
+  citations). Last run: 0 hits across 648 questions +
+  KnowledgeBank/*.md headers.
+- **JA-30 invariant** — same 7 rules inlined into the standard CI
+  integrity check (`tools/check_content_integrity.py`). A leak by
+  a future contributor fails the build before merge. Total
+  invariants: 38 → 39.
+- **`feedback/jees-inquiry-template.md`** — bilingual email template
+  ready for if/when the project ever wants to license specific
+  past-paper material from JEES. Includes when-to-send guidance,
+  recipient list, expected-outcome table, and an outcome-log
+  section.
+- **`NOTICES.md`** — new "Question content / corpus" section with
+  pointer to `CONTENT-LICENSE.md` + the JLPT trademark statement.
+
+### Updated
+
+- **`feedback/MASTER-TASK-LIST.md`** — DEFER-11 ("Authentic-extracted
+  N5 content re-source from official JEES samples") closed by
+  decision: original-content policy formalized, JEES re-source path
+  documented but not pursued. Strikethrough + closure annotation
+  added inline.
+- **`index.html`** version strings (`?v=` and footer-meta) bumped
+  1.10.0 → 1.10.2 (had been stale through v1.10.1).
+- **`package.json`** version bumped 1.10.0 → 1.10.2.
+
+### Service worker
+
+Bumped `CACHE_VERSION` v90 → v91. Added `./CONTENT-LICENSE.md` to
+the PRECACHE list.
+
+---
+
 ## v1.10.1 - 2026-05-02 (Content-protection layer)
 
 Per user direction: deter casual copying / sharing of question
