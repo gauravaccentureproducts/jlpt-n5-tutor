@@ -787,6 +787,7 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-28", "Dokkai-paper kanji bounded by N5 + exception list (2026-05-02)", lambda: _check_ja_28_dokkai_kanji_bounded()),
     ("JA-29", "Question subtype taxonomy is closed (paraphrase / kanji_writing only) (2026-05-02)", lambda: _check_ja_29_subtype_taxonomy()),
     ("JA-30", "No past-paper provenance signatures in question text (2026-05-02)", lambda: _check_ja_30_provenance()),
+    ("JA-31", "Vocab PoS tags in vocabulary_n5.md agree with data/vocab.json (2026-05-02)", lambda: _check_ja_31_vocab_pos_parity()),
 ]
 
 
@@ -1554,6 +1555,143 @@ def _check_ja_30_provenance() -> list[str]:
                             "passage_text", "prompt_ja"):
                     _scan(qq.get(fld, ""), f"{qid}.{fld}")
 
+    return failures
+
+
+def _check_ja_31_vocab_pos_parity() -> list[str]:
+    """The PoS tags inline in KnowledgeBank/vocabulary_n5.md
+    (`[n.]` / `[v1]` / etc., added 2026-05-02 per DEFER-5) must agree
+    with the `pos` field on the corresponding entry in data/vocab.json.
+
+    Drift class this catches:
+      - A contributor edits one file (say, fixes a wrong PoS in the
+        markdown) but forgets the JSON, or vice versa. Since both
+        files describe the same per-form attribute, drift is silent.
+      - The PoS-injection pass (DEFER-5) had two homograph entries
+        get the wrong tag (`いる - to need` mistagged `[v2]` instead
+        of `[v1]`); JA-31 would have caught it before commit.
+
+    Match strategy is *section-aware* because many forms are
+    homographs (e.g., 'はる' is a noun in §14 Weather but a verb-1
+    in §27 Verbs; 'いる' is verb-2 in §28 but verb-1 in §30). The
+    audit tracks the current `## N. Section title` heading while
+    parsing the markdown and looks up `(form, reading, section)` in
+    JSON for an exact match; if the section doesn't match exactly,
+    word-overlap with the JSON's `section` field picks the closest.
+    Form-only fallback (any pos in JSON for that form) is the last
+    resort.
+    """
+    POS_ABBREV = {
+        "noun": "n.", "verb-1": "v1", "verb-2": "v2", "verb-3": "v3",
+        "i-adj": "i-adj", "na-adj": "na-adj", "adverb": "adv.",
+        "particle": "part.", "conjunction": "conj.", "pronoun": "pron.",
+        "counter": "count.", "numeral": "num.", "demonstrative": "dem.",
+        "question-word": "Q-word", "expression": "exp.",
+        "interjection": "interj.",
+    }
+
+    failures: list[str] = []
+    md_path = ROOT / "KnowledgeBank" / "vocabulary_n5.md"
+    json_path = ROOT / "data" / "vocab.json"
+    if not md_path.exists() or not json_path.exists():
+        return ["JA-31: source files missing (vocabulary_n5.md or vocab.json)"]
+
+    try:
+        vocab = json.loads(json_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [f"JA-31: parse error vocab.json: {e}"]
+
+    def normalize_section(s: str) -> str:
+        s = re.sub(r"^\d+\.\s*", "", s).strip().lower()
+        return re.sub(r"\s+", " ", s)
+
+    # Build two indexes:
+    #   by_full[(form, reading, section_norm)]      = pos_tag (exact match)
+    #   by_form_reading[(form, reading)]            = list of (section_norm, pos_tag)
+    #   by_form[form]                               = set of pos_tags (any-of fallback)
+    by_full: dict[tuple[str, str, str], str] = {}
+    by_form_reading: dict[tuple[str, str], list[tuple[str, str]]] = {}
+    by_form: dict[str, set[str]] = {}
+    for e in vocab.get("entries", []):
+        form = e.get("form")
+        reading = e.get("reading", form)
+        pos = e.get("pos")
+        section = e.get("section", "")
+        if not (form and pos):
+            continue
+        tag = POS_ABBREV.get(pos, pos)
+        sec_norm = normalize_section(section)
+        by_full[(form, reading, sec_norm)] = tag
+        by_form_reading.setdefault((form, reading), []).append((sec_norm, tag))
+        by_form.setdefault(form, set()).add(tag)
+
+    POS_TAGS_RE = "|".join(re.escape(t) for t in
+        ["n.", "v1", "v2", "v3", "i-adj", "na-adj", "adv.", "part.",
+         "conj.", "pron.", "count.", "num.", "dem.", "Q-word", "exp.",
+         "interj."])
+    LINE_RE = re.compile(
+        r"^(- )([^\s\(]+)(\s+\(([^)]+)\))?( \[(?:Ext|Cul)\])?(\s*-\s*)"
+        rf"\[({POS_TAGS_RE})\]\s+(.+)$"
+    )
+    SECTION_HEADER_RE = re.compile(r"^##\s+(.+?)\s*$")
+    is_jp = re.compile(r"^[ぁ-んァ-ヶー一-鿿]")
+
+    text = md_path.read_text(encoding="utf-8")
+    current_section_norm = ""
+    line_no = 0
+    for raw in text.splitlines():
+        line_no += 1
+        sh = SECTION_HEADER_RE.match(raw)
+        if sh:
+            current_section_norm = normalize_section(sh.group(1))
+            continue
+        m = LINE_RE.match(raw)
+        if not m:
+            continue
+        form = m.group(2)
+        reading = m.group(4) or form
+        md_tag = m.group(7)
+        if not is_jp.match(form):
+            continue
+        # Lookup priority: exact (form, reading, section) → word-overlap
+        # tiebreaker on (form, reading) → form-only any-of fallback.
+        expected: str | None = by_full.get((form, reading, current_section_norm))
+        if expected is None:
+            candidates = by_form_reading.get((form, reading), [])
+            if len(candidates) == 1:
+                expected = candidates[0][1]
+            elif candidates:
+                cur_words = set(current_section_norm.split())
+                best = None; best_score = -1
+                for sec, tag in candidates:
+                    score = len(cur_words & set(sec.split()))
+                    if score > best_score:
+                        best, best_score = tag, score
+                expected = best
+        if expected is None:
+            allowed = by_form.get(form)
+            if allowed is None:
+                failures.append(
+                    f"JA-31 vocabulary_n5.md:{line_no} entry '{form}' "
+                    f"({reading}) [{md_tag}] has no matching record in "
+                    f"data/vocab.json"
+                )
+                continue
+            if md_tag in allowed:
+                continue
+            expected_str = "/".join(sorted(allowed))
+            failures.append(
+                f"JA-31 vocabulary_n5.md:{line_no} '{form}' ({reading}) "
+                f"tagged [{md_tag}] but data/vocab.json says "
+                f"'{expected_str}'"
+            )
+            continue
+        if md_tag != expected:
+            failures.append(
+                f"JA-31 vocabulary_n5.md:{line_no} '{form}' ({reading}) "
+                f"tagged [{md_tag}] in section '{current_section_norm}' "
+                f"but data/vocab.json says '{expected}'"
+            )
     return failures
 
 

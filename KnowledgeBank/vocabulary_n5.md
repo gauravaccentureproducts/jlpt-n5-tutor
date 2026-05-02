@@ -195,7 +195,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 八つ (やっつ) - [count.] eight
 - 九つ (ここのつ) - [count.] nine
 - 十 (とお) - [count.] ten
-- いくつ - [Q-word] how many
+- いくつ - [count.] how many
 
 ## 9. Counters (Common)
 
@@ -203,7 +203,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 一人 (ひとり) - [count.] one person
 - 二人 (ふたり) - [count.] two people
 - まい - [count.] counter for flat objects
-- 本 (ほん) - [n.] counter for long thin objects
+- 本 (ほん) - [count.] counter for long thin objects
 - だい - [count.] counter for machines / vehicles
 - さつ - [count.] counter for books
 - ひき - [count.] counter for small animals
@@ -533,7 +533,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 
 - いろ - [n.] color
 - 白 (しろ) - [n.] white (noun)
-- 白い (しろい) - [i-adj] white (adj)
+- 白い (しろい) - [n.] white (adj)
 - くろ - [n.] black (noun)
 - くろい - [n.] black (adj)
 - あか - [n.] red (noun)
@@ -766,7 +766,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - つかう - [v1] to use
 - つく - [v1] to arrive
 - ならう - [v1] to learn
-- はる - [n.] to stick, to paste
+- はる - [v1] to stick, to paste
 - まがる - [v1] to turn
 - みがく - [v1] to polish, to brush **[Ext]**
 - もっていく - [v1] to take (something)
@@ -775,7 +775,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - しまる - [v1] to close (intransitive; pair with しめる)
 - だす - [v1] to take out, to put out (transitive; pair with でる)
 - おとす - [v1] to drop (transitive; pair with おちる)
-- ふく - [n.] to blow (of the wind)
+- ふく - [v1] to blow (of the wind)
 - ふる - [v1] to fall (rain, snow)
 - くもる - [v1] to become cloudy
 - なくす - [v1] to lose (something)
@@ -783,7 +783,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - すわる - [v1] to sit
 - たのむ - [v1] to ask (a favor)
 - とまる - [v1] to stop (intransitive)
-- おく - [num.] to place, to put
+- おく - [v1] to place, to put
 - さく - [v1] to bloom
 - かかる - [v1] to take (time / money)
 - さす - [v1] to put up (an umbrella), to raise
@@ -807,7 +807,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - こたえる - [v2] to answer
 - 出かける (でかける) - [v2] to go out
 - かける - [v2] to call (phone), to wear (glasses)
-- きる - [v1] to wear (upper body)
+- きる - [v2] to wear (upper body)
 - つける - [v2] to switch on
 - ならべる - [v2] to line up (transitive) **[Ext]**
 - はじめる - [v2] to begin (transitive)
@@ -844,7 +844,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 ## 30. Verbs - Existence and Possession
 
 - ある - [v1] to exist (inanimate)
-- いる - [v2] to exist (animate) (also in §28 - listed here for thematic completeness with other existence/possession verbs)
+- いる - [v1] to exist (animate) (also in §28 - listed here for thematic completeness with other existence/possession verbs)
 - いる - [v1] to need (Group 1 exception - looks like Group 2; homophone of existence-いる which is Group 2)
 - ござる / ございます - to be (very polite)
 - やる - [v1] to give (down / casual)
@@ -852,7 +852,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - もらう - [v1] to receive
 - くれる - [v1] to give (to me / us)
 - かす - [v1] to lend
-- かりる - [v2] to borrow
+- かりる - [v1] to borrow
 - かえす - [v1] to return (something)
 
 ## 31. い-Adjectives
@@ -863,9 +863,9 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 古い (ふるい) - [i-adj] old (not for people)
 - いい / よい - good
 - わるい - [i-adj] bad
-- あつい - [n.] hot (weather; separate adjective from the two below despite shared reading)
-- さむい - [n.] cold (weather)
-- あつい - [n.] hot (to the touch; separate adjective and separate kanji - homophone of the hot-weather one)
+- あつい - [i-adj] hot (weather; separate adjective from the two below despite shared reading)
+- さむい - [i-adj] cold (weather)
+- あつい - [i-adj] hot (to the touch; separate adjective and separate kanji - homophone of the hot-weather one)
 - つめたい - [i-adj] cold (to touch)
 - 高い (たかい) - [i-adj] high, tall, expensive
 - ひくい - [i-adj] low, short (height)
@@ -876,7 +876,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - せまい - [i-adj] narrow
 - おもい - [i-adj] heavy
 - かるい - [i-adj] light (weight)
-- あつい - [n.] thick (e.g., a thick book; separate adjective and separate kanji - third homophone of the あつい readings above)
+- あつい - [i-adj] thick (e.g., a thick book; separate adjective and separate kanji - third homophone of the あつい readings above)
 - うすい - [i-adj] thin
 - ふとい - [i-adj] thick (round things)
 - ほそい - [i-adj] thin (round things)
@@ -908,15 +908,15 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - とおい - [i-adj] far
 - あかるい - [i-adj] bright
 - くらい - [i-adj] dark
-- あたたかい - [n.] warm
-- すずしい - [n.] cool
+- あたたかい - [i-adj] warm
+- すずしい - [i-adj] cool
 - まるい - [i-adj] round
 - しかくい - [i-adj] square
 - わかい - [i-adj] young
-- きいろい - [n.] yellow
-- あおい - [n.] blue
-- あかい - [n.] red
-- くろい - [n.] black
+- きいろい - [i-adj] yellow
+- あおい - [i-adj] blue
+- あかい - [i-adj] red
+- くろい - [i-adj] black
 - 白い (しろい) - [i-adj] white
 - ちゃいろい - [i-adj] brown
 - あぶない - [i-adj] dangerous
@@ -965,15 +965,15 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - だいたい - [adv.] generally, roughly
 - ぜんぶ - [adv.] all
 - みんな / みな - everyone
-- もう - [n.] already
-- まだ - [n.] still, not yet
+- もう - [adv.] already
+- まだ - [adv.] still, not yet
 - もうすこし - [adv.] a little more
 - もっと - [adv.] more
 - 一番 (いちばん) - [adv.] most, number one
 - とくに - [adv.] especially
 - ほんとうに - [adv.] truly, really
 - ゆっくり - [adv.] slowly
-- すぐ - [n.] soon
+- すぐ - [adv.] soon
 - たぶん - [adv.] probably
 - いっしょに - [adv.] together
 - 一人で (ひとりで) - [adv.] alone
@@ -984,9 +984,9 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - どうぞ - [adv.] please (offering)
 - どうも - [adv.] thanks, indeed
 - どうぞよろしく - [adv.] please treat me well
-- どう - [dem.] how
-- なぜ - [Q-word] why
-- どうして - [Q-word] why
+- どう - [adv.] how
+- なぜ - [adv.] why
+- どうして - [adv.] why
 - まっすぐ - [adv.] straight ahead
 - もういちど - [adv.] once more
 - まず - [adv.] first of all
@@ -1012,18 +1012,18 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 
 ## 35. Particles (functional vocabulary)
 
-- は - [n.] topic marker
-- が - [conj.] subject marker
+- は - [part.] topic marker
+- が - [part.] subject marker
 - を - [part.] object marker
 - に - [part.] to, at, in (target / time)
 - で - [part.] at, by, with (location of action / means)
 - へ - [part.] to (direction)
-- と - [n.] and, with
+- と - [part.] and, with
 - か - [part.] question marker
 - も - [part.] also
 - や - [part.] and (non-exhaustive)
 - の - [part.] of, possessive / nominalizer
-- から - [conj.] from, because
+- から - [part.] from, because
 - まで - [part.] until
 - ね - [part.] sentence-final (agreement)
 - よ - [part.] sentence-final (assertion)
@@ -1056,13 +1056,13 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - ただいま - [exp.] I'm home **[Cul]**
 - おかえりなさい - [exp.] welcome back **[Cul]**
 - はじめまして - [exp.] nice to meet you
-- どうぞよろしく - [adv.] pleased to meet you
+- どうぞよろしく - [exp.] pleased to meet you
 - おげんきですか - [exp.] how are you?
 - おかげさまで - [exp.] thanks to you **[Cul]**
 - いらっしゃいませ - [exp.] welcome (to a shop) **[Cul]**
-- どうぞ - [adv.] please (offering)
-- どうも - [adv.] thanks
-- もしもし - [adv.] hello (phone)
+- どうぞ - [exp.] please (offering)
+- どうも - [exp.] thanks
+- もしもし - [exp.] hello (phone)
 
 ## 37. Common Nouns - Miscellaneous
 
@@ -1126,7 +1126,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - カレンダー - [n.] calendar
 - かてい - [n.] household, home life
 - かびん - [n.] vase
-- かた - [pron.] way of doing (e.g., たべかた = how to eat)
+- かた - [n.] way of doing (e.g., たべかた = how to eat)
 - おくさん - [n.] wife (someone else's; polite)
 - 先 (さき) - [n.] earlier, ahead, previous
 - せびろ - [n.] business suit (older term, replaced by スーツ in modern usage) **[Ext]**
@@ -1149,16 +1149,16 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 
 - こえ - [interj.] voice
 - おと - [interj.] sound
-- うた - [n.] song
+- うた - [interj.] song
 
 ## 39. Function / Filler Expressions
 
 - えーと - [exp.] um, let me see
-- あの - [dem.] um (hesitation)
+- あの - [exp.] um (hesitation)
 - そうですね - [exp.] let me think / that's right
 - そうですか - [exp.] is that so?
 - いいえ - [exp.] no
-- はい - [count.] yes
+- はい - [exp.] yes
 - ええ - [exp.] yes (casual)
 - うん - [exp.] yeah (informal)
 - ううん - [exp.] no (informal)
