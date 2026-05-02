@@ -556,7 +556,13 @@
       "reading": "けいかん",
       "gloss": "police officer",
       "section": "3. People - Roles",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "けいかんに みちを 聞きました。",
+          "translation_en": "I asked the police officer for directions."
+        }
+      ]
     },
     {
       "id": "n5.vocab.3-people-roles.おまわりさん",
@@ -564,7 +570,13 @@
       "reading": "おまわりさん",
       "gloss": "police officer (friendly)",
       "section": "3. People - Roles",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おまわりさんに あいさつします。",
+          "translation_en": "I greet the police officer."
+        }
+      ]
     },
     {
       "id": "n5.vocab.3-people-roles.りゅうがくせい",
@@ -572,7 +584,13 @@
       "reading": "りゅうがくせい",
       "gloss": "international student",
       "section": "3. People - Roles",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "わたしは りゅうがくせいです。",
+          "translation_en": "I am an international student."
+        }
+      ]
     },
     {
       "id": "n5.vocab.3-people-roles.外国人",
@@ -580,7 +598,13 @@
       "reading": "がいこくじん",
       "gloss": "foreigner",
       "section": "3. People - Roles",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "日本に 外国人が たくさん います。",
+          "translation_en": "There are many foreigners in Japan."
+        }
+      ]
     },
     {
       "id": "n5.vocab.4-body-parts.からだ",
@@ -724,7 +748,13 @@
       "reading": "せ",
       "gloss": "back, height",
       "section": "4. Body Parts",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あには せが 高いです。",
+          "translation_en": "My older brother is tall."
+        }
+      ]
     },
     {
       "id": "n5.vocab.5-demonstratives.これ",
@@ -1564,7 +1594,13 @@
       "reading": "ほん",
       "gloss": "counter for long thin objects",
       "section": "9. Counters (Common)",
-      "pos": "counter"
+      "pos": "counter",
+      "examples": [
+        {
+          "ja": "えんぴつを 三本 ください。",
+          "translation_en": "Three pencils please."
+        }
+      ]
     },
     {
       "id": "n5.vocab.9-counters-common.だい",
@@ -1572,7 +1608,13 @@
       "reading": "だい",
       "gloss": "counter for machines / vehicles",
       "section": "9. Counters (Common)",
-      "pos": "counter"
+      "pos": "counter",
+      "examples": [
+        {
+          "ja": "くるまが 二だい あります。",
+          "translation_en": "There are two cars."
+        }
+      ]
     },
     {
       "id": "n5.vocab.9-counters-common.さつ",
@@ -1610,7 +1652,13 @@
       "reading": "こ",
       "gloss": "counter for small objects",
       "section": "9. Counters (Common)",
-      "pos": "counter"
+      "pos": "counter",
+      "examples": [
+        {
+          "ja": "りんごを 五こ 買いました。",
+          "translation_en": "I bought five apples."
+        }
+      ]
     },
     {
       "id": "n5.vocab.9-counters-common.かい",
@@ -1618,7 +1666,13 @@
       "reading": "かい",
       "gloss": "floor of a building (e.g., 3-かい = 3rd floor)",
       "section": "9. Counters (Common)",
-      "pos": "counter"
+      "pos": "counter",
+      "examples": [
+        {
+          "ja": "じむしょは 三かいです。",
+          "translation_en": "The office is on the 3rd floor."
+        }
+      ]
     },
     {
       "id": "n5.vocab.9-counters-common.かい.2",
@@ -1626,7 +1680,13 @@
       "reading": "かい",
       "gloss": "number of times / occurrences (e.g., 3-かい = three times). Same kana, different counter (different kanji); context disambiguates.",
       "section": "9. Counters (Common)",
-      "pos": "counter"
+      "pos": "counter",
+      "examples": [
+        {
+          "ja": "日本に 二かい 行きました。",
+          "translation_en": "I've been to Japan twice."
+        }
+      ]
     },
     {
       "id": "n5.vocab.9-counters-common.番",
@@ -1634,7 +1694,13 @@
       "reading": "ばん",
       "gloss": "number, ordinal",
       "section": "9. Counters (Common)",
-      "pos": "counter"
+      "pos": "counter",
+      "examples": [
+        {
+          "ja": "五番の バスに のります。",
+          "translation_en": "I'll take the number 5 bus."
+        }
+      ]
     },
     {
       "id": "n5.vocab.9-counters-common.ど",
@@ -1642,7 +1708,13 @@
       "reading": "ど",
       "gloss": "degrees, occurrences",
       "section": "9. Counters (Common)",
-      "pos": "counter"
+      "pos": "counter",
+      "examples": [
+        {
+          "ja": "もう 一ど 言って ください。",
+          "translation_en": "Please say it once more."
+        }
+      ]
     },
     {
       "id": "n5.vocab.10-time-general.とき",
@@ -3398,7 +3470,13 @@
       "reading": "たいしかん",
       "gloss": "embassy",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "日本の たいしかんは どこですか。",
+          "translation_en": "Where is the Japanese embassy?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.こうばん",
@@ -3420,7 +3498,13 @@
       "reading": "こうじょう",
       "gloss": "factory",
       "section": "13. Locations and Places (general)",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "父は こうじょうで はたらきます。",
+          "translation_en": "My father works at a factory."
+        }
+      ]
     },
     {
       "id": "n5.vocab.13-locations-and-places-.こうさてん",
@@ -4262,7 +4346,13 @@
       "reading": "すずしい",
       "gloss": "cool",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あきは すずしいです。",
+          "translation_en": "Autumn is cool."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.あたたかい",
@@ -4270,7 +4360,13 @@
       "reading": "あたたかい",
       "gloss": "warm",
       "section": "14. Nature and Weather",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "はるは あたたかいです。",
+          "translation_en": "Spring is warm."
+        }
+      ]
     },
     {
       "id": "n5.vocab.14-nature-and-weather.火",
@@ -5938,7 +6034,13 @@
       "reading": "ハンカチ",
       "gloss": "handkerchief",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ハンカチを もって います。",
+          "translation_en": "I have a handkerchief."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.かばん",
@@ -5960,7 +6062,13 @@
       "reading": "さいふ",
       "gloss": "wallet",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "さいふを わすれました。",
+          "translation_en": "I forgot my wallet."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.めがね",
@@ -5996,7 +6104,13 @@
       "reading": "ボタン",
       "gloss": "button",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "シャツの ボタンが とれました。",
+          "translation_en": "A button came off the shirt."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.ポケット",
@@ -6004,7 +6118,13 @@
       "reading": "ポケット",
       "gloss": "pocket",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ポケットに かぎが あります。",
+          "translation_en": "There's a key in my pocket."
+        }
+      ]
     },
     {
       "id": "n5.vocab.21-clothing-and-accessor.かさ",
@@ -6012,7 +6132,13 @@
       "reading": "かさ",
       "gloss": "umbrella",
       "section": "21. Clothing and Accessories",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "雨ですから、かさを もって 行きます。",
+          "translation_en": "It's raining, so I'll bring an umbrella."
+        }
+      ]
     },
     {
       "id": "n5.vocab.22-money-and-shopping.お金",
@@ -6034,7 +6160,13 @@
       "reading": "えん",
       "gloss": "yen",
       "section": "22. Money and Shopping",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "これは 千円です。",
+          "translation_en": "This is 1000 yen."
+        }
+      ]
     },
     {
       "id": "n5.vocab.22-money-and-shopping.ドル",
@@ -6042,7 +6174,13 @@
       "reading": "ドル",
       "gloss": "dollar",
       "section": "22. Money and Shopping",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "百ドル ぐらいです。",
+          "translation_en": "It's about 100 dollars."
+        }
+      ]
     },
     {
       "id": "n5.vocab.22-money-and-shopping.ねだん",
@@ -6064,7 +6202,13 @@
       "reading": "きっぷ",
       "gloss": "ticket",
       "section": "22. Money and Shopping",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "えきで きっぷを 買います。",
+          "translation_en": "I buy a ticket at the station."
+        }
+      ]
     },
     {
       "id": "n5.vocab.22-money-and-shopping.きって",
@@ -6100,7 +6244,13 @@
       "reading": "ふうとう",
       "gloss": "envelope",
       "section": "22. Money and Shopping",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ふうとうに きってを はります。",
+          "translation_en": "I put a stamp on the envelope."
+        }
+      ]
     },
     {
       "id": "n5.vocab.22-money-and-shopping.てがみ",
@@ -6108,7 +6258,13 @@
       "reading": "てがみ",
       "gloss": "letter",
       "section": "22. Money and Shopping",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "友だちに てがみを 書きました。",
+          "translation_en": "I wrote a letter to a friend."
+        }
+      ]
     },
     {
       "id": "n5.vocab.22-money-and-shopping.にもつ",
@@ -6116,7 +6272,13 @@
       "reading": "にもつ",
       "gloss": "luggage, package",
       "section": "22. Money and Shopping",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "にもつが おもいです。",
+          "translation_en": "The luggage is heavy."
+        }
+      ]
     },
     {
       "id": "n5.vocab.22-money-and-shopping.おみやげ",
@@ -6124,7 +6286,13 @@
       "reading": "おみやげ",
       "gloss": "souvenir",
       "section": "22. Money and Shopping",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おみやげを 買いました。",
+          "translation_en": "I bought souvenirs."
+        }
+      ]
     },
     {
       "id": "n5.vocab.22-money-and-shopping.レジ",
@@ -6132,7 +6300,13 @@
       "reading": "レジ",
       "gloss": "register, cashier",
       "section": "22. Money and Shopping",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "レジで はらいます。",
+          "translation_en": "I pay at the register."
+        }
+      ]
     },
     {
       "id": "n5.vocab.23-transport.車",
@@ -6154,7 +6328,13 @@
       "reading": "じどうしゃ",
       "gloss": "automobile",
       "section": "23. Transport",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "じどうしゃで 出かけます。",
+          "translation_en": "I'll go out by car."
+        }
+      ]
     },
     {
       "id": "n5.vocab.23-transport.じてんしゃ",
@@ -6176,7 +6356,13 @@
       "reading": "バイク",
       "gloss": "motorbike",
       "section": "23. Transport",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "バイクで 学校に 行きます。",
+          "translation_en": "I go to school by motorbike."
+        }
+      ]
     },
     {
       "id": "n5.vocab.23-transport.バス",
@@ -6226,7 +6412,13 @@
       "reading": "きしゃ",
       "gloss": "train (steam, archaic but still in older N5 lists)",
       "section": "23. Transport",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "むかしは きしゃが ありました。",
+          "translation_en": "There used to be steam trains."
+        }
+      ]
     },
     {
       "id": "n5.vocab.23-transport.ちかてつ",
@@ -6276,7 +6468,13 @@
       "reading": "みち",
       "gloss": "road",
       "section": "23. Transport",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "この 道は あぶないです。",
+          "translation_en": "This road is dangerous."
+        }
+      ]
     },
     {
       "id": "n5.vocab.23-transport.しんごう",
@@ -6284,7 +6482,13 @@
       "reading": "しんごう",
       "gloss": "traffic light, signal",
       "section": "23. Transport",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しんごうが あかです。",
+          "translation_en": "The traffic light is red."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.べんきょう",
@@ -6364,7 +6568,13 @@
       "reading": "こたえ",
       "gloss": "answer",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こたえを 書いて ください。",
+          "translation_en": "Please write the answer."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.いみ",
@@ -6372,7 +6582,13 @@
       "reading": "いみ",
       "gloss": "meaning",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "この ことばの いみは 何ですか。",
+          "translation_en": "What's the meaning of this word?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.ことば",
@@ -6380,7 +6596,13 @@
       "reading": "ことば",
       "gloss": "word, language",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "日本語の ことばを おぼえます。",
+          "translation_en": "I memorize Japanese words."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.じ",
@@ -6388,7 +6610,13 @@
       "reading": "じ",
       "gloss": "character (writing), letter (of an alphabet)",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "じが きれいですね。",
+          "translation_en": "Your handwriting is pretty."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.かんじ",
@@ -6404,7 +6632,13 @@
       "reading": "かな",
       "gloss": "kana",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かなで 書いて ください。",
+          "translation_en": "Please write in kana."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.ひらがな",
@@ -6412,7 +6646,13 @@
       "reading": "ひらがな",
       "gloss": "hiragana",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ひらがなを ぜんぶ おぼえました。",
+          "translation_en": "I memorized all hiragana."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.カタカナ",
@@ -6420,7 +6660,13 @@
       "reading": "カタカナ",
       "gloss": "katakana",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "カタカナで 名前を 書きます。",
+          "translation_en": "I write my name in katakana."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.もじ",
@@ -6428,7 +6674,13 @@
       "reading": "もじ",
       "gloss": "letter, character",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "もじを 大きく 書きます。",
+          "translation_en": "I write the characters big."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.ぶん",
@@ -6436,7 +6688,13 @@
       "reading": "ぶん",
       "gloss": "sentence",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ぶんを 三つ 書いて ください。",
+          "translation_en": "Please write three sentences."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.ぶんしょう",
@@ -6444,7 +6702,13 @@
       "reading": "ぶんしょう",
       "gloss": "composition, text",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ながい ぶんしょうを 読みます。",
+          "translation_en": "I read a long text."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.ぶんぽう",
@@ -6452,7 +6716,13 @@
       "reading": "ぶんぽう",
       "gloss": "grammar",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ぶんぽうは むずかしいです。",
+          "translation_en": "Grammar is difficult."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.れい",
@@ -6460,7 +6730,13 @@
       "reading": "れい",
       "gloss": "example",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "れいを 見せて ください。",
+          "translation_en": "Please show me an example."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.れんしゅう",
@@ -6468,7 +6744,13 @@
       "reading": "れんしゅう",
       "gloss": "practice",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "れんしゅうが 大切です。",
+          "translation_en": "Practice is important."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.本",
@@ -6490,7 +6772,13 @@
       "reading": "きょうかしょ",
       "gloss": "textbook",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "きょうかしょの 二十ページを ひらいて ください。",
+          "translation_en": "Please open the textbook to page 20."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.じしょ",
@@ -6512,7 +6800,13 @@
       "reading": "ざっし",
       "gloss": "magazine",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ざっしを 読みます。",
+          "translation_en": "I read magazines."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.新聞",
@@ -6520,7 +6814,13 @@
       "reading": "しんぶん",
       "gloss": "newspaper",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あさ、新聞を 読みます。",
+          "translation_en": "I read the newspaper in the morning."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.かみ",
@@ -6556,7 +6856,13 @@
       "reading": "ボールペン",
       "gloss": "ballpoint pen",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ボールペンで 書いて ください。",
+          "translation_en": "Please write with a ballpoint pen."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.まんねんひつ",
@@ -6564,7 +6870,13 @@
       "reading": "まんねんひつ",
       "gloss": "fountain pen",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "まんねんひつで 名前を 書きます。",
+          "translation_en": "I write my name with a fountain pen."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.ペン",
@@ -6600,7 +6912,13 @@
       "reading": "こくばん",
       "gloss": "blackboard",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "先生は こくばんに 字を 書きます。",
+          "translation_en": "The teacher writes on the blackboard."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.チョーク",
@@ -6608,7 +6926,13 @@
       "reading": "チョーク",
       "gloss": "chalk",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "チョークで 書きます。",
+          "translation_en": "I write with chalk."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.つくえ",
@@ -6644,7 +6968,13 @@
       "reading": "けしゴム",
       "gloss": "eraser",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "けしゴムを かして ください。",
+          "translation_en": "Please lend me an eraser."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.ちず",
@@ -6652,7 +6982,13 @@
       "reading": "ちず",
       "gloss": "map",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ちずを 見て ください。",
+          "translation_en": "Please look at the map."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.しゃしん",
@@ -6668,7 +7004,13 @@
       "reading": "え",
       "gloss": "picture, drawing",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "きれいな えを かきました。",
+          "translation_en": "I drew a pretty picture."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.番号",
@@ -6676,7 +7018,13 @@
       "reading": "ばんごう",
       "gloss": "number",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "番号を 書いて ください。",
+          "translation_en": "Please write the number."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.電気",
@@ -6684,7 +7032,13 @@
       "reading": "でんき",
       "gloss": "electricity, light",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "電気を つけて ください。",
+          "translation_en": "Please turn on the light."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.電話",
@@ -6692,7 +7046,13 @@
       "reading": "でんわ",
       "gloss": "telephone",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "電話を かけます。",
+          "translation_en": "I make a phone call."
+        }
+      ]
     },
     {
       "id": "n5.vocab.24-school-and-study.電話番号",
@@ -6700,7 +7060,13 @@
       "reading": "でんわばんごう",
       "gloss": "phone number",
       "section": "24. School and Study",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "電話番号を 教えて ください。",
+          "translation_en": "Please tell me your phone number."
+        }
+      ]
     },
     {
       "id": "n5.vocab.25-languages-and-countri.日本",
@@ -6736,7 +7102,13 @@
       "reading": "にほんじん",
       "gloss": "Japanese (person)",
       "section": "25. Languages and Countries",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "わたしは 日本人ではありません。",
+          "translation_en": "I'm not Japanese."
+        }
+      ]
     },
     {
       "id": "n5.vocab.25-languages-and-countri.アメリカ",
@@ -6814,7 +7186,13 @@
       "reading": "かんこくご",
       "gloss": "Korean (language)",
       "section": "25. Languages and Countries",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かんこくごを ならって います。",
+          "translation_en": "I'm learning Korean."
+        }
+      ]
     },
     {
       "id": "n5.vocab.25-languages-and-countri.フランス",
@@ -6822,7 +7200,13 @@
       "reading": "フランス",
       "gloss": "France",
       "section": "25. Languages and Countries",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "フランスに 行きたいです。",
+          "translation_en": "I want to go to France."
+        }
+      ]
     },
     {
       "id": "n5.vocab.25-languages-and-countri.フランスご",
@@ -6830,7 +7214,13 @@
       "reading": "フランスご",
       "gloss": "French (language)",
       "section": "25. Languages and Countries",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "フランスごを 話せます。",
+          "translation_en": "I can speak French."
+        }
+      ]
     },
     {
       "id": "n5.vocab.25-languages-and-countri.ドイツ",
@@ -6838,7 +7228,13 @@
       "reading": "ドイツ",
       "gloss": "Germany",
       "section": "25. Languages and Countries",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ドイツは ヨーロッパの 国です。",
+          "translation_en": "Germany is a European country."
+        }
+      ]
     },
     {
       "id": "n5.vocab.25-languages-and-countri.スペイン",
@@ -6846,7 +7242,13 @@
       "reading": "スペイン",
       "gloss": "Spain",
       "section": "25. Languages and Countries",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "スペインの りょうりは おいしいです。",
+          "translation_en": "Spanish food is delicious."
+        }
+      ]
     },
     {
       "id": "n5.vocab.25-languages-and-countri.イギリス",
@@ -6854,7 +7256,13 @@
       "reading": "イギリス",
       "gloss": "United Kingdom",
       "section": "25. Languages and Countries",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "イギリスは しまの 国です。",
+          "translation_en": "The UK is an island country."
+        }
+      ]
     },
     {
       "id": "n5.vocab.25-languages-and-countri.外国",
@@ -6862,7 +7270,13 @@
       "reading": "がいこく",
       "gloss": "foreign country",
       "section": "25. Languages and Countries",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "外国に 行きたいです。",
+          "translation_en": "I want to go abroad."
+        }
+      ]
     },
     {
       "id": "n5.vocab.25-languages-and-countri.外国語",
@@ -6870,7 +7284,13 @@
       "reading": "がいこくご",
       "gloss": "foreign language",
       "section": "25. Languages and Countries",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "外国語を べんきょうします。",
+          "translation_en": "I study a foreign language."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.アパート",
@@ -6878,7 +7298,13 @@
       "reading": "アパート",
       "gloss": "apartment",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "アパートに すんで います。",
+          "translation_en": "I live in an apartment."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.マンション",
@@ -6886,7 +7312,13 @@
       "reading": "マンション",
       "gloss": "condominium",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あの マンションは あたらしいです。",
+          "translation_en": "That condominium is new."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.ドア",
@@ -6908,7 +7340,13 @@
       "reading": "と",
       "gloss": "door (Japanese-style)",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "との まえに ねこが います。",
+          "translation_en": "There's a cat in front of the door."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.もん",
@@ -6916,7 +7354,13 @@
       "reading": "もん",
       "gloss": "gate",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "もんを あけて ください。",
+          "translation_en": "Please open the gate."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.まど",
@@ -6938,7 +7382,13 @@
       "reading": "かべ",
       "gloss": "wall",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かべに えを かけます。",
+          "translation_en": "I hang a picture on the wall."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.かいだん",
@@ -6946,7 +7396,13 @@
       "reading": "かいだん",
       "gloss": "stairs",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かいだんを のぼります。",
+          "translation_en": "I go up the stairs."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.エレベーター",
@@ -6954,7 +7410,13 @@
       "reading": "エレベーター",
       "gloss": "elevator",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "エレベーターで 五かいに 行きます。",
+          "translation_en": "I'll take the elevator to the 5th floor."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.へや",
@@ -6970,7 +7432,13 @@
       "reading": "げんかん",
       "gloss": "entrance",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "げんかんで くつを ぬぎます。",
+          "translation_en": "I take off my shoes at the entrance."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.いま",
@@ -6986,7 +7454,13 @@
       "reading": "しんしつ",
       "gloss": "bedroom",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しんしつで ねます。",
+          "translation_en": "I sleep in the bedroom."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.ベッド",
@@ -7008,7 +7482,13 @@
       "reading": "ふとん",
       "gloss": "futon",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ふとんを しきます。",
+          "translation_en": "I lay out the futon."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.もうふ",
@@ -7016,7 +7496,13 @@
       "reading": "もうふ",
       "gloss": "blanket",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "さむい とき、もうふを かけます。",
+          "translation_en": "When cold, I use a blanket."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.まくら",
@@ -7024,7 +7510,13 @@
       "reading": "まくら",
       "gloss": "pillow",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "まくらは やわらかいです。",
+          "translation_en": "The pillow is soft."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.テーブル",
@@ -7054,7 +7546,13 @@
       "reading": "いす",
       "gloss": "chair",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "いすに すわって ください。",
+          "translation_en": "Please sit on the chair."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.たな",
@@ -7062,7 +7560,13 @@
       "reading": "たな",
       "gloss": "shelf",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "たなに 本を おきます。",
+          "translation_en": "I put the book on the shelf."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.ほんだな",
@@ -7070,7 +7574,13 @@
       "reading": "ほんだな",
       "gloss": "bookshelf",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ほんだなに 本が たくさん あります。",
+          "translation_en": "There are many books on the bookshelf."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.カーテン",
@@ -7078,7 +7588,13 @@
       "reading": "カーテン",
       "gloss": "curtain",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "まどに カーテンを つけます。",
+          "translation_en": "I put a curtain on the window."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.かぎ",
@@ -7086,7 +7602,13 @@
       "reading": "かぎ",
       "gloss": "key, lock",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かぎを なくしました。",
+          "translation_en": "I lost the key."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.電気",
@@ -7108,7 +7630,13 @@
       "reading": "せっけん",
       "gloss": "soap",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "せっけんで てを あらいます。",
+          "translation_en": "I wash my hands with soap."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.はブラシ",
@@ -7116,7 +7644,13 @@
       "reading": "はブラシ",
       "gloss": "toothbrush",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "まいあさ はブラシを つかいます。",
+          "translation_en": "I use a toothbrush every morning."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.タオル",
@@ -7124,7 +7658,13 @@
       "reading": "タオル",
       "gloss": "towel",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "タオルで かおを ふきます。",
+          "translation_en": "I wipe my face with a towel."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.テープ",
@@ -7132,7 +7672,13 @@
       "reading": "テープ",
       "gloss": "tape",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "テープで かみを はります。",
+          "translation_en": "I tape the paper."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.テレビ",
@@ -7154,7 +7700,13 @@
       "reading": "ラジオ",
       "gloss": "radio",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ラジオで ニュースを 聞きます。",
+          "translation_en": "I listen to the news on the radio."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.カメラ",
@@ -7162,7 +7714,13 @@
       "reading": "カメラ",
       "gloss": "camera",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "カメラで しゃしんを とります。",
+          "translation_en": "I take photos with a camera."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.ビデオ",
@@ -7170,7 +7728,13 @@
       "reading": "ビデオ",
       "gloss": "video",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ビデオを 見ます。",
+          "translation_en": "I watch a video."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.えいが",
@@ -7194,7 +7758,13 @@
       "reading": "うた",
       "gloss": "song",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "うたを うたいます。",
+          "translation_en": "I sing a song."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.え",
@@ -7202,7 +7772,13 @@
       "reading": "え",
       "gloss": "picture",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かべに 大きな えを かけました。",
+          "translation_en": "I hung a big picture on the wall."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.ピアノ",
@@ -7210,7 +7786,13 @@
       "reading": "ピアノ",
       "gloss": "piano",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ピアノを ひきます。",
+          "translation_en": "I play the piano."
+        }
+      ]
     },
     {
       "id": "n5.vocab.26-house-and-furniture.ギター",
@@ -7218,7 +7800,13 @@
       "reading": "ギター",
       "gloss": "guitar",
       "section": "26. House and Furniture",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ギターが 大すきです。",
+          "translation_en": "I love the guitar."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.会う",
@@ -7268,7 +7856,13 @@
       "reading": "うたう",
       "gloss": "to sing",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "カラオケで うたを うたいます。",
+          "translation_en": "I sing songs at karaoke."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.おもう",
@@ -7326,7 +7920,13 @@
       "reading": "きる",
       "gloss": "to cut (Group 1 exception - looks like Group 2)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "はさみで かみを きります。",
+          "translation_en": "I cut paper with scissors."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.つくる",
@@ -7348,7 +7948,13 @@
       "reading": "しる",
       "gloss": "to know (Group 1 exception - looks like Group 2)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "田中さんを しって います。",
+          "translation_en": "I know Tanaka-san."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.すむ",
@@ -7364,7 +7970,13 @@
       "reading": "たつ",
       "gloss": "to stand",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "先生が 立ちました。",
+          "translation_en": "The teacher stood up."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.とる",
@@ -7418,7 +8030,13 @@
       "reading": "はく",
       "gloss": "to put on (lower body)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "くつを はきます。",
+          "translation_en": "I put on shoes."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.話す",
@@ -7440,7 +8058,13 @@
       "reading": "はしる",
       "gloss": "to run (Group 1 exception - looks like Group 2)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "まいあさ こうえんで はしります。",
+          "translation_en": "I run in the park every morning."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.はたらく",
@@ -7516,7 +8140,13 @@
       "reading": "わたる",
       "gloss": "to cross",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "道を わたります。",
+          "translation_en": "I cross the road."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.分かる",
@@ -7578,7 +8208,13 @@
       "reading": "うる",
       "gloss": "to sell",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "やおやで やさいを うって います。",
+          "translation_en": "They sell vegetables at the greengrocer."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.おす",
@@ -7608,7 +8244,13 @@
       "reading": "ひく",
       "gloss": "to play (a string instrument like guitar/piano)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "ピアノを ひきます。",
+          "translation_en": "I play the piano."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.ひく.2",
@@ -7616,7 +8258,13 @@
       "reading": "ひく",
       "gloss": "to pull (homophone of the above; separate verb, separate kanji - both are common N5 readings of ひく)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "かみを ひっぱりました。",
+          "translation_en": "I pulled the paper."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.よぶ",
@@ -7624,7 +8272,13 @@
       "reading": "よぶ",
       "gloss": "to call",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "友だちを 家に よびました。",
+          "translation_en": "I invited a friend to my house."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.とぶ",
@@ -7632,7 +8286,13 @@
       "reading": "とぶ",
       "gloss": "to fly, to jump",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "とりが そらを とんで います。",
+          "translation_en": "A bird is flying in the sky."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.こまる",
@@ -7640,7 +8300,13 @@
       "reading": "こまる",
       "gloss": "to be troubled",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "お金が なくて こまります。",
+          "translation_en": "I'm in trouble without money."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.ならぶ",
@@ -7648,7 +8314,13 @@
       "reading": "ならぶ",
       "gloss": "to line up",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "レジに ならびます。",
+          "translation_en": "I line up at the register."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.のぼる",
@@ -7670,7 +8342,13 @@
       "reading": "わたす",
       "gloss": "to hand over",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "先生に しゅくだいを わたします。",
+          "translation_en": "I hand in the homework to the teacher."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.ぬぐ",
@@ -7678,7 +8356,13 @@
       "reading": "ぬぐ",
       "gloss": "to take off (clothes)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "家で くつを ぬぎます。",
+          "translation_en": "I take off my shoes at home."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.あらう",
@@ -7700,7 +8384,13 @@
       "reading": "いそぐ",
       "gloss": "to hurry",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "時間が ないので、いそぎます。",
+          "translation_en": "There's no time, so I'll hurry."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.しぬ",
@@ -7708,7 +8398,13 @@
       "reading": "しぬ",
       "gloss": "to die",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "花が しんで しまいました。",
+          "translation_en": "The flowers died."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.すう",
@@ -7754,7 +8450,13 @@
       "reading": "ならう",
       "gloss": "to learn",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "日本語を ならって います。",
+          "translation_en": "I'm learning Japanese."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.はる",
@@ -7762,7 +8464,13 @@
       "reading": "はる",
       "gloss": "to stick, to paste",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "かべに ポスターを はります。",
+          "translation_en": "I stick a poster on the wall."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.まがる",
@@ -7770,7 +8478,13 @@
       "reading": "まがる",
       "gloss": "to turn",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "かどを 右に まがって ください。",
+          "translation_en": "Please turn right at the corner."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.みがく",
@@ -7786,7 +8500,13 @@
       "reading": "もっていく",
       "gloss": "to take (something)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "かさを もっていきます。",
+          "translation_en": "I'll take an umbrella with me."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.もってくる",
@@ -7794,7 +8514,13 @@
       "reading": "もってくる",
       "gloss": "to bring (something)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "お金を もってきて ください。",
+          "translation_en": "Please bring money."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.あく",
@@ -7810,7 +8536,13 @@
       "reading": "しまる",
       "gloss": "to close (intransitive; pair with しめる)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "店は 九時に しまります。",
+          "translation_en": "The shop closes at 9."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.だす",
@@ -7818,7 +8550,13 @@
       "reading": "だす",
       "gloss": "to take out, to put out (transitive; pair with でる)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "かばんから 本を だします。",
+          "translation_en": "I take a book out of the bag."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.おとす",
@@ -7826,7 +8564,13 @@
       "reading": "おとす",
       "gloss": "to drop (transitive; pair with おちる)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "かぎを おとしました。",
+          "translation_en": "I dropped the key."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.ふく",
@@ -7834,7 +8578,13 @@
       "reading": "ふく",
       "gloss": "to blow (of the wind)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "かぜが ふいて います。",
+          "translation_en": "The wind is blowing."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.ふる",
@@ -7850,7 +8600,13 @@
       "reading": "くもる",
       "gloss": "to become cloudy",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "そらが くもって います。",
+          "translation_en": "The sky is cloudy."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.なくす",
@@ -7858,7 +8614,13 @@
       "reading": "なくす",
       "gloss": "to lose (something)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "さいふを なくしました。",
+          "translation_en": "I lost my wallet."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.のる",
@@ -7880,7 +8642,13 @@
       "reading": "すわる",
       "gloss": "to sit",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "いすに すわって ください。",
+          "translation_en": "Please sit on the chair."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.たのむ",
@@ -7888,7 +8656,13 @@
       "reading": "たのむ",
       "gloss": "to ask (a favor)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "友だちに たのみます。",
+          "translation_en": "I'll ask a friend."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.とまる",
@@ -7896,7 +8670,13 @@
       "reading": "とまる",
       "gloss": "to stop (intransitive)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "くるまが とまりました。",
+          "translation_en": "The car stopped."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.おく",
@@ -7934,7 +8714,13 @@
       "reading": "さす",
       "gloss": "to put up (an umbrella), to raise",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "雨が ふって きたので、かさを さします。",
+          "translation_en": "It started raining, so I'll put up an umbrella."
+        }
+      ]
     },
     {
       "id": "n5.vocab.27-verbs-group-1-verbs.けす",
@@ -7942,7 +8728,13 @@
       "reading": "けす",
       "gloss": "to turn off, to erase (godan / Group 1; conjugates けします, けして)",
       "section": "27. Verbs - Group 1 (う-verbs)",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "でんきを けします。",
+          "translation_en": "I turn off the light."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.いる",
@@ -8028,7 +8820,13 @@
       "reading": "いれる",
       "gloss": "to put in",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "かばんに 本を 入れます。",
+          "translation_en": "I put the book in the bag."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.あける",
@@ -8118,7 +8916,13 @@
       "reading": "こたえる",
       "gloss": "to answer",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "しつもんに こたえます。",
+          "translation_en": "I answer the question."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.出かける",
@@ -8134,7 +8938,13 @@
       "reading": "かける",
       "gloss": "to call (phone), to wear (glasses)",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "友だちに 電話を かけます。",
+          "translation_en": "I call a friend."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.きる",
@@ -8142,7 +8952,13 @@
       "reading": "きる",
       "gloss": "to wear (upper body)",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "シャツを きます。",
+          "translation_en": "I put on a shirt."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.つける",
@@ -8150,7 +8966,13 @@
       "reading": "つける",
       "gloss": "to switch on",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "テレビを つけます。",
+          "translation_en": "I turn on the TV."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.ならべる",
@@ -8158,7 +8980,13 @@
       "reading": "ならべる",
       "gloss": "to line up (transitive)",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "いすを ならべます。",
+          "translation_en": "I line up the chairs."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.はじめる",
@@ -8174,7 +9002,13 @@
       "reading": "みせる",
       "gloss": "to show",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "しゃしんを 見せます。",
+          "translation_en": "I show the photo."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.あびる",
@@ -8190,7 +9024,13 @@
       "reading": "いれる",
       "gloss": "to make (tea / coffee) (note: same form as 入れる; context distinguishes)",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "コーヒーを いれます。",
+          "translation_en": "I make coffee."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.あつめる",
@@ -8198,7 +9038,13 @@
       "reading": "あつめる",
       "gloss": "to collect",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "きってを あつめて います。",
+          "translation_en": "I collect stamps."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.きえる",
@@ -8206,7 +9052,13 @@
       "reading": "きえる",
       "gloss": "to go off, to disappear (intransitive; pair with けす)",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "でんきが きえました。",
+          "translation_en": "The light went off."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.おちる",
@@ -8214,7 +9066,13 @@
       "reading": "おちる",
       "gloss": "to fall (intransitive; pair with おとす)",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "かばんが おちました。",
+          "translation_en": "The bag fell."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.はれる",
@@ -8222,7 +9080,13 @@
       "reading": "はれる",
       "gloss": "to be sunny / clear up",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "あした はれるでしょう。",
+          "translation_en": "It will probably be sunny tomorrow."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.つかれる",
@@ -8230,7 +9094,13 @@
       "reading": "つかれる",
       "gloss": "to get tired",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "しごとで つかれました。",
+          "translation_en": "I'm tired from work."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.生まれる",
@@ -8238,7 +9108,13 @@
       "reading": "うまれる",
       "gloss": "to be born",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "日本で 生まれました。",
+          "translation_en": "I was born in Japan."
+        }
+      ]
     },
     {
       "id": "n5.vocab.28-verbs-group-2-verbs.おりる",
@@ -8274,7 +9150,13 @@
       "reading": "つとめる",
       "gloss": "to work for / be employed (ichidan / Group 2; conjugates つとめます, つとめて)",
       "section": "28. Verbs - Group 2 (る-verbs)",
-      "pos": "verb-2"
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "ぎんこうに つとめて います。",
+          "translation_en": "I work at a bank."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.する",
@@ -8324,7 +9206,13 @@
       "reading": "けっこんする",
       "gloss": "to get married",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "らいねん けっこんします。",
+          "translation_en": "I'll get married next year."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.さんぽする",
@@ -8332,7 +9220,13 @@
       "reading": "さんぽする",
       "gloss": "to take a walk",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "まいあさ さんぽします。",
+          "translation_en": "I take a walk every morning."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.りょこうする",
@@ -8340,7 +9234,13 @@
       "reading": "りょこうする",
       "gloss": "to travel",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "夏に りょこうします。",
+          "translation_en": "I'll travel in summer."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.れんしゅうする",
@@ -8348,7 +9248,13 @@
       "reading": "れんしゅうする",
       "gloss": "to practice",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "まいにち ピアノを れんしゅうします。",
+          "translation_en": "I practice piano every day."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.しつもんする",
@@ -8356,7 +9262,13 @@
       "reading": "しつもんする",
       "gloss": "to ask a question",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "先生に しつもんします。",
+          "translation_en": "I'll ask the teacher a question."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.しごとする",
@@ -8364,7 +9276,13 @@
       "reading": "しごとする",
       "gloss": "to work",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "まいにち しごとします。",
+          "translation_en": "I work every day."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.電話する",
@@ -8372,7 +9290,13 @@
       "reading": "でんわする",
       "gloss": "to telephone",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "あとで 電話します。",
+          "translation_en": "I'll call later."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.コピーする",
@@ -8380,7 +9304,13 @@
       "reading": "コピーする",
       "gloss": "to copy",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "しょるいを コピーします。",
+          "translation_en": "I'll copy the documents."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.そうじする",
@@ -8388,7 +9318,13 @@
       "reading": "そうじする",
       "gloss": "to clean",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "日曜日に へやを そうじします。",
+          "translation_en": "I clean my room on Sundays."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.せんたくする",
@@ -8396,7 +9332,13 @@
       "reading": "せんたくする",
       "gloss": "to do laundry",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "せんたくしました。",
+          "translation_en": "I did the laundry."
+        }
+      ]
     },
     {
       "id": "n5.vocab.29-verbs-irregular-and-v.かいものする",
@@ -8404,7 +9346,13 @@
       "reading": "かいものする",
       "gloss": "to go shopping",
       "section": "29. Verbs - Irregular and する-verbs",
-      "pos": "verb-3"
+      "pos": "verb-3",
+      "examples": [
+        {
+          "ja": "スーパーで かいものします。",
+          "translation_en": "I'll shop at the supermarket."
+        }
+      ]
     },
     {
       "id": "n5.vocab.30-verbs-existence-and-p.ある",
@@ -8448,7 +9396,13 @@
       "reading": "やる",
       "gloss": "to give (down / casual)",
       "section": "30. Verbs - Existence and Possession",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "しゅくだいを やります。",
+          "translation_en": "I'll do my homework."
+        }
+      ]
     },
     {
       "id": "n5.vocab.30-verbs-existence-and-p.あげる",
@@ -8456,7 +9410,13 @@
       "reading": "あげる",
       "gloss": "to give",
       "section": "30. Verbs - Existence and Possession",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "友だちに プレゼントを あげます。",
+          "translation_en": "I'll give a present to a friend."
+        }
+      ]
     },
     {
       "id": "n5.vocab.30-verbs-existence-and-p.もらう",
@@ -8472,7 +9432,13 @@
       "reading": "くれる",
       "gloss": "to give (to me / us)",
       "section": "30. Verbs - Existence and Possession",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "父が 本を くれました。",
+          "translation_en": "My father gave me a book."
+        }
+      ]
     },
     {
       "id": "n5.vocab.30-verbs-existence-and-p.かす",
@@ -8480,7 +9446,13 @@
       "reading": "かす",
       "gloss": "to lend",
       "section": "30. Verbs - Existence and Possession",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "ペンを かして ください。",
+          "translation_en": "Please lend me a pen."
+        }
+      ]
     },
     {
       "id": "n5.vocab.30-verbs-existence-and-p.かりる",
@@ -8488,7 +9460,13 @@
       "reading": "かりる",
       "gloss": "to borrow",
       "section": "30. Verbs - Existence and Possession",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "としょかんで 本を かりました。",
+          "translation_en": "I borrowed a book at the library."
+        }
+      ]
     },
     {
       "id": "n5.vocab.30-verbs-existence-and-p.かえす",
@@ -8496,7 +9474,13 @@
       "reading": "かえす",
       "gloss": "to return (something)",
       "section": "30. Verbs - Existence and Possession",
-      "pos": "verb-1"
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "本を かえします。",
+          "translation_en": "I'll return the book."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.大きい",
@@ -8612,7 +9596,13 @@
       "reading": "つめたい",
       "gloss": "cold (to touch)",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "つめたい 水を 飲みます。",
+          "translation_en": "I drink cold water."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.高い",
@@ -8634,7 +9624,13 @@
       "reading": "ひくい",
       "gloss": "low, short (height)",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "この いすは ひくいです。",
+          "translation_en": "This chair is low."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.安い",
@@ -8758,7 +9754,13 @@
       "reading": "うすい",
       "gloss": "thin",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "うすい 本を 読みました。",
+          "translation_en": "I read a thin book."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.ふとい",
@@ -8766,7 +9768,13 @@
       "reading": "ふとい",
       "gloss": "thick (round things)",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "ふとい えんぴつを つかいます。",
+          "translation_en": "I use a thick pencil."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.ほそい",
@@ -8774,7 +9782,13 @@
       "reading": "ほそい",
       "gloss": "thin (round things)",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "ほそい みちです。",
+          "translation_en": "It's a narrow road."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.つよい",
@@ -8846,7 +9860,13 @@
       "reading": "うれしい",
       "gloss": "happy",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "プレゼントを もらって うれしいです。",
+          "translation_en": "I'm happy to receive a present."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.かなしい",
@@ -8854,7 +9874,13 @@
       "reading": "かなしい",
       "gloss": "sad",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "友だちが いないと かなしいです。",
+          "translation_en": "I'm sad without my friends."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.さびしい",
@@ -8862,7 +9888,13 @@
       "reading": "さびしい",
       "gloss": "lonely",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "一人で さびしいです。",
+          "translation_en": "I'm lonely by myself."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.いたい",
@@ -8884,7 +9916,13 @@
       "reading": "かわいい",
       "gloss": "cute",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "この ねこは かわいいです。",
+          "translation_en": "This cat is cute."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.うつくしい",
@@ -8892,7 +9930,13 @@
       "reading": "うつくしい",
       "gloss": "beautiful",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "うつくしい 花です。",
+          "translation_en": "It's a beautiful flower."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.きたない",
@@ -8900,7 +9944,13 @@
       "reading": "きたない",
       "gloss": "dirty",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "へやが きたないです。",
+          "translation_en": "The room is dirty."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.いそがしい",
@@ -8926,7 +9976,13 @@
       "reading": "やさしい",
       "gloss": "easy (of a task) - and separately, やさしい - kind / gentle (of a person). Two separate adjectives sharing the kana reading; different kanji distinguish them.",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "先生は やさしいです。",
+          "translation_en": "The teacher is kind."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.むずかしい",
@@ -8960,7 +10016,13 @@
       "reading": "つまらない",
       "gloss": "boring",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "この えいがは つまらないです。",
+          "translation_en": "This movie is boring."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.おいしい",
@@ -8986,7 +10048,13 @@
       "reading": "まずい",
       "gloss": "tastes bad",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "この りょうりは まずいです。",
+          "translation_en": "This food tastes bad."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.あまい",
@@ -9022,7 +10090,13 @@
       "reading": "にがい",
       "gloss": "bitter",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "コーヒーは にがいです。",
+          "translation_en": "Coffee is bitter."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.おおい",
@@ -9030,7 +10104,13 @@
       "reading": "おおい",
       "gloss": "many",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "きょうは 人が おおいです。",
+          "translation_en": "There are many people today."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.すくない",
@@ -9038,7 +10118,13 @@
       "reading": "すくない",
       "gloss": "few",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "お金が すくないです。",
+          "translation_en": "I have little money."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.ちかい",
@@ -9118,7 +10204,13 @@
       "reading": "まるい",
       "gloss": "round",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "まるい テーブルが すきです。",
+          "translation_en": "I like round tables."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.しかくい",
@@ -9126,7 +10218,13 @@
       "reading": "しかくい",
       "gloss": "square",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "しかくい はこを 買いました。",
+          "translation_en": "I bought a square box."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.わかい",
@@ -9134,7 +10232,13 @@
       "reading": "わかい",
       "gloss": "young",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "かれは わかいです。",
+          "translation_en": "He is young."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.きいろい",
@@ -9142,7 +10246,13 @@
       "reading": "きいろい",
       "gloss": "yellow",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "きいろい 花が きれいです。",
+          "translation_en": "The yellow flowers are pretty."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.あおい",
@@ -9150,7 +10260,13 @@
       "reading": "あおい",
       "gloss": "blue",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "あおい そらが きれいです。",
+          "translation_en": "The blue sky is beautiful."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.あかい",
@@ -9158,7 +10274,13 @@
       "reading": "あかい",
       "gloss": "red",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "あかい りんごを 食べます。",
+          "translation_en": "I eat a red apple."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.くろい",
@@ -9166,7 +10288,13 @@
       "reading": "くろい",
       "gloss": "black",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "くろい かばんを 買いました。",
+          "translation_en": "I bought a black bag."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.白い",
@@ -9174,7 +10302,13 @@
       "reading": "しろい",
       "gloss": "white",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "白い シャツを きます。",
+          "translation_en": "I wear a white shirt."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.ちゃいろい",
@@ -9182,7 +10316,13 @@
       "reading": "ちゃいろい",
       "gloss": "brown",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "ちゃいろい くつが すきです。",
+          "translation_en": "I like brown shoes."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.あぶない",
@@ -9206,7 +10346,13 @@
       "reading": "ぬるい",
       "gloss": "lukewarm",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "お茶が ぬるいです。",
+          "translation_en": "The tea is lukewarm."
+        }
+      ]
     },
     {
       "id": "n5.vocab.31-adjectives.うるさい",
@@ -9214,7 +10360,13 @@
       "reading": "うるさい",
       "gloss": "noisy, annoying",
       "section": "31. い-Adjectives",
-      "pos": "i-adj"
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "外が うるさいです。",
+          "translation_en": "It's noisy outside."
+        }
+      ]
     },
     {
       "id": "n5.vocab.32-adjectives.げんき",
@@ -9306,7 +10458,13 @@
       "reading": "たいへん",
       "gloss": "tough, difficult",
       "section": "32. な-Adjectives",
-      "pos": "na-adj"
+      "pos": "na-adj",
+      "examples": [
+        {
+          "ja": "しごとが たいへんです。",
+          "translation_en": "Work is tough."
+        }
+      ]
     },
     {
       "id": "n5.vocab.32-adjectives.だいじょうぶ",
@@ -9342,7 +10500,13 @@
       "reading": "ふべん",
       "gloss": "inconvenient",
       "section": "32. な-Adjectives",
-      "pos": "na-adj"
+      "pos": "na-adj",
+      "examples": [
+        {
+          "ja": "えきから とおくて、ふべんです。",
+          "translation_en": "It's far from the station and inconvenient."
+        }
+      ]
     },
     {
       "id": "n5.vocab.32-adjectives.ゆうめい",
@@ -9448,7 +10612,13 @@
       "reading": "おなじ",
       "gloss": "same",
       "section": "32. な-Adjectives",
-      "pos": "na-adj"
+      "pos": "na-adj",
+      "examples": [
+        {
+          "ja": "おなじ クラスです。",
+          "translation_en": "We're in the same class."
+        }
+      ]
     },
     {
       "id": "n5.vocab.32-adjectives.いろいろ",
@@ -9470,7 +10640,13 @@
       "reading": "りっぱ",
       "gloss": "splendid",
       "section": "32. な-Adjectives",
-      "pos": "na-adj"
+      "pos": "na-adj",
+      "examples": [
+        {
+          "ja": "りっぱな 家ですね。",
+          "translation_en": "What a splendid house."
+        }
+      ]
     },
     {
       "id": "n5.vocab.32-adjectives.かんたん",
@@ -9486,7 +10662,13 @@
       "reading": "けっこう",
       "gloss": "fine, sufficient",
       "section": "32. な-Adjectives",
-      "pos": "na-adj"
+      "pos": "na-adj",
+      "examples": [
+        {
+          "ja": "けっこうな おちゃですね。",
+          "translation_en": "What a fine tea."
+        }
+      ]
     },
     {
       "id": "n5.vocab.32-adjectives.たいせつ",
@@ -9508,7 +10690,13 @@
       "reading": "だいじ",
       "gloss": "important",
       "section": "32. な-Adjectives",
-      "pos": "na-adj"
+      "pos": "na-adj",
+      "examples": [
+        {
+          "ja": "だいじな しごとです。",
+          "translation_en": "It's important work."
+        }
+      ]
     },
     {
       "id": "n5.vocab.32-adjectives.あんぜん",
@@ -9516,7 +10704,13 @@
       "reading": "あんぜん",
       "gloss": "safe",
       "section": "32. な-Adjectives",
-      "pos": "na-adj"
+      "pos": "na-adj",
+      "examples": [
+        {
+          "ja": "この ばしょは あんぜんです。",
+          "translation_en": "This place is safe."
+        }
+      ]
     },
     {
       "id": "n5.vocab.32-adjectives.じょうぶ",
@@ -9524,7 +10718,13 @@
       "reading": "じょうぶ",
       "gloss": "sturdy",
       "section": "32. な-Adjectives",
-      "pos": "na-adj"
+      "pos": "na-adj",
+      "examples": [
+        {
+          "ja": "この つくえは じょうぶです。",
+          "translation_en": "This desk is sturdy."
+        }
+      ]
     },
     {
       "id": "n5.vocab.32-adjectives.いや",
@@ -9532,7 +10732,13 @@
       "reading": "いや",
       "gloss": "unpleasant, disagreeable",
       "section": "32. な-Adjectives",
-      "pos": "na-adj"
+      "pos": "na-adj",
+      "examples": [
+        {
+          "ja": "いやな てんきですね。",
+          "translation_en": "What unpleasant weather."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.とても",
@@ -9554,7 +10760,13 @@
       "reading": "すごく",
       "gloss": "very (casual)",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "すごく おもしろいです。",
+          "translation_en": "It's really interesting."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.すこし",
@@ -9604,7 +10816,13 @@
       "reading": "おおぜい",
       "gloss": "a lot of (people)",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "おおぜいの 人が います。",
+          "translation_en": "There are lots of people."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.だいたい",
@@ -9612,7 +10830,13 @@
       "reading": "だいたい",
       "gloss": "generally, roughly",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "だいたい わかりました。",
+          "translation_en": "I roughly understood."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.ぜんぶ",
@@ -9644,7 +10868,13 @@
       "reading": "もうすこし",
       "gloss": "a little more",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "もうすこし まって ください。",
+          "translation_en": "Please wait a little more."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.もっと",
@@ -9666,7 +10896,13 @@
       "reading": "いちばん",
       "gloss": "most, number one",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "夏が 一番 すきです。",
+          "translation_en": "I like summer the best."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.とくに",
@@ -9674,7 +10910,13 @@
       "reading": "とくに",
       "gloss": "especially",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "とくに ピアノが すきです。",
+          "translation_en": "Especially I like the piano."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.ほんとうに",
@@ -9682,7 +10924,13 @@
       "reading": "ほんとうに",
       "gloss": "truly, really",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "ほんとうに ありがとう。",
+          "translation_en": "Thank you really."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.ゆっくり",
@@ -9704,7 +10952,13 @@
       "reading": "すぐ",
       "gloss": "soon",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "すぐ 行きます。",
+          "translation_en": "I'll go right away."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.たぶん",
@@ -9740,7 +10994,13 @@
       "reading": "ひとりで",
       "gloss": "alone",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "一人で 行きました。",
+          "translation_en": "I went alone."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.じぶんで",
@@ -9748,7 +11008,13 @@
       "reading": "じぶんで",
       "gloss": "by oneself",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "じぶんで しました。",
+          "translation_en": "I did it myself."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.かならず",
@@ -9756,7 +11022,13 @@
       "reading": "かならず",
       "gloss": "surely, definitely",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "あした かならず 来ます。",
+          "translation_en": "I'll definitely come tomorrow."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.きっと",
@@ -9778,7 +11050,13 @@
       "reading": "もちろん",
       "gloss": "of course",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "もちろん 行きます。",
+          "translation_en": "Of course I'll go."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.どうぞ",
@@ -9802,7 +11080,13 @@
       "reading": "どうぞよろしく",
       "gloss": "please treat me well",
       "section": "33. Adverbs",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "どうぞよろしく おねがいします。",
+          "translation_en": "Pleased to meet you."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.どう",
@@ -9834,7 +11118,13 @@
       "reading": "まっすぐ",
       "gloss": "straight ahead",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "まっすぐ 行って ください。",
+          "translation_en": "Please go straight."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.もういちど",
@@ -9842,7 +11132,13 @@
       "reading": "もういちど",
       "gloss": "once more",
       "section": "33. Adverbs",
-      "pos": "adverb"
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "もういちど 言って ください。",
+          "translation_en": "Please say it once more."
+        }
+      ]
     },
     {
       "id": "n5.vocab.33-adverbs.まず",
@@ -9864,7 +11160,13 @@
       "reading": "もしもし",
       "gloss": "hello (telephone)",
       "section": "33. Adverbs",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "もしもし、田中ですが。",
+          "translation_en": "Hello, this is Tanaka."
+        }
+      ]
     },
     {
       "id": "n5.vocab.34-conjunctions.そして",
@@ -9888,7 +11190,13 @@
       "reading": "それで",
       "gloss": "and so",
       "section": "34. Conjunctions",
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "examples": [
+        {
+          "ja": "雨が ふりました。それで、出かけませんでした。",
+          "translation_en": "It rained. So I didn't go out."
+        }
+      ]
     },
     {
       "id": "n5.vocab.34-conjunctions.でも",
@@ -9912,7 +11220,13 @@
       "reading": "が",
       "gloss": "but (clause-connector)",
       "section": "34. Conjunctions",
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "examples": [
+        {
+          "ja": "行きたいですが、時間が ありません。",
+          "translation_en": "I want to go, but I don't have time."
+        }
+      ]
     },
     {
       "id": "n5.vocab.34-conjunctions.から",
@@ -9928,7 +11242,13 @@
       "reading": "だから",
       "gloss": "therefore",
       "section": "34. Conjunctions",
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "examples": [
+        {
+          "ja": "あついです。だから、まどを あけます。",
+          "translation_en": "It's hot. So I'll open the window."
+        }
+      ]
     },
     {
       "id": "n5.vocab.34-conjunctions.ですから",
@@ -9944,7 +11264,13 @@
       "reading": "それに",
       "gloss": "moreover",
       "section": "34. Conjunctions",
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "examples": [
+        {
+          "ja": "この レストランは おいしいです。それに、安いです。",
+          "translation_en": "This restaurant is delicious. Moreover, it's cheap."
+        }
+      ]
     },
     {
       "id": "n5.vocab.34-conjunctions.ところで",
@@ -9952,7 +11278,13 @@
       "reading": "ところで",
       "gloss": "by the way",
       "section": "34. Conjunctions",
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "examples": [
+        {
+          "ja": "ところで、しゅくだいは おわりましたか。",
+          "translation_en": "By the way, have you finished your homework?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.34-conjunctions.または",
@@ -9960,7 +11292,13 @@
       "reading": "または",
       "gloss": "or",
       "section": "34. Conjunctions",
-      "pos": "conjunction"
+      "pos": "conjunction",
+      "examples": [
+        {
+          "ja": "コーヒー または おちゃが いいです。",
+          "translation_en": "Coffee or tea is fine."
+        }
+      ]
     },
     {
       "id": "n5.vocab.35-particles-functional-.は",
@@ -10288,7 +11626,13 @@
       "reading": "しつれいします",
       "gloss": "excuse me / pardon me",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "しつれいします。先生、しつもんが あります。",
+          "translation_en": "Excuse me. Sensei, I have a question."
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.しつれいしました",
@@ -10296,7 +11640,13 @@
       "reading": "しつれいしました",
       "gloss": "excuse me (past)",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "おそく なって しつれいしました。",
+          "translation_en": "Excuse me for being late."
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.ありがとう",
@@ -10326,7 +11676,13 @@
       "reading": "どういたしまして",
       "gloss": "you're welcome",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "どういたしまして。",
+          "translation_en": "You're welcome."
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.すみません",
@@ -10398,7 +11754,13 @@
       "reading": "いってきます",
       "gloss": "I'm off (and will return)",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "いってきます。",
+          "translation_en": "I'm off."
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.いってらっしゃい",
@@ -10406,7 +11768,13 @@
       "reading": "いってらっしゃい",
       "gloss": "see you / take care",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "いってらっしゃい、気を つけて。",
+          "translation_en": "See you, take care."
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.ただいま",
@@ -10414,7 +11782,13 @@
       "reading": "ただいま",
       "gloss": "I'm home",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "ただいま、おそくなりました。",
+          "translation_en": "I'm home, sorry I'm late."
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.おかえりなさい",
@@ -10422,7 +11796,13 @@
       "reading": "おかえりなさい",
       "gloss": "welcome back",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "おかえりなさい！おつかれさまでした。",
+          "translation_en": "Welcome back! You worked hard."
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.はじめまして",
@@ -10430,7 +11810,13 @@
       "reading": "はじめまして",
       "gloss": "nice to meet you",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "はじめまして、田中です。",
+          "translation_en": "Nice to meet you, I'm Tanaka."
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.どうぞよろしく",
@@ -10438,7 +11824,13 @@
       "reading": "どうぞよろしく",
       "gloss": "pleased to meet you",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "どうぞよろしく おねがいします。",
+          "translation_en": "Pleased to meet you."
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.おげんきですか",
@@ -10454,7 +11846,13 @@
       "reading": "おかげさまで",
       "gloss": "thanks to you",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "おかげさまで、げんきです。",
+          "translation_en": "Thanks to you, I'm well."
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.いらっしゃいませ",
@@ -10462,7 +11860,13 @@
       "reading": "いらっしゃいませ",
       "gloss": "welcome (to a shop)",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "いらっしゃいませ！何名さまですか。",
+          "translation_en": "Welcome! How many people?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.36-greetings-and-set-phr.どうぞ",
@@ -10498,7 +11902,13 @@
       "reading": "もしもし",
       "gloss": "hello (phone)",
       "section": "36. Greetings and Set Phrases",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "もしもし、田中さんですか。",
+          "translation_en": "Hello, is this Tanaka-san?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.もの",
@@ -10506,7 +11916,13 @@
       "reading": "もの",
       "gloss": "thing",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "テーブルの 上の ものは 何ですか。",
+          "translation_en": "What's the thing on the table?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.こと",
@@ -10514,7 +11930,13 @@
       "reading": "こと",
       "gloss": "thing (intangible)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "一つ こと話したいです。",
+          "translation_en": "I want to tell you one thing."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.名前",
@@ -10530,7 +11952,13 @@
       "reading": "ことば",
       "gloss": "word",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "日本語の ことばを ならいます。",
+          "translation_en": "I learn Japanese words."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.話",
@@ -10538,7 +11966,13 @@
       "reading": "はなし",
       "gloss": "story, talk",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おもしろい 話を 聞きました。",
+          "translation_en": "I heard an interesting story."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.しごと",
@@ -10554,7 +11988,13 @@
       "reading": "やくそく",
       "gloss": "promise, appointment",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "友だちと やくそくが あります。",
+          "translation_en": "I have an appointment with a friend."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.ようじ",
@@ -10562,7 +12002,13 @@
       "reading": "ようじ",
       "gloss": "errand",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ようじが あって、行けません。",
+          "translation_en": "I have an errand, so I can't go."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.もんだい",
@@ -10570,7 +12016,13 @@
       "reading": "もんだい",
       "gloss": "problem",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "むずかしい もんだいです。",
+          "translation_en": "It's a difficult problem."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.しゅみ",
@@ -10578,7 +12030,13 @@
       "reading": "しゅみ",
       "gloss": "hobby",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "わたしの しゅみは どくしょです。",
+          "translation_en": "My hobby is reading."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.りょこう",
@@ -10594,7 +12052,13 @@
       "reading": "さんぽ",
       "gloss": "walk",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こうえんで さんぽを します。",
+          "translation_en": "I take a walk in the park."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.うんどう",
@@ -10602,7 +12066,13 @@
       "reading": "うんどう",
       "gloss": "exercise",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "まいにち うんどうします。",
+          "translation_en": "I exercise every day."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.ゲーム",
@@ -10610,7 +12080,13 @@
       "reading": "ゲーム",
       "gloss": "game",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ゲームが すきです。",
+          "translation_en": "I like games."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.スポーツ",
@@ -10626,7 +12102,13 @@
       "reading": "しあい",
       "gloss": "match, game",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あした サッカーの しあいです。",
+          "translation_en": "Tomorrow there's a soccer match."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.ニュース",
@@ -10634,7 +12116,13 @@
       "reading": "ニュース",
       "gloss": "news",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ニュースを 見ました。",
+          "translation_en": "I watched the news."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.パーティー",
@@ -10642,7 +12130,13 @@
       "reading": "パーティー",
       "gloss": "party",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "土曜日に パーティーが あります。",
+          "translation_en": "There's a party on Saturday."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.きって",
@@ -10650,7 +12144,13 @@
       "reading": "きって",
       "gloss": "stamp",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "きってを 三まい 買いました。",
+          "translation_en": "I bought three stamps."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.はがき",
@@ -10658,7 +12158,13 @@
       "reading": "はがき",
       "gloss": "postcard",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "はがきを 出します。",
+          "translation_en": "I'll send a postcard."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.てがみ",
@@ -10666,7 +12172,13 @@
       "reading": "てがみ",
       "gloss": "letter",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "母に てがみを 書きます。",
+          "translation_en": "I write a letter to my mother."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.きっぷ",
@@ -10674,7 +12186,13 @@
       "reading": "きっぷ",
       "gloss": "ticket",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "きっぷを 買います。",
+          "translation_en": "I'll buy a ticket."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.おみやげ",
@@ -10682,7 +12200,13 @@
       "reading": "おみやげ",
       "gloss": "souvenir (also in §22 - listed here for thematic completeness)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "日本の おみやげを 買いました。",
+          "translation_en": "I bought Japanese souvenirs."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.プレゼント",
@@ -10698,7 +12222,13 @@
       "reading": "りゅうがく",
       "gloss": "study abroad",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "日本に りゅうがくしました。",
+          "translation_en": "I studied abroad in Japan."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.けっこん",
@@ -10722,7 +12252,13 @@
       "reading": "りょかん",
       "gloss": "Japanese inn (also in §13)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "りょかんに とまりました。",
+          "translation_en": "I stayed at a Japanese inn."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.かぜ",
@@ -10730,7 +12266,13 @@
       "reading": "かぜ",
       "gloss": "cold (illness)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かぜを ひきました。",
+          "translation_en": "I caught a cold."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.びょうき",
@@ -10738,7 +12280,13 @@
       "reading": "びょうき",
       "gloss": "illness",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "びょうきに なりました。",
+          "translation_en": "I got sick."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.くすり",
@@ -10746,7 +12294,13 @@
       "reading": "くすり",
       "gloss": "medicine",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "くすりを 飲みます。",
+          "translation_en": "I take medicine."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.けが",
@@ -10754,7 +12308,13 @@
       "reading": "けが",
       "gloss": "injury",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "けがを しました。",
+          "translation_en": "I got injured."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.おゆ",
@@ -10762,7 +12322,13 @@
       "reading": "おゆ",
       "gloss": "hot water",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おゆを わかします。",
+          "translation_en": "I boil water."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.おふろ",
@@ -10770,7 +12336,13 @@
       "reading": "おふろ",
       "gloss": "bath (also in §13)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おふろに 入ります。",
+          "translation_en": "I take a bath."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.シャワー",
@@ -10786,7 +12358,13 @@
       "reading": "マッチ",
       "gloss": "match (lighting)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "マッチで 火を つけます。",
+          "translation_en": "I light a fire with a match."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.たばこ",
@@ -10802,7 +12380,13 @@
       "reading": "はいざら",
       "gloss": "ashtray",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "はいざらは ありますか。",
+          "translation_en": "Is there an ashtray?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.スリッパ",
@@ -10810,7 +12394,13 @@
       "reading": "スリッパ",
       "gloss": "slippers",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "スリッパを はきます。",
+          "translation_en": "I put on slippers."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.ティッシュ",
@@ -10818,7 +12408,13 @@
       "reading": "ティッシュ",
       "gloss": "tissue",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ティッシュを ください。",
+          "translation_en": "Tissues please."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.フィルム",
@@ -10826,7 +12422,13 @@
       "reading": "フィルム",
       "gloss": "film",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "カメラの フィルムを かいました。",
+          "translation_en": "I bought camera film."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.レコード",
@@ -10834,7 +12436,13 @@
       "reading": "レコード",
       "gloss": "record",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "むかしの レコードを 聞きます。",
+          "translation_en": "I listen to old records."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.テープ",
@@ -10842,7 +12450,13 @@
       "reading": "テープ",
       "gloss": "tape (also in §26)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "テープに ろくおんします。",
+          "translation_en": "I'll record on the tape."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.よてい",
@@ -10850,7 +12464,13 @@
       "reading": "よてい",
       "gloss": "plan, schedule",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しゅうまつの よていは 何ですか。",
+          "translation_en": "What's your weekend plan?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.じかんわり",
@@ -10858,7 +12478,13 @@
       "reading": "じかんわり",
       "gloss": "timetable",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "じかんわりを 見せて ください。",
+          "translation_en": "Please show me the timetable."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.はこ",
@@ -10866,7 +12492,13 @@
       "reading": "はこ",
       "gloss": "box",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "はこの 中に 本が あります。",
+          "translation_en": "There's a book in the box."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.はんぶん",
@@ -10874,7 +12506,13 @@
       "reading": "半分",
       "gloss": "half",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ケーキを はんぶん 食べました。",
+          "translation_en": "I ate half the cake."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.はたち",
@@ -10882,7 +12520,13 @@
       "reading": "はたち",
       "gloss": "20 years old (special reading)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "はたちに なりました。",
+          "translation_en": "I turned twenty."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.へん",
@@ -10890,7 +12534,13 @@
       "reading": "へん",
       "gloss": "area, vicinity",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "この へんに スーパーは ありますか。",
+          "translation_en": "Is there a supermarket around here?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.ほか",
@@ -10898,7 +12548,13 @@
       "reading": "ほか",
       "gloss": "other (place / thing / person)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ほかの ものは ありますか。",
+          "translation_en": "Are there other things?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.ほんとう",
@@ -10906,7 +12562,13 @@
       "reading": "ほんとう",
       "gloss": "truth, reality",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ほんとうですか。",
+          "translation_en": "Is that true?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.なつやすみ",
@@ -10914,7 +12576,13 @@
       "reading": "なつやすみ",
       "gloss": "summer vacation",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "なつやすみは 八月です。",
+          "translation_en": "Summer vacation is in August."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.やすみ",
@@ -10944,7 +12612,13 @@
       "reading": "ペット",
       "gloss": "pet",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "うちの ペットは ねこです。",
+          "translation_en": "Our pet is a cat."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.カレンダー",
@@ -10952,7 +12626,13 @@
       "reading": "カレンダー",
       "gloss": "calendar",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かべに カレンダーが あります。",
+          "translation_en": "There's a calendar on the wall."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.かてい",
@@ -10960,7 +12640,13 @@
       "reading": "かてい",
       "gloss": "household, home life",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かていの りょうりが すきです。",
+          "translation_en": "I like home cooking."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.かびん",
@@ -10968,7 +12654,13 @@
       "reading": "かびん",
       "gloss": "vase",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "かびんに 花を 入れます。",
+          "translation_en": "I put flowers in the vase."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.かた",
@@ -10976,7 +12668,13 @@
       "reading": "かた",
       "gloss": "way of doing (e.g., たべかた = how to eat)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "この かんじの 読みかたを 教えて ください。",
+          "translation_en": "Please teach me how to read this kanji."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.おくさん",
@@ -10984,7 +12682,13 @@
       "reading": "おくさん",
       "gloss": "wife (someone else's; polite)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "田中さんの おくさんは 先生です。",
+          "translation_en": "Tanaka-san's wife is a teacher."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.先",
@@ -11006,7 +12710,13 @@
       "reading": "せびろ",
       "gloss": "business suit (older term, replaced by スーツ in modern usage)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "せびろを きて 出かけます。",
+          "translation_en": "I go out wearing a business suit."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.大きな",
@@ -11014,7 +12724,13 @@
       "reading": "おおきな",
       "gloss": "big (variant adjectival form of 大きい)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "大きな こえで 話します。",
+          "translation_en": "I speak in a loud voice."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.たて",
@@ -11022,7 +12738,13 @@
       "reading": "たて",
       "gloss": "length, height",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "はこの たては 三十センチです。",
+          "translation_en": "The box is 30 cm tall."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.ゆうべ",
@@ -11030,7 +12752,13 @@
       "reading": "ゆうべ",
       "gloss": "last night",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ゆうべは おそく ねました。",
+          "translation_en": "Last night I went to bed late."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.にっき",
@@ -11038,7 +12766,13 @@
       "reading": "にっき",
       "gloss": "diary, journal",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "まいにち にっきを 書きます。",
+          "translation_en": "I write a diary every day."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.さくぶん",
@@ -11046,7 +12780,13 @@
       "reading": "さくぶん",
       "gloss": "composition, written essay",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "さくぶんを 書いて ください。",
+          "translation_en": "Please write a composition."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.じびき",
@@ -11054,7 +12794,13 @@
       "reading": "じびき",
       "gloss": "dictionary (older term, alt for じしょ)",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "じびきを ひきます。",
+          "translation_en": "I'll look it up in the dictionary."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.テープレコーダー",
@@ -11062,7 +12808,13 @@
       "reading": "テープレコーダー",
       "gloss": "tape recorder",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "テープレコーダーで ろくおんします。",
+          "translation_en": "I'll record with a tape recorder."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.ストーブ",
@@ -11070,7 +12822,13 @@
       "reading": "ストーブ",
       "gloss": "heater, stove",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "冬は ストーブを つかいます。",
+          "translation_en": "In winter I use a heater."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.ページ",
@@ -11078,7 +12836,13 @@
       "reading": "ページ",
       "gloss": "page",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "五ページを ひらいて ください。",
+          "translation_en": "Please open to page 5."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.クラス",
@@ -11086,7 +12850,13 @@
       "reading": "クラス",
       "gloss": "class",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "わたしの クラスは 三十人です。",
+          "translation_en": "My class has 30 people."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.グラム",
@@ -11094,7 +12864,13 @@
       "reading": "グラム",
       "gloss": "gram",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "にくを 二百グラム ください。",
+          "translation_en": "200 grams of meat please."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.メートル",
@@ -11102,7 +12878,13 @@
       "reading": "メートル",
       "gloss": "metre, meter",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "百メートル はしりました。",
+          "translation_en": "I ran 100 meters."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.キログラム",
@@ -11110,7 +12892,13 @@
       "reading": "キログラム",
       "gloss": "kilogram",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "五キログラムの 米を 買いました。",
+          "translation_en": "I bought 5 kg of rice."
+        }
+      ]
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.キロメートル",
@@ -11118,7 +12906,13 @@
       "reading": "キロメートル",
       "gloss": "kilometre, kilometer",
       "section": "37. Common Nouns - Miscellaneous",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "えきまで 三キロメートルです。",
+          "translation_en": "It's 3 km to the station."
+        }
+      ]
     },
     {
       "id": "n5.vocab.38-sounds-and-voice.こえ",
@@ -11134,7 +12928,13 @@
       "reading": "おと",
       "gloss": "sound",
       "section": "38. Sounds and Voice",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "外で 大きい おとが しました。",
+          "translation_en": "A loud sound came from outside."
+        }
+      ]
     },
     {
       "id": "n5.vocab.38-sounds-and-voice.うた",
@@ -11142,7 +12942,13 @@
       "reading": "うた",
       "gloss": "song",
       "section": "38. Sounds and Voice",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "日本の うたが すきです。",
+          "translation_en": "I like Japanese songs."
+        }
+      ]
     },
     {
       "id": "n5.vocab.39-function-filler-expre.えーと",
@@ -11150,7 +12956,13 @@
       "reading": "えーと",
       "gloss": "um, let me see",
       "section": "39. Function / Filler Expressions",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "えーと、こたえは 三です。",
+          "translation_en": "Um, the answer is three."
+        }
+      ]
     },
     {
       "id": "n5.vocab.39-function-filler-expre.あの",
@@ -11166,7 +12978,13 @@
       "reading": "そうですね",
       "gloss": "let me think / that's right",
       "section": "39. Function / Filler Expressions",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "そうですね、いいですね。",
+          "translation_en": "That's right, it's good."
+        }
+      ]
     },
     {
       "id": "n5.vocab.39-function-filler-expre.そうですか",
@@ -11174,7 +12992,13 @@
       "reading": "そうですか",
       "gloss": "is that so?",
       "section": "39. Function / Filler Expressions",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "そうですか、わかりました。",
+          "translation_en": "Is that so. I see."
+        }
+      ]
     },
     {
       "id": "n5.vocab.39-function-filler-expre.いいえ",
@@ -11210,7 +13034,13 @@
       "reading": "ええ",
       "gloss": "yes (casual)",
       "section": "39. Function / Filler Expressions",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "ええ、そうです。",
+          "translation_en": "Yes, that's right."
+        }
+      ]
     },
     {
       "id": "n5.vocab.39-function-filler-expre.うん",
@@ -11218,7 +13048,13 @@
       "reading": "うん",
       "gloss": "yeah (informal)",
       "section": "39. Function / Filler Expressions",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "うん、いいよ。",
+          "translation_en": "Yeah, sure."
+        }
+      ]
     },
     {
       "id": "n5.vocab.39-function-filler-expre.ううん",
@@ -11226,7 +13062,13 @@
       "reading": "ううん",
       "gloss": "no (informal)",
       "section": "39. Function / Filler Expressions",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "ううん、ちがう。",
+          "translation_en": "No, that's wrong."
+        }
+      ]
     },
     {
       "id": "n5.vocab.39-function-filler-expre.さあ",
@@ -11234,7 +13076,13 @@
       "reading": "さあ",
       "gloss": "well... (filler / hesitation)",
       "section": "39. Function / Filler Expressions",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "さあ、わかりません。",
+          "translation_en": "Hmm, I don't know."
+        }
+      ]
     },
     {
       "id": "n5.vocab.39-function-filler-expre.いかが",
@@ -11250,7 +13098,13 @@
       "reading": "それでは",
       "gloss": "in that case, well then",
       "section": "39. Function / Filler Expressions",
-      "pos": "expression"
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "それでは、はじめましょう。",
+          "translation_en": "Well then, let's begin."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.もの",
@@ -11258,7 +13112,13 @@
       "reading": "もの",
       "gloss": "thing (physical) (also in §37)",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "大切な ものを なくしました。",
+          "translation_en": "I lost something important."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.こと",
@@ -11266,7 +13126,13 @@
       "reading": "こと",
       "gloss": "thing (abstract) (also in §37)",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "話したい ことが あります。",
+          "translation_en": "There's something I want to talk about."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.ばしょ",
@@ -11274,7 +13140,13 @@
       "reading": "ばしょ",
       "gloss": "place",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しずかな ばしょが すきです。",
+          "translation_en": "I like quiet places."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.ばあい",
@@ -11282,7 +13154,13 @@
       "reading": "ばあい",
       "gloss": "case, situation",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "雨の ばあい、出かけません。",
+          "translation_en": "In case of rain, I won't go out."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.ほう",
@@ -11290,7 +13168,13 @@
       "reading": "ほう",
       "gloss": "direction, side",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "右の ほうに あります。",
+          "translation_en": "It's on the right side."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.とき",
@@ -11298,7 +13182,13 @@
       "reading": "とき",
       "gloss": "time, occasion (also in §10)",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "小さい とき、よく あそびました。",
+          "translation_en": "When I was little, I played a lot."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.番号",
@@ -11306,7 +13196,13 @@
       "reading": "ばんごう",
       "gloss": "number (also in §24)",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "電話番号を 教えて ください。",
+          "translation_en": "Please tell me your phone number."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.じゅうしょ",
@@ -11314,7 +13210,13 @@
       "reading": "じゅうしょ",
       "gloss": "address",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "じゅうしょを 書いて ください。",
+          "translation_en": "Please write your address."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.名前",
@@ -11330,7 +13232,13 @@
       "reading": "ねんれい",
       "gloss": "age",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ねんれいを 聞いても いいですか。",
+          "translation_en": "May I ask your age?"
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.しごと",
@@ -11346,7 +13254,13 @@
       "reading": "がっこう",
       "gloss": "school (also in §13)",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "学校に かよって います。",
+          "translation_en": "I'm attending school."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.しゅみ",
@@ -11354,7 +13268,13 @@
       "reading": "しゅみ",
       "gloss": "hobby (also in §37)",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しゅみは 音楽です。",
+          "translation_en": "My hobby is music."
+        }
+      ]
     },
     {
       "id": "n5.vocab.40-misc-useful-items.しゅっしん",
@@ -11362,7 +13282,13 @@
       "reading": "しゅっしん",
       "gloss": "hometown / origin",
       "section": "40. Misc Useful Items",
-      "pos": "noun"
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しゅっしんは どこですか。",
+          "translation_en": "Where are you from?"
+        }
+      ]
     }
   ]
 }

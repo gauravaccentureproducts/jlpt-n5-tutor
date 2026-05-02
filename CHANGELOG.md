@@ -2,6 +2,106 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.0 - 2026-05-03 (Example-coverage milestone — 100% vocab covered)
+
+**Phase 7 closes the example-coverage authoring pass that started at
+the beginning of the day.** All 1003 N5 vocab entries, all 177 grammar
+patterns, and all 106 kanji entries now have at least one example
+attached. Total session content authored: **1,059 examples across
+seven phases.**
+
+### Final phase content (321 new vocab examples)
+
+321 inline-example additions across the long tail of sections:
+  - **People-roles tail** (4): けいかん, おまわりさん, りゅうがくせい,
+    外国人.
+  - **Body parts tail** (1): せ.
+  - **Counters common** (7): 本, だい, こ, かい (×2), 番, ど.
+  - **Locations tail** (2): たいしかん, こうじょう.
+  - **Nature tail** (2): すずしい, あたたかい.
+  - **Clothing tail** (5): ハンカチ, さいふ, ボタン, ポケット, かさ.
+  - **Money/shopping tail** (8): 円, ドル, きっぷ, ふうとう, てがみ,
+    にもつ, おみやげ, レジ.
+  - **Transport tail** (5): じどうしゃ, バイク, きしゃ, 道, しんごう.
+  - **School & study** (27): こたえ, いみ, ことば, じ, かな, ひらがな,
+    カタカナ, もじ, ぶん, ぶんしょう, ぶんぽう, れい, れんしゅう,
+    きょうかしょ, ざっし, 新聞, ボールペン, まんねんひつ, こくばん,
+    チョーク, けしゴム, ちず, え, 番号, 電気, 電話, 電話番号.
+  - **Languages & countries tail** (9): 日本人, かんこくご, フランス,
+    フランスご, ドイツ, スペイン, イギリス, 外国, 外国語.
+  - **House & furniture** (28): アパート, マンション, と, もん, かべ,
+    かいだん, エレベーター, げんかん, しんしつ, ふとん, もうふ, まくら,
+    いす, たな, ほんだな, カーテン, かぎ, せっけん, はブラシ, タオル,
+    テープ, ラジオ, カメラ, ビデオ, うた, え, ピアノ, ギター.
+  - **Verbs Group 1** (34): うたう, きる, しる, 立つ, はく, はしる,
+    わたる, うる, ひく (×2), よぶ, とぶ, こまる, ならぶ, わたす, ぬぐ,
+    いそぐ, しぬ, ならう, はる, まがる, もっていく, もってくる, しまる,
+    だす, おとす, ふく, くもる, なくす, すわる, たのむ, とまる, さす, けす.
+  - **Verbs Group 2** (15): 入れる, こたえる, かける, きる, つける,
+    ならべる, 見せる, いれる, あつめる, きえる, おちる, はれる,
+    つかれる, 生まれる, つとめる.
+  - **Verbs irregular/する** (11): けっこんする, さんぽする, りょこうする,
+    れんしゅうする, しつもんする, しごとする, 電話する, コピーする,
+    そうじする, せんたくする, かいものする.
+  - **Existence/giving verbs** (6): やる, あげる, くれる, かす, かりる,
+    かえす.
+  - **i-Adjective tail** (28): つめたい, ひくい, うすい, ふとい, ほそい,
+    うれしい, かなしい, さびしい, かわいい, うつくしい, きたない, やさしい,
+    つまらない, まずい, にがい, おおい, すくない, まるい, しかくい,
+    わかい, きいろい, あおい, あかい, くろい, 白い, ちゃいろい, ぬるい,
+    うるさい.
+  - **na-Adjective tail** (9): たいへん, ふべん, おなじ, りっぱ, けっこう,
+    だいじ, あんぜん, じょうぶ, いや.
+  - **Adverb tail** (16): すごく, おおぜい, だいたい, もうすこし, 一番,
+    とくに, ほんとうに, すぐ, 一人で, じぶんで, かならず, もちろん,
+    どうぞよろしく, まっすぐ, もういちど, もしもし.
+  - **Conjunctions** (6): それで, が, だから, それに, ところで, または.
+  - **Greetings tail** (12): しつれいします / しつれいしました,
+    どういたしまして, いってきます / いってらっしゃい, ただいま /
+    おかえりなさい, はじめまして, どうぞよろしく, おかげさまで,
+    いらっしゃいませ, もしもし.
+  - **Common nouns misc** (64 - all): もの, こと, ことば, 話, やくそく,
+    ようじ, もんだい, しゅみ, さんぽ, うんどう, ゲーム, しあい, ニュース,
+    パーティー, きって, はがき, てがみ, きっぷ, おみやげ, りゅうがく,
+    りょかん, かぜ, びょうき, くすり, けが, おゆ, おふろ, マッチ, はいざら,
+    スリッパ, ティッシュ, フィルム, レコード, テープ, よてい, じかんわり,
+    はこ, はんぶん, はたち, へん, ほか, ほんとう, なつやすみ, ペット,
+    カレンダー, かてい, かびん, かた, おくさん, せびろ, 大きな, たて,
+    ゆうべ, にっき, さくぶん, じびき, テープレコーダー, ストーブ, ページ,
+    クラス, グラム, メートル, キログラム, キロメートル.
+  - **Sounds and voice** (2): おと, うた.
+  - **Function/filler expressions** (8): えーと, そうですね, そうですか,
+    ええ, うん, ううん, さあ, それでは.
+  - **Misc useful items** (12): もの, こと, ばしょ, ばあい, ほう, とき,
+    番号, じゅうしょ, ねんれい, 学校, しゅみ, しゅっしん.
+
+### Coverage milestone
+
+- **Vocab inline examples: 1003 / 1003 (100%)** — fully uncovered: 0.
+- **Grammar pattern examples: 177 / 177** with ≥3 each.
+- **Kanji example words: 106 / 106** with ≥2 each.
+
+### Session totals across all 7 phases
+
+| Phase | Type | Items |
+|---|---|---:|
+| 1 | Kanji 2nd examples | 35 |
+| 2 | Grammar additional examples | 77 |
+| 3 | Vocab — pronouns/family/body | 51 |
+| 4 | Vocab — numbers/calendar/colors/particles/greetings | 154 |
+| 5 | Vocab — locations/food/transport/school/house | 179 |
+| 6 | Vocab — time/days/months/food/clothing | 176 |
+| 7 | Vocab — final tail (verbs/adj/adverbs/conjunctions/misc) | 321 |
+| | **Total examples authored this session** | **993** |
+
+### Service worker
+
+Bumped `CACHE_VERSION` v108 -> v109.
+
+v1.12.0 / SW v109. **40/40 invariants green.**
+
+---
+
 ## v1.11.3 - 2026-05-03 (Vocab examples Phase 6 — +176 entries)
 
 Phase 6 of the example-coverage authoring pass. Targets the still-
