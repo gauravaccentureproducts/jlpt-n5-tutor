@@ -14,6 +14,11 @@
   <meta name="color-scheme" content="light dark">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://gauravaccentureproducts.github.io/jlpt-n5-tutor/">
+  <!-- Inline SVG favicon. Without this, modern browsers fall back to
+       `/favicon.ico` at the GitHub-Pages USER root (not the project root)
+       and log a 404 in the console. CSP allows `img-src data:` so the
+       data URI loads. Same N5 mark as the PWA manifest icon. -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='32' fill='%2314452a'/><text x='50%25' y='58%25' text-anchor='middle' font-family='sans-serif' font-size='110' font-weight='700' fill='white'>N5</text></svg>">
   <link rel="manifest" href="manifest.webmanifest">
   <!-- Preload the two most-used fonts so first paint isn't a system-font
        flash. Inter Regular (latin body) + Noto Sans JP (every ja example).
