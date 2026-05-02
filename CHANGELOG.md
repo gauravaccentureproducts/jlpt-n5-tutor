@@ -2,6 +2,157 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.10.0 - 2026-05-02 (Syllabus dashboard + DEFER backlog closeout)
+
+Big sweep: new homepage as a JLPT N5 syllabus dashboard, full
+multi-correct grey-zone audit, every actionable backlog item closed,
+and 100% grammar-pattern test coverage (177/177).
+
+### Changed (user-visible)
+
+- **Homepage redesigned as a syllabus dashboard.** Replaces the bare
+  "JLPT N5 study material." inventory with: page title + subtitle, six
+  syllabus cards (Grammar / Vocab / Kanji / Reading / Listening / Mock
+  Test) with index + count + description + in-card action, eight-step
+  recommended study order (now clickable links), six-row progress
+  overview with progress bars, and an action block ("Not sure where to
+  start?" + Take Placement Check + Start with Grammar). Container width
+  on the home route widens to 1120px (only here; other routes stay
+  880px) so the 3-column card grid fits comfortably.
+- **Header primary nav expanded** from 2 links (Learn / Test) to 7:
+  Grammar / Vocabulary / Kanji / Reading / Listening / Test / Progress.
+  Every syllabus section is a single click from anywhere.
+- **Recommended Study Order steps are clickable links.** Each of the 8
+  numbered steps routes to the most directly-actionable surface: 01 →
+  Grammar TOC, 02 → Vocab TOC, 03 → Kanji index, 04 → /drill, 05 →
+  /reading, 06 → /listening, 07 → /test, 08 → /review. Full-row
+  click target with hairline accent-on-hover and visible focus outline.
+- **Progress dashboard goes live for all 6 sections.** Reading and
+  Listening rows now show actual completion counts (previously stuck
+  at 0/30 because per-passage / per-drill completion wasn't tracked).
+  Reading marks completed on the results screen with score>0; listening
+  marks on first answer submit.
+- **Resume strip uses a friendly label.** "Last session: n5-001" →
+  "Last session: n5-001 — です/だ" (pattern label hydrated at load).
+- **Daily-goal-met badge** sits below the syllabus subtitle for
+  returning users: "Streak: N days" + "✓ Practiced today" or "○ Not
+  yet practiced today." Decoupled from the streak count so a 5-day
+  streak with "not yet today" reads unambiguously.
+- **Reading mock-test mode toggle.** Filters passages to the JLPT
+  primary-question distribution (questions tagged `format_role:
+  primary`). Persists across sessions via the `readingMockTestMode`
+  setting. Shows per-passage question count alongside level/topic.
+- **Undo-on-grading 2-second window in Review.** After grading a card,
+  a fixed-bottom toast shows "Recorded: <Grade>" with an Undo button.
+  Click within 2s to roll back the SRS state to the pre-grade snapshot
+  and remove the entry from the session log. Auto-dismisses; pauses on
+  hover for slow readers.
+
+### Content (corpus)
+
+- **100% grammar-pattern test coverage.** Authored 65 new questions
+  across 3 batches to bring the uncovered count from 78 → 0. Every
+  one of the 177 grammar patterns now has at least one MCQ question
+  with 4 distinct, single-correct distractors. Total test bank:
+  288 runtime + 360 paper = 648 questions audited green.
+- **Three multi-correct grey-zone questions fixed** (q-0488 frequency
+  calibration, q-0024 sentence-final speech act, goi-2.6 spatial
+  position without anchor). See JA-29 + audit script categories
+  F/G/H below.
+- **Tier taxonomy on grammar.json.** Every pattern now carries
+  `tier: "core_n5"` (165) or `tier: "late_n5"` (12). Late flag fires
+  on N4-leaning hints in notes/meaning_en or known-boundary patterns
+  (n5-167, 186, 187, etc.).
+- **Kanji enrichment.** All 106 entries now carry `lesson_order`
+  (sequential 1-106) + `frequency_rank` (within-N5 frequency rank
+  derived from KANJIDIC2 + Joyo grade aggregate).
+- **Vocabulary part-of-speech tags.** All 1003 entries in
+  `KnowledgeBank/vocabulary_n5.md` carry inline `[n.]` / `[v1]` /
+  `[v2]` / `[v3]` / `[i-adj]` / `[na-adj]` / `[adv.]` / `[part.]` /
+  `[conj.]` / `[pron.]` / `[count.]` / `[num.]` / `[dem.]` /
+  `[Q-word]` / `[exp.]` / `[interj.]` tags. Legend added to the
+  file header.
+
+### Added (invariants — locks the work in)
+
+- **JA-29** — Question subtype taxonomy is closed: `paraphrase` and
+  `kanji_writing` only. New subtypes must register in the integrity
+  script before being introduced (closes DEFER-2 by decision: subtype
+  is the canonical extension point, no need to promote to a top-level
+  type).
+- **Multi-correct audit script extended with 3 new categories**
+  (`tools/audit_multi_correct.py`):
+  - **F_frequency_calibration** — fires when stem has a numeric
+    frequency (月にXかい etc.) AND choices contain a known grey-zone
+    adverb pair {よく/たまに}, {よく/ときどき}, etc.
+  - **G_speech_act_particle** — fires on "<verb>です/ます( )" with ≥2
+    of {か, ね, よ} in choices and no question-word or はい/いいえ anchor.
+  - **H_spatial_no_anchor** — fires on "<X>の( )に <Y>が あります"
+    with ≥2 spatial positions in choices and no canonical object-pair
+    (つくえ/テーブル/etc.) or movement verb in stem.
+
+### Tooling / scaffolding (unblock external work)
+
+- **VOICEVOX audio pipeline** (`tools/build_audio_voicevox.py`):
+  preflight engine check, 3-retry exponential backoff, ThreadPool
+  parallelism, --missing-only fast filter, ffmpeg WAV→MP3 transcode,
+  multi-voice dialogue support via `[F1]/[F2]/[M1]/[M2]` script
+  tags. Operator's manual at `AUDIO.md`. Confirmed gaps: 19 .mp3s
+  missing (1 grammar + 18 listening 013–030); regenerable in
+  ~3 minutes once the engine binary is on a local machine.
+- **Audio coverage audit** (`tools/audit_audio_coverage.py`): exits
+  non-zero on any data→disk mismatch; JSON gap dump to
+  `feedback/audio-coverage-gaps.json`.
+- **Native-review dossier exporter**
+  (`tools/export_native_review_dossier.py`): generates
+  `feedback/native-review-dossier/` from live data — cover.md,
+  01_grammar_patterns.md (177), 02_vocab_borderline.md (122),
+  03_kanji_readings.md (106), 04_reading_passages.md (30),
+  05_listening_scripts.md (30), and a review_log.csv template.
+  Severity rubric + citation format + turnaround targets in
+  cover.md.
+- **Visual-regression Playwright scaffold**
+  (`tests/visual-regression.spec.js`): 12 tests × 2 viewports cover
+  6 high-traffic routes with reduced-motion + animations-disabled +
+  0.1% pixel-diff threshold. CI excluded via
+  `--grep-invert visual-regression` until baselines are committed;
+  `npm run test:visual:update` captures them locally.
+- **Settings deny-list hardening.** Global Claude Code config (per
+  user request 2026-05-02): `defaultMode: bypassPermissions` +
+  explicit allow list (66 rules) + comprehensive deny list (37
+  rules) blocking destructive ops (rm -rf, git push --force,
+  git reset --hard, etc.) + belt-and-suspenders SS&SC directory
+  denies on top of the existing block_sssc.py PreToolUse hook.
+
+### Fixed
+
+- 14-line homepage CSS regression: `main` 880px container was
+  constraining `.home-syllabus` even after the inner element set
+  its own 1120px max-width. Replaced with `main:has(.home-syllabus)`
+  to scope the wider container to the home route only.
+- `q-0536` had `茶` in the stem; not in the 106-kanji N5 whitelist.
+  JA-13 caught it. Replaced with kana `おちゃ`.
+- `vocabulary_n5.md` line 848 (`いる - to need`) was mistagged
+  `[v2]` by the PoS-injection pass; corrected to `[v1]` (Group 1
+  exception). The X-6.6 invariant's hint matcher now tolerates
+  inserted PoS tags so the same edit doesn't break it again.
+
+### Tooling housekeeping
+
+- One-shot scripts kept as authoring templates:
+  `tools/add_uncovered_questions.py`,
+  `tools/add_uncovered_questions_batch2.py`,
+  `tools/add_uncovered_questions_batch3.py`. Each documents the
+  conventions for adding more questions in future sessions.
+
+### Service worker
+
+Bumped from `jlpt-n5-tutor-v82` → `jlpt-n5-tutor-v88`. Cache version
+churn is high this release because every commit that ships a
+js/css/data change requires a bump.
+
+---
+
 ## v1.9.0 - 2026-05-02 (Japanese-first language sweep)
 
 User direction: the learner-facing surface should be in Japanese, not English. Closes a series of parallel cleanups across reading, listening, and shared UI chrome.

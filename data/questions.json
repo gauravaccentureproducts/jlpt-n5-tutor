@@ -5333,6 +5333,516 @@
       "correctAnswer": "つもり",
       "explanation_en": "V-plain + tsumori desu = intend to do [V]. Only つもり forms this intention pattern. Distractors: もの (physical thing), こと (matter/fact), とき (time/occasion) don't carry the future-intention sense.",
       "difficulty": 2
+    },
+    {
+      "id": "q-0549",
+      "grammarPatternId": "n5-041",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "（みせの 中で）すみません、トイレは（  ）ですか。",
+      "choices": [
+        "どこ",
+        "ここ",
+        "そこ",
+        "なに"
+      ],
+      "correctAnswer": "どこ",
+      "explanation_en": "Asking for the location of something requires the question demonstrative どこ (where). Distractors: ここ/そこ are statements (here/there) — declarative, not interrogative; なに asks WHAT, not WHERE.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0550",
+      "grammarPatternId": "n5-098",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "クラスで（  ）せが たかい ひとは たなかさんです。",
+      "choices": [
+        "いちばん",
+        "とても",
+        "もっと",
+        "あまり"
+      ],
+      "correctAnswer": "いちばん",
+      "explanation_en": "いちばん = #1 / most / -est. Combined with an i-adjective it forms the superlative. Distractors: とても (very) is degree, not superlative; もっと (more) is comparative, not superlative; あまり needs a negative.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0551",
+      "grammarPatternId": "n5-115",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "わたしは 七時（  ）あさごはんを たべます。",
+      "choices": [
+        "に",
+        "で",
+        "へ",
+        "を"
+      ],
+      "correctAnswer": "に",
+      "explanation_en": "Specific clock-times take に. Distractors: で is means/place-of-action (七時で = ungrammatical for times); へ is destination direction (times don't take direction); を is object marker.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0552",
+      "grammarPatternId": "n5-133",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "あめが ふっています（  ）、いえに います。",
+      "choices": [
+        "から",
+        "けれど",
+        "まで",
+        "より"
+      ],
+      "correctAnswer": "から",
+      "explanation_en": "Sentence + から = because + result. Rain → so I'm staying home. Distractors: けれど is contrast (but); まで is endpoint; より is comparison.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0553",
+      "grammarPatternId": "n5-147",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "わたしは 毎日 ８じに（  ）おきます。",
+      "choices": [
+        "いつも",
+        "あまり",
+        "ぜんぜん",
+        "ときどき"
+      ],
+      "correctAnswer": "いつも",
+      "explanation_en": "毎日 (every day) anchors a habitual action; いつも (always) is the matching frequency adverb. Distractors: あまり and ぜんぜん require a negative verb (ません/ない); ときどき (sometimes) contradicts 毎日.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0554",
+      "grammarPatternId": "n5-152",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "（  ）すわって ください。",
+      "choices": [
+        "どうぞ",
+        "どうも",
+        "すみません",
+        "おねがい"
+      ],
+      "correctAnswer": "どうぞ",
+      "explanation_en": "どうぞ + V-て ください = please go ahead and [V] / please [V] (offering / inviting). Distractors: どうも is gratitude (thanks), すみません is apology, おねがい is requesting a favor (won't pair with V-て + ください).",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0555",
+      "grammarPatternId": "n5-156",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "A: あついです（  ）。\nB: ええ、ほんとうに あついですね。",
+      "choices": [
+        "ね",
+        "よ",
+        "か",
+        "の"
+      ],
+      "correctAnswer": "ね",
+      "explanation_en": "ね seeks confirmation/agreement; B's response 'ええ、ほんとうに...ですね' (yes, really hot) confirms agreement, which only pairs with ね from A. Distractors: よ is assertive (informing — B wouldn't agree-back as enthusiastically), か would make A's line a question, の is informal-question.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0556",
+      "grammarPatternId": "n5-158",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "あした、たぶん あめが ふる（  ）。",
+      "choices": [
+        "だろう",
+        "だった",
+        "だ",
+        "じゃない"
+      ],
+      "correctAnswer": "だろう",
+      "explanation_en": "Plain-form + だろう = probably / I expect (casual variant of でしょう). たぶん (probably) anchors the speculation. Distractors: だった is plain past, だ is plain affirmative (no speculation), じゃない is negation.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0557",
+      "grammarPatternId": "n5-159",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "A: この みせは あたらしいです（  ）。\nB: そうですね、せんしゅう できました。",
+      "choices": [
+        "ね",
+        "よ",
+        "か",
+        "の"
+      ],
+      "correctAnswer": "ね",
+      "explanation_en": "ね seeks confirmation; B's そうですね confirms agreement, which uniquely pairs with ね. Distractors: よ would assert; か would query; の is informal.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0558",
+      "grammarPatternId": "n5-160",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "じゅぎょう（  ）あとで、ともだちと あいます。",
+      "choices": [
+        "の",
+        "を",
+        "に",
+        "が"
+      ],
+      "correctAnswer": "の",
+      "explanation_en": "Noun の あとで = after [Noun]. The の is the genitive linking noun → temporal-noun (あと). Distractors: を/に/が don't link nouns to あと in this temporal pattern.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0559",
+      "grammarPatternId": "n5-161",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "ごはん（  ）まえに、てを あらいます。",
+      "choices": [
+        "の",
+        "を",
+        "に",
+        "で"
+      ],
+      "correctAnswer": "の",
+      "explanation_en": "Noun の まえに = before [Noun]. Same genitive-link pattern as n5-160 with まえ. Distractors: を/に/で don't link nouns to まえ in this temporal pattern.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0560",
+      "grammarPatternId": "n5-162",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "ねる（  ）に、はを みがきます。",
+      "choices": [
+        "まえ",
+        "あと",
+        "とき",
+        "うち"
+      ],
+      "correctAnswer": "まえ",
+      "explanation_en": "V-plain (non-past) + まえに = before [V]-ing. Sequence: brush teeth → go to bed. Distractors: あと would need V-past form (ねた あとで); とき is when; うち is while/within.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0561",
+      "grammarPatternId": "n5-163",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "ごはんを たべた（  ）で、しゅくだいを します。",
+      "choices": [
+        "あと",
+        "まえ",
+        "とき",
+        "ところ"
+      ],
+      "correctAnswer": "あと",
+      "explanation_en": "V-past (た-form) + あとで = after [V]-ing. Sequence: ate → then homework. Distractors: まえ would need non-past (たべる まえに); とき is when (different aspect); ところ is moment-of-action.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0562",
+      "grammarPatternId": "n5-166",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "ごはんを たべる まえに、（  ）と 言います。",
+      "choices": [
+        "いただきます",
+        "ごちそうさま",
+        "おはようございます",
+        "おやすみなさい"
+      ],
+      "correctAnswer": "いただきます",
+      "explanation_en": "いただきます is said BEFORE eating (literally 'I humbly receive'). Distractors: ごちそうさま is said AFTER eating; おはようございます is morning greeting; おやすみなさい is good-night.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-0563",
+      "grammarPatternId": "n5-167",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "A: どうして きょう やすみましたか。\nB: あたまが いたかった（  ）。",
+      "choices": [
+        "んです",
+        "ます",
+        "でした",
+        "ました"
+      ],
+      "correctAnswer": "んです",
+      "explanation_en": "Plain + んです = explanation form (giving a reason for a state/situation). A asks 'why', B explains with んです. Distractors: ます is non-past polite (wrong tense — past pain), でした copula (would need adjective ending い→かった directly + でした), ました past polite verb ending (the predicate is an i-adj, not a verb).",
+      "difficulty": 3
+    },
+    {
+      "id": "q-0564",
+      "grammarPatternId": "n5-171",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "あぶないですから、そこへ 行か（  ）ほうが いいです。",
+      "choices": [
+        "ない",
+        "ます",
+        "た",
+        "て"
+      ],
+      "correctAnswer": "ない",
+      "explanation_en": "V-ない + ほうが いい = shouldn't [V] (negative recommendation). The slot needs the negative-plain form ない. Distractors: ます is polite-affirmative; た is past affirmative; て is conjunction form — none combine with ほうが いい to form 'shouldn't'.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0565",
+      "grammarPatternId": "n5-172",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "しゅくだいは あした まで ですから、きょう 出さ（  ）いいです。",
+      "choices": [
+        "なくても",
+        "なくては",
+        "ないと",
+        "なくちゃ"
+      ],
+      "correctAnswer": "なくても",
+      "explanation_en": "V-stem + なくても いい = don't have to [V] (permission-not-to). Distractors test the must-form siblings: なくては requires いけない (must), ないと requires いけない (must, casual), なくちゃ is the casual contraction (would need ません to follow, not いいです).",
+      "difficulty": 3
+    },
+    {
+      "id": "q-0566",
+      "grammarPatternId": "n5-173",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "あした、テストですから、こんばん べんきょうし（  ）いけません。",
+      "choices": [
+        "なくては",
+        "なくても",
+        "ないで",
+        "なくて"
+      ],
+      "correctAnswer": "なくては",
+      "explanation_en": "V-stem + なくては + いけない = must [V] (obligation). The いけません ending forces なくては. Distractors: なくても goes with いい (don't have to); ないで is V-without-doing; なくて is conjunction without obligation.",
+      "difficulty": 3
+    },
+    {
+      "id": "q-0567",
+      "grammarPatternId": "n5-174",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "がっこうの ルールを まもら（  ）なりません。",
+      "choices": [
+        "なくては",
+        "なくても",
+        "ないで",
+        "なくて"
+      ],
+      "correctAnswer": "なくては",
+      "explanation_en": "V-stem + なくては + ならない = must [V] (formal obligation, same as いけない). The なりません ending forces なくては. Distractors: なくても is permission-not-to (with いい); ないで is V-without-doing; なくて is bare conjunction.",
+      "difficulty": 3
+    },
+    {
+      "id": "q-0568",
+      "grammarPatternId": "n5-175",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "もう おそいですから、はやく 行か（  ）いけません。",
+      "choices": [
+        "ないと",
+        "なくて",
+        "ないで",
+        "なくちゃ"
+      ],
+      "correctAnswer": "ないと",
+      "explanation_en": "V-ない + と + いけない = must [V] (common spoken variant of must). The いけません ending forces ないと. Distractors: なくて is bare conjunction; ないで is V-without-doing; なくちゃ doesn't pair with いけません (it's already a contraction containing いけない).",
+      "difficulty": 3
+    },
+    {
+      "id": "q-0569",
+      "grammarPatternId": "n5-176",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "もう ５じだ。はやく かえら（  ）。",
+      "choices": [
+        "なくちゃ",
+        "なくては",
+        "ないと",
+        "なくても"
+      ],
+      "correctAnswer": "なくちゃ",
+      "explanation_en": "V-stem + なくちゃ = must [V] (casual contraction of なくては いけない; sentence-final by itself implies the いけない). The casual だ ending of the first sentence (もう ５じだ) anchors the casual register. Distractors: なくては/ないと would need a following いけない; なくても is permission-not-to.",
+      "difficulty": 3
+    },
+    {
+      "id": "q-0570",
+      "grammarPatternId": "n5-179",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "たなかさんは、あした こない（  ）言って いました。",
+      "choices": [
+        "って",
+        "を",
+        "が",
+        "に"
+      ],
+      "correctAnswer": "って",
+      "explanation_en": "Plain + って + 言う / 言って いる = casual quote-marker (informal counterpart of と). Distractors: を marks direct objects (言う doesn't take a を for embedded quotes); が marks subject; に is recipient/time.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0571",
+      "grammarPatternId": "n5-180",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "おすしの たべ（  ）を おしえて ください。",
+      "choices": [
+        "かた",
+        "とき",
+        "ばしょ",
+        "ひと"
+      ],
+      "correctAnswer": "かた",
+      "explanation_en": "V-stem (drop ます) + かた = way of [V]-ing. tabe-kata = way of eating. Distractors: とき (time/when), ばしょ (place), ひと (person) — none form 'way of' in this construction.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0572",
+      "grammarPatternId": "n5-181",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "「うわあ、この けしきは きれいだ（  ）。」",
+      "choices": [
+        "なあ",
+        "ね",
+        "よ",
+        "か"
+      ],
+      "correctAnswer": "なあ",
+      "explanation_en": "なあ is a sentence-final exclamation expressing strong personal feeling ('really, isn't it?'). The 「うわあ」 opening interjection anchors strong emotional register, which only なあ matches. Distractors: ね seeks confirmation (less self-directed than なあ), よ asserts, か questions.",
+      "difficulty": 3
+    },
+    {
+      "id": "q-0573",
+      "grammarPatternId": "n5-182",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "あぶない！　そこへ 行く（  ）！",
+      "choices": [
+        "な",
+        "ね",
+        "よ",
+        "の"
+      ],
+      "correctAnswer": "な",
+      "explanation_en": "V-plain (dictionary form) + な = strong/casual prohibition ('don't!'). The exclamatory あぶない！ context anchors the strong-register prohibition. Distractors: ね/よ are sentence-final tags but not prohibitions; の would form an informal question, not a command.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0574",
+      "grammarPatternId": "n5-183",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "「おなかが すきました。なに（  ）たべませんか。」",
+      "choices": [
+        "か",
+        "も",
+        "を",
+        "に"
+      ],
+      "correctAnswer": "か",
+      "explanation_en": "なに + か = 'something' (positive existence). 'Want to eat something?' Distractors: なに + も + negative-verb = 'nothing' (would need ません), wo/ni don't form Q-word compounds.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0575",
+      "grammarPatternId": "n5-184",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "つかれましたから、なに（  ）たべたく ありません。",
+      "choices": [
+        "も",
+        "か",
+        "を",
+        "が"
+      ],
+      "correctAnswer": "も",
+      "explanation_en": "なに + も + negative = nothing. The negative たべたく ありません forces も (not か, which would be positive 'something'). Distractors: か is positive existence; を/が don't form Q-word compounds.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0576",
+      "grammarPatternId": "n5-185",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "へやに だれ（  ）いません。しずかです。",
+      "choices": [
+        "も",
+        "か",
+        "が",
+        "に"
+      ],
+      "correctAnswer": "も",
+      "explanation_en": "だれ + も + negative-verb = no one. The negative いません forces も. Distractors: か is positive existence (would mean 'someone is there'); が/に don't form Q-word compounds.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0577",
+      "grammarPatternId": "n5-186",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "つかれましたから、きょうは どこ（  ）行きません。",
+      "choices": [
+        "も",
+        "か",
+        "へ",
+        "を"
+      ],
+      "correctAnswer": "も",
+      "explanation_en": "どこ + も + negative-verb = nowhere. The negative 行きません forces も. Distractors: か is positive 'somewhere'; へ/を don't form Q-word compounds (they're plain particles).",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0578",
+      "grammarPatternId": "n5-187",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に いちばん いい ものを えらんで ください。",
+      "question_ja": "わたしは いつ（  ）７じに おきます。",
+      "choices": [
+        "も",
+        "か",
+        "に",
+        "の"
+      ],
+      "correctAnswer": "も",
+      "explanation_en": "いつ + も = always (positive existence; differs from なに/だれ/どこ which need a negative verb to form 'nothing/no-one/nowhere'). Distractors: いつ + か = 'sometime' (would need a non-habitual context); に/の don't form Q-word compounds.",
+      "difficulty": 2
     }
   ]
 }

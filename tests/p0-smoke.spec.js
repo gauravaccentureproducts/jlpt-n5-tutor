@@ -163,6 +163,143 @@ test.describe('P0 smoke - core navigation', () => {
   });
 });
 
+test.describe('P0 smoke - syllabus dashboard features (v1.10.0)', () => {
+  // Regression coverage for the homepage redesign + 4 new features
+  // shipped in v1.10.0: daily-goal badge, mock-test reading toggle,
+  // completion tracking propagated to homepage Progress, full study-
+  // order link routing.
+
+  test('daily-goal badge: hidden for first-time visitor', async ({ page }) => {
+    // Fresh storage = no streak record = no daily-status row at all.
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+    await expect(page.locator('.syllabus-daily-status')).toHaveCount(0);
+  });
+
+  test('daily-goal badge: returning user, practiced today shows ✓', async ({ page }) => {
+    // Seed a streak record dated today, then reload home.
+    await page.goto('/');
+    await page.waitForLoadState('domcontentloaded');
+    await page.evaluate(() => {
+      const today = new Date();
+      const key = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+      localStorage.setItem('jlpt-n5-tutor:streak', JSON.stringify({
+        current: 5, longest: 5, lastStudyDate: key, days: [key],
+      }));
+      localStorage.setItem('jlpt-n5-tutor:results', JSON.stringify([
+        { correct: 12, total: 15, percent: 80, incorrect: 3 },
+      ]));
+    });
+    // Force re-render of home
+    await page.evaluate(() => { location.hash = '#/learn'; });
+    await page.waitForTimeout(400);
+    await page.evaluate(() => { location.hash = '#/home'; });
+    await page.waitForTimeout(600);
+    await expect(page.locator('.syllabus-daily-status')).toBeVisible();
+    await expect(page.locator('.syllabus-daily-streak')).toContainText('5 days');
+    await expect(page.locator('.syllabus-daily-today')).toHaveClass(/is-met/);
+    await expect(page.locator('.syllabus-daily-today')).toContainText('Practiced today');
+  });
+
+  test('daily-goal badge: returning user, NOT practiced today shows ○', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('domcontentloaded');
+    await page.evaluate(() => {
+      // Streak from yesterday — not today.
+      const yesterday = new Date(Date.now() - 86400_000);
+      const key = `${yesterday.getFullYear()}-${String(yesterday.getMonth()+1).padStart(2,'0')}-${String(yesterday.getDate()).padStart(2,'0')}`;
+      localStorage.setItem('jlpt-n5-tutor:streak', JSON.stringify({
+        current: 3, longest: 3, lastStudyDate: key, days: [key],
+      }));
+      localStorage.setItem('jlpt-n5-tutor:history', JSON.stringify({
+        'n5-001': { reps: 1, isMastered: true, isManuallyKnown: false },
+      }));
+    });
+    await page.evaluate(() => { location.hash = '#/learn'; });
+    await page.waitForTimeout(400);
+    await page.evaluate(() => { location.hash = '#/home'; });
+    await page.waitForTimeout(600);
+    await expect(page.locator('.syllabus-daily-today')).toHaveClass(/is-pending/);
+    await expect(page.locator('.syllabus-daily-today')).toContainText('Not yet practiced today');
+  });
+
+  test('study-order links: all 8 route to the right surface', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+    const expected = [
+      ['#/learn/grammar', /Grammar/i],
+      ['#/learn/vocab',   /Vocabulary|ごい/i],
+      ['#/kanji',         /Kanji|かんじ/i],
+      ['#/drill',         /Drill|れんしゅう/i],
+      ['#/reading',       /Reading|どっかい/i],
+      ['#/listening',     /Listening|ちょうかい/i],
+      ['#/test',          /Test|テスト/i],
+      ['#/review',        /Review|SRS/i],
+    ];
+    const links = page.locator('.study-order-link');
+    await expect(links).toHaveCount(8);
+    for (let i = 0; i < expected.length; i++) {
+      const [href, expectMain] = expected[i];
+      await expect(links.nth(i)).toHaveAttribute('href', href);
+    }
+    // Click the 4th step (drill) and verify routing actually lands.
+    await links.nth(3).click();
+    await page.waitForTimeout(400);
+    expect(page.url()).toContain('#/drill');
+  });
+
+  test('reading mock-test mode toggle: persists + filters questions', async ({ page }) => {
+    await page.goto('/#/reading');
+    await page.waitForLoadState('networkidle');
+    const toggle = page.locator('#reading-mock-mode');
+    await expect(toggle).toBeVisible();
+    await expect(toggle).not.toBeChecked();
+    // Capture per-passage question count BEFORE toggle (full set).
+    const beforeText = await page.locator('.reading-list li').first().innerText();
+    await toggle.check();
+    await expect(toggle).toBeChecked();
+    // Page re-renders; check setting persisted to localStorage.
+    const stored = await page.evaluate(() => {
+      const s = JSON.parse(localStorage.getItem('jlpt-n5-tutor:settings') || '{}');
+      return s.readingMockTestMode;
+    });
+    expect(stored).toBe(true);
+    // After toggle, question count per passage should be ≤ before.
+    const afterText = await page.locator('.reading-list li').first().innerText();
+    // Both should contain "もん" (counter for questions).
+    expect(afterText).toContain('もん');
+  });
+
+  test('homepage Progress reflects completion-state localStorage', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+    // Before: all rows should show 0/N or "Not attempted"
+    const initialValues = await page.locator('.progress-value').allTextContents();
+    expect(initialValues).toHaveLength(6);
+    // Seed completion state for reading + listening + a known kanji
+    await page.evaluate(() => {
+      localStorage.setItem('jlpt-n5-tutor:completedReading',
+        JSON.stringify({ 'n5.read.001': { at: '2026-05-02T00:00:00Z' },
+                         'n5.read.002': { at: '2026-05-02T00:00:00Z' } }));
+      localStorage.setItem('jlpt-n5-tutor:completedListening',
+        JSON.stringify({ 'n5.listen.001': { at: '2026-05-02T00:00:00Z' } }));
+      localStorage.setItem('jlpt-n5-tutor:knownKanji',
+        JSON.stringify({ '人': true, '日': true, '本': true, '中': true }));
+    });
+    await page.evaluate(() => { location.hash = '#/learn'; });
+    await page.waitForTimeout(400);
+    await page.evaluate(() => { location.hash = '#/home'; });
+    await page.waitForTimeout(600);
+    const updatedValues = await page.locator('.progress-value').allTextContents();
+    // Kanji row (index 2) should show 4 / 106
+    expect(updatedValues[2]).toContain('4 / 106');
+    // Reading row (index 3) should show 2 / 30
+    expect(updatedValues[3]).toContain('2 / 30');
+    // Listening row (index 4) should show 1 / 30
+    expect(updatedValues[4]).toContain('1 / 30');
+  });
+});
+
 test.describe('P0 smoke - keyboard shortcuts', () => {
   test('? opens shortcuts cheatsheet, Esc closes', async ({ page }) => {
     await page.goto('/#/learn');

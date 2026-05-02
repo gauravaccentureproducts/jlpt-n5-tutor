@@ -1,6 +1,6 @@
 {
   "name": "jlpt-n5-tutor",
-  "version": "1.5.0",
+  "version": "1.10.0",
   "private": true,
   "description": "Static, on-device, privacy-preserving tutor for JLPT N5 grammar. App is vanilla HTML/CSS/JS - this package.json only carries devDependencies for the Playwright + axe-core P0 smoke suite per feedback/ui-testing-plan.md §17.1.",
   "scripts": {
