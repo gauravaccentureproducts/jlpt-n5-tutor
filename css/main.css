@@ -3187,6 +3187,209 @@ ruby[data-glyph] { cursor: pointer; }
   }
 }
 
+/* ============================================================================
+ * Level picker (Level 1 hierarchy, added 2026-05-02 per user direction).
+ *
+ * The picker page is the new top-of-funnel: bare URL `/` shows 5 cards
+ * (N5 / N4 / N3 / N2 / N1). N5 is available; N4-N1 are clickable to
+ * a placeholder explaining "content not yet available". Inside any
+ * level (or its placeholder) the body carries `data-route="..."` so
+ * the CSS can hide the in-level chrome (primary nav + search) on the
+ * picker and on the placeholders — those routes have no use for them.
+ * ============================================================================ */
+
+/* Hide primary nav + search on the picker AND on N4-N1 placeholders.
+ * The user is "outside" any specific level here, so the in-level nav
+ * (Grammar / Vocab / Kanji / etc.) and the search input (which only
+ * indexes N5) are not relevant. */
+body[data-route="levels"] .primary-nav,
+body[data-route="levels"] #search-input,
+body[data-route="n4"] .primary-nav,
+body[data-route="n4"] #search-input,
+body[data-route="n3"] .primary-nav,
+body[data-route="n3"] #search-input,
+body[data-route="n2"] .primary-nav,
+body[data-route="n2"] #search-input,
+body[data-route="n1"] .primary-nav,
+body[data-route="n1"] #search-input {
+  display: none;
+}
+
+.levels-page {
+  max-width: var(--container-wide);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5) var(--space-8);
+}
+.levels-header {
+  margin-bottom: var(--space-6);
+}
+.levels-title {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-light);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  margin: 0 0 var(--space-3);
+  color: var(--color-text);
+}
+.levels-subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text);
+  line-height: var(--leading-relaxed, 1.55);
+  margin: 0;
+  max-width: 640px;
+}
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+.level-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  height: 220px;
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-line);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: background var(--motion-fast) var(--easing),
+              border-color var(--motion-fast) var(--easing);
+}
+.level-card:hover {
+  background: var(--color-surface-alt);
+  border-color: var(--color-line-strong);
+}
+.level-card:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+.level-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+}
+.level-card-code {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-light);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text);
+  line-height: 1;
+}
+.level-card-status {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-bg);
+  border: 0.5px solid var(--color-line);
+  border-radius: var(--radius-sm);
+}
+.level-card.is-available .level-card-status {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.level-card-label {
+  font-size: var(--text-md);
+  font-weight: var(--weight-medium, 500);
+  margin: var(--space-2) 0 0;
+  color: var(--color-text);
+}
+.level-card-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed, 1.55);
+  margin: 0;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.level-card-arrow {
+  position: absolute;
+  right: var(--space-5);
+  bottom: var(--space-4);
+  font-size: var(--text-md);
+  color: var(--color-text-muted);
+  transition: color var(--motion-fast) var(--easing);
+}
+.level-card:hover .level-card-arrow { color: var(--color-text); }
+.level-card.is-coming-soon { opacity: 0.92; }
+.levels-foot {
+  margin-top: var(--space-5);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* Placeholder page for unbuilt levels (#/n4, #/n3, #/n2, #/n1). */
+.level-placeholder {
+  max-width: 720px;
+  margin: var(--space-6) auto;
+  padding: 0 var(--space-5);
+}
+.level-placeholder-back {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-sm);
+}
+.level-placeholder-back a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+.level-placeholder-back a:hover { color: var(--color-text); }
+.level-placeholder-title {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-light);
+  letter-spacing: var(--tracking-tight);
+  margin: 0 0 var(--space-2);
+  color: var(--color-text);
+}
+.level-placeholder-label {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-5);
+}
+.level-placeholder-card {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-line);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-5);
+}
+.level-placeholder-headline {
+  font-size: var(--text-md);
+  font-weight: var(--weight-medium, 500);
+  color: var(--color-text);
+  margin: 0 0 var(--space-3);
+}
+.level-placeholder-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: var(--leading-relaxed, 1.55);
+  margin: 0 0 var(--space-3);
+}
+.level-placeholder-card p:last-child { margin-bottom: 0; }
+.level-placeholder-foot {
+  margin: var(--space-5) 0 0;
+}
+
+/* "← All JLPT levels" up-link on the N5 syllabus dashboard, sits above
+ * the resume strip / hero so it's the first focusable thing on the page. */
+.home-up-link {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+}
+.home-up-link a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+.home-up-link a:hover { color: var(--color-text); }
+
 /* Empty states (Brief 2 s3.2) */
 .empty-state {
   background: var(--c-surface);

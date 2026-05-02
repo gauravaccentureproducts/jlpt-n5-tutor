@@ -26,7 +26,11 @@
   <a href="#app" class="skip-link">Skip to main content</a>
   <header class="app-header" role="banner">
     <div class="brand">
-      <h1><a href="#/home" class="brand-link" aria-label="JLPT N5, return to home">JLPT N5</a></h1>
+      <!-- Brand-link routes to the level picker (Level 1). Inside an
+           N5 context the visible label still says "JLPT N5" because
+           the user IS on N5; clicking returns them to the level
+           chooser to pick another level. -->
+      <h1><a href="#/levels" class="brand-link" aria-label="JLPT, choose a level">JLPT N5</a></h1>
     </div>
     <nav class="primary-nav" aria-label="Primary">
       <a href="#/learn/grammar" data-route="learn/grammar">Grammar</a>

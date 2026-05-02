@@ -26,6 +26,7 @@ import { initI18n } from './i18n.js';
 import { renderPapers } from './papers.js';
 import { renderChangelog } from './changelog.js';
 import { renderFeedback } from './feedback.js';
+import { renderLevels, renderLevelPlaceholder } from './levels.js';
 import { initContentProtection } from './content-protect.js';
 
 const ROUTES = {
@@ -49,12 +50,23 @@ const ROUTES = {
   papers:     renderPapers,
   changelog:  renderChangelog,
   feedback:   renderFeedback,
+  // Level-1 hierarchy: picker + 4 placeholder pages for N4-N1.
+  // The actual N5 content stays at all the routes above (home, learn,
+  // test, etc.) — clicking N5 on the picker navigates to #/home.
+  levels:     renderLevels,
+  n4:         renderLevelPlaceholder,
+  n3:         renderLevelPlaceholder,
+  n2:         renderLevelPlaceholder,
+  n1:         renderLevelPlaceholder,
 };
 
 function parseRoute() {
-  const hash = location.hash || '#/learn';
+  // Default landing is the level picker (Level 1) — added 2026-05-02
+  // when we lifted the hierarchy. Bookmarks to specific routes still
+  // work (the bare empty hash is what falls through to this default).
+  const hash = location.hash || '#/levels';
   const m = hash.match(/^#\/(\w+)(?:\/(.*))?$/);
-  if (!m) return { name: 'learn', params: '' };
+  if (!m) return { name: 'levels', params: '' };
   return { name: m[1], params: m[2] || '' };
 }
 
@@ -62,6 +74,11 @@ function setActiveNav(name) {
   document.querySelectorAll('.primary-nav a').forEach(a => {
     a.classList.toggle('active', a.dataset.route === name);
   });
+  // Also publish the active route as a body data attribute so the CSS
+  // can hide the primary nav + search on the level picker and on the
+  // N4-N1 placeholder pages (no point showing nav into N5 content
+  // when the user explicitly chose a different / unbuilt level).
+  document.body.dataset.route = name;
 }
 
 

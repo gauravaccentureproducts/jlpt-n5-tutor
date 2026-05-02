@@ -260,6 +260,9 @@ export async function renderHome(container) {
 
   container.innerHTML = `
     <section class="home-syllabus">
+      <p class="home-up-link">
+        <a href="#/levels">← All JLPT levels</a>
+      </p>
       ${resumeStrip}
 
       <header class="syllabus-header">
