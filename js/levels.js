@@ -72,10 +72,7 @@ export function renderLevels(container) {
           if (lvl.available) {
             return `
               <a class="level-card is-available" href="${lvl.href}" data-level="${lvl.id}">
-                <div class="level-card-row">
-                  <span class="level-card-code">${lvl.code}</span>
-                  <span class="level-card-status">Available</span>
-                </div>
+                <span class="level-card-code">${lvl.code}</span>
                 <h2 class="level-card-label">${lvl.label}</h2>
                 <p class="level-card-desc">${lvl.desc}</p>
                 <span class="level-card-arrow" aria-hidden="true">→</span>
@@ -86,10 +83,7 @@ export function renderLevels(container) {
             <div class="level-card is-disabled" data-level="${lvl.id}"
                  aria-disabled="true"
                  title="Content not yet available">
-              <div class="level-card-row">
-                <span class="level-card-code">${lvl.code}</span>
-                <span class="level-card-status">Coming soon</span>
-              </div>
+              <span class="level-card-code">${lvl.code}</span>
               <h2 class="level-card-label">${lvl.label}</h2>
               <p class="level-card-desc">${lvl.desc}</p>
             </div>
