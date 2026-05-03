@@ -2072,7 +2072,18 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "げんきか？",
+          "right": "げんきですか。",
+          "why": "Plain か without ですか drops to rough/masculine register; use ですか in polite speech."
+        },
+        {
+          "wrong": "行きますか？",
+          "right": "行きますか。",
+          "why": "Japanese sentence-final question particle is か, not ？; the ？ is optional and Western. Period (。) is the canonical end-mark in formal text."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -2127,7 +2138,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "コーヒー、おちゃ",
+          "right": "コーヒーか おちゃ",
+          "why": "For \"or\", connect with か (e.g., A か B). Comma alone reads as a list, not an alternative."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -2411,7 +2428,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "日本語を 話す が すきです。",
+          "right": "日本語を 話すのが すきです。",
+          "why": "Bare verbs cannot be subjects of すき. Add の (or こと) to nominalize: 話すのが すき."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -3159,7 +3182,18 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "これ 本は おもしろいです。",
+          "right": "この 本は おもしろいです。",
+          "why": "これ is a standalone pronoun; cannot precede a noun. Use この + Noun for \"this X\"."
+        },
+        {
+          "wrong": "それの 本",
+          "right": "その 本",
+          "why": "No の after その/この/あの/どの when a noun directly follows."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-015",
@@ -3503,7 +3537,18 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "なに ですか。",
+          "right": "何ですか。 (なん ですか。)",
+          "why": "Before だ/です/の or counters, 何 reads なん. Standalone before particles を/が, it reads なに."
+        },
+        {
+          "wrong": "なに 時に 行きますか。",
+          "right": "何時に 行きますか。 (なんじに)",
+          "why": "In counter compounds (なんじ, なんにち, なんさい), the reading is なん, not なに."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-017",
@@ -3844,7 +3889,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "げんき いかが？",
+          "right": "お げんきですか。 (or げんき どう？)",
+          "why": "いかが is the polite/respectful form of どう, used with です. Plain casual speech uses どう, not いかが."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -3973,7 +4024,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "どう 学校に 行きますか。 (asking method)",
+          "right": "どうやって 学校に 行きますか。",
+          "why": "どう alone often asks \"how is it?\" (state/quality). For \"by what means\", use どうやって."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -4284,7 +4341,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "何月日ですか。",
+          "right": "何月 何日ですか。",
+          "why": "Month and day are asked separately: 何月 (なんがつ) and 何日 (なんにち), each with its own counter."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -4754,7 +4817,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "行こうか？ (formal context)",
+          "right": "行きましょうか。",
+          "why": "Plain volitional 行こうか is casual; in polite contexts use ～ましょうか for offers/proposals."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-062",
@@ -7398,7 +7467,18 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "本は つくえに います。",
+          "right": "本は つくえに あります。",
+          "why": "いる is for animate (people, animals); ある is for inanimate (objects). 本 is inanimate → あります."
+        },
+        {
+          "wrong": "ねこは ベッドの 上に あります。",
+          "right": "ねこは ベッドの 上に います。",
+          "why": "Animate ねこ (cat) takes います, not あります."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-092",
@@ -7472,7 +7552,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "テストは あした います。",
+          "right": "あした テストが あります。",
+          "why": "For events/scheduled things (test, meeting, party), use ～が あります. The subject is the event, not its time."
+        }
+      ],
       "contrasts": [],
       "notes": "For animate possessions (children, pets), use いる/います instead of ある/あります: 子どもが 二人 います ('I have two children'). 「子どもが あります」is non-standard in modern Japanese."
     },
@@ -7597,7 +7683,18 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "なつは ふゆより 大きい。",
+          "right": "なつは ふゆより あつい です。",
+          "why": "Comparison adjective should fit the dimension being compared. (Also, dictionary form alone is too informal; use です.)"
+        },
+        {
+          "wrong": "AのほうがBより 大きいです。",
+          "right": "BよりAのほうが 大きいです。",
+          "why": "より marks the standard (B), のほうが marks the topic (A). Standard order: BよりAのほうが ～."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-095",
@@ -7663,7 +7760,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "AかBか、どちらが すきですか。",
+          "right": "AとBと、どちらが すきですか。",
+          "why": "For \"which of A or B?\", use と...と to list, then どちら. か...か is grammatical but と...と is the standard frame for comparison questions."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -8204,7 +8307,18 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "行きたくありません。 (correct but rigid)",
+          "right": "行きたくないです。 (more natural)",
+          "why": "Both are correct; ～たくないです is more natural in conversation. ～たくありません is hyper-formal."
+        },
+        {
+          "wrong": "食べたくない です。",
+          "right": "食べたくないです。",
+          "why": "たくない is one unit; no space between くない and です."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-104",
@@ -8263,7 +8377,18 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "わたしは 新しい かばんを ほしいです。",
+          "right": "わたしは 新しい かばんが ほしいです。",
+          "why": "ほしい takes が, not を. The desired thing is the が-marked target."
+        },
+        {
+          "wrong": "田中さんは 車が ほしいです。",
+          "right": "田中さんは 車を ほしがって います。",
+          "why": "ほしい can only describe SPEAKER's desire. For third-person desires, use ほしがる."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -8479,7 +8604,18 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "りんごは いくらですか。 (asking quantity)",
+          "right": "りんごは いくつ ありますか。",
+          "why": "いくら asks price; いくつ asks count of objects (no fixed counter)."
+        },
+        {
+          "wrong": "かぞくは なんにん ですか。",
+          "right": "かぞくは なんにん いますか。",
+          "why": "For people-count, pair with います (animate existence verb)."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-054",
@@ -8705,7 +8841,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "三時 三十分 (in casual speech)",
+          "right": "三時はん",
+          "why": "In casual speech, 三十分 (sanjuppun) is replaced by はん (han). 三時はん = \"3:30\" / \"half past 3\"."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -8776,7 +8918,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "九時まで 五時から しごとです。",
+          "right": "九時から 五時まで しごとです。",
+          "why": "Order is start-end: から first, then まで. Reversed order is ungrammatical."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-021",
@@ -8856,7 +9004,18 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "学校で 行きます。",
+          "right": "学校に 行きます。",
+          "why": "For destination of motion verbs (行く, 来る, かえる), use に (or へ), not で. で marks the location of action."
+        },
+        {
+          "wrong": "七時で おきます。",
+          "right": "七時に おきます。",
+          "why": "For points in time, use に, not で. (Days of week, months, clock times.)"
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-005",
@@ -9071,7 +9230,18 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "まだ 食べました。",
+          "right": "もう 食べました。",
+          "why": "もう = \"already\" (with affirmative past); まだ = \"still / not yet\" (often with negative). Don't mix."
+        },
+        {
+          "wrong": "もう 食べていません。",
+          "right": "まだ 食べていません。",
+          "why": "For \"haven't eaten yet\", use まだ + negative-progressive (まだ食べていません), not もう + negative."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -9344,7 +9514,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "シャワーを あびました。それから ねます。",
+          "right": "シャワーを あびました。それから ねました。",
+          "why": "それから connects sequential past events; both clauses should match in tense."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -9406,7 +9582,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "わたしは 学生です。でも 田中さんも 学生です。",
+          "right": "わたしは 学生です。それに 田中さんも 学生です。",
+          "why": "でも introduces contrast/exception; for \"moreover/additionally\" use それに."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-124",
@@ -9464,7 +9646,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "むずかしかったです。しかし、できました。 (in casual speech)",
+          "right": "むずかしかったです。でも、できました。",
+          "why": "しかし is formal/written; in casual conversation, でも is more natural."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -9515,7 +9703,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "じゃ、はじめましょう。 (in formal meeting)",
+          "right": "では、はじめましょう。",
+          "why": "じゃ is the colloquial contraction of では; in formal contexts (meetings, speeches), prefer では."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -9705,7 +9899,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "どうして 来ませんでしたか。―ねつが あって。",
+          "right": "どうして 来ませんでしたか。―ねつが あったからです。",
+          "why": "Reason answers in formal speech end in ～からです, not just the bare clause."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -9764,7 +9964,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "わたしは 田中さんが 本を あげました。",
+          "right": "わたしは 田中さんに 本を あげました。",
+          "why": "Recipient is marked with に, not が. Pattern: [giver] は [recipient] に [object] を あげる."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -9949,7 +10155,18 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "あついから まどを あけて くださいから。",
+          "right": "あついから、まどを あけて ください。",
+          "why": "から goes ONCE between cause and result, not at the end of both clauses."
+        },
+        {
+          "wrong": "雨が ふっています、ですから 行きません。 (overly formal)",
+          "right": "雨が ふっていますから、行きません。",
+          "why": "In one sentence, から attaches directly to the cause clause; ですから is for stand-alone \"therefore\" at sentence start."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-009",
@@ -10210,7 +10427,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "日本 学校",
+          "right": "日本の 学校",
+          "why": "Two nouns require の between them in modifier-modifier-of-noun position. Direct-juxtaposed compounds (日本人, 日本語) are exceptions where の is dropped by convention."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-028",
@@ -10269,7 +10492,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "コーヒーを します。",
+          "right": "コーヒーに します。",
+          "why": "\"Choose / decide on X\" uses に, not を. を します means \"do X\" (action verb)."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -10525,7 +10754,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "田中さんは 行くを 言いました。",
+          "right": "田中さんは 行くと 言いました。",
+          "why": "Quotative particle is と, not を. Quoted clause stays in plain form before と (not 行くを)."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -10685,7 +10920,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "いつも 行きません。 (intent: \"I never go\")",
+          "right": "行きません。 / ぜんぜん 行きません。",
+          "why": "いつも is \"always\" — does not pair with negation. Use ぜんぜん or just the negative verb for \"never\"."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -10736,7 +10977,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "みず ください。",
+          "right": "みずを ください。",
+          "why": "を is required between noun and ください in standard speech. Drop is colloquial only."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -10813,7 +11060,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "コーヒーを ください。 (in restaurant ordering)",
+          "right": "コーヒーを おねがいします。",
+          "why": "Both work, but おねがいします is more polite/standard for ordering at a restaurant or making polite requests."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -10869,7 +11122,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "おちゃは どうですか。 (offering to a customer)",
+          "right": "おちゃは いかがですか。",
+          "why": "いかが is the polite form of どう. When offering to customers / superiors, use いかが."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -10948,7 +11207,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "ありがとう、 どうぞ。 (thanking)",
+          "right": "ありがとう、 どうも。 / どうも、 ありがとう。",
+          "why": "どうぞ = \"please go ahead / here you are\" (offering). For \"thanks\", pair ありがとう with どうも, not どうぞ."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -11078,7 +11343,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "もう 食べます。",
+          "right": "もう 食べました。",
+          "why": "もう = \"already\" requires past (～ました). Present tense もう食べます would mean \"I'll eat now\", not \"already ate\"."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -11139,7 +11410,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "むずかしいです。が おもしろいです。",
+          "right": "むずかしいですが、おもしろいです。",
+          "why": "Mid-sentence が attaches directly to the first clause; do NOT split into two sentences. Period before が breaks the connection."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-126",
@@ -11270,7 +11547,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "あした 雨ですでしょう。",
+          "right": "あした 雨でしょう。",
+          "why": "でしょう attaches directly to the noun/adj/verb-plain form, NOT to です. です + でしょう is double-copula."
+        }
+      ],
       "contrasts": [],
       "notes": "Borderline N5."
     },
@@ -11389,7 +11672,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "いい てんきですよね。 (overuse)",
+          "right": "いい てんきですね。 (or よ, not both)",
+          "why": "よ asserts new info; ね seeks agreement. Stacking よね is colloquial and overused — pick one in clean speech."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-025",
@@ -11452,7 +11741,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "しごと あとで 行きます。",
+          "right": "しごとの あとで 行きます。",
+          "why": "Noun + あと requires の. (Verb-た + あとで does NOT take の: 食べた あとで.)"
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-120",
@@ -11512,7 +11807,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "ごはん まえに てを あらいます。",
+          "right": "ごはんの まえに てを あらいます。",
+          "why": "Noun + まえ requires の. (Verb-plain + まえに does NOT take の: 食べる まえに.)"
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-119",
@@ -11841,7 +12142,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "ごはんを 食べる まえに 「ごちそうさま」",
+          "right": "ごはんを 食べる まえに 「いただきます」",
+          "why": "いただきます = before eating; ごちそうさま = after eating. Don't reverse them."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -12031,7 +12338,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "日本に 行く ことが あります。 (intent: \"have been to Japan\")",
+          "right": "日本に 行った ことが あります。",
+          "why": "Past experience requires the た-form before ことがある. Plain form 行く + ことがある means \"sometimes go (habit)\", a different meaning."
+        }
+      ],
       "contrasts": [],
       "notes": "Upper N5 / borderline."
     },
@@ -12088,7 +12401,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "行く ほうが いいです。",
+          "right": "行った ほうが いいです。",
+          "why": "Recommendations use the た-form: ～たほうがいい. Plain form ～ほうがいい is grammatical but sounds like a comparison (\"the going option is better\"), not advice."
+        }
+      ],
       "contrasts": [],
       "notes": "Upper N5 / borderline."
     },
@@ -12138,7 +12457,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "行かなく ほうが いいです。",
+          "right": "行かない ほうが いいです。",
+          "why": "Negative ほうがいい uses the plain ない form (行かない), not the て-form ない (行かなくて)."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -12188,7 +12513,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "行かなくて いいです。",
+          "right": "行かなくても いいです。",
+          "why": "The set phrase requires も between なくて and いい: ～なくても いい. Without も it sounds like \"don't go and it's fine\"."
+        }
+      ],
       "contrasts": [],
       "notes": "Upper N5 / borderline."
     },
@@ -12239,7 +12570,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "行きなくては いけません。",
+          "right": "行かなくては いけません。",
+          "why": "～なくては attaches to the negative-stem (ない-form base): 行か + なくては. NOT to the polite-stem 行き."
+        }
+      ],
       "contrasts": [],
       "notes": "Upper N5 / borderline."
     },
@@ -12288,7 +12625,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "行かないと ならない。",
+          "right": "行かなくては ならない。 / 行かないと いけない。",
+          "why": "～と pairs with いけない, not ならない. Mismatch: ～なくては + ならない/いけない (both OK); ～ないと + いけない (only)."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-173",
@@ -12340,7 +12683,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "しゅくだいを しないと なりません。",
+          "right": "しゅくだいを しないと いけません。",
+          "why": "～ないと idiomatically pairs with いけない/いけません (more colloquial), not ならない. (See n5-174.)"
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-173",
@@ -12502,7 +12851,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "行きます つもりです。",
+          "right": "行く つもりです。",
+          "why": "つもり attaches to the PLAIN form (行く), not the polite form (行きます)."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -12605,7 +12960,18 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "読むかた",
+          "right": "読みかた",
+          "why": "～かた attaches to the verb-STEM (ます-form base), not the dictionary form. 読む → 読み + かた."
+        },
+        {
+          "wrong": "食べるかた",
+          "right": "食べかた",
+          "why": "For Group-2 verbs, drop the final る before adding かた: 食べる → 食べ + かた."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -12769,7 +13135,13 @@
           "vocab_ids": []
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "なに か 食べません。",
+          "right": "なにも 食べません。",
+          "why": "With negative verbs, use なにも (nothing). なにか + negative is ungrammatical."
+        }
+      ],
       "contrasts": [],
       "notes": ""
     },
@@ -12822,7 +13194,18 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "なにか 食べません。",
+          "right": "なにも 食べません。",
+          "why": "なにか pairs with affirmative (\"eat something\"); なにも with negative (\"eat nothing\"). Don't mix."
+        },
+        {
+          "wrong": "なにも 食べたいです。",
+          "right": "なにか 食べたいです。",
+          "why": "\"I want to eat something\" is affirmative — use なにか, not なにも."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-183",
@@ -12888,7 +13271,13 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "だれか 来ませんでした。",
+          "right": "だれも 来ませんでした。",
+          "why": "With negative verbs, use だれも (nobody). だれか + negative shifts meaning to \"didn't someone come?\", which is awkward in N5."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-183",
@@ -12951,7 +13340,18 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "どこか 行きません。",
+          "right": "どこも 行きません。",
+          "why": "With negative, どこも = \"(go) nowhere\". どこか + negative is ungrammatical."
+        },
+        {
+          "wrong": "どこも 行きたいです。",
+          "right": "どこか 行きたいです。",
+          "why": "\"Want to go somewhere\" is affirmative wish — use どこか."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-183",
@@ -13021,7 +13421,18 @@
           ]
         }
       ],
-      "common_mistakes": [],
+      "common_mistakes": [
+        {
+          "wrong": "いつも 日本に 行きたいです。 (intent: \"someday\")",
+          "right": "いつか 日本に 行きたいです。",
+          "why": "いつも = \"always\" (every time); いつか = \"someday / sometime in the future\". For aspirations, use いつか."
+        },
+        {
+          "wrong": "いつか コーヒーを 飲みます。 (intent: \"always\")",
+          "right": "いつも コーヒーを 飲みます。",
+          "why": "For habit \"always drink coffee\", use いつも. いつか implies a single future occasion."
+        }
+      ],
       "contrasts": [
         {
           "with_pattern_id": "n5-183",

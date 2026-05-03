@@ -254,7 +254,21 @@ NEG_EN_BROAD = re.compile(
     r"(\bnot\b|\bno\b|\bnever\b|\bnone\b|\bnothing\b|n['’]t\b|"
     r"without|except|forgot to|nobody|cannot|can ?not)", re.I)
 SUPPRESS_IDIOM = re.compile(
-    r'(しか|だけ|ばかり|ませんか[。?？]?|ね[。?？]?$|でしょう|はじめて)')
+    # Phase-1 suppressors (already known false positives):
+    r'(しか|だけ|ばかり|ませんか[。?？]?|ね[。?？]?$|でしょう|はじめて|'
+    # 2026-05-03: 24 more confirmed false positives — manual review
+    # showed all 24 are correct natural translations:
+    #   - すみません (fixed apology, ません is non-verbal)
+    #   - い-adj ending in ない (あぶない/きたない/つまらない etc.)
+    #   - obligation/should-not idioms: ～なくて(は) / ～ないと いけ・なら,
+    #     ～ないほうが いい (JA double-neg, EN may be positive or negative
+    #     but the idiom is correctly translated either way)
+    #   - quoted casual speech: 「...ない」って
+    #   - verb prohibitive な at sentence end (行くな = "don'\''t go")
+    r'すみません|あぶない|きたない|つまらない|'
+    r'なくて(?:は|も)|ないと いけ|ないほうが|'
+    r'って (?:言|聞|書)|'
+    r'(?:る|く|す|つ|ぬ|ぶ|む|う|ぐ)な[!！。]?$)')
 
 
 def check_t5():
@@ -459,11 +473,11 @@ def main():
         total += n
         marker = '○' if n == 0 else 'X'
         print(f'\n{marker} {code} {desc} ({n})')
-        for who, why, sample in findings[:8]:
+        for who, why, sample in findings[:50]:
             print(f'    {who}: {why}')
             print(f'        sample: {sample!r}')
-        if n > 8:
-            print(f'    ... and {n - 8} more')
+        if n > 50:
+            print(f'    ... and {n - 50} more')
     print()
     print('=' * 70)
     print(f'Total findings: {total}')
