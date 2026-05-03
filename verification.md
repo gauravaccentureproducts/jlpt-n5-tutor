@@ -351,7 +351,7 @@ If a stricter exam-ready subset is desired, strip all `[Ext]` and `[Cul]` lines 
 
 ## Pass 5 - Question-bank teacher audit (2026-04-30)
 
-> Scope: 5 KB question-bank files newly authored after Pass 4 (`moji_questions_n5.md`, `goi_questions_n5.md`, `bunpou_questions_n5.md`, `dokkai_questions_n5.md`, `authentic_extracted_n5.md`). Pass 4 ended with 0 issues in the 4 catalog files; question files were not yet authored at that time.
+> Scope: 5 KB question-bank files newly authored after Pass 4 (`moji_questions_n5.md`, `goi_questions_n5.md`, `bunpou_questions_n5.md`, `dokkai_questions_n5.md`, `externally_sourced_n5.md`). Pass 4 ended with 0 issues in the 4 catalog files; question files were not yet authored at that time.
 
 ### Findings (10 fixes applied)
 
@@ -366,8 +366,8 @@ If a stricter exam-ready subset is desired, strip all `[Ext]` and `[Cul]` lines 
 | **F-GOI-2** | `goi_questions_n5.md` Q43 | HIGH | Stem `（　　） で 十分です` had a redundant `で`; `あるいて 十分` is the natural form, not `あるいて で 十分`. | Removed `で` from stem. ✅ |
 | **F-BUN-1** | `bunpou_questions_n5.md` Q12 | CRITICAL | Spurious YAML-like line `:question_form_options:` between option 1 and option 2 - syntax artifact from an earlier edit. | Removed the spurious line. ✅ |
 | **F-DOK-1** | `dokkai_questions_n5.md` Passage 6 | HIGH | Letter passage said `あした、 学校で しゅくだいの 紙を わすれて しまいました` - tense mismatch (`あした` future + `わすれてしまいました` past). | Changed `あした` → `きのう`. Also changed `教しつ` (mixed kanji-hiragana with non-N5 教) → `きょうしつ`. ✅ |
-| **F-AUTH-1** | `authentic_extracted_n5.md` Q51 | MEDIUM | Source-site question for `五百円` had wrong answer key (canonical reading ごひゃくえん was not among the 4 options; site labeled 2 = ごまんえん which is incorrect). | Replaced with valid `五千円` (ごせんえん) reading question using only N5 kanji. ✅ |
-| **F-AUTH-2** | `authentic_extracted_n5.md` Q55 | MEDIUM | Source-site question for `今朝` had a duplicate/typo'd option set with no clean けさ choice. | Replaced option set with the canonical jukujikun reading けさ. ✅ |
+| **F-AUTH-1** | `externally_sourced_n5.md` Q51 | MEDIUM | Source-site question for `五百円` had wrong answer key (canonical reading ごひゃくえん was not among the 4 options; site labeled 2 = ごまんえん which is incorrect). | Replaced with valid `五千円` (ごせんえん) reading question using only N5 kanji. ✅ |
+| **F-AUTH-2** | `externally_sourced_n5.md` Q55 | MEDIUM | Source-site question for `今朝` had a duplicate/typo'd option set with no clean けさ choice. | Replaced option set with the canonical jukujikun reading けさ. ✅ |
 
 ### Methodology
 
@@ -408,7 +408,7 @@ Final compliance check across all 9 KB files:
 | `goi_questions_n5.md` | 0 | 0 | 100 | OK |
 | `bunpou_questions_n5.md` | 0 | 0 | 100 | OK |
 | `dokkai_questions_n5.md` | 0 | 0 | 100 | OK |
-| `authentic_extracted_n5.md` | 0 | 0 | 189 | OK |
+| `externally_sourced_n5.md` | 0 | 0 | 189 | OK |
 | **Total** | **0** | **0** | **589** | **all clean** |
 
 KB folder is fully Pass-5-closed: zero accuracy findings, zero em-dashes, zero en-dashes, exact Q counts as designed.
@@ -483,7 +483,7 @@ Final compliance check (all 9 KB files, 2026-04-30):
 | goi_questions_n5.md | 0 | 0 | 100 |
 | bunpou_questions_n5.md | 0 | 0 | 100 |
 | dokkai_questions_n5.md | 0 | 0 | 100 |
-| authentic_extracted_n5.md | 0 | 0 | 189 |
+| externally_sourced_n5.md | 0 | 0 | 189 |
 | **Total** | **0** | **0** | **589** |
 
 Specific spot-checks (post-fix):
@@ -527,7 +527,7 @@ KB folder is now Pass-6-closed for JLPT paper-format compliance.
 | goi_questions_n5.md | 0 | 0 | 100 |
 | bunpou_questions_n5.md | 0 | 0 | 100 |
 | dokkai_questions_n5.md | 0 | 0 | **102** ↑ (was 100; +2 from D-5 expansion) |
-| authentic_extracted_n5.md | 0 | 0 | 189 |
+| externally_sourced_n5.md | 0 | 0 | 189 |
 | **Total** | **0** | **0** | **591** ↑ |
 
 Spot-checks (post-fix):
@@ -579,7 +579,7 @@ KB folder is now Pass-6.5-closed: all 4 critical, all 14 high, **and all 7 mediu
 | goi_questions_n5.md | 0 | 0 | 0 | 100 | ✓ |
 | bunpou_questions_n5.md | 0 | 0 | 0 | 100 | ✓ |
 | dokkai_questions_n5.md | 0 | 0 | 0 | 102 | ✓ |
-| authentic_extracted_n5.md | 0 | 0 | **31** | 189 | ✓ |
+| externally_sourced_n5.md | 0 | 0 | **31** | 189 | ✓ |
 | **Total** | **0** | **0** | **82** | **591** | **5/5** |
 
 Pass 7 spot-checks (post-fix):
@@ -670,7 +670,7 @@ Total questions across all 5 KB files unchanged: **591** (100 moji + 100 goi + 1
 | goi_questions_n5.md | 4 | 10 | 3 | 100 | ✓ |
 | bunpou_questions_n5.md | 3 | 2 | 3 | 100 | ✓ |
 | dokkai_questions_n5.md | 2 | 4 | 1 | 102 | ✓ |
-| authentic_extracted_n5.md | 4 | 4 | 0 | 189 | ✓ |
+| externally_sourced_n5.md | 4 | 4 | 0 | 189 | ✓ |
 | **Total** | **16** | **27** | **8** | **591** | **5/5** |
 
 (LOW row totals 8 distinct touched + M-11 closed by M-10 batch = 9 lessons learned.)
@@ -774,7 +774,7 @@ Total questions across all 5 KB files unchanged: **591** (100 moji + 100 goi + 1
 | goi_questions_n5.md | 100 | unchanged |
 | bunpou_questions_n5.md | 100 | unchanged |
 | dokkai_questions_n5.md | 102 | unchanged |
-| authentic_extracted_n5.md | 189 | unchanged |
+| externally_sourced_n5.md | 189 | unchanged |
 | **Total** | **591** | **unchanged** |
 
 ### 8.8 Updated final state
@@ -939,7 +939,7 @@ Calendar reminder scheduled: cron `0 9 30 1,4,7,10 *`, next run 2026-07-30 09:00
 ### 12.3 MEDIUM systemic (2) — both applied
 
 - **F-12.5** `data/kanji.json` — 10 entries (二, 七, 分, 見, 聞, 入, 立, 休, 高, 白) had duplicate readings within their on/kun arrays. Deduplicated, preserving order.
-- **F-12.6** Pattern-A + Pattern-E sweep across runtime data: 27 fixes in `data/` (mixed-kanji-kana 「時かん」→「時間」, yen amounts without commas), 2 in `KnowledgeBank/authentic_extracted_n5.md` (Q111, Q162). Total 29 fixes.
+- **F-12.6** Pattern-A + Pattern-E sweep across runtime data: 27 fixes in `data/` (mixed-kanji-kana 「時かん」→「時間」, yen amounts without commas), 2 in `KnowledgeBank/externally_sourced_n5.md` (Q111, Q162). Total 29 fixes.
 
 ### 12.4 LOW individual (4) — all applied
 

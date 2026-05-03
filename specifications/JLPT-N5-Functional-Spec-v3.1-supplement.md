@@ -564,7 +564,7 @@ Replace the v3 tree with the current state. The diff is large; here is the canon
     goi_questions_n5.md
     bunpou_questions_n5.md
     dokkai_questions_n5.md
-    authentic_extracted_n5.md
+    externally_sourced_n5.md
   /specifications/
     JLPT N5 Grammar Tutor – Functional Spec.docx       # v3
     JLPT-N5-Functional-Spec-v3.1-supplement.md         # this file

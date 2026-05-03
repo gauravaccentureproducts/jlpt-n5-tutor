@@ -2,10 +2,59 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.5 - 2026-05-04 (Open-bug-list Bug 8 closed - filename rename)
+
+Closes the deferred Bug 8 from v1.12.4. The file
+`KnowledgeBank/authentic_extracted_n5.md` is renamed to
+`KnowledgeBank/externally_sourced_n5.md` to match its H1 title and
+remove the misleading "authentic" framing from the file path.
+
+### File rename
+
+  `KnowledgeBank/authentic_extracted_n5.md`
+    -> `KnowledgeBank/externally_sourced_n5.md`
+
+  Done via `git mv` to preserve blame history. Contents unchanged
+  except for the "Filename history" disclaimer block (the prior
+  paragraph announcing the rename was pending; now records the
+  rename is done, links DEFER-11 / CONTENT-LICENSE.md as the
+  rationale for Pass 12 not happening).
+
+### Active references updated (CI / build / spec / docs)
+
+  tools/check_content_integrity.py            (KB_FILES list + EXPECTED_Q_COUNTS)
+  tools/build_papers.py                       (docstring "Skipped files" + comment)
+  tools/fix_open_bugs_2026_05_04.py           (Bug 8 docstring -> closed)
+  specifications/JLPT-N5-Functional-Spec-v3.1-supplement.md (file-tree listing)
+  verification.md                              (10 audit-trail table refs)
+  TASKS.md                                     (3 historical entries)
+  CHANGELOG.md                                 (3 historical mentions)
+
+### Historical archives left as-is (preserve audit-trail accuracy)
+
+  feedback/closed/jlpt-n5-moji-and-source-audit-2026-05-03.md
+  feedback/closed/jlpt-n5-knowledgebank-md-audit-2026-05-01.md
+  feedback/closed/native-teacher-review-request.md
+  feedback/closed/jlpt-n5-content-correction-brief.md
+
+  These are historical snapshots from when the file was named
+  authentic_extracted_n5.md. Keeping the original filename in
+  archived audits preserves the historical accuracy of those records.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v114 -> v115
+  - index.html cache-busters:    v=1.11.24 -> v=1.11.25
+  - tools/check_content_integrity.py -> 40/40 invariants PASS
+    (KB_FILES list now references the new filename; EXPECTED_Q_COUNTS
+    keys updated; X-6.5 em-dash check passes - one em-dash that
+    leaked into the rewritten disclaimer was caught and stripped
+    before commit.)
+
 ## v1.12.4 - 2026-05-04 (Open-bug-list closure - 7 of 8 fixed; 1 deferred)
 
 Closes 7 of 8 items from the open-bug-list filed 2026-05-04. The last
-item (filename rename of authentic_extracted_n5.md) is deferred —
+item (filename rename of externally_sourced_n5.md) is deferred —
 10 cross-references in build/CI scripts would need synchronized
 updates; scope larger than this batch warrants. The file's H1 title
 was already changed to "JLPT N5 Externally-Sourced Practice Questions"
@@ -57,7 +106,7 @@ The bug-list entry was based on a stale snapshot.
 
 ### Deferred (Bug 8)
 
-`KnowledgeBank/authentic_extracted_n5.md` keeps its filename for now.
+`KnowledgeBank/externally_sourced_n5.md` keeps its filename for now.
 The H1 title already says "Externally-Sourced Practice Questions";
 only the path retains the legacy "authentic" label. Renaming requires
 synchronized updates in 10 files (incl. tools/build_papers.py and
@@ -1232,7 +1281,7 @@ A comprehensive visual refresh per `specifications/jlpt-n5-design-system-zen-mod
 
 ## v1.3.0 - 2026-04-30 (native-speaker audit Pass 8)
 
-52 findings raised, 52 fixed. Severity: 16 HIGH, 27 MED, 9 LOW. Touched `moji_questions_n5.md`, `bunpou_questions_n5.md`, `goi_questions_n5.md`, `dokkai_questions_n5.md`, `authentic_extracted_n5.md`. See `verification.md` §7.
+52 findings raised, 52 fixed. Severity: 16 HIGH, 27 MED, 9 LOW. Touched `moji_questions_n5.md`, `bunpou_questions_n5.md`, `goi_questions_n5.md`, `dokkai_questions_n5.md`, `externally_sourced_n5.md`. See `verification.md` §7.
 
 ## v1.2.0 - 2026-04 (UX Brief 1 / Phase 4 + 5)
 

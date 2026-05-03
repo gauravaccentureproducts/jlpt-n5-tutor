@@ -11,7 +11,7 @@ A supplementary bank of JLPT N5 practice questions extracted from a public third
 >
 > The site itself credits the questions to "a mix of past JLPT papers and original prep authors," but this attribution is not independently verified.
 >
-> The filename retains the word "authentic" for backward compatibility with existing tools and references. **The label is misleading and is being phased out.** A future pass (Pass 12) is planned to re-source this file from JEES サンプル問題 (jlpt.jp 公式サンプル問題), which are publicly downloadable and carry official-source attribution.
+> **Filename history:** This file was originally `authentic_extracted_n5.md`. Renamed to `externally_sourced_n5.md` on 2026-05-04 to match the H1 title and remove the misleading "authentic" framing. Pass 12 (re-sourcing from JEES サンプル問題) was closed-by-decision under DEFER-11 - see `CONTENT-LICENSE.md` for the original-content policy that supersedes the re-sourcing plan.
 >
 > **Until Pass 12:** treat these questions as third-party prep material useful for additional drill volume, not as canonical JLPT specimens. The four primary banks remain the canonical reference for JLPT-format fidelity.
 

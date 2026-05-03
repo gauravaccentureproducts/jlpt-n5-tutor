@@ -36,9 +36,11 @@ Format per paper:
   }
 
 Skipped files:
-  authentic_extracted_n5.md — provenance disclosed in its header (third-
+  externally_sourced_n5.md — provenance disclosed in its header (third-
     party scraped, NOT JEES official). Excluded from v1 to avoid sourcing
     issues; can be added later under its own category if desired.
+    (Renamed from authentic_extracted_n5.md on 2026-05-04 to match its
+    H1 title; see CHANGELOG v1.12.5.)
   grammar_n5.md / kanji_n5.md / vocabulary_n5.md — catalogs, not question
     banks; already built by tools/build_data.py.
 
@@ -65,7 +67,7 @@ SOURCES = {
     "goi":    "goi_questions_n5.md",
     "bunpou": "bunpou_questions_n5.md",
     "dokkai": "dokkai_questions_n5.md",
-    # authentic_extracted_n5.md skipped per docstring rationale.
+    # externally_sourced_n5.md skipped per docstring rationale.
 }
 
 CATEGORY_META = {

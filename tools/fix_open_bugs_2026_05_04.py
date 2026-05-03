@@ -12,13 +12,9 @@ Items handled:
   Bug 6: moji distractor-convention section extended with 3rd type
   Bug 7: vocab POS-tag legend header date-stamp removed (cosmetic)
 
-Bug 8 (filename rename of authentic_extracted_n5.md) is deferred:
-  10 cross-references including tools/build_papers.py and
-  tools/check_content_integrity.py would need synchronized updates;
-  scope larger than this batch warrants. The file's H1 title already
-  says "JLPT N5 Externally-Sourced Practice Questions" so the misleading
-  "authentic" framing is gone in user-facing content; only the filename
-  retains the legacy label. Filed for a separate focused commit.
+Bug 8 (filename rename of authentic_extracted_n5.md → externally_sourced_n5.md):
+  was deferred when this script was written (2026-05-04 morning); closed
+  in a follow-up commit later the same day. See CHANGELOG v1.12.5.
 
 Idempotent. JA-13 / JA-28 / etc. invariants run via
 check_content_integrity.py after this script.

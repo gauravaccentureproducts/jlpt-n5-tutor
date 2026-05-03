@@ -412,7 +412,7 @@ A native Japanese teacher commissioned by 文部科学省 audited the brief itse
 
 - [x] **F-1** §3.2 self-contradiction: romaji listed as OUT-of-scope but with "flag as CRITICAL" instruction. Move to §3.1 IN-scope and rewrite as a single coherent rule.
 - [x] **F-2** §7 reference list contains zero Japanese-side authoritative sources. Add §7.2 listing 国際交流基金 / Japan Foundation, JEES サンプル問題集 (jlpt.jp), 旧 出題基準 (1994/2002), 大学入試センター日本語問題. Note that Japanese-side sources prevail when they conflict with Western prep materials.
-- [x] **F-3** `KnowledgeBank/authentic_extracted_n5.md` over-claims provenance. The source (learnjapaneseaz.com) is a third-party prep site, not JEES / 国際交流基金. Pick one: (a) rename file/header to drop "authentic"; (b) re-source from JEES jlpt.jp サンプル問題; (c) drop file from review scope and corpus until re-sourced.
+- [x] **F-3** `KnowledgeBank/externally_sourced_n5.md` over-claims provenance. The source (learnjapaneseaz.com) is a third-party prep site, not JEES / 国際交流基金. Pick one: (a) rename file/header to drop "authentic"; (b) re-source from JEES jlpt.jp サンプル問題; (c) drop file from review scope and corpus until re-sourced.
 
 #### HIGH (6) - fix before sending; or address in v2 of the brief
 
@@ -578,7 +578,7 @@ A re-audit of `data/grammar.json` (50 new patterns sampled), `data/reading.json`
 #### MEDIUM (2 systemic; both applied)
 
 - [x] **F-12.5** (MEDIUM) `data/kanji.json` 10 entries (二, 七, 分, 見, 聞, 入, 立, 休, 高, 白) had duplicate readings within their on/kun arrays. Fix: deduplicated each, preserving order.
-- [x] **F-12.6** (MEDIUM) Pattern-A + Pattern-E sweep across runtime data: 27 fixes in data/ (mixed-kanji-kana 「時かん」→「時間」, yen amounts without commas), 2 in `KnowledgeBank/authentic_extracted_n5.md` (Q111, Q162). Total 29 fixes.
+- [x] **F-12.6** (MEDIUM) Pattern-A + Pattern-E sweep across runtime data: 27 fixes in data/ (mixed-kanji-kana 「時かん」→「時間」, yen amounts without commas), 2 in `KnowledgeBank/externally_sourced_n5.md` (Q111, Q162). Total 29 fixes.
 
 #### LOW (4 individual; pending application)
 
@@ -1034,7 +1034,7 @@ External brief at `feedback/jlpt-n5-content-correction-brief.md` raised 27 items
 - [x] **D-3** Passage 14 Q27 unit mismatch: stem asks 「何分」, answer is 「一時間」. Fix question word to 「どのぐらい」.
 - [x] **D-5** Passage 26 Q51 mixed-category options: mixes duration ('一年' / '五年') and age ('5さいから'). Restate options to one category.
 
-#### authentic_extracted_n5.md
+#### externally_sourced_n5.md
 - [x] **A-1** Q43 particle typo: stem ends 「をあります」. Fix to 「にあります」.
 - [x] **A-2** Q58 underline/answer mismatch: underline on 「みぎ」 but answer is for 「みち」. Realign underline.
 - [x] **A-3** Q59 N3 kanji in stem: 「有名」 violates the stems-N5-only rule. Render in kana or replace question.
