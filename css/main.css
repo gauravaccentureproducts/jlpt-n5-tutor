@@ -2616,7 +2616,10 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
 }
 .hub-card p {
   margin: 0;
-  flex: 1;
+  /* See .syllabus-card-desc — `flex: 1` mid-line-clipped the 3rd
+   * text line. Letting line-clamp + natural height align cleanly
+   * is preferable. Empty space at card bottom (when text < 3 lines)
+   * is acceptable for tile uniformity. */
   font-size: var(--text-sm);
   color: var(--color-text-muted);
   line-height: var(--leading-base);
@@ -2813,13 +2816,19 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   color: var(--color-text);
   margin: 0;
   line-height: var(--leading-relaxed, 1.55);
-  flex: 1;
+  /* NO `flex: 1`. With a fixed-height card (220 px) + flex column,
+   * `flex: 1` allocated whatever space was left over (~68 px) which
+   * fell mid-line through the 4th text line, producing visible
+   * mid-character clipping. Letting the desc take its natural line-
+   * clamped height (4 lines × line-height) lets `overflow: hidden`
+   * clip cleanly at line boundaries. The action below uses
+   * `margin-top: auto` to stick to the bottom of the card. */
 }
 .syllabus-card-action {
   font-size: var(--text-sm);
   font-weight: var(--weight-medium, 500);
   color: var(--color-accent);
-  margin-top: var(--space-2);
+  margin-top: auto;  /* push to card bottom (was `var(--space-2)`) */
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
@@ -3523,7 +3532,8 @@ body[data-route="n1"] #search-input {
   color: var(--color-text-muted);
   line-height: var(--leading-relaxed, 1.55);
   margin: 0;
-  flex: 1;
+  /* See .syllabus-card-desc — `flex: 1` was mid-line-clipping the
+   * 4th line. Natural line-clamped height clips cleanly. */
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
