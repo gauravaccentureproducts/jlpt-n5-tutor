@@ -239,7 +239,7 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 3. に
 4. と
 
-**Answer: 2** - 熱がある (have a fever).
+**Answer: 2** - ねつが ある (have a fever).
 
 ### Q20
 

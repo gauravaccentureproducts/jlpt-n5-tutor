@@ -9,7 +9,7 @@
   "questions": [
     {
       "type": "mcq",
-      "stem_html": "",
+      "stem_html": "__でんわ__ で 友だちと 話します。",
       "choices": [
         "電語",
         "田話",
@@ -51,7 +51,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "",
+      "stem_html": "__えき__ で 友だちと あいました。",
       "choices": [
         "駅",
         "馬",
@@ -65,7 +65,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "",
+      "stem_html": "__みせ__ は えきの まえに あります。",
       "choices": [
         "占",
         "店",

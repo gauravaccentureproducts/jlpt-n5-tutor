@@ -1626,3 +1626,6 @@ This concludes the four-file question bank series:
 Total: **400 questions** across all four JLPT N5 written-test sections.
 
 Next steps tracked under `TASKS.md` Phase 2.9 (W1-W5): convert these MD banks into `data/questions.json` entries with a `category` field, update the test-engine UI to filter by category, and run lint over the imported set.
+
+
+<!-- 2026-05-03 audit §2.2: dokkai_kanji_exception.json extended with 向, 央, 付 (see WHY notes in that file). -->

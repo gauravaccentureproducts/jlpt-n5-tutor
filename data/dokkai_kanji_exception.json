@@ -13,7 +13,8 @@
     "  - To add a new kanji here, document the passage that needs it",
     "    AND update KnowledgeBank/dokkai_questions_n5.md header.",
     "",
-    "Enforced by JA-28 in tools/check_content_integrity.py."
+    "Enforced by JA-28 in tools/check_content_integrity.py.",
+    "2026-05-03 (moji-and-source audit §2.2): added 向, 央, 付 with justifications — 向 for 〜向け target-audience compounds, 央 for 中央 proper nouns (parks/stations), 付 for 〜付き menu convention. All three appear in dokkai passage content multiple times; kana-substitution would reduce passage authenticity."
   ],
   "exception_kanji": [
     "京",
@@ -40,6 +41,9 @@
     "近",
     "紙",
     "青",
-    "同"
+    "同",
+    "向",
+    "央",
+    "付"
   ]
 }

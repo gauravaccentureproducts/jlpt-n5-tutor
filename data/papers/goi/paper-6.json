@@ -154,7 +154,7 @@
         "友だちが でんわを くれました。",
         "友だちと でんわで 話しました。",
         "でんわを 買いました。",
-        "友だちに てがみを 書きました。"
+        "友だちに 手紙を 書きました。"
       ],
       "correctIndex": 1,
       "rationale": "closest among the choices. Strictly, 電話をかける means \"to make a phone call (initiate)\" and does not entail successful conversation; 電話で話す means \"to talk on the phone.\" For typical N5 contexts, calling a friend usually involves talking with them, so 電話で話す is the natural paraphrase here.",

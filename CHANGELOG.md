@@ -2,6 +2,75 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.1 - 2026-05-03 (Moji + source audit closure — 12 items resolved)
+
+Closes all 12 items in the 2026-05-03 moji + source-markdowns audit.
+Mostly extraction-pipeline + naturalness fixes — visible to learners as
+formerly-blank moji questions becoming readable, and a handful of
+JLPT-mock-paper stems and choices replaced with cleaner forms.
+
+### Live-content changes (visible to users)
+
+**24 moji questions now display correctly (§1.1).** The mock-paper
+extraction had silently dropped the stem on questions where the test
+target sat at the very start of the sentence (`__test-word__ ...`).
+Affected papers: moji-4 (5 Qs), moji-5 (12 Qs), moji-6 (3 Qs), moji-7
+(4 Qs). All 24 stems now populated from `KnowledgeBank/
+moji_questions_n5.md` and carry rationales matching the source.
+
+**3 moji-7 questions now use the standard Mondai 2 stem format (§2.4).**
+Q97-Q99 had a non-canonical `__lemma__ - sentence` prefix that no other
+Mondai 2 stem in the corpus uses. Dropped the prefix; the questions
+read like every other 表記 (orthography) question.
+
+**2 moji stems no longer show non-N5 kanji to N5 learners (§2.1):**
+  - Q35 「私の いえは 町の <u>北</u> に あります。」 → `町` (machi,
+    non-N5) → `まち`. Stem now readable end-to-end at N5.
+  - Q95 「八百屋で やさいを __かいます__。」 → `八百屋` (yaoya, has
+    non-N5 屋) → `みせ`.
+
+**3 goi distractors restored to authentic-JLPT kanji form (§3.1).** A
+prior audit had been over-strict: it flagged 4 goi questions with non-N5
+kanji, but only Q58 (correct-answer position) was a real policy
+violation. The 3 distractor positions (Q65: 少, Q86: 紙, Q100: 売) are
+explicitly within the source's documented exception ("distractors may
+include non-N5 kanji because authentic JLPT distractors mimic visually-
+similar wrong forms"). Reverted to the source's kanji forms.
+
+  Q58 (real correct-answer violation) source markdown updated to match
+  the JSON's kana fix (「きのう 早く ねました。」 → 「きのう はやく
+  ねました。」).
+
+**dokkai exception register extended (§2.2).** 3 non-N5 kanji that
+appear in dokkai passage content (`向` for 〜向け target-audience
+compounds, `央` for 中央 proper nouns, `付` for 〜付き menu convention)
+were previously undocumented. Added to `data/dokkai_kanji_exception.
+json` with WHY notes per the register's own contract.
+
+**1 bunpou rationale cleaned up (§4.1).** Q19 rationale had `熱がある`
+("have a fever") — `熱` is non-N5 and rationales are learner-visible.
+Replaced with kana `ねつが ある`.
+
+### Already-clean items (verified during audit, no fix needed)
+
+  §2.3  bunpou source uses 0 non-N5 kanji in stems (audit was working
+        from a stale snapshot; earlier session cleanup had already
+        replaced 朝/思/京/阪/牛/乳/公/園/楽 with kana).
+  §3.2  bunpou-7 ぎんこう  → already changed to 学校 in prior commit.
+  §3.3  Q92 起ちます       → distractor, policy-allowed.
+  §3.4  manifest totals    → 25 papers / 360 questions verify ✓.
+  §3.5  Q62 rationale      → preserved (excellent pedagogy).
+  §4.2  goi Q47 rationale  → 0 occurrences of 去年 (already clean).
+
+### Cache and integrity
+
+  - `sw.js` CACHE_VERSION: `v110` → `v111` (forces clients to re-fetch
+    the updated paper JSONs on next visit).
+  - `index.html` cache-busters: `?v=1.11.20` → `?v=1.11.21` (CSS / app.js).
+  - `tools/check_content_integrity.py` → 40/40 invariants PASS.
+  - `tools/fix_moji_source_audit_2026_05_03.py` → idempotent (0 changes
+    on second run).
+
 ## v1.12.0 - 2026-05-03 (Example-coverage milestone — 100% vocab covered)
 
 **Phase 7 closes the example-coverage authoring pass that started at
