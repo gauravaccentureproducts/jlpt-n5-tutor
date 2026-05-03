@@ -29,6 +29,16 @@ async function loadGrammarIndex() {
 }
 
 export async function renderTest(container, params) {
+  // State reset on navigation back to bare #/test from elsewhere. If the
+  // user finished a test, navigated away (Learn / Drill / etc.), and then
+  // clicks "Test" in the nav, they expect a fresh setup — not the stale
+  // results page from earlier. Preserve mid-attempt state (view='attempting')
+  // because a user navigating away mid-test probably wants to resume.
+  if (!params && view === 'results') {
+    view = 'setup';
+    session = null;
+    lastResults = null;
+  }
   if (view === 'attempting' && session) return renderAttempting(container);
   if (view === 'results' && lastResults) return renderResults(container);
   // Deep-link: #/test/<n> starts a test with n questions directly (Brief 2 §14.1).

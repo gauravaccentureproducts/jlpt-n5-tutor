@@ -268,7 +268,6 @@ export async function renderHome(container) {
       <header class="syllabus-header">
         <h1 class="syllabus-title">JLPT N5 Syllabus</h1>
         <p class="syllabus-subtitle">Study grammar, vocabulary, kanji, reading, and listening in a structured order.</p>
-        <p class="syllabus-note">This page shows the complete study scope for JLPT N5.</p>
         ${isReturning ? `
           <div class="syllabus-daily-status">
             <span class="syllabus-daily-streak">Streak: ${streak?.current ?? 0} ${(streak?.current ?? 0) === 1 ? 'day' : 'days'}</span>

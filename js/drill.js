@@ -28,6 +28,13 @@ async function loadGrammarIndex() {
 }
 
 export async function renderDrill(container) {
+  // Stale 'finished' state reset: if the user completed a drill session,
+  // navigated away, and clicked "Drill" again, give them fresh setup.
+  // Mid-session ('drilling' state) is preserved so the user can resume.
+  if (view === 'finished') {
+    view = 'setup';
+    session = null;
+  }
   if (view === 'drilling' && session) return renderDrilling(container);
   if (view === 'finished' && session) return renderFinished(container);
   return renderSetup(container);

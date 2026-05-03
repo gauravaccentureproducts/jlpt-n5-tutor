@@ -72,12 +72,27 @@ function recordPaperAttempt(paperId, score, total) {
 // ---------- Router entry ----------
 
 export async function renderPapers(container, params) {
-  // Deep-link mid-flow handling: if we're already attempting/results,
-  // honor that until the user navigates away explicitly.
+  const parts = (params || '').split('/').filter(Boolean);
+
+  // State reset on navigation AWAY from active view.
+  // `view === 'attempting' | 'results'` is meaningful only when the URL
+  // points to a specific paper (#/papers/<cat>/<n>, parts.length === 2).
+  // If the URL is now the index (#/papers) or a category list
+  // (#/papers/<cat>), the user has navigated out of the flow — clear
+  // the stale state so the requested page can render. Without this,
+  // clicking "Back to <cat> papers" on the results page just re-rendered
+  // the results page (the early-return below short-circuited routing).
+  // Reported 2026-05-03 with screenshot of the broken back-button.
+  if (parts.length < 2 && (view === 'attempting' || view === 'results')) {
+    view = 'setup';
+    session = null;
+    lastResults = null;
+  }
+
+  // Deep-link mid-flow handling: if we're still on the active paper URL
+  // (parts.length === 2) AND mid-test or mid-results, honor that.
   if (view === 'attempting' && session) return renderAttempting(container);
   if (view === 'results' && lastResults) return renderResults(container);
-
-  const parts = (params || '').split('/').filter(Boolean);
 
   if (parts.length === 0) return renderCategoryIndex(container);
   if (parts.length === 1) return renderPaperList(container, parts[0]);

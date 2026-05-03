@@ -57,6 +57,14 @@ function getNewItems(limit, alreadyIncluded) {
 
 export async function renderReview(container) {
   await loadData();
+  // Stale 'finished' state reset: if the user completed a review session,
+  // navigated away, and clicked "Review" again, give them a fresh setup
+  // (not last session's score card). Mid-session ('session' state) IS
+  // preserved so the user can resume.
+  if (view === 'finished') {
+    view = 'setup';
+    session = null;
+  }
   if (view === 'session' && session) return renderCard(container);
   if (view === 'finished' && session) return renderFinished(container);
   return renderSetup(container);
