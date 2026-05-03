@@ -2,6 +2,77 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.4 - 2026-05-04 (Open-bug-list closure - 7 of 8 fixed; 1 deferred)
+
+Closes 7 of 8 items from the open-bug-list filed 2026-05-04. The last
+item (filename rename of authentic_extracted_n5.md) is deferred —
+10 cross-references in build/CI scripts would need synchronized
+updates; scope larger than this batch warrants. The file's H1 title
+was already changed to "JLPT N5 Externally-Sourced Practice Questions"
+so the misleading framing is gone in user-facing content.
+
+### Catalog-content changes (visible to learners)
+
+**dokkai narrator references unified (Bug 4).** 36 references to the
+passage narrator were split across two non-N5-canonical conventions:
+"書いた 人" (30 instances, stilted) and "ひっしゃ" (6 instances,
+non-N5 vocab 筆者). Both replaced with "この 人" - the standard JLPT
+N5 dokkai phrasing for "this person / the writer of this passage".
+Fix applied in BOTH `KnowledgeBank/dokkai_questions_n5.md` AND the
+extracted JSONs `data/papers/dokkai/paper-{1..4}.json`.
+
+**dokkai non-N5 kanji removed (Bugs 2, 3).** Two small kanji-scope
+violations in the dokkai source:
+  - "初めて" (3 occurrences total: 2 in dokkai questions, 0 in
+    paper JSONs) -> "はじめて". 初 was not in the N5 whitelist nor
+    the dokkai exception register.
+  - "急いで" (1 occurrence in passage content) -> "いそいで".
+
+**bunpou Q24 realism (Bug 5).** Tokyo-Osaka route example:
+  - Was: "とうきょう（  ）おおさかまで でんしゃで いきます。"
+  - Now: "とうきょう（  ）おおさかまで しんかんせんで いきます。"
+  しんかんせん is the realistic mode for the Tokyo-Osaka route. Fixed
+  in source MD AND the bunpou paper-2 JSON.
+
+### Catalog-only doc improvements (no learner-visible content change)
+
+**moji distractor-convention section extended (Bug 6).** The header
+section in `moji_questions_n5.md` originally documented 2 of 3
+distractor types in active use. Now lists all three:
+  1. Visually-similar N5 kanji (e.g., 多い / 古い / 長い for 高い)
+  2. Non-N5 kanji with same on-yomi (e.g., 経ちます for 立ちます)
+  3. Invented (non-real) verb forms (e.g., 出ります for 出ます)
+
+**vocabulary_n5.md POS-legend header cleaned (Bug 7).** The
+"Part-of-Speech Tags" section header carried a stray
+"(added 2026-05-02)" date stamp that no other section header used.
+Stripped for cosmetic consistency.
+
+### Verified-already-aligned (Bug 1)
+
+`data/dokkai_kanji_exception.json` already contains 向 / 央 / 付
+(added in commit b93ca01); the marker comment in
+`KnowledgeBank/dokkai_questions_n5.md` accurately reflects this state.
+The bug-list entry was based on a stale snapshot.
+
+### Deferred (Bug 8)
+
+`KnowledgeBank/authentic_extracted_n5.md` keeps its filename for now.
+The H1 title already says "Externally-Sourced Practice Questions";
+only the path retains the legacy "authentic" label. Renaming requires
+synchronized updates in 10 files (incl. tools/build_papers.py and
+tools/check_content_integrity.py) - scope warrants a separate
+focused commit.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION: v113 -> v114
+  - index.html cache-busters: v=1.11.23 -> v=1.11.24
+  - tools/check_content_integrity.py -> 40/40 invariants PASS
+    (including JA-13, JA-28 dokkai-kanji bound, JA-31 vocab POS parity)
+  - tools/fix_open_bugs_2026_05_04.py -> idempotent (0 edits on
+    second run)
+
 ## v1.12.3 - 2026-05-04 (Reference-markdowns audit propagation to runtime data)
 
 Propagates the v1.12.2 catalog-level fixes into the runtime JSON files

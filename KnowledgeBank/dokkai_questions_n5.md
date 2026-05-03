@@ -15,7 +15,7 @@
 - Each passage is shown in a blockquote (`>`) so it visually mirrors the test paper.
 - Questions follow each passage. Choices are numbered 1-4. **Answer**: shows the correct number.
 - Passages use predominantly N5-syllabus kanji and N5 vocabulary. **Naturalness exception (formalized 2026-05-02):** authentic JLPT N5 reading passages routinely use a small number of common non-N5 kanji where forcing kana would harm readability. The full exception list is machine-tracked in `data/dokkai_kanji_exception.json` and currently covers: 京, 作, 使, 図, 院, 回, 教, 楽, 病, 終, 自, 阪, 館, 黒, 犬, 妹, 家, 弁, 当, 思, 朝, 近, 紙, 青, 同. JA-28 (in `tools/check_content_integrity.py`) enforces that `data/papers/dokkai/*.json` cannot introduce non-N5 kanji outside this list without explicit documentation. Bunpou / moji / goi stay strictly N5.
-- **Question-stem kanji policy (formalized 2026-05-01):** question stems may reuse any non-N5 kanji that already appears in the passage they reference, so the question phrasing stays parallel to the source text (e.g., a passage that uses 妹 may have a stem `書いた 人の 妹は 何を べんきょうしますか。`). Standalone non-N5 kanji that are NOT present in the corresponding passage are forbidden in stems and must be written in kana.
+- **Question-stem kanji policy (formalized 2026-05-01):** question stems may reuse any non-N5 kanji that already appears in the passage they reference, so the question phrasing stays parallel to the source text (e.g., a passage that uses 妹 may have a stem `この 人の 妹は 何を べんきょうしますか。`). Standalone non-N5 kanji that are NOT present in the corresponding passage are forbidden in stems and must be written in kana.
 - Distractor choices may contain non-N5 vocabulary where authentic JLPT distractor variety requires it (see header note in `moji_questions_n5.md` for the kanji-scope exception applied to question files).
 - No em dashes (U+2014) appear in this file.
 
@@ -56,7 +56,7 @@ _The blank should be filled with:_
 
 #### Q2
 
-ひっしゃは いま どこに すんでいますか。
+この 人は いま どこに すんでいますか。
 
 1. インド (India)
 2. 友だちの 家
@@ -84,7 +84,7 @@ _How much money does the writer have left?_
 
 #### Q4
 
-書いた 人は だれの ために これを 買いましたか。
+この 人は だれの ために これを 買いましたか。
 
 _Who did the writer buy these things for?_
 
@@ -135,7 +135,7 @@ _What time does the party start?_
 
 #### Q7
 
-書いた 人は 一しゅうかんに 本を 何さつ よみますか。
+この 人は 一しゅうかんに 本を 何さつ よみますか。
 
 _How many books does the writer read in a week?_
 
@@ -148,7 +148,7 @@ _How many books does the writer read in a week?_
 
 #### Q8
 
-書いた 人は ふつう どこで 本を 手に いれますか。
+この 人は ふつう どこで 本を 手に いれますか。
 
 _Where does the writer usually get books?_
 
@@ -165,7 +165,7 @@ _Where does the writer usually get books?_
 
 #### Q9
 
-ひっしゃは さいしょに 何を しますか。
+この 人は さいしょに 何を しますか。
 
 1. ホテルに 行く
 2. ばんごはんを 食べる
@@ -225,7 +225,7 @@ _The locker number is:_
 
 #### Q13
 
-書いた 人は 毎あさ 何を しますか。
+この 人は 毎あさ 何を しますか。
 
 _What does the writer do every morning?_
 
@@ -285,7 +285,7 @@ _What time does the party begin?_
 
 #### Q17
 
-書いた 人は 何曜日に いそがしくなかったですか。
+この 人は 何曜日に いそがしくなかったですか。
 
 _Which day was the writer NOT busy?_
 
@@ -298,7 +298,7 @@ _Which day was the writer NOT busy?_
 
 #### Q18
 
-水曜日に 書いた 人は 何を しましたか。
+水曜日に この 人は 何を しましたか。
 
 _What did the writer do on Wednesday?_
 
@@ -349,7 +349,7 @@ _What should participants bring?_
 
 #### Q21
 
-書いた 人の おかあさんは どこで はたらいて いますか。
+この 人の おかあさんは どこで はたらいて いますか。
 
 _Where does the writer's mother work?_
 
@@ -362,7 +362,7 @@ _Where does the writer's mother work?_
 
 #### Q22
 
-書いた 人の りょうしんは 日よう日に 何を しますか。
+この 人の りょうしんは 日よう日に 何を しますか。
 
 _What do the writer's parents do on Sundays?_
 
@@ -392,7 +392,7 @@ _What was the weather like last night?_
 
 #### Q24
 
-書いた 人は きょう 何を しますか。
+この 人は きょう 何を しますか。
 
 _What will the writer do today?_
 
@@ -409,7 +409,7 @@ _What will the writer do today?_
 
 #### Q25
 
-書いた 人は 何が すきですか。
+この 人は 何が すきですか。
 
 _What does the writer like?_
 
@@ -422,7 +422,7 @@ _What does the writer like?_
 
 #### Q26
 
-書いた 人は 何に なりたいですか。
+この 人は 何に なりたいですか。
 
 _What does the writer want to be?_
 
@@ -542,7 +542,7 @@ _What time does the movie start?_
 
 #### Q34
 
-えいがの あとで 書いた 人は 何を しますか。
+えいがの あとで この 人は 何を しますか。
 
 _What will the writer do AFTER the movie?_
 
@@ -559,7 +559,7 @@ _What will the writer do AFTER the movie?_
 
 #### Q35
 
-どうして 書いた 人の おとうさんは 中国語が じょうず ですか。
+どうして この 人の おとうさんは 中国語が じょうず ですか。
 
 _Why is the writer's father good at Chinese?_
 
@@ -572,7 +572,7 @@ _Why is the writer's father good at Chinese?_
 
 #### Q36
 
-書いた 人の 中国語は どうですか。
+この 人の 中国語は どうですか。
 
 _How is the writer's Chinese?_
 
@@ -589,7 +589,7 @@ _How is the writer's Chinese?_
 
 #### Q37
 
-書いた 人は どのぐらい プールに 行きますか。
+この 人は どのぐらい プールに 行きますか。
 
 _How often does the writer go to the pool?_
 
@@ -662,7 +662,7 @@ _When is the friend's birthday?_
 
 #### Q42
 
-どうして 書いた 人は 大きい ケーキを 買いませんか。
+どうして この 人は 大きい ケーキを 買いませんか。
 
 _Why doesn't the writer buy a big cake?_
 
@@ -679,7 +679,7 @@ _Why doesn't the writer buy a big cake?_
 
 #### Q43
 
-書いた 人の 妹は 何を べんきょうしますか。
+この 人の 妹は 何を べんきょうしますか。
 
 _What will the writer's sister study?_
 
@@ -709,7 +709,7 @@ _Why is the sister moving?_
 
 #### Q45
 
-書いた 人の しゅみは 何ですか。
+この 人の しゅみは 何ですか。
 
 _What is the writer's hobby?_
 
@@ -722,7 +722,7 @@ _What is the writer's hobby?_
 
 #### Q46
 
-書いた 人は 何の しゃしんを とりますか。
+この 人は 何の しゃしんを とりますか。
 
 _What does the writer photograph?_
 
@@ -902,7 +902,7 @@ _When did the cafe open?_
 
 #### Q58
 
-どうして 書いた 人は 友だちと もう一どに 行きたいですか。
+どうして この 人は 友だちと もう一どに 行きたいですか。
 
 _Why does the writer want to go again with friends?_
 
@@ -955,7 +955,7 @@ _Why was the hiking postponed?_
 
 #### Q61
 
-ひっしゃは どうして 日本語の べんきょうを はじめましたか。
+この 人は どうして 日本語の べんきょうを はじめましたか。
 
 1. 大学で べんきょうした
 2. 子どもの とき、父から 教わった
@@ -966,7 +966,7 @@ _Why was the hiking postponed?_
 
 #### Q62
 
-ひっしゃは いつ 初めて 日本に 来ましたか。
+この 人は いつ はじめて 日本に 来ましたか。
 
 1. 子どもの とき
 2. 高校生の とき
@@ -977,7 +977,7 @@ _Why was the hiking postponed?_
 
 #### Q63
 
-ひっしゃは そつぎょうした 後、何を しますか。
+この 人は そつぎょうした 後、何を しますか。
 
 1. 大学いんに 入る
 2. 日本に すんで しごとを する
@@ -1003,7 +1003,7 @@ _Why was the hiking postponed?_
 
 #### Q65
 
-やまださんの 初めての コンサートは どうでしたか。
+やまださんの はじめての コンサートは どうでしたか。
 
 1. たのしかった
 2. つまらなかった
@@ -1029,7 +1029,7 @@ _Why was the hiking postponed?_
 
 #### Q67
 
-ひっしゃの おかあさんは 何が じょうずですか。
+この 人の おかあさんは 何が じょうずですか。
 
 1. ピアノ
 2. りょうり
@@ -1053,7 +1053,7 @@ _What is special about the mother's curry?_
 
 #### Q69
 
-書いた 人は これから 何を する つもりですか。
+この 人は これから 何を する つもりですか。
 
 _What does the writer plan to do?_
 
@@ -1066,11 +1066,11 @@ _What does the writer plan to do?_
 
 ### Passage D (Q70-Q72)
 
-> 私の 家は 駅から あるいて 十五分 かかります。 あさ 八時の でんしゃに のりたいですから、 七時 四十分に 家を 出ます。 でも きょうは ねぼうして しまいました。 家を 出たのは 七時 五十分でした。 急いで あるきましたが、 八時の でんしゃには まに あいませんでした。 つぎの でんしゃは 八時 十分でした。 駅で 十分 まちました。 八時 十分の でんしゃに のれましたが、 かいしゃに つくのは いつもより おそかったです。
+> 私の 家は 駅から あるいて 十五分 かかります。 あさ 八時の でんしゃに のりたいですから、 七時 四十分に 家を 出ます。 でも きょうは ねぼうして しまいました。 家を 出たのは 七時 五十分でした。 いそいで あるきましたが、 八時の でんしゃには まに あいませんでした。 つぎの でんしゃは 八時 十分でした。 駅で 十分 まちました。 八時 十分の でんしゃに のれましたが、 かいしゃに つくのは いつもより おそかったです。
 
 #### Q70
 
-書いた 人の 家から 駅まで あるいて 何分 かかりますか。
+この 人の 家から 駅まで あるいて 何分 かかりますか。
 
 _How long does it take from the writer's house to the station on foot?_
 
@@ -1083,7 +1083,7 @@ _How long does it take from the writer's house to the station on foot?_
 
 #### Q71
 
-書いた 人は 今日 何時に 家を 出ましたか。
+この 人は 今日 何時に 家を 出ましたか。
 
 _What time did the writer leave home today?_
 
@@ -1096,7 +1096,7 @@ _What time did the writer leave home today?_
 
 #### Q72
 
-書いた 人は どの でんしゃに のりましたか。
+この 人は どの でんしゃに のりましたか。
 
 _Which train did the writer catch?_
 
@@ -1139,7 +1139,7 @@ _How many friends will come?_
 
 #### Q75
 
-書いた 人は たんじょうびに 何が ほしいですか。
+この 人は たんじょうびに 何が ほしいですか。
 
 _What does the writer want for a birthday gift?_
 
@@ -1169,7 +1169,7 @@ _How many months can people climb Mt. Fuji?_
 
 #### Q77
 
-書いた 人は いつ ふじさんに のぼりましたか。
+この 人は いつ ふじさんに のぼりましたか。
 
 _When did the writer climb Mt. Fuji?_
 
@@ -1242,7 +1242,7 @@ _Where will they have lunch?_
 
 #### Q82
 
-書いた 人の あには いま 何さいですか。
+この 人の あには いま 何さいですか。
 
 _How old is the writer's older brother now?_
 
@@ -1285,7 +1285,7 @@ _What will happen next month?_
 
 #### Q85
 
-どうして 書いた 人の 家に ねこは いませんか。
+どうして この 人の 家に ねこは いませんか。
 
 _Why doesn't the writer have a cat?_
 
@@ -1328,7 +1328,7 @@ _What is the brown cat's name?_
 
 #### Q88
 
-書いた 人の 妹は いつ 本を よみますか。
+この 人の 妹は いつ 本を よみますか。
 
 _When does the writer's sister read books?_
 

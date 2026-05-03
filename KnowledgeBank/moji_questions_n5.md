@@ -31,7 +31,15 @@ The project's `vocabulary_n5.md` and `kanji_n5.md` rules state that *only N5-syl
 
 ## Distractor verb-form convention (orthography questions)
 
-In Mondai 2 (orthography), distractor verb forms may be **invented** (not real conjugations) or use **non-N5 kanji** with the same on-yomi as the target. The test asks "which kanji visually belongs in this word", not "is this conjugation pattern independently grammatical". Examples: a 入ります distractor of `出ります` is NOT a real conjugation (the correct form is 出ます); a 立ちます distractor of `経ちます` IS a real verb but uses N3+ kanji. Both are acceptable distractor types because the question is purely orthographic.
+In Mondai 2 (orthography) and Mondai 1 (kanji-reading), distractors fall into three acceptable types:
+
+1. **Visually-similar N5 kanji** with a different reading (e.g., 多い / 古い / 長い for a 高い target). Most common distractor type at N5; tests whether the learner recognizes the right glyph among lookalikes drawn entirely from the N5 syllabus.
+
+2. **Non-N5 kanji with the same on-yomi** as the target (e.g., a 立ちます distractor of `経ちます` - N3+ kanji, real verb meaning "elapse"). Tests glyph recognition; the non-N5 kanji is acceptable because the question is purely orthographic.
+
+3. **Invented (non-real) verb forms** that combine an N5 kanji with a wrong conjugation pattern (e.g., a 入ります distractor of `出ります` - the real form is 出ます). Tests glyph recognition without requiring the distractor to be a grammatically valid conjugation.
+
+All three types are acceptable because the question asks "which kanji visually belongs in this word", not "is this conjugation pattern grammatical".
 
 ---
 

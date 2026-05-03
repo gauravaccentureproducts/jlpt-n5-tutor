@@ -18,7 +18,7 @@ To match the N5 learner's actual reading ability, this list uses **only kanji th
 - **[Ext]** = *Extended / borderline* - listed by some N5 sources but commonly placed at N4 by others. Useful for recognition; do not over-prioritize.
 - **[Cul]** = *Cultural / situational* - encountered in everyday Japan but rarely a focus on the N5 exam.
 
-## Part-of-Speech Tags (added 2026-05-02)
+## Part-of-Speech Tags
 
 Each entry carries a bracketed PoS tag in the gloss column for fast scanning. Mirrors the `pos` field in `data/vocab.json`. Verb classes use Japanese-grammar conventions, not English categories.
 
