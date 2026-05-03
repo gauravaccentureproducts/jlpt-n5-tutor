@@ -3538,6 +3538,7 @@ body[data-route="n1"] #search-input {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  max-height: 4lh;  /* belt-and-suspenders for Chrome's flow-root normalisation */
 }
 .level-card-arrow {
   position: absolute;
@@ -4215,11 +4216,26 @@ html[data-protect="on"][data-blur="true"] body::before {
 }
 .grammar-card .grammar-gloss { -webkit-line-clamp: 2; }
 
-/* Learn hub — 5-card grid; descriptions vary 1-3 lines. */
+/* Learn hub — 5-card grid; descriptions vary 1-3 lines.
+ *
+ * Height bumped 170 → 200 (2026-05-03) so 3-line descriptions
+ * (Vocabulary + Kanji cards) render in full. At 170 the flex layout
+ * left only ~46 px for the desc but 3 lines × 18.89 line-height = 57 px,
+ * so the desc was getting squeezed and `overflow: hidden` clipped
+ * mid-line through line 3 (visible as the bottom-half of "adjectives"
+ * and "glyph" being cut). 200 gives 3 full lines + ~10 px buffer.
+ *
+ * The desc also gets a belt-and-suspenders `max-height: 3lh` so even
+ * if Chrome's normalisation of `display: -webkit-box → flow-root` on
+ * flex children disables line-clamp, `overflow: hidden` clips at a
+ * clean line boundary instead of mid-line. */
 .hub-card {
-  height: 170px;
+  height: 200px;
 }
-.hub-card p { -webkit-line-clamp: 3; }
+.hub-card p {
+  -webkit-line-clamp: 3;
+  max-height: 3lh;
+}
 
 /* Homepage syllabus dashboard — 6 cards already at min-height: 200px
  * with flex layout, but description lengths vary (e.g., the kanji
@@ -4228,7 +4244,14 @@ html[data-protect="on"][data-blur="true"] body::before {
 .syllabus-card {
   height: 220px;
 }
-.syllabus-card .syllabus-card-desc { -webkit-line-clamp: 4; }
+.syllabus-card .syllabus-card-desc {
+  -webkit-line-clamp: 4;
+  /* Belt-and-suspenders: clamp the BOX as well as the line-clamp,
+   * so even if Chrome normalises display: -webkit-box → flow-root
+   * (which it does on flex children), overflow: hidden clips at a
+   * clean line boundary instead of mid-character. */
+  max-height: 4lh;
+}
 
 /* ============================================================================
  * Feedback page (#/feedback) — added 2026-05-02 per user direction.
