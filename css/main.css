@@ -4407,3 +4407,73 @@ html[data-protect="on"][data-blur="true"] body::before {
     font-size: var(--text-xl);
   }
 }
+
+/* ============================================================================
+ * MOBILE UI HARDENING — applies ONLY at <=768px (phone + tablet portrait).
+ *
+ * Surgical subset of the developer checklist (2026-05-03). The checklist
+ * proposed several "* { max-width: 100% }" / "body { font-size: 16px }"
+ * style universal rules; those would cascade into many existing-layout
+ * regressions in this codebase, so we apply only the safe, high-value
+ * items. Desktop (>=769px) is byte-identical — every rule is gated.
+ * ============================================================================ */
+@media (max-width: 768px) {
+
+  /* Safety belt: no horizontal scroll bleed-through, ever. Even if a
+   * descendant sets a too-wide width, it stays clipped at the body edge
+   * instead of triggering page-wide horizontal scroll on a 320 px phone. */
+  html, body { overflow-x: hidden; }
+
+  /* Smooth in-page anchor jumps (e.g. "Back to top", route changes that
+   * scroll the new view into the viewport). Desktop default `auto` is
+   * fine; mobile benefits from the visible animation as a continuity cue
+   * — the OS-level page-snap already feels smooth, so this matches. */
+  html { scroll-behavior: smooth; }
+
+  /* iOS Safari auto-zooms when a user taps any input whose computed
+   * font-size is < 16 px — pushing the input above the keyboard fold and
+   * re-laying out the page. Forcing inputs to 16 px on mobile prevents
+   * the zoom and keeps the form in place. This is the canonical iOS
+   * mobile-form fix; doesn't affect desktop because desktop doesn't
+   * auto-zoom on tap. Selector mirrors the §4.7 form-control rule
+   * (lines ~1168-1183) so it wins on specificity. */
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select,
+  .secondary-nav input[type="search"] { font-size: 16px; }
+
+  /* Visible tap feedback. Desktop has :hover; mobile has nothing visible
+   * between tap-down and route change, which feels unresponsive on slow
+   * networks. A brief scale + opacity dip confirms the tap registered.
+   * 80 ms keeps it crisp; using `transform` (not `top`) to avoid
+   * triggering layout reflow during the press. */
+  button:active,
+  .btn-primary:active,
+  .btn-secondary:active,
+  .btn-action:active,
+  .icon-btn:active,
+  .pillar-card a:active,
+  .level-card.is-available:active,
+  .syllabus-card a:active {
+    transform: scale(0.97);
+    opacity: 0.85;
+    transition: transform 80ms ease, opacity 80ms ease;
+  }
+
+  /* Section-heading hierarchy on narrow screens. Desktop h2 is
+   * var(--text-xl) (~22 px); on a 320 px phone that reads as
+   * indistinguishable from h1 (also 22 px on the pattern-name)
+   * and the typographic hierarchy collapses. Drop h2 to 18 px so
+   * h1 (22) > h2 (18) > body (~14-15) is a readable cascade. */
+  h2,
+  .pattern-section-title,
+  .vocab-section-title,
+  .levels-subtitle + h2 {
+    font-size: 18px;
+    line-height: 1.35;
+  }
+}
+
