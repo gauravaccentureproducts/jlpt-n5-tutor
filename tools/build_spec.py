@@ -921,60 +921,42 @@ def chapter_cover(num, title, source_note):
     hr()
 
 
-# Chapter 1 = the v3 + v3.1-supplement content already in `doc` from above.
+# Chapter 1 = v3 hardcoded + v3.1-supplement content (which now ALSO
+# includes the design system as its §G after the 2026-05-04 merge).
 # It's at the top of the consolidated doc (no explicit chapter cover —
 # the v3 spec opens with its own document title and section h1s).
-# Append chapters 2-7 in stable-to-volatile order.
+# Append the remaining chapters in stable-to-volatile order.
+#
+# Chapters 2/5/6/7 from the prior 7-chapter consolidation no longer
+# exist as separate files:
+#   - old Chapter 2 (Design System) → folded into supplement §G
+#   - old Chapter 5 (Procedure Manual Appendix B) → folded into the
+#     procedure manual at JLPT root as §B
+#   - old Chapter 6 (Procedure Manual Appendix C) → folded into the
+#     procedure manual at JLPT root as §C
+#   - old Chapter 7 (TASKS.md template) → folded into the procedure
+#     manual at JLPT root as §D
+# Result: consolidated doc shrinks 7 chapters → 3 chapters.
 
-# Chapter 2: Design System (Zen Modern)
-DESIGN_SYSTEM_PATH = ROOT / "specifications" / "jlpt-n5-design-system-zen-modern.md"
-if DESIGN_SYSTEM_PATH.exists():
-    chapter_cover(2,
-        "Design System (Zen Modern)",
-        "Source: specifications/jlpt-n5-design-system-zen-modern.md")
-    render_markdown(DESIGN_SYSTEM_PATH)
-
-# Chapter 3: UI Testing Plan
+# Chapter 2: UI Testing Plan
 UI_TESTING_PATH = ROOT / "feedback" / "ui-testing-plan.md"
 if UI_TESTING_PATH.exists():
-    chapter_cover(3,
+    chapter_cover(2,
         "UI Testing Plan",
         "Source: feedback/ui-testing-plan.md")
     render_markdown(UI_TESTING_PATH)
 
-# Chapter 4: Procedure Manual (lives at the JLPT root, one level above
+# Chapter 3: Procedure Manual (now self-contained — Appendices B/C/D
+# absorbed inline 2026-05-04). Lives at the JLPT root, one level above
 # this repo, because it is intentionally level-agnostic and not owned
-# by N5).
+# by N5.
 PROC_MANUAL_PATH = ROOT.parent / "procedure-manual-build-next-jlpt-level.md"
 if PROC_MANUAL_PATH.exists():
-    chapter_cover(4,
+    chapter_cover(3,
         "Procedure Manual — Building the Next JLPT Level App",
-        "Source: <JLPT-root>/procedure-manual-build-next-jlpt-level.md")
+        "Source: <JLPT-root>/procedure-manual-build-next-jlpt-level.md "
+        "(includes Appendix B + Appendix C + TASKS.md template inline)")
     render_markdown(PROC_MANUAL_PATH)
-
-# Chapter 5: Procedure Manual Appendix B (extracted-from-N5)
-PROC_B_PATH = ROOT / "specifications" / "procedure-manual-appendix-b-extracted-from-n5.md"
-if PROC_B_PATH.exists():
-    chapter_cover(5,
-        "Procedure Manual Appendix B — Extracted from N5",
-        "Source: specifications/procedure-manual-appendix-b-extracted-from-n5.md")
-    render_markdown(PROC_B_PATH)
-
-# Chapter 6: Procedure Manual Appendix C (Pass-22 polish)
-PROC_C_PATH = ROOT / "specifications" / "procedure-manual-appendix-c-pass22-polish.md"
-if PROC_C_PATH.exists():
-    chapter_cover(6,
-        "Procedure Manual Appendix C — Pass-22 Polish",
-        "Source: specifications/procedure-manual-appendix-c-pass22-polish.md")
-    render_markdown(PROC_C_PATH)
-
-# Chapter 7: TASKS.md canonical template
-TASKS_TEMPLATE_PATH = ROOT / "specifications" / "tasks-md-template.md"
-if TASKS_TEMPLATE_PATH.exists():
-    chapter_cover(7,
-        "TASKS.md Canonical Template",
-        "Source: specifications/tasks-md-template.md")
-    render_markdown(TASKS_TEMPLATE_PATH)
 
 doc.save(CONSOLIDATED_PATH)
 print("Saved consolidated docx ({} bytes).".format(
