@@ -505,11 +505,6 @@
         {
           "form": "月",
           "reading": "つき",
-          "gloss": "moon"
-        },
-        {
-          "form": "月",
-          "reading": "つき",
           "gloss": "month, moon"
         },
         {
@@ -565,11 +560,6 @@
       ],
       "stroke_order_svg": "svg/kanji/水.svg",
       "examples": [
-        {
-          "form": "水",
-          "reading": "みず",
-          "gloss": "water"
-        },
         {
           "form": "水",
           "reading": "みず",
@@ -1483,11 +1473,6 @@
           "form": "高校",
           "reading": "こうこう",
           "gloss": "high school"
-        },
-        {
-          "form": "学校",
-          "reading": "がっこう",
-          "gloss": "school (also in §13)"
         }
       ]
     },
@@ -1509,11 +1494,6 @@
       ],
       "stroke_order_svg": "svg/kanji/本.svg",
       "examples": [
-        {
-          "form": "本",
-          "reading": "ほん",
-          "gloss": "book"
-        },
         {
           "form": "本",
           "reading": "ほん",
@@ -1707,7 +1687,8 @@
         {
           "form": "大人",
           "reading": "おとな",
-          "gloss": "adult"
+          "gloss": "adult",
+          "note": "Irregular jukujikun reading: 大 here is not pronounced as either おお, だい, or たい."
         },
         {
           "form": "大学",
@@ -1921,11 +1902,6 @@
       ],
       "stroke_order_svg": "svg/kanji/前.svg",
       "examples": [
-        {
-          "form": "前",
-          "reading": "まえ",
-          "gloss": "front"
-        },
         {
           "form": "前",
           "reading": "まえ",
@@ -2315,17 +2291,12 @@
         {
           "form": "電気",
           "reading": "でんき",
-          "gloss": "light"
+          "gloss": "electricity, light"
         },
         {
           "form": "天気",
           "reading": "てんき",
           "gloss": "weather"
-        },
-        {
-          "form": "電気",
-          "reading": "でんき",
-          "gloss": "electricity, light"
         }
       ]
     },
@@ -2465,11 +2436,6 @@
       ],
       "stroke_order_svg": "svg/kanji/道.svg",
       "examples": [
-        {
-          "form": "道",
-          "reading": "みち",
-          "gloss": "road"
-        },
         {
           "form": "道",
           "reading": "みち",
@@ -3167,11 +3133,6 @@
         {
           "form": "白い",
           "reading": "しろい",
-          "gloss": "white"
-        },
-        {
-          "form": "白い",
-          "reading": "しろい",
           "gloss": "white (adj)"
         }
       ],
@@ -3199,11 +3160,6 @@
           "form": "名前",
           "reading": "なまえ",
           "gloss": "name"
-        },
-        {
-          "form": "名前",
-          "reading": "なまえ",
-          "gloss": "name (also in §37)"
         }
       ]
     },
@@ -3257,11 +3213,6 @@
           "form": "番号",
           "reading": "ばんごう",
           "gloss": "number"
-        },
-        {
-          "form": "番号",
-          "reading": "ばんごう",
-          "gloss": "number (also in §24)"
         },
         {
           "form": "電話番号",

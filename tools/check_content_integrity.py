@@ -1609,7 +1609,12 @@ def _check_ja_31_vocab_pos_parity() -> list[str]:
     #   by_full[(form, reading, section_norm)]      = pos_tag (exact match)
     #   by_form_reading[(form, reading)]            = list of (section_norm, pos_tag)
     #   by_form[form]                               = set of pos_tags (any-of fallback)
-    by_full: dict[tuple[str, str, str], str] = {}
+    # by_full now stores a SET of valid tags per (form, reading, section) key.
+    # Homograph case in section 30: `いる` (exist, v2) and `いる` (to need, v1)
+    # share the key, and either tag should pass parity for that key.
+    # Without this, the dict-based "last write wins" returned only one tag and
+    # JA-31 would flag the other MD line as a mismatch despite both being correct.
+    by_full: dict[tuple[str, str, str], set[str]] = {}
     by_form_reading: dict[tuple[str, str], list[tuple[str, str]]] = {}
     by_form: dict[str, set[str]] = {}
     for e in vocab.get("entries", []):
@@ -1621,7 +1626,7 @@ def _check_ja_31_vocab_pos_parity() -> list[str]:
             continue
         tag = POS_ABBREV.get(pos, pos)
         sec_norm = normalize_section(section)
-        by_full[(form, reading, sec_norm)] = tag
+        by_full.setdefault((form, reading, sec_norm), set()).add(tag)
         by_form_reading.setdefault((form, reading), []).append((sec_norm, tag))
         by_form.setdefault(form, set()).add(tag)
 
@@ -1655,8 +1660,16 @@ def _check_ja_31_vocab_pos_parity() -> list[str]:
             continue
         # Lookup priority: exact (form, reading, section) → word-overlap
         # tiebreaker on (form, reading) → form-only any-of fallback.
-        expected: str | None = by_full.get((form, reading, current_section_norm))
-        if expected is None:
+        # by_full holds a SET (homograph case e.g. section-30 いる); MD tag
+        # passes if it's a member of the set for the matched key.
+        full_set = by_full.get((form, reading, current_section_norm))
+        expected: str | None
+        if full_set:
+            if md_tag in full_set:
+                continue  # MD tag matches one of the valid POS for this key
+            # Otherwise emit a comma-list of expected values for the error
+            expected = "/".join(sorted(full_set))
+        else:
             candidates = by_form_reading.get((form, reading), [])
             if len(candidates) == 1:
                 expected = candidates[0][1]
@@ -1668,6 +1681,8 @@ def _check_ja_31_vocab_pos_parity() -> list[str]:
                     if score > best_score:
                         best, best_score = tag, score
                 expected = best
+            else:
+                expected = None
         if expected is None:
             allowed = by_form.get(form)
             if allowed is None:

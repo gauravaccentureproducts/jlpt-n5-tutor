@@ -971,7 +971,7 @@
           },
           {
             "form": "paired",
-            "label": "Paired with から (from–to)",
+            "label": "Paired with から (from-to)",
             "example": "9時から 5時まで しごとです。"
           }
         ]
@@ -1997,7 +1997,7 @@
         {
           "wrong": "9時まで 5時から しごとです。",
           "right": "9時から 5時まで しごとです。",
-          "why": "Order is start–end: から first, then まで."
+          "why": "Order is start-end: から first, then まで."
         }
       ],
       "contrasts": [],
@@ -2014,13 +2014,7 @@
       "meaning_ja": "「ぎもん」「Aか B」",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": [
-          {
-            "form": "see_also",
-            "label": "See n5-012",
-            "example": "か"
-          }
-        ]
+        "conjugations": []
       },
       "explanation_en": "か at the END of a sentence makes it a question - works with yes/no AND wh-questions (どこ, なに, etc.). Between two nouns (Aか B), it means 'A or B'. Don't add a question mark in writing - か already signals the question.\n\n(This pattern is also indexed as 'か' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
@@ -2079,12 +2073,7 @@
         }
       ],
       "common_mistakes": [],
-      "contrasts": [
-        {
-          "with_pattern_id": "n5-012",
-          "note": "This is a duplicate entry - see the canonical pattern."
-        }
-      ],
+      "contrasts": [],
       "notes": ""
     },
     {
@@ -2098,13 +2087,7 @@
       "meaning_ja": "「ぎもん」「Aか B」",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": [
-          {
-            "form": "see_also",
-            "label": "See n5-012",
-            "example": "か"
-          }
-        ]
+        "conjugations": []
       },
       "explanation_en": "か at the END of a sentence makes it a question - works with yes/no AND wh-questions (どこ, なに, etc.). Between two nouns (Aか B), it means 'A or B'. Don't add a question mark in writing - か already signals the question.\n\n(This pattern is also indexed as 'か' in another category. Same form rules and usage as the canonical entry.)",
       "examples": [
@@ -2145,12 +2128,7 @@
         }
       ],
       "common_mistakes": [],
-      "contrasts": [
-        {
-          "with_pattern_id": "n5-012",
-          "note": "This is a duplicate entry - see the canonical pattern."
-        }
-      ],
+      "contrasts": [],
       "notes": ""
     },
     {
@@ -2576,13 +2554,7 @@
       "meaning_ja": "ふつうけい + の?",
       "form_rules": {
         "attaches_to": [],
-        "conjugations": [
-          {
-            "form": "see_also",
-            "label": "See n5-012",
-            "example": "の (informal question)"
-          }
-        ]
+        "conjugations": []
       },
       "explanation_en": "After plain-form verbs and adjectives, sentence-final の forms a casual / familiar question. Used with friends and family. Don't use this in formal contexts; use か with です/ます-form instead. Pairs with n5-012 (formal か).",
       "examples": [
@@ -2624,12 +2596,7 @@
           "why": "Informal の attaches to PLAIN form, not polite ます-form."
         }
       ],
-      "contrasts": [
-        {
-          "with_pattern_id": "n5-012",
-          "note": "This is a duplicate entry - see the canonical pattern."
-        }
-      ],
+      "contrasts": [],
       "notes": "Pairs with n5-012 (formal か). Use か in polite contexts; use の in casual ones."
     },
     {
@@ -8852,7 +8819,7 @@
         {
           "ja": "9時に かいぎが あります。",
           "translation_en": "There's a meeting at 9 o'clock.",
-          "explanation_en": "9時に — specific time + に. かいぎ (meeting) is N5; あります marks existence at that time.",
+          "explanation_en": "9時に - specific time + に. かいぎ (meeting) is N5; あります marks existence at that time.",
           "vocab_ids": [
             "n5.vocab.30-verbs-existence-and-p.ある",
             "n5.vocab.35-particles-functional-.が",
@@ -8862,7 +8829,7 @@
         {
           "ja": "何時に きましたか。",
           "translation_en": "What time did you come?",
-          "explanation_en": "何時に — question word for clock-time + に. The expected answer is a specific 〜時に form.",
+          "explanation_en": "何時に - question word for clock-time + に. The expected answer is a specific 〜時に form.",
           "vocab_ids": [
             "n5.vocab.6-question-words.何時",
             "n5.vocab.29-verbs-irregular-and-v.来る",
@@ -8882,7 +8849,7 @@
         {
           "ja": "12時に ねます。",
           "translation_en": "I sleep at 12 o'clock.",
-          "explanation_en": "12時に — midnight bedtime. に marks the specific clock-time anchor.",
+          "explanation_en": "12時に - midnight bedtime. に marks the specific clock-time anchor.",
           "vocab_ids": [
             "n5.vocab.28-verbs-group-2-verbs.ねる",
             "n5.vocab.35-particles-functional-.に"
@@ -9620,7 +9587,7 @@
       ],
       "contrasts": [
         {
-          "with_pattern_id": "n5-128",
+          "with_pattern_id": "n5-009",
           "note": "Mid-sentence が = 'but'. Mid-sentence から = 'because'."
         }
       ],
@@ -9728,13 +9695,13 @@
         {
           "ja": "どうして 行きませんでしたか。―ねつが あったからです。",
           "form": "affirmative",
-          "translation_en": "Why didn't you go? — Because I had a fever.",
+          "translation_en": "Why didn't you go? - Because I had a fever.",
           "vocab_ids": []
         },
         {
           "ja": "どうして 学校を 休みましたか。―あたまが いたかったからです。",
           "form": "affirmative",
-          "translation_en": "Why did you skip school? — Because I had a headache.",
+          "translation_en": "Why did you skip school? - Because I had a headache.",
           "vocab_ids": []
         }
       ],
@@ -9940,7 +9907,7 @@
         "conjugations": [
           {
             "form": "see_also",
-            "label": "See n5-128",
+            "label": "See n5-009",
             "example": "Sentence + から、Sentence"
           }
         ]
@@ -9985,7 +9952,7 @@
       "common_mistakes": [],
       "contrasts": [
         {
-          "with_pattern_id": "n5-128",
+          "with_pattern_id": "n5-009",
           "note": "This is a duplicate entry - see the canonical pattern."
         }
       ],
@@ -9993,7 +9960,7 @@
     },
     {
       "id": "n5-134",
-      "tier": "core_n5",
+      "tier": "late_n5",
       "pattern": "Sentence + ので、Sentence",
       "category": "Asking and Stating with から / ので (basic causation)",
       "categoryOrder": 17,
@@ -10054,7 +10021,7 @@
       ],
       "contrasts": [
         {
-          "with_pattern_id": "n5-128",
+          "with_pattern_id": "n5-009",
           "note": "から = direct/personal; ので = softer/more polite. Often interchangeable."
         }
       ],
@@ -11885,7 +11852,7 @@
       "category": "Additional Upper N5 / Borderline Patterns - Explanation and Emphasis",
       "categoryOrder": 24,
       "patternOrder": 1,
-      "meaning_en": "～んです / ～のです — explanation, emphasis, or asking for an explanation",
+      "meaning_en": "～んです / ～のです - explanation, emphasis, or asking for an explanation",
       "meaning_ja": "「〜んです」（せつめい・きょうちょう）",
       "form_rules": {
         "attaches_to": [

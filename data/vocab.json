@@ -2750,7 +2750,7 @@
       "reading": "いつも",
       "gloss": "always",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
           "ja": "いつも 七時に おきます。",
@@ -2764,7 +2764,7 @@
       "reading": "よく",
       "gloss": "often",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
           "ja": "よく カフェに 行きます。",
@@ -2778,7 +2778,7 @@
       "reading": "ときどき",
       "gloss": "sometimes",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
           "ja": "時々 えいがを 見ます。",
@@ -2792,7 +2792,7 @@
       "reading": "たまに",
       "gloss": "occasionally",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
           "ja": "たまに りょうりを します。",
@@ -2806,7 +2806,7 @@
       "reading": "あまり",
       "gloss": "not very (with negative)",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
           "ja": "あまり 食べません。",
@@ -2820,7 +2820,7 @@
       "reading": "ぜんぜん",
       "gloss": "not at all (with negative)",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
           "ja": "ぜんぜん わかりません。",
@@ -2834,7 +2834,7 @@
       "reading": "すぐ",
       "gloss": "soon, immediately",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
           "ja": "すぐ 来ます。",
@@ -2848,7 +2848,7 @@
       "reading": "もう",
       "gloss": "already (with affirmative); anymore (with negative); more (as in もう一つ)",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
           "ja": "もう しゅくだいは おわりました。",
@@ -2876,7 +2876,7 @@
       "reading": "まだ",
       "gloss": "still, not yet",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
           "ja": "まだ ばんごはんを 食べていません。",
@@ -2890,7 +2890,7 @@
       "reading": "はじめて",
       "gloss": "for the first time",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun"
+      "pos": "adverb"
     },
     {
       "id": "n5.vocab.12-time-frequency-sequen.さいしょ",
@@ -4318,7 +4318,7 @@
       "reading": "あつい",
       "gloss": "hot (weather)",
       "section": "14. Nature and Weather",
-      "pos": "noun",
+      "pos": "i-adj",
       "examples": [
         {
           "ja": "夏は とても あついです。",
@@ -4332,7 +4332,7 @@
       "reading": "さむい",
       "gloss": "cold (weather)",
       "section": "14. Nature and Weather",
-      "pos": "noun",
+      "pos": "i-adj",
       "examples": [
         {
           "ja": "冬は さむいです。",
@@ -4346,7 +4346,7 @@
       "reading": "すずしい",
       "gloss": "cool",
       "section": "14. Nature and Weather",
-      "pos": "noun",
+      "pos": "i-adj",
       "examples": [
         {
           "ja": "あきは すずしいです。",
@@ -4360,7 +4360,7 @@
       "reading": "あたたかい",
       "gloss": "warm",
       "section": "14. Nature and Weather",
-      "pos": "noun",
+      "pos": "i-adj",
       "examples": [
         {
           "ja": "はるは あたたかいです。",
@@ -5656,7 +5656,7 @@
       "reading": "しろい",
       "gloss": "white (adj)",
       "section": "20. Colors",
-      "pos": "noun",
+      "pos": "i-adj",
       "examples": [
         {
           "ja": "白い シャツを きました。",
@@ -5684,7 +5684,7 @@
       "reading": "くろい",
       "gloss": "black (adj)",
       "section": "20. Colors",
-      "pos": "noun",
+      "pos": "i-adj",
       "examples": [
         {
           "ja": "くろい かばんを もって います。",
@@ -5712,7 +5712,7 @@
       "reading": "あかい",
       "gloss": "red (adj)",
       "section": "20. Colors",
-      "pos": "noun",
+      "pos": "i-adj",
       "examples": [
         {
           "ja": "あかい 花が きれいです。",
@@ -5740,7 +5740,7 @@
       "reading": "あおい",
       "gloss": "blue (adj)",
       "section": "20. Colors",
-      "pos": "noun",
+      "pos": "i-adj",
       "examples": [
         {
           "ja": "あおい そらが すきです。",
@@ -5768,7 +5768,7 @@
       "reading": "きいろい",
       "gloss": "yellow (adj)",
       "section": "20. Colors",
-      "pos": "noun",
+      "pos": "i-adj",
       "examples": [
         {
           "ja": "きいろい バナナです。",
@@ -9374,7 +9374,7 @@
       "reading": "いる",
       "gloss": "to exist (animate) (also in §28 - listed here for thematic completeness with other existence/possession verbs)",
       "section": "30. Verbs - Existence and Possession",
-      "pos": "verb-1"
+      "pos": "verb-2"
     },
     {
       "id": "n5.vocab.30-verbs-existence-and-p.いる.2",
@@ -9410,7 +9410,7 @@
       "reading": "あげる",
       "gloss": "to give",
       "section": "30. Verbs - Existence and Possession",
-      "pos": "verb-1",
+      "pos": "verb-2",
       "examples": [
         {
           "ja": "友だちに プレゼントを あげます。",
@@ -9432,7 +9432,7 @@
       "reading": "くれる",
       "gloss": "to give (to me / us)",
       "section": "30. Verbs - Existence and Possession",
-      "pos": "verb-1",
+      "pos": "verb-2",
       "examples": [
         {
           "ja": "父が 本を くれました。",
@@ -9460,7 +9460,7 @@
       "reading": "かりる",
       "gloss": "to borrow",
       "section": "30. Verbs - Existence and Possession",
-      "pos": "verb-1",
+      "pos": "verb-2",
       "examples": [
         {
           "ja": "としょかんで 本を かりました。",
@@ -12502,8 +12502,8 @@
     },
     {
       "id": "n5.vocab.37-common-nouns-miscella.はんぶん",
-      "form": "はんぶん",
-      "reading": "半分",
+      "form": "半分",
+      "reading": "はんぶん",
       "gloss": "half",
       "section": "37. Common Nouns - Miscellaneous",
       "pos": "noun",

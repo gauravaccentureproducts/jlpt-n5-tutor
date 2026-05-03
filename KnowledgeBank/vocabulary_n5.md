@@ -298,17 +298,17 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 毎日 (まいにち) - [n.] every day
 - まいあさ - [n.] every morning
 - まいばん - [n.] every night
-- いつも - [n.] always
-- よく - [n.] often
-- 時々 (ときどき) - [n.] sometimes
-- たまに - [n.] occasionally
-- あまり - [n.] not very (with negative)
-- ぜんぜん - [n.] not at all (with negative)
-- すぐ - [n.] soon, immediately
-- もう - [n.] already (with affirmative); anymore (with negative); more (as in もう一つ)
+- いつも - [adv.] always
+- よく - [adv.] often
+- 時々 (ときどき) - [adv.] sometimes
+- たまに - [adv.] occasionally
+- あまり - [adv.] not very (with negative)
+- ぜんぜん - [adv.] not at all (with negative)
+- すぐ - [adv.] soon, immediately
+- もう - [adv.] already (with affirmative); anymore (with negative); more (as in もう一つ)
 - もうすぐ - [n.] soon, before long
-- まだ - [n.] still, not yet
-- はじめて - [n.] for the first time
+- まだ - [adv.] still, not yet
+- はじめて - [adv.] for the first time
 - さいしょ - [n.] first, beginning
 - さいご - [n.] last, end
 - つぎ - [n.] next
@@ -419,10 +419,10 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - なつ - [n.] summer
 - あき - [n.] autumn
 - ふゆ - [n.] winter
-- あつい - [n.] hot (weather)
-- さむい - [n.] cold (weather)
-- すずしい - [n.] cool
-- あたたかい - [n.] warm
+- あつい - [i-adj] hot (weather)
+- さむい - [i-adj] cold (weather)
+- すずしい - [i-adj] cool
+- あたたかい - [i-adj] warm
 - 火 (ひ) - [n.] fire
 - 水 (みず) - [n.] water (cold)
 - おゆ - [n.] hot water
@@ -533,15 +533,15 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 
 - いろ - [n.] color
 - 白 (しろ) - [n.] white (noun)
-- 白い (しろい) - [n.] white (adj)
+- 白い (しろい) - [i-adj] white (adj)
 - くろ - [n.] black (noun)
-- くろい - [n.] black (adj)
+- くろい - [i-adj] black (adj)
 - あか - [n.] red (noun)
-- あかい - [n.] red (adj)
+- あかい - [i-adj] red (adj)
 - あお - [n.] blue (noun)
-- あおい - [n.] blue (adj)
+- あおい - [i-adj] blue (adj)
 - きいろ - [n.] yellow (noun)
-- きいろい - [n.] yellow (adj)
+- きいろい - [i-adj] yellow (adj)
 - ちゃいろ - [n.] brown
 - みどり - [n.] green
 - ピンク - [n.] pink
@@ -844,15 +844,15 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 ## 30. Verbs - Existence and Possession
 
 - ある - [v1] to exist (inanimate)
-- いる - [v1] to exist (animate) (also in §28 - listed here for thematic completeness with other existence/possession verbs)
+- いる - [v2] to exist (animate) (also in §28 - listed here for thematic completeness with other existence/possession verbs)
 - いる - [v1] to need (Group 1 exception - looks like Group 2; homophone of existence-いる which is Group 2)
 - ござる / ございます - to be (very polite)
 - やる - [v1] to give (down / casual)
-- あげる - [v1] to give
+- あげる - [v2] to give
 - もらう - [v1] to receive
-- くれる - [v1] to give (to me / us)
+- くれる - [v2] to give (to me / us)
 - かす - [v1] to lend
-- かりる - [v1] to borrow
+- かりる - [v2] to borrow
 - かえす - [v1] to return (something)
 
 ## 31. い-Adjectives
@@ -1114,7 +1114,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - よてい - [n.] plan, schedule
 - じかんわり - [n.] timetable
 - はこ - [n.] box
-- はんぶん (半分) - [n.] half
+- 半分 (はんぶん) - [n.] half
 - はたち - [n.] 20 years old (special reading)
 - へん - [n.] area, vicinity
 - ほか - [n.] other (place / thing / person)
