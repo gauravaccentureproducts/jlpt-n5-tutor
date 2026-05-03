@@ -16,17 +16,17 @@ This is the consolidated successor to all individual audit / brief docs. It list
 
 ## 0. Summary
 
-Updated 2026-05-03 (night). **All 10 OPEN items + DEFER-1..10 + 12/13/14 + INFRA-1 + UNC-1/2/3 closed.** Infra-audit §4.1 storage-waste also cleaned up (41 orphan MP3s, 0.75 MB). Visual-regression CI gate live (24/24 baselines green); BrowserStack cross-browser scaffolding shipped (dormant until repo-vars + secrets activate it). Home now carries a 五 watermark + 5 stat pills + lift-on-hover CTAs per UI-design-brief §1.2.
+Updated 2026-05-03 (night). **All 10 OPEN items + DEFER-1..10 + 12/13/14 + INFRA-1/2/3 + UNC-1/2/3 closed.** gTTS audio backend formally accepted by user — VOICEVOX upgrade ruled out as not worth install + render cost for current scope. Infra-audit §4.1 storage-waste also cleaned up (41 orphan MP3s, 0.75 MB). Visual-regression CI gate live (24/24 baselines green); BrowserStack cross-browser scaffolding shipped (dormant until repo-vars + secrets activate it). Home now carries a 五 watermark + 5 stat pills + lift-on-hover CTAs per UI-design-brief §1.2.
 
 | Severity | Open | Open-Infra | Deferred | Done | Total |
 |---|---|---|---|---|---|
 | CRITICAL | 0 | 0 | 0 | 22 | 22 |
-| HIGH | 0 | 1 | 0 | 43 | 44 |
-| MEDIUM | 0 | 3 | 0 | 34 | 37 |
+| HIGH | 0 | 0 | 0 | 44 | 44 |
+| MEDIUM | 0 | 2 | 0 | 35 | 37 |
 | LOW | 0 | 0 | 0 | 22 | 22 |
-| **Total** | **0** | **4** | **0** | **121** | **125** |
+| **Total** | **0** | **2** | **0** | **123** | **125** |
 
-**Bottom line:** **0 actionable code-doable items remain. 0 deferred-roadmap items remain.** Only 4 items left, all gated on external resources: VOICEVOX audio backend (INFRA-2/3), native-teacher review (INFRA-4/5).
+**Bottom line:** **0 actionable code-doable items. 0 deferred-roadmap items. 0 HIGH-severity items.** Only 2 items remain, both MEDIUM and both gated on a single external resource: a native-Japanese-teacher review pass (INFRA-4 for Pass-11 P1-P14 sections + INFRA-5 for the Pass-15 §1.4/§1.5/§2.1 rewrites).
 
 **Closed 2026-05-03 (night — implemented the last 3 deferred items):**
 - ✅ DEFER-6 → DONE — Playwright visual-regression suite wired into CI. Baselines captured for 6 routes × 2 viewports × 2 projects = 24 PNGs at `tests/visual-regression.spec.js-snapshots/`. `prefers-reduced-motion: reduce` emulation, `networkidle` wait, and 0.1% pixel-diff tolerance prevent flakes from sub-pixel font rendering. Daily-status row on home masked because it changes daily. `.github/workflows/playwright.yml` no longer excludes `--grep-invert visual-regression`. Verified 24/24 green locally.
@@ -100,13 +100,13 @@ None. All factual-error items closed.
 
 ---
 
-## 2. 🔧 OPEN-INFRA — Needs external resource (4 items)
+## 2. 🔧 OPEN-INFRA — Needs external resource (2 items)
 
 | ID | Source | Item | Blocker |
 |---|---|---|---|
-| ~~**INFRA-1**~~ | consolidated §2.3 | ~~Audio manifest entries for listening 13-30~~ | ✅ **CLOSED 2026-05-03** — all 40 listening items resolve to MP3s on disk via gTTS shim. VOICEVOX-quality polish is INFRA-2 (separate). |
-| **INFRA-2** | consolidated §3.1 | Audio backend unification (gTTS → VOICEVOX everywhere) | Pass-16 audio refresh task |
-| **INFRA-3** | consolidated §3.2 | Multi-voice dialogue audio (male/female VOICEVOX speakers) | Same |
+| ~~**INFRA-1**~~ | consolidated §2.3 | ~~Audio manifest entries for listening 13-30~~ | ✅ **CLOSED 2026-05-03** — all 40 listening items resolve to MP3s on disk via gTTS shim. |
+| ~~**INFRA-2**~~ | consolidated §3.1 | ~~Audio backend unification (gTTS → VOICEVOX everywhere)~~ | ✅ **CLOSED-BY-DECISION 2026-05-03** — user explicitly accepted current gTTS implementation. gTTS produces intelligible Japanese audio adequate for the JLPT N5 vocabulary / grammar / listening scope; the VOICEVOX upgrade (better pitch-accent, multi-character voices, fully-offline rendering) was deemed not worth the install + render-pipeline cost. If a future content tier needs higher-fidelity audio, see `feedback/voicevox-integration-notes.md` for the activation path. |
+| ~~**INFRA-3**~~ | consolidated §3.2 | ~~Multi-voice dialogue audio (male/female VOICEVOX speakers)~~ | ✅ **CLOSED-BY-DECISION 2026-05-03** — same decision as INFRA-2. Single-voice gTTS dialogues are accepted; multi-speaker rendering is a quality-of-life improvement, not a correctness gap. JLPT N5 listening drills are short and the speaker context is set in the prompt text ("男の人と女の人が話しています ..."), so audio-level differentiation isn't required for comprehension. |
 | **INFRA-4** | native-review §2 | Pass-11 native-teacher review still unfiled (P1-P14 sections empty) | Native Japanese teacher engagement (per project: "Suiraku San" / 文部科学省 contact) |
 | **INFRA-5** | reading-feedback §6 | Native review of rewrites in Pass-15 §1.4, §1.5, §2.1 | Same — native reviewer eyes |
 
