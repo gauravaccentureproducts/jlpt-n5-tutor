@@ -164,7 +164,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 
 ## 7. Numbers
 
-- ゼロ / れい - zero
+- ゼロ / れい - [num.] zero
 - 一 (いち) - [num.] one
 - 二 (に) - [num.] two
 - 三 (さん) - [num.] three
@@ -314,12 +314,12 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - つぎ - [n.] next
 - 後で (あとで) - [n.] later
 - 前 (まえ) - [n.] before, in front
-- 後 (あと) / うしろ - after, behind
+- 後 (あと) / うしろ - [n.] after, behind
 
 ## 13. Locations and Places (general)
 
 - ところ - [n.] place
-- いえ / うち - house, home
+- いえ / うち - [n.] house, home
 - へや - [n.] room
 - だいどころ - [n.] kitchen
 - おてあらい - [n.] restroom
@@ -670,7 +670,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 
 ## 26. House and Furniture
 
-- いえ / うち - house, home
+- いえ / うち - [n.] house, home
 - アパート - [n.] apartment
 - マンション - [n.] condominium **[Cul]**
 - ドア - [n.] door
@@ -846,7 +846,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - ある - [v1] to exist (inanimate)
 - いる - [v2] to exist (animate) (also in §28 - listed here for thematic completeness with other existence/possession verbs)
 - いる - [v1] to need (Group 1 exception - looks like Group 2; homophone of existence-いる which is Group 2)
-- ござる / ございます - to be (very polite)
+- ござる / ございます - [v1] to be (very polite)
 - やる - [v1] to give (down / casual)
 - あげる - [v2] to give
 - もらう - [v1] to receive
@@ -861,7 +861,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 小さい (ちいさい) - [i-adj] small
 - 新しい (あたらしい) - [i-adj] new
 - 古い (ふるい) - [i-adj] old (not for people)
-- いい / よい - good
+- いい / よい - [i-adj] good
 - わるい - [i-adj] bad
 - あつい - [i-adj] hot (weather; separate adjective from the two below despite shared reading)
 - さむい - [i-adj] cold (weather)
@@ -964,7 +964,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - おおぜい - [adv.] a lot of (people)
 - だいたい - [adv.] generally, roughly
 - ぜんぶ - [adv.] all
-- みんな / みな - everyone
+- みんな / みな - [pron.] everyone
 - もう - [adv.] already
 - まだ - [adv.] still, not yet
 - もうすこし - [adv.] a little more
@@ -990,7 +990,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - まっすぐ - [adv.] straight ahead
 - もういちど - [adv.] once more
 - まず - [adv.] first of all
-- では / じゃ - well then
+- では / じゃ - [exp.] well then
 - もしもし - [exp.] hello (telephone)
 
 ## 34. Conjunctions
@@ -1000,13 +1000,13 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - それで - [conj.] and so
 - でも - [conj.] but, however
 - しかし - [conj.] but, however
-- けれど / けれども / けど - but
+- けれど / けれども / けど - [conj.] but
 - が - [conj.] but (clause-connector)
 - から - [conj.] because, so
 - だから - [conj.] therefore
 - ですから - [conj.] therefore (polite)
 - それに - [conj.] moreover
-- じゃあ / では - well then
+- じゃあ / では - [exp.] well then
 - ところで - [conj.] by the way
 - または - [conj.] or
 
@@ -1029,7 +1029,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - よ - [part.] sentence-final (assertion)
 - だけ - [part.] only
 - しか - [part.] only (with negative)
-- ぐらい / くらい - about
+- ぐらい / くらい - [part.] about
 - ごろ - [part.] around (time)
 - ずつ - [part.] each
 - など - [part.] etc.
@@ -1162,7 +1162,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - ええ - [exp.] yes (casual)
 - うん - [exp.] yeah (informal)
 - ううん - [exp.] no (informal)
-- やはり / やっぱり - as expected
+- やはり / やっぱり - [adv.] as expected
 - さあ - [exp.] well... (filler / hesitation)
 - いかが - [exp.] how (polite form of どう)
 - それでは - [exp.] in that case, well then

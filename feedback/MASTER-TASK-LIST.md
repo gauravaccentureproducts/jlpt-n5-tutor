@@ -16,17 +16,22 @@ This is the consolidated successor to all individual audit / brief docs. It list
 
 ## 0. Summary
 
-Updated 2026-05-03 (afternoon). **All 10 OPEN items + DEFER-1/3/8/9/12/13/14 + INFRA-1 + UNC-1/2/3 closed.** Infra-audit §4.1 storage-waste also cleaned up (41 orphan MP3s, 0.75 MB).
+Updated 2026-05-03 (evening). **All 10 OPEN items + DEFER-1/2/3/4/5/8/9/12/13/14 + INFRA-1 + UNC-1/2/3 closed.** Infra-audit §4.1 storage-waste also cleaned up (41 orphan MP3s, 0.75 MB).
 
 | Severity | Open | Open-Infra | Deferred | Done | Total |
 |---|---|---|---|---|---|
 | CRITICAL | 0 | 0 | 0 | 22 | 22 |
 | HIGH | 0 | 1 | 0 | 43 | 44 |
-| MEDIUM | 0 | 3 | 1 | 33 | 37 |
-| LOW | 0 | 0 | 5 | 17 | 22 |
-| **Total** | **0** | **4** | **6** | **115** | **125** |
+| MEDIUM | 0 | 3 | 0 | 34 | 37 |
+| LOW | 0 | 0 | 3 | 19 | 22 |
+| **Total** | **0** | **4** | **3** | **118** | **125** |
 
-**Bottom line:** **0 actionable code-doable items remain.** 4 items still need external infrastructure (VOICEVOX audio backend × 2, native-teacher review × 2). 7 deferred to long-term roadmap (all schema-enhancement / tooling polish).
+**Bottom line:** **0 actionable code-doable items remain.** 4 items still need external infrastructure (VOICEVOX audio backend × 2, native-teacher review × 2). Only **3 long-term-roadmap items** left: visual-regression Playwright (DEFER-6), BrowserStack cross-browser (DEFER-7), and the v1.7.1-removed pill-badge hero (DEFER-10). All require external tooling / paid services / spec deviation.
+
+**Closed 2026-05-03 (evening — final verification sweep):**
+- ✅ DEFER-2 → DONE — codified by JA-29 (Pass-23 r5 design decision, 2026-05-02). `tools/check_content_integrity.py:1719-1722` documents: subtype is the canonical extension point; promoting `paraphrase` to a top-level type would force renderer changes for marginal gain. JA-29 locks the subtype taxonomy at `paraphrase` / `kanji_writing`. Was listed deferred but officially closed-by-decision a day ago.
+- ✅ DEFER-4 → DONE — `lesson_order` and `frequency_rank` fields present on **all 106/106** kanji entries in `data/kanji.json`. Verified via direct field-presence count. Was listed deferred but had shipped.
+- ✅ DEFER-5 → DONE — POS tags on **1014/1014** vocab entries in `KnowledgeBank/vocabulary_n5.md`. Pass-22 (2026-05-02) tagged 1002 single-form entries (validated by JA-31). Today's `tools/fill_multiform_pos_tags_2026_05_03.py` filled the remaining 12 multi-form `form1 / form2 - gloss` lines that JA-31's LINE_RE intentionally skips (form-pattern stops at first whitespace). Two homograph mis-tag overrides applied: くらい "about" particle (vocab.json's くらい is the i-adj "dark") and ゼロ/れい "zero" numeral (vocab.json's れい is the noun "courtesy"). All 40 content-integrity invariants green post-fill.
 
 **Closed 2026-05-03 (afternoon — verification + code-already-shipped sweep):**
 - ✅ DEFER-1 → DONE — grammar pattern coverage is **177/177 (100%)**. Today's pass-15+ batch authored q-0504..q-0578 (75 mcq) referencing the previously-uncovered patterns via `grammarPatternId`. Verified via `tools/_pending_audit_2026_05_03.py`: every pattern in `grammar.json` has at least one question. (DEFER-8 was folded into this; auto-closes too.)
@@ -98,15 +103,15 @@ None. All factual-error items closed.
 
 ---
 
-## 3. 📦 DEFERRED — Long-term roadmap (6 items active; 8 closed-but-listed for traceability)
+## 3. 📦 DEFERRED — Long-term roadmap (3 items active; 11 closed-but-listed for traceability)
 
 | ID | Source | Item | Why deferred |
 |---|---|---|---|
 | ~~**DEFER-1**~~ | external-corpus | ~~78 grammar patterns still uncovered by questions~~ | ✅ **CLOSED 2026-05-03** — coverage now 177/177 (100%). q-0504..q-0578 batch closed the gap. |
-| **DEFER-2** | data-brief §6 / external-corpus P1#5 | Promote `paraphrase` from mcq subtype to first-class question type | Cosmetic; subtype works fine |
+| ~~**DEFER-2**~~ | data-brief §6 / external-corpus P1#5 | ~~Promote `paraphrase` from mcq subtype to first-class question type~~ | ✅ **CLOSED 2026-05-03** — Pass-23 r5 design decision codified by JA-29 (`tools/check_content_integrity.py:1719-1722`): subtype is the canonical extension point; promoting paraphrase to a top-level type would force renderer changes for marginal gain. JA-29 locks the subtype taxonomy at `paraphrase` / `kanji_writing`. |
 | ~~**DEFER-3**~~ | external-corpus P2#7 | ~~`tier` taxonomy on `grammar.json`~~ | ✅ **CLOSED 2026-05-03** — `tier` field live on grammar.json with 152 `core_n5` + 25 `late_n5`. |
-| **DEFER-4** | consolidated §4.2 | Per-kanji `lesson_order` / `frequency_rank` field in `kanji.json` | Optional schema enhancement |
-| **DEFER-5** | KB-md §4.1 | Optional POS tags `[v1]`/`[v2]`/`[i-adj]`/etc. on vocabulary_n5.md | Optional schema enhancement |
+| ~~**DEFER-4**~~ | consolidated §4.2 | ~~Per-kanji `lesson_order` / `frequency_rank` field in `kanji.json`~~ | ✅ **CLOSED 2026-05-03** — both fields present on all 106/106 kanji entries. Was listed deferred but had shipped. |
+| ~~**DEFER-5**~~ | KB-md §4.1 | ~~Optional POS tags `[v1]`/`[v2]`/`[i-adj]`/etc. on vocabulary_n5.md~~ | ✅ **CLOSED 2026-05-03** — 1014/1014 entries now carry POS tags. Pass-22 (2026-05-02) tagged 1002 single-form entries (validated by JA-31). The remaining 12 multi-form `form1 / form2 - gloss` lines were filled by `tools/fill_multiform_pos_tags_2026_05_03.py` — vocab.json lookup with manual override for two homograph mis-tags (くらい "about" particle vs くらい "dark" i-adj; ゼロ/れい "zero" numeral vs れい "courtesy" noun). |
 | **DEFER-6** | testing-plan §16 | Visual-regression Playwright screenshots (baseline approval round) | Tier-3 audit feature; optional |
 | **DEFER-7** | testing-plan §10 | Cross-browser BrowserStack (Safari/iOS + Android + Linux) | Hosted-service cost / config |
 | ~~**DEFER-8**~~ | external-corpus | ~~Coverage-comparison gap: tokens external tests but we don't~~ | ✅ **CLOSED 2026-05-03** — folded into DEFER-1; auto-closes with 100% pattern coverage. |
