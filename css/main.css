@@ -4475,5 +4475,48 @@ html[data-protect="on"][data-blur="true"] body::before {
     font-size: 18px;
     line-height: 1.35;
   }
+
+  /* ----- Deep-cuts pass (2026-05-03 follow-up). Items deferred from
+   * the surgical pass are applied here with appropriate scoping. -----*/
+
+  /* Body type-floor at 16 px. `max()` respects the user's data-font
+   * knob — if they pick L/XL, that wins (~17/19 px); on default S/M
+   * where var(--text-base) resolves to 13-14 px, this lifts body to
+   * 16 px. Improves readability on phones AND reinforces the iOS
+   * input-zoom prevention by making body text ineligible for the
+   * threshold trigger. */
+  body { font-size: max(16px, var(--text-base)); }
+
+  /* Gutter parity for tablets. main + .app-footer are already at 16 px
+   * inline padding ≤480; extending the same value to ≤768 brings
+   * tablets into the same rhythm so .pattern-detail / .vocab-detail /
+   * .kanji-detail cards use ~92 % of viewport instead of cramped 86 %.
+   * Desktop (>768) keeps var(--space-5) = 22.5 px. */
+  main { padding-inline: 16px; }
+  .app-footer { padding-inline: 16px; }
+
+  /* Detail-card surfaces: tighten to the checklist's 16/12 spec on
+   * mobile. Saves ~16-32 px of inner padding (was 20-24 / 24-32) so
+   * narrow phones get more usable text width; the 12 px radius reads
+   * as more "modern card" on small screens than the 6 px hairline
+   * (var(--radius-lg)) that suits desktop. Restricted to the THREE
+   * detail cards — tile cards (.pillar-card / .syllabus-card /
+   * .level-card / .grammar-card / .vocab-card / .kanji-card) keep
+   * their tile-specific design tokens. */
+  .pattern-detail,
+  .vocab-detail,
+  .kanji-detail {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  /* Selective max-width:100% — applies to elements that legitimately
+   * can overflow on a 320 px phone: <img>/<video>/<iframe> with raw
+   * width attributes; <pre>/<code>/<table> with very-wide content.
+   * NOT applied universally because `* { max-width: 100% }` constrains
+   * SVG icons inside tap-target buttons and the brand mark pseudo-
+   * element. */
+  img, video, iframe,
+  pre, table, code { max-width: 100%; }
 }
 
