@@ -382,7 +382,15 @@ def main() -> int:
         # like 'n5-001.0' contain a dot that with_suffix would treat as the
         # existing suffix (causing all examples for one pattern to collide).
         out = Path(str(out_base) + backend.suffix)
-        item: dict = {"id": src_id, "path": str(out.relative_to(ROOT))}
+        # Always serialize manifest paths with forward slashes (POSIX
+        # convention) regardless of build-host OS. Audio files are fetched
+        # by the runtime via fetch() / <audio src=...> which both expect
+        # URL-style forward slashes. Backslash-on-Windows broke PWA
+        # deployment (infra audit 2026-05-03 §2.1).
+        item: dict = {
+            "id": src_id,
+            "path": out.relative_to(ROOT).as_posix(),
+        }
         # Preserve any prior per-item voice metadata, then decide rendering.
         prior_v = prior_voice.get(src_id)
         if prior_v == "native":
