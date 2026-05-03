@@ -145,9 +145,20 @@ function renderDrilling(container) {
   }
 
   const feedbackHtml = showingFeedback ? renderFeedback(q, answer) : '';
+  const ready = isAnswered(q, answer);
+  const checkHint = !showingFeedback && !ready
+    ? (() => {
+        const hint = q.type === 'sentence_order'
+          ? 'Tap the tiles in order to build the sentence, then click Check Answer.'
+          : q.type === 'text_input'
+            ? 'Type your answer in the box, then click Check Answer.'
+            : 'Pick a choice, then click Check Answer.';
+        return `<p class="check-answer-hint">${hint}</p>`;
+      })()
+    : '';
   const buttonHtml = showingFeedback
     ? `<button id="next-drill" class="btn-primary">${idx === total - 1 ? 'Finish Drill' : 'Next Question →'}</button>`
-    : `<button id="check-answer" class="btn-primary" ${isAnswered(q, answer) ? '' : 'disabled'}>Check Answer</button>`;
+    : `${checkHint}<button id="check-answer" class="btn-primary" ${ready ? '' : 'disabled'} title="${ready ? 'Check your answer' : 'Answer the question first'}">Check Answer</button>`;
 
   container.innerHTML = `
     <div class="drill-session">

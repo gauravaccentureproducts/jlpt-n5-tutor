@@ -255,7 +255,15 @@ function renderAttempting(container) {
       <footer class="paper-controls">
         <button type="button" class="btn-secondary" id="paper-prev" ${s.currentIdx === 0 ? 'disabled' : ''}>← Previous</button>
         ${s.currentIdx === total - 1
-          ? `<button type="button" class="btn-primary" id="paper-submit" ${answered < total ? 'disabled' : ''} title="${answered < total ? 'Answer all questions before submitting' : 'Submit your paper'}">Submit paper</button>`
+          ? (() => {
+              const remaining = total - answered;
+              const allAnswered = remaining === 0;
+              return `
+                <div class="paper-submit-cluster">
+                  ${allAnswered ? '' : `<p class="paper-submit-hint">Answer all ${total} questions to submit · <strong>${remaining}</strong> ${remaining === 1 ? 'question' : 'questions'} unanswered</p>`}
+                  <button type="button" class="btn-primary" id="paper-submit" ${allAnswered ? '' : 'disabled'} title="${allAnswered ? 'Submit your paper' : `Answer all questions to submit (${remaining} remaining)`}">${allAnswered ? 'Submit paper' : `Submit paper (${remaining} remaining)`}</button>
+                </div>`;
+            })()
           : `<button type="button" class="btn-primary" id="paper-next">Next →</button>`}
       </footer>
     </article>
