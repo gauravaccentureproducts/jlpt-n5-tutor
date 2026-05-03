@@ -266,8 +266,16 @@ export async function renderHome(container) {
       ${resumeStrip}
 
       <header class="syllabus-header">
+        <span class="syllabus-watermark" aria-hidden="true">五</span>
         <h1 class="syllabus-title">JLPT N5 Syllabus</h1>
         <p class="syllabus-subtitle">Study grammar, vocabulary, kanji, reading, and listening in a structured order.</p>
+        <ul class="syllabus-stat-pills" aria-label="Corpus size">
+          <li class="syllabus-stat-pill"><span class="syllabus-stat-num">${fmt(counts.grammar)}</span><span class="syllabus-stat-lbl">grammar patterns</span></li>
+          <li class="syllabus-stat-pill"><span class="syllabus-stat-num">${fmt(counts.vocab)}</span><span class="syllabus-stat-lbl">vocab words</span></li>
+          <li class="syllabus-stat-pill"><span class="syllabus-stat-num">${fmt(counts.kanji)}</span><span class="syllabus-stat-lbl">kanji</span></li>
+          <li class="syllabus-stat-pill"><span class="syllabus-stat-num">${fmt(counts.reading)}</span><span class="syllabus-stat-lbl">reading passages</span></li>
+          <li class="syllabus-stat-pill"><span class="syllabus-stat-num">${fmt(counts.listening)}</span><span class="syllabus-stat-lbl">listening drills</span></li>
+        </ul>
         ${isReturning ? `
           <div class="syllabus-daily-status">
             <span class="syllabus-daily-streak">Streak: ${streak?.current ?? 0} ${(streak?.current ?? 0) === 1 ? 'day' : 'days'}</span>

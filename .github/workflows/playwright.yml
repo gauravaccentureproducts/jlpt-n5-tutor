@@ -41,14 +41,17 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Run P0 smoke
-        # Visual-regression suite is excluded from the default CI run —
-        # it requires committed baselines (tests/__screenshots__/) to
-        # work, and the suite was scaffolded under DEFER-6 without an
-        # initial baseline-approval round. To enable: capture baselines
-        # via `npx playwright test visual-regression --update-snapshots`
-        # locally, commit the .png files, then drop --grep-invert here.
-        run: npx playwright test --grep-invert visual-regression
+      - name: Run P0 smoke + visual regression
+        # Visual-regression suite was wired in 2026-05-03 (DEFER-6
+        # closure): baselines committed under
+        # tests/visual-regression.spec.js-snapshots/ for 6 routes × 2
+        # viewports × 2 projects = 24 PNGs. The suite captures full-page
+        # screenshots with `prefers-reduced-motion: reduce` emulation
+        # and `networkidle` wait, masks the daily-status row on home,
+        # and accepts maxDiffPixelRatio = 0.001 (sub-pixel font noise).
+        # To refresh after intentional layout changes:
+        #   npm run test:visual:update      # locally, then commit PNGs.
+        run: npx playwright test
         env:
           CI: '1'
 

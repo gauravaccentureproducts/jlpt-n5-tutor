@@ -2700,9 +2700,42 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   border-color: var(--color-line-strong);
 }
 
-/* Page title block — compact, syllabus-focused, no marketing copy. */
+/* Page title block — compact, syllabus-focused, no marketing copy.
+ * The header is a positioning context for the 五 watermark behind the
+ * title (DEFER-10 closure 2026-05-03 — restored watermark + pill-badge
+ * stats per UI-design §1.2 within the existing syllabus layout, not by
+ * resurrecting the v1.7.1-removed full hero container). */
 .syllabus-header {
+  position: relative;
   margin: var(--space-4) 0 var(--space-6);
+}
+/* Large translucent 五 ("five" — JLPT N5) glyph anchored to the right
+ * of the header. aria-hidden so screen readers don't announce it. The
+ * size scales with viewport but caps so it never crowds the title.
+ * Color uses the muted-text token at 8% opacity → visible enough to
+ * read as decoration, faint enough not to compete with the title. */
+.syllabus-watermark {
+  position: absolute;
+  top: -0.25em;
+  right: -0.05em;
+  font-family: var(--font-jp, 'Noto Sans JP', sans-serif);
+  font-weight: 900;
+  font-size: clamp(96px, 18vw, 220px);
+  line-height: 1;
+  color: var(--color-text);
+  opacity: 0.06;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: 0;
+  z-index: 0;
+}
+/* Make sure interactive content sits above the watermark. */
+.syllabus-header > h1,
+.syllabus-header > p,
+.syllabus-header > ul,
+.syllabus-header > div {
+  position: relative;
+  z-index: 1;
 }
 .syllabus-title {
   font-size: var(--text-xl);
@@ -2711,6 +2744,44 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   line-height: var(--leading-tight);
   color: var(--color-text);
   margin: 0 0 var(--space-2);
+}
+/* Pill-badge stats row — compact summary of the corpus right under the
+ * subtitle. Each pill is `<num> <label>` paired so the eye can scan
+ * five numerals without clutter. Restores UI-design-brief §1.2 stat
+ * pills in the syllabus header (rather than the v1.7.1-removed hero). */
+.syllabus-stat-pills {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.syllabus-stat-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 0.5px solid var(--color-line);
+  border-radius: 999px;
+  background: var(--color-surface-alt, transparent);
+  font-size: var(--text-xs, 12px);
+  line-height: 1.35;
+}
+.syllabus-stat-num {
+  font-weight: var(--weight-semibold, 600);
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+}
+.syllabus-stat-lbl {
+  color: var(--color-text-muted);
+}
+/* Tighten on narrow screens so 5 pills don't wrap unnecessarily. */
+@media (max-width: 480px) {
+  .syllabus-stat-pill {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
 }
 .syllabus-subtitle {
   font-size: var(--text-base);
@@ -2991,9 +3062,15 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
   border-radius: var(--radius-md);
   border: 0.5px solid transparent;
   min-height: 36px;
+  /* DEFER-10 closure 2026-05-03: enhanced hover state. The base
+   * transition now also covers transform + box-shadow so the lift
+   * effect is smooth, and `will-change: transform` hints the GPU.
+   * Lift is suppressed under prefers-reduced-motion (D-3 rule). */
   transition: background var(--motion-fast) var(--easing),
               color var(--motion-fast) var(--easing),
-              border-color var(--motion-fast) var(--easing);
+              border-color var(--motion-fast) var(--easing),
+              transform var(--motion-fast) var(--easing),
+              box-shadow var(--motion-fast) var(--easing);
 }
 .btn-action-primary {
   background: var(--color-accent);
@@ -3003,6 +3080,12 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
 .btn-action-primary:hover {
   background: var(--color-accent-hover);
   border-color: var(--color-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.btn-action-primary:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 .btn-action-secondary {
   background: transparent;
@@ -3012,6 +3095,21 @@ button, .btn-primary, .btn-secondary, .pillar-card a, .nav a, .primary-nav a, .s
 .btn-action-secondary:hover {
   background: var(--color-surface-alt);
   border-color: var(--color-text-muted);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+.btn-action-secondary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-action-primary:hover,
+  .btn-action-secondary:hover,
+  .btn-action-primary:active,
+  .btn-action-secondary:active {
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 /* Header icon buttons (settings cog, fullscreen toggle). 32px square,

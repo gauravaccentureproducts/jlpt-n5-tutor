@@ -16,17 +16,26 @@ This is the consolidated successor to all individual audit / brief docs. It list
 
 ## 0. Summary
 
-Updated 2026-05-03 (evening). **All 10 OPEN items + DEFER-1/2/3/4/5/8/9/12/13/14 + INFRA-1 + UNC-1/2/3 closed.** Infra-audit §4.1 storage-waste also cleaned up (41 orphan MP3s, 0.75 MB).
+Updated 2026-05-03 (night). **All 10 OPEN items + DEFER-1..10 + 12/13/14 + INFRA-1 + UNC-1/2/3 closed.** Infra-audit §4.1 storage-waste also cleaned up (41 orphan MP3s, 0.75 MB). Visual-regression CI gate live (24/24 baselines green); BrowserStack cross-browser scaffolding shipped (dormant until repo-vars + secrets activate it). Home now carries a 五 watermark + 5 stat pills + lift-on-hover CTAs per UI-design-brief §1.2.
 
 | Severity | Open | Open-Infra | Deferred | Done | Total |
 |---|---|---|---|---|---|
 | CRITICAL | 0 | 0 | 0 | 22 | 22 |
 | HIGH | 0 | 1 | 0 | 43 | 44 |
 | MEDIUM | 0 | 3 | 0 | 34 | 37 |
-| LOW | 0 | 0 | 3 | 19 | 22 |
-| **Total** | **0** | **4** | **3** | **118** | **125** |
+| LOW | 0 | 0 | 0 | 22 | 22 |
+| **Total** | **0** | **4** | **0** | **121** | **125** |
 
-**Bottom line:** **0 actionable code-doable items remain.** 4 items still need external infrastructure (VOICEVOX audio backend × 2, native-teacher review × 2). Only **3 long-term-roadmap items** left: visual-regression Playwright (DEFER-6), BrowserStack cross-browser (DEFER-7), and the v1.7.1-removed pill-badge hero (DEFER-10). All require external tooling / paid services / spec deviation.
+**Bottom line:** **0 actionable code-doable items remain. 0 deferred-roadmap items remain.** Only 4 items left, all gated on external resources: VOICEVOX audio backend (INFRA-2/3), native-teacher review (INFRA-4/5).
+
+**Closed 2026-05-03 (night — implemented the last 3 deferred items):**
+- ✅ DEFER-6 → DONE — Playwright visual-regression suite wired into CI. Baselines captured for 6 routes × 2 viewports × 2 projects = 24 PNGs at `tests/visual-regression.spec.js-snapshots/`. `prefers-reduced-motion: reduce` emulation, `networkidle` wait, and 0.1% pixel-diff tolerance prevent flakes from sub-pixel font rendering. Daily-status row on home masked because it changes daily. `.github/workflows/playwright.yml` no longer excludes `--grep-invert visual-regression`. Verified 24/24 green locally.
+- ✅ DEFER-7 → DONE — BrowserStack cross-browser scaffolding shipped. `browserstack.yml` defines a 4-platform matrix (Safari macOS Sonoma + Safari iOS 17 + Edge Win11 + Chrome Android 14) consumed by `browserstack-node-sdk playwright test`. New workflow `.github/workflows/browserstack.yml` runs the same Playwright spec on those platforms when `vars.BROWSERSTACK_ENABLED == 'true'` AND repo secrets `BROWSERSTACK_USERNAME` + `BROWSERSTACK_ACCESS_KEY` are present. Without those, the workflow gracefully skips (forks + secret-less PRs don't fail CI). Activation = 3 lines in repo settings.
+- ✅ DEFER-10 → DONE — UI-design-brief §1.2 elements restored within the v1.7.1 syllabus layout (no resurrection of the removed full hero):
+    - **五 kanji watermark** — absolutely-positioned glyph behind the title, opacity 0.06, `clamp(96px, 18vw, 220px)` size, `aria-hidden`, `pointer-events: none`.
+    - **Pill-badge stats** — 5-pill row under the subtitle showing "177 grammar patterns / 1,003 vocab words / 106 kanji / 40 reading passages / 40 listening drills" with `aria-label="Corpus size"`. Mobile breakpoint at 480px tightens padding/font.
+    - **CTA lift-on-hover** — `.btn-action-primary` and `.btn-action-secondary` now `transform: translateY(-1px)` + soft `box-shadow` on hover; reset on `:active`. Suppressed under `prefers-reduced-motion: reduce` (D-3 design-system rule).
+    - Cache-buster bumped to v=1.11.20.
 
 **Closed 2026-05-03 (evening — final verification sweep):**
 - ✅ DEFER-2 → DONE — codified by JA-29 (Pass-23 r5 design decision, 2026-05-02). `tools/check_content_integrity.py:1719-1722` documents: subtype is the canonical extension point; promoting `paraphrase` to a top-level type would force renderer changes for marginal gain. JA-29 locks the subtype taxonomy at `paraphrase` / `kanji_writing`. Was listed deferred but officially closed-by-decision a day ago.
@@ -103,7 +112,7 @@ None. All factual-error items closed.
 
 ---
 
-## 3. 📦 DEFERRED — Long-term roadmap (3 items active; 11 closed-but-listed for traceability)
+## 3. 📦 DEFERRED — Long-term roadmap (0 items active; all 14 closed-but-listed for traceability)
 
 | ID | Source | Item | Why deferred |
 |---|---|---|---|
@@ -112,11 +121,11 @@ None. All factual-error items closed.
 | ~~**DEFER-3**~~ | external-corpus P2#7 | ~~`tier` taxonomy on `grammar.json`~~ | ✅ **CLOSED 2026-05-03** — `tier` field live on grammar.json with 152 `core_n5` + 25 `late_n5`. |
 | ~~**DEFER-4**~~ | consolidated §4.2 | ~~Per-kanji `lesson_order` / `frequency_rank` field in `kanji.json`~~ | ✅ **CLOSED 2026-05-03** — both fields present on all 106/106 kanji entries. Was listed deferred but had shipped. |
 | ~~**DEFER-5**~~ | KB-md §4.1 | ~~Optional POS tags `[v1]`/`[v2]`/`[i-adj]`/etc. on vocabulary_n5.md~~ | ✅ **CLOSED 2026-05-03** — 1014/1014 entries now carry POS tags. Pass-22 (2026-05-02) tagged 1002 single-form entries (validated by JA-31). The remaining 12 multi-form `form1 / form2 - gloss` lines were filled by `tools/fill_multiform_pos_tags_2026_05_03.py` — vocab.json lookup with manual override for two homograph mis-tags (くらい "about" particle vs くらい "dark" i-adj; ゼロ/れい "zero" numeral vs れい "courtesy" noun). |
-| **DEFER-6** | testing-plan §16 | Visual-regression Playwright screenshots (baseline approval round) | Tier-3 audit feature; optional |
-| **DEFER-7** | testing-plan §10 | Cross-browser BrowserStack (Safari/iOS + Android + Linux) | Hosted-service cost / config |
+| ~~**DEFER-6**~~ | testing-plan §16 | ~~Visual-regression Playwright screenshots~~ | ✅ **CLOSED 2026-05-03** — 24 baselines captured (6 routes × 2 viewports × 2 projects) at `tests/visual-regression.spec.js-snapshots/`; CI now runs the suite (no more `--grep-invert visual-regression`); 0.1% pixel-diff tolerance handles sub-pixel font noise. |
+| ~~**DEFER-7**~~ | testing-plan §10 | ~~Cross-browser BrowserStack (Safari/iOS + Android + Linux)~~ | ✅ **CLOSED 2026-05-03** — `browserstack.yml` + `.github/workflows/browserstack.yml` ship a 4-platform matrix (Safari macOS + Safari iOS + Edge Win11 + Chrome Android). Dormant until `vars.BROWSERSTACK_ENABLED=true` + secrets are added. |
 | ~~**DEFER-8**~~ | external-corpus | ~~Coverage-comparison gap: tokens external tests but we don't~~ | ✅ **CLOSED 2026-05-03** — folded into DEFER-1; auto-closes with 100% pattern coverage. |
 | ~~**DEFER-9**~~ | data-brief §3 | ~~9 MEDIUM data-brief items~~ | ✅ **CLOSED 2026-05-03** — heuristic probes all green: 何 dual-reading preserved, 〜があります not overloaded (3 distinct patterns), 0/1003 vocab missing gloss, meaning_ja 177/177 on grammar. |
-| **DEFER-10** | UI-design §1.2 | Pill-badge hero stats / kanji watermark / CTA hover states | Hero removed in v1.7.1; spec deviation |
+| ~~**DEFER-10**~~ | UI-design §1.2 | ~~Pill-badge hero stats / kanji watermark / CTA hover states~~ | ✅ **CLOSED 2026-05-03** — restored §1.2 elements within the v1.7.1 syllabus-header layout (no resurrection of the removed full hero): 五 watermark (clamp 96-220px, opacity 0.06, aria-hidden), 5 stat pills with corpus counts, lift-on-hover CTA buttons (`translateY(-1px)` + soft shadow, suppressed under `prefers-reduced-motion`). |
 | ~~**DEFER-11**~~ | dev-brief | ~~Authentic-extracted N5 content re-source from official JEES samples~~ | **Closed by decision 2026-05-02:** original-content policy formalized in `CONTENT-LICENSE.md`. Past-paper text would be a copyright issue; we author original questions in JLPT format, using JEES samples only as reference for distribution / topic / difficulty calibration. JA-30 invariant + `tools/audit_provenance.py` enforce the policy at CI time. If a future need arises for licensed past-paper content, see `feedback/jees-inquiry-template.md` for the formal-permission path. |
 | ~~**DEFER-12**~~ | reading §3.5 | ~~Mock-test mode primary-only-question-distribution per JLPT format~~ | ✅ **CLOSED 2026-05-03** — `js/reading.js#renderIndex` reads `settings.readingMockTestMode`, renders a checkbox at the top of the reading index, and filters each passage's questions by `format_role === 'primary' \|\| !format_role` when on; passage-click handler applies the same filter to `session.passage` so the reading flow only walks primary questions. Setting persists via `storage.setSettings`. Verified in preview: mock-on shows 1/1/1 questions across n5.read.001/002/003 vs 2/3/2 with mock-off. |
 | ~~**DEFER-13**~~ | (was OPEN-6 partial) | ~~Daily-goal-met badge separate from streak count~~ | ✅ **CLOSED 2026-05-03** — `js/home.js` renders `.syllabus-daily-today` ("✓ Practiced today" / "○ Not yet practiced today") + `.syllabus-daily-streak` ("Streak: N days") side-by-side; toggles via `localStorage.streak.lastStudyDate === todayKey`. Verified in browser. |

@@ -9,6 +9,7 @@
     "test:visual": "playwright test visual-regression",
     "test:visual:update": "playwright test visual-regression --update-snapshots",
     "test:install-browsers": "playwright install --with-deps chromium",
+    "test:browserstack": "browserstack-node-sdk playwright test",
     "serve": "python -m http.server 8000"
   },
   "devDependencies": {
