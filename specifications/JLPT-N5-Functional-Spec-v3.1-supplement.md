@@ -670,7 +670,199 @@ When this supplement is merged into the .docx, the resulting v4 is acceptable wh
 8. The sign-off matrix (§B.1.2) is filled in (signed by named reviewers, not blank).
 9. All references to "Drill" / "Leitner" / "Phase 1.5 optional PWA" / "Audio out of scope" are removed.
 10. The repository tree (§C.6) matches the live repository as of merge date.
+11. (Added 2026-05-03) The §F revision block reflects the post-Pass-22 work and §F's NFRs are integrated into v4 §11.
+
+---
+
+## F. Revision 2026-05-03 — Mobile UI / Disabled-button feedback / Data audit / State-machine fixes
+
+This block captures work shipped between the supplement's original 2026-04-30 revision and 2026-05-03. Each subsection is a candidate for direct merge into v4 §11 (NFRs) / §5 (UX) / §12 (Quality gates) / §13 (Future). Acceptance criteria #11 above gates the merge.
+
+### F.1 Mobile UI contract — new NFR cluster (NFR-M1..NFR-M9)
+
+The mobile experience hardening pass shipped a desktop-safe contract that gates every mobile-specific style behind explicit breakpoints and verifies desktop is byte-identical after each sweep. The contract is normative for any future mobile work in this codebase.
+
+**Breakpoint tier:**
+
+| Breakpoint | Scope | Rules live at this tier |
+|---|---|---|
+| `@media (max-width: 768px)` | Phone + tablet portrait | Most mobile rules — body type-floor, overflow-x safety belt, smooth scroll, iOS-zoom inputs, tap feedback, h2 cap, auxiliary-control tap-target rules |
+| `@media (max-width: 480px)` | Small phones | Pattern-header column-stack, pattern-usage-table padding/nowrap, secondary-nav single-row, footer center, primary-nav fixed bottom, body padding-bottom for safe-area |
+| `@media (max-width: 380px)` | Galaxy S9+ tier | Bottom-nav font/padding/min-width crunch when ≤480 still spills |
+
+**Non-functional requirements:**
+
+- **NFR-M1** Tap-target floor — every interactive element ≥ 44 px on its smallest dimension. Auxiliary controls (icon-btn, breadcrumb back-link, footer-nav links, pattern-nav arrows, known-toggle) carry mobile-only `min-height: 44px` rules so the global floor reaches them.
+- **NFR-M2** iOS auto-zoom prevention — every text/search/email/number input + textarea + select rendered at ≥ 16 px on `≤768` breakpoint. Required because iOS Safari auto-zooms on tap when the input's computed font-size is below 16 px, pushing the input above the keyboard fold.
+- **NFR-M3** Overflow safety belt — `html, body { overflow-x: hidden; }` at `≤768` so any descendant wider than viewport never triggers page-wide horizontal scroll on a 320 px phone. Defensive; current state has zero overflow at 320 px.
+- **NFR-M4** Body type-floor — `body { font-size: max(16px, var(--text-base)); }` at `≤768`. Respects the user's font-size knob (Settings > Font: S/M/L/XL); on default S/M (where `--text-base` resolves to 13–15 px), this lifts body to 16 px for readability and reinforces NFR-M2 by making body text ineligible for the iOS-zoom threshold trigger.
+- **NFR-M5** Visible tap feedback — every primary tap target gets a brief `:active { transform: scale(0.97); opacity: 0.85; transition: 80ms }` at `≤768`. Mobile has no `:hover` equivalent; without this, tap-down feels unresponsive on slow networks.
+- **NFR-M6** Smooth scroll — `html { scroll-behavior: smooth; }` at `≤768`. Anchor jumps + route changes animate; matches OS-level scroll snap.
+- **NFR-M7** Container gutter — at `≤480` breakpoint, `main + .app-footer + .app-header` collapse inline padding from desktop's 22.5 px to 16 px so cards use ~92 % of viewport width. Don't apply universal `* { max-width: 100% }` — it constrains SVG icons + brand-mark pseudo-elements.
+- **NFR-M8** Heading hierarchy on narrow screens — `h2` clamps at 18 px (not desktop's 22 px) at `≤768`. On 320 px viewports, 22 px h2 reads as indistinguishable from h1 (also 22 px) and the typographic cascade collapses. 22 / 18 / 16 (h1 / h2 / body) restores readable hierarchy.
+- **NFR-M9** Desktop safety — every mobile sweep ships with a 1280 px regression check. Every value listed above MUST match the desktop default after the sweep (body overflow-x: visible, scroll-behavior: auto, body font: ~14.06 px, main padding: 22.5 px, no `:active` rule applied, h2 at 22 px). The mobile rules MUST cut off cleanly at 769 px.
+
+**QA contract** (added to ui-testing-plan §17 — Mobile QA tier):
+
+Test at viewports 320 / 360 / 390 (the spec QA tier) plus 480 / 768 (boundary) plus 1280 (desktop safety):
+
+```
+[ ] No horizontal scroll  (document.documentElement.scrollWidth === clientWidth)
+[ ] No CJK per-char break  (any heading wrapping with avg < 3 chars/line)
+[ ] All tap targets ≥ 44 px on smallest dimension
+[ ] body { font-size } ≥ 16 px at all mobile widths
+[ ] All inputs ≥ 16 px (iOS zoom test)
+[ ] Card descriptions show full text or clean line-aligned ellipsis (no mid-line clip per F.4 below)
+[ ] Smooth scroll on anchor jumps
+[ ] Desktop @ 1280: every value listed in NFR-M9 matches pre-mobile-sweep defaults
+```
+
+### F.2 Disabled-button feedback contract — new NFR-U cluster
+
+Any control that can be disabled MUST display the reason in visible UI text — not only in a `title` tooltip. Tooltips don't fire on touch; mobile users get a silent dead control.
+
+**Patterns:**
+
+| Pattern | Required visible reason | Reference example in this app |
+|---|---|---|
+| Submit / Finish disabled until all answered | Show "(N remaining)" in button text + a hint paragraph | `Submit (13 remaining)` + "Answer all 15 questions to submit · 13 questions unanswered" — `js/papers.js`, `js/test.js`, `js/diagnostic.js` |
+| Check Answer disabled until any answer | Type-aware hint above the button | "Pick a choice, then click Check Answer." / "Tap the tiles in order to build the sentence, then click Check Answer." / "Type your answer in the box, then click Check Answer." — `js/drill.js` |
+| Confirm disabled until typed phrase | The input field IS the visible reason | `Type RESET to confirm` next to a `Confirm reset` button — `js/settings.js` |
+| Prev / Next at first / last item | Position context (progress meter "Q15 of 15") makes it obvious; no explicit hint needed | – |
+| Per-choice / per-tile disabled after submission | Feedback panel below shows the result | – |
+
+**Saved-toast pattern** (silent settings):
+
+For settings that save but have no immediate visible side-effect (daily-new-card limit, daily-review-cap, default test length, audio-rate, reduce-motion), `js/settings.js` shows a brief on-screen toast on every change: `Saved: <label> = <value>`. CSS class `.settings-saved-toast` — fixed-position bottom-centre, 180 ms fade, 1800 ms auto-dismiss, respects `prefers-reduced-motion`.
+
+**Export action confirmation:** the file dialog is easily missed in the browser's downloads bar. `js/settings.js` shows a status line under the Export button: `Exported to <filename> (check your downloads folder).` Auto-clears after 4 s.
+
+**NFR-U1** Pre-release feedback audit checklist:
+
+```
+[ ] Every <button [...] disabled> rendering site has visible reason text
+[ ] Every settings setter without immediate visual effect has a saved-toast
+[ ] Every async action with > 200 ms latency has a loading or status indicator
+[ ] Every disabled control verified by tap (not hover) on a touch-only browser
+```
+
+### F.3 New invariants — JA-25..JA-33
+
+Adds nine invariants to the §C.7 / `tools/check_content_integrity.py` register beyond the JA-21 baseline of v3.1:
+
+| ID | What it checks | Severity |
+|---|---|---|
+| **JA-22** | No "direct synonym / directly equivalent / same as" in goi rationales | HIGH |
+| **JA-23** | Multi-correct scanner: every MCQ where choices include known-interchangeable particle pairs (に/へ direction, から/ので reason, は/が topic-vs-subject) flagged for native review | HIGH |
+| **JA-24** | No duplicate `pattern` strings in grammar.json across entries with overlapping `meaning_en` (catches the Pass-19 redundancy class) | MEDIUM |
+| **JA-25** | Whitelist exceptions documented — every kanji used in a user-facing field that's NOT in the N5 whitelist must have a corresponding entry in an explicit augmented set with a WHY-comment in the integrity tool | HIGH |
+| **JA-26** | No duplicate question IDs (across the entire bank) | CRITICAL |
+| **JA-27** | No English-translation/title fields in `data/reading.json` / `data/listening.json` (Japanese-first surface policy) | HIGH |
+| **JA-28** | Dokkai-paper kanji bounded by N5 whitelist + explicit exception list | HIGH |
+| **JA-29** | Question subtype taxonomy is closed — `subtype` field can only take values in an explicit allow-list (currently `paraphrase`, `kanji_writing`); new subtypes require an explicit code change, not a data sneak-in | HIGH |
+| **JA-30** | No past-paper provenance signatures in question text — original-content policy enforced by regex against known JEES/past-paper phrasings (see `CONTENT-LICENSE.md`) | CRITICAL |
+| **JA-31** | Vocab PoS parity — `pos` field on every `data/vocab.json` entry agrees with the matching entry in `KnowledgeBank/vocabulary_n5.md`. Treats homographs as a SET-VALUED match (storage uses `setdefault().add()`, not last-write-wins dict) so section-30 `いる` exist=verb-2 vs `いる` need=verb-1 don't false-positive each other | HIGH |
+| **JA-32** *(suggested)* | Broken cross-references — every `contrasts.with_pattern_id` and every `See n5-NNN` reference in `form_rules.conjugations.label` resolves to an active `n5-` ID in `data/grammar.json#patterns[].id` | HIGH |
+| **JA-33** *(suggested)* | No mid-line clipping in tile-grid card descriptions — Playwright/visual-regression assertion: at every supported viewport (320 / 480 / 768 / 1280), every `.<card>-desc` has `boundingClientRect.height` that's an integer multiple of computed line-height (within 2 px tolerance) | MEDIUM |
+
+The release-blocker rule (NFR-C, §C.7) extends to the new invariants: all 33 must pass before any release.
+
+### F.4 New anti-patterns from N5 layout regressions
+
+Documented in the procedure manual at `procedure-manual-build-next-jlpt-level.md` §3.2.7 – §3.2.10; reference here for in-spec record:
+
+- **AP-7** Don't ship cross-references to retired patterns after a dedup pass (HIGH). After any pattern-retirement pass, scan for `contrasts.with_pattern_id` and `form_rules.conjugations.label "See n5-XXX"` references to retired IDs; repoint to canonical replacement or remove. JA-32 invariant catches this going forward.
+- **AP-8** Don't mass-stamp PoS by thematic vocab section (CRITICAL). The Group-2 case is pedagogically dangerous — a learner using `あげる` from the existence-section copy gets told it's verb-1 → conjugates *あげります instead of あげます. Tag PoS per-WORD, not per-section default. Closed in Pass-24 (23+ entries fixed). JA-31 invariant catches regressions.
+- **AP-9** Don't mid-line-clip card descriptions on fixed-height tile grids (HIGH). `flex: 1` + `display: -webkit-box` + `-webkit-line-clamp: N` + fixed-height parent = Chrome normalises display to `flow-root`, line-clamp goes inert, overflow:hidden mid-line-clips. Belt-and-suspenders fix: `max-height: Nlh` next to `-webkit-line-clamp` + remove `flex: 1` + use `margin-top: auto` on action element to pin to card bottom. JA-33 invariant catches regressions.
+- **AP-10** Don't keep stale module-level state on URL navigation (HIGH). Render entry-points that short-circuit on `view === 'finished'` without resetting on URL navigation cause back-buttons inside results pages to re-render the same results page. Reset rule: `'attempting'` resumes on refresh; `'finished' / 'results'` resets when URL navigates away. Applied to `papers.js` / `test.js` / `review.js` / `drill.js`.
+
+### F.5 Corpus state — current snapshot
+
+Replaces v3 §0 / §A.7 corpus counts:
+
+| Corpus | v3 stated | Current (2026-05-03) | Delta |
+|---|---|---|---|
+| Grammar patterns | ~187 | **177** active (10 retired in Pass-19 dedup, IDs preserved as opaque retired keys) | -10 |
+| Vocabulary entries | ~1003 | **1003** | 0 |
+| Vocabulary entries with inline examples | ~210 | **374+** (Phase 4 + Phase 5 authoring shipped May 2026; +154 in Phase 4 alone) | +164 |
+| Kanji glyphs | 106 | **106** | 0 |
+| Reading passages | 30 | **40** (corpus expanded post-supplement) | +10 |
+| Listening items | 12 | **40** (corpus expanded post-supplement; ~22 native-recordings outstanding per OQ-2 per item) | +28 |
+| Question banks total | ~250 | **~590** across moji/goi/bunpou/dokkai per `data/papers/manifest.json` | +340 |
+| Mock-test paper count | 0 (single ad-hoc test) | **multi-paper structure** under `data/papers/<category>/paper-<n>.json`; 4 categories, 15 q/paper | new structure |
+
+### F.6 New routes / pages — supersedes v3 §5 routing table for these additions
+
+| Route | Purpose | Status |
+|---|---|---|
+| `#/levels` | **Level-1 picker** (N5/N4/N3/N2/N1). Default landing per §0.A of `procedure-manual-build-next-jlpt-level.md`. N5 card available; N4..N1 disabled with "Content not yet available" placeholder | Shipped |
+| `#/n4`, `#/n3`, `#/n2`, `#/n1` | Placeholder pages with "Content not yet available" message | Shipped |
+| `#/feedback` | **Feedback / bug-report form** with email obfuscation. Recipient address never appears as a literal in source — decoded only at click-time from a char-code array. Uses `mailto:` URL with subject prefix `JLPT-Tutor Feedback - <Title> [<Category>]` | Shipped |
+| `#/papers` / `#/papers/<cat>` / `#/papers/<cat>/<n>` | **Multi-paper mock-test structure** — 4 categories (moji/goi/bunpou/dokkai), 15 q/paper, score persistence per paper via `localStorage.jlpt-n5-tutor.paper.<id>` | Shipped |
+| `#/changelog` | Auto-rendered from `CHANGELOG.md` | Shipped |
+
+### F.7 Service worker version + PWA contract additions
+
+- **NFR-W2 update**: SW current = `jlpt-n5-tutor-v110` (as of 2026-05-03). The version bumps on every shell change. Frequency since supplement was last edited (~2026-05-01): ~16 bumps in 2 days reflecting the Mobile UI / Data audit / State-machine sweep cadence.
+- **NFR-W7** (new): cache-bust contract for ES modules. Browsers cache ES modules by URL; bumping `CACHE_VERSION` in `sw.js` is necessary but not sufficient — `index.html` must also bump `?v=N` on the entry script (`<script src="js/app.js?v=N">`). Without both, users see stale shell on next visit because the unchanged `import './module-x.js'` URLs hit the browser's module cache.
+- **NFR-W8** (new): SW pre-cache list maintenance. The `PRECACHE` array in `sw.js` must list every static asset reachable on first paint, including the inline-SVG favicon, the 5 locale files, all 25+ JS modules, and the 4 self-hosted woff2 font subsets. Missing entries silently degrade offline UX.
+- **§D / Content-protection layer**: shipped as a feature flag in `js/content-protect.js` (`CONTENT_PROTECT_ENABLED`). Currently OFF (allows screenshots / Ctrl+C / right-click for bug-report use). When ON: blocks contextmenu / copy / cut / dragstart / selectstart / Ctrl+C/A/X/S/P/U / F12 / Ctrl+Shift+I/J/K/C; window-blur sets `html[data-blur=true]` to obscure during region-screenshots; `@media print` blanks the page. Documented as honest deterrent — devtools / view-source / phone-camera-of-screen still work.
+- **`CONTENT-LICENSE.md`**: shipped at repo root. Original-content policy + reference sources + JEES contact path. JA-30 invariant + `tools/audit_provenance.py` enforce the policy at CI time.
+
+### F.8 Pass-N audit log update
+
+Extends §D.1:
+
+| Pass | Lens | Findings raised | Closed | Cumulative tally |
+|---|---|---|---|---|
+| 11-14 | (covered in v3.1 baseline) | 91 | 91 | 553 |
+| 15 | Multi-correct sweep + grey-zone audit (8 categories A-H) | 28 | 28 | 581 |
+| 15a | Free heuristic audit (`tools/heuristic_audit.py`) | 60 | 60 | 641 |
+| 16 | Pre-native-review dossier preparation | 14 | 14 | 655 |
+| 17 | KnowledgeBank PoS-tag injection (37 drift entries) + JA-31 invariant added | 37 | 37 | 692 |
+| 18-19 | Late-tier reclassification + 14 patterns promoted | 14 | 14 | 706 |
+| 20 | Procedure manual review (40 issues — operating modes, MVS, definition-of-done) | 40 | 36 + 4 deferred | 742/746 |
+| 21 | Procedure manual Appendix B (extracted-from-N5) | 12 | 12 | 754 |
+| 22 | Procedure manual Appendix C (polish) + design-system D-3/D-4/D-8 rules | 9 | 9 | 763 |
+| 23 | Provenance lock-in (CONTENT-LICENSE.md + JA-30 + tools/audit_provenance.py) | – | – | – |
+| 24 | Seasoned-teacher review (T-1..T-9 automated + manual sample) | 12 | 12 | 775 |
+| 25 | Pre-review native-dossier audit (14 findings — 3C/4H/5M/2L) | 14 | 14 | 789 |
+| 26 | Follow-up dossier audit (closure verification) | 0 | 0 | 789 |
+| 27 | Data-files audit (grammar/vocab/kanji JSON; 10 actionable items) | 10 | 8 + 2 deferred | 797/799 |
+
+**Pass-N protocol unchanged** — quarterly cadence, severity matrix, CRITICAL-blocks-release rule still binding. The auto-generated `feedback/closed/` archive (set up 2026-05-03) groups all closed audit reports for traceability without cluttering the active queue at `feedback/`.
+
+### F.9 Procedure manual + companion docs (added 2026-05-01..2026-05-03)
+
+Companion documentation produced during this revision window. Reference + status:
+
+| Document | Path | Purpose |
+|---|---|---|
+| **Procedure manual** | `JLPT/procedure-manual-build-next-jlpt-level.md` (root, level-agnostic) | Prescriptive playbook for building any next JLPT level (N4..N1) from this N5 source. Two execution modes (A: human + AI; B: zero-interaction one-shot agent). Updated 2026-05-03 with §3.2.7..§3.2.10 anti-patterns, §4.5 Mobile UI contract, §4.6 Disabled-button feedback contract, §0.A One-instruction autonomous-build contract, §A.12 15-step ordered execution sequence, §A.13 completion handoff format. |
+| **Appendix B** | `specifications/procedure-manual-appendix-b-extracted-from-n5.md` | Schemas, rules, configurations extracted from the N5 codebase so a Mode-B agent can implement them without inferring from prose. |
+| **Appendix C** | `specifications/procedure-manual-appendix-c-pass22-polish.md` | Pass-22 polish items — distractor rubric, ko-so-a-do scene-context, JA-2/JA-23 interaction, augmented-set escape-valve guard, auto-generation stop-condition, full PWA spec, same-pattern-string conflict-resolution. |
+| **Procedure manual review** | `feedback/procedure-manual-review-issues.md` | 40 issues against the manual; status: 36 closed in §A / §B, 4 still tracked. |
+| **Master task list** | `feedback/MASTER-TASK-LIST.md` | Single-source-of-truth running tracker of all open / open-infra / deferred / done items. Replaces individual audit-doc tracking. |
+| **Closed-archive index** | `feedback/closed/README.md` | One-line-per-file rationale for the 28 closed feedback documents archived 2026-05-03. |
+| **N4 inventory artifacts** | `feedback/n4-{grammar,kanji,vocab-sample,inventory-manifest}.md` | Bootstrap content lists for a future N4 build. Closes Pass-21 F-20.12..F-20.14. |
+| **JEES inquiry template** | `feedback/jees-inquiry-template.md` | Drafted-but-not-sent email template for past-paper licensing inquiries. Activates only if the project ever wants to use specific past-paper questions verbatim. |
+
+### F.10 Open / deferred items snapshot — 2026-05-03
+
+Replaces the prior MASTER-TASK-LIST snapshot in §B.9 / §B.13:
+
+| Severity | Open | Open-Infra | Deferred | Done | Total |
+|---|---|---|---|---|---|
+| CRITICAL | 0 | 0 | 0 | 22 | 22 |
+| HIGH | 0 | 2 | 1 | 41 | 44 |
+| MEDIUM | 0 | 3 | 6 | 28 | 37 |
+| LOW | 0 | 0 | 5 | 17 | 22 |
+| **Total** | **0** | **5** | **12** | **108** | **125** |
+
+**Bottom line**: zero actionable code-doable items remain; 5 items still need external infrastructure (audio re-render via VOICEVOX, BrowserStack); 12 deferred to long-term roadmap.
 
 ---
 
 *End of supplement. Merge into the next .docx revision and tag it v4.*
+
+*Prepared 2026-04-30. Revised 2026-05-01 (B.13–B.15 additions). Revised 2026-05-03 (§F revision block — Mobile UI / Disabled-button feedback / Data audit / State-machine fixes / Pass 16-27 cumulative).*

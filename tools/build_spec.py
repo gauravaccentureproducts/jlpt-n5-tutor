@@ -759,14 +759,32 @@ def _add_inline_runs(para, text, bold=False, italic=False):
 
 
 def _emit_table(rows):
-    """rows is a list of list-of-strings. First row is header."""
+    """rows is a list of list-of-strings. First row is header.
+
+    Defensively normalises row width: if a body row has FEWER cells than
+    the header (markdown author dropped trailing pipes), pads with blanks;
+    if MORE (a literal `|` slipped into a cell, or the markdown column
+    count is inconsistent), truncates and stuffs the overflow into the
+    last cell. Either way the docx table renders without IndexError.
+    """
     if not rows: return
-    table = doc.add_table(rows=len(rows), cols=len(rows[0]))
+    n_cols = len(rows[0])
+    if n_cols == 0: return
+    # Normalise every row to n_cols
+    normalised = []
+    for row in rows:
+        if len(row) < n_cols:
+            row = row + [''] * (n_cols - len(row))
+        elif len(row) > n_cols:
+            head = row[:n_cols - 1]
+            tail = ' | '.join(row[n_cols - 1:])
+            row = head + [tail]
+        normalised.append(row)
+    table = doc.add_table(rows=len(normalised), cols=n_cols)
     table.style = 'Light Grid Accent 1'
-    for r_idx, row in enumerate(rows):
+    for r_idx, row in enumerate(normalised):
         for c_idx, cell_text in enumerate(row):
             cell = table.rows[r_idx].cells[c_idx]
-            # The default cell paragraph is empty - reuse it
             cell.paragraphs[0].text = ''
             _add_inline_runs(cell.paragraphs[0], cell_text,
                               bold=(r_idx == 0))
@@ -877,3 +895,87 @@ doc.save(OUT_PATH)
 # stdout on Windows defaults to cp932, which can't encode the en-dash in OUT_PATH.
 # Use ASCII-only for the success line so the script never trips on its own filename.
 print("Saved spec docx ({} bytes).".format(Path(OUT_PATH).stat().st_size))
+
+
+# ============================================================
+# CONSOLIDATED SPEC: extend the v4 doc in-memory with chapters
+# 2-7 and save as a separate .docx alongside the v4 functional
+# spec. The single deliverable for stakeholders / sponsors who
+# want everything (Functional Spec + Design System + UI Testing
+# Plan + Procedure Manual + Appendices + TASKS template) in one
+# file. Each markdown source remains independently editable; the
+# merge happens at build time.
+#
+# Output filename uses an em-dash so it sorts adjacent to the
+# canonical "JLPT N5 Grammar Tutor – Functional Spec.docx" but
+# is visibly distinct in a directory listing.
+# ============================================================
+CONSOLIDATED_PATH = str(OUT_DIR / "JLPT N5 — Consolidated Spec.docx")
+
+
+def chapter_cover(num, title, source_note):
+    """Page break + chapter cover (h1 title + italic source note + rule)."""
+    doc.add_page_break()
+    h1(f"Chapter {num}. {title}")
+    p(source_note, italic=True)
+    hr()
+
+
+# Chapter 1 = the v3 + v3.1-supplement content already in `doc` from above.
+# It's at the top of the consolidated doc (no explicit chapter cover —
+# the v3 spec opens with its own document title and section h1s).
+# Append chapters 2-7 in stable-to-volatile order.
+
+# Chapter 2: Design System (Zen Modern)
+DESIGN_SYSTEM_PATH = ROOT / "specifications" / "jlpt-n5-design-system-zen-modern.md"
+if DESIGN_SYSTEM_PATH.exists():
+    chapter_cover(2,
+        "Design System (Zen Modern)",
+        "Source: specifications/jlpt-n5-design-system-zen-modern.md")
+    render_markdown(DESIGN_SYSTEM_PATH)
+
+# Chapter 3: UI Testing Plan
+UI_TESTING_PATH = ROOT / "feedback" / "ui-testing-plan.md"
+if UI_TESTING_PATH.exists():
+    chapter_cover(3,
+        "UI Testing Plan",
+        "Source: feedback/ui-testing-plan.md")
+    render_markdown(UI_TESTING_PATH)
+
+# Chapter 4: Procedure Manual (lives at the JLPT root, one level above
+# this repo, because it is intentionally level-agnostic and not owned
+# by N5).
+PROC_MANUAL_PATH = ROOT.parent / "procedure-manual-build-next-jlpt-level.md"
+if PROC_MANUAL_PATH.exists():
+    chapter_cover(4,
+        "Procedure Manual — Building the Next JLPT Level App",
+        "Source: <JLPT-root>/procedure-manual-build-next-jlpt-level.md")
+    render_markdown(PROC_MANUAL_PATH)
+
+# Chapter 5: Procedure Manual Appendix B (extracted-from-N5)
+PROC_B_PATH = ROOT / "specifications" / "procedure-manual-appendix-b-extracted-from-n5.md"
+if PROC_B_PATH.exists():
+    chapter_cover(5,
+        "Procedure Manual Appendix B — Extracted from N5",
+        "Source: specifications/procedure-manual-appendix-b-extracted-from-n5.md")
+    render_markdown(PROC_B_PATH)
+
+# Chapter 6: Procedure Manual Appendix C (Pass-22 polish)
+PROC_C_PATH = ROOT / "specifications" / "procedure-manual-appendix-c-pass22-polish.md"
+if PROC_C_PATH.exists():
+    chapter_cover(6,
+        "Procedure Manual Appendix C — Pass-22 Polish",
+        "Source: specifications/procedure-manual-appendix-c-pass22-polish.md")
+    render_markdown(PROC_C_PATH)
+
+# Chapter 7: TASKS.md canonical template
+TASKS_TEMPLATE_PATH = ROOT / "specifications" / "tasks-md-template.md"
+if TASKS_TEMPLATE_PATH.exists():
+    chapter_cover(7,
+        "TASKS.md Canonical Template",
+        "Source: specifications/tasks-md-template.md")
+    render_markdown(TASKS_TEMPLATE_PATH)
+
+doc.save(CONSOLIDATED_PATH)
+print("Saved consolidated docx ({} bytes).".format(
+    Path(CONSOLIDATED_PATH).stat().st_size))
