@@ -2,6 +2,55 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.3 - 2026-05-04 (Reference-markdowns audit propagation to runtime data)
+
+Propagates the v1.12.2 catalog-level fixes into the runtime JSON files
+that the website actually serves. The website now exposes the new
+grammar pattern, the updated もらう particle option, and the corrected
+kanji-reading orderings to learners at runtime — not just in the
+reference docs.
+
+### New grammar pattern shipped (visible to learners)
+
+**n5-188: Verb + ことができる (productive can-do form).** Was flagged
+as missing in the v1.12.2 audit; now a first-class entry in
+`data/grammar.json` with full schema (3 examples, 2 common_mistakes,
+explanation_en, form_rules, notes pairing it with n5-103). Tier:
+core_n5. Category: Comparison and Preference (alongside n5-103).
+
+  - 日本語を 話す ことが できます。 (I can speak Japanese.)
+  - ピアノを ひく ことが できますか。 (Can you play piano?)
+  - あした 行く ことが できません。 (I can't go tomorrow.)
+
+Two questions added (q-0579 / q-0580) covering the affirmative and
+negative forms — pattern coverage stays at 100% (178/178).
+
+### Runtime data updates
+
+  - `data/grammar.json` n5-131 (もらう):
+      pattern: ～に～をもらいます → ～に / から ～をもらいます
+      meaning_en clarified to mention both particles
+      notes appended with personal-vs-institutional usage rule
+  - `data/grammar.json`: new pattern n5-188 (see above)
+  - `data/kanji.json` 後: kun reordered ['のち','うし','あと'] →
+      ['うし','あと','のち'] (matches kanji_n5.md update; primary_reading
+      stays 'あと')
+  - `data/n5_kanji_readings.json` 後: same kun reorder
+  - `data/questions.json`: 288 → 290 questions (mcq 258 → 260);
+      _meta refreshed; audit_history entry appended
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION: v112 -> v113 (forces re-fetch of grammar.json,
+    questions.json, kanji.json, n5_kanji_readings.json updates).
+  - index.html cache-busters: v=1.11.22 -> v=1.11.23.
+  - tools/check_content_integrity.py -> 40/40 invariants PASS,
+    including JA-12 (kanji KB↔JSON consistency), JA-17 (grammar
+    examples have vocab_ids), JA-26 (no duplicate question IDs).
+  - Pattern coverage: 178/178 (was 177/177 + new n5-188 = 178; q-0579
+    and q-0580 cover it).
+  - tools/propagate_ref_md_audit_2026_05_04.py is idempotent.
+
 ## v1.12.2 - 2026-05-04 (Reference-markdowns audit closure - 11 items resolved)
 
 Closes all 11 items in the 2026-05-04 reference-markdowns re-audit. The

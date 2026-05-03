@@ -1,15 +1,15 @@
 {
   "_meta": {
     "schema_version": "1.0",
-    "question_count": 288,
+    "question_count": 290,
     "type_distribution": {
-      "mcq": 258,
+      "mcq": 260,
       "sentence_order": 16,
       "text_input": 14
     },
     "id_range": {
       "first": "q-0001",
-      "last": "q-0578"
+      "last": "q-0580"
     },
     "id_gap_policy": "documented",
     "id_gap_explanation": "IDs are non-contiguous. The declared range q-0001..q-0433 spans 433 slots but only 143 are populated (290 missing). Cause: bulk deletions across audit passes (Pass-9 to Pass-14) without renumbering. Specifically: Pass-9 removed first-edition stubs (q-0052..q-0219), Pass-12 removed duplicates / corrupted items, Pass-14 (2026-05-01) removed 38 pattern-meta stubs (q-0280..q-0416 family). Renumbering was rejected as too risky -  any external reference (URL bookmarks of past test results, exported localStorage state, verification.md cross-references) would break unpredictably. Per F-14.6 closure: gaps are accepted as historical record. Tooling MUST treat IDs as opaque strings, not contiguous-integer suffixes.",
@@ -71,7 +71,8 @@
       "Pass-15 P0 (2026-05-01): authored 19 new questions per external-corpus audit. 10 paraphrase mcq (q-0454..0463), 5 counter-rendaku text_input (q-0464..0468), 4 reading-context particle mcq (q-0469..0472). Adds 'paraphrase' subtype on mcq for synonym/antonym/equivalence drills. Bank: 173 -> 192.",
       "Pass-15 P1 (2026-05-01): authored 6 kanji-writing mcq (q-0473..0478) with subtype='kanji_writing'. Tests 'given kana, pick correct kanji' format from external corpus tests 17/19/25. Bank: 192 -> 198.",
       "Pass-15 coverage batch (2026-05-01): authored 25 mcq (q-0479..0503) to close coverage gap on uncovered grammar patterns. Bank: 198 -> 223. Coverage moves from ~50% to ~63% of 187 grammar patterns.",
-      "Pass-15+ coverage extension (2026-05-03): authored 75 mcq (q-0504..0578) bringing grammar-pattern coverage to 100% (177/177). Bank: 213 -> 288 (mcq 193 -> 258, sentence_order 16, text_input 14)."
+      "Pass-15+ coverage extension (2026-05-03): authored 75 mcq (q-0504..0578) bringing grammar-pattern coverage to 100% (177/177). Bank: 213 -> 288 (mcq 193 -> 258, sentence_order 16, text_input 14).",
+      "Reference-markdowns audit propagation (2026-05-04): added q-0579 / q-0580 covering new pattern n5-188 (Verb + ことができる, productive can-do form). Bank: 288 → 290 (mcq +2). Pattern coverage remains 100% (178/178)."
     ],
     "authoritative_audit_log": "verification.md (cumulative findings tally)",
     "integrity_invariants": "26 checks in tools/check_content_integrity.py (X-6.1..X-6.9, JA-1..JA-17)",
@@ -5843,6 +5844,52 @@
       ],
       "correctAnswer": "も",
       "explanation_en": "いつ + も = always (positive existence; differs from なに/だれ/どこ which need a negative verb to form 'nothing/no-one/nowhere'). Distractors: いつ + か = 'sometime' (would need a non-habitual context); に/の don't form Q-word compounds.",
+      "difficulty": 2
+    },
+    {
+      "id": "q-0579",
+      "grammarPatternId": "n5-188",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に 入る ことばを えらんで ください。",
+      "question_ja": "日本語を 話す こと（  ）できます。",
+      "choices": [
+        "が",
+        "を",
+        "に",
+        "で"
+      ],
+      "correctAnswer": "が",
+      "explanation_en": "「ことができる」 takes が on the こと nominalizer. Within the こと-clause the verb 話す retains its normal object 日本語を; only the outer こと takes が.",
+      "distractor_explanations": {
+        "を": "を marks 日本語 (the object of 話す) but not こと; こと is the subject of できる, which takes が.",
+        "に": "に marks recipient/destination, not the subject of a できる-frame.",
+        "で": "で marks means/location; here the structure specifies a verb noun-clause that is \"doable\", which takes が."
+      },
+      "high_confusion": false,
+      "difficulty": 2
+    },
+    {
+      "id": "q-0580",
+      "grammarPatternId": "n5-188",
+      "type": "mcq",
+      "direction": "j_to_e",
+      "prompt_ja": "（  ）に 入る ことばを えらんで ください。",
+      "question_ja": "あした 友だちに あう ことが （  ）。",
+      "choices": [
+        "できません",
+        "ありません",
+        "いません",
+        "しません"
+      ],
+      "correctAnswer": "できません",
+      "explanation_en": "Verb-dict + ことが できません = \"cannot do\". The full negative form of the productive can-do construction.",
+      "distractor_explanations": {
+        "ありません": "ありません negates existence (ない). Pairing it with 「ことが」 yields 「ことが ありません」 = \"have not done\", a different N5 grammar (experience). Here we want capability negation.",
+        "いません": "いません is the negative existence for animate subjects. Doesn't fit the こと frame.",
+        "しません": "しません = \"do not do\" (volition / habit), not \"cannot do\". Loses the ability sense."
+      },
+      "high_confusion": false,
       "difficulty": 2
     }
   ]
