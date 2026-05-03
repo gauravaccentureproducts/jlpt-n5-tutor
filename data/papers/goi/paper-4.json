@@ -73,7 +73,7 @@
         "より"
       ],
       "correctIndex": 3,
-      "rationale": "taller than father. ---",
+      "rationale": "taller than father.",
       "kbSourceId": "Q50",
       "id": "goi-4.5"
     },
@@ -180,7 +180,7 @@
       "stem_html": "A: きのうの よる、はやく ねました。",
       "choices": [
         "きのう おそく ねました。",
-        "きのう 早く ねました。",
+        "きのう はやく ねました。",
         "きのうの あさ、おそく おきました。",
         "きのうの あさ、はやく おきました。"
       ],

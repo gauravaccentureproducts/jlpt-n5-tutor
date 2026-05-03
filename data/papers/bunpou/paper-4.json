@@ -157,10 +157,9 @@
         "など"
       ],
       "correctIndex": 3,
-      "rationale": "listing with や...など.",
+      "rationale": "listing with や...など. や〜などを 'X, Y, etc.' non-exhaustive list. Distractors: を is the object marker (already follows the blank); へ is direction (no destination here); に is recipient/time.",
       "kbSourceId": "Q56",
-      "id": "bunpou-4.11",
-      "explanation_en": "や〜などを 'X, Y, etc.' non-exhaustive list. Distractors: を is the object marker (already follows the blank); へ is direction (no destination here); に is recipient/time."
+      "id": "bunpou-4.11"
     },
     {
       "type": "mcq",
@@ -214,7 +213,7 @@
         "より"
       ],
       "correctIndex": 3,
-      "rationale": "comparison より. ---",
+      "rationale": "comparison より.",
       "kbSourceId": "Q60",
       "id": "bunpou-4.15"
     }

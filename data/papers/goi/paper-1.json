@@ -149,7 +149,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "この りんごは （　　）。",
+      "stem_html": "この りんごは あまいですから、（　　）。",
       "choices": [
         "おいしいです",
         "たかいです",
@@ -157,7 +157,7 @@
         "おもしろいです"
       ],
       "correctIndex": 0,
-      "rationale": "food + おいしい.",
+      "rationale": "Sweet apples → delicious. The \"あまいですから\" anchor forces おいしい as the only natural completion: たかい (expensive) and あおい (green/unripe) don't follow from sweetness, and おもしろい (interesting) is unidiomatic for food.",
       "kbSourceId": "Q11",
       "id": "goi-1.11"
     },

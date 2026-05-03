@@ -138,12 +138,12 @@
       "stem_html": "A: わたしは ピアノを ならって います。",
       "choices": [
         "わたしは ピアノが よく わかります。",
-        "わたしは ピアノを 売って います。",
+        "わたしは ピアノを うって います。",
         "わたしは ピアノを 買いました。",
         "わたしは ピアノの れんしゅうを して います。"
       ],
       "correctIndex": 3,
-      "rationale": "learning ≈ practicing. ---",
+      "rationale": "learning ≈ practicing.",
       "kbSourceId": "Q100",
       "id": "goi-7.10"
     }

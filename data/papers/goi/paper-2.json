@@ -87,10 +87,9 @@
         "うしろ"
       ],
       "correctIndex": 0,
-      "rationale": "location relative — book ON desk uniquely fits うえ.",
+      "rationale": "location relative — book ON desk uniquely fits うえ. ほんは つくえの うえ に あります = the book is ON the desk. Replaces a previous stem (ぎんこうの (    ) に 駅が あります) where all four positions (うえ / した / まえ / うしろ) were grammatically defensible because the stem provided no directional anchor.",
       "kbSourceId": "Q21",
-      "id": "goi-2.6",
-      "explanation_en": "ほんは つくえの うえ に あります = the book is ON the desk. Replaces a previous stem (ぎんこうの (    ) に 駅が あります) where all four positions (うえ / した / まえ / うしろ) were grammatically defensible because the stem provided no directional anchor."
+      "id": "goi-2.6"
     },
     {
       "type": "mcq",

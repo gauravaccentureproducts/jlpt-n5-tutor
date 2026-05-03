@@ -104,7 +104,7 @@
       "correctIndex": 1,
       "rationale": "すき takes が.",
       "kbSourceId": "Q96",
-      "passage_text": "わたしの しゅみ\nわたしは おんがく [ 1 ] すきです。 まいにち、 ぎんこうから かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても たのしいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと おもいます。",
+      "passage_text": "わたしの しゅみ\nわたしは おんがく [ 1 ] すきです。 まいにち、 学校から かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても たのしいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと おもいます。",
       "passage_label": "Passage B",
       "blank_number": 1,
       "id": "bunpou-7.6"
@@ -121,7 +121,7 @@
       "correctIndex": 0,
       "rationale": "habitual present.",
       "kbSourceId": "Q97",
-      "passage_text": "わたしの しゅみ\nわたしは おんがく [ 1 ] すきです。 まいにち、 ぎんこうから かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても たのしいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと おもいます。",
+      "passage_text": "わたしの しゅみ\nわたしは おんがく [ 1 ] すきです。 まいにち、 学校から かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても たのしいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと おもいます。",
       "passage_label": "Passage B",
       "blank_number": 2,
       "id": "bunpou-7.7"
@@ -138,7 +138,7 @@
       "correctIndex": 1,
       "rationale": "「ピアノきょうしつ」 (compound noun, no の) - に行きます target. (The original option 4 「ピアノを 買い」 was dropped because Verb-stem + に+行く is grammatically valid, making it a structurally-correct second answer; replaced with 「ピアノは すき」 which is broken before に行きます.)",
       "kbSourceId": "Q98",
-      "passage_text": "わたしの しゅみ\nわたしは おんがく [ 1 ] すきです。 まいにち、 ぎんこうから かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても たのしいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと おもいます。",
+      "passage_text": "わたしの しゅみ\nわたしは おんがく [ 1 ] すきです。 まいにち、 学校から かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても たのしいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと おもいます。",
       "passage_label": "Passage B",
       "blank_number": 3,
       "id": "bunpou-7.8"
@@ -155,7 +155,7 @@
       "correctIndex": 0,
       "rationale": "time + が + ありません (no time).",
       "kbSourceId": "Q99",
-      "passage_text": "わたしの しゅみ\nわたしは おんがく [ 1 ] すきです。 まいにち、 ぎんこうから かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても たのしいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと おもいます。",
+      "passage_text": "わたしの しゅみ\nわたしは おんがく [ 1 ] すきです。 まいにち、 学校から かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても たのしいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと おもいます。",
       "passage_label": "Passage B",
       "blank_number": 4,
       "id": "bunpou-7.9"
@@ -170,9 +170,9 @@
         "でも"
       ],
       "correctIndex": 3,
-      "rationale": "「でも」 attached to a quantity means \"even (just)\" - 一日でも = \"even (just) one day\". Combined with 「ぜったいに」, this expresses \"I definitely want to play, even just for one day next week.\" 「ぐらい」 (approximate) would clash with 「ぜったいに」 (firm resolve). ---",
+      "rationale": "「でも」 attached to a quantity means \"even (just)\" - 一日でも = \"even (just) one day\". Combined with 「ぜったいに」, this expresses \"I definitely want to play, even just for one day next week.\" 「ぐらい」 (approximate) would clash with 「ぜったいに」 (firm resolve).",
       "kbSourceId": "Q100",
-      "passage_text": "わたしの しゅみ\nわたしは おんがく [ 1 ] すきです。 まいにち、 ぎんこうから かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても たのしいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと おもいます。",
+      "passage_text": "わたしの しゅみ\nわたしは おんがく [ 1 ] すきです。 まいにち、 学校から かえってから、いえで ピアノを 一時間 [ 2 ]。 にちようびは 友だちと いっしょに [ 3 ] に 行きます。 友だち も ピアノが じょうずですから、 とても たのしいです。 こんしゅうは いそがしくて、ピアノを ひく 時間 [ 4 ] ありませんでした。 来週は ぜったいに 一日 [ 5 ] ひきたいと おもいます。",
       "passage_label": "Passage B",
       "blank_number": 5,
       "id": "bunpou-7.10"
