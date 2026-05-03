@@ -16,6 +16,7 @@ __pycache__/
 # Local-only files
 *.local
 *.draft
+.claude/settings.local.json
 
 # Transient verifier output (regenerated on every audit run; archived copy in not-required/)
 /drift_report.txt

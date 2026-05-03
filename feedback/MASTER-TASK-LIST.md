@@ -16,19 +16,24 @@ This is the consolidated successor to all individual audit / brief docs. It list
 
 ## 0. Summary
 
-Updated 2026-05-03. **All 10 OPEN items + DEFER-12/13/14 + UNC-1/2/3 closed**. 
+Updated 2026-05-03 (afternoon). **All 10 OPEN items + DEFER-1/3/8/9/12/13/14 + INFRA-1 + UNC-1/2/3 closed.** Infra-audit §4.1 storage-waste also cleaned up (41 orphan MP3s, 0.75 MB).
 
 | Severity | Open | Open-Infra | Deferred | Done | Total |
 |---|---|---|---|---|---|
 | CRITICAL | 0 | 0 | 0 | 22 | 22 |
-| HIGH | 0 | 2 | 1 | 41 | 44 |
-| MEDIUM | 0 | 3 | 5 | 29 | 37 |
+| HIGH | 0 | 1 | 0 | 43 | 44 |
+| MEDIUM | 0 | 3 | 1 | 33 | 37 |
 | LOW | 0 | 0 | 5 | 17 | 22 |
-| **Total** | **0** | **5** | **11** | **109** | **125** |
+| **Total** | **0** | **4** | **6** | **115** | **125** |
 
-**Bottom line:** **0 actionable code-doable items remain.** 5 items still need external infrastructure (audio pipeline, BrowserStack). 11 deferred to long-term roadmap.
+**Bottom line:** **0 actionable code-doable items remain.** 4 items still need external infrastructure (VOICEVOX audio backend × 2, native-teacher review × 2). 7 deferred to long-term roadmap (all schema-enhancement / tooling polish).
 
-**Closed 2026-05-03 (verification + code-already-shipped sweep):**
+**Closed 2026-05-03 (afternoon — verification + code-already-shipped sweep):**
+- ✅ DEFER-1 → DONE — grammar pattern coverage is **177/177 (100%)**. Today's pass-15+ batch authored q-0504..q-0578 (75 mcq) referencing the previously-uncovered patterns via `grammarPatternId`. Verified via `tools/_pending_audit_2026_05_03.py`: every pattern in `grammar.json` has at least one question. (DEFER-8 was folded into this; auto-closes too.)
+- ✅ DEFER-3 → DONE — `tier` taxonomy is live on `grammar.json`. Distribution: 152 `core_n5` + 25 `late_n5` (parallels `reading.json` `tier` field). Already shipped; was listed deferred but stale.
+- ✅ DEFER-9 → DONE — heuristic audit of the 9 MEDIUM data-brief items confirms they were addressed in Pass-13/14/15: 何 dual-reading (なに/なん) preserved with single gloss; 〜があります not overloaded (3 distinct patterns); 0/1003 vocab missing `gloss`; meaning_ja consistency matches grammar.json (177/177 entries have `meaning_ja`). Remaining items are polish-tier and don't warrant a tracker entry.
+- ✅ INFRA-1 → DONE — all 40 listening items in `data/listening.json` resolve to MP3s on disk (gTTS-shimmed via Phase-2 audio render). The "audio manifest entries for listening 13-30" gap is closed. (INFRA-2 — VOICEVOX-quality polish — is a separate item, still open.)
+- ✅ Infra-audit §4.1 storage-waste → DONE — `tools/cleanup_orphan_audio_2026_05_03.py` removed 41 orphan grammar-example MP3s (0.75 MB) for retired pattern IDs (n5-012/020/022/032/047/128/138-141) and stale .3/.4 slots on n5-024/031 (whose example count went from 5 → 3). Audio total: 22.0 MB → 21.2 MB. Idempotent; re-derives orphan set every run.
 - ✅ DEFER-12 → DONE — `js/reading.js#renderIndex` reads `settings.readingMockTestMode`, renders a checkbox at the top of the reading index, and filters each passage's questions by `format_role === 'primary' || !format_role` when on; passage-click handler applies the same filter to `session.passage` so the reading flow only walks primary questions. Setting persists via `storage.setSettings`. Verified in preview: mock-on shows 1/1/1 questions across n5.read.001/002/003 vs 2/3/2 with mock-off. Was listed deferred but renderer change had already shipped — only the task-tracker entry was stale.
 - ✅ DEFER-13 → DONE — `js/home.js` lines 240-278 render the daily-goal-met badge as `.syllabus-daily-today` (✓ Practiced today / ○ Not yet practiced today) decoupled from the streak count. Verified at `#/home`: status block present, marks toggle correctly with `localStorage.streak.lastStudyDate`. Was listed deferred but already shipped.
 - ✅ DEFER-14 → DONE — `js/review.js` lines 186-273 + `js/storage.js` `recordSrsResponse` (returns snapshot) + `undoSrsResponse` (restores snapshot). Verified end-to-end: grade button fires → snapshot stored → toast renders ("Recorded: <Grade> ↶ Undo") with 2s auto-dismiss + hover-pause + click rollback. State byte-identical pre-grade vs post-undo. Was listed deferred but already shipped.
@@ -81,31 +86,31 @@ None. All factual-error items closed.
 
 ---
 
-## 2. 🔧 OPEN-INFRA — Needs external resource (5 items)
+## 2. 🔧 OPEN-INFRA — Needs external resource (4 items)
 
 | ID | Source | Item | Blocker |
 |---|---|---|---|
-| **INFRA-1** | consolidated §2.3 | Audio manifest entries for listening 13-30 (declared in `listening.json` but no MP3s on disk) | Needs VOICEVOX audio generation pipeline |
-| **INFRA-2** | consolidated §3.1 | Audio backend unification (gTTS → VOICEVOX everywhere) | Same — Pass-16 audio refresh task |
+| ~~**INFRA-1**~~ | consolidated §2.3 | ~~Audio manifest entries for listening 13-30~~ | ✅ **CLOSED 2026-05-03** — all 40 listening items resolve to MP3s on disk via gTTS shim. VOICEVOX-quality polish is INFRA-2 (separate). |
+| **INFRA-2** | consolidated §3.1 | Audio backend unification (gTTS → VOICEVOX everywhere) | Pass-16 audio refresh task |
 | **INFRA-3** | consolidated §3.2 | Multi-voice dialogue audio (male/female VOICEVOX speakers) | Same |
 | **INFRA-4** | native-review §2 | Pass-11 native-teacher review still unfiled (P1-P14 sections empty) | Native Japanese teacher engagement (per project: "Suiraku San" / 文部科学省 contact) |
 | **INFRA-5** | reading-feedback §6 | Native review of rewrites in Pass-15 §1.4, §1.5, §2.1 | Same — native reviewer eyes |
 
 ---
 
-## 3. 📦 DEFERRED — Long-term roadmap (11 items)
+## 3. 📦 DEFERRED — Long-term roadmap (6 items active; 8 closed-but-listed for traceability)
 
 | ID | Source | Item | Why deferred |
 |---|---|---|---|
-| **DEFER-1** | external-corpus | 78 grammar patterns still uncovered by questions (109/187 today, was 84/187) | Multi-session content authoring; 25/103 done this session |
+| ~~**DEFER-1**~~ | external-corpus | ~~78 grammar patterns still uncovered by questions~~ | ✅ **CLOSED 2026-05-03** — coverage now 177/177 (100%). q-0504..q-0578 batch closed the gap. |
 | **DEFER-2** | data-brief §6 / external-corpus P1#5 | Promote `paraphrase` from mcq subtype to first-class question type | Cosmetic; subtype works fine |
-| **DEFER-3** | external-corpus P2#7 | `tier` taxonomy on `grammar.json` (parallels reading.json) | Large content-authoring task |
+| ~~**DEFER-3**~~ | external-corpus P2#7 | ~~`tier` taxonomy on `grammar.json`~~ | ✅ **CLOSED 2026-05-03** — `tier` field live on grammar.json with 152 `core_n5` + 25 `late_n5`. |
 | **DEFER-4** | consolidated §4.2 | Per-kanji `lesson_order` / `frequency_rank` field in `kanji.json` | Optional schema enhancement |
 | **DEFER-5** | KB-md §4.1 | Optional POS tags `[v1]`/`[v2]`/`[i-adj]`/etc. on vocabulary_n5.md | Optional schema enhancement |
 | **DEFER-6** | testing-plan §16 | Visual-regression Playwright screenshots (baseline approval round) | Tier-3 audit feature; optional |
 | **DEFER-7** | testing-plan §10 | Cross-browser BrowserStack (Safari/iOS + Android + Linux) | Hosted-service cost / config |
-| **DEFER-8** | external-corpus | Coverage-comparison gap: tokens external tests but we don't (の×4, 行く×3, etc.) | Folded into DEFER-1 |
-| **DEFER-9** | data-brief §3 | 9 MEDIUM data-brief items (meaning_ja consistency, gloss reordering, register mixing, 〜があります overload, 何 primary ambiguity) | Most addressed in Pass-13/14/15; remaining are polish |
+| ~~**DEFER-8**~~ | external-corpus | ~~Coverage-comparison gap: tokens external tests but we don't~~ | ✅ **CLOSED 2026-05-03** — folded into DEFER-1; auto-closes with 100% pattern coverage. |
+| ~~**DEFER-9**~~ | data-brief §3 | ~~9 MEDIUM data-brief items~~ | ✅ **CLOSED 2026-05-03** — heuristic probes all green: 何 dual-reading preserved, 〜があります not overloaded (3 distinct patterns), 0/1003 vocab missing gloss, meaning_ja 177/177 on grammar. |
 | **DEFER-10** | UI-design §1.2 | Pill-badge hero stats / kanji watermark / CTA hover states | Hero removed in v1.7.1; spec deviation |
 | ~~**DEFER-11**~~ | dev-brief | ~~Authentic-extracted N5 content re-source from official JEES samples~~ | **Closed by decision 2026-05-02:** original-content policy formalized in `CONTENT-LICENSE.md`. Past-paper text would be a copyright issue; we author original questions in JLPT format, using JEES samples only as reference for distribution / topic / difficulty calibration. JA-30 invariant + `tools/audit_provenance.py` enforce the policy at CI time. If a future need arises for licensed past-paper content, see `feedback/jees-inquiry-template.md` for the formal-permission path. |
 | ~~**DEFER-12**~~ | reading §3.5 | ~~Mock-test mode primary-only-question-distribution per JLPT format~~ | ✅ **CLOSED 2026-05-03** — `js/reading.js#renderIndex` reads `settings.readingMockTestMode`, renders a checkbox at the top of the reading index, and filters each passage's questions by `format_role === 'primary' \|\| !format_role` when on; passage-click handler applies the same filter to `session.passage` so the reading flow only walks primary questions. Setting persists via `storage.setSettings`. Verified in preview: mock-on shows 1/1/1 questions across n5.read.001/002/003 vs 2/3/2 with mock-off. |
