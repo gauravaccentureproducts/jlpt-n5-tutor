@@ -111,6 +111,32 @@ export async function renderSettings(container) {
     </section>
   `;
 
+  // Saved-toast helper: brief on-screen confirmation that a setting
+  // change actually persisted. Settings that have a visible side-effect
+  // (theme, font) don't need it because the page literally changes —
+  // but settings like "Daily new-card limit" or "Default test length"
+  // have no visual feedback otherwise, so a returning user can't tell
+  // if their click was accepted. Single shared toast, debounced so
+  // rapid changes don't pile up. */
+  let savedToastTimer = null;
+  const showSavedToast = (label) => {
+    let toast = document.getElementById('settings-saved-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'settings-saved-toast';
+      toast.className = 'settings-saved-toast';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = label ? `Saved: ${label}` : 'Saved';
+    toast.classList.add('is-visible');
+    if (savedToastTimer) clearTimeout(savedToastTimer);
+    savedToastTimer = setTimeout(() => {
+      toast.classList.remove('is-visible');
+    }, 1800);
+  };
+
   // Wire change handlers
   document.getElementById('set-locale').addEventListener('change', async (e) => {
     await setLocale(e.target.value);
@@ -124,42 +150,59 @@ export async function renderSettings(container) {
   document.getElementById('set-theme').addEventListener('change', (e) => {
     storage.setSettings({ theme: e.target.value });
     applyTheme();
+    // (theme change is instantly visible; no toast needed)
   });
   document.getElementById('set-font').addEventListener('change', (e) => {
     storage.setSettings({ fontSize: e.target.value });
     applyFontSize();
+    // (font change is instantly visible; no toast needed)
   });
   document.getElementById('set-test-length').addEventListener('change', (e) => {
     storage.setSettings({ lastTestLength: parseInt(e.target.value, 10) });
+    showSavedToast(`Default test length = ${e.target.value} questions`);
   });
   document.getElementById('set-daily-new').addEventListener('change', (e) => {
     storage.setSettings({ dailyNewLimit: parseInt(e.target.value, 10) });
+    showSavedToast(`Daily new-card limit = ${e.target.value}`);
   });
   document.getElementById('set-daily-review').addEventListener('change', (e) => {
     storage.setSettings({ dailyReviewCap: parseInt(e.target.value, 10) });
+    showSavedToast(`Daily review cap = ${e.target.value}`);
   });
   document.getElementById('set-audio-rate').addEventListener('change', (e) => {
     storage.setSettings({ audioPlaybackRate: parseFloat(e.target.value) });
     applyAudioRate();
+    showSavedToast(`Audio playback speed = ${e.target.value}×`);
   });
   document.getElementById('set-reduce-motion').addEventListener('change', (e) => {
     const v = e.target.value;
     const stored = v === 'auto' ? null : v === 'on';
     storage.setSettings({ reduceMotion: stored });
     applyReduceMotion();
+    const label = v === 'auto' ? 'Follow system' : v === 'on' ? 'Always reduce' : 'Never reduce';
+    showSavedToast(`Reduce motion = ${label}`);
   });
 
   document.getElementById('set-export').addEventListener('click', () => {
     const payload = storage.exportProgress();
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
+    const filename = `jlpt-n5-progress-${new Date().toISOString().slice(0,10)}.json`;
     const a = document.createElement('a');
     a.href = url;
-    a.download = `jlpt-n5-progress-${new Date().toISOString().slice(0,10)}.json`;
+    a.download = filename;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+    // Visible confirmation: the browser starts a download somewhere out
+    // of the user's eye-line. A short status note keeps the user oriented.
+    const msg = document.getElementById('set-import-msg');
+    if (msg) {
+      msg.textContent = `Exported to ${filename} (check your downloads folder).`;
+      msg.style.color = 'var(--c-success)';
+      setTimeout(() => { if (msg.textContent.startsWith('Exported')) msg.textContent = ''; }, 4000);
+    }
   });
 
   const fileInput = document.getElementById('set-import-file');
