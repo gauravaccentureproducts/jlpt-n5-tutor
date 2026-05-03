@@ -10924,7 +10924,7 @@
         {
           "wrong": "いつも 行きません。 (intent: \"I never go\")",
           "right": "行きません。 / ぜんぜん 行きません。",
-          "why": "いつも is \"always\" — does not pair with negation. Use ぜんぜん or just the negative verb for \"never\"."
+          "why": "いつも is \"always\"  -  does not pair with negation. Use ぜんぜん or just the negative verb for \"never\"."
         }
       ],
       "contrasts": [],
@@ -11676,7 +11676,7 @@
         {
           "wrong": "いい てんきですよね。 (overuse)",
           "right": "いい てんきですね。 (or よ, not both)",
-          "why": "よ asserts new info; ね seeks agreement. Stacking よね is colloquial and overused — pick one in clean speech."
+          "why": "よ asserts new info; ね seeks agreement. Stacking よね is colloquial and overused  -  pick one in clean speech."
         }
       ],
       "contrasts": [
@@ -13203,7 +13203,7 @@
         {
           "wrong": "なにも 食べたいです。",
           "right": "なにか 食べたいです。",
-          "why": "\"I want to eat something\" is affirmative — use なにか, not なにも."
+          "why": "\"I want to eat something\" is affirmative  -  use なにか, not なにも."
         }
       ],
       "contrasts": [
@@ -13349,7 +13349,7 @@
         {
           "wrong": "どこも 行きたいです。",
           "right": "どこか 行きたいです。",
-          "why": "\"Want to go somewhere\" is affirmative wish — use どこか."
+          "why": "\"Want to go somewhere\" is affirmative wish  -  use どこか."
         }
       ],
       "contrasts": [

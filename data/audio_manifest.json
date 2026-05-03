@@ -3953,12 +3953,14 @@
     {
       "id": "reading.n5.read.031",
       "path": "audio\\reading\\n5.read.031.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "reading.n5.read.032",
       "path": "audio\\reading\\n5.read.032.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "reading.n5.read.033",
@@ -3973,32 +3975,38 @@
     {
       "id": "reading.n5.read.035",
       "path": "audio\\reading\\n5.read.035.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "reading.n5.read.036",
       "path": "audio\\reading\\n5.read.036.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "reading.n5.read.037",
       "path": "audio\\reading\\n5.read.037.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "reading.n5.read.038",
       "path": "audio\\reading\\n5.read.038.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "reading.n5.read.039",
       "path": "audio\\reading\\n5.read.039.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "reading.n5.read.040",
       "path": "audio\\reading\\n5.read.040.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "listening.n5.listen.001",
@@ -4183,17 +4191,20 @@
     {
       "id": "listening.n5.listen.031",
       "path": "audio\\listening\\n5.listen.031.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "listening.n5.listen.032",
       "path": "audio\\listening\\n5.listen.032.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "listening.n5.listen.033",
       "path": "audio\\listening\\n5.listen.033.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "listening.n5.listen.034",
@@ -4203,7 +4214,8 @@
     {
       "id": "listening.n5.listen.035",
       "path": "audio\\listening\\n5.listen.035.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "listening.n5.listen.036",
@@ -4213,7 +4225,8 @@
     {
       "id": "listening.n5.listen.037",
       "path": "audio\\listening\\n5.listen.037.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "listening.n5.listen.038",
@@ -4223,12 +4236,14 @@
     {
       "id": "listening.n5.listen.039",
       "path": "audio\\listening\\n5.listen.039.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     },
     {
       "id": "listening.n5.listen.040",
       "path": "audio\\listening\\n5.listen.040.mp3",
-      "voice": "synthetic-gtts"
+      "voice": "synthetic-gtts",
+      "skipped": true
     }
   ]
 }

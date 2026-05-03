@@ -559,7 +559,7 @@
         "ねる"
       ],
       "correctAnswer": "かおを あらう",
-      "explanation_en": "'はやく かおを あらって' — wash face first, then breakfast.",
+      "explanation_en": "'はやく かおを あらって'  -  wash face first, then breakfast.",
       "audio": "audio/listening/n5.listen.034.mp3"
     },
     {
@@ -582,12 +582,12 @@
       "id": "n5.listen.036",
       "format": "point",
       "title_ja": "りょこうの 日にち",
-      "script_ja": "男の人が しごとの あとで 話して います。\n来月の 七日から 九日まで、おおさかに 行きます。三日かんの りょこうです。新かんせんで 行きます。",
-      "prompt_ja": "りょこうは 何日かんですか。",
+      "script_ja": "男の人が しごとの あとで 話して います。\n来月の 七日から 九日まで、おおさかに 行きます。三日間の りょこうです。新かんせんで 行きます。",
+      "prompt_ja": "りょこうは 何日間ですか。",
       "choices": [
-        "二日かん",
-        "三日かん",
-        "四日かん",
+        "二日間",
+        "三日間",
+        "四日間",
         "一週間"
       ],
       "correctAnswer": "三日かん",
@@ -623,7 +623,7 @@
         "いただきます"
       ],
       "correctAnswer": "おじゃまします",
-      "explanation_en": "おじゃまします is the polite phrase when entering someone’s home or place.",
+      "explanation_en": "おじゃまします is the polite phrase when entering someone's home or place.",
       "audio": "audio/listening/n5.listen.038.mp3"
     },
     {
