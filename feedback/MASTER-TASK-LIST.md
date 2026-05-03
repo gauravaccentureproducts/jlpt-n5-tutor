@@ -16,17 +16,23 @@ This is the consolidated successor to all individual audit / brief docs. It list
 
 ## 0. Summary
 
-Updated 2026-05-01 (evening). **All 10 OPEN items closed today** — 5 by code, 3 by decision-document, 2 verified-already-shipped:
+Updated 2026-05-03. **All 10 OPEN items + DEFER-13/14 + UNC-1/2/3 closed**. 
 
 | Severity | Open | Open-Infra | Deferred | Done | Total |
 |---|---|---|---|---|---|
 | CRITICAL | 0 | 0 | 0 | 22 | 22 |
 | HIGH | 0 | 2 | 1 | 41 | 44 |
-| MEDIUM | 0 | 3 | 8 | 26 | 37 |
+| MEDIUM | 0 | 3 | 6 | 28 | 37 |
 | LOW | 0 | 0 | 5 | 17 | 22 |
-| **Total** | **0** | **5** | **14** | **106** | **125** |
+| **Total** | **0** | **5** | **12** | **108** | **125** |
 
-**Bottom line:** **0 actionable code-doable items remain.** All 10 originally-OPEN items closed today. 5 items still need external infrastructure (audio pipeline, native reviewer). 14 deferred to long-term roadmap.
+**Bottom line:** **0 actionable code-doable items remain.** 5 items still need external infrastructure (audio pipeline, BrowserStack). 12 deferred to long-term roadmap.
+
+**Closed 2026-05-03 (verification + code-already-shipped sweep):**
+- ✅ DEFER-13 → DONE — `js/home.js` lines 240-278 render the daily-goal-met badge as `.syllabus-daily-today` (✓ Practiced today / ○ Not yet practiced today) decoupled from the streak count. Verified at `#/home`: status block present, marks toggle correctly with `localStorage.streak.lastStudyDate`. Was listed deferred but already shipped.
+- ✅ DEFER-14 → DONE — `js/review.js` lines 186-273 + `js/storage.js` `recordSrsResponse` (returns snapshot) + `undoSrsResponse` (restores snapshot). Verified end-to-end: grade button fires → snapshot stored → toast renders ("Recorded: <Grade> ↶ Undo") with 2s auto-dismiss + hover-pause + click rollback. State byte-identical pre-grade vs post-undo. Was listed deferred but already shipped.
+- ✅ UNC-1 → VERIFIED present — `#/settings` panel has UI language (5 locales), Theme (System/Light/Dark), Font size (S/M/L/XL), Default test length, Daily new-card limit, Daily review cap, Audio playback speed, Reduce motion, Export progress, Import progress, Reset all progress. Matches UX-brief2 §5 in full.
+- ✅ UNC-2 → CLOSED by design — Pass-13 native review concluded auto-furigana produces wrong context-dependent readings (大学 = だいがく vs 大[おお]+学[がく]); the 3-mode toggle was DROPPED and not re-introduced. See `js/settings.js` line 119 comment + OPEN-8 closure.
 
 **Closed today (full sweep):**
 - ✅ OPEN-1, 2, 3 (LLM-audit findings — n5-115 examples, n5-115 notes, n5-008 ex[1])
@@ -102,8 +108,8 @@ None. All factual-error items closed.
 | **DEFER-10** | UI-design §1.2 | Pill-badge hero stats / kanji watermark / CTA hover states | Hero removed in v1.7.1; spec deviation |
 | ~~**DEFER-11**~~ | dev-brief | ~~Authentic-extracted N5 content re-source from official JEES samples~~ | **Closed by decision 2026-05-02:** original-content policy formalized in `CONTENT-LICENSE.md`. Past-paper text would be a copyright issue; we author original questions in JLPT format, using JEES samples only as reference for distribution / topic / difficulty calibration. JA-30 invariant + `tools/audit_provenance.py` enforce the policy at CI time. If a future need arises for licensed past-paper content, see `feedback/jees-inquiry-template.md` for the formal-permission path. |
 | **DEFER-12** | reading §3.5 | Mock-test mode primary-only-question-distribution per JLPT format | `format_role` field shipped; renderer change pending |
-| **DEFER-13** | (was OPEN-6 partial) | Daily-goal-met badge separate from streak count | Streak shipped; daily-goal-met indicator (e.g., "✓ 1 review done today") is a polish item |
-| **DEFER-14** | (was OPEN-7) | Undo-on-grading 2s window in Review | Plan: `lastGrade` state + setTimeout-revert + toast UI. ~45 min when prioritised |
+| ~~**DEFER-13**~~ | (was OPEN-6 partial) | ~~Daily-goal-met badge separate from streak count~~ | ✅ **CLOSED 2026-05-03** — `js/home.js` renders `.syllabus-daily-today` ("✓ Practiced today" / "○ Not yet practiced today") + `.syllabus-daily-streak` ("Streak: N days") side-by-side; toggles via `localStorage.streak.lastStudyDate === todayKey`. Verified in browser. |
+| ~~**DEFER-14**~~ | (was OPEN-7) | ~~Undo-on-grading 2s window in Review~~ | ✅ **CLOSED 2026-05-03** — `js/review.js#mountUndoToast` + `js/storage.js#undoSrsResponse`; 2s auto-dismiss with hover-pause; click restores byte-identical pre-grade snapshot; verified end-to-end in browser. |
 
 ---
 
@@ -193,11 +199,11 @@ Pedagogical foundations + design overhaul shipped:
 
 ## 5. ❓ UNCERTAIN — Need verification (3 items, low priority)
 
-| ID | Item | Verification needed |
+| ID | Item | Status |
 |---|---|---|
-| UNC-1 | Settings panel completeness vs UX-brief2 §5 | Open `#/settings`; confirm theme/font/locale/audio-rate/reset/export/import all present |
-| UNC-2 | Furigana toggle quick-access in header (testing-plan §9) | Confirm header has visible toggle vs settings-only |
-| UNC-3 | n5-031 example post-fix (today's swap from こない→食べない) — re-tag vocab_ids | Run `tools/link_grammar_examples_to_vocab.py`; confirm example links to 食べる |
+| ~~UNC-1~~ | Settings panel completeness vs UX-brief2 §5 | ✅ **VERIFIED 2026-05-03** — UI language (5 locales) / Theme (System/Light/Dark) / Font size (S/M/L/XL) / Default test length / Daily new-card limit / Daily review cap / Audio playback speed / Reduce motion / Export / Import / Reset all present. Matches §5 in full. |
+| ~~UNC-2~~ | Furigana toggle quick-access in header (testing-plan §9) | ✅ **CLOSED BY DESIGN** — Pass-13 dropped the toggle entirely; auto-furigana was producing wrong context readings. See `js/settings.js` line 119 + OPEN-8 closure. Header has no toggle by deliberate design. |
+| ~~UNC-3~~ | n5-031 example post-fix (today's swap from こない→食べない) — re-tag vocab_ids | ✅ **CLOSED 2026-05-03** — ran `tools/link_grammar_examples_to_vocab.py`; n5-031 ex[2] (`ごはん 食べないの？`) now links `n5.vocab.28-verbs-group-2-verbs.食べる`. 628/628 grammar examples linked (100%). All 40 invariants green. |
 
 ---
 
