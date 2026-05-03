@@ -4518,5 +4518,43 @@ html[data-protect="on"][data-blur="true"] body::before {
    * element. */
   img, video, iframe,
   pre, table, code { max-width: 100%; }
+
+  /* Tap-target compliance for AUXILIARY controls. The global rule
+   * (button, .btn-primary, .btn-secondary, .pillar-card a, .nav a,
+   * .primary-nav a, .secondary-nav-link, .choice-button { min-height: 44px })
+   * covers primary navigation and main buttons; these are the
+   * leftover small-hit-area surfaces the audit exposed at 320 px:
+   *   - .app-header .icon-btn  (settings cog)        — was 32×32
+   *   - .pattern-detail .pattern-nav a  (prev/next)  — was 19×29
+   *   - .pattern-detail/.vocab-detail/.kanji-detail .back-link
+   *                                                   — was 20×high
+   *   - .footer-nav a  (What's new / Privacy / etc.) — was 17×high
+   * All four are now ≥ 44 px on the smallest dimension at ≤768 px. */
+  .app-header .icon-btn {
+    width: 44px;
+    height: 44px;
+  }
+  .pattern-detail .pattern-nav a,
+  .pattern-detail .back-link,
+  .vocab-detail .back-link,
+  .kanji-detail .back-link {
+    min-height: 44px;
+    padding-block: 12px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .footer-nav a {
+    min-height: 44px;
+    padding: 10px 8px;
+    display: inline-flex;
+    align-items: center;
+  }
+  /* Mark-as-known toggle (grammar/vocab/kanji detail headers): on
+   * desktop the 34 px (6 px × 2 padding + 22 px content) is fine
+   * because :hover gives feedback; on mobile the bare hit-area is
+   * too small for a thumb. */
+  .known-toggle {
+    min-height: 44px;
+  }
 }
 
