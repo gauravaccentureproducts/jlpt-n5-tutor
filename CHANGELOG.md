@@ -2,6 +2,105 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.2 - 2026-05-04 (Reference-markdowns audit closure - 11 items resolved)
+
+Closes all 11 items in the 2026-05-04 reference-markdowns re-audit. The
+first audit cycle since the project began without a critical-severity
+finding. All fixes are at the catalog / reference-doc level, plus
+mirrored corrections in `data/vocab.json` so JA-31 stays green.
+
+### Catalog-content changes (visible to learners)
+
+**vocabulary_n5.md + vocab.json POS-tag corrections (§1.3).** Six
+entries in Section 1 (Pronouns and Self) plus one in Section 12
+(Time-Frequency) carried section-default POS tags that didn't match
+the word's actual lexical class. Both files updated consistently:
+
+  - 人 (ひと) sect 1: pronoun -> noun (used in pronoun-like phrases
+    but lexically a 名詞)
+  - かた sect 1: pronoun -> noun (polite "person" headword)
+  - だれ: pronoun -> question-word (matches sect 6 classification)
+  - どなた: pronoun -> question-word (matches sect 6 classification)
+  - みなさん: pronoun -> noun (vocative / address term, not a pronoun)
+  - みんな / みな: pronoun -> noun (multi-form alias; MD only)
+  - もうすぐ sect 12: noun -> adverb (functions adverbially: もうすぐ来る)
+
+The 7 remaining sect 1 entries (私, 私たち, あなた, かれ, かのじょ,
+じぶん, etc.) are real pronouns and stay tagged [pron.].
+
+**kanji_n5.md scope-flag pass (§1.1, §1.2).** 19 entries had readings
+outside N5 scope without any flag, while 上 / 下 already carried
+[N4+ verb reading; recognition only] markers. Applied the existing
+flag pattern uniformly so the README's "scope rule" matches the
+file's contents:
+
+  - 入 kun reordered: い(る), はい(る), い(れる) -> はい(る), い(る),
+    い(れる) with stem-split note. はい is the standalone verb 入る;
+    い-stem appears in 入れる / 入り. (This is the upstream root cause
+    of an earlier downstream bug in n5_kanji_readings.json's primary
+    field.)
+  - 半: なか(ば) -> [N3+ noun reading]
+  - 何: カ on -> [N3+ on-reading]
+  - 語: かた(る) -> [N3 verb reading]
+  - 木: こ- -> [N4+ prefix]
+  - 金: かな- -> [N4+ prefix]
+  - 小: こ-, お- -> both [N4+ prefix]
+  - 後: のち -> [N4+ literary], reordered うし(ろ), あと first
+  - 空: あ(く) -> [N4 verb reading]
+  - 見: み(える) -> [N4 verb reading], み(せる) -> [N4-N5 borderline]
+  - 聞: き(こえる) -> [N4 verb reading]
+  - 立: た(てる) -> [N4 transitive verb reading]
+  - 休: やす(まる) -> [N4 intransitive verb reading]
+  - 言: こと -> [jukujikun in 言葉 only; not standalone N5]
+  - 新: あら(た) -> [N3 stem reading], にい- -> [N4+ prefix]
+  - 白: しら- -> [N3+ prefix]
+  - 行: ゆ(く) -> [N4+ poetic alt], おこな(う) -> [N3 verb reading]
+  - 来: きた(る) -> [N3+ literary]
+  - 生: clarified note - both 生きる / 生まれる ARE N5 verbs; on-reading
+    セイ in compounds.
+
+**grammar_n5.md additions (§1.4, §2.1, §2.2, §2.3, §2.4, §3.2).**
+
+  - Section 10: added "Verb (plain dictionary) + ことができる /
+    ことができます (can do - productive form)" with 日本語を 話す
+    ことが できます example. This is canonical N5 grammar (Genki I
+    L13, Minna L18) but was missing from the catalog.
+  - Section 15: もらう pattern now lists ～に / から ～をもらいます
+    with note that に is more typical for personal givers, から for
+    institutional sources. Both are N5.
+  - Section 1: もの example replaced. Was だって、いそがしいんだもの
+    (combined もの + んだ patterns); now 行きたくないもん or
+    だって、雨だもの (single pattern only).
+  - Section 22: bika-go example list updated to drop ごはん from
+    "productive" prefix examples (it's a single lexicalized word now).
+    Replaced with お茶, お金, おさけ, おみず, おはな - all genuinely
+    productive お-prefix cases.
+  - Question-word + か/も citation: "Genki I L8 / L10" -> "L8 for
+    か-compounds; L9 for も-compounds with negative; いつも at L11"
+    (more accurate per Genki 3rd edition).
+  - Section 23.10 prohibitive な: added register caveat - "rough /
+    commanding. Use only with clear authority differential or in
+    writing (signs / labels). For polite prohibition use ～ないでください."
+
+**sources.md additions (§2.5, §3.1).**
+
+  - Added "JLPT N5 Sample Questions" reference under JEES (free PDFs
+    on jlpt.jp; the most authoritative single reference for actual
+    paper format).
+  - Added "NHK NEWS WEB EASY" (https://www3.nhk.or.jp/news/easy/)
+    under Established Learner References - daily news rewritten for
+    N5/N4 learners.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION: v111 -> v112 (forces re-fetch of vocab.json
+    + listening.json + grammar.json updates).
+  - index.html cache-busters: v=1.11.21 -> v=1.11.22.
+  - tools/check_content_integrity.py -> 40/40 invariants PASS
+    (including JA-31 vocab POS parity between MD and JSON).
+  - tools/fix_ref_md_audit_2026_05_04.py -> idempotent (0 changes on
+    second run).
+
 ## v1.12.1 - 2026-05-03 (Moji + source audit closure — 12 items resolved)
 
 Closes all 12 items in the 2026-05-03 moji + source-markdowns audit.

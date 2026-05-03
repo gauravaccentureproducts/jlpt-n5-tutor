@@ -76,7 +76,7 @@
       "reading": "かた",
       "gloss": "person (polite)",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
           "ja": "あの かたは 先生です。",
@@ -90,7 +90,7 @@
       "reading": "ひと",
       "gloss": "person",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
           "ja": "あの 人は 田中さんです。",
@@ -104,7 +104,7 @@
       "reading": "みなさん",
       "gloss": "everyone (polite)",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun",
+      "pos": "noun",
       "examples": [
         {
           "ja": "みなさん、こんにちは。",
@@ -118,7 +118,7 @@
       "reading": "だれ",
       "gloss": "who",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun",
+      "pos": "question-word",
       "examples": [
         {
           "ja": "それは だれの かばんですか。",
@@ -132,7 +132,7 @@
       "reading": "どなた",
       "gloss": "who (polite)",
       "section": "1. People - Pronouns and Self",
-      "pos": "pronoun",
+      "pos": "question-word",
       "examples": [
         {
           "ja": "どなたですか。",
@@ -3156,7 +3156,7 @@
       "reading": "もうすぐ",
       "gloss": "soon, before long",
       "section": "12. Time - Frequency / Sequence",
-      "pos": "noun",
+      "pos": "adverb",
       "examples": [
         {
           "ja": "もうすぐ 学校が はじまります。",

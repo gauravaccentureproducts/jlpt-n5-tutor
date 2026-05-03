@@ -52,11 +52,11 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - あなた - [pron.] you
 - かれ - [pron.] boyfriend; he, him (the third-person sense is somewhat literary; spoken Japanese normally drops the pronoun)
 - かのじょ - [pron.] girlfriend; she, her (the third-person sense is somewhat literary; spoken Japanese normally drops the pronoun)
-- かた - [pron.] person (polite)
-- 人 (ひと) - [pron.] person
-- みなさん - [pron.] everyone (polite)
-- だれ - [pron.] who
-- どなた - [pron.] who (polite)
+- かた - [n.] person (polite)
+- 人 (ひと) - [n.] person
+- みなさん - [n.] everyone (polite)
+- だれ - [Q-word] who
+- どなた - [Q-word] who (polite)
 - じぶん - [pron.] oneself
 
 ## 2. People - Family
@@ -306,7 +306,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - ぜんぜん - [adv.] not at all (with negative)
 - すぐ - [adv.] soon, immediately
 - もう - [adv.] already (with affirmative); anymore (with negative); more (as in もう一つ)
-- もうすぐ - [n.] soon, before long
+- もうすぐ - [adv.] soon, before long
 - まだ - [adv.] still, not yet
 - はじめて - [adv.] for the first time
 - さいしょ - [n.] first, beginning
@@ -964,7 +964,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - おおぜい - [adv.] a lot of (people)
 - だいたい - [adv.] generally, roughly
 - ぜんぶ - [adv.] all
-- みんな / みな - [pron.] everyone
+- みんな / みな - [n.] everyone
 - もう - [adv.] already
 - まだ - [adv.] still, not yet
 - もうすこし - [adv.] a little more

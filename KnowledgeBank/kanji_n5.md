@@ -96,11 +96,11 @@ Notation:
   - Meaning: water, Wednesday
 - **木**
   - On: モク, ボク
-  - Kun: き, こ-
+  - Kun: き, こ- [N4+ prefix; recognition only]
   - Meaning: tree, wood, Thursday
 - **金**
   - On: キン, コン
-  - Kun: かね, かな-
+  - Kun: かね, かな- [N4+ prefix; recognition only]
   - Meaning: gold, money, Friday
 - **土**
   - On: ド, ト
@@ -124,7 +124,7 @@ Notation:
   - Meaning: minute, part, divide
 - **半**
   - On: ハン
-  - Kun: なか(ば)
+  - Kun: なか(ば) [N3+ noun reading; recognition only]
   - Meaning: half
 - **今**
   - On: コン
@@ -148,7 +148,7 @@ Notation:
 ## People and Family
 
 - **何**
-  - On: カ
+  - On: カ [N3+ on-reading; recognition only]
   - Kun: なに, なん
   - Meaning: what
 - **人**
@@ -186,7 +186,7 @@ Notation:
 - **生**
   - On: セイ
   - Kun: い(きる), う(まれる)
-  - Meaning: life, birth (primary N5 use: in compounds like 学生 / 先生)
+  - Meaning: life, birth (N5 contexts: standalone verbs 生きる いきる, 生まれる うまれる; on-reading セイ in compounds 学生 がくせい, 先生 せんせい.)
 
 ---
 
@@ -231,7 +231,7 @@ Notation:
   - Meaning: book, origin, main
 - **語**
   - On: ゴ
-  - Kun: かた(る)
+  - Kun: かた(る) [N3 verb reading; recognition only]
   - Meaning: language, word
 - **国**
   - On: コク
@@ -264,7 +264,7 @@ Notation:
   - Meaning: middle, inside
 - **小**
   - On: ショウ
-  - Kun: ちい(さい), こ-, お-
+  - Kun: ちい(さい), こ- [N4+ prefix], お- [N4+ prefix]
   - Meaning: small, little
 - **上**
   - On: ジョウ
@@ -288,7 +288,7 @@ Notation:
   - Meaning: before, front
 - **後**
   - On: ゴ, コウ
-  - Kun: のち, うし(ろ), あと
+  - Kun: うし(ろ), あと, のち [N4+ literary reading]
   - Meaning: after, behind
 - **外**
   - On: ガイ
@@ -349,7 +349,7 @@ Notation:
   - Meaning: flower
 - **空**
   - On: クウ
-  - Kun: そら, あ(く), から
+  - Kun: そら, あ(く) [N4 verb reading], から
   - Meaning: sky, empty
 
 ---
@@ -391,11 +391,11 @@ Notation:
   - Meaning: drink
 - **見**
   - On: ケン
-  - Kun: み(る), み(える), み(せる)
+  - Kun: み(る), み(える) [N4 verb reading; recognition only], み(せる) [N4-N5 borderline; 見せる "to show" is borderline N5]
   - Meaning: see, look
 - **聞**
   - On: ブン, モン
-  - Kun: き(く), き(こえる)
+  - Kun: き(く), き(こえる) [N4 verb reading; recognition only]
   - Meaning: hear, listen, ask
 - **読**
   - On: ドク
@@ -411,11 +411,11 @@ Notation:
   - Meaning: talk, speak, story
 - **来**
   - On: ライ
-  - Kun: く(る), きた(る)
+  - Kun: く(る), きた(る) [N3+ literary reading]
   - Meaning: come
 - **行**
   - On: コウ, ギョウ, アン
-  - Kun: い(く), ゆ(く), おこな(う)
+  - Kun: い(く), ゆ(く) [N4+ poetic alt of い(く)], おこな(う) [N3 verb reading]
   - Meaning: go, conduct
 - **出**
   - On: シュツ, スイ
@@ -423,19 +423,19 @@ Notation:
   - Meaning: exit, go out, put out
 - **入**
   - On: ニュウ
-  - Kun: い(る), はい(る), い(れる)
-  - Meaning: enter, put in
+  - Kun: はい(る), い(る), い(れる)
+  - Meaning: enter, put in (Note: はい-stem is the standalone verb 入る = はいる; い-stem appears in 入れる いれる, 入り いり.)
 - **立**
   - On: リツ, リュウ
-  - Kun: た(つ), た(てる)
+  - Kun: た(つ), た(てる) [N4 transitive verb reading]
   - Meaning: stand
 - **休**
   - On: キュウ
-  - Kun: やす(む), やす(まる)
+  - Kun: やす(む), やす(まる) [N4 intransitive verb reading]
   - Meaning: rest, holiday
 - **言**
   - On: ゲン, ゴン
-  - Kun: い(う), こと
+  - Kun: い(う), こと [jukujikun in 言葉 ことば only; not a standalone N5 reading]
   - Meaning: say, word
 - **買**
   - On: バイ
@@ -456,7 +456,7 @@ Notation:
   - Meaning: cheap, safe, peaceful
 - **新**
   - On: シン
-  - Kun: あたら(しい), あら(た), にい-
+  - Kun: あたら(しい), あら(た) [N3 stem reading], にい- [N4+ prefix; recognition only]
   - Meaning: new
 - **古**
   - On: コ
@@ -468,7 +468,7 @@ Notation:
   - Meaning: long, leader
 - **白**
   - On: ハク, ビャク
-  - Kun: しろ, しろ(い), しら-
+  - Kun: しろ, しろ(い), しら- [N3+ prefix; recognition only]
   - Meaning: white
 
 ---

@@ -22,7 +22,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - ～と～(と) (exhaustive listing of nouns)
 - ～や～(など) (non-exhaustive listing)
 - ～の - single particle pattern; see Section 2 for consolidated sub-uses (possessive / modifier / nominalizer / informal question)
-- ～もの / もん - sentence-final particle giving a reason or explanation, similar in feel to から / んです (もん is the casual contraction of もの). E.g., だって、いそがしいんだもの。 - "But, you know, I'm busy." **(Upper N5 / borderline)**
+- ～もの / もん - sentence-final particle giving a reason or explanation, similar in feel to から / んです (もん is the casual contraction of もの). E.g., 行きたくないもん。 - "I don't wanna go." Or: だって、雨だもの。 - "Because, you know, it's raining." **(Upper N5 / borderline)**
 
 ---
 
@@ -84,7 +84,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - なんじ (what time)
 - なんようび (what day of the week)
 - なんがつ / なんにち (what month / what day)
-- Question word + か / も compounds (Genki I L8 / L10):
+- Question word + か / も compounds (Genki I L8 for か-compounds; L9 for も-compounds with negative; いつも at L11):
   - なにか (something) / なにも (nothing - with negative)
   - だれか (someone) / だれも (no one - with negative)
   - どこか (somewhere) / どこも (nowhere - with negative)
@@ -168,6 +168,9 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 - ～がほしいです
 - ～がわかります
 - ～ができます
+- Verb (plain dictionary) + ことができる / ことができます (can do - productive form)
+  - Example: 日本語を 話す ことが できます。 (I can speak Japanese.)
+  - Pairs with noun + ができる above; uses the こと nominalizer (Section 17) to convert any plain-form verb into the "can do" frame.
 
 ---
 
@@ -220,7 +223,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 ## 15. Giving and Receiving (basic)
 
 - ～に～をあげます
-- ～に～をもらいます
+- ～に / から ～をもらいます (either particle is acceptable at N5; ～に is more typical for personal givers, ～から for institutional sources)
 - ～が～をくれます
 
 ---
@@ -293,7 +296,7 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 > **Terminology note:** お〜 / ご〜 prefixes here are **beautifying language (美化語 / bika-go)**, not honorifics (尊敬語 / sonkei-go). Honorific verbs (sonkei-go) like いらっしゃる, おっしゃる are out of scope for N5.
 
 - ～さん
-- お～ / ご～ (beautifying prefixes - limited to common cases like お茶, お金, ごはん)
+- お～ / ご～ (beautifying prefixes - limited to productive cases like お茶, お金, おさけ, おみず, おはな. Note: ごはん is a single lexicalized word now, not a productive ご-prefix; it's included in N5 vocab as one item rather than as an example of generative 美化語.)
 - いただきます / ごちそうさま / おはようございます etc. (set expressions)
 
 ---
@@ -371,3 +374,4 @@ An exhaustive list of grammar patterns at the JLPT N5 level. Patterns are groupe
 
 - Verb-plain + な (don't do! - strong / casual prohibition)
   - Example: ここで たばこを すうな! (Don't smoke here!)
+  - Register: **rough / commanding**. Use only with clear authority differential (parent → child, sergeant → soldier) or in writing (signs / labels). For polite prohibition use ～ないでください (Section 7).
