@@ -16,19 +16,20 @@ This is the consolidated successor to all individual audit / brief docs. It list
 
 ## 0. Summary
 
-Updated 2026-05-03. **All 10 OPEN items + DEFER-13/14 + UNC-1/2/3 closed**. 
+Updated 2026-05-03. **All 10 OPEN items + DEFER-12/13/14 + UNC-1/2/3 closed**. 
 
 | Severity | Open | Open-Infra | Deferred | Done | Total |
 |---|---|---|---|---|---|
 | CRITICAL | 0 | 0 | 0 | 22 | 22 |
 | HIGH | 0 | 2 | 1 | 41 | 44 |
-| MEDIUM | 0 | 3 | 6 | 28 | 37 |
+| MEDIUM | 0 | 3 | 5 | 29 | 37 |
 | LOW | 0 | 0 | 5 | 17 | 22 |
-| **Total** | **0** | **5** | **12** | **108** | **125** |
+| **Total** | **0** | **5** | **11** | **109** | **125** |
 
-**Bottom line:** **0 actionable code-doable items remain.** 5 items still need external infrastructure (audio pipeline, BrowserStack). 12 deferred to long-term roadmap.
+**Bottom line:** **0 actionable code-doable items remain.** 5 items still need external infrastructure (audio pipeline, BrowserStack). 11 deferred to long-term roadmap.
 
 **Closed 2026-05-03 (verification + code-already-shipped sweep):**
+- ✅ DEFER-12 → DONE — `js/reading.js#renderIndex` reads `settings.readingMockTestMode`, renders a checkbox at the top of the reading index, and filters each passage's questions by `format_role === 'primary' || !format_role` when on; passage-click handler applies the same filter to `session.passage` so the reading flow only walks primary questions. Setting persists via `storage.setSettings`. Verified in preview: mock-on shows 1/1/1 questions across n5.read.001/002/003 vs 2/3/2 with mock-off. Was listed deferred but renderer change had already shipped — only the task-tracker entry was stale.
 - ✅ DEFER-13 → DONE — `js/home.js` lines 240-278 render the daily-goal-met badge as `.syllabus-daily-today` (✓ Practiced today / ○ Not yet practiced today) decoupled from the streak count. Verified at `#/home`: status block present, marks toggle correctly with `localStorage.streak.lastStudyDate`. Was listed deferred but already shipped.
 - ✅ DEFER-14 → DONE — `js/review.js` lines 186-273 + `js/storage.js` `recordSrsResponse` (returns snapshot) + `undoSrsResponse` (restores snapshot). Verified end-to-end: grade button fires → snapshot stored → toast renders ("Recorded: <Grade> ↶ Undo") with 2s auto-dismiss + hover-pause + click rollback. State byte-identical pre-grade vs post-undo. Was listed deferred but already shipped.
 - ✅ UNC-1 → VERIFIED present — `#/settings` panel has UI language (5 locales), Theme (System/Light/Dark), Font size (S/M/L/XL), Default test length, Daily new-card limit, Daily review cap, Audio playback speed, Reduce motion, Export progress, Import progress, Reset all progress. Matches UX-brief2 §5 in full.
@@ -92,7 +93,7 @@ None. All factual-error items closed.
 
 ---
 
-## 3. 📦 DEFERRED — Long-term roadmap (12 items)
+## 3. 📦 DEFERRED — Long-term roadmap (11 items)
 
 | ID | Source | Item | Why deferred |
 |---|---|---|---|
@@ -107,7 +108,7 @@ None. All factual-error items closed.
 | **DEFER-9** | data-brief §3 | 9 MEDIUM data-brief items (meaning_ja consistency, gloss reordering, register mixing, 〜があります overload, 何 primary ambiguity) | Most addressed in Pass-13/14/15; remaining are polish |
 | **DEFER-10** | UI-design §1.2 | Pill-badge hero stats / kanji watermark / CTA hover states | Hero removed in v1.7.1; spec deviation |
 | ~~**DEFER-11**~~ | dev-brief | ~~Authentic-extracted N5 content re-source from official JEES samples~~ | **Closed by decision 2026-05-02:** original-content policy formalized in `CONTENT-LICENSE.md`. Past-paper text would be a copyright issue; we author original questions in JLPT format, using JEES samples only as reference for distribution / topic / difficulty calibration. JA-30 invariant + `tools/audit_provenance.py` enforce the policy at CI time. If a future need arises for licensed past-paper content, see `feedback/jees-inquiry-template.md` for the formal-permission path. |
-| **DEFER-12** | reading §3.5 | Mock-test mode primary-only-question-distribution per JLPT format | `format_role` field shipped; renderer change pending |
+| ~~**DEFER-12**~~ | reading §3.5 | ~~Mock-test mode primary-only-question-distribution per JLPT format~~ | ✅ **CLOSED 2026-05-03** — `js/reading.js#renderIndex` reads `settings.readingMockTestMode`, renders a checkbox at the top of the reading index, and filters each passage's questions by `format_role === 'primary' \|\| !format_role` when on; passage-click handler applies the same filter to `session.passage` so the reading flow only walks primary questions. Setting persists via `storage.setSettings`. Verified in preview: mock-on shows 1/1/1 questions across n5.read.001/002/003 vs 2/3/2 with mock-off. |
 | ~~**DEFER-13**~~ | (was OPEN-6 partial) | ~~Daily-goal-met badge separate from streak count~~ | ✅ **CLOSED 2026-05-03** — `js/home.js` renders `.syllabus-daily-today` ("✓ Practiced today" / "○ Not yet practiced today") + `.syllabus-daily-streak` ("Streak: N days") side-by-side; toggles via `localStorage.streak.lastStudyDate === todayKey`. Verified in browser. |
 | ~~**DEFER-14**~~ | (was OPEN-7) | ~~Undo-on-grading 2s window in Review~~ | ✅ **CLOSED 2026-05-03** — `js/review.js#mountUndoToast` + `js/storage.js#undoSrsResponse`; 2s auto-dismiss with hover-pause; click restores byte-identical pre-grade snapshot; verified end-to-end in browser. |
 
