@@ -144,10 +144,10 @@
         "一しゅうかんに 一回",
         "一しゅうかんに 二回",
         "一しゅうかんに 三回",
-        "毎日"
+        "一しゅうかんに 四回"
       ],
       "correctIndex": 2,
-      "rationale": "一しゅうかんに 三回 - three times a week.",
+      "rationale": "'月曜日と 水曜日と 金曜日に' - Mon/Wed/Fri = 3 times per week.",
       "kbSourceId": "Q37",
       "passage_text": "> 私の 学校には プールが あります。 月曜日と 水曜日と 金曜日に プールに 入れます。 日曜日は 学校が 休みですから、 プールも 使えません。 私は およぐのが すきですから、 一しゅうかんに 三回 プールに 行きます。",
       "passage_label": "Passage 19 (Q37, Q38)",

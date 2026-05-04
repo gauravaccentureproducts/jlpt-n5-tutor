@@ -157,13 +157,13 @@
       "type": "mcq",
       "stem_html": "この 人の りょうしんは 日よう日に 何を しますか。",
       "choices": [
-        "はたらく",
-        "山に 行く",
+        "まいにち しごとを する",
+        "山に のぼりに 行く",
         "家で 子どもと あそぶ",
-        "ねる"
+        "家で ゆっくり ねる"
       ],
       "correctIndex": 2,
-      "rationale": "日曜日は いつも 家に いて、 私と あそびます - Sundays at home with the narrator.",
+      "rationale": "'日曜日は いつも 家に いて 子どもと あそびます' - parents play with the kids at home on Sundays.",
       "kbSourceId": "Q22",
       "passage_text": "> 私の 父は 学校の 先生です。 子どもが すきですから、 毎日 学校に 行くのが 楽しいと 言って います。 母は 病院で はたらいて います。 父も 母も しごとで いそがしいですが、 日曜日は いつも 家に いて、 私と あそびます。",
       "passage_label": "Passage 11 (Q21, Q22)",
@@ -190,12 +190,12 @@
       "stem_html": "この 人は きょう 何を しますか。",
       "choices": [
         "こうえんで お弁当を 食べる",
-        "学校に 行く",
-        "家で ねる",
+        "学校に いって しごとを する",
+        "家で 一日 ねて すごす",
         "雨の 中を さんぽする"
       ],
       "correctIndex": 0,
-      "rationale": "こうえんで お弁当を 食べる つもり - plans to eat bento in the park today.",
+      "rationale": "'こうえんで お弁当を 食べる つもり' - planning to eat bento at the park.",
       "kbSourceId": "Q24",
       "passage_text": "> あさ おきて、 まどを あけました。 きのうの よる、 たくさん 雨が ふりましたが、 きょうは 天気が とても いいです。 そらは 青くて、 きれいな 花が さいて います。 きょうは こうえんで お弁当を 食べる つもりです。",
       "passage_label": "Passage 12 (Q23, Q24)",
@@ -253,13 +253,13 @@
       "type": "mcq",
       "stem_html": "たなかさんは どこで ばんごはんを 食べますか。",
       "choices": [
-        "家",
-        "かいしゃ",
+        "駅の ちかくの きっさてん",
+        "かいしゃの しょくどう",
         "かいしゃの ちかくの レストラン",
-        "駅の 近く"
+        "家の ちかくの レストラン"
       ],
       "correctIndex": 2,
-      "rationale": "ばんごはんは いつも かいしゃの ちかくの レストランで 食べます - always eats dinner at a restaurant near the office.",
+      "rationale": "'ばんごはんは いつも かいしゃの ちかくの レストランで' - dinner is always at a restaurant near the company.",
       "kbSourceId": "Q28",
       "passage_text": "> たなかさんは 毎あさ 七時に おきて、 八時の 電車に のります。 しごとは 九時から はじまります。 家から かいしゃまで 一時間 ぐらい かかります。 ばんごはんは いつも かいしゃの ちかくの レストランで 食べます。 家に かえるのは 十時ごろです。",
       "passage_label": "Passage 14 (Q27, Q28)",

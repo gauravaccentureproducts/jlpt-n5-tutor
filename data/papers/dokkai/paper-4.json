@@ -205,13 +205,13 @@
       "type": "mcq",
       "stem_html": "どうして この 人は 友だちと もう一どに 行きたいですか。",
       "choices": [
-        "友だちが すきだから",
+        "友だちが はたらいて いるから",
         "コーヒーが おいしくて、ねだんも 安いから",
-        "ちかいから",
-        "友だちが はたらいて いるから"
+        "みせが えきから ちかいから",
+        "こんで いて にぎやかだから"
       ],
       "correctIndex": 1,
-      "rationale": "コーヒーが おいしくて、 ねだんも 安いです - coffee is delicious and prices are cheap; wants to bring a friend.",
+      "rationale": "'コーヒーが おいしくて、 ねだんも 安いです' - the coffee is good and the price is cheap.",
       "kbSourceId": "Q58",
       "passage_text": "> 私は きのう、 駅の ちかくの あたらしい きっさてんに 行きました。 その みせは 三月に できました。 コーヒーが おいしくて、 ねだんも 安いです。 きっさてんは いつも こんで います。 こんどは 友だちと いっしょに 行きたいです。",
       "passage_label": "Passage 29 (Q57, Q58)",

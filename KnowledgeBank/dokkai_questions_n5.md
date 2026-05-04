@@ -107,14 +107,12 @@ _Who did the writer buy these things for?_
 
 やまださんは たなかさんに 何を もって 来てと 言いましたか。
 
-_What does Yamada-san ask Tanaka-san to bring?_
-
 1. のみもの
 2. コート
 3. おかし
-4. 何も もって 来なくて いい
+4. おみやげ
 
-**Answer: 2** - explicitly asks for a coat.
+**Answer: 2** - 'コートを もって 来て ください' - explicitly asks for a coat. (Distractors all single-noun for length parity.)
 
 #### Q6
 
@@ -364,14 +362,12 @@ _Where does the writer's mother work?_
 
 この 人の りょうしんは 日よう日に 何を しますか。
 
-_What do the writer's parents do on Sundays?_
-
-1. はたらく
-2. 山に 行く
+1. まいにち しごとを する
+2. 山に のぼりに 行く
 3. 家で 子どもと あそぶ
-4. ねる
+4. 家で ゆっくり ねる
 
-**Answer: 3** - 日曜日は いつも 家に いて、 私と あそびます - Sundays at home with the narrator.
+**Answer: 3** - '日曜日は いつも 家に いて 子どもと あそびます' - parents play with the kids at home on Sundays.
 
 ### Passage 12 (Q23, Q24)
 
@@ -394,14 +390,12 @@ _What was the weather like last night?_
 
 この 人は きょう 何を しますか。
 
-_What will the writer do today?_
-
 1. こうえんで お弁当を 食べる
-2. 学校に 行く
-3. 家で ねる
+2. 学校に いって しごとを する
+3. 家で 一日 ねて すごす
 4. 雨の 中を さんぽする
 
-**Answer: 1** - こうえんで お弁当を 食べる つもり - plans to eat bento in the park today.
+**Answer: 1** - 'こうえんで お弁当を 食べる つもり' - planning to eat bento at the park.
 
 ### Passage 13 (Q25, Q26)
 
@@ -454,14 +448,12 @@ _How long does it take Tanaka-san to get to work?_
 
 たなかさんは どこで ばんごはんを 食べますか。
 
-_Where does Tanaka-san eat dinner?_
-
-1. 家
-2. かいしゃ
+1. 駅の ちかくの きっさてん
+2. かいしゃの しょくどう
 3. かいしゃの ちかくの レストラン
-4. 駅の 近く
+4. 家の ちかくの レストラン
 
-**Answer: 3** - ばんごはんは いつも かいしゃの ちかくの レストランで 食べます - always eats dinner at a restaurant near the office.
+**Answer: 3** - 'ばんごはんは いつも かいしゃの ちかくの レストランで' - dinner is always at a restaurant near the company.
 
 ### Passage 15 (Q29, Q30)
 
@@ -591,14 +583,12 @@ _How is the writer's Chinese?_
 
 この 人は どのぐらい プールに 行きますか。
 
-_How often does the writer go to the pool?_
-
 1. 一しゅうかんに 一回
 2. 一しゅうかんに 二回
 3. 一しゅうかんに 三回
-4. 毎日
+4. 一しゅうかんに 四回
 
-**Answer: 3** - 一しゅうかんに 三回 - three times a week.
+**Answer: 3** - '月曜日と 水曜日と 金曜日に' - Mon/Wed/Fri = 3 times per week.
 
 #### Q38
 
@@ -904,14 +894,12 @@ _When did the cafe open?_
 
 どうして この 人は 友だちと もう一どに 行きたいですか。
 
-_Why does the writer want to go again with friends?_
-
-1. 友だちが すきだから
+1. 友だちが はたらいて いるから
 2. コーヒーが おいしくて、ねだんも 安いから
-3. ちかいから
-4. 友だちが はたらいて いるから
+3. みせが えきから ちかいから
+4. こんで いて にぎやかだから
 
-**Answer: 2** - コーヒーが おいしくて、 ねだんも 安いです - coffee is delicious and prices are cheap; wants to bring a friend.
+**Answer: 2** - 'コーヒーが おいしくて、 ねだんも 安いです' - the coffee is good and the price is cheap.
 
 ### Passage 30 (Q59, Q60)
 
@@ -980,11 +968,11 @@ _Why was the hiking postponed?_
 この 人は そつぎょうした 後、何を しますか。
 
 1. 日本に すんで しごとを する
-2. 大学いんに 入る
+2. 大学いんに 入って べんきょうする
 3. 父と いっしょに 先生に なる
-4. 母と すむ
+4. 母と いっしょに 国へ かえる
 
-**Answer: 1** - 大学を そつぎょうしてから、 日本に すんで しごとを するつもりです - plans to live and work in Japan after graduation.
+**Answer: 1** - '大学を そつぎょうしてから、日本に すんで しごとを するつもり' - plans to live and work in Japan after graduation.
 
 ### Passage B (Q64-Q66)
 
@@ -1006,11 +994,11 @@ _Why was the hiking postponed?_
 やまださんの はじめての コンサートは どうでしたか。
 
 1. こわかったが、いい けいけんだった
-2. つまらなかった
-3. たのしかった
-4. むずかしかった
+2. たのしくて すぐ なれた
+3. むずかしくて つまらなかった
+4. とても じょうずに ひけた
 
-**Answer: 1** - こわかったですが、 とても いい けいけんでした - was scary but a good experience.
+**Answer: 1** - 'こわかったですが、とても いい けいけんでした' - was scary but a good experience.
 
 #### Q66
 
@@ -1042,27 +1030,23 @@ _Why was the hiking postponed?_
 
 おかあさんの カレーは どんな ところが ちがいますか。
 
-_What is special about the mother's curry?_
-
-1. 高い
-2. ピリ辛い
-3. ふつうの カレー
+1. ねだんが とても 高い
+2. ピリ辛くて 食べられない
+3. ふつうの カレーと 同じ
 4. やさいが たくさん、にくは すこし
 
-**Answer: 4** - 中に やさいが たくさん 入って います。 にくは すこし だけです - lots of vegetables, only a little meat.
+**Answer: 4** - '中に やさいが たくさん 入って います。にくは すこし だけです' - lots of vegetables, only a little meat.
 
 #### Q69
 
 この 人は これから 何を する つもりですか。
 
-_What does the writer plan to do?_
-
-1. 母に カレーを 作って もらう
-2. レストランで カレーを 食べる
-3. カレーやで はたらく
+1. 母から カレーを 作って もらう
+2. 友だちと レストランで カレーを 食べる
+3. カレーやで アルバイトを はじめる
 4. カレーの 作りかたを ならって、友だちに 作って あげる
 
-**Answer: 4** - 母から カレーの 作りかたを 教わって、 友だちに 作って あげたいです - learn the recipe and make it for friends.
+**Answer: 4** - '母から カレーの 作りかたを 教わって、友だちに 作って あげたいです' - learn the recipe and make it for friends.
 
 ### Passage D (Q70-Q72)
 
@@ -1115,14 +1099,12 @@ _Which train did the writer catch?_
 
 たんじょうびの パーティーは どこで ありますか。
 
-_Where will the birthday party be?_
+1. 私の 家で ひらかれる
+2. 友だちの たなかさんの 家
+3. みんなで レストランへ 行く
+4. こうえんで パーティーする
 
-1. 私の 家
-2. 友だちの 家 (たなかさんの 家)
-3. レストラン
-4. こうえん
-
-**Answer: 2** - ばしょは たなかさんの 家です - the venue is Tanaka-san's house.
+**Answer: 2** - 'ばしょは たなかさんの 家です' - the venue is Tanaka-san's house.
 
 #### Q74
 
@@ -1227,14 +1209,12 @@ _How long does it take to get to the sea?_
 
 ひるごはんは どこで 食べますか。
 
-_Where will they have lunch?_
-
 1. うみの ちかくの レストラン
-2. 駅の ちかく
-3. 家
-4. でんしゃの 中
+2. うみで お弁当を 食べる
+3. 駅の ちかくの きっさてん
+4. でんしゃの 中で 食べる
 
-**Answer: 1** - ひるごはんは うみの ちかくの レストランで 食べます - lunch at a restaurant near the sea.
+**Answer: 1** - 'ひるごはんは うみの ちかくの レストランで' - lunch at a restaurant near the sea.
 
 ### Passage H (Q82-Q84)
 
@@ -1356,16 +1336,12 @@ _What kind of books does she like best?_
 
 妹は 来月 何を しますか。
 
-_What will she do next month?_
-
-1. 大学に 入る
+1. 子ども向けの 本やで はたらく
 2. 子ども向けの 本を 書きはじめる
-3. ひっこしする
-4. 学校で 本を 教える
+3. 本を 読んで しゅくだいを する
+4. 学校で 子どもに 本を 読む
 
-**Answer: 2**.
-
----
+**Answer: 2** - '来月、妹は 子ども向けの 本を 書きはじめる つもりです' - plans to start writing children's books next month.
 
 ## Mondai 6 - 情報検索 (Information Retrieval)
 
@@ -1428,27 +1404,23 @@ _What activity requires a reservation?_
 
 じゅぎょうは いつ ありますか。
 
-_When can students attend the class?_
-
 1. 月よう日 と 水よう日
 2. 月よう日 と 火よう日
 3. 火よう日 と 木よう日
-4. 毎日
+4. 土よう日 と 日よう日
 
-**Answer: 1** - 時間: 月よう日 と 水よう日 - the poster lists Mon and Wed.
+**Answer: 1** - '時間: 月よう日 と 水よう日 の 7:00pm-9:00pm' - the poster lists Mon and Wed.
 
 #### Q94
 
 この きょうしつに 入れない 人は どれですか。
 
-_Who CANNOT join this class?_
-
 1. かいしゃいん
-2. しゅふ (housewife)
+2. しゅふ
 3. 大学生
 4. こうこうせい
 
-**Answer: 4** - 大人だけ + こうこうせいは入れない.
+**Answer: 4** - '大人だけの きょうしつです。こうこうせいは 入れません' - adult-only class; high schoolers cannot enter.
 
 ### Item 3 (Q95, Q96): レストランの メニュー
 
@@ -1598,16 +1570,12 @@ _How long is the lunch break?_
 
 日よう日に 図書館を つかいたい とき、 どう しますか。
 
-_A student wants to use the library on Sunday. What should they do?_
-
 1. 学校に 来て 図書館を つかう
-2. 先生に 言う
-3. 土ようびに 来る
-4. 図書館は つかえない
+2. まず 先生に 言う
+3. 土ようびに かりに 行く
+4. 日よう日は 図書館は つかえない
 
-**Answer: 2** - notice says tell the teacher in advance (give notice / request use).
-
----
+**Answer: 2** - 'やすみの 日に 図書館を つかいたい 人は、先生に 言って ください' - first ask the teacher.
 
 ## End of file
 

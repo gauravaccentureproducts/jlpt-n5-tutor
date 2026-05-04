@@ -2,6 +2,40 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.25 - 2026-05-04 (Autonomous-improvement iter 2 — choice-length balance)
+
+Reshaped distractors in 16 dokkai items where the keyed answer was
+significantly longer/shorter than its distractors, removing a
+length-signal cue. Choice CONTENT changed (distractors only); keyed
+answers preserved exactly. Rationales updated to cite passage text
+verbatim.
+
+Items fixed: Q5, Q22, Q24, Q28, Q37, Q58, Q63, Q65, Q68, Q69, Q73,
+Q81, Q90, Q93, Q94, Q102 (all dokkai).
+
+Notable patterns:
+  - Q94 (excluded-from-class question): removed bilingual gloss
+    "しゅふ (housewife)" → just "しゅふ" (English in choice text was
+    creating the length asymmetry).
+  - Q73 (party venue): removed parenthetical "(たなかさんの 家)" from
+    keyed answer; cleaner as plain "友だちの たなかさんの 家".
+  - Q5 (party-bring): replaced "何も もって 来なくて いい" (14ch) with
+    plausible single-noun "おみやげ".
+
+One asymmetric item remains: bunpou Q75 (Mondai 2 sentence-
+rearrangement). Choice order encodes the fragment positions and
+cannot be permuted/reshaped without breaking the test point.
+Accepted-by-constraint.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v135 -> v136
+  - index.html cache-busters:    v=1.11.45 -> v=1.11.46
+  - 41/41 invariants PASS
+  - Fix script idempotent
+
+---
+
 ## v1.12.24 - 2026-05-04 (Autonomous-improvement iter 1 — per-paper rebalance + schema fix)
 
 Comprehensive structural audit run autonomously (no manual driver).

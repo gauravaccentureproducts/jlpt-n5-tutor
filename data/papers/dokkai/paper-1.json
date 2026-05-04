@@ -144,10 +144,10 @@
         "のみもの",
         "コート",
         "おかし",
-        "何も もって 来なくて いい"
+        "おみやげ"
       ],
       "correctIndex": 1,
-      "rationale": "explicitly asks for a coat.",
+      "rationale": "'コートを もって 来て ください' - explicitly asks for a coat. (Distractors all single-noun for length parity.)",
       "kbSourceId": "Q5",
       "passage_text": "> たなかさんへ\n>\n> こんにちは。 あした こうえんで パーティーが あります。 三時から はじまります。 たなかさんも 来て ください。 おかしと のみものは ありますから、 もって 来なくても いいです。 でも、 さむくなりましたから、 コートを もって 来て ください。\n>\n> やまだ",
       "passage_label": "Passage 3 (Q5, Q6)",
