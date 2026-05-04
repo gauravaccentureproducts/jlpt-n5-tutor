@@ -2,6 +2,51 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.10 - 2026-05-04 (paper-JSON rationale drift fixed + JA-32 invariant added)
+
+External auditor flagged: `data/papers/bunpou/paper-2.json` Q19
+rationale uses 熱 (non-N5 kanji): "熱がある (have a fever)." The KB
+source MD had been corrected to "ねつが ある (have a fever)." in
+v1.12.4 (commit 658f35d), but the paper extraction wasn't re-run, so
+the JSON kept the stale kanji form.
+
+### Fix
+
+  - `data/papers/bunpou/paper-2.json` bunpou-2.4 (kbSourceId=Q19):
+      rationale "熱がある (have a fever)." -> "ねつが ある (have a fever)."
+      (now matches KB exactly)
+
+### CI hardening — JA-32
+
+To prevent future MD-updated-but-JSON-stale drift in any paper file,
+added invariant **JA-32**: for each paper-JSON question with a
+kbSourceId, every kanji in its rationale field must also appear
+somewhere in the corresponding MD Q-block.
+
+  - Catches stale extraction (MD says ねつ, JSON says 熱) immediately.
+  - Does NOT false-positive on authored rationales (e.g., bunpou-5/6
+    sentence-rearrange, where the rationale was expanded during the
+    audit fix) — authored rationales reuse kanji that were already
+    in the MD's stem / choices / answer line, so they pass.
+  - Implemented in `tools/check_content_integrity.py`
+    `_check_ja_32_paper_rationale_md_parity()`.
+  - Verified: simulating the auditor's old stale state ("熱がある"
+    when MD had "ねつが ある") produces exactly the expected failure
+    "stale: ['熱']".
+
+Sweep result post-fix: zero JA-32 violations across all 25 paper
+JSONs. Other rationales that contain non-N5 kanji (e.g., goi-5.13's
+"借りる ⇄ 貸す" pedagogical explanation) all reference kanji that
+appear in their MD Q-block as part of the question content, so they
+correctly pass.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v119 -> v120
+  - index.html cache-busters:    v=1.11.29 -> v=1.11.30
+  - tools/check_content_integrity.py -> 41/41 invariants PASS
+    (was 40 — added JA-32)
+
 ## v1.12.9 - 2026-05-04 (Em-dash audit gap closed + 3 stray em-dashes stripped)
 
 External auditor flagged one stray em-dash (U+2014) in the v1.12.8

@@ -803,6 +803,7 @@ CHECKS: list[tuple[str, str, callable]] = [
     ("JA-29", "Question subtype taxonomy is closed (paraphrase / kanji_writing only) (2026-05-02)", lambda: _check_ja_29_subtype_taxonomy()),
     ("JA-30", "No past-paper provenance signatures in question text (2026-05-02)", lambda: _check_ja_30_provenance()),
     ("JA-31", "Vocab PoS tags in vocabulary_n5.md agree with data/vocab.json (2026-05-02)", lambda: _check_ja_31_vocab_pos_parity()),
+    ("JA-32", "Paper-JSON rationales appear verbatim in source MD (2026-05-04)", lambda: _check_ja_32_paper_rationale_md_parity()),
 ]
 
 
@@ -1722,6 +1723,89 @@ def _check_ja_31_vocab_pos_parity() -> list[str]:
                 f"tagged [{md_tag}] in section '{current_section_norm}' "
                 f"but data/vocab.json says '{expected}'"
             )
+    return failures
+
+
+def _check_ja_32_paper_rationale_md_parity() -> list[str]:
+    """Paper-JSON rationale kanji must all appear in the source MD Q-block.
+
+    Drift class this catches:
+      - KB markdown rationale is corrected to use kana (e.g., 熱がある ->
+        ねつが ある for kanji-scope) but the paper extractor wasn't
+        re-run, so the paper JSON still carries the stale kanji. The
+        auditor's 2026-05-04 flag of paper-2 Q19 ("熱がある" in JSON,
+        but MD says "ねつが ある") is the canonical example.
+
+    Method: for each paper JSON in data/papers/{moji,goi,bunpou,dokkai}/
+    paper-*.json with a kbSourceId, locate the corresponding MD Q-block.
+    For each kanji in the JSON rationale, verify it also appears
+    somewhere in the MD Q-block (stem, choices, answer line, or notes).
+
+    This narrow check avoids false-positives on AUTHORED rationales
+    (e.g., bunpou-5/6 sentence-rearrange where the rationale was
+    expanded during audit fixes) — authored rationales reuse kanji
+    that were already in the MD's stem / choices, so they pass. But a
+    stale-extracted rationale that uses a kanji the MD has corrected
+    to kana fails immediately.
+
+    A complementary check (kana-only JSON rationale where MD has
+    kanji) is intentionally NOT enforced — kana is always permissible
+    at N5 level; only stale kanji that contradicts a kana-only MD
+    surface as drift.
+    """
+    failures: list[str] = []
+    PAPERS_DIR = ROOT / "data" / "papers"
+    if not PAPERS_DIR.exists():
+        return failures
+    KB_BY_CATEGORY = {
+        'moji':   KB / 'moji_questions_n5.md',
+        'goi':    KB / 'goi_questions_n5.md',
+        'bunpou': KB / 'bunpou_questions_n5.md',
+        'dokkai': KB / 'dokkai_questions_n5.md',
+    }
+    KANJI_RE_LOCAL = re.compile(r'[一-鿿]')
+
+    md_cache: dict[str, str] = {}
+    for paper_path in sorted(PAPERS_DIR.rglob('paper-*.json')):
+        category = paper_path.parent.name
+        kb_path = KB_BY_CATEGORY.get(category)
+        if kb_path is None or not kb_path.exists():
+            continue
+        if category not in md_cache:
+            md_cache[category] = kb_path.read_text(encoding='utf-8')
+        md = md_cache[category]
+
+        try:
+            paper = json.loads(paper_path.read_text(encoding='utf-8'))
+        except Exception as e:
+            failures.append(f"JA-32 {paper_path}: parse error: {e}")
+            continue
+        for q in paper.get('questions', []):
+            rat = q.get('rationale')
+            kb_q = q.get('kbSourceId')
+            if not rat or not kb_q:
+                continue
+            block_re = re.compile(
+                rf'### {re.escape(kb_q)}\b([\s\S]+?)(?=\n### Q\d|\Z)'
+            )
+            m = block_re.search(md)
+            if not m:
+                failures.append(
+                    f"JA-32 {paper_path.name} {q.get('id', '?')}: "
+                    f"kbSourceId={kb_q} has no matching block in {kb_path.name}"
+                )
+                continue
+            block_text = m.group(0)
+            json_kanji = set(KANJI_RE_LOCAL.findall(rat))
+            md_kanji = set(KANJI_RE_LOCAL.findall(block_text))
+            stale = json_kanji - md_kanji
+            if stale:
+                failures.append(
+                    f"JA-32 {paper_path.name} {q.get('id', '?')} "
+                    f"({kb_q}): rationale uses kanji not in MD source: "
+                    f"{sorted(stale)} — possible stale extraction "
+                    f"(MD may have corrected to kana)"
+                )
     return failures
 
 
