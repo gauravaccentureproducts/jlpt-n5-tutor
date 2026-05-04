@@ -9,7 +9,7 @@
   "questions": [
     {
       "type": "mcq",
-      "stem_html": "→ blank [1]",
+      "stem_html": "→ [1]番",
       "choices": [
         "で",
         "を",
@@ -26,7 +26,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "→ blank [2]",
+      "stem_html": "→ [2]番",
       "choices": [
         "に",
         "が",
@@ -43,7 +43,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "→ blank [3]",
+      "stem_html": "→ [3]番",
       "choices": [
         "に",
         "と",
@@ -60,7 +60,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "→ blank [4]",
+      "stem_html": "→ [4]番",
       "choices": [
         "で",
         "を",
@@ -77,7 +77,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "→ blank [5]",
+      "stem_html": "→ [5]番",
       "choices": [
         "へ",
         "を",
@@ -94,7 +94,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "→ blank [1]",
+      "stem_html": "→ [1]番",
       "choices": [
         "に",
         "が",
@@ -111,7 +111,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "→ blank [2]",
+      "stem_html": "→ [2]番",
       "choices": [
         "ひきます",
         "ひいて います",
@@ -128,7 +128,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "→ blank [3]",
+      "stem_html": "→ [3]番",
       "choices": [
         "ピアノを ひいて",
         "ピアノきょうしつ",
@@ -145,7 +145,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "→ blank [4]",
+      "stem_html": "→ [4]番",
       "choices": [
         "が",
         "を",
@@ -162,7 +162,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "→ blank [5]",
+      "stem_html": "→ [5]番",
       "choices": [
         "ぐらい",
         "しか",

@@ -58,7 +58,7 @@ _The blank should be filled with:_
 
 この 人は いま どこに すんでいますか。
 
-1. インド (India)
+1. インド
 2. 友だちの 家
 3. となりの 家
 4. アパート

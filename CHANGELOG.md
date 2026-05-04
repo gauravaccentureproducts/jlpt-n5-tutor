@@ -2,6 +2,27 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.26 - 2026-05-04 (Autonomous-improvement iter 3 — English-leak cleanup)
+
+Two English-language leaks in user-facing Japanese fields:
+
+  bunpou paper-7 (Mondai 3, Q91-Q100): all 10 stems were "→ blank [N]"
+    where "blank" is English. Replaced with Japanese-clean form
+    "→ [N]番" (referring to the blank-N in the passage).
+
+  dokkai-1.2 Q2 choice [1]: "インド (India)" had a parenthetical
+    English gloss inside a choice. Stripped to "インド" (sufficient
+    on its own).
+
+Lock-step MD<->JSON updates so JA-32 stays green.
+
+  - sw.js CACHE_VERSION:        v136 -> v137
+  - index.html cache-busters:    v=1.11.46 -> v=1.11.47
+  - 41/41 invariants PASS
+  - Fix script idempotent
+
+---
+
 ## v1.12.25 - 2026-05-04 (Autonomous-improvement iter 2 — choice-length balance)
 
 Reshaped distractors in 16 dokkai items where the keyed answer was
