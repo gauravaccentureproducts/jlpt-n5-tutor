@@ -65,7 +65,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "つかれたので、いえで （　　）。",
+      "stem_html": "つかれましたから、いえで （　　）。",
       "choices": [
         "はたらきます",
         "やすみます",
@@ -73,7 +73,7 @@
         "およぎます"
       ],
       "correctIndex": 1,
-      "rationale": "つかれた + やすむ.",
+      "rationale": "つかれた + やすむ. つかれましたから (polite past + から) is the N5-canonical reason -> action chain (replaces ので which leans N4 in major textbooks).",
       "kbSourceId": "Q5",
       "id": "goi-1.5"
     },

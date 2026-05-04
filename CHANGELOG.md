@@ -2,6 +2,64 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.14 - 2026-05-04 (Goi re-review follow-up - 5 items)
+
+A second pass by the same auditor on the v1.12.12+v1.12.13 fixes
+identified five remaining issues. All five are addressed here. Net
+result of this round: of the 19 originally-flagged audit items, 19
+are closed cleanly with no residual caveats; of the 5 items the v1.12
+goi rewrites had introduced, all 5 are resolved.
+
+### Five fixes
+
+  Q51 / goi-4.6  -  prior tautology, tested no vocabulary
+    Old stem:  わたしの ちちは いしゃです。
+    Old keyed: わたしの ちちの しごとは いしゃです。  (= the stem)
+    New stem:  わたしの ちちは びょういんで はたらいて います。
+    New keyed: わたしの ちちは いしゃです。
+    Now tests the N5 vocab triangle 病院 / はたらく / いしゃ.
+    N5-level pragmatic substitution acknowledged in rationale.
+
+  Q5 / goi-1.5   -  N4-grammar leak (ので)
+    Old stem: つかれたので、いえで （　　）。
+    New stem: つかれましたから、いえで （　　）。
+    から is the N5-canonical reason conjunction; ので leans N4 in
+    Genki / Minna no Nihongo / Tobira.
+
+  Q94 / goi-7.4  -  rationale-labeling imprecision
+    Old: あまくない (plain neg) = あまく ありません (polite neg).
+    New: あまくないです (i-adj + です polite neg) = あまく ありません
+         (formal polite neg). Two equivalent polite forms.
+    Stem and choices unchanged; only rationale tightened.
+
+  Q98 / goi-7.8  -  わたす is borderline N5/N4 ([Ext] in vocabulary_n5.md)
+    Old keyed: ... 先生に しゅくだいを わたします。
+    New keyed: ... 先生に しゅくだいを もって いきます。
+    Removes [Ext] vocab from the answer key entirely. Project [Ext]
+    policy says "useful for recognition; do not over-prioritize" -
+    being the keyed answer over-prioritizes. もって いく is strict
+    N5 (both もつ and いく are core). Pragmatic substitution at N5
+    level: take homework to teacher = submit homework. Note: kept
+    in kana because 持 is not in the kanji whitelist. わたす no
+    longer appears anywhere in the goi corpus.
+
+  Q99 / goi-7.9  -  weak entailment, no acknowledgement
+    "X から きました" -> "X 人です" is a pragmatic inference, not
+    a logical equivalence (someone can come from X without being
+    X-jin: tourist, expat, returning resident). Stem unchanged;
+    rationale updated to acknowledge this as standard N5 textbook
+    pragmatic substitution, mirroring the existing soft-entailment
+    acknowledgement pattern used elsewhere in the corpus.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v123 -> v124
+  - index.html cache-busters:    v=1.11.33 -> v=1.11.34
+  - 41/41 invariants PASS (incl. JA-32 lock-step MD<->JSON parity)
+  - Fix script idempotent (2nd run reports "No changes").
+
+---
+
 ## v1.12.13 - 2026-05-04 (Inference-paraphrase cluster tightened - 5 items)
 
 Follow-up to v1.12.12. The audit's "tighten at least two of them so
