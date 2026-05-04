@@ -962,7 +962,7 @@ _Why was the hiking postponed?_
 3. 日本に 来てから べんきょうした
 4. 友だちが 教えて くれた
 
-**Answer: 2** - 子どもの ときから + 父が 先生.
+**Answer: 2** - 父が 日本ごの 先生でしたから、 子どもの ときから 日本ごを すこし べんきょうしました.
 
 #### Q62
 
@@ -973,7 +973,7 @@ _Why was the hiking postponed?_
 3. 大学 二年生の とき
 4. 大学を そつぎょうした あと
 
-**Answer: 3** - 木曜日から 雨が ふって います。土曜日も 雨の よほうです - has been raining since Thursday, Saturday's forecast is also rain, so postponed to next week.
+**Answer: 3** - 大学の 二年生の とき、 はじめて 日本に 来ました - first came as a 2nd-year university student.
 
 #### Q63
 
@@ -984,7 +984,7 @@ _Why was the hiking postponed?_
 3. 父と いっしょに 先生に なる
 4. 母と すむ
 
-**Answer: 2** - asks やまださん to bring the homework paper from the classroom locker.
+**Answer: 2** - 大学を そつぎょうしてから、 日本に すんで しごとを するつもりです - plans to live and work in Japan after graduation.
 
 ### Passage B (Q64-Q66)
 
@@ -999,7 +999,7 @@ _Why was the hiking postponed?_
 3. 中学校に 入ってから
 4. 大学に 入ってから
 
-**Answer: 2** - ロッカーの ばんごうは 七です - locker number is 7.
+**Answer: 2** - ピアノを ならいはじめたのは、 五さいの ときです - started piano at age 5.
 
 #### Q65
 
@@ -1010,7 +1010,7 @@ _Why was the hiking postponed?_
 3. こわかったが、いい けいけんだった
 4. むずかしかった
 
-**Answer: 3** - こうえんを さんぽする - walks through the park each morning.
+**Answer: 3** - こわかったですが、 とても いい けいけんでした - was scary but a good experience.
 
 #### Q66
 
@@ -1021,7 +1021,7 @@ _Why was the hiking postponed?_
 3. ピアノを 売って いる
 4. ピアノを 作って いる
 
-**Answer: 2** - ケーキは 友だちが 作って もって 来ます - friend makes and brings the cake.
+**Answer: 2** - いまは ともだちに ピアノを 教えて います - now teaches piano to friends.
 
 ### Passage C (Q67-Q69)
 
@@ -1036,7 +1036,7 @@ _Why was the hiking postponed?_
 3. しごと
 4. うた
 
-**Answer: 2** - ともだちは みんな 八時に 来ます - everyone arrives at 8 o'clock.
+**Answer: 2** - 私の 母は りょうりが とても じょうずです - mother is very good at cooking.
 
 #### Q68
 
@@ -1049,7 +1049,7 @@ _What is special about the mother's curry?_
 3. やさいが たくさん、にくは すこし
 4. ふつうの カレー
 
-**Answer: 3** - 水曜日は 病院に 行きました - went to the hospital on Wednesday.
+**Answer: 3** - 中に やさいが たくさん 入って います。 にくは すこし だけです - lots of vegetables, only a little meat.
 
 #### Q69
 
@@ -1062,7 +1062,7 @@ _What does the writer plan to do?_
 3. カレーの 作りかたを ならって、友だちに 作って あげる
 4. カレーやで はたらく
 
-**Answer: 3** - asks everyone to call (電話して ください) if they want to come.
+**Answer: 3** - 母から カレーの 作りかたを 教わって、 友だちに 作って あげたいです - learn the recipe and make it for friends.
 
 ### Passage D (Q70-Q72)
 
@@ -1079,7 +1079,7 @@ _How long does it take from the writer's house to the station on foot?_
 3. 十五分
 4. 二十分
 
-**Answer: 3** - 弁当と 水を じぶんで もって 来て - bring lunch and water yourself.
+**Answer: 3** - 駅から あるいて 十五分 かかります - 15 minutes on foot from the station.
 
 #### Q71
 
@@ -1092,7 +1092,7 @@ _What time did the writer leave home today?_
 3. 七時 五十分
 4. 八時
 
-**Answer: 3** - 母は 病院で はたらいて います - mother works at the hospital.
+**Answer: 3** - 家を 出たのは 七時 五十分でした - left home at 7:50.
 
 #### Q72
 
@@ -1105,7 +1105,7 @@ _Which train did the writer catch?_
 3. 八時 十分の でんしゃ
 4. でんしゃに のれなかった
 
-**Answer: 3** - 日曜日は いつも 家に いて、 私と あそびます - Sundays at home with the narrator.
+**Answer: 3** - 八時 十分の でんしゃに のれました - was able to catch the 8:10 train.
 
 ### Passage E (Q73-Q75)
 
@@ -1122,7 +1122,7 @@ _Where will the birthday party be?_
 3. レストラン
 4. こうえん
 
-**Answer: 2** - たくさん 雨が ふりました - heavy rain last night.
+**Answer: 2** - ばしょは たなかさんの 家です - the venue is Tanaka-san's house.
 
 #### Q74
 
@@ -1135,7 +1135,7 @@ _How many friends will come?_
 3. 七人
 4. 八人
 
-**Answer: 4** - こうえんで お弁当を 食べる つもり - plans to eat bento in the park today.
+**Answer: 4** - 友だちが 八人 来る よていです - 8 friends are coming.
 
 #### Q75
 
@@ -1148,7 +1148,7 @@ _What does the writer want for a birthday gift?_
 3. 新しい カメラ
 4. ケーキ
 
-**Answer: 3** - 父と母には「カメラがほしい」と言った.
+**Answer: 3** - 父と 母には、 新しい カメラが ほしいと 言いました - told parents wants a new camera.
 
 ### Passage F (Q76-Q78)
 
@@ -1165,7 +1165,7 @@ _How many months can people climb Mt. Fuji?_
 3. 三か月
 4. 四か月
 
-**Answer: 2** - 私は えいごの じゅぎょうが すきです - likes the English class.
+**Answer: 2** - 七月と 八月の 二か月 だけです - only July and August, two months.
 
 #### Q77
 
@@ -1178,7 +1178,7 @@ _When did the writer climb Mt. Fuji?_
 3. 九月
 4. 十月
 
-**Answer: 2** - ばんごはんは いつも かいしゃの ちかくの レストランで 食べます - always eats dinner at a restaurant near the office.
+**Answer: 2** - ことしの 八月、 はじめて ふじさんに のぼりました - climbed in August this year.
 
 #### Q78
 
@@ -1191,7 +1191,7 @@ _How was the experience?_
 3. つかれたが、けしきが きれいだった
 4. ふじさんに のぼれなかった
 
-**Answer: 3** - シロは 五さいです - Shiro is 5 years old.
+**Answer: 3** - つかれましたが、 上から 見た けしきは とても きれいでした - tiring but the view was beautiful.
 
 ### Passage G (Q79-Q81)
 
@@ -1208,7 +1208,7 @@ _What time will Tanaka-san meet friends?_
 3. 七時
 4. 八時
 
-**Answer: 2** - 白い 犬ですから、 シロです - named Shiro because the dog is white (white = しろい).
+**Answer: 2** - 朝 六時に 駅で あつまります - meet at the station at 6 in the morning.
 
 #### Q80
 
@@ -1221,7 +1221,7 @@ _How long does it take to get to the sea?_
 3. 一時間 はん
 4. 二時間
 
-**Answer: 3** - まいばん、 ねる まえに 一時間 ピアノを ひきます - plays piano alone every night before bed.
+**Answer: 3** - でんしゃで うみまで 一時間 はん かかります - 1.5 hours by train to the sea.
 
 #### Q81
 
@@ -1234,7 +1234,7 @@ _Where will they have lunch?_
 3. 家
 4. でんしゃの 中
 
-**Answer: 2** - こんしゅうの どようび、 がっこうで コンサートが あります - concert this Saturday at the school.
+**Answer: 2** - ひるごはんは うみの ちかくの レストランで 食べます - lunch at a restaurant near the sea.
 
 ### Passage H (Q82-Q84)
 
@@ -1251,7 +1251,7 @@ _How old is the writer's older brother now?_
 3. 三十さい
 4. 三十二さい
 
-**Answer: 3** - えいがは 三時から 五時まで - movie runs 3 to 5; starts at 3.
+**Answer: 3** - あには ことし 三十さいに なりました - older brother turned 30 this year.
 
 #### Q83
 
@@ -1264,7 +1264,7 @@ _What was the older brother's wife's job?_
 3. 学校の 先生でした
 4. ピアノの 先生でした
 
-**Answer: 3** - passage uses past tense でした; answer matches.
+**Answer: 3** - おくさんは 私の 学校の 先生でした - the wife was a teacher at my school.
 
 #### Q84
 
@@ -1277,7 +1277,7 @@ _What will happen next month?_
 3. 父が 五十さいに なる
 4. 母が しごとを やめる
 
-**Answer: 2** - えいがが 終わったら、 こうちゃの きっさてんで - after the movie, goes to a tea cafe.
+**Answer: 2** - 来月、 二人の あいだに 子どもが 生まれます - a child will be born next month.
 
 ### Passage I (Q85-Q87)
 
@@ -1294,7 +1294,7 @@ _Why doesn't the writer have a cat?_
 3. 家が ちいさいから
 4. ねこが 高いから
 
-**Answer: 2** - 父は 大学生の とき、 中国に すんで いました - lived in China during university.
+**Answer: 2** - ねこは よわいから、 ねこを 家で かう ことは できないと 言いました - father said cats are weak, can't keep one.
 
 #### Q86
 
@@ -1307,7 +1307,7 @@ _How many cats does Tanaka-san's family have?_
 3. さんびき
 4. よんひき
 
-**Answer: 3** - passage says ねこが 三びき います (three cats).
+**Answer: 3** - ねこが 三びき います - there are three cats.
 
 #### Q87
 
@@ -1320,7 +1320,7 @@ _What is the brown cat's name?_
 3. チャ
 4. 名前は ない
 
-**Answer: 3** - むずかしい...あまり 上手では ありません - narrator finds Chinese hard, not very good at it.
+**Answer: 3** - ちゃいろの ねこは チャです - the brown cat is named Cha.
 
 ### Passage J (Q88-Q90)
 
@@ -1337,7 +1337,7 @@ _When does the writer's sister read books?_
 3. ねる まえ
 4. しょくじの まえ
 
-**Answer: 3** - 一しゅうかんに 三回 - three times a week.
+**Answer: 3** - まいばん ねる まえに、 一じかん ぐらい 本を 読みます - reads about an hour every night before bed.
 
 #### Q89
 
@@ -1350,7 +1350,7 @@ _What kind of books does she like best?_
 3. しんぶん
 4. ざっし
 
-**Answer: 2** - 日曜日は 学校が 休みですから、 プールも 使えません - pool unavailable on Sundays.
+**Answer: 2** - 妹は とくに 子ども向けの 本が すきです - sister especially likes children's books.
 
 #### Q90
 
@@ -1393,7 +1393,7 @@ _A child wants to swim in the pool. How much will it cost?_
 3. 500円
 4. 1,000円
 
-**Answer: 1** - 子ども プール = 200円 (per the こうえんの あんない table).
+**Answer: 1** - 来月、 妹は 子ども向けの 本を 書きはじめる つもりです - next month plans to start writing children's books.
 
 #### Q92
 

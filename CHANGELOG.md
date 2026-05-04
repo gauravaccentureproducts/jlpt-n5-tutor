@@ -2,6 +2,86 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.22 - 2026-05-04 (N5 thorough audit Round 4 - item-level content fixes)
+
+Round 4 of the teacher-style N5 audit: item-level content quality
+fixes across bunpou, dokkai, and listening corpora. Three parallel
+sub-agent audits identified specific issues that prior rounds had
+not addressed at the item level.
+
+### Critical: Dokkai Mondai 5 stale rationales (30 items rewritten)
+
+  v1.12.19 deployed Mondai 5+6 to paper-JSONs. The "stale rationale
+  fix" applied at that time only covered Q91-Q93 (Mondai 6). Mondai 5
+  (Q61-Q90) had SYSTEMIC stale rationale text - copy-pasted from
+  unrelated Mondai 4 questions. Keyed answers were correct, but
+  user-facing explanations referenced wrong content (e.g. Q67
+  rationale cited "ともだちは 八時に 来ます" - irrelevant to a
+  question about the mother's cooking).
+
+  All 30 Mondai 5 rationales rewritten to cite the actual passage
+  content for the keyed answer. Each new rationale uses a verbatim
+  Japanese phrase from passage_text so JA-32 (paper<->MD parity) is
+  preserved. Both paper-5/6 JSONs and dokkai_questions_n5.md updated
+  in lock-step.
+
+### Bunpou content fixes (4 items)
+
+  Q14   Stem ambiguity. 「ねこ（  ）すきです」 allowed both は
+        (contrastive) and が (subject-of-suki). Anchored with
+        わたしは: 「わたしは ねこ（  ）すきです」 -> が unambiguous.
+
+  Q34   Colloquial form in keyed option. Replaced 「しずかじゃない」
+        with the cleaner N5 textbook form 「しずかじゃ ありません」.
+        Removed trailing です from stem to avoid じゃない+です
+        register clash.
+
+  Q41   Structural defect: stem had no numeral preceding the counter
+        blank, so 「さつ」 had nothing to attach to. Added 三 before
+        blank: 「つくえの 上に 本が 三（  ）あります」.
+
+  Q75   Mondai 2 sentence-rearrangement contained 「ので」 fragment
+        against the project's ので -> から policy (set in v1.12.14
+        for Q5 and v1.12.15 for Q33/Q44). Replaced fragment 3 from
+        「ので」 to 「から」.
+
+### Listening content fixes (3 items)
+
+  n5.listen.005   Distractors had zero script support. Replaced two
+                  unsupported distractors with school-tardiness
+                  alternatives (「あたまが いたかったから」, etc.)
+                  that are at least plausible reasons even though
+                  the keyed answer is the only one cited in the
+                  script.
+
+  n5.listen.038   Cultural-premise issue: scenario was entering a
+                  ryokan (inn) where おじゃまします is not the
+                  standard greeting (guests typically say
+                  よろしく お願いします). Changed scenario to
+                  entering a friend's house, where おじゃまします
+                  is canonical.
+
+  n5.listen.040   Three near-identical greeting items in the corpus
+                  (012, 025, 040 all tested おはようございます with
+                  the same scenario). Diversified 040 to test
+                  evening greeting (こんばんは) instead.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v132 -> v133
+  - index.html cache-busters:    v=1.11.42 -> v=1.11.43
+  - 41/41 invariants PASS
+  - Fix script idempotent
+
+### Audit findings still open (Round 5)
+
+  - reading.json (40 passages, 84 questions) - separate corpus
+    from dokkai paper-JSONs; not yet audited at the item level.
+  - grammar.json examples (178 patterns × 3-5 examples each) -
+    naturalness audit pending.
+
+---
+
 ## v1.12.21 - 2026-05-04 (N5 thorough audit Round 3 - vocab drift resolved)
 
 Round 3 of the teacher-style N5 audit closes the last open finding:

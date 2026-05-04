@@ -209,11 +209,11 @@
       "choices": [
         "は",
         "パーティーに",
-        "ので",
+        "から",
         "しごとが あります"
       ],
       "correctIndex": 1,
-      "rationale": "Order: あした しごとが あります(4) ので(3) パーティーに(2=★) は(1) 来ません = \"Tomorrow I have work, so I'm not coming to the party.\" パーティーに(2) goes on the ★.",
+      "rationale": "Order: しごとが あります(4) から(3) パーティーに(2=★) は(1) 来ません = \"Because I have work, I won't come to the party.\" (から replaces ので per N5-canonical reason-conjunction policy.)",
       "kbSourceId": "Q75",
       "id": "bunpou-5.15"
     }

@@ -177,14 +177,14 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 ### Q14
 
-ねこ（　　）すきです。
+わたしは ねこ（　　）すきです。
 
 1. を
-2. に
-3. が
-4. へ
+2. が
+3. に
+4. の
 
-**Answer: 3** - すき takes が.
+**Answer: 2** - sub-が-suki: subject of suki takes が. Stem now anchored with わたしは to disambiguate from contrastive-topic は reading.
 
 ### Q15
 
@@ -397,14 +397,14 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 ### Q34
 
-きょうしつは あまり （　　）です。
+きょうしつは あまり （　　）。
 
 1. しずかな
-2. しずか
-3. しずかじゃない
-4. しずかで
+2. しずかで
+3. しずかじゃ ありません
+4. しずかでした
 
-**Answer: 3** - na-adj negative.
+**Answer: 3** - あまり + neg construction. しずかじゃ ありません is the clean N5 polite-negative i-na-adj form (replaces colloquial 「しずかじゃない」+です from a prior version).
 
 ### Q35
 
@@ -474,14 +474,14 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 ### Q41
 
-つくえの 上に 本が （　　）あります。
+つくえの 上に 本が 三（　　）あります。
 
-1. つ
-2. ほん
+1. ぼん
+2. ぽん
 3. さつ
-4. にん
+4. ほん
 
-**Answer: 3** - counter for books.
+**Answer: 3** - 三 + さつ (counter for books). Stem now includes the numeral 三 so the counter has something to attach to (prior version was structurally broken).
 
 ### Q42
 
@@ -858,10 +858,10 @@ ___ ___ ★ ___ ですか。
 
 1. は
 2. パーティーに
-3. ので
+3. から
 4. しごとが あります
 
-**Answer: 2** (パーティーに goes in ★).
+**Answer: 2** - Order: しごとが あります(4) から(3) パーティーに(2=★) は(1) 来ません = "Because I have work, I won't come to the party." (から replaces ので per N5-canonical reason-conjunction policy.)
 
 ### Q76
 

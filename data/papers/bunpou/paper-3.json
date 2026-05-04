@@ -54,12 +54,12 @@
       "stem_html": "きょうしつは あまり （　　）です。",
       "choices": [
         "しずかな",
-        "しずか",
-        "しずかじゃない",
-        "しずかで"
+        "しずかで",
+        "しずかじゃ ありません",
+        "しずかでした"
       ],
       "correctIndex": 2,
-      "rationale": "na-adj negative.",
+      "rationale": "あまり + neg construction. しずかじゃ ありません is the clean N5 polite-negative i-na-adj form (replaces colloquial 「しずかじゃない」+です from a prior version).",
       "kbSourceId": "Q34",
       "id": "bunpou-3.4"
     },
@@ -149,7 +149,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "つくえの 上に 本が （　　）あります。",
+      "stem_html": "つくえの 上に 本が 三（　　）あります。",
       "choices": [
         "つ",
         "ほん",
@@ -157,7 +157,7 @@
         "にん"
       ],
       "correctIndex": 2,
-      "rationale": "counter for books.",
+      "rationale": "三 + さつ (counter for books). Stem now includes the numeral 三 so the counter has something to attach to (prior version was structurally broken).",
       "kbSourceId": "Q41",
       "id": "bunpou-3.11"
     },

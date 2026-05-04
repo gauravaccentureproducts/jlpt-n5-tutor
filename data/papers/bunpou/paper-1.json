@@ -191,7 +191,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "ねこ（　　）すきです。",
+      "stem_html": "わたしは ねこ（　　）すきです。",
       "choices": [
         "を",
         "に",
@@ -199,7 +199,7 @@
         "へ"
       ],
       "correctIndex": 2,
-      "rationale": "すき takes が.",
+      "rationale": "sub-が-suki: subject of suki takes が. Stem now anchored with わたしは to disambiguate from contrastive-topic は reading.",
       "kbSourceId": "Q14",
       "id": "bunpou-1.14"
     },

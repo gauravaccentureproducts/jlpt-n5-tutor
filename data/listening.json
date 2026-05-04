@@ -72,13 +72,13 @@
       "script_ja": "学校で 先生と 学生が 話しています。学生は どうして おそく なりましたか。\n先生：今日は どうして おそく 来ましたか。\n学生：すみません。あさ、でんしゃが おくれました。\n先生：そうですか。だいじょうぶですか。\n学生：はい、もう だいじょうぶです。",
       "prompt_ja": "学生は どうして おそく なりましたか。",
       "choices": [
+        "あたまが いたかったから",
         "バスが おくれたから",
-        "あさごはんを 食べたから",
         "おきるのが おそかったから",
         "でんしゃが おくれたから"
       ],
       "correctAnswer": "でんしゃが おくれたから",
-      "explanation_en": "'あさ、でんしゃが おくれました'.",
+      "explanation_en": "'あさ、でんしゃが おくれました' - the student explicitly states the train was delayed. The other options are plausible school-tardiness excuses but not what the student says.",
       "requires_patterns": [
         "n5-030"
       ],
@@ -613,9 +613,9 @@
     {
       "id": "n5.listen.038",
       "format": "utterance",
-      "title_ja": "りょかんに 入る とき",
-      "script_ja": "じょうけい：りょかんに 入る とき、ていねいに 言います。何と 言いますか。",
-      "prompt_ja": "何と 言いますか。",
+      "title_ja": "ともだちの いえに 入る",
+      "script_ja": "（ともだちの いえに 入る とき）",
+      "prompt_ja": "ともだちの いえに 入ります。何と 言いますか。",
       "choices": [
         "ただいま",
         "おじゃまします",
@@ -645,17 +645,16 @@
     {
       "id": "n5.listen.040",
       "format": "utterance",
-      "title_ja": "先生に あった とき",
-      "script_ja": "じょうけい：あさ、学校で 先生に あいました。何と 言いますか。",
-      "prompt_ja": "何と 言いますか。",
+      "title_ja": "よるの あいさつ",
+      "script_ja": "（よる、ともだちの いえで あった とき）",
+      "prompt_ja": "よる、ともだちと あいました。何と 言いますか。",
       "choices": [
-        "おはようございます",
-        "こんばんは",
-        "さようなら",
-        "おやすみなさい"
+        "おはようございます。",
+        "こんばんは。",
+        "おやすみなさい。"
       ],
-      "correctAnswer": "おはようございます",
-      "explanation_en": "おはようございます = good morning (formal greeting in the morning).",
+      "correctAnswer": "こんばんは。",
+      "explanation_en": "Evening greeting (こんばんは for evening; おはよう for morning, おやすみ for going to bed).",
       "audio": "audio/listening/n5.listen.040.mp3"
     }
   ]
