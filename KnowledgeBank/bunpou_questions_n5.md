@@ -48,11 +48,11 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 きのう ともだち（　　）えいがを 見ました。
 
 1. を
-2. と
+2. に
 3. が
-4. に
+4. と
 
-**Answer: 2** - 友だちと (with).
+**Answer: 4** - 友だちと (with).
 
 ### Q3
 
@@ -91,45 +91,45 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 ぎんこうは 駅（　　）まえに あります。
 
-1. の
+1. を
 2. は
 3. が
-4. を
+4. の
 
-**Answer: 1** - possessive / location-of.
+**Answer: 4** - possessive / location-of.
 
 ### Q7
 
 七時（　　）おきます。
 
-1. に
+1. と
 2. で
 3. を
-4. と
+4. に
 
-**Answer: 1** - time of action.
+**Answer: 4** - time of action.
 
 ### Q8
 
 きょうしつ（　　）日本語を べんきょうします。
 
 1. に
-2. で
+2. へ
 3. を
-4. へ
+4. で
 
-**Answer: 2** - location of action (where you do it).
+**Answer: 4** - location of action (where you do it).
 
 ### Q9
 
 としょかん（　　）本を よみます。
 
 1. に
-2. で
+2. へ
 3. を
-4. へ
+4. で
 
-**Answer: 2** - location of action.
+**Answer: 4** - location of action.
 
 ### Q10
 
@@ -158,22 +158,22 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 きょうしつに 学生（　　）三人 います。
 
 1. を
-2. が
+2. は
 3. に
-4. は
+4. が
 
-**Answer: 2** - existence subject.
+**Answer: 4** - existence subject.
 
 ### Q13
 
 おかね（　　）ありませんから、何も 買いません。
 
 1. を
-2. が
+2. に
 3. は
-4. に
+4. が
 
-**Answer: 2** - subject of ある (negative).
+**Answer: 4** - subject of ある (negative).
 
 ### Q14
 
@@ -191,33 +191,33 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 日本語（　　）すこし わかります。
 
 1. を
-2. が
+2. へ
 3. に
-4. へ
+4. が
 
-**Answer: 2** - わかる takes が.
+**Answer: 4** - わかる takes が.
 
 ### Q16
 
 ピアノ（　　）できます。
 
 1. を
-2. が
+2. へ
 3. に
-4. へ
+4. が
 
-**Answer: 2** - できる takes が.
+**Answer: 4** - できる takes が.
 
 ### Q17
 
 新しい かばん（　　）ほしいです。
 
 1. を
-2. が
+2. と
 3. に
-4. と
+4. が
 
-**Answer: 2** - ほしい takes が.
+**Answer: 4** - ほしい takes が.
 
 ### Q18
 
@@ -235,11 +235,11 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 ねつ（　　）あります。
 
 1. を
-2. が
+2. と
 3. に
-4. と
+4. が
 
-**Answer: 2** - ねつが ある (have a fever).
+**Answer: 4** - ねつが ある (have a fever).
 
 ### Q20
 
@@ -279,11 +279,11 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 学校は 八時（　　）三時までです。
 
 1. と
-2. から
+2. へ
 3. に
-4. へ
+4. から
 
-**Answer: 2** - from-to.
+**Answer: 4** - from-to.
 
 ### Q24
 

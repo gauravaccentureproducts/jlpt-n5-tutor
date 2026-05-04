@@ -26,11 +26,11 @@
       "stem_html": "きのう ともだち（　　）えいがを 見ました。",
       "choices": [
         "を",
-        "と",
+        "に",
         "が",
-        "に"
+        "と"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "友だちと (with).",
       "kbSourceId": "Q2",
       "id": "bunpou-1.2"
@@ -81,12 +81,12 @@
       "type": "mcq",
       "stem_html": "ぎんこうは 駅（　　）まえに あります。",
       "choices": [
-        "の",
+        "を",
         "は",
         "が",
-        "を"
+        "の"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "possessive / location-of.",
       "kbSourceId": "Q6",
       "id": "bunpou-1.6"
@@ -95,12 +95,12 @@
       "type": "mcq",
       "stem_html": "七時（　　）おきます。",
       "choices": [
-        "に",
+        "と",
         "で",
         "を",
-        "と"
+        "に"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "time of action.",
       "kbSourceId": "Q7",
       "id": "bunpou-1.7"
@@ -110,11 +110,11 @@
       "stem_html": "きょうしつ（　　）日本語を べんきょうします。",
       "choices": [
         "に",
-        "で",
+        "へ",
         "を",
-        "へ"
+        "で"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "location of action (where you do it).",
       "kbSourceId": "Q8",
       "id": "bunpou-1.8"
@@ -124,11 +124,11 @@
       "stem_html": "としょかん（　　）本を よみます。",
       "choices": [
         "に",
-        "で",
+        "へ",
         "を",
-        "へ"
+        "で"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "location of action.",
       "kbSourceId": "Q9",
       "id": "bunpou-1.9"
@@ -166,11 +166,11 @@
       "stem_html": "きょうしつに 学生（　　）三人 います。",
       "choices": [
         "を",
-        "が",
+        "は",
         "に",
-        "は"
+        "が"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "existence subject.",
       "kbSourceId": "Q12",
       "id": "bunpou-1.12"
@@ -180,11 +180,11 @@
       "stem_html": "おかね（　　）ありませんから、何も 買いません。",
       "choices": [
         "を",
-        "が",
+        "に",
         "は",
-        "に"
+        "が"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "subject of ある (negative).",
       "kbSourceId": "Q13",
       "id": "bunpou-1.13"
@@ -208,11 +208,11 @@
       "stem_html": "日本語（　　）すこし わかります。",
       "choices": [
         "を",
-        "が",
+        "へ",
         "に",
-        "へ"
+        "が"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "わかる takes が.",
       "kbSourceId": "Q15",
       "id": "bunpou-1.15"

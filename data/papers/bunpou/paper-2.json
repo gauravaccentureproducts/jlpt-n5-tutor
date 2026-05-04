@@ -12,11 +12,11 @@
       "stem_html": "ピアノ（　　）できます。",
       "choices": [
         "を",
-        "が",
+        "へ",
         "に",
-        "へ"
+        "が"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "できる takes が.",
       "kbSourceId": "Q16",
       "id": "bunpou-2.1"
@@ -26,11 +26,11 @@
       "stem_html": "新しい かばん（　　）ほしいです。",
       "choices": [
         "を",
-        "が",
+        "と",
         "に",
-        "と"
+        "が"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "ほしい takes が.",
       "kbSourceId": "Q17",
       "id": "bunpou-2.2"
@@ -54,11 +54,11 @@
       "stem_html": "ねつ（　　）あります。",
       "choices": [
         "を",
-        "が",
+        "と",
         "に",
-        "と"
+        "が"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "ねつが ある (have a fever).",
       "kbSourceId": "Q19",
       "id": "bunpou-2.4"
@@ -110,11 +110,11 @@
       "stem_html": "学校は 八時（　　）三時までです。",
       "choices": [
         "と",
-        "から",
+        "へ",
         "に",
-        "へ"
+        "から"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "from-to.",
       "kbSourceId": "Q23",
       "id": "bunpou-2.8"

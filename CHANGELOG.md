@@ -2,6 +2,93 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.20 - 2026-05-04 (N5 thorough audit Round 2 - 3 corpus rebalances)
+
+Round 2 of the teacher-style N5 audit: corpus-level position-distribution
+rebalances on all three remaining skewed corpora.
+
+### Dokkai rebalance (102 items)
+
+  Before:  1 / 17 / 37 / 5    (positions A / B / C / D, 60% C-skew)
+  After:   26 / 26 / 25 / 25  (target distribution, 102 / 4)
+
+  Per-paper after rebalance: ~4/4/4/4 in each 16-item paper.
+  Dramatic skew (62% C, 1% A) eliminated. The "guess C" heuristic
+  now scores 25%, same as random.
+
+  41 mechanical choice-order permutations across all 7 dokkai papers.
+  Choice CONTENT unchanged; only order permuted. correctIndex updated
+  in JSON, numbered list reordered in MD, **Answer: N** updated.
+
+  5 items skipped (semantically-ordered choices):
+    Q3   math problem (yen amounts ascending)
+    Q6   time options (時 ascending)
+    Q7   count options (本 ascending)
+    Q15  count options (つ ascending)
+    Q41  count options (numeric sequence)
+
+### Bunpou rebalance (100 items)
+
+  Before:  27 / 35 / 25 / 13  (B-over, D-under)
+  After:   25 / 25 / 25 / 25  (perfect)
+
+  12 mechanical choice-order permutations on Mondai 1 + Mondai 3
+  items only. Mondai 2 (Q61-90, sentence rearrangement) FULLY
+  CONSTRAINED - permuting the fragment-numbering would change which
+  fragment goes in the ★ slot, breaking the test point. All 30
+  Mondai 2 items kept their original choice order.
+
+### Listening rebalance (40 items)
+
+  Before:  5 / 24 / 9 / 1     (B-skew 60%, D-starved)
+  After:   11 / 10 / 10 / 9   (combined, near-perfect)
+
+  Per choice-count partition:
+    4-choice items (36):  9 / 9 / 9 / 9   (perfect)
+    3-choice items (4, hatsuwa-hyougen Mondai 4 format): 2 / 1 / 1
+
+  15 mechanical correctAnswer-position swaps. The 3-choice items
+  use a 3-slot target (~1/1/1) since hatsuwa-hyougen Mondai 4 only
+  has three options.
+
+  7 items skipped (chronological / numeric ordering preserved):
+    n5.listen.003  time (8時/8時半/9時/9時半)
+    n5.listen.011  duration / time
+    n5.listen.013  time
+    n5.listen.020  money
+    n5.listen.027  time
+    n5.listen.030  time
+    n5.listen.036  duration (二日間/三日間/四日間)
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v130 -> v131
+  - index.html cache-busters:    v=1.11.40 -> v=1.11.41
+  - 41/41 invariants PASS
+  - Rebalance script idempotent (2nd run reports 0 moves).
+
+### Cumulative N5 corpus state after Round 2
+
+  | Corpus    | Items | Distribution           | Status        |
+  |-----------|-------|------------------------|---------------|
+  | moji      | 100   | 25/25/25/25            | shipped v1.12.18 |
+  | goi       | 100   | 25/25/25/25            | shipped v1.12.17 |
+  | bunpou    | 100   | 25/25/25/25            | THIS RELEASE  |
+  | dokkai    | 102   | 26/26/25/25            | THIS RELEASE  |
+  | listening | 40    | 11/10/10/9 (combined)  | THIS RELEASE  |
+
+All five N5 corpora now at exact or near-exact 25%-per-position
+balance. Pattern-recognition heuristics (e.g., "pick B if unsure")
+no longer beat random chance on any corpus.
+
+### Audit findings still open (Round 3)
+
+  Round 3 (MEDIUM): vocab.json <-> vocabulary_n5.md drift (~38 forms).
+    28 JSON-only entries + 10 MD-only entries. Bidirectional fix
+    needed. Largest drift not addressed in any prior round.
+
+---
+
 ## v1.12.19 - 2026-05-04 (N5 thorough audit Round 1 - critical fixes)
 
 Internal teacher-style audit of the entire N5 section identified two
