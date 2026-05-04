@@ -1,4 +1,4 @@
-# N5 kanji whitelist — exception register
+# N5 kanji whitelist - exception register
 
 Each line below documents a kanji that is in the project whitelist
 (`n5_kanji_whitelist.json`) but not in the official JLPT N5 kanji scope
@@ -19,7 +19,7 @@ kanji, JA-25 begins enforcing accountability for the deltas.
 
 ## Exceptions
 
-(none currently documented — JA-25 is in bootstrapping mode until the
+(none currently documented - JA-25 is in bootstrapping mode until the
 official-scope reference file is added at `data/n5_official_kanji_scope.json`)
 
 ## Notes

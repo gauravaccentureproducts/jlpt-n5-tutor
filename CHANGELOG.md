@@ -2,6 +2,31 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.9 - 2026-05-04 (Em-dash audit gap closed + 3 stray em-dashes stripped)
+
+External auditor flagged one stray em-dash (U+2014) in the v1.12.8
+`n5_vocab_whitelist_README.md` rewrite. Investigation: X-6.5 (no
+em-dashes) was scanning only the 9 KnowledgeBank/*.md files, not
+the data/*.md design-rationale READMEs. Extended X-6.5 to scan
+`data/*.md` too; the extended check immediately surfaced 2 more
+em-dashes in `data/n5_kanji_whitelist.exceptions.md` that had also
+been outside the previous CI scope.
+
+### Fixes
+
+  - `data/n5_vocab_whitelist_README.md`: 1 em-dash -> hyphen
+  - `data/n5_kanji_whitelist.exceptions.md`: 2 em-dashes -> hyphens
+  - `tools/check_content_integrity.py` X-6.5: extended to also scan
+    `data/*.md` so future README rewrites can't slip past the
+    no-em-dash policy.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v118 -> v119
+  - index.html cache-busters:    v=1.11.28 -> v=1.11.29
+  - tools/check_content_integrity.py -> 40/40 invariants PASS
+    (X-6.5 now scans 9 KB files + data/*.md = 11 files total)
+
 ## v1.12.8 - 2026-05-04 (Whitelist drift fully closed - 38 new vocab entries)
 
 Closes the v1.12.7 "perceived drift" between `n5_vocab_whitelist.json`

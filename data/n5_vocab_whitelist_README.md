@@ -31,7 +31,7 @@ The size difference (1041 entries vs 969 unique tokens) reflects:
     Same pattern: one entry, multiple reading tokens.
   - vocab.json entries can be cross-referenced by section (e.g., 人
     appears as both pronoun in section 1 and counter にん in section 9
-    — same form but different entries; whitelist counts the form once).
+    - same form but different entries; whitelist counts the form once).
 
 ## History
 

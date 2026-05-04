@@ -278,7 +278,14 @@ def check_x_6_4_orphan_vocab() -> list[str]:
 
 
 def check_x_6_5_no_em_dashes() -> list[str]:
-    """Zero em-dashes across all 9 KB files."""
+    """Zero em-dashes across all 9 KB files plus any data/*.md README docs.
+
+    Extended 2026-05-04 to also scan data/*.md so design-rationale READMEs
+    (e.g., data/n5_vocab_whitelist_README.md) don't slip past the no-em-
+    dash policy. Previously the check was KB-only; one em-dash slipped
+    into the v1.12.8 README rewrite and was caught by an external auditor
+    rather than CI.
+    """
     failures = []
     for fname in QUESTION_FILES + CATALOG_FILES:
         path = KB / fname
@@ -288,6 +295,14 @@ def check_x_6_5_no_em_dashes() -> list[str]:
         if EM_DASH in text:
             count = text.count(EM_DASH)
             failures.append(f"X-6.5 {fname} contains {count} em-dash(es) (U+2014)")
+    # Also scan data/*.md (READMEs / design rationale docs).
+    data_dir = ROOT / "data"
+    if data_dir.exists():
+        for md in sorted(data_dir.glob("*.md")):
+            text = load_text(md)
+            if EM_DASH in text:
+                count = text.count(EM_DASH)
+                failures.append(f"X-6.5 data/{md.name} contains {count} em-dash(es) (U+2014)")
     return failures
 
 
