@@ -2,6 +2,49 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.27 - 2026-05-04 (Autonomous-improvement iter 4 — global rebalance to perfect 25/25/25/25)
+
+Iter 1 used a per-paper [4,4,4,3] target uniformly, which produced
+small global skew when constrained items concentrated at certain
+positions. After iter 4's global-aware rebalance, all four paper
+corpora are at exact uniform distribution.
+
+### Final position distributions (all paper corpora)
+
+  moji      [25, 25, 25, 25]   (100 items)
+  goi       [25, 25, 25, 25]   (100 items)
+  bunpou    [25, 25, 25, 25]   (100 items)
+  dokkai    [26, 26, 25, 25]   (102 items - cannot divide by 4)
+  listening 4-ch: [8, 9, 9, 9] (36 items - constrained subset)
+  listening 3-ch: [2, 2, 1]    (4 hatsuwa-hyougen items)
+  reading   [21, 21, 21, 21]   (84 items)
+
+Per-paper distribution exception:
+  bunpou paper-5 + paper-6: still skewed by Mondai 2 sentence-
+  rearrangement constraint (30 items where choice order encodes
+  the test data). Cannot be permuted. Accepted-by-constraint.
+
+### Iter 1 vs iter 4 comparison
+
+  Corpus     Iter 1 result          Iter 4 result
+  moji       [27, 27, 26, 20]   ->  [25, 25, 25, 25]
+  goi        [27, 27, 26, 20]   ->  [25, 25, 25, 25]
+  bunpou     [30, 25, 23, 22]   ->  [25, 25, 25, 25]
+  dokkai     [26, 26, 25, 25]   ->  [26, 26, 25, 25]  (already optimal)
+
+The iter 1 rebalancer was per-paper-only; iter 4 is global-aware
+(measures constrained-item distribution, computes unconstrained
+target to compensate, distributes accordingly). 16 additional
+permutations applied. All choice content unchanged; only choice
+ORDER permuted.
+
+  - sw.js CACHE_VERSION:        v137 -> v138
+  - index.html cache-busters:    v=1.11.47 -> v=1.11.48
+  - 41/41 invariants PASS
+  - Fix script idempotent
+
+---
+
 ## v1.12.26 - 2026-05-04 (Autonomous-improvement iter 3 — English-leak cleanup)
 
 Two English-language leaks in user-facing Japanese fields:

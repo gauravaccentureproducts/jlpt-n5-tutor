@@ -39,12 +39,12 @@
       "type": "mcq",
       "stem_html": "毎日 一時間 ピアノ（　　）れんしゅうします。",
       "choices": [
-        "を",
-        "が",
         "に",
+        "が",
+        "を",
         "へ"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "を marks the direct object of れんしゅうする (practice the piano).",
       "kbSourceId": "Q18",
       "id": "bunpou-2.3"

@@ -12,11 +12,11 @@
       "stem_html": "まいあさ コーヒーを （　　）。",
       "choices": [
         "たべます",
-        "のみます",
+        "みます",
         "ききます",
-        "みます"
+        "のみます"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "コーヒー is something one drinks (のむ).",
       "kbSourceId": "Q1",
       "id": "goi-1.1"
@@ -26,11 +26,11 @@
       "stem_html": "ばんごはんを （　　） から、テレビを 見ます。",
       "choices": [
         "のんで",
-        "たべて",
+        "かって",
         "かいて",
-        "かって"
+        "たべて"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "ごはん takes たべる.",
       "kbSourceId": "Q2",
       "id": "goi-1.2"
@@ -109,12 +109,12 @@
       "type": "mcq",
       "stem_html": "つくえの 上に 本が （　　）。",
       "choices": [
-        "あります",
+        "でます",
         "います",
         "たちます",
-        "でます"
+        "あります"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "inanimate noun + あります.",
       "kbSourceId": "Q8",
       "id": "goi-1.8"
@@ -125,10 +125,10 @@
       "choices": [
         "たかいです",
         "ながいです",
-        "いいです",
-        "やすいです"
+        "やすいです",
+        "いいです"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "rationale": "てんきが いい (the weather is good).",
       "kbSourceId": "Q9",
       "id": "goi-1.9"
@@ -151,12 +151,12 @@
       "type": "mcq",
       "stem_html": "この りんごは あまいですから、（　　）。",
       "choices": [
-        "おいしいです",
+        "おもしろいです",
         "たかいです",
         "あおいです",
-        "おもしろいです"
+        "おいしいです"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "Sweet apples → delicious. The \"あまいですから\" anchor forces おいしい as the only natural completion: たかい (expensive) and あおい (green/unripe) don't follow from sweetness, and おもしろい (interesting) is unidiomatic for food.",
       "kbSourceId": "Q11",
       "id": "goi-1.11"

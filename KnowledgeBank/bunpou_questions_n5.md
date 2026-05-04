@@ -113,45 +113,45 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 きょうしつ（　　）日本語を べんきょうします。
 
-1. で
+1. に
 2. へ
 3. を
-4. に
+4. で
 
-**Answer: 1** - location of action (where you do it).
+**Answer: 4** - location of action (where you do it).
 
 ### Q9
 
 としょかん（　　）本を よみます。
 
-1. で
+1. に
 2. へ
 3. を
-4. に
+4. で
 
-**Answer: 1** - location of action.
+**Answer: 4** - location of action.
 
 ### Q10
 
 たなかさん（　　）アメリカへ いきました。
 
-1. は
+1. を
 2. に
 3. が
-4. を
+4. は
 
-**Answer: 1** - new topic (or focus).
+**Answer: 4** - new topic (or focus).
 
 ### Q11
 
 つくえの 上に 本（　　）あります。
 
-1. が
+1. に
 2. を
-3. に
+3. が
 4. は
 
-**Answer: 1** - existence subject.
+**Answer: 3** - existence subject.
 
 ### Q12
 
@@ -223,12 +223,12 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 毎日 一時間 ピアノ（　　）れんしゅうします。
 
-1. を
+1. に
 2. が
-3. に
+3. を
 4. へ
 
-**Answer: 1** - を marks the direct object of れんしゅうする (practice the piano).
+**Answer: 3** - を marks the direct object of れんしゅうする (practice the piano).
 
 ### Q19
 

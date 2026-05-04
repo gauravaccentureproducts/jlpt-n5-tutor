@@ -51,23 +51,23 @@ All three types are acceptable because the question asks "which kanji visually b
 
 あの 人は <u>学生</u> です。
 
-1. がくせい
+1. かくせ
 2. かくせい
 3. がくせ
-4. かくせ
+4. がくせい
 
-**Answer: 1** - 学 (ガク) + 生 (セイ).
+**Answer: 4** - 学 (ガク) + 生 (セイ).
 
 ### Q2
 
 きのう <u>先生</u> に あいました。
 
-1. せんせい
+1. せんせえ
 2. せんぜい
 3. せんせ
-4. せんせえ
+4. せんせい
 
-**Answer: 1** - 先 (セン) + 生 (セイ).
+**Answer: 4** - 先 (セン) + 生 (セイ).
 
 ### Q3
 
@@ -75,10 +75,10 @@ All three types are acceptable because the question asks "which kanji visually b
 
 1. かっこう
 2. がっこ
-3. がっこう
-4. かっこ
+3. かっこ
+4. がっこう
 
-**Answer: 3** - 学 (ガッ) + 校 (コウ), small っ.
+**Answer: 4** - 学 (ガッ) + 校 (コウ), small っ.
 
 ### Q4
 
@@ -107,22 +107,22 @@ All three types are acceptable because the question asks "which kanji visually b
 <u>日本</u> に すんで います。
 
 1. にっほん
-2. にほん
+2. にぼん
 3. ひほん
-4. にぼん
+4. にほん
 
-**Answer: 2** - 日本 = にほん. (The reading にっぽん also exists for formal/political contexts but is not in the answer choices.)
+**Answer: 4** - 日本 = にほん. (The reading にっぽん also exists for formal/political contexts but is not in the answer choices.)
 
 ### Q7
 
 <u>日本語</u> が すこし わかります。
 
 1. にほんごう
-2. にほんご
+2. にぼんご
 3. にっぽんご
-4. にぼんご
+4. にほんご
 
-**Answer: 2** - 日本 (にほん) + 語 (ゴ).
+**Answer: 4** - 日本 (にほん) + 語 (ゴ).
 
 ### Q8
 

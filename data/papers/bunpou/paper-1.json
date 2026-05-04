@@ -109,12 +109,12 @@
       "type": "mcq",
       "stem_html": "きょうしつ（　　）日本語を べんきょうします。",
       "choices": [
-        "で",
+        "に",
         "へ",
         "を",
-        "に"
+        "で"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "location of action (where you do it).",
       "kbSourceId": "Q8",
       "id": "bunpou-1.8"
@@ -123,12 +123,12 @@
       "type": "mcq",
       "stem_html": "としょかん（　　）本を よみます。",
       "choices": [
-        "で",
+        "に",
         "へ",
         "を",
-        "に"
+        "で"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "location of action.",
       "kbSourceId": "Q9",
       "id": "bunpou-1.9"
@@ -137,12 +137,12 @@
       "type": "mcq",
       "stem_html": "たなかさん（　　）アメリカへ いきました。",
       "choices": [
-        "は",
+        "を",
         "に",
         "が",
-        "を"
+        "は"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "new topic (or focus).",
       "kbSourceId": "Q10",
       "id": "bunpou-1.10"
@@ -151,12 +151,12 @@
       "type": "mcq",
       "stem_html": "つくえの 上に 本（　　）あります。",
       "choices": [
-        "が",
-        "を",
         "に",
+        "を",
+        "が",
         "は"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "existence subject.",
       "kbSourceId": "Q11",
       "id": "bunpou-1.11"
