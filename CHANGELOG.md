@@ -2,6 +2,53 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.6 - 2026-05-04 (KB-only audit alignment - dokkai header self-verifying)
+
+Fixes a real internal contradiction in `dokkai_questions_n5.md` that
+KB-only audit pipelines (auditors who only see `KnowledgeBank/*.md`
+without `data/*.json`) couldn't resolve.
+
+The header at line 17 listed the dokkai-kanji exception register's
+**original 25 kanji** ("currently covers: 京, 作, ... 同"). When the
+register was extended to 28 kanji (向, 央, 付 added in commit b93ca01
+on 2026-05-03 per moji-and-source audit §2.2), the JSON was updated
+but the MD header wasn't. A trailing HTML comment was added at the
+bottom announcing the extension, but the header remained stale.
+
+For an auditor with only KB files (no data/), this read as:
+  Header says 25 kanji.
+  Comment at the bottom says "extended with 向, 央, 付".
+  No way to verify which is correct without the JSON.
+  Auditor reports: "JSON unchanged at 25; comment claims 28."
+
+Fix: header line 17 now lists all **28 kanji** with inline rationale
+for the 3 additions. Trailing marker comment removed (header is now
+the single source of truth within KB-only view; JSON remains the
+machine-tracked authoritative list).
+
+### File changes
+
+  KnowledgeBank/dokkai_questions_n5.md
+    Line 17: kanji list 25 -> 28; added 向 / 央 / 付 with brief
+             "added on 2026-05-03 §2.2" attribution.
+    Line 1631: trailing HTML marker comment removed (now redundant
+             with the updated header).
+
+### Verification
+
+  - data/dokkai_kanji_exception.json was already at 28 entries
+    (since commit b93ca01); this commit synchronizes the MD header
+    with that state.
+  - tools/check_content_integrity.py -> 40/40 invariants PASS
+  - JA-28 (dokkai-paper kanji bounded by N5 + exception list) -> PASS
+  - KB-only audit upload now sees consistent state without needing
+    the JSON.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v115 -> v116
+  - index.html cache-busters:    v=1.11.25 -> v=1.11.26
+
 ## v1.12.5 - 2026-05-04 (Open-bug-list Bug 8 closed - filename rename)
 
 Closes the deferred Bug 8 from v1.12.4. The file

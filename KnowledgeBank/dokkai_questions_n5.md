@@ -14,7 +14,7 @@
 
 - Each passage is shown in a blockquote (`>`) so it visually mirrors the test paper.
 - Questions follow each passage. Choices are numbered 1-4. **Answer**: shows the correct number.
-- Passages use predominantly N5-syllabus kanji and N5 vocabulary. **Naturalness exception (formalized 2026-05-02):** authentic JLPT N5 reading passages routinely use a small number of common non-N5 kanji where forcing kana would harm readability. The full exception list is machine-tracked in `data/dokkai_kanji_exception.json` and currently covers: 京, 作, 使, 図, 院, 回, 教, 楽, 病, 終, 自, 阪, 館, 黒, 犬, 妹, 家, 弁, 当, 思, 朝, 近, 紙, 青, 同. JA-28 (in `tools/check_content_integrity.py`) enforces that `data/papers/dokkai/*.json` cannot introduce non-N5 kanji outside this list without explicit documentation. Bunpou / moji / goi stay strictly N5.
+- Passages use predominantly N5-syllabus kanji and N5 vocabulary. **Naturalness exception (formalized 2026-05-02):** authentic JLPT N5 reading passages routinely use a small number of common non-N5 kanji where forcing kana would harm readability. The full exception list is machine-tracked in `data/dokkai_kanji_exception.json` and currently covers **28 kanji**: 京, 作, 使, 図, 院, 回, 教, 楽, 病, 終, 自, 阪, 館, 黒, 犬, 妹, 家, 弁, 当, 思, 朝, 近, 紙, 青, 同, 向, 央, 付. (向 added for 〜向け target-audience compounds; 央 for 中央 proper nouns; 付 for 〜付き menu convention - all on 2026-05-03 audit §2.2.) JA-28 (in `tools/check_content_integrity.py`) enforces that `data/papers/dokkai/*.json` cannot introduce non-N5 kanji outside this list without explicit documentation. Bunpou / moji / goi stay strictly N5.
 - **Question-stem kanji policy (formalized 2026-05-01):** question stems may reuse any non-N5 kanji that already appears in the passage they reference, so the question phrasing stays parallel to the source text (e.g., a passage that uses 妹 may have a stem `この 人の 妹は 何を べんきょうしますか。`). Standalone non-N5 kanji that are NOT present in the corresponding passage are forbidden in stems and must be written in kana.
 - Distractor choices may contain non-N5 vocabulary where authentic JLPT distractor variety requires it (see header note in `moji_questions_n5.md` for the kanji-scope exception applied to question files).
 - No em dashes (U+2014) appear in this file.
@@ -1626,6 +1626,3 @@ This concludes the four-file question bank series:
 Total: **400 questions** across all four JLPT N5 written-test sections.
 
 Next steps tracked under `TASKS.md` Phase 2.9 (W1-W5): convert these MD banks into `data/questions.json` entries with a `category` field, update the test-engine UI to filter by category, and run lint over the imported set.
-
-
-<!-- 2026-05-03 audit §2.2: dokkai_kanji_exception.json extended with 向, 央, 付 (see WHY notes in that file). -->
