@@ -12,11 +12,11 @@
       "stem_html": "あの 人は <u>学生</u> です。",
       "choices": [
         "がくせ",
-        "がくせい",
         "かくせい",
+        "がくせい",
         "かくせ"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "rationale": "学 (ガク) + 生 (セイ).",
       "kbSourceId": "Q1",
       "id": "moji-1.1"
@@ -26,11 +26,11 @@
       "stem_html": "きのう <u>先生</u> に あいました。",
       "choices": [
         "せんせ",
-        "せんせい",
         "せんぜい",
+        "せんせい",
         "せんせえ"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "rationale": "先 (セン) + 生 (セイ).",
       "kbSourceId": "Q2",
       "id": "moji-1.2"
@@ -67,12 +67,12 @@
       "type": "mcq",
       "stem_html": "ちちは <u>会社員</u> です。",
       "choices": [
-        "かいしゃいん",
+        "かいさいん",
         "がいしゃいん",
         "かいしゃじん",
-        "かいさいん"
+        "かいしゃいん"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "会社 (かいしゃ) + 員 (イン).",
       "kbSourceId": "Q5",
       "id": "moji-1.5"
@@ -81,12 +81,12 @@
       "type": "mcq",
       "stem_html": "<u>日本</u> に すんで います。",
       "choices": [
-        "にほん",
+        "にっほん",
         "にぼん",
         "ひほん",
-        "にっほん"
+        "にほん"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "日本 = にほん. (The reading にっぽん also exists for formal/political contexts but is not in the answer choices.)",
       "kbSourceId": "Q6",
       "id": "moji-1.6"
@@ -123,12 +123,12 @@
       "type": "mcq",
       "stem_html": "きょうは <u>月曜日</u> です。",
       "choices": [
-        "げつようび",
+        "げっつようび",
         "かようび",
         "もくようび",
-        "げっつようび"
+        "げつようび"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "月 (ゲツ) + 曜日 (ヨウビ).",
       "kbSourceId": "Q9",
       "id": "moji-1.9"
@@ -151,12 +151,12 @@
       "type": "mcq",
       "stem_html": "<u>金曜日</u> の よる、ともだちと あいます。",
       "choices": [
-        "きんようび",
+        "どようび",
         "かようび",
         "げつようび",
-        "どようび"
+        "きんようび"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "金 (キン) + 曜日.",
       "kbSourceId": "Q11",
       "id": "moji-1.11"
@@ -179,12 +179,12 @@
       "type": "mcq",
       "stem_html": "<u>日曜日</u> に かぞくと こうえんへ いきました。",
       "choices": [
-        "にちようび",
+        "にっようび",
         "げつようび",
         "ひようび",
-        "にっようび"
+        "にちようび"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "日 (ニチ) + 曜日.",
       "kbSourceId": "Q13",
       "id": "moji-1.13"
@@ -207,12 +207,12 @@
       "type": "mcq",
       "stem_html": "<u>九月</u> に がっこうが はじまります。",
       "choices": [
-        "くがつ",
+        "くつき",
         "きゅうがつ",
         "ここのがつ",
-        "くつき"
+        "くがつ"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "九 has reading ク in 九月; 月 reads ガツ for months.",
       "kbSourceId": "Q15",
       "id": "moji-1.15"

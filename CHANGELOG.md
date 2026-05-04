@@ -2,6 +2,121 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.18 - 2026-05-04 (Moji first-pass review - 5 item fixes + 37 permutation rebalance)
+
+First audit pass on the moji corpus (Mondai 1 + Mondai 2). Reviewer
+characterized item-level quality as "in fact better than the goi
+corpus's first pass, especially in the visual-confusion items" and
+flagged one major must-fix (position distribution) plus four polish-
+grade item tweaks plus one stem naturalness rewrite.
+
+### Position-distribution rebalance (37 permutations)
+
+  Before:  56 / 31 / 12 /  1   (positions A / B / C / D, total 100)
+  After:   25 / 25 / 25 / 25   (target distribution)
+
+  Per-section breakdown:
+    Mondai 1 (Q1-50):   27/15/7/1 -> 13/13/12/12
+    Mondai 2 (Q51-100): 29/16/5/0 -> 12/12/13/13   (closes the
+                                                    zero-D anomaly)
+
+  37 mechanical choice-order permutations on unconstrained items.
+  Choice CONTENT is unchanged; only the order changes. correctIndex
+  updated in JSON, numbered list reordered in MD, **Answer: N**
+  updated to match.
+
+  Permutations applied (37 total):
+    Mondai 1 (16 moves):
+      A -> D (11): Q5, Q6, Q9, Q11, Q13, Q15, Q18, Q21, Q23, Q26, Q28
+      A -> C (3):  Q33, Q36, Q37
+      B -> C (2):  Q1, Q2
+    Mondai 2 (21 moves):
+      A -> D (13): Q52, Q53, Q58, Q60, Q62, Q63, Q65, Q66, Q67, Q70,
+                   Q71, Q75, Q77
+      A -> C (4):  Q78, Q81, Q83, Q85
+      B -> C (4):  Q51, Q56, Q61, Q64
+
+  Skipped (visual-confusion + homophone clusters - reviewer
+  characterized these as "the strongest part of the corpus", their
+  carefully-arranged choice order is itself a pedagogical asset):
+    Q54 力 vs 刀/万/方
+    Q55 大人 vs 太人/大入/太入
+    Q59 人 vs 入/八/大
+    Q73 午前 vs 牛前
+    Q79 駅 vs 馬/駄/訳
+    Q89 行きます vs 生きます (homophone)
+    Q92 立ちます vs 起ちます/経ちます/建ちます (homophone)
+    Q93 休 vs 体
+    Q95 買います vs 飼います (homophone)
+    Q99 白 vs 百/自/旧
+
+  Per-section balance achieved by walking unconstrained items in
+  Q-number order at each surplus position and distributing to
+  deficit positions, prioritizing the lowest-current-count slot
+  first (closes Mondai 2 zero-D anomaly). Algorithm captured in
+  TARGET_INDEX dict in the fix script.
+
+### Item-level fixes (5)
+
+  Q19 / moji-2.4   stem rewrite (naturalness)
+    Old stem: <u>今年</u> は さむいです。
+    New stem: <u>今年</u>の ふゆは さむいです。
+    Reason: さむい normally describes a moment, not a year-long
+    state. Anchoring to ふゆ makes the cold-temperature claim
+    natural. Reading test point (今年 -> ことし) unchanged.
+
+  Q55 / moji-4.10  rationale: jukujikun acknowledgement
+    Stem and choices unchanged. The compound 大人 / おとな is a
+    semantic compound reading (jukujikun); the kanji are individually
+    N5 but the compound reading is irregular. Rationale now
+    acknowledges this and notes the compound is documented as an
+    N5 vocab entry in vocabulary_n5.md.
+
+  Q57 / moji-4.12  rationale: distractor whitelist note
+    Stem and choices unchanged. The distractor 妹 (younger sister)
+    is not in the N5 kanji whitelist. Rationale now notes this
+    explicitly per the moji-corpus kanji-scope exception (Mondai 2
+    distractors may use non-whitelist kanji where authentic JLPT
+    format requires it).
+
+  Q78 / moji-6.3   rationale: semantic-distractor explanation +
+                   permuted A -> C
+    Stem unchanged; choices reordered (rebalance). 道 is whitelisted
+    N5 and in vocabulary_n5.md. The distractors 通 / 路 / 行 are
+    family-of-meaning N4+ alternatives. Rationale explains the
+    semantic-distractor design and confirms 道 is the N5 target.
+
+  Q92 / moji-7.2   rationale: stronger trap wording
+    Stem and choices unchanged. The distractors 起ちます / 経ちます
+    / 建ちます are real Japanese verbs also read たちます but N3+
+    in scope. Rationale now spells out the polysemy and notes that
+    broader-exposure students should not be misled.
+
+### Coverage summary
+
+With this release the four-Mondai vocabulary section is structurally
+complete and corpus-balanced:
+
+  | Mondai | File                       | Items | Distribution         |
+  |--------|----------------------------|-------|----------------------|
+  | 1      | moji_questions_n5.md       | 50    | 13 / 13 / 12 / 12    |
+  | 2      | moji_questions_n5.md       | 50    | 12 / 12 / 13 / 13    |
+  | 3      | goi_questions_n5.md        | 50    | (part of 25/25/25/25)|
+  | 4      | goi_questions_n5.md        | 50    | (part of 25/25/25/25)|
+
+The reviewer's "structural gap" flag from earlier passes is fully
+closed.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v128 -> v129
+  - index.html cache-busters:    v=1.11.38 -> v=1.11.39
+  - 41/41 invariants PASS (incl. JA-32 lock-step MD<->JSON parity)
+  - Fix script idempotent (2nd run reports "No changes").
+  - Final answer-position distribution: 25 / 25 / 25 / 25.
+
+---
+
 ## v1.12.17 - 2026-05-04 (Goi fourth-pass review - Q64 N4 potential + 25/25/25/25 rebalance)
 
 Fourth-pass walk-through identified two issues. Both addressed.

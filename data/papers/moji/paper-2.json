@@ -39,19 +39,19 @@
       "type": "mcq",
       "stem_html": "<u>今日</u> は とても いい てんきです。",
       "choices": [
-        "きょう",
+        "きょうび",
         "こんにち",
         "こんじつ",
-        "きょうび"
+        "きょう"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "今日 is read きょう (irregular jukujikun).",
       "kbSourceId": "Q18",
       "id": "moji-2.3"
     },
     {
       "type": "mcq",
-      "stem_html": "<u>今年</u> は さむいです。",
+      "stem_html": "<u>今年</u>の ふゆは さむいです。",
       "choices": [
         "こんねん",
         "ことし",
@@ -59,7 +59,7 @@
         "きんねん"
       ],
       "correctIndex": 1,
-      "rationale": "今年 is read ことし (irregular).",
+      "rationale": "今年 is read ことし (irregular jukujikun reading).",
       "kbSourceId": "Q19",
       "id": "moji-2.4"
     },
@@ -81,12 +81,12 @@
       "type": "mcq",
       "stem_html": "<u>来週</u> りょこうに いきます。",
       "choices": [
-        "らいしゅう",
+        "らいしゅ",
         "こんしゅう",
         "せんしゅう",
-        "らいしゅ"
+        "らいしゅう"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "来 (ライ) + 週 (シュウ).",
       "kbSourceId": "Q21",
       "id": "moji-2.6"
@@ -109,12 +109,12 @@
       "type": "mcq",
       "stem_html": "<u>午前</u> くじに がっこうへ いきます。",
       "choices": [
-        "ごぜん",
+        "くぜん",
         "ごご",
         "しょうご",
-        "くぜん"
+        "ごぜん"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "午 (ゴ) + 前 (ゼン).",
       "kbSourceId": "Q23",
       "id": "moji-2.8"
@@ -151,12 +151,12 @@
       "type": "mcq",
       "stem_html": "きょうは <u>何曜日</u> ですか。",
       "choices": [
-        "なんようび",
+        "どようび",
         "なにようび",
         "かようび",
-        "どようび"
+        "なんようび"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "何 (なん) + 曜日.",
       "kbSourceId": "Q26",
       "id": "moji-2.11"
@@ -179,12 +179,12 @@
       "type": "mcq",
       "stem_html": "つくえの <u>上</u> に ほんが あります。",
       "choices": [
-        "うえ",
+        "うる",
         "うへ",
         "うい",
-        "うる"
+        "うえ"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "上 (うえ).",
       "kbSourceId": "Q28",
       "id": "moji-2.13"

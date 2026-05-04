@@ -39,12 +39,12 @@
       "type": "mcq",
       "stem_html": "学校の <u>後ろ</u> に こうえんが あります。",
       "choices": [
-        "うしろ",
-        "うしる",
         "あしろ",
+        "うしる",
+        "うしろ",
         "うじろ"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "後ろ (うしろ) - kun-yomi reading.",
       "kbSourceId": "Q33",
       "id": "moji-3.3"
@@ -81,12 +81,12 @@
       "type": "mcq",
       "stem_html": "<u>山</u> の うえに ゆきが あります。",
       "choices": [
-        "やま",
-        "やめ",
         "やみ",
+        "やめ",
+        "やま",
         "やも"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "山 (やま).",
       "kbSourceId": "Q36",
       "id": "moji-3.6"
@@ -95,12 +95,12 @@
       "type": "mcq",
       "stem_html": "<u>川</u> で さかなを みました。",
       "choices": [
-        "かわ",
-        "かは",
         "かれ",
+        "かは",
+        "かわ",
         "かや"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "川 (かわ).",
       "kbSourceId": "Q37",
       "id": "moji-3.7"

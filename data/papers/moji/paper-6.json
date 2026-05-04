@@ -25,12 +25,12 @@
       "type": "mcq",
       "stem_html": "きのう __くるま__ を 買いました。",
       "choices": [
-        "車",
+        "中",
         "東",
         "来",
-        "中"
+        "車"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "車.",
       "kbSourceId": "Q77",
       "id": "moji-6.2"
@@ -39,13 +39,13 @@
       "type": "mcq",
       "stem_html": "がっこうへ いく __みち__ で 友だちに あいました。",
       "choices": [
-        "道",
-        "通",
         "路",
+        "通",
+        "道",
         "行"
       ],
-      "correctIndex": 0,
-      "rationale": "道.",
+      "correctIndex": 2,
+      "rationale": "道 (みち - road, way). 道 is whitelisted N5 (kanji whitelist line 98) and listed at vocabulary_n5.md. The distractors 通 / 路 / 行 are family-of-meaning alternatives commonly seen in N4+ vocabulary (通る / 通り pass through, 道路 / 路上 road, 行く go). The semantic-distractor design tests whether the student knows 道 specifically rather than just recognizing the \"road / way\" semantic field.",
       "kbSourceId": "Q78",
       "id": "moji-6.3"
     },
@@ -81,12 +81,12 @@
       "type": "mcq",
       "stem_html": "ばんごはんを いまから __たべます__。",
       "choices": [
-        "食べます",
-        "飲べます",
         "飯べます",
+        "飲べます",
+        "食べます",
         "喫べます"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "食べます.",
       "kbSourceId": "Q81",
       "id": "moji-6.6"
@@ -109,12 +109,12 @@
       "type": "mcq",
       "stem_html": "ニュースを テレビで __みます__。",
       "choices": [
-        "見ます",
-        "観ます",
         "視ます",
+        "観ます",
+        "見ます",
         "看ます"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "N5 standard 見ます.",
       "kbSourceId": "Q83",
       "id": "moji-6.8"
@@ -137,12 +137,12 @@
       "type": "mcq",
       "stem_html": "にほんごで __はなします__。",
       "choices": [
-        "話します",
-        "放します",
         "離します",
+        "放します",
+        "話します",
         "講します"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "話します.",
       "kbSourceId": "Q85",
       "id": "moji-6.10"

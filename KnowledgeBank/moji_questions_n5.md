@@ -52,22 +52,22 @@ All three types are acceptable because the question asks "which kanji visually b
 あの 人は <u>学生</u> です。
 
 1. がくせ
-2. がくせい
-3. かくせい
+2. かくせい
+3. がくせい
 4. かくせ
 
-**Answer: 2** - 学 (ガク) + 生 (セイ).
+**Answer: 3** - 学 (ガク) + 生 (セイ).
 
 ### Q2
 
 きのう <u>先生</u> に あいました。
 
 1. せんせ
-2. せんせい
-3. せんぜい
+2. せんぜい
+3. せんせい
 4. せんせえ
 
-**Answer: 2** - 先 (セン) + 生 (セイ).
+**Answer: 3** - 先 (セン) + 生 (セイ).
 
 ### Q3
 
@@ -95,23 +95,23 @@ All three types are acceptable because the question asks "which kanji visually b
 
 ちちは <u>会社員</u> です。
 
-1. かいしゃいん
+1. かいさいん
 2. がいしゃいん
 3. かいしゃじん
-4. かいさいん
+4. かいしゃいん
 
-**Answer: 1** - 会社 (かいしゃ) + 員 (イン).
+**Answer: 4** - 会社 (かいしゃ) + 員 (イン).
 
 ### Q6
 
 <u>日本</u> に すんで います。
 
-1. にほん
+1. にっほん
 2. にぼん
 3. ひほん
-4. にっほん
+4. にほん
 
-**Answer: 1** - 日本 = にほん. (The reading にっぽん also exists for formal/political contexts but is not in the answer choices.)
+**Answer: 4** - 日本 = にほん. (The reading にっぽん also exists for formal/political contexts but is not in the answer choices.)
 
 ### Q7
 
@@ -139,12 +139,12 @@ All three types are acceptable because the question asks "which kanji visually b
 
 きょうは <u>月曜日</u> です。
 
-1. げつようび
+1. げっつようび
 2. かようび
 3. もくようび
-4. げっつようび
+4. げつようび
 
-**Answer: 1** - 月 (ゲツ) + 曜日 (ヨウビ).
+**Answer: 4** - 月 (ゲツ) + 曜日 (ヨウビ).
 
 ### Q10
 
@@ -161,12 +161,12 @@ All three types are acceptable because the question asks "which kanji visually b
 
 <u>金曜日</u> の よる、ともだちと あいます。
 
-1. きんようび
+1. どようび
 2. かようび
 3. げつようび
-4. どようび
+4. きんようび
 
-**Answer: 1** - 金 (キン) + 曜日.
+**Answer: 4** - 金 (キン) + 曜日.
 
 ### Q12
 
@@ -183,12 +183,12 @@ All three types are acceptable because the question asks "which kanji visually b
 
 <u>日曜日</u> に かぞくと こうえんへ いきました。
 
-1. にちようび
+1. にっようび
 2. げつようび
 3. ひようび
-4. にっようび
+4. にちようび
 
-**Answer: 1** - 日 (ニチ) + 曜日.
+**Answer: 4** - 日 (ニチ) + 曜日.
 
 ### Q14
 
@@ -205,12 +205,12 @@ All three types are acceptable because the question asks "which kanji visually b
 
 <u>九月</u> に がっこうが はじまります。
 
-1. くがつ
+1. くつき
 2. きゅうがつ
 3. ここのがつ
-4. くつき
+4. くがつ
 
-**Answer: 1** - 九 has reading ク in 九月; 月 reads ガツ for months.
+**Answer: 4** - 九 has reading ク in 九月; 月 reads ガツ for months.
 
 ### Q16
 
@@ -238,23 +238,23 @@ All three types are acceptable because the question asks "which kanji visually b
 
 <u>今日</u> は とても いい てんきです。
 
-1. きょう
+1. きょうび
 2. こんにち
 3. こんじつ
-4. きょうび
+4. きょう
 
-**Answer: 1** - 今日 is read きょう (irregular jukujikun).
+**Answer: 4** - 今日 is read きょう (irregular jukujikun).
 
 ### Q19
 
-<u>今年</u> は さむいです。
+<u>今年</u>の ふゆは さむいです。
 
 1. こんねん
 2. ことし
 3. いまとし
 4. きんねん
 
-**Answer: 2** - 今年 is read ことし (irregular).
+**Answer: 2** - 今年 is read ことし (irregular jukujikun reading).
 
 ### Q20
 
@@ -271,12 +271,12 @@ All three types are acceptable because the question asks "which kanji visually b
 
 <u>来週</u> りょこうに いきます。
 
-1. らいしゅう
+1. らいしゅ
 2. こんしゅう
 3. せんしゅう
-4. らいしゅ
+4. らいしゅう
 
-**Answer: 1** - 来 (ライ) + 週 (シュウ).
+**Answer: 4** - 来 (ライ) + 週 (シュウ).
 
 ### Q22
 
@@ -293,12 +293,12 @@ All three types are acceptable because the question asks "which kanji visually b
 
 <u>午前</u> くじに がっこうへ いきます。
 
-1. ごぜん
+1. くぜん
 2. ごご
 3. しょうご
-4. くぜん
+4. ごぜん
 
-**Answer: 1** - 午 (ゴ) + 前 (ゼン).
+**Answer: 4** - 午 (ゴ) + 前 (ゼン).
 
 ### Q24
 
@@ -326,12 +326,12 @@ All three types are acceptable because the question asks "which kanji visually b
 
 きょうは <u>何曜日</u> ですか。
 
-1. なんようび
+1. どようび
 2. なにようび
 3. かようび
-4. どようび
+4. なんようび
 
-**Answer: 1** - 何 (なん) + 曜日.
+**Answer: 4** - 何 (なん) + 曜日.
 
 ### Q27
 
@@ -348,12 +348,12 @@ All three types are acceptable because the question asks "which kanji visually b
 
 つくえの <u>上</u> に ほんが あります。
 
-1. うえ
+1. うる
 2. うへ
 3. うい
-4. うる
+4. うえ
 
-**Answer: 1** - 上 (うえ).
+**Answer: 4** - 上 (うえ).
 
 ### Q29
 
@@ -403,12 +403,12 @@ All three types are acceptable because the question asks "which kanji visually b
 
 学校の <u>後ろ</u> に こうえんが あります。
 
-1. うしろ
+1. あしろ
 2. うしる
-3. あしろ
+3. うしろ
 4. うじろ
 
-**Answer: 1** - 後ろ (うしろ) - kun-yomi reading.
+**Answer: 3** - 後ろ (うしろ) - kun-yomi reading.
 
 ### Q34
 
@@ -436,23 +436,23 @@ All three types are acceptable because the question asks "which kanji visually b
 
 <u>山</u> の うえに ゆきが あります。
 
-1. やま
+1. やみ
 2. やめ
-3. やみ
+3. やま
 4. やも
 
-**Answer: 1** - 山 (やま).
+**Answer: 3** - 山 (やま).
 
 ### Q37
 
 <u>川</u> で さかなを みました。
 
-1. かわ
+1. かれ
 2. かは
-3. かれ
+3. かわ
 4. かや
 
-**Answer: 1** - 川 (かわ).
+**Answer: 3** - 川 (かわ).
 
 ### Q38
 
@@ -608,33 +608,33 @@ All three types are acceptable because the question asks "which kanji visually b
 あの __がくせい__ は とても しんせつです。
 
 1. 学先
-2. 学生
-3. 字生
+2. 字生
+3. 学生
 4. 字先
 
-**Answer: 2** - 学 (study) + 生 (life / student).
+**Answer: 3** - 学 (study) + 生 (life / student).
 
 ### Q52
 
 __せんせい__ に しつもんを しました。
 
-1. 先生
+1. 先成
 2. 先正
 3. 元生
-4. 先成
+4. 先生
 
-**Answer: 1** - 先生 (teacher).
+**Answer: 4** - 先生 (teacher).
 
 ### Q53
 
 __がっこう__ で にほんごを べんきょうします。
 
-1. 学校
+1. 字交
 2. 字校
 3. 学交
-4. 字交
+4. 学校
 
-**Answer: 1** - 学校 (school).
+**Answer: 4** - 学校 (school).
 
 ### Q54
 
@@ -656,18 +656,18 @@ __がっこう__ で にほんごを べんきょうします。
 3. 大入
 4. 太入
 
-**Answer: 1** - 大人 (おとな - adult; 大 + 人, both N5).
+**Answer: 1** - 大人 (おとな - adult). Jukujikun (semantic compound reading): the kanji 大 and 人 are individually N5, but the compound reading おとな is irregular. The compound is documented as an N5 vocab entry in vocabulary_n5.md; the irregular-reading pattern is standard for N5 family/age vocabulary.
 
 ### Q56
 
 うちの __ちち__ は かいしゃいんです。
 
 1. 母
-2. 父
-3. 兄
+2. 兄
+3. 父
 4. 友
 
-**Answer: 2** - 父 (father).
+**Answer: 3** - 父 (father).
 
 ### Q57
 
@@ -678,18 +678,18 @@ __はは__ は 学校の 先生です。
 3. 母
 4. 友
 
-**Answer: 3** - 母 (mother).
+**Answer: 3** - 母 (mother). Note: distractor 妹 is not in the kanji whitelist - it appears as a recognition-only distractor per the moji-corpus kanji-scope exception (Mondai 2 distractors may use non-whitelist kanji where authentic JLPT format requires it). Students do not need to read 妹 to reject it; family-relation kanji shape suffices.
 
 ### Q58
 
 ごはんの まえに __て__ を あらいます。
 
-1. 手
+1. 千
 2. 毛
 3. 牛
-4. 千
+4. 手
 
-**Answer: 1** - 手 (hand, N5).
+**Answer: 4** - 手 (hand, N5).
 
 ### Q59
 
@@ -706,89 +706,89 @@ __ひと__ が おおぜい います。
 
 __おとこ__ の こが あそんで います。
 
-1. 男
+1. 文
 2. 田
 3. 力
-4. 文
+4. 男
 
-**Answer: 1** - 男 (man / male).
+**Answer: 4** - 男 (man / male).
 
 ### Q61
 
 __おんな__ の 学生が きました。
 
 1. 母
-2. 女
-3. 安
+2. 安
+3. 女
 4. 好
 
-**Answer: 2** - 女 (woman / female).
+**Answer: 3** - 女 (woman / female).
 
 ### Q62
 
 うちには __こども__ が ふたり います。
 
-1. 子ども
+1. 子供
 2. 字ども
 3. 小ども
-4. 子供
+4. 子ども
 
-**Answer: 1** - 子ども is selected here because it follows this corpus's N5-only-kanji policy (供 is N4). Both 子供 and 子ども are standard in modern Japanese, and on the actual JLPT both forms appear; the choice between them is a corpus-internal scope rule, not a correctness rule.
+**Answer: 4** - 子ども is selected here because it follows this corpus's N5-only-kanji policy (供 is N4). Both 子供 and 子ども are standard in modern Japanese, and on the actual JLPT both forms appear; the choice between them is a corpus-internal scope rule, not a correctness rule.
 
 ### Q63
 
 __にほん__ に すんで います。
 
-1. 日本
+1. 月木
 2. 月本
 3. 日木
-4. 月木
+4. 日本
 
-**Answer: 1** - 日本 (Japan).
+**Answer: 4** - 日本 (Japan).
 
 ### Q64
 
 __にほんご__ で 話します。
 
 1. 日本後
-2. 日本語
-3. 月本語
+2. 月本語
+3. 日本語
 4. 日本話
 
-**Answer: 2** - 日本語 (Japanese language).
+**Answer: 3** - 日本語 (Japanese language).
 
 ### Q65
 
 __がいこく__ で しごとを して います。
 
-1. 外国
+1. 外区
 2. 内国
 3. 外校
-4. 外区
+4. 外国
 
-**Answer: 1** - 外 + 国.
+**Answer: 4** - 外 + 国.
 
 ### Q66
 
 きょうは __なんようび__ ですか。
 
-1. 何曜日
+1. 木曜日
 2. 月曜日
 3. 火曜日
-4. 木曜日
+4. 何曜日
 
-**Answer: 1** - 何曜日.
+**Answer: 4** - 何曜日.
 
 ### Q67
 
 きょうは __かようび__ です。
 
-1. 火曜日
+1. 金曜日
 2. 水曜日
 3. 木曜日
-4. 金曜日
+4. 火曜日
 
-**Answer: 1** - 火曜日.
+**Answer: 4** - 火曜日.
 
 ### Q68
 
@@ -816,23 +816,23 @@ __きょう__ は とても いい てんきです。
 
 __らいねん__ に だいがくに いきます。
 
-1. 来年
+1. 毎年
 2. 今年
 3. 先年
-4. 毎年
+4. 来年
 
-**Answer: 1** - 来年.
+**Answer: 4** - 来年.
 
 ### Q71
 
 __せんしゅう__ えいがを 見ました。
 
-1. 先週
+1. 毎週
 2. 来週
 3. 今週
-4. 毎週
+4. 先週
 
-**Answer: 1** - 先週.
+**Answer: 4** - 先週.
 
 ### Q72
 
@@ -871,12 +871,12 @@ __ごご__ に 友だちが きます。
 
 __でんしゃ__ の なかで 本を 読みます。
 
-1. 電車
+1. 田車
 2. 雨車
 3. 電東
-4. 田車
+4. 電車
 
-**Answer: 1** - 電車.
+**Answer: 4** - 電車.
 
 ### Q76
 
@@ -893,23 +893,23 @@ __でんわ__ で 友だちと 話します。
 
 きのう __くるま__ を 買いました。
 
-1. 車
+1. 中
 2. 東
 3. 来
-4. 中
+4. 車
 
-**Answer: 1** - 車.
+**Answer: 4** - 車.
 
 ### Q78
 
 がっこうへ いく __みち__ で 友だちに あいました。
 
-1. 道
+1. 路
 2. 通
-3. 路
+3. 道
 4. 行
 
-**Answer: 1** - 道.
+**Answer: 3** - 道 (みち - road, way). 道 is whitelisted N5 (kanji whitelist line 98) and listed at vocabulary_n5.md. The distractors 通 / 路 / 行 are family-of-meaning alternatives commonly seen in N4+ vocabulary (通る / 通り pass through, 道路 / 路上 road, 行く go). The semantic-distractor design tests whether the student knows 道 specifically rather than just recognizing the "road / way" semantic field.
 
 ### Q79
 
@@ -937,12 +937,12 @@ __みせ__ は えきの まえに あります。
 
 ばんごはんを いまから __たべます__。
 
-1. 食べます
+1. 飯べます
 2. 飲べます
-3. 飯べます
+3. 食べます
 4. 喫べます
 
-**Answer: 1** - 食べます.
+**Answer: 3** - 食べます.
 
 ### Q82
 
@@ -959,12 +959,12 @@ __みせ__ は えきの まえに あります。
 
 ニュースを テレビで __みます__。
 
-1. 見ます
+1. 視ます
 2. 観ます
-3. 視ます
+3. 見ます
 4. 看ます
 
-**Answer: 1** - N5 standard 見ます.
+**Answer: 3** - N5 standard 見ます.
 
 ### Q84
 
@@ -981,12 +981,12 @@ __みせ__ は えきの まえに あります。
 
 にほんごで __はなします__。
 
-1. 話します
+1. 離します
 2. 放します
-3. 離します
+3. 話します
 4. 講します
 
-**Answer: 1** - 話します.
+**Answer: 3** - 話します.
 
 ### Q86
 
@@ -1063,7 +1063,7 @@ __みせ__ は えきの まえに あります。
 3. 経ちます
 4. 建ちます
 
-**Answer: 1** - 立ちます (N5 sense).
+**Answer: 1** - 立ちます (stand up - the everyday N5 sense of たつ). The other forms 起ちます / 経ちます / 建ちます are real Japanese verbs also read たちます (rise up / time passes / a building stands) but are N3+ in scope. Broader-exposure students should not be misled by the polysemy; for N5 the 立 form is the only correct match for "students stand up when the teacher enters".
 
 ### Q93
 
