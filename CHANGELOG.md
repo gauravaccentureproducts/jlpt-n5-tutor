@@ -2,6 +2,75 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.7 - 2026-05-04 (Data folder bugs - n5-188 audio + whitelist design doc)
+
+Closes 2 bugs from the 2026-05-04 data-folder audit.
+
+### Bug 1 (LOW) - n5-188 audio synthesis sync lag
+
+The new pattern n5-188 (Verb + ことができる, shipped in v1.12.3) had 3
+grammar examples in `data/grammar.json` but no corresponding entries in
+`data/audio_manifest.json` and no MP3 files on disk. New-pattern
+audio-synthesis lag.
+
+Fix:
+  - Rendered 3 MP3s via gTTS (Japanese voice, synthetic-gtts backend
+    matching the convention used for n5-001..n5-187):
+      audio/grammar/n5-188.0.mp3  (23,424 bytes — 日本語を 話す...)
+      audio/grammar/n5-188.1.mp3  (21,696 bytes — ピアノを ひく...)
+      audio/grammar/n5-188.2.mp3  (20,544 bytes — あした 行く...)
+  - Added 3 manifest entries pointing at the new files with
+    skipped=false (audio actually exists on disk).
+
+User-visible effect: the n5-188 example player works on the Grammar
+detail page after SW cache refresh.
+
+### Bug 2 (MEDIUM) - whitelist appears to drift from vocab.json
+
+Auditor report: 40 entries in `data/n5_vocab_whitelist.json` don't
+appear as form/reading in any `data/vocab.json` entry.
+
+Investigation:
+  `data/n5_vocab_whitelist.json` is **generated** from
+  `KnowledgeBank/vocabulary_n5.md` by `tools/build_data.py`. The
+  whitelist's purpose is to serve as the **recognition allowlist** for
+  `tools/lint_content.py` when checking N5-scope conformance — distinct
+  from `data/vocab.json`'s role as the structured catalog. The
+  whitelist is **intentionally a superset** of vocab.json forms.
+
+Categorization of the 40:
+  - **10 multi-form aliases** (by design): いい, いえ, ぐらい, けれど,
+    ござる, じゃあ, では, みんな, やはり, ゼロ. Each has a canonical
+    counterpart in vocab.json (よい, うち, くらい, けど, ございます,
+    では, じゃ, みな, やっぱり, れい). vocabulary_n5.md lists them as
+    multi-form entries; build_data.py extracts both forms into the
+    whitelist. Expected behavior.
+  - **30 recognition-only items** (pending vocab.json authoring):
+    valid N5 vocab tokens (アルバイト, カフェ, コンサート, 出口,
+    高校生, 聞こえる, 週末, etc.) that appear in vocabulary_n5.md gloss
+    /example text and are recognized by the lint script, but lack full
+    structured `vocab.json` entries. Promotion to full entries is
+    future authoring work.
+
+Fix:
+  Shipped `data/n5_vocab_whitelist_README.md` documenting the design
+  rationale, the two-category breakdown, and the maintenance protocol.
+  Future audits running KB-only or data-only checks will see the
+  README and understand the superset relationship as design rather
+  than drift.
+
+  No data-content changes — the whitelist is correct as a generated
+  artifact. vocab.json is correct as a curated catalog. The two
+  files have distinct, complementary roles.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v116 -> v117
+  - index.html cache-busters:    v=1.11.26 -> v=1.11.27
+  - tools/check_content_integrity.py -> 40/40 invariants PASS
+  - tools/fix_data_bugs_2026_05_04.py -> idempotent (0 edits on
+    second run)
+
 ## v1.12.6 - 2026-05-04 (KB-only audit alignment - dokkai header self-verifying)
 
 Fixes a real internal contradiction in `dokkai_questions_n5.md` that
