@@ -2,6 +2,68 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.13 - 2026-05-04 (Inference-paraphrase cluster tightened - 5 items)
+
+Follow-up to v1.12.12. The audit's "tighten at least two of them so
+the pattern doesn't dominate" recommendation has been honoured for
+all five inference-paraphrase items per the user's "fix all fixables"
+instruction. The v1.12.12 policy header that documented these items
+as deliberate inference convention has been replaced with a record of
+the tightening pass; the items are now true paraphrases, not
+inference-bridged ones.
+
+### Tightenings (5)
+
+  Q70 / goi-5.10  好き -> よく する
+    Old stem: たろうさんは スポーツが すきです。
+    New stem: たろうさんは スポーツが すきで、まいにち します。
+    Frequency clause makes 「よく する」 a direct paraphrase rather
+    than an inference from liking alone.
+
+  Q76 / goi-6.1   X より Y すき -> Y を よく 飲む
+    Old stem: わたしは おちゃより コーヒーの ほうが すきです。
+    New stem: わたしは おちゃより コーヒーの ほうが すきで、
+              まいにち 飲みます。
+    Frequency clause closes the preference-to-drinking gap.
+
+  Q86 / goi-6.11  電話を かける -> 電話で 話す
+    Old stem: 友だちに でんわを かけました。
+    New stem: 友だちに でんわを かけて、一時間 話しました。
+    Duration clause confirms a successful conversation, removing the
+    "called but no-one answered" inference gap.
+
+  Q97 / goi-7.7   じょうず -> 上手に 話す  (also: drops N4 potential)
+    Old stem:    たろうさんは 日本ごが じょうずです。
+    New stem:    たろうさんは 日本ごを 話すのが じょうずです。
+    Old keyed:   日本ごを よく 話せます (N4 potential form)
+    New keyed:   日本ごを 上手に 話します (N5 plain)
+    Scopes じょうず to speaking specifically (nominalized adj. vs.
+    adverbial — same skill, different syntactic frame). Bonus: the
+    keyed answer no longer relies on N4 potential 話せます.
+
+  Q100 / goi-7.10 ならって いる -> れんしゅう
+    Old stem: わたしは ピアノを ならって います。
+    New stem: わたしは ピアノを ならって、まいにち れんしゅうします。
+    Daily-practice clause makes 「れんしゅうを して いる」 a direct
+    paraphrase, not an inference from "is taking lessons".
+
+### Header policy revision
+
+The "Inference-style paraphrases" subsection in goi_questions_n5.md
+(added in v1.12.12) has been replaced with "Paraphrase-tightening
+pass (2026-05-04, v1.12.13)" recording what was changed. The previous
+policy framed these items as deliberate inference convention; after
+the rewrites that framing is no longer accurate.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v122 -> v123
+  - index.html cache-busters:    v=1.11.32 -> v=1.11.33
+  - 41/41 invariants PASS (incl. JA-32 lock-step MD↔JSON parity)
+  - Fix script idempotent (2nd run reports "No changes").
+
+---
+
 ## v1.12.12 - 2026-05-04 (Goi audit closure - 14 item fixes + 2 header policies)
 
 External native-speaker / JLPT-aligned auditor reviewed all 100 goi

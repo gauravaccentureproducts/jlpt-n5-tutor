@@ -93,15 +93,15 @@
     },
     {
       "type": "mcq",
-      "stem_html": "A: たろうさんは 日本ごが じょうずです。",
+      "stem_html": "A: たろうさんは 日本ごを 話すのが じょうずです。",
       "choices": [
-        "たろうさんは 日本ごが よく 話せます。",
+        "たろうさんは 日本ごを 上手に 話します。",
         "たろうさんは 日本ごが ぜんぜん わかりません。",
         "たろうさんは 日本ごが すきじゃ ありません。",
         "たろうさんは 日本ごを ならって います。"
       ],
       "correctIndex": 0,
-      "rationale": "日本語が上手 ≈ よく話せる. At N5, \"good at Japanese\" is paraphrased as \"can speak well\"; strictly 上手 covers all language skills (not just speaking).",
+      "rationale": "「話すのが じょうず」 = 「上手に 話す」. Same skill, different syntactic frame (nominalized adjective vs. adverbial). Strict-N5: also drops the potential form 話せます (N4) used in a previous version.",
       "kbSourceId": "Q97",
       "id": "goi-7.7"
     },
@@ -135,7 +135,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "A: わたしは ピアノを ならって います。",
+      "stem_html": "A: わたしは ピアノを ならって、 まいにち れんしゅうします。",
       "choices": [
         "わたしは ピアノが よく わかります。",
         "わたしは ピアノを 売って います。",
@@ -143,7 +143,7 @@
         "わたしは ピアノの れんしゅうを して います。"
       ],
       "correctIndex": 3,
-      "rationale": "learning ≈ practicing.",
+      "rationale": "「ならって + まいにち れんしゅうする」 = 「れんしゅうを して いる」. Lessons + daily practice is a direct paraphrase of \"doing practice\", not an inference from \"is taking lessons\".",
       "kbSourceId": "Q100",
       "id": "goi-7.10"
     }

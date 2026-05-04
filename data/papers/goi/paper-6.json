@@ -9,7 +9,7 @@
   "questions": [
     {
       "type": "mcq",
-      "stem_html": "A: わたしは おちゃより コーヒーの ほうが すきです。",
+      "stem_html": "A: わたしは おちゃより コーヒーの ほうが すきで、 まいにち 飲みます。",
       "choices": [
         "わたしは コーヒーより おちゃの ほうが すきです。",
         "わたしは おちゃと コーヒーが すきです。",
@@ -17,7 +17,7 @@
         "わたしは コーヒーを よく のみます。"
       ],
       "correctIndex": 3,
-      "rationale": "prefers coffee.",
+      "rationale": "「コーヒーの ほうが すき + まいにち 飲む」 = 「コーヒーを よく 飲む」. The frequency clause makes the preference paraphrase direct.",
       "kbSourceId": "Q76",
       "id": "goi-6.1"
     },
@@ -149,7 +149,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "A: 友だちに でんわを かけました。",
+      "stem_html": "A: 友だちに でんわを かけて、 一時間 話しました。",
       "choices": [
         "友だちが でんわを くれました。",
         "友だちと でんわで 話しました。",
@@ -157,7 +157,7 @@
         "友だちに 手紙を 書きました。"
       ],
       "correctIndex": 1,
-      "rationale": "closest among the choices. Strictly, 電話をかける means \"to make a phone call (initiate)\" and does not entail successful conversation; 電話で話す means \"to talk on the phone.\" For typical N5 contexts, calling a friend usually involves talking with them, so 電話で話す is the natural paraphrase here.",
+      "rationale": "「電話を かけて + 一時間 話した」 = 「電話で 話した」. The \"talked for one hour\" context confirms a successful conversation, removing the inference gap.",
       "kbSourceId": "Q86",
       "id": "goi-6.11"
     },

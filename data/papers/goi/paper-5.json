@@ -135,7 +135,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "A: たろうさんは スポーツが すきです。",
+      "stem_html": "A: たろうさんは スポーツが すきで、 まいにち します。",
       "choices": [
         "たろうさんは スポーツを よく します。",
         "たろうさんは スポーツを 見ません。",
@@ -143,7 +143,7 @@
         "たろうさんは スポーツが きらいです。"
       ],
       "correctIndex": 0,
-      "rationale": "closest among the choices. At N5 level, \"like X\" and \"do X often\" are treated as paraphrasable. Strictly, liking does not entail doing (one can be a sports fan who watches but doesn't play).",
+      "rationale": "「すき + まいにち する」 = 「よく する」. The frequency context makes this a direct paraphrase rather than an inference from liking alone.",
       "kbSourceId": "Q70",
       "id": "goi-5.10"
     },

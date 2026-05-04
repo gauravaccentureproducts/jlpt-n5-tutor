@@ -32,18 +32,26 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 ## Audit policies (formalized 2026-05-04)
 
-### Inference-style paraphrases (Mondai 4 / 言い換え類義)
+### Paraphrase-tightening pass (2026-05-04, v1.12.13)
 
-A small cluster of paraphrase items in Papers 6-7 (Q70 好き/よくする,
-Q76 おちゃより/コーヒーよく飲む, Q86 でんわをかける/でんわで話す, Q97
-じょうず/よくはなせる, Q100 ならっている/れんしゅう) treats real-world
-inference as paraphrase rather than strict semantic equivalence. The
-project accepts this as a deliberate N5-level pedagogical convention:
-likes/skill/lessons commonly entail the related action at the
-introductory level, even though strict logic admits exceptions
-(fans who don't play, listeners who don't speak, etc.). Each
-rationale notes the specific gap; the items are graded by closeness
-among the four offered options, not by exact synonymy.
+Five paraphrase items in Papers 5-7 originally relied on real-world
+inference rather than strict semantic equivalence:
+
+  Q70   好き              ->  よく する
+  Q76   X より Y すき      ->  Y を よく 飲む
+  Q86   電話を かける      ->  電話で 話した
+  Q97   じょうず           ->  よく 話せる    (also dropped N4 potential 話せます)
+  Q100  ならって いる      ->  れんしゅう
+
+Each stem was tightened in v1.12.13 by adding explicit context that
+makes the keyed answer a direct paraphrase rather than an inference:
+  - Q70/Q76/Q100 add a frequency clause (「まいにち する」 etc.)
+  - Q86 adds the duration of conversation (「一時間 話しました」)
+  - Q97 scopes じょうず to "speaking" specifically (「話すのが じょうず」)
+    and replaces 話せます (N4 potential) with 上手に 話します (N5 plain).
+
+The rationales no longer carry "by elimination" or "closest among the
+four" hedges - these are now true paraphrases.
 
 ### Borderline N5 / late-N5 stretch items
 
@@ -835,14 +843,16 @@ A: しゅくだいは まだ おわって いません。
 
 ### Q70
 
-A: たろうさんは スポーツが すきです。
+A: たろうさんは スポーツが すきで、 まいにち します。
+
+_Taro likes sports and does them every day._
 
 1. たろうさんは スポーツを よく します。
 2. たろうさんは スポーツを 見ません。
 3. たろうさんは スポーツを ぜんぜん しません。
 4. たろうさんは スポーツが きらいです。
 
-**Answer: 1** - closest among the choices. At N5 level, "like X" and "do X often" are treated as paraphrasable. Strictly, liking does not entail doing (one can be a sports fan who watches but doesn't play).
+**Answer: 1** - 「すき + まいにち する」 = 「よく する」. The frequency context makes this a direct paraphrase rather than an inference from liking alone.
 
 ### Q71
 
@@ -901,14 +911,16 @@ A: ことしの 一月に 日本へ きました。
 
 ### Q76
 
-A: わたしは おちゃより コーヒーの ほうが すきです。
+A: わたしは おちゃより コーヒーの ほうが すきで、 まいにち 飲みます。
+
+_I prefer coffee to tea, and drink it every day._
 
 1. わたしは コーヒーより おちゃの ほうが すきです。
 2. わたしは おちゃと コーヒーが すきです。
 3. わたしは おちゃが きらいで、コーヒーが すきです。
 4. わたしは コーヒーを よく のみます。
 
-**Answer: 4** - prefers coffee.
+**Answer: 4** - 「コーヒーの ほうが すき + まいにち 飲む」 = 「コーヒーを よく 飲む」. The frequency clause makes the preference paraphrase direct.
 
 ### Q77
 
@@ -1013,14 +1025,16 @@ A: こうえんで さんぽしました。
 
 ### Q86
 
-A: 友だちに でんわを かけました。
+A: 友だちに でんわを かけて、 一時間 話しました。
+
+_I called my friend and we talked for an hour._
 
 1. 友だちが でんわを くれました。
 2. 友だちと でんわで 話しました。
 3. でんわを 買いました。
 4. 友だちに 手紙を 書きました。
 
-**Answer: 2** - closest among the choices. Strictly, 電話をかける means "to make a phone call (initiate)" and does not entail successful conversation; 電話で話す means "to talk on the phone." For typical N5 contexts, calling a friend usually involves talking with them, so 電話で話す is the natural paraphrase here.
+**Answer: 2** - 「電話を かけて + 一時間 話した」 = 「電話で 話した」. The "talked for one hour" context confirms a successful conversation, removing the inference gap.
 
 ### Q87
 
@@ -1138,14 +1152,16 @@ A: きょうは ゆうがた に かえります。
 
 ### Q97
 
-A: たろうさんは 日本ごが じょうずです。
+A: たろうさんは 日本ごを 話すのが じょうずです。
 
-1. たろうさんは 日本ごが よく 話せます。
+_Taro is good at speaking Japanese._
+
+1. たろうさんは 日本ごを 上手に 話します。
 2. たろうさんは 日本ごが ぜんぜん わかりません。
 3. たろうさんは 日本ごが すきじゃ ありません。
 4. たろうさんは 日本ごを ならって います。
 
-**Answer: 1** - 日本語が上手 ≈ よく話せる. At N5, "good at Japanese" is paraphrased as "can speak well"; strictly 上手 covers all language skills (not just speaking).
+**Answer: 1** - 「話すのが じょうず」 = 「上手に 話す」. Same skill, different syntactic frame (nominalized adjective vs. adverbial). Strict-N5: also drops the potential form 話せます (N4) used in a previous version.
 
 ### Q98
 
@@ -1175,16 +1191,16 @@ _I came from Spain._
 
 ### Q100
 
-A: わたしは ピアノを ならって います。
+A: わたしは ピアノを ならって、 まいにち れんしゅうします。
+
+_I'm taking piano lessons and practice every day._
 
 1. わたしは ピアノが よく わかります。
 2. わたしは ピアノを 売って います。
 3. わたしは ピアノを 買いました。
 4. わたしは ピアノの れんしゅうを して います。
 
-**Answer: 4** - learning ≈ practicing.
-
----
+**Answer: 4** - 「ならって + まいにち れんしゅうする」 = 「れんしゅうを して いる」. Lessons + daily practice is a direct paraphrase of "doing practice", not an inference from "is taking lessons".
 
 ## End of file
 
