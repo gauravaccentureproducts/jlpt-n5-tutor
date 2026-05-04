@@ -213,6 +213,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - かい - [count.] number of times / occurrences (e.g., 3-かい = three times). Same kana, different counter (different kanji); context disambiguates.
 - 番 (ばん) - [count.] number, ordinal
 - ど - [count.] degrees, occurrences
+- 倍 (ばい) - [count.] times / -fold (counter for multiplicative)
 
 ## 10. Time - General
 
@@ -292,6 +293,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - おととし - [n.] year before last
 - さらいねん - [n.] year after next **[Ext]**
 - たんじょうび - [n.] birthday
+- 週末 (しゅうまつ) - [n.] weekend
 
 ## 12. Time - Frequency / Sequence
 
@@ -389,6 +391,11 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 南 (みなみ) - [n.] south
 - 東 (ひがし) - [n.] east
 - 西 (にし) - [n.] west
+- おてら - [n.] temple (Buddhist)
+- カフェ - [n.] cafe
+- コンビニ - [n.] convenience store
+- フロント - [n.] reception desk / front desk
+- 出口 (でぐち) - [n.] exit
 
 ## 14. Nature and Weather
 
@@ -426,6 +433,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 火 (ひ) - [n.] fire
 - 水 (みず) - [n.] water (cold)
 - おゆ - [n.] hot water
+- さくら - [n.] cherry blossom
 
 ## 15. Animals
 
@@ -586,6 +594,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - にもつ - [n.] luggage, package
 - おみやげ - [n.] souvenir **[Cul]**
 - レジ - [n.] register, cashier
+- セール - [n.] sale (price reduction)
 
 ## 23. Transport
 
@@ -648,6 +657,9 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - 電気 (でんき) - [n.] electricity, light
 - 電話 (でんわ) - [n.] telephone
 - 電話番号 (でんわばんごう) - [n.] phone number
+- たんご - [n.] vocabulary word
+- アルバイト - [n.] part-time job (often shortened to バイト)
+- 高校生 (こうこうせい) - [n.] high school student
 
 ## 25. Languages and Countries
 
@@ -667,6 +679,8 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - イギリス - [n.] United Kingdom
 - 外国 (がいこく) - [n.] foreign country
 - 外国語 (がいこくご) - [n.] foreign language
+- スペイン人 (スペインじん) - [n.] Spanish person
+- 国籍 (こくせき) - [n.] nationality
 
 ## 26. House and Furniture
 
@@ -710,6 +724,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - え - [n.] picture
 - ピアノ - [n.] piano
 - ギター - [n.] guitar
+- ベンチ - [n.] bench
 
 ## 27. Verbs - Group 1 (う-verbs)
 
@@ -788,6 +803,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - かかる - [v1] to take (time / money)
 - さす - [v1] to put up (an umbrella), to raise
 - けす - [v1] to turn off, to erase (godan / Group 1; conjugates けします, けして)
+- はらう - [v1] pay
 
 ## 28. Verbs - Group 2 (る-verbs)
 
@@ -823,6 +839,9 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - おりる - [v2] to get off (train, bus)
 - しめる - [v2] to tie / fasten / tighten (distinct from しめる "to close")
 - つとめる - [v2] to work for / be employed (ichidan / Group 2; conjugates つとめます, つとめて)
+- おくれる - [v2] be late
+- ためる - [v2] save / accumulate (e.g., money, points)
+- 聞こえる (きこえる) - [v2] be audible / can be heard (intransitive of 聞く)
 
 ## 29. Verbs - Irregular and する-verbs
 
@@ -840,6 +859,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - そうじする - [v3] to clean
 - せんたくする - [v3] to do laundry
 - かいものする - [v3] to go shopping
+- じゅんび - [n.] preparation
 
 ## 30. Verbs - Existence and Possession
 
@@ -992,6 +1012,10 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - まず - [adv.] first of all
 - では / じゃ - [exp.] well then
 - もしもし - [exp.] hello (telephone)
+- いっぱい - [adv.] full / a lot
+- ぜひ - [adv.] by all means / definitely
+- ただ - [adv.] just / only / simply
+- べつべつ - [adv.] separately
 
 ## 34. Conjunctions
 
@@ -1063,6 +1087,7 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - どうぞ - [exp.] please (offering)
 - どうも - [exp.] thanks
 - もしもし - [exp.] hello (phone)
+- おじゃまします - [exp.] excuse me / I'm coming in (set phrase used when entering someone's home)
 
 ## 37. Common Nouns - Miscellaneous
 
@@ -1144,6 +1169,9 @@ When two forms exist (e.g., a Sino-Japanese term plus a katakana loan), the domi
 - メートル - [n.] metre, meter
 - キログラム - [n.] kilogram
 - キロメートル - [n.] kilometre, kilometer
+- おしらせ - [n.] announcement, notice
+- おもちゃ - [n.] toy
+- コンサート - [n.] concert
 
 ## 38. Sounds and Voice
 

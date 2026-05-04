@@ -2,6 +2,91 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.21 - 2026-05-04 (N5 thorough audit Round 3 - vocab drift resolved)
+
+Round 3 of the teacher-style N5 audit closes the last open finding:
+the bidirectional drift between vocab.json and vocabulary_n5.md.
+
+### vocab.json <-> vocabulary_n5.md drift resolved (28 entries added)
+
+  Audit found that vocab.json had 28 entries with no representation
+  in vocabulary_n5.md. All 28 added to their appropriate thematic
+  sections in the MD source (alphabetical-by-original-Q-order, but
+  thematically grouped per the existing section structure).
+
+  Additions by section:
+    §9 Counters (Common):              倍 (ばい) "times / -fold"
+    §11 Time:                          週末 (しゅうまつ) "weekend"
+    §13 Locations:                     おてら, カフェ, コンビニ,
+                                       フロント, 出口 (でぐち)
+    §14 Nature:                        さくら "cherry blossom"
+    §22 Money/Shopping:                セール
+    §24 School/Study:                  たんご, アルバイト, 高校生
+                                       (こうこうせい)
+    §25 Languages/Countries:           スペイン人 (スペインじん),
+                                       国籍 (こくせき)
+    §26 House/Furniture:               ベンチ
+    §27 Verbs Group 1:                 はらう "pay"
+    §28 Verbs Group 2:                 おくれる, ためる, 聞こえる
+                                       (きこえる)
+    §29 Verbs Irregular/する:          じゅんび
+    §33 Adverbs:                       いっぱい, ぜひ, ただ, べつべつ
+    §36 Greetings:                     おじゃまします
+    §37 Common Nouns Misc:             おしらせ, おもちゃ, コンサート
+
+  PoS tags mapped from JSON `pos` field per the existing legend
+  (noun -> [n.], verb-1 -> [v1], etc.). JA-31 still passes (PoS-tag
+  agreement on the matched-form subset).
+
+### "MD-only" finding closed by inspection
+
+  The audit also flagged 10 forms appearing in vocabulary_n5.md but
+  not as separate JSON entries (うしろ, うち, よい, みな, etc.).
+  Inspection showed these are all SECONDARY FORMS of existing JSON
+  entries, represented in the JSON `reading` field's slash-separated
+  notation (e.g., JSON form='いえ' has reading='いえ / うち'). This
+  is the project's existing convention for multi-form vocabulary;
+  no fix needed. JA-31 already validates the matched-form subset.
+
+### Cumulative N5 audit closure (v1.12.19..v1.12.21)
+
+  Round 1 (v1.12.19) - CRITICAL fixes:
+    listening n5.listen.036 unscorable bug, dokkai Mondai 5+6
+    deployment (42 questions), 3 stale rationales, 2 exception kanji.
+
+  Round 2 (v1.12.20) - HIGH-priority rebalances:
+    dokkai 1/17/37/5 -> 26/26/25/25 (41 permutations)
+    bunpou 27/35/25/13 -> 25/25/25/25 (12 permutations)
+    listening 5/24/9/1 -> 11/10/10/9 combined (15 swaps)
+
+  Round 3 (this release) - MEDIUM:
+    vocab.json <-> vocabulary_n5.md drift resolved (28 entries added).
+
+### Final N5 corpus state
+
+  | Corpus    | Items | Distribution           | Source-of-truth |
+  |-----------|-------|------------------------|-----------------|
+  | moji      |  100  | 25 / 25 / 25 / 25      | MD <-> 7 papers |
+  | goi       |  100  | 25 / 25 / 25 / 25      | MD <-> 7 papers |
+  | bunpou    |  100  | 25 / 25 / 25 / 25      | MD <-> 7 papers |
+  | dokkai    |  102  | 26 / 26 / 25 / 25      | MD <-> 7 papers |
+  | listening |   40  | 11 / 10 / 10 / 9       | listening.json  |
+  | reading   |   84  | (separate corpus)      | reading.json    |
+  | vocab     | 1041  | (vocabulary)           | MD <-> JSON     |
+  | grammar   |  178  | (patterns)             | grammar.json    |
+  | kanji     |  106  | (entries)              | kanji.json      |
+
+All teacher-audit findings closed. 41/41 integrity invariants green.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v131 -> v132
+  - index.html cache-busters:    v=1.11.41 -> v=1.11.42
+  - 41/41 invariants PASS
+  - Vocab-drift fix script idempotent (2nd run reports 0 additions).
+
+---
+
 ## v1.12.20 - 2026-05-04 (N5 thorough audit Round 2 - 3 corpus rebalances)
 
 Round 2 of the teacher-style N5 audit: corpus-level position-distribution
