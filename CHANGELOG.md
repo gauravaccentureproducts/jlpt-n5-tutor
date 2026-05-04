@@ -2,6 +2,90 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.15 - 2026-05-04 (Goi third-pass review - 4 fixes + 1 deferred)
+
+A third-pass walk-through by the same auditor on the v1.12.14 state
+flagged five remaining minor observations. Four are addressed here;
+the fifth (Q73/Q74 mirror-pair scatter) is deferred with rationale.
+The reviewer noted the corpus is now in a state where item-level
+quality is consistently above commercial N5 vocabulary practice books.
+
+### Fixes (4)
+
+  Q33 / goi-3.3   ので -> から (corpus-wide policy)
+    Old stem: つかれたので （　　） すわりました。
+    New stem: つかれましたから、（　　） すわりました。
+    Same reason conjunction policy as the Q5 fix in v1.12.14.
+
+  Q44 / goi-3.14  ので -> から (corpus-wide policy)
+    Old stem: きょうは あめが ふって いるので、...
+    New stem: きょうは あめが ふって いるから、...
+    Same policy.
+
+  Q47 / goi-4.2   rationale: orphaned note -> "Common error" call-out
+    Stem and choices unchanged. The previous parenthetical about
+    きょねん felt orphaned because the question doesn't include
+    a time marker. Reframed as anticipating a typical student
+    error: "Common error: 〜たことがある cannot combine with
+    specific time markers (きょねん, etc.)".
+
+  Q87 / goi-6.12  rationale: drop off-topic はたち trivia
+    Stem and choices unchanged. The previous rationale included a
+    paragraph about the special reading はたち for 二十さい, which
+    is interesting trivia but doesn't bear on what this question
+    tests (time-reference: present age vs future age). Rationale
+    now focuses on the time-reference test point. はたち remains
+    documented at vocabulary_n5.md line 1118 so no information
+    is lost.
+
+### Deferred (1)
+
+  Q73 / Q74 mirror-pair scatter (paper-5.13 + paper-5.14)
+    Reviewer noted these conceptually-mirror items (かす / かりる
+    perspective inversion in both directions) appear adjacent and
+    suggested moving Q74's content to paper-6 or paper-7 for
+    exam-realism. Reviewer themselves flagged this as
+    "Pedagogically not wrong as is; just an exam-realism nudge".
+
+    Deferred because a content swap (e.g., Q74 <-> Q83) shuffles
+    the Q-number<->content mapping, which carries audit-traceability
+    cost: "Q74" in v1.12.x audit reports refers to かりる content,
+    but post-swap "Q74" would refer to bus/transportation content.
+    For a multi-pass audit cycle still in flight, holding the
+    Q<->content mapping stable is more valuable than the small
+    exam-realism gain. May revisit when the audit cycle closes.
+
+### Verification footnote (1)
+
+  Q39 / goi-3.9   ボール 〜つ vs つくえ 〜台 cross-reference
+    Reviewer asked to confirm つくえ doesn't appear as a counter
+    answer elsewhere in the corpus (the Q39 rationale parenthetically
+    flags 〜台 as N4-level for furniture). Verified: つくえ appears
+    in the corpus only as a noun-place (Q15, Q21) or as the noun
+    being quantified by a non-counter quantifier (Q88: いっぱい /
+    たくさん / すこし). It never appears as the test target of a
+    counter question. Q39's parenthetical stands as informative
+    context with no propagation needed.
+
+### ので -> から policy (formalized)
+
+The Q5 fix in v1.12.14 implicitly created a corpus-wide policy
+preferring から over ので as the reason conjunction, since ので
+leans N4 in major textbooks (Genki / Minna / Tobira). v1.12.15
+extends that policy to the two remaining ので usages in the goi
+corpus (Q33, Q44). Spot check confirms ので now appears nowhere
+in goi stems, only in the v1.12.14 rationale text that documents
+the policy itself.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v124 -> v125
+  - index.html cache-busters:    v=1.11.34 -> v=1.11.35
+  - 41/41 invariants PASS (incl. JA-32 lock-step MD<->JSON parity)
+  - Fix script idempotent (2nd run reports "No changes").
+
+---
+
 ## v1.12.14 - 2026-05-04 (Goi re-review follow-up - 5 items)
 
 A second pass by the same auditor on the v1.12.12+v1.12.13 fixes

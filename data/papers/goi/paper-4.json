@@ -31,7 +31,7 @@
         "します"
       ],
       "correctIndex": 1,
-      "rationale": "こと + ある (experience). Note: 「行ったことがある」 is for indefinite past experience and cannot combine with a specific time marker like きょねん.",
+      "rationale": "こと + ある (experience). Common error: 「〜たことがある」 cannot combine with specific time markers (きょねん, etc.) - it expresses indefinite past experience. Use a plain past tense (きょねん 行きました) for time-specific events instead.",
       "kbSourceId": "Q47",
       "id": "goi-4.2"
     },

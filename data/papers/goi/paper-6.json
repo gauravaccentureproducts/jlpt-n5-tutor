@@ -171,7 +171,7 @@
         "わたしは らいねん 二十さいに なります。"
       ],
       "correctIndex": 2,
-      "rationale": "statement of present age. Note: 二十さい reads にじゅっさい / にじゅうさい. The traditional N5-tested reading for \"20 years old\" is the special reading **はたち** (二十歳); both forms are acceptable but はたち is the form most commonly drilled at N5.",
+      "rationale": "statement of present age. The keyed answer 「いま 二十さいです」 is a direct restatement of the stem's present-tense identity claim; the other options shift the time reference (this year / birthday tomorrow / next year). The special reading はたち for 二十さい is documented at vocabulary_n5.md but does not bear on the time-reference test point this question targets.",
       "kbSourceId": "Q87",
       "id": "goi-6.12"
     },
