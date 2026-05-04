@@ -11,12 +11,12 @@
       "type": "mcq",
       "stem_html": "まいあさ コーヒーを （　　）。",
       "choices": [
-        "たべます",
         "のみます",
+        "たべます",
         "ききます",
         "みます"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "コーヒー is something one drinks (のむ).",
       "kbSourceId": "Q1",
       "id": "goi-1.1"
@@ -41,10 +41,10 @@
       "choices": [
         "ききました",
         "たべました",
-        "かいました",
-        "のみました"
+        "のみました",
+        "かいました"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "rationale": "ノート is bought (買います).",
       "kbSourceId": "Q3",
       "id": "goi-1.3"
@@ -67,12 +67,12 @@
       "type": "mcq",
       "stem_html": "つかれましたから、いえで （　　）。",
       "choices": [
-        "はたらきます",
         "やすみます",
+        "はたらきます",
         "はしります",
         "およぎます"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "つかれた + やすむ. つかれましたから (polite past + から) is the N5-canonical reason -> action chain (replaces ので which leans N4 in major textbooks).",
       "kbSourceId": "Q5",
       "id": "goi-1.5"
@@ -95,12 +95,12 @@
       "type": "mcq",
       "stem_html": "たなかさんは いま 学校に （　　）。",
       "choices": [
-        "あります",
         "います",
+        "あります",
         "もちます",
         "かいます"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "person + います.",
       "kbSourceId": "Q7",
       "id": "goi-1.7"
@@ -109,12 +109,12 @@
       "type": "mcq",
       "stem_html": "つくえの 上に 本が （　　）。",
       "choices": [
-        "います",
         "あります",
+        "います",
         "たちます",
         "でます"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "inanimate noun + あります.",
       "kbSourceId": "Q8",
       "id": "goi-1.8"
@@ -179,12 +179,12 @@
       "type": "mcq",
       "stem_html": "いえへ かえる まえに、ぎんこうへ （　　）。",
       "choices": [
-        "のみました",
         "いきました",
+        "のみました",
         "たべました",
         "ききました"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "place-へ + いく.",
       "kbSourceId": "Q13",
       "id": "goi-1.13"

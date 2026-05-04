@@ -2,6 +2,80 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.17 - 2026-05-04 (Goi fourth-pass review - Q64 N4 potential + 25/25/25/25 rebalance)
+
+Fourth-pass walk-through identified two issues. Both addressed.
+
+### Issue 1: Q64 N4-potential-form leak (one item)
+
+  Q64 / goi-5.4   stem 「じょうずに ピアノを ひきます」
+    Old keyed (pos 2): たなかさんは ピアノが よく ひけます。
+                       ^ uses ひける (potential form of 弾く), N4
+                         grammar in Genki / Minna / Tobira.
+    New keyed (pos 4): たなかさんは ピアノを ひくのが じょうずです。
+
+  Same fix pattern as Q97 in v1.12.13. The Q97 fix swapped a
+  nominalized adjective stem for an adverbial keyed; Q64 is the
+  inverse direction (adverbial stem -> nominalized adjective keyed).
+  Test point: 「じょうずに ひく」 = 「ひくのが じょうず」 - same
+  skill, different syntactic frame. Strict-N5 across both items.
+
+### Issue 2: Answer-position distribution rebalance (21 permutations)
+
+  Reviewer noted the corpus had a heavy skew at position B (46/100)
+  and starvation at position D (9/100), giving a "when in doubt,
+  pick B" heuristic freebie to test-wise students.
+
+    Before:  19 / 46 / 26 /  9   (positions A / B / C / D)
+    After:   25 / 25 / 25 / 25   (target distribution)
+
+  Fix is mechanical: permute the choice ORDER within 21 items so the
+  keyed answer lands in a balanced position. Choice CONTENT is
+  unchanged; only the order changes. correctIndex updated in JSON,
+  numbered list reordered in MD, **Answer: N** updated to match.
+
+  Permutations applied (21 total):
+    B -> A (6):  Q1, Q5, Q7, Q8, Q13, Q17
+    B -> D (14): Q23, Q24, Q26, Q27, Q29, Q30, Q32, Q42, Q44, Q47,
+                 Q49, Q51, Q53, Q57
+    C -> D (1):  Q3
+
+  Skipped (semantic constraints on choice order):
+    Q38-Q41   counter cluster
+    Q64       handled in Issue 1 (lands at D)
+    Q73       kasu perspective inversion
+    Q83       kariru perspective inversion
+    Q92       giving-receiving (くれる ≈ もらう)
+
+  Permutation plan was computed deterministically: walk unconstrained
+  items in Q-number order, take the first N at each surplus position,
+  distribute to deficit positions in deterministic order. Captured in
+  TARGET_INDEX dict in the fix script for reproducibility.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v126 -> v127
+  - index.html cache-busters:    v=1.11.36 -> v=1.11.37
+  - 41/41 invariants PASS (incl. JA-32 lock-step MD<->JSON parity)
+  - Fix script idempotent (2nd run reports "No changes").
+  - Final answer-position distribution: 25 / 25 / 25 / 25.
+
+### Cumulative goi audit closure (v1.12.12..v1.12.17)
+
+  v1.12.12  14 item fixes + 2 policy headers (initial 19-item audit)
+  v1.12.13  5 inference cluster items tightened
+  v1.12.14  5 re-review follow-ups (Q5/Q51/Q94/Q98/Q99)
+  v1.12.15  4 third-pass fixes (Q33/Q44/Q47/Q87) + Q39 verified
+  v1.12.16  Q73/Q74 mirror-pair scatter + Mondai 1/2 cross-reference
+  v1.12.17  Q64 N4 potential dropped + 25/25/25/25 position rebalance
+
+Total: 29 item-level content edits + 7 rationale tightenings + 3
+policy/cross-reference docs + 1 structural swap + 21 position
+permutations. Goi corpus now passes the four-pass audit with no
+residual flags from any pass.
+
+---
+
 ## v1.12.16 - 2026-05-04 (Q73/Q74 mirror-pair scatter + Mondai 1/2 cross-reference)
 
 Closes the v1.12.15 deferral and addresses the third-pass review's

@@ -54,12 +54,12 @@
       "stem_html": "A: たなかさんは じょうずに ピアノを ひきます。",
       "choices": [
         "たなかさんは ピアノが へたです。",
-        "たなかさんは ピアノが よく ひけます。",
         "たなかさんは ピアノを はじめて ひきます。",
-        "たなかさんは ピアノが きらいです。"
+        "たなかさんは ピアノが きらいです。",
+        "たなかさんは ピアノを ひくのが じょうずです。"
       ],
-      "correctIndex": 1,
-      "rationale": "じょうず ≈ よく ひける (can play well).",
+      "correctIndex": 3,
+      "rationale": "「じょうずに ひく」 = 「ひくのが じょうず」. Same skill, different syntactic frame (adverbial -> nominalized adjective predicate). Strict-N5: drops the previous keyed form 「よく ひけます」 (potential ひける = N4) per the same policy applied at Q97 in v1.12.13. This is the inverse direction of Q97's frame swap (Q97: nominalized -> adverbial; Q64: adverbial -> nominalized).",
       "kbSourceId": "Q64",
       "id": "goi-5.4"
     },

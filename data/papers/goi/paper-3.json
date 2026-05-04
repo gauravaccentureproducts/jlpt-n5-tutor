@@ -26,11 +26,11 @@
       "stem_html": "ねこは いすの 下で （　　） います。",
       "choices": [
         "はしって",
-        "ねて",
+        "かって",
         "はたらいて",
-        "かって"
+        "ねて"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "cat + sleeping.",
       "kbSourceId": "Q32",
       "id": "goi-3.2"
@@ -166,11 +166,11 @@
       "stem_html": "しごとは いつも （　　） おわります。",
       "choices": [
         "なんじで",
-        "はやく",
+        "たかい",
         "ちかい",
-        "たかい"
+        "はやく"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "end early (はやく as adverb, no particle).",
       "kbSourceId": "Q42",
       "id": "goi-3.12"
@@ -194,11 +194,11 @@
       "stem_html": "きょうは あめが ふって いるから、（　　） を もって きました。",
       "choices": [
         "かばん",
-        "かさ",
+        "めがね",
         "ぼうし",
-        "めがね"
+        "かさ"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "rain + umbrella. (から: N5-canonical reason conjunction; replaces ので per corpus-wide policy applied alongside the Q5 fix in v1.12.14.)",
       "kbSourceId": "Q44",
       "id": "goi-3.14"

@@ -25,12 +25,12 @@
       "type": "mcq",
       "stem_html": "あさごはんに パンを 二まい （　　）。",
       "choices": [
-        "のみました",
         "たべました",
+        "のみました",
         "ききました",
         "はなしました"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "パン + たべる.",
       "kbSourceId": "Q17",
       "id": "goi-2.2"
@@ -110,11 +110,11 @@
       "stem_html": "私の いえは ここから とても （　　） です。",
       "choices": [
         "あつい",
-        "とおい",
+        "きれい",
         "ふるい",
-        "きれい"
+        "とおい"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "distance + とおい (far).",
       "kbSourceId": "Q23",
       "id": "goi-2.8"
@@ -124,11 +124,11 @@
       "stem_html": "きょうは あついから、まどを （　　） ください。",
       "choices": [
         "しめて",
-        "あけて",
+        "つけて",
         "けして",
-        "つけて"
+        "あけて"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "hot + open the window.",
       "kbSourceId": "Q24",
       "id": "goi-2.9"
@@ -152,11 +152,11 @@
       "stem_html": "くらいですから、でんきを （　　） ください。",
       "choices": [
         "けして",
-        "つけて",
+        "あけて",
         "しめて",
-        "あけて"
+        "つけて"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "dark + turn on light.",
       "kbSourceId": "Q26",
       "id": "goi-2.11"
@@ -166,11 +166,11 @@
       "stem_html": "つぎの （　　） を 右に まがって ください。",
       "choices": [
         "みち",
-        "かど",
+        "やま",
         "はし",
-        "やま"
+        "かど"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "turn at the corner (かど).",
       "kbSourceId": "Q27",
       "id": "goi-2.12"
@@ -194,11 +194,11 @@
       "stem_html": "ふゆに なりました。 きょうは （　　） が ふって います。 とても さむいです。",
       "choices": [
         "かぜ",
-        "ゆき",
+        "はる",
         "はな",
-        "はる"
+        "ゆき"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "winter + さむい disambiguates to ゆき (snow).",
       "kbSourceId": "Q29",
       "id": "goi-2.14"
@@ -208,11 +208,11 @@
       "stem_html": "きのう 友だちと （　　） を 見に いきました。",
       "choices": [
         "ほん",
-        "えいが",
+        "でんわ",
         "しんぶん",
-        "でんわ"
+        "えいが"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "見に行く + えいが (go to see a movie).",
       "kbSourceId": "Q30",
       "id": "goi-2.15"
