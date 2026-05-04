@@ -12,11 +12,11 @@
       "stem_html": "ピアノ（　　）できます。",
       "choices": [
         "を",
-        "へ",
+        "が",
         "に",
-        "が"
+        "へ"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "rationale": "できる takes が.",
       "kbSourceId": "Q16",
       "id": "bunpou-2.1"
@@ -67,12 +67,12 @@
       "type": "mcq",
       "stem_html": "きょう（　　）あした、しけんが あります。",
       "choices": [
-        "に",
-        "と",
         "か",
+        "と",
+        "に",
         "を"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "rationale": "か (or).",
       "kbSourceId": "Q20",
       "id": "bunpou-2.5"
@@ -81,12 +81,12 @@
       "type": "mcq",
       "stem_html": "その 本は たなかさん（　　）もらいました。",
       "choices": [
-        "を",
-        "が",
         "に",
+        "が",
+        "を",
         "と"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "rationale": "source for もらう.",
       "kbSourceId": "Q21",
       "id": "bunpou-2.6"

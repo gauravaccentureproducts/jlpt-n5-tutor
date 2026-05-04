@@ -12,11 +12,11 @@
       "stem_html": "A: わたしは 日本に きて 一年に なります。",
       "choices": [
         "わたしは 来年 日本へ きます。",
-        "わたしは 一年 まえから 日本に います。",
         "わたしは 一年 まえに 日本を 出ました。",
+        "わたしは 一年 まえから 日本に います。",
         "わたしは 一年 だけ 日本に いました。"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "rationale": "here for 1 year = came 1 year ago.",
       "kbSourceId": "Q91",
       "id": "goi-7.1"
@@ -67,12 +67,12 @@
       "type": "mcq",
       "stem_html": "A: たなかさんは いつも しずかです。",
       "choices": [
-        "たなかさんは いつも たくさん 話します。",
         "たなかさんは いつも あまり 話しません。",
+        "たなかさんは いつも たくさん 話します。",
         "たなかさんは いつも うるさいです。",
         "たなかさんは いつも おこって います。"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "quiet ≈ doesn't talk much.",
       "kbSourceId": "Q95",
       "id": "goi-7.5"

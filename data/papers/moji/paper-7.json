@@ -11,12 +11,12 @@
       "type": "mcq",
       "stem_html": "ねる まえに おふろに __はいります__。",
       "choices": [
-        "入ります",
-        "出ります",
         "立ります",
+        "出ります",
+        "入ります",
         "切ります"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "入ります.",
       "kbSourceId": "Q91",
       "id": "moji-7.1"
@@ -53,12 +53,12 @@
       "type": "mcq",
       "stem_html": "先生が なまえを __いいます__。",
       "choices": [
-        "言います",
-        "云います",
         "謂います",
+        "云います",
+        "言います",
         "議います"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "N5 standard 言います.",
       "kbSourceId": "Q94",
       "id": "moji-7.4"
@@ -82,11 +82,11 @@
       "stem_html": "この とけいは とても __たかい__ です。",
       "choices": [
         "多い",
-        "高い",
+        "長い",
         "古い",
-        "長い"
+        "高い"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "高い.",
       "kbSourceId": "Q96",
       "id": "moji-7.6"
@@ -95,12 +95,12 @@
       "type": "mcq",
       "stem_html": "この レストランは __やすい__ です。",
       "choices": [
-        "安い",
+        "寄い",
         "易い",
         "休い",
-        "寄い"
+        "安い"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "安い.",
       "kbSourceId": "Q97",
       "id": "moji-7.7"

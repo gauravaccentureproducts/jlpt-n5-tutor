@@ -11,12 +11,12 @@
       "type": "mcq",
       "stem_html": "たんじょうびに 友だちから （　　） を もらいました。",
       "choices": [
-        "プレゼント",
         "しゅくだい",
+        "プレゼント",
         "ニュース",
         "しごと"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "rationale": "birthday + present.",
       "kbSourceId": "Q31",
       "id": "goi-3.1"
@@ -26,11 +26,11 @@
       "stem_html": "ねこは いすの 下で （　　） います。",
       "choices": [
         "はしって",
-        "かって",
+        "ねて",
         "はたらいて",
-        "ねて"
+        "かって"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "rationale": "cat + sleeping.",
       "kbSourceId": "Q32",
       "id": "goi-3.2"

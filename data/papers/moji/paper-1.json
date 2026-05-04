@@ -11,12 +11,12 @@
       "type": "mcq",
       "stem_html": "あの 人は <u>学生</u> です。",
       "choices": [
-        "がくせ",
-        "かくせい",
         "がくせい",
+        "かくせい",
+        "がくせ",
         "かくせ"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "rationale": "学 (ガク) + 生 (セイ).",
       "kbSourceId": "Q1",
       "id": "moji-1.1"
@@ -25,12 +25,12 @@
       "type": "mcq",
       "stem_html": "きのう <u>先生</u> に あいました。",
       "choices": [
-        "せんせ",
-        "せんぜい",
         "せんせい",
+        "せんぜい",
+        "せんせ",
         "せんせえ"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "rationale": "先 (セン) + 生 (セイ).",
       "kbSourceId": "Q2",
       "id": "moji-1.2"
@@ -53,12 +53,12 @@
       "type": "mcq",
       "stem_html": "<u>大学</u> で にほんごを べんきょうします。",
       "choices": [
-        "たいかく",
+        "だいがく",
         "だいかく",
         "たいがく",
-        "だいがく"
+        "たいかく"
       ],
-      "correctIndex": 3,
+      "correctIndex": 0,
       "rationale": "大 (ダイ) + 学 (ガク).",
       "kbSourceId": "Q4",
       "id": "moji-1.4"
@@ -67,12 +67,12 @@
       "type": "mcq",
       "stem_html": "ちちは <u>会社員</u> です。",
       "choices": [
-        "かいさいん",
+        "かいしゃいん",
         "がいしゃいん",
         "かいしゃじん",
-        "かいしゃいん"
+        "かいさいん"
       ],
-      "correctIndex": 3,
+      "correctIndex": 0,
       "rationale": "会社 (かいしゃ) + 員 (イン).",
       "kbSourceId": "Q5",
       "id": "moji-1.5"
@@ -82,11 +82,11 @@
       "stem_html": "<u>日本</u> に すんで います。",
       "choices": [
         "にっほん",
-        "にぼん",
+        "にほん",
         "ひほん",
-        "にほん"
+        "にぼん"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "rationale": "日本 = にほん. (The reading にっぽん also exists for formal/political contexts but is not in the answer choices.)",
       "kbSourceId": "Q6",
       "id": "moji-1.6"
@@ -124,11 +124,11 @@
       "stem_html": "きょうは <u>月曜日</u> です。",
       "choices": [
         "げっつようび",
-        "かようび",
+        "げつようび",
         "もくようび",
-        "げつようび"
+        "かようび"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "rationale": "月 (ゲツ) + 曜日 (ヨウビ).",
       "kbSourceId": "Q9",
       "id": "moji-1.9"

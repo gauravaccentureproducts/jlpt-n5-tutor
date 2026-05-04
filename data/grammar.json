@@ -678,24 +678,24 @@
         {
           "ja": "バスで 学校へ 行きます。",
           "romaji": "",
-          "en": "I go to school by bus.",
           "vocab_ids": [
             "n5.vocab.37-common-nouns-miscella.たばこ",
             "n5.vocab.5-demonstratives.ここ",
             "n5.vocab.27-verbs-group-1-verbs.すう",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.で"
-          ]
+          ],
+          "translation_en": "I go to school by bus."
         },
         {
           "ja": "タクシーで うちへ かえりました。",
           "romaji": "",
-          "en": "I went home by taxi.",
           "vocab_ids": [
             "n5.vocab.29-verbs-irregular-and-v.来る",
             "n5.vocab.35-particles-functional-.で",
             "n5.vocab.35-particles-functional-.か"
-          ]
+          ],
+          "translation_en": "I went home by taxi."
         },
         {
           "ja": "にほんごで はなしました。",
@@ -11846,25 +11846,25 @@
         {
           "ja": "出かける まえに、しんぶんを 読みます。",
           "romaji": "",
-          "en": "Before going out, I read the newspaper.",
           "vocab_ids": [
             "n5.vocab.16-food-and-drink-genera.ごはん",
             "n5.vocab.27-verbs-group-1-verbs.あらう",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.の"
-          ]
+          ],
+          "translation_en": "Before going out, I read the newspaper."
         },
         {
           "ja": "ねる まえに、はを みがきます。",
           "romaji": "",
-          "en": "Before sleeping, I brush my teeth.",
           "vocab_ids": [
             "n5.vocab.27-verbs-group-1-verbs.読む",
             "n5.vocab.28-verbs-group-2-verbs.ねる",
             "n5.vocab.35-particles-functional-.を",
             "n5.vocab.35-particles-functional-.に"
-          ]
+          ],
+          "translation_en": "Before sleeping, I brush my teeth."
         },
         {
           "ja": "出かける まえに かさを もちます。",
@@ -11906,7 +11906,6 @@
         {
           "ja": "しごとが おわった あとで、 のみに 行きました。",
           "romaji": "",
-          "en": "After work finished, I went out drinking.",
           "vocab_ids": [
             "n5.vocab.37-common-nouns-miscella.しごと",
             "n5.vocab.40-misc-useful-items.しごと",
@@ -11914,7 +11913,8 @@
             "n5.vocab.35-particles-functional-.に",
             "n5.vocab.35-particles-functional-.で",
             "n5.vocab.35-particles-functional-.の"
-          ]
+          ],
+          "translation_en": "After work finished, I went out drinking."
         },
         {
           "ja": "ばんごはんを たべた あとで テレビを 見ます。",
@@ -12722,14 +12722,14 @@
         {
           "ja": "もう 行かなくちゃ。",
           "romaji": "",
-          "en": "I have to go now.",
           "vocab_ids": [
             "n5.vocab.12-time-frequency-sequen.もう",
             "n5.vocab.33-adverbs.もう",
             "n5.vocab.27-verbs-group-1-verbs.行く",
             "n5.vocab.27-verbs-group-1-verbs.なく",
             "n5.vocab.35-particles-functional-.は"
-          ]
+          ],
+          "translation_en": "I have to go now."
         },
         {
           "ja": "もう 行かなきゃ。",

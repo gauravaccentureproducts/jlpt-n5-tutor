@@ -12,11 +12,11 @@
       "stem_html": "きょうしつでは たばこを すっては （　　）。",
       "choices": [
         "いいです",
-        "いけません",
         "ください",
+        "いけません",
         "たいです"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "rationale": "「~ては いけません」 expresses prohibition.",
       "kbSourceId": "Q46",
       "id": "bunpou-4.1"
@@ -25,12 +25,12 @@
       "type": "mcq",
       "stem_html": "あさ おきて、コーヒーを （　　）、ニュースを 見ます。",
       "choices": [
-        "のんで",
-        "のみます",
         "のんだ",
+        "のみます",
+        "のんで",
         "のむ"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "て-form for sequential.",
       "kbSourceId": "Q47",
       "id": "bunpou-4.2"
@@ -53,12 +53,12 @@
       "type": "mcq",
       "stem_html": "その みせの ケーキは おいしくて、（　　）です。",
       "choices": [
-        "やすい",
-        "やすく",
         "やすかった",
+        "やすく",
+        "やすい",
         "やすくない"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "chained i-adj predicates.",
       "kbSourceId": "Q49",
       "id": "bunpou-4.4"

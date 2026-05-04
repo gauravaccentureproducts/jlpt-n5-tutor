@@ -13,10 +13,10 @@
       "choices": [
         "電語",
         "田話",
-        "電話",
-        "田語"
+        "田語",
+        "電話"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "rationale": "電話.",
       "kbSourceId": "Q76",
       "id": "moji-6.1"
@@ -39,12 +39,12 @@
       "type": "mcq",
       "stem_html": "がっこうへ いく __みち__ で 友だちに あいました。",
       "choices": [
-        "路",
-        "通",
         "道",
+        "通",
+        "路",
         "行"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "rationale": "道 (みち - road, way). 道 is whitelisted N5 (kanji whitelist line 98) and listed at vocabulary_n5.md. The distractors 通 / 路 / 行 are family-of-meaning alternatives commonly seen in N4+ vocabulary (通る / 通り pass through, 道路 / 路上 road, 行く go). The semantic-distractor design tests whether the student knows 道 specifically rather than just recognizing the \"road / way\" semantic field.",
       "kbSourceId": "Q78",
       "id": "moji-6.3"
@@ -68,11 +68,11 @@
       "stem_html": "__みせ__ は えきの まえに あります。",
       "choices": [
         "占",
-        "店",
+        "居",
         "庄",
-        "居"
+        "店"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "店.",
       "kbSourceId": "Q80",
       "id": "moji-6.5"
@@ -93,7 +93,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "まいあさ コーヒーを __のみます__。",
+      "stem_html": "パーティーで ジュースを __のみ__ました。",
       "choices": [
         "飯みます",
         "食みます",
@@ -101,7 +101,7 @@
         "飼みます"
       ],
       "correctIndex": 2,
-      "rationale": "飲みます.",
+      "rationale": "飲む (のむ - to drink). 飲 is N5; the distractors share visual / phonetic similarity in a different context.",
       "kbSourceId": "Q82",
       "id": "moji-6.7"
     },

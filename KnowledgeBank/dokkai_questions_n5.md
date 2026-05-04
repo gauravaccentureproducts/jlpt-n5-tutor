@@ -47,12 +47,12 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 _The blank should be filled with:_
 
-1. 来ました
-2. 来ません
+1. 来ません
+2. 来ました
 3. 来ます
 4. 来ませんでした
 
-**Answer: 1** - past affirmative (came one month ago).
+**Answer: 2** - past affirmative (came one month ago).
 
 #### Q2
 
@@ -88,12 +88,12 @@ _How much money does the writer have left?_
 
 _Who did the writer buy these things for?_
 
-1. お母さん
-2. お父さん
+1. お父さん
+2. お母さん
 3. 友だち
 4. じぶん
 
-**Answer: 1** - "Mother's Day" + おかあさんがよろこんだ.
+**Answer: 2** - "Mother's Day" + おかあさんがよろこんだ.
 
 ### Passage 3 (Q5, Q6)
 
@@ -109,12 +109,12 @@ _Who did the writer buy these things for?_
 
 _What does Yamada-san ask Tanaka-san to bring?_
 
-1. コート
-2. のみもの
+1. のみもの
+2. コート
 3. おかし
 4. 何も もって 来なくて いい
 
-**Answer: 1** - explicitly asks for a coat.
+**Answer: 2** - explicitly asks for a coat.
 
 #### Q6
 
@@ -152,12 +152,12 @@ _How many books does the writer read in a week?_
 
 _Where does the writer usually get books?_
 
-1. 図書館で かりる
+1. 本やで 買う
 2. 友だちから かりる
-3. 本やで 買う
+3. 図書館で かりる
 4. 学校で かりる
 
-**Answer: 1** - 図書館でかりることがおおい.
+**Answer: 3** - 図書館でかりることがおおい.
 
 ### Passage 5 (Q9, Q10)
 
@@ -167,23 +167,23 @@ _Where does the writer usually get books?_
 
 この 人は さいしょに 何を しますか。
 
-1. 駅で 友だちに あう
+1. おすしを 作る
 2. ばんごはんを 食べる
 3. ホテルに 行く
-4. おすしを 作る
+4. 駅で 友だちに あう
 
-**Answer: 1** - first action is meeting at station.
+**Answer: 4** - first action is meeting at station.
 
 #### Q10
 
 ばんごはんに 何を 食べますか。
 
-1. いえで 作った おすし
+1. 友だちが もって きた もの
 2. ホテルの りょうり
 3. レストランの りょうり
-4. 友だちが もって きた もの
+4. いえで 作った おすし
 
-**Answer: 1** - いえで作るおすし.
+**Answer: 4** - いえで作るおすし.
 
 ### Passage 6 (Q11, Q12)
 
@@ -199,12 +199,12 @@ _Where does the writer usually get books?_
 
 _What does Tanaka-san want Yamada-san to do?_
 
-1. 紙を きょうしつから とって くる
+1. ロッカーを あける
 2. しゅくだいを 作って くれる
 3. 学校に 行って くれる
-4. ロッカーを あける
+4. 紙を きょうしつから とって くる
 
-**Answer: 1** - asks やまださん to bring the homework paper from the classroom locker.
+**Answer: 4** - asks やまださん to bring the homework paper from the classroom locker.
 
 #### Q12
 
@@ -291,10 +291,10 @@ _Which day was the writer NOT busy?_
 
 1. 月曜日
 2. 水曜日
-3. 金曜日
-4. 日曜日
+3. 日曜日
+4. 金曜日
 
-**Answer: 4** - finally rests on Sunday.
+**Answer: 3** - finally rests on Sunday.
 
 #### Q18
 
@@ -302,12 +302,12 @@ _Which day was the writer NOT busy?_
 
 _What did the writer do on Wednesday?_
 
-1. 病院に 行った
-2. テストを うけた
+1. テストを うけた
+2. 病院に 行った
 3. アルバイトを した
 4. やすんだ
 
-**Answer: 1** - 水曜日は 病院に 行きました - went to the hospital on Wednesday.
+**Answer: 2** - 水曜日は 病院に 行きました - went to the hospital on Wednesday.
 
 ### Passage 10 (Q19, Q20)
 
@@ -323,12 +323,12 @@ _What did the writer do on Wednesday?_
 
 _What does Yamada-san want everyone to do?_
 
-1. 山に のぼる
-2. やまだの いえに 来る
+1. やまだの いえに 来る
+2. 山に のぼる
 3. 山の しゃしんを とる
 4. 駅で あさごはんを 食べる
 
-**Answer: 1** - asks everyone to call (電話して ください) if they want to come.
+**Answer: 2** - asks everyone to call (電話して ください) if they want to come.
 
 #### Q20
 
@@ -336,12 +336,12 @@ _What does Yamada-san want everyone to do?_
 
 _What should participants bring?_
 
-1. 弁当 と 水 と あたたかい ふく
-2. ケーキ と コーヒー
+1. ケーキ と コーヒー
+2. 弁当 と 水 と あたたかい ふく
 3. 何も もって 行かなくて いい
 4. ふく と お金
 
-**Answer: 1** - 弁当と 水を じぶんで もって 来て - bring lunch and water yourself.
+**Answer: 2** - 弁当と 水を じぶんで もって 来て - bring lunch and water yourself.
 
 ### Passage 11 (Q21, Q22)
 
@@ -353,12 +353,12 @@ _What should participants bring?_
 
 _Where does the writer's mother work?_
 
-1. 病院
-2. 学校
+1. 学校
+2. 病院
 3. みせ
 4. レストラン
 
-**Answer: 1** - 母は 病院で はたらいて います - mother works at the hospital.
+**Answer: 2** - 母は 病院で はたらいて います - mother works at the hospital.
 
 #### Q22
 
@@ -366,12 +366,12 @@ _Where does the writer's mother work?_
 
 _What do the writer's parents do on Sundays?_
 
-1. 家で 子どもと あそぶ
+1. はたらく
 2. 山に 行く
-3. はたらく
+3. 家で 子どもと あそぶ
 4. ねる
 
-**Answer: 1** - 日曜日は いつも 家に いて、 私と あそびます - Sundays at home with the narrator.
+**Answer: 3** - 日曜日は いつも 家に いて、 私と あそびます - Sundays at home with the narrator.
 
 ### Passage 12 (Q23, Q24)
 
@@ -383,12 +383,12 @@ _What do the writer's parents do on Sundays?_
 
 _What was the weather like last night?_
 
-1. 雨
+1. はれ
 2. くもり
-3. はれ
+3. 雨
 4. ゆき
 
-**Answer: 1** - たくさん 雨が ふりました - heavy rain last night.
+**Answer: 3** - たくさん 雨が ふりました - heavy rain last night.
 
 #### Q24
 
@@ -458,10 +458,10 @@ _Where does Tanaka-san eat dinner?_
 
 1. 家
 2. かいしゃ
-3. 駅の 近く
-4. かいしゃの ちかくの レストラン
+3. かいしゃの ちかくの レストラン
+4. 駅の 近く
 
-**Answer: 4** - ばんごはんは いつも かいしゃの ちかくの レストランで 食べます - always eats dinner at a restaurant near the office.
+**Answer: 3** - ばんごはんは いつも かいしゃの ちかくの レストランで 食べます - always eats dinner at a restaurant near the office.
 
 ### Passage 15 (Q29, Q30)
 
@@ -534,11 +534,11 @@ _Where is the concert this week?_
 _What time does the movie start?_
 
 1. 一時
-2. 二時
+2. 三時
 3. 五時
-4. 三時
+4. 二時
 
-**Answer: 4** - えいがは 三時から 五時まで - movie runs 3 to 5; starts at 3.
+**Answer: 2** - えいがは 三時から 五時まで - movie runs 3 to 5; starts at 3.
 
 #### Q34
 
@@ -547,11 +547,11 @@ _What time does the movie start?_
 _What will the writer do AFTER the movie?_
 
 1. ひるごはんを 食べる
-2. 家に かえる
+2. きっさてんで 話す
 3. もう 一かい えいがを 見る
-4. きっさてんで 話す
+4. 家に かえる
 
-**Answer: 4** - えいがが 終わったら、 こうちゃの きっさてんで - after the movie, goes to a tea cafe.
+**Answer: 2** - えいがが 終わったら、 こうちゃの きっさてんで - after the movie, goes to a tea cafe.
 
 ### Passage 18 (Q35, Q36)
 
@@ -564,11 +564,11 @@ _What will the writer do AFTER the movie?_
 _Why is the writer's father good at Chinese?_
 
 1. 父は 中国人 だから
-2. 大学で べんきょうしたから
+2. 中国に すんで いたから
 3. 先生 だから
-4. 中国に すんで いたから
+4. 大学で べんきょうしたから
 
-**Answer: 4** - 父は 大学生の とき、 中国に すんで いました - lived in China during university.
+**Answer: 2** - 父は 大学生の とき、 中国に すんで いました - lived in China during university.
 
 #### Q36
 
@@ -578,10 +578,10 @@ _How is the writer's Chinese?_
 
 1. とても じょうず
 2. すこし 上手
-3. ぜんぜん わからない
-4. あまり 上手では ない
+3. あまり 上手では ない
+4. ぜんぜん わからない
 
-**Answer: 4** - むずかしい...あまり 上手では ありません - narrator finds Chinese hard, not very good at it.
+**Answer: 3** - むずかしい...あまり 上手では ありません - narrator finds Chinese hard, not very good at it.
 
 ### Passage 19 (Q37, Q38)
 
@@ -595,10 +595,10 @@ _How often does the writer go to the pool?_
 
 1. 一しゅうかんに 一回
 2. 一しゅうかんに 二回
-3. 毎日
-4. 一しゅうかんに 三回
+3. 一しゅうかんに 三回
+4. 毎日
 
-**Answer: 4** - 一しゅうかんに 三回 - three times a week.
+**Answer: 3** - 一しゅうかんに 三回 - three times a week.
 
 #### Q38
 
@@ -608,10 +608,10 @@ _When can the writer NOT use the pool?_
 
 1. 月曜日
 2. 水曜日
-3. 金曜日
-4. 日曜日
+3. 日曜日
+4. 金曜日
 
-**Answer: 4** - 日曜日は 学校が 休みですから、 プールも 使えません - pool unavailable on Sundays.
+**Answer: 3** - 日曜日は 学校が 休みですから、 プールも 使えません - pool unavailable on Sundays.
 
 ### Passage 20 (Q39, Q40)
 
@@ -625,10 +625,10 @@ _What did Tanaka-san eat this morning?_
 
 1. パン と ぎゅうにゅう
 2. パン と おちゃ
-3. ごはん と ぎゅうにゅう
-4. ごはん と おちゃ
+3. ごはん と おちゃ
+4. ごはん と ぎゅうにゅう
 
-**Answer: 4** - パンが ありませんでしたから、 ごはんを 食べました - no bread, so ate rice instead.
+**Answer: 3** - パンが ありませんでしたから、 ごはんを 食べました - no bread, so ate rice instead.
 
 #### Q40
 
@@ -636,12 +636,12 @@ _What did Tanaka-san eat this morning?_
 
 _Why was breakfast different today?_
 
-1. ごはんが なかったから
+1. パンが なかったから
 2. ぎゅうにゅうが きらいだから
 3. 朝ごはんを 食べなかったから
-4. パンが なかったから
+4. ごはんが なかったから
 
-**Answer: 4** - パンが ありませんでした - usual bread+milk replaced by rice+tea today.
+**Answer: 1** - パンが ありませんでした - usual bread+milk replaced by rice+tea today.
 
 ### Passage 21 (Q41, Q42)
 
@@ -786,12 +786,12 @@ _How does the father go to work?_
 
 _Why does the father say "I get tired"?_
 
-1. しごとが むずかしいから
-2. でんしゃで 立って いるから
+1. でんしゃで 立って いるから
+2. しごとが むずかしいから
 3. かいしゃが ちかいから
 4. 朝 はやく おきるから
 
-**Answer: 2** - でんしゃは とても こんで います。...父は いつも 立って います - packed train, has to stand the whole way.
+**Answer: 1** - でんしゃは とても こんで います。...父は いつも 立って います - packed train, has to stand the whole way.
 
 ### Passage 26 (Q51, Q52)
 
@@ -816,12 +816,12 @@ _From what age has the older brother been learning piano?_
 
 _What is happening this week?_
 
-1. たんじょうびの パーティー
-2. 大学の コンサート
+1. 大学の コンサート
+2. たんじょうびの パーティー
 3. ピアノの レッスン
 4. 家ぞくの しょくじ
 
-**Answer: 2** - 大学の コンサートで ひきます - older brother plays at the university concert this week.
+**Answer: 1** - 大学の コンサートで ひきます - older brother plays at the university concert this week.
 
 ### Passage 27 (Q53, Q54)
 
@@ -957,34 +957,34 @@ _Why was the hiking postponed?_
 
 この 人は どうして 日本語の べんきょうを はじめましたか。
 
-1. 大学で べんきょうした
-2. 子どもの とき、父から 教わった
+1. 子どもの とき、父から 教わった
+2. 大学で べんきょうした
 3. 日本に 来てから べんきょうした
 4. 友だちが 教えて くれた
 
-**Answer: 2** - 父が 日本ごの 先生でしたから、 子どもの ときから 日本ごを すこし べんきょうしました.
+**Answer: 1** - 父が 日本ごの 先生でしたから、 子どもの ときから 日本ごを すこし べんきょうしました.
 
 #### Q62
 
 この 人は いつ はじめて 日本に 来ましたか。
 
-1. 子どもの とき
+1. 大学 二年生の とき
 2. 高校生の とき
-3. 大学 二年生の とき
+3. 子どもの とき
 4. 大学を そつぎょうした あと
 
-**Answer: 3** - 大学の 二年生の とき、 はじめて 日本に 来ました - first came as a 2nd-year university student.
+**Answer: 1** - 大学の 二年生の とき、 はじめて 日本に 来ました - first came as a 2nd-year university student.
 
 #### Q63
 
 この 人は そつぎょうした 後、何を しますか。
 
-1. 大学いんに 入る
-2. 日本に すんで しごとを する
+1. 日本に すんで しごとを する
+2. 大学いんに 入る
 3. 父と いっしょに 先生に なる
 4. 母と すむ
 
-**Answer: 2** - 大学を そつぎょうしてから、 日本に すんで しごとを するつもりです - plans to live and work in Japan after graduation.
+**Answer: 1** - 大学を そつぎょうしてから、 日本に すんで しごとを するつもりです - plans to live and work in Japan after graduation.
 
 ### Passage B (Q64-Q66)
 
@@ -1005,12 +1005,12 @@ _Why was the hiking postponed?_
 
 やまださんの はじめての コンサートは どうでしたか。
 
-1. たのしかった
+1. こわかったが、いい けいけんだった
 2. つまらなかった
-3. こわかったが、いい けいけんだった
+3. たのしかった
 4. むずかしかった
 
-**Answer: 3** - こわかったですが、 とても いい けいけんでした - was scary but a good experience.
+**Answer: 1** - こわかったですが、 とても いい けいけんでした - was scary but a good experience.
 
 #### Q66
 
@@ -1046,10 +1046,10 @@ _What is special about the mother's curry?_
 
 1. 高い
 2. ピリ辛い
-3. やさいが たくさん、にくは すこし
-4. ふつうの カレー
+3. ふつうの カレー
+4. やさいが たくさん、にくは すこし
 
-**Answer: 3** - 中に やさいが たくさん 入って います。 にくは すこし だけです - lots of vegetables, only a little meat.
+**Answer: 4** - 中に やさいが たくさん 入って います。 にくは すこし だけです - lots of vegetables, only a little meat.
 
 #### Q69
 
@@ -1059,10 +1059,10 @@ _What does the writer plan to do?_
 
 1. 母に カレーを 作って もらう
 2. レストランで カレーを 食べる
-3. カレーの 作りかたを ならって、友だちに 作って あげる
-4. カレーやで はたらく
+3. カレーやで はたらく
+4. カレーの 作りかたを ならって、友だちに 作って あげる
 
-**Answer: 3** - 母から カレーの 作りかたを 教わって、 友だちに 作って あげたいです - learn the recipe and make it for friends.
+**Answer: 4** - 母から カレーの 作りかたを 教わって、 友だちに 作って あげたいです - learn the recipe and make it for friends.
 
 ### Passage D (Q70-Q72)
 
@@ -1160,12 +1160,12 @@ _What does the writer want for a birthday gift?_
 
 _How many months can people climb Mt. Fuji?_
 
-1. 一か月
-2. 二か月
+1. 二か月
+2. 一か月
 3. 三か月
 4. 四か月
 
-**Answer: 2** - 七月と 八月の 二か月 だけです - only July and August, two months.
+**Answer: 1** - 七月と 八月の 二か月 だけです - only July and August, two months.
 
 #### Q77
 
@@ -1173,12 +1173,12 @@ _How many months can people climb Mt. Fuji?_
 
 _When did the writer climb Mt. Fuji?_
 
-1. 七月
-2. 八月
+1. 八月
+2. 七月
 3. 九月
 4. 十月
 
-**Answer: 2** - ことしの 八月、 はじめて ふじさんに のぼりました - climbed in August this year.
+**Answer: 1** - ことしの 八月、 はじめて ふじさんに のぼりました - climbed in August this year.
 
 #### Q78
 
@@ -1188,10 +1188,10 @@ _How was the experience?_
 
 1. たのしくて、らくだった
 2. つまらなかった
-3. つかれたが、けしきが きれいだった
-4. ふじさんに のぼれなかった
+3. ふじさんに のぼれなかった
+4. つかれたが、けしきが きれいだった
 
-**Answer: 3** - つかれましたが、 上から 見た けしきは とても きれいでした - tiring but the view was beautiful.
+**Answer: 4** - つかれましたが、 上から 見た けしきは とても きれいでした - tiring but the view was beautiful.
 
 ### Passage G (Q79-Q81)
 
@@ -1203,12 +1203,12 @@ _How was the experience?_
 
 _What time will Tanaka-san meet friends?_
 
-1. 五時
-2. 六時
+1. 六時
+2. 五時
 3. 七時
 4. 八時
 
-**Answer: 2** - 朝 六時に 駅で あつまります - meet at the station at 6 in the morning.
+**Answer: 1** - 朝 六時に 駅で あつまります - meet at the station at 6 in the morning.
 
 #### Q80
 
@@ -1218,10 +1218,10 @@ _How long does it take to get to the sea?_
 
 1. 三十分
 2. 一時間
-3. 一時間 はん
-4. 二時間
+3. 二時間
+4. 一時間 はん
 
-**Answer: 3** - でんしゃで うみまで 一時間 はん かかります - 1.5 hours by train to the sea.
+**Answer: 4** - でんしゃで うみまで 一時間 はん かかります - 1.5 hours by train to the sea.
 
 #### Q81
 
@@ -1229,12 +1229,12 @@ _How long does it take to get to the sea?_
 
 _Where will they have lunch?_
 
-1. 駅の ちかく
-2. うみの ちかくの レストラン
+1. うみの ちかくの レストラン
+2. 駅の ちかく
 3. 家
 4. でんしゃの 中
 
-**Answer: 2** - ひるごはんは うみの ちかくの レストランで 食べます - lunch at a restaurant near the sea.
+**Answer: 1** - ひるごはんは うみの ちかくの レストランで 食べます - lunch at a restaurant near the sea.
 
 ### Passage H (Q82-Q84)
 
@@ -1248,10 +1248,10 @@ _How old is the writer's older brother now?_
 
 1. 二十さい
 2. 二十五さい
-3. 三十さい
-4. 三十二さい
+3. 三十二さい
+4. 三十さい
 
-**Answer: 3** - あには ことし 三十さいに なりました - older brother turned 30 this year.
+**Answer: 4** - あには ことし 三十さいに なりました - older brother turned 30 this year.
 
 #### Q83
 
@@ -1430,12 +1430,12 @@ _What activity requires a reservation?_
 
 _When can students attend the class?_
 
-1. 月よう日 と 火よう日
-2. 月よう日 と 水よう日
+1. 月よう日 と 水よう日
+2. 月よう日 と 火よう日
 3. 火よう日 と 木よう日
 4. 毎日
 
-**Answer: 2** - 時間: 月よう日 と 水よう日 - the poster lists Mon and Wed.
+**Answer: 1** - 時間: 月よう日 と 水よう日 - the poster lists Mon and Wed.
 
 #### Q94
 
@@ -1445,10 +1445,10 @@ _Who CANNOT join this class?_
 
 1. かいしゃいん
 2. しゅふ (housewife)
-3. こうこうせい
-4. 大学生
+3. 大学生
+4. こうこうせい
 
-**Answer: 3** - 大人だけ + こうこうせいは入れない.
+**Answer: 4** - 大人だけ + こうこうせいは入れない.
 
 ### Item 3 (Q95, Q96): レストランの メニュー
 
@@ -1520,12 +1520,12 @@ _The writer wants to arrive at the park by 9:30 on Monday. Which bus should they
 
 _On Sunday morning, how often do buses run?_
 
-1. 三十分に 一本
-2. 一時間に 一本
+1. 一時間に 一本
+2. 三十分に 一本
 3. 二時間に 一本
 4. 一日に 一本
 
-**Answer: 2** - 8:00, 9:00, 10:00 = hourly.
+**Answer: 1** - 8:00, 9:00, 10:00 = hourly.
 
 ### Item 5 (Q99, Q100): びょういんの あんない
 

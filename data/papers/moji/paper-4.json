@@ -11,12 +11,12 @@
       "type": "mcq",
       "stem_html": "この くつは <u>古い</u> です。",
       "choices": [
-        "ふるい",
         "ふろい",
+        "ふるい",
         "ぶるい",
         "ふらい"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "rationale": "古 (ふる) + い.",
       "kbSourceId": "Q46",
       "id": "moji-4.1"
@@ -25,12 +25,12 @@
       "type": "mcq",
       "stem_html": "この かばんは <u>高い</u> です。",
       "choices": [
-        "たかい",
         "たがい",
+        "たかい",
         "たけい",
         "だかい"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "rationale": "高 (たか) + い.",
       "kbSourceId": "Q47",
       "id": "moji-4.2"
@@ -39,12 +39,12 @@
       "type": "mcq",
       "stem_html": "<u>安い</u> くつを 買いました。",
       "choices": [
-        "やすい",
         "あすい",
+        "やすい",
         "やしい",
         "やせい"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "rationale": "安 (やす) + い.",
       "kbSourceId": "Q48",
       "id": "moji-4.3"
@@ -97,10 +97,10 @@
       "choices": [
         "先成",
         "先正",
-        "元生",
-        "先生"
+        "先生",
+        "元生"
       ],
-      "correctIndex": 3,
+      "correctIndex": 2,
       "rationale": "先生 (teacher).",
       "kbSourceId": "Q52",
       "id": "moji-4.7"

@@ -25,12 +25,12 @@
       "type": "mcq",
       "stem_html": "A: しゅくだいは むずかしくないです。",
       "choices": [
-        "しゅくだいは むずかしいです。",
         "しゅくだいは やさしいです。",
+        "しゅくだいは むずかしいです。",
         "しゅくだいは おもしろいです。",
         "しゅくだいは ながいです。"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "not difficult ≈ easy.",
       "kbSourceId": "Q77",
       "id": "goi-6.2"
@@ -53,12 +53,12 @@
       "type": "mcq",
       "stem_html": "A: たなかさんの いえは 大きくないです。",
       "choices": [
-        "たなかさんの いえは 大きいです。",
         "たなかさんの いえは ちいさいです。",
+        "たなかさんの いえは 大きいです。",
         "たなかさんの いえは あたらしいです。",
         "たなかさんの いえは ふるいです。"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "by elimination among the four options. Strictly, 大きくない (not big) is broader than ちいさい (small) — 中ぐらい (medium-sized) also fits 大きくない. Among the four options, ちいさい is the closest single-word match.",
       "kbSourceId": "Q79",
       "id": "goi-6.4"
@@ -67,12 +67,12 @@
       "type": "mcq",
       "stem_html": "A: きょうは あつくないです。",
       "choices": [
-        "きょうは あついです。",
         "きょうは すずしいです。",
+        "きょうは あついです。",
         "きょうは あたたかいです。",
         "きょうは ねむいです。"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "by elimination among the four options. Strictly, あつくない (not hot) is broader than すずしい (cool) - \"warm\" (あたたかい) also qualifies as \"not hot\" - but the other three options are clearly wrong (あつい = opposite meaning; あたたかい = different temperature property; ねむい = irrelevant property), so すずしい is the closest fit.",
       "kbSourceId": "Q80",
       "id": "goi-6.5"
@@ -82,11 +82,11 @@
       "stem_html": "A: その しごとを する 人は いません。",
       "choices": [
         "みんなが その しごとを します。",
-        "だれも その しごとを しません。",
+        "その しごとは おもしろいです。",
         "その しごとは おわりました。",
-        "その しごとは おもしろいです。"
+        "だれも その しごとを しません。"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "人がいない = だれもしない.",
       "kbSourceId": "Q81",
       "id": "goi-6.6"
@@ -124,11 +124,11 @@
       "stem_html": "A: きょうは 時間が ありません。",
       "choices": [
         "きょうは ひまです。",
-        "きょうは いそがしいです。",
+        "きょうは げんきです。",
         "きょうは つかれて います。",
-        "きょうは げんきです。"
+        "きょうは いそがしいです。"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "rationale": "no time ≈ busy.",
       "kbSourceId": "Q84",
       "id": "goi-6.9"

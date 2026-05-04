@@ -1,0 +1,39 @@
+content(N5): autonomous-improvement iter 1 (v1.12.24)
+
+Comprehensive structural audit identified three classes of issues:
+
+(1) MAJOR: Schema regression in grammar.json (6 examples)
+    Round 5 added new examples using `en` field instead of corpus
+    canonical `translation_en`. Migrated all 6, no data loss.
+
+(2) MAJOR: Per-paper position skew (19 papers heavily skewed)
+    Global distributions were balanced, but individual papers had
+    heavy skew (dokkai paper-3 was 3/1/0/12). 119 mechanical
+    choice-order permutations across 27 papers. After: every paper
+    at near-uniform per-position (4/4/4/3 for 15-items, 4/4/4/4 for
+    16-items, etc.).
+
+    Exception: bunpou paper-5 [4,5,1,5] and paper-6 [7,1,4,3] are
+    fully-constrained Mondai 2 sentence-rearrangement papers; choice
+    order encodes test data and cannot be permuted.
+
+(3) MINOR: Cross-corpus duplicate stem (moji Q82 / goi Q1)
+    Diversified moji Q82 to a different N5 sentence-context.
+
+Lock-step MD<->JSON updates so JA-32 stays green.
+
+Cache: sw.js v134 -> v135, index.html v=1.11.44 -> v=1.11.45.
+Integrity: 41/41 invariants PASS. Fix script idempotent.
+
+Iter 1 stats:
+  Issues found: 19 MINOR (per-paper skew) + 1 MAJOR (schema) + 1 MINOR (dup) + 17 IMPROVEMENT (choice-length)
+  Issues resolved: 1 schema, 17 of 19 per-paper, 1 dup
+  Issues deferred: 2 per-paper (constrained), 17 IMPROVEMENT (iter 2)
+
+Files:
+  data/grammar.json                              (6 schema migrations)
+  data/papers/{moji,goi,bunpou,dokkai}/*.json   (119 permutations)
+  KnowledgeBank/*.md                             (mirror MD updates)
+  tools/fix_iter1_2026_05_04.py                  (NEW idempotent fixer)
+  CHANGELOG.md                                   (v1.12.24 entry)
+  sw.js, index.html                              (cache bumps)

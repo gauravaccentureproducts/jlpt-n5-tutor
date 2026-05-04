@@ -25,12 +25,12 @@
       "type": "mcq",
       "stem_html": "<u>四月</u> から 大学に いきます。",
       "choices": [
-        "よがつ",
         "しがつ",
+        "よがつ",
         "よんがつ",
         "よっがつ"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "四 has reading シ in 四月.",
       "kbSourceId": "Q17",
       "id": "moji-2.2"
@@ -39,12 +39,12 @@
       "type": "mcq",
       "stem_html": "<u>今日</u> は とても いい てんきです。",
       "choices": [
-        "きょうび",
+        "きょう",
         "こんにち",
         "こんじつ",
-        "きょう"
+        "きょうび"
       ],
-      "correctIndex": 3,
+      "correctIndex": 0,
       "rationale": "今日 is read きょう (irregular jukujikun).",
       "kbSourceId": "Q18",
       "id": "moji-2.3"
@@ -53,12 +53,12 @@
       "type": "mcq",
       "stem_html": "<u>今年</u>の ふゆは さむいです。",
       "choices": [
-        "こんねん",
         "ことし",
+        "こんねん",
         "いまとし",
         "きんねん"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "今年 is read ことし (irregular jukujikun reading).",
       "kbSourceId": "Q19",
       "id": "moji-2.4"
@@ -83,10 +83,10 @@
       "choices": [
         "らいしゅ",
         "こんしゅう",
-        "せんしゅう",
-        "らいしゅう"
+        "らいしゅう",
+        "せんしゅう"
       ],
-      "correctIndex": 3,
+      "correctIndex": 2,
       "rationale": "来 (ライ) + 週 (シュウ).",
       "kbSourceId": "Q21",
       "id": "moji-2.6"
@@ -95,12 +95,12 @@
       "type": "mcq",
       "stem_html": "<u>毎日</u> にほんごを べんきょうします。",
       "choices": [
-        "まいひ",
         "まいにち",
+        "まいひ",
         "まいじつ",
         "まいか"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "毎 (マイ) + 日 (ニチ).",
       "kbSourceId": "Q22",
       "id": "moji-2.7"

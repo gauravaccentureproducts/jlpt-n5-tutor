@@ -2,6 +2,56 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.24 - 2026-05-04 (Autonomous-improvement iter 1 — per-paper rebalance + schema fix)
+
+Comprehensive structural audit run autonomously (no manual driver).
+Found three classes of issues; iteration 1 fixed all reachable ones.
+
+### Schema regression fix (grammar.json, 6 examples)
+
+  Round 5 (v1.12.23) added 6 grammar examples using `en` field.
+  The corpus convention is `translation_en`. Migrated all 6.
+  No data loss; all translations preserved.
+
+### Per-paper position rebalance (27 papers updated, 119 swaps)
+
+  While prior rebalances achieved global ~25/25/25/25, individual
+  papers had heavy skew (e.g., dokkai paper-3 was [3, 1, 0, 12] —
+  position D 75% within that paper). A learner practicing one
+  paper at a time experienced the per-paper distribution.
+
+  After iteration 1: every 15-item paper at 4/4/4/3 (or near),
+  every 16-item paper at 4/4/4/4, every 12-item paper at 3/3/3/3,
+  every 10-item paper at 3/3/2/2.
+
+  Two exceptions, accepted by constraint:
+    bunpou paper-5: [4, 5, 1, 5] - all 15 items are Mondai 2
+                    sentence-rearrangement; choice order encodes
+                    the fragment positions, not permutable.
+    bunpou paper-6: [7, 1, 4, 3] - same constraint.
+
+### Cross-corpus duplicate stem resolved (1 item)
+
+  moji Q82 and goi Q1 both used the stem 「まいあさ コーヒーを X」.
+  Diversified moji Q82 to 「パーティーで ジュースを __のみ__ました」.
+  Same kanji-writing test point (飲) with a different surrounding
+  sentence.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v134 -> v135
+  - index.html cache-busters:    v=1.11.44 -> v=1.11.45
+  - 41/41 invariants PASS
+  - Fix script idempotent
+
+### Outstanding (improvement-tier, deferred to iter 2)
+
+  17 items have choice-length asymmetry where the keyed answer is
+  significantly longer/shorter than distractors (e.g., dokkai Q5 with
+  lens [3,4,3,14]). Need content authoring to reshape distractors.
+
+---
+
 ## v1.12.23 - 2026-05-04 (N5 thorough audit Round 5 - reading.json + grammar.json)
 
 Round 5 of the teacher-style N5 audit covers the last two un-audited

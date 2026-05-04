@@ -77,12 +77,12 @@
       "type": "mcq",
       "stem_html": "どうして おとうさんは 「つかれる」と 言いますか。",
       "choices": [
-        "しごとが むずかしいから",
         "でんしゃで 立って いるから",
+        "しごとが むずかしいから",
         "かいしゃが ちかいから",
         "朝 はやく おきるから"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "でんしゃは とても こんで います。...父は いつも 立って います - packed train, has to stand the whole way.",
       "kbSourceId": "Q50",
       "passage_text": "> 私の 父は 毎日 八時に 家を 出ます。 でんしゃで かいしゃに 行きます。 でんしゃは とても こんで います。 ですから 父は いつも 立って います。 かいしゃまで 一時間 ぐらい かかります。 父は 「つかれる」と 言います。",
@@ -109,12 +109,12 @@
       "type": "mcq",
       "stem_html": "こんしゅう 何が ありますか。",
       "choices": [
-        "たんじょうびの パーティー",
         "大学の コンサート",
+        "たんじょうびの パーティー",
         "ピアノの レッスン",
         "家ぞくの しょくじ"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "rationale": "大学の コンサートで ひきます - older brother plays at the university concert this week.",
       "kbSourceId": "Q52",
       "passage_text": "> 私の あには ピアノが じょうずです。 五さいから ピアノを ならって います。 こんしゅう、 大学の コンサートで ひきます。 家ぞくは みんな 見に 行きます。 私も 朝から 楽しみに して います。",

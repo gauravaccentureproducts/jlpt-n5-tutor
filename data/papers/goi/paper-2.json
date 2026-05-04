@@ -54,11 +54,11 @@
       "stem_html": "きのうは しごとが とても （　　）。",
       "choices": [
         "つよいでした",
-        "つかれます",
+        "いそがしかったです",
         "はやいです",
-        "いそがしかったです"
+        "つかれます"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "rationale": "past i-adj + です. しごとが いそがしい (work was busy) is the canonical N5 stem-and-answer pairing for this grammar pattern. The topic word しごと anchors いそがしい uniquely.",
       "kbSourceId": "Q19",
       "id": "goi-2.4"
@@ -110,11 +110,11 @@
       "stem_html": "私の いえは ここから とても （　　） です。",
       "choices": [
         "あつい",
-        "きれい",
+        "とおい",
         "ふるい",
-        "とおい"
+        "きれい"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "rationale": "distance + とおい (far).",
       "kbSourceId": "Q23",
       "id": "goi-2.8"
@@ -124,11 +124,11 @@
       "stem_html": "きょうは あついから、まどを （　　） ください。",
       "choices": [
         "しめて",
-        "つけて",
+        "あけて",
         "けして",
-        "あけて"
+        "つけて"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "rationale": "hot + open the window.",
       "kbSourceId": "Q24",
       "id": "goi-2.9"
@@ -152,11 +152,11 @@
       "stem_html": "くらいですから、でんきを （　　） ください。",
       "choices": [
         "けして",
-        "あけて",
+        "つけて",
         "しめて",
-        "つけて"
+        "あけて"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "rationale": "dark + turn on light.",
       "kbSourceId": "Q26",
       "id": "goi-2.11"
@@ -165,12 +165,12 @@
       "type": "mcq",
       "stem_html": "つぎの （　　） を 右に まがって ください。",
       "choices": [
-        "みち",
+        "かど",
         "やま",
         "はし",
-        "かど"
+        "みち"
       ],
-      "correctIndex": 3,
+      "correctIndex": 0,
       "rationale": "turn at the corner (かど).",
       "kbSourceId": "Q27",
       "id": "goi-2.12"

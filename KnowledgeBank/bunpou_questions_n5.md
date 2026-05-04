@@ -37,22 +37,22 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 わたし（　　）たなかです。
 
 1. が
-2. を
-3. は
+2. は
+3. を
 4. に
 
-**Answer: 3** - topic marker は.
+**Answer: 2** - topic marker は.
 
 ### Q2
 
 きのう ともだち（　　）えいがを 見ました。
 
 1. を
-2. に
+2. と
 3. が
-4. と
+4. に
 
-**Answer: 4** - 友だちと (with).
+**Answer: 2** - 友だちと (with).
 
 ### Q3
 
@@ -92,55 +92,55 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 ぎんこうは 駅（　　）まえに あります。
 
 1. を
-2. は
+2. の
 3. が
-4. の
+4. は
 
-**Answer: 4** - possessive / location-of.
+**Answer: 2** - possessive / location-of.
 
 ### Q7
 
 七時（　　）おきます。
 
 1. と
-2. で
+2. に
 3. を
-4. に
+4. で
 
-**Answer: 4** - time of action.
+**Answer: 2** - time of action.
 
 ### Q8
 
 きょうしつ（　　）日本語を べんきょうします。
 
-1. に
+1. で
 2. へ
 3. を
-4. で
+4. に
 
-**Answer: 4** - location of action (where you do it).
+**Answer: 1** - location of action (where you do it).
 
 ### Q9
 
 としょかん（　　）本を よみます。
 
-1. に
+1. で
 2. へ
 3. を
-4. で
+4. に
 
-**Answer: 4** - location of action.
+**Answer: 1** - location of action.
 
 ### Q10
 
 たなかさん（　　）アメリカへ いきました。
 
-1. を
+1. は
 2. に
 3. が
-4. は
+4. を
 
-**Answer: 4** - new topic (or focus).
+**Answer: 1** - new topic (or focus).
 
 ### Q11
 
@@ -202,11 +202,11 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 ピアノ（　　）できます。
 
 1. を
-2. へ
+2. が
 3. に
-4. が
+4. へ
 
-**Answer: 4** - できる takes が.
+**Answer: 2** - できる takes が.
 
 ### Q17
 
@@ -245,23 +245,23 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 きょう（　　）あした、しけんが あります。
 
-1. に
+1. か
 2. と
-3. か
+3. に
 4. を
 
-**Answer: 3** - か (or).
+**Answer: 1** - か (or).
 
 ### Q21
 
 その 本は たなかさん（　　）もらいました。
 
-1. を
+1. に
 2. が
-3. に
+3. を
 4. と
 
-**Answer: 3** - source for もらう.
+**Answer: 1** - source for もらう.
 
 ### Q22
 
@@ -378,66 +378,66 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 この りんごは あまり （　　）。
 
 1. おいしいです
-2. おいしくないです
+2. おいしくなかったです
 3. おいしかったです
-4. おいしくなかったです
+4. おいしくないです
 
-**Answer: 2** - あまり + negative.
+**Answer: 4** - あまり + negative.
 
 ### Q33
 
 きのう 食べた りょうりは とても （　　）です。
 
-1. おいしい
+1. おいしかった
 2. おいしく
-3. おいしかった
+3. おいしい
 4. おいしくない
 
-**Answer: 3** - past i-adj.
+**Answer: 1** - past i-adj.
 
 ### Q34
 
 きょうしつは あまり （　　）。
 
-1. しずかな
+1. しずかじゃ ありません
 2. しずかで
-3. しずかじゃ ありません
+3. しずかな
 4. しずかでした
 
-**Answer: 3** - あまり + neg construction. しずかじゃ ありません is the clean N5 polite-negative i-na-adj form (replaces colloquial 「しずかじゃない」+です from a prior version).
+**Answer: 1** - あまり + neg construction. しずかじゃ ありません is the clean N5 polite-negative i-na-adj form (replaces colloquial 「しずかじゃない」+です from a prior version).
 
 ### Q35
 
 たなかさんは とても しんせつ （　　） 人です。
 
 1. の
-2. な
+2. に
 3. で
-4. に
+4. な
 
-**Answer: 2** - na-adj + な + Noun.
+**Answer: 4** - na-adj + な + Noun.
 
 ### Q36
 
 きょうは 雨ですから、外へ いき （　　）。
 
 1. ます
-2. ません
+2. ましょう
 3. たいです
-4. ましょう
+4. ません
 
-**Answer: 2** - rain → don't go.
+**Answer: 4** - rain → don't go.
 
 ### Q37
 
 おなかが すきましたから、何か 食べ （　　）。
 
-1. ます
-2. たいです
+1. たいです
+2. ます
 3. ません
 4. ましょうか
 
-**Answer: 2** - hungry + want to eat.
+**Answer: 1** - hungry + want to eat.
 
 ### Q38
 
@@ -532,22 +532,22 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 きょうしつでは たばこを すっては （　　）。
 
 1. いいです
-2. いけません
-3. ください
+2. ください
+3. いけません
 4. たいです
 
-**Answer: 2** - 「~ては いけません」 expresses prohibition.
+**Answer: 3** - 「~ては いけません」 expresses prohibition.
 
 ### Q47
 
 あさ おきて、コーヒーを （　　）、ニュースを 見ます。
 
-1. のんで
+1. のんだ
 2. のみます
-3. のんだ
+3. のんで
 4. のむ
 
-**Answer: 1** - て-form for sequential.
+**Answer: 3** - て-form for sequential.
 
 ### Q48
 
@@ -564,12 +564,12 @@ Numbers are written using both kanji forms (一, 二, 三, 五, 十, 百, 千) a
 
 その みせの ケーキは おいしくて、（　　）です。
 
-1. やすい
+1. やすかった
 2. やすく
-3. やすかった
+3. やすい
 4. やすくない
 
-**Answer: 1** - chained i-adj predicates.
+**Answer: 3** - chained i-adj predicates.
 
 ### Q50
 
@@ -1042,12 +1042,12 @@ ___ ___ ★ ___ いません。
 
 #### Q91 (blank 1)
 
-1. に
+1. で
 2. を
 3. が
-4. で
+4. に
 
-**Answer: 1** - time + に.
+**Answer: 4** - time + に.
 
 #### Q92 (blank 2)
 

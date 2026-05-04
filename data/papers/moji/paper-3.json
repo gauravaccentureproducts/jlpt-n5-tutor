@@ -109,12 +109,12 @@
       "type": "mcq",
       "stem_html": "きょうは <u>天気</u> が いいです。",
       "choices": [
-        "てんき",
+        "でんぎ",
         "でんき",
         "てんぎ",
-        "でんぎ"
+        "てんき"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "天 (テン) + 気 (キ).",
       "kbSourceId": "Q38",
       "id": "moji-3.8"
@@ -123,12 +123,12 @@
       "type": "mcq",
       "stem_html": "<u>雨</u> が ふって います。",
       "choices": [
-        "あめ",
+        "うめ",
         "あま",
         "あみ",
-        "うめ"
+        "あめ"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "雨 (あめ) - kun-yomi for the standalone noun.",
       "kbSourceId": "Q39",
       "id": "moji-3.9"
@@ -137,12 +137,12 @@
       "type": "mcq",
       "stem_html": "<u>花</u> が きれいに さいて います。",
       "choices": [
-        "はな",
+        "ばな",
         "はね",
         "はま",
-        "ばな"
+        "はな"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "花 (はな).",
       "kbSourceId": "Q40",
       "id": "moji-3.10"
@@ -151,12 +151,12 @@
       "type": "mcq",
       "stem_html": "<u>電車</u> で 駅まで いきます。",
       "choices": [
-        "でんしゃ",
-        "てんしゃ",
         "でんさ",
+        "てんしゃ",
+        "でんしゃ",
         "てんさ"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "rationale": "電 (デン) + 車 (シャ).",
       "kbSourceId": "Q41",
       "id": "moji-3.11"

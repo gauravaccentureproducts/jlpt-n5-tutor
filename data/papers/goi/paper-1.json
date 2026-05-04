@@ -11,12 +11,12 @@
       "type": "mcq",
       "stem_html": "まいあさ コーヒーを （　　）。",
       "choices": [
-        "のみます",
         "たべます",
+        "のみます",
         "ききます",
         "みます"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "rationale": "コーヒー is something one drinks (のむ).",
       "kbSourceId": "Q1",
       "id": "goi-1.1"
@@ -25,12 +25,12 @@
       "type": "mcq",
       "stem_html": "ばんごはんを （　　） から、テレビを 見ます。",
       "choices": [
-        "たべて",
         "のんで",
+        "たべて",
         "かいて",
         "かって"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "rationale": "ごはん takes たべる.",
       "kbSourceId": "Q2",
       "id": "goi-1.2"
@@ -53,12 +53,12 @@
       "type": "mcq",
       "stem_html": "きのう 友だちに （　　）。",
       "choices": [
-        "あいました",
         "かいました",
+        "あいました",
         "しました",
         "たちました"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "rationale": "友だち + に + あう (to meet).",
       "kbSourceId": "Q4",
       "id": "goi-1.4"
@@ -67,12 +67,12 @@
       "type": "mcq",
       "stem_html": "つかれましたから、いえで （　　）。",
       "choices": [
-        "やすみます",
         "はたらきます",
+        "やすみます",
         "はしります",
         "およぎます"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "rationale": "つかれた + やすむ. つかれましたから (polite past + から) is the N5-canonical reason -> action chain (replaces ので which leans N4 in major textbooks).",
       "kbSourceId": "Q5",
       "id": "goi-1.5"
@@ -83,10 +83,10 @@
       "choices": [
         "きます",
         "でます",
-        "いきます",
-        "はいります"
+        "はいります",
+        "いきます"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "rationale": "direction-へ + いく.",
       "kbSourceId": "Q6",
       "id": "goi-1.6"
@@ -95,12 +95,12 @@
       "type": "mcq",
       "stem_html": "たなかさんは いま 学校に （　　）。",
       "choices": [
-        "います",
+        "かいます",
         "あります",
         "もちます",
-        "かいます"
+        "います"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "rationale": "person + います.",
       "kbSourceId": "Q7",
       "id": "goi-1.7"
