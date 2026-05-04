@@ -2,6 +2,102 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.23 - 2026-05-04 (N5 thorough audit Round 5 - reading.json + grammar.json)
+
+Round 5 of the teacher-style N5 audit covers the last two un-audited
+data sources. Sub-agent audits identified specific issues in both.
+
+### reading.json (40 passages, 84 questions)
+
+  **Position rebalance:** before 6/50/25/3 (B=60%, D=4%); after
+  **21/21/21/21**. 33 mechanical choice-order swaps. The skew on
+  this corpus was as severe as listening's pre-fix state - 13 of 40
+  passages had ALL their questions keyed to position B.
+
+  **Content fixes (4 items):**
+    n5.read.011.q2: distractor つめたかった replaced with
+                     しおからかった (passage explicitly says あつかった,
+                     making cold an instant-eliminate distractor).
+    n5.read.028.q1: distractors reshaped to match length of compound
+                     keyed answer (was: 3 single adjectives vs 1
+                     compound; now: 4 compounds).
+    n5.read.034.q2: explanation_en was duplicate of q1; refocused on
+                     "学校で" (the place).
+    n5.read.035.q3: explanation_en was duplicate of q2; refocused on
+                     "母と いっしょに" (the companion).
+
+### grammar.json (178 patterns, ~600 examples)
+
+  Sub-agent sampled ~95 examples across late_n5 and core_n5 subsets.
+  Found 7 specific issues:
+
+  **n5-007 (で particle: means/instrument)** - 2 examples replaced:
+    [2] たばこを すいません -> バスで 学校へ 行きます。
+        (former collided with apology homophone すみません/すいません)
+    [3] なんで きましたか -> タクシーで うちへ かえりました。
+        (former overwhelmingly read as "why" not "how")
+
+  **n5-098 (likes/dislikes contrast)** - meaning_en was misaligned
+    with examples. Was: "Most ~ of all (covered by superlative
+    pattern)". Updated to: "Expressing likes / dislikes contrast
+    (using すき / きらい)" - matches the actual examples.
+
+  **n5-162 (Verb-plain + まえに)** - 2 examples replaced:
+    [0] ごはんの まえに -> 出かける まえに、しんぶんを 読みます
+    [1] (similar) -> ねる まえに、はを みがきます
+    (Both former examples used Noun + の + まえに, which is a
+    different pattern - n5-161. The replacements demonstrate the
+    actual Verb-plain + まえに pattern this entry is for.)
+
+  **n5-163 (Verb-た + あとで)** - 1 example replaced:
+    [0] しごとの あとで -> しごとが おわった あとで、 のみに 行きました
+    (Same noun-vs-verb pattern issue as n5-162.)
+
+  **n5-176 (~なくちゃ / ~なきゃ casual contractions)** - 1 example
+    replaced:
+    [0] もう 行かなくては いけません -> もう 行かなくちゃ。
+    (Former used the formal ~なくては いけません instead of the
+    casual contractions this pattern is supposed to demonstrate.)
+
+  **n5-182 (Verb-dictionary + な = "Don't V" / prohibition)** - all
+    examples had form='affirmative' but the pattern is prohibition.
+    Updated form field to 'prohibition' on each example.
+
+### Cumulative N5 thorough-audit closure (v1.12.19..v1.12.23)
+
+  v1.12.19  Critical bugs: listening n5.listen.036, dokkai Mondai 5+6
+            deployment (42 Qs), 3 stale rationales, 2 exception kanji.
+  v1.12.20  HIGH: 3 corpus rebalances (dokkai, bunpou, listening).
+  v1.12.21  MEDIUM: vocab.json <-> MD drift resolved (28 entries).
+  v1.12.22  Item-level: 30 stale Mondai 5 rationales rewritten,
+            4 bunpou content fixes, 3 listening content fixes.
+  v1.12.23  Item-level: reading.json rebalance + 4 fixes,
+            grammar.json 7 example fixes (this release).
+
+### Final N5 corpus state
+
+  | Corpus    | Items | Distribution           |
+  |-----------|-------|------------------------|
+  | moji      |  100  | 25 / 25 / 25 / 25      |
+  | goi       |  100  | 25 / 25 / 25 / 25      |
+  | bunpou    |  100  | 25 / 25 / 25 / 25      |
+  | dokkai    |  102  | 26 / 26 / 25 / 25      |
+  | listening |   40  | 11 / 10 / 10 / 9       |
+  | reading   |   84  | 21 / 21 / 21 / 21      |
+
+  Vocabulary: 1041 entries, MD<->JSON synced.
+  Grammar: 178 patterns, examples audited.
+  All teacher-audit findings closed across 5 rounds.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v133 -> v134
+  - index.html cache-busters:    v=1.11.43 -> v=1.11.44
+  - 41/41 invariants PASS
+  - Fix script idempotent.
+
+---
+
 ## v1.12.22 - 2026-05-04 (N5 thorough audit Round 4 - item-level content fixes)
 
 Round 4 of the teacher-style N5 audit: item-level content quality
