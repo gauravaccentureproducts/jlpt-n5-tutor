@@ -1,16 +1,18 @@
-// Level-picker page (Level 1) and placeholder pages for N4-N1.
+// Level-picker page (Level 1) and placeholder pages for N3-N1.
 //
 // Added 2026-05-02 per user direction. The corpus + study tools today
-// only cover N5; we lifted the structural hierarchy by one level so
-// that the URL `/` shows a 5-card picker (N5 / N4 / N3 / N2 / N1) and
-// the existing N5 syllabus dashboard moves to be reached *via* clicking
-// the N5 card on the picker. URLs that previously worked still work —
-// `#/home` continues to render the N5 syllabus dashboard verbatim.
+// cover N5 + N4 (N4 deployed 2026-05-04 to a sibling repo); the URL `/`
+// shows a 5-card picker (N5 / N4 / N3 / N2 / N1) and the existing N5
+// syllabus dashboard moves to be reached *via* clicking the N5 card on
+// the picker. URLs that previously worked still work — `#/home` continues
+// to render the N5 syllabus dashboard verbatim.
 //
-// N4-N1 are not yet built. Their cards are clickable but route to a
-// "Content not yet available" placeholder. We deliberately don't
-// disable the buttons because clickable + clear-message is more
-// honest than greyed-out (which suggests "we forgot to build this").
+// N4 is a SIBLING DEPLOY at https://gauravaccentureproducts.github.io/jlpt-n4-tutor/.
+// Clicking the N4 card cross-navigates to that origin. The N4 card carries
+// `external: true` so the renderer adds rel="noopener" + data-external.
+//
+// N3-N1 are not yet built. Their cards render disabled (visible but
+// non-focusable) — clicked-but-unavailable would be misleading.
 
 const LEVELS = [
   {
@@ -26,8 +28,9 @@ const LEVELS = [
     code: 'N4',
     label: 'Elementary',
     desc: 'Builds on N5 with everyday topics, basic written passages, and lower-frequency kanji.',
-    href: '#/n4',
-    available: false,
+    href: 'https://gauravaccentureproducts.github.io/jlpt-n4-tutor/',
+    available: true,
+    external: true,  // cross-origin to a sibling deploy; not a same-origin hash route
   },
   {
     id: 'n3',
@@ -70,8 +73,14 @@ export function renderLevels(container) {
           // Keeps the layout intact without inviting a click that
           // would route to a "nothing here" placeholder.
           if (lvl.available) {
+            // External links (sibling deploys like the N4 tutor) carry
+            // rel="noopener" + target="_self" — explicit same-tab so the
+            // user understands they're switching to a separate app.
+            const externalAttrs = lvl.external
+              ? ' rel="noopener" data-external="true"'
+              : '';
             return `
-              <a class="level-card is-available" href="${lvl.href}" data-level="${lvl.id}">
+              <a class="level-card is-available" href="${lvl.href}" data-level="${lvl.id}"${externalAttrs}>
                 <span class="level-card-code">${lvl.code}</span>
                 <h2 class="level-card-label">${lvl.label}</h2>
                 <p class="level-card-desc">${lvl.desc}</p>
@@ -91,7 +100,7 @@ export function renderLevels(container) {
         }).join('')}
       </div>
       <p class="levels-foot">
-        N5 is currently the only level with content. N4 → N1 will fill in over time.
+        N5 + N4 are live. N3 → N1 will fill in over time.
       </p>
     </section>
   `;
