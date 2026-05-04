@@ -2,6 +2,86 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.19 - 2026-05-04 (N5 thorough audit Round 1 - critical fixes)
+
+Internal teacher-style audit of the entire N5 section identified two
+CRITICAL issues. Both fixed in this release.
+
+### Issue 1: Listening data integrity bug (n5.listen.036)
+
+  Old: correctAnswer = "三日かん"  (mixed kanji+kana, mojibake)
+  New: correctAnswer = "三日間"    (matches choice [2] exactly)
+
+  The choice list was ['二日間', '三日間', '四日間', '一週間'] (all-
+  kanji forms). The correctAnswer string was "三日かん" with the second
+  kanji written in kana. Engine string-comparison would never find a
+  match, leaving the question unscorable. explanation_en updated for
+  consistency.
+
+### Issue 2: Dokkai Mondai 5+6 deployed (42 questions)
+
+  Audit found that the dokkai paper-JSON corpus contained only the 60
+  Mondai 4 questions; Mondai 5 (30 medium-passage Qs) and Mondai 6
+  (12 information-retrieval Qs) existed in the MD source but were
+  never deployed to data/papers/dokkai/.
+
+  Generated 3 new paper-JSONs from the MD source:
+    paper-5.json   Q61-Q75   Mondai 5 (5 passages, 15 questions)
+    paper-6.json   Q76-Q90   Mondai 5 (5 passages, 15 questions)
+    paper-7.json   Q91-Q102  Mondai 6 (6 items, 12 questions)
+
+  Total dokkai corpus: 60 -> 102 questions across 4 -> 7 papers.
+  Paper structure preserved (~15 items per paper, last paper smaller).
+  Manifest.json updated: dokkai paperCount 4->7, questionCount 60->102,
+  total project paperCount 25->28, totalQuestions 360->402.
+
+### Issue 2.1: Three stale rationales fixed during deployment (Q91-Q93)
+
+  Audit also caught that Q91-Q93 in the MD source had rationale text
+  copy-pasted from unrelated Mondai 4/5 questions:
+
+    Q91 (pool admission): old rationale referenced "no bread, ate rice"
+    Q92 (BBQ reservation): old rationale referenced "bread+milk swap"
+    Q93 (class days): old rationale referenced "Tuesday birthday"
+
+  Replaced all three with question-appropriate rationales referencing
+  the actual passage content (table values, time slots). MD source
+  and JSON both updated.
+
+### Issue 2.2: Two non-N5 kanji added to dokkai exception list
+
+  The Mondai 5+6 deployment surfaced two non-N5 kanji used in choice
+  text that were not yet in the dokkai_kanji_exception list:
+
+    売 (うる, sell)  - Q66 piano-shop distractor "ピアノを 売って いる"
+    辛 (からい, spicy) - Q68 spicy-curry distractor "ピリ辛い"
+
+  Both appear ONLY in choice distractors (not in passages). Added to
+  data/dokkai_kanji_exception.json with justifications matching the
+  existing exception-policy convention. Exception list grew 28 -> 30.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v129 -> v130
+  - index.html cache-busters:    v=1.11.39 -> v=1.11.40
+  - 41/41 invariants PASS (incl. JA-28 dokkai-kanji bound, JA-32
+    lock-step MD<->JSON parity)
+  - All deployment scripts idempotent.
+
+### Audit findings still open (next rounds)
+
+  Round 2 (HIGH): Dokkai/listening/bunpou position rebalance
+    Dokkai: 1/17/37/5 globally; severely C-skewed (62%)
+    Listening: 5/24/9/1; B-skewed (60%), D-starved
+    Bunpou: 27/35/25/13; moderate skew
+    All three need same mechanical rebalance pattern as goi/moji.
+
+  Round 3 (MEDIUM): vocab.json <-> vocabulary_n5.md drift (~38 forms)
+    Bidirectional gap: 28 JSON-only entries + 10 MD-only entries.
+    Larger than initial 1-entry estimate.
+
+---
+
 ## v1.12.18 - 2026-05-04 (Moji first-pass review - 5 item fixes + 37 permutation rebalance)
 
 First audit pass on the moji corpus (Mondai 1 + Mondai 2). Reviewer

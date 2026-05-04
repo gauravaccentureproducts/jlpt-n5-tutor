@@ -14,7 +14,8 @@
     "    AND update KnowledgeBank/dokkai_questions_n5.md header.",
     "",
     "Enforced by JA-28 in tools/check_content_integrity.py.",
-    "2026-05-03 (moji-and-source audit §2.2): added 向, 央, 付 with justifications — 向 for 〜向け target-audience compounds, 央 for 中央 proper nouns (parks/stations), 付 for 〜付き menu convention. All three appear in dokkai passage content multiple times; kana-substitution would reduce passage authenticity."
+    "2026-05-03 (moji-and-source audit §2.2): added 向, 央, 付 with justifications - 向 for 〜向け target-audience compounds, 央 for 中央 proper nouns (parks/stations), 付 for 〜付き menu convention. All three appear in dokkai passage content multiple times; kana-substitution would reduce passage authenticity.",
+    "2026-05-04 (Mondai 5+6 deployment): added 売, 辛 with justifications - 売 for 売って いる commerce verb (Q66 piano-shop distractor; common N5 exposure for 店で 売って います), 辛 for ピリ辛い food-description (Q68 spicy-curry distractor; standard food-vocabulary kanji at N5 boundary). Both appear only in choice distractors; passage texts in Mondai 5+6 stay strict N5."
   ],
   "exception_kanji": [
     "京",
@@ -44,6 +45,8 @@
     "同",
     "向",
     "央",
-    "付"
+    "付",
+    "売",
+    "辛"
   ]
 }

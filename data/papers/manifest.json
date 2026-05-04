@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "totalPapers": 25,
-  "totalQuestions": 360,
+  "totalPapers": 28,
+  "totalQuestions": 402,
   "categories": [
     {
       "label": "Moji",
@@ -185,8 +185,8 @@
       "label_ja": "読解",
       "description": "Reading comprehension",
       "id": "dokkai",
-      "paperCount": 4,
-      "questionCount": 60,
+      "paperCount": 7,
+      "questionCount": 102,
       "papers": [
         {
           "id": "dokkai-1",
@@ -215,6 +215,27 @@
           "name": "Dokkai Paper 4",
           "questionCount": 12,
           "source_question_range": "Q49-Q60"
+        },
+        {
+          "id": "dokkai-5",
+          "paperNumber": 5,
+          "name": "Dokkai Paper 5",
+          "questionCount": 15,
+          "source_question_range": "Q61-Q75"
+        },
+        {
+          "id": "dokkai-6",
+          "paperNumber": 6,
+          "name": "Dokkai Paper 6",
+          "questionCount": 15,
+          "source_question_range": "Q76-Q90"
+        },
+        {
+          "id": "dokkai-7",
+          "paperNumber": 7,
+          "name": "Dokkai Paper 7",
+          "questionCount": 12,
+          "source_question_range": "Q91-Q102"
         }
       ]
     }

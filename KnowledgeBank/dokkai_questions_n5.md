@@ -14,7 +14,7 @@
 
 - Each passage is shown in a blockquote (`>`) so it visually mirrors the test paper.
 - Questions follow each passage. Choices are numbered 1-4. **Answer**: shows the correct number.
-- Passages use predominantly N5-syllabus kanji and N5 vocabulary. **Naturalness exception (formalized 2026-05-02):** authentic JLPT N5 reading passages routinely use a small number of common non-N5 kanji where forcing kana would harm readability. The full exception list is machine-tracked in `data/dokkai_kanji_exception.json` and currently covers **28 kanji**: 京, 作, 使, 図, 院, 回, 教, 楽, 病, 終, 自, 阪, 館, 黒, 犬, 妹, 家, 弁, 当, 思, 朝, 近, 紙, 青, 同, 向, 央, 付. (向 added for 〜向け target-audience compounds; 央 for 中央 proper nouns; 付 for 〜付き menu convention - all on 2026-05-03 audit §2.2.) JA-28 (in `tools/check_content_integrity.py`) enforces that `data/papers/dokkai/*.json` cannot introduce non-N5 kanji outside this list without explicit documentation. Bunpou / moji / goi stay strictly N5.
+- Passages use predominantly N5-syllabus kanji and N5 vocabulary. **Naturalness exception (formalized 2026-05-02):** authentic JLPT N5 reading passages routinely use a small number of common non-N5 kanji where forcing kana would harm readability. The full exception list is machine-tracked in `data/dokkai_kanji_exception.json` and currently covers **30 kanji**: 京, 作, 使, 図, 院, 回, 教, 楽, 病, 終, 自, 阪, 館, 黒, 犬, 妹, 家, 弁, 当, 思, 朝, 近, 紙, 青, 同, 向, 央, 付, 売, 辛. (向 added for 〜向け target-audience compounds; 央 for 中央 proper nouns; 付 for 〜付き menu convention - all on 2026-05-03 audit §2.2. 売 and 辛 added 2026-05-04 alongside Mondai 5+6 deployment - 売 for 売って いる commerce verb, 辛 for ピリ辛い food-description; both appear only in choice distractors.) JA-28 (in `tools/check_content_integrity.py`) enforces that `data/papers/dokkai/*.json` cannot introduce non-N5 kanji outside this list without explicit documentation. Bunpou / moji / goi stay strictly N5.
 - **Question-stem kanji policy (formalized 2026-05-01):** question stems may reuse any non-N5 kanji that already appears in the passage they reference, so the question phrasing stays parallel to the source text (e.g., a passage that uses 妹 may have a stem `この 人の 妹は 何を べんきょうしますか。`). Standalone non-N5 kanji that are NOT present in the corresponding passage are forbidden in stems and must be written in kana.
 - Distractor choices may contain non-N5 vocabulary where authentic JLPT distractor variety requires it (see header note in `moji_questions_n5.md` for the kanji-scope exception applied to question files).
 - No em dashes (U+2014) appear in this file.
@@ -1393,7 +1393,7 @@ _A child wants to swim in the pool. How much will it cost?_
 3. 500円
 4. 1,000円
 
-**Answer: 1** - パンが ありませんでしたから、 ごはんを 食べました - no bread, so ate rice instead.
+**Answer: 1** - 子ども プール = 200円 (per the こうえんの あんない table).
 
 #### Q92
 
@@ -1406,7 +1406,7 @@ _What activity requires a reservation?_
 3. じてん車
 4. バーベキュー
 
-**Answer: 4** - パンが ありませんでした - usual bread+milk replaced by rice+tea today.
+**Answer: 4** - バーベキュー の 行に 「(よやくが いります)」 と かいて あります - barbecue requires reservation.
 
 ### Item 2 (Q93, Q94): えいごの きょうしつの ポスター
 
@@ -1435,7 +1435,7 @@ _When can students attend the class?_
 3. 火よう日 と 木よう日
 4. 毎日
 
-**Answer: 2** - こんしゅうの 火曜日、 友だちの たんじょうびです - friend's birthday is this Tuesday.
+**Answer: 2** - 時間: 月よう日 と 水よう日 - the poster lists Mon and Wed.
 
 #### Q94
 
