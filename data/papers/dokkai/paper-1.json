@@ -243,7 +243,7 @@
         "ロッカーを あける"
       ],
       "correctIndex": 1,
-      "rationale": "",
+      "rationale": "asks やまださん to bring the homework paper from the classroom locker.",
       "kbSourceId": "Q11",
       "passage_text": "> やまださんへ\n>\n> きのう、 学校で しゅくだいの 紙を わすれて しまいました。 すみませんが、 あした わたしの 家に 来る まえに きょうしつから 紙を とって 来て くれませんか。 ロッカーの 中に あります。 ロッカーの ばんごうは 七です。\n>\n> たなか",
       "passage_label": "Passage 6 (Q11, Q12)",
@@ -259,7 +259,7 @@
         "八"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "ロッカーの ばんごうは 七です - locker number is 7.",
       "kbSourceId": "Q12",
       "passage_text": "> やまださんへ\n>\n> きのう、 学校で しゅくだいの 紙を わすれて しまいました。 すみませんが、 あした わたしの 家に 来る まえに きょうしつから 紙を とって 来て くれませんか。 ロッカーの 中に あります。 ロッカーの ばんごうは 七です。\n>\n> たなか",
       "passage_label": "Passage 6 (Q11, Q12)",
@@ -275,7 +275,7 @@
         "学校に 行く"
       ],
       "correctIndex": 1,
-      "rationale": "",
+      "rationale": "こうえんを さんぽする - walks through the park each morning.",
       "kbSourceId": "Q13",
       "passage_text": "> わたしは 毎あさ こうえんを さんぽします。 こうえんで いつも 同じ おじいさんに あいます。 おじいさんは いぬを つれて います。 いぬは 白くて、 とても 大きいです。 おじいさんは いつも 「おはよう」 と 言います。 わたしも 「おはようございます」 と こたえます。",
       "passage_label": "Passage 7 (Q13, Q14)",
@@ -307,7 +307,7 @@
         "みせの 人"
       ],
       "correctIndex": 1,
-      "rationale": "",
+      "rationale": "ケーキは 友だちが 作って もって 来ます - friend makes and brings the cake.",
       "kbSourceId": "Q15",
       "passage_text": "> あしたは 私の たんじょうびです。 友だちが パーティーを ひらいて くれます。 ともだちは みんな 八時に 来ます。 私は おかしと ジュースを 買いに 行きます。 ケーキは 友だちが 作って もって 来ます。 とても たのしみです。",
       "passage_label": "Passage 8 (Q15, Q16)",
@@ -323,7 +323,7 @@
         "八時 半"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "ともだちは みんな 八時に 来ます - everyone arrives at 8 o'clock.",
       "kbSourceId": "Q16",
       "passage_text": "> あしたは 私の たんじょうびです。 友だちが パーティーを ひらいて くれます。 ともだちは みんな 八時に 来ます。 私は おかしと ジュースを 買いに 行きます。 ケーキは 友だちが 作って もって 来ます。 とても たのしみです。",
       "passage_label": "Passage 8 (Q15, Q16)",

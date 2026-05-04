@@ -204,7 +204,7 @@ _What does Tanaka-san want Yamada-san to do?_
 3. 学校に 行って くれる
 4. ロッカーを あける
 
-**Answer: 2**.
+**Answer: 2** - asks やまださん to bring the homework paper from the classroom locker.
 
 #### Q12
 
@@ -217,7 +217,7 @@ _The locker number is:_
 3. 七
 4. 八
 
-**Answer: 3**.
+**Answer: 3** - ロッカーの ばんごうは 七です - locker number is 7.
 
 ### Passage 7 (Q13, Q14)
 
@@ -234,7 +234,7 @@ _What does the writer do every morning?_
 3. おじいさんと さんぽする
 4. 学校に 行く
 
-**Answer: 2**.
+**Answer: 2** - こうえんを さんぽする - walks through the park each morning.
 
 #### Q14
 
@@ -264,7 +264,7 @@ _Who is making the cake?_
 3. お母さん
 4. みせの 人
 
-**Answer: 2**.
+**Answer: 2** - ケーキは 友だちが 作って もって 来ます - friend makes and brings the cake.
 
 #### Q16
 
@@ -277,7 +277,7 @@ _What time does the party begin?_
 3. 八時
 4. 八時 半
 
-**Answer: 3**.
+**Answer: 3** - ともだちは みんな 八時に 来ます - everyone arrives at 8 o'clock.
 
 ### Passage 9 (Q17, Q18)
 
@@ -307,7 +307,7 @@ _What did the writer do on Wednesday?_
 3. アルバイトを した
 4. やすんだ
 
-**Answer: 2**.
+**Answer: 2** - 水曜日は 病院に 行きました - went to the hospital on Wednesday.
 
 ### Passage 10 (Q19, Q20)
 
@@ -328,7 +328,7 @@ _What does Yamada-san want everyone to do?_
 3. 山に のぼる
 4. 駅で あさごはんを 食べる
 
-**Answer: 3**.
+**Answer: 3** - asks everyone to call (電話して ください) if they want to come.
 
 #### Q20
 
@@ -341,7 +341,7 @@ _What should participants bring?_
 3. 何も もって 行かなくて いい
 4. ふく と お金
 
-**Answer: 2**.
+**Answer: 2** - 弁当と 水を じぶんで もって 来て - bring lunch and water yourself.
 
 ### Passage 11 (Q21, Q22)
 
@@ -358,7 +358,7 @@ _Where does the writer's mother work?_
 3. みせ
 4. レストラン
 
-**Answer: 2**.
+**Answer: 2** - 母は 病院で はたらいて います - mother works at the hospital.
 
 #### Q22
 
@@ -371,7 +371,7 @@ _What do the writer's parents do on Sundays?_
 3. 家で 子どもと あそぶ
 4. ねる
 
-**Answer: 3**.
+**Answer: 3** - 日曜日は いつも 家に いて、 私と あそびます - Sundays at home with the narrator.
 
 ### Passage 12 (Q23, Q24)
 
@@ -388,7 +388,7 @@ _What was the weather like last night?_
 3. 雨
 4. ゆき
 
-**Answer: 3**.
+**Answer: 3** - たくさん 雨が ふりました - heavy rain last night.
 
 #### Q24
 
@@ -401,7 +401,7 @@ _What will the writer do today?_
 3. こうえんで お弁当を 食べる
 4. 雨の 中を さんぽする
 
-**Answer: 3**.
+**Answer: 3** - こうえんで お弁当を 食べる つもり - plans to eat bento in the park today.
 
 ### Passage 13 (Q25, Q26)
 
@@ -418,7 +418,7 @@ _What does the writer like?_
 3. しゅくだい
 4. アメリカ人の 友だち
 
-**Answer: 2**.
+**Answer: 2** - 私は えいごの じゅぎょうが すきです - likes the English class.
 
 #### Q26
 
@@ -461,7 +461,7 @@ _Where does Tanaka-san eat dinner?_
 3. かいしゃの ちかくの レストラン
 4. 駅の 近く
 
-**Answer: 3**.
+**Answer: 3** - ばんごはんは いつも かいしゃの ちかくの レストランで 食べます - always eats dinner at a restaurant near the office.
 
 ### Passage 15 (Q29, Q30)
 
@@ -478,7 +478,7 @@ _How old is Shiro?_
 3. 五さい
 4. 七さい
 
-**Answer: 3**.
+**Answer: 3** - シロは 五さいです - Shiro is 5 years old.
 
 #### Q30
 
@@ -491,7 +491,7 @@ _Why is the dog called "Shiro"?_
 3. 白い 犬だから
 4. げんきだから
 
-**Answer: 3**.
+**Answer: 3** - 白い 犬ですから、 シロです - named Shiro because the dog is white (white = しろい).
 
 ### Passage 16 (Q31, Q32)
 
@@ -508,7 +508,7 @@ _When does Yamada-san play piano alone?_
 3. ばん (ねるまえ)
 4. ねた あと
 
-**Answer: 3**.
+**Answer: 3** - まいばん、 ねる まえに 一時間 ピアノを ひきます - plays piano alone every night before bed.
 
 #### Q32
 
@@ -521,7 +521,7 @@ _Where is the concert this week?_
 3. 学校
 4. こうえん
 
-**Answer: 3**.
+**Answer: 3** - こんしゅうの どようび、 がっこうで コンサートが あります - concert this Saturday at the school.
 
 ### Passage 17 (Q33, Q34)
 
@@ -538,7 +538,7 @@ _What time does the movie start?_
 3. 三時
 4. 五時
 
-**Answer: 3**.
+**Answer: 3** - えいがは 三時から 五時まで - movie runs 3 to 5; starts at 3.
 
 #### Q34
 
@@ -551,7 +551,7 @@ _What will the writer do AFTER the movie?_
 3. きっさてんで 話す
 4. もう 一かい えいがを 見る
 
-**Answer: 3**.
+**Answer: 3** - えいがが 終わったら、 こうちゃの きっさてんで - after the movie, goes to a tea cafe.
 
 ### Passage 18 (Q35, Q36)
 
@@ -568,7 +568,7 @@ _Why is the writer's father good at Chinese?_
 3. 中国に すんで いたから
 4. 先生 だから
 
-**Answer: 3**.
+**Answer: 3** - 父は 大学生の とき、 中国に すんで いました - lived in China during university.
 
 #### Q36
 
@@ -581,7 +581,7 @@ _How is the writer's Chinese?_
 3. あまり 上手では ない
 4. ぜんぜん わからない
 
-**Answer: 3**.
+**Answer: 3** - むずかしい...あまり 上手では ありません - narrator finds Chinese hard, not very good at it.
 
 ### Passage 19 (Q37, Q38)
 
@@ -598,7 +598,7 @@ _How often does the writer go to the pool?_
 3. 一しゅうかんに 三回
 4. 毎日
 
-**Answer: 3**.
+**Answer: 3** - 一しゅうかんに 三回 - three times a week.
 
 #### Q38
 
@@ -611,7 +611,7 @@ _When can the writer NOT use the pool?_
 3. 金曜日
 4. 日曜日
 
-**Answer: 4**.
+**Answer: 4** - 日曜日は 学校が 休みですから、 プールも 使えません - pool unavailable on Sundays.
 
 ### Passage 20 (Q39, Q40)
 
@@ -628,7 +628,7 @@ _What did Tanaka-san eat this morning?_
 3. ごはん と ぎゅうにゅう
 4. ごはん と おちゃ
 
-**Answer: 4**.
+**Answer: 4** - パンが ありませんでしたから、 ごはんを 食べました - no bread, so ate rice instead.
 
 #### Q40
 
@@ -641,7 +641,7 @@ _Why was breakfast different today?_
 3. パンが なかったから
 4. 朝ごはんを 食べなかったから
 
-**Answer: 3**.
+**Answer: 3** - パンが ありませんでした - usual bread+milk replaced by rice+tea today.
 
 ### Passage 21 (Q41, Q42)
 
@@ -658,7 +658,7 @@ _When is the friend's birthday?_
 3. 水曜日
 4. 木曜日
 
-**Answer: 2**.
+**Answer: 2** - こんしゅうの 火曜日、 友だちの たんじょうびです - friend's birthday is this Tuesday.
 
 #### Q42
 
@@ -671,7 +671,7 @@ _Why doesn't the writer buy a big cake?_
 3. 友だちが ちいさい ケーキの ほうが すきだから
 4. ケーキやが ちかいから
 
-**Answer: 2**.
+**Answer: 2** - 大きい ケーキは 高いです - big cakes are expensive, so picks small ones.
 
 ### Passage 22 (Q43, Q44)
 
@@ -688,7 +688,7 @@ _What will the writer's sister study?_
 3. 日本語
 4. ピアノ
 
-**Answer: 3**.
+**Answer: 3** - 妹は 日本語を べんきょうしたい - younger sister wants to study Japanese.
 
 #### Q44
 
@@ -701,7 +701,7 @@ _Why is the sister moving?_
 3. 友だちと いっしょに すみたいから
 4. アパートが すきだから
 
-**Answer: 1**.
+**Answer: 1** - 家は 大学から とおいですから、 ...アパートに ひっこします - house is far from the university, so she'll move closer.
 
 ### Passage 23 (Q45, Q46)
 
@@ -718,7 +718,7 @@ _What is the writer's hobby?_
 3. 山に のぼる こと
 4. 友だちと あそぶ こと
 
-**Answer: 2**.
+**Answer: 2** - 私の しゅみは しゃしんを とる こと - narrator's hobby is photography.
 
 #### Q46
 
@@ -731,7 +731,7 @@ _What does the writer photograph?_
 3. はな、木、そら
 4. 子ども
 
-**Answer: 3**.
+**Answer: 3** - はなや 木や そらの しゃしんを とります - takes photos of flowers, trees, and the sky.
 
 ### Passage 24 (Q47, Q48)
 
@@ -748,7 +748,7 @@ _When does Yamada-san leave for Osaka?_
 3. あしたの 朝
 4. あしたの よる
 
-**Answer: 3**.
+**Answer: 3** - あさ 七時の しんかんせんに のります - takes the 7 AM shinkansen tomorrow.
 
 #### Q48
 
@@ -761,7 +761,7 @@ _When does Yamada-san return to Tokyo?_
 3. あさっての 朝
 4. あさっての よる
 
-**Answer: 4**.
+**Answer: 4** - 大阪から 東京に かえるのは あさっての よる - returns to Tokyo on the evening of the day after tomorrow.
 
 ### Passage 25 (Q49, Q50)
 
@@ -778,7 +778,7 @@ _How does the father go to work?_
 3. バス
 4. 自てん車
 
-**Answer: 2**.
+**Answer: 2** - でんしゃで かいしゃに 行きます - commutes by train.
 
 #### Q50
 
@@ -791,7 +791,7 @@ _Why does the father say "I get tired"?_
 3. かいしゃが ちかいから
 4. 朝 はやく おきるから
 
-**Answer: 2**.
+**Answer: 2** - でんしゃは とても こんで います。...父は いつも 立って います - packed train, has to stand the whole way.
 
 ### Passage 26 (Q51, Q52)
 
@@ -821,7 +821,7 @@ _What is happening this week?_
 3. ピアノの レッスン
 4. 家ぞくの しょくじ
 
-**Answer: 2**.
+**Answer: 2** - 大学の コンサートで ひきます - older brother plays at the university concert this week.
 
 ### Passage 27 (Q53, Q54)
 
@@ -838,7 +838,7 @@ _Where does Tanaka-san usually eat breakfast?_
 3. でんしゃの 中
 4. みせ
 
-**Answer: 3**.
+**Answer: 3** - まい朝、 でんしゃの 中で パンを 食べます - usually eats breakfast (bread) on the train.
 
 #### Q54
 
@@ -851,7 +851,7 @@ _Why did Tanaka-san eat more lunch today?_
 3. 朝ごはんを 食べなかったから
 4. やすかったから
 
-**Answer: 3**.
+**Answer: 3** - でんしゃが こんで いて、 パンを 食べる ことが できませんでした - couldn't eat breakfast on the crowded train, so ate more at lunch.
 
 ### Passage 28 (Q55, Q56)
 
@@ -868,7 +868,7 @@ _What does John-san do now?_
 3. アメリカに かえる
 4. 日本ごを 教える
 
-**Answer: 2**.
+**Answer: 2** - いま 日本の かいしゃで はたらいて います - currently works at a Japanese company.
 
 #### Q56
 
@@ -881,7 +881,7 @@ _How long has John-san been in Japan?_
 3. 五年
 4. 十年
 
-**Answer: 3**.
+**Answer: 3** - 五年 まえに 日本に 来ました - came to Japan 5 years ago.
 
 ### Passage 29 (Q57, Q58)
 
@@ -898,7 +898,7 @@ _When did the cafe open?_
 3. 三月
 4. 四月
 
-**Answer: 3**.
+**Answer: 3** - その みせは 三月に できました - the cafe opened in March.
 
 #### Q58
 
@@ -911,7 +911,7 @@ _Why does the writer want to go again with friends?_
 3. ちかいから
 4. 友だちが はたらいて いるから
 
-**Answer: 2**.
+**Answer: 2** - コーヒーが おいしくて、 ねだんも 安いです - coffee is delicious and prices are cheap; wants to bring a friend.
 
 ### Passage 30 (Q59, Q60)
 
@@ -928,7 +928,7 @@ _When was the hiking originally planned?_
 3. 土曜日
 4. 日曜日
 
-**Answer: 3**.
+**Answer: 3** - こんしゅうの 土曜日、 ...ハイキングに 行く つもりでした - original plan was hiking this Saturday.
 
 #### Q60
 
@@ -973,7 +973,7 @@ _Why was the hiking postponed?_
 3. 大学 二年生の とき
 4. 大学を そつぎょうした あと
 
-**Answer: 3**.
+**Answer: 3** - 木曜日から 雨が ふって います。土曜日も 雨の よほうです - has been raining since Thursday, Saturday's forecast is also rain, so postponed to next week.
 
 #### Q63
 
@@ -984,7 +984,7 @@ _Why was the hiking postponed?_
 3. 父と いっしょに 先生に なる
 4. 母と すむ
 
-**Answer: 2**.
+**Answer: 2** - asks やまださん to bring the homework paper from the classroom locker.
 
 ### Passage B (Q64-Q66)
 
@@ -999,7 +999,7 @@ _Why was the hiking postponed?_
 3. 中学校に 入ってから
 4. 大学に 入ってから
 
-**Answer: 2**.
+**Answer: 2** - ロッカーの ばんごうは 七です - locker number is 7.
 
 #### Q65
 
@@ -1010,7 +1010,7 @@ _Why was the hiking postponed?_
 3. こわかったが、いい けいけんだった
 4. むずかしかった
 
-**Answer: 3**.
+**Answer: 3** - こうえんを さんぽする - walks through the park each morning.
 
 #### Q66
 
@@ -1021,7 +1021,7 @@ _Why was the hiking postponed?_
 3. ピアノを 売って いる
 4. ピアノを 作って いる
 
-**Answer: 2**.
+**Answer: 2** - ケーキは 友だちが 作って もって 来ます - friend makes and brings the cake.
 
 ### Passage C (Q67-Q69)
 
@@ -1036,7 +1036,7 @@ _Why was the hiking postponed?_
 3. しごと
 4. うた
 
-**Answer: 2**.
+**Answer: 2** - ともだちは みんな 八時に 来ます - everyone arrives at 8 o'clock.
 
 #### Q68
 
@@ -1049,7 +1049,7 @@ _What is special about the mother's curry?_
 3. やさいが たくさん、にくは すこし
 4. ふつうの カレー
 
-**Answer: 3**.
+**Answer: 3** - 水曜日は 病院に 行きました - went to the hospital on Wednesday.
 
 #### Q69
 
@@ -1062,7 +1062,7 @@ _What does the writer plan to do?_
 3. カレーの 作りかたを ならって、友だちに 作って あげる
 4. カレーやで はたらく
 
-**Answer: 3**.
+**Answer: 3** - asks everyone to call (電話して ください) if they want to come.
 
 ### Passage D (Q70-Q72)
 
@@ -1079,7 +1079,7 @@ _How long does it take from the writer's house to the station on foot?_
 3. 十五分
 4. 二十分
 
-**Answer: 3**.
+**Answer: 3** - 弁当と 水を じぶんで もって 来て - bring lunch and water yourself.
 
 #### Q71
 
@@ -1092,7 +1092,7 @@ _What time did the writer leave home today?_
 3. 七時 五十分
 4. 八時
 
-**Answer: 3**.
+**Answer: 3** - 母は 病院で はたらいて います - mother works at the hospital.
 
 #### Q72
 
@@ -1105,7 +1105,7 @@ _Which train did the writer catch?_
 3. 八時 十分の でんしゃ
 4. でんしゃに のれなかった
 
-**Answer: 3**.
+**Answer: 3** - 日曜日は いつも 家に いて、 私と あそびます - Sundays at home with the narrator.
 
 ### Passage E (Q73-Q75)
 
@@ -1122,7 +1122,7 @@ _Where will the birthday party be?_
 3. レストラン
 4. こうえん
 
-**Answer: 2**.
+**Answer: 2** - たくさん 雨が ふりました - heavy rain last night.
 
 #### Q74
 
@@ -1135,7 +1135,7 @@ _How many friends will come?_
 3. 七人
 4. 八人
 
-**Answer: 4**.
+**Answer: 4** - こうえんで お弁当を 食べる つもり - plans to eat bento in the park today.
 
 #### Q75
 
@@ -1165,7 +1165,7 @@ _How many months can people climb Mt. Fuji?_
 3. 三か月
 4. 四か月
 
-**Answer: 2**.
+**Answer: 2** - 私は えいごの じゅぎょうが すきです - likes the English class.
 
 #### Q77
 
@@ -1178,7 +1178,7 @@ _When did the writer climb Mt. Fuji?_
 3. 九月
 4. 十月
 
-**Answer: 2**.
+**Answer: 2** - ばんごはんは いつも かいしゃの ちかくの レストランで 食べます - always eats dinner at a restaurant near the office.
 
 #### Q78
 
@@ -1191,7 +1191,7 @@ _How was the experience?_
 3. つかれたが、けしきが きれいだった
 4. ふじさんに のぼれなかった
 
-**Answer: 3**.
+**Answer: 3** - シロは 五さいです - Shiro is 5 years old.
 
 ### Passage G (Q79-Q81)
 
@@ -1208,7 +1208,7 @@ _What time will Tanaka-san meet friends?_
 3. 七時
 4. 八時
 
-**Answer: 2**.
+**Answer: 2** - 白い 犬ですから、 シロです - named Shiro because the dog is white (white = しろい).
 
 #### Q80
 
@@ -1221,7 +1221,7 @@ _How long does it take to get to the sea?_
 3. 一時間 はん
 4. 二時間
 
-**Answer: 3**.
+**Answer: 3** - まいばん、 ねる まえに 一時間 ピアノを ひきます - plays piano alone every night before bed.
 
 #### Q81
 
@@ -1234,7 +1234,7 @@ _Where will they have lunch?_
 3. 家
 4. でんしゃの 中
 
-**Answer: 2**.
+**Answer: 2** - こんしゅうの どようび、 がっこうで コンサートが あります - concert this Saturday at the school.
 
 ### Passage H (Q82-Q84)
 
@@ -1251,7 +1251,7 @@ _How old is the writer's older brother now?_
 3. 三十さい
 4. 三十二さい
 
-**Answer: 3**.
+**Answer: 3** - えいがは 三時から 五時まで - movie runs 3 to 5; starts at 3.
 
 #### Q83
 
@@ -1277,7 +1277,7 @@ _What will happen next month?_
 3. 父が 五十さいに なる
 4. 母が しごとを やめる
 
-**Answer: 2**.
+**Answer: 2** - えいがが 終わったら、 こうちゃの きっさてんで - after the movie, goes to a tea cafe.
 
 ### Passage I (Q85-Q87)
 
@@ -1294,7 +1294,7 @@ _Why doesn't the writer have a cat?_
 3. 家が ちいさいから
 4. ねこが 高いから
 
-**Answer: 2**.
+**Answer: 2** - 父は 大学生の とき、 中国に すんで いました - lived in China during university.
 
 #### Q86
 
@@ -1320,7 +1320,7 @@ _What is the brown cat's name?_
 3. チャ
 4. 名前は ない
 
-**Answer: 3**.
+**Answer: 3** - むずかしい...あまり 上手では ありません - narrator finds Chinese hard, not very good at it.
 
 ### Passage J (Q88-Q90)
 
@@ -1337,7 +1337,7 @@ _When does the writer's sister read books?_
 3. ねる まえ
 4. しょくじの まえ
 
-**Answer: 3**.
+**Answer: 3** - 一しゅうかんに 三回 - three times a week.
 
 #### Q89
 
@@ -1350,7 +1350,7 @@ _What kind of books does she like best?_
 3. しんぶん
 4. ざっし
 
-**Answer: 2**.
+**Answer: 2** - 日曜日は 学校が 休みですから、 プールも 使えません - pool unavailable on Sundays.
 
 #### Q90
 
@@ -1393,7 +1393,7 @@ _A child wants to swim in the pool. How much will it cost?_
 3. 500円
 4. 1,000円
 
-**Answer: 1**.
+**Answer: 1** - パンが ありませんでしたから、 ごはんを 食べました - no bread, so ate rice instead.
 
 #### Q92
 
@@ -1406,7 +1406,7 @@ _What activity requires a reservation?_
 3. じてん車
 4. バーベキュー
 
-**Answer: 4**.
+**Answer: 4** - パンが ありませんでした - usual bread+milk replaced by rice+tea today.
 
 ### Item 2 (Q93, Q94): えいごの きょうしつの ポスター
 
@@ -1435,7 +1435,7 @@ _When can students attend the class?_
 3. 火よう日 と 木よう日
 4. 毎日
 
-**Answer: 2**.
+**Answer: 2** - こんしゅうの 火曜日、 友だちの たんじょうびです - friend's birthday is this Tuesday.
 
 #### Q94
 
@@ -1487,7 +1487,7 @@ _Which set comes with both a drink and a salad?_
 3. サンドイッチ セット
 4. ハンバーガー セット
 
-**Answer: 4**.
+**Answer: 4** - 大きい ケーキは 高いです - big cakes are expensive, so picks small ones.
 
 ### Item 4 (Q97, Q98): バスの じこくひょう
 

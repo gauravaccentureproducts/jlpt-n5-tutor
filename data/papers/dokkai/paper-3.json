@@ -83,7 +83,7 @@
         "五時"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "えいがは 三時から 五時まで - movie runs 3 to 5; starts at 3.",
       "kbSourceId": "Q33",
       "passage_text": "> こんしゅうの 日曜日に、 友だち と えいがを 見に 行きます。 えいがは 三時から 五時まで です。 えいがの まえに、 ひるごはんを 食べる つもりです。 えいがが 終わったら、 こうちゃの きっさてんで すこし 話します。",
       "passage_label": "Passage 17 (Q33, Q34)",
@@ -99,7 +99,7 @@
         "もう 一かい えいがを 見る"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "えいがが 終わったら、 こうちゃの きっさてんで - after the movie, goes to a tea cafe.",
       "kbSourceId": "Q34",
       "passage_text": "> こんしゅうの 日曜日に、 友だち と えいがを 見に 行きます。 えいがは 三時から 五時まで です。 えいがの まえに、 ひるごはんを 食べる つもりです。 えいがが 終わったら、 こうちゃの きっさてんで すこし 話します。",
       "passage_label": "Passage 17 (Q33, Q34)",
@@ -115,7 +115,7 @@
         "先生 だから"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "父は 大学生の とき、 中国に すんで いました - lived in China during university.",
       "kbSourceId": "Q35",
       "passage_text": "> 私の 父は 中国語が じょうずです。 父は 大学生の とき、 中国に すんで いました。 父は 私にも 中国語を 教えて くれます。 でも、 中国語は とても むずかしいですから、 私は あまり 上手では ありません。",
       "passage_label": "Passage 18 (Q35, Q36)",
@@ -131,7 +131,7 @@
         "ぜんぜん わからない"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "むずかしい...あまり 上手では ありません - narrator finds Chinese hard, not very good at it.",
       "kbSourceId": "Q36",
       "passage_text": "> 私の 父は 中国語が じょうずです。 父は 大学生の とき、 中国に すんで いました。 父は 私にも 中国語を 教えて くれます。 でも、 中国語は とても むずかしいですから、 私は あまり 上手では ありません。",
       "passage_label": "Passage 18 (Q35, Q36)",
@@ -147,7 +147,7 @@
         "毎日"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "一しゅうかんに 三回 - three times a week.",
       "kbSourceId": "Q37",
       "passage_text": "> 私の 学校には プールが あります。 月曜日と 水曜日と 金曜日に プールに 入れます。 日曜日は 学校が 休みですから、 プールも 使えません。 私は およぐのが すきですから、 一しゅうかんに 三回 プールに 行きます。",
       "passage_label": "Passage 19 (Q37, Q38)",
@@ -163,7 +163,7 @@
         "日曜日"
       ],
       "correctIndex": 3,
-      "rationale": "",
+      "rationale": "日曜日は 学校が 休みですから、 プールも 使えません - pool unavailable on Sundays.",
       "kbSourceId": "Q38",
       "passage_text": "> 私の 学校には プールが あります。 月曜日と 水曜日と 金曜日に プールに 入れます。 日曜日は 学校が 休みですから、 プールも 使えません。 私は およぐのが すきですから、 一しゅうかんに 三回 プールに 行きます。",
       "passage_label": "Passage 19 (Q37, Q38)",
@@ -179,7 +179,7 @@
         "ごはん と おちゃ"
       ],
       "correctIndex": 3,
-      "rationale": "",
+      "rationale": "パンが ありませんでしたから、 ごはんを 食べました - no bread, so ate rice instead.",
       "kbSourceId": "Q39",
       "passage_text": "> たなかさんは 朝ごはんに いつも パンと ぎゅうにゅうを 食べます。 でも きょうは パンが ありませんでした。 ですから、 ごはんを 食べました。 ぎゅうにゅうの かわりに、 おちゃを のみました。 きょうの 朝ごはんは いつもと ちがいました。",
       "passage_label": "Passage 20 (Q39, Q40)",
@@ -195,7 +195,7 @@
         "朝ごはんを 食べなかったから"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "パンが ありませんでした - usual bread+milk replaced by rice+tea today.",
       "kbSourceId": "Q40",
       "passage_text": "> たなかさんは 朝ごはんに いつも パンと ぎゅうにゅうを 食べます。 でも きょうは パンが ありませんでした。 ですから、 ごはんを 食べました。 ぎゅうにゅうの かわりに、 おちゃを のみました。 きょうの 朝ごはんは いつもと ちがいました。",
       "passage_label": "Passage 20 (Q39, Q40)",
@@ -211,7 +211,7 @@
         "木曜日"
       ],
       "correctIndex": 1,
-      "rationale": "",
+      "rationale": "こんしゅうの 火曜日、 友だちの たんじょうびです - friend's birthday is this Tuesday.",
       "kbSourceId": "Q41",
       "passage_text": "> こんしゅうの 火曜日、 友だちの たんじょうびです。 友だちは おいしい おかしが すきですから、 ケーキを かおうと 思います。 でも、 大きい ケーキは 高いです。 ちいさい ケーキを 三つ かいます。",
       "passage_label": "Passage 21 (Q41, Q42)",
@@ -227,7 +227,7 @@
         "ケーキやが ちかいから"
       ],
       "correctIndex": 1,
-      "rationale": "",
+      "rationale": "大きい ケーキは 高いです - big cakes are expensive, so picks small ones.",
       "kbSourceId": "Q42",
       "passage_text": "> こんしゅうの 火曜日、 友だちの たんじょうびです。 友だちは おいしい おかしが すきですから、 ケーキを かおうと 思います。 でも、 大きい ケーキは 高いです。 ちいさい ケーキを 三つ かいます。",
       "passage_label": "Passage 21 (Q41, Q42)",
@@ -243,7 +243,7 @@
         "ピアノ"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "妹は 日本語を べんきょうしたい - younger sister wants to study Japanese.",
       "kbSourceId": "Q43",
       "passage_text": "> 私の 妹は 来年の 四月、 大学に 入ります。 妹は 日本語を べんきょうしたいです。 私たちの 家は 大学から とおいですから、 妹は 大学の ちかくの アパートに ひっこします。 さびしくなりますが、 妹が がんばるのを おうえんします。",
       "passage_label": "Passage 22 (Q43, Q44)",
@@ -259,7 +259,7 @@
         "アパートが すきだから"
       ],
       "correctIndex": 0,
-      "rationale": "",
+      "rationale": "家は 大学から とおいですから、 ...アパートに ひっこします - house is far from the university, so she'll move closer.",
       "kbSourceId": "Q44",
       "passage_text": "> 私の 妹は 来年の 四月、 大学に 入ります。 妹は 日本語を べんきょうしたいです。 私たちの 家は 大学から とおいですから、 妹は 大学の ちかくの アパートに ひっこします。 さびしくなりますが、 妹が がんばるのを おうえんします。",
       "passage_label": "Passage 22 (Q43, Q44)",
@@ -275,7 +275,7 @@
         "友だちと あそぶ こと"
       ],
       "correctIndex": 1,
-      "rationale": "",
+      "rationale": "私の しゅみは しゃしんを とる こと - narrator's hobby is photography.",
       "kbSourceId": "Q45",
       "passage_text": "> 私の しゅみは しゃしんを とる ことです。 まいしゅう カメラを もって、 こうえんや 山に 行きます。 はなや 木や そらの しゃしんを とります。 とった しゃしんは 友だちに 見せます。 友だちも 「きれいだ」と 言います。",
       "passage_label": "Passage 23 (Q45, Q46)",
@@ -291,7 +291,7 @@
         "子ども"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "はなや 木や そらの しゃしんを とります - takes photos of flowers, trees, and the sky.",
       "kbSourceId": "Q46",
       "passage_text": "> 私の しゅみは しゃしんを とる ことです。 まいしゅう カメラを もって、 こうえんや 山に 行きます。 はなや 木や そらの しゃしんを とります。 とった しゃしんは 友だちに 見せます。 友だちも 「きれいだ」と 言います。",
       "passage_label": "Passage 23 (Q45, Q46)",
@@ -307,7 +307,7 @@
         "あしたの よる"
       ],
       "correctIndex": 2,
-      "rationale": "",
+      "rationale": "あさ 七時の しんかんせんに のります - takes the 7 AM shinkansen tomorrow.",
       "kbSourceId": "Q47",
       "passage_text": "> やまださんは あした 大阪に しゅっちょうします。 あさ 七時の しんかんせんに のります。 大阪から 東京に かえるのは あさっての よるです。 にもつは ちいさい かばんと スーツケースが 一つです。 あした 朝 はやいので、 きょうは はやく ねます。",
       "passage_label": "Passage 24 (Q47, Q48)",
@@ -323,7 +323,7 @@
         "あさっての よる"
       ],
       "correctIndex": 3,
-      "rationale": "",
+      "rationale": "大阪から 東京に かえるのは あさっての よる - returns to Tokyo on the evening of the day after tomorrow.",
       "kbSourceId": "Q48",
       "passage_text": "> やまださんは あした 大阪に しゅっちょうします。 あさ 七時の しんかんせんに のります。 大阪から 東京に かえるのは あさっての よるです。 にもつは ちいさい かばんと スーツケースが 一つです。 あした 朝 はやいので、 きょうは はやく ねます。",
       "passage_label": "Passage 24 (Q47, Q48)",

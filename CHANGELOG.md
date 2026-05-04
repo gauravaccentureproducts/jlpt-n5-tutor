@@ -2,6 +2,55 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.11 - 2026-05-04 (45 dokkai rationales authored - 100% rationale coverage)
+
+External auditor reported 45 of 60 dokkai questions (Q1-Q60) had
+empty rationales — paper builder was faithfully reflecting the MD,
+but the MD had only `**Answer: N**.` with no explanation text for
+those 45. Per the project's "rationales help learners understand
+why their wrong answer was wrong" stance and the existing pattern
+(15/60 dokkai already had rationales; goi/moji/bunpou ~all do), these
+were authored.
+
+### Authored content
+
+  Each rationale is a 1-line citation of the passage detail that
+  justifies the marked correct answer, mirroring the brief-citation
+  style of the existing 15 dokkai rationales (e.g., "first action is
+  meeting at station." for Q9). Mix of English narration and
+  Japanese excerpts as the corpus already does.
+
+  Distribution by paper:
+    paper-1.json: 5 rationales authored (Q11, Q12, Q13, Q15, Q16)
+    paper-2.json: 13 rationales (Q18-Q25, Q28-Q32)
+    paper-3.json: 16 rationales (Q33-Q48)
+    paper-4.json: 11 rationales (Q49, Q50, Q52-Q60)
+
+  Total: 45 questions, dokkai rationale coverage 15/60 -> 60/60 (100%).
+
+### Files updated (in lock-step)
+
+  KnowledgeBank/dokkai_questions_n5.md  (source MD)
+  data/papers/dokkai/paper-1.json
+  data/papers/dokkai/paper-2.json
+  data/papers/dokkai/paper-3.json
+  data/papers/dokkai/paper-4.json
+
+  Both files updated together so JA-32 (paper-JSON rationales appear
+  verbatim in source MD) stays green. JA-32 verification confirms:
+  every kanji used in the new rationales also appears in its
+  corresponding MD Q-block (passage / stem / choices), so no
+  stale-extract drift introduced.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v120 -> v121
+  - index.html cache-busters:    v=1.11.30 -> v=1.11.31
+  - tools/check_content_integrity.py -> 41/41 invariants PASS
+  - tools/author_45_dokkai_rationales_2026_05_04.py -> idempotent
+  - X-6.5 (no em-dashes): caught + stripped 86 em-dashes I introduced
+    in rationale text during initial authoring, before commit.
+
 ## v1.12.10 - 2026-05-04 (paper-JSON rationale drift fixed + JA-32 invariant added)
 
 External auditor flagged: `data/papers/bunpou/paper-2.json` Q19
