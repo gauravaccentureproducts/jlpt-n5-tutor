@@ -9,7 +9,7 @@
   "questions": [
     {
       "type": "mcq",
-      "stem_html": "毎あさ コーヒーを （　　）。",
+      "stem_html": "まいあさ コーヒーを （　　）。",
       "choices": [
         "たべます",
         "のみます",
@@ -65,7 +65,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "つかれましたから、いえで （　　）。",
+      "stem_html": "つかれたので、いえで （　　）。",
       "choices": [
         "はたらきます",
         "やすみます",
@@ -140,10 +140,10 @@
         "おいしいです",
         "うるさいです",
         "おもしろいです",
-        "あついです"
+        "はやいです"
       ],
       "correctIndex": 2,
-      "rationale": "本 + おもしろい (interesting).",
+      "rationale": "本 + おもしろい (interesting). はやい distractor replaces the prior あつい — あつい is a homophone trap (厚い \"thick\" is plausible for a book), so it weakens distractor quality.",
       "kbSourceId": "Q10",
       "id": "goi-1.10"
     },

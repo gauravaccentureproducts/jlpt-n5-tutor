@@ -51,7 +51,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "きのうは とても （　　）。",
+      "stem_html": "きのうは しごとが とても （　　）。",
       "choices": [
         "つよいでした",
         "つかれます",
@@ -59,7 +59,7 @@
         "いそがしかったです"
       ],
       "correctIndex": 3,
-      "rationale": "past i-adj + です (past tense matches きのう).",
+      "rationale": "past i-adj + です. しごとが いそがしい (work was busy) is the canonical N5 stem-and-answer pairing for this grammar pattern. The topic word しごと anchors いそがしい uniquely.",
       "kbSourceId": "Q19",
       "id": "goi-2.4"
     },
@@ -79,7 +79,7 @@
     },
     {
       "type": "mcq",
-      "stem_html": "ほんは つくえの （　　） に あります。",
+      "stem_html": "ほんが つくえの （　　）から おちました。",
       "choices": [
         "うえ",
         "した",
@@ -87,7 +87,7 @@
         "うしろ"
       ],
       "correctIndex": 0,
-      "rationale": "location relative — book ON desk uniquely fits うえ. ほんは つくえの うえ に あります = the book is ON the desk. Replaces a previous stem (ぎんこうの (    ) に 駅が あります) where all four positions (うえ / した / まえ / うしろ) were grammatically defensible because the stem provided no directional anchor.",
+      "rationale": "things fall from above; おちる anchors うえ uniquely (a book cannot fall from under, in front of, or behind a desk — only from on top of it).",
       "kbSourceId": "Q21",
       "id": "goi-2.6"
     },

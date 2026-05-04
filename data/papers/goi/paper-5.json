@@ -109,13 +109,13 @@
       "type": "mcq",
       "stem_html": "A: だれも きょうしつに いません。",
       "choices": [
-        "きょうしつに 学生が いません。",
+        "きょうしつに 人が いません。",
         "きょうしつに 一人 います。",
         "きょうしつに 二人 います。",
         "きょうしつに 学生が おおぜい います。"
       ],
       "correctIndex": 0,
-      "rationale": "no one = no students.",
+      "rationale": "だれも (no one — universal over people) ↔ 人が いません (no people). Both negate the existence of any person, so the scope matches exactly.",
       "kbSourceId": "Q68",
       "id": "goi-5.8"
     },

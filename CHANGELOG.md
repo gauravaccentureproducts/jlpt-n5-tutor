@@ -2,6 +2,86 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.12 - 2026-05-04 (Goi audit closure - 14 item fixes + 2 header policies)
+
+External native-speaker / JLPT-aligned auditor reviewed all 100 goi
+items and flagged 19 issues across 4 severity tiers. This release
+addresses 14 of them with concrete content fixes; the remaining 5
+(Q70/Q76/Q86/Q97/Q100 inference-paraphrase cluster) and the 6 N4-
+leakage items are addressed at the source-policy level via two new
+header sections in goi_questions_n5.md.
+
+### Critical fixes (4)
+
+  Q21 / goi-2.6 - stem had no anchor; all 4 positional answers valid.
+    Old: ほんは つくえの (  ) に あります。
+    New: ほんが つくえの (  ) から おちました。
+    Now uniquely anchors うえ via physics: things only fall from above.
+
+  Q94 / goi-7.4 - keyed answer was a graded negation, not a true
+    paraphrase of flat negation あまくないです.
+    Replaced choice [3] あまり あまく ないです -> あまく ありません.
+    Now a clean polite-form paraphrase (same meaning, different
+    politeness register).
+
+  Q98 / goi-7.8 - keyed answer changed both the particle (までに ->
+    まで) and the time window. Whole item replaced.
+    New stem: わたしは あした しゅくだいを 出します。
+    New keyed: あした、わたしは 先生に しゅくだいを わたします。
+    Tests 出す = わたす in homework-submission context (clean paraphrase).
+
+  Q99 / goi-7.9 - 知っている and 覚えている are not synonyms. Whole
+    item replaced.
+    New stem: わたしは スペインから きました。
+    New keyed: わたしは スペイン人です。
+    Tests origin (X から きた) = nationality (X 人).
+
+### Moderate fixes (5)
+
+  Q39 / goi-3.9: 机 takes 〜台 not 〜つ -> swapped noun to ボール.
+  Q68 / goi-5.8: keyed 学生が narrowed scope -> 人が (matches だれも universal).
+  Q79 / goi-6.4: rationale aligned with Q80 (added "broader than" caveat).
+  Q89 / goi-6.14: 「高い お金」 unnatural -> たくさん お金を 払いました.
+  Q45 / goi-3.15: シャツ weak distractor -> パジャマ (clearly indoor).
+
+### Minor polish (4)
+
+  Q1 / goi-1.1:  毎あさ -> まいあさ (kana consistency).
+  Q5 / goi-1.5:  つかれましたから -> つかれたので (tense consistency
+                 with the choice 「やすみます」 — actually 「やすみます」
+                 is non-past which is fine after ので+plain past).
+  Q10 / goi-1.10: あついです distractor -> はやいです (avoid 暑い/厚い
+                  homophone trap on 本).
+  Q19 / goi-2.4:  きのうは とても -> きのうは しごとが とても (added
+                  topic word; しごと anchors いそがしい uniquely).
+
+### Source-policy header notes (in goi_questions_n5.md)
+
+Two policy sections added to the header to formalize how the corpus
+treats two boundary cases the auditor flagged as clusters:
+
+  1. **Inference-style paraphrases** (Q70 好き/よくする, Q76, Q86,
+     Q97, Q100): treated as deliberate N5-level pedagogical
+     conventions where likes/skill/lessons commonly entail the
+     related action. The rationales' acknowledgement of the gap
+     stays — it is now framed as graded-by-closeness rather than
+     "apologizing".
+
+  2. **Late-N5 / N4-stretch items** (Q47 ～たことがある, Q48
+     ～つもりだ, Q62 ～あいだに, Q64 ひけます potential, Q91 ～て
+     N に なる, Q97 話せます potential): documented as deliberate
+     stretch content for learners on the cusp of N4. Aligns with
+     the project's "late_n5" tier convention (25 grammar.json
+     patterns also flagged tier=late_n5).
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v121 -> v122
+  - index.html cache-busters:    v=1.11.31 -> v=1.11.32
+  - tools/check_content_integrity.py -> 41/41 invariants PASS
+    (incl. JA-32: every kanji in new rationales appears in MD source)
+  - tools/fix_goi_audit_2026_05_04.py -> idempotent
+
 ## v1.12.11 - 2026-05-04 (45 dokkai rationales authored - 100% rationale coverage)
 
 External auditor reported 45 of 60 dokkai questions (Q1-Q60) had

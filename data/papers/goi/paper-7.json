@@ -55,11 +55,11 @@
       "choices": [
         "この みせの ケーキは あまいです。",
         "この みせの ケーキは からい です。",
-        "この みせの ケーキは あまり あまく ないです。",
+        "この みせの ケーキは あまく ありません。",
         "この みせの ケーキは おいしくないです。"
       ],
       "correctIndex": 2,
-      "rationale": "by elimination among the four options. Strictly, あまくない is a stronger negation than あまり あまくない, but the other three options are clearly wrong (opposite meaning, unrelated taste, or unrelated property).",
+      "rationale": "あまくない (plain neg) = あまく ありません (polite neg). Same meaning, different politeness register; a true paraphrase rather than a graded approximation.",
       "kbSourceId": "Q94",
       "id": "goi-7.4"
     },
@@ -107,29 +107,29 @@
     },
     {
       "type": "mcq",
-      "stem_html": "A: しゅくだいは あした まで に だして ください。",
+      "stem_html": "A: わたしは あした しゅくだいを 出します。",
       "choices": [
-        "あした しゅくだいを はじめて ください。",
-        "あしたの あさまで しゅくだいを 出して ください。",
-        "あした しゅくだいを かいて ください。",
-        "あしたの あと しゅくだいを 出して ください。"
+        "あした しゅくだいを はじめます。",
+        "あした、 わたしは 先生に しゅくだいを わたします。",
+        "あした しゅくだいを かいます。",
+        "あした しゅくだいを かえします。"
       ],
       "correctIndex": 1,
-      "rationale": "by tomorrow.",
+      "rationale": "(homework + 先生に) 出す ≈ わたす. Submitting homework to a teacher is paraphrased as handing it over.",
       "kbSourceId": "Q98",
       "id": "goi-7.8"
     },
     {
       "type": "mcq",
-      "stem_html": "A: あの 人の 名前を しって いますか。",
+      "stem_html": "A: わたしは スペインから きました。",
       "choices": [
-        "あの 人の 名前を おしえます。",
-        "あの 人の 名前を おぼえて います。",
-        "あの 人の 名前が わかりません。",
-        "あの 人の 名前は ながいです。"
+        "わたしは スペインへ いきます。",
+        "わたしは スペイン人です。",
+        "わたしは スペインの 人と ともだちです。",
+        "わたしは スペインごを 話します。"
       ],
       "correctIndex": 1,
-      "rationale": "by elimination: option 1 changes tense (will teach), option 3 reverses meaning (don't know), option 4 is irrelevant (length). 知っている and 覚えている are near-synonyms in the context of remembering someone's name, but they are not interchangeable in general - you can 知っている a name without 覚えている it (knew it but forgot), and vice versa. Don't memorize this as a synonymy rule.",
+      "rationale": "X から きた (came from X) = X 人 (X-jin / from X). Origin-of-coming = nationality.",
       "kbSourceId": "Q99",
       "id": "goi-7.9"
     },

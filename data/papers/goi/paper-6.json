@@ -59,7 +59,7 @@
         "たなかさんの いえは ふるいです。"
       ],
       "correctIndex": 1,
-      "rationale": "not big ≈ small.",
+      "rationale": "by elimination among the four options. Strictly, 大きくない (not big) is broader than ちいさい (small) — 中ぐらい (medium-sized) also fits 大きくない. Among the four options, ちいさい is the closest single-word match.",
       "kbSourceId": "Q79",
       "id": "goi-6.4"
     },
@@ -194,12 +194,12 @@
       "stem_html": "A: その くつは 高かったです。",
       "choices": [
         "その くつは とても やすいです。",
-        "その くつは とても たかい おかねを はらいました。",
+        "その くつに とても たくさん お金を はらいました。",
         "その くつは ながかったです。",
         "その くつは よかったです。"
       ],
       "correctIndex": 1,
-      "rationale": "expensive → paid much.",
+      "rationale": "高かった (was expensive) ↔ たくさん お金を 払った (paid a lot of money). Note: 「高い お金」 is unnatural — money is not 高い/安い; ねだん (price) is. Hence the rewording from a prior version.",
       "kbSourceId": "Q89",
       "id": "goi-6.14"
     },
