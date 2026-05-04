@@ -2,6 +2,78 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.16 - 2026-05-04 (Q73/Q74 mirror-pair scatter + Mondai 1/2 cross-reference)
+
+Closes the v1.12.15 deferral and addresses the third-pass review's
+"Coverage gap (still)" mention. Per "fix all remaining": no items
+left from the third-pass walk-through.
+
+### Mirror-pair scatter (Q74 <-> Q83 content swap)
+
+Reviewer flagged Q73 (kasu perspective) and Q74 (kariru perspective)
+as a conceptually-mirror pair appearing in immediate sequence in
+paper-5 (positions 5.13 + 5.14). Pattern recognition would let an
+examinee solve one by mechanically inverting the other.
+
+  Before:
+    Q73 (paper-5.13)  友だちに 本を かしました   -> 友だちが 私から かりた  (kasu)
+    Q74 (paper-5.14)  友だちから 本を かりました -> 友だちが 私に かした    (kariru)
+    Q83 (paper-6.8)   バスに のって 学校へ      -> バスで 学校へ          (transportation)
+
+  After:
+    Q73 (paper-5.13)  kasu perspective  (UNCHANGED)
+    Q74 (paper-5.14)  transportation     (was Q83's content)
+    Q83 (paper-6.8)   kariru perspective (was Q74's content)
+
+Distance between Q73 (kasu) and Q83-now-with-kariru: 10 questions
+across two papers. kbSourceId mapping preserved (paper-5.14 -> "Q74",
+paper-6.8 -> "Q83") because kbSourceId tracks MD position, not
+semantic content. JA-32 stays green via lock-step MD <-> JSON.
+
+**Audit-traceability note:** pre-v1.12.16 audit reports referencing
+"Q74" mean kariru; post-v1.12.16 they mean transportation. The full
+swap is documented here. Q73 is unchanged.
+
+### Mondai 1/2 cross-reference (header docs)
+
+Third-pass review repeated a "Coverage gap (still)" flag for Mondai 1
+(kanji reading) and Mondai 2 (orthography). The gap is illusory --
+those Mondais are in `KnowledgeBank/moji_questions_n5.md` (100 items
+total: 50 Mondai 1 + 50 Mondai 2). An auditor walking only the goi
+file would not know to look there.
+
+The goi file header now includes:
+
+  - A prominent blockquote callout naming the moji file as the home
+    of Mondai 1+2.
+  - An expanded "Subtypes covered" table listing all four Mondais
+    with their source file, so the corpus structure is self-
+    documenting from a single header.
+
+No content moved between files; only the cross-reference is new.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v125 -> v126
+  - index.html cache-busters:    v=1.11.35 -> v=1.11.36
+  - 41/41 invariants PASS (incl. JA-32 lock-step MD<->JSON parity)
+  - Swap script idempotent (2nd run reports "No changes").
+
+### Cumulative goi audit closure (v1.12.12..v1.12.16)
+
+  v1.12.12  14 item fixes + 2 policy headers (initial 19-item audit)
+  v1.12.13  5 inference cluster items tightened
+  v1.12.14  5 re-review follow-ups (Q5/Q51/Q94/Q98/Q99)
+  v1.12.15  4 third-pass fixes (Q33/Q44/Q47/Q87) + Q39 verified
+  v1.12.16  Q73/Q74 mirror-pair scatter + Mondai 1/2 cross-reference
+
+Total: 28 item-level content edits + 6 rationale tightenings + 3
+policy/cross-reference docs + 1 structural swap. Goi corpus is now
+in a state the auditor's third pass described as "consistently above
+the level of most commercial N5 vocabulary practice books".
+
+---
+
 ## v1.12.15 - 2026-05-04 (Goi third-pass review - 4 fixes + 1 deferred)
 
 A third-pass walk-through by the same auditor on the v1.12.14 state

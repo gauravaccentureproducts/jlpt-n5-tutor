@@ -2,12 +2,16 @@
 
 100 questions covering the Goi (vocabulary) section of the JLPT N5. The Goi section tests the ability to choose the right word for a context, and to recognize paraphrases (synonyms / equivalent expressions).
 
+> **Mondai 1 / Mondai 2 coverage note:** This file covers Mondai 3 + Mondai 4 of the 文字・語彙 (Vocabulary) section. **Mondai 1 (漢字読み, kanji -> reading)** and **Mondai 2 (表記, hiragana -> kanji)** are in `moji_questions_n5.md` - 50 items each, 100 total. An audit walking only this file will see what looks like a coverage gap; the missing Mondai 1+2 are in the sibling moji corpus.
+
 ## Subtypes covered
 
-| Mondai | Subtype | Count |
-|---|---|---|
-| Mondai 3 | 文脈規定 (contextual) - choose the word that fits the blank | 50 |
-| Mondai 4 | 言い換え類義 (paraphrase) - choose the sentence with the closest meaning | 50 |
+| Mondai | Subtype | Count | File |
+|---|---|---|---|
+| Mondai 1 | 漢字読み (kanji reading) | 50 | `moji_questions_n5.md` |
+| Mondai 2 | 表記 (orthography) | 50 | `moji_questions_n5.md` |
+| Mondai 3 | 文脈規定 (contextual) - choose the word that fits the blank | 50 | `goi_questions_n5.md` (this file) |
+| Mondai 4 | 言い換え類義 (paraphrase) - choose the sentence with the closest meaning | 50 | `goi_questions_n5.md` (this file) |
 
 ## Notation rules
 
@@ -891,14 +895,14 @@ A: 友だちに 本を かしました。
 
 ### Q74
 
-A: 友だちから 本を かりました。
+A: わたしは バスに のって 学校へ いきます。
 
-1. 友だちが 私に 本を かしました。
-2. 友だちが 私から 本を かりました。
-3. 私が 友だちに 本を あげました。
-4. 友だちは 本を かいました。
+1. わたしは あるいて 学校へ いきます。
+2. わたしは でんしゃで 学校へ いきます。
+3. わたしは バスで 学校へ いきます。
+4. わたしは じてんしゃで 学校へ いきます。
 
-**Answer: 1** - borrowed = friend lent.
+**Answer: 3** - のって ≈ で.
 
 ### Q75
 
@@ -994,14 +998,14 @@ A: きょうは あめが ふって います。
 
 ### Q83
 
-A: わたしは バスに のって 学校へ いきます。
+A: 友だちから 本を かりました。
 
-1. わたしは あるいて 学校へ いきます。
-2. わたしは でんしゃで 学校へ いきます。
-3. わたしは バスで 学校へ いきます。
-4. わたしは じてんしゃで 学校へ いきます。
+1. 友だちが 私に 本を かしました。
+2. 友だちが 私から 本を かりました。
+3. 私が 友だちに 本を あげました。
+4. 友だちは 本を かいました。
 
-**Answer: 3** - のって ≈ で.
+**Answer: 1** - borrowed = friend lent.
 
 ### Q84
 
