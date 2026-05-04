@@ -2,6 +2,108 @@
 
 All user-visible changes to the JLPT N5 study material site.
 
+## v1.12.8 - 2026-05-04 (Whitelist drift fully closed - 38 new vocab entries)
+
+Closes the v1.12.7 "perceived drift" between `n5_vocab_whitelist.json`
+and `data/vocab.json` by **authoring 38 new structured vocab.json
+entries** that cover all 40 previously-unmatched whitelist tokens.
+
+Drift went 40 -> 0. The whitelist (969 tokens) now strictly matches
+form/reading values in vocab.json (1041 entries). The "intentional
+superset" framing from v1.12.7 is no longer applicable; alignment is
+now strict.
+
+### 29 standalone vocab entries (recognition-only -> first-class catalog)
+
+These were valid N5 tokens that appeared in vocabulary_n5.md gloss /
+example text but lacked structured catalog entries. Each gets a full
+entry with form, reading, gloss, section, pos, and 1 example sentence:
+
+  Section 3 (People - Roles):
+    高校生 (こうこうせい) - high school student
+
+  Section 9 (Counters):
+    倍 (ばい) - times / -fold
+
+  Section 10 (Time):
+    後 (あと) - after / later
+
+  Section 11 (Days/Weeks/Months/Years):
+    週末 (しゅうまつ) - weekend
+
+  Section 13 (Locations):
+    おてら, カフェ, コンビニ, フロント, 出口
+
+  Section 14 (Nature):
+    さくら
+
+  Section 22 (Money & Shopping):
+    アルバイト, セール
+
+  Section 24 (School & Study):
+    おしらせ, じゅんび, たんご
+
+  Section 25 (Languages & Countries):
+    スペイン人, 国籍
+
+  Section 26 (House & Furniture):
+    ベンチ
+
+  Section 27 (Verbs Group 1):
+    はらう (pay)
+
+  Section 28 (Verbs Group 2):
+    おくれる (be late), ためる (save), 聞こえる (be audible)
+
+  Section 33 (Adverbs):
+    いっぱい, ぜひ, ただ, べつべつ
+
+  Section 36 (Greetings/Set Phrases):
+    おじゃまします
+
+  Section 40 (Misc Useful Items):
+    おもちゃ, コンサート
+
+### 9 multi-form merged entries (alias pairs -> first-class)
+
+Following the existing precedent (8 entries like 何 reading="なに / なん"
+or 七 reading="しち / なな"), these 9 entries use multi-form notation
+in the `reading` field to cover both alias and canonical forms in a
+single entry:
+
+  いい                    reading="いい / よい"           [i-adj]
+  いえ                    reading="いえ / うち"           [noun]
+  ぐらい                  reading="ぐらい / くらい"       [particle]
+  けれど                  reading="けれど / けれども / けど" [conjunction]
+  ござる                  reading="ござる / ございます"   [verb-1]
+  じゃあ                  reading="じゃあ / では / じゃ"  [expression]
+  みんな                  reading="みんな / みな"         [noun]
+  やはり                  reading="やはり / やっぱり"     [adverb]
+  ゼロ                    reading="ゼロ / れい"           [numeral]
+
+JA-31 POS parity verified: each new entry's pos field matches the
+multi-form line's [tag] in vocabulary_n5.md (i-adj -> i-adj,
+noun -> n., particle -> part., etc.).
+
+### data/n5_vocab_whitelist_README.md updated
+
+The original draft documented the 40 missing tokens as "intentional
+superset by design". After v1.12.8, drift = 0, so the README is
+revised to record the alignment + the v1.12.7 -> v1.12.8 transition
+in the History section. Future audits comparing whitelist to vocab.json
+will see strict 1:1 form/reading correspondence.
+
+### Cache and integrity
+
+  - sw.js CACHE_VERSION:        v117 -> v118
+  - index.html cache-busters:    v=1.11.27 -> v=1.11.28
+  - data/vocab.json: 1003 -> 1041 entries (+38)
+  - n5_vocab_whitelist.json drift: 40 -> 0 (-40)
+  - tools/check_content_integrity.py -> 40/40 invariants PASS
+    (including JA-31 vocab POS parity)
+  - tools/author_29_vocab_entries_2026_05_04.py -> idempotent
+  - tools/author_10_alias_entries_2026_05_04.py -> idempotent
+
 ## v1.12.7 - 2026-05-04 (Data folder bugs - n5-188 audio + whitelist design doc)
 
 Closes 2 bugs from the 2026-05-04 data-folder audit.

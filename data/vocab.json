@@ -14081,6 +14081,538 @@
           "translation_en": "Where are you from?"
         }
       ]
+    },
+    {
+      "id": "n5.vocab.33-adverbs.いっぱい",
+      "form": "いっぱい",
+      "reading": "いっぱい",
+      "gloss": "full / a lot",
+      "section": "33. Adverbs",
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "コップに 水が いっぱい あります。",
+          "translation_en": "There's a lot of water in the cup."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.おくれる",
+      "form": "おくれる",
+      "reading": "おくれる",
+      "gloss": "be late",
+      "section": "28. Verbs - Group 2 (る-verbs)",
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "バスが 来なかったので、学校に おくれました。",
+          "translation_en": "The bus didn't come, so I was late to school."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.おしらせ",
+      "form": "おしらせ",
+      "reading": "おしらせ",
+      "gloss": "announcement, notice",
+      "section": "24. School and Study",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "学校から おしらせが きました。",
+          "translation_en": "An announcement came from school."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.36-greetings-and-set-phr.おじゃまします",
+      "form": "おじゃまします",
+      "reading": "おじゃまします",
+      "gloss": "excuse me / I'm coming in (set phrase used when entering someone's home)",
+      "section": "36. Greetings and Set Phrases",
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "「おじゃまします」と 言って、友だちの うちに 入りました。",
+          "translation_en": "I said 'excuse me' and entered my friend's house."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.おてら",
+      "form": "おてら",
+      "reading": "おてら",
+      "gloss": "temple (Buddhist)",
+      "section": "13. Locations and Places (general)",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "おてらは とても しずかです。",
+          "translation_en": "The temple is very quiet."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.おもちゃ",
+      "form": "おもちゃ",
+      "reading": "おもちゃ",
+      "gloss": "toy",
+      "section": "40. Misc Useful Items",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "子どもは おもちゃで あそびます。",
+          "translation_en": "Children play with toys."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.3-people-roles.高校生",
+      "form": "高校生",
+      "reading": "こうこうせい",
+      "gloss": "high school student",
+      "section": "3. People - Roles",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あには 高校生です。",
+          "translation_en": "My older brother is a high school student."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.14-nature-and-weather.さくら",
+      "form": "さくら",
+      "reading": "さくら",
+      "gloss": "cherry blossom",
+      "section": "14. Nature and Weather",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "四月に さくらが さきます。",
+          "translation_en": "Cherry blossoms bloom in April."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.じゅんび",
+      "form": "じゅんび",
+      "reading": "じゅんび",
+      "gloss": "preparation",
+      "section": "24. School and Study",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "テストの じゅんびを します。",
+          "translation_en": "I prepare for the test."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.33-adverbs.ぜひ",
+      "form": "ぜひ",
+      "reading": "ぜひ",
+      "gloss": "by all means / definitely",
+      "section": "33. Adverbs",
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "ぜひ あそびに 来て ください。",
+          "translation_en": "Please come to visit by all means."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.33-adverbs.ただ",
+      "form": "ただ",
+      "reading": "ただ",
+      "gloss": "just / only / simply",
+      "section": "33. Adverbs",
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "ただの 友だちです。",
+          "translation_en": "It's just a friend."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.ためる",
+      "form": "ためる",
+      "reading": "ためる",
+      "gloss": "save / accumulate (e.g., money, points)",
+      "section": "28. Verbs - Group 2 (る-verbs)",
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "りょこうの ために お金を ためて います。",
+          "translation_en": "I am saving money for a trip."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.24-school-and-study.たんご",
+      "form": "たんご",
+      "reading": "たんご",
+      "gloss": "vocabulary word",
+      "section": "24. School and Study",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "日本語の たんごを おぼえます。",
+          "translation_en": "I memorize Japanese vocabulary."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.27-verbs-group-1-verbs.はらう",
+      "form": "はらう",
+      "reading": "はらう",
+      "gloss": "pay",
+      "section": "27. Verbs - Group 1 (う-verbs)",
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "コンビニで お金を はらいました。",
+          "translation_en": "I paid the money at the convenience store."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.33-adverbs.べつべつ",
+      "form": "べつべつ",
+      "reading": "べつべつ",
+      "gloss": "separately",
+      "section": "33. Adverbs",
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "べつべつに はらいましょう。",
+          "translation_en": "Let's pay separately."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.アルバイト",
+      "form": "アルバイト",
+      "reading": "アルバイト",
+      "gloss": "part-time job (often shortened to バイト)",
+      "section": "22. Money and Shopping",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "カフェで アルバイトを して います。",
+          "translation_en": "I work part-time at a cafe."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.カフェ",
+      "form": "カフェ",
+      "reading": "カフェ",
+      "gloss": "cafe",
+      "section": "13. Locations and Places (general)",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "カフェで コーヒーを 飲みました。",
+          "translation_en": "I drank coffee at the cafe."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.40-misc-useful-items.コンサート",
+      "form": "コンサート",
+      "reading": "コンサート",
+      "gloss": "concert",
+      "section": "40. Misc Useful Items",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "土曜日に コンサートに 行きます。",
+          "translation_en": "I'll go to the concert on Saturday."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.コンビニ",
+      "form": "コンビニ",
+      "reading": "コンビニ",
+      "gloss": "convenience store",
+      "section": "13. Locations and Places (general)",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "コンビニで パンを 買いました。",
+          "translation_en": "I bought bread at the convenience store."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.スペイン人",
+      "form": "スペイン人",
+      "reading": "スペインじん",
+      "gloss": "Spanish person",
+      "section": "25. Languages and Countries",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あの 人は スペイン人です。",
+          "translation_en": "That person is Spanish."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.22-money-and-shopping.セール",
+      "form": "セール",
+      "reading": "セール",
+      "gloss": "sale (price reduction)",
+      "section": "22. Money and Shopping",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "デパートで セールを して います。",
+          "translation_en": "There's a sale at the department store."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.フロント",
+      "form": "フロント",
+      "reading": "フロント",
+      "gloss": "reception desk / front desk",
+      "section": "13. Locations and Places (general)",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ホテルの フロントで かぎを もらいました。",
+          "translation_en": "I got the key at the hotel reception desk."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.ベンチ",
+      "form": "ベンチ",
+      "reading": "ベンチ",
+      "gloss": "bench",
+      "section": "26. House and Furniture",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "こうえんの ベンチに すわりました。",
+          "translation_en": "I sat on the park bench."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.9-counters-common.倍",
+      "form": "倍",
+      "reading": "ばい",
+      "gloss": "times / -fold (counter for multiplicative)",
+      "section": "9. Counters (Common)",
+      "pos": "counter",
+      "examples": [
+        {
+          "ja": "これは あれの 二ばい おおきいです。",
+          "translation_en": "This is twice as big as that."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.13-locations-and-places-.出口",
+      "form": "出口",
+      "reading": "でぐち",
+      "gloss": "exit",
+      "section": "13. Locations and Places (general)",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "えきの 出口で あいましょう。",
+          "translation_en": "Let's meet at the station exit."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.25-languages-and-countri.国籍",
+      "form": "国籍",
+      "reading": "こくせき",
+      "gloss": "nationality",
+      "section": "25. Languages and Countries",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "あなたの こくせきは 何ですか。",
+          "translation_en": "What's your nationality?"
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.10-time-general.後",
+      "form": "後",
+      "reading": "あと",
+      "gloss": "after / later (時間的に後で)",
+      "section": "10. Time - General",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "ごはんの 後で べんきょうします。",
+          "translation_en": "I'll study after dinner."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.28-verbs-group-2-verbs.聞こえる",
+      "form": "聞こえる",
+      "reading": "きこえる",
+      "gloss": "be audible / can be heard (intransitive of 聞く)",
+      "section": "28. Verbs - Group 2 (る-verbs)",
+      "pos": "verb-2",
+      "examples": [
+        {
+          "ja": "となりの へやから 音楽が 聞こえます。",
+          "translation_en": "I can hear music from the next room."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.11-time-days-weeks-month.週末",
+      "form": "週末",
+      "reading": "しゅうまつ",
+      "gloss": "weekend",
+      "section": "11. Time - Days, Weeks, Months, Years",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "しゅうまつに りょこうに 行きます。",
+          "translation_en": "I go on a trip on the weekend."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.31-adjectives.いい",
+      "form": "いい",
+      "reading": "いい / よい",
+      "gloss": "good (いい more colloquial; よい more formal/literary — same meaning)",
+      "section": "31. い-Adjectives",
+      "pos": "i-adj",
+      "examples": [
+        {
+          "ja": "きょうは いい てんきです。",
+          "translation_en": "It's nice weather today."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.26-house-and-furniture.いえ",
+      "form": "いえ",
+      "reading": "いえ / うち",
+      "gloss": "house / home (いえ emphasizes the building; うち emphasizes \"my place / my household\")",
+      "section": "26. House and Furniture",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "いえに かえります。",
+          "translation_en": "I'll go home."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.35-particles-functional-.ぐらい",
+      "form": "ぐらい",
+      "reading": "ぐらい / くらい",
+      "gloss": "about, approximately (ぐらい more common after voiced sounds; くらい elsewhere — particle of estimate)",
+      "section": "35. Particles (functional vocabulary)",
+      "pos": "particle",
+      "examples": [
+        {
+          "ja": "一時間 ぐらい かかります。",
+          "translation_en": "It takes about an hour."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.34-conjunctions.けれど",
+      "form": "けれど",
+      "reading": "けれど / けれども / けど",
+      "gloss": "but / however (けど most casual; けれど middle; けれども most formal — same meaning)",
+      "section": "34. Conjunctions",
+      "pos": "conjunction",
+      "examples": [
+        {
+          "ja": "いそがしいけれど、行きます。",
+          "translation_en": "I'm busy but I'll go."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.30-verbs-existence-and-p.ござる",
+      "form": "ござる",
+      "reading": "ござる / ございます",
+      "gloss": "to be / there is (very polite; ございます is the masu-form, used in shop/hotel speech)",
+      "section": "30. Verbs - Existence and Possession",
+      "pos": "verb-1",
+      "examples": [
+        {
+          "ja": "おはよう ございます。",
+          "translation_en": "Good morning. (formal)"
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.39-function-filler-expre.じゃあ",
+      "form": "じゃあ",
+      "reading": "じゃあ / では / じゃ",
+      "gloss": "well then / so (じゃあ casual; では formal; じゃ very casual — discourse marker for transitioning)",
+      "section": "39. Function / Filler Expressions",
+      "pos": "expression",
+      "examples": [
+        {
+          "ja": "じゃあ、また あした。",
+          "translation_en": "Well then, see you tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.1-people-pronouns-and-se.みんな",
+      "form": "みんな",
+      "reading": "みんな / みな",
+      "gloss": "everyone / all (みんな more colloquial; みな more formal — both function as inclusive \"everyone\")",
+      "section": "1. People - Pronouns and Self",
+      "pos": "noun",
+      "examples": [
+        {
+          "ja": "みんなで がんばりましょう。",
+          "translation_en": "Let's all do our best together."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.33-adverbs.やはり",
+      "form": "やはり",
+      "reading": "やはり / やっぱり",
+      "gloss": "as expected / after all (やはり more formal; やっぱり colloquial — confirms an expectation or returns to a prior view)",
+      "section": "33. Adverbs",
+      "pos": "adverb",
+      "examples": [
+        {
+          "ja": "やはり 日本料理が 好きです。",
+          "translation_en": "As expected, I like Japanese food."
+        }
+      ]
+    },
+    {
+      "id": "n5.vocab.7-numbers.ゼロ",
+      "form": "ゼロ",
+      "reading": "ゼロ / れい",
+      "gloss": "zero (ゼロ for \"0\" digit reading; れい for formal/numeric \"zero\" especially in counts)",
+      "section": "7. Numbers",
+      "pos": "numeral",
+      "examples": [
+        {
+          "ja": "てんすうは ゼロでした。",
+          "translation_en": "The score was zero."
+        }
+      ]
     }
   ]
 }
